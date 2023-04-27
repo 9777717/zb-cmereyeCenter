@@ -1,5 +1,5 @@
 {
-  "name": "nuxt3-awesome-starter",
+  "name": "eye-center-revamp",
   "version": "0.1.0",
   "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features. Nuxt3 + Tailwindcss 3",
   "repository": {
@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --p 3004",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "start": "node .output/server/index.mjs",

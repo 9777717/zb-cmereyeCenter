@@ -56,6 +56,7 @@ const close = () => {
 </script>
 
 <template>
+  <!-- 可删除公告 -->
   <TransitionRoot :show="!isDestroyed" appear>
     <TransitionChild
       as="template"
