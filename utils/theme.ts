@@ -34,7 +34,8 @@ export function ThemeManager() {
     const now = new Date()
     const hour = now.getHours()
     const isNight = hour >= 17 || hour <= 5
-    return isNight ? 'dark' : 'light'
+    // return isNight ? 'dark' : 'light'
+    return isNight ? 'light' : 'light'
   }
 
   // state
