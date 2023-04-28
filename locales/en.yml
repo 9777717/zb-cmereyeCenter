@@ -5,8 +5,6 @@ components:
     theme: theme
     change_theme: change theme
 pages:
-  index:
-    title: nuxt 3[]awesome[]starter
   404:
     title: page not found
   blank:
@@ -63,6 +61,22 @@ pages:
     index:
       nav: home
       title: home
+  index:
+    home: home
+  about_us:
+    about_us: about_us
+  medical_team:
+    medical_team: medical_team
+  medical_service:
+    medical_service: medical_service
+  ophthalmic_information:
+    ophthalmic_information: ophthalmic_information
+  process_cost:
+    process_cost: process_and_Cost
+  talent_recruitment:
+    talent_recruitment: talent_recruitment
+  contact_us:
+    contact_us: contact_us
 banners:
   welcome: hello, welcome to %{app_name}!
 others:

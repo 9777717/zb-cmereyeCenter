@@ -1,15 +1,14 @@
 <script lang="ts" setup>
-// meta
+// compiler macro
 definePageMeta({
   layout: 'page',
 })
 </script>
 
 <template>
-  <PageWrapper class="flex-1 flex">
-    <PageBody class="flex-1 flex">
+  <PageWrapper>
+    <PageBody>
       <PageSection class="flex-1 flex items-center"> </PageSection>
     </PageBody>
   </PageWrapper>
 </template>
-<style lang="scss" scoped></style>

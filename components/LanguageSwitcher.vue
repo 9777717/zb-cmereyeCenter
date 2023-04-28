@@ -29,18 +29,33 @@ const localeSetting = useState<string>('locale.setting')
       as="div"
       class="relative flex items-center"
     >
-      <ListboxLabel class="sr-only">Theme</ListboxLabel>
       <ListboxButton
         type="button"
         title="Change Language"
         class="transition-colors duration-300"
       >
         <span class="justify-center items-center flex">
-          <IconLa:language />
+          <svg
+            width="5"
+            height="8"
+            color="red"
+            viewBox="0 0 5 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L4 4L1 7"
+              stroke="white"
+              stroke-width="0.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <div class="font">Language</div>
         </span>
       </ListboxButton>
       <ListboxOptions
-        class="p-1 absolute z-50 top-full right-0 outline-none bg-white rounded-lg ring-1 ring-gray-900/10 shadow-lg overflow-hidden w-36 py-1 text-sm text-gray-700 font-semibold dark:bg-gray-800 dark:ring-0 dark:highlight-white/5 dark:text-gray-300"
+        class="p-1 absolute z-50 bottom-full left-0 outline-none bg-white rounded-lg ring-1 ring-gray-900/10 shadow-lg overflow-hidden w-36 py-1 text-sm text-gray-700 font-semibold dark:bg-gray-800 dark:ring-0 dark:highlight-white/5 dark:text-gray-300"
       >
         <ListboxOption
           v-for="lang in availableLocales"
@@ -80,3 +95,20 @@ const localeSetting = useState<string>('locale.setting')
     </select>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.font {
+  margin-left: 8px;
+  font-family: 'Noto Sans HK';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 35px;
+  /* identical to box height, or 250% */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+</style>

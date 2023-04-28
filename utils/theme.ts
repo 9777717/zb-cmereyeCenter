@@ -1,13 +1,12 @@
-export type IThemeSettingOptions = 'dark' | 'light' | 'system' | 'realtime'
+export type IThemeSettingOptions = 'light' | 'system' | 'realtime'
 
-export type ITheme = 'dark' | 'light'
+export type ITheme = 'light'
 
 export const availableThemes: {
   key: IThemeSettingOptions
   text: string
 }[] = [
   { key: 'light', text: 'Light' },
-  { key: 'dark', text: 'Dark' },
   { key: 'system', text: 'System' },
   { key: 'realtime', text: 'Realtime' },
 ]
@@ -22,12 +21,12 @@ export function ThemeManager() {
   const getSystemTheme = (): ITheme => {
     try {
       return window
-        ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
+        ? window.matchMedia('(prefers-color-scheme: light)').matches
+          ? 'light'
           : 'light'
-        : 'dark'
+        : 'light'
     } catch (error) {
-      return 'dark'
+      return 'light'
     }
   }
   const getRealtimeTheme = (): ITheme => {
@@ -80,13 +79,13 @@ export function ThemeManager() {
   onBeforeMount(() => init())
   onMounted(() => {
     window
-      .matchMedia('(prefers-color-scheme: dark)')
+      .matchMedia('(prefers-color-scheme: light)')
       .addEventListener('change', onThemeSystemChange)
     intervalCheckTime = setInterval(onRealtimeCheck, 1000)
   })
   onBeforeUnmount(() => {
     window
-      .matchMedia('(prefers-color-scheme: dark)')
+      .matchMedia('(prefers-color-scheme: light)')
       .removeEventListener('change', onThemeSystemChange)
     if (intervalCheckTime) clearInterval(intervalCheckTime)
   })

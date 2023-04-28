@@ -7,8 +7,6 @@ components:
 pages:
   '404':
     title: ページが見つかりません
-  index:
-    title: nuxt 3[]素晴らしい[]スターター
   blank:
     nav: 空欄
     title: 空白ページ
@@ -63,6 +61,22 @@ pages:
     index:
       nav: 家
       title: 家
+  index:
+    home: 首頁
+  about_us:
+    about_us: 關於我們
+  medical_team:
+    medical_team: 醫療團隊
+  medical_service:
+    medical_service: 醫療服務
+  ophthalmic_information:
+    ophthalmic_information: 眼科資訊
+  process_cost:
+    process_cost: 流程及費用
+  talent_recruitment:
+    talent_recruitment: 人才招聘
+  contact_us:
+    contact_us: 聯絡我們
 banners:
   welcome: こんにちは、%{app_name} へようこそ!
 others:
