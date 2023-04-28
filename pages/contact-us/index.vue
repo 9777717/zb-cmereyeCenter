@@ -8,7 +8,7 @@ definePageMeta({
 <template>
   <PageWrapper>
     <PageBody>
-      <PageSection class="flex-1 flex items-center"> </PageSection>
+      <PageSection class="flex-1 flex items-center"> contact-us</PageSection>
     </PageBody>
   </PageWrapper>
 </template>

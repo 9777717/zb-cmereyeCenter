@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { AppConfigInput } from '@nuxt/schema'
+import { useRoute } from 'vue-router'
+
+const router = useRoute()
 
 // state
 const app = useAppConfig() as AppConfigInput
@@ -56,7 +59,12 @@ const menuStyle = ref('style1')
         <slot name="title">
           <NuxtLink tag="a" :to="{ name: 'index' }">
             <img
+              v-if="router.name === 'index'"
               src="https://static.cmereye.com/imgs/2023/04/d1d8aa8018398ad1.png"
+            />
+            <img
+              v-else
+              src="https://static.cmereye.com/imgs/2023/04/4d019db1ea24013f.png"
             />
           </NuxtLink>
         </slot>

@@ -65,6 +65,9 @@ pages:
     home: 首頁
   about_us:
     about_us: 關於我們
+    center_profile: 中心簡介
+    development_course: 發展歷程
+    enterprise_vision: 企業願景
   medical_team:
     medical_team: 醫療團隊
   medical_service:

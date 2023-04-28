@@ -6,9 +6,25 @@ definePageMeta({
 </script>
 
 <template>
-  <PageWrapper>
-    <PageBody>
-      <PageSection class="flex-1 flex items-center">456 </PageSection>
-    </PageBody>
-  </PageWrapper>
+  <div class="overflow-x-hidden">
+    <div class="header mainCon">
+      <AboutChildCompsHead />
+    </div>
+
+    <div class="textbg en-font whitespace-nowrap -ml-10 overflow-hidden">
+      OUR VISION FOR A BETTER FUTURE.
+    </div>
+
+    <div class="mainContents mainCon flex items-end flex-col justify-start">
+      <!-- <AboutChildCompsCentreIntro /> -->
+
+      <!-- <AboutChildCompsHistory /> -->
+
+      <!-- <AboutChildCompsCorporateVision /> -->
+
+      <!-- <AboutChildCompsMedicalEquipment /> -->
+
+      <!-- <AboutChildCompsAwards /> -->
+    </div>
+  </div>
 </template>

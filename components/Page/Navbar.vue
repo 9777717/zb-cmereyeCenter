@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import { AppConfigInput } from '@nuxt/schema'
 
 export interface IMenuItem {
@@ -24,18 +24,18 @@ const menus = computed((): IMenuItem[] => [
     childMenuList: [
       {
         type: 'link',
-        text: t('pages.about_us.about_us'),
-        route: { name: 'add' },
+        text: t('pages.about_us.center_profile'),
+        route: { name: 'about-us-add' },
       },
       {
         type: 'link',
-        text: t('pages.about_us.about_us'),
-        route: {},
+        text: t('pages.about_us.development_course'),
+        route: { name: 'about-us-add' },
       },
       {
         type: 'link',
-        text: t('pages.about_us.about_us'),
-        route: {},
+        text: t('pages.about_us.enterprise_vision'),
+        route: { name: 'about-us-add' },
       },
     ],
   },
@@ -43,6 +43,23 @@ const menus = computed((): IMenuItem[] => [
     type: 'link',
     text: t('pages.medical_team.medical_team'),
     route: { name: 'medical-team' },
+    childMenuList: [
+      {
+        type: 'link',
+        text: t('pages.about_us.center_profile'),
+        route: { name: 'about-us-add' },
+      },
+      {
+        type: 'link',
+        text: t('pages.about_us.development_course'),
+        route: { name: 'about-us-add' },
+      },
+      {
+        type: 'link',
+        text: t('pages.about_us.enterprise_vision'),
+        route: { name: 'about-us-add' },
+      },
+    ],
   },
   {
     type: 'link',
@@ -70,74 +87,204 @@ const menus = computed((): IMenuItem[] => [
     route: { name: 'contact-us' },
   },
 ])
+const porps = defineProps({
+  rt: {
+    type: String,
+    default: undefined,
+  },
+})
 </script>
 
 <template>
-  <BuilderNavbar>
-    <template #menu>
-      <div class="navigtion">
-        <div
-          v-for="(item, i) in menus"
-          :key="i"
-          class="hover:bg-red-901 hover:text-while"
-        >
-          <Anchor
-            v-if="item.type === 'link'"
-            :to="item.route ? item.route : undefined"
-            :href="item.href ? item.href : undefined"
-            class="hover:no-underline"
-            >{{ item.text }}</Anchor
+  <div :class="porps.rt === 'index' ? 'headerTem' : 'headerTemPage'">
+    <BuilderNavbar>
+      <template #menu>
+        <div class="navigtion">
+          <div
+            v-for="(item, index) in menus"
+            :key="index"
+            class="hover:bg-red-901 hover:text-while"
           >
-          <Button
-            v-else-if="item.type === 'button'"
-            :text="item.text"
-            size="xs"
-            class="font-extrabold capitalize"
-            :to="item.route ? item.route : undefined"
-            :href="item.href ? item.href : undefined"
-          />
+            <Anchor
+              v-if="item.type === 'link'"
+              :to="item.route ? item.route : undefined"
+              :href="item.href ? item.href : undefined"
+              class="hover:no-underline"
+              >{{ item.text }}</Anchor
+            >
+            <div
+              v-if="item.childMenuList && item.childMenuList.length"
+              class="child"
+            >
+              <div v-for="(child, i) in item.childMenuList" :key="i">
+                <Anchor
+                  v-if="child.type === 'link'"
+                  :to="child.route ? child.route : undefined"
+                  :href="child.href ? child.href : undefined"
+                  class="hover:no-underline"
+                  >{{ child.text }}</Anchor
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </template>
-  </BuilderNavbar>
+      </template>
+    </BuilderNavbar>
+  </div>
 </template>
 <style lang="scss" scoped>
-.navigtion {
+a.router-link-exact-active {
+  color: #ffffff;
+}
+
+.headerTem {
+  z-index: 999;
+  position: fixed;
+  top: 54px;
+  left: 450px;
+  background: #ffffffbf;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #2958a3;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #2958a3;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.headerTemPage {
+  z-index: 999;
+  position: fixed;
+  top: 54px;
+  left: 450px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.child {
+  background: rgba(41, 88, 163, 0.82);
+  width: 130px;
+  height: 145px;
+  position: absolute;
+  right: -130px;
+  top: 0;
+
   & > div {
+    height: 49px;
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 35px;
     /* identical to box height, or 250% */
-
     text-align: center;
     letter-spacing: 0.05em;
 
-    color: #2958a3;
-
-    width: 130px;
-    height: 49px;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
   }
-  & > div::after {
+
+  & > div > a::after {
     position: absolute;
-    top: 0;
+    left: 26px;
     content: '';
     width: 76px;
-    border-bottom: 0.75px solid #2958a3;
+    margin-top: -8px;
+    border: 0.75px solid #8ad8dd;
   }
-  & > div:nth-child(1)::after {
+
+  & > div:nth-child(1) > a::after {
     content: '';
     width: 0;
     border: 0;
   }
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  & > div:hover {
+    background: #ffffff80;
+  }
+}
+
+.navigtion > div:hover .child {
+  display: block;
+}
+
+.child {
+  display: none;
 }
 </style>

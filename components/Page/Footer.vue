@@ -1,20 +1,29 @@
 <script lang="ts" setup></script>
 
 <template>
-  <footer class="bg-blue-900">
-    <section class="footer">
-      <div>©2023 希瑪林順潮眼科中心 版權所有</div>
-      <div>
-        <PageContentFooterSvg />
-        <LanguageSwitcher />
-        <FontHandle />
-        <PivacyPolicy />
-      </div>
-    </section>
-  </footer>
+  <div class="footerTem">
+    <footer class="bg-blue-900">
+      <section class="footer">
+        <div>©2023 希瑪林順潮眼科中心 版權所有</div>
+        <div>
+          <PageContentFooterSvg />
+          <LanguageSwitcher />
+          <FontHandle />
+          <PivacyPolicy />
+        </div>
+      </section>
+    </footer>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+.footerTem {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -41,6 +50,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     & > div {
       margin-right: 32px;
     }
