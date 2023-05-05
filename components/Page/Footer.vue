@@ -18,6 +18,7 @@
 
 <style lang="scss" scoped>
 .footerTem {
+  z-index: 99;
   position: fixed;
   bottom: 0;
   left: 0;

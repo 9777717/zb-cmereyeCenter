@@ -16,7 +16,7 @@ definePageMeta({
     </div>
 
     <!-- <div class="mainContents mainCon flex items-end flex-col justify-start"> -->
-    <!-- <AboutChildCompsCentreIntro /> -->
+    <AboutChildCompsCentreIntro />
 
     <!-- <AboutChildCompsHistory /> -->
 

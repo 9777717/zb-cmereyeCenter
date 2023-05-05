@@ -139,7 +139,7 @@ a.router-link-exact-active {
 
 .headerTem {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   top: 54px;
   left: 450px;
   background: #ffffffbf;
@@ -188,7 +188,7 @@ a.router-link-exact-active {
 
 .headerTemPage {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   top: 54px;
   left: 450px;
   background: #2958a3;
