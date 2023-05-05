@@ -42,10 +42,9 @@ const leaveActive = () => {
 }
 </script>
 <template>
-  <div class="aboutHead relative flex items-start justify-start">
-    <Menu></Menu>
-    <div class="title mt-28 text-3xl font-normal relative">關 於 我 們</div>
-    <div class="imgBox mt-48 relative">
+  <div class="aboutHead">
+    <div class="title">關於我們</div>
+    <div class="imgBox">
       <img
         src="https://static.cmereye.com/imgs/hkcmereye-newstyle/about/banner1.jpg?v=1"
         alt=""
@@ -59,7 +58,23 @@ const leaveActive = () => {
         alt=""
       />
     </div>
-
+    <div class="dow">
+      <svg
+        width="9"
+        height="144"
+        viewBox="0 0 9 144"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 1V143L7.5 130.5"
+          stroke="#2958A3"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
     <div class="anchor fixed right-10">
       <div
         v-for="(item, index) in anchorList"
@@ -84,55 +99,85 @@ const leaveActive = () => {
 </template>
 
 <style scoped lang="scss">
+.aboutHead {
+  position: relative;
+}
+
 .title {
+  position: absolute;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  margin-left: 10%;
-  margin-right: 3%;
+  left: 680px;
+  top: -105px;
+  font-family: 'Noto Sans HK';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40.1431px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #515151;
 
   &::after {
     content: 'About Us';
     position: absolute;
-    color: #8ad8dd;
     left: -40px;
     top: 3px;
     text-transform: uppercase;
-    font-size: 26px;
+
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.0172px;
+    line-height: 55px;
+    /* identical to box height, or 238% */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #8ad8dd;
   }
 }
 
 .imgBox {
+  position: relative;
   background: #f2f2f2;
-  width: 65%;
-  height: 700px;
+  width: 41.9%;
+  height: 640px;
+  margin-left: 752px;
+  margin-top: 203px;
 
   img {
     position: absolute;
 
     &:nth-child(1) {
-      left: -7%;
-      top: 17%;
-      width: 57%;
+      left: -6.8%;
+      top: 17.5%;
     }
 
     &:nth-child(2) {
-      right: 8%;
-      top: -15%;
-      width: 38%;
+      right: 9.18%;
+      top: -13.8%;
     }
 
     &:nth-child(3) {
       right: 12%;
-      bottom: -10%;
-      width: 57%;
+      bottom: -8.14%;
     }
   }
 }
 
+.dow {
+  position: absolute;
+  left: 71px;
+}
+
 .anchor {
-  // transform: translate(100%, 0);
-  // right: -10%;
-  bottom: 450px;
+  top: 510px;
+
+  & > div {
+    background: #fff;
+  }
 
   a {
     border: 0.5px solid #515151;
