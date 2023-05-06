@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  google-fonts:
+    specifier: ^1.0.0
+    version: 1.0.0
   nuxt-swiper:
     specifier: ^1.1.0
     version: 1.1.0
@@ -6404,6 +6407,10 @@ packages:
   /globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
     dev: true
+
+  /google-fonts@1.0.0:
+    resolution: {integrity: sha512-i3zzI697L9WdmnaSqYB5KYN2fqDpjfpW+UTBdzhmte6JSvS2GOczZZtfocpWhwPwPqsEAH76/46DrsnD5W6BQQ==}
+    dev: false
 
   /gopd@1.0.1:
     resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}

@@ -25,17 +25,17 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        route: { name: 'about-us-add' },
+        route: { path: '/about-us#centreIntro' },
       },
       {
         type: 'link',
         text: t('pages.about_us.development_course'),
-        route: { name: 'about-us-add' },
+        route: { name: 'about-us-devProcess' },
       },
       {
         type: 'link',
         text: t('pages.about_us.enterprise_vision'),
-        route: { name: 'about-us-add' },
+        route: { name: 'about-us-corporationVision' },
       },
     ],
   },
@@ -43,23 +43,23 @@ const menus = computed((): IMenuItem[] => [
     type: 'link',
     text: t('pages.medical_team.medical_team'),
     route: { name: 'medical-team' },
-    childMenuList: [
-      {
-        type: 'link',
-        text: t('pages.about_us.center_profile'),
-        route: { name: 'about-us-add' },
-      },
-      {
-        type: 'link',
-        text: t('pages.about_us.development_course'),
-        route: { name: 'about-us-add' },
-      },
-      {
-        type: 'link',
-        text: t('pages.about_us.enterprise_vision'),
-        route: { name: 'about-us-add' },
-      },
-    ],
+    // childMenuList: [
+    //   {
+    //     type: 'link',
+    //     text: t('pages.about_us.center_profile'),
+    //     route: { name: 'about-us-add' },
+    //   },
+    //   {
+    //     type: 'link',
+    //     text: t('pages.about_us.development_course'),
+    //     route: { name: 'about-us-add' },
+    //   },
+    //   {
+    //     type: 'link',
+    //     text: t('pages.about_us.enterprise_vision'),
+    //     route: { name: 'about-us-add' },
+    //   },
+    // ],
   },
   {
     type: 'link',

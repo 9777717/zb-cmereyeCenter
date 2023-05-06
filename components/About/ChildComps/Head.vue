@@ -2,23 +2,23 @@
 const anchorList = [
   {
     anchorName: '中心簡介',
-    anchorLink: '/about#centreIntro',
+    anchorLink: '/about-us#centreIntro',
   },
   {
     anchorName: '發展歷程',
-    anchorLink: '/about#history',
+    anchorLink: '/about-us#history',
   },
-  {
-    anchorName: '企業願景',
-    anchorLink: '/about#corporateVision',
-  },
-  {
-    anchorName: '中心設備',
-    anchorLink: '/about#medicalEquipment',
-  },
+  // {
+  //   anchorName: '企業願景',
+  //   anchorLink: '/about-us#corporateVision',
+  // },
+  // {
+  //   anchorName: '中心設備',
+  //   anchorLink: '/about-us#medicalEquipment',
+  // },
   {
     anchorName: '企業榮譽',
-    anchorLink: '/about#awards',
+    anchorLink: '/about-us#awards',
   },
   {
     anchorName: '費用一覽',
@@ -46,15 +46,15 @@ const leaveActive = () => {
     <div class="title">關於我們</div>
     <div class="imgBox">
       <img
-        src="https://static.cmereye.com/imgs/hkcmereye-newstyle/about/banner1.jpg?v=1"
+        src="https://static.cmereye.com/imgs/2023/05/042c0e54e896002f.jpg"
         alt=""
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/03/bda3757b33770267.jpg?v=1"
+        src="https://static.cmereye.com/imgs/2023/05/fcbe60b94457087b.png"
         alt=""
       />
       <img
-        src="https://static.cmereye.com/imgs/hkcmereye-newstyle/about/banner3.jpg?v=1"
+        src="https://static.cmereye.com/imgs/2023/05/4bcb9773a45f1d35.jpg"
         alt=""
       />
     </div>
@@ -100,6 +100,7 @@ const leaveActive = () => {
 
 <style scoped lang="scss">
 .aboutHead {
+  z-index: 99;
   position: relative;
 }
 

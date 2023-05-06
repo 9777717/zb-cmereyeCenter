@@ -1,30 +1,3 @@
-<template>
-  <div id="history" class="mt-32">
-    <AboutTitle
-      :zh-title="'發展歷程'"
-      :en-ttitle="'our history'"
-      class="relative z-50"
-    />
-
-    <div class="mainHistoryBox">
-      <div
-        v-for="(years, i) in historyList"
-        :key="i"
-        class="historyContent relative z-50 mb-14 mt-4"
-      >
-        <h1 class="year en-font text-center pb-2 mb-5">{{ years.year }}</h1>
-        <div
-          v-for="(item, index) in years.contentList"
-          :key="index"
-          class="content flex items-start justify-start"
-        >
-          <p class="month">{{ item.month }}</p>
-          <p class="info">{{ item.info }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
 <script>
 export default {
   data() {
@@ -107,32 +80,86 @@ export default {
       ],
     }
   },
-  created() {},
-  methods: {},
 }
 </script>
+<template>
+  <div id="history">
+    <AboutTitle
+      :zh-title="'發展歷程'"
+      :en-ttitle="'our history'"
+      class="title relative z-50"
+    />
+
+    <div class="mainHistoryBox">
+      <div
+        v-for="(years, i) in historyList"
+        :key="i"
+        class="historyContent relative z-50 mb-14"
+      >
+        <h1 class="year en-font text-center pb-2 mb-5">{{ years.year }}</h1>
+        <div
+          v-for="(item, index) in years.contentList"
+          :key="index"
+          class="content flex items-start justify-start"
+        >
+          <p class="month">{{ item.month }}</p>
+          <p class="info">{{ item.info }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 <style lang="scss" scoped>
 #history {
-  width: 70%;
+  width: 41.5%;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  justify-content: start;
+  margin-left: 593px;
+  margin-top: 12.75rem;
+  background: #f2f2f2;
+  position: relative;
+}
+
+.title {
+  margin-left: -88px;
+  margin-top: 45px;
 }
 
 .mainHistoryBox {
   width: 91%;
   position: relative;
+  margin-bottom: 34px;
 
   .historyContent {
     padding: 0 8%;
 
     .year {
-      font-size: 28px;
+      font-family: 'Metropolis';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      color: #515151;
       border-bottom: 1.5px solid #515151;
+      line-height: 32px;
     }
 
     .content {
+      font-family: 'Metropolis';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      /* or 140% */
+
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+
+      color: #515151;
+
       width: 90%;
       margin: 0 auto;
       margin-bottom: 15px;
@@ -150,13 +177,13 @@ export default {
     }
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 112%;
-    background: #f2f2f2;
-    top: -7%;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 112%;
+  //   background: #f2f2f2;
+  //   top: -7%;
+  // }
 }
 </style>

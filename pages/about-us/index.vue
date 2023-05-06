@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>
+  <div class="about">
     <div class="header mainCon">
       <AboutChildCompsHead />
     </div>
@@ -18,17 +18,20 @@ definePageMeta({
     <!-- <div class="mainContents mainCon flex items-end flex-col justify-start"> -->
     <AboutChildCompsCentreIntro />
 
-    <!-- <AboutChildCompsHistory /> -->
+    <AboutChildCompsHistory />
 
     <!-- <AboutChildCompsCorporateVision /> -->
 
-    <!-- <AboutChildCompsMedicalEquipment /> -->
+    <AboutChildCompsMedicalEquipment />
 
-    <!-- <AboutChildCompsAwards /> -->
+    <AboutChildCompsAwards />
     <!-- </div> -->
   </div>
 </template>
 <style lang="scss" scoped>
+.about {
+  padding-bottom: 50px;
+}
 .textbg {
   font-family: 'Metropolis';
   font-style: normal;

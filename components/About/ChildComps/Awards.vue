@@ -1,31 +1,6 @@
-<template>
-  <div id="awards" class="">
-    <AboutComCompsAboutTitle :zh-title="'企業榮譽'" :en-ttitle="'awards'" />
-    <div class="mainText">
-      <div
-        ref="mySwiper2"
-        v-swiper:mySwiper2="swiperOption2"
-        class="swiper-container mt-14"
-      >
-        <div class="swiper-wrapper">
-          <div
-            v-for="(item, index) in awardsList"
-            :key="index"
-            ref=""
-            class="swiper-slide relative"
-          >
-            <div class="imgBox flex items-center justify-center">
-              <img :src="item.imgUrl" alt="" />
-            </div>
-            <p class="color1 year en-font text-center">{{ item.year }}</p>
-            <p class="des text-center">{{ item.des }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
 <script setup lang="ts">
+import { Autoplay } from 'swiper'
+
 import { ref, onMounted } from 'vue'
 const awardsList = [
   {
@@ -71,73 +46,106 @@ const awardsList = [
     des: '香港健康產業大獎',
   },
 ]
-const swiperOption2 = {
-  loop: true,
-  autoplay: {
-    delay: 1,
-    reverseDirection: false,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 4,
-  spaceBetween: 0,
-  centeredSlides: true,
-  freeMode: true,
-  speed: 5000,
-  grabCursor: true,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-}
-const mySwiper2 = ref<any>()
-onMounted(() => {
-  // const this_swiper = mySwiper2.value.swiper
-  // this_swiper.$wrapperEl[0].style['transition-timing-function'] = 'linear'
-  // this_swiper.el.onmouseover = function () {
-  //     this_swiper.autoplay.stop()
-  // }
-  // this_swiper.el.onmouseout = function () {
-  //     this_swiper.autoplay.start();
-  // }
-})
 </script>
+<template>
+  <div id="awards" class="">
+    <AboutTitle :zh-title="'企業榮譽'" :en-ttitle="'awards'" class="title" />
+    <div v-if="awardsList.length" class="awardslide">
+      <swiper
+        :loop="true"
+        :space-between="30"
+        :centered-slides="true"
+        :modules="[Autoplay]"
+        :autoplay="{
+          delay: 2500,
+          disableOnInteraction: false,
+        }"
+        class="mySwiper"
+      >
+        <swiper-slide v-for="(item, index) in awardsList" :key="index">
+          <div class="brand">
+            <div><img :src="item.imgUrl" :alt="item.des" /></div>
+            <div>
+              <div>{{ item.year }}</div>
+              <div>{{ item.des }}</div>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper>
+    </div>
+  </div>
+</template>
 <style scoped lang="scss">
 #awards {
-  width: 75%;
+  margin-left: 650px;
+  margin-top: 253px;
+  margin-bottom: 160px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  justify-content: start;
-}
 
-.mainText {
-  width: 100%;
-
-  .imgBox {
-    width: 100%;
-    height: 220px;
+  & > .title {
+    margin-left: -25px;
   }
-}
-</style>
 
-<style lang="scss">
-#awards {
-  .swiper-wrapper {
+  & > .awardslide {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 
-    ::v-deep .swiper-container-free-mode > .swiper-wrapper {
-      -webkit-transition-timing-function: linear;
-      /*之前是ease-out*/
-      -moz-transition-timing-function: linear;
-      -ms-transition-timing-function: linear;
-      -o-transition-timing-function: linear;
-      transition-timing-function: linear;
-      margin: 0 auto;
+    & > div:nth-child(1) {
+      width: 224px;
+      height: 224px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > div:nth-child(1) {
+        font-family: 'Metropolis';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        color: #8ad8dd;
+      }
+
+      & > div:nth-child(2) {
+        font-family: 'Noto Sans HK';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height, or 133% */
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #515151;
+      }
     }
   }
+}
 
-  .swiper-slide {
-  }
+:deep(.swiper) {
+  width: 224px;
+  overflow: initial;
+  margin-left: auto;
+  margin-right: 0;
 }
 </style>

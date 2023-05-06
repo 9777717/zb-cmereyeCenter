@@ -77,7 +77,6 @@ export default {
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  justify-content: start;
 }
 
 .mainText {
