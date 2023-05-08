@@ -2,3 +2,41 @@
   font-family: 'ButterTangXin';
   src: url('./ButterTangXin.ttf');
 }
+@font-face {
+  font-family: 'DINCondensed';
+  src: url('./DIN-Condensed.ttf');
+}
+@font-face {
+  font-family: 'NotoSansCJKtc';
+  src: url('./NotoSansCJK-Bold.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansCJKtc';
+  src: url('./SourceHanSerifCN-Bold.otf');
+}
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-ExtraLight');
+}
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-Heavy');
+}
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-Light');
+}
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-Medium.otf');
+}
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-Regular.otf');
+}
+
+@font-face {
+  font-family: 'SourceHanSerifCN';
+  src: url('./SourceHanSerifCN-SemiBold.otf');
+}
