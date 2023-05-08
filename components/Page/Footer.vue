@@ -3,6 +3,7 @@
 <template>
   <div class="footerTem">
     <PageContentBackToTop />
+    <PageContentOnlinContact />
     <footer class="bg-blue-900">
       <section class="footer">
         <div>©2023 希瑪林順潮眼科中心 版權所有</div>

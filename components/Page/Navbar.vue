@@ -15,12 +15,12 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.index.home'),
-    route: { name: 'index' },
+    route: { name: 'index' }, // 首页
   },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
-    route: { name: 'about-us' },
+    route: { name: 'about-us' }, // 关于我们
     childMenuList: [
       {
         type: 'link',
@@ -42,29 +42,44 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.medical_team.medical_team'),
-    route: { name: 'medical-team' },
-    // childMenuList: [
-    //   {
-    //     type: 'link',
-    //     text: t('pages.about_us.center_profile'),
-    //     route: { name: 'about-us-add' },
-    //   },
-    //   {
-    //     type: 'link',
-    //     text: t('pages.about_us.development_course'),
-    //     route: { name: 'about-us-add' },
-    //   },
-    //   {
-    //     type: 'link',
-    //     text: t('pages.about_us.enterprise_vision'),
-    //     route: { name: 'about-us-add' },
-    //   },
-    // ],
+    route: { name: 'medical-team' }, // 醫療團隊
   },
   {
     type: 'link',
     text: t('pages.medical_service.medical_service'),
-    route: { name: 'medical-service' },
+    route: { name: 'medical-service' }, // 醫療服務
+    childMenuList: [
+      {
+        type: 'link',
+        text: t('pages.medical_service.cataract'),
+        route: { name: 'medical-service-cataract' }, // 白內障
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.glaucoma'),
+        route: { name: 'medical-service-glaucoma' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.xerophthalmia'),
+        route: { name: 'medical-service-xerophthalmia' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.muscae_volitantes'),
+        route: { name: 'medical-service-muscaeVolitantes' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.conjunctivitis'),
+        route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.maculopathy'),
+        route: { name: 'medical-service-maculopathy' },
+      },
+    ],
   },
   {
     type: 'link',
@@ -135,6 +150,14 @@ const porps = defineProps({
 <style lang="scss" scoped>
 a.router-link-exact-active {
   color: #ffffff;
+}
+
+a.router-link-active {
+  font-weight: bold;
+  background: #ffa88c;
+  width: 100%;
+  height: 100%;
+  line-height: 3.5;
 }
 
 .headerTem {
@@ -238,7 +261,6 @@ a.router-link-exact-active {
 .child {
   background: rgba(41, 88, 163, 0.82);
   width: 130px;
-  height: 145px;
   position: absolute;
   right: -130px;
   top: 0;

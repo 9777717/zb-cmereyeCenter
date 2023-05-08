@@ -3,8 +3,11 @@
 definePageMeta({
   layout: 'page',
 })
+useHead(() => ({
+  title: 'glaucoma',
+}))
 </script>
 
 <template>
-  <div>out</div>
+  <div>glaucoma-青光眼</div>
 </template>
