@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   // modules
   modules: [
     'unplugin-icons/nuxt',
+    '@element-plus/nuxt',
     '@intlify/nuxt3',
     '@pinia/nuxt',
     '@nuxt/content',
