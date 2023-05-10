@@ -626,6 +626,8 @@ const meetArr = [
         </div>
       </div>
     </div>
+    <!-- 公共底部表单 -->
+    <FormFooterInfo />
   </div>
 </template>
 <style lang="scss" scoped>
