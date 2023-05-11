@@ -70,10 +70,17 @@ const resetForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return
   formEl.resetFields()
 }
+
+defineProps({
+  bg: {
+    type: [String, Object],
+    default: undefined,
+  },
+})
 </script>
 
 <template>
-  <div class="form">
+  <div class="form" :style="bg">
     <div>
       <div>希瑪眼科重視每一位客人的問題，隨時發問。</div>
       <div>請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。</div>

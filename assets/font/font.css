@@ -40,3 +40,8 @@
   font-family: 'SourceHanSerifCN';
   src: url('./SourceHanSerifCN-SemiBold.otf');
 }
+
+@font-face {
+  font-family: 'AcuminConcept-SemiboldItalic';
+  src: url('./FontsFree-Net-Acumin-Pro-Semibold.ttf');
+}
