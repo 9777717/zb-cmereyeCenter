@@ -45,3 +45,30 @@
   font-family: 'AcuminConcept-SemiboldItalic';
   src: url('./FontsFree-Net-Acumin-Pro-Semibold.ttf');
 }
+
+@font-face {
+  font-family: 'Metropolis-Regular';
+  src: url('./Metropolis-Regular.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansTC-Medium';
+  src: url('./NotoSansTC-Medium.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansTC-Regular';
+  src: url('./NotoSansTC-Regular.otf');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Medium';
+  src: url('./NotoSansHK-Medium-Alphabetic.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Regular';
+  src: url('./NotoSansHK-Regular.otf');
+}
+
+
