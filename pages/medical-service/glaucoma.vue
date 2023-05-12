@@ -1897,7 +1897,7 @@ const guardAgainst = [
         & > div:nth-child(2) {
           width: 384px;
 
-          & > div {
+          & > div > div {
             height: 106px;
             display: flex;
             align-items: center;
@@ -1919,7 +1919,7 @@ const guardAgainst = [
         & > div:nth-child(3) {
           width: 640px;
 
-          & > div {
+          & > div > div {
             height: 106px;
             display: flex;
             align-items: center;
@@ -1943,6 +1943,7 @@ const guardAgainst = [
       & > div:nth-child(1) {
         border-bottom: none;
         background-color: #5bbaac;
+        height: 106px;
 
         & > div:nth-child(1) {
           color: #fff;
@@ -1950,6 +1951,17 @@ const guardAgainst = [
 
         & > div:nth-child(2) {
           border: none;
+          border-left: 1px solid #939c9b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          font-family: 'NotoSansHK-Medium';
+          font-size: 26px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 38px;
+          letter-spacing: 0px;
 
           & > div {
             border: none;
@@ -1960,8 +1972,15 @@ const guardAgainst = [
         & > div:nth-child(3) {
           width: 640px;
           display: flex;
-          justify-content: center;
           align-items: center;
+          justify-content: center;
+          border-left: 1px solid #939c9b;
+          font-family: 'NotoSansHK-Regular';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 34px;
+          letter-spacing: 0px;
 
           & > div {
             border: none;
@@ -1991,9 +2010,42 @@ const guardAgainst = [
       & > div:nth-child(4) {
         border-bottom: none;
 
+        & > div {
+          height: 106px;
+          border-top: 1px solid #939c9b;
+          border-left: 1px solid #939c9b;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
         & > div:nth-child(1) {
           background-color: #a1d7cf;
           color: #fff;
+        }
+
+        & > div:nth-child(2) {
+          width: 384px;
+          font-family: 'NotoSansHK-Medium';
+          font-size: 26px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 38px;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+
+        & > div:nth-child(3) {
+          width: 640px;
+          font-family: 'NotoSansHK-Regular';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 34px;
+          letter-spacing: 0px;
+          color: #515151;
+          justify-content: flex-start;
+          padding-left: 48px;
         }
       }
     }
