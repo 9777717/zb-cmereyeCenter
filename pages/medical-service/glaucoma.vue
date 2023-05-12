@@ -74,6 +74,210 @@ const worsen = [
     text: '晚期',
   },
 ]
+const congenital = [
+  {
+    id: '1',
+    title: '流淚或畏光',
+    text: '是早期角膜水腫伴有角膜刺激症狀所致。',
+    img: 'https://static.cmereye.com/imgs/2023/05/14c6771dcd344e18.png',
+  },
+  {
+    id: '2',
+    title: '角膜混濁',
+    text: '早期為角膜上皮及上皮下水腫，引起輕度乳白色混濁。出現水腫時，混濁會更加明顯。當眼壓降低後，角膜可變透明，若不及時治療，會呈永久性混濁。',
+    img: 'https://static.cmereye.com/imgs/2023/05/d63a41599833af19.png',
+  },
+  {
+    id: '3',
+    title: '角膜擴大',
+    text: '角膜水腫後，眼壓繼續升高，眼球壁受壓力作用而擴張，使整個眼球不斷增大，角膜直徑可達12mm左右。',
+    img: 'https://static.cmereye.com/imgs/2023/05/422b6918adf2680a.png',
+  },
+]
+const kind = [
+  {
+    id: '1',
+    text: '虹膜睫狀體炎繼發性青光眼',
+    detail:
+      '急性虹膜睫狀體炎一般不引起眼壓升高，只有當發炎滲出物增加，房水中蛋白質含量較高時，才會引起眼壓中度升高。反覆發作的慢性虹膜睫狀體炎，會引起廣泛的瞳孔後黏連或周邊虹膜前黏連，房水排出受阻，以致眼壓升高。此病一般發病突然，典型眼壓升高的青光眼症狀，包括：霧視、虹視、頭痛，甚至噁心、嘔吐等，而症狀消失後大多無損視功能和視野。但反覆發作，長期眼壓升高，也可能對視神經造成永久損傷，從而出現不可逆轉的視力損失。',
+    img: 'https://static.cmereye.com/imgs/2023/05/3fed11ffa5e46d5a.png',
+  },
+  {
+    id: '2',
+    text: '青光眼睫狀體炎綜合症',
+    detail:
+      '患者多為中年男性。其典型症狀為突發性眼壓升高，伴有輕度睫狀體炎，即角膜後壁有大塊的脂肪沉著物，前房有少量浮游物。會反覆發作，一般無自覺症狀，僅有輕度不適，如眼壓升高會導致角膜水腫，出現視物模糊。',
+    img: '',
+  },
+  {
+    id: '3',
+    text: '皮質類固醇性青光眼',
+    detail:
+      '長期局部滴用或全身使用皮質類固醇，可引致眼壓升高。其臨床表現與原發性開角型青光眼相似，一般需詳細了解過去用藥情況以明確診斷。',
+    img: '',
+  },
+  {
+    id: '4',
+    text: '白內障所致繼發性青光眼',
+    detail:
+      '患上老年性白內障，晶體可變得腫脹，體積增加，把虹膜推前。因此，眼睛前房較淺、房角較窄的患者，如患上白內障，前房可能進一步變淺，甚至導致房角關閉，以致類似急性閉角型青光眼的急性眼壓升高。部分病人也可能因膨脹的晶體阻擋瞳孔，發生瞳孔阻滯，房水在後方無法流出，導致眼壓急劇升高，引發急性青光眼。',
+    img: '',
+  },
+  {
+    id: '5',
+    text: '外傷性眼內積血繼發性青光眼',
+    detail: [
+      '(1)眼睛受外傷後，大量前房積血或小梁損傷會引致早期急性眼壓升高。紅血球堆積在小梁網上、血塊阻塞瞳孔或小梁網炎性水腫，使房水排出受阻。',
+      '(2)玻璃體積血、分解的血紅蛋白被巨噬細胞吞噬或紅血球退化，可阻塞小梁網，令房水外流受阻而引致眼壓升高，引起溶血性青光眼或血影細胞性青光眼。',
+    ],
+    img: '',
+  },
+  {
+    id: '6',
+    text: '房角後退性青光眼',
+    detail:
+      '眼球鈍挫傷後，房角劈裂，以致傷後早期、數月、甚至十多年後發生眼壓升高，前房角鏡檢查可見房角異常增寬。房角劈裂者應定期檢查，測量眼壓。',
+    img: '',
+  },
+  {
+    id: '7',
+    text: '新生血管性青光眼',
+    detail: [
+      '由於視網膜中央靜脈阻塞、糖尿病視網膜病變等血管紊亂疾病而引起新生血管性青光眼。此類青光眼的病因複雜，病理變化主要是眼後節缺氧或局部眼前節缺氧，引起虹膜上及房角小梁網處形成纖維血管膜，導致周邊虹膜前黏連，阻礙房水排出，令眼壓升高。',
+      '其一般症狀為眼痛、眼脹、眼壓升高等。眼壓可達至60mmHg以上，常伴角膜水腫、虹膜新生血管、瞳孔緣色素外翻、房角內不同程度的周邊前黏連等。',
+    ],
+    img: '',
+  },
+  {
+    id: '8',
+    text: '睫狀環阻滯性青光眼',
+    detail:
+      '又名惡性青光眼，是一種繼發性閉角型青光眼。多見於內眼治療，特別是接受青光眼過濾性治療後，由於睫狀環較小，晶狀體相對較大，當睫狀體水腫充血，睫狀環便進一步變小，與晶體赤道部或玻璃體相貼，以致後房水不能進入前房，向後逆流而積存在玻璃體腔內。同時，虹膜和晶狀體被向前推擠，使前房變淺，房角關閉。若一隻眼出現睫狀環阻滯性青光眼，另一隻眼也有發生類似疾病的風險。',
+    img: '',
+  },
+]
+// 动态展示先天性青光眼模块
+const action = ref(0)
+const kindSelect = (i: number) => {
+  action.value = i
+}
+// 青光眼高危人群
+const crowd = [
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/5d8b794484273cbe.png',
+    text: '年齡超過40歲\n(60歲以上患青光眼\n機會增加6倍)',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/5064b37ea2ec1236.png',
+    text: '有青光眼家族遺傳病史',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/600a6ca70769660d.png',
+    text: '深近視或嚴重遠視',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/bc02fc8bab322c86.png',
+    text: '患糖尿病',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/3d99ac56efdb9366.png',
+    text: '高血壓患者',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/8a90c79bd5022fbf.png',
+    text: '患心血管疾病',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/1a86d61e93b74709.png',
+    text: '眼曾受過眼創傷',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/03f99346138862e1.png',
+    text: '長期使用類固醇',
+  },
+]
+// 青光眼主要診斷方法
+const diagnostic = [
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/e399ba83f28b9812.png',
+    text: '眼壓檢查',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/bdc9d326f529ed42.png',
+    text: '視野測試',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/997263179e4722a8.png',
+    text: '裂隙燈檢查',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/2c03b6364947c4c5.png',
+    text: '前房角接觸鏡檢查',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/b098baaa8a2cbdbc.png',
+    text: '視神經損傷程度的測試',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/05/eef206cba5ab506d.png',
+    text: '檢查眼部房水排出\n是否通暢',
+  },
+]
+// 青光眼的治療
+const treat = [
+  {
+    remedy: '治療方案',
+    name: '治療名稱',
+    range: '適用範圍',
+  },
+  {
+    remedy: '常用治療方案',
+    name: [
+      '小梁切除術',
+      '非穿透性小梁術',
+      '導管植入術',
+      '睫狀體冷凝術或光凝術',
+    ],
+    range: [
+      '應用廣泛，適用於所有需要做眼外濾過術的青光眼',
+      '適用於開角型青光眼，特別是晚期視野缺損嚴重的\n患者；對閉角型青光眼不適用',
+      '適用於前2種方案效果不佳或惡性青光眼患者',
+      '適用於青光眼末期或多次青光眼手術失敗後',
+    ],
+  },
+  {
+    remedy: '急性青光眼\n治療方案',
+    name: ['前房穿刺術', '激光虹膜邊緣成形術'],
+    range: [
+      '適用於急性青光眼的嚴重症狀',
+      '作為預防急性青光眼發作的傳統治療方式',
+    ],
+  },
+  {
+    remedy: '合併白內障\n的手術方案',
+    name: '白內障手術',
+    range: '適用於有白內障的青光眼患者',
+  },
+]
+// 青光眼预防
+const guardAgainst = [
+  {
+    id: '1',
+    text: '定期安排眼科檢查',
+    detail: '建議40歲以上或青光眼高危人士，每半年或一年接受一次眼睛檢查。',
+  },
+  {
+    id: '2',
+    text: '預防深近視',
+    detail: '從小開始養成良好用眼習慣，以免深近視或遠視增加青光眼風險。',
+  },
+  {
+    id: '3',
+    text: '保持良好生活習慣',
+    detail:
+      '糖尿病、高血壓、心血管疾病都可能增加患青光眼機會。戒煙戒酒、充分睡眠、均衡飲食、多做帶氧運動，可有效預防青光眼。',
+  },
+]
 </script>
 
 <template>
@@ -194,7 +398,7 @@ const worsen = [
       </div>
       <!-- 青光眼的類別 -->
       <div>
-        <!-- 1 -->
+        <!-- 慢性青光眼 -->
         <div>
           <div>
             <div>
@@ -215,7 +419,7 @@ const worsen = [
             </div>
           </div>
         </div>
-        <!-- 2 -->
+        <!-- 急性青光眼 -->
         <div>
           <div>
             <div>
@@ -236,13 +440,269 @@ const worsen = [
             </div>
           </div>
         </div>
+        <!-- button -->
         <div>
           <div>急性青光眼會突然來襲</div>
           <div>立即致電預約診治</div>
         </div>
-        <div></div>
-        <div></div>
+        <!-- 先天性青光眼 -->
+        <div>
+          <div>
+            <div>
+              <div>Congenital Glaucoma</div>
+              <div>先天性青光眼</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              大多於嬰兒出生時已出現，因胚胎期前房角發育異常，阻礙了房水排出所致的遺傳性眼病。這種青光眼有1/3機會出現於胎兒期，即出生後已有典型表徵；2/3機會出現於出生後，其發生率為1:5000-10000。初生時已有青光眼的表徵，稱為嬰幼兒型青光眼；3歲以上及30歲以下人士稱為青少年型青光眼。
+            </div>
+            <div>
+              雖然青光眼是不可逆轉的眼疾，但可以抑制和控制。先天性青光眼不易被發現，而且如果發現較晚則不易治療。
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18px"
+                height="24px"
+              >
+                <image
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="24px"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              先天性青光眼症狀
+            </div>
+            <div>
+              <div v-for="item in congenital" :key="item.id">
+                <div>
+                  <span>{{ item.id }}</span
+                  >{{ item.title }}
+                </div>
+                <div>
+                  <div>{{ item.text }}</div>
+                </div>
+                <div><img :src="item.img" :alt="item.title" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 原發性青光眼 -->
+        <div>
+          <div>
+            <div>
+              <div>Primary Glaucoma</div>
+              <div>原發性青光眼</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                原發性青光眼是胎兒在發育過程中，前房角發育出現異常，小樑網管系統不能發揮有效房水引流功能，而導致眼壓升高。
+              </div>
+              <div>
+                由於這是一種慢性眼疾，可導致不可逆轉的視功能障礙。多數確診的病人需長期治療，如不堅持治療，視野範圍會越來越小，最終引致失明。原發性青光眼可能受家族遺傳影響，如患者本身有深近視或家人曾經患有青光眼均會增加患上青光眼的風險。
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/05/380b332741dacedb.png"
+                alt="眼科急症"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 先天性青光眼 -->
+        <div>
+          <div>
+            <div>
+              <div>Secondary Glaucoma</div>
+              <div>繼發性青光眼</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              有別於其他青光眼，繼發性青光眼是由於某些眼病或全身疾病影響或破壞了正常房水循環，使房水排出受阻而引起眼壓升高，病因比較明確。
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18px"
+                height="24px"
+              >
+                <image
+                  x="0px"
+                  y="0px"
+                  width="18px"
+                  height="24px"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
+                />
+              </svg>
+              先天性青光眼症狀
+            </div>
+            <div>
+              <div v-for="(item, index) in kind" :key="item.id">
+                <div
+                  :class="{ bground: index === action }"
+                  @click="kindSelect(index)"
+                >
+                  <span :class="{ font: index === action }">{{ item.id }}</span>
+                  <div>{{ item.text }}</div>
+                </div>
+                <div :class="{ action: index === action }">
+                  <div>
+                    <div v-if="Array.isArray(item.detail)">
+                      <div v-for="(ele, index) in item.detail" :key="index">
+                        {{ ele }}
+                      </div>
+                    </div>
+                    <div v-else>{{ item.detail }}</div>
+                  </div>
+                  <div v-if="item.img">
+                    <img :src="item.img" :alt="item.text" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- 青光眼高危人士 -->
+      <div>
+        <div>青光眼高危人士</div>
+        <div>
+          <div v-for="(item, index) in crowd" :key="index">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="277px"
+                height="321px"
+              >
+                <path
+                  fill-rule="evenodd"
+                  stroke="rgb(158, 213, 209)"
+                  stroke-width="4px"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  fill="none"
+                  d="M137.493,316.812 L1.985,238.344 L1.985,81.409 L137.493,2.942 L273.000,81.409 L273.000,238.344 L137.493,316.812 Z"
+                />
+              </svg>
+              <img :src="item.img" :alt="item.text" />
+            </div>
+            <div>{{ item.text }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- 青光眼主要診斷方法 -->
+      <div>
+        <div>青光眼主要診斷方法</div>
+        <div>
+          臨床診斷時，患者會接受一系列的檢查及測試，包括︰視力檢查、視野檢查、眼底檢查、眼壓測度等，眼科專科醫生還會根據患者過去的病史及家族史診斷，常見的檢查如下︰
+        </div>
+        <div>
+          <div v-for="(item, index) in diagnostic" :key="index">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="392px"
+                height="387px"
+              >
+                <defs>
+                  <filter id="Filter_0">
+                    <feFlood
+                      flood-color="rgb(161, 215, 207)"
+                      flood-opacity="1"
+                      result="floodOut"
+                    />
+                    <feComposite
+                      operator="atop"
+                      in="floodOut"
+                      in2="SourceGraphic"
+                      result="compOut"
+                    />
+                    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                  </filter>
+                </defs>
+                <g filter="url(#Filter_0)">
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(178, 223, 216)"
+                    d="M391.396,234.665 C391.396,342.651 303.856,386.376 195.870,386.376 C87.883,386.376 0.343,342.651 0.343,234.665 C0.343,231.136 0.442,227.629 0.627,224.146 C0.455,223.099 0.343,222.033 0.343,220.938 L0.343,20.553 C0.343,9.644 9.186,0.800 20.093,0.800 L371.641,0.800 C382.548,0.800 391.391,9.644 391.391,20.553 L391.391,220.938 C391.391,222.025 391.280,223.084 391.111,224.123 C391.296,227.614 391.396,231.128 391.396,234.665 Z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div>
+              <div><img :src="item.img" :alt="item.text" /></div>
+              <div>{{ item.text }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 青光眼的治療 -->
+      <div>
+        <div>青光眼的治療</div>
+        <div>
+          <div>
+            治療青光眼以有效控制眼壓、防止或減慢青光眼的惡化為目標。眼科專科醫生初期一般以藥物控制青光眼病情，達至保護及保持病人的視神經組織及其功能，減少視神經進一步的損害。
+          </div>
+          <div>
+            若用藥後仍無法控制病情，醫生會考慮採用手術治療，以平衡房水的生成和排出，使眼球壓力降至安全水平，達致目標眼壓。常見手術方案如下︰
+          </div>
+        </div>
+        <div>
+          <div v-for="(item, index) in treat" :key="index">
+            <div>{{ item.remedy }}</div>
+            <div>
+              <div v-if="Array.isArray(item.name)">
+                <div v-for="(con, index) in item.name" :key="index">
+                  {{ con }}
+                </div>
+              </div>
+              <div v-else>{{ item.name }}</div>
+            </div>
+            <div>
+              <div v-if="Array.isArray(item.range)">
+                <div v-for="(con, index) in item.range" :key="index">
+                  {{ con }}
+                </div>
+              </div>
+              <div v-else>{{ item.range }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 預防青光眼 -->
+      <div>
+        <div>預防青光眼</div>
+        <div>
+          <div>
+            <div v-for="item in guardAgainst" :key="item.id">
+              <div>
+                <div>{{ item.id }}</div>
+                <div>{{ item.text }}</div>
+              </div>
+              <div>{{ item.detail }}</div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
+              alt="預防青光眼"
+            />
+          </div>
+        </div>
+      </div>
+
       <!-- 青光眼誤區 -->
       <div>
         <div>
@@ -298,6 +758,7 @@ const worsen = [
   margin: auto 300px;
   position: relative;
 
+  // 青光眼
   & > div:nth-child(1) {
     position: absolute;
     top: 202px;
@@ -337,6 +798,7 @@ const worsen = [
     }
   }
 
+  // 什麼是青光眼？
   & > div:nth-child(2) {
     padding-top: 689px;
 
@@ -369,6 +831,7 @@ const worsen = [
     }
   }
 
+  // 青光眼成因
   & > div:nth-child(3) {
     & > div:nth-child(1) {
       text-align: center;
@@ -456,6 +919,7 @@ const worsen = [
     }
   }
 
+  // 青光眼的症狀
   & > div:nth-child(4) {
     & > div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
@@ -634,6 +1098,7 @@ const worsen = [
     }
   }
 
+  // 青光眼的類別
   & > div:nth-child(5) {
     & > div:nth-child(1) {
       display: flex;
@@ -787,6 +1252,7 @@ const worsen = [
     }
 
     & > div:nth-child(3) {
+      cursor: pointer;
       margin: 100px auto;
 
       width: 508px;
@@ -808,8 +1274,828 @@ const worsen = [
       align-items: center;
       justify-content: center;
     }
+
+    & > div:nth-child(4) {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+
+      & > div:nth-child(1) {
+        width: 446px;
+        height: 340px;
+        background-image: linear-gradient(#a1d7cf, #a1d7cf),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        border-radius: 10px;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: 1;
+        writing-mode: vertical-lr;
+
+        & > div {
+          margin-top: 50px;
+          margin-left: 37px;
+
+          & > div:nth-child(1) {
+            font-family: 'Metropolis-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+
+          & > div:nth-child(2) {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 42px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 2px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        width: 1163px;
+        background-image: linear-gradient(#ffffff, #ffffff),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        z-index: 3;
+        position: relative;
+        right: 0;
+        // 子元素布局
+        display: flex;
+        flex-direction: column;
+        padding: 60px 44px 77px 41px;
+
+        & > div:nth-child(1),
+        div:nth-child(2) {
+          margin-right: 26px;
+
+          font-family: 'NotoSansHK-Regular';
+          font-size: 23px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 2;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+
+        & > div:nth-child(2) {
+          margin-top: 30px;
+        }
+
+        & > div:nth-child(3) {
+          & > svg {
+            margin-right: 10px;
+          }
+
+          margin-top: 69px;
+          display: flex;
+          align-items: center;
+
+          font-family: 'NotoSansHK-Bold';
+          font-size: 30px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 0px;
+          color: #58a49f;
+        }
+
+        & > div:nth-child(4) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-left: 16px;
+          margin-top: 45px;
+
+          & > div {
+            width: 312px;
+
+            & > div:nth-child(1) {
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              margin-bottom: 8px;
+
+              font-family: 'NotoSansHK-Medium';
+              font-size: 26px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 36px;
+              letter-spacing: 0px;
+              color: #515151;
+
+              & > span {
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background: #63a89f;
+                text-align: center;
+                margin-right: 10px;
+
+                font-family: 'SourceHanSansCN-Bold';
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 36px;
+                letter-spacing: 0px;
+                color: #ffffff;
+              }
+            }
+
+            & > div:nth-child(2)::before {
+              content: '';
+              width: 100%;
+              border-top: 1px solid #959595;
+              display: block;
+            }
+
+            & > div:nth-child(2) {
+              width: 100%;
+              height: 200px;
+              font-family: 'NotoSansHK-Regular';
+              font-size: 24px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 36px;
+              letter-spacing: -2px;
+              color: #515151;
+            }
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(5) {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+
+      & > div:nth-child(1) {
+        width: 446px;
+        height: 340px;
+        background-image: linear-gradient(#a1d7cf, #a1d7cf),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        border-radius: 10px;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: 1;
+        writing-mode: vertical-lr;
+
+        & > div {
+          margin-top: 50px;
+          margin-left: 37px;
+
+          & > div:nth-child(1) {
+            font-family: 'Metropolis-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+
+          & > div:nth-child(2) {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 42px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 2px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        width: 1163px;
+        height: 350px;
+        background-image: linear-gradient(#ffffff, #ffffff),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        z-index: 3;
+        position: relative;
+        right: 0;
+        // 子元素布局
+        display: flex;
+        align-items: center;
+        padding: 36px 40px;
+
+        & > div:nth-child(1) {
+          width: calc(100% - 280px);
+          margin-right: 26px;
+
+          font-family: 'NotoSansHK-Regular';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 44px;
+          letter-spacing: 0px;
+          color: #515151;
+
+          & > div:nth-child(2) {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(6) {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+
+      & > div:nth-child(1) {
+        width: 446px;
+        height: 340px;
+        background-image: linear-gradient(#a1d7cf, #a1d7cf),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        border-radius: 10px;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: 1;
+        writing-mode: vertical-lr;
+
+        & > div {
+          margin-top: 50px;
+          margin-left: 37px;
+
+          & > div:nth-child(1) {
+            font-family: 'Metropolis-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+
+          & > div:nth-child(2) {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 42px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 2px;
+            color: #ffffff;
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        width: 1163px;
+        background-image: linear-gradient(#ffffff, #ffffff),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        z-index: 3;
+        position: relative;
+        right: 0;
+        // 子元素布局
+        display: flex;
+        flex-direction: column;
+        padding: 60px 44px 77px 41px;
+
+        & > div:nth-child(1) {
+          margin-right: 26px;
+
+          font-family: 'NotoSansHK-Regular';
+          font-size: 23px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 2;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+
+        & > div:nth-child(2) {
+          margin-bottom: 48px;
+
+          & > svg {
+            margin-right: 10px;
+          }
+
+          margin-top: 57px;
+          display: flex;
+          align-items: center;
+
+          font-family: 'NotoSansHK-Bold';
+          font-size: 30px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 0px;
+          color: #58a49f;
+        }
+
+        & > div:nth-child(3) {
+          & > div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            position: relative;
+
+            & > div:nth-child(1) {
+              &.bground {
+                background: #63a89f;
+                color: #fff;
+              }
+
+              cursor: pointer;
+              width: 427px;
+              margin-right: 32px;
+              position: relative;
+              // background: #79b2ae;
+              display: flex;
+              font-family: 'NotoSansHK-Bold';
+              font-size: 26px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 38px;
+              letter-spacing: 0px;
+              padding: 18px 0 18px 20px;
+              color: #79b2ae;
+
+              & > span {
+                margin-right: 10px;
+                border-radius: 50%;
+                background: #fff;
+                width: 40px;
+                height: 40px;
+                background-color: #79b2ae;
+                font-family: 'NotoSansHK-Bold';
+                font-size: 29px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 38px;
+                letter-spacing: 0px;
+                color: #fff;
+                text-align: center;
+              }
+
+              .font {
+                background: #fff;
+                color: #63a89f;
+              }
+            }
+
+            & > div:nth-child(2) {
+              width: 590px;
+              position: absolute;
+              right: 30px;
+              font-family: 'NotoSansHK-Regular';
+              font-size: 24px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 38px;
+              letter-spacing: 0px;
+              color: #515151;
+              border-left: 7px solid #79b2ae;
+              padding-left: 11px;
+
+              & > div > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  margin-bottom: 30px;
+                }
+              }
+
+              & > div:nth-child(2) {
+                position: absolute;
+              }
+
+              display: none;
+
+              &.action {
+                display: block;
+              }
+            }
+
+            .bground::after {
+              content: '';
+              width: 22px;
+              height: 25px;
+              background-image: url('https://static.cmereye.com/imgs/2023/05/9ead3fb225e93049.png');
+              position: absolute;
+              right: -32px;
+            }
+          }
+
+          & > div:nth-child(7) {
+            & > div:nth-child(2) {
+              bottom: 0;
+            }
+          }
+
+          & > div:nth-child(8) {
+            & > div:nth-child(2) {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
   }
 
+  // 青光眼高危人士
+  & > div:nth-child(6) {
+    & > div:nth-child(1) {
+      font-family: 'NotoSansHK-Bold';
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #58a49f;
+      text-align: center;
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 87px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & > div:nth-child(n + 4) {
+        margin-top: 42px;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & > img {
+            z-index: 6;
+            position: absolute;
+          }
+        }
+
+        & > div:nth-child(2) {
+          margin-top: 15px;
+
+          width: 252px;
+          white-space: pre-wrap;
+          text-align: center;
+
+          font-family: 'NotoSansHK-Regular';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 36px;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+      }
+    }
+  }
+
+  // 青光眼主要診斷方法
+  & > div:nth-child(7) {
+    & > div:nth-child(1) {
+      font-family: 'NotoSansHK-Bold';
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #58a49f;
+      text-align: center;
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 74px;
+
+      font-family: 'NotoSansHK-Regular';
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 38px;
+      letter-spacing: 0px;
+      color: #515151;
+    }
+
+    & > div:nth-child(3) {
+      margin-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & > div:nth-child(n + 3) {
+        margin-bottom: 52px;
+      }
+
+      & > div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        & > div:nth-child(2) {
+          position: absolute;
+          z-index: 5;
+
+          & > div:nth-child(1) {
+            padding: 18px 17px;
+          }
+
+          & > div:nth-child(2) {
+            font-family: 'NotoSansHK-Bold';
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+            white-space: pre-wrap;
+          }
+        }
+      }
+    }
+  }
+
+  // 青光眼的治療
+  & > div:nth-child(8) {
+    & > div:nth-child(1) {
+      font-family: 'NotoSansHK-Bold';
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #58a49f;
+      text-align: center;
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 75px;
+      font-family: 'NotoSansHK-Regular';
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 38px;
+      letter-spacing: -1px;
+      color: #515151;
+
+      & > div:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+
+    & > div:nth-child(3) {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      border: 1px solid #939c9b;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #939c9b;
+
+        & > div:nth-child(1) {
+          width: 314px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          white-space: pre-wrap;
+
+          font-family: 'NotoSansHK-Regular';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 38px;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+
+        & > div:nth-child(2) {
+          width: 384px;
+
+          & > div {
+            height: 106px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: pre-wrap;
+
+            font-family: 'NotoSansHK-Medium';
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 0px;
+            color: #515151;
+            border-top: 1px solid #939c9b;
+            border-left: 1px solid #939c9b;
+          }
+        }
+
+        & > div:nth-child(3) {
+          width: 640px;
+
+          & > div {
+            height: 106px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 48px;
+            white-space: pre-wrap;
+
+            font-family: 'NotoSansHK-Regular';
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 0px;
+            color: #515151;
+            border-top: 1px solid #939c9b;
+            border-left: 1px solid #939c9b;
+          }
+        }
+      }
+
+      & > div:nth-child(1) {
+        border-bottom: none;
+        background-color: #5bbaac;
+
+        & > div:nth-child(1) {
+          color: #fff;
+        }
+
+        & > div:nth-child(2) {
+          border: none;
+
+          & > div {
+            border: none;
+            color: #fff;
+          }
+        }
+
+        & > div:nth-child(3) {
+          width: 640px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & > div {
+            border: none;
+            color: #fff;
+          }
+        }
+      }
+
+      & > div:nth-child(2) {
+        border-bottom: none;
+
+        & > div:nth-child(1) {
+          background-color: #6bc8ba;
+          color: #fff;
+        }
+      }
+
+      & > div:nth-child(3) {
+        border-bottom: none;
+
+        & > div:nth-child(1) {
+          background-color: #7dcec2;
+          color: #fff;
+        }
+      }
+
+      & > div:nth-child(4) {
+        border-bottom: none;
+
+        & > div:nth-child(1) {
+          background-color: #a1d7cf;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // 預防青光眼
+  & > div:nth-child(9) {
+    & > div:nth-child(1) {
+      font-family: 'NotoSansHK-Bold';
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 36px;
+      letter-spacing: 0px;
+      color: #58a49f;
+      text-align: center;
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 150px;
+      display: flex;
+      justify-content: space-between;
+
+      & > div:nth-child(1) {
+        width: 43%;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 48px;
+
+          & > div:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+
+            & > div:nth-child(1) {
+              width: 108px;
+              height: 108px;
+              border-radius: 50%;
+              border: 6px solid #57a39f;
+              background: #fff;
+              z-index: 5;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              font-family: 'NotoSansHK-Bold';
+              font-size: 55px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 38px;
+              letter-spacing: 0px;
+              color: #57a39f;
+            }
+
+            & > div:nth-child(2) {
+              width: 588px;
+              height: 85px;
+              background-color: #91cfca;
+              border-radius: 85px;
+              position: absolute;
+              left: 18px;
+              bottom: 0;
+              padding-left: 130px;
+
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+
+              font-family: 'NotoSansHK-Regular';
+              font-size: 49px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 38px;
+              letter-spacing: 1px;
+              color: #ffffff;
+            }
+          }
+
+          & > div:nth-child(2) {
+            margin-top: 30px;
+            font-family: 'NotoSansHK-Regular';
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 31px;
+            letter-spacing: 0px;
+            color: #515151;
+          }
+        }
+
+        & > div:nth-child(3) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // 青光眼誤區
   & > div:last-child {
     margin-top: 260px;
 
@@ -853,6 +2139,10 @@ const worsen = [
   & > div:nth-child(2) {
     margin: 0;
   }
+}
+
+.action {
+  display: block;
 }
 
 .dow {
