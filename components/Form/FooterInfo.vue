@@ -76,6 +76,10 @@ defineProps({
     type: [String, Object],
     default: undefined,
   },
+  co: {
+    type: [String, Object],
+    default: undefined,
+  },
 })
 </script>
 
@@ -137,7 +141,7 @@ defineProps({
         </el-form-item>
       </el-form>
     </div>
-    <div @click="submitForm(ruleFormRef)">提交</div>
+    <div :style="co" @click="submitForm(ruleFormRef)">提交</div>
   </div>
 </template>
 

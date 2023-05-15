@@ -291,10 +291,10 @@ const guardAgainst = [
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/0d9057551d0ce216.png"
+            src="https://static.cmereye.com/imgs/2023/05/fb9e1aefd79e4a11.png"
           />
           <img
-            src="https://static.cmereye.com/imgs/2023/05/e5ca6db9212362ab.png"
+            src="https://static.cmereye.com/imgs/2023/05/c3b55dfc41770b3d.png"
           />
         </div>
       </div>
@@ -749,6 +749,7 @@ const guardAgainst = [
     </div>
     <FormFooterInfo
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+      :co="`color:${'#bbe0d5;'}`"
     />
   </div>
 </template>
@@ -781,20 +782,23 @@ const guardAgainst = [
       line-height: 1;
       font-stretch: normal;
       letter-spacing: 12px;
-      color: #63bacc;
+      color: #9bcfcc;
 
       & > div:nth-child(2) {
         font-family: 'DINCondensed';
         display: block;
         font-size: 140px;
-        letter-spacing: 2px;
+        letter-spacing: 13px;
       }
     }
 
     & > div:nth-child(2) {
-      left: -192px;
+      left: -334px;
       right: 0;
       top: 120px;
+      & > img:nth-child(2) {
+        margin-top: 5px;
+      }
     }
   }
 

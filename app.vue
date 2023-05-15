@@ -34,3 +34,20 @@ useHead({
     </Body>
   </Html>
 </template>
+<style lang="scss">
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffffff;
+}
+
+/*定义滚动条轨道：内阴影+圆角*/
+::-webkit-scrollbar-track {
+  background-color: #cacaca;
+}
+
+/*定义滑块：内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+</style>
