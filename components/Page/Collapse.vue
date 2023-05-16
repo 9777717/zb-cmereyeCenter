@@ -58,7 +58,6 @@ const props = defineProps({
 :deep(.el-collapse-item__header) {
   border-top: 2px solid var(--subassembly-color);
   justify-content: space-between;
-  border-bottom: 2px solid var(--subassembly-color);
   height: 150px;
   font-family: 'NotoSansHK-Medium';
   font-size: 28px;
@@ -69,8 +68,11 @@ const props = defineProps({
   color: var(--subassembly-color);
 }
 
-:deep(.el-collapse-item__wrap) {
+:deep(.el-collapse-item):last-child {
   border-bottom: 2px solid var(--subassembly-color);
+}
+:deep(.el-collapse-item__wrap) {
+  // border-bottom: 2px solid var(--subassembly-color);
 }
 
 :deep(.el-collapse-item__header.is-active) {
