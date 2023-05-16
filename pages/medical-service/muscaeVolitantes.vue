@@ -736,16 +736,16 @@ const meetArr: any = [
             }
 
             & > div:nth-child(2) {
-              margin-top: 120px;
+              margin-top: 110px;
             }
           }
-        }
-      }
 
-      & > div:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+          & > div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
       }
     }
 
@@ -1085,8 +1085,8 @@ const meetArr: any = [
               font-size: 22px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 21px;
-              letter-spacing: 0px;
+              line-height: 1.6;
+              letter-spacing: -1px;
               color: #515151;
             }
           }

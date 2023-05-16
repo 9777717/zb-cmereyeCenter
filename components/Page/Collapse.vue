@@ -56,6 +56,7 @@ const props = defineProps({
   border-top: 2px solid var(--subassembly-color);
 }
 :deep(.el-collapse-item__header) {
+  border-top: 2px solid var(--subassembly-color);
   justify-content: space-between;
   border-bottom: 2px solid var(--subassembly-color);
   height: 150px;
