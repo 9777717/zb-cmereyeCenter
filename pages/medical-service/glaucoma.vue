@@ -725,6 +725,7 @@ const guardAgainst = [
         <div>
           <PageCollapse
             :answer="meetArr"
+            :downarr="'glaucoma'"
             :style="{ '--subassembly-color': '#58a49f' }"
           />
         </div>

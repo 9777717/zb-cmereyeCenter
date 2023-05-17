@@ -16,6 +16,10 @@ const props = defineProps({
     type: [Object],
     default: undefined,
   },
+  downarr: {
+    type: String,
+    default: 'downArrow',
+  },
 })
 </script>
 
@@ -29,8 +33,11 @@ const props = defineProps({
       <template #title>
         {{ item.title }}
         <i
+          class="down"
           :class="
-            judgeActive(`${index + 1}`) !== -1 ? 'downArrow2' : 'downArrow1'
+            judgeActive(`${index + 1}`) !== -1
+              ? `${props.downarr}2`
+              : `${props.downarr}1`
           "
         ></i>
       </template>
@@ -52,9 +59,11 @@ const props = defineProps({
 :deep(.el-collapse) {
   border-top: 2px solid var(--subassembly-color);
 }
+
 :deep(.el-collapse-item__header.is-active) {
   border-top: 2px solid var(--subassembly-color);
 }
+
 :deep(.el-collapse-item__header) {
   border-top: 2px solid var(--subassembly-color);
   justify-content: space-between;
@@ -71,6 +80,7 @@ const props = defineProps({
 :deep(.el-collapse-item):last-child {
   border-bottom: 2px solid var(--subassembly-color);
 }
+
 :deep(.el-collapse-item__wrap) {
   // border-bottom: 2px solid var(--subassembly-color);
 }
@@ -128,20 +138,52 @@ const props = defineProps({
   display: none;
 }
 
-// 修改el本身 折叠icon
-.downArrow1 {
+.down {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(../../assets/images/+.png);
   background-repeat: round;
 }
 
+// 修改el本身 折叠icon
+.downArrow1 {
+  background-image: url(../../assets/images/+.png);
+}
+
 .downArrow2 {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
   background-image: url(../../assets/images/-.png);
-  background-repeat: round;
+}
+
+// cataract 白内障
+.cataract1 {
+  background-image: url(../../assets/images/+.png);
+}
+
+.cataract2 {
+  background-image: url(../../assets/images/+.png);
+}
+
+.maculopathy1 {
+  background-image: url(../../assets/images/+maculopathy.png);
+}
+
+.maculopathy2 {
+  background-image: url(../../assets/images/-maculopathy.png);
+}
+
+.muscaeVolitantes1 {
+  background-image: url(../../assets/images/+muscaeVolitantes.png);
+}
+
+.muscaeVolitantes2 {
+  background-image: url(../../assets/images/-muscaeVolitantes.png);
+}
+
+.glaucoma1 {
+  background-image: url(../../assets/images/+glaucoma.png);
+}
+
+.glaucoma2 {
+  background-image: url(../../assets/images/-glaucoma.png);
 }
 </style>

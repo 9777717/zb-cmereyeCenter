@@ -569,6 +569,7 @@ const meetArr = [
         <div>
           <PageCollapse
             :answer="meetArr"
+            :downarr="'cataract'"
             :style="{ '--subassembly-color': '#66c5dc' }"
           />
         </div>
