@@ -766,7 +766,7 @@ const serviceNavigation = [
       </div>
     </div>
     <div>
-      <MedicalService :service-navigation="serviceNavigation" />
+      <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载和公共脚部 -->
     <!-- 下载 -->

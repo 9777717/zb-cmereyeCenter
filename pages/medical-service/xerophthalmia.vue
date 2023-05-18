@@ -715,7 +715,7 @@ const serviceNavigation = [
     </div>
     <!-- 右侧边导航 -->
     <div>
-      <MedicalService :service-navigation="serviceNavigation" />
+      <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

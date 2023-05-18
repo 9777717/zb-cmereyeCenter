@@ -17,7 +17,7 @@ const props = defineProps({
   },
 })
 </script>
-
+<!-- 右侧边导航，文件夹起名的时候 格局小了 rightSidesNavigation -->
 <template>
   <div>
     <div class="anchor seat">
