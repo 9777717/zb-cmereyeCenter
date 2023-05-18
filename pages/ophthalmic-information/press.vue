@@ -8,4 +8,12 @@ useHead(() => ({
 }))
 </script>
 
-<template>新聞推薦- press</template>
+<template>
+  新聞推薦- press
+  <div>
+    <div>111</div>
+    <div>
+      <PageInformation />
+    </div>
+  </div>
+</template>

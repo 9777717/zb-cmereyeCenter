@@ -19,7 +19,7 @@ const props = defineProps({
 </script>
 <!-- 右侧边导航，文件夹起名的时候 格局小了 rightSidesNavigation -->
 <template>
-  <div>
+  <div class="navigation">
     <div class="anchor seat">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +57,10 @@ const props = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
+.navigation {
+  position: relative;
+  z-index: 999;
+}
 .seat {
   position: fixed;
   right: 50px;

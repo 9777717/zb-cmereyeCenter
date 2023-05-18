@@ -8,4 +8,11 @@ useHead(() => ({
 }))
 </script>
 
-<template>健康資訊 -- healthInfo</template>
+<template>
+  <div>
+    <div>健康資訊 -- healthInfo</div>
+    <div>
+      <PageInformation />
+    </div>
+  </div>
+</template>

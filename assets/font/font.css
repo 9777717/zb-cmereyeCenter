@@ -87,3 +87,28 @@
   font-family: "DINCondensed-Bold";
   src: url('./DIN-Condensed-Bold.ttf');
 }
+
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url('./Metropolis-Bold.otf');
+}
+
+@font-face {
+  font-family: "Metropolis-Light";
+  src: url('./Metropolis-Light.otf');
+}
+
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url('./Metropolis-Medium.otf');
+}
+
+@font-face {
+  font-family: "Metropolis-Thin";
+  src: url('./Metropolis-Thin.otf');
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url('./Metropolis.otf');
+}
