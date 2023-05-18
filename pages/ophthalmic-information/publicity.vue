@@ -4,8 +4,8 @@ definePageMeta({
   layout: 'page',
 })
 useHead(() => ({
-  title: '醫生小教室',
+  title: '護眼宣傳片',
 }))
 </script>
 
-<template>医生小课堂-- index</template>
+<template>護眼宣傳片 --- publicity</template>

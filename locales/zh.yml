@@ -86,6 +86,12 @@ pages:
     # : 屈光矯視
   ophthalmic_information:
     ophthalmic_information: 眼科資訊
+    ophthalmic_class: 醫生小教室
+    ophthalmic_publicity: 護眼宣傳片
+    ophthalmic_little_theatre: 希瑪小劇場
+    ophthalmic_press: 新聞推薦
+    ophthalmic_article: 文章推薦
+    ophthalmic_message: 健康資訊
   process_cost:
     process_cost: 流程及費用
   talent_recruitment:

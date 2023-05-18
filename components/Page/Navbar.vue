@@ -82,9 +82,41 @@ const menus = computed((): IMenuItem[] => [
     ],
   },
   {
-    type: 'link',
+    type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
     route: { name: 'ophthalmic-information' },
+    childMenuList: [
+      {
+        type: 'link', // 医生小课堂
+        text: t('pages.ophthalmic_information.ophthalmic_class'),
+        route: { name: 'ophthalmic-information' },
+      },
+      {
+        type: 'link', // 護眼宣傳片
+        text: t('pages.ophthalmic_information.ophthalmic_publicity'),
+        route: { name: 'ophthalmic-information-publicity' },
+      },
+      {
+        type: 'link', // 希瑪小劇場
+        text: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
+        route: { name: 'ophthalmic-information-littleTheatre' },
+      },
+      {
+        type: 'link', // 文章推薦
+        text: t('pages.ophthalmic_information.ophthalmic_press'),
+        route: { name: 'ophthalmic-information-press' },
+      },
+      {
+        type: 'link', // 文章推薦
+        text: t('pages.ophthalmic_information.ophthalmic_article'),
+        route: { name: 'ophthalmic-information-article' },
+      },
+      {
+        type: 'link', // 健康資訊
+        text: t('pages.ophthalmic_information.ophthalmic_message'),
+        route: { name: 'ophthalmic-information-healthInfo' },
+      },
+    ],
   },
   {
     type: 'link',
