@@ -130,6 +130,33 @@ const meetArr: any = [
       '病理性的飛蚊症在療程中可能會使用消炎用的眼藥水，以助患者紓緩不適；但是退化性的飛蚊症與發炎無關，因此點眼藥水用處不大。',
   },
 ]
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '成因',
+    anchorLink: '/medical-service/muscaeVolitantes#factor',
+  },
+  {
+    anchorName: '類別',
+    anchorLink: '/medical-service/muscaeVolitantes#category',
+  },
+  {
+    anchorName: '高危人士',
+    anchorLink: '/medical-service/muscaeVolitantes#highRisk',
+  },
+  {
+    anchorName: '治療',
+    anchorLink: '/medical-service/muscaeVolitantes#means',
+  },
+  {
+    anchorName: '預防方法',
+    anchorLink: '/medical-service/muscaeVolitantes#prevent',
+  },
+  {
+    anchorName: '常見問題',
+    anchorLink: '/medical-service/muscaeVolitantes#faq',
+  },
+]
 </script>
 
 <template>
@@ -183,7 +210,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 飛蚊症成因 -->
-      <div>
+      <div id="factor">
         <div>
           <PageNavTitle :title="'飛蚊症成因'" />
         </div>
@@ -198,7 +225,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 飛蚊症種類 -->
-      <div>
+      <div id="category">
         <PageNavTitle :title="'飛蚊症種類'" />
         <div>
           <div>良性飛蚊</div>
@@ -264,7 +291,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 飛蚊症高危人士 -->
-      <div>
+      <div id="highRisk">
         <PageNavTitle :title="'飛蚊症高危人士'" />
         <div>
           <div>以下人士較大機會患上飛蚊症︰</div>
@@ -279,7 +306,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 飛蚊症治療 -->
-      <div>
+      <div id="means">
         <PageNavTitle :title="'飛蚊症治療'" />
         <div>
           <!-- 飛蚊症治療 -->
@@ -396,7 +423,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 預防飛蚊症 -->
-      <div>
+      <div id="prevent">
         <PageNavTitle :title="'預防飛蚊症'" />
         <div>
           <div>
@@ -415,7 +442,7 @@ const meetArr: any = [
         </div>
       </div>
       <!-- 常見問題 -->
-      <div>
+      <div id="faq">
         <PageNavTitle :title="'常見問題'" />
         <div>
           <PageCollapse
@@ -425,6 +452,9 @@ const meetArr: any = [
           />
         </div>
       </div>
+    </div>
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

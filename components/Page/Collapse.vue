@@ -160,7 +160,7 @@ const props = defineProps({
 }
 
 .cataract2 {
-  background-image: url(../../assets/images/+.png);
+  background-image: url(../../assets/images/-.png);
 }
 
 .maculopathy1 {

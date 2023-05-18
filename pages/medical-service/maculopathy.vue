@@ -146,6 +146,33 @@ const prevent = [
     text: '眼睛長時間受紫外線照射，可能增加患上黃斑病變機會。',
   },
 ]
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '症狀',
+    anchorLink: '/medical-service/maculopathy#sympotm',
+  },
+  {
+    anchorName: '自我檢查',
+    anchorLink: '/medical-service/maculopathy#inspect',
+  },
+  {
+    anchorName: '乾性黃斑病變',
+    anchorLink: '/medical-service/maculopathy#able_maculopathy',
+  },
+  {
+    anchorName: '濕性黃班病變',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy',
+  },
+  {
+    anchorName: '預防方法',
+    anchorLink: '/medical-service/maculopathy#prevent',
+  },
+  {
+    anchorName: '常見問題',
+    anchorLink: '/medical-service/maculopathy#faq',
+  },
+]
 </script>
 
 <template>
@@ -176,7 +203,7 @@ const prevent = [
         </div>
       </div>
       <!-- 黃斑病變的症狀 -->
-      <div>
+      <div id="sympotm">
         <div class="maculopathy_color_title">黃斑病變的症狀</div>
         <div>
           <div v-for="(item, i) in sympotm" :key="i">
@@ -186,7 +213,7 @@ const prevent = [
         </div>
       </div>
       <!-- 黃斑病變自我檢查 -->
-      <div>
+      <div id="inspect">
         <div class="maculopathy_color_title">黃斑病變自我檢查</div>
         <div>
           <div>
@@ -332,7 +359,7 @@ const prevent = [
       <!-- 老年黃斑病變分為乾性和濕性︰ -->
       <div>
         <div class="maculopathy_color_title">老年黃斑病變分為乾性和濕性︰</div>
-        <div>
+        <div id="able_maculopathy">
           <div>乾性黃斑病變</div>
           <div>
             <div>
@@ -351,7 +378,7 @@ const prevent = [
             </div>
           </div>
         </div>
-        <div>
+        <div id="wet_maculopathy">
           <div>濕性黃班病變</div>
           <div>
             <div>
@@ -416,7 +443,7 @@ const prevent = [
         </div>
       </div>
       <!-- 預防黃斑病變 -->
-      <div>
+      <div id="prevent">
         <div class="maculopathy_color_title">預防黃斑病變</div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
@@ -426,7 +453,7 @@ const prevent = [
           </div>
         </div>
       </div>
-      <div>
+      <div id="faq">
         <div class="maculopathy_color_title">常見問題</div>
         <div>
           <PageCollapse
@@ -436,6 +463,9 @@ const prevent = [
           />
         </div>
       </div>
+    </div>
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

@@ -251,6 +251,37 @@ const prevent = [
 useHead(() => ({
   title: '乾眼症',
 }))
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '症状',
+    anchorLink: '/medical-service/xerophthalmia#xerophthalmiaType',
+  },
+  {
+    anchorName: '成因',
+    anchorLink: '/medical-service/xerophthalmia#factor',
+  },
+  {
+    anchorName: '類別',
+    anchorLink: '/medical-service/xerophthalmia#category',
+  },
+  {
+    anchorName: '高危人士',
+    anchorLink: '/medical-service/xerophthalmia#highRisk',
+  },
+  {
+    anchorName: '診斷',
+    anchorLink: '/medical-service/xerophthalmia#fourthly',
+  },
+  {
+    anchorName: '治療',
+    anchorLink: '/medical-service/xerophthalmia#means',
+  },
+  {
+    anchorName: '預防方法',
+    anchorLink: '/medical-service/xerophthalmia#prevent',
+  },
+]
 </script>
 
 <template>
@@ -290,7 +321,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 乾眼症症狀 -->
-      <div>
+      <div id="xerophthalmiaType">
         <div>乾眼症症狀</div>
         <div>
           <div v-for="(item, index) in xerophthalmiaType" :key="index">
@@ -301,7 +332,7 @@ useHead(() => ({
         <div>已出現以上症狀？立即聯絡我們</div>
       </div>
       <!-- 乾眼症成因 -->
-      <div>
+      <div id="factor">
         <div>乾眼症成因</div>
         <div>
           <div>
@@ -341,7 +372,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 乾眼症的類別 -->
-      <div>
+      <div id="category">
         <div>乾眼症的類別</div>
         <div>
           <div v-for="(item, index) in category" :key="index">
@@ -371,7 +402,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 患乾眼症的高危人士 -->
-      <div>
+      <div id="highRisk">
         <div>患乾眼症的高危人士</div>
         <div>
           <div v-for="(item, index) in highRisk" :key="index">
@@ -398,7 +429,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 乾眼症的診斷 -->
-      <div>
+      <div id="fourthly">
         <div>乾眼症的診斷</div>
         <div>
           <div>
@@ -464,7 +495,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 乾眼症治療 -->
-      <div>
+      <div id="means">
         <div>乾眼症治療</div>
         <div>
           乾眼症治療的主要目的是減輕乾眼症狀，增加眼球表面的淚液，增加淚水分泌和減少淚水蒸發。乾眼症是慢性疾病，需長期接受治療，並需要患者配合去改變生活習慣。
@@ -672,7 +703,7 @@ useHead(() => ({
         </div>
       </div>
       <!-- 預防乾眼症 -->
-      <div>
+      <div id="prevent">
         <div>預防乾眼症</div>
         <div>
           <div v-for="(item, index) in prevent" :key="index">
@@ -681,6 +712,10 @@ useHead(() => ({
           </div>
         </div>
       </div>
+    </div>
+    <!-- 右侧边导航 -->
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

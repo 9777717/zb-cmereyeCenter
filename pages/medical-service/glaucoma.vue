@@ -12,6 +12,7 @@ const backgd = [
   '-webkit-linear-gradient(to right, #bbe0d5, #97d2c9);',
   'linear-gradient(to right, #bbe0d5, #97d2c9);',
 ]
+// FQA问答
 const meetArr = [
   {
     title: 'Q：青光眼是老年人專屬，年輕人好少機會患上嗎？',
@@ -278,6 +279,41 @@ const guardAgainst = [
       '糖尿病、高血壓、心血管疾病都可能增加患青光眼機會。戒煙戒酒、充分睡眠、均衡飲食、多做帶氧運動，可有效預防青光眼。',
   },
 ]
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '成因',
+    anchorLink: '/medical-service/glaucoma#factor',
+  },
+  {
+    anchorName: '症状',
+    anchorLink: '/medical-service/glaucoma#symptoms',
+  },
+  {
+    anchorName: '類別',
+    anchorLink: '/medical-service/glaucoma#category',
+  },
+  {
+    anchorName: '高危人士',
+    anchorLink: '/medical-service/glaucoma#crowd',
+  },
+  {
+    anchorName: '診斷',
+    anchorLink: '/medical-service/glaucoma#diagnostic',
+  },
+  {
+    anchorName: '治療',
+    anchorLink: '/medical-service/glaucoma#treat',
+  },
+  {
+    anchorName: '預防方法',
+    anchorLink: '/medical-service/glaucoma#guardAgainst',
+  },
+  {
+    anchorName: '常見問題',
+    anchorLink: '/medical-service/glaucoma#faq',
+  },
+]
 </script>
 
 <template>
@@ -306,14 +342,13 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 青光眼成因 -->
-      <div>
+      <div id="factor">
         <div>青光眼成因</div>
         <div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/b687a1dc53df1fe7.png"
               alt="青光眼成因"
-              srcset=""
             />
           </div>
           <div>
@@ -331,7 +366,7 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 青光眼的症狀 -->
-      <div>
+      <div id="symptoms">
         <div>青光眼的症狀</div>
         <div>
           <div>
@@ -397,7 +432,7 @@ const guardAgainst = [
         <div></div>
       </div>
       <!-- 青光眼的類別 -->
-      <div>
+      <div id="category">
         <!-- 慢性青光眼 -->
         <div>
           <div>
@@ -574,7 +609,7 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 青光眼高危人士 -->
-      <div>
+      <div id="crowd">
         <div>青光眼高危人士</div>
         <div>
           <div v-for="(item, index) in crowd" :key="index">
@@ -602,7 +637,7 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 青光眼主要診斷方法 -->
-      <div>
+      <div id="diagnostic">
         <div>青光眼主要診斷方法</div>
         <div>
           臨床診斷時，患者會接受一系列的檢查及測試，包括︰視力檢查、視野檢查、眼底檢查、眼壓測度等，眼科專科醫生還會根據患者過去的病史及家族史診斷，常見的檢查如下︰
@@ -649,7 +684,7 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 青光眼的治療 -->
-      <div>
+      <div id="treat">
         <div>青光眼的治療</div>
         <div>
           <div>
@@ -682,7 +717,7 @@ const guardAgainst = [
         </div>
       </div>
       <!-- 預防青光眼 -->
-      <div>
+      <div id="guardAgainst">
         <div>預防青光眼</div>
         <div>
           <div>
@@ -702,9 +737,8 @@ const guardAgainst = [
           </div>
         </div>
       </div>
-
       <!-- 青光眼誤區 -->
-      <div>
+      <div id="faq">
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -730,6 +764,9 @@ const guardAgainst = [
           />
         </div>
       </div>
+    </div>
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载和公共脚部 -->
     <!-- 下载 -->
@@ -797,6 +834,7 @@ const guardAgainst = [
       left: -334px;
       right: 0;
       top: 120px;
+
       & > img:nth-child(2) {
         margin-top: 5px;
       }

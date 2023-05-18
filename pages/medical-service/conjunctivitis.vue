@@ -144,6 +144,33 @@ const prevent = [
     text: '季節交替時，注意小心接觸花粉、塵蟎、動物毛屑等有機會引起結膜炎的過敏原。',
   },
 ]
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '症狀',
+    anchorLink: '/medical-service/conjunctivitis#symptom',
+  },
+  {
+    anchorName: '類別',
+    anchorLink: '/medical-service/conjunctivitis#kind',
+  },
+  {
+    anchorName: '傳播途徑',
+    anchorLink: '/medical-service/conjunctivitis#approach',
+  },
+  {
+    anchorName: '高危人士',
+    anchorLink: '/medical-service/conjunctivitis#highRisk',
+  },
+  {
+    anchorName: '治療',
+    anchorLink: '/medical-service/conjunctivitis#means',
+  },
+  {
+    anchorName: '預防方法',
+    anchorLink: '/medical-service/conjunctivitis#prevent',
+  },
+]
 </script>
 
 <template>
@@ -183,7 +210,7 @@ const prevent = [
         </div>
       </div>
       <!-- 結膜炎症狀 -->
-      <div>
+      <div id="symptom">
         <div class="conjun_text_color">結膜炎症狀</div>
         <div>
           <div v-for="(item, index) in symptom" :key="index">
@@ -199,7 +226,7 @@ const prevent = [
         </div>
       </div>
       <!-- 結膜炎種類 -->
-      <div>
+      <div id="kind">
         <div class="conjun_text_color">結膜炎種類</div>
         <div>
           <div v-for="(item, index) in kind" :key="index">
@@ -228,7 +255,7 @@ const prevent = [
         </div>
       </div>
       <!-- 傳播途徑 -->
-      <div>
+      <div id="approach">
         <div class="conjun_text_color">傳播途徑</div>
         <div>
           結膜炎分為傳染性及非傳染性。病毒性和細菌性結膜炎屬傳染性，傳染力極高，主要透過與患者親密接觸，或間接接觸到受污染的物品均可致病。
@@ -267,7 +294,7 @@ const prevent = [
         </div>
       </div>
       <!-- 高危人士 -->
-      <div>
+      <div id="highRisk">
         <div class="conjun_text_color">高危人士</div>
         <div>
           <div>任何人士都有機會感染結膜炎，但以下人士較為高危：</div>
@@ -280,7 +307,7 @@ const prevent = [
         </div>
       </div>
       <!-- 結膜炎治療 -->
-      <div>
+      <div id="means">
         <div class="conjun_text_color">結膜炎治療</div>
         <div>
           <div>
@@ -304,7 +331,7 @@ const prevent = [
         </div>
       </div>
       <!-- 預防結膜炎 -->
-      <div>
+      <div id="prevent">
         <div class="conjun_text_color">預防結膜炎</div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
@@ -314,6 +341,9 @@ const prevent = [
           </div>
         </div>
       </div>
+    </div>
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

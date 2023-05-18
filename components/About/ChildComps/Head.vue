@@ -174,7 +174,7 @@ const leaveActive = () => {
 }
 
 .anchor {
-  top: 510px;
+  top: 310px;
 
   & > div {
     background: #fff;

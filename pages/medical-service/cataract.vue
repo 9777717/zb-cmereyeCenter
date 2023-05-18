@@ -6,7 +6,7 @@ definePageMeta({
 useHead(() => ({
   title: '白内障｜醫療服務｜眼科專科醫生',
 }))
-
+// 白內障形成的成因
 const fatorArr = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5b88e2c3d5a24717.png',
@@ -176,6 +176,7 @@ const handleChange = (val: string) => {
 const judgeActive = (data: any) => {
   return activeNames.value.indexOf(data)
 }
+// 折叠问答
 const meetArr = [
   {
     title: 'Q：白內障成熟時才能接受治療？',
@@ -215,6 +216,33 @@ const meetArr = [
       '游水：為預防感染，建議術後1周進行',
       '其他面部或牙科治療：建議最少術後1周進行，安全起見可以1月後進行',
     ],
+  },
+]
+// 内部导航
+const serviceNavigation = [
+  {
+    anchorName: '成因',
+    anchorLink: '/medical-service/cataract#fatorArr',
+  },
+  {
+    anchorName: '症状',
+    anchorLink: '/medical-service/cataract#symptomArr',
+  },
+  {
+    anchorName: '治療',
+    anchorLink: '/medical-service/cataract#surgeryArr',
+  },
+  {
+    anchorName: '人工晶體須知',
+    anchorLink: '/medical-service/cataract#iclArr',
+  },
+  {
+    anchorName: '術後注意事項',
+    anchorLink: '/medical-service/cataract#announcementsArr',
+  },
+  {
+    anchorName: '常見問題',
+    anchorLink: '/medical-service/cataract#faq',
   },
 ]
 </script>
@@ -264,7 +292,7 @@ const meetArr = [
         <div>別再遲疑！立即查詢白內障治療方案</div>
       </div>
       <!-- 白內障形成的成因 -->
-      <div>
+      <div id="fatorArr">
         <div>
           <div>
             <div>為什麼會患上白內障？</div>
@@ -292,7 +320,7 @@ const meetArr = [
         </div>
       </div>
       <!-- 白內障會引起哪些症狀？ -->
-      <div>
+      <div id="symptomArr">
         <div>
           <div>
             <div>白內障會引起哪些症狀？</div>
@@ -349,7 +377,7 @@ const meetArr = [
         </div>
       </div>
       <!-- 白內障治療，手術 -->
-      <div>
+      <div id="surgeryArr">
         <div>
           <div>
             <div>白內障治療，手術最快20分鐘，快速恢復正常視力！</div>
@@ -491,7 +519,7 @@ const meetArr = [
         <div>立即預約見醫生了解手術！</div>
       </div>
       <!-- 選擇人工晶體須知 -->
-      <div>
+      <div id="iclArr">
         <div>
           <div>
             <div>選擇人工晶體須知</div>
@@ -543,7 +571,7 @@ const meetArr = [
         <div>哪一款人工晶體適合你？</div>
       </div>
       <!-- 白內障的術後注意事項 -->
-      <div>
+      <div id="announcementsArr">
         <div>
           <div>
             <div>白內障的術後注意事項</div>
@@ -560,7 +588,7 @@ const meetArr = [
         </div>
       </div>
       <!-- 你認識白內障手術嗎？ -->
-      <div>
+      <div id="faq">
         <div>
           <div>
             <div>你認識白內障手術嗎？</div>
@@ -574,6 +602,9 @@ const meetArr = [
           />
         </div>
       </div>
+    </div>
+    <div>
+      <MedicalService :service-navigation="serviceNavigation" />
     </div>
     <!-- 下载 -->
     <div class="dow">

@@ -73,7 +73,7 @@ definePageMeta({
   justify-content: center;
   position: fixed;
   right: 83px;
-  top: 560px;
+  top: 590px;
 
   .contactItem {
     color: white;
