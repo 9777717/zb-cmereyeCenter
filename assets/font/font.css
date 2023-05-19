@@ -1,114 +1,70 @@
 @font-face {
   font-family: 'ButterTangXin';
-  src: url('./ButterTangXin.ttf');
+  src: url('https://static.cmereye.com/static/loffee/font/ButterTangXin-Italic.woff2');
 }
 
 @font-face {
   font-family: 'DINCondensed';
-  src: url('./DIN-Condensed.ttf');
-}
-
-@font-face {
-  font-family: 'NotoSansCJKtc';
-  src: url('./NotoSansCJK-Bold.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansCJKtc';
-  src: url('./SourceHanSerifCN-Bold.otf');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-ExtraLight');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-Heavy');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-Light');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-Medium.otf');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-Regular.otf');
-}
-
-@font-face {
-  font-family: 'SourceHanSerifCN';
-  src: url('./SourceHanSerifCN-SemiBold.otf');
-}
-
-@font-face {
-  font-family: 'AcuminConcept-SemiboldItalic';
-  src: url('./FontsFree-Net-Acumin-Pro-Semibold.ttf');
-}
-
-@font-face {
-  font-family: 'Metropolis-Regular';
-  src: url('./Metropolis-Regular.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansTC-Medium';
-  src: url('./NotoSansTC-Medium.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansTC-Regular';
-  src: url('./NotoSansTC-Regular.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansHK-Medium';
-  src: url('./NotoSansHK-Medium-Alphabetic.ttf');
-}
-
-@font-face {
-  font-family: 'NotoSansHK-Regular';
-  src: url('./NotoSansHK-Regular.otf');
-}
-
-@font-face {
-  font-family: 'NotoSansCJKtc-Bold';
-  src: url('./NotoSansTC-Bold.otf');
+  src: url('https://static.cmereye.com/static/loffee/font/DIN-Condensed.woff');
 }
 
 @font-face {
   font-family: "DINCondensed-Bold";
-  src: url('./DIN-Condensed-Bold.ttf');
+  src: url('https://static.cmereye.com/static/loffee/font/DIN-Condensed-Bold.woff');
+}
+
+/* @font-face {
+  font-family: 'DINCondensed';
+  src: url('./DIN-Condensed.woff');
+}
+
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: url('./DIN-Condensed-Bold.woff');
+}                
+
+
+@font-face {
+  font-family: 'AcuminConcept-SemiboldItalic';
+  src: url('./AcuminPro-Semibold.woff2');
+} */
+
+@font-face {
+  font-family: 'AcuminConcept-SemiboldItalic';
+  src: url('https://static.cmereye.com/static/loffee/font/AcuminPro-Semibold.woff2');
+}
+
+@font-face {
+  font-family: 'Metropolis-Regular';
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Medium';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Regular';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK-Regular.woff2');
 }
 
 @font-face {
   font-family: "Metropolis-Bold";
-  src: url('./Metropolis-Bold.otf');
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-Bold.woff2');
 }
 
-@font-face {
-  font-family: "Metropolis-Light";
-  src: url('./Metropolis-Light.otf');
-}
-
-@font-face {
+/* @font-face {
   font-family: "Metropolis-Medium";
-  src: url('./Metropolis-Medium.otf');
-}
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-Medium.woff2');
+} */
 
 @font-face {
-  font-family: "Metropolis-Thin";
-  src: url('./Metropolis-Thin.otf');
+  font-family: "Metropolis-SemiBold";
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-SemiBold.woff2');
 }
 
 @font-face {
   font-family: "Metropolis";
-  src: url('./Metropolis.otf');
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis.woff2');
 }
