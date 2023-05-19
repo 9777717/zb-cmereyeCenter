@@ -1,8 +1,14 @@
 <script lang="ts" setup>
+import { useRoute } from 'vue-router'
 // composable
+const route = useRoute()
 const { t } = useLang()
 definePageMeta({
   layout: 'page',
+})
+
+onMounted(() => {
+  console.log(route, '456')
 })
 </script>
 

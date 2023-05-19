@@ -24,6 +24,11 @@
 }
 
 @font-face {
+  font-family: 'NotoSansHK';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK.woff2');
+}
+
+@font-face {
   font-family: 'NotoSansHK-Medium';
   src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK-Medium.woff2');
 }

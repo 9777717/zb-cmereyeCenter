@@ -161,7 +161,7 @@ const porps = defineProps({
             >
             <div
               v-if="item.childMenuList && item.childMenuList.length"
-              class="child"
+              :class="porps.rt === 'index' ? 'child' : 'childpage'"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
                 <Anchor
@@ -291,6 +291,50 @@ a.router-link-active {
 }
 
 .child {
+  background: #ffffffbf;
+  width: 130px;
+  position: absolute;
+  right: -130px;
+  top: 0;
+
+  & > div {
+    height: 49px;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    /* identical to box height, or 250% */
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #2958a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > div > a::after {
+    position: absolute;
+    left: 26px;
+    content: '';
+    width: 76px;
+    margin-top: -8px;
+    border: 0.75px solid #2958a3;
+  }
+
+  & > div:nth-child(1) > a::after {
+    content: '';
+    width: 0;
+    border: 0;
+  }
+
+  & > div:hover {
+    background: #ffffff80;
+  }
+}
+
+.childpage {
   background: rgba(41, 88, 163, 0.82);
   width: 130px;
   position: absolute;
@@ -339,6 +383,14 @@ a.router-link-active {
 }
 
 .child {
+  display: none;
+}
+
+.navigtion > div:hover .childpage {
+  display: block;
+}
+
+.childpage {
   display: none;
 }
 </style>
