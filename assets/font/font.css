@@ -13,22 +13,6 @@
   src: url('https://static.cmereye.com/static/loffee/font/DIN-Condensed-Bold.woff');
 }
 
-/* @font-face {
-  font-family: 'DINCondensed';
-  src: url('./DIN-Condensed.woff');
-}
-
-@font-face {
-  font-family: "DINCondensed-Bold";
-  src: url('./DIN-Condensed-Bold.woff');
-}                
-
-
-@font-face {
-  font-family: 'AcuminConcept-SemiboldItalic';
-  src: url('./AcuminPro-Semibold.woff2');
-} */
-
 @font-face {
   font-family: 'AcuminConcept-SemiboldItalic';
   src: url('https://static.cmereye.com/static/loffee/font/AcuminPro-Semibold.woff2');
