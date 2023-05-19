@@ -53,7 +53,7 @@ const props = defineProps({
     :space-between="30"
     :centered-slides="false"
     :navigation="true"
-    :modules="[Pagination]"
+    :modules="[Pagination, Navigation]"
     class="mySwiper"
   >
     <swiper-slide
