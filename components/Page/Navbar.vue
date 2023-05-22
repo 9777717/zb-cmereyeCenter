@@ -122,6 +122,18 @@ const menus = computed((): IMenuItem[] => [
     type: 'link',
     text: t('pages.process_cost.process_cost'),
     route: { name: 'process-and-cost' },
+    childMenuList: [
+      {
+        type: 'link', // 費用一覽
+        text: t('pages.process_cost.cost'),
+        route: { name: 'process-and-cost' },
+      },
+      {
+        type: 'link', // 就診流程
+        text: t('pages.process_cost.process'),
+        route: { name: 'process-and-cost-process' },
+      },
+    ],
   },
   {
     type: 'link',

@@ -94,6 +94,8 @@ pages:
     ophthalmic_message: 健康資訊
   process_cost:
     process_cost: 流程及費用
+    cost: 費用一覽
+    process: 就診流程
   talent_recruitment:
     talent_recruitment: 人才招聘
   contact_us:

@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+const route = useRoute()
+const toRouter = ref(route)
+
 // compiler macro
 const serviceNavigation = [
   {
