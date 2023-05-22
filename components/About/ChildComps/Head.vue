@@ -22,11 +22,11 @@ const anchorList = [
   },
   {
     anchorName: '費用一覽',
-    anchorLink: '/Costs',
+    anchorLink: '/process-and-cost',
   },
   {
     anchorName: '就診流程',
-    anchorLink: '/Costs#process',
+    anchorLink: '/process-and-cost#process',
   },
 ]
 const acIdex = ref(-1)

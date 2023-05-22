@@ -144,6 +144,18 @@ const menus = computed((): IMenuItem[] => [
     type: 'link',
     text: t('pages.contact_us.contact_us'),
     route: { name: 'contact-us' },
+    childMenuList: [
+      {
+        type: 'link', // 診所資料
+        text: t('pages.contact_us.contact_us'),
+        route: { name: 'contact-us' },
+      },
+      {
+        type: 'link', // 電子預約表格
+        text: t('pages.contact_us.appointmentForm'),
+        route: { name: 'contact-us-appointmentForm' },
+      },
+    ],
   },
 ])
 const porps = defineProps({
@@ -155,7 +167,17 @@ const porps = defineProps({
 </script>
 
 <template>
-  <div :class="porps.rt === 'index' ? 'headerTem' : 'headerTemPage'">
+  <div
+    :class="[
+      porps.rt === 'index' ? 'headerTem' : 'headerTemPage',
+      porps.rt === 'process-and-cost' ? 'headerTemCost' : 'headerTem',
+      porps.rt === 'ophthalmic-information-healthInfo'
+        ? 'headerTemOphthalmic'
+        : 'headerTem',
+      porps.rt === 'contact-us-appointmentForm' ? 'headerTemForm' : 'headerTem',
+      porps.rt === 'talent-recruitment' ? 'headerTemTalent' : 'headerTem',
+    ]"
+  >
     <BuilderNavbar>
       <template #menu>
         <div class="navigtion">
@@ -258,6 +280,200 @@ a.router-link-active {
   position: absolute;
   top: 54px;
   left: 450px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.headerTemForm {
+  z-index: 999;
+  position: absolute;
+  top: 54px;
+  left: 350px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.headerTemTalent {
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.headerTemCost {
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  left: 350px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.headerTemOphthalmic {
+  z-index: 999;
+  position: absolute;
+  top: 54px;
+  left: 350px;
   background: #2958a3;
 
   .navigtion {

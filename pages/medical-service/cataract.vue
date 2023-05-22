@@ -170,12 +170,6 @@ const announcementsArr = [
 ]
 
 const activeNames = ref('1')
-const handleChange = (val: string) => {
-  console.log(val)
-}
-const judgeActive = (data: any) => {
-  return activeNames.value.indexOf(data)
-}
 // 折叠问答
 const meetArr = [
   {
