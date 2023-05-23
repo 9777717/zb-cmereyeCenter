@@ -80,16 +80,24 @@ defineProps({
     type: [String, Object],
     default: undefined,
   },
+  fromStyle: {
+    type: [String],
+    default: 'margin: 0 535px',
+  },
+  formTitleColor: {
+    type: [String],
+    default: '',
+  },
 })
 </script>
 
 <template>
   <div class="form" :style="bg">
-    <div>
+    <div :style="formTitleColor">
       <div>希瑪眼科重視每一位客人的問題，隨時發問。</div>
       <div>請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。</div>
     </div>
-    <div>
+    <div :style="fromStyle">
       <el-form
         ref="ruleFormRef"
         :model="ruleForm"

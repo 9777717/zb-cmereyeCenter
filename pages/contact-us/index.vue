@@ -296,7 +296,7 @@ const backgd = [
           </div>
         </div>
         <FormFooterInfo
-          :sssd="'margin: 0 232px'"
+          :from-style="'margin: 0 232px'"
           :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
           :co="`color:${'#6a91cf;'}`"
         />

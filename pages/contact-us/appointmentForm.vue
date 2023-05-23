@@ -27,10 +27,10 @@ const serviceNavigation = [
     </div>
     <div>
       <FormFooterInfo
-        :sssd="'margin: 0 520px;'"
-        :ddd="'color:#515151'"
+        :from-style="'margin: 0 520px;'"
+        :form-title-color="'color:#515151'"
         :bg="`background:${'#00000000'}`"
-        :co="`color:${'#515151;'}border:1px solid`"
+        :co="`color:${'#515151;'}`"
       />
     </div>
     <PageInformation :service-navigation="serviceNavigation" />
