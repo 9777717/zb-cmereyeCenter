@@ -1,6 +1,5 @@
 *.log
 nuxt.d.ts
-
 # private config
 .env
 

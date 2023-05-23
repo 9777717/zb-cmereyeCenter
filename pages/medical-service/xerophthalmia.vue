@@ -282,6 +282,17 @@ const serviceNavigation = [
     anchorLink: '/medical-service/xerophthalmia#prevent',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -329,7 +340,7 @@ const serviceNavigation = [
             <div>{{ item.text }}</div>
           </div>
         </div>
-        <div>已出現以上症狀？立即聯絡我們</div>
+        <div @click="goWhatsApp()">已出現以上症狀？立即聯絡我們</div>
       </div>
       <!-- 乾眼症成因 -->
       <div id="factor">
@@ -383,7 +394,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div>
+        <div @click="goWhatsApp()">
           <div>想知道屬於哪一種類別？</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -410,7 +421,7 @@ const serviceNavigation = [
             <div>{{ item.text }}</div>
           </div>
         </div>
-        <div>
+        <div @click="callTel()">
           <div>懷疑是高危人士? 立即預約檢查</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -476,7 +487,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div>
+        <div @click="callTel()">
           <div>我需要預約診斷</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -683,7 +694,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div>
+        <div @click="callTel()">
           <div>人工淚液沒有改善？</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -720,17 +731,19 @@ const serviceNavigation = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>青光眼</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/xerophthalmia.pdf" download="青光眼.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>青光眼</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
     </div>
     <FormFooterInfo
@@ -746,17 +759,19 @@ const serviceNavigation = [
   position: relative;
 
   & > div:nth-child(1) {
-    margin-top: 267px;
+    margin-top: 140px;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     & > div:nth-child(1) {
       width: 577px;
       margin-right: 60px;
 
       & > div:nth-child(1) {
+        margin-bottom: 37px;
         font-family: 'NotoSansHK-Medium';
-        font-size: 50px;
+        font-size: 48px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 52px;
@@ -1347,6 +1362,8 @@ const serviceNavigation = [
       }
 
       & > div:nth-child(5) {
+        max-width: 1313px;
+        margin: 0 auto;
         margin-top: 43px;
         display: flex;
         justify-content: space-between;
@@ -2048,27 +2065,29 @@ const serviceNavigation = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    width: 62.5%;
-    height: 202px;
-    background: #a9a6d2;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 520px;
-      margin-right: 75px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      width: 62.5%;
+      height: 202px;
+      background: #a9a6d2;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 520px;
+        margin-right: 75px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

@@ -10,24 +10,28 @@ useHead(() => ({
 const mainContent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/68d06f9abbaa270e.png',
+    link: 'https://youtu.be/6QMK-B_WKvk',
     title: '小朋友的眼睛檢查與大人有什麼不同？',
     doctor: '林寶生眼科專科醫生',
     text: '兒童年紀小檢查眼睛時，未必聽到懂指示，所以眼科專科醫生會設計不同的測試和檢查，去幫助小朋友檢查眼睛，例如︰顏色測試、眼底檢查、斜視檢查。不過，隨著小朋友年齡增加，到了幼稚園或小學階段，檢查眼睛的方法與成人類似。立即聽聽希瑪眼科中心 - 林寶生眼科專科醫生講解！ ',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ae11245a90ee4dfe.png',
+    link: 'https://youtu.be/gsFpvvDkJiE',
     title: '眼瞼內翻的症狀，眼瞼內翻要做手術嗎？',
     doctor: '張瀞之眼科專科醫生',
     text: '眼瞼內翻可分為先天性和退化性，患者的常見症狀包括︰眼睛有很多分泌物、有異物感和疼痛，甚至會常有沙入眼的感覺、流眼水和眼睛水汪汪等。如果病情嚴重，可能會影響視力和角膜的健康。眼瞼內翻一定要透過做手術治療嗎？',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2d88b98970f31ba1.png',
+    link: 'https://youtu.be/zMoqXZgXDsk',
     title: '揉眼會影響視力？',
     doctor: '李德倫眼科專科醫生',
     text: '我們感到眼睛不適時可能會揉眼，其實這是一個不好的習慣。不要以為揉眼只是一個小動作，它可能造成眼角膜損傷、眼睛細菌感染，嚴重的話甚至出現眼角膜潰瘍，並會大大增加患眼疾的風險，某些人士更要特別注意。',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f3aab3c7f7cec643.png',
+    link: 'https://youtu.be/XbWbpVc-39k',
     title: '怎麼知道眼乾是缺油或是缺水？',
     doctor: '李德倫眼科專科醫生',
     text: '眼乾可以分為「缺水性」和「缺油性」。缺水性是由於眨眼過少，導致淚水揮發多而分泌少，此類型眼乾較常見於中年女士、常看電腦或手機、類風濕關節炎等人士。若患者屬於缺油性眼乾，多數由瞼板腺功能障礙引起，油脂大量分泌並堵塞了油脂孔，令到淚水容易揮發出來。',
@@ -102,7 +106,11 @@ const mainContent = [
             <div>{{ item.doctor }}</div>
           </div>
           <div>{{ item.text }}</div>
-          <div>立即播放</div>
+          <div>
+            <a :href="item.link" target="_blank" rel="noopener noreferrer"
+              >立即播放</a
+            >
+          </div>
         </div>
         <div><img :src="item.img" :alt="item.title" /></div>
       </div>

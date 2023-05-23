@@ -6,6 +6,12 @@ definePageMeta({
 useHead(() => ({
   title: '白内障｜醫療服務｜眼科專科醫生',
 }))
+// 传递背景色
+const backgd = [
+  '#64bcd1;',
+  '-webkit-linear-gradient(to right, #83cdd3, #64bcd1);',
+  'linear-gradient(to right, #83cdd3, #64bcd1);',
+]
 // 白內障形成的成因
 const fatorArr = [
   {
@@ -239,6 +245,17 @@ const serviceNavigation = [
     anchorLink: '/medical-service/cataract#faq',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -264,7 +281,7 @@ const serviceNavigation = [
         <div>
           <div>
             <div>白內障影響日常生活？</div>
-            <div>即按為你解決煩惱</div>
+            <div @click="goWhatsApp()">即按為你解決煩惱</div>
           </div>
           <div>
             <div>
@@ -283,7 +300,7 @@ const serviceNavigation = [
             患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響你的視野，更使你的生活變得十分不便？
           </p>
         </div>
-        <div>別再遲疑！立即查詢白內障治療方案</div>
+        <div @click="goWhatsApp()">別再遲疑！立即查詢白內障治療方案</div>
       </div>
       <!-- 白內障形成的成因 -->
       <div id="fatorArr">
@@ -367,7 +384,7 @@ const serviceNavigation = [
               </div>
             </div>
           </div>
-          <div>已有症狀？立即預約檢查</div>
+          <div @click="callTel()">已有症狀？立即預約檢查</div>
         </div>
       </div>
       <!-- 白內障治療，手術 -->
@@ -510,7 +527,7 @@ const serviceNavigation = [
             <div>可使用較低的超聲波 <br />能量處理白內障</div>
           </div>
         </div>
-        <div>立即預約見醫生了解手術！</div>
+        <div @click="callTel()">立即預約見醫生了解手術！</div>
       </div>
       <!-- 選擇人工晶體須知 -->
       <div id="iclArr">
@@ -562,7 +579,7 @@ const serviceNavigation = [
           </div>
           <div>*此表格內預設單焦點人工晶體為看遠。</div>
         </div>
-        <div>哪一款人工晶體適合你？</div>
+        <div @click="goWhatsApp()">哪一款人工晶體適合你？</div>
       </div>
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
@@ -603,34 +620,41 @@ const serviceNavigation = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>如何選擇合適的人工晶體？</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/cataract2.pdf" download="選擇人工晶體.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>如何選擇合適的人工晶體？</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>白內障</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/cataract1.pdf" download="白內障.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>白內障</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
     </div>
     <!-- 公共底部表单 -->
-    <FormFooterInfo />
+    <FormFooterInfo
+      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+      :co="`color:${'#64bcd1;'}`"
+    />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -815,6 +839,7 @@ const serviceNavigation = [
       }
 
       & > div:nth-child(2) {
+        margin: 0 auto;
         margin-top: 78px;
         width: 1320px;
         height: 133px;
@@ -1110,6 +1135,9 @@ const serviceNavigation = [
         margin-top: 77px;
         margin-bottom: 171px;
         padding-left: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         & > div {
           display: flex;
@@ -1253,6 +1281,7 @@ const serviceNavigation = [
     }
 
     & > div:nth-child(5) {
+      cursor: pointer;
       font-family: 'NotoSansHK-Bold';
       margin: auto;
       margin-top: 126px;
@@ -1697,53 +1726,57 @@ const serviceNavigation = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    width: 62.93%;
-    height: 202px;
-    background: #64bcd1;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 520px;
-      margin-right: 75px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      width: 62.93%;
+      height: 202px;
+      background: #64bcd1;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 520px;
+        margin-right: 75px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 
   & > div:nth-child(2) {
-    margin-top: 88px;
-    width: 58.2%;
-    height: 202px;
-    background: #64bcd1;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 355px;
-      margin-right: 175px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      margin-top: 88px;
+      width: 58.2%;
+      height: 202px;
+      background: #64bcd1;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 355px;
+        margin-right: 175px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

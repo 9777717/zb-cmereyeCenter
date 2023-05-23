@@ -11,37 +11,37 @@ const eyeDisease = [
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
     title: '天氣轉變提防結膜炎',
     text: '轉天氣時，有些人會出現眼睛過敏徵狀，包括︰結膜充血、眼瞼紅腫及痕癢、多流眼水、畏光、分泌物增多等，十分影響日常生活。這些可能是季節性過敏性結膜炎引起的，本身有過敏體質，例如︰氣喘、過敏性鼻炎等，會更容易患上此種結膜炎。馬上去片',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/0pN3E5ewLjE',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
     title: '眼睛乾可以點解決？',
     text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
     title: '眼睛乾可以點解決？',
     text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
     title: '天氣轉變提防結膜炎',
     text: '轉天氣時，有些人會出現眼睛過敏徵狀，包括︰結膜充血、眼瞼紅腫及痕癢、多流眼水、畏光、分泌物增多等，十分影響日常生活。這些可能是季節性過敏性結膜炎引起的，本身有過敏體質，例如︰氣喘、過敏性鼻炎等，會更容易患上此種結膜炎。馬上去片',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/0pN3E5ewLjE',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
     title: '眼睛乾可以點解決？',
     text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
     title: '眼睛乾可以點解決？',
     text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
-    link: 'https://www.youtube.com/@cmersmileeyecenter6303',
+    link: 'https://youtu.be/fM2cCC5zxWw',
   },
 ]
 </script>

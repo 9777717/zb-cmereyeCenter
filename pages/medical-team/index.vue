@@ -238,6 +238,7 @@ const doctorList = [
 
 .medical-team {
   margin-bottom: 455px;
+
   & > div:first-child {
     margin-left: 650px;
     margin-top: 98px;
@@ -343,7 +344,7 @@ const doctorList = [
         letter-spacing: 0.1em;
         color: #ffffff;
         bottom: 0;
-        left: 225px;
+        left: 250px;
         cursor: pointer;
       }
 
@@ -414,7 +415,7 @@ const doctorList = [
 
   ul > li:nth-child(10) {
     & > a {
-      bottom: -20px;
+      bottom: -40px;
     }
   }
 
@@ -635,6 +636,10 @@ const doctorList = [
         width: 342px;
         height: 322px;
       }
+    }
+
+    & > a {
+      bottom: -40px !important;
     }
   }
 

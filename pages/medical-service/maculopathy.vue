@@ -173,6 +173,17 @@ const serviceNavigation = [
     anchorLink: '/medical-service/maculopathy#faq',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -258,7 +269,7 @@ const serviceNavigation = [
               <div><img :src="item.img_down" :alt="item.title" /></div>
             </div>
           </div>
-          <div class="maculopathy_button_bg_color">
+          <div class="maculopathy_button_bg_color" @click="goWhatsApp()">
             <p>已有初步症狀？</p>
             <p>別害怕，立即WhatsApp預約治療</p>
           </div>
@@ -437,7 +448,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div class="maculopathy_button_bg_color">
+        <div class="maculopathy_button_bg_color" @click="callTel()">
           <p>致電預約治療</p>
           <p>讓醫生為您選擇合適的治療方案</p>
         </div>
@@ -470,17 +481,19 @@ const serviceNavigation = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>黃斑病變</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/maculopathy.pdf" download="黃斑病變.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>黃斑病變</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
     </div>
     <!-- 表单 -->
@@ -1208,27 +1221,29 @@ const serviceNavigation = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    width: 62.5%;
-    height: 202px;
-    background: #dec692;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 520px;
-      margin-right: 75px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      width: 62.5%;
+      height: 202px;
+      background: #dec692;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 520px;
+        margin-right: 75px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

@@ -3,6 +3,17 @@
 definePageMeta({
   layout: 'page',
 })
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -10,9 +21,9 @@ definePageMeta({
     <img src="https://static.cmereye.com/imgs/2023/04/7397d0a1608d806d.jpg" />
     <div>
       <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/04/edfd3372b6421beb.png"
-        />
+        <div>professional</div>
+        <div>Clinical</div>
+        <div>Service</div>
       </div>
       <div>
         <div>
@@ -61,7 +72,7 @@ definePageMeta({
             <div>立即預約</div>
           </div>
           <div>
-            <div>
+            <div @click="callTel()">
               <div>
                 <svg
                   width="22"
@@ -82,7 +93,7 @@ definePageMeta({
               </div>
               <div>3056 2026</div>
             </div>
-            <div>
+            <div @click="goWhatsApp()">
               <div>
                 <svg
                   width="24"
@@ -159,12 +170,38 @@ definePageMeta({
   & > div:nth-child(2) {
     position: absolute;
     top: 345px;
-    left: 450px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & > div:nth-child(1) {
       display: flex;
       justify-content: center;
       margin-bottom: 196px;
+      flex-direction: column;
+      align-items: flex-start;
+
+      & > div:nth-child(1) {
+        letter-spacing: 0.1em;
+      }
+
+      & > div:nth-child(3) {
+        letter-spacing: 0.78em;
+      }
+
+      font-family: 'Metropolis';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24.0948px;
+      line-height: 28px;
+      /* identical to box height, or 114% */
+
+      letter-spacing: 0.62em;
+      text-transform: uppercase;
+
+      color: #ffffff;
     }
 
     & > div:nth-child(2) {
@@ -257,6 +294,7 @@ definePageMeta({
             flex-direction: column;
             align-items: center;
             margin: 10px;
+            cursor: pointer;
 
             & > div:nth-child(2) {
               margin-top: 2px;

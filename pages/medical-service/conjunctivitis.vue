@@ -171,6 +171,17 @@ const serviceNavigation = [
     anchorLink: '/medical-service/conjunctivitis#prevent',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -220,7 +231,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div class="conjun_button_bg_color">
+        <div class="conjun_button_bg_color" @click="callTel()">
           <p>已有結膜炎症狀？</p>
           <p>致電立即治療</p>
         </div>
@@ -249,7 +260,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div class="conjun_button_bg_color">
+        <div class="conjun_button_bg_color" @click="goWhatsApp()">
           <p>結膜炎經常復發？</p>
           <p>預約見醫生對症下藥！</p>
         </div>
@@ -288,7 +299,7 @@ const serviceNavigation = [
             當病毒入侵眼睛，會經過一段潛伏期後才發病，潛伏期為1至12天不等，由病發至康復需要大約10天至數星期。
           </div>
         </div>
-        <div class="conjun_button_bg_color">
+        <div class="conjun_button_bg_color" @click="callTel()">
           <p>治療結膜炎，避免傳染家人！</p>
           <p>致電預約診治</p>
         </div>
@@ -348,17 +359,19 @@ const serviceNavigation = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>結膜炎</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/conjunctivitis.pdf" download="結膜炎.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>結膜炎</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
     </div>
     <!-- 表单 -->
@@ -940,27 +953,29 @@ const serviceNavigation = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    width: 62.5%;
-    height: 202px;
-    background: #c0c0e6;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 520px;
-      margin-right: 75px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      width: 62.5%;
+      height: 202px;
+      background: #c0c0e6;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 520px;
+        margin-right: 75px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

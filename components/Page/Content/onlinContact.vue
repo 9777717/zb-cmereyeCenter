@@ -6,12 +6,22 @@ const router = useRoute()
 definePageMeta({
   layout: 'page',
 })
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
 </script>
 
 <template>
   <!-- 側邊欄聯係 -->
   <div v-if="router.name !== 'index'" class="onlinContact">
-    <a class="contactItem flex items-center justify-center flex-col mb-6">
+    <a
+      class="contactItem flex items-center justify-center flex-col mb-6"
+      href="tel:+(852) 3956 2026"
+    >
       <svg
         width="24"
         height="20"
@@ -31,7 +41,10 @@ definePageMeta({
       <span>3056 2026</span>
     </a>
 
-    <a class="contactItem flex items-center justify-center flex-col mb-8">
+    <a
+      class="contactItem flex items-center justify-center flex-col mb-8"
+      @click="goWhatsApp()"
+    >
       <svg
         width="26"
         height="25"
@@ -76,6 +89,7 @@ definePageMeta({
   top: 590px;
 
   .contactItem {
+    cursor: pointer;
     color: white;
     background-color: #2958a3;
     width: 69px;

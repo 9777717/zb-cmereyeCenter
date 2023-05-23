@@ -157,6 +157,17 @@ const serviceNavigation = [
     anchorLink: '/medical-service/muscaeVolitantes#faq',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
+// 拨打电话
+const callTel = () => {
+  location.href = 'tel://+(852) 3956 2026'
+}
 </script>
 
 <template>
@@ -205,7 +216,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color">
+        <div class="button_bg_text_color" @click="goWhatsApp()">
           經常看見飛蚊<br />WhatsApp 預約眼睛檢查
         </div>
       </div>
@@ -285,7 +296,7 @@ const serviceNavigation = [
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color">
+        <div class="button_bg_text_color" @click="callTel()">
           分辨良性/惡性飛蚊<br />
           致電預約檢查
         </div>
@@ -419,7 +430,9 @@ const serviceNavigation = [
               <div>能與其他治療同時進行</div>
             </div>
           </div>
-          <div class="button_bg_text_color">致電預約了解治療方案</div>
+          <div class="button_bg_text_color" @click="callTel()">
+            致電預約了解治療方案
+          </div>
         </div>
       </div>
       <!-- 預防飛蚊症 -->
@@ -459,17 +472,19 @@ const serviceNavigation = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <div>
-          <p>飛蚊症</p>
-          <p>下載小冊子</p>
-        </div>
+        <a href="../../assets/pdf/muscaeVolitantes.pdf" download="飛蚊症.pdf">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div>
+            <p>飛蚊症</p>
+            <p>下載小冊子</p>
+          </div>
+        </a>
       </div>
     </div>
     <!-- 表单 -->
@@ -543,6 +558,7 @@ const serviceNavigation = [
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-top: 120px;
 
       & > div {
         width: 33.33333%;
@@ -1255,27 +1271,29 @@ const serviceNavigation = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    width: 62.5%;
-    height: 202px;
-    background: #9cc4e2;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    & > div:nth-child(1) {
-      margin-left: 520px;
-      margin-right: 75px;
-
-      & > img {
-        width: 120px;
-        height: 135px;
-      }
-    }
-
-    & > div:nth-child(2) {
+    & > a {
+      width: 62.5%;
+      height: 202px;
+      background: #9cc4e2;
+      position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
+
+      & > div:nth-child(1) {
+        margin-left: 520px;
+        margin-right: 75px;
+
+        & > img {
+          width: 120px;
+          height: 135px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }
