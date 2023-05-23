@@ -48,7 +48,7 @@ const healthList = [
   },
 ]
 const mmmmm = (num: any) => {
-  alert(num)
+  console.log(num)
 }
 </script>
 
@@ -420,6 +420,7 @@ const mmmmm = (num: any) => {
         justify-content: center;
         letter-spacing: 0.1em;
         color: #ffffff;
+        cursor: pointer;
       }
     }
   }

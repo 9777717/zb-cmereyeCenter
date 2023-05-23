@@ -3,7 +3,7 @@
 const goFaceBook = () => {
   window.open('https://www.facebook.com/cmereyecenter/', '_blank')
 }
-// 跳转Facebook
+// instagram
 const goInstagram = () => {
   window.open('https://www.instagram.com/cmer_eye_center/', '_blank')
 }
@@ -15,17 +15,6 @@ const goYoutube = () => {
   )
 }
 
-// 展示微信二维码
-const showQR = ref()
-const showWechat = () => {
-  const ele = document.getElementsByClassName('isShow')
-  console.log(ele, '456')
-}
-const closeWechat = () => {
-  const element = showQR.value
-  element.className.display = 'none'
-  console.log('出去了')
-}
 // 跳转微博
 const goWeibo = () => {
   window.open(

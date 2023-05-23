@@ -42,6 +42,14 @@ const visionImgList = [
   'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
   'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
 ]
+// 跳转Facebook
+const goFaceBook = () => {
+  window.open('https://www.facebook.com/cmereyecenter/', '_blank')
+}
+// instagram
+const goInstagram = () => {
+  window.open('https://www.instagram.com/cmer_eye_center/', '_blank')
+}
 </script>
 <template>
   <div id="centreIntro" class="centreIntro">
@@ -106,13 +114,13 @@ const visionImgList = [
         </div>
       </div>
       <div>
-        <div>
+        <div @click="goFaceBook">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
           希瑪眼科
         </div>
-        <div>
+        <div @click="goInstagram">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -153,13 +161,13 @@ const visionImgList = [
         </div>
       </div>
       <div>
-        <div>
+        <div @click="goFaceBook">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
           希瑪微笑矯視中心
         </div>
-        <div>
+        <div @click="goInstagram">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -201,13 +209,13 @@ const visionImgList = [
         </div>
       </div>
       <div>
-        <div>
+        <div @click="goFaceBook">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
           希瑪視光中心
         </div>
-        <div>
+        <div @click="goInstagram">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -232,6 +240,7 @@ const visionImgList = [
       <div>
         <a
           href="https://www.xiaohongshu.com/user/profile/620520830000000010006034"
+          target="_blank"
         >
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
@@ -239,18 +248,27 @@ const visionImgList = [
           />
           香港希瑪眼科中心
         </a>
-        <a href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg">
+        <a
+          href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
+          target="_blank"
+        >
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
             alt=""
           />
           CMER SMILE Eye Center 香港希瑪眼科
         </a>
-        <a href="javascript:void(0)" class="">
+        <a href="javascript:void(0)" class="isWechat">
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
             alt=""
           />香港希瑪眼科中心
+          <div class="isShow">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+              alt="香港希瑪眼科中心"
+            />
+          </div>
         </a>
       </div>
     </div>
@@ -268,8 +286,8 @@ const visionImgList = [
         />
         <a
           class="downloadpdf"
-          href="https://www.hkcmereye.com/template/default/pdf/希瑪眼科業務小冊子(電子版).pdf"
-          download="https://www.hkcmereye.com/template/default/pdf/希瑪眼科業務小冊子(電子版).pdf"
+          href="../../../assets/pdf/cmer.pdf"
+          download="希瑪眼科業務小冊子(電子版).pdf"
           >下載希瑪眼科業務小冊子</a
         >
       </div>
@@ -433,6 +451,7 @@ const visionImgList = [
       align-items: center;
 
       & > div {
+        cursor: pointer;
         display: flex;
         align-items: center;
         font-family: 'Noto Sans HK';
@@ -543,6 +562,7 @@ const visionImgList = [
       justify-content: flex-end;
 
       & > div {
+        cursor: pointer;
         display: flex;
         align-items: center;
         font-family: 'Noto Sans HK';
@@ -652,6 +672,7 @@ const visionImgList = [
       align-items: center;
 
       & > div {
+        cursor: pointer;
         display: flex;
         align-items: center;
         font-family: 'Noto Sans HK';
@@ -682,6 +703,7 @@ const visionImgList = [
 
 .media {
   margin-bottom: 50px;
+
   & > div:nth-child(1) {
     position: relative;
     background: #f2f2f2;
@@ -766,6 +788,29 @@ const visionImgList = [
 
       color: #515151;
     }
+  }
+
+  .isWechat:hover .isShow {
+    display: block;
+  }
+
+  .isWechat {
+    position: relative;
+  }
+
+  .isShow {
+    display: none;
+  }
+
+  .isShow {
+    position: absolute;
+    bottom: auto;
+    background: #ffffff;
+    padding: 20px 10px;
+    border-radius: 0 0 15px 15px;
+    left: 20px;
+    top: 50px;
+    z-index: 5;
   }
 }
 </style>
