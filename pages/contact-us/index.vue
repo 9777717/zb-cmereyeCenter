@@ -168,6 +168,13 @@ const backgd = [
   '-webkit-linear-gradient(to right, #6a91cf, #6a91cf);',
   'linear-gradient(to right, #6a91cf, #6a91cf);',
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
 </script>
 
 <template>
@@ -282,7 +289,7 @@ const backgd = [
                             >Google 地圖</a
                           >
                         </div>
-                        <div class="orderBtn">
+                        <div class="orderBtn" @click="goWhatsApp">
                           <a href=" " target="_blank" rel="noopener noreferrer"
                             >預約</a
                           >
