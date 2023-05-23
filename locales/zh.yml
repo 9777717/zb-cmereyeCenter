@@ -100,6 +100,7 @@ pages:
     talent_recruitment: 人才招聘
   contact_us:
     contact_us: 聯絡我們
+    clinic_information: 診所資料
     appointmentForm: 電子預約表格
 banners:
   welcome: 你好, 欢迎来到 %{app_name}!

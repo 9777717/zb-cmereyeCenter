@@ -147,7 +147,7 @@ const menus = computed((): IMenuItem[] => [
     childMenuList: [
       {
         type: 'link', // 診所資料
-        text: t('pages.contact_us.contact_us'),
+        text: t('pages.contact_us.clinic_information'),
         route: { name: 'contact-us' },
       },
       {
