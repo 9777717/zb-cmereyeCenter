@@ -199,6 +199,14 @@ const doctorList = [
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor22.jpg',
   },
+  {
+    doctorName: '陳鼎鼐醫生',
+    doctorEnName: 'Dr. Loraine Chow',
+    doctorEducation:
+      '香港中文大學內外全科醫學士\n英國格拉斯哥皇家醫學院外科院士\n香港外科醫學院院士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/2023/02/5d01933b13f4a2eb.png',
+  },
 ]
 </script>
 <template>
@@ -905,6 +913,31 @@ const doctorList = [
       & > div:nth-child(2) {
         top: 7px;
         left: -103px;
+      }
+
+      & > div:nth-child(1)::before {
+        content: '';
+        background: #f2f2f2;
+        position: absolute;
+        left: -315px;
+        top: 79px;
+        width: 523px;
+        height: 224px;
+      }
+    }
+  }
+
+  ul > li:nth-child(23) {
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
+        position: relative;
+        width: 264px;
+        height: 330px;
+      }
+
+      & > div:nth-child(2) {
+        top: 157px;
+        right: -103px;
       }
 
       & > div:nth-child(1)::before {
