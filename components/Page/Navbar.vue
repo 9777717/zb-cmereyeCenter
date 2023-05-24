@@ -176,6 +176,8 @@ const porps = defineProps({
         : 'headerTem',
       porps.rt === 'contact-us-appointmentForm' ? 'headerTemForm' : 'headerTem',
       porps.rt === 'talent-recruitment' ? 'headerTemTalent' : 'headerTem',
+      porps.rt === 'disclaimer' ? 'headerTemDisclaimer' : 'headerTem',
+      porps.rt === 'privacyPolicy' ? 'headerTemDisclaimer' : 'headerTem',
     ]"
   >
     <BuilderNavbar>
@@ -517,6 +519,54 @@ a.router-link-active {
     align-items: center;
   }
 }
+.headerTemDisclaimer {
+  z-index: 999;
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  background: #2958a3;
+
+  .navigtion {
+    & > div {
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 35px;
+      /* identical to box height, or 250% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+
+      width: 130px;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    & > div::after {
+      position: absolute;
+      top: 0;
+      content: '';
+      width: 76px;
+      border-bottom: 0.75px solid #ffffff;
+    }
+
+    & > div:nth-child(1)::after {
+      content: '';
+      width: 0;
+      border: 0;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .child {
   background: #ffffffbf;
@@ -526,12 +576,11 @@ a.router-link-active {
   top: 0;
 
   & > div {
-    height: 49px;
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 35px;
+    line-height: 50px;
     /* identical to box height, or 250% */
     text-align: center;
     letter-spacing: 0.05em;
@@ -547,7 +596,7 @@ a.router-link-active {
     left: 26px;
     content: '';
     width: 76px;
-    margin-top: -8px;
+    margin-top: -1px;
     border: 0.75px solid #2958a3;
   }
 
@@ -570,12 +619,12 @@ a.router-link-active {
   top: 0;
 
   & > div {
-    height: 49px;
+    // height: 49px;
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 35px;
+    line-height: 50px;
     /* identical to box height, or 250% */
     text-align: center;
     letter-spacing: 0.05em;
@@ -591,7 +640,7 @@ a.router-link-active {
     left: 26px;
     content: '';
     width: 76px;
-    margin-top: -8px;
+    margin-top: -1px;
     border: 0.75px solid #8ad8dd;
   }
 

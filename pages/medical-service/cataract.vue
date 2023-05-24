@@ -1658,13 +1658,15 @@ const callTel = () => {
         position: relative;
 
         & > div:nth-child(1) {
-          font-family: 'AcuminConcept-SemiboldItalic';
+          font-family: 'AcuminVariableConcept';
           font-size: 120px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 41px;
           letter-spacing: 0px;
-          color: yellowgreen;
+          color: #ffffff;
+          text-shadow: 0px 0px 5px #66c5dc;
+          font-style: oblique;
         }
       }
     }

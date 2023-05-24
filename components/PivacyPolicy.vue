@@ -25,16 +25,30 @@ definePageMeta({
         />
       </svg>
     </div>
-    <div>私隱政策 & 免責條款</div>
+    <div>
+      <div>
+        <nuxt-link :to="{ name: 'privacyPolicy' }">私隱政策</nuxt-link>
+      </div>
+      <div>&</div>
+      <div>
+        <nuxt-link :to="{ name: 'disclaimer' }">免責條款</nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
+a.router-link-exact-active {
+  color: #f2f2f2;
+}
 .privacy {
   display: flex;
   flex-direction: row;
   align-items: center;
 
   & > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-left: 8px;
     font-family: 'Noto Sans HK';
     font-style: normal;
@@ -47,6 +61,10 @@ definePageMeta({
     letter-spacing: 0.05em;
 
     color: #ffffff;
+
+    & > div:nth-child(2) {
+      margin: 0 10px;
+    }
   }
 }
 </style>
