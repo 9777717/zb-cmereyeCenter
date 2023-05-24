@@ -201,7 +201,7 @@ const doctorList = [
   },
   {
     doctorName: '陳鼎鼐醫生',
-    doctorEnName: 'Dr. Loraine Chow',
+    doctorEnName: 'Dr. Dylan Chan',
     doctorEducation:
       '香港中文大學內外全科醫學士\n英國格拉斯哥皇家醫學院外科院士\n香港外科醫學院院士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
     doctorImgUrl:
@@ -354,6 +354,7 @@ const doctorList = [
         bottom: 0;
         left: 250px;
         cursor: pointer;
+        z-index: 15;
       }
 
       .docName {

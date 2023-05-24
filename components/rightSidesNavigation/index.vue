@@ -61,6 +61,7 @@ const props = defineProps({
   position: relative;
   z-index: 999;
 }
+
 .seat {
   position: fixed;
   right: 50px;

@@ -27,16 +27,16 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.about_us.center_profile'),
         route: { path: '/about-us#centreIntro' },
       },
-      {
-        type: 'link',
-        text: t('pages.about_us.development_course'),
-        route: { name: 'about-us-devProcess' },
-      },
-      {
-        type: 'link',
-        text: t('pages.about_us.enterprise_vision'),
-        route: { name: 'about-us-corporationVision' },
-      },
+      // {
+      //   type: 'link',  //发展历程
+      //   text: t('pages.about_us.development_course'),
+      //   route: { name: 'about-us-devProcess' },
+      // },
+      // {
+      //   type: 'link',// 企业愿景
+      //   text: t('pages.about_us.enterprise_vision'),
+      //   route: { name: 'about-us-corporationVision' },
+      // },
     ],
   },
   {
@@ -175,6 +175,7 @@ const porps = defineProps({
         ? 'headerTemOphthalmic'
         : 'headerTem',
       porps.rt === 'contact-us-appointmentForm' ? 'headerTemForm' : 'headerTem',
+      porps.rt === 'contact-us' ? 'headerTemForm' : 'headerTem',
       porps.rt === 'talent-recruitment' ? 'headerTemTalent' : 'headerTem',
       porps.rt === 'disclaimer' ? 'headerTemDisclaimer' : 'headerTem',
       porps.rt === 'privacyPolicy' ? 'headerTemDisclaimer' : 'headerTem',
@@ -228,11 +229,17 @@ a.router-link-active {
   line-height: 3.5;
 }
 
+a {
+  width: 100%;
+  height: 100%;
+  line-height: 3.5;
+}
+
 .headerTem {
   z-index: 999;
   position: absolute;
   top: 54px;
-  left: 450px;
+  left: 23.4375%;
   background: #ffffffbf;
 
   .navigtion {
@@ -281,7 +288,7 @@ a.router-link-active {
   z-index: 999;
   position: absolute;
   top: 54px;
-  left: 450px;
+  left: 23.4375%;
   background: #2958a3;
 
   .navigtion {
@@ -330,7 +337,7 @@ a.router-link-active {
   z-index: 999;
   position: absolute;
   top: 54px;
-  left: 350px;
+  left: 360px;
   background: #2958a3;
 
   .navigtion {
@@ -423,6 +430,7 @@ a.router-link-active {
     align-items: center;
   }
 }
+
 .headerTemCost {
   z-index: 999;
   position: absolute;
@@ -471,6 +479,7 @@ a.router-link-active {
     align-items: center;
   }
 }
+
 .headerTemOphthalmic {
   z-index: 999;
   position: absolute;
@@ -519,6 +528,7 @@ a.router-link-active {
     align-items: center;
   }
 }
+
 .headerTemDisclaimer {
   z-index: 999;
   position: absolute;

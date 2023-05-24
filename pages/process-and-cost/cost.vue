@@ -206,6 +206,12 @@
         }
       }
 
+      & > tr:nth-child(16) {
+        & > td:nth-child(2) {
+          text-align: left;
+        }
+      }
+
       position: relative;
 
       &::before {
