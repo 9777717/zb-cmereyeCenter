@@ -5,7 +5,6 @@ definePageMeta({
 })
 useHead({
   title: '醫療服務｜希瑪眼科｜眼科專科醫生',
-  titleTemplate: '%s - Nuxt 3 Awesome Starter',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
@@ -22,42 +21,42 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
     des: '白內障',
-    link: '',
+    link: '/medical-service/cataract',
   },
   {
     i: '02',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
     des: '青光眼',
-    link: '',
+    link: '/medical-service/glaucoma',
   },
   {
     i: '03',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser3.png',
     des: '乾眼症',
-    link: '',
+    link: '/medical-service/xerophthalmia',
   },
   {
     i: '04',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser4.png',
     des: '飛蚊症',
-    link: '',
+    link: '/medical-service/muscaeVolitantes',
   },
   {
     i: '05',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser5.png',
     des: '結膜炎',
-    link: '',
+    link: '/medical-service/conjunctivitis',
   },
   {
     i: '06',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
     des: '黃斑病變',
-    link: '',
+    link: '/medical-service/maculopathy',
   },
   {
     i: '07',
@@ -137,7 +136,7 @@ const SerListL = [
   .title {
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    margin-left: 645px;
+    margin-left: 33.59375%;
     position: relative;
     top: 98px;
     font-family: 'Noto Sans HK';
@@ -186,8 +185,8 @@ const SerListL = [
   }
 
   .serList {
-    margin-left: 790px;
-    margin-right: 511px;
+    margin-left: 41.14583%;
+    margin-right: 26.6146%;
     display: flex;
     flex-wrap: wrap;
 

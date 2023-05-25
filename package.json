@@ -20,7 +20,7 @@
     "lintfix": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .eslintignore .",
     "prepare": "husky install",
     "clean": "rm -rf .nuxt dist .output",
-    "generate:locales": "node tools/translator.js ./locales zh.yml"
+    "generate:locales": "node tools/translator.js ./locales zh_tc.yml"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",

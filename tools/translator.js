@@ -40,7 +40,7 @@ const translateFile = async (file, locale) => {
       const nextParent = parentKey ? `${parentKey}.${key}` : key
       if (typeof value === 'string') {
         translatedRes[`${nextParent}`] = await translate(value, {
-          to: locale.lang || 'zh',
+          to: locale.lang || 'zh_tc',
         })
       } else if (typeof value === 'object') {
         await eachCurrLevel(value, `${nextParent}`)
@@ -76,9 +76,9 @@ const translateFile = async (file, locale) => {
 // vars
 const cwd = process.cwd()
 const localePath = path.join(cwd, getArg(0, './locales'))
-const engLocale = path.join(localePath, getArg(1, 'zh.yml'))
+const engLocale = path.join(localePath, getArg(1, 'zh_tc.yml'))
 const listLocaleToTranslate = getFiles(localePath).filter(
-  (l) => l.lang !== 'zh'
+  (l) => l.lang !== 'zh_tc'
 )
 
 // main funcs

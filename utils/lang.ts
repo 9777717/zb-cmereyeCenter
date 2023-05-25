@@ -9,21 +9,26 @@ export interface ILocales {
 }
 
 export const availableLocales: ILocales = {
+  zh_tc: {
+    name: '繁体中文',
+    iso: 'zh_tc',
+    flag: 'tc',
+  },
   zh: {
     name: '简体中文',
     iso: 'zh',
-    flag: '🇨🇳',
+    flag: 'cn',
   },
   en: {
     name: 'English',
     iso: 'en',
     flag: 'en',
   },
-  ja: {
-    name: '日本語',
-    iso: 'ja',
-    flag: '🇯🇵',
-  },
+  // ja: {
+  //   name: '日本語',
+  //   iso: 'ja',
+  //   flag: '🇯🇵',
+  // },
 }
 
 export function LanguageManager() {
@@ -36,10 +41,10 @@ export function LanguageManager() {
     try {
       const foundLang = window
         ? window.navigator.language.substring(0, 2)
-        : 'zh'
-      return availableLocales[foundLang] ? foundLang : 'zh'
+        : 'zh_tc'
+      return availableLocales[foundLang] ? foundLang : 'zh_tc'
     } catch (error) {
-      return 'zh'
+      return 'zh_tc'
     }
   }
   const getUserLocale = (): string =>
