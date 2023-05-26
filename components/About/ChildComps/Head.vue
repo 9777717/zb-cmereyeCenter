@@ -1,12 +1,11 @@
 <script setup lang="ts">
-const { t } = useLang()
-const anchorList = reactive([
+const anchorList = ref([
   {
-    anchorName: t('pages.about_us.about_us'),
+    anchorName: 'pages.about_us.about_us',
     anchorLink: '/about-us#centreIntro',
   },
   {
-    anchorName: t('pages.about_us.development_course'),
+    anchorName: 'pages.about_us.development_course',
     anchorLink: '/about-us#history',
   },
   // {
@@ -18,15 +17,15 @@ const anchorList = reactive([
   //   anchorLink: '/about-us#medicalEquipment',
   // },
   {
-    anchorName: t('pages.about_us.enterprise_vision'),
+    anchorName: 'pages.about_us.enterprise_vision',
     anchorLink: '/about-us#awards',
   },
   {
-    anchorName: t('pages.process_cost.cost'),
+    anchorName: 'pages.process_cost.cost',
     anchorLink: '/process-and-cost',
   },
   {
-    anchorName: t('pages.process_cost.process'),
+    anchorName: 'pages.process_cost.process',
     anchorLink: '/process-and-cost#process',
   },
 ])
@@ -92,7 +91,7 @@ const leaveActive = () => {
             exactActive: exactIdex === index,
           }"
         >
-          {{ item.anchorName }}
+          {{ $t(item.anchorName) }}
         </a>
       </div>
     </div>

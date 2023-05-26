@@ -75,6 +75,8 @@ pages:
     center_profile: 中心简介
     development_course: 发展历程
     enterprise_vision: 企业愿景
+    download:
+      download: Download the Hema Ophthalmic Practice booklet
   medical_team:
     medical_team: 医疗团队
   medical_service:

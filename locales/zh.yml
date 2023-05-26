@@ -64,8 +64,8 @@ pages:
   index:
     home: 首頁
     footer:
-      company: 希瑪林順潮眼科中心
-      copy_right: 版權所有
+      company: 希玛林顺潮眼科中心
+      copy_right: 版权所有
       language: 语言
       fonts: 字体
       privacy: 私隐政策
@@ -75,6 +75,7 @@ pages:
   about_us:
     about_us: 关于我们
     center_profile: 中心简介
+    center_profile_text: 香港领先的一站式眼科专科医疗服务集团——希玛眼科医疗控股有限公司，是由林顺潮医生于2012年创立，并于2018年成功在香港联合交易所主板上市。多年以来，我们的医疗团队以守护市民视力为目标，为香港市民提供安全、准确、可靠的眼科检查及专科医疗服务。希玛眼科服务包括︰检查及治疗眼疾、SMILE微笑激光矫视、植入式隐形眼镜（ICL）、人工晶体置换（IOL）、全面眼睛检查、视光配镜服务等。
     development_course: 发展历程
     enterprise_vision: 企业愿景
   medical_team:

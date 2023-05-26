@@ -75,10 +75,356 @@ pages:
   about_us:
     about_us: 關於我們
     center_profile: 中心簡介
+    profile_centent:
+      profile_text: 香港領先的一站式眼科專科醫療服務集團——希瑪眼科醫療控股有限公司，是由林順潮醫生於2012年創立，並於2018年成功在香港聯合交易所主板上市。多年以來，我們的醫療團隊以守護市民視力為目標，為香港市民提供安全、準確、可靠的眼科檢查及專科醫療服務。希瑪眼科服務包括︰檢查及治療眼疾、SMILE微笑激光矯視、植入式隱形眼鏡（ICL）、人工晶體置換（IOL）、全面眼睛檢查、視光配鏡服務等。
+      profile_subjection: 「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
+      profile_group_start: 我們的集團名稱
+      profile_group_name: 「C-MER」
+      profile_group_idea: ，正正反映著我們的理念與執著：
+      profile_group_C: 「C」 ：專業臨床服務 Profession al Clinical Services
+      profile_group_M: 「Ｍ」：現代化管理 Modern Management
+      profile_group_E: 「Ｅ」：優質教育 Quality Education
+      profile_group_R: 「Ｒ」：開創性科研 Pioneering Research
+      profile_group_hema:  「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+    hema_eye:
+      hema_eye: 希瑪眼科中心
+      hema_eye_introduce_one: 現時全港有12間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上21名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
+      hema_eye_introduce_two: 眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」的原則，為病人提供安全、準確、可靠的眼科檢查及治療。
+      hema_eye_facebooke: 希瑪眼科
+    hema_smile:
+      hema_smile: 希瑪微笑矯視中心
+      hema_smile_introduce_one: 中心秉持「度身訂造」原則，提供優質服務包括：SMILE微笑激光矯視、LASIK激光矯視、植入式隱形眼鏡（ICL）及人工晶體置換術，為有近視、遠視、散光及老花的市民解決視力問題帶來的困擾。
+      hema_smile_introduce_two: 作為率先引入激光矯視技術的眼科中心，至今全港有4間微笑矯視中心。中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
+      hema_smile_facebooke: 希瑪微笑矯視中心
+    hema_vision:
+      hema_vision: 希瑪視光中心
+      hema_vision_introduce_one: 希瑪8間視光中心致力為市民提供全面眼科檢查及眼睛護理，秉持「度身訂造」的原則，根據不同年齡層的眼睛狀況及個人實際所需，制定專屬的眼睛檢查及護眼建議，並提供一站式安全、準確及可靠的改善視力方案，做到預防眼疾、及早治療。
+      hema_vision_introduce_two: 面對著香港兒童近視問題，希瑪視光希望能幫助兒童把握控制近視的黃金治療期。為兒童提供詳細眼睛檢查服務，為有需要小孩建議針對性的兒童近視控制方案︰包括︰角膜矯形鏡 (OK鏡)、兒童近視控制鏡片、近視控制1 DAY隱形眼鏡等。
+      hema_vision_facebooke: 希瑪視光中心
+    media:
+      media_redbook: 香港希瑪眼科中心
+      media_youtube: CMER SMILE EYE CENTER 香港希瑪眼科
+      media_wechat: 香港希瑪眼科中心
+    download:
+      download: 下載希瑪眼科業務小冊子
     development_course: 發展歷程
+    course_year:
+      year_22: '2022'
+      child_22:
+         child22_month_1: 9月
+         child22_month_2: 8月
+         child22_month_3: 3月
+         child22_info_1: 將軍澳 希瑪眼科中心成立
+         child22_info_2: 揭陽希瑪眼科醫院成立
+         child22_info_3_1: 廣州 希瑪眼科醫院成立
+         child22_info_3_2: 福州 希瑪眼科醫院成立
+      year_21: '2021'
+      child_21:
+        child21_month_1: 11月
+        child21_month_2: 7月
+        child21_month_3: 3月
+        child21_info_1: 尖沙咀 希瑪醫療集團成立 (眼科、牙科、醫美)
+        child21_info_2_1: 中環 希瑪眼科視光中心成立
+        child21_info_2_2: 旺角 希瑪眼科視光中心成立
+        child21_info_3: 惠州希瑪眼科醫院成立
+      year_20: '2020'
+      child_20:
+        child_month: 11月
+        child_info_1: 荃灣希瑪眼科中心成立
+        child_info_2: 珠海希瑪林順潮眼科醫院成立
+        child_info_3: 深圳新安林順潮眼科門診部升級為醫院
+      year_19: '2019'
+      child_19:
+        child_month_1: 12月
+        child_month_2: 11月
+        child_month_3: 10月
+        child_month_4: 6月
+        child_info_1: 元朗(第二間)希瑪眼科中心成立
+        child_info_2: 上海希瑪瑞視眼科醫院
+        child_info_3: 希瑪微笑激光矯視中心成立
+        child_info_4: 昆明 希瑪林順潮眼科醫院成立
+      year_18: '2018'
+      child_18:
+        child_month_1: 11月
+        child_month_2: 3月
+        child_month_3: 1月
+        child_info_1: 深圳新安希瑪林順潮眼科門診部成立
+        child_info_2: 觀塘 希瑪眼科中心成立
+        child_info_3: 北京 希瑪林順潮眼科醫院成立
+      year_17: '2017'
+      child_17:
+        child_month: 2月
+        child_info: 銅鑼灣 希瑪眼科中心成立
+      year_16: '2016'
+      child_16:
+        child_month_1: 6月
+        child_month_2: 1月
+        child_info_1: 沙田 希瑪眼科中心成立
+        child_info_2: 元朗 希瑪眼科中心成立
+      year_14: '2014'
+      child_14:
+        child_month: 1月
+        child_info: 深圳 希瑪林順潮眼科醫院成立
+      year_13: '2013'
+      child_13:
+        child_month: 3月
+        child_info: 深圳 希瑪林順潮眼科醫院成立
+      year_12: '2012'
+      child_12:
+        child_month: 1月
+        child_info: 中環 希瑪眼科中心成立
     enterprise_vision: 企業願景
+    equipment_centre: 中心設備
+    equipment:
+      equipment_name:
+        equipment_name_1: Carl Zeiss Visumax 全飛秒激光3.0系統
+        equipment_name_2: 德國蔡司掃頻OCT生物測量儀（IOL Master  700）
+        equipment_name_3: Icare回彈式眼壓計
+        equipment_name_4: 日本尼德克綜合電腦驗光儀
+        equipment_name_5: 日本尼德克手持綜合電腦驗光儀
+        equipment_name_6: 天狼星三維角膜地形圖及眼前節分析系統
+      equipment_des:
+        equipment_des_1: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_2: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_3: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_4: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_5: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_6: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+    awards: 
+      awards: 企業榮譽
+      awards_year_1: '2020-2021'
+      awards_year_2: '2020-2021'
+      awards_year_3: '2020'
+      awards_year_4: '2020'
+      awards_year_5: '2020'
+      awards_year_6: '2020'
+      awards_year_7: '2019'
+      awards_des_1: 香港星級品牌企業獎
+      awards_des_2: 商界展關懷
+      awards_des_3: 亞洲最佳價值服務大獎
+      awards_des_4: 香港旅遊業十優推介
+      awards_des_5: 香港最優秀企業大獎
+      awards_des_6: 香港服務名牌
+      awards_des_7: 香港健康產業大獎
   medical_team:
     medical_team: 醫療團隊
+    medical_team_title: 醫 療 團 隊
+    medical_team_header_title: 醫療團隊｜希瑪眼科｜眼科專科醫生
+    doctorList:
+      doctor_1:
+        doctor_1_name: 林順潮醫生
+        doctor_1_intro: 香港希瑪國際眼科醫療集團創辦人
+        doctor_1_en_name: Dr. Dennis Lam
+        doctor_1_education:
+          doctor_1_education_1: 香港大學內外全科醫學士
+          doctor_1_education_2: 香港醫學專科學院院士(眼科)
+          doctor_1_education_3: 香港眼科醫學院院士
+          doctor_1_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_1_education_5: 英國皇家眼科學院院士 
+          doctor_1_education_6: 香港中文大學醫學博士 
+      doctor_2:
+        doctor_2_name: 李佑榮醫生
+        doctor_2_en_name: Dr. Vincent Lee
+        doctor_2_education:
+          doctor_2_education_1: 香港中文大學內外全科醫學士 
+          doctor_2_education_2: 香港醫學專科學院院士(眼科) 
+          doctor_2_education_3: 香港眼科醫學院院士 
+          doctor_2_education_4: 英國愛丁堡皇家外科醫學院院士 
+          doctor_2_education_5: 香港外科醫學院院士 
+          doctor_2_education_6: 香港中文大學流行病學與生物統計學理學碩士
+          doctor_2_education_7: 香港中文大學流行病學與生物統計學士後文憑
+      doctor_3:
+        doctor_3_name: 范愷醫生
+        doctor_3_en_name: Dr. Alex Fan
+        doctor_3_education:
+          doctor_3_education_1: 香港大學內外全科醫學士 
+          doctor_3_education_2: 香港醫學專科學院院士(眼科)
+          doctor_3_education_3: 香港眼科醫學院院士 
+          doctor_3_education_4: 英國愛丁堡皇家外科醫學院院士(眼科) 
+          doctor_3_education_5: 英國皇家眼科學院院士 
+          doctor_3_education_6: 新加坡國立大學醫學碩士(眼科)
+      doctor_4: 
+        doctor_4_name: 黃俊華醫生
+        doctor_4_en_name: Dr. Alex Wong
+        doctor_4_education:
+          doctor_4_education_1: 香港大學內外全科醫學士
+          doctor_4_education_2: 香港醫學專科學院院士(眼科)
+          doctor_4_education_3: 香港眼科醫學院院士
+          doctor_4_education_4: 英國愛丁堡皇家外科醫學院院員
+          doctor_4_education_5: 英國格拉斯哥皇家外科醫學院院士
+      doctor_5:
+        doctor_5_name: 劉凱珊醫生
+        doctor_5_en_name: Dr. Flora Lau
+        doctor_5_education:
+          doctor_5_education_1: 香港大學內外全科醫學士
+          doctor_5_education_2: 香港醫學專科學院院士(眼科)
+          doctor_5_education_3: 香港眼科醫學院院士
+          doctor_5_education_4: 英國愛丁堡皇家外科醫學院院員
+          doctor_5_education_5: 香港大學醫療科學碩士
+          doctor_5_education_6:  澳洲悉尼大學兒科文憑
+      doctor_6:
+        doctor_6_name: 李煒業醫生
+        doctor_6_en_name: Dr. Jacky Lee
+        doctor_6_education:
+          doctor_6_education_1: 香港大學內外全科醫學士
+          doctor_6_education_2: 英國皇家眼科醫學院院士
+          doctor_6_education_3: 香港醫學專科學院院士(眼科)
+          doctor_6_education_4: 香港眼科醫學院院士
+          doctor_6_education_5: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_6_education_6: 英國愛丁堡皇家外科醫學院院員        
+          doctor_6_education_7: 英國格拉斯哥皇家醫學院外科院士
+      doctor_7:
+        doctor_7_name: 邱俊源醫生
+        doctor_7_en_name: Dr. Jackey Yau
+        doctor_7_education:
+          doctor_7_education_1: 香港中文大學內外全科醫學士
+          doctor_7_education_2: 香港眼科醫學院院士
+          doctor_7_education_3: 英國愛丁堡皇家外科醫學院院員
+          doctor_7_education_4: 香港醫學專科學院院士(眼科)
+      doctor_8:
+        doctor_8_name: 李琬微醫生
+        doctor_8_en_name: Dr. Emmy Li
+        doctor_8_education:
+          doctor_8_education_1: 香港大學內外全科醫學士
+          doctor_8_education_2: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_8_education_3: 香港醫學專科學院院士(眼科)
+          doctor_8_education_4: 香港眼科醫學院院士
+          doctor_8_education_5: 英國愛丁堡皇家外科醫學院院員
+          doctor_8_education_6: 香港大學公共衛生科碩士       
+      doctor_9:
+        doctor_9_name: 胡偉君醫生
+        doctor_9_en_name: Dr. Wu Wai Kwan
+        doctor_9_education:
+          doctor_9_education_1: 香港中文大學內外全科醫學士
+          doctor_9_education_2: 英國愛丁堡皇家外科醫學院院士
+          doctor_9_education_3: 香港醫學專科學院院士(眼科)
+          doctor_9_education_4: 香港眼科醫學院院士(眼科)
+      doctor_10:
+        doctor_10_name: 李少雄醫生
+        doctor_10_en_name: Dr. Patrick Li
+        doctor_10_education:
+          doctor_10_education_1: 香港中文大學內外全科醫學士
+          doctor_10_education_2: 香港眼科醫學院院士
+          doctor_10_education_3: 香港醫學專科學院院士(眼科)
+          doctor_10_education_4: 英國愛丁堡皇家外科醫學院院士
+          doctor_10_education_5: 英國格拉斯哥皇家外科醫學院院士
+          doctor_10_education_6: 新加坡國立大學眼科醫學碩士    
+          doctor_10_education_7: 香港中文大學內科醫學文憑
+          doctor_10_education_8: 澳洲蒙納殊大學家庭醫學文憑    
+      doctor_11:
+        doctor_11_name: 黎浩樺醫生
+        doctor_11_en_name: Dr. Kenny Lai
+        doctor_11_education:
+          doctor_11_education_1: 香港中文大學內外全科醫學士
+          doctor_11_education_2: 香港眼科醫學院院士
+          doctor_11_education_3: 香港醫學專科學院院士(眼科)
+          doctor_11_education_4: 英國愛丁堡皇家外科醫學院院員
+      doctor_12:
+        doctor_12_name: 李德倫醫生
+        doctor_12_en_name: Dr. Stephen Li
+        doctor_12_education:
+          doctor_12_education_1: 香港大學內外全科醫學士
+          doctor_12_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_12_education_3: 香港眼科醫學院院士
+          doctor_12_education_4: 香港醫學專科學院院士(眼科)
+      doctor_13:
+        doctor_13_name: 黃禮文醫生
+        doctor_13_en_name: Dr. Raymond Wong
+        doctor_13_education:
+          doctor_13_education_1: 香港大學內外全科醫學士
+          doctor_13_education_2: 英國愛丁堡皇家外科醫學院院員(眼科)
+          doctor_13_education_3: 香港眼科醫學院院士
+          doctor_13_education_4: 香港醫學專科學院院士(眼科)
+      doctor_14:
+        doctor_14_name: 張瀞之醫生
+        doctor_14_en_name: Dr. Janice Cheung
+        doctor_14_education:
+          doctor_14_education_1: 香港大學內外全科醫學士
+          doctor_14_education_2: 香港眼科醫學院院士
+          doctor_14_education_3: 香港醫學專科學院院士(眼科)
+          doctor_14_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_14_education_5: 英國格拉斯哥皇家外科醫學院院士
+          doctor_14_education_6: 英國愛丁堡皇家外科醫學院院員 
+      doctor_15:
+        doctor_15_name: 林寶生醫生
+        doctor_15_en_name: Dr. Carol Lam
+        doctor_15_education:
+          doctor_15_education_1: 香港中文大學內外全科醫學士 
+          doctor_15_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_15_education_3: 香港眼科醫學院院士
+          doctor_15_education_4: 香港醫學專科學院院士(眼科)
+      doctor_16:
+        doctor_16_name: 林己明醫生
+        doctor_16_en_name: Dr. Jasmine Lam
+        doctor_16_education:
+          doctor_16_education_1: 香港大學內外全科醫學士
+          doctor_16_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_16_education_3: 香港醫學專科學院院士(眼科)
+          doctor_16_education_4: 香港眼科醫學院院士
+      doctor_17:
+        doctor_17_name: 張明權醫生
+        doctor_17_en_name: Dr. Paul Cheung
+        doctor_17_education:
+          doctor_17_education_1: 香港大學內外全科醫學士
+          doctor_17_education_2: 愛爾蘭皇家內外科醫學院
+          doctor_17_education_3: 英國格拉斯哥皇家外科醫學院眼科文憑
+          doctor_17_education_4: 香港眼科醫學院院士
+          doctor_17_education_5: 香港醫學專科學院院士(眼科)   
+      doctor_18:
+        doctor_18_name: 陳偉樂醫生
+        doctor_18_en_name: Dr. Leo Chan
+        doctor_18_education:
+          doctor_18_education_1: 香港大學內外全科醫學士
+          doctor_18_education_2: 英國愛丁堡皇家外科醫學院院員(眼科)
+          doctor_18_education_3: 香港眼科醫學院院士
+          doctor_18_education_4: 香港醫學專科學院院士(眼科)
+          doctor_18_education_5: 香港中文大學醫療管理學理學碩士
+      doctor_19:
+        doctor_19_name: 梁苑珊醫生
+        doctor_19_en_name: Dr. Gloria Leung
+        doctor_19_education:
+          doctor_19_education_1: 澳洲雪梨大學內外全科醫學士
+          doctor_19_education_2: 新加坡國立大學醫學眼科碩士
+          doctor_19_education_3: 英國愛丁堡皇家外科醫學院院員
+          doctor_19_education_4: 香港眼科醫學院院士
+          doctor_19_education_5: 香港醫學專科學院院士(眼科)
+      doctor_20:
+        doctor_20_name: 鄒樞韻醫生
+        doctor_20_en_name: Dr. Sharon Chow
+        doctor_20_education:
+          doctor_20_education_1: 香港大學內外全科醫學士
+          doctor_20_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_20_education_3: 香港眼科醫學院院士
+          doctor_20_education_4: 香港醫學專科學院院士(眼科)
+      doctor_21:
+        doctor_21_name: 尹浩柟醫生
+        doctor_21_en_name: Dr. Kelvin Wan
+        doctor_21_education:
+          doctor_21_education_1: 香港中文大學內外全科醫學士
+          doctor_21_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_21_education_3: 英國皇家外科醫學院院員
+          doctor_21_education_4: 英國格拉斯哥皇家醫學院外科院員
+          doctor_21_education_5: 香港眼科醫學院院士
+          doctor_21_education_6: 香港醫學專科學院院士(眼科)      
+      doctor_22:
+        doctor_22_name: 鄒樂韻醫生
+        doctor_22_en_name: Dr. Loraine Chow
+        doctor_22_education:
+          doctor_22_education_1: 香港大學內外全科醫學士
+          doctor_22_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_22_education_3: 香港醫學專科學院院士(眼科)
+          doctor_22_education_4: 香港眼科醫學院院士
+      doctor_23:
+        doctor_23_name: 陳鼎鼐醫生
+        doctor_23_en_name: Dr. Dylan Chan
+        doctor_23_education:
+          doctor_23_education_1: 香港中文大學內外全科醫學士
+          doctor_23_education_2: 英國格拉斯哥皇家醫學院外科院士
+          doctor_23_education_3: 香港外科醫學院院士
+          doctor_23_education_4: 香港眼科醫學院院士
+          doctor_23_education_5: 香港醫學專科學院院士(眼科)
+    doctor_edu: 學歷
+    doctor_order: 預約
   medical_service:
     medical_service: 醫療服務
     cataract: 白內障

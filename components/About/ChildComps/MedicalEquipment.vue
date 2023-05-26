@@ -1,48 +1,41 @@
 <script setup lang="ts">
 import { Navigation, Virtual } from 'swiper'
-const moveStep = 0
 const swiperList = [
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment1.jpg',
-    eqName: 'Carl Zeiss Visumax \n全飛秒激光3.0系統',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_1',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_1',
   },
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment2.jpg',
-    eqName: '德國蔡司掃頻OCT生物\n測量儀（IOL Master\n 700）',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_2',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_2',
   },
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment3.jpg',
-    eqName: 'Icare回彈式眼壓計',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_3',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_3',
   },
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment4.jpg',
-    eqName: '日本尼德克綜合電腦\n驗光儀',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_4',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_4',
   },
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment5.jpg',
-    eqName: '日本尼德克手持綜合\n電腦驗光儀',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_5',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_5',
   },
   {
     eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment6.jpg',
-    eqName: '天狼星三維角膜地形\n圖及眼前節分析系統',
-    eqDes:
-      '蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_6',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_6',
   },
 ]
 const show = false
@@ -50,7 +43,7 @@ const show = false
 <template>
   <div id="medicalEquipment">
     <AboutTitle
-      :zh-title="'中心設備'"
+      :zh-title="$t('pages.about_us.equipment_centre')"
       :en-ttitle="'MEDICAL EQUIPMENT'"
       class="title"
     />
@@ -74,8 +67,11 @@ const show = false
           :key="index"
           :virtual-index="index"
         >
-          <img :src="slideContent.eqImgUrl" :alt="slideContent.eqName" />
-          <p class="info pr-3">{{ slideContent.eqName }}</p>
+          <img
+            :src="slideContent.eqImgUrl"
+            :alt="`${$t(slideContent.eqName)}`"
+          />
+          <p class="info pr-3">{{ $t(slideContent.eqName) }}</p>
         </swiper-slide>
       </swiper>
     </div>
@@ -109,8 +105,7 @@ const show = false
         </svg>
       </div>
       <div>
-        蔡司IOLMaster
-        700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        {{ $t('pages.about_us.equipment.equipment_des.equipment_des_1') }}
         <div>資料及圖片來源： Carl Zeiss</div>
       </div>
       <div>

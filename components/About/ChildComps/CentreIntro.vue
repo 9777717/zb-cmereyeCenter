@@ -43,49 +43,69 @@ const visionImgList = [
   'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
 ]
 // 跳转Facebook
-const goFaceBook = () => {
-  window.open('https://www.facebook.com/cmereyecenter/', '_blank')
+const goFaceBook = (type: string) => {
+  if (type === 'eye') {
+    window.open('https://www.facebook.com/cmereyecenter/', '_blank')
+  } else if (type === 'smile') {
+    window.open('https://www.facebook.com/CMER.SMILE', '_blank')
+  } else {
+    window.open('https://www.facebook.com/cmervision', '_blank')
+  }
 }
 // instagram
-const goInstagram = () => {
-  window.open('https://www.instagram.com/cmer_eye_center/', '_blank')
+const goInstagram = (type: string) => {
+  if (type === 'eye') {
+    window.open('https://www.instagram.com/cmer_eye_center/', '_blank')
+  } else if (type === 'smile') {
+    window.open('https://www.instagram.com/cmer_smile/', '_blank')
+  } else {
+    window.open('https://www.instagram.com/cmervision/', '_blank')
+  }
 }
 </script>
 <template>
   <div id="centreIntro" class="centreIntro">
     <!-- 中心簡介 -->
     <div>
-      <AboutTitle :zh-title="'中心簡介'" :en-ttitle="'introduction'" />
+      <AboutTitle
+        :zh-title="$t('pages.about_us.center_profile')"
+        :en-ttitle="'introduction'"
+      />
       <p class="preface text-justify my-16 px-9 py-12">
-        香港領先的一站式眼科專科醫療服務集團
-        ——希瑪眼科醫療控股有限公司，是由林順潮醫生於2012年創立，並於2018年成功在香港聯合交易所主板上市。多年以來，我們的醫療團隊以守護市民視力為目標，為香港市民提供安全、準確、可靠的眼科檢查及專科醫療服務。希瑪眼科服務包括︰檢查及治療眼疾、SMILE微笑激光矯視、植入式隱形眼鏡（ICL）、人工晶體置換（IOL）、全面眼睛檢查、視光配鏡服務等。
+        {{ $t('pages.about_us.profile_centent.profile_text') }}
       </p>
 
       <div class="mianText">
-        <p>「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。</p>
+        <p>{{ $t('pages.about_us.profile_centent.profile_subjection') }}</p>
         <p>
-          我們的集團名稱<span class="color1 font-semibold">「C-MER」</span
-          >，正正反映著我們的理念與執著：
+          {{ $t('pages.about_us.profile_centent.profile_group_start')
+          }}<span class="color1 font-semibold">{{
+            $t('pages.about_us.profile_centent.profile_group_name')
+          }}</span
+          >{{ $t('pages.about_us.profile_centent.profile_group_idea') }}
         </p>
         <p class="color1 font-semibold">
-          「C」 ：專業臨床服務 Profession al Clinical Services
+          {{ $t('pages.about_us.profile_centent.profile_group_C') }}
         </p>
-        <p class="color1 font-semibold">「Ｍ」：現代化管理 Modern Management</p>
-        <p class="color1 font-semibold">「Ｅ」：優質教育 Quality Education</p>
         <p class="color1 font-semibold">
-          「Ｒ」：開創性科研 Pioneering Research
+          {{ $t('pages.about_us.profile_centent.profile_group_M') }}
         </p>
-        <p>
-          「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」
-          同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+        <p class="color1 font-semibold">
+          {{ $t('pages.about_us.profile_centent.profile_group_E') }}
         </p>
+        <p class="color1 font-semibold">
+          {{ $t('pages.about_us.profile_centent.profile_group_R') }}
+        </p>
+        <p>{{ $t('pages.about_us.profile_centent.profile_group_hema') }}</p>
       </div>
     </div>
 
     <!-- 希瑪眼科中心 -->
     <div>
       <div>
-        <div class="float-right">希瑪眼科中心</div>
+        <div class="float-right">
+          {{ $t('pages.about_us.hema_eye.hema_eye') }}
+        </div>
       </div>
       <div>
         <div>
@@ -105,22 +125,18 @@ const goInstagram = () => {
           </Swiper>
         </div>
         <div>
-          <p>
-            現時全港有12間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上21名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
-          </p>
-          <p>
-            眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」的原則，為病人提供安全、準確、可靠的眼科檢查及治療。
-          </p>
+          <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_one') }}</p>
+          <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_two') }}</p>
         </div>
       </div>
       <div>
-        <div @click="goFaceBook">
+        <div @click="goFaceBook('eye')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
-          希瑪眼科
+          {{ $t('pages.about_us.hema_eye.hema_eye_facebooke') }}
         </div>
-        <div @click="goInstagram">
+        <div @click="goInstagram('eye')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -132,16 +148,14 @@ const goInstagram = () => {
     <!-- 希瑪微笑矯視中心 -->
     <div>
       <div>
-        <div class="float-right">希瑪微笑矯視中心</div>
+        <div class="float-right">
+          {{ $t('pages.about_us.hema_smile.hema_smile') }}
+        </div>
       </div>
       <div>
         <div>
-          <p>
-            中心秉持「度身訂造」原則，提供優質服務包括：SMILE微笑激光矯視、LASIK激光矯視、植入式隱形眼鏡（ICL）及人工晶體置換術，為有近視、遠視、散光及老花的市民解決視力問題帶來的困擾。
-          </p>
-          <p>
-            作為率先引入激光矯視技術的眼科中心，至今全港有4間微笑矯視中心。中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
-          </p>
+          <p>{{ $t('pages.about_us.hema_smile.hema_smile_introduce_one') }}</p>
+          <p>{{ $t('pages.about_us.hema_smile.hema_smile_introduce_two') }}</p>
         </div>
         <div>
           <Swiper
@@ -161,13 +175,13 @@ const goInstagram = () => {
         </div>
       </div>
       <div>
-        <div @click="goFaceBook">
+        <div @click="goFaceBook('smile')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
-          希瑪微笑矯視中心
+          {{ $t('pages.about_us.hema_smile.hema_smile_facebooke') }}
         </div>
-        <div @click="goInstagram">
+        <div @click="goInstagram('smile')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -179,7 +193,9 @@ const goInstagram = () => {
     <!-- 希瑪視光中心 -->
     <div>
       <div>
-        <div class="float-right">希瑪視光中心</div>
+        <div class="float-right">
+          {{ $t('pages.about_us.hema_vision.hema_vision') }}
+        </div>
       </div>
       <div>
         <div>
@@ -200,22 +216,21 @@ const goInstagram = () => {
         </div>
         <div>
           <p>
-            希瑪8間視光中心致力為市民提供全面眼科檢查及眼睛護理，秉持「度身訂造」的原則，根據不同年齡層的眼睛狀況及個人實際所需，制定專屬的眼睛檢查及護眼建議，並提供一站式安全、準確及可靠的改善視力方案，做到預防眼疾、及早治療。
+            {{ $t('pages.about_us.hema_vision.hema_vision_introduce_one') }}
           </p>
           <p>
-            面對著香港兒童近視問題，希瑪視光希望能幫助兒童把握控制近視的黃金治療期。為兒童提供詳細眼睛檢查服務，為有需要小孩建議針對性的兒童近視控制方案︰包括︰角膜矯形鏡
-            (OK鏡)、兒童近視控制鏡片、近視控制1 Day隱形眼鏡等。
+            {{ $t('pages.about_us.hema_vision.hema_vision_introduce_two') }}
           </p>
         </div>
       </div>
       <div>
-        <div @click="goFaceBook">
+        <div @click="goFaceBook('vision')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
           />
-          希瑪視光中心
+          {{ $t('pages.about_us.hema_vision.hema_vision_facebooke') }}
         </div>
-        <div @click="goInstagram">
+        <div @click="goInstagram('vision')">
           <img
             src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
           />
@@ -246,7 +261,7 @@ const goInstagram = () => {
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
             alt=""
           />
-          香港希瑪眼科中心
+          {{ $t('pages.about_us.media.media_redbook') }}
         </a>
         <a
           href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
@@ -256,13 +271,14 @@ const goInstagram = () => {
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
             alt=""
           />
-          CMER SMILE Eye Center 香港希瑪眼科
+          {{ $t('pages.about_us.media.media_youtube') }}
         </a>
         <a href="javascript:void(0)" class="isWechat">
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
             alt=""
-          />香港希瑪眼科中心
+          />
+          {{ $t('pages.about_us.media.media_wechat') }}
           <div class="isShow">
             <img
               src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
@@ -287,8 +303,8 @@ const goInstagram = () => {
         <a
           class="downloadpdf"
           href="../../../assets/pdf/cmer.pdf"
-          download="希瑪眼科業務小冊子(電子版).pdf"
-          >下載希瑪眼科業務小冊子</a
+          :download="`${$t('pages.about_us.download.download')}.pdf`"
+          >{{ $t('pages.about_us.download.download') }}</a
         >
       </div>
     </div>

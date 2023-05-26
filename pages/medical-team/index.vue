@@ -3,8 +3,9 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '醫療團隊｜希瑪眼科｜眼科專科醫生',
+  title: t('pages.medical_team.medical_team_header_title'),
   meta: [
     {
       hid: 'description',
@@ -12,196 +13,309 @@ useHead(() => ({
       content:
         '希瑪眼科中心有強大的眼科醫生醫療團隊，一共有22位眼科醫生，包括：林順潮眼科醫生、李佑榮眼科醫生、范愷眼科醫生、黃俊華眼科醫生、劉凱珊眼科醫生、李煒業眼科醫生、邱俊源眼科醫生、李琬微眼科醫生、胡偉君眼科醫生、李少雄眼科醫生、黎浩樺眼科醫生、李德倫眼科醫生、黃禮文眼科醫生、張瀞之眼科醫生、林寶生眼科醫生、林己明眼科醫生、張明權眼科醫生、陳偉樂眼科醫生、梁苑珊眼科醫生、鄒樞韻眼科醫生、尹浩柟醫生、鄒樂韻醫生。希瑪的每位眼科專科醫生會精心評估及治療患者眼疾問題，致力為大眾提供提供安全、準確、可靠的眼科檢查及醫療服務。',
     },
-    {
-      hid: 'keywords',
-      name: 'keywords',
-      content: '',
-    },
   ],
 }))
 const doctorList = [
   {
-    doctorName: '林順潮醫生',
+    doctorName: 'pages.medical_team.doctorList.doctor_1.doctor_1_name',
     doctorIntro: '香港希瑪國際眼科醫療集團創辦人',
-    doctorEnName: 'Dr. Dennis Lam',
-    doctorEducation:
-      '香港大學內外全科醫學士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院士(眼科)\n英國皇家眼科學院院士\n香港中文大學醫學博士',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_1.doctor_1_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_1',
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_2',
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_3',
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_4',
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_5',
+      'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_6',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor01.jpg',
   },
   {
-    doctorName: '李佑榮醫生',
-    doctorEnName: 'Dr. Vincent Lee',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院士\n香港外科醫學院院士\n香港中文大學流行病學與生物統計學理學碩士\n香港中文大學流行病學與生物統計學士後文憑',
+    doctorName: 'pages.medical_team.doctorList.doctor_2.doctor_2_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_2.doctor_2_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_1',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_2',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_3',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_4',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_5',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_6',
+      'pages.medical_team.doctorList.doctor_2.doctor_2_education.doctor_2_education_7',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor02.jpg',
   },
   {
-    doctorName: '范愷醫生',
-    doctorEnName: 'Dr. Alex Fan',
-    doctorEducation:
-      '香港大學內外全科醫學士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院士(眼科)\n英國皇家眼科學院院士\n新加坡國立大學醫學碩士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_3.doctor_3_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_3.doctor_3_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_1',
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_2',
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_3',
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_4',
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_5',
+      'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_6',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor02.jpg',
+  },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_4.doctor_4_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_4.doctor_4_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_1',
+      'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_2',
+      'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_3',
+      'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor03.jpg',
   },
   {
-    doctorName: '黃俊華醫生',
-    doctorEnName: 'Dr. Alex Wong',
-    doctorEducation:
-      '香港大學內外全科醫學士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院員\n英國格拉斯哥皇家外科醫學院院士',
+    doctorName: 'pages.medical_team.doctorList.doctor_5.doctor_5_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_5.doctor_5_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_1',
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_2',
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_3',
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_4',
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_5',
+      'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_6',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor04.jpg',
   },
   {
-    doctorName: '劉凱珊醫生',
-    doctorEnName: 'Dr. Flora Lau',
-    doctorEducation:
-      '香港大學內外全科醫學士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院員\n香港大學醫療科學碩士\n澳洲悉尼大學兒科文憑',
+    doctorName: 'pages.medical_team.doctorList.doctor_6.doctor_6_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_6.doctor_6_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_1',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_2',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_3',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_4',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_5',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_6',
+      'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_7',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor05.jpg',
   },
   {
-    doctorName: '李煒業醫生',
-    doctorEnName: 'Dr. Jacky Lee',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國皇家眼科醫學院院士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院士(眼科)\n英國愛丁堡皇家外科醫學院院員\n英國格拉斯哥皇家醫學院外科院士',
+    doctorName: 'pages.medical_team.doctorList.doctor_7.doctor_7_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_7.doctor_7_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_1',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_2',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_3',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor06.jpg',
   },
   {
-    doctorName: '邱俊源醫生',
-    doctorEnName: 'Dr. Jackey Yau',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院員\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_8.doctor_8_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_8.doctor_8_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_1',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_2',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_3',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_4',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_5',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_6',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor07.jpg',
   },
   {
-    doctorName: '李琬微醫生',
-    doctorEnName: 'Dr. Emmy Li',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院士(眼科)\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士\n英國愛丁堡皇家外科醫學院院員\n香港大學公共衛生科碩士',
+    doctorName: 'pages.medical_team.doctorList.doctor_9.doctor_9_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_9.doctor_9_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_9.doctor_9_education.doctor_9_education_1',
+      'pages.medical_team.doctorList.doctor_9.doctor_9_education.doctor_9_education_2',
+      'pages.medical_team.doctorList.doctor_9.doctor_9_education.doctor_9_education_3',
+      'pages.medical_team.doctorList.doctor_9.doctor_9_education.doctor_9_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor08.jpg',
   },
   {
-    doctorName: '胡偉君醫生',
-    doctorEnName: 'Dr. Wu Wai Kwan',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院士\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_10.doctor_10_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_10.doctor_10_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_1',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_2',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_3',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_4',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_5',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_6',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_7',
+      'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_8',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor09.jpg',
   },
   {
-    doctorName: '李少雄醫生',
-    doctorEnName: 'Dr. Patrick Li',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)\n英國愛丁堡皇家外科醫學院院士\n英國格拉斯哥皇家外科醫學院院士\n新加坡國立大學眼科醫學碩士\n香港中文大學內科醫學文憑\n澳洲蒙納殊大學家庭醫學文憑',
+    doctorName: 'pages.medical_team.doctorList.doctor_11.doctor_11_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_11.doctor_11_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_11.doctor_11_education.doctor_11_education_1',
+      'pages.medical_team.doctorList.doctor_11.doctor_11_education.doctor_11_education_2',
+      'pages.medical_team.doctorList.doctor_11.doctor_11_education.doctor_11_education_3',
+      'pages.medical_team.doctorList.doctor_11.doctor_11_education.doctor_11_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor10.jpg',
   },
   {
-    doctorName: '黎浩樺醫生',
-    doctorEnName: 'Dr. Kenny Lai',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)\n英國愛丁堡皇家外科醫學院院員',
-    doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor11.jpg',
-  },
-  {
-    doctorName: '李德倫醫生',
-    doctorEnName: 'Dr. Stephen Li',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_12.doctor_12_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_12.doctor_12_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_12.doctor_12_education.doctor_12_education_1',
+      'pages.medical_team.doctorList.doctor_12.doctor_12_education.doctor_12_education_2',
+      'pages.medical_team.doctorList.doctor_12.doctor_12_education.doctor_12_education_3',
+      'pages.medical_team.doctorList.doctor_12.doctor_12_education.doctor_12_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor12.jpg',
   },
   {
-    doctorName: '黃禮文醫生',
-    doctorEnName: 'Dr. Raymond Wong',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員(眼科)\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_13.doctor_13_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_13.doctor_13_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_13.doctor_13_education.doctor_13_education_1',
+      'pages.medical_team.doctorList.doctor_13.doctor_13_education.doctor_13_education_2',
+      'pages.medical_team.doctorList.doctor_13.doctor_13_education.doctor_13_education_3',
+      'pages.medical_team.doctorList.doctor_13.doctor_13_education.doctor_13_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor13.jpg',
   },
   {
-    doctorName: '張瀞之醫生',
-    doctorEnName: 'Dr. Janice Cheung',
-    doctorEducation:
-      '香港大學內外全科醫學士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)\n英國愛丁堡皇家外科醫學院院士(眼科)\n英國格拉斯哥皇家外科醫學院院士\n英國愛丁堡皇家外科醫學院院員',
+    doctorName: 'pages.medical_team.doctorList.doctor_14.doctor_14_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_14.doctor_14_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_1',
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_2',
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_3',
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_4',
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_5',
+      'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_6',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor14.jpg',
   },
   {
-    doctorName: '林寶生醫生',
-    doctorEnName: 'Dr. Carol Lam',
-    doctorEducation:
-      '香港中文大學內外全科醫學士 \n英國愛丁堡皇家外科醫學院院員\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_15.doctor_15_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_15.doctor_15_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_15.doctor_15_education.doctor_15_education_1',
+      'pages.medical_team.doctorList.doctor_15.doctor_15_education.doctor_15_education_2',
+      'pages.medical_team.doctorList.doctor_15.doctor_15_education.doctor_15_education_3',
+      'pages.medical_team.doctorList.doctor_15.doctor_15_education.doctor_15_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor15.jpg',
   },
   {
-    doctorName: '林己明醫生',
-    doctorEnName: 'Dr. Jasmine Lam',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士',
+    doctorName: 'pages.medical_team.doctorList.doctor_16.doctor_16_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_16.doctor_16_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_16.doctor_16_education.doctor_16_education_1',
+      'pages.medical_team.doctorList.doctor_16.doctor_16_education.doctor_16_education_2',
+      'pages.medical_team.doctorList.doctor_16.doctor_16_education.doctor_16_education_3',
+      'pages.medical_team.doctorList.doctor_16.doctor_16_education.doctor_16_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor16.jpg',
   },
   {
-    doctorName: '張明權醫生',
-    doctorEnName: 'Dr. Paul Cheung',
-    doctorEducation:
-      '香港大學內外全科醫學士\n愛爾蘭皇家內外科醫學院\n英國格拉斯哥皇家外科醫學院眼科文憑\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_17.doctor_17_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_17.doctor_17_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_17.doctor_17_education.doctor_17_education_1',
+      'pages.medical_team.doctorList.doctor_17.doctor_17_education.doctor_17_education_2',
+      'pages.medical_team.doctorList.doctor_17.doctor_17_education.doctor_17_education_3',
+      'pages.medical_team.doctorList.doctor_17.doctor_17_education.doctor_17_education_4',
+      'pages.medical_team.doctorList.doctor_17.doctor_17_education.doctor_17_education_5',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor17.jpg',
   },
   {
-    doctorName: '陳偉樂醫生',
-    doctorEnName: 'Dr. Leo Chan',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員(眼科)\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)\n香港中文大學醫療管理學理學碩士',
+    doctorName: 'pages.medical_team.doctorList.doctor_18.doctor_18_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_18.doctor_18_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_18.doctor_18_education.doctor_18_education_1',
+      'pages.medical_team.doctorList.doctor_18.doctor_18_education.doctor_18_education_2',
+      'pages.medical_team.doctorList.doctor_18.doctor_18_education.doctor_18_education_3',
+      'pages.medical_team.doctorList.doctor_18.doctor_18_education.doctor_18_education_4',
+      'pages.medical_team.doctorList.doctor_18.doctor_18_education.doctor_18_education_5',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor18.jpg',
   },
   {
-    doctorName: '梁苑珊醫生',
-    doctorEnName: 'Dr. Gloria Leung',
-    doctorEducation:
-      '澳洲雪梨大學內外全科醫學士\n新加坡國立大學醫學眼科碩士\n英國愛丁堡皇家外科醫學院院員\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_19.doctor_19_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_19.doctor_19_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_19.doctor_19_education.doctor_19_education_1',
+      'pages.medical_team.doctorList.doctor_19.doctor_19_education.doctor_19_education_2',
+      'pages.medical_team.doctorList.doctor_19.doctor_19_education.doctor_19_education_3',
+      'pages.medical_team.doctorList.doctor_19.doctor_19_education.doctor_19_education_4',
+      'pages.medical_team.doctorList.doctor_19.doctor_19_education.doctor_19_education_5',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor19.jpg',
   },
   {
-    doctorName: '鄒樞韻醫生',
-    doctorEnName: 'Dr. Sharon Chow',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_20.doctor_20_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_20.doctor_20_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_20.doctor_20_education.doctor_20_education_1',
+      'pages.medical_team.doctorList.doctor_20.doctor_20_education.doctor_20_education_2',
+      'pages.medical_team.doctorList.doctor_20.doctor_20_education.doctor_20_education_3',
+      'pages.medical_team.doctorList.doctor_20.doctor_20_education.doctor_20_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor20.jpg',
   },
   {
-    doctorName: '尹浩柟醫生',
-    doctorEnName: 'Dr. Kelvin Wan',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員\n英國皇家外科醫學院院員\n英國格拉斯哥皇家醫學院外科院員\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_21.doctor_21_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_21.doctor_21_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_1',
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_2',
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_3',
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_4',
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_5',
+      'pages.medical_team.doctorList.doctor_21.doctor_21_education.doctor_21_education_6',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor21.jpg',
   },
   {
-    doctorName: '鄒樂韻醫生',
-    doctorEnName: 'Dr. Loraine Chow',
-    doctorEducation:
-      '香港大學內外全科醫學士\n英國愛丁堡皇家外科醫學院院員\n香港醫學專科學院院士(眼科)\n香港眼科醫學院院士',
+    doctorName: 'pages.medical_team.doctorList.doctor_22.doctor_22_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_22.doctor_22_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_22.doctor_22_education.doctor_22_education_1',
+      'pages.medical_team.doctorList.doctor_22.doctor_22_education.doctor_22_education_2',
+      'pages.medical_team.doctorList.doctor_22.doctor_22_education.doctor_22_education_3',
+      'pages.medical_team.doctorList.doctor_22.doctor_22_education.doctor_22_education_4',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor22.jpg',
   },
   {
-    doctorName: '陳鼎鼐醫生',
-    doctorEnName: 'Dr. Dylan Chan',
-    doctorEducation:
-      '香港中文大學內外全科醫學士\n英國格拉斯哥皇家醫學院外科院士\n香港外科醫學院院士\n香港眼科醫學院院士\n香港醫學專科學院院士(眼科)',
+    doctorName: 'pages.medical_team.doctorList.doctor_23.doctor_23_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_23.doctor_23_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_1',
+      'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_2',
+      'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_3',
+      'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_4',
+      'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_5',
+    ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/2023/02/5d01933b13f4a2eb.png',
   },
@@ -210,29 +324,35 @@ const doctorList = [
 <template>
   <div id="medical-team" class="medical-team">
     <div>
-      <div class="title">醫 療 團 隊</div>
+      <div class="title">{{ $t('pages.medical_team.medical_team_title') }}</div>
       <div></div>
     </div>
     <div class="mainCon">
       <ul>
         <li v-for="(item, index) in doctorList" :key="index" class="docList">
           <div class="docDes">
-            <div class="docName">{{ item.doctorName }}</div>
+            <div class="docName">{{ $t(item.doctorName) }}</div>
             <p v-if="item.doctorIntro" class="doctorIntro">
-              {{ item.doctorIntro }}
+              {{ $t(item.doctorIntro) }}
             </p>
             <div class="docEducation">
-              <div class="edutitle">學歷</div>
-              <div class="eduDes">{{ item.doctorEducation }}</div>
+              <div class="edutitle">
+                {{ $t('pages.medical_team.doctor_edu') }}
+              </div>
+              <div>
+                <div v-for="(ele, i) in item.doctorEducation" :key="i">
+                  <span>{{ $t(ele) }}</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="docImg">
-            <div><img :src="item.doctorImgUrl" :alt="item.doctorEnName" /></div>
-            <div class="docEnName">{{ item.doctorEnName }}</div>
+            <div><img :src="item.doctorImgUrl" /></div>
+            <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
-          <nuxt-link class="orderLink text-white inline-block" to=""
-            >預約</nuxt-link
-          >
+          <nuxt-link class="orderLink text-white inline-block" to="">{{
+            $t('pages.medical_team.doctor_edu')
+          }}</nuxt-link>
         </li>
       </ul>
     </div>

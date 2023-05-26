@@ -1,109 +1,175 @@
-<script>
-export default {
-  data() {
-    return {
-      historyList: [
-        {
-          year: '2022',
-          contentList: [
-            { month: '9月', info: '將軍澳 希瑪眼科中心成立' },
-            { month: '8月', info: '揭陽希瑪眼科醫院成立' },
-            {
-              month: '3月',
-              info: '廣州 希瑪眼科醫院成立\n福州 希瑪眼科醫院成立',
-            },
-          ],
-        },
-        {
-          year: '2021',
-          contentList: [
-            {
-              month: '11月',
-              info: '尖沙咀 希瑪醫療集團成立 (眼科、牙科、醫美)',
-            },
-            {
-              month: '7月',
-              info: '中環 希瑪眼科視光中心成立\n旺角 希瑪眼科視光中心成立',
-            },
-            { month: '3月', info: '惠州希瑪眼科醫院成立' },
-          ],
-        },
-        {
-          year: '2020',
-          contentList: [
-            {
-              month: '11月',
-              info: '荃灣希瑪眼科中心成立\n珠海希瑪林順潮眼科醫院成立\n深圳新安林順潮眼科門診部升級為醫院',
-            },
-          ],
-        },
-        {
-          year: '2019',
-          contentList: [
-            { month: '12月', info: '元朗(第二間)希瑪眼科中心成立' },
-            { month: '11月', info: '上海希瑪瑞視眼科醫院' },
-            { month: '10月', info: '希瑪微笑激光矯視中心成立' },
-            { month: '6月', info: '昆明 希瑪林順潮眼科醫院成立' },
-          ],
-        },
-        {
-          year: '2018',
-          contentList: [
-            { month: '11月', info: '深圳新安希瑪林順潮眼科門診部成立' },
-            { month: '3月', info: '觀塘 希瑪眼科中心成立' },
-            { month: '1月', info: '北京 希瑪林順潮眼科醫院成立' },
-          ],
-        },
-        {
-          year: '2017',
-          contentList: [{ month: '2月', info: '銅鑼灣 希瑪眼科中心成立' }],
-        },
-        {
-          year: '2016',
-          contentList: [
-            { month: '6月', info: '沙田 希瑪眼科中心成立' },
-            { month: '1月', info: '元朗 希瑪眼科中心成立' },
-          ],
-        },
-        {
-          year: '2014',
-          contentList: [{ month: '1月', info: '深圳 希瑪林順潮眼科醫院成立' }],
-        },
-        {
-          year: '2013',
-          contentList: [{ month: '3月', info: '深圳 希瑪林順潮眼科醫院成立' }],
-        },
-        {
-          year: '2012',
-          contentList: [{ month: '1月', info: '中環 希瑪眼科中心成立' }],
-        },
-      ],
-    }
+<script setup lang="ts">
+const historyList = ref([
+  {
+    year: 'pages.about_us.course_year.year_22',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_22.child22_month_1',
+        info: 'pages.about_us.course_year.child_22.child22_info_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_22.child22_month_2',
+        info: 'pages.about_us.course_year.child_22.child22_info_2',
+      },
+      {
+        month: 'pages.about_us.course_year.child_22.child22_month_3',
+        info: [
+          'pages.about_us.course_year.child_22.child22_info_3_1',
+          'pages.about_us.course_year.child_22.child22_info_3_2',
+        ],
+      },
+    ],
   },
-}
+  {
+    year: 'pages.about_us.course_year.year_21',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_21.child21_month_1',
+        info: 'pages.about_us.course_year.child_21.child21_info_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_21.child21_month_2',
+        info: [
+          'pages.about_us.course_year.child_21.child21_info_2_1',
+          'pages.about_us.course_year.child_21.child21_info_2_2',
+        ],
+      },
+      {
+        month: 'pages.about_us.course_year.child_21.child21_month_3',
+        info: 'pages.about_us.course_year.child_21.child21_info_3',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_20',
+    contentList: [
+      {
+        month: '',
+        info: [
+          'pages.about_us.course_year.child_20.child_info_1',
+          'pages.about_us.course_year.child_20.child_info_2',
+          'pages.about_us.course_year.child_20.child_info_3',
+        ],
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_19',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_19.child_month_1',
+        info: 'pages.about_us.course_year.child_19.child_info_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_19.child_month_2',
+        info: 'pages.about_us.course_year.child_19.child_info_2',
+      },
+      {
+        month: 'pages.about_us.course_year.child_19.child_month_3',
+        info: 'pages.about_us.course_year.child_19.child_info_3',
+      },
+      {
+        month: 'pages.about_us.course_year.child_19.child_month_4',
+        info: 'pages.about_us.course_year.child_19.child_info_4',
+      },
+    ],
+  },
+  {
+    year: '2018',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_18.child_month_1',
+        info: 'pages.about_us.course_year.child_18.child_info_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_18.child_month_2',
+        info: 'pages.about_us.course_year.child_18.child_info_2',
+      },
+      {
+        month: 'pages.about_us.course_year.child_18.child_month_3',
+        info: 'pages.about_us.course_year.child_18.child_info_3',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_17',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_17.child_month',
+        info: 'pages.about_us.course_year.child_17.child_info',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_16',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_16.child_month_1',
+        info: 'pages.about_us.course_year.child_16.child_info_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_16.child_month_2',
+        info: 'pages.about_us.course_year.child_16.child_info_2',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_14',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_14.child_month',
+        info: 'pages.about_us.course_year.child_14.child_info',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_13',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_13.child_month',
+        info: 'pages.about_us.course_year.child_13.child_info',
+      },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_12',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_12.child_month',
+        info: 'pages.about_us.course_year.child_12.child_info',
+      },
+    ],
+  },
+])
 </script>
 <template>
   <div id="history">
     <AboutTitle
-      :zh-title="'發展歷程'"
+      :zh-title="$t('pages.about_us.development_course')"
       :en-ttitle="'our history'"
       class="title relative z-50"
     />
-
     <div class="mainHistoryBox">
       <div
         v-for="(years, i) in historyList"
         :key="i"
         class="historyContent relative z-50 mb-14"
       >
-        <h1 class="year en-font text-center pb-2 mb-5">{{ years.year }}</h1>
+        <h1 class="year en-font text-center pb-2 mb-5">{{ $t(years.year) }}</h1>
         <div
           v-for="(item, index) in years.contentList"
           :key="index"
           class="content flex items-start justify-start"
         >
-          <p class="month">{{ item.month }}</p>
-          <p class="info">{{ item.info }}</p>
+          <p class="month">{{ $t(item.month) }}</p>
+          <div v-if="Array.isArray(item.info)">
+            <div v-for="(ele, i) in item.info" :key="i" class="info">
+              <p>{{ $t(ele) }}</p>
+            </div>
+          </div>
+          <div v-else>
+            <p class="info">{{ $t(item.info) }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -165,13 +231,15 @@ export default {
       margin-bottom: 15px;
 
       .month {
-        width: 10%;
+        width: 13%;
         padding-right: 10%;
-        text-align: right;
+        // text-align: right;
         box-sizing: content-box;
       }
 
       .info {
+        width: 360px;
+        max-width: 400px;
         white-space: pre-wrap !important;
       }
     }

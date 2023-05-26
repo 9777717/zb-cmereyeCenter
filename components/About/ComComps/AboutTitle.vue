@@ -72,6 +72,9 @@ h2 {
 
   & > span {
     margin-right: 3px;
+    & > svg {
+      margin-top: -4px;
+    }
   }
 }
 </style>

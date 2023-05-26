@@ -1,55 +1,57 @@
 <script setup lang="ts">
 import { Autoplay } from 'swiper'
-
-import { ref, onMounted } from 'vue'
 const awardsList = [
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
-    year: '2020-2021',
-    des: '香港星級品牌企業獎',
+    year: 'pages.about_us.awards.awards_year_1',
+    des: 'pages.about_us.awards.awards_des_1',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
-    year: '2020/2021',
-    des: '商界展關懷',
+    year: 'pages.about_us.awards.awards_year_2',
+    des: 'pages.about_us.awards.awards_des_2',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
-    year: '2020',
-    des: '亞洲最佳價值服務大獎',
+    year: 'pages.about_us.awards.awards_year_3',
+    des: 'pages.about_us.awards.awards_des_3',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards4.jpg',
-    year: '2020',
-    des: '香港旅遊業十優推介',
+    year: 'pages.about_us.awards.awards_year_4',
+    des: 'pages.about_us.awards.awards_des_4',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
-    year: '2020',
-    des: '香港最優秀企業大獎',
+    year: 'pages.about_us.awards.awards_year_5',
+    des: 'pages.about_us.awards.awards_des_5',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
-    year: '2020',
-    des: '香港服務名牌',
+    year: 'pages.about_us.awards.awards_year_6',
+    des: 'pages.about_us.awards.awards_des_6',
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards7.jpg',
-    year: '2019',
-    des: '香港健康產業大獎',
+    year: 'pages.about_us.awards.awards_year_7',
+    des: 'pages.about_us.awards.awards_des_7',
   },
 ]
 </script>
 <template>
   <div id="awards" class="">
-    <AboutTitle :zh-title="'企業榮譽'" :en-ttitle="'awards'" class="title" />
+    <AboutTitle
+      :zh-title="$t('pages.about_us.awards.awards')"
+      :en-ttitle="'awards'"
+      class="title"
+    />
     <div v-if="awardsList.length" class="awardslide">
       <swiper
         :loop="true"
@@ -66,8 +68,8 @@ const awardsList = [
           <div class="brand">
             <div><img :src="item.imgUrl" :alt="item.des" /></div>
             <div>
-              <div>{{ item.year }}</div>
-              <div>{{ item.des }}</div>
+              <div>{{ $t(item.year) }}</div>
+              <div>{{ $t(item.des) }}</div>
             </div>
           </div>
         </swiper-slide>
