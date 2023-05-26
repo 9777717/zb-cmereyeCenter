@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const anchorList = [
+const { t } = useLang()
+const anchorList = reactive([
   {
-    anchorName: '中心簡介',
+    anchorName: t('pages.about_us.about_us'),
     anchorLink: '/about-us#centreIntro',
   },
   {
-    anchorName: '發展歷程',
+    anchorName: t('pages.about_us.development_course'),
     anchorLink: '/about-us#history',
   },
   // {
@@ -17,18 +18,18 @@ const anchorList = [
   //   anchorLink: '/about-us#medicalEquipment',
   // },
   {
-    anchorName: '企業榮譽',
+    anchorName: t('pages.about_us.enterprise_vision'),
     anchorLink: '/about-us#awards',
   },
   {
-    anchorName: '費用一覽',
+    anchorName: t('pages.process_cost.cost'),
     anchorLink: '/process-and-cost',
   },
   {
-    anchorName: '就診流程',
+    anchorName: t('pages.process_cost.process'),
     anchorLink: '/process-and-cost#process',
   },
-]
+])
 const acIdex = ref(-1)
 const exactIdex = ref(-1)
 const changeActive = (index: any) => {
@@ -43,7 +44,7 @@ const leaveActive = () => {
 </script>
 <template>
   <div class="aboutHead">
-    <div class="title">關於我們</div>
+    <div class="title">{{ $t('pages.about_us.about_us') }}</div>
     <div class="imgBox">
       <img
         src="https://static.cmereye.com/imgs/2023/05/042c0e54e896002f.jpg"

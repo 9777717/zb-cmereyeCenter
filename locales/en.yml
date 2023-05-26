@@ -63,26 +63,56 @@ pages:
       title: home
   index:
     home: home
+    footer:
+      company: Shimalin Shunchao Eye Center
+      copy_right: copyRight
+      language: language
+      fonts: fonts
+      privacy: privacy policy 
+      disclaimer: disclaimer
   about_us:
-    about_us: about_us
+    about_us: about Us
+    center_profile: 中心简介
+    development_course: 发展历程
+    enterprise_vision: 企业愿景
   medical_team:
-    medical_team: medical_team
+    medical_team: 医疗团队
   medical_service:
-    medical_service: medical_service
+    medical_service: 医疗服务
+    cataract: 白内障
+    glaucoma: 青光眼
+    xerophthalmia: 干眼症
+    muscae_volitantes: 飞蚊症
+    conjunctivitis: 结膜炎
+    maculopathy: 黄斑病变
+    # : 儿童斜弱视
+    # : 眼表及角膜疾病
+    # : 视网膜脱落及疾病
+    # : 眼疾形及眼眶疾病
+    # : 医学验光配镜
+    # : 屈光矫正
   ophthalmic_information:
-    ophthalmic_information: ophthalmic_information
+    ophthalmic_information: 眼科咨询
+    ophthalmic_class: 医生小教室
+    ophthalmic_publicity: 护眼宣传片
+    ophthalmic_little_theatre: 戏码小剧场
+    ophthalmic_press: 新闻推荐
+    ophthalmic_article: 文章推荐
+    ophthalmic_message: 健康资讯
   process_cost:
-    process_cost: process_and_Cost
+    process_cost: 流程及费用
+    cost: 费用一览
+    process: 就诊流程
   talent_recruitment:
-    talent_recruitment: talent_recruitment
+    talent_recruitment: 人才招聘
   contact_us:
-    contact_us: contact_us
+    contact_us: 联络我们
+    clinic_information: 诊所资料
+    appointmentForm: 电子预约表格
 banners:
-  welcome: hello, welcome to %{app_name}!
+  welcome: 你好, 欢迎来到 %{app_name}!
 others:
-  learn_more: learn more
-  copy: copy
-  enabled: enabled
-  apple: apple
-  banana: banana
-  peach: peach
+  learn_more: 了解更多
+  copy: 复制
+  enabled: 启用
+  disabled: 禁用

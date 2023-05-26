@@ -25,7 +25,7 @@ definePageMeta({
         />
       </svg>
     </div>
-    <div>字體</div>
+    <div>{{ $t('pages.index.footer.fonts') }}</div>
     <div>
       <div></div>
       <div></div>

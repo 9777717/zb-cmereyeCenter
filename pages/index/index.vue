@@ -69,7 +69,7 @@ const callTel = () => {
                 fill="#2958A3"
               />
             </svg>
-            <div>立即預約</div>
+            <div>{{ $t('pages.index.subscribe') }}</div>
           </div>
           <div>
             <div @click="callTel()">
@@ -148,7 +148,7 @@ const callTel = () => {
                   />
                 </svg>
               </div>
-              <div>在線查詢</div>
+              <div>{{ $t('pages.index.inquire') }}</div>
             </div>
           </div>
         </div>

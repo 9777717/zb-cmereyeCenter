@@ -51,7 +51,7 @@ const localeSetting = useState<string>('locale.setting')
               stroke-linejoin="round"
             />
           </svg>
-          <div class="font">Language</div>
+          <div class="font">{{ $t('pages.index.footer.language') }}</div>
         </span>
       </ListboxButton>
       <ListboxOptions

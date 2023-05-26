@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const year = new Date().getFullYear()
+</script>
 
 <template>
   <div class="footerTem">
@@ -6,7 +8,10 @@
     <PageContentOnlinContact />
     <footer class="bg-blue-900">
       <section class="footer">
-        <div>©2023 希瑪林順潮眼科中心 版權所有</div>
+        <div>
+          ©{{ year }} {{ $t('pages.index.footer.company') }}
+          {{ $t('pages.index.footer.copy_right') }}
+        </div>
         <div>
           <PageContentFooterSvg />
           <LanguageSwitcher />

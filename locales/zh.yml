@@ -63,6 +63,15 @@ pages:
       title: 主页
   index:
     home: 首頁
+    footer:
+      company: 希瑪林順潮眼科中心
+      copy_right: 版權所有
+      language: 语言
+      fonts: 字体
+      privacy: 私隐政策
+      disclaimer: 免责条款
+    subscribe: 立即预约
+    inquire: 在线查询
   about_us:
     about_us: 关于我们
     center_profile: 中心简介

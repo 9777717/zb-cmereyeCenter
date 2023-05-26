@@ -27,11 +27,15 @@ definePageMeta({
     </div>
     <div>
       <div>
-        <nuxt-link :to="{ name: 'privacyPolicy' }">私隱政策</nuxt-link>
+        <nuxt-link :to="{ name: 'privacyPolicy' }">{{
+          $t('pages.index.footer.privacy')
+        }}</nuxt-link>
       </div>
       <div>&</div>
       <div>
-        <nuxt-link :to="{ name: 'disclaimer' }">免責條款</nuxt-link>
+        <nuxt-link :to="{ name: 'disclaimer' }">{{
+          $t('pages.index.footer.disclaimer')
+        }}</nuxt-link>
       </div>
     </div>
   </div>
