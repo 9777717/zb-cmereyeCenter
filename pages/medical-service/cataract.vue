@@ -16,232 +16,310 @@ const backgd = [
 const fatorArr = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5b88e2c3d5a24717.png',
-    text: '紫外線',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a83300c944834450.png',
-    text: '吸煙習慣',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/77092ee46cf226d9.png',
-    text: '深度近視 \n（600度或以上）',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/fc3c0ecda42d6dca.png',
-    text: '糖尿病',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8e4d13a54786cdcc.png',
-    text: '使用某些藥物 \n如類固醇',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/027fbbc52748d448.png',
-    text: '出生時就患有 \n 先天性白內障',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/6f9105c7d9aeefa2.png',
-    text: '眼睛曾經 \n受過外傷',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_2',
+    ],
   },
 ]
 const symptomArr = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/03c86d6ac63e3454.png',
-    text: '視力模糊、\n視力下降',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a4f207cfb55a0903.png',
-    text: '眩光、重影、 \n日盲癥',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e493e6f5a154cd97.png',
-    text: '事物顏色 \n變得暗淡、變形',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/848679d9bcce652d.png',
-    text: '夜間視力下降',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/c864d708858a3f2e.png',
-    text: '須經常更換眼鏡 \n或隱形眼鏡度數',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_2',
+    ],
   },
 ]
 
 const surgeryArr = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/6657fc39bf0d020c.png',
-    text: '採用局部點眼藥水式 \n麻醉法',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/55d34019e98d8e65.png',
-    text: '利用微細超聲波儀器 \n切除混濁的晶體',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7b14a5086daa3610.png',
-    text: '置入人工晶體，並好好固定住 \n術後傷口一般毋須縫線',
+    text: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_2',
+    ],
   },
 ]
 const iclArr = [
   {
     img: '',
-    type: '晶體類型',
-    monofocal: '單焦點\n人工晶體',
-    astigmatism: '散光型\n人工晶體',
-    multipleFocus: '多焦點\n人工晶體',
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_type',
+    monofocal: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_monofocal1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_monofocal2',
+    ],
+    astigmatism: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_astigmatism2',
+    ],
+    multipleFocus: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_multipleFocus1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_multipleFocus2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/47e6f09498b91509.png',
-    type: '遠距離視力',
-    monofocal: '很好',
-    astigmatism: '與單焦點\n人工晶體一樣',
-    multipleFocus: '良好',
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type',
+    monofocal:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_monofocal',
+    astigmatism: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_astigmatism2',
+    ],
+    multipleFocus:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_multipleFocus',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/88fe9f4dae4a48d6.png',
-    type: '中距離視力',
-    monofocal: ' 很好',
-    astigmatism: '與單焦點\n人工晶體一樣',
-    multipleFocus: '良好',
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type',
+    monofocal:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_monofocal',
+    astigmatism: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism2',
+    ],
+    multipleFocus:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_multipleFocus',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0fb789bc099b4c7e.png',
-    type: '近距離視力',
-    monofocal: '很好',
-    astigmatism: '與單焦點\n人工晶體一樣',
-    multipleFocus: '良好',
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type',
+    monofocal:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal',
+    astigmatism: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism2',
+    ],
+    multipleFocus:
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_multipleFocus',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5cc8f1f288c60d39.png',
-    type: '優點',
-    monofocal: ['良好視力質素', '（但無法同時對焦遠近距離視力）'],
-    astigmatism: ['良好視力質素', '一併解決散光問題'],
-    multipleFocus: ['良好遠，中，近視力', '大多可不依賴眼鏡'],
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_type',
+    monofocal: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_monofocal1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_monofocal2',
+    ],
+    astigmatism: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_astigmatism2',
+    ],
+    multipleFocus: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_multipleFocus1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_multipleFocus2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/c08795d5179afc22.png',
-    type: '適合人群',
+    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_type',
     monofocal: [
-      '· 不介意配戴眼鏡人士',
-      '· 要求更好視力質素人士',
-      '· 有經濟考慮人士',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal2',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal3',
     ],
     astigmatism: [
-      '· 不介意配戴眼鏡人士',
-      '· 要求更好視力質素人士',
-      '· 術前患有散光人士',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal2',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal3',
     ],
     multipleFocus: [
-      '· 不想配戴眼鏡人士',
-      '· 不優先考慮夜間駕駛\n視力需要人士',
-      '· 經濟能力較好人士',
-      '· 無其他嚴重眼病人士',
+      [
+        'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_multipleFocus1_1',
+        'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_multipleFocus1_2',
+      ],
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_multipleFocus2',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_multipleFocus3',
     ],
   },
 ]
 const announcementsArr = [
   {
     id: '01',
-    text: '為盡快令傷口復原及避免細菌感染，術後蓋上紗布及眼罩需要保留一晚，直到第二天才拆開。如果不慎鬆開，再用消毒紗布重新蓋上。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements1',
     img: 'https://static.cmereye.com/imgs/2023/05/28e797c56a574cce.png',
   },
   {
     id: '02',
-    text: '一般建議病人術後於睡覺時蓋上保䕶眼罩兩星期，可以預防不必要的踫撞及捽眼睛。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements2',
     img: 'https://static.cmereye.com/imgs/2023/05/37962e24ec481c1c.png',
   },
   {
     id: '03',
-    text: '術後當天一般都不建議洗頭，注意沐浴時切勿沾濕紗布。一般建議頭一星期平臥或仰臥洗頭，避免污水流入眼內或於洗頭時戴上如泳鏡作保護。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements3',
     img: 'https://static.cmereye.com/imgs/2023/05/63d616d8816fc14d.png',
   },
   {
     id: '04',
-    text: '須保持傷口清潔，建議用化妝綿，凍開水，先洗下眼皮，再洗上眼皮，貼近眼睫毛嘅根部，由內至外一下過，一般每次滴眼水前清潔，每天四至六次。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements4',
     img: 'https://static.cmereye.com/imgs/2023/05/d1539d09a4afe49a.png',
   },
   {
     id: '05',
-    text: '禁止揉眼以免影響傷口癒合。應避免拿重物，90度彎身動作如綁鞋帶等。劇烈運動如跑步、跳水、有身體碰撞機會的運動等亦不適宜。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements5',
     img: 'https://static.cmereye.com/imgs/2023/05/04c51b9d4cdf56e9.png',
   },
   {
     id: '06',
-    text: '跟足指示，定時滴用由醫生處方的眼藥水，並保持均衡飲食。',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements6',
     img: 'https://static.cmereye.com/imgs/2023/05/56cd1f34a7c0da6e.png',
   },
   {
     id: '07',
-    text: '術後如果眼睛無故出血、流膿、劇痛或視力突然模糊等，應盡快求醫，以免延誤治療',
+    text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements7',
     img: 'https://static.cmereye.com/imgs/2023/05/aa98a33175063fa3.png',
   },
 ]
-
-const activeNames = ref('1')
 // 折叠问答
 const meetArr = [
   {
-    title: 'Q：白內障成熟時才能接受治療？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q1',
     agree: [
-      '隨著白內障摘除及人工晶體植入技術不斷進步，現今的白內障治療可謂成效高﹑風險低。患者毋須待白內障成熟便可接受治療，而且，白內障愈熟，治療的難度也相應提高，出現併發症的風險也愈高。',
-      '因此，當患者感到工作及日常生活受影響時，便應積極考慮接受治療。讀者之所以有這誤解，主要是由於在人工晶體被廣泛使用於白內障治療前，當病人的晶體被摘除後，便馬上變成深遠視患者，要配戴厚厚的遠視鏡，直接影響影像質素；如果只摘除一隻眼內的白內障，更會出現嚴重的「鴛鴦眼」，大多數人也不能適應。因此，從前的眼科醫生多建議病人待雙眼的白內障成熟才接受治療。',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a1_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a1_2',
     ],
   },
   {
-    title: 'Q：人工晶體可以使用多久？需要更換嗎？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q2',
     agree:
-      '植入了的人工晶體，通常可終身使用，無需更換。在極少數情況下，出現人工晶體位置異常，或者無法適應所植入的多焦點人工晶體時（約2%個案會發生），可能需要考慮更換。',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a2',
   },
   {
-    title: 'Q：接受白內障治療後，還需要戴眼鏡嗎？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q3',
     agree:
-      '因應各人用眼情況和眼睛條件，眼科醫生可為病人設計術後目標視力，因此有機會無需再戴眼鏡。因應不同人對視力質素的期望和生活需要，也可以隨心再配戴淺度數眼鏡，獲取更好的視力質素。',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a3',
   },
   {
-    title: 'Q：治療過程會痛嗎？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q4',
     agree:
-      '白內障治療會在局部麻醉下進行。雖然患者治療過程清醒，但大多數患者並不感到疼痛。',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a4',
   },
   {
-    title: 'Q：白內障治療需要在醫院進行嗎？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q5',
     agree: [
-      '此項微創治療不需全身麻醉，只用麻醉眼藥水，也不需留院觀察。本診所設有多間符合國際標準的無菌手術室、先進的檢測和矯視儀器，安全、可靠。',
-      '然而，部分病人或需全身麻醉，則需要在醫院接受治療，詳情可向你的眼科專科醫生查詢。',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a5_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a5_2',
     ],
   },
   {
-    title: 'Q：接受治療後什麼時候可以進行日常活動 / 運動？',
+    title:
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q6',
     agree: [
-      '第一天覆診後如無異常，病人可進行一般運動（如：打太極、行山、散步等），但接觸性運動（如：拳擊等）則暫時不建議進行。可參考以下例子：',
-      '散步：術後24小時',
-      '坐飛機：術後24小時',
-      '游水：為預防感染，建議術後1周進行',
-      '其他面部或牙科治療：建議最少術後1周進行，安全起見可以1月後進行',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a2',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a3',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a4',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a5',
     ],
   },
 ]
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '成因',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation1',
     anchorLink: '/medical-service/cataract#fatorArr',
   },
   {
-    anchorName: '症状',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation2',
     anchorLink: '/medical-service/cataract#symptomArr',
   },
   {
-    anchorName: '治療',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation3',
     anchorLink: '/medical-service/cataract#surgeryArr',
   },
   {
-    anchorName: '人工晶體須知',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation4',
     anchorLink: '/medical-service/cataract#iclArr',
   },
   {
-    anchorName: '術後注意事項',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation5',
     anchorLink: '/medical-service/cataract#announcementsArr',
   },
   {
-    anchorName: '常見問題',
+    anchorName:
+      'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation6',
     anchorLink: '/medical-service/cataract#faq',
   },
 ]
@@ -264,7 +342,7 @@ const callTel = () => {
       <!-- 白內障 -->
       <div>
         <div>
-          <div>白内障</div>
+          <div>{{ $t('pages.medical_service.cataract') }}</div>
           <div>CATARACT</div>
         </div>
         <div>
@@ -280,51 +358,107 @@ const callTel = () => {
       <div>
         <div>
           <div>
-            <div>白內障影響日常生活？</div>
-            <div @click="goWhatsApp()">即按為你解決煩惱</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son1'
+                )
+              }}
+            </div>
+            <div @click="goWhatsApp()">
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_btn1'
+                )
+              }}
+            </div>
           </div>
           <div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/54ae049d3ec05868.png"
-                alt="白內障"
+                :alt="`${$t('pages.medical_service.cataract')}`"
               />
             </div>
           </div>
         </div>
         <div>
           <p>
-            白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text1'
+              )
+            }}
           </p>
           <p>
-            患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響你的視野，更使你的生活變得十分不便？
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text2'
+              )
+            }}
           </p>
         </div>
-        <div @click="goWhatsApp()">別再遲疑！立即查詢白內障治療方案</div>
+        <div @click="goWhatsApp()">
+          {{
+            $t(
+              'pages.medical_service.service_cataract_title.service_cataract_btn2'
+            )
+          }}
+        </div>
       </div>
       <!-- 白內障形成的成因 -->
       <div id="fatorArr">
         <div>
           <div>
-            <div>為什麼會患上白內障？</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son2'
+                )
+              }}
+            </div>
           </div>
           <div>
-            香港有九成患者都是因為年紀大﹑眼內晶體退化的原因而患上白內障。但其實小朋友或年輕人都有機會患上白內障，而近年白內障更有年輕化趨勢。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text3'
+              )
+            }}
           </div>
         </div>
         <div>
-          <div>白內障形成的成因</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_btn3'
+              )
+            }}
+          </div>
           <div>
             <div>
               <div v-for="(item, index) in fatorArr.slice(0, 3)" :key="index">
-                <img :src="item.img" :alt="item.text" />
-                <div>{{ item.text }}</div>
+                <img :src="item.img" />
+                <div>
+                  <div v-if="Array.isArray(item.text)">
+                    <div v-for="(ele, i) in item.text" :key="i">
+                      {{ $t(ele) }}
+                    </div>
+                  </div>
+                  <div v-else>{{ $t(item.text) }}</div>
+                </div>
               </div>
             </div>
             <div>
               <div v-for="(item, index) in fatorArr.slice(3, 7)" :key="index">
-                <img :src="item.img" :alt="item.text" />
-                <div>{{ item.text }}</div>
+                <img :src="item.img" />
+                <div>
+                  <div v-if="Array.isArray(item.text)">
+                    <div v-for="(ele, i) in item.text" :key="i">
+                      {{ $t(ele) }}
+                    </div>
+                  </div>
+                  <div v-else>{{ $t(item.text) }}</div>
+                </div>
               </div>
             </div>
           </div>
@@ -334,20 +468,49 @@ const callTel = () => {
       <div id="symptomArr">
         <div>
           <div>
-            <div>白內障會引起哪些症狀？</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son3'
+                )
+              }}
+            </div>
           </div>
           <div>
-            視力模糊是白內障的主要症狀，隨病情惡化，可能有更多症狀困擾你。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text4'
+              )
+            }}
           </div>
         </div>
         <div>
-          <div>簡單自測︰你是否患上白內障？</div>
           <div>
-            <div>5大常見症狀︰</div>
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_btn4'
+              )
+            }}
+          </div>
+          <div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_text12'
+                )
+              }}
+            </div>
             <div>
               <div v-for="(item, index) in symptomArr" :key="index">
-                <img :src="item.img" :alt="item.text" />
-                <div>{{ item.text }}</div>
+                <img :src="item.img" />
+                <div>
+                  <div v-if="Array.isArray(item.text)">
+                    <div v-for="(ele, i) in item.text" :key="i">
+                      {{ $t(ele) }}
+                    </div>
+                  </div>
+                  <div v-else>{{ $t(item.text) }}</div>
+                </div>
               </div>
             </div>
             <div>
@@ -366,7 +529,11 @@ const callTel = () => {
                 </svg>
               </div>
               <div>
-                如果你有一項或以上的症狀，請不用感到焦慮，可聯絡我們約見眼科專科醫生，以盡快獲得正確的診斷和適合你的治療方案。
+                {{
+                  $t(
+                    'pages.medical_service.service_cataract_title.service_cataract_text5'
+                  )
+                }}
               </div>
               <div>
                 <svg
@@ -384,19 +551,29 @@ const callTel = () => {
               </div>
             </div>
           </div>
-          <div @click="callTel()">已有症狀？立即預約檢查</div>
+          <div @click="callTel()"></div>
         </div>
       </div>
       <!-- 白內障治療，手術 -->
       <div id="surgeryArr">
         <div>
           <div>
-            <div>白內障治療，手術最快20分鐘，快速恢復正常視力！</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son4'
+                )
+              }}
+            </div>
           </div>
         </div>
         <div>
           <div>
-            到目前為止，並沒有藥物可以使混濁的晶體（白內障）恢復透明。手術是治療白內障的唯一方法。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text6'
+              )
+            }}
           </div>
           <div>
             <div>
@@ -410,23 +587,50 @@ const callTel = () => {
             </div>
           </div>
           <div>
-            當下主流的白內障手術方式為超聲乳化白內障切除術聯合人工晶狀體植入術。只需要經過一個直徑不到3毫米的切口，用超聲波將混濁的晶體乳化成微細碎片，然後吸出，最後置入一個人工晶狀體，整個過程只需10~20分鐘。術後傷口一般毋須縫線。大部分手術只需要使用表面麻醉，不必打針便可完成手術。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text7'
+              )
+            }}
           </div>
         </div>
         <div>
-          <div>現代白內障手術更精準！</div>
           <div>
-            最新一代的微創超聲波乳化手術，可以提高治療的精準度。只需使用較低超聲波能量，將混濁晶體乳化分解並吸走，傷口小、恢復時間快、手術時間短，大大減低手術對角膜造成的傷害、傷口感染或併發症。
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text11'
+              )
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text8'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in surgeryArr" :key="index">
-              <img :src="item.img" :alt="item.text" srcset="" />
-              <div>{{ item.text }}</div>
+              <img :src="item.img" />
+              <div>
+                <div v-if="Array.isArray(item.text)">
+                  <div v-for="(ele, i) in item.text" :key="i">
+                    {{ $t(ele) }}
+                  </div>
+                </div>
+                <div v-else>{{ $t(item.text) }}</div>
+              </div>
             </div>
           </div>
         </div>
         <div>
-          <div>激光輔助白內障治療的優點︰</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_title_son5'
+              )
+            }}
+          </div>
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -522,70 +726,138 @@ const callTel = () => {
             </svg>
           </div>
           <div>
-            <div>激光精準度高</div>
-            <div>人工晶體位置更準確</div>
-            <div>可使用較低的超聲波 <br />能量處理白內障</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_text1'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_text2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_text3'
+                )
+              }}
+              <br />{{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_text4'
+                )
+              }}
+            </div>
           </div>
         </div>
-        <div @click="callTel()">立即預約見醫生了解手術！</div>
+        <div @click="callTel()">
+          {{
+            $t(
+              'pages.medical_service.service_cataract_title.service_cataract_btn6'
+            )
+          }}
+        </div>
       </div>
       <!-- 選擇人工晶體須知 -->
       <div id="iclArr">
         <div>
           <div>
-            <div>選擇人工晶體須知</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son6'
+                )
+              }}
+            </div>
           </div>
         </div>
         <div>
           <div>
-            經過術前詳細檢查及規劃，可制訂個人化人工晶體置換方案。根據患者實際情況、對用眼的要求以及經濟狀況等因素來考慮。
-            人工晶體根據其功能可分以下幾種︰
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text9'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in iclArr" :key="index">
               <div>
                 <img v-if="item.img" :src="item.img" alt="" srcset="" />
-                {{ item.type }}
+                {{ $t(item.type) }}
               </div>
               <div>
                 <div v-if="Array.isArray(item.monofocal)">
                   <div v-for="(ele, index) in item.monofocal" :key="index">
                     <img
                       src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
-                    />{{ ele }}
+                    />
+                    <div v-if="Array.isArray(ele)">
+                      <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
+                    </div>
+                    <div v-else>{{ $t(ele) }}</div>
                   </div>
                 </div>
-                <div v-else>{{ item.monofocal }}</div>
+                <div v-else>
+                  {{ $t(item.monofocal) }}
+                </div>
               </div>
               <div>
                 <div v-if="Array.isArray(item.astigmatism)">
                   <div v-for="(ele, index) in item.astigmatism" :key="index">
                     <img
                       src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
-                    />{{ ele }}
+                    />
+                    <div v-if="Array.isArray(ele)">
+                      <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
+                    </div>
+                    <div v-else>{{ $t(ele) }}</div>
                   </div>
                 </div>
-                <div v-else>{{ item.astigmatism }}</div>
               </div>
               <div>
                 <div v-if="Array.isArray(item.multipleFocus)">
                   <div v-for="(ele, index) in item.multipleFocus" :key="index">
-                    {{ ele }}
+                    <div v-if="Array.isArray(ele)">
+                      <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
+                    </div>
+                    <div v-else>{{ $t(ele) }}</div>
                   </div>
                 </div>
-                <div v-else>{{ item.multipleFocus }}</div>
+                <div v-else>{{ $t(item.multipleFocus) }}</div>
               </div>
             </div>
           </div>
-          <div>*此表格內預設單焦點人工晶體為看遠。</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_text10'
+              )
+            }}
+          </div>
         </div>
-        <div @click="goWhatsApp()">哪一款人工晶體適合你？</div>
+        <div @click="goWhatsApp()">
+          {{
+            $t(
+              'pages.medical_service.service_cataract_title.service_cataract_btn7'
+            )
+          }}
+        </div>
       </div>
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
         <div>
           <div>
-            <div>白內障的術後注意事項</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son7'
+                )
+              }}
+            </div>
           </div>
         </div>
         <div>
@@ -594,7 +866,7 @@ const callTel = () => {
               <div>{{ item.id }}</div>
               <img :src="item.img" :alt="item.text" />
             </div>
-            <div class="announ">{{ item.text }}</div>
+            <div class="announ">{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
@@ -602,7 +874,13 @@ const callTel = () => {
       <div id="faq">
         <div>
           <div>
-            <div>你認識白內障手術嗎？</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_title_son8'
+                )
+              }}
+            </div>
           </div>
         </div>
         <div>
@@ -620,7 +898,12 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="../../assets/pdf/cataract2.pdf" download="選擇人工晶體.pdf">
+        <a
+          href="../../assets/pdf/cataract2.pdf"
+          :download="`${$t(
+            'pages.medical_service.service_cataract_title.service_cataract_down1'
+          )}.pdf`"
+        >
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
@@ -629,13 +912,30 @@ const callTel = () => {
             />
           </div>
           <div>
-            <p>如何選擇合適的人工晶體？</p>
-            <p>下載小冊子</p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_down1'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_down_text'
+                )
+              }}
+            </p>
           </div>
         </a>
       </div>
       <div>
-        <a href="../../assets/pdf/cataract1.pdf" download="白內障.pdf">
+        <a
+          href="../../assets/pdf/cataract1.pdf"
+          :download="`${$t(
+            'pages.medical_service.service_cataract_title.service_cataract_down2'
+          )}.pdf`"
+        >
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
@@ -644,8 +944,20 @@ const callTel = () => {
             />
           </div>
           <div>
-            <p>白內障</p>
-            <p>下載小冊子</p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_down2'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_cataract_title.service_cataract_down_text'
+                )
+              }}
+            </p>
           </div>
         </a>
       </div>
@@ -1231,6 +1543,9 @@ const callTel = () => {
     }
 
     & > div:nth-child(4) {
+      max-width: 1530px;
+      margin: 0 auto;
+
       & > div:nth-child(1) {
         width: 557px;
         height: 98px;
@@ -1347,6 +1662,8 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
+        max-width: 1530px;
+        margin: 0 auto;
         border: #21a1c1 solid 2px;
         border-radius: 20px;
         overflow: hidden;
@@ -1375,6 +1692,18 @@ const callTel = () => {
             align-items: center;
             justify-content: center;
             border-right: 2px solid #21a1c1;
+
+            & > div {
+              & > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                & > img {
+                  margin-right: 5px;
+                }
+              }
+            }
           }
 
           & > div:last-child {
@@ -1515,6 +1844,16 @@ const callTel = () => {
 
                 & > img {
                   margin-right: 5px;
+                }
+              }
+            }
+
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
                 }
               }
             }

@@ -31,7 +31,7 @@ const props = defineProps({
       :name="`${index + 1}`"
     >
       <template #title>
-        {{ item.title }}
+        {{ $t(item.title) }}
         <i
           class="down"
           :class="
@@ -45,11 +45,11 @@ const props = defineProps({
         <div>{{ item.agree[0] ? 'A：' : '' }}</div>
         <div>
           <div v-for="(ele, i) in item.agree" :key="i">
-            {{ ele }}
+            {{ $t(ele) }}
           </div>
         </div>
       </div>
-      <div v-else><span>A：</span> {{ item.agree }}</div>
+      <div v-else><span>A：</span> {{ $t(item.agree) }}</div>
     </el-collapse-item>
   </el-collapse>
 </template>

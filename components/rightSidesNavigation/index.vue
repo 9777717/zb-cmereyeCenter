@@ -50,7 +50,7 @@ const props = defineProps({
             exactActive: exactIdex === Number(index),
           }"
         >
-          {{ item.anchorName }}
+          {{ $t(item.anchorName) }}
         </a>
       </div>
     </div>
