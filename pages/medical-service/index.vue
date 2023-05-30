@@ -180,13 +180,15 @@ const SerListL = [
     top: 0;
     width: 600px;
     height: 642px;
-    left: 880px;
+    left: 45.8333%;
     z-index: 0;
   }
 
   .serList {
     margin-left: 41.14583%;
     margin-right: 26.6146%;
+    width: 620px;
+    max-width: 620px;
     display: flex;
     flex-wrap: wrap;
 

@@ -739,7 +739,7 @@ pages:
     # : 医学验光配镜
     # : 屈光矫视
   ophthalmic_information:
-    ophthalmic_information: 眼科信息
+    ophthalmic_information: 眼科资讯
     ophthalmic_class: 医生小教室
     ophthalmic_publicity: 护眼宣传片
     ophthalmic_little_theatre: 希玛小剧场

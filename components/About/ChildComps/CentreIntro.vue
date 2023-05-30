@@ -313,7 +313,7 @@ const goInstagram = (type: string) => {
 
 <style scoped lang="scss">
 .centreIntro {
-  margin-left: 450px;
+  margin-left: 23.4375%;
   margin-bottom: 320px;
 
   // 简介
@@ -723,7 +723,7 @@ const goInstagram = (type: string) => {
   & > div:nth-child(1) {
     position: relative;
     background: #f2f2f2;
-    width: 1668px;
+    width: 86.875%;
     height: 337px;
 
     & > div > img {
@@ -732,17 +732,17 @@ const goInstagram = (type: string) => {
 
     & > div > img:nth-child(1) {
       top: -95px;
-      left: 690px;
+      left: 35.9375%;
     }
 
     & > div > img:nth-child(2) {
       bottom: -17px;
-      left: 510px;
+      left: 26.5265%;
     }
 
     & > div:nth-child(2) {
       color: red;
-      margin-left: 1100px;
+      margin-left: 57.291667%;
       padding-top: 65px;
 
       & > a {
@@ -775,18 +775,18 @@ const goInstagram = (type: string) => {
   & > div:nth-child(2) {
     position: relative;
     background: #f2f2f2;
-    width: 1668px;
+    width: 86.875%;
     height: 150px;
     margin-top: 30px;
 
     & > div:nth-child(1) {
-      margin-left: 780px;
+      margin-left: 40.625%;
     }
 
     & > div:nth-child(2) {
       position: absolute;
       top: 28px;
-      margin-left: 1196px;
+      margin-left: 62.2617%;
       display: flex;
       align-items: center;
 
@@ -827,6 +827,14 @@ const goInstagram = (type: string) => {
     left: 20px;
     top: 50px;
     z-index: 5;
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .centreIntro {
+    margin: auto;
+    max-width: 1300px;
   }
 }
 </style>

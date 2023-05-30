@@ -143,7 +143,7 @@ const show = false
 <style scoped lang="scss">
 #medicalEquipment {
   margin-top: 130px;
-  margin-left: 270px;
+  margin-left: 14.0625%;
   width: 63.7%;
   height: 770px;
   display: flex;
@@ -156,8 +156,8 @@ const show = false
     position: relative;
     margin: auto;
     margin-top: 100px;
-    margin-left: 418px;
-    width: 323px;
+    margin-left: 21.77083%;
+    width: 16.82292%;
     height: 220px;
     background-color: #fff;
 
@@ -203,12 +203,12 @@ const show = false
 }
 
 .swiper {
-  margin-left: 243px;
+  margin-left: 12.65625%;
   overflow: revert;
 }
 
 :deep(.swiper-slide) {
-  width: 200px !important;
+  width: 10.416667% !important;
   height: 200px;
 }
 
@@ -216,7 +216,7 @@ const show = false
   background: #8ad8dd;
   color: #fff;
   padding: 5px;
-  width: 34px;
+  width: 100%;
   height: 58px;
   padding-top: 8px;
 }
@@ -225,7 +225,7 @@ const show = false
   background: #8ad8dd;
   color: #fff;
   padding: 5px;
-  width: 34px;
+  width: 100%;
   height: 58px;
   padding-top: 8px;
 }
@@ -241,7 +241,7 @@ const show = false
 }
 
 .title {
-  margin-left: 238px;
+  margin-left: 12.3958%;
   margin-top: -22px;
   display: flex;
   flex-direction: column;

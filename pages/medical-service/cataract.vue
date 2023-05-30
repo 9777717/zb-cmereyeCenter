@@ -552,7 +552,13 @@ const callTel = () => {
               </div>
             </div>
           </div>
-          <div @click="callTel()"></div>
+          <div @click="callTel()">
+            {{
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_btn5'
+              )
+            }}
+          </div>
         </div>
       </div>
       <!-- 白內障治療，手術 -->
@@ -972,8 +978,9 @@ const callTel = () => {
 </template>
 <style lang="scss" scoped>
 .cataract {
-  margin: auto 300px;
   position: relative;
+  max-width: 1313px;
+  margin: auto;
 
   & > div:nth-child(1) {
     position: absolute;
@@ -2077,8 +2084,8 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 520px;
-        margin-right: 75px;
+        margin-left: 27.08333%;
+        margin-right: 3.90625%;
 
         & > img {
           width: 120px;

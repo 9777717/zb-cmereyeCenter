@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { Autoplay } from 'swiper'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -186,8 +187,9 @@ const goWhatsApp = () => {
           <swiper
             :space-between="40"
             :slides-per-view="4"
+            :modules="[Autoplay]"
             :pagination="{ clickable: true }"
-            :autoplay="{ delay: 2500, disableOnInteraction: false }"
+            :autoplay="{ delay: 2500 }"
           >
             <swiper-slide v-for="(item, index) in bannerList" :key="index">
               <div class="imgBox flex items-center justify-center">
@@ -349,7 +351,8 @@ const goWhatsApp = () => {
 }
 
 .mainCon {
-  margin: 0 300px;
+  max-width: 1313px;
+  margin: auto;
 }
 
 .contactBody {

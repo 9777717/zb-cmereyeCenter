@@ -505,7 +505,9 @@ const callTel = () => {
 </template>
 <style lang="scss" scoped>
 .maculopathy_nav {
-  margin: 0 300px;
+  // margin: 0 300px;
+  max-width: 1313px;
+  margin: auto;
 
   // 什麼是黃斑病變？
   & > div:nth-child(1) {

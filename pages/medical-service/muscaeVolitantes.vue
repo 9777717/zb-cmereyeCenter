@@ -496,8 +496,9 @@ const callTel = () => {
 </template>
 <style lang="scss" scoped>
 .muscaeNav {
-  margin: 0 300px;
   margin-top: 100px;
+  max-width: 1313px;
+  margin: auto;
 
   // 什麼是飛蚊症？
   & > div:nth-child(1) {
@@ -1280,8 +1281,8 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 520px;
-        margin-right: 75px;
+        margin-left: 27.08333%;
+        margin-right: 3.90625%;
 
         & > img {
           width: 120px;

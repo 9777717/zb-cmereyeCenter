@@ -295,3 +295,11 @@ const articleList = [
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .article_Out {
+    width: 1920px;
+    margin: auto;
+  }
+}
+</style>

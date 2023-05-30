@@ -77,6 +77,8 @@ definePageMeta({
 </template>
 <style lang="scss" scoped>
 .careers {
+  max-width: 1884px;
+
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -128,7 +130,7 @@ definePageMeta({
   & > div:nth-child(1)::before {
     content: '';
     position: absolute;
-    width: 97%;
+    width: 98.5%;
     background-color: #f2f2f2;
     left: 0;
     bottom: 0;
@@ -157,7 +159,8 @@ definePageMeta({
 }
 
 .mianConten {
-  margin: 0 300px;
+  max-width: 1313px;
+  margin: auto;
   font-family: 'Noto Sans HK';
 
   .imgBox {
@@ -183,6 +186,13 @@ definePageMeta({
       z-index: 11;
       width: 44%;
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .careers {
+    margin: auto;
   }
 }
 </style>

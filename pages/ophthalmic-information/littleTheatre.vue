@@ -266,3 +266,11 @@ const videoList = [
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .currentpage {
+    width: 1920px;
+    margin: auto;
+  }
+}
+</style>

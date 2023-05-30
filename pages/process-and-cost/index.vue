@@ -23,8 +23,10 @@ const serviceNavigation = [
 
 <template>
   <div class="cp">
-    <Cost id="cost" />
-    <Process id="process" :dd="'background:none'" />
+    <div>
+      <Cost id="cost" />
+      <Process id="process" :dd="'background:none'" />
+    </div>
     <PageInformation :service-navigation="serviceNavigation" />
   </div>
 </template>
@@ -33,5 +35,10 @@ const serviceNavigation = [
   background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.cp > div:nth-child(1) {
+  max-width: 1313px;
+  margin: auto;
 }
 </style>

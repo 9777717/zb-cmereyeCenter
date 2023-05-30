@@ -14,17 +14,18 @@ definePageMeta({
     <div class="textbg en-font whitespace-nowrap -ml-10 overflow-hidden">
       OUR VISION FOR A BETTER FUTURE.
     </div>
+    <div class="introduction">
+      <!-- <div class="mainContents mainCon flex items-end flex-col justify-start"> -->
+      <AboutChildCompsCentreIntro />
 
-    <!-- <div class="mainContents mainCon flex items-end flex-col justify-start"> -->
-    <AboutChildCompsCentreIntro />
+      <AboutChildCompsHistory />
 
-    <AboutChildCompsHistory />
+      <!-- <AboutChildCompsCorporateVision /> -->
 
-    <!-- <AboutChildCompsCorporateVision /> -->
+      <AboutChildCompsMedicalEquipment />
 
-    <AboutChildCompsMedicalEquipment />
-
-    <AboutChildCompsAwards />
+      <AboutChildCompsAwards />
+    </div>
     <!-- </div> -->
   </div>
 </template>
@@ -32,6 +33,7 @@ definePageMeta({
 .about {
   padding-bottom: 50px;
 }
+
 .textbg {
   font-family: 'Metropolis';
   font-style: normal;

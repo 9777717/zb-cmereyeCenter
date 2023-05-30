@@ -181,14 +181,14 @@ const historyList = ref([
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  margin-left: 593px;
+  margin-left: 30.8854%;
   margin-top: 12.75rem;
   background: #f2f2f2;
   position: relative;
 }
 
 .title {
-  margin-left: -88px;
+  margin-left: -4.58333%;
   margin-top: 45px;
 }
 

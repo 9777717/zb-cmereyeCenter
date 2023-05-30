@@ -58,7 +58,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor02.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor03.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_4.doctor_4_name',
@@ -70,7 +70,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_4',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor03.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor04.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_5.doctor_5_name',
@@ -84,7 +84,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor04.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor05.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_6.doctor_6_name',
@@ -99,7 +99,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_6.doctor_6_education.doctor_6_education_7',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor05.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor06.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_7.doctor_7_name',
@@ -111,7 +111,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_4',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor06.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor07.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_8.doctor_8_name',
@@ -125,7 +125,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor07.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor08.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_9.doctor_9_name',
@@ -137,7 +137,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_9.doctor_9_education.doctor_9_education_4',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor08.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor09.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_10.doctor_10_name',
@@ -153,7 +153,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_10.doctor_10_education.doctor_10_education_8',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor09.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor10.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_11.doctor_11_name',
@@ -165,7 +165,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_11.doctor_11_education.doctor_11_education_4',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor10.jpg',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor11.jpg',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_12.doctor_12_name',
@@ -403,7 +403,7 @@ const doctorList = [
       height: 543px;
       position: absolute;
       top: 0;
-      left: 752px;
+      left: 39.1667%;
     }
   }
 
@@ -1069,6 +1069,14 @@ const doctorList = [
         height: 224px;
       }
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .medical-team {
+    margin: auto;
+    max-width: 1313px;
   }
 }
 </style>

@@ -450,3 +450,11 @@ const mmmmm = (num: any) => {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .healthInfo {
+    width: 1920px;
+    margin: auto;
+  }
+}
+</style>

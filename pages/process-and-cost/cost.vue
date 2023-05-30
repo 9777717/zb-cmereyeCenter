@@ -127,7 +127,7 @@
 </template>
 <style lang="scss" scoped>
 .content {
-  margin: 0 350px;
+  // margin: 0 350px;
   padding-left: 250px;
 }
 

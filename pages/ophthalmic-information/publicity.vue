@@ -222,3 +222,11 @@ const eyeDisease = [
   border-bottom: 1.75771px solid #8ad8dd;
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .publicity {
+    width: 1920px;
+    margin: auto;
+  }
+}
+</style>

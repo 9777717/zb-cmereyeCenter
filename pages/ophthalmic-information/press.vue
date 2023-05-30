@@ -590,3 +590,11 @@ const pageTurning = (flag: string) => {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .current {
+    width: 1920px;
+    margin: auto;
+  }
+}
+</style>

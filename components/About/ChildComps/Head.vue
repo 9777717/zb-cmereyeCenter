@@ -108,7 +108,7 @@ const leaveActive = () => {
   position: absolute;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  left: 680px;
+  left: 35.416667%;
   top: -105px;
   font-family: 'Noto Sans HK';
   font-style: normal;
@@ -122,7 +122,7 @@ const leaveActive = () => {
   &::after {
     content: 'About Us';
     position: absolute;
-    left: -40px;
+    left: -80.08333%;
     top: 3px;
     text-transform: uppercase;
 
@@ -141,11 +141,12 @@ const leaveActive = () => {
 }
 
 .imgBox {
+  max-width: 810px;
   position: relative;
   background: #f2f2f2;
   width: 41.9%;
   height: 640px;
-  margin-left: 752px;
+  margin-left: 39.1667%;
   margin-top: 203px;
 
   img {
@@ -170,15 +171,11 @@ const leaveActive = () => {
 
 .dow {
   position: absolute;
-  left: 71px;
+  left: 3.69792%;
 }
 
 .anchor {
   top: 310px;
-
-  & > div {
-    background: #fff;
-  }
 
   a {
     border: 0.5px solid #515151;

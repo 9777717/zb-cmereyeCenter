@@ -25,18 +25,18 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        route: { path: '/about-us#centreIntro' },
+        route: { path: '/about-us', hash: '#centreIntro' },
       },
-      // {
-      //   type: 'link',  //发展历程
-      //   text: t('pages.about_us.development_course'),
-      //   route: { name: 'about-us-devProcess' },
-      // },
-      // {
-      //   type: 'link',// 企业愿景
-      //   text: t('pages.about_us.enterprise_vision'),
-      //   route: { name: 'about-us-corporationVision' },
-      // },
+      {
+        type: 'link', // 发展历程
+        text: t('pages.about_us.development_course'),
+        route: { path: '/about-us', hash: '#history' },
+      },
+      {
+        type: 'link', // 企业愿景
+        text: t('pages.about_us.enterprise_vision'),
+        route: { name: 'about-us-corporationVision' },
+      },
     ],
   },
   {
@@ -170,7 +170,6 @@ const porps = defineProps({
   <div
     :class="[
       porps.rt === 'index' ? 'headerTem' : 'headerTemPage',
-      porps.rt === 'process-and-cost' ? 'headerTemCost' : 'headerTem',
       porps.rt === 'ophthalmic-information-healthInfo'
         ? 'headerTemOphthalmic'
         : 'headerTem',
@@ -237,7 +236,7 @@ a {
 
 .headerTem {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 54px;
   left: 23.4375%;
   background: #ffffffbf;
@@ -286,7 +285,7 @@ a {
 
 .headerTemPage {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 54px;
   left: 23.4375%;
   background: #2958a3;
@@ -335,7 +334,7 @@ a {
 
 .headerTemForm {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 54px;
   left: 360px;
   background: #2958a3;
@@ -384,7 +383,7 @@ a {
 
 .headerTemTalent {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 350px;
   background: #2958a3;
@@ -431,58 +430,58 @@ a {
   }
 }
 
-.headerTemCost {
-  z-index: 999;
-  position: absolute;
-  top: 50px;
-  left: 350px;
-  background: #2958a3;
+// .headerTemCost {
+//   z-index: 999;
+//   position: absolute;
+//   top: 50px;
+//   left: 350px;
+//   background: #2958a3;
 
-  .navigtion {
-    & > div {
-      font-family: 'Noto Sans HK';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 35px;
-      /* identical to box height, or 250% */
+//   .navigtion {
+//     & > div {
+//       font-family: 'Noto Sans HK';
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 35px;
+//       /* identical to box height, or 250% */
 
-      text-align: center;
-      letter-spacing: 0.05em;
+//       text-align: center;
+//       letter-spacing: 0.05em;
 
-      color: #ffffff;
+//       color: #ffffff;
 
-      width: 130px;
-      height: 49px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
+//       width: 130px;
+//       height: 49px;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       position: relative;
+//     }
 
-    & > div::after {
-      position: absolute;
-      top: 0;
-      content: '';
-      width: 76px;
-      border-bottom: 0.75px solid #ffffff;
-    }
+//     & > div::after {
+//       position: absolute;
+//       top: 0;
+//       content: '';
+//       width: 76px;
+//       border-bottom: 0.75px solid #ffffff;
+//     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+//     & > div:nth-child(1)::after {
+//       content: '';
+//       width: 0;
+//       border: 0;
+//     }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
 
 .headerTemOphthalmic {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 54px;
   left: 350px;
   background: #2958a3;
@@ -531,7 +530,7 @@ a {
 
 .headerTemDisclaimer {
   z-index: 999;
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 300px;
   background: #2958a3;

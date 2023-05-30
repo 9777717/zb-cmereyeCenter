@@ -724,6 +724,8 @@ const callTel = () => {
         </div>
       </div>
     </div>
+  </div>
+  <div>
     <!-- 右侧边导航 -->
     <div>
       <rightSidesNavigation :service-navigation="serviceNavigation" />
@@ -755,7 +757,8 @@ const callTel = () => {
 
 <style lang="scss" scoped>
 .xerophthalmia {
-  margin: auto 300px;
+  max-width: 1313px;
+  margin: auto;
   position: relative;
 
   & > div:nth-child(1) {
@@ -811,6 +814,7 @@ const callTel = () => {
   & > div:nth-child(2) {
     margin-top: 166px;
     padding: 0 70px;
+    min-width: 1175px;
 
     & > div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
@@ -2074,8 +2078,8 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 520px;
-        margin-right: 75px;
+        margin-left: 27.08333%;
+        margin-right: 3.90625%;
 
         & > img {
           width: 120px;

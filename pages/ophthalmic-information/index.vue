@@ -276,12 +276,13 @@ const mainContent = [
     margin-right: 375px;
 
     & > div {
+      max-width: 1163px;
       margin-bottom: 70px;
       background: #f2f2f2;
       height: 386px;
       position: relative;
       padding-top: 46px;
-      padding-left: 282px;
+      padding-left: 24.2476%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -415,6 +416,14 @@ const mainContent = [
     & > div:nth-child(3) {
       cursor: pointer;
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .doctorClass {
+    width: 1780px;
+    margin: auto;
   }
 }
 </style>
