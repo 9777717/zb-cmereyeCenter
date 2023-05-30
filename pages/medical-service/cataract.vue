@@ -3,8 +3,9 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '白内障｜醫療服務｜眼科專科醫生',
+  title: t('pages.medical_service.medical_service_cataract_head'),
 }))
 // 传递背景色
 const backgd = [

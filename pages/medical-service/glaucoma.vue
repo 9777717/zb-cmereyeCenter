@@ -15,145 +15,158 @@ const backgd = [
 // FQA问答
 const meetArr = [
   {
-    title: 'Q：青光眼是老年人專屬，年輕人好少機會患上嗎？',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title1',
     agree:
-      '青光眼是一種視神經病變，主要是由於眼球內壓力（眼壓）上升所致。年齡超過40歲是青光眼高危一族，但是年輕人也有患青光眼的風險。深近視、有青光眼家族遺傳病史，患糖尿病、高血壓、心血管疾病，眼曾受過眼創傷，又或者長期使用類固醇，都有機會增加眼壓，從而增加青光眼風險。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree1',
   },
   {
-    title: 'Q：青光眼無法醫治嗎？',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title2',
     agree:
-      '青光眼的治療以控制眼壓、防止或減慢青光眼的惡化為目標。雖然青光眼是無法根治，但只要及早診斷，加以適當治療，仍可以降低眼壓、預防或減慢視力流失。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree2',
   },
   {
-    title: 'Q：青光眼患者雙眼真的會發光嗎？',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title3',
     agree:
-      '在一般情況，青光眼患者的眼睛不會發光或變成青綠色。青光眼患者症狀以眼睛脹痛、眼睛充血，突然視力模糊為主，部分患者還有機會出現頭痛或偏頭痛，噁心甚至嘔吐，隨病情惡化視野會不斷收窄。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree3',
   },
   {
-    title: 'Q：視力未下降就不用求醫嗎？',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title4',
     agree:
-      '慢性青光眼患者通常沒有明顯徵狀，當出現視力模糊、視野受損，很可能屬晚期階段。如出現視力下降才求醫，視力可能永久受損，所以建議青光眼高危人士定期檢查眼睛，以免青光眼偷走視力。而急性青光眼有明顯徵狀，包括︰眼痛、視力模糊、眼紅、頭痛、嘔吐等，眼壓會在短時間內上升，建議患者立即向眼科醫生求診，以保存視力。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree4',
   },
 ]
 const symptoms = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/53e4d8c79f82e4a6.png',
-    text: '眼睛脹痛',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a58ec7eb4f43f6a4.png',
-    text: '眼睛充血',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b452ba8e2b783f02.png',
-    text: '突然\n視力模糊',
+    text: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e2b8896e55129333.png',
-    text: '頭痛/\n偏頭痛',
+    text: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c2daf21d82713ee.png',
-    text: '噁心/嘔吐',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/376c7e6cf5bda7ef.png',
-    text: '視野收窄',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text6',
   },
 ]
 const worsen = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f751ce73a8968035.png',
-    text: '早期',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
-    text: '中期',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
-    text: '晚期',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text3',
   },
 ]
 const congenital = [
   {
     id: '1',
-    title: '流淚或畏光',
-    text: '是早期角膜水腫伴有角膜刺激症狀所致。',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title1',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text1',
     img: 'https://static.cmereye.com/imgs/2023/05/14c6771dcd344e18.png',
   },
   {
     id: '2',
-    title: '角膜混濁',
-    text: '早期為角膜上皮及上皮下水腫，引起輕度乳白色混濁。出現水腫時，混濁會更加明顯。當眼壓降低後，角膜可變透明，若不及時治療，會呈永久性混濁。',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title2',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text2',
     img: 'https://static.cmereye.com/imgs/2023/05/d63a41599833af19.png',
   },
   {
     id: '3',
-    title: '角膜擴大',
-    text: '角膜水腫後，眼壓繼續升高，眼球壁受壓力作用而擴張，使整個眼球不斷增大，角膜直徑可達12mm左右。',
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title3',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text3',
     img: 'https://static.cmereye.com/imgs/2023/05/422b6918adf2680a.png',
   },
 ]
 const kind = [
   {
     id: '1',
-    text: '虹膜睫狀體炎繼發性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text1',
     detail:
-      '急性虹膜睫狀體炎一般不引起眼壓升高，只有當發炎滲出物增加，房水中蛋白質含量較高時，才會引起眼壓中度升高。反覆發作的慢性虹膜睫狀體炎，會引起廣泛的瞳孔後黏連或周邊虹膜前黏連，房水排出受阻，以致眼壓升高。此病一般發病突然，典型眼壓升高的青光眼症狀，包括：霧視、虹視、頭痛，甚至噁心、嘔吐等，而症狀消失後大多無損視功能和視野。但反覆發作，長期眼壓升高，也可能對視神經造成永久損傷，從而出現不可逆轉的視力損失。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail1',
     img: 'https://static.cmereye.com/imgs/2023/05/3fed11ffa5e46d5a.png',
   },
   {
     id: '2',
-    text: '青光眼睫狀體炎綜合症',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text2',
     detail:
-      '患者多為中年男性。其典型症狀為突發性眼壓升高，伴有輕度睫狀體炎，即角膜後壁有大塊的脂肪沉著物，前房有少量浮游物。會反覆發作，一般無自覺症狀，僅有輕度不適，如眼壓升高會導致角膜水腫，出現視物模糊。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail2',
     img: '',
   },
   {
     id: '3',
-    text: '皮質類固醇性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text3',
     detail:
-      '長期局部滴用或全身使用皮質類固醇，可引致眼壓升高。其臨床表現與原發性開角型青光眼相似，一般需詳細了解過去用藥情況以明確診斷。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail3',
     img: '',
   },
   {
     id: '4',
-    text: '白內障所致繼發性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text4',
     detail:
-      '患上老年性白內障，晶體可變得腫脹，體積增加，把虹膜推前。因此，眼睛前房較淺、房角較窄的患者，如患上白內障，前房可能進一步變淺，甚至導致房角關閉，以致類似急性閉角型青光眼的急性眼壓升高。部分病人也可能因膨脹的晶體阻擋瞳孔，發生瞳孔阻滯，房水在後方無法流出，導致眼壓急劇升高，引發急性青光眼。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail4',
     img: '',
   },
   {
     id: '5',
-    text: '外傷性眼內積血繼發性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text5',
     detail: [
-      '(1)眼睛受外傷後，大量前房積血或小梁損傷會引致早期急性眼壓升高。紅血球堆積在小梁網上、血塊阻塞瞳孔或小梁網炎性水腫，使房水排出受阻。',
-      '(2)玻璃體積血、分解的血紅蛋白被巨噬細胞吞噬或紅血球退化，可阻塞小梁網，令房水外流受阻而引致眼壓升高，引起溶血性青光眼或血影細胞性青光眼。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail5_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail5_2',
     ],
     img: '',
   },
   {
     id: '6',
-    text: '房角後退性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text6',
     detail:
-      '眼球鈍挫傷後，房角劈裂，以致傷後早期、數月、甚至十多年後發生眼壓升高，前房角鏡檢查可見房角異常增寬。房角劈裂者應定期檢查，測量眼壓。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail6',
     img: '',
   },
   {
     id: '7',
-    text: '新生血管性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text7',
     detail: [
-      '由於視網膜中央靜脈阻塞、糖尿病視網膜病變等血管紊亂疾病而引起新生血管性青光眼。此類青光眼的病因複雜，病理變化主要是眼後節缺氧或局部眼前節缺氧，引起虹膜上及房角小梁網處形成纖維血管膜，導致周邊虹膜前黏連，阻礙房水排出，令眼壓升高。',
-      '其一般症狀為眼痛、眼脹、眼壓升高等。眼壓可達至60mmHg以上，常伴角膜水腫、虹膜新生血管、瞳孔緣色素外翻、房角內不同程度的周邊前黏連等。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail7_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail7_2',
     ],
     img: '',
   },
   {
     id: '8',
-    text: '睫狀環阻滯性青光眼',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text8',
     detail:
-      '又名惡性青光眼，是一種繼發性閉角型青光眼。多見於內眼治療，特別是接受青光眼過濾性治療後，由於睫狀環較小，晶狀體相對較大，當睫狀體水腫充血，睫狀環便進一步變小，與晶體赤道部或玻璃體相貼，以致後房水不能進入前房，向後逆流而積存在玻璃體腔內。同時，虹膜和晶狀體被向前推擠，使前房變淺，房角關閉。若一隻眼出現睫狀環阻滯性青光眼，另一隻眼也有發生類似疾病的風險。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail8',
     img: '',
   },
 ]
@@ -166,151 +179,184 @@ const kindSelect = (i: number) => {
 const crowd = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5d8b794484273cbe.png',
-    text: '年齡超過40歲\n(60歲以上患青光眼\n機會增加6倍)',
+    text: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_2',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_3',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5064b37ea2ec1236.png',
-    text: '有青光眼家族遺傳病史',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/600a6ca70769660d.png',
-    text: '深近視或嚴重遠視',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bc02fc8bab322c86.png',
-    text: '患糖尿病',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3d99ac56efdb9366.png',
-    text: '高血壓患者',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8a90c79bd5022fbf.png',
-    text: '患心血管疾病',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1a86d61e93b74709.png',
-    text: '眼曾受過眼創傷',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text7',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/03f99346138862e1.png',
-    text: '長期使用類固醇',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text8',
   },
 ]
 // 青光眼主要診斷方法
 const diagnostic = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e399ba83f28b9812.png',
-    text: '眼壓檢查',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdc9d326f529ed42.png',
-    text: '視野測試',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/997263179e4722a8.png',
-    text: '裂隙燈檢查',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2c03b6364947c4c5.png',
-    text: '前房角接觸鏡檢查',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b098baaa8a2cbdbc.png',
-    text: '視神經損傷程度的測試',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/eef206cba5ab506d.png',
-    text: '檢查眼部房水排出\n是否通暢',
+    text: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_2',
+    ],
   },
 ]
 // 青光眼的治療
 const treat = [
   {
-    remedy: '治療方案',
-    name: '治療名稱',
-    range: '適用範圍',
+    remedy:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy1',
+    name: 'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name1',
+    range:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range1',
   },
   {
-    remedy: '常用治療方案',
+    remedy:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy2',
     name: [
-      '小梁切除術',
-      '非穿透性小梁術',
-      '導管植入術',
-      '睫狀體冷凝術或光凝術',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name2_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name2_2',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name2_3',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name2_4',
     ],
     range: [
-      '應用廣泛，適用於所有需要做眼外濾過術的青光眼',
-      '適用於開角型青光眼，特別是晚期視野缺損嚴重的\n患者；對閉角型青光眼不適用',
-      '適用於前2種方案效果不佳或惡性青光眼患者',
-      '適用於青光眼末期或多次青光眼手術失敗後',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range2_1',
+      [
+        'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range2_2',
+        'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range2_3',
+      ],
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range2_4',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range2_5',
     ],
   },
   {
-    remedy: '急性青光眼\n治療方案',
-    name: ['前房穿刺術', '激光虹膜邊緣成形術'],
+    remedy: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy3_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy3_2',
+    ],
+    name: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name3_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name3_2',
+    ],
     range: [
-      '適用於急性青光眼的嚴重症狀',
-      '作為預防急性青光眼發作的傳統治療方式',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range3_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range3_2',
     ],
   },
   {
-    remedy: '合併白內障\n的手術方案',
-    name: '白內障手術',
-    range: '適用於有白內障的青光眼患者',
+    remedy: [
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy4_1',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_remedy4_2',
+    ],
+    name: 'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_name4',
+    range:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_treat.treat_range4',
   },
 ]
 // 青光眼预防
 const guardAgainst = [
   {
     id: '1',
-    text: '定期安排眼科檢查',
-    detail: '建議40歲以上或青光眼高危人士，每半年或一年接受一次眼睛檢查。',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_text1',
+    detail:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_detail1',
   },
   {
     id: '2',
-    text: '預防深近視',
-    detail: '從小開始養成良好用眼習慣，以免深近視或遠視增加青光眼風險。',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_text2',
+    detail:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_detail2',
   },
   {
     id: '3',
-    text: '保持良好生活習慣',
+    text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_text3',
     detail:
-      '糖尿病、高血壓、心血管疾病都可能增加患青光眼機會。戒煙戒酒、充分睡眠、均衡飲食、多做帶氧運動，可有效預防青光眼。',
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_guardAgainst.guardAgainst_detail3',
   },
 ]
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '成因',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text1',
     anchorLink: '/medical-service/glaucoma#factor',
   },
   {
-    anchorName: '症状',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text2',
     anchorLink: '/medical-service/glaucoma#symptoms',
   },
   {
-    anchorName: '類別',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text3',
     anchorLink: '/medical-service/glaucoma#category',
   },
   {
-    anchorName: '高危人士',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text4',
     anchorLink: '/medical-service/glaucoma#crowd',
   },
   {
-    anchorName: '診斷',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text5',
     anchorLink: '/medical-service/glaucoma#diagnostic',
   },
   {
-    anchorName: '治療',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text6',
     anchorLink: '/medical-service/glaucoma#treat',
   },
   {
-    anchorName: '預防方法',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text7',
     anchorLink: '/medical-service/glaucoma#guardAgainst',
   },
   {
-    anchorName: '常見問題',
+    anchorName:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text8',
     anchorLink: '/medical-service/glaucoma#faq',
   },
 ]
@@ -333,7 +379,7 @@ const callTel = () => {
       <!-- 青光眼 -->
       <div>
         <div>
-          <div>青光眼</div>
+          <div>{{ $t('pages.medical_service.glaucoma') }}</div>
           <div>GLAUCOMA</div>
         </div>
         <div>
@@ -347,46 +393,101 @@ const callTel = () => {
       </div>
       <!-- 什麼是青光眼？ -->
       <div>
-        <div>什麼是青光眼？</div>
         <div>
-          青光眼是一種視神經病變。視神經就像電纜般，把眼睛看到的景物傳送到大腦視覺中樞。青光眼患者先經歷周邊視野損害，然後出現中央視力下降，嚴重更會失明。早至中期的慢性青光眼基本沒有病徵，所以不少患者難以察覺，當病情發展到後期，死去的神經細胞已藥石無靈，因此青光眼有「視力小偷」的別稱。
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title1'
+            )
+          }}
+        </div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_text1'
+            )
+          }}
         </div>
       </div>
       <!-- 青光眼成因 -->
       <div id="factor">
-        <div>青光眼成因</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title2'
+            )
+          }}
+        </div>
         <div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/b687a1dc53df1fe7.png"
-              alt="青光眼成因"
+              :alt="`${$t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_title2'
+              )}`"
             />
           </div>
           <div>
             <div>
-              青光眼主要是由於眼球內壓力（眼壓）上升所致。位於眼晴前方的前房，充滿清澈的分泌液（房水）不停地流入，再經由前房角流出。如果房水的流動遇上阻塞，不能排出房水，就會導致眼壓增加，對視神經造成壓迫，令到血液循環不佳而使視神經受損。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text2'
+                )
+              }}
             </div>
             <div>
-              高度近視及長期使用類固醇眼藥人士，或眼球有外傷撞擊的病史，會有較大機會患上青光眼。另外，偏頭痛、心血管疾病、雷諾氏症候群、低血壓、高膽固醇症、高血脂症、糖尿病等，這些全身性疾病均可能引致青光眼。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text3'
+                )
+              }}
             </div>
           </div>
         </div>
         <div @click="goWhatsApp()">
-          <div>如您是青光眼高危人士</div>
-          <div>立即WhatsApp預約檢查</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_1'
+              )
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_2'
+              )
+            }}
+          </div>
         </div>
       </div>
       <!-- 青光眼的症狀 -->
       <div id="symptoms">
-        <div>青光眼的症狀</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title3'
+            )
+          }}
+        </div>
         <div>
           <div>
-            青光眼分為不同種類，因此症狀亦有所不同，以下是青光眼患者常見症狀︰
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_text4'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in symptoms" :key="index">
-              <img :src="item.img" :alt="item.text" srcset="" />
-              <div>{{ item.text }}</div>
+              <img :src="item.img" srcset="" />
+              <div>
+                <div v-if="Array.isArray(item.text)">
+                  <div v-for="(ele, i) in item.text" :key="i">
+                    {{ $t(ele) }}
+                  </div>
+                </div>
+                <div v-else>{{ $t(item.text) }}</div>
+              </div>
             </div>
           </div>
           <div>
@@ -406,7 +507,11 @@ const callTel = () => {
                 />
               </svg>
               <div>
-                如果出現以上情況，建議盡快聯絡眼科專科醫生進行檢查，否則視力可能快速退化，甚至有機會在幾天內失明。
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_text5'
+                  )
+                }}
               </div>
             </div>
           </div>
@@ -427,18 +532,36 @@ const callTel = () => {
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
               />
             </svg>
-            <div>青光眼的惡化過程</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title4'
+                )
+              }}
+            </div>
           </div>
           <div>
             <div v-for="(item, index) in worsen" :key="index">
-              <div><img :src="item.img" :alt="item.text" srcset="" /></div>
-              <div>{{ item.text }}</div>
+              <div><img :src="item.img" srcset="" /></div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
         <div @click="callTel()">
-          <div>不想青光眼惡化？</div>
-          <div>立即致電預約檢查</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_1'
+              )
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_2'
+              )
+            }}
+          </div>
         </div>
         <div></div>
       </div>
@@ -449,12 +572,22 @@ const callTel = () => {
           <div>
             <div>
               <div>Chronic Glaucoma</div>
-              <div>慢性青光眼</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title5'
+                  )
+                }}
+              </div>
             </div>
           </div>
           <div>
             <div>
-              屬較常見的青光眼種類，患者早期沒有明顯病徵，但隨著病情惡化，視力會慢慢減退。因慢性青光眼的病徵不明顯，在視力變化的初期，患者有機會以為只是用眼過度或者老化導致視力變差，直到視野範圍慢慢收窄才察覺。當病情嚴重時，大部分患者已出現視野缺失及喪失大部分視力，所以慢性青光眼有「視力小偷」之稱，偷偷地奪去患者視力。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text6'
+                )
+              }}
             </div>
             <div>
               <img
@@ -470,17 +603,29 @@ const callTel = () => {
           <div>
             <div>
               <div>Acute Glaucoma</div>
-              <div>急性青光眼</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title6'
+                  )
+                }}
+              </div>
             </div>
           </div>
           <div>
             <div>
-              屬於眼科急症，病情突如其來，患者眼壓會在短時間內上升，突然出現視力模糊，看燈光時有環形彩虹圈，有眼紅、眼痛、頭痛、噁心、嘔吐等症狀。如出現以上情況，應該立刻求醫。眼科專科醫生會以不同治療方法（口服藥物，眼藥水，甚至小手術等）迅速把眼壓降低以保護視神經，後續如有需要再考慮其他治療（例如激光周邊虹膜切開術等）。若急性青光眼沒有及時治療，患者視力可能永久受損。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text7'
+                )
+              }}
             </div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a23816f98522475c.png"
-                alt="眼科急症"
+                :alt="`${$t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title6'
+                )}`"
                 srcset=""
               />
             </div>
@@ -488,23 +633,49 @@ const callTel = () => {
         </div>
         <!-- button -->
         <div @click="callTel()">
-          <div>急性青光眼會突然來襲</div>
-          <div>立即致電預約診治</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_1'
+              )
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_2'
+              )
+            }}
+          </div>
         </div>
         <!-- 先天性青光眼 -->
         <div>
           <div>
             <div>
               <div>Congenital Glaucoma</div>
-              <div>先天性青光眼</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title7'
+                  )
+                }}
+              </div>
             </div>
           </div>
           <div>
             <div>
-              大多於嬰兒出生時已出現，因胚胎期前房角發育異常，阻礙了房水排出所致的遺傳性眼病。這種青光眼有1/3機會出現於胎兒期，即出生後已有典型表徵；2/3機會出現於出生後，其發生率為1:5000-10000。初生時已有青光眼的表徵，稱為嬰幼兒型青光眼；3歲以上及30歲以下人士稱為青少年型青光眼。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text8'
+                )
+              }}
             </div>
             <div>
-              雖然青光眼是不可逆轉的眼疾，但可以抑制和控制。先天性青光眼不易被發現，而且如果發現較晚則不易治療。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text9'
+                )
+              }}
             </div>
             <div>
               <svg
@@ -521,16 +692,20 @@ const callTel = () => {
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
                 />
               </svg>
-              先天性青光眼症狀
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title8'
+                )
+              }}
             </div>
             <div>
               <div v-for="item in congenital" :key="item.id">
                 <div>
                   <span>{{ item.id }}</span
-                  >{{ item.title }}
+                  >{{ $t(item.title) }}
                 </div>
                 <div>
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
                 <div><img :src="item.img" :alt="item.title" /></div>
               </div>
@@ -542,16 +717,30 @@ const callTel = () => {
           <div>
             <div>
               <div>Primary Glaucoma</div>
-              <div>原發性青光眼</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title9'
+                  )
+                }}
+              </div>
             </div>
           </div>
           <div>
             <div>
               <div>
-                原發性青光眼是胎兒在發育過程中，前房角發育出現異常，小樑網管系統不能發揮有效房水引流功能，而導致眼壓升高。
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_text10'
+                  )
+                }}
               </div>
               <div>
-                由於這是一種慢性眼疾，可導致不可逆轉的視功能障礙。多數確診的病人需長期治療，如不堅持治療，視野範圍會越來越小，最終引致失明。原發性青光眼可能受家族遺傳影響，如患者本身有深近視或家人曾經患有青光眼均會增加患上青光眼的風險。
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_text11'
+                  )
+                }}
               </div>
             </div>
             <div>
@@ -568,12 +757,22 @@ const callTel = () => {
           <div>
             <div>
               <div>Secondary Glaucoma</div>
-              <div>繼發性青光眼</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title10'
+                  )
+                }}
+              </div>
             </div>
           </div>
           <div>
             <div>
-              有別於其他青光眼，繼發性青光眼是由於某些眼病或全身疾病影響或破壞了正常房水循環，使房水排出受阻而引起眼壓升高，病因比較明確。
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_text12'
+                )
+              }}
             </div>
             <div>
               <svg
@@ -590,7 +789,11 @@ const callTel = () => {
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
                 />
               </svg>
-              先天性青光眼症狀
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title8'
+                )
+              }}
             </div>
             <div>
               <div v-for="(item, index) in kind" :key="item.id">
@@ -599,19 +802,21 @@ const callTel = () => {
                   @click="kindSelect(index)"
                 >
                   <span :class="{ font: index === action }">{{ item.id }}</span>
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
                 <div :class="{ action: index === action }">
                   <div>
                     <div v-if="Array.isArray(item.detail)">
                       <div v-for="(ele, index) in item.detail" :key="index">
-                        {{ ele }}
+                        {{ $t(ele) }}
                       </div>
                     </div>
-                    <div v-else>{{ item.detail }}</div>
+                    <div v-else>
+                      {{ $t(item.detail) }}
+                    </div>
                   </div>
                   <div v-if="item.img">
-                    <img :src="item.img" :alt="item.text" />
+                    <img :src="item.img" />
                   </div>
                 </div>
               </div>
@@ -621,7 +826,13 @@ const callTel = () => {
       </div>
       <!-- 青光眼高危人士 -->
       <div id="crowd">
-        <div>青光眼高危人士</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title11'
+            )
+          }}
+        </div>
         <div>
           <div v-for="(item, index) in crowd" :key="index">
             <div>
@@ -641,17 +852,32 @@ const callTel = () => {
                   d="M137.493,316.812 L1.985,238.344 L1.985,81.409 L137.493,2.942 L273.000,81.409 L273.000,238.344 L137.493,316.812 Z"
                 />
               </svg>
-              <img :src="item.img" :alt="item.text" />
+              <img :src="item.img" />
             </div>
-            <div>{{ item.text }}</div>
+            <div>
+              <div v-if="Array.isArray(item.text)">
+                <div v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</div>
+              </div>
+              <div v-else>{{ $t(item.text) }}</div>
+            </div>
           </div>
         </div>
       </div>
       <!-- 青光眼主要診斷方法 -->
       <div id="diagnostic">
-        <div>青光眼主要診斷方法</div>
         <div>
-          臨床診斷時，患者會接受一系列的檢查及測試，包括︰視力檢查、視野檢查、眼底檢查、眼壓測度等，眼科專科醫生還會根據患者過去的病史及家族史診斷，常見的檢查如下︰
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title12'
+            )
+          }}
+        </div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_text13'
+            )
+          }}
         </div>
         <div>
           <div v-for="(item, index) in diagnostic" :key="index">
@@ -688,56 +914,95 @@ const callTel = () => {
               </svg>
             </div>
             <div>
-              <div><img :src="item.img" :alt="item.text" /></div>
-              <div>{{ item.text }}</div>
+              <div><img :src="item.img" /></div>
+              <div>
+                <div v-if="Array.isArray(item.text)">
+                  <div v-for="(ele, i) in item.text" :key="i">
+                    {{ $t(ele) }}
+                  </div>
+                </div>
+                <div v-else>{{ $t(item.text) }}</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- 青光眼的治療 -->
       <div id="treat">
-        <div>青光眼的治療</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title13'
+            )
+          }}
+        </div>
         <div>
           <div>
-            治療青光眼以有效控制眼壓、防止或減慢青光眼的惡化為目標。眼科專科醫生初期一般以藥物控制青光眼病情，達至保護及保持病人的視神經組織及其功能，減少視神經進一步的損害。
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_text14'
+              )
+            }}
           </div>
           <div>
-            若用藥後仍無法控制病情，醫生會考慮採用手術治療，以平衡房水的生成和排出，使眼球壓力降至安全水平，達致目標眼壓。常見手術方案如下︰
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_text15'
+              )
+            }}
           </div>
         </div>
         <div>
           <div v-for="(item, index) in treat" :key="index">
-            <div>{{ item.remedy }}</div>
+            <div>
+              <div v-if="Array.isArray(item.remedy)">
+                <div v-for="(ele, i) in item.remedy" :key="i">
+                  {{ $t(ele) }}
+                </div>
+              </div>
+              <div v-else>{{ $t(item.remedy) }}</div>
+            </div>
             <div>
               <div v-if="Array.isArray(item.name)">
                 <div v-for="(con, index) in item.name" :key="index">
-                  {{ con }}
+                  {{ $t(con) }}
                 </div>
               </div>
-              <div v-else>{{ item.name }}</div>
+              <div v-else>{{ $t(item.name) }}</div>
             </div>
             <div>
               <div v-if="Array.isArray(item.range)">
                 <div v-for="(con, index) in item.range" :key="index">
-                  {{ con }}
+                  <div>
+                    <div v-if="Array.isArray(con)">
+                      <div v-for="(el, i) in con" :key="i">{{ $t(el) }}</div>
+                    </div>
+                    <div v-else>{{ $t(con) }}</div>
+                  </div>
                 </div>
               </div>
-              <div v-else>{{ item.range }}</div>
+              <div v-else>{{ $t(item.range) }}</div>
             </div>
           </div>
         </div>
       </div>
       <!-- 預防青光眼 -->
       <div id="guardAgainst">
-        <div>預防青光眼</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title14'
+            )
+          }}
+        </div>
         <div>
           <div>
             <div v-for="item in guardAgainst" :key="item.id">
               <div>
                 <div>{{ item.id }}</div>
-                <div>{{ item.text }}</div>
+                <div>{{ $t(item.text) }}</div>
               </div>
-              <div>{{ item.detail }}</div>
+              <div>{{ $t(item.detail) }}</div>
             </div>
           </div>
           <div>
@@ -765,7 +1030,13 @@ const callTel = () => {
               xlink:href="data:img/png;base64,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"
             />
           </svg>
-          <div>青光眼誤區</div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_title15'
+              )
+            }}
+          </div>
         </div>
         <div>
           <PageCollapse
@@ -783,7 +1054,12 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="../../assets/pdf/glaucoma.pdf" download="青光眼.pdf">
+        <a
+          href="../../assets/pdf/glaucoma.pdf"
+          :download="`${$t(
+            'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
+          )}.pdf`"
+        >
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
@@ -792,8 +1068,20 @@ const callTel = () => {
             />
           </div>
           <div>
-            <p>青光眼</p>
-            <p>下載小冊子</p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_down_text'
+                )
+              }}
+            </p>
           </div>
         </a>
       </div>
