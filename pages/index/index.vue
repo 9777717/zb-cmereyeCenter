@@ -18,7 +18,15 @@ const callTel = () => {
 
 <template>
   <div class="home">
-    <img src="https://static.cmereye.com/imgs/2023/04/7397d0a1608d806d.jpg" />
+    <div>
+      <video
+        style="width: 100%; height: 100vh; object-fit: fill"
+        autoplay
+        loop
+        muted
+        src="https://static.cmereye.com/static/loffee/video/OPD.mp4"
+      ></video>
+    </div>
     <div>
       <div>
         <div>professional</div>
@@ -161,11 +169,6 @@ const callTel = () => {
   position: relative;
   width: 100%;
   height: 100vh;
-
-  & > img {
-    width: 100%;
-    height: 100%;
-  }
 
   & > div:nth-child(2) {
     position: absolute;
