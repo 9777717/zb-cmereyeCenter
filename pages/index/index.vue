@@ -172,7 +172,7 @@ const callTel = () => {
 
   & > div:nth-child(2) {
     position: absolute;
-    top: 345px;
+    top: 37%;
     left: 0;
     right: 0;
     display: flex;

@@ -36,6 +36,9 @@ useHead({
   </Html>
 </template>
 <style lang="scss">
+body {
+  overflow-x: hidden !important;
+}
 ::-webkit-scrollbar {
   width: 5px;
   background-color: #ffffff;

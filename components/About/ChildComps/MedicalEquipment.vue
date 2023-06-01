@@ -143,8 +143,8 @@ const show = false
 <style scoped lang="scss">
 #medicalEquipment {
   margin-top: 130px;
-  margin-left: 14.0625%;
-  width: 63.7%;
+  margin-left: 32.0625%;
+  width: 50.7%;
   height: 770px;
   display: flex;
   flex-flow: column;
@@ -156,9 +156,8 @@ const show = false
     position: relative;
     margin: auto;
     margin-top: 100px;
-    margin-left: 21.77083%;
-    width: 16.82292%;
-    height: 220px;
+    width: 32.82292%;
+    min-height: 220px;
     background-color: #fff;
 
     & > div:nth-child(2) {
@@ -208,7 +207,7 @@ const show = false
 }
 
 :deep(.swiper-slide) {
-  width: 10.416667% !important;
+  width: 200px !important;
   height: 200px;
 }
 
@@ -273,6 +272,14 @@ const show = false
 
   & > img {
     width: 100%;
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  #medicalEquipment {
+    width: 50.7%;
+    margin-left: 34.3%;
   }
 }
 </style>

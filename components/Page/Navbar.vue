@@ -131,7 +131,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 就診流程
         text: t('pages.process_cost.process'),
-        route: { name: 'process-and-cost-process' },
+        route: { path: '/process-and-cost', hash: '#process' },
       },
     ],
   },
@@ -167,19 +167,7 @@ const porps = defineProps({
 </script>
 
 <template>
-  <div
-    :class="[
-      porps.rt === 'index' ? 'headerTem' : 'headerTemPage',
-      porps.rt === 'ophthalmic-information-healthInfo'
-        ? 'headerTemOphthalmic'
-        : 'headerTem',
-      porps.rt === 'contact-us-appointmentForm' ? 'headerTemForm' : 'headerTem',
-      porps.rt === 'contact-us' ? 'headerTemForm' : 'headerTem',
-      porps.rt === 'talent-recruitment' ? 'headerTemTalent' : 'headerTem',
-      porps.rt === 'disclaimer' ? 'headerTemDisclaimer' : 'headerTem',
-      porps.rt === 'privacyPolicy' ? 'headerTemDisclaimer' : 'headerTem',
-    ]"
-  >
+  <div :class="[porps.rt === 'index' ? 'headerTem' : 'headerTemPage']">
     <BuilderNavbar>
       <template #menu>
         <div class="navigtion">

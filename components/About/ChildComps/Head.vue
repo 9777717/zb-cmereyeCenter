@@ -142,6 +142,7 @@ const leaveActive = () => {
 
 .imgBox {
   max-width: 810px;
+  min-width: 810px;
   position: relative;
   background: #f2f2f2;
   width: 41.9%;
@@ -182,6 +183,7 @@ const leaveActive = () => {
     margin: 5px 0;
     padding: 5px 40px;
     font-size: 15px;
+    background: #ffffff;
   }
 
   .anchorActive,

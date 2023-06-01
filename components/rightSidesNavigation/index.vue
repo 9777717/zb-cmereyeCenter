@@ -83,7 +83,7 @@ const props = defineProps({
     margin: 5px 0;
     padding: 5px 0;
     font-size: 15px;
-    // background: #fff;
+    background: #fff;
     display: flex;
     justify-content: center;
   }

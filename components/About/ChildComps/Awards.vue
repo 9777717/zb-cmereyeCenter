@@ -151,3 +151,10 @@ const awardsList = [
   margin-right: 0;
 }
 </style>
+<style lang="scss" scoped>
+@media screen and(min-width:1920px) {
+  #awards {
+    margin-left: 36.3%;
+  }
+}
+</style>

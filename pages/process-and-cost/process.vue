@@ -20,10 +20,7 @@ const serviceNavigation = [
 
 <template>
   <div class="process">
-    <div
-      class="processMain mainCon relative flex items-start justify-center"
-      :style="props.dd"
-    >
+    <div class="processMain mainCon relative flex items-start justify-center">
       <div class="content mt-20 ml-20 relative">
         <div class="titleBox">
           <h1 class="text-3xl font-normal">就診流程</h1>
@@ -76,10 +73,16 @@ const serviceNavigation = [
   </div>
 </template>
 <style scoped lang="scss">
+// .process {
+//   background: url(https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png);
+//   background-size: 100% 100%;
+//   background-repeat: no-repeat;
+// }
+
 .processMain {
-  background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
 
   .titleBox {
     h2 {

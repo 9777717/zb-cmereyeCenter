@@ -2130,3 +2130,10 @@ const callTel = () => {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .cataract {
+    margin-left: 33%;
+  }
+}
+</style>

@@ -424,6 +424,19 @@ const mainContent = [
   .doctorClass {
     width: 1780px;
     margin: auto;
+    margin-left: 32%;
+  }
+
+  .doctorClass > div:nth-child(2) {
+    margin-left: 5.20833%;
+  }
+
+  .doctorClass > div:nth-child(2) > div {
+    padding-left: 22.2476%;
+  }
+
+  .doctorClass > div:nth-child(2) > div > div:nth-child(1) {
+    width: 53%;
   }
 }
 </style>

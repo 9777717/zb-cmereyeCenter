@@ -181,7 +181,7 @@ const historyList = ref([
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-  margin-left: 30.8854%;
+  margin-left: 34.3854%;
   margin-top: 12.75rem;
   background: #f2f2f2;
   position: relative;
@@ -253,5 +253,12 @@ const historyList = ref([
   //   background: #f2f2f2;
   //   top: -7%;
   // }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  #history {
+    margin-left: 36.3%;
+  }
 }
 </style>

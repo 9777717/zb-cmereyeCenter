@@ -306,7 +306,7 @@ const goWhatsApp = () => {
         </div>
         <FormFooterInfo
           :from-style="'margin: 0 232px'"
-          :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+          :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}max-width:960px;margin: auto;`"
           :co="`color:${'#6a91cf;'}`"
         />
         <PageInformation :service-navigation="serviceNavigation" />

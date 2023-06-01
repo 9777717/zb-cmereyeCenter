@@ -318,7 +318,7 @@ const goInstagram = (type: string) => {
 
   // 简介
   & > div:nth-child(1) {
-    margin-left: 143px;
+    margin-left: 172px;
     display: flex;
     flex-direction: column;
 
@@ -715,6 +715,12 @@ const goInstagram = (type: string) => {
       }
     }
   }
+
+  & > div:nth-child(2),
+  & > div:nth-child(3),
+  & > div:nth-child(4) {
+    margin-left: 11.7%;
+  }
 }
 
 .media {
@@ -742,7 +748,7 @@ const goInstagram = (type: string) => {
 
     & > div:nth-child(2) {
       color: red;
-      margin-left: 57.291667%;
+      margin-left: 63.291667%;
       padding-top: 65px;
 
       & > a {
@@ -829,12 +835,33 @@ const goInstagram = (type: string) => {
     z-index: 5;
   }
 }
+
+.media > div:nth-child(1) > div > img:nth-child(2) {
+  left: 37%;
+}
+
+.media > div:nth-child(1) > div > img:nth-child(1) {
+  left: 40%;
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .centreIntro {
     margin: auto;
     max-width: 1300px;
+    margin-left: 28.5%;
+  }
+
+  .centreIntro {
+    & > div:nth-child(2),
+    & > div:nth-child(3),
+    & > div:nth-child(4) {
+      margin-left: 11.3%;
+    }
+  }
+
+  .media {
+    margin-top: 210px;
   }
 }
 </style>
