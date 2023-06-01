@@ -129,7 +129,7 @@
 .content {
   // background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
   // margin: 0 350px;
-  padding-left: 250px;
+  padding-left: 320px;
 }
 
 .titleBox {
