@@ -79,6 +79,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.maculopathy'),
         route: { name: 'medical-service-maculopathy' },
       },
+      {
+        type: 'link', // 兒童斜弱視
+        text: t('pages.medical_service.strabismusAmblyopia'),
+        route: { name: 'medical-service-strabismusAmblyopia' },
+      },
     ],
   },
   {
@@ -167,7 +172,14 @@ const porps = defineProps({
 </script>
 
 <template>
-  <div :class="[porps.rt === 'index' ? 'headerTem' : 'headerTemPage']">
+  <div
+    :class="[
+      porps.rt === 'index' ? 'headerTem' : 'headerTemPage',
+      porps.rt === 'medical-service-strabismusAmblyopia'
+        ? 'headerTemService'
+        : 'headerTem',
+    ]"
+  >
     <BuilderNavbar>
       <template #menu>
         <div class="navigtion">
@@ -320,11 +332,11 @@ a {
   }
 }
 
-.headerTemForm {
+.headerTemService {
   z-index: 999;
   position: fixed;
   top: 54px;
-  left: 360px;
+  left: 23.4375%;
   background: #2958a3;
 
   .navigtion {

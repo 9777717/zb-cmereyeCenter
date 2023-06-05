@@ -63,7 +63,7 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
     des: '兒童斜弱視',
-    link: '',
+    link: '/medical-service/strabismusAmblyopia',
   },
   {
     i: '08',
