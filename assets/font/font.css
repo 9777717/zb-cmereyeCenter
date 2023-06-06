@@ -57,3 +57,9 @@
   font-family: "Metropolis";
   src: url('https://static.cmereye.com/static/loffee/font/Metropolis.woff2');
 }
+
+
+@font-face {
+  font-family: "NotoSansCJK-Bold";
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansCJK-Bold.woff2');
+}

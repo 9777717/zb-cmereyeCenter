@@ -186,4 +186,10 @@ const props = defineProps({
 .glaucoma2 {
   background-image: url(../../assets/images/-glaucoma.png);
 }
+.amotioRetinae1 {
+  background-image: url(../../assets/images/+amotioRetinae.png);
+}
+.amotioRetinae2 {
+  background-image: url(../../assets/images/-amotioRetinae.png);
+}
 </style>

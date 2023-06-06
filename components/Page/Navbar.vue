@@ -84,6 +84,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.strabismusAmblyopia'),
         route: { name: 'medical-service-strabismusAmblyopia' },
       },
+      {
+        type: 'link', // 兒童斜弱視
+        text: t('pages.medical_service.amotioRetinae'),
+        route: { name: 'medical-service-amotioRetinae' },
+      },
     ],
   },
   {
@@ -285,7 +290,7 @@ a {
 
 .headerTemPage {
   z-index: 999;
-  position: fixed;
+  position: absolute; // 上线记得改会fixed
   top: 54px;
   left: 23.4375%;
   background: #2958a3;
