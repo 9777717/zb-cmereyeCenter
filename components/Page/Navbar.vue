@@ -85,9 +85,14 @@ const menus = computed((): IMenuItem[] => [
         route: { name: 'medical-service-strabismusAmblyopia' },
       },
       {
-        type: 'link', // 兒童斜弱視
+        type: 'link', // 視網膜脫落
         text: t('pages.medical_service.amotioRetinae'),
         route: { name: 'medical-service-amotioRetinae' },
+      },
+      {
+        type: 'link', // 眼表及角膜疾病
+        text: t('pages.medical_service.ocularSurfaceDiseases'),
+        route: { name: 'medical-service-ocularSurfaceDiseases' },
       },
     ],
   },

@@ -70,14 +70,14 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
     des: '眼表及角膜疾病',
-    link: '',
+    link: '/medical-service/ocularSurfaceDiseases',
   },
   {
     i: '09',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
     des: '視網膜脫落及疾病',
-    link: '',
+    link: '/medical-service/amotioRetinae',
   },
   {
     i: '10',

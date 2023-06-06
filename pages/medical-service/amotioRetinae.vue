@@ -291,7 +291,9 @@ const preventList1 = [
         </div>
       </div>
       <div id="prevent">
-        <div>預防視網膜脫落</div>
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+          預防視網膜脫落
+        </div>
         <div>預防視網膜脫離可以採取措施降低風險：</div>
         <div>
           <div v-for="(item, index) in preventList1" :key="index">
@@ -478,6 +480,7 @@ const preventList1 = [
         width: 268px;
         height: 309px;
         border: solid 1px #eed3cf;
+        position: relative;
 
         & > div:nth-child(1) {
           height: 50px;
@@ -497,7 +500,7 @@ const preventList1 = [
 
         & > div:nth-child(2) {
           height: 99px;
-          width: 268px;
+          width: 100%;
           background-color: #eab1a6;
 
           font-family: 'NotoSansHK-Regular';
@@ -517,9 +520,23 @@ const preventList1 = [
           height: 160px;
         }
       }
-    }
 
-    // https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png
+      & > div::after {
+        content: '';
+        background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
+        width: 14px;
+        height: 25px;
+        display: inline-block;
+        position: absolute;
+        right: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      & > div:last-child::after {
+        content: '';
+        width: 0;
+      }
+    }
 
     & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
@@ -688,8 +705,10 @@ const preventList1 = [
       }
     }
   }
+
   & > #faq {
     margin-bottom: 260px;
+
     & > div:nth-child(2) {
       margin-top: 120px;
     }
