@@ -353,7 +353,7 @@ const callTel = () => {
           </p>
         </div>
         <div>
-          <div v-for="(item, i) in treatList1" :key="i">
+          <div v-for="(item, index) in treatList1" :key="index">
             <div>
               <img :src="item.svg" />
               <div>{{ item.title }}</div>

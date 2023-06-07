@@ -75,7 +75,7 @@ const props = defineProps({
 }
 
 .anchor {
-  top: 210px;
+  top: 200px;
 
   a {
     width: 165px;

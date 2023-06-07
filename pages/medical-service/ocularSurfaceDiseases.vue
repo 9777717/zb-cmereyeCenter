@@ -9,8 +9,8 @@ useHead(() => ({
 // 传递背景色
 const backgd = [
   '#acd9c1;',
-  '-webkit-linear-gradient(to right, cfecdd, #acd9c1);',
-  'linear-gradient(to right, cfecdd, #acd9c1);',
+  '-webkit-linear-gradient(to right, #cfecdd, #acd9c1);',
+  'linear-gradient(to right, #cfecdd, #acd9c1);',
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
@@ -27,35 +27,35 @@ const callTel = () => {
 const serviceNavigation = [
   {
     anchorName: '翼狀胬肉',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#intro',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#pterygium',
   },
   {
     anchorName: '眼瞼炎',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#factor',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#blepharitis',
   },
   {
     anchorName: '角膜炎',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#styptom',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#keratitis',
   },
   {
     anchorName: '虹膜炎',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#treat',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#iritis',
   },
   {
     anchorName: '表層鞏膜炎',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#diabetes',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#episcleritis',
   },
   {
     anchorName: '角膜皮上破損',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#prevent',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#damage',
   },
   {
     anchorName: '錐形角膜',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#faq',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#keratoconus',
   },
   {
     anchorName: '角膜移植',
-    anchorLink: '/medical-service/ocularSurfaceDiseases#faq',
+    anchorLink: '/medical-service/ocularSurfaceDiseases#keratoplasty',
   },
 ]
 // 常見問題
@@ -172,6 +172,99 @@ const keratitisList = [
     text: '角膜混濁、浸潤或潰瘍',
   },
 ]
+const damageList1 = [
+  {
+    text: ['隱形眼鏡佩戴不當造成角膜刮傷'],
+  },
+  {
+    text: ['角膜長期缺氧而水腫剝落'],
+  },
+  {
+    text: [
+      '異物直接傷害角膜，電焊或',
+      '紫外線灼傷（通常在六至十二',
+      '小時後角膜開始破皮）',
+    ],
+  },
+  {
+    text: ['乾眼症'],
+  },
+  {
+    text: ['眼瞼閉合不全', '（角膜因乾燥而破皮）'],
+  },
+  {
+    text: ['角膜病變等'],
+  },
+]
+const damageList2 = [
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/5a443e29bcab85f7.png',
+    text: [
+      '角膜上皮層底下有豐富的神',
+      '經，一旦角膜破皮會使神經',
+      '暴露出來，非常疼痛',
+    ],
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/f5488a6cf20b2bfb.png',
+    text: ['怕光、流淚'],
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/35c768eeca793a10.png',
+    text: ['眼睛幾乎睜不開'],
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/288f34fab3f9a8cf.png',
+    text: ['角膜周圍的結膜', '會充血發紅'],
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/f62bc78110c0bf14.png',
+    text: ['張開或閉上', '眼睛時有異物感'],
+  },
+]
+const keratoconusList1 = [
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/125b93956e0ebff8.png',
+    text: '目前仍未有明確病因，可能是染色體隱性遺傳',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/efe6bc1656aef6bd.png',
+    text: '過敏性疾病',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/8d7ccaa7a5447c03.png',
+    text: '常見於唐氏綜合症以及嚴重過敏者',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/06/664bfc9e4aeef087.png',
+    text: '經常揉眼',
+  },
+]
+const keratoplastyList1 = [
+  {
+    therapy: '治療方式',
+    involve: '涉及角膜組織',
+    postoperation: '術後併發症',
+  },
+  {
+    therapy: '全層角膜移植',
+    involve: '全部5層結構',
+    postoperation: [
+      '對角膜內皮細胞損傷較大',
+      '術後散光較多',
+      '術後10年移植失敗率大於20%',
+      '復原時間較長',
+    ],
+  },
+  {
+    therapy: '板層角膜移植',
+    involve: ['深層前角膜移植 前面3層結構', '後層角膜移植  後面3層結構'],
+    postoperation: [
+      ['對角膜內皮細胞損傷少', '術後散光較少', '移植排斥率低，復原時間較快'],
+      ['無需縫線', '術後散光少', '術後移植失敗率低', '復原時間較快'],
+    ],
+  },
+]
 </script>
 
 <template>
@@ -225,7 +318,7 @@ const keratitisList = [
               環境因素，長期受到外界刺激如風沙、煙塵、熱力、日光、花粉等過敏刺激的人群，尤其是漁民、農民、海員、砂石工人等
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn">
+          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>難自行分辨是否有翼狀胬肉？</span
             ><span>WhatsApp預約醫生檢查</span>
           </div>
@@ -301,7 +394,7 @@ const keratitisList = [
               />
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn">
+          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>眼挑針已好幾日尚未康復？</span
             ><span>WhatsApp預約對症下藥治療</span>
           </div>
@@ -358,7 +451,7 @@ const keratitisList = [
               </div>
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn">
+          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
             <span>已有角膜炎症狀？</span><span>立即致電預約檢查</span>
           </div>
         </div>
@@ -434,16 +527,16 @@ const keratitisList = [
           >
             虹膜炎症狀
           </div>
-          <div>
+          <div class="ocularSurfaceDiseases_text_p_span">
             <div>疼痛</div>
             <div>畏光、流淚</div>
             <div>睫狀充血</div>
-            <div>角膜後沉著物</div>
-            <div>房水/玻璃體混濁</div>
-            <div>虹膜紋理不清</div>
+            <div>角膜後<br />沉著物</div>
+            <div>房水/<br />玻璃體混濁</div>
+            <div>虹膜<br />紋理不清</div>
             <div>瞳孔縮小</div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn">
+          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>不想虹膜炎有後遺症？</span
             ><span>即WhatsApp預約 及早治療</span>
           </div>
@@ -454,7 +547,7 @@ const keratitisList = [
           >
             虹膜炎併發症
           </div>
-          <div>
+          <div class="ocularSurfaceDiseases_text_p_span">
             <div>
               <div>1</div>
               <div>
@@ -473,10 +566,459 @@ const keratitisList = [
           >
             虹膜炎治療
           </div>
-          <div>
+          <div class="ocularSurfaceDiseases_text_p_span">
             <div>消炎眼藥水、散瞳、降眼壓眼藥水</div>
             <div>口服類固醇</div>
             <div>結膜下或眼內注射類固醇</div>
+          </div>
+        </div>
+      </div>
+      <div id="episcleritis">
+        <div class="ocularSurfaceDiseases_title">表層鞏膜炎</div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            表層鞏膜炎成因
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/38bb162c73f64fc8.png"
+                alt=""
+              />
+              <div class="ocularSurfaceDiseases_text_p_span">
+                很多時無法找到明確病因，可能與壓力有關
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/f978fdcd0118b62a.png"
+                alt=""
+              />
+              <div class="ocularSurfaceDiseases_text_p_span">內分泌異常</div>
+            </div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/c3f67ba61c369629.png"
+                alt=""
+              />
+              <div class="ocularSurfaceDiseases_text_p_span">
+                由自身免疫類疾病引起
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            表層鞏膜炎檢查
+          </div>
+          <div>
+            <div>
+              <div>01</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                表層鞏膜炎的充血和水腫僅局限在鞏膜表層。其充血多呈暗紅色，滴腎上腺素後血管迅速變白。
+              </div>
+            </div>
+            <div>
+              <div>02</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                表層鞏膜血管相對不會移動，因此表層鞏膜炎多局限在角膜緣至直肌附著點的區域內，不影響瞼結膜。充血的血管會呈放射狀沿角膜向後延伸。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            表層鞏膜炎併發症
+          </div>
+          <div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              <span>1</span> 前房積膿
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              <span>2</span> 鞏膜穿孔
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              <span>3</span> 角膜<br />後彈力膜膨出
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              <span>4</span> 白內障
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            表層鞏膜炎種類
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>單純性表層鞏膜炎（Simple Episcleritis）</div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  大多數鞏膜炎都屬於單純性表層鞏膜炎，多出現在女性。會出現眼紅、眼痛等症狀，病變部位呈塊狀的鞏膜表層和球結膜有彌漫性充血水腫，呈紫紅色（如圖）。症狀一般較輕，輕微疼痛和灼熱感，有時會出現眼瞼神經血管性水腫，視功能多不受影響，偶然出現瞳孔括約肌和睫狀肌痙攣，導致瞳孔縮小而出現暫時性近視。這類型的鞏膜炎發病較突然，週期性發作，每次持續一至數天，部分病人每隔一至三個月便會復發。
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://static.cmereye.com/imgs/2023/06/8ed21e35080dbfa1.png"
+                  alt=""
+                />
+                <div>
+                  與流行性角結膜炎的彌漫性眼紅不同，單純表層鞏膜炎病人的眼睛局部發紅，而且多不影響角膜。
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>結節性表層鞏膜炎（Nodular Episcleritis）</div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  與單純性鞏膜炎相比，結節性表層鞏膜炎多影響年輕女性，恢復時間亦較長。病人可能出現眼紅、疼痛、畏光和流淚症狀，但一般不影響視功能。每次發病持續約2周左右，炎症逐漸消退，約2/3的病人會多次復發。
+                </div>
+              </div>
+              <div>
+                <img
+                  src="https://static.cmereye.com/imgs/2023/06/db41b40d23dfba06.png"
+                  alt=""
+                />
+                <div>
+                  結節性表層鞏膜炎的典型表現是局部隆起的單個結節，周圍有結膜充血和水腫。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            表層鞏膜炎治療
+          </div>
+          <div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              由於表層鞏膜炎很多時候與身體其他疾病有關，並可能會復發，因此重要的治療原則是去除病因，預防復發。
+            </div>
+            <div>
+              <div>
+                <div>若症狀輕微</div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  可以考慮局部使用類固醇藥物。
+                </div>
+              </div>
+              <div>
+                <div>若病情較重或頻繁發作</div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  應仔細檢查病人是否合併有自身免疫或結締組織的疾病，以免引起嚴重的併發症。
+                </div>
+              </div>
+              <div>
+                <div>病人如若同時有虹膜或睫狀體發炎</div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  應及時滴用放大瞳孔眼藥水，減輕炎症。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
+            <span>鞏膜炎可能伴隨其他眼疾</span><span>立即致電預約治療</span>
+          </div>
+        </div>
+      </div>
+      <div id="damage">
+        <div class="ocularSurfaceDiseases_title">角膜上皮破損</div>
+        <div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/06/2a769c496ebb7f7f.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="ocularSurfaceDiseases_text_p_span">
+            角膜共有五層，最表面的一層稱為上皮層，這一層出現刮傷或破損剝落的情況俗稱為角膜破皮，即角膜上皮破損（Corneal
+            Abrasion）。
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜上皮破損成因
+          </div>
+          <div>
+            <div v-for="(item, index) in damageList1" :key="index">
+              <span>{{ index + 1 }}</span>
+              <div>
+                <p v-for="(ele, i) in item.text" :key="i">{{ ele }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜上皮破損症狀
+          </div>
+          <div>
+            <div v-for="(item, index) in damageList2" :key="index">
+              <div><img :src="item.img" /></div>
+              <div>
+                <span v-for="(ele, i) in item.text" :key="i">{{ ele }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜上皮破損治療
+          </div>
+          <div>
+            <div>
+              <div>藥物治療</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                使用抗生素眼藥水預防感染，並且在每天睡前塗藥膏，在眼皮及角膜之間形成保護膜，避免眼皮把新生角膜上皮層扯下來，並戴上繃帶式隱形眼鏡（Bandage
+                Contact Lens），待傷口癒合
+              </div>
+            </div>
+            <div>
+              <div>手術治療</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                用針頭在角膜病變處刺出一些較深的傷口，使表皮與下面組織結疤而緊密黏連。但由於此方法會造成角膜瘢痕且有角膜穿孔風險，因此現時較少使用這種治療方法。
+              </div>
+            </div>
+            <div>
+              <div>激光治療</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                激光治療性角膜切割術（Photo-Therapeutic Keratectomy,
+                PTK）可治療復發性角膜上皮破損，成效相當不俗，而且復發率低於10%
+              </div>
+            </div>
+          </div>
+          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+            <span>WhatsApp了解治療方案</span>
+          </div>
+        </div>
+      </div>
+      <div id="keratoconus">
+        <div class="ocularSurfaceDiseases_title">錐形角膜</div>
+        <div>
+          <div class="ocularSurfaceDiseases_text_p_span">
+            又叫圓錐角膜，是角膜擴張、中央變薄向前突出，呈圓錐形為<span
+              >特徵的一種眼病。患上錐形角膜，會導致近視或散光度數不同，嚴重時可能引起角膜水腫，影響視功能。</span
+            >
+          </div>
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/06/284424c8276caf65.png"
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            錐形角膜成因
+          </div>
+          <div>
+            <div v-for="(item, index) in keratoconusList1" :key="index">
+              <img :src="item.img" alt="" />
+              <div>{{ item.text }}</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            錐形角膜症狀
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/5a230949595f4632.png"
+              />
+            </div>
+            <div>
+              <div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  <span>1</span>出現向前突起的圓錐，圓錐頂端的角膜基質明顯變薄
+                </div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  <span>2</span>近視或散光度數變化幅度較大、較快
+                </div>
+                <div class="ocularSurfaceDiseases_text_p_span">
+                  <span>3</span
+                  >角膜變尖的部分發生水腫甚至穿孔，令視功能突然下降及疼痛
+                </div>
+              </div>
+              <div class="ocularSurfaceDiseases_title_btn">
+                <span>懷疑自己有錐形角膜？</span
+                ><span>WhatsApp預約檢查及治療</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            錐形角膜治療
+          </div>
+          <div>
+            <div>
+              <div>新型隱形眼鏡</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                硬式隱形眼鏡頂壓力較大，可以頂壓角膜變形，但較難適應，有機會在眼睛表面移位。新型的隱形眼鏡（Hybrid
+                Contact Lens）既能提供良好的頂壓力，舒適度亦較良好。
+              </div>
+            </div>
+            <div>
+              <div>膠原交聯術（Corneal Collagen Cross-linking）</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                <span
+                  >在角膜局部滴核黃素（Riboflavin，即維生素B2，用於增加能量吸收並釋出活性氧）</span
+                >，再經由紫外線（UVA）照射，令角膜組織釋放一些粒子，使角膜纖維中的膠原蛋白緊扣一起，角膜因此而變得堅韌穩定。
+              </div>
+            </div>
+            <div>
+              <div>角膜基質環植入術（Intacs Implant）</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                為治療錐形角膜的方法，但若角膜疤痕較嚴重時，病人最終可能需要通過角膜移植來改善視功能
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="keratoplasty">
+        <div class="ocularSurfaceDiseases_title">角膜移植</div>
+        <div>
+          <div class="ocularSurfaceDiseases_text_p_span">
+            角膜移植是把病變的眼角膜換成正常的眼角膜，使患眼疾的眼睛恢復視力或控制角膜病變，達致增進視功能或治療某些角膜疾病的效果。一些引起患者嚴重視功能受損甚至失明的角膜疾病，或可以此法治療。因為角膜本身不含血管，不會令身體出現排斥反應，所以角膜移植的成功率是器官移植之首。
+          </div>
+          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
+            <span>角膜移植助您重見光明</span><span>即致電約見醫生了解更多</span>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜移植適合患者
+          </div>
+          <div>
+            <div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                外傷如：刺傷、燒傷、燙傷或化學品灼傷角膜等
+              </div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                嚴重角膜感染如：細菌及過濾性病毒感染
+              </div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                角膜退化性疾病
+              </div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                先天性角膜疾病如：錐形角膜
+              </div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                術後角膜退化或損傷
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                角膜病變可嚴重影響視功能（a），而接受角膜移植，換上透明清晰的角膜後，可以重建視功能（b）
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜移植併發症
+          </div>
+          <div>
+            <div class="ocularSurfaceDiseases_text_p_span">排斥反應</div>
+            <div class="ocularSurfaceDiseases_text_p_span">眼部感染</div>
+            <div class="ocularSurfaceDiseases_text_p_span">青光眼</div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              角膜縫線<br />鬆脫
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              術後<br />屈光不正
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
+          >
+            角膜移植術
+          </div>
+          <div>
+            <div>
+              <div>全層角膜移植</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                傳統的角膜移植多採用全層角膜移植方法，把5層角膜組織全部更換及移植。然而，並非每種病變都會損壞全層角膜。
+              </div>
+            </div>
+            <div>
+              <div>板層角膜移植</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                板層眼角膜移植只更換部分角膜層，盡量保留患者仍具功能的角膜，降低治療入侵及排斥機率，更為安全、有效，術後傷口及視功能恢復也較快。
+              </div>
+            </div>
+            <div>
+              <div v-for="(item, index) in keratoplastyList1" :key="index">
+                <div>{{ item.therapy }}</div>
+                <div>
+                  <div v-if="Array.isArray(item.involve)">
+                    <div v-for="(ele, index) in item.involve" :key="index">
+                      <div v-if="Array.isArray(ele)">
+                        <div v-for="(e, index) in ele" :key="index">
+                          {{ e }}
+                        </div>
+                      </div>
+                      <div v-else>{{ ele }}</div>
+                    </div>
+                  </div>
+                  <div v-else>{{ item.involve }}</div>
+                </div>
+                <div>
+                  <div v-if="Array.isArray(item.postoperation)">
+                    <div v-for="(el, index) in item.postoperation" :key="index">
+                      <div v-if="Array.isArray(el)">
+                        <div v-for="(e, index) in el" :key="index">{{ e }}</div>
+                      </div>
+                      <div v-else>{{ el }}</div>
+                    </div>
+                  </div>
+                  <div v-else>{{ item.postoperation }}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -484,7 +1026,7 @@ const keratitisList = [
         <div
           class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
         >
-          常見問題
+          角膜移植常見問題
         </div>
         <div>
           <PageCollapse
@@ -852,6 +1394,8 @@ const keratitisList = [
   }
 
   & > #iritis {
+    margin-bottom: 160px;
+
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         padding-left: 46px;
@@ -867,6 +1411,23 @@ const keratitisList = [
 
           font-size: 22px;
           line-height: 38px;
+
+          & > div::before {
+            content: '';
+            background: url('https://static.cmereye.com/imgs/2023/06/4ec5fda73d711558.png');
+            width: 7px;
+            height: 9px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 3px;
+          }
+
+          & > div:nth-child(2) {
+            padding: 75px 0 72px;
+            border-top: dashed 1px #acd9c1;
+            border-bottom: dashed 1px #acd9c1;
+            width: 667px;
+          }
         }
       }
     }
@@ -879,30 +1440,983 @@ const keratitisList = [
         justify-content: space-between;
 
         & > div {
+          margin: 60px auto 80px;
           display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background: url('https://static.cmereye.com/imgs/2023/06/d4f5b0e6f7aad173.png');
+          width: 156px;
+          height: 155px;
+          text-align: center;
         }
       }
     }
 
     & > div:nth-child(4) {
+      margin-top: 140px;
+
       & > div:nth-child(2) {
         padding-left: 42px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 50px auto 140px;
 
         & > div {
           display: flex;
+          width: 599px;
+          height: 140px;
+          border-radius: 10px;
+          border: solid 2px #acd9c1;
+          position: relative;
+          padding: 40px 45px;
+
+          & > div:nth-child(2) {
+            font-size: 22px;
+            line-height: 38px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+
+          & > div:nth-child(1) {
+            position: absolute;
+            left: -24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'OPPOSans-B';
+            font-size: 70px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: 0px;
+            color: #acd9c1;
+            background: #fff;
+            border-top: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+          }
         }
       }
     }
 
     & > div:nth-child(5) {
       & > div:nth-child(2) {
+        margin-top: 50px;
         padding-left: 26px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        & > div {
+          width: 382px;
+          height: 124px;
+          background-color: #ffffff;
+          box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          font-size: 22px;
+          line-height: 38px;
+          border-top: 10px solid #acd9c1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  & > #episcleritis {
+    margin: 160px auto;
+
+    & > div:nth-child(2) {
+      margin-top: 60px;
+
+      & > div:nth-child(2) {
+        width: 1294px;
+        height: 242px;
+        box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 0 40px;
+        justify-content: space-between;
+
+        & > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & > div:nth-child(2) {
+            max-width: 155px;
+            margin-left: 30px;
+            font-size: 22px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          width: 436px;
+          border-left: 1px solid #eeeeee;
+          border-right: 1px solid #eeeeee;
+        }
+      }
+    }
+
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        justify-content: space-between;
+        padding-left: 26px;
+        margin-top: 50px;
+
+        & > div {
+          width: 600px;
+          height: 220px;
+          border-radius: 10px;
+          border: solid 4px #eeeeee;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+
+          & > div:nth-child(1) {
+            padding: 58px 42px;
+            font-family: 'OPPOSans-B';
+            font-size: 52px;
+            line-height: 38px;
+            letter-spacing: 0px;
+            color: #acd9c1;
+            border-right: solid 3px #acd9c1;
+          }
+
+          & > div:nth-child(2) {
+            margin-left: 20px;
+            font-size: 22px;
+            line-height: 42px;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        padding-left: 26px;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 50px;
+
+        & > div {
+          background: url('https://static.cmereye.com/imgs/2023/06/2a6caa9ee33d9d92.png');
+          width: 281px;
+          height: 112px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-left: 40px;
+          position: relative;
+
+          & > span {
+            position: absolute;
+            left: 29px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'OPPOSans-H';
+            font-size: 32px;
+            line-height: 42px;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        margin-top: 80px;
+        flex-direction: column;
+
+        & > div {
+          display: flex;
+          align-items: flex-start;
+          padding-left: 25px;
+
+          & > div:nth-child(1) {
+            max-width: 836px;
+            margin-right: 60px;
+
+            & > div:nth-child(1) {
+              width: 562px;
+              height: 60px;
+              background-color: #acd9c1;
+              border-radius: 30px;
+              margin-bottom: 45px;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              font-size: 28px;
+              line-height: 52px;
+              color: #ffffff;
+            }
+
+            & > div:nth-child(2) {
+              font-size: 22px;
+              line-height: 42px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            & > div {
+              margin-top: 20px;
+              font-size: 16px;
+              line-height: 28px;
+              letter-spacing: 0px;
+              color: #999999;
+            }
+          }
+        }
+
+        & > div:nth-child(1) {
+          margin-bottom: 140px;
+        }
+      }
+    }
+
+    & > div:nth-child(6) {
+      & > div:nth-child(2) {
+        flex-direction: column;
+        margin-top: 60px;
+        padding: 0 26px;
+
+        & > div:nth-child(1) {
+          line-height: 46px;
+          padding-left: 3px;
+          font-size: 22px;
+        }
+
+        & > div:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 60px;
+
+          & > div {
+            width: 446px;
+            height: 210px;
+            background-color: #ffffff;
+            box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+
+            & > div:nth-child(1) {
+              width: 100%;
+              height: 68px;
+              background-color: #acd9c1;
+
+              font-family: 'NotoSansHK-Regular';
+              font-size: 26px;
+              line-height: 46px;
+              letter-spacing: 0px;
+              color: #ffffff;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            & > div:nth-child(2) {
+              font-size: 22px;
+              line-height: 40px;
+              margin-top: 40px;
+            }
+          }
+
+          & > div:nth-child(1) {
+            width: 343px;
+
+            & > div:nth-child(2) {
+              padding-left: 18px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              padding: 0 25px;
+            }
+          }
+
+          & > div:nth-child(3) {
+            & > div:nth-child(2) {
+              padding-left: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    & > div {
+      & > div:nth-child(2) {
+        margin-top: 50px;
+        margin-bottom: 140px;
+        display: flex;
+      }
+    }
+
+    & > div:last-child {
+      & > div:nth-child(2) {
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  & > #damage {
+    margin: 160px auto;
+
+    & > div {
+      & > div:nth-child(2) {
+        display: flex;
+        padding-left: 25px;
+      }
+    }
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      margin: 80px auto 140px;
+
+      & > div:nth-child(2) {
+        max-width: 628px;
+        margin-left: 63px;
+
+        font-size: 24px;
+        line-height: 46px;
+        color: #acd9c1;
+        letter-spacing: -1px;
+      }
+    }
+
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px auto 140px;
+
+        & > div {
+          background: url('https://static.cmereye.com/imgs/2023/06/88cae23e25d33512.png');
+          width: 399px;
+          height: 144px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          & > span {
+            position: absolute;
+            top: 10px;
+            left: 19px;
+            font-family: 'OPPOSans-B';
+            font-size: 18px;
+            line-height: 1;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+
+          & > div {
+            font-size: 22px;
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+
+        & > div:nth-child(n + 4) {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px auto 140px;
+
+        & > div {
+          display: flex;
+          position: relative;
+
+          & > div:nth-child(1) {
+            position: absolute;
+            left: -144px;
+          }
+
+          & > div:nth-child(2) {
+            width: 272px;
+            height: 164px;
+            border-radius: 10px;
+            border: solid 2px #acd9c1;
+
+            font-size: 22px;
+            font-family: 'NotoSansHK-Regular';
+          }
+        }
+
+        & > div:nth-child(1),
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            width: 373px;
+          }
+        }
+
+        & > div:nth-child(1) {
+          margin-left: 95px;
+          margin-right: 214px;
+
+          & > div:nth-child(2) {
+            padding: 30px 41px 32px 58px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            padding-left: 58px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        & > div:nth-child(3) {
+          margin-left: 145px;
+
+          & > div:nth-child(2) {
+            padding-left: 68px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        & > div:nth-child(4) {
+          margin-left: 183px;
+          margin-right: 149px;
+
+          & > :nth-child(1) {
+            left: -113px;
+          }
+
+          & > div:nth-child(2) {
+            padding-left: 68px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+
+        & > div:nth-child(5) {
+          & > :nth-child(1) {
+            left: -80px;
+          }
+
+          & > div:nth-child(2) {
+            padding-left: 90px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+
+        & > div:nth-child(n + 3) {
+          margin-top: 80px;
+        }
+      }
+    }
+
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        flex-direction: column;
+        margin-top: 80px;
+
+        & > div {
+          margin-bottom: 120px;
+
+          & > div:nth-child(1) {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 52px;
+            padding-bottom: 10px;
+            position: relative;
+            color: #515151;
+          }
+
+          & > div:nth-child(1)::after {
+            content: '';
+            width: 357px;
+            border-bottom: dashed 1px #acd9c1;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          & > div:nth-child(2) {
+            margin-top: 30px;
+            font-size: 22px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  & > #keratoconus {
+    & > div {
+      & > div:nth-child(2) {
+        display: flex;
+      }
+    }
+
+    & > div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      margin: 80px auto 140px;
+
+      & > div:nth-child(1) {
+        max-width: 626px;
+        margin-right: 63px;
+        color: #acd9c1;
+
+        & > span {
+          letter-spacing: -1px;
+        }
+      }
+    }
+
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        margin: 50px auto 140px;
+        justify-content: space-between;
+        padding: 0 50px 0 58px;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          & > div:nth-child(2) {
+            margin-top: 30px;
+            max-width: 262px;
+            text-align: center;
+            font-family: 'NotoSansHK-Regular';
+            font-size: 22px;
+            line-height: 40px;
+            letter-spacing: 0px;
+            color: #515151;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        margin: 50px auto 140px;
+        padding-left: 52px;
+
+        & > div:nth-child(2) {
+          margin-left: 60px;
+          padding-top: 20px;
+          padding-bottom: 40px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          & > div:nth-child(1) {
+            & > div {
+              line-height: 40px;
+              display: flex;
+              align-items: center;
+              margin-bottom: 27px;
+
+              & > span {
+                display: flex;
+                width: 40px;
+                height: 40px;
+                background: #acd9c1;
+                border-radius: 50%;
+                font-family: OPPOSans-B;
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 40px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                align-items: center;
+                justify-content: center;
+                margin-right: 17px;
+              }
+            }
+          }
+
+          & > div:nth-child(2) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        flex-direction: column;
+        margin-top: 74px;
+
+        & > div {
+          margin-bottom: 88px;
+          position: relative;
+
+          & > div:nth-child(1) {
+            position: absolute;
+            top: -12%;
+            left: 32px;
+            width: 349px;
+            height: 57px;
+            background: #acd9c1;
+            border-radius: 29px;
+
+            font-family: 'NotoSansHK-Medium';
+            font-size: 30px;
+            line-height: 52px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            text-align: center;
+          }
+
+          & > div:nth-child(2) {
+            width: 1320px;
+            height: 206px;
+            border-radius: 20px;
+            border: solid 2px #acd9c1;
+
+            font-size: 22px;
+            line-height: 40px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 66px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            width: 713px;
+          }
+        }
+
+        & > div:nth-child(3) {
+          margin-bottom: 0;
+
+          & > div:nth-child(1) {
+            width: 577px;
+          }
+        }
+      }
+    }
+  }
+
+  & > #keratoplasty {
+    margin-top: 160px;
+    margin-bottom: 140px;
+
+    & > div:nth-child(2) {
+      margin-top: 88px;
+      margin-bottom: 140px;
+
+      & > div:nth-child(1) {
+        margin-bottom: 120px;
+        line-height: 46px;
+        color: #acd9c1;
+      }
+    }
+
+    & > div {
+      & > div:nth-child(2) {
+        padding-left: 26px;
+        display: flex;
+      }
+    }
+
+    & > div:nth-child(3) {
+      margin-bottom: 140px;
+
+      & > div:nth-child(2) {
+        flex-direction: column;
+
+        & > div:nth-child(1) {
+          display: flex;
+          justify-content: space-between;
+          margin: 50px 0 70px;
+
+          & > div {
+            width: 234px;
+            height: 160px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: solid 2px #acd9c1;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          text-align: center;
+
+          & > div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+
+            & > div:nth-child(1) {
+              margin-right: 26px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            font-size: 16px;
+            line-height: 36px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        justify-content: space-between;
+        margin: 50px auto 140px;
+
+        & > div {
+          position: relative;
+          z-index: 5;
+          width: 189px;
+          height: 188px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        & > div::before {
+          content: '';
+          width: 189px;
+          height: 188px;
+          background: url('https://static.cmereye.com/imgs/2023/06/d4f5b0e6f7aad173.png');
+          background-size: 100% 100%;
+          transform: rotate(-90deg);
+          display: inline-block;
+          z-index: 1;
+          position: absolute;
+        }
+      }
+    }
+
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        flex-direction: column;
+
+        & > div:nth-child(1) {
+          margin-bottom: 60px;
+
+          & > div:nth-child(1) {
+            position: relative;
+            margin-left: 12px;
+            font-family: 'NotoSansHK-Medium';
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 52px;
+            letter-spacing: 0px;
+            color: #acd9c1;
+            margin-bottom: 30px;
+          }
+
+          & > div:nth-child(2) {
+            font-size: 22px;
+            line-height: 36px;
+          }
+        }
+
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            position: relative;
+            margin-left: 12px;
+            font-family: 'NotoSansHK-Medium';
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 52px;
+            letter-spacing: 0px;
+            color: #acd9c1;
+            margin-bottom: 30px;
+          }
+
+          & > div:nth-child(2) {
+            font-size: 22px;
+            line-height: 36px;
+          }
+        }
+
+        & > div:nth-child(1) {
+          & > div:nth-child(1)::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #acd9c1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+          }
+        }
+
+        & > div:nth-child(2) {
+          & > div:nth-child(1)::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #acd9c1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: -10px;
+            top: 50%;
+          }
+        }
+
+        & > div:nth-child(3) {
+          max-width: 1294px;
+          border: solid 1px #dee2e6;
+
+          & > div {
+            display: flex;
+
+            & > div:nth-child(1) {
+              width: 370px;
+            }
+
+            & > div:nth-child(2) {
+              width: 410px;
+              border-left: solid 1px #dee2e6;
+              border-right: solid 1px #dee2e6;
+            }
+
+            & > div:nth-child(3) {
+              width: 513px;
+            }
+          }
+
+          & > div:nth-child(1) {
+            height: 80px;
+            background: #acd9c1;
+
+            font-family: 'NotoSansHK-Medium';
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 36px;
+            letter-spacing: 0px;
+            color: #ffffff;
+
+            & > div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          & > div:nth-child(2) {
+            height: 250px;
+            background: #ffffff;
+
+            font-family: 'NotoSansHK-Medium';
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 36px;
+            letter-spacing: 0px;
+            color: #515151;
+
+            & > div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          & > div:nth-child(3) {
+            height: 410px;
+            background: #f8f8f9;
+
+            font-family: 'NotoSansHK-Medium';
+            font-size: 26px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 36px;
+            letter-spacing: 0px;
+            color: #515151;
+
+            & > div:nth-child(1) {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            & > div:nth-child(2) {
+              display: flex;
+              flex-direction: column;
+
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  height: 191px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-bottom: solid 1px #dee2e6;
+                }
+
+                & > div:nth-child(2) {
+                  height: 217px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            }
+
+            & > div:nth-child(3) {
+              display: flex;
+              flex-direction: column;
+
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  height: 191px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-bottom: solid 1px #dee2e6;
+                }
+
+                & > div:nth-child(2) {
+                  height: 217px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-start;
+                  padding-left: 88px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -917,9 +2431,9 @@ const keratitisList = [
 }
 
 .ocularSurfaceDiseases_title {
-  font-family: 'NotoSansHK-Bold';
+  font-family: 'NotoSansHK';
   font-size: 50px;
-  font-weight: normal;
+  font-weight: Bold;
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0px;
@@ -939,9 +2453,9 @@ const keratitisList = [
 }
 
 .ocularSurfaceDiseases_title_text {
-  font-family: 'NotoSansHK-Bold';
+  font-family: 'NotoSansHK';
   font-size: 38px;
-  font-weight: normal;
+  font-weight: Bold;
   font-stretch: normal;
   line-height: 52px;
   letter-spacing: 0px;
