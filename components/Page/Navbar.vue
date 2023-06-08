@@ -302,7 +302,7 @@ a {
   z-index: 999;
   position: fixed;
   top: 54px;
-  left: 23.4375%;
+  left: 15.625%;
   background: #2958a3;
 
   .navigtion {
