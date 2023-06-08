@@ -735,7 +735,7 @@ pages:
     strabismusAmblyopia: 儿童斜弱视
     amotioRetinae: 视网膜脱落
     ocularSurfaceDiseases: 眼表及角膜疾病
-    # : 眼矫形及眼眶疾病
+    eyeOrthopaedicDisease: 眼矫形及眼眶疾病
     # : 医学验光配镜
     # : 屈光矫视
   ophthalmic_information:

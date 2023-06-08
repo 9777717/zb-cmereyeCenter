@@ -10,6 +10,8 @@ const enterActive = (index: any) => {
 const leaveActive = () => {
   exactIdex.value = -1
 }
+const route = useRoute()
+const rt = ref(route)
 const props = defineProps({
   serviceNavigation: {
     type: Object,
@@ -20,7 +22,14 @@ const props = defineProps({
 <!-- 右侧边导航，文件夹起名的时候 格局小了 rightSidesNavigation -->
 <template>
   <div class="navigation">
-    <div class="anchor seat">
+    <div
+      class="seat"
+      :class="[
+        rt.name === 'medical-service-eyeOrthopaedicDisease'
+          ? 'anchor_top'
+          : 'anchor',
+      ]"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,6 +85,39 @@ const props = defineProps({
 
 .anchor {
   top: 200px;
+
+  a {
+    width: 165px;
+    border: 0.5px solid #515151;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .anchorActive,
+  .exactActive {
+    border: 0.5px solid #8ad8dd;
+    background: #8ad8dd;
+    color: #fff;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 12%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.anchor_top {
+  top: 20px;
 
   a {
     width: 165px;

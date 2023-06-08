@@ -84,7 +84,7 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
     des: '眼矯形及眼眶疾病',
-    link: '',
+    link: '/medical-service/eyeOrthopaedicDisease',
   },
   {
     i: '11',

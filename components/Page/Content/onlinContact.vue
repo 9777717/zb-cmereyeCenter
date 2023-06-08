@@ -86,7 +86,7 @@ const goWhatsApp = () => {
   justify-content: center;
   position: fixed;
   right: 83px;
-  top: 590px;
+  top: 620px;
 
   .contactItem {
     cursor: pointer;

@@ -94,6 +94,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.ocularSurfaceDiseases'),
         route: { name: 'medical-service-ocularSurfaceDiseases' },
       },
+      {
+        type: 'link', // 眼矯形及眼眶疾病
+        text: t('pages.medical_service.eyeOrthopaedicDisease'),
+        route: { name: 'medical-service-eyeOrthopaedicDisease' },
+      },
     ],
   },
   {
@@ -295,7 +300,7 @@ a {
 
 .headerTemPage {
   z-index: 999;
-  position: absolute; // 上线记得改会fixed
+  position: fixed;
   top: 54px;
   left: 23.4375%;
   background: #2958a3;
