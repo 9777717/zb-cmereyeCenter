@@ -4,13 +4,14 @@ import type { FormInstance, FormRules } from 'element-plus'
 definePageMeta({
   layout: 'page',
 })
+
 const cities = [
-  'Instagram',
-  'YouTube',
-  '親友介紹',
-  '員工介紹',
-  '透過其他網頁',
-  '透過宣傳單張/卡片',
+  'components.footerInfo.Instagram',
+  'components.footerInfo.YouTube',
+  'components.footerInfo.sidekicker',
+  'components.footerInfo.staff',
+  'components.footerInfo.website',
+  'components.footerInfo.leaflet',
 ]
 
 const formSize = ref('default')
@@ -91,8 +92,8 @@ defineProps({
   <div class="form" :style="bg">
     <div>
       <div :style="formTitleColor">
-        <div>希瑪眼科重視每一位客人的問題，隨時發問。</div>
-        <div>請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。</div>
+        <div>{{ $t('components.footerInfo.text1') }}</div>
+        <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
       <div>
         <el-form
@@ -104,36 +105,37 @@ defineProps({
           status-icon
         >
           <el-form-item prop="name">
-            <el-input v-model="ruleForm.name" placeholder="姓名" clearable />
+            <el-input
+              v-model="ruleForm.name"
+              :placeholder="$t('components.footerInfo.placeholder1')"
+              clearable
+            />
           </el-form-item>
           <el-form-item prop="phone">
             <el-input
               v-model="ruleForm.phone"
-              placeholder="聯絡電話"
+              :placeholder="$t('components.footerInfo.placeholder2')"
               clearable
             />
           </el-form-item>
           <el-form-item prop="email">
             <el-input
               v-model="ruleForm.email"
-              placeholder="電郵地址"
+              :placeholder="$t('components.footerInfo.placeholder3')"
               clearable
             />
           </el-form-item>
           <el-form-item prop="region">
             <el-select
               v-model="ruleForm.region"
-              placeholder="預約日期"
+              :placeholder="$t('components.footerInfo.placeholder4')"
               clearable
             >
               <el-option label="Zone one" value="shanghai" />
               <el-option label="Zone two" value="beijing" />
             </el-select>
           </el-form-item>
-          <el-form-item
-            prop="type"
-            label="從哪裡找到我們的網站？ （可選擇多於一項）"
-          >
+          <el-form-item prop="type" :label="$t('components.footerInfo.label1')">
             <el-checkbox-group v-model="ruleForm.type" clearable>
               <el-checkbox
                 v-for="serve in cities"
@@ -141,10 +143,13 @@ defineProps({
                 class="serve"
                 :label="serve"
                 name="type"
-                >{{ serve }}</el-checkbox
+                >{{ $t(serve) }}</el-checkbox
               >
             </el-checkbox-group>
-            <el-form-item class="rest" label="其他">
+            <el-form-item
+              class="rest"
+              :label="$t('components.footerInfo.rest')"
+            >
               <input v-model="ruleForm.rest" />
             </el-form-item>
           </el-form-item>
@@ -153,12 +158,14 @@ defineProps({
               v-model="ruleForm.desc"
               type="textarea"
               :rows="2"
-              placeholder="訊息"
+              :placeholder="$t('components.footerInfo.placeholder5')"
             />
           </el-form-item>
         </el-form>
       </div>
-      <div :style="co" @click="submitForm(ruleFormRef)">提交</div>
+      <div :style="co" @click="submitForm(ruleFormRef)">
+        {{ $t('components.footerInfo.submitForm') }}
+      </div>
     </div>
   </div>
 </template>

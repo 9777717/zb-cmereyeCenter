@@ -4,6 +4,23 @@ components:
   theme_switcher:
     theme: 主题
     change_theme: 切换主题
+  footerInfo:
+    Instagram: Instagram：
+    YouTube: YouTube：
+    sidekicker: 亲友介绍
+    staff: 员工介绍
+    website: 通过其他网页
+    leaflet: 通过宣传单张/卡片
+    rest: 其他
+    label1: 从哪里找到我们的网站？ （可选择多于一项）
+    text1: 希玛眼科重视每一位客人的问题，随时发问。
+    text2: 请留下联络方法，我们的客户服务专员会透过 Email 或电话解答你。
+    placeholder1: 姓名
+    placeholder2: 联络电话
+    placeholder3: 电邮地址
+    placeholder4: 预约日期
+    placeholder5: 信息
+    submitForm: 提交
 pages:
   404:
     title: 找不到该页面
@@ -741,21 +758,314 @@ pages:
   ophthalmic_information:
     ophthalmic_information: 眼科资讯
     ophthalmic_class: 医生小教室
+    ophthalmic_information_text: 
+      information_p_text1: 医生小教室
+      information_p_text2: 我们用心制作
+      information_p_text3: 透过拍摄访问医生
+      information_p_text4: 希望令大众更加了解眼疾
+      information_a_text1: 立即播放
+      information_mainContent:
+        mainContent1_title: 小朋友的眼睛检查与大人有什么不同？
+        mainContent1_doctor: 林宝生眼科专科医生
+        mainContent1_text: 儿童年纪小检查眼睛时，未必听到懂指示，所以眼科专科医生会设计不同的测试和检查，去帮助小朋友检查眼睛，例如︰颜色测试、眼底检查、斜视检查。不过，随着小朋友年龄增加，到了幼儿园或小学阶段，检查眼睛的方法与成人类似。立即听听希玛眼科中心 - 林宝生眼科专科医生讲解！ 
+        mainContent2_title: 眼睑内翻的症状，眼睑内翻要做手术吗？
+        mainContent2_doctor: 张瀞之眼科专科医生
+        mainContent2_text: 眼睑内翻可分为先天性和退化性，患者的常见症状包括︰眼睛有很多分泌物、有异物感和疼痛，甚至会常有沙入眼的感觉、流眼水和眼睛水汪汪等。如果病情严重，可能会影响视力和角膜的健康。眼睑内翻一定要透过做手术治疗吗？
+        mainContent3_title: 揉眼会影响视力？
+        mainContent3_doctor: 李德伦眼科专科医生
+        mainContent3_text: 我们感到眼睛不适时可能会揉眼，其实这是一个不好的习惯。不要以为揉眼只是一个小动作，它可能造成眼角膜损伤、眼睛细菌感染，严重的话甚至出现眼角膜溃疡，并会大大增加患眼疾的风险，某些人士更要特别注意。
+        mainContent4_title: 怎么知道眼干是缺油或是缺水？
+        mainContent4_doctor: 李德伦眼科专科医生
+        mainContent4_text: 眼干可以分为「缺水性」和「缺油性」。缺水性是由于眨眼过少，导致泪水挥发多而分泌少，此类型眼干较常见于中年女士、常看计算机或手机、类风湿关节炎等人士。若患者属于缺油性眼干，多数由睑板腺功能障碍引起，油脂大量分泌并堵塞了油脂孔，令到泪水容易挥发出来。
     ophthalmic_publicity: 护眼宣传片
+    ophthalmic_publicity_text:
+      publicity_text1: 护眼宣传片
+      publicity_text2: 我们用心制作
+      publicity_text3: 透过拍摄访问医生
+      publicity_text4: 希望令大众更加了解眼疾
+      publicity_text5: 眼疾影片
+      publicity_text6: 希玛这一家
+      publicity_eyeDisease:
+        eye_disease1_title: 天气转变提防结膜炎
+        eye_disease1_text: 转天气时，有些人会出现眼睛过敏征状，包括︰结膜充血、眼睑红肿及痕痒、多流眼水、畏光、分泌物增多等，十分影响日常生活。这些可能是季节性过敏性结膜炎引起的，本身有过敏体质，例如︰气喘、过敏性鼻炎等，会更容易患上此种结膜炎。马上去片
+        eye_disease2_title: 眼睛干可以点解决？
+        eye_disease2_text: 干眼症是一种长期疾病，需要长期治疗才能改善。患上干眼症想舒缓病情，可以用暖毛巾热敷眼睛。平日尽量少吃煎炸和食物，以及吃一些omega3补充剂鱼肝油丸，可以令眼睛的油质分泌更健康，有助舒缓干眼症的症状。马上去片了解更多啦！
+        eye_disease3_title: 眼睛干可以点解决？
+        eye_disease3_text: 干眼症是一种长期疾病，需要长期治疗才能改善。患上干眼症想舒缓病情，可以用暖毛巾热敷眼睛。平日尽量少吃煎炸和食物，以及吃一些omega3补充剂鱼肝油丸，可以令眼睛的油质分泌更健康，有助舒缓干眼症的症状。马上去片了解更多啦！
+        eye_disease4_title: 天气转变提防结膜炎
+        eye_disease4_text: 转天气时，有些人会出现眼睛过敏征状，包括︰结膜充血、眼睑红肿及痕痒、多流眼水、畏光、分泌物增多等，十分影响日常生活。这些可能是季节性过敏性结膜炎引起的，本身有过敏体质，例如︰气喘、过敏性鼻炎等，会更容易患上此种结膜炎。马上去片
+        eye_disease5_title: 眼睛干可以点解决？
+        eye_disease5_text: 干眼症是一种长期疾病，需要长期治疗才能改善。患上干眼症想舒缓病情，可以用暖毛巾热敷眼睛。平日尽量少吃煎炸和食物，以及吃一些omega3补充剂鱼肝油丸，可以令眼睛的油质分泌更健康，有助舒缓干眼症的症状。马上去片了解更多啦！
+        eye_disease6_title: 眼睛干可以点解决？
+        eye_disease6_text: 干眼症是一种长期疾病，需要长期治疗才能改善。患上干眼症想舒缓病情，可以用暖毛巾热敷眼睛。平日尽量少吃煎炸和食物，以及吃一些omega3补充剂鱼肝油丸，可以令眼睛的油质分泌更健康，有助舒缓干眼症的症状。马上去片了解更多啦！
     ophthalmic_little_theatre: 希玛小剧场
+    ophthalmic_little_theatre_text:
+      little_theatre_text1: 希玛小剧场
+      little_theatre_p1: 透过小剧场
+      little_theatre_p2: 利用生动的方法让大众了解眼疾
+      little_theatre_a1: 立即播放
+      little_theatre_videoList:
+        videoList1_title: 情人节男生勿踩地雷!!!
+        videoList1_text_1: 2月14日情人节~ 谂好点同另一半庆祝未呢？😍咁开心和重要嘅日子真系要特别小心，唔好激嬲女朋友啊…
+        videoList1_text_2: 如果一唔小心，搞喊另一半，点算好？一齐去片睇睇喇~ 睇完锺意嘅话记得畀个Like我哋啊👍
     ophthalmic_press: 新闻推荐
+    ophthalmic_press_text:
+      press_text1: 新闻信息
+      press_text2: 紧贴医疗新闻
+      press_text3: 注重眼睛健康发展
+      press_text4: 回到文章目录
+      press_text5_1: '＜上一篇'
+      press_text5_2: '下一篇＞'
+      press_span1: '新闻来源:'
+      press_span2: '医理:'
+      press_span3: '资料来源:'
+      press_span4: '浏览次数:'
+      press_newList:
+        newList1_title: 斜视治疗有方法
+        newList1_content_1: 治疗斜视有四大方法，分别是眼镜矫正(Optical Correction)、视轴运动矫正(Orthoptic Exercises)、遮眼治疗(Occlusion)及手术治疗(Operation)。这四个O的运用，要互相配合，相辅相成，眼科医生会乎斜视患者的情况制订治疗目标和方案，有些患者可能只用其一，情况便得到改善，有些患者则要多管齐下，才能达到最佳治疗效果。
+        newList1_content_2: 针对眼镜矫正，不少斜视患者同时也有屈光不正，包括近视、远视及散光；屈光不正会令患者视力模糊，影响大脑传递适当讯息控制视轴，令斜视恶化，亦有部分患者是因为高度远视没有得到光学纠正，双眼过度用力聚焦，造成调节性内斜视，部分斜视患者能透过佩戴合适的眼镜改善或矫正斜视。
+        newList1_content_3: 至于视轴运动矫正，是指透过锻炼控制眼轴的眼外肌机能，改善斜视。视轴运动有不同种类，一般建议间歇性外斜视患者做眼球肌肉汇聚运动(Convergence Exercise)，俗称「斗鸡练习」，视轴运动也可帮助斜视患者加强或重建立体感，不过运动训练需要小朋友和家长高度配合并持之以恒的练习，才会有成效。
+        newList1_content_4: 若发现患者因斜视而导致弱视，即懒惰眼，便需要接受遮眼治疗，原理是锄强扶弱，透过用眼贴或特制眼镜遮蔽正常的眼睛，强迫患者多用懒惰眼，从而锻炼及恢复其功能。每天遮眼的时间及疗程之长短视乎患者的年龄和弱视的严重程度，当懒惰眼的视力得以纠正或再没有进一步的改善时，遮眼治疗便可以终止。大部分弱视患者，愈早开始遮眼治疗，视力就愈容易得以改善，但须留意遮眼治疗只能改善视力，并不能纠正斜视的外观。下期续谈斜视的手术治疗。
+        newList2_title: 视网膜脱落必须动手术吗？
+        newList2_content_1: 视网膜脱落是眼科中比较严重的疾病，治疗的主要目的，是保存中央视力，和令脱落的部位归位。但如果视网膜脱落的范围细小、在周边或已有长时间的迹象，病人又全无病征，则未必需要治疗，因为这类病例只有一成的恶化风险，医生可以安排病人定期覆诊，观察病情有否变化，但其实这类病例较少。 
+        newList2_content_2: 如果不是以上的病例，医生通常会建议治疗。治疗可分为激光或手术。如果脱落的范围非常小和在周边，有时候眼部激光已可以巩固视网膜。如果脱落范围较大，手术是唯一医治方法。如不动手术，视网膜脱落的范围有可能扩大，甚至完全脱落，病人的视力会非常之差。脱落的时间愈长，便愈有可能出现增生性玻璃体视网膜病变，令手术成功机会降低。如果视网膜完全脱落，眼球更有可能萎缩、并发白内障、青光眼或眼角膜结疤，最终完全失明。手术的时间也相当重要，刚出现的视网膜脱落，而黄斑点未受影响，理论上手术须尽快进行。但如果黄斑点已经脱落，或脱落已有一段长时间，手术可变为非紧急手术，也算合理。至于手术的选择，医生会根据病人的病情、年纪等因素决定使用充气性视网膜固定术、巩膜外垫压术或玻璃体切除术等方法治疗。如有疑问，最重要是问清楚眼科医生的意见，选择适合你的治疗方案。
+        newList3_title: 糖尿上眼可致盲？
+        newList3_content_1: 糖尿病是一种常见的新陈代谢病患，因为都市人的饮食习惯，除长者外，也有不少中年甚至年轻人患上该病。当中「糖尿上眼」为糖尿病人常见的并发症，也是全球十大致盲原因之一。「糖尿上眼」的发病率及严重程度，与患者的病龄和血糖控制息息相关，大部分患糖尿病十年以上的患者，都会有一定程度的糖尿相关视网膜病变状况，而「糖尿上眼」初期可能全无病征，因此糖尿病人必须定期验眼。
+        newList3_content_2: 「糖尿上眼」对视力的影响，主要由于黄斑水肿及视网膜病变引发增生血管。长时间血糖水平过高，会导致视网膜的微细血管受到破坏，令其渗出蛋白沉淀物质及血液，如果渗漏位置处于黄斑区或其附近，便会造成黄斑水肿，破坏感光细胞，影响中心视力。更严重的是，长时间的视网膜病变状况，会令视网膜长出不正常的新生血管，造成玻璃体出血、视网膜纤维化、继发性青光眼，甚至视网膜脱落。当「糖尿上眼」发展至有明显症状，如视力模糊、影像变形、眼睛疼痛时，其实病情已经相当严重，即使接受治疗，也未必能令视力完全康复，因此定期预防性检查，及早发现「糖尿上眼」并控制病情，是预防「糖尿上眼」致盲最重要的一环。
+        newList3_content_3: 一旦发现「糖尿上眼」引致的黄斑水肿，主要的治疗方法为眼内注射「抗血管增生因子」(Anti-VEGF)，眼科医生会以特幼针嘴，于眼白巩膜位置，将药物直接注射入眼球内的玻璃体腔，药物会慢慢瀰散，令增生血管慢慢萎缩，同时抑制新的增生血管形成，减少黄斑区的渗漏，阻止视力退化。标准治疗方案是于首三个月每月注射一次，再按患者的反应和病情，决定是否需要后续注射。如能及早注射，大部分病人都有良好反应，但治疗费用特别是药物成本相对较为昂贵，也可能需要反覆注射以维持疗效。对于复发性或持续性黄斑水肿，除了注射抗血管增生因子，也可考虑配合使用「类固醇玻璃体缓释植入物」，于眼内持续释放低剂量类固醇药物，抑制炎症，长效抗水肿。
+        newList4_title1: 全港约50万人患老年黄斑病变
+        newList4_title2: 视物变形要警惕
+        newList4_content_1: (左至右) 眼科学会会董黄礼文、港大李嘉诚医学院眼科学系临床助理教授陈焯鸿、眼科学会会长叶佩珮及会董锺震宇。香港大学研究指出，老年黄斑病变是港人视障的第二大元凶，香港眼科学会估计，全港有约50万人患上老年黄斑病变，惟港人对老年黄斑病变的认知甚低，学会忧虑患者延误确诊和治疗，造成不可逆转的视力损失，建议长者应定期接受眼科医生的视力检查，亦可经常使用阿姆斯勒方格表自我检查，有助及早发现问题及诊断，尽早治疗。
+        newList4_content_2: 香港眼科学会会董黄礼文医生表示，老年黄斑病变可分为干性及湿性，当中9成黄斑病变患者为干性，1成人为湿性，两者均会令患者视力衰退，而湿性老年黄斑病变更可能在数天内致视力急速下降。黄礼文又指，此眼疾早期或会毫无病征，其后患者的颜色辨别能力及影像对比度减低，景物亦会变形扭曲，晚期中央视野更会出现黑影。他说，患者的日常生活大受影响，简单如使用电话亦会较视力正常的人困难12倍，提醒患者需及早诊断和治疗。
+        newList4_content_3: 香港大学在今年6月发布的眼疾认知研究中指出，老年黄斑病变位列港人视障的第二大元凶，222名受访长者中有7成人不知其病征，近5成人甚至未听过此病。
+        newList4_content_4: 香港眼科学会会董锺震宇医生表示，病发首3个月是治疗「黄金期」，患者应尽早接受治疗，在眼球注射「血管内皮生长因子抑制剂」，阻止新增血管生长及渗漏，改善视力。他呼吁市民戒烟及多吃蔬果，并使用「阿姆斯勒方格表」作自我检查。
+        newList4_content_5: 艺人胡枫约3年前被验出患有老年黄班病变，他指，最初看到建筑物呈弯曲时未有理会，直到弯曲幅度加剧才去看医生，并连续3个月打针进行治疗，视力始见改善，现在仍可继续驾车出入。
+        newList4_content_6: 60岁患者郑女士表示，患病初期视力变得模糊，起初以为镜片有问题或过往眼疾的后遗症，受疫情影响，她延迟求诊，再验眼时才发现患上老年黄斑病变。她说，对该病及其治疗方法认知不多，以为长者才会患病，在注射药物后，视力已回复至患病前的水平。
+        newList5_title: 「微脉冲激光」拯救视力更安全
+        newList5_content_1: 激光治疗在眼科治疗非常广泛，除了可用作矫视，亦可以医治各种眼疾，在六十年代已开始使用。然而早期的激光治疗是利用连续性的激光，光束非常稳定且不会断开，能量较高，容易形成疤痕。若发射至黄斑点中心位，视力更会受损。直至九十年代末，微脉冲激光的出现，令副作用大大减低。微脉冲激光的特点是，激光能源会分段发放，让眼睛组织迅速降温及休息。若做眼底造影检查及扫描，会发现患者经过微脉冲激光治疗后，并没有看到有任何疤痕形成，故可供医生及病人多一个治疗选择。
+        newList5_content_2: 微脉冲激光在临床上可应用于以下常见眼疾：
+        newList5_content_3: 一、青光眼
+        newList5_content_4: 青光眼是神经线持续受损的一种眼疾，治疗方法通常是降低眼压。激光治疗可透过增加眼球排水的循环，或破坏制造眼压的细胞，从而将眼压降低。针对青光眼的激光治疗分两种：
+        newList5_content_5: 小梁成形术：主要针对开角型青光眼，在眼睛角落的排水位(即小梁)利用脉冲激光(15%活跃)刺激细胞、减低它们之间的阻力，增进眼球前房水的循环，从而有助降低眼压。对比传统选择性小梁成形手术，激光治疗相对出现发炎的风险较小，对于眼睛容易发炎的患者会较为适合。
+        newList5_content_6: 跨巩膜激光治疗：涵盖较多不同种类的青光眼，例如闭角型青光眼、血管增生性青光眼、发炎性青光眼。医生会在眼球外发射激光，拉阔巩膜下面的排水通道，不会影响小梁内的细胞。因为微脉冲激光所用的激光能量较少(33%活跃)，可减低巩膜发炎、撕裂或手术后眼球萎缩的情况。
+        newList5_content_7: 二、黄斑点水肿
+        newList5_content_8: 糖尿上眼、眼底血管闭塞或倒塞(俗称眼中风)、脉络膜血管扩张等都会引致黄斑点水肿。治疗上，一般都会处方能预防血管增生的眼内注射药物，惟价钱不便宜，激光治疗则是可供选择的治疗方案。因传统激光会对黄班点中心直接造成伤害，只能将激光贴近黄斑点，治疗效果未必理想。微脉冲激光治疗将能量控制至只有5%活跃，其余都是缓冲期，这样便能将激光集中在黄斑点中心而不会造成疤痕。
+        newList5_content_9: 与其他激光治疗一样，使用微脉冲激光亦存有风险，患者可能会出现眼睛发炎、疼痛、眼组织流血、视力下降、眼疾复发等。但相对起传统激光，这些副作用出现的风险较低，比较安全。若眼疾不幸复发，亦可重复使用微脉冲激光，以修补情况。
+        newList6_title: 斜视眼影响深远 及早纠正救视力
+        newList6_content_1: 斜视眼是常见的儿童眼疾，最早在小儿3至4个月左右出现。俗称「斗鸡眼」、「高低眼」、「射篱眼」便是斜视的明显特征；可以是间歇性或持续性。但此病不仅限于小朋友，成年人都会有斜视眼，原因可能是小时没有完全纠正，眼部肌肉或神经问题等。要知道自己是否有斜视眼，可找旁人协助，于较远位置使用电灯或手机的闪光灯，将灯光照向你的眼部，看看在你瞳孔位置的灯光是否在眼睛中央，若有偏移便可能是斜视眼。
+        newList6_content_2: 受斜视影响的儿童有可能因外观问题容易被同辈取笑，有碍心理发展；斜视亦可能造成「懒惰眼」，令患者惯用较好的一边眼睛，使另外一边眼睛的视力发展不全。成人方面，看事物可能会出现重影，例如一只碗看成两只碗，严重更会造成危险，尤其行楼梯时可能将一个梯级看成两级，因而容易跌倒。除此之外，斜视患者的立体感亦会较常人差。故此建议斜视要及早纠正，以确保健全的视力发展。
+        newList6_content_3: 要修正斜视眼，眼科医生首先会探究导致斜视眼的潜在成因，安排患者作详细的眼科检查，如有需要，特别是继发性患者，更要做其他身体检查如抽血化验及影像扫描等，从而诊断是否有其他隐疾例如脑神经病变或甲亢等，对症下药。常见引起斜视的眼疾包括间歇性外斜视，屈光不正等。症状轻微的患者可以眼肌练习及训练加强肌肉力量，如有需要可佩戴特制眼镜以矫正情况(见下图)；症状持续及较严重患者可透过手术医治，将眼部肌肉放松或强化，透过缩短或重新固定肌肉，以改善斜视问题。
+        newList7_title: 严重湿疹患者 慎防眼睛毛病
+        newList7_content_1: 湿疹是一种常见的过敏性皮肤发炎，患者皮肤干燥和非常痕痒，甚至发红发肿、产生鳞屑，严重的皮肤会裂开、剥落、结痂或渗血。不少人以为湿疹属于皮肤病，与眼睛没有关系，但事实上，湿疹和多种眼睛疾病都有关联，尤其是过敏性结膜炎、锥形角膜、眼皮炎、眼睑外翻、白内障和视网膜脱落。
+        newList7_content_2: 由于湿疹常发于在脸部，眼部附近的皮肤，都容易受到影响，导致眼肿和睑缘发炎，俗称眼皮炎。如果持续发炎，会导致皮肤结痂收缩，造成眼睑外翻，露出红色的结膜，甚至眼睛闭合不全，眼睛无法得到适当保护，泪水过度挥发，引发严重干眼症和暴露性角膜炎。
+        newList7_content_3: 此外，湿疹患者自身较易有其他过敏性疾病，如哮喘、鼻敏感、眼敏感。眼敏感即过敏性结膜炎，令患者感觉眼睛干涩痕痒，经常眨眼、捽眼，甚至用手指笃或用手掌拍打自己的眼睛。至于锥形角膜，是一种角膜病变，角膜从平滑球面变成圆锥形，造成深度近视和散光，除了湿疹患者自身的软组织较弱，较容易变形，也估计和长时间用力捽眼，压迫角膜，令角膜变形有关。
+        newList7_content_4: 湿疹患者较容易患上白内障，白内障是因为透明晶体内的蛋白质老化，令晶体变得浑浊，影响视力。曾经医治过不少湿疹患者，早至二十多岁便出现白内障，除因为湿疹患者的新陈代谢速率有异，加速眼睛退化，亦因不少患者需要长时间大范围使用类固醇药膏控制皮肤发炎，久而久之引发白内障甚至青光眼。
+        newList7_content_5: 最后，严重湿疹患者亦较大可能出现视网膜脱落问题，并且较多为巨大视网膜裂口造成，不但手术的复杂性较高，手术预后亦较差，视网膜再脱落的情况普遍，或需要做多次手术，因此湿疹患者一旦发现有视力问题，特别是视力模糊、闪光、飞蚊、出现黑影等，应尽快向眼科专科医生求医，及早治疗，拯救视力。
+        newList8_title: 屏幕伤眼 学童增百度近视
+        newList8_content_1: 【本报讯】世界衞生组织（WHO）去年4月发布婴幼儿使用电子屏幕指引，不足一岁的婴儿不应观看电子屏幕，两至四岁幼儿每天平均使用电子屏幕不应超过一小时。眼科医生刘凯珊指，没有一个「安全」使用电子屏幕的时间准则，但她认为两岁以后每天不应使用电子屏幕逾30分钟。　
+        newList8_content_2: 刘凯珊表示，有小一生定期验眼，去年12月才验过没有近视，「4月初来验眼已有百多度近视，其母指儿子着实因为停课大量使用电子产品」，不过目前尚未有足够数据反映儿童停课期间使用电子屏幕对视力的影响。儿童长时间在家，不用持续离远看东西，家长未必察觉子女有近视问题。
+        newList8_content_3: 她建议家长用图画分开一半做配对，与幼儿相距约两呎半，逐只眼测试视力：「他们未能讲出自己眼蒙，特别是只有一只眼有近视，可以用另一只眼看东西。亦有小朋友先天不算看得清楚，根本不知道何谓清楚。」幼儿频密瞇眼、揉眼，阅读时将书本拉得得近，甚至动作「论尽」或整体发展疑有迟缓等，都有机会因为近视：「还有，是否脾气很差？有可能因为看不清楚令小朋友很𤷪𤺧。」
+        newList8_content_4: 研究发现，晒太阳能增加神经传导物质，减少近视加深的风险，刘凯珊援引台湾研究：「有两班儿童，一班在户外小息，另一班则在课室，同样是廿分钟，结果显示，两班小朋友的近视比例也有分别，外出小息的学生，有近视占8.5%；室内小息的则有17.5%。」
+        newList8_content_5: 「20-20-20」规律保视力
+        newList8_content_6: 她建议家长遵行「20-20-20」规律，即每隔20分钟离开电子屏幕，让眼睛休息20秒，远望最少20呎（6米）以外的景物，有助延缓近视加深的速度。「就算不外出，可否在露台晒太阳做功课？」至于屏幕大小，则没有医学研究指影响近视加深速度：「不过，用电脑较大屏幕，眼睛较手机屏幕相对不会觉太易累。」
+        newList8_content_7: 如不能避免电子教学，家长可减少子女课余使用电子产品以作平衡，「电子产品是每秒转了六个荧幕，配合其他闪烁、弹出等画面效果，更易令幼儿感刺激而『上瘾』，因而延长他们观看时间－－太刺激的画面，再返回静态些少的画面，就算对着老师，也不能每秒转动太多不同画面吧！幼儿觉闷，便直接影响对其他活动的专注力。」
+        newList8_content_8: · 记者罗惠仪
     ophthalmic_article: 文章推荐
+    ophthalmic_article_text:
+      article_text1: 文章推荐
+      article_p1: 紧贴医疗新闻
+      article_p2: 注重眼睛健康发展
+      article_articleList:
+        articleList1_title1: 谨慎挑选隐形眼镜以免
+        articleList1_title2: 患上 5 大眼疾！
+        articleList1_doctor: ''
+        articleList2_title1: 儿童易感染结膜炎，家长要小心！
+        articleList2_title2: （文附预防贴士）
+        articleList2_doctor: 梁苑珊医生
+        articleList3_title1: 白内障｜延误治疗可致盲！
+        articleList3_title2: 一文睇清白内障手术5大注意事项
+        articleList3_doctor: ''
+        articleList4_title1: 眼科医生解构干眼症成因及治疗方法
+        articleList4_title2: 营养师：多吃西兰花有助护眼
+        articleList4_doctor: 梁苑珊医生
+        articleList5_title1: 眼角膜受损有哪些症状？
+        articleList5_title2: 会自然愈合吗？
+        articleList5_doctor: ''
     ophthalmic_message: 健康信息
+    ophthalmic_message_text:
+      message_text1: 健康信息
+      message_text2: 你的眼睛健康吗？
+      message_text3: 关注眼睛健康
+      message_text4: 点击浏览
+      message_healthList:
+        healthList1_title: '#护眼食物 ！食住嚟睇世界杯⚽⚽⚽'
+        healthList1_text_1: 睇波点少得零食，不过要食就要食得健康。#希玛眼科 建议你可以食吓护眼食物，睇波双眼唔会咁干涩！
+        healthList2_title: 【视在希玛】捱夜睇波对眼好攰！4招预防眼干眼涩
+        healthList2_text_1: 世界杯已经开罗！身为球迷点可以错过每一场赛事~ 不过返咗一日工后双眼咁攰，睇完波第二日又要一早起身返工。双眼干涩，点算好？
+        healthList2_text_2: '#世界杯 #世界杯直播 #世界杯足球赛 #世界杯2022 #眼睛干涩 #眼睛疲劳 #眼干 #干眼 #泪水 #泪液 #干眼症 #眼罩 #热敷眼罩 #护眼方法 #希玛眼科'
+        healthList3_title: '#护眼食物 ！食住嚟睇世界杯⚽⚽⚽'
+        healthList3_text_1: 经常觉得眼干、眼涩就系患上干眼症吗？干眼症系一种都市人常见嘅眼疾，长时间唔理嘅话可能会导致角膜损伤、视力下降等。要确认自己系咪有干眼症，初步可以接受「泪液分泌试纸测试」。
+        healthList3_text_2: '#干眼症 #眼干 #眼涩 #干眼症成因 #干眼症征状 #眼泪 #泪水 #泪水分泌 #泪液分泌测试 #干眼症测试 #角膜受损 #眼科医生'
+        healthList4_title: '【放眼逐格睇】眼妆卸干净！同眼挑针Say Bye~'
+        healthList4_text_1: 出席party要化个靓妆，不过完咗后记得要卸干净眼妆，先可以预防到眼疾㗎！眼妆冇卸好，残留嘅化妆品可能堵塞眼睛黏板腺，有机会导致生眼挑针，即系生眼疮。
+        healthList4_text_2: '#眼妆 #化眼妆 #卸妆 #眼挑针 #眼疮 #眼疮成因 #眼疮治疗 #眼疮治疗 #眼疮放脓 #眼疮初期 #眼睛发炎 #眼疮放脓手术 #眼挑针治疗 #希玛眼科中心 #希玛眼科 #希玛医疗'
   process_cost:
     process_cost: 流程及费用
     cost: 费用一览
+    cont:
+      cost_h1: 费用一览
+      cost_h3_1: 眼科
+      cost_p1: 本诊所价目清晰，绝无其他额外收费
+      cost_h3_2: 特殊检查项目
+      cost_tr1_td1: 单眼
+      cost_tr1_td2: 双眼
+      cost_tr2_td1: 光学相干断层扫描（前房）
+      cost_tr3_td1: 光学相干断层扫描（青光眼）
+      cost_tr4_td1: 光学相干断层扫描（黄斑）
+      cost_tr5_td1: 光学相干断层扫描（青光眼+黄斑）
+      cost_tr6_td1: 人工晶体测量/ A 超声波扫描
+      cost_tr7_td1: 角膜内皮细胞检查
+      cost_tr8_td1: 视野分析
+      cost_tr9_td1: 扫描激光眼底检查
+      cost_tr10_td1: 眼底照相
+      cost_tr11_td1: 眼前节分析 / 角膜厚度测量 / 角膜地形分析
+      cost_tr12_td1: 眼底照相 + 眼底荧光血管造影（包药费）
+      cost_tr13_td1: 眼底照相 + 靛青绿血管造影（包药费）
+      cost_tr14_td1: 眼底照相 + 眼底荧光血管造影 + 靛青绿血管造影（包药费）
+      cost_tr15_td1: B 超声波扫描
+      cost_tr16_td1: 白内障超声乳化矫视术前检查
+      cost_tr17_td1: 隐形眼镜验配
+      cost_tr17_td2: 八岁以上
+      cost_tr18_td2: 八岁或以下
+      cost_p2: 以上价格
+      cost_p2_1: 港币
+      cost_p2_2: 以结算
+      cost_p3: 每份详细眼睛检查复本将收取
+      cost_p3_1: 行政费
+      cost_p4: '，详情请向职员查询。'
+      cost_p5: (视野分析HK$10/张、光学相干断层扫描HK$30/张、眼底照相 HK$100/张)
+      cost_p6: 每份医疗报告将收取
+      cost_p6_1: 不等
+      cost_p7: (每份报告的实际价钱以报价为准)。
+      cost_p8:  特殊仪器检查需预见医生判断，由医生决定检查项目。
+      cost_p9: '最后更新: 07/12/2022'
     process: 就诊流程
+    process_1:
+      process_h1: 就诊流程
+      process_p1: 登记
+      process_p2: 基本检查
+      process_h3_1: 初步眼睛检查 
+      process_p3_1: 为全面了解您的眼睛状况，
+      process_p3_2: 我们会先为您进行3-5项基本眼睛检查。
+      process_p4: 医生诊症
+      process_h3_2: 详细眼睛检查
+      process_p5_1: 医生会根据您的眼睛状况， 
+      process_p5_2: 进行详细眼睛检查，
+      process_p5_3: 以准确诊断并作出相应治疗。
+      process_p6: 详细检查
+      process_p7_1: 门诊 / 针灸 
+      process_p7_2: 手术
+      process_p8: 付款及取药
+      process_p9: 其他服务-配镜
   talent_recruitment:
     talent_recruitment: 人才招聘
+    text1: 加入我们，携手未来
+    text2: 加入我们，尽展所长
+    p1: 希玛以人为本，注重团队合作，致力培训员工 
+    p2: 我们希望吸纳更多医护专才 
+    p3: 为客人提供「度身订造」的眼科服务
+    apply: 立即申请
   contact_us:
     contact_us: 联络我们
     clinic_information: 诊所资料
-    appointmentForm: 电子预约表格
+    clinic_information_title:
+      clinic_information_title: 眼 科 诊 所
+      clinic_information_map: Google 地图
+      clinic_information_make: 预约
+      clinic_information_serviceNavigation1: 诊所资料
+      clinic_information_serviceNavigation2: 电子预约表格
+      clinic_information_addressList:
+        addressList1_regionName: 香港
+        addressList1_addressDetailList:
+          addressDetailList1_addressName: 中环
+          addressDetailList1_addressDetail: 毕打街1-3号中建大厦1515室
+          addressDetailList1_subwayExit: 中环站G出口（邻近置地广场）
+          addressDetailList1_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList2_addressName: 中环
+          addressDetailList2_addressDetail: 皇后大道中33号万邦行1908室
+          addressDetailList2_subwayExit: 中环站D2出口
+          addressDetailList2_clinicHours: 
+            clinicHours1: 星期一至五：10:00—13:00 / 15:00—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList3_addressName: 铜锣湾
+          addressDetailList3_addressDetail: 百德新街2-20号恒隆中心1614-15室
+          addressDetailList3_subwayExit: 铜锣湾站E出口
+          addressDetailList3_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+        addressList2_regionName: 九龙
+        addressList2_addressDetailList:
+          addressDetailList1_addressName: 尖沙咀
+          addressDetailList1_addressDetail: 梳士巴利道18-24号K11 ATELIER办公大楼1906室（K11 MUSEA附近）
+          addressDetailList1_subwayExit1: 尖东站J出口 
+          addressDetailList1_subwayExit2: 可享限时泊车优惠，详情请向诊所职员查询
+          addressDetailList1_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—14:00
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList2_addressName: 旺角
+          addressDetailList2_addressDetail: 弥敦道625及639号雅兰中心一期1208室
+          addressDetailList2_subwayExit: 旺角站E1出口
+          addressDetailList2_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList3_addressName: 观塘
+          addressDetailList3_addressDetail: 开源道79号鳄鱼恤中心16楼1601室
+          addressDetailList3_subwayExit: 观塘站A2或B3出口
+          addressDetailList3_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+        addressList3_regionName: 新界
+        addressList3_addressDetailList:
+          addressDetailList1_addressName: 沙田
+          addressDetailList1_addressDetail: 沙田正街11-17号伟华中心2楼1C—1F号铺
+          addressDetailList1_subwayExit: 沙田站A3出口
+          addressDetailList1_subwayExit2: 可享限时泊车优惠，详情请向诊所职员查询
+          addressDetailList1_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList2_addressName: 元朗（恒香老饼家对面）
+          addressDetailList2_addressDetail: 元朗青山公路45及47号诚信商业大厦地铺
+          addressDetailList2_subwayExit: ''
+          addressDetailList2_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList3_addressName: 荃湾
+          addressDetailList3_addressDetail: 荃湾沙咀道255号思源楼地下
+          addressDetailList3_subwayExit: ''
+          addressDetailList3_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+          addressDetailList4_addressName: 将军澳
+          addressDetailList4_addressDetail: 将军澳运亨路1号新都城中心一期地下55-56号铺（宝琳站B2出口）
+          addressDetailList4_subwayExit: ''
+          addressDetailList4_clinicHours: 
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公众假期休息）
+      appointmentForm: 电子预约表格
+      appointmentForm_title:
+        appointmentForm_title: 电子预约表格
 banners:
   welcome: 你好, 欢迎来到 %{app_name}!
 others:

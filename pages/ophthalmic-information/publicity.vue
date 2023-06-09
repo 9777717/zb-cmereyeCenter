@@ -2,45 +2,52 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '護眼宣傳片',
+  title: t('pages.ophthalmic_information.ophthalmic_publicity'),
 }))
 // 眼疾影片
 const eyeDisease = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
-    title: '天氣轉變提防結膜炎',
-    text: '轉天氣時，有些人會出現眼睛過敏徵狀，包括︰結膜充血、眼瞼紅腫及痕癢、多流眼水、畏光、分泌物增多等，十分影響日常生活。這些可能是季節性過敏性結膜炎引起的，本身有過敏體質，例如︰氣喘、過敏性鼻炎等，會更容易患上此種結膜炎。馬上去片',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease1_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease1_text',
     link: 'https://youtu.be/0pN3E5ewLjE',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title: '眼睛乾可以點解決？',
-    text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease2_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease2_text',
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title: '眼睛乾可以點解決？',
-    text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_text',
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
-    title: '天氣轉變提防結膜炎',
-    text: '轉天氣時，有些人會出現眼睛過敏徵狀，包括︰結膜充血、眼瞼紅腫及痕癢、多流眼水、畏光、分泌物增多等，十分影響日常生活。這些可能是季節性過敏性結膜炎引起的，本身有過敏體質，例如︰氣喘、過敏性鼻炎等，會更容易患上此種結膜炎。馬上去片',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_text',
     link: 'https://youtu.be/0pN3E5ewLjE',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title: '眼睛乾可以點解決？',
-    text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_text',
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title: '眼睛乾可以點解決？',
-    text: '乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！',
+    title:
+      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_title',
+    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_text',
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
 ]
@@ -52,31 +59,67 @@ const eyeDisease = [
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/0a1c4d8feced8bdf.png"
+            src="https://static.cmereye.com/imgs/2023/06/8d816469e559897d.png"
             alt="護眼宣傳片"
           />
         </div>
         <div>
           <div>
-            <div>護眼宣傳片</div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text1'
+                )
+              }}
+            </div>
             <div>promotional video</div>
           </div>
-          <div>我們用心製作</div>
           <div>
-            <div>透過拍攝訪問醫生</div>
-            <div>希望令大眾更加了解眼疾</div>
+            {{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text2'
+              )
+            }}
+          </div>
+          <div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text3'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text4'
+                )
+              }}
+            </div>
           </div>
         </div>
       </div>
       <div>
         <div>
-          <div>眼疾影片</div>
+          <div>
+            {{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text5'
+              )
+            }}
+          </div>
           <div class="videoBorder">
             <PageVideoSwiper :eye-disease="eyeDisease" />
           </div>
         </div>
         <div>
-          <div>希瑪這一家</div>
+          <div>
+            {{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text6'
+              )
+            }}
+          </div>
           <div class="videoBorder household">
             <PageVideoSwiper :eye-disease="eyeDisease" />
           </div>

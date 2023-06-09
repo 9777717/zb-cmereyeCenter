@@ -4,14 +4,23 @@ import { Autoplay } from 'swiper'
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
+useHead(() => ({
+  title: t(
+    'pages.contact_us.clinic_information_title.clinic_information_serviceNavigation1'
+  ),
+}))
+
 // 診所資料電子預約表格
 const serviceNavigation = [
   {
-    anchorName: '診所資料',
+    anchorName:
+      'pages.contact_us.clinic_information_title.clinic_information_serviceNavigation1',
     anchorLink: '/contact-us',
   },
   {
-    anchorName: '電子預約表格',
+    anchorName:
+      'pages.contact_us.clinic_information_title.clinic_information_serviceNavigation2',
     anchorLink: '/contact-us/appointmentForm',
   },
 ]
@@ -29,131 +38,194 @@ const bannerList = [
 ]
 const addressList = [
   {
-    regionName: '香港',
+    regionName:
+      'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_regionName',
     id: 'hk',
     addressDetailList: [
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
-        addressName: '中環',
-        addressDetail: '畢打街1-3號中建大廈1515室',
-        subwayExit: '中環站G出口（鄰近置地廣場）',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/8GnSZHx69s4PgPif6',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
-        addressName: '中環',
-        addressDetail: '皇后大道中33號萬邦行1908室',
-        subwayExit: '中環站D2出口',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：10:00—13:00 / 15:00—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/cTtPrK89qYcgNVcT8',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/a24560b4df5de9f9.jpg',
-        addressName: '銅鑼灣',
-        addressDetail: '百德新街2-20號恒隆中心1614-15室',
-        subwayExit: '銅鑼灣站E出口',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/DUouFYZSJ9z4cpKx9',
       },
     ],
   },
   {
-    regionName: '九龍',
+    regionName:
+      'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_regionName',
     id: 'kln',
     addressDetailList: [
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-        addressName: '尖沙咀',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
         addressDetail:
-          '梳士巴利道18-24號K11 ATELIER辦公大樓1906室（K11 MUSEA附近）',
-        subwayExit: '尖東站J出口\n可享限時泊車優惠，詳情請向診所職員查詢',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressDetail',
+        subwayExit: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit2',
+        ],
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—14:00\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/TTtTUsyEVhXdN8Ar5',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
-        addressName: '旺角',
-        addressDetail: '彌敦道625及639號雅蘭中心一期1208室',
-        subwayExit: '旺角站E1出口',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/CqwrB3htjnM7b8XEA',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
-        addressName: '觀塘',
-        addressDetail: '開源道79號鱷魚恤中心16樓1601室',
-        subwayExit: '觀塘站A2或B3出口',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/wwwesw4YnXwr7NtL8',
       },
     ],
   },
   {
-    regionName: '新界',
+    regionName:
+      'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_regionName',
     id: 'nt',
     addressDetailList: [
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
-        addressName: '沙田',
-        addressDetail: '沙田正街11-17號偉華中心2樓1C—1F號鋪',
-        subwayExit: '沙田站A3出口',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-        addressName: '元朗（恆香老餅家對面）',
-        addressDetail: '元朗青山公路45及47號誠信商業大廈地鋪',
-        subwayExit: '',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
-        addressName: '荃灣',
-        addressDetail: '荃灣沙咀道255號思源樓地下',
-        subwayExit: '',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressName',
+        addressDetail:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/FukN8ZhA4jCUe7qV9',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-        addressName: '將軍澳',
+        addressName:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressName',
         addressDetail:
-          '將軍澳運亨路1號新都城中心一期地下55-56號鋪（寶琳站B2出口）',
-        subwayExit: '',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressDetail',
+        subwayExit:
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_subwayExit',
         contactNumber: '+852 3956 2026',
-        clinicHours:
-          '星期一至五：09:30—13:30 / 14:30—19:00\n星期六：09:30—13:30\n（星期日及公眾假期休息）',
+        clinicHours: [
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours1',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours2',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours3',
+        ],
         googleMaps: 'https://goo.gl/maps/9ghQzRFUT5iKspMB7',
       },
     ],
@@ -207,7 +279,13 @@ const goWhatsApp = () => {
       </div>
       <div class="mainCon">
         <div class="contactBody flex items-start justify-start">
-          <div class="title text-5xl font-normal relative">眼 科 診 所</div>
+          <div class="title text-5xl font-normal relative">
+            {{
+              $t(
+                'pages.contact_us.clinic_information_title.clinic_information_title'
+              )
+            }}
+          </div>
           <div class="content">
             <div class="addressBox">
               <div class="switchReionBtnBox flex justify-between items-center">
@@ -217,7 +295,7 @@ const goWhatsApp = () => {
                   :class="{ activeBtn: index == showIndex }"
                   @click="switchReion(index)"
                 >
-                  {{ addressItem.regionName }}
+                  {{ $t(addressItem.regionName) }}
                 </button>
               </div>
 
@@ -240,7 +318,7 @@ const goWhatsApp = () => {
                     </div>
                     <div class="textBox">
                       <h3 class="addressName text-xl mb-4">
-                        {{ addressDetailItem.addressName }}
+                        {{ $t(addressDetailItem.addressName) }}
                       </h3>
                       <div
                         v-if="addressDetailItem.addressDetail !== ''"
@@ -251,7 +329,7 @@ const goWhatsApp = () => {
                             icon="material-symbols:location-on-outline"
                           />
                         </span>
-                        <p>{{ addressDetailItem.addressDetail }}</p>
+                        <p>{{ $t(addressDetailItem.addressDetail) }}</p>
                       </div>
                       <div
                         v-if="addressDetailItem.subwayExit !== ''"
@@ -260,7 +338,17 @@ const goWhatsApp = () => {
                         <span class="text-sm">
                           <Iconify icon="ion:subway-outline" />
                         </span>
-                        <p>{{ addressDetailItem.subwayExit }}</p>
+                        <div v-if="Array.isArray(addressDetailItem.subwayExit)">
+                          <p
+                            v-for="(ele, index) in addressDetailItem.subwayExit"
+                            :key="index"
+                          >
+                            {{ $t(ele) }}
+                          </p>
+                        </div>
+                        <div v-else>
+                          {{ $t(addressDetailItem.subwayExit) }}
+                        </div>
                       </div>
                       <div
                         v-if="addressDetailItem.contactNumber !== ''"
@@ -269,16 +357,24 @@ const goWhatsApp = () => {
                         <span class="text-sm">
                           <Iconify icon="icon-park-outline:phone-telephone" />
                         </span>
-                        <p>{{ addressDetailItem.contactNumber }}</p>
+                        <p>{{ $t(addressDetailItem.contactNumber) }}</p>
                       </div>
                       <div
-                        v-if="addressDetailItem.clinicHours !== ''"
                         class="clinicHours flex items-start justify-start mb-4"
                       >
                         <span class="text-sm mt-1">
                           <Iconify icon="ic:outline-calendar-month" />
                         </span>
-                        <p>{{ addressDetailItem.clinicHours }}</p>
+                        <div>
+                          <p
+                            v-for="(
+                              ele, index
+                            ) in addressDetailItem.clinicHours"
+                            :key="index"
+                          >
+                            {{ $t(ele) }}
+                          </p>
+                        </div>
                       </div>
                       <div
                         class="addressDetailBtnBox flex items-center justify-between"
@@ -288,12 +384,23 @@ const goWhatsApp = () => {
                             :href="addressDetailItem.googleMaps"
                             target="_blank"
                             rel="noopener noreferrer"
-                            >Google 地圖</a
+                            >{{
+                              $t(
+                                'pages.contact_us.clinic_information_title.clinic_information_map'
+                              )
+                            }}</a
                           >
                         </div>
                         <div class="orderBtn" @click="goWhatsApp">
-                          <a href=" " target="_blank" rel="noopener noreferrer"
-                            >預約</a
+                          <a
+                            href=" "
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >{{
+                              $t(
+                                'pages.contact_us.clinic_information_title.clinic_information_make'
+                              )
+                            }}</a
                           >
                         </div>
                       </div>
@@ -318,6 +425,7 @@ const goWhatsApp = () => {
 <style lang="scss" scoped>
 .contact_eye {
   margin-bottom: 50px;
+
   & > div:nth-child(1) {
     & > div:nth-child(1) {
       display: flex;

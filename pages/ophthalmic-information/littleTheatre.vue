@@ -5,17 +5,19 @@ import { Anchor } from '~~/.nuxt/components'
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '希碼小劇場',
+  title: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
 }))
 // 视频列表
 const videoList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/72ff84195ac84ec5.png',
-    title: '情人節男生勿踩地雷!!!',
+    title:
+      'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_videoList.videoList1_title',
     text: [
-      '2月14日情人節~ 諗好點同另一半慶祝未呢？😍咁開心和重要嘅日子真係要特別小心，唔好激嬲女朋友啊…',
-      '如果一唔小心，搞喊另一半，點算好？一齊去片睇睇喇~ 睇完鍾意嘅話記得畀個Like我哋啊👍',
+      'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_videoList.videoList1_text_1',
+      'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_videoList.videoList1_text_2',
     ],
     link: 'https://youtu.be/oYTtMkqVK4w',
   },
@@ -55,12 +57,30 @@ const videoList = [
         </div>
         <div>
           <div>
-            <div>希瑪小劇場</div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_text1'
+                )
+              }}
+            </div>
             <div>c-MEr theater</div>
           </div>
           <div>
-            <p>透過小劇場</p>
-            <p>利用生動的方法讓大眾了解眼疾</p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_p1'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_p2'
+                )
+              }}
+            </p>
           </div>
         </div>
       </div>
@@ -70,14 +90,16 @@ const videoList = [
             <img :src="item.img" :alt="item.title" srcset="" />
           </div>
           <div>
-            <div>{{ item.title }}</div>
+            <div>{{ $t(item.title) }}</div>
             <div v-if="Array.isArray(item.text)">
-              <div v-for="(ele, i) in item.text" :key="i">{{ ele }}</div>
+              <div v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</div>
             </div>
             <div>
-              <a :href="item.link" target="_blank" rel="noopener noreferrer"
-                >立即播放</a
-              >
+              <a :href="item.link" target="_blank" rel="noopener noreferrer">{{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_a1'
+                )
+              }}</a>
             </div>
           </div>
         </div>

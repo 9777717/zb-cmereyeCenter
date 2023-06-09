@@ -2,44 +2,65 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '文章推薦',
+  title: t('pages.ophthalmic_information.ophthalmic_article'),
 }))
 const articleList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2a42431d5f95a077.png',
-    title: '謹慎挑選隱形眼鏡以免\n患上 5 大眼疾！',
+    title: [
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_title1',
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_title2',
+    ],
     data: '2022.11.03',
     source: 'BowTie',
-    doctor: '',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_doctor',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d6a534735d60a396.png',
-    title: '兒童易感染結膜炎，家長要小心！\n（文附預防貼士）',
+    title: [
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_title1',
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_title2',
+    ],
     data: '2022.11.03',
     source: 'BowTie',
-    doctor: '梁苑珊醫生',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_doctor',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4e79136cac72b4f8.png',
-    title: '白內障｜延誤治療可致盲！\n一文睇清白內障手術5大注意事項',
+    title: [
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_title1',
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_title2',
+    ],
     data: '2020.07.19',
     source: 'am730',
-    doctor: '',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_doctor',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2c186779c179368d.png',
-    title: '眼科醫生解構乾眼症成因及治療方法 \n營養師：多吃西蘭花有助護眼',
+    title: [
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_title1',
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_title2',
+    ],
     data: '2022.05.11',
     source: 'HK01',
-    doctor: '梁苑珊醫生',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_doctor',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/21eaea9d70787203.png',
-    title: '眼角膜受損有哪些症狀？\n會自然癒合嗎？',
+    title: [
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_title1',
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_title2',
+    ],
     data: '2020.04.05',
     source: 'BowTie',
-    doctor: '',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_doctor',
   },
 ]
 </script>
@@ -50,7 +71,7 @@ const articleList = [
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/c6877739dd652a99.png"
+            src="https://static.cmereye.com/imgs/2023/06/fe976a37d9ff57f1.png"
             alt="文章推薦"
           />
           <svg
@@ -79,7 +100,13 @@ const articleList = [
         </div>
         <div>
           <div>
-            <div>文章推薦</div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_article_text.article_text1'
+                )
+              }}
+            </div>
             <div>
               <div>Article</div>
               <div>
@@ -97,19 +124,33 @@ const articleList = [
             </div>
           </div>
           <div>
-            <p>緊貼醫療新聞</p>
-            <p>注重眼睛健康發展</p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_article_text.article_p1'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_article_text.article_p2'
+                )
+              }}
+            </p>
           </div>
         </div>
       </div>
       <div>
         <div v-for="(item, index) in articleList" :key="index">
           <div><img :src="item.img" /></div>
-          <div>{{ item.title }}</div>
+          <div>
+            <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
+          </div>
           <div>
             <span>{{ item.data }}</span
             ><span>{{ item.source }}</span
-            ><span v-if="item.doctor">{{ item.doctor }}</span>
+            ><span v-if="$t(item.doctor)">{{ $t(item.doctor) }}</span>
           </div>
         </div>
       </div>

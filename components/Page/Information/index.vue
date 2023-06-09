@@ -5,27 +5,27 @@ const toRouter = ref(route)
 // compiler macro
 const serviceNavigation = [
   {
-    anchorName: '醫生小教室',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_class',
     anchorLink: '/ophthalmic-information',
   },
   {
-    anchorName: '護眼宣傳片',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_publicity',
     anchorLink: '/ophthalmic-information/publicity',
   },
   {
-    anchorName: '希瑪小劇場',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_little_theatre',
     anchorLink: '/ophthalmic-information/littleTheatre',
   },
   {
-    anchorName: '新聞資訊',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_press',
     anchorLink: '/ophthalmic-information/press',
   },
   {
-    anchorName: '文章推薦',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_article',
     anchorLink: '/ophthalmic-information/article',
   },
   {
-    anchorName: '健康資訊',
+    anchorName: 'pages.ophthalmic_information.ophthalmic_message',
     anchorLink: '/ophthalmic-information/healthInfo',
   },
 ]

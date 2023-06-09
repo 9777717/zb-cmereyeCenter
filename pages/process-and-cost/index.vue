@@ -5,17 +5,18 @@ import Cost from './cost.vue'
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead({
-  title: '費用一覽 | 就診流程',
+  title: `${t('pages.process_cost.cost')}| ${t('pages.process_cost.process')}`,
 })
 // 流程及費用
 const serviceNavigation = [
   {
-    anchorName: '費用一覽',
+    anchorName: 'pages.process_cost.cost',
     anchorLink: '/process-and-cost/#cost',
   },
   {
-    anchorName: '就診流程',
+    anchorName: 'pages.process_cost.process',
     anchorLink: '/process-and-cost/#process',
   },
 ]

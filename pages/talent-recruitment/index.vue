@@ -3,6 +3,10 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
+useHead(() => ({
+  title: t('pages.talent_recruitment.text1'),
+}))
 </script>
 
 <template>
@@ -10,12 +14,12 @@ definePageMeta({
     <div>
       <div>
         <img
-          src="https://static.cmereye.com/imgs/2023/02/f47fceca0ef2e1d4.jpg"
+          src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
           alt="加入我們，攜手未來"
         />
       </div>
       <div>
-        <p class="">加入我們，攜手未來</p>
+        <p class="">{{ $t('pages.talent_recruitment.text1') }}</p>
         <img
           class=""
           src="https://static.cmereye.com/imgs/2023/03/f47c6bf2d4a3693a.png"
@@ -45,18 +49,20 @@ definePageMeta({
 
     <div class="mianConten mainCon pb-64 flex items-center justify-between">
       <div class="desBox mt-52 ml-10">
-        <h1 class="text-4xl mb-10">加入我們，盡展所長</h1>
+        <h1 class="text-4xl mb-10">
+          {{ $t('pages.talent_recruitment.text2') }}
+        </h1>
         <p class="leading-8">
-          希瑪以人為本，注重團隊合作，致力培訓員工 <br />
-          我們希望吸納更多醫護專才 <br />
-          為客人提供「度身訂造」的眼科服務
+          {{ $t('pages.talent_recruitment.p1') }}<br />
+          {{ $t('pages.talent_recruitment.p2') }}<br />
+          {{ $t('pages.talent_recruitment.p3') }}
         </p>
         <a
           href="https://cmermedical.com/joinus/careers?departmentOptions=cmerEyeCenter"
           target="_blank"
           rel="noopener noreferrer"
           class="linkBtn text-white mt-12 inline-block"
-          >立即申請</a
+          >{{ $t('pages.talent_recruitment.apply') }}</a
         >
       </div>
 

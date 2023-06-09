@@ -351,7 +351,7 @@ const doctorList = [
             <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
           <nuxt-link class="orderLink text-white inline-block" to="">{{
-            $t('pages.medical_team.doctor_edu')
+            $t('pages.medical_team.doctor_order')
           }}</nuxt-link>
         </li>
       </ul>

@@ -3,45 +3,50 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '健康資訊',
+  title: t('pages.ophthalmic_information.ophthalmic_message'),
 }))
 const healthList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/44ab119d3622daa3.png',
-    title: '#護眼食物 ！食住嚟睇世界盃⚽⚽⚽',
+    title:
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList1_title',
     text: [
-      '睇波點少得零食，不過要食就要食得健康。#希瑪眼科 建議你可以食吓護眼食物，睇波雙眼唔會咁乾澀！',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList1_text_1',
     ],
     link: '',
     date: '2022.11.30',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a57e87d973cd0587.png',
-    title: '【視在希瑪】捱夜睇波對眼好攰！4招預防眼乾眼澀',
+    title:
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_title',
     text: [
-      '世界盃已經開羅！身為球迷點可以錯過每一場賽事~ 不過返咗一日工後雙眼咁攰，睇完波第二日又要一早起身返工。雙眼乾澀，點算好？',
-      '#世界盃 #世界盃直播 #世界盃足球賽 #世界盃2022 #眼睛乾澀 #眼睛疲勞 #眼乾 #乾眼 #淚水 #淚液 #乾眼症 #眼罩 #熱敷眼罩 #護眼方法 #希瑪眼科',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_text_1',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_text_2',
     ],
     link: '',
     date: '2022.11.30',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0d5743383f2c8242.png',
-    title: '#護眼食物 ！食住嚟睇世界盃⚽⚽⚽',
+    title:
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_title',
     text: [
-      '經常覺得眼乾、眼澀就係患上乾眼症嗎？乾眼症係一種都市人常見嘅眼疾，長時間唔理嘅話可能會導致角膜損傷、視力下降等。要確認自己係咪有乾眼症，初步可以接受「淚液分泌試紙測試」。',
-      '#乾眼症 #眼乾 #眼澀 #乾眼症成因 #乾眼症徵狀 #眼淚 #淚水 #淚水分泌 #淚液分泌測試 #乾眼症測試 #角膜受損 #眼科醫生',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_text_1',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_text_2',
     ],
     link: '',
     date: '2022.11.30',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/fd41adf9b658e7aa.png',
-    title: '【放眼逐格睇】眼妝卸乾淨！同眼挑針Say Bye~',
+    title:
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_title',
     text: [
-      ' 出席party要化個靚妝，不過完咗後記得要卸乾淨眼妝，先可以預防到眼疾㗎！眼妝冇卸好，殘留嘅化妝品可能堵塞眼睛黏板腺，有機會導致生眼挑針，即係生眼瘡。',
-      '#眼妝 #化眼妝 #卸妝 #眼挑針 #眼瘡 #眼瘡成因 #眼瘡治療 #眼瘡治療 #眼瘡放膿 #眼瘡初期 #眼睛發炎 #眼瘡放膿手術 #眼挑針治療 #希瑪眼科中心 #希瑪眼科 #希瑪醫療',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_text_1',
+      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_text_2',
     ],
     link: '',
     date: '2022.11.30',
@@ -58,11 +63,17 @@ const mmmmm = (num: any) => {
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/035c704cfcb2e2f8.png"
+            src="https://static.cmereye.com/imgs/2023/06/c6dfc14c28ac7105.png"
             alt="健康資訊"
           />
           <div>
-            <div>健康資訊</div>
+            <div>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_message_text.message_text1'
+                )
+              }}
+            </div>
             <div>
               <div>Health topics</div>
               <div>
@@ -108,8 +119,20 @@ const mmmmm = (num: any) => {
         </div>
       </div>
       <div>
-        <div>你的眼睛健康嗎？</div>
-        <div>關注眼睛健康</div>
+        <div>
+          {{
+            $t(
+              'pages.ophthalmic_information.ophthalmic_message_text.message_text2'
+            )
+          }}
+        </div>
+        <div>
+          {{
+            $t(
+              'pages.ophthalmic_information.ophthalmic_message_text.message_text3'
+            )
+          }}
+        </div>
       </div>
     </div>
     <div class="content_health">
@@ -123,11 +146,17 @@ const mmmmm = (num: any) => {
           <div>{{ item.date }}</div>
         </div>
         <div>
-          <div>{{ item.title }}</div>
+          <div>{{ $t(item.title) }}</div>
           <div>
-            <div v-for="(ele, i) in item.text" :key="i">{{ ele }}</div>
+            <div v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</div>
           </div>
-          <div>點擊瀏覽</div>
+          <div>
+            {{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_message_text.message_text4'
+              )
+            }}
+          </div>
         </div>
       </div>
     </div>

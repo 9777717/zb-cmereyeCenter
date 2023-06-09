@@ -3,38 +3,49 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '醫生小教室',
+  title: t(
+    'pages.ophthalmic_information.ophthalmic_information_text.information_p_text1'
+  ),
 }))
 // 内容
 const mainContent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/68d06f9abbaa270e.png',
     link: 'https://youtu.be/6QMK-B_WKvk',
-    title: '小朋友的眼睛檢查與大人有什麼不同？',
-    doctor: '林寶生眼科專科醫生',
-    text: '兒童年紀小檢查眼睛時，未必聽到懂指示，所以眼科專科醫生會設計不同的測試和檢查，去幫助小朋友檢查眼睛，例如︰顏色測試、眼底檢查、斜視檢查。不過，隨著小朋友年齡增加，到了幼稚園或小學階段，檢查眼睛的方法與成人類似。立即聽聽希瑪眼科中心 - 林寶生眼科專科醫生講解！ ',
+    title:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_title',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_doctor',
+    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_text',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ae11245a90ee4dfe.png',
     link: 'https://youtu.be/gsFpvvDkJiE',
-    title: '眼瞼內翻的症狀，眼瞼內翻要做手術嗎？',
-    doctor: '張瀞之眼科專科醫生',
-    text: '眼瞼內翻可分為先天性和退化性，患者的常見症狀包括︰眼睛有很多分泌物、有異物感和疼痛，甚至會常有沙入眼的感覺、流眼水和眼睛水汪汪等。如果病情嚴重，可能會影響視力和角膜的健康。眼瞼內翻一定要透過做手術治療嗎？',
+    title:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_title',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_doctor',
+    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_text',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2d88b98970f31ba1.png',
     link: 'https://youtu.be/zMoqXZgXDsk',
-    title: '揉眼會影響視力？',
-    doctor: '李德倫眼科專科醫生',
-    text: '我們感到眼睛不適時可能會揉眼，其實這是一個不好的習慣。不要以為揉眼只是一個小動作，它可能造成眼角膜損傷、眼睛細菌感染，嚴重的話甚至出現眼角膜潰瘍，並會大大增加患眼疾的風險，某些人士更要特別注意。',
+    title:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_title',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_doctor',
+    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_text',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f3aab3c7f7cec643.png',
     link: 'https://youtu.be/XbWbpVc-39k',
-    title: '怎麼知道眼乾是缺油或是缺水？',
-    doctor: '李德倫眼科專科醫生',
-    text: '眼乾可以分為「缺水性」和「缺油性」。缺水性是由於眨眼過少，導致淚水揮發多而分泌少，此類型眼乾較常見於中年女士、常看電腦或手機、類風濕關節炎等人士。若患者屬於缺油性眼乾，多數由瞼板腺功能障礙引起，油脂大量分泌並堵塞了油脂孔，令到淚水容易揮發出來。',
+    title:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_title',
+    doctor:
+      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_doctor',
+    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_text',
   },
 ]
 </script>
@@ -51,16 +62,40 @@ const mainContent = [
       </div>
       <div>
         <div>
-          <p>醫生小教室</p>
+          <p>
+            {{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_information_text.information_p_text1'
+              )
+            }}
+          </p>
           <p>doctor videos</p>
         </div>
         <div>
           <div>
-            <p>我們用心製作</p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_information_text.information_p_text2'
+                )
+              }}
+            </p>
           </div>
           <div>
-            <p>透過拍攝訪問醫生</p>
-            <p>希望令大眾更加了解眼疾</p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_information_text.information_p_text3'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_information_text.information_p_text4'
+                )
+              }}
+            </p>
           </div>
         </div>
       </div>
@@ -86,7 +121,7 @@ const mainContent = [
     <div>
       <div v-for="(item, index) in mainContent" :key="index">
         <div>
-          <div>{{ item.title }}</div>
+          <div>{{ $t(item.title) }}</div>
           <div>
             <svg
               width="9"
@@ -103,13 +138,15 @@ const mainContent = [
                 stroke-linejoin="round"
               />
             </svg>
-            <div>{{ item.doctor }}</div>
+            <div>{{ $t(item.doctor) }}</div>
           </div>
-          <div>{{ item.text }}</div>
+          <div>{{ $t(item.text) }}</div>
           <div>
-            <a :href="item.link" target="_blank" rel="noopener noreferrer"
-              >立即播放</a
-            >
+            <a :href="item.link" target="_blank" rel="noopener noreferrer">{{
+              $t(
+                'pages.ophthalmic_information.ophthalmic_information_text.information_a_text1'
+              )
+            }}</a>
           </div>
         </div>
         <div><img :src="item.img" :alt="item.title" /></div>
@@ -282,7 +319,7 @@ const mainContent = [
       height: 386px;
       position: relative;
       padding-top: 46px;
-      padding-left: 24.2476%;
+      padding-left: 22.2476%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;

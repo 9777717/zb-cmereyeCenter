@@ -4,122 +4,173 @@
   <div>
     <div class="content">
       <div class="titleBox">
-        <h1 class="text-3xl font-normal">費用一覽</h1>
+        <h1 class="text-3xl font-normal">
+          {{ $t('pages.process_cost.cont.cost_h1') }}
+        </h1>
         <h2>PRICE LIST</h2>
-        <h3>眼科</h3>
-        <p>本診所價目清晰，絕無其他額外收費</p>
+        <h3>{{ $t('pages.process_cost.cont.cost_h3_1') }}</h3>
+        <p>{{ $t('pages.process_cost.cont.cost_p1') }}</p>
       </div>
 
       <div class="costsTable py-10 px-8 mt-12 mb-40">
-        <h3 class="text-2xl text-center font-bold mb-8">特殊檢查項目</h3>
+        <h3 class="text-2xl text-center font-bold mb-8">
+          {{ $t('pages.process_cost.cont.cost_h3_2') }}
+        </h3>
         <table class="table">
           <thead>
             <tr class="firstRow">
               <td colspan="2"></td>
-              <td class="text-center text-xl">單眼</td>
-              <td class="text-center text-xl">雙眼</td>
+              <td class="text-center text-xl">
+                {{ $t('pages.process_cost.cont.cost_tr1_td1') }}
+              </td>
+              <td class="text-center text-xl">
+                {{ $t('pages.process_cost.cont.cost_tr1_td2') }}
+              </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td colspan="2">光學相干斷層掃描（前房）</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
+              </td>
               <td class="text-center">$420</td>
               <td class="text-center">$700</td>
             </tr>
             <tr>
-              <td colspan="2">光學相干斷層掃描（青光眼）</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
+              </td>
               <td class="text-center">$900</td>
               <td class="text-center">$1,650</td>
             </tr>
             <tr>
-              <td colspan="2">光學相干斷層掃描（黃斑）</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
+              </td>
               <td class="text-center">$900</td>
               <td class="text-center">$1,650</td>
             </tr>
             <tr>
-              <td colspan="2">光學相干斷層掃描（青光眼+黃斑）</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
+              </td>
               <td class="text-center">$1,300</td>
               <td class="text-center">$2,000</td>
             </tr>
             <tr>
-              <td colspan="2">人工晶體測量/ A 超聲波掃描</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
+              </td>
               <td class="text-center">$360</td>
               <td class="text-center">$600</td>
             </tr>
             <tr>
-              <td colspan="2">角膜內皮細胞檢查</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
+              </td>
               <td class="text-center">$300</td>
               <td class="text-center">$500</td>
             </tr>
             <tr>
-              <td colspan="2">視野分析</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
+              </td>
               <td class="text-center">$550</td>
               <td class="text-center">$900</td>
             </tr>
             <tr>
-              <td colspan="2">掃描激光眼底檢查</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr9_td1') }}
+              </td>
               <td class="text-center">$300</td>
               <td class="text-center">$500</td>
             </tr>
             <tr>
-              <td colspan="2">眼底照相</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr10_td1') }}
+              </td>
               <td class="text-center">$400</td>
               <td class="text-center">$800</td>
             </tr>
             <tr>
-              <td colspan="2">眼前節分析 / 角膜厚度測量 / 角膜地形分析</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr11_td1') }}
+              </td>
               <td class="text-center">$300</td>
               <td class="text-center">$600</td>
             </tr>
             <tr>
-              <td colspan="2">眼底照相 + 眼底熒光血管造影（包藥費）</td>
-              <td class="text-center">/</td>
-              <td class="text-center">$3,900</td>
-            </tr>
-            <tr>
-              <td colspan="2">眼底照相 + 靛青綠血管造影（包藥費）</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr12_td1') }}
+              </td>
               <td class="text-center">/</td>
               <td class="text-center">$3,900</td>
             </tr>
             <tr>
               <td colspan="2">
-                眼底照相 + 眼底熒光血管造影 + 靛青綠血管造影（包藥費）
+                {{ $t('pages.process_cost.cont.cost_tr13_td1') }}
+              </td>
+              <td class="text-center">/</td>
+              <td class="text-center">$3,900</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr14_td1') }}
               </td>
               <td class="text-center">/</td>
               <td class="text-center">$5,500</td>
             </tr>
             <tr>
-              <td colspan="2">B 超聲波掃描</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr15_td1') }}
+              </td>
               <td class="text-center">$500</td>
               <td class="text-center">$1,000</td>
             </tr>
             <tr>
-              <td colspan="2">白內障超聲乳化矯視術前檢查</td>
+              <td colspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
+              </td>
               <td class="text-center">/</td>
               <td class="text-center">$600/$800</td>
             </tr>
             <tr>
-              <td rowspan="2">隱形眼鏡驗配</td>
-              <td class="text-center text-left">八歲以上</td>
+              <td rowspan="2">
+                {{ $t('pages.process_cost.cont.cost_tr17_td1') }}
+              </td>
+              <td class="text-center text-left">
+                {{ $t('pages.process_cost.cont.cost_tr17_td2') }}
+              </td>
               <td class="text-center">/</td>
               <td class="text-center">$350</td>
             </tr>
             <tr>
-              <td class="text-center border-0 text-left">八歲或以下</td>
+              <td class="text-center border-0 text-left">
+                {{ $t('pages.process_cost.cont.cost_tr18_td2') }}
+              </td>
               <td class="text-center border-0">/</td>
               <td class="text-center border-0">$750</td>
             </tr>
           </tbody>
         </table>
         <p class="text-center mt-20 mb-16 leading-10">
-          以上價格<span class="font-bold">港幣</span>以結算<br />
-          每份詳細眼睛檢查複本將收取<span class="font-bold">行政費</span
-          >，詳情請向職員查詢。<br />
-          (視野分析HK$10/張、光學相干斷層掃描HK$30/張、眼底照相 HK$100/張)<br />
-          每份醫療報告將收取<span class="font-bold">HK$1,500-HK$6,000</span>不等
-          (每份報告的實際價錢以報價為準)。<br />
-          特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。<br />
-          最後更新: 07/12/2022
+          {{ $t('pages.process_cost.cont.cost_p2')
+          }}<span class="font-bold">{{
+            $t('pages.process_cost.cont.cost_p2_1')
+          }}</span
+          >{{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
+          {{ $t('pages.process_cost.cont.cost_p3')
+          }}<span class="font-bold">{{
+            $t('pages.process_cost.cont.cost_p3_1')
+          }}</span>
+          {{ $t('pages.process_cost.cont.cost_p4') }} <br />
+          {{ $t('pages.process_cost.cont.cost_p5') }}<br />
+          {{ $t('pages.process_cost.cont.cost_p6')
+          }}<span class="font-bold">HK$1,500-HK$6,000</span
+          >{{ $t('pages.process_cost.cont.cost_p6_1') }}
+          {{ $t('pages.process_cost.cont.cost_p7') }}<br />
+          {{ $t('pages.process_cost.cont.cost_p8') }} <br />
+          {{ $t('pages.process_cost.cont.cost_p9') }}
         </p>
       </div>
     </div>

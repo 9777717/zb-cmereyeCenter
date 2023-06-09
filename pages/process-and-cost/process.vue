@@ -23,47 +23,53 @@ const serviceNavigation = [
     <div class="processMain mainCon relative flex items-start justify-center">
       <div class="content mt-20 ml-20 relative">
         <div class="titleBox">
-          <h1 class="text-3xl font-normal">就診流程</h1>
+          <h1 class="text-3xl font-normal">
+            {{ $t('pages.process_cost.process_1.process_h1') }}
+          </h1>
           <h2>Outpatient Services</h2>
         </div>
         <div class="py-10 px-8 mt-12 mb-40">
           <div class="processItem mb-20">
-            <p>登記</p>
+            <p>{{ $t('pages.process_cost.process_1.process_p1') }}</p>
           </div>
           <div class="processItem itemdes mb-14">
-            <p>基本檢查</p>
+            <p>{{ $t('pages.process_cost.process_1.process_p2') }}</p>
             <div>
-              <h3 class="text-xl pb-3 mb-3">初步眼睛檢查</h3>
+              <h3 class="text-xl pb-3 mb-3">
+                {{ $t('pages.process_cost.process_1.process_h3_1') }}
+              </h3>
               <p>
-                為全面了解您的眼睛狀況，<br />
-                我們會先為您進行3-5項基本眼睛檢查。
+                {{ $t('pages.process_cost.process_1.process_p3_1') }}<br />
+                {{ $t('pages.process_cost.process_1.process_p3_2') }}
               </p>
             </div>
           </div>
           <div class="processItem itemdes mb-14">
-            <p>醫生診症</p>
+            <p>{{ $t('pages.process_cost.process_1.process_p4') }}</p>
             <div>
-              <h3 class="text-xl pb-3 mb-3">詳細眼睛檢查</h3>
+              <h3 class="text-xl pb-3 mb-3">
+                {{ $t('pages.process_cost.process_1.process_h3_2') }}
+              </h3>
               <p>
-                醫生會根據您的眼睛狀況，<br />
-                進行詳細眼睛檢查，<br />
-                以準確診斷並作出相應治療。
+                {{ $t('pages.process_cost.process_1.process_p5_1') }}<br />
+                {{ $t('pages.process_cost.process_1.process_p5_2') }}<br />
+                {{ $t('pages.process_cost.process_1.process_p5_3') }}
               </p>
             </div>
           </div>
           <div class="processItem mb-20">
-            <p>詳細檢查</p>
+            <p>{{ $t('pages.process_cost.process_1.process_p6') }}</p>
           </div>
           <div class="processItem processItem5 mb-20">
             <p>
-              門診 / 針灸 <br />
-              手術
+              {{ $t('pages.process_cost.process_1.process_p7_1') }} <br />
+              {{ $t('pages.process_cost.process_1.process_p7_2') }}
             </p>
           </div>
           <div class="processItem processItem6 itemdes mb-20">
-            <p>付款及取藥</p>
+            <p>{{ $t('pages.process_cost.process_1.process_p8') }}</p>
             <div>
-              <p>其他服務-配鏡</p>
+              <p>{{ $t('pages.process_cost.process_1.process_p9') }}</p>
             </div>
           </div>
         </div>
