@@ -1063,9 +1063,9 @@ pages:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
-      appointmentForm: 电子预约表格
-      appointmentForm_title:
-        appointmentForm_title: 电子预约表格
+    appointmentForm: 电子预约表格
+    appointmentForm_title:
+      appointmentForm_title: 电子预约表格
 banners:
   welcome: 你好, 欢迎来到 %{app_name}!
 others:
