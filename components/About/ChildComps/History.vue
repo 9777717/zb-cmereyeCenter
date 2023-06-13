@@ -44,7 +44,7 @@ const historyList = ref([
     year: 'pages.about_us.course_year.year_20',
     contentList: [
       {
-        month: '',
+        month: 'pages.about_us.course_year.child_20.child_month',
         info: [
           'pages.about_us.course_year.child_20.child_info_1',
           'pages.about_us.course_year.child_20.child_info_2',
@@ -235,6 +235,7 @@ const historyList = ref([
         padding-right: 10%;
         // text-align: right;
         box-sizing: content-box;
+        min-width: 45px;
       }
 
       .info {
