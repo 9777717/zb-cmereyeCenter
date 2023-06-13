@@ -99,6 +99,16 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
         route: { name: 'medical-service-eyeOrthopaedicDisease' },
       },
+      {
+        type: 'link', // 醫學驗光配鏡
+        text: t('pages.medical_service.medicalOptometry'),
+        route: { name: 'medical-service-medicalOptometry' },
+      },
+      // {
+      //   type: 'link', // 阿托品滴眼液
+      //   text: t('pages.medical_service.atropine'),
+      //   route: { name: 'medical-service-atropine' },
+      // },
     ],
   },
   {
@@ -300,7 +310,7 @@ a {
 
 .headerTemPage {
   z-index: 999;
-  position: fixed;
+  position: absolute; // 记得改为 fixed
   top: 54px;
   left: 15.625%;
   background: #2958a3;

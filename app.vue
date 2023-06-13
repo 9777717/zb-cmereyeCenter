@@ -6,10 +6,9 @@ AppSetup()
 const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
 const app = useAppConfig() as AppConfigInput
-
 useHead({
   title: app.name,
-  titleTemplate: '%s - Nuxt 3 Awesome Starter',
+  titleTemplate: '%s - 希玛眼科',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
@@ -39,6 +38,7 @@ useHead({
 body {
   overflow-x: hidden !important;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   background-color: #ffffff;

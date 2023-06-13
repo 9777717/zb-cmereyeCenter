@@ -80,6 +80,7 @@ pages:
       title: 主页
   index:
     home: 首页
+    index_title: 香港希玛眼科中心｜眼科医生｜眼科诊所
     footer:
       company: 希玛林顺潮眼科中心
       copy_right: 版权所有
@@ -126,7 +127,7 @@ pages:
       download: 下载希玛眼科业务小册子
     development_course: 发展历程
     course_year:
-      year_22: '2022'
+      year_22: "2022"
       child_22:
         child22_month_1: 9月
         child22_month_2: 8月
@@ -135,7 +136,7 @@ pages:
         child22_info_2: 揭阳希玛眼科医院成立
         child22_info_3_1: 广州 希玛眼科医院成立
         child22_info_3_2: 福州 希玛眼科医院成立
-      year_21: '2021'
+      year_21: "2021"
       child_21:
         child21_month_1: 11月
         child21_month_2: 7月
@@ -144,13 +145,13 @@ pages:
         child21_info_2_1: 中环 希玛眼科视光中心成立
         child21_info_2_2: 旺角 希玛眼科视光中心成立
         child21_info_3: 惠州希玛眼科医院成立
-      year_20: '2020'
+      year_20: "2020"
       child_20:
         child_month: 11月
         child_info_1: 荃湾希玛眼科中心成立
         child_info_2: 珠海希玛林顺潮眼科医院成立
         child_info_3: 深圳新安林顺潮眼科门诊部升级为医院
-      year_19: '2019'
+      year_19: "2019"
       child_19:
         child_month_1: 12月
         child_month_2: 11月
@@ -160,7 +161,7 @@ pages:
         child_info_2: 上海希玛瑞视眼科医院
         child_info_3: 希玛微笑激光矫视中心成立
         child_info_4: 昆明 希玛林顺潮眼科医院成立
-      year_18: '2018'
+      year_18: "2018"
       child_18:
         child_month_1: 11月
         child_month_2: 3月
@@ -168,25 +169,25 @@ pages:
         child_info_1: 深圳新安希玛林顺潮眼科门诊部成立
         child_info_2: 观塘 希玛眼科中心成立
         child_info_3: 北京 希玛林顺潮眼科医院成立
-      year_17: '2017'
+      year_17: "2017"
       child_17:
         child_month: 2月
         child_info: 铜锣湾 希玛眼科中心成立
-      year_16: '2016'
+      year_16: "2016"
       child_16:
         child_month_1: 6月
         child_month_2: 1月
         child_info_1: 沙田 希玛眼科中心成立
         child_info_2: 元朗 希玛眼科中心成立
-      year_14: '2014'
+      year_14: "2014"
       child_14:
         child_month: 1月
         child_info: 深圳 希玛林顺潮眼科医院成立
-      year_13: '2013'
+      year_13: "2013"
       child_13:
         child_month: 3月
         child_info: 深圳 希玛林顺潮眼科医院成立
-      year_12: '2012'
+      year_12: "2012"
       child_12:
         child_month: 1月
         child_info: 中环 希玛眼科中心成立
@@ -207,15 +208,15 @@ pages:
         equipment_des_4: 蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。
         equipment_des_5: 蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。
         equipment_des_6: 蔡司IOLMaster 700具有扫频生物测量技术，建立在近20年的光学生物测量经验的基础上。凭借全角膜曲率测量（TK），获得专利的角膜到视网膜扫描显示了贯穿整个眼睛的纵向切面的解剖细节。在白内障手术过程中，获取一个参考图像，并将其用于术中图像的匹配。
-    awards: 
+    awards:
       awards: 企业荣誉
-      awards_year_1: '2020-2021'
-      awards_year_2: '2020-2021'
-      awards_year_3: '2020'
-      awards_year_4: '2020'
-      awards_year_5: '2020'
-      awards_year_6: '2020'
-      awards_year_7: '2019'
+      awards_year_1: "2020-2021"
+      awards_year_2: "2020-2021"
+      awards_year_3: "2020"
+      awards_year_4: "2020"
+      awards_year_5: "2020"
+      awards_year_6: "2020"
+      awards_year_7: "2019"
       awards_des_1: 香港星级品牌企业奖
       awards_des_2: 商界展关怀
       awards_des_3: 亚洲最佳价值服务大奖
@@ -237,30 +238,30 @@ pages:
           doctor_1_education_2: 香港医学专科学院院士(眼科)
           doctor_1_education_3: 香港眼科医学院院士
           doctor_1_education_4: 英国爱丁堡皇家外科医学院院士(眼科)
-          doctor_1_education_5: 英国皇家眼科学院院士 
-          doctor_1_education_6: 香港中文大学医学博士 
+          doctor_1_education_5: 英国皇家眼科学院院士
+          doctor_1_education_6: 香港中文大学医学博士
       doctor_2:
         doctor_2_name: 李佑荣医生
         doctor_2_en_name: Dr. Vincent Lee
         doctor_2_education:
-          doctor_2_education_1: 香港中文大学内外全科医学士 
-          doctor_2_education_2: 香港医学专科学院院士(眼科) 
-          doctor_2_education_3: 香港眼科医学院院士 
-          doctor_2_education_4: 英国爱丁堡皇家外科医学院院士 
-          doctor_2_education_5: 香港外科医学院院士 
+          doctor_2_education_1: 香港中文大学内外全科医学士
+          doctor_2_education_2: 香港医学专科学院院士(眼科)
+          doctor_2_education_3: 香港眼科医学院院士
+          doctor_2_education_4: 英国爱丁堡皇家外科医学院院士
+          doctor_2_education_5: 香港外科医学院院士
           doctor_2_education_6: 香港中文大学流行病学与生物统计学理学硕士
           doctor_2_education_7: 香港中文大学流行病学与生物统计学士后文凭
       doctor_3:
         doctor_3_name: 范恺医生
         doctor_3_en_name: Dr. Alex Fan
         doctor_3_education:
-          doctor_3_education_1: 香港大学内外全科医学士 
+          doctor_3_education_1: 香港大学内外全科医学士
           doctor_3_education_2: 香港医学专科学院院士(眼科)
-          doctor_3_education_3: 香港眼科医学院院士 
-          doctor_3_education_4: 英国爱丁堡皇家外科医学院院士(眼科) 
-          doctor_3_education_5: 英国皇家眼科学院院士 
+          doctor_3_education_3: 香港眼科医学院院士
+          doctor_3_education_4: 英国爱丁堡皇家外科医学院院士(眼科)
+          doctor_3_education_5: 英国皇家眼科学院院士
           doctor_3_education_6: 新加坡国立大学医学硕士(眼科)
-      doctor_4: 
+      doctor_4:
         doctor_4_name: 黄俊华医生
         doctor_4_en_name: Dr. Alex Wong
         doctor_4_education:
@@ -288,7 +289,7 @@ pages:
           doctor_6_education_3: 香港医学专科学院院士(眼科)
           doctor_6_education_4: 香港眼科医学院院士
           doctor_6_education_5: 英国爱丁堡皇家外科医学院院士(眼科)
-          doctor_6_education_6: 英国爱丁堡皇家外科医学院院员        
+          doctor_6_education_6: 英国爱丁堡皇家外科医学院院员
           doctor_6_education_7: 英国格拉斯哥皇家医学院外科院士
       doctor_7:
         doctor_7_name: 邱俊源医生
@@ -307,7 +308,7 @@ pages:
           doctor_8_education_3: 香港医学专科学院院士(眼科)
           doctor_8_education_4: 香港眼科医学院院士
           doctor_8_education_5: 英国爱丁堡皇家外科医学院院员
-          doctor_8_education_6: 香港大学公共卫生科硕士       
+          doctor_8_education_6: 香港大学公共卫生科硕士
       doctor_9:
         doctor_9_name: 胡伟君医生
         doctor_9_en_name: Dr. Wu Wai Kwan
@@ -325,9 +326,9 @@ pages:
           doctor_10_education_3: 香港医学专科学院院士(眼科)
           doctor_10_education_4: 英国爱丁堡皇家外科医学院院士
           doctor_10_education_5: 英国格拉斯哥皇家外科医学院院士
-          doctor_10_education_6: 新加坡国立大学眼科医学硕士    
+          doctor_10_education_6: 新加坡国立大学眼科医学硕士
           doctor_10_education_7: 香港中文大学内科医学文凭
-          doctor_10_education_8: 澳洲蒙纳殊大学家庭医学文凭    
+          doctor_10_education_8: 澳洲蒙纳殊大学家庭医学文凭
       doctor_11:
         doctor_11_name: 黎浩桦医生
         doctor_11_en_name: Dr. Kenny Lai
@@ -361,12 +362,12 @@ pages:
           doctor_14_education_3: 香港医学专科学院院士(眼科)
           doctor_14_education_4: 英国爱丁堡皇家外科医学院院士(眼科)
           doctor_14_education_5: 英国格拉斯哥皇家外科医学院院士
-          doctor_14_education_6: 英国爱丁堡皇家外科医学院院员 
+          doctor_14_education_6: 英国爱丁堡皇家外科医学院院员
       doctor_15:
         doctor_15_name: 林宝生医生
         doctor_15_en_name: Dr. Carol Lam
         doctor_15_education:
-          doctor_15_education_1: 香港中文大学内外全科医学士 
+          doctor_15_education_1: 香港中文大学内外全科医学士
           doctor_15_education_2: 英国爱丁堡皇家外科医学院院员
           doctor_15_education_3: 香港眼科医学院院士
           doctor_15_education_4: 香港医学专科学院院士(眼科)
@@ -386,7 +387,7 @@ pages:
           doctor_17_education_2: 爱尔兰皇家内外科医学院
           doctor_17_education_3: 英国格拉斯哥皇家外科医学院眼科文凭
           doctor_17_education_4: 香港眼科医学院院士
-          doctor_17_education_5: 香港医学专科学院院士(眼科)   
+          doctor_17_education_5: 香港医学专科学院院士(眼科)
       doctor_18:
         doctor_18_name: 陈伟乐医生
         doctor_18_en_name: Dr. Leo Chan
@@ -422,7 +423,7 @@ pages:
           doctor_21_education_3: 英国皇家外科医学院院员
           doctor_21_education_4: 英国格拉斯哥皇家医学院外科院员
           doctor_21_education_5: 香港眼科医学院院士
-          doctor_21_education_6: 香港医学专科学院院士(眼科)      
+          doctor_21_education_6: 香港医学专科学院院士(眼科)
       doctor_22:
         doctor_22_name: 邹乐韵医生
         doctor_22_en_name: Dr. Loraine Chow
@@ -445,7 +446,7 @@ pages:
   medical_service:
     medical_service: 医疗服务
     cataract: 白内障
-    medical_service_cataract_head: '白内障｜医疗服务｜眼科专科医生'
+    medical_service_cataract_head: "白内障｜希玛眼科｜医疗服务"
     service_cataract_title:
       service_cataract_title1: 白内障
       service_cataract_title_son1: 白内障影响日常生活？
@@ -456,12 +457,12 @@ pages:
       service_cataract_title_son6: 选择人工晶体须知
       service_cataract_title_son7: 白内障的术后注意事项
       service_cataract_title_son8: 你认识白内障手术吗？
-      service_cataract_btn1: 即按为你解决烦恼 
-      service_cataract_btn2: 别再迟疑！立即查询白内障治疗方案 
-      service_cataract_btn3: 白内障形成的成因 
-      service_cataract_btn4: 简单自测︰你是否患上白内障？ 
-      service_cataract_btn5: 已有症状？立即预约检查 
-      service_cataract_btn6: 立即预约见医生了解手术！ 
+      service_cataract_btn1: 即按为你解决烦恼
+      service_cataract_btn2: 别再迟疑！立即查询白内障治疗方案
+      service_cataract_btn3: 白内障形成的成因
+      service_cataract_btn4: 简单自测︰你是否患上白内障？
+      service_cataract_btn5: 已有症状？立即预约检查
+      service_cataract_btn6: 立即预约见医生了解手术！
       service_cataract_btn7: 哪一款人工晶体适合你？
       service_cataract_text1: 白内障是香港常见眼疾之一，初期几乎没有症状，病情发展到中期常被误以为只是眼睛老化现象。当发展到严重阶段，患者看东西时会模糊不清，严重者甚至会完全失去视力。故此，及早发现，相当重要。
       service_cataract_text2: 患有白内障，视力变模糊，看事物时会有叠层、残影的感觉。病患影响你的视野，更使你的生活变得十分不便？
@@ -472,17 +473,17 @@ pages:
       service_cataract_text7: 当下主流的白内障手术方式为超声乳化白内障切除术联合人工晶状体植入术。只需要经过一个直径不到3毫米的切口，用超声波将混浊的晶体乳化成微细碎片，然后吸出，最后置入一个人工晶状体，整个过程只需10~20分钟。术后伤口一般毋须缝线。大部分手术只需要使用表面麻醉，不必打针便可完成手术。
       service_cataract_text8: 最新一代的微创超声波乳化手术，可以提高治疗的精准度。只需使用较低超声波能量，将混浊晶体乳化分解并吸走，伤口小、恢复时间快、手术时间短，大大减低手术对角膜造成的伤害、伤口感染或并发症。
       service_cataract_text9: 经过术前详细检查及规划，可制订个人化人工晶体置换方案。根据患者实际情况、对用眼的要求以及经济状况等因素来考虑。 人工晶体根据其功能可分以下几种︰
-      service_cataract_text10: '*此表格内预设单焦点人工晶体为看远。'
+      service_cataract_text10: "*此表格内预设单焦点人工晶体为看远。"
       service_cataract_text11: 现代白内障手术更精准！
       service_cataract_text12: 5大常见症状︰
       service_cataract_down1: 如何选择合适的人工晶体？
       service_cataract_down2: 白内障
       service_cataract_down_text: 下载小册子
-      service_cataract_array_fator: 
+      service_cataract_array_fator:
         cataract_array_fator1: 紫外线
         cataract_array_fator2: 吸烟习惯
         cataract_array_fator3_1: 深度近视
-        cataract_array_fator3_2: （600度或以上） 
+        cataract_array_fator3_2: （600度或以上）
         cataract_array_fator4: 糖尿病
         cataract_array_fator5_1: 使用某些药物
         cataract_array_fator5_2: 如类固醇
@@ -490,7 +491,7 @@ pages:
         cataract_array_fator6_2: 先天性白内障
         cataract_array_fator7_1: 眼睛曾经
         cataract_array_fator7_2: 受过外伤
-      service_cataract_array_symptom: 
+      service_cataract_array_symptom:
         cataract_array_symptom1_1: 视力模糊、
         cataract_array_symptom1_2: 视力下降
         cataract_array_symptom2_1: 眩光、重影、
@@ -500,7 +501,7 @@ pages:
         cataract_array_symptom4: 夜间视力下降
         cataract_array_symptom5_1: 须经常更换眼镜
         cataract_array_symptom5_2: 或隐形眼镜度数
-      service_cataract_array_surgery: 
+      service_cataract_array_surgery:
         cataract_text1: 激光精准度高
         cataract_text2: 人工晶体位置更准确
         cataract_text3: 可使用较低的超声波
@@ -511,46 +512,46 @@ pages:
         cataract_array_surgery2_2: 切除混浊的晶体
         cataract_array_surgery3_1: 置入人工晶体，并好好固定住
         cataract_array_surgery3_2: 术后伤口一般毋须缝线
-      service_cataract_array_icl: 
+      service_cataract_array_icl:
         cataract_array_icl1:
           icl1_type: 晶体类型
-          icl1_monofocal1: 单焦点 
+          icl1_monofocal1: 单焦点
           icl1_monofocal2: 人工晶体
           icl1_astigmatism1: 散光型
           icl1_astigmatism2: 人工晶体
           icl1_multipleFocus1: 多焦点
           icl1_multipleFocus2: 人工晶体
-        cataract_array_icl2: 
+        cataract_array_icl2:
           icl2_type: 远距离视力
-          icl2_monofocal: 很好 
+          icl2_monofocal: 很好
           icl2_astigmatism1: 与单焦点
           icl2_astigmatism2: 人工晶体一样
           icl2_multipleFocus: 良好
-        cataract_array_icl3: 
+        cataract_array_icl3:
           icl3_type: 中距离视力
-          icl3_monofocal: 很好 
+          icl3_monofocal: 很好
           icl3_astigmatism1: 与单焦点
           icl3_astigmatism2: 人工晶体一样
           icl3_multipleFocus: 良好
-        cataract_array_icl4: 
+        cataract_array_icl4:
           icl4_type: 近距离视力
-          icl4_monofocal: 很好 
+          icl4_monofocal: 很好
           icl4_astigmatism1: 与单焦点
           icl4_astigmatism2: 人工晶体一样
           icl4_multipleFocus: 良好
-        cataract_array_icl5: 
+        cataract_array_icl5:
           icl5_type: 优点
-          icl5_monofocal1: 良好视力质素 
-          icl5_monofocal2: （但无法同时对焦远近距离视力） 
+          icl5_monofocal1: 良好视力质素
+          icl5_monofocal2: （但无法同时对焦远近距离视力）
           icl5_astigmatism1: 良好视力质素
           icl5_astigmatism2: 一并解决散光问题
           icl5_multipleFocus1: 良好远，中，近视力
           icl5_multipleFocus2: 大多可不依赖眼镜
-        cataract_array_icl6: 
+        cataract_array_icl6:
           icl6_type: 适合人群
-          icl6_monofocal1: 不介意配戴眼镜人士 
+          icl6_monofocal1: 不介意配戴眼镜人士
           icl6_monofocal2: 要求更好视力质素人士
-          icl6_monofocal3: 有经济考虑人士 
+          icl6_monofocal3: 有经济考虑人士
           icl6_astigmatism1: 不介意配戴眼镜人士
           icl6_astigmatism2: 要求更好视力质素人士
           icl6_astigmatism3: 术前患有散光人士
@@ -558,7 +559,7 @@ pages:
           icl6_multipleFocus1_2: 视力需要人士
           icl6_multipleFocus2: 经济能力较好人士
           icl6_multipleFocus3: 无其他严重眼病人士
-      service_cataract_array_announcements: 
+      service_cataract_array_announcements:
         cataract_array_announcements1: 为尽快令伤口复原及避免细菌感染，术后盖上纱布及眼罩需要保留一晚，直到第二天才拆开。如果不慎松开，再用消毒纱布重新盖上。
         cataract_array_announcements2: 一般建议病人术后于睡觉时盖上保䕶眼罩两星期，可以预防不必要的踫撞及捽眼睛。
         cataract_array_announcements3: 术后当天一般都不建议洗头，注意沐浴时切勿沾湿纱布。一般建议头一星期平卧或仰卧洗头，避免污水流入眼内或于洗头时戴上如泳镜作保护。
@@ -566,7 +567,7 @@ pages:
         cataract_array_announcements5: 禁止揉眼以免影响伤口愈合。应避免拿重物，90度弯身动作如绑鞋带等。剧烈运动如跑步、跳水、有身体碰撞机会的运动等亦不适宜。
         cataract_array_announcements6: 跟足指示，定时滴用由医生处方的眼药水，并保持均衡饮食。
         cataract_array_announcements7: 术后如果眼睛无故出血、流脓、剧痛或视力突然模糊等，应尽快求医，以免延误治疗
-      service_cataract_array_meet: 
+      service_cataract_array_meet:
         cataract_array_meet_q1: Q：白内障成熟时才能接受治疗？
         cataract_array_meet_a1_1: 随着白内障摘除及人工晶体植入技术不断进步，现今的白内障治疗可谓成效高﹑风险低。患者毋须待白内障成熟便可接受治疗，而且，白内障愈熟，治疗的难度也相应提高，出现并发症的风险也愈高。
         cataract_array_meet_a1_2: 因此，当患者感到工作及日常生活受影响时，便应积极考虑接受治疗。读者之所以有这误解，主要是由于在人工晶体被广泛使用于白内障治疗前，当病人的晶体被摘除后，便马上变成深远视患者，要配戴厚厚的远视镜，直接影响影像质素；如果只摘除一只眼内的白内障，更会出现严重的「鸳鸯眼」，大多数人也不能适应。因此，从前的眼科医生多建议病人待双眼的白内障成熟才接受治疗。
@@ -585,7 +586,7 @@ pages:
         cataract_array_meet_a6_3: 坐飞机：术后24小时
         cataract_array_meet_a6_4: 游水：为预防感染，建议术后1周进行
         cataract_array_meet_a6_5: 其他面部或牙科治疗：建议最少术后1周进行，安全起见可以1月后进行
-      service_cataract_array_Navigation: 
+      service_cataract_array_Navigation:
         cataract_array_Navigation1: 成因
         cataract_array_Navigation2: 症状
         cataract_array_Navigation3: 治疗
@@ -593,8 +594,8 @@ pages:
         cataract_array_Navigation5: 术后注意事项
         cataract_array_Navigation6: 常见问题
     glaucoma: 青光眼
-    medical_service_glaucoma_head: 青光眼｜医疗服务｜眼科专科医生
-    service_glaucoma_title: 
+    medical_service_glaucoma_head: 青光眼｜希玛眼科｜医疗服务
+    service_glaucoma_title:
       service_glaucoma_title1: 什么是青光眼？
       service_glaucoma_title2: 青光眼成因
       service_glaucoma_title3: 青光眼的症状
@@ -613,7 +614,7 @@ pages:
       service_glaucoma_btn1_1: 如您是青光眼高危人士
       service_glaucoma_btn1_2: 立即WhatsApp预约检查
       service_glaucoma_btn2_1: 不想青光眼恶化？
-      service_glaucoma_btn2_2 : 立即致电预约检查
+      service_glaucoma_btn2_2: 立即致电预约检查
       service_glaucoma_btn3_1: 急性青光眼会突然来袭
       service_glaucoma_btn3_2: 立即致电预约诊治
       service_glaucoma_text1: 青光眼是一种视神经病变。视神经就像电缆般，把眼睛看到的景物传送到大脑视觉中枢。青光眼患者先经历周边视野损害，然后出现中央视力下降，严重更会失明。早至中期的慢性青光眼基本没有病征，所以不少患者难以察觉，当病情发展到后期，死去的神经细胞已药石无灵，因此青光眼有「视力小偷」的别称。
@@ -629,8 +630,8 @@ pages:
       service_glaucoma_text11: 由于这是一种慢性眼疾，可导致不可逆转的视功能障碍。多数确诊的病人需长期治疗，如不坚持治疗，视野范围会越来越小，最终引致失明。原发性青光眼可能受家族遗传影响，如患者本身有深近视或家人曾经患有青光眼均会增加患上青光眼的风险。
       service_glaucoma_text12: 有别于其他青光眼，继发性青光眼是由于某些眼病或全身疾病影响或破坏了正常房水循环，使房水排出受阻而引起眼压升高，病因比较明确。
       service_glaucoma_text13: 临床诊断时，患者会接受一系列的检查及测试，包括︰视力检查、视野检查、眼底检查、眼压测度等，眼科专科医生还会根据患者过去的病史及家族史诊断，常见的检查如下︰
-      service_glaucoma_text14: 治疗青光眼以有效控制眼压、防止或减慢青光眼的恶化为目标。眼科专科医生初期一般以药物控制青光眼病情，达至保护及保持病人的视神经组织及其功能，减少视神经进一步的损害。 
-      service_glaucoma_text15: 若用药后仍无法控制病情，医生会考虑采用手术治疗，以平衡房水的生成和排出，使眼球压力降至安全水平，达致目标眼压。常见手术方案如下︰ 
+      service_glaucoma_text14: 治疗青光眼以有效控制眼压、防止或减慢青光眼的恶化为目标。眼科专科医生初期一般以药物控制青光眼病情，达至保护及保持病人的视神经组织及其功能，减少视神经进一步的损害。
+      service_glaucoma_text15: 若用药后仍无法控制病情，医生会考虑采用手术治疗，以平衡房水的生成和排出，使眼球压力降至安全水平，达致目标眼压。常见手术方案如下︰
       service_glaucoma_meetArr:
         meetArr_title1: Q：青光眼是老年人专属，年轻人好少机会患上吗？
         meetArr_agree1: 青光眼是一种视神经病变，主要是由于眼球内压力（眼压）上升所致。年龄超过40岁是青光眼高危一族，但是年轻人也有患青光眼的风险。深近视、有青光眼家族遗传病史，患糖尿病、高血压、心血管疾病，眼曾受过眼创伤，又或者长期使用类固醇，都有机会增加眼压，从而增加青光眼风险。
@@ -675,8 +676,8 @@ pages:
         kind_text6: 房角后退性青光眼
         kind_detail6: 眼球钝挫伤后，房角劈裂，以致伤后早期、数月、甚至十多年后发生眼压升高，前房角镜检查可见房角异常增宽。房角劈裂者应定期检查，测量眼压。
         kind_text7: 新生血管性青光眼
-        kind_detail7_1: 由于视网膜中央静脉阻塞、糖尿病视网膜病变等血管紊乱疾病而引起新生血管性青光眼。此类青光眼的病因复杂，病理变化主要是眼后节缺氧或局部眼前节缺氧，引起虹膜上及房角小梁网处形成纤维血管膜，导致周边虹膜前黏连，阻碍房水排出，令眼压升高。 
-        kind_detail7_2: 其一般症状为眼痛、眼胀、眼压升高等。眼压可达至60mmHg以上，常伴角膜水肿、虹膜新生血管、瞳孔缘色素外翻、房角内不同程度的周边前黏连等。 
+        kind_detail7_1: 由于视网膜中央静脉阻塞、糖尿病视网膜病变等血管紊乱疾病而引起新生血管性青光眼。此类青光眼的病因复杂，病理变化主要是眼后节缺氧或局部眼前节缺氧，引起虹膜上及房角小梁网处形成纤维血管膜，导致周边虹膜前黏连，阻碍房水排出，令眼压升高。
+        kind_detail7_2: 其一般症状为眼痛、眼胀、眼压升高等。眼压可达至60mmHg以上，常伴角膜水肿、虹膜新生血管、瞳孔缘色素外翻、房角内不同程度的周边前黏连等。
         kind_text8: 睫状环阻滞性青光眼
         kind_detail8: 又名恶性青光眼，是一种继发性闭角型青光眼。多见于内眼治疗，特别是接受青光眼过滤性治疗后，由于睫状环较小，晶状体相对较大，当睫状体水肿充血，睫状环便进一步变小，与晶体赤道部或玻璃体相贴，以致后房水不能进入前房，向后逆流而积存在玻璃体腔内。同时，虹膜和晶状体被向前推挤，使前房变浅，房角关闭。若一只眼出现睫状环阻滞性青光眼，另一只眼也有发生类似疾病的风险。
       service_glaucoma_crowd:
@@ -703,10 +704,10 @@ pages:
         treat_name1: 治疗名称
         treat_range1: 适用范围
         treat_remedy2: 常用治疗方案
-        treat_name2_1: 小梁切除术 
-        treat_name2_2: 非穿透性小梁术 
-        treat_name2_3: 导管植入术 
-        treat_name2_4: 睫状体冷凝术或光凝术 
+        treat_name2_1: 小梁切除术
+        treat_name2_2: 非穿透性小梁术
+        treat_name2_3: 导管植入术
+        treat_name2_4: 睫状体冷凝术或光凝术
         treat_range2_1: 应用广泛，适用于所有需要做眼外滤过术的青光眼
         treat_range2_2: 适用于开角型青光眼，特别是晚期视野缺损严重的
         treat_range2_3: 患者；对闭角型青光眼不适用
@@ -753,12 +754,13 @@ pages:
     amotioRetinae: 视网膜脱落
     ocularSurfaceDiseases: 眼表及角膜疾病
     eyeOrthopaedicDisease: 眼矫形及眼眶疾病
-    # : 医学验光配镜
+    medicalOptometry: 医学验光配镜
+    atropine: 阿托品滴眼液
     # : 屈光矫视
   ophthalmic_information:
     ophthalmic_information: 眼科资讯
     ophthalmic_class: 医生小教室
-    ophthalmic_information_text: 
+    ophthalmic_information_text:
       information_p_text1: 医生小教室
       information_p_text2: 我们用心制作
       information_p_text3: 透过拍摄访问医生
@@ -767,7 +769,7 @@ pages:
       information_mainContent:
         mainContent1_title: 小朋友的眼睛检查与大人有什么不同？
         mainContent1_doctor: 林宝生眼科专科医生
-        mainContent1_text: 儿童年纪小检查眼睛时，未必听到懂指示，所以眼科专科医生会设计不同的测试和检查，去帮助小朋友检查眼睛，例如︰颜色测试、眼底检查、斜视检查。不过，随着小朋友年龄增加，到了幼儿园或小学阶段，检查眼睛的方法与成人类似。立即听听希玛眼科中心 - 林宝生眼科专科医生讲解！ 
+        mainContent1_text: 儿童年纪小检查眼睛时，未必听到懂指示，所以眼科专科医生会设计不同的测试和检查，去帮助小朋友检查眼睛，例如︰颜色测试、眼底检查、斜视检查。不过，随着小朋友年龄增加，到了幼儿园或小学阶段，检查眼睛的方法与成人类似。立即听听希玛眼科中心 - 林宝生眼科专科医生讲解！
         mainContent2_title: 眼睑内翻的症状，眼睑内翻要做手术吗？
         mainContent2_doctor: 张瀞之眼科专科医生
         mainContent2_text: 眼睑内翻可分为先天性和退化性，患者的常见症状包括︰眼睛有很多分泌物、有异物感和疼痛，甚至会常有沙入眼的感觉、流眼水和眼睛水汪汪等。如果病情严重，可能会影响视力和角膜的健康。眼睑内翻一定要透过做手术治疗吗？
@@ -814,12 +816,12 @@ pages:
       press_text2: 紧贴医疗新闻
       press_text3: 注重眼睛健康发展
       press_text4: 回到文章目录
-      press_text5_1: '＜上一篇'
-      press_text5_2: '下一篇＞'
-      press_span1: '新闻来源:'
-      press_span2: '医理:'
-      press_span3: '资料来源:'
-      press_span4: '浏览次数:'
+      press_text5_1: "＜上一篇"
+      press_text5_2: "下一篇＞"
+      press_span1: "新闻来源:"
+      press_span2: "医理:"
+      press_span3: "资料来源:"
+      press_span4: "浏览次数:"
       press_newList:
         newList1_title: 斜视治疗有方法
         newList1_content_1: 治疗斜视有四大方法，分别是眼镜矫正(Optical Correction)、视轴运动矫正(Orthoptic Exercises)、遮眼治疗(Occlusion)及手术治疗(Operation)。这四个O的运用，要互相配合，相辅相成，眼科医生会乎斜视患者的情况制订治疗目标和方案，有些患者可能只用其一，情况便得到改善，有些患者则要多管齐下，才能达到最佳治疗效果。
@@ -827,7 +829,7 @@ pages:
         newList1_content_3: 至于视轴运动矫正，是指透过锻炼控制眼轴的眼外肌机能，改善斜视。视轴运动有不同种类，一般建议间歇性外斜视患者做眼球肌肉汇聚运动(Convergence Exercise)，俗称「斗鸡练习」，视轴运动也可帮助斜视患者加强或重建立体感，不过运动训练需要小朋友和家长高度配合并持之以恒的练习，才会有成效。
         newList1_content_4: 若发现患者因斜视而导致弱视，即懒惰眼，便需要接受遮眼治疗，原理是锄强扶弱，透过用眼贴或特制眼镜遮蔽正常的眼睛，强迫患者多用懒惰眼，从而锻炼及恢复其功能。每天遮眼的时间及疗程之长短视乎患者的年龄和弱视的严重程度，当懒惰眼的视力得以纠正或再没有进一步的改善时，遮眼治疗便可以终止。大部分弱视患者，愈早开始遮眼治疗，视力就愈容易得以改善，但须留意遮眼治疗只能改善视力，并不能纠正斜视的外观。下期续谈斜视的手术治疗。
         newList2_title: 视网膜脱落必须动手术吗？
-        newList2_content_1: 视网膜脱落是眼科中比较严重的疾病，治疗的主要目的，是保存中央视力，和令脱落的部位归位。但如果视网膜脱落的范围细小、在周边或已有长时间的迹象，病人又全无病征，则未必需要治疗，因为这类病例只有一成的恶化风险，医生可以安排病人定期覆诊，观察病情有否变化，但其实这类病例较少。 
+        newList2_content_1: 视网膜脱落是眼科中比较严重的疾病，治疗的主要目的，是保存中央视力，和令脱落的部位归位。但如果视网膜脱落的范围细小、在周边或已有长时间的迹象，病人又全无病征，则未必需要治疗，因为这类病例只有一成的恶化风险，医生可以安排病人定期覆诊，观察病情有否变化，但其实这类病例较少。
         newList2_content_2: 如果不是以上的病例，医生通常会建议治疗。治疗可分为激光或手术。如果脱落的范围非常小和在周边，有时候眼部激光已可以巩固视网膜。如果脱落范围较大，手术是唯一医治方法。如不动手术，视网膜脱落的范围有可能扩大，甚至完全脱落，病人的视力会非常之差。脱落的时间愈长，便愈有可能出现增生性玻璃体视网膜病变，令手术成功机会降低。如果视网膜完全脱落，眼球更有可能萎缩、并发白内障、青光眼或眼角膜结疤，最终完全失明。手术的时间也相当重要，刚出现的视网膜脱落，而黄斑点未受影响，理论上手术须尽快进行。但如果黄斑点已经脱落，或脱落已有一段长时间，手术可变为非紧急手术，也算合理。至于手术的选择，医生会根据病人的病情、年纪等因素决定使用充气性视网膜固定术、巩膜外垫压术或玻璃体切除术等方法治疗。如有疑问，最重要是问清楚眼科医生的意见，选择适合你的治疗方案。
         newList3_title: 糖尿上眼可致盲？
         newList3_content_1: 糖尿病是一种常见的新陈代谢病患，因为都市人的饮食习惯，除长者外，也有不少中年甚至年轻人患上该病。当中「糖尿上眼」为糖尿病人常见的并发症，也是全球十大致盲原因之一。「糖尿上眼」的发病率及严重程度，与患者的病龄和血糖控制息息相关，大部分患糖尿病十年以上的患者，都会有一定程度的糖尿相关视网膜病变状况，而「糖尿上眼」初期可能全无病征，因此糖尿病人必须定期验眼。
@@ -862,7 +864,7 @@ pages:
         newList7_content_4: 湿疹患者较容易患上白内障，白内障是因为透明晶体内的蛋白质老化，令晶体变得浑浊，影响视力。曾经医治过不少湿疹患者，早至二十多岁便出现白内障，除因为湿疹患者的新陈代谢速率有异，加速眼睛退化，亦因不少患者需要长时间大范围使用类固醇药膏控制皮肤发炎，久而久之引发白内障甚至青光眼。
         newList7_content_5: 最后，严重湿疹患者亦较大可能出现视网膜脱落问题，并且较多为巨大视网膜裂口造成，不但手术的复杂性较高，手术预后亦较差，视网膜再脱落的情况普遍，或需要做多次手术，因此湿疹患者一旦发现有视力问题，特别是视力模糊、闪光、飞蚊、出现黑影等，应尽快向眼科专科医生求医，及早治疗，拯救视力。
         newList8_title: 屏幕伤眼 学童增百度近视
-        newList8_content_1: 【本报讯】世界衞生组织（WHO）去年4月发布婴幼儿使用电子屏幕指引，不足一岁的婴儿不应观看电子屏幕，两至四岁幼儿每天平均使用电子屏幕不应超过一小时。眼科医生刘凯珊指，没有一个「安全」使用电子屏幕的时间准则，但她认为两岁以后每天不应使用电子屏幕逾30分钟。　
+        newList8_content_1: 【本报讯】世界衞生组织（WHO）去年4月发布婴幼儿使用电子屏幕指引，不足一岁的婴儿不应观看电子屏幕，两至四岁幼儿每天平均使用电子屏幕不应超过一小时。眼科医生刘凯珊指，没有一个「安全」使用电子屏幕的时间准则，但她认为两岁以后每天不应使用电子屏幕逾30分钟。
         newList8_content_2: 刘凯珊表示，有小一生定期验眼，去年12月才验过没有近视，「4月初来验眼已有百多度近视，其母指儿子着实因为停课大量使用电子产品」，不过目前尚未有足够数据反映儿童停课期间使用电子屏幕对视力的影响。儿童长时间在家，不用持续离远看东西，家长未必察觉子女有近视问题。
         newList8_content_3: 她建议家长用图画分开一半做配对，与幼儿相距约两呎半，逐只眼测试视力：「他们未能讲出自己眼蒙，特别是只有一只眼有近视，可以用另一只眼看东西。亦有小朋友先天不算看得清楚，根本不知道何谓清楚。」幼儿频密瞇眼、揉眼，阅读时将书本拉得得近，甚至动作「论尽」或整体发展疑有迟缓等，都有机会因为近视：「还有，是否脾气很差？有可能因为看不清楚令小朋友很𤷪𤺧。」
         newList8_content_4: 研究发现，晒太阳能增加神经传导物质，减少近视加深的风险，刘凯珊援引台湾研究：「有两班儿童，一班在户外小息，另一班则在课室，同样是廿分钟，结果显示，两班小朋友的近视比例也有分别，外出小息的学生，有近视占8.5%；室内小息的则有17.5%。」
@@ -878,19 +880,19 @@ pages:
       article_articleList:
         articleList1_title1: 谨慎挑选隐形眼镜以免
         articleList1_title2: 患上 5 大眼疾！
-        articleList1_doctor: ''
+        articleList1_doctor: ""
         articleList2_title1: 儿童易感染结膜炎，家长要小心！
         articleList2_title2: （文附预防贴士）
         articleList2_doctor: 梁苑珊医生
         articleList3_title1: 白内障｜延误治疗可致盲！
         articleList3_title2: 一文睇清白内障手术5大注意事项
-        articleList3_doctor: ''
+        articleList3_doctor: ""
         articleList4_title1: 眼科医生解构干眼症成因及治疗方法
         articleList4_title2: 营养师：多吃西兰花有助护眼
         articleList4_doctor: 梁苑珊医生
         articleList5_title1: 眼角膜受损有哪些症状？
         articleList5_title2: 会自然愈合吗？
-        articleList5_doctor: ''
+        articleList5_doctor: ""
     ophthalmic_message: 健康信息
     ophthalmic_message_text:
       message_text1: 健康信息
@@ -898,17 +900,17 @@ pages:
       message_text3: 关注眼睛健康
       message_text4: 点击浏览
       message_healthList:
-        healthList1_title: '#护眼食物 ！食住嚟睇世界杯⚽⚽⚽'
+        healthList1_title: "#护眼食物 ！食住嚟睇世界杯⚽⚽⚽"
         healthList1_text_1: 睇波点少得零食，不过要食就要食得健康。#希玛眼科 建议你可以食吓护眼食物，睇波双眼唔会咁干涩！
         healthList2_title: 【视在希玛】捱夜睇波对眼好攰！4招预防眼干眼涩
         healthList2_text_1: 世界杯已经开罗！身为球迷点可以错过每一场赛事~ 不过返咗一日工后双眼咁攰，睇完波第二日又要一早起身返工。双眼干涩，点算好？
-        healthList2_text_2: '#世界杯 #世界杯直播 #世界杯足球赛 #世界杯2022 #眼睛干涩 #眼睛疲劳 #眼干 #干眼 #泪水 #泪液 #干眼症 #眼罩 #热敷眼罩 #护眼方法 #希玛眼科'
-        healthList3_title: '#护眼食物 ！食住嚟睇世界杯⚽⚽⚽'
+        healthList2_text_2: "#世界杯 #世界杯直播 #世界杯足球赛 #世界杯2022 #眼睛干涩 #眼睛疲劳 #眼干 #干眼 #泪水 #泪液 #干眼症 #眼罩 #热敷眼罩 #护眼方法 #希玛眼科"
+        healthList3_title: "#护眼食物 ！食住嚟睇世界杯⚽⚽⚽"
         healthList3_text_1: 经常觉得眼干、眼涩就系患上干眼症吗？干眼症系一种都市人常见嘅眼疾，长时间唔理嘅话可能会导致角膜损伤、视力下降等。要确认自己系咪有干眼症，初步可以接受「泪液分泌试纸测试」。
-        healthList3_text_2: '#干眼症 #眼干 #眼涩 #干眼症成因 #干眼症征状 #眼泪 #泪水 #泪水分泌 #泪液分泌测试 #干眼症测试 #角膜受损 #眼科医生'
-        healthList4_title: '【放眼逐格睇】眼妆卸干净！同眼挑针Say Bye~'
+        healthList3_text_2: "#干眼症 #眼干 #眼涩 #干眼症成因 #干眼症征状 #眼泪 #泪水 #泪水分泌 #泪液分泌测试 #干眼症测试 #角膜受损 #眼科医生"
+        healthList4_title: "【放眼逐格睇】眼妆卸干净！同眼挑针Say Bye~"
         healthList4_text_1: 出席party要化个靓妆，不过完咗后记得要卸干净眼妆，先可以预防到眼疾㗎！眼妆冇卸好，残留嘅化妆品可能堵塞眼睛黏板腺，有机会导致生眼挑针，即系生眼疮。
-        healthList4_text_2: '#眼妆 #化眼妆 #卸妆 #眼挑针 #眼疮 #眼疮成因 #眼疮治疗 #眼疮治疗 #眼疮放脓 #眼疮初期 #眼睛发炎 #眼疮放脓手术 #眼挑针治疗 #希玛眼科中心 #希玛眼科 #希玛医疗'
+        healthList4_text_2: "#眼妆 #化眼妆 #卸妆 #眼挑针 #眼疮 #眼疮成因 #眼疮治疗 #眼疮治疗 #眼疮放脓 #眼疮初期 #眼睛发炎 #眼疮放脓手术 #眼挑针治疗 #希玛眼科中心 #希玛眼科 #希玛医疗"
   process_cost:
     process_cost: 流程及费用
     cost: 费用一览
@@ -942,28 +944,28 @@ pages:
       cost_p2_2: 以结算
       cost_p3: 每份详细眼睛检查复本将收取
       cost_p3_1: 行政费
-      cost_p4: '，详情请向职员查询。'
+      cost_p4: "，详情请向职员查询。"
       cost_p5: (视野分析HK$10/张、光学相干断层扫描HK$30/张、眼底照相 HK$100/张)
       cost_p6: 每份医疗报告将收取
       cost_p6_1: 不等
       cost_p7: (每份报告的实际价钱以报价为准)。
-      cost_p8:  特殊仪器检查需预见医生判断，由医生决定检查项目。
-      cost_p9: '最后更新: 07/12/2022'
+      cost_p8: 特殊仪器检查需预见医生判断，由医生决定检查项目。
+      cost_p9: "最后更新: 07/12/2022"
     process: 就诊流程
     process_1:
       process_h1: 就诊流程
       process_p1: 登记
       process_p2: 基本检查
-      process_h3_1: 初步眼睛检查 
+      process_h3_1: 初步眼睛检查
       process_p3_1: 为全面了解您的眼睛状况，
       process_p3_2: 我们会先为您进行3-5项基本眼睛检查。
       process_p4: 医生诊症
       process_h3_2: 详细眼睛检查
-      process_p5_1: 医生会根据您的眼睛状况， 
+      process_p5_1: 医生会根据您的眼睛状况，
       process_p5_2: 进行详细眼睛检查，
       process_p5_3: 以准确诊断并作出相应治疗。
       process_p6: 详细检查
-      process_p7_1: 门诊 / 针灸 
+      process_p7_1: 门诊 / 针灸
       process_p7_2: 手术
       process_p8: 付款及取药
       process_p9: 其他服务-配镜
@@ -971,8 +973,8 @@ pages:
     talent_recruitment: 人才招聘
     text1: 加入我们，携手未来
     text2: 加入我们，尽展所长
-    p1: 希玛以人为本，注重团队合作，致力培训员工 
-    p2: 我们希望吸纳更多医护专才 
+    p1: 希玛以人为本，注重团队合作，致力培训员工
+    p2: 我们希望吸纳更多医护专才
     p3: 为客人提供「度身订造」的眼科服务
     apply: 立即申请
   contact_us:
@@ -990,21 +992,21 @@ pages:
           addressDetailList1_addressName: 中环
           addressDetailList1_addressDetail: 毕打街1-3号中建大厦1515室
           addressDetailList1_subwayExit: 中环站G出口（邻近置地广场）
-          addressDetailList1_clinicHours: 
+          addressDetailList1_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList2_addressName: 中环
           addressDetailList2_addressDetail: 皇后大道中33号万邦行1908室
           addressDetailList2_subwayExit: 中环站D2出口
-          addressDetailList2_clinicHours: 
+          addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：10:00—13:00 / 15:00—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList3_addressName: 铜锣湾
           addressDetailList3_addressDetail: 百德新街2-20号恒隆中心1614-15室
           addressDetailList3_subwayExit: 铜锣湾站E出口
-          addressDetailList3_clinicHours: 
+          addressDetailList3_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
@@ -1012,23 +1014,23 @@ pages:
         addressList2_addressDetailList:
           addressDetailList1_addressName: 尖沙咀
           addressDetailList1_addressDetail: 梳士巴利道18-24号K11 ATELIER办公大楼1906室（K11 MUSEA附近）
-          addressDetailList1_subwayExit1: 尖东站J出口 
+          addressDetailList1_subwayExit1: 尖东站J出口
           addressDetailList1_subwayExit2: 可享限时泊车优惠，详情请向诊所职员查询
-          addressDetailList1_clinicHours: 
+          addressDetailList1_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—14:00
             clinicHours3: （星期日及公众假期休息）
           addressDetailList2_addressName: 旺角
           addressDetailList2_addressDetail: 弥敦道625及639号雅兰中心一期1208室
           addressDetailList2_subwayExit: 旺角站E1出口
-          addressDetailList2_clinicHours: 
+          addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList3_addressName: 观塘
           addressDetailList3_addressDetail: 开源道79号鳄鱼恤中心16楼1601室
           addressDetailList3_subwayExit: 观塘站A2或B3出口
-          addressDetailList3_clinicHours: 
+          addressDetailList3_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
@@ -1038,28 +1040,28 @@ pages:
           addressDetailList1_addressDetail: 沙田正街11-17号伟华中心2楼1C—1F号铺
           addressDetailList1_subwayExit: 沙田站A3出口
           addressDetailList1_subwayExit2: 可享限时泊车优惠，详情请向诊所职员查询
-          addressDetailList1_clinicHours: 
+          addressDetailList1_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList2_addressName: 元朗（恒香老饼家对面）
           addressDetailList2_addressDetail: 元朗青山公路45及47号诚信商业大厦地铺
-          addressDetailList2_subwayExit: ''
-          addressDetailList2_clinicHours: 
+          addressDetailList2_subwayExit: ""
+          addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList3_addressName: 荃湾
           addressDetailList3_addressDetail: 荃湾沙咀道255号思源楼地下
-          addressDetailList3_subwayExit: ''
-          addressDetailList3_clinicHours: 
+          addressDetailList3_subwayExit: ""
+          addressDetailList3_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
           addressDetailList4_addressName: 将军澳
           addressDetailList4_addressDetail: 将军澳运亨路1号新都城中心一期地下55-56号铺（宝琳站B2出口）
-          addressDetailList4_subwayExit: ''
-          addressDetailList4_clinicHours: 
+          addressDetailList4_subwayExit: ""
+          addressDetailList4_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公众假期休息）
@@ -1073,4 +1075,3 @@ others:
   copy: 复制
   enabled: 启用
   disabled: 禁用
-

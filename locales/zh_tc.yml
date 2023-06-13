@@ -79,6 +79,7 @@ pages:
       nav: 主页
       title: 主页
   index:
+    index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
     home: 首頁
     footer:
       company: 希瑪林順潮眼科中心
@@ -226,7 +227,7 @@ pages:
   medical_team:
     medical_team: 醫療團隊
     medical_team_title: 醫 療 團 隊
-    medical_team_header_title: 醫療團隊｜希瑪眼科｜眼科專科醫生
+    medical_team_header_title: 醫療團隊｜眼科專科醫生 | 香港希瑪眼科中心
     doctorList:
       doctor_1:
         doctor_1_name: 林順潮醫生
@@ -445,7 +446,7 @@ pages:
   medical_service:
     medical_service: 醫療服務
     cataract: 白內障
-    medical_service_cataract_head: "白内障｜醫療服務｜眼科專科醫生"
+    medical_service_cataract_head: "白內障｜希瑪眼科｜醫療服務"
     service_cataract_title:
       service_cataract_title1: 白内障
       service_cataract_title_son1: 白內障影響日常生活？
@@ -593,7 +594,7 @@ pages:
         cataract_array_Navigation5: 術後注意事項
         cataract_array_Navigation6: 常見問題
     glaucoma: 青光眼
-    medical_service_glaucoma_head: 青光眼｜醫療服務｜眼科專科醫生
+    medical_service_glaucoma_head: 青光眼｜希瑪眼科｜醫療服務
     service_glaucoma_title:
       service_glaucoma_title1: 什麼是青光眼？
       service_glaucoma_title2: 青光眼成因
@@ -753,7 +754,9 @@ pages:
     amotioRetinae: 視網膜脫落
     ocularSurfaceDiseases: 眼表及角膜疾病
     eyeOrthopaedicDisease: 眼矯形及眼眶疾病
-    # : 醫學驗光配鏡
+    medicalOptometry: 醫學驗光配鏡
+    atropine: 阿托品滴眼液
+    
     # : 屈光矯視
   ophthalmic_information:
     ophthalmic_information: 眼科資訊
