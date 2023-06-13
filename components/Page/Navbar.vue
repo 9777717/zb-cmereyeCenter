@@ -641,7 +641,8 @@ a {
   }
 
   & > div:hover {
-    background: #ffffff80;
+    // background: #ffffff80;
+    background: #ffa88c;
   }
 }
 

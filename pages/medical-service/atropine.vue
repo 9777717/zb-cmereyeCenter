@@ -15,27 +15,33 @@ const backgd = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '介紹',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName1',
     anchorLink: '/medical-service/atropine#introduce',
   },
   {
-    anchorName: '作用',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName2',
     anchorLink: '/medical-service/atropine#effect',
   },
   {
-    anchorName: '好處',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName3',
     anchorLink: '/medical-service/atropine#benefit',
   },
   {
-    anchorName: '適用',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName4',
     anchorLink: '/medical-service/atropine#congruency',
   },
   {
-    anchorName: '注意事項',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName5',
     anchorLink: '/medical-service/atropine#matters',
   },
   {
-    anchorName: '使用方法/療程',
+    anchorName:
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName6',
     anchorLink: '/medical-service/atropine#method',
   },
 ]
@@ -53,7 +59,9 @@ const goWhatsApp = () => {
     <div class="atropine_head">
       <div>
         <div>
-          <div>阿托品眼藥水</div>
+          <div>
+            {{ $t('pages.medical_service.atropine_text.atropine_text1') }}
+          </div>
           <div>ATROPINE EYE DROPS</div>
         </div>
         <div>
@@ -68,14 +76,28 @@ const goWhatsApp = () => {
     </div>
     <div class="atropine_nav">
       <div id="introduce">
-        <div class="atropine_title_text">介紹阿托品眼藥水</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title1_text1') }}
+        </div>
         <div>
           <div>
             <p>
-              除了光學控制兒童近視，由眼科醫生處方的阿托品眼藥水已被證明是目前控制近視有效之方法1。阿托品藥水是屬於抗膽鹼藥品，有擴大瞳孔的作用，能抑制鞏膜纖維組織生長、防止或減慢眼球進一步延長，以減慢小朋友近視加深速度。阿托品的副作用是令眼睛內的睫狀體肌肉放鬆，使得看近變得困難。
-              <span>阿托品眼藥水有不同的劑量，分為</span>
-              <span
-                >低濃度阿托品眼藥水及高濃度阿托品眼藥水，包括0.01%，0.05%，0.125%及1%等，低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視。</span
+              {{ $t('pages.medical_service.atropine_text.atropine_title1_p1') }}
+              <span class="up_bid">1</span>
+              {{ $t('pages.medical_service.atropine_text.atropine_title1_p2') }}
+              <span>
+                {{
+                  $t(
+                    'pages.medical_service.atropine_text.atropine_title1_span1'
+                  )
+                }}</span
+              >
+              <span>
+                {{
+                  $t(
+                    'pages.medical_service.atropine_text.atropine_title1_span2'
+                  )
+                }}</span
               >
             </p>
           </div>
@@ -106,12 +128,16 @@ const goWhatsApp = () => {
             />
           </div>
           <div>
-            阿托品眼藥水有不同的劑量，低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視
+            {{
+              $t('pages.medical_service.atropine_text.atropine_title1_text2')
+            }}
           </div>
         </div>
       </div>
       <div id="effect">
-        <div class="atropine_title_text">阿托品眼藥水作用</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title2_text2') }}
+        </div>
         <div>
           <div>
             <img
@@ -121,34 +147,52 @@ const goWhatsApp = () => {
           </div>
           <div>
             <p>
-              根據最新一期美國醫學會雜誌的研究2，發現0.05%濃度的阿托品眼藥水對於減低近視發生率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
+              {{ $t('pages.medical_service.atropine_text.atropine_title2_p1')
+              }}<span class="up_bid">2</span>
+              {{ $t('pages.medical_service.atropine_text.atropine_title2_p2') }}
             </p>
             <p>
-              有研究數據顯示0.05%濃度比起0.01%濃度的阿托品眼藥水更有效減慢近視加深速度：使用0.05%濃度阿托品眼藥水兩年累積的近視發病率是最低，為28.4%3，使用0.01%濃度的近視發病率是45.9%。此外，使用0.05%濃度阿托品眼藥水的近視加深度數和眼球增長速度也比較低，由此
-              <span>可見</span
-              ><span
-                >低濃度阿托品眼藥水，尤其是0.05%濃度控制近視眼效果較為理想。</span
-              >
+              {{ $t('pages.medical_service.atropine_text.atropine_title2_p3')
+              }}<span class="up_bid">3</span
+              >{{
+                $t('pages.medical_service.atropine_text.atropine_title2_p4')
+              }}
+              <span>{{
+                $t('pages.medical_service.atropine_text.atropine_title2_span1')
+              }}</span
+              ><span>{{
+                $t('pages.medical_service.atropine_text.atropine_title2_span2')
+              }}</span>
             </p>
           </div>
         </div>
       </div>
       <div id="benefit">
-        <div class="atropine_title_text">阿托品眼藥水好處</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title3_text3') }}
+        </div>
         <div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
               alt=""
             />
-            <div>幫助控制發育期間眼球拉長</div>
+            <div>
+              >{{
+                $t('pages.medical_service.atropine_text.atropine_title3_p1')
+              }}
+            </div>
           </div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
               alt=""
             />
-            <div>減低每年近視度數增加的速度</div>
+            <div>
+              >{{
+                $t('pages.medical_service.atropine_text.atropine_title3_p2')
+              }}
+            </div>
           </div>
           <div>
             <img
@@ -156,8 +200,13 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              <span>減低深近視的機會</span
-              >（尤其是有深近視家族病史的兒童），降低患上近視相關眼疾的風險
+              <span
+                >>{{
+                  $t('pages.medical_service.atropine_text.atropine_title3_p3_1')
+                }}</span
+              >>{{
+                $t('pages.medical_service.atropine_text.atropine_title3_p3_2')
+              }}
             </div>
           </div>
           <div>
@@ -165,41 +214,49 @@ const goWhatsApp = () => {
               src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
               alt=""
             />
-            <div>使用簡單，一般只需每天睡前滴一次眼藥水</div>
+            <div>
+              >{{
+                $t('pages.medical_service.atropine_text.atropine_title3_p4')
+              }}
+            </div>
           </div>
         </div>
       </div>
       <div id="congruency">
-        <div class="atropine_title_text">誰適合使用阿托品眼藥水？</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title4_text4') }}
+        </div>
         <div>
           <div>
             <div>1</div>
             <div>
-              阿托品眼藥水適合患近視兒童用作近視控制，但需根據每個兒童的眼睛及近視發展調整，或可能需要配合其他近視控制產品一併使用。
+              {{ $t('pages.medical_service.atropine_text.atropine_title4_p1') }}
             </div>
           </div>
           <div>
             <div>2</div>
             <div>
-              如果父母一方有深度近視，年紀小且遠視度數低於100度以下的兒童也可咨詢醫生意見，看是否適合使用阿托品眼藥水。
+              {{ $t('pages.medical_service.atropine_text.atropine_title4_p2') }}
             </div>
           </div>
           <div>
             <div>3</div>
             <div>
-              此外，小朋友對戴近視控制隱形眼鏡有抗拒或不適應，亦可考慮使用阿托品眼藥水控制近視，使用方法簡單只需每日滴眼藥水即可有效減慢近視加深。
+              {{ $t('pages.medical_service.atropine_text.atropine_title4_p3') }}
             </div>
           </div>
           <div>
             <div>4</div>
             <div>
-              若小朋友有斜視或有眼睛協調問題，用阿托品眼藥水會比其他近視控制產品較為適合。
+              {{ $t('pages.medical_service.atropine_text.atropine_title4_p4') }}
             </div>
           </div>
         </div>
       </div>
       <div id="matters">
-        <div class="atropine_title_text">使用阿托品眼藥水注意事項</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title5_text5') }}
+        </div>
         <div>
           <div>
             <img
@@ -207,7 +264,7 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              部分兒童可能對阿托品藥物敏感及出現不良反應，如發燒、皮膚泛紅、心跳過快等
+              {{ $t('pages.medical_service.atropine_text.atropine_title5_p1') }}
             </div>
           </div>
           <div>
@@ -215,7 +272,9 @@ const goWhatsApp = () => {
               src="https://static.cmereye.com/imgs/2023/06/5735636447fd5cfc.png"
               alt=""
             />
-            <div>瞳孔放大導致會有畏光或視力模糊的情況出現</div>
+            <div>
+              {{ $t('pages.medical_service.atropine_text.atropine_title5_p2') }}
+            </div>
           </div>
           <div>
             <img
@@ -223,8 +282,13 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              控制晶體調節的睫狀肌可能<span>出現麻痺，失去調節能力</span>
-              <span>（兒童或因此需要另配眼鏡）</span>
+              {{ $t('pages.medical_service.atropine_text.atropine_title5_p3')
+              }}<span>{{
+                $t('pages.medical_service.atropine_text.atropine_title5_span1')
+              }}</span>
+              <span>{{
+                $t('pages.medical_service.atropine_text.atropine_title5_span2')
+              }}</span>
             </div>
           </div>
           <div>
@@ -233,7 +297,7 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              使用阿托品眼藥水不能矯正近視或散光，兒童仍需要佩戴眼鏡才能看清楚
+              {{ $t('pages.medical_service.atropine_text.atropine_title5_p4') }}
             </div>
           </div>
           <div>
@@ -242,34 +306,53 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              如果小朋友使用後出現不適或畏光的徵狀，可以選擇佩戴太陽眼鏡或漸進眼鏡以幫助近距離事物的觀察
+              {{ $t('pages.medical_service.atropine_text.atropine_title5_p5') }}
             </div>
           </div>
         </div>
       </div>
       <div id="method">
-        <div class="atropine_title_text">阿托品眼藥水的使用方法/療程</div>
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title6_text6') }}
+        </div>
         <div>
           <div>
             <div>
-              <div>使用頻率以及次數</div>
               <div>
-                阿托品眼藥水只需<span>每日一次，每次一滴</span>
-                便可，使用後需要定期由醫生監察及調整份量。阿托品眼藥水需要在發育期間使用，一般醫生會建議使用藥物直到度數穩定，使用者需要和醫生商量何時適合停用阿托品眼藥水。
+                {{
+                  $t('pages.medical_service.atropine_text.atropine_title6_p1')
+                }}
+              </div>
+              <div>
+                {{ $t('pages.medical_service.atropine_text.atropine_title6_p2')
+                }}<span>{{
+                  $t(
+                    'pages.medical_service.atropine_text.atropine_title6_span1'
+                  )
+                }}</span>
+                {{
+                  $t('pages.medical_service.atropine_text.atropine_title6_p3')
+                }}
               </div>
             </div>
             <div>
-              <div>用量（如有）</div>
               <div>
-                一般醫生會先處方一個月用量的阿托品眼藥水再作評估，測量瞳孔及視力的變化以確定小朋友是否適合繼續使用。一般使用第一年，需要每4個月覆診一次，之後可每半年覆診一次，醫生也會再評估是否需要調整用量。
+                {{
+                  $t('pages.medical_service.atropine_text.atropine_title6_p4')
+                }}
+              </div>
+              <div>
+                {{
+                  $t('pages.medical_service.atropine_text.atropine_title6_p5')
+                }}
               </div>
             </div>
           </div>
           <div>
-            一旦發現子女有近視，就應該盡快帶子女去眼科醫生進行眼睛檢查，制定近視控制方案以預防他們患有深度近視，並減慢近視加深的速度。
+            {{ $t('pages.medical_service.atropine_text.atropine_title6_p6') }}
           </div>
-          <div class="medicalOptometry_title_btn" @click="goWhatsApp">
-            立即查詢阿托品眼藥水
+          <div class="atropine_title_btn" @click="goWhatsApp">
+            {{ $t('pages.medical_service.atropine_text.atropine_title6_btn') }}
           </div>
         </div>
       </div>
@@ -605,9 +688,14 @@ const goWhatsApp = () => {
       }
     }
   }
+
+  .up_bid {
+    font-size: 12px !important;
+    vertical-align: super !important;
+  }
 }
 
-.medicalOptometry_title_btn {
+.atropine_title_btn {
   display: flex;
   flex-direction: column;
   align-items: center;
