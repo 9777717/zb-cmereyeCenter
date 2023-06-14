@@ -104,11 +104,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.medicalOptometry'),
         route: { name: 'medical-service-medicalOptometry' },
       },
-      // {
-      //   type: 'link', // 阿托品滴眼液
-      //   text: t('pages.medical_service.atropine'),
-      //   route: { name: 'medical-service-atropine' },
-      // },
+      {
+        type: 'link', // 阿托品滴眼液
+        text: t('pages.medical_service.atropine'),
+        route: { name: 'medical-service-atropine' },
+      },
     ],
   },
   {

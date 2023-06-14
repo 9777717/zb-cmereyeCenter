@@ -96,15 +96,21 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
     des: '醫學驗光配鏡',
-    link: '',
+    link: '/medical-service/medicalOptometry',
   },
   {
     i: '12',
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
-    des: '屈光矯視',
-    link: '',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/06/f44e8be36a331b78.png',
+    des: '阿托品滴眼液',
+    link: '/medical-service/atropine',
   },
+  // {
+  //   i: '12',
+  //   imgUrl:
+  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
+  //   des: '屈光矯視',
+  //   link: '',
+  // },
 ]
 </script>
 
