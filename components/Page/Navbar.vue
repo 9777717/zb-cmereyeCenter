@@ -305,7 +305,7 @@ a {
   z-index: 999;
   position: fixed; // 记得改为 fixed
   top: 54px;
-  left: 11.0305%;
+  left: 10.0305%;
   background: #2958a3;
 
   .navigtion {

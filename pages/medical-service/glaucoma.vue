@@ -1238,7 +1238,7 @@ const callTel = () => {
 
       & > div:nth-child(1) {
         border-radius: 30px;
-        width: 625px;
+        width: 520px;
         height: 385px;
         background-color: #ffffff;
         border: solid 10px #9ed5d1;
@@ -1383,7 +1383,7 @@ const callTel = () => {
             letter-spacing: 0px;
             color: #63a89f;
             text-align: right;
-            padding-right: 88px;
+            padding-right: 18px;
             border-radius: 18px;
           }
         }
@@ -2293,7 +2293,7 @@ const callTel = () => {
             white-space: pre-wrap;
 
             font-family: 'NotoSansHK-Medium';
-            font-size: 26px;
+            font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 38px;
@@ -2316,7 +2316,7 @@ const callTel = () => {
             white-space: pre-wrap;
 
             font-family: 'NotoSansHK-Regular';
-            font-size: 24px;
+            font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 38px;
@@ -2364,7 +2364,7 @@ const callTel = () => {
           justify-content: center;
           border-left: 1px solid #939c9b;
           font-family: 'NotoSansHK-Regular';
-          font-size: 24px;
+          font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 34px;
@@ -2415,7 +2415,7 @@ const callTel = () => {
         & > div:nth-child(2) {
           width: 384px;
           font-family: 'NotoSansHK-Medium';
-          font-size: 26px;
+          font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 38px;
@@ -2426,7 +2426,7 @@ const callTel = () => {
         & > div:nth-child(3) {
           width: 640px;
           font-family: 'NotoSansHK-Regular';
-          font-size: 24px;
+          font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 34px;
@@ -2493,7 +2493,7 @@ const callTel = () => {
             }
 
             & > div:nth-child(2) {
-              width: 588px;
+              width: 518px;
               height: 85px;
               background-color: #91cfca;
               border-radius: 85px;
@@ -2507,7 +2507,7 @@ const callTel = () => {
               justify-content: flex-start;
 
               font-family: 'NotoSansHK-Regular';
-              font-size: 49px;
+              font-size: 40px;
               font-weight: normal;
               font-stretch: normal;
               line-height: 38px;
@@ -2519,7 +2519,7 @@ const callTel = () => {
           & > div:nth-child(2) {
             margin-top: 30px;
             font-family: 'NotoSansHK-Regular';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 31px;
@@ -2531,6 +2531,10 @@ const callTel = () => {
         & > div:nth-child(3) {
           margin-bottom: 0;
         }
+      }
+
+      & > div:nth-child(2) {
+        width: 50%;
       }
     }
   }
@@ -2622,7 +2626,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .glaucoma {
-    margin-left: 33%;
+    margin: auto;
   }
 }
 </style>

@@ -779,7 +779,7 @@ const callTel = () => {
           padding-bottom: 50px;
 
           & > div:nth-child(2) {
-            width: 913px;
+            width: 785px;
             margin-left: 24px;
             margin-right: 63px;
 
@@ -944,10 +944,10 @@ const callTel = () => {
             }
 
             & > div:nth-child(2) {
-              width: 890px;
+              width: 765px;
               margin-top: 6px;
               font-family: 'NotoSansHK-Regular';
-              font-size: 24px;
+              font-size: 22px;
               font-weight: normal;
               font-stretch: normal;
               line-height: 44px;
@@ -959,7 +959,7 @@ const callTel = () => {
           & > div:nth-child(2) {
             position: absolute;
             right: 35px;
-            bottom: 27px;
+            bottom: 40px;
           }
         }
       }
@@ -990,13 +990,14 @@ const callTel = () => {
           position: absolute;
           margin-left: 277px;
           font-family: 'NotoSansHK-Regular';
-          font-size: 24px;
+          font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 1.65;
-          letter-spacing: 0px;
+          letter-spacing: -0.05em;
           color: #515151;
           padding-right: 52px;
+          text-align: justify;
         }
       }
 
@@ -1022,7 +1023,7 @@ const callTel = () => {
           display: flex;
 
           & > div:nth-child(1) {
-            width: 540px;
+            width: 435px;
             margin-right: 60px;
 
             & > div:nth-child(1) {
@@ -1157,11 +1158,11 @@ const callTel = () => {
         }
 
         & > div:nth-child(4) {
-          margin-left: 237px;
+          margin-left: 207px;
         }
 
         & > div:nth-child(5) {
-          margin-right: 237px;
+          margin-right: 207px;
         }
       }
     }

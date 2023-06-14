@@ -339,7 +339,7 @@ const callTel = () => {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a9b5f64058328a56.png"
+              src="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
               alt="什麼是乾眼症 ？"
             />
           </div>
@@ -1767,7 +1767,7 @@ const callTel = () => {
             font-weight: normal;
             font-stretch: normal;
             line-height: 25px;
-            letter-spacing: 0px;
+            letter-spacing: -0.01em;
             color: #515151;
           }
 
@@ -1785,7 +1785,7 @@ const callTel = () => {
 
           & > div:nth-child(2),
           & > div:nth-child(3) {
-            margin-bottom: 77px;
+            margin-bottom: 57px;
           }
 
           & > div:nth-child(2) {
@@ -1874,10 +1874,12 @@ const callTel = () => {
           display: flex;
           flex-wrap: wrap;
           padding: 0 30px;
+          max-width: 1200px;
+          justify-content: space-between;
 
           & > div {
             margin-top: 104px;
-            margin-left: 147px;
+            margin-left: 100px;
 
             & > div:nth-child(1) {
               box-shadow: -14px 10px 0px 0px #eae9f1;
@@ -1904,6 +1906,10 @@ const callTel = () => {
 
           & > div:nth-child(4) {
             margin-left: 216px;
+          }
+          & > div:nth-child(5) {
+            margin-left: 0;
+            margin-right: 216px;
           }
         }
       }
@@ -2113,7 +2119,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .xerophthalmia {
-    margin-left: 33%;
+    margin: auto;
   }
 }
 </style>
