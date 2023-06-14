@@ -1139,9 +1139,11 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
+  transform: scaleX(0.9);
 
   // 青光眼
   & > div:nth-child(1) {
+    transform: initial;
     position: absolute;
     top: 202px;
     right: -300px;

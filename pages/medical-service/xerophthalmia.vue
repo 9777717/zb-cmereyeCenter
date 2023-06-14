@@ -774,6 +774,8 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   position: relative;
+  transform: scale(0.9);
+  margin-top: -40%;
 
   & > div:nth-child(1) {
     margin-top: 140px;
