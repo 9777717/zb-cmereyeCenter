@@ -17,7 +17,7 @@ const anchorList = ref([
   //   anchorLink: '/about-us#medicalEquipment',
   // },
   {
-    anchorName: 'pages.about_us.enterprise_vision',
+    anchorName: 'pages.about_us.enterprise_awards',
     anchorLink: '/about-us#awards',
   },
   {
