@@ -216,7 +216,7 @@ const callTel = () => {
 @import url('../../assets/font/font.css');
 
 .medicalOptometry_nav {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: auto;
   margin-top: 305px;
 

@@ -771,7 +771,7 @@ const callTel = () => {
 
 <style lang="scss" scoped>
 .xerophthalmia {
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
   position: relative;
 
@@ -1380,7 +1380,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(5) {
-        max-width: 1313px;
+        max-width: 1200px;
         margin: 0 auto;
         margin-top: 43px;
         display: flex;
@@ -1796,7 +1796,7 @@ const callTel = () => {
 
       // 使用人工淚液
       & > div:nth-child(8) {
-        width: 1320px;
+        width: 1280px;
         margin-top: 59px;
         background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png')
           no-repeat;

@@ -1018,7 +1018,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 .cataract {
   position: relative;
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
 
   & > div:nth-child(1) {
@@ -1200,7 +1200,7 @@ const callTel = () => {
       & > div:nth-child(2) {
         margin: 0 auto;
         margin-top: 78px;
-        width: 1320px;
+        width: 1280px;
         height: 133px;
         border: solid 2px #66c5dc;
 

@@ -1137,7 +1137,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 .glaucoma {
   position: relative;
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
 
   // 青光眼
@@ -2254,7 +2254,7 @@ const callTel = () => {
 
     & > div:nth-child(3) {
       margin: 0 auto;
-      max-width: 1313px;
+      max-width: 1200px;
       margin-top: 60px;
       display: flex;
       justify-content: space-between;

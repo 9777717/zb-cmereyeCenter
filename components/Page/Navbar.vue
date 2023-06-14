@@ -197,14 +197,7 @@ const porps = defineProps({
 </script>
 
 <template>
-  <div
-    :class="[
-      porps.rt === 'index' ? 'headerTem' : 'headerTemPage',
-      porps.rt === 'medical-service-strabismusAmblyopia'
-        ? 'headerTemService'
-        : 'headerTem',
-    ]"
-  >
+  <div :class="[porps.rt === 'index' ? 'headerTem' : 'headerTemPage']">
     <BuilderNavbar>
       <template #menu>
         <div class="navigtion">
@@ -263,7 +256,7 @@ a {
   z-index: 999;
   position: fixed;
   top: 54px;
-  left: 23.4375%;
+  left: 22.4375%;
   background: #ffffffbf;
 
   .navigtion {
@@ -310,9 +303,9 @@ a {
 
 .headerTemPage {
   z-index: 999;
-  position: absolute; // 记得改为 fixed
+  position: fixed; // 记得改为 fixed
   top: 54px;
-  left: 15.625%;
+  left: 11.0305%;
   background: #2958a3;
 
   .navigtion {
@@ -361,7 +354,7 @@ a {
   z-index: 999;
   position: fixed;
   top: 54px;
-  left: 23.4375%;
+  left: 22.4375%;
   background: #2958a3;
 
   .navigtion {
@@ -454,55 +447,6 @@ a {
     align-items: center;
   }
 }
-
-// .headerTemCost {
-//   z-index: 999;
-//   position: absolute;
-//   top: 50px;
-//   left: 350px;
-//   background: #2958a3;
-
-//   .navigtion {
-//     & > div {
-//       font-family: 'Noto Sans HK';
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 14px;
-//       line-height: 35px;
-//       /* identical to box height, or 250% */
-
-//       text-align: center;
-//       letter-spacing: 0.05em;
-
-//       color: #ffffff;
-
-//       width: 130px;
-//       height: 49px;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       position: relative;
-//     }
-
-//     & > div::after {
-//       position: absolute;
-//       top: 0;
-//       content: '';
-//       width: 76px;
-//       border-bottom: 0.75px solid #ffffff;
-//     }
-
-//     & > div:nth-child(1)::after {
-//       content: '';
-//       width: 0;
-//       border: 0;
-//     }
-
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//   }
-// }
 
 .headerTemOphthalmic {
   z-index: 999;
@@ -704,5 +648,13 @@ a {
 
 .childpage {
   display: none;
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .headerTemPage {
+    top: 95px;
+    left: 17.0305%;
+  }
 }
 </style>

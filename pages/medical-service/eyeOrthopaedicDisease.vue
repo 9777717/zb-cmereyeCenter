@@ -874,8 +874,8 @@ const serviceNavigation = [
 </template>
 <style lang="scss" scoped>
 .eyeOrthopaedicDisease_nav {
-  max-width: 1320px;
-  width: 1320px;
+  max-width: 1280px;
+  width: 1280px;
   margin: auto;
   margin-top: 225px;
   margin-bottom: 290px;

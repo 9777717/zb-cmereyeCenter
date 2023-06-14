@@ -368,7 +368,7 @@ const goWhatsApp = () => {
 </template>
 <style lang="scss" scoped>
 .atropine_nav {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: auto;
   margin-top: 138px;
 

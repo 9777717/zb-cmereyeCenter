@@ -396,7 +396,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 .conjunctivitis_nav {
   // margin: 0 300px;
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
 
   // 什麼是結膜炎？

@@ -42,7 +42,7 @@ const serviceNavigation = [
 }
 
 .cp > div:nth-child(1) {
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
 }
 </style>

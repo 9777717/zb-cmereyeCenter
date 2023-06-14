@@ -1081,7 +1081,7 @@ const doctorList = [
 @media screen and (min-width: 1920px) {
   .medical-team {
     margin: auto;
-    max-width: 1313px;
+    max-width: 1200px;
   }
 }
 </style>

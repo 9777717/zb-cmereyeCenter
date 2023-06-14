@@ -468,7 +468,7 @@ const goWhatsApp = () => {
 }
 
 .mainCon {
-  max-width: 1313px;
+  max-width: 1200px;
   margin: auto;
 }
 

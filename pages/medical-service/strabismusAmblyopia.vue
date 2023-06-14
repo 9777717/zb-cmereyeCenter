@@ -422,8 +422,8 @@ const callTel = () => {
 </template>
 <style lang="scss" scoped>
 .strabismusAmblyopia_nav {
-  max-width: 1320px;
-  width: 1320px;
+  max-width: 1280px;
+  width: 1280px;
   margin: auto;
   margin-top: 225px;
 
@@ -833,8 +833,8 @@ const callTel = () => {
 }
 
 #curativeTime {
-  max-width: 1320px;
-  width: 1320px;
+  max-width: 1280px;
+  width: 1280px;
   margin: 82px auto 220px;
   width: 1312px;
   height: 357px;

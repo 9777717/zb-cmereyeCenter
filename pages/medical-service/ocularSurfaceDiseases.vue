@@ -1061,7 +1061,7 @@ const keratoplastyList1 = [
 </template>
 <style lang="scss" scoped>
 .ocularSurfaceDiseases_nav {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: auto;
   margin-top: 220px;
 
@@ -2101,7 +2101,7 @@ const keratoplastyList1 = [
           }
 
           & > div:nth-child(2) {
-            width: 1320px;
+            width: 1280px;
             height: 206px;
             border-radius: 20px;
             border: solid 2px #acd9c1;

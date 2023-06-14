@@ -367,7 +367,7 @@ const preventList1 = [
 </template>
 <style lang="scss" scoped>
 .amotioRetinae_nav {
-  max-width: 1320px;
+  max-width: 1280px;
   margin: auto;
 
   & > #intro {
@@ -552,7 +552,7 @@ const preventList1 = [
 
     & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
-      width: 1320px;
+      width: 1280px;
       height: 304px;
       padding: 70px;
       line-height: 46px;
@@ -706,7 +706,7 @@ const preventList1 = [
 
     & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
-      width: 1320px;
+      width: 1280px;
       height: 185px;
       padding-top: 65px;
       padding-left: 48px;
