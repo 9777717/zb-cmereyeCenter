@@ -351,8 +351,7 @@ const callTel = () => {
 
 <template>
   <div>
-    <div class="cataract">
-      <!-- 白內障 -->
+    <div class="cataract_head">
       <div>
         <div>
           <div>{{ $t('pages.medical_service.cataract') }}</div>
@@ -393,6 +392,12 @@ const callTel = () => {
             </svg>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="cataract">
+      <!-- 白內障 -->
+      <div>
+        <!-- 请勿删除 -->
       </div>
       <!-- 白內障影響日常生活？ -->
       <div>
@@ -1016,27 +1021,19 @@ const callTel = () => {
   </div>
 </template>
 <style lang="scss" scoped>
-.cataract {
+.cataract_head {
   position: relative;
-  max-width: 1200px;
-  margin: auto;
-  transform: scale(0.9);
+  margin-top: 202px;
+  height: 288px;
+  background-color: #f2f2f2;
+  width: 40vw;
+  right: -60vw;
 
-  & > div:nth-child(1) {
-    transform: scale(1.1);
+  & > div {
     position: absolute;
-    top: 202px;
-    right: -300px;
-    width: 541px;
-    height: 288px;
-    background-color: #f2f2f2;
-
-    & > div {
-      position: absolute;
-      top: -110px;
-      right: 300px;
-      text-align: right;
-    }
+    top: -110px;
+    left: -200px;
+    text-align: right;
 
     & > div:first-child {
       font-family: 'NotoSansCJKtc-Bold';
@@ -1061,6 +1058,14 @@ const callTel = () => {
       top: 120px;
     }
   }
+}
+
+.cataract {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  transform: scale(0.85);
+  margin-top: -43%;
 
   & > div:nth-child(2) {
     padding-top: 105px;
@@ -2109,7 +2114,6 @@ const callTel = () => {
 
   & > div:first-child {
     margin: 0;
-    margin-top: -50%;
   }
 
   & > div:nth-child(2) {
@@ -2183,6 +2187,7 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .cataract {
     margin: auto;
+    margin-top: -28%;
   }
 }
 </style>
