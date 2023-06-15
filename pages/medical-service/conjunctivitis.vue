@@ -398,6 +398,8 @@ const callTel = () => {
   // margin: 0 300px;
   max-width: 1200px;
   margin: auto;
+  transform: scale(0.85);
+  margin-top: -33%;
 
   // 什麼是結膜炎？
   & > div:nth-child(1) {
@@ -424,7 +426,7 @@ const callTel = () => {
       & > div:nth-child(2) {
         margin-top: 38px;
         font-family: 'NotoSansHK-Regular';
-        font-size: 24px;
+        font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 42px;
@@ -434,6 +436,8 @@ const callTel = () => {
     }
 
     & > div:nth-child(2) {
+      transform: scale(0.85);
+
       & > img {
         z-index: 5;
         position: relative;
@@ -458,7 +462,6 @@ const callTel = () => {
   // 結膜炎症狀
   & > div:nth-child(2) {
     margin-top: 260px;
-    padding: 0 80px;
 
     & > div:nth-child(2) {
       margin-top: 62px;
@@ -506,7 +509,7 @@ const callTel = () => {
     margin-top: 180px;
 
     & > div:nth-child(2) {
-      margin-top: 50px;
+      margin-top: 200px;
 
       & > div {
         margin-bottom: 180px;
@@ -788,7 +791,7 @@ const callTel = () => {
       padding: 0 45px 0 49px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
 
       & > div {
         width: 290px;
@@ -829,11 +832,11 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(2) {
-        margin: 0 174px;
+      & > div:nth-child(4) {
+        margin-left: 180px;
       }
 
-      & > div:nth-child(4) {
+      & > div:nth-child(5) {
         margin-right: 180px;
       }
 
@@ -901,9 +904,9 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 42vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -930,12 +933,13 @@ const callTel = () => {
       text-align: right;
       letter-spacing: -3.5px;
       color: #c0c0e6;
+      margin-left: -15px;
     }
 
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -961,7 +965,7 @@ const callTel = () => {
 
 // 下载
 .dow {
-  margin-top: 150px;
+  margin-top: -40%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -997,7 +1001,18 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .conjunctivitis_nav {
+    margin-top: -20%;
     margin-left: 33%;
+  }
+
+  .conjun_header {
+    & > div:nth-child(1) {
+      margin-left: 48vw;
+    }
+  }
+
+  .dow {
+    margin-top: -25%;
   }
 }
 </style>

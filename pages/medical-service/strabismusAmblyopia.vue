@@ -422,10 +422,10 @@ const callTel = () => {
 </template>
 <style lang="scss" scoped>
 .strabismusAmblyopia_nav {
-  max-width: 1280px;
-  width: 1280px;
+  max-width: 1200px;
+  transform: scale(0.85);
   margin: auto;
-  margin-top: 225px;
+  margin-top: -35%;
 
   & > #strabismus {
     & > div:nth-child(2) {
@@ -547,6 +547,9 @@ const callTel = () => {
       display: flex;
       align-items: center;
       justify-content: center;
+      background-size: 100%;
+      transform: scale(0.85);
+      margin-left: -40px;
     }
 
     & > div:nth-child(5) {
@@ -798,7 +801,7 @@ const callTel = () => {
 
         & > div:nth-child(1)::after {
           content: '';
-          width: 1141px;
+          width: 1000px;
           border-bottom: 2px dashed #fbbfa1;
           display: inline-block;
           position: absolute;
@@ -839,6 +842,7 @@ const callTel = () => {
   width: 1312px;
   height: 357px;
   background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png');
+  background-size: 100%;
 
   & > div:nth-child(1) {
     font-family: 'NotoSansHK-Medium';
@@ -862,6 +866,7 @@ const callTel = () => {
   background: url('https://static.cmereye.com/imgs/2023/06/81b654ccb67fbf4f.png');
   width: 100%;
   height: 145px;
+  margin-top: -50%;
 }
 
 .strabismusAmblyopia_text_p_span {
@@ -916,9 +921,9 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 33vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -958,7 +963,7 @@ const callTel = () => {
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -1019,8 +1024,40 @@ const callTel = () => {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .xerophthalmia {
-    margin-left: 33%;
+  .strabismusAmblyopia_nav {
+    margin-top: -20%;
+
+    & > #cure {
+      & > div:nth-child(2) {
+        & > div {
+          width: 575px;
+
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              width: 480px;
+            }
+
+            & > div:nth-child(2) {
+              line-height: 46px;
+              font-size: 22px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+    }
+
+    & > #treat {
+      & > div:nth-child(2) {
+        background-size: 100%;
+        transform: scale(0.85);
+        margin-left: -5%;
+      }
+    }
+  }
+
+  #bg_strabismusAmblyopia_nav {
+    margin-top: -25%;
   }
 }
 </style>

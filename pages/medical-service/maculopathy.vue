@@ -520,6 +520,8 @@ const callTel = () => {
   // margin: 0 300px;
   max-width: 1200px;
   margin: auto;
+  transform: scale(0.85);
+  margin-top: -50%;
 
   // 什麼是黃斑病變？
   & > div:nth-child(1) {
@@ -857,9 +859,11 @@ const callTel = () => {
       justify-content: space-between;
       position: relative;
       align-items: center;
+      margin-left: -60px;
 
       & > div:nth-child(1) {
         position: absolute;
+        transform: scale(0.85);
       }
 
       & > div:nth-child(2) {
@@ -897,6 +901,7 @@ const callTel = () => {
     & > div:nth-child(3) {
       display: flex;
       flex-direction: column;
+      transform: scale(0.85);
 
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Bold';
@@ -926,6 +931,7 @@ const callTel = () => {
           justify-content: center;
           align-items: center;
           top: -58px;
+          margin-left: -90px;
         }
 
         & > div:nth-child(2) {
@@ -956,6 +962,8 @@ const callTel = () => {
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         flex-direction: row-reverse;
+        margin-left: 0;
+        margin-right: -90px;
 
         & > div:nth-child(2) {
           position: absolute;
@@ -1170,9 +1178,9 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 36vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -1184,6 +1192,7 @@ const callTel = () => {
         letter-spacing: 1px;
         color: #dec692;
         position: sticky;
+        z-index: 9;
       }
 
       & > div:nth-child(2) {
@@ -1199,12 +1208,13 @@ const callTel = () => {
       text-align: right;
       letter-spacing: -4px;
       color: #dec692;
+      margin-left: -10px;
     }
 
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -1229,7 +1239,7 @@ const callTel = () => {
 }
 
 .dow {
-  margin-top: 150px;
+  margin-top: -35%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -1266,6 +1276,11 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .maculopathy_nav {
     margin-left: 33%;
+    margin-top: -30%;
+  }
+
+  .dow {
+    margin-top: -20%;
   }
 }
 </style>

@@ -774,8 +774,8 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   position: relative;
-  transform: scale(0.9);
-  margin-top: -40%;
+  transform: scale(0.85);
+  margin-top: -60%;
 
   & > div:nth-child(1) {
     margin-top: 140px;
@@ -824,6 +824,7 @@ const callTel = () => {
       background: #f2f2f2;
       width: 633px;
       height: 606px;
+      transform: scale(0.85);
     }
   }
 
@@ -1798,12 +1799,13 @@ const callTel = () => {
 
       // 使用人工淚液
       & > div:nth-child(8) {
-        width: 1280px;
         margin-top: 59px;
         background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png')
           no-repeat;
         height: 257px;
         padding: 42px 60px;
+        transform: scale(0.85);
+        background-size: 100%;
 
         & > div {
           margin-bottom: 24px;
@@ -1909,6 +1911,7 @@ const callTel = () => {
           & > div:nth-child(4) {
             margin-left: 216px;
           }
+
           & > div:nth-child(5) {
             margin-left: 0;
             margin-right: 216px;
@@ -2026,9 +2029,8 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 55vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -2055,12 +2057,13 @@ const callTel = () => {
       text-align: justify;
       letter-spacing: 3px;
       color: #a9a6d2;
+      margin-left: -0.6vw;
     }
 
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -2085,7 +2088,7 @@ const callTel = () => {
 }
 
 .dow {
-  margin-top: 150px;
+  margin-top: -45%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -2122,6 +2125,11 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .xerophthalmia {
     margin: auto;
+    margin-top: -38%;
+  }
+
+  .dow[data-v-9bfe6391] {
+    margin-top: -30%;
   }
 }
 </style>

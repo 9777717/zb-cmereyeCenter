@@ -206,7 +206,7 @@ const callTel = () => {
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/3bb3dd48179791b9.png"
+            src="https://static.cmereye.com/imgs/2023/06/eaed11ab4604268b.png"
             alt="什麼是飛蚊症"
           />
         </div>
@@ -511,6 +511,8 @@ const callTel = () => {
   margin-top: 100px;
   max-width: 1200px;
   margin: auto;
+  transform: scale(0.85);
+  margin-top: -35%;
 
   // 什麼是飛蚊症？
   & > div:nth-child(1) {
@@ -520,6 +522,10 @@ const callTel = () => {
     & > div > img {
       position: relative;
       z-index: 5;
+    }
+
+    & > div:nth-child(1) {
+      transform: scale(0.85);
     }
 
     & > div:nth-child(1)::after {
@@ -1124,6 +1130,8 @@ const callTel = () => {
         justify-content: space-between;
 
         & > div {
+          transform: scale(0.85);
+
           & > div {
             width: 375px;
             height: 501px;
@@ -1219,9 +1227,9 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 55vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -1248,12 +1256,13 @@ const callTel = () => {
       text-align: right;
       letter-spacing: 3px;
       color: #9cc4e2;
+      margin-left: -0.6vw;
     }
 
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -1279,7 +1288,7 @@ const callTel = () => {
 
 // 下载
 .dow {
-  margin-top: 150px;
+  margin-top: -30%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -1315,7 +1324,11 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .muscaeNav {
-    margin-left: 33%;
+    margin-top: -20%;
+  }
+
+  .dow {
+    margin-top: -20%;
   }
 }
 </style>

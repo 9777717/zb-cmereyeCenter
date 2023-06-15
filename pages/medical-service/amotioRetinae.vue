@@ -215,7 +215,7 @@ const preventList1 = [
             src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png"
           />
         </div>
-        <div class="amotioRetinae_title_btn">
+        <div class="amotioRetinae_title_btn" @click="goWhatsApp">
           <span>懷疑視網膜脫落？</span><span>立即致電求醫！</span>
         </div>
       </div>
@@ -367,8 +367,9 @@ const preventList1 = [
 </template>
 <style lang="scss" scoped>
 .amotioRetinae_nav {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
+  transform: scale(0.85);
 
   & > #intro {
     margin-top: 220px;
@@ -424,13 +425,14 @@ const preventList1 = [
     & > div:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       & > div {
         width: 260px;
         height: 308px;
         background-color: #ffffff;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-        margin-right: 94px;
+        // margin-right: 94px;
         border-radius: 75px 0;
 
         & > div:nth-child(2) {
@@ -453,20 +455,16 @@ const preventList1 = [
         }
       }
 
-      & > div:nth-child(2) {
-        margin-right: 93px;
-      }
-
-      & > div:nth-child(3) {
-        margin-right: 93px;
-      }
-
       & > div:nth-child(4) {
         margin-right: 0;
       }
 
       & > div:nth-child(5) {
-        margin-left: 176px;
+        margin-left: 156px;
+      }
+
+      & > div:last-child {
+        margin-right: 156px;
       }
 
       & > div:nth-child(n + 5) {
@@ -544,6 +542,7 @@ const preventList1 = [
         top: 50%;
         transform: translateY(-50%);
       }
+
       & > div:last-child::after {
         content: '';
         width: 0;
@@ -552,10 +551,11 @@ const preventList1 = [
 
     & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
-      width: 1280px;
+      width: 1200px;
       height: 304px;
       padding: 70px;
       line-height: 46px;
+      background-size: 100% 100%;
 
       & > span {
         color: #e8a89b;
@@ -670,6 +670,7 @@ const preventList1 = [
 
         & > div:nth-child(2) {
           background: url('https://static.cmereye.com/imgs/2023/06/e26c60861f4311e0.png');
+          background-size: 100% 100%;
           height: 456px;
           margin-top: -67px;
           z-index: 5;
@@ -706,10 +707,12 @@ const preventList1 = [
 
     & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
-      width: 1280px;
+      width: 1200px;
       height: 185px;
       padding-top: 65px;
       padding-left: 48px;
+      padding-right: 2px;
+      background-size: 100% 100%;
 
       & > span {
         color: #e8a89b;
@@ -752,6 +755,7 @@ const preventList1 = [
 
 .amotioRetinae_title_text_bg {
   background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png');
+  background-size: 100%;
   width: 609px;
   height: 106px;
   margin: auto;
@@ -789,9 +793,9 @@ const preventList1 = [
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 28vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -832,7 +836,7 @@ const preventList1 = [
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -858,7 +862,7 @@ const preventList1 = [
 
 // 下载
 .dow {
-  margin-top: 150px;
+  margin-top: -40%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -893,8 +897,18 @@ const preventList1 = [
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .xerophthalmia {
-    margin-left: 33%;
+  .amotioRetinae_nav {
+    margin-top: -25%;
+  }
+
+  .amotioRetinae_head {
+    & > div:nth-child(1) {
+      margin-left: 39vw;
+    }
+  }
+
+  .dow {
+    margin-top: -25%;
   }
 }
 </style>
