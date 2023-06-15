@@ -655,6 +655,8 @@ a {
   .headerTemPage {
     top: 95px;
     left: 17.0305%;
+    transform: scale(1.2);
+    margin-top: 10%;
   }
 }
 </style>

@@ -1139,11 +1139,12 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  transform: scaleX(0.9);
+  transform: scale(0.9);
+  margin-top: -34%;
 
   // 青光眼
   & > div:nth-child(1) {
-    transform: initial;
+    transform: scale(1.1);
     position: absolute;
     top: 202px;
     right: -300px;
@@ -2592,7 +2593,7 @@ const callTel = () => {
 }
 
 .dow {
-  margin-top: 150px;
+  margin-top: -350px;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -2629,6 +2630,7 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .glaucoma {
     margin: auto;
+    margin-top: -20%;
   }
 }
 </style>

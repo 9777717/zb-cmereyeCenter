@@ -295,11 +295,11 @@ const meetArr = [
     title:
       'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_q6',
     agree: [
-      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a2',
-      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a3',
-      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a4',
-      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a5',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a6_1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a6_2',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a6_3',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a6_4',
+      'pages.medical_service.service_cataract_title.service_cataract_array_meet.cataract_array_meet_a6_5',
     ],
   },
 ]
@@ -1020,10 +1020,10 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  transform: scaleX(0.9);
+  transform: scale(0.9);
 
   & > div:nth-child(1) {
-    transform: initial;
+    transform: scale(1.1);
     position: absolute;
     top: 202px;
     right: -300px;
@@ -1063,7 +1063,7 @@ const callTel = () => {
   }
 
   & > div:nth-child(2) {
-    padding-top: 689px;
+    padding-top: 105px;
 
     & > div:nth-child(1) {
       display: flex;
@@ -1216,7 +1216,8 @@ const callTel = () => {
         border-radius: 133px 0 133px 0;
 
         padding-top: 31px;
-        padding-left: 93px;
+        padding-left: 75px;
+        margin-left: -35px;
       }
     }
 
@@ -1374,6 +1375,8 @@ const callTel = () => {
           padding: 0 10px;
 
           & > div {
+            transform: scale(0.9);
+
             & > div {
               margin-top: 31px;
 
@@ -1499,6 +1502,8 @@ const callTel = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transform: scale(0.9);
+        margin-left: -60px;
 
         & > div {
           display: flex;
@@ -1640,6 +1645,8 @@ const callTel = () => {
           line-height: 36px;
           letter-spacing: 0px;
           color: #66c5dc;
+          transform: scale(0.9);
+          margin-top: -15px;
         }
       }
     }
@@ -2102,6 +2109,7 @@ const callTel = () => {
 
   & > div:first-child {
     margin: 0;
+    margin-top: -50%;
   }
 
   & > div:nth-child(2) {
@@ -2110,7 +2118,7 @@ const callTel = () => {
 }
 
 .dow {
-  margin-top: 150px;
+  margin-top: -350px;
   margin-bottom: 150px;
   color: #fff;
   font-size: 30px;
