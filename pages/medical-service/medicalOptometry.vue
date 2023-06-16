@@ -221,7 +221,7 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: 3%;
+  margin-top: -3.7%;
 
   & > #brief_introduction {
     margin-bottom: 200px;
@@ -561,7 +561,7 @@ const callTel = () => {
   }
 
   .medicalOptometry_nav {
-    margin-top: 3%;
+    margin-top: 0.3%;
   }
 
   .fromTable {

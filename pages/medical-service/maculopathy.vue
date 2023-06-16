@@ -521,7 +521,7 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: -50%;
+  margin-top: -48.8%;
 
   // 什麼是黃斑病變？
   & > div:nth-child(1) {
@@ -1275,12 +1275,19 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .maculopathy_nav {
-    margin-left: 33%;
     margin-top: -30%;
   }
 
   .dow {
     margin-top: -20%;
+
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
   }
 }
 </style>

@@ -1189,7 +1189,7 @@ const callTel = () => {
 
   // 什麼是青光眼？
   & > div:nth-child(2) {
-    padding-top: 305px;
+    padding-top: 360px;
 
     & > div:nth-child(1) {
       margin: auto;
@@ -2593,7 +2593,7 @@ const callTel = () => {
 }
 
 .dow {
-  margin-top: -350px;
+  margin-top: -40%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -2608,7 +2608,7 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 27.08333%;
+        margin-left: 37.28433%;
         margin-right: 3.90625%;
 
         & > img {
@@ -2631,14 +2631,27 @@ const callTel = () => {
   .glaucoma {
     margin: auto;
     margin-top: -30%;
+
+    & > div:nth-child(2) {
+      padding-top: 350px;
+    }
   }
 
   .glaucoma_heaf > div {
     top: -110px;
     left: -12vw;
   }
+
   .dow {
     margin-top: -23%;
+
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
   }
 }
 </style>

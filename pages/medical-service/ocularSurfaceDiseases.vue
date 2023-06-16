@@ -1065,7 +1065,7 @@ const keratoplastyList1 = [
 .ocularSurfaceDiseases_nav {
   max-width: 1200px;
   margin: auto;
-  margin-top: -72%;
+  margin-top: -76.3%;
   transform: scale(0.85);
 
   & > #pterygium {
@@ -2523,6 +2523,7 @@ const keratoplastyList1 = [
 .fromTable {
   margin-top: -85%;
 }
+
 // 头部样式
 .ocularSurfaceDiseases_head {
   & > div:nth-child(1) {
@@ -2600,9 +2601,11 @@ const keratoplastyList1 = [
   .ocularSurfaceDiseases_head {
     margin-left: 12vw;
   }
+
   .ocularSurfaceDiseases_nav {
-    margin-top: -52%;
+    margin-top: -48%;
   }
+
   .fromTable {
     margin-top: -55%;
   }

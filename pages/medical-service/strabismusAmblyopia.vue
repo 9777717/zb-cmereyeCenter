@@ -425,7 +425,7 @@ const callTel = () => {
   max-width: 1200px;
   transform: scale(0.85);
   margin: auto;
-  margin-top: -35%;
+  margin-top: -40%;
 
   & > #strabismus {
     & > div:nth-child(2) {
@@ -836,23 +836,24 @@ const callTel = () => {
 }
 
 #curativeTime {
-  max-width: 1280px;
-  width: 1280px;
+  max-width: 1020px;
+  width: 1020px;
   margin: 82px auto 220px;
-  width: 1312px;
+  width: 1020px;
   height: 357px;
   background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png');
-  background-size: 100%;
+  background-size: 100% 100%;
 
   & > div:nth-child(1) {
     font-family: 'NotoSansHK-Medium';
-    font-size: 38px;
+    font-size: 32px;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 120px;
+    line-height: 3.4;
     text-align: center;
     letter-spacing: 0px;
     color: #d37f66;
+    padding-left: 15px;
   }
 
   & > div:nth-child(2) {
@@ -1004,7 +1005,7 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 27.08333%;
+        margin-left: 37.28433%;
         margin-right: 3.90625%;
 
         & > img {
@@ -1064,6 +1065,21 @@ const callTel = () => {
 
   #bg_strabismusAmblyopia_nav {
     margin-top: -25%;
+  }
+
+  .dow {
+    margin-top: 150px;
+    margin-bottom: 233px;
+    color: #fff;
+    font-size: 30px;
+
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
   }
 }
 </style>

@@ -778,7 +778,7 @@ const callTel = () => {
   margin-top: -60%;
 
   & > div:nth-child(1) {
-    margin-top: 140px;
+    margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2103,7 +2103,7 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 27.08333%;
+        margin-left: 37.28433%;
         margin-right: 3.90625%;
 
         & > img {
@@ -2125,11 +2125,19 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .xerophthalmia {
     margin: auto;
-    margin-top: -38%;
+    margin-top: -37.3%;
   }
 
-  .dow[data-v-9bfe6391] {
+  .dow {
     margin-top: -30%;
+
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
   }
 }
 </style>

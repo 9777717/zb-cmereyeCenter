@@ -370,7 +370,7 @@ const preventList1 = [
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: -35%;
+  margin-top: -39.5%;
 
   & > #intro {
     margin-top: 220px;
@@ -878,7 +878,7 @@ const preventList1 = [
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 27.08333%;
+        margin-left: 37.28433%;
         margin-right: 3.90625%;
 
         & > img {
@@ -899,7 +899,7 @@ const preventList1 = [
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .amotioRetinae_nav {
-    margin-top: -25%;
+    margin-top: -23.7%;
   }
 
   .amotioRetinae_head {
@@ -910,6 +910,14 @@ const preventList1 = [
 
   .dow {
     margin-top: -25%;
+
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
   }
 }
 </style>

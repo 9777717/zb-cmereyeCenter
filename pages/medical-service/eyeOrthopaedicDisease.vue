@@ -881,7 +881,7 @@ const serviceNavigation = [
   max-width: 1200px;
   width: 1200px;
   margin: auto;
-  margin-top: -68%;
+  margin-top: -66.2%;
   margin-bottom: 290px;
   transform: scale(0.85);
 
@@ -2457,7 +2457,7 @@ const serviceNavigation = [
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .eyeOrthopaedicDisease_nav {
-    margin-top: -40%;
+    margin-top: -41.1%;
   }
 
   .eyeOrthopaedicDisease_head {

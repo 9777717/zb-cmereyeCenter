@@ -178,9 +178,7 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              >{{
-                $t('pages.medical_service.atropine_text.atropine_title3_p1')
-              }}
+              {{ $t('pages.medical_service.atropine_text.atropine_title3_p1') }}
             </div>
           </div>
           <div>
@@ -189,9 +187,7 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              >{{
-                $t('pages.medical_service.atropine_text.atropine_title3_p2')
-              }}
+              {{ $t('pages.medical_service.atropine_text.atropine_title3_p2') }}
             </div>
           </div>
           <div>
@@ -200,11 +196,10 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              <span
-                >>{{
-                  $t('pages.medical_service.atropine_text.atropine_title3_p3_1')
-                }}</span
-              >>{{
+              <span>{{
+                $t('pages.medical_service.atropine_text.atropine_title3_p3_1')
+              }}</span
+              >{{
                 $t('pages.medical_service.atropine_text.atropine_title3_p3_2')
               }}
             </div>
@@ -215,9 +210,7 @@ const goWhatsApp = () => {
               alt=""
             />
             <div>
-              >{{
-                $t('pages.medical_service.atropine_text.atropine_title3_p4')
-              }}
+              {{ $t('pages.medical_service.atropine_text.atropine_title3_p4') }}
             </div>
           </div>
         </div>
@@ -324,8 +317,10 @@ const goWhatsApp = () => {
                 }}
               </div>
               <div>
-                {{ $t('pages.medical_service.atropine_text.atropine_title6_p2')
-                }}<span>{{
+                {{
+                  $t('pages.medical_service.atropine_text.atropine_title6_p2')
+                }}
+                <span>{{
                   $t(
                     'pages.medical_service.atropine_text.atropine_title6_span1'
                   )
@@ -370,10 +365,10 @@ const goWhatsApp = () => {
 </template>
 <style lang="scss" scoped>
 .atropine_nav {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: -15%;
+  margin-top: -18%;
 
   & > #introduce {
     margin-bottom: 264px;
@@ -384,8 +379,7 @@ const goWhatsApp = () => {
       justify-content: space-between;
 
       & > div:nth-child(1) {
-        width: 737px;
-
+        width: 667px;
         font-family: 'NotoSansHK-Regular';
         font-size: 24px;
         font-weight: normal;
@@ -447,8 +441,7 @@ const goWhatsApp = () => {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        width: 759px;
+        width: 620px;
 
         & > p {
           text-indent: 50px;
@@ -487,9 +480,9 @@ const goWhatsApp = () => {
       justify-content: space-between;
 
       & > div {
-        max-width: 359px;
+        max-width: 335px;
         font-family: 'NotoSansHK-Regular';
-        font-size: 26px;
+        font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 40px;
@@ -596,11 +589,11 @@ const goWhatsApp = () => {
       }
 
       & > div:nth-child(4) {
-        margin-left: 240px;
+        margin-left: 210px;
       }
 
       & > div:nth-child(5) {
-        margin-right: 240px;
+        margin-right: 210px;
       }
     }
   }
@@ -615,7 +608,7 @@ const goWhatsApp = () => {
         justify-content: space-between;
 
         & > div {
-          width: 610px;
+          width: 580px;
           height: 378px;
           border-radius: 10px;
           border: solid 2px #c1e8f3;
@@ -819,7 +812,7 @@ const goWhatsApp = () => {
   }
 
   .atropine_nav {
-    margin-top: -12%;
+    margin-top: -11.2%;
   }
 
   .fromTable {

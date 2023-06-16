@@ -1068,7 +1068,7 @@ const callTel = () => {
   margin-top: -43%;
 
   & > div:nth-child(2) {
-    padding-top: 105px;
+    padding-top: 165px;
 
     & > div:nth-child(1) {
       display: flex;
@@ -2137,7 +2137,7 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 27.08333%;
+        margin-left: 37.28433%;
         margin-right: 3.90625%;
 
         & > img {
@@ -2165,8 +2165,8 @@ const callTel = () => {
       align-items: center;
 
       & > div:nth-child(1) {
-        margin-left: 355px;
-        margin-right: 175px;
+        margin-left: 30vw;
+        margin-right: 3vw;
 
         & > img {
           width: 120px;
@@ -2188,6 +2188,24 @@ const callTel = () => {
   .cataract {
     margin: auto;
     margin-top: -28%;
+  }
+
+  .dow {
+    & > div:nth-child(1) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 32.2vw;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      & > a {
+        & > div:nth-child(1) {
+          margin-left: 36.6vw;
+        }
+      }
+    }
   }
 }
 </style>
