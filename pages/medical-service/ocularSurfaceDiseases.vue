@@ -1053,17 +1053,20 @@ const keratoplastyList1 = [
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <!-- 表单 -->
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#acd9c1;'}`"
-    />
+    <div class="fromTable">
+      <FormFooterInfo
+        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#acd9c1;'}`"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .ocularSurfaceDiseases_nav {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
-  margin-top: 220px;
+  margin-top: -72%;
+  transform: scale(0.85);
 
   & > #pterygium {
     margin-bottom: 160px;
@@ -1085,7 +1088,6 @@ const keratoplastyList1 = [
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         margin: 60px auto 120px;
-        padding: 0 30px 0 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1133,16 +1135,19 @@ const keratoplastyList1 = [
         & > div {
           width: 628px;
           height: 261px;
-          padding: 97px 31px 61px 290px;
+          padding: 97px 31px 61px 280px;
           font-size: 22px;
+          transform: scale(0.85);
         }
 
         & > div:nth-child(1) {
           background: url('https://static.cmereye.com/imgs/2023/06/6d544e0b46ceee84.png');
+          background-size: 100% 100%;
         }
 
         & > div:nth-child(2) {
           background: url('https://static.cmereye.com/imgs/2023/06/85baaef5d466b24b.png');
+          background-size: 100% 100%;
         }
       }
     }
@@ -1237,6 +1242,7 @@ const keratoplastyList1 = [
             & > span:nth-child(2) {
               max-width: 552px;
               line-height: 42px;
+              font-size: 22px;
             }
           }
         }
@@ -1268,7 +1274,7 @@ const keratoplastyList1 = [
         justify-content: space-between;
 
         & > div {
-          width: 380px;
+          width: 350px;
           position: relative;
 
           & > div:nth-child(1) {
@@ -1477,7 +1483,7 @@ const keratoplastyList1 = [
 
         & > div {
           display: flex;
-          width: 599px;
+          width: 520 px;
           height: 140px;
           border-radius: 10px;
           border: solid 2px #acd9c1;
@@ -1578,7 +1584,7 @@ const keratoplastyList1 = [
         margin-top: 50px;
 
         & > div {
-          width: 600px;
+          width: 560px;
           height: 220px;
           border-radius: 10px;
           border: solid 4px #eeeeee;
@@ -1714,6 +1720,7 @@ const keratoplastyList1 = [
             box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             overflow: hidden;
+            transform: scale(0.85);
 
             & > div:nth-child(1) {
               width: 100%;
@@ -1734,7 +1741,7 @@ const keratoplastyList1 = [
             & > div:nth-child(2) {
               font-size: 22px;
               line-height: 40px;
-              margin-top: 40px;
+              margin-top: 20px;
             }
           }
 
@@ -1810,7 +1817,8 @@ const keratoplastyList1 = [
 
         & > div {
           background: url('https://static.cmereye.com/imgs/2023/06/88cae23e25d33512.png');
-          width: 399px;
+          background-size: 100% 100%;
+          width: 360px;
           height: 144px;
 
           display: flex;
@@ -1893,7 +1901,7 @@ const keratoplastyList1 = [
         }
 
         & > div:nth-child(3) {
-          margin-left: 145px;
+          margin-left: 100px;
 
           & > div:nth-child(2) {
             padding-left: 68px;
@@ -1903,8 +1911,8 @@ const keratoplastyList1 = [
         }
 
         & > div:nth-child(4) {
-          margin-left: 183px;
-          margin-right: 149px;
+          margin-left: 150px;
+          margin-right: 135px;
 
           & > :nth-child(1) {
             left: -113px;
@@ -2101,7 +2109,7 @@ const keratoplastyList1 = [
           }
 
           & > div:nth-child(2) {
-            width: 1280px;
+            width: 1200px;
             height: 206px;
             border-radius: 20px;
             border: solid 2px #acd9c1;
@@ -2175,6 +2183,7 @@ const keratoplastyList1 = [
             align-items: center;
             justify-content: center;
             padding: 0 20px;
+            transform: scale(0.85);
           }
         }
 
@@ -2511,14 +2520,17 @@ const keratoplastyList1 = [
   color: #ffffff;
 }
 
+.fromTable {
+  margin-top: -85%;
+}
 // 头部样式
 .ocularSurfaceDiseases_head {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 35vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -2559,7 +2571,7 @@ const keratoplastyList1 = [
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -2585,8 +2597,14 @@ const keratoplastyList1 = [
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .xerophthalmia {
-    margin-left: 33%;
+  .ocularSurfaceDiseases_head {
+    margin-left: 12vw;
+  }
+  .ocularSurfaceDiseases_nav {
+    margin-top: -52%;
+  }
+  .fromTable {
+    margin-top: -55%;
   }
 }
 </style>

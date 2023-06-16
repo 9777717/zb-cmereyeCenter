@@ -360,17 +360,20 @@ const goWhatsApp = () => {
     <div>
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#99d3dd;'}`"
-    />
+    <div class="fromTable">
+      <FormFooterInfo
+        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#99d3dd;'}`"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .atropine_nav {
   max-width: 1280px;
   margin: auto;
-  margin-top: 138px;
+  transform: scale(0.85);
+  margin-top: -15%;
 
   & > #introduce {
     margin-bottom: 264px;
@@ -733,13 +736,17 @@ const goWhatsApp = () => {
   justify-content: center;
 }
 
+.fromTable {
+  margin-top: -35%;
+}
+
 .atropine_head {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    margin-top: 100px;
-    margin-right: 300px;
+    align-items: flex-start;
+    margin-top: 98px;
+    margin-left: 40vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -779,7 +786,7 @@ const goWhatsApp = () => {
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -800,6 +807,23 @@ const goWhatsApp = () => {
         margin-bottom: 10px;
       }
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .atropine_head {
+    & > div:nth-child(1) {
+      margin-left: 50vw;
+    }
+  }
+
+  .atropine_nav {
+    margin-top: -12%;
+  }
+
+  .fromTable {
+    margin-top: -25%;
   }
 }
 </style>

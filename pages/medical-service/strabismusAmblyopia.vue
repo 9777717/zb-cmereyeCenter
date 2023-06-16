@@ -1024,6 +1024,12 @@ const callTel = () => {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
+  .strabismusAmblyopia_head {
+    & > div:nth-child(1) {
+      margin-left: 40vw;
+    }
+  }
+
   .strabismusAmblyopia_nav {
     margin-top: -20%;
 

@@ -206,19 +206,22 @@ const callTel = () => {
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <!-- 表单 -->
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#bcd09c;'}`"
-    />
+    <div class="fromTable">
+      <FormFooterInfo
+        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#bcd09c;'}`"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 @import url('../../assets/font/font.css');
 
 .medicalOptometry_nav {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
-  margin-top: 305px;
+  transform: scale(0.85);
+  margin-top: 3%;
 
   & > #brief_introduction {
     margin-bottom: 200px;
@@ -229,7 +232,7 @@ const callTel = () => {
       margin-bottom: 90px;
 
       & > div:nth-child(1) {
-        width: 770px;
+        width: 670px;
         line-height: 36px;
 
         & > p {
@@ -334,7 +337,7 @@ const callTel = () => {
         justify-content: space-between;
 
         & > div:nth-child(2) {
-          width: 775px;
+          width: 675px;
 
           & > div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
@@ -407,7 +410,7 @@ const callTel = () => {
   border: solid 2px #bcd09c;
 
   & > div:nth-child(1) {
-    padding: 33px 70px;
+    padding: 33px 60px;
   }
 
   & > div:nth-child(2) {
@@ -473,14 +476,18 @@ const callTel = () => {
   color: #ffffff;
 }
 
+.fromTable {
+  margin-top: -28%;
+}
+
 // 头部样式
 .medicalOptometry_head {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 40vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -521,7 +528,7 @@ const callTel = () => {
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -542,6 +549,23 @@ const callTel = () => {
         margin-bottom: 10px;
       }
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .medicalOptometry_head {
+    & > div:nth-child(1) {
+      margin-left: 50vw;
+    }
+  }
+
+  .medicalOptometry_nav {
+    margin-top: 3%;
+  }
+
+  .fromTable {
+    margin-top: -15%;
   }
 }
 </style>

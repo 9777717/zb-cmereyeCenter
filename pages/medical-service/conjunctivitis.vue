@@ -467,7 +467,6 @@ const callTel = () => {
       margin-top: 62px;
       display: flex;
       flex-wrap: wrap;
-      padding: 0 80px;
       justify-content: space-between;
 
       & > div {

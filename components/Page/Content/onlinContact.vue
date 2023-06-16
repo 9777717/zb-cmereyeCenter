@@ -13,11 +13,21 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+const route = useRoute()
+const rt = ref(route)
 </script>
 
 <template>
   <!-- 側邊欄聯係 -->
-  <div v-if="router.name !== 'index'" class="onlinContact">
+  <div
+    v-if="router.name !== 'index'"
+    class="onlinContact"
+    :class="[
+      rt.name === 'medical-service-eyeOrthopaedicDisease'
+        ? 'onlinContact_top'
+        : 'onlinContact',
+    ]"
+  >
     <a
       class="contactItem flex items-center justify-center flex-col mb-6"
       href="tel:+(852) 3956 2026"
@@ -110,6 +120,16 @@ const goWhatsApp = () => {
 
       color: #ffffff;
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .onlinContact {
+    top: 700px;
+  }
+  .onlinContact_top {
+    top: 900px;
   }
 }
 </style>

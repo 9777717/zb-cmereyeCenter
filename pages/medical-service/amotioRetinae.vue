@@ -370,6 +370,7 @@ const preventList1 = [
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
+  margin-top: -35%;
 
   & > #intro {
     margin-top: 220px;

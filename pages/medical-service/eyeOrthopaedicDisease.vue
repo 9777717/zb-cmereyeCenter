@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useTitle } from '@vueuse/core'
+
 onMounted(() => {
   const ophthalmoplastyList = ref(null)
   console.log(ophthalmoplastyList.value, '456')
@@ -866,19 +868,22 @@ const serviceNavigation = [
     <div>
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#b6b3e0;'}`"
-    />
+    <div class="fromTable">
+      <FormFooterInfo
+        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#b6b3e0;'}`"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .eyeOrthopaedicDisease_nav {
-  max-width: 1280px;
-  width: 1280px;
+  max-width: 1200px;
+  width: 1200px;
   margin: auto;
-  margin-top: 225px;
+  margin-top: -68%;
   margin-bottom: 290px;
+  transform: scale(0.85);
 
   & > #ophthalmoplasty {
     margin-bottom: 160px;
@@ -899,6 +904,7 @@ const serviceNavigation = [
 
         & > div:nth-child(1) {
           width: 752px;
+          transform: scale(0.85);
 
           & > div {
             margin-bottom: 78px;
@@ -955,6 +961,7 @@ const serviceNavigation = [
 
         & > div:nth-child(2) {
           width: 752px;
+          transform: scale(0.85);
 
           & > div {
             & > div:nth-child(1) {
@@ -1512,6 +1519,7 @@ const serviceNavigation = [
           justify-content: space-between;
 
           & > div {
+            transform: scale(0.85);
             width: 398px;
             height: 417px;
             background-color: #ffffff;
@@ -1671,7 +1679,7 @@ const serviceNavigation = [
               justify-content: space-between;
 
               & > div:nth-child(1) {
-                width: 920px;
+                width: 815px;
 
                 & > p {
                   font-size: 22px;
@@ -1808,7 +1816,7 @@ const serviceNavigation = [
               display: flex;
 
               & > div:nth-child(1) {
-                width: 920px;
+                width: 815px;
                 margin-right: 50px;
 
                 & > p {
@@ -2380,9 +2388,9 @@ const serviceNavigation = [
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-top: 100px;
-    margin-right: 300px;
+    margin-left: 30vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -2422,7 +2430,7 @@ const serviceNavigation = [
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 550px;
+      width: 40vw;
       height: 300px;
       position: absolute;
       top: 211px;
@@ -2448,8 +2456,16 @@ const serviceNavigation = [
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .xerophthalmia {
-    margin-left: 33%;
+  .eyeOrthopaedicDisease_nav {
+    margin-top: -40%;
+  }
+
+  .eyeOrthopaedicDisease_head {
+    margin-left: 15vw;
+  }
+
+  .fromTable {
+    margin-top: -50%;
   }
 }
 </style>

@@ -149,3 +149,10 @@ const props = defineProps({
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .anchor_top {
+    top: 200px;
+  }
+}
+</style>

@@ -256,7 +256,7 @@ const goWeibo = () => {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footSvg {
   width: 170px;
   display: flex;

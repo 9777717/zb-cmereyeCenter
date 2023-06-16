@@ -935,12 +935,12 @@ const callTel = () => {
         }
 
         & > div:nth-child(2) {
-          width: 1150px;
-          height: 370px;
+          width: 1000px;
+          height: 400px;
           background: #f5f4f3;
           position: absolute;
           right: 0;
-          padding-left: 420px;
+          padding-left: 300px;
           padding-top: 40px;
           padding-right: 40px;
 
@@ -970,7 +970,7 @@ const callTel = () => {
           left: 0;
           padding-left: 40px;
           padding-top: 40px;
-          padding-right: 415px;
+          padding-right: 300px;
           letter-spacing: -1px;
         }
       }
