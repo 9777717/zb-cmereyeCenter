@@ -159,12 +159,16 @@ useHead(() => ({
     position: relative;
 
     &::before {
-      content: '🠗';
+      content: '';
       color: #1b407a;
       position: absolute;
-      top: 50px;
+      top: 60px;
       font-size: 56px;
-      left: 80px;
+      left: 90px;
+      background: url('https://static.cmereye.com/imgs/2023/06/66b6869226b542b5.png');
+      background-size: 100% 100%;
+      width: 25px;
+      height: 55px;
     }
 
     & > p,
