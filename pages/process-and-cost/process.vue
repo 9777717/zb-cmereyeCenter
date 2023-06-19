@@ -36,6 +36,19 @@ const route = useRoute()
 if (route.hash === '#process') {
   // console.log(props.dd,'9995');
 }
+onMounted(() => {
+  getScrollHeight()
+  window.addEventListener('scroll', getScrollHeight)
+})
+const isShowLanguageBool = ref(false)
+
+const getScrollHeight = () => {
+  if (window.scrollY >= 2016) {
+    isShowLanguageBool.value = true
+  } else {
+    isShowLanguageBool.value = false
+  }
+}
 </script>
 
 <template>
@@ -99,12 +112,6 @@ if (route.hash === '#process') {
   </div>
 </template>
 <style scoped lang="scss">
-// .process {
-//   background: url('https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png');
-//   background-size: 100% 100%;
-//   background-repeat: no-repeat;
-// }
-
 .processMain {
   // background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
   // background-size: cover;

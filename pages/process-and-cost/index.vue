@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import Process from './process.vue'
-import Cost from './cost.vue'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -20,13 +18,257 @@ const serviceNavigation = [
     anchorLink: '/process-and-cost/#process',
   },
 ]
+onMounted(() => {
+  getScrollHeight()
+  window.addEventListener('scroll', getScrollHeight)
+})
+const isShowLanguageBool = ref(false)
+const getScrollHeight = () => {
+  // console.log('--------->', window.scrollY);
+  if (window.scrollY >= 2016) {
+    isShowLanguageBool.value = true
+  } else {
+    isShowLanguageBool.value = false
+  }
+}
 </script>
 
 <template>
-  <div class="cp">
+  <div :class="isShowLanguageBool === true ? 'cp_bg' : 'cp'">
     <div>
-      <Cost id="cost" />
-      <Process id="process" />
+      <div id="cost">
+        <div class="content">
+          <div class="titleBox">
+            <h1 class="text-3xl font-normal">
+              {{ $t('pages.process_cost.cont.cost_h1') }}
+            </h1>
+            <h2>PRICE LIST</h2>
+            <h3>{{ $t('pages.process_cost.cont.cost_h3_1') }}</h3>
+            <p>{{ $t('pages.process_cost.cont.cost_p1') }}</p>
+          </div>
+
+          <div class="costsTable py-10 px-8 mt-12 mb-40">
+            <h3 class="text-2xl text-center font-bold mb-8">
+              {{ $t('pages.process_cost.cont.cost_h3_2') }}
+            </h3>
+            <table class="table">
+              <thead>
+                <tr class="firstRow">
+                  <td colspan="2"></td>
+                  <td class="text-center text-xl">
+                    {{ $t('pages.process_cost.cont.cost_tr1_td1') }}
+                  </td>
+                  <td class="text-center text-xl">
+                    {{ $t('pages.process_cost.cont.cost_tr1_td2') }}
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
+                  </td>
+                  <td class="text-center">$420</td>
+                  <td class="text-center">$700</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
+                  </td>
+                  <td class="text-center">$900</td>
+                  <td class="text-center">$1,650</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
+                  </td>
+                  <td class="text-center">$900</td>
+                  <td class="text-center">$1,650</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
+                  </td>
+                  <td class="text-center">$1,300</td>
+                  <td class="text-center">$2,000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
+                  </td>
+                  <td class="text-center">$360</td>
+                  <td class="text-center">$600</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
+                  </td>
+                  <td class="text-center">$300</td>
+                  <td class="text-center">$500</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
+                  </td>
+                  <td class="text-center">$550</td>
+                  <td class="text-center">$900</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr9_td1') }}
+                  </td>
+                  <td class="text-center">$300</td>
+                  <td class="text-center">$500</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr10_td1') }}
+                  </td>
+                  <td class="text-center">$400</td>
+                  <td class="text-center">$800</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr11_td1') }}
+                  </td>
+                  <td class="text-center">$300</td>
+                  <td class="text-center">$600</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr12_td1') }}
+                  </td>
+                  <td class="text-center">/</td>
+                  <td class="text-center">$3,900</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr13_td1') }}
+                  </td>
+                  <td class="text-center">/</td>
+                  <td class="text-center">$3,900</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr14_td1') }}
+                  </td>
+                  <td class="text-center">/</td>
+                  <td class="text-center">$5,500</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr15_td1') }}
+                  </td>
+                  <td class="text-center">$500</td>
+                  <td class="text-center">$1,000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
+                  </td>
+                  <td class="text-center">/</td>
+                  <td class="text-center">$600/$800</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">
+                    {{ $t('pages.process_cost.cont.cost_tr17_td1') }}
+                  </td>
+                  <td class="text-center text-left">
+                    {{ $t('pages.process_cost.cont.cost_tr17_td2') }}
+                  </td>
+                  <td class="text-center">/</td>
+                  <td class="text-center">$350</td>
+                </tr>
+                <tr>
+                  <td class="text-center border-0 text-left">
+                    {{ $t('pages.process_cost.cont.cost_tr18_td2') }}
+                  </td>
+                  <td class="text-center border-0">/</td>
+                  <td class="text-center border-0">$750</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="text-center mt-20 mb-16 leading-10">
+              {{ $t('pages.process_cost.cont.cost_p2')
+              }}<span class="font-bold">{{
+                $t('pages.process_cost.cont.cost_p2_1')
+              }}</span
+              >{{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
+              {{ $t('pages.process_cost.cont.cost_p3')
+              }}<span class="font-bold">{{
+                $t('pages.process_cost.cont.cost_p3_1')
+              }}</span>
+              {{ $t('pages.process_cost.cont.cost_p4') }} <br />
+              {{ $t('pages.process_cost.cont.cost_p5') }}<br />
+              {{ $t('pages.process_cost.cont.cost_p6')
+              }}<span class="font-bold">HK$1,500-HK$6,000</span
+              >{{ $t('pages.process_cost.cont.cost_p6_1') }}
+              {{ $t('pages.process_cost.cont.cost_p7') }}<br />
+              {{ $t('pages.process_cost.cont.cost_p8') }} <br />
+              {{ $t('pages.process_cost.cont.cost_p9') }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="process" class="process">
+        <div
+          class="processMain mainCon relative flex items-start justify-center"
+        >
+          <div class="content mt-20 ml-20 relative">
+            <div class="titleBox">
+              <h1 class="text-3xl font-normal">
+                {{ $t('pages.process_cost.process_1.process_h1') }}
+              </h1>
+              <h2>Outpatient Services</h2>
+            </div>
+            <div class="py-10 px-8 mt-12 mb-40">
+              <div class="processItem mb-20">
+                <p>{{ $t('pages.process_cost.process_1.process_p1') }}</p>
+              </div>
+              <div class="processItem itemdes mb-14">
+                <p>{{ $t('pages.process_cost.process_1.process_p2') }}</p>
+                <div>
+                  <h3 class="text-xl pb-3 mb-3">
+                    {{ $t('pages.process_cost.process_1.process_h3_1') }}
+                  </h3>
+                  <p>
+                    {{ $t('pages.process_cost.process_1.process_p3_1') }}<br />
+                    {{ $t('pages.process_cost.process_1.process_p3_2') }}
+                  </p>
+                </div>
+              </div>
+              <div class="processItem itemdes mb-14">
+                <p>{{ $t('pages.process_cost.process_1.process_p4') }}</p>
+                <div>
+                  <h3 class="text-xl pb-3 mb-3">
+                    {{ $t('pages.process_cost.process_1.process_h3_2') }}
+                  </h3>
+                  <p>
+                    {{ $t('pages.process_cost.process_1.process_p5_1') }}<br />
+                    {{ $t('pages.process_cost.process_1.process_p5_2') }}<br />
+                    {{ $t('pages.process_cost.process_1.process_p5_3') }}
+                  </p>
+                </div>
+              </div>
+              <div class="processItem mb-20">
+                <p>{{ $t('pages.process_cost.process_1.process_p6') }}</p>
+              </div>
+              <div class="processItem processItem5 mb-20">
+                <p>
+                  {{ $t('pages.process_cost.process_1.process_p7_1') }} <br />
+                  {{ $t('pages.process_cost.process_1.process_p7_2') }}
+                </p>
+              </div>
+              <div class="processItem processItem6 itemdes mb-20">
+                <p>{{ $t('pages.process_cost.process_1.process_p8') }}</p>
+                <div>
+                  <p>{{ $t('pages.process_cost.process_1.process_p9') }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <PageInformation :service-navigation="serviceNavigation" />
   </div>
@@ -41,5 +283,257 @@ const serviceNavigation = [
 .cp > div:nth-child(1) {
   max-width: 1200px;
   margin: auto;
+}
+
+.content {
+  padding-left: 320px;
+}
+
+.titleBox {
+  padding-top: 100px;
+  font-family: 'Noto Sans HK';
+
+  h1 {
+    font-size: 37.5px;
+  }
+
+  h2 {
+    color: #8ad8dd;
+    font-size: 21px;
+    font-family: 'Metropolis';
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+.costsTable {
+  background-color: rgba(255, 255, 255, 0.75);
+
+  table {
+    thead {
+      td {
+        padding-bottom: 35px;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          border-bottom: 1px dashed;
+          bottom: 25%;
+          left: 0;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: #dddddd solid 1.5px;
+        width: 887.83px;
+
+        &:nth-child(odd) {
+          background-color: rgba(242, 242, 242, 0.75);
+        }
+
+        &:nth-child(even) {
+          background-color: rgba(255, 255, 255, 0.55);
+        }
+
+        &:last-child {
+          border: none;
+        }
+
+        td {
+          padding: 15px;
+          padding-left: 25px;
+        }
+
+        td:nth-child(1) {
+          width: 620px;
+          text-align: left;
+        }
+      }
+
+      & > tr:nth-child(16) {
+        & > td:nth-child(2) {
+          text-align: left;
+        }
+      }
+
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        border-bottom: 1px dashed;
+        bottom: -2%;
+        left: 0;
+      }
+    }
+  }
+}
+
+.anchor {
+  bottom: 450px;
+  position: fixed;
+  right: 2.5%;
+  z-index: 99;
+
+  a {
+    border: 0.5px solid #515151;
+    margin: 5px 0;
+    padding: 5px 40px;
+    font-size: 15px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .anchorActive,
+  .exactActive {
+    border: 0.5px solid #8ad8dd;
+    background: #8ad8dd;
+    color: #fff;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 12%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.cp_bg {
+  background: url('https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.processMain {
+  // background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+
+  .titleBox {
+    h2 {
+      color: #8ad8dd;
+      font-size: 21px;
+      font-family: 'Metropolis';
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 40px;
+      letter-spacing: 5px;
+    }
+  }
+
+  .anchor {
+    bottom: 20%;
+    position: fixed;
+    right: 2.5%;
+    z-index: 99;
+    bottom: 20%;
+
+    a {
+      border: 0.5px solid #515151;
+      margin: 5px 0;
+      padding: 5px 40px;
+      font-size: 15px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .anchorActive,
+    .exactActive {
+      border: 0.5px solid #8ad8dd;
+      background: #8ad8dd;
+      color: #fff;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 12%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .processItem {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      color: #1b407a;
+      position: absolute;
+      top: 60px;
+      font-size: 56px;
+      left: 90px;
+      background: url('https://static.cmereye.com/imgs/2023/06/66b6869226b542b5.png');
+      background-size: 100% 100%;
+      width: 25px;
+      height: 55px;
+    }
+
+    & > p,
+    & > div {
+      padding: 10px 20px;
+      background: #5376d0;
+      display: inline-block;
+      color: #fff;
+    }
+
+    & > p {
+      margin-right: 100px;
+      width: 200px;
+    }
+
+    & > div {
+      width: 500px;
+    }
+
+    h3 {
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .itemdes > p:after {
+    position: absolute;
+    content: '';
+    left: 225px;
+    top: 21px;
+    margin: auto 0;
+    width: 50px;
+    height: 1px;
+    border-bottom: 2px #5376d0 dotted;
+  }
+
+  .processItem5::before {
+    top: 75px;
+  }
+
+  .processItem6::before {
+    display: none;
+  }
 }
 </style>
