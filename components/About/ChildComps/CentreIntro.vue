@@ -318,7 +318,6 @@ const goInstagram = (type: string) => {
 
   // 简介
   & > div:nth-child(1) {
-    margin-left: 172px;
     display: flex;
     flex-direction: column;
 
@@ -716,11 +715,11 @@ const goInstagram = (type: string) => {
     }
   }
 
-  & > div:nth-child(2),
-  & > div:nth-child(3),
-  & > div:nth-child(4) {
-    margin-left: 11.7%;
-  }
+  // & > div:nth-child(2),
+  // & > div:nth-child(3),
+  // & > div:nth-child(4) {
+  //   margin-left: 11.7%;
+  // }
 }
 
 .media {
@@ -847,18 +846,145 @@ const goInstagram = (type: string) => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .centreIntro {
+    // 简介
+    & > div:nth-child(1) {
+      margin-left: 120px;
+
+      & > div:nth-child(1) {
+        margin-left: -4vw;
+      }
+    }
+
+    // 希瑪視光中心
+    & > div:nth-child(4) {
+      width: 1186px;
+      margin-top: 180px;
+      position: relative;
+
+      .swiper {
+        filter: drop-shadow(6px 7px 4px rgba(128, 123, 123, 0.25));
+        width: 523px;
+      }
+
+      .swiper-slide {
+        width: 100% !important;
+      }
+
+      & > div:nth-child(1) {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+
+        & > div {
+          background: #00a4cf;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 30px 0px;
+          width: 332px;
+          height: 69px;
+
+          font-family: 'Noto Sans HK';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 34.6916px;
+          line-height: 2;
+          /* identical to box height, or 144% */
+
+          text-align: center;
+          letter-spacing: 0.05em;
+
+          color: #ffffff;
+        }
+      }
+
+      & > div:nth-child(2) {
+        img {
+          border-radius: 12px;
+          width: 523px;
+          height: 380px;
+        }
+
+        margin-top: 13px;
+        display: flex;
+        align-items: center;
+
+        & > div:nth-child(2) {
+          margin-left: 50px;
+          margin-top: 43px;
+
+          font-family: 'Noto Sans HK';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 34px;
+          /* or 170% */
+
+          text-align: justify;
+          letter-spacing: 0.06em;
+          text-indent: 45px;
+          text-transform: uppercase;
+
+          color: #515151;
+
+          & > p {
+            margin-top: 40px;
+          }
+        }
+      }
+
+      & > div:nth-child(3) {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        & > div {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          font-family: 'Noto Sans HK';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 34px;
+          /* or 170% */
+
+          text-align: justify;
+          letter-spacing: 0.06em;
+          text-indent: 5px;
+          text-transform: uppercase;
+
+          color: #2958a3;
+        }
+
+        & > div:nth-child(1) {
+          margin-left: 98px;
+        }
+
+        & > div:nth-child(2) {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    // & > div:nth-child(2),
+    // & > div:nth-child(3),
+    // & > div:nth-child(4) {
+    //   margin-left: 11.7%;
+    // }
+  }
+
+  .centreIntro {
     margin: auto;
     max-width: 1300px;
     margin-left: 28.5%;
   }
 
-  .centreIntro {
-    & > div:nth-child(2),
-    & > div:nth-child(3),
-    & > div:nth-child(4) {
-      margin-left: 11.3%;
-    }
-  }
+  // .centreIntro {
+  //   & > div:nth-child(2),
+  //   & > div:nth-child(3),
+  //   & > div:nth-child(4) {
+  //     margin-left: 11.3%;
+  //   }
+  // }
 
   .media {
     margin-top: 210px;

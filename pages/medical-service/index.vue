@@ -100,17 +100,17 @@ const SerListL = [
   },
   {
     i: '12',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/f44e8be36a331b78.png',
+    imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
+    des: '屈光矯視',
+    link: '',
+  },
+  {
+    i: '13',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/06/18da333b4728e821.png',
     des: '阿托品滴眼液',
     link: '/medical-service/atropine',
   },
-  // {
-  //   i: '12',
-  //   imgUrl:
-  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
-  //   des: '屈光矯視',
-  //   link: '',
-  // },
 ]
 </script>
 
@@ -147,7 +147,7 @@ const SerListL = [
   .title {
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    margin-left: 33.59375%;
+    margin-left: 35.39375%;
     position: relative;
     top: 98px;
     font-family: 'Noto Sans HK';

@@ -371,7 +371,7 @@ const doctorList = [
   margin-bottom: 455px;
 
   & > div:first-child {
-    margin-left: 650px;
+    margin-left: 695px;
     margin-top: 98px;
 
     & > .title {
@@ -413,7 +413,7 @@ const doctorList = [
   }
 
   .mainCon {
-    margin-left: 34.7917%;
+    margin-left: 30.6vw;
     z-index: 2;
     position: relative;
     margin-top: 71px;
@@ -1082,6 +1082,10 @@ const doctorList = [
   .medical-team {
     margin: auto;
     max-width: 1200px;
+
+    & > div:first-child {
+      margin-left: 190px;
+    }
   }
 }
 </style>

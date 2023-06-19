@@ -75,7 +75,7 @@ const mmmmm = (num: any) => {
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/c6dfc14c28ac7105.png"
+            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"
             alt="健康資訊"
           />
           <div>
@@ -217,31 +217,25 @@ const mmmmm = (num: any) => {
 </template>
 <style lang="scss" scoped>
 .healthInfo {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  height: 650px;
+  width: 100vw;
 
   & > div:nth-child(1) {
     background: #f2f2f2;
-    width: 1333px;
+    width: 100%;
     height: 640px;
     margin-top: 315px;
     position: relative;
 
     & > div:nth-child(1) {
       position: relative;
-
-      & > img {
-        top: -103px;
-        position: absolute;
-        right: 0;
-      }
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: 14vw;
 
       & > div:nth-child(2) {
         width: 500.49px;
         position: relative;
-        left: -81px;
         top: -31px;
         text-align: center;
 
@@ -270,7 +264,7 @@ const mmmmm = (num: any) => {
           font-size: 44.48px;
           line-height: 56px;
           text-align: center;
-          letter-spacing: 0.02em;
+          letter-spacing: 0.04em;
           text-transform: uppercase;
           color: #ffffff;
 
@@ -300,8 +294,8 @@ const mmmmm = (num: any) => {
       }
 
       position: absolute;
-      bottom: 100px;
-      left: -6%;
+      bottom: 220px;
+      left: 25vw;
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
@@ -315,15 +309,19 @@ const mmmmm = (num: any) => {
 
     & > div:nth-child(3) {
       position: absolute;
-      left: 31%;
+      left: 50%;
       bottom: -33%;
     }
   }
 
   & > div:nth-child(2) {
-    position: absolute;
-    left: 18%;
-    bottom: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -40vw;
+    margin-top: -8.5vw;
+    z-index: 5;
+    position: relative;
 
     & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
@@ -494,7 +492,6 @@ const mmmmm = (num: any) => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .healthInfo {
-    width: 1920px;
     margin: auto;
   }
 }

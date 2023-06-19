@@ -471,7 +471,7 @@ const mainContent = [
   .doctorClass {
     width: 1780px;
     margin: auto;
-    margin-left: 32%;
+    margin-left: 26vw;
   }
 
   .doctorClass > div:nth-child(2) {

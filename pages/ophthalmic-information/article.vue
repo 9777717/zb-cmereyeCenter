@@ -352,7 +352,7 @@ const articleList = [
   .article_Out {
     width: 1920px;
     margin: auto;
-    margin-left: 25%;
+    margin-left: 20vw;
   }
 }
 </style>

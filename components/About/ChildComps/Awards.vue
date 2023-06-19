@@ -79,7 +79,7 @@ const awardsList = [
 </template>
 <style scoped lang="scss">
 #awards {
-  margin-left: 650px;
+  margin-left: 630px;
   margin-top: 253px;
   margin-bottom: 160px;
   display: flex;
@@ -87,7 +87,7 @@ const awardsList = [
   align-items: flex-end;
 
   & > .title {
-    margin-left: -25px;
+    margin-left: -180px;
   }
 
   & > .awardslide {
@@ -154,7 +154,7 @@ const awardsList = [
 <style lang="scss" scoped>
 @media screen and(min-width:1920px) {
   #awards {
-    margin-left: 36.3%;
+    margin-left: 29.8%;
   }
 }
 </style>

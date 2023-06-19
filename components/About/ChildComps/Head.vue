@@ -46,7 +46,7 @@ const leaveActive = () => {
     <div class="title">{{ $t('pages.about_us.about_us') }}</div>
     <div class="imgBox">
       <img
-        src="https://static.cmereye.com/imgs/2023/05/042c0e54e896002f.jpg"
+        src="https://static.cmereye.com/imgs/2023/06/7ee2bada2167f4a0.png"
         alt=""
       />
       <img
@@ -108,7 +108,7 @@ const leaveActive = () => {
   position: absolute;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  left: 35.416667%;
+  left: 24.416667%;
   top: -105px;
   font-family: 'Noto Sans HK';
   font-style: normal;
@@ -147,7 +147,7 @@ const leaveActive = () => {
   background: #f2f2f2;
   width: 41.9%;
   height: 640px;
-  margin-left: 39.1667%;
+  margin-left: 30.1667%;
   margin-top: 203px;
 
   img {
@@ -202,6 +202,17 @@ const leaveActive = () => {
       top: 0;
       background-color: #ffffff;
     }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and(min-width:1920px) {
+  .imgBox {
+    margin-left: 36.1667vw;
+  }
+
+  .title {
+    left: 29vw;
   }
 }
 </style>

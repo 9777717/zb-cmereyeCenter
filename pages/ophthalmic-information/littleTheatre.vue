@@ -305,6 +305,7 @@ const videoList = [
   .currentpage {
     width: 1920px;
     margin: auto;
+    margin-left: 23vw;
   }
 }
 </style>

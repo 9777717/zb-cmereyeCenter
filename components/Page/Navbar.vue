@@ -35,7 +35,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 企业愿景
         text: t('pages.about_us.enterprise_vision'),
-        route: { name: 'about-us-corporationVision' },
+        route: { path: '/about-us', hash: '#awards' },
       },
     ],
   },
@@ -156,7 +156,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 費用一覽
         text: t('pages.process_cost.cost'),
-        route: { name: 'process-and-cost' },
+        route: { path: '/process-and-cost', hash: '#cost' },
       },
       {
         type: 'link', // 就診流程
@@ -188,16 +188,30 @@ const menus = computed((): IMenuItem[] => [
     ],
   },
 ])
-const porps = defineProps({
-  rt: {
-    type: String,
-    default: undefined,
-  },
-})
+
+const route = useRoute()
+const rt = ref(route)
+
+const hashActive = (child: any) => {
+  if (
+    rt.value.name === child.route.name ||
+    rt.value.path === child.route.path
+  ) {
+    if (child.route.hash) {
+      if (child.route.hash === rt.value.hash) {
+        return 'activeHash'
+      } else {
+        return ''
+      }
+    } else {
+      return 'activeHash'
+    }
+  }
+}
 </script>
 
 <template>
-  <div :class="[porps.rt === 'index' ? 'headerTem' : 'headerTemPage']">
+  <div :class="[rt.name === 'index' ? 'headerTem' : 'headerTemPage']">
     <BuilderNavbar>
       <template #menu>
         <div class="navigtion">
@@ -210,12 +224,12 @@ const porps = defineProps({
               v-if="item.type === 'link'"
               :to="item.route ? item.route : undefined"
               :href="item.href ? item.href : undefined"
-              class="hover:no-underline"
+              class="hover:no-underline fatherBg"
               >{{ item.text }}</Anchor
             >
             <div
               v-if="item.childMenuList && item.childMenuList.length"
-              :class="porps.rt === 'index' ? 'child' : 'childpage'"
+              :class="rt.name === 'index' ? 'child' : 'childpage'"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
                 <Anchor
@@ -223,6 +237,7 @@ const porps = defineProps({
                   :to="child.route ? child.route : undefined"
                   :href="child.href ? child.href : undefined"
                   class="hover:no-underline"
+                  :class="hashActive(child)"
                   >{{ child.text }}</Anchor
                 >
               </div>
@@ -234,16 +249,22 @@ const porps = defineProps({
   </div>
 </template>
 <style lang="scss" scoped>
-a.router-link-exact-active {
-  color: #ffffff;
-}
-
-a.router-link-active {
+.fatherBg.router-link-active {
   font-weight: bold;
   background: #ffa88c;
   width: 100%;
   height: 100%;
   line-height: 3.5;
+  color: #ffffff;
+}
+
+.activeHash {
+  font-weight: bold;
+  background: #ffa88c;
+  width: 100%;
+  height: 100%;
+  line-height: 3.5;
+  color: #ffffff;
 }
 
 a {
@@ -254,9 +275,9 @@ a {
 
 .headerTem {
   z-index: 999;
-  position: fixed;
+  position: fixed; // 记得改为 fixed
   top: 54px;
-  left: 22.4375%;
+  left: 10.0305%;
   background: #ffffffbf;
 
   .navigtion {
@@ -279,6 +300,11 @@ a {
       align-items: center;
       justify-content: center;
       position: relative;
+    }
+
+    a.router-link-exact-active {
+      color: #ffffff;
+      background: #ffa88c;
     }
 
     & > div::after {
@@ -328,6 +354,10 @@ a {
       align-items: center;
       justify-content: center;
       position: relative;
+
+      a.router-link-exact-active {
+        color: #ffffff;
+      }
     }
 
     & > div::after {
@@ -567,6 +597,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a.router-link-exact-active {
+      color: #ffffff;
+    }
   }
 
   & > div > a::after {
@@ -612,6 +646,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    a.router-link-exact-active {
+      color: #ffffff;
+    }
   }
 
   & > div > a::after {
@@ -653,6 +691,13 @@ a {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .headerTemPage {
+    top: 95px;
+    left: 17.0305%;
+    transform: scale(1.2);
+    margin-top: 4%;
+  }
+
+  .headerTem {
     top: 95px;
     left: 17.0305%;
     transform: scale(1.2);

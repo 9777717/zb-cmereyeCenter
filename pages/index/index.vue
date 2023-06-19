@@ -225,6 +225,7 @@ const callTel = () => {
 
     & > div:nth-child(2) {
       display: flex;
+      margin-left: -8%;
 
       & > div {
         background: #ffffffbf;
@@ -346,6 +347,20 @@ const callTel = () => {
             border: 0;
           }
         }
+      }
+    }
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1920px) {
+  .home {
+    & > div:nth-child(2) {
+      & > div:nth-child(2) {
+        display: flex;
+        transform: scale(1.5);
+        margin-left: -8%;
+        margin-top: 5%;
       }
     }
   }
