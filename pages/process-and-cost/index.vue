@@ -26,10 +26,7 @@ const serviceNavigation = [
   <div class="cp">
     <div>
       <Cost id="cost" />
-      <Process
-        id="process"
-        :dd="`background:url('https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png')`"
-      />
+      <Process id="process" />
     </div>
     <PageInformation :service-navigation="serviceNavigation" />
   </div>

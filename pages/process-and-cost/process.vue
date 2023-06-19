@@ -31,6 +31,11 @@ useHead(() => ({
     },
   ],
 }))
+
+const route = useRoute()
+if (route.hash === '#process') {
+  // console.log(props.dd,'9995');
+}
 </script>
 
 <template>
@@ -95,7 +100,7 @@ useHead(() => ({
 </template>
 <style scoped lang="scss">
 // .process {
-//   background: url(https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png);
+//   background: url('https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png');
 //   background-size: 100% 100%;
 //   background-repeat: no-repeat;
 // }
