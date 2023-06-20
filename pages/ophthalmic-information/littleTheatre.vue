@@ -42,7 +42,7 @@ const videoList = [
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/d9be37a46c8cd037.png"
+            src="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"
             alt="希碼小劇場"
           />
           <div>

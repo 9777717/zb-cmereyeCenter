@@ -59,8 +59,8 @@ const eyeDisease = [
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/8d816469e559897d.png"
-            alt="護眼宣傳片"
+            src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
+            alt="護眼宣傳"
           />
         </div>
         <div>
@@ -136,20 +136,30 @@ const eyeDisease = [
 .publicity {
   & > div:nth-child(1) {
     margin-top: 102px;
-    margin-left: 417px;
     display: flex;
     position: relative;
     flex-direction: column;
+    background: #f1f1f1;
+    height: 706px;
+    width: 1630px;
+    max-width: 1630px;
+
+    & > div:nth-child(1) {
+      position: absolute;
+      bottom: -3vw;
+      right: -2vw;
+    }
 
     & > div:nth-child(2) {
       position: absolute;
-      left: 0;
-      right: 0;
+      left: 15vw;
+      top: 26vw;
       bottom: 66.65px;
       display: flex;
       flex-direction: column;
       align-items: center;
       z-index: 5;
+      margin-left: 28vw;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -211,21 +221,21 @@ const eyeDisease = [
       }
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 1044px;
-      height: 725px;
-      position: absolute;
-      right: 56px;
-      bottom: -73.35px;
-      z-index: 1;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   background: #f2f2f2;
+    //   width: 1544px;
+    //   height: 725px;
+    //   position: absolute;
+    //   right: 56px;
+    //   bottom: -73.35px;
+    //   z-index: 1;
+    // }
   }
 
   & > div:nth-child(2) {
     margin-top: 240px;
-    margin-left: 450px;
+    margin-left: 350px;
     margin-bottom: 277px;
 
     & > div {
@@ -270,6 +280,22 @@ const eyeDisease = [
   .publicity {
     width: 1920px;
     margin: auto;
+
+    & > div:nth-child(1) {
+      width: 1630px;
+      max-width: 1630px;
+
+      & > div:nth-child(1) {
+        bottom: -3vw;
+        right: -2vw;
+      }
+
+      & > div:nth-child(2) {
+        left: 15vw;
+        top: 18vw;
+        margin-left: 15vw;
+      }
+    }
   }
 }
 </style>
