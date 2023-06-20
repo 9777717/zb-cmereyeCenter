@@ -1083,12 +1083,13 @@ const doctorList = [
     margin: auto;
     max-width: 1200px;
 
+    .mainCon {
+      margin-left: 8.6vw;
+    }
+
     & > div:first-child {
       margin-left: 190px;
     }
-  }
-  .mainCon {
-    margin-left: 8.6vw;
   }
 }
 </style>
