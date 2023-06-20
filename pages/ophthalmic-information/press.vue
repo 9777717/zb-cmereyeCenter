@@ -197,7 +197,7 @@ const pageTurning = (flag: string) => {
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/c371c147ef847a9d.jpg"
+            src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
             alt="新聞資訊"
           />
           <svg
@@ -289,7 +289,11 @@ const pageTurning = (flag: string) => {
     </div>
     <div v-if="isDetail" class="content_press">
       <div>
-        <div>{{ detail.title }}</div>
+        <div>
+          <div v-for="(el, index) in detail.title" :key="index">
+            {{ $t(el) }}
+          </div>
+        </div>
         <div>
           <div><img :src="detail.img" /></div>
           <div>{{ detail.date }}</div>
@@ -347,7 +351,7 @@ const pageTurning = (flag: string) => {
           <div @click="pageTurning('down')">
             {{
               $t(
-                'pages.ophthalmic_information.ophthalmic_press_text.press_text5_1'
+                'pages.ophthalmic_information.ophthalmic_press_text.press_text5_2'
               )
             }}
           </div>
@@ -371,11 +375,18 @@ const pageTurning = (flag: string) => {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 1664px;
+    height: 731px;
+    margin-top: 80px;
+    background: #f1f1f1;
 
     & > div:nth-child(1) {
       position: relative;
+      margin: auto;
       margin-top: 122px;
-      margin-left: 268px;
+      margin-left: 340px;
+      right: -1vw;
+      bottom: -2vw;
 
       & > img {
         position: relative;
@@ -390,20 +401,8 @@ const pageTurning = (flag: string) => {
       }
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 1386px;
-      height: 912px;
-      display: inline-block;
-      z-index: 1;
-      position: absolute;
-      right: 0;
-      top: 57px;
-    }
-
     & > div:nth-child(2) {
-      padding: 4.8% 0 0 5%;
+      padding: 22.8% 0 0 5%;
       text-align: center;
       position: absolute;
       left: 0;
@@ -680,6 +679,16 @@ const pageTurning = (flag: string) => {
   .current {
     width: 1920px;
     margin: auto;
+  }
+
+  .press {
+    & > div:nth-child(2) {
+      margin-left: 28%;
+    }
+  }
+
+  .content_press {
+    margin-bottom: 80px;
   }
 }
 </style>
