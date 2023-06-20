@@ -130,10 +130,13 @@ const videoList = [
     position: relative;
 
     & > div:nth-child(1) {
+      margin-top: 10vw;
+
       & > img {
         margin: 0 auto;
         z-index: 5;
         position: relative;
+        margin-left: 18vw;
       }
 
       & > div:nth-child(2) {
@@ -147,11 +150,11 @@ const videoList = [
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 1781px;
-      height: 1080px;
+      width: 1700px;
+      height: 858px;
       display: inline-block;
       position: absolute;
-      bottom: -75px;
+      top: 0;
       z-index: 1;
     }
 
@@ -159,7 +162,7 @@ const videoList = [
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 73.51px;
+      bottom: 0;
       z-index: 5;
       display: flex;
       flex-direction: column;
@@ -196,7 +199,7 @@ const videoList = [
       }
 
       & > div:nth-child(2) {
-        margin-top: 52px;
+        margin-top: 42px;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -306,6 +309,20 @@ const videoList = [
     width: 1920px;
     margin: auto;
     margin-left: 23vw;
+  }
+
+  .theatre {
+    & > div:nth-child(1) {
+      & > div:nth-child(1) {
+        & > img {
+          margin-left: 9vw;
+        }
+      }
+
+      & > div:nth-child(1)::after {
+        margin: auto;
+      }
+    }
   }
 }
 </style>
