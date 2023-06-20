@@ -82,7 +82,7 @@ const articleList = [
       <div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/fe976a37d9ff57f1.png"
+            src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"
             alt="文章推薦"
           />
           <svg
@@ -179,9 +179,16 @@ const articleList = [
     position: relative;
     margin-top: 86.63px;
 
+    width: 1695px;
+    height: 767px;
+    background: #f2f2f2;
+    display: inline-block;
+
     & > div:nth-child(1) {
-      margin-left: 10%;
+      margin: auto;
       position: relative;
+      margin-left: 18vw;
+      margin-top: 8vw;
 
       & > img {
         z-index: 5;
@@ -195,28 +202,18 @@ const articleList = [
       }
     }
 
-    & > div:nth-child(1)::before {
-      content: '';
-      width: 1590px;
-      height: 913px;
-      background: #f2f2f2;
-      display: inline-block;
-      z-index: 1;
-      position: absolute;
-      left: -88.38px;
-      bottom: -118.42px;
-    }
-
     & > div:nth-child(2) {
       position: absolute;
       z-index: 5;
-      left: 0;
+      top: 18vw;
+      left: 10vw;
       right: 0;
       bottom: 294.58px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+      justify-content: flex-start;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -349,6 +346,18 @@ const articleList = [
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
+  .article {
+    & > div:nth-child(1) {
+      & > div:nth-child(1) {
+        margin-left: 8vw;
+      }
+
+      & > div:nth-child(2) {
+        left: 3vw;
+      }
+    }
+  }
+
   .article_Out {
     width: 1920px;
     margin: auto;
