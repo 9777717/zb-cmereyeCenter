@@ -539,3 +539,10 @@ const scrollHeight = () => {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media screen and (min-width: 1980px) {
+  .content {
+    padding-left: 160px;
+  }
+}
+</style>
