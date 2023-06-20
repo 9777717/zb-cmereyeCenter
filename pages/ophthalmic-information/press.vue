@@ -269,7 +269,7 @@ const pageTurning = (flag: string) => {
           @click="newDeatil(index)"
         >
           <div><img :src="item.img" /></div>
-          <div>{{ $t(item.date) }}</div>
+          <div>{{ item.date }}</div>
           <div>
             <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
           </div>

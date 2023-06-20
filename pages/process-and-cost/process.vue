@@ -32,17 +32,13 @@ useHead(() => ({
   ],
 }))
 
-const route = useRoute()
-if (route.hash === '#process') {
-  // console.log(props.dd,'9995');
-}
 onMounted(() => {
-  getScrollHeight()
-  window.addEventListener('scroll', getScrollHeight)
+  scrollHeight()
+  window.addEventListener('scroll', scrollHeight)
 })
 const isShowLanguageBool = ref(false)
 
-const getScrollHeight = () => {
+const scrollHeight = () => {
   if (window.scrollY >= 2016) {
     isShowLanguageBool.value = true
   } else {

@@ -18,14 +18,16 @@ const serviceNavigation = [
     anchorLink: '/process-and-cost/#process',
   },
 ]
-onMounted(() => {
-  getScrollHeight()
-  window.addEventListener('scroll', getScrollHeight)
-})
 const isShowLanguageBool = ref(false)
-const getScrollHeight = () => {
-  // console.log('--------->', window.scrollY);
-  if (window.scrollY >= 2016) {
+const process = ref({
+  offsetTop: 0,
+})
+onMounted(() => {
+  scrollHeight()
+  window.addEventListener('scroll', scrollHeight)
+})
+const scrollHeight = () => {
+  if (window.scrollY >= process.value.offsetTop - 300) {
     isShowLanguageBool.value = true
   } else {
     isShowLanguageBool.value = false
@@ -210,7 +212,7 @@ const getScrollHeight = () => {
           </div>
         </div>
       </div>
-      <div id="process" class="process">
+      <div id="process" ref="process" class="process">
         <div
           class="processMain mainCon relative flex items-start justify-center"
         >
