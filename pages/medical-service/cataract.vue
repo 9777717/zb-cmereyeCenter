@@ -421,7 +421,7 @@ const callTel = () => {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/54ae049d3ec05868.png"
+                src="https://static.cmereye.com/imgs/2023/06/306305535d5e270b.png"
                 :alt="`${$t('pages.medical_service.cataract')}`"
               />
             </div>

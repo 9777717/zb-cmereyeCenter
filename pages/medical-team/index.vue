@@ -1087,5 +1087,8 @@ const doctorList = [
       margin-left: 190px;
     }
   }
+  .mainCon {
+    margin-left: 8.6vw;
+  }
 }
 </style>
