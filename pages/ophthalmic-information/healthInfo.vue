@@ -3,7 +3,7 @@
 definePageMeta({
   layout: 'page',
 })
-const { t } = useLang()
+// const { t } = useLang()
 useHead(() => ({
   title: '健康資訊｜眼科資訊 | 香港希瑪眼科中心',
   meta: [
