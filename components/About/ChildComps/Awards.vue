@@ -58,6 +58,7 @@ const awardsList = [
         :space-between="30"
         :centered-slides="true"
         :modules="[Autoplay]"
+        :free-mode="true"
         :autoplay="{
           delay: 2500,
           disableOnInteraction: false,
@@ -79,6 +80,8 @@ const awardsList = [
 </template>
 <style scoped lang="scss">
 #awards {
+  width: 100%;
+  max-width: 1080px;
   margin-left: 630px;
   margin-top: 253px;
   margin-bottom: 160px;

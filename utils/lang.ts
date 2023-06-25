@@ -34,10 +34,11 @@ export function LanguageManager() {
   // methods
   const getSystemLocale = (): string => {
     try {
-      const foundLang = window
-        ? window.navigator.language.substring(0, 2)
-        : 'zh_tc'
-      return availableLocales[foundLang] ? foundLang : 'zh_tc'
+      // const foundLang = window
+      //   ? window.navigator.language.substring(0, 2)
+      //   : 'zh_tc'
+      // return availableLocales[foundLang] ? foundLang : 'zh_tc'
+      return 'zh_tc'
     } catch (error) {
       return 'zh_tc'
     }

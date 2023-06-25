@@ -373,7 +373,7 @@ const doctorList = [
   & > div:first-child {
     margin-left: 695px;
     margin-top: 98px;
-
+    position: relative;
     & > .title {
       position: relative;
       -ms-writing-mode: tb-lr;
@@ -407,8 +407,9 @@ const doctorList = [
       width: 738px;
       height: 543px;
       position: absolute;
-      top: 0;
-      left: 39.1667%;
+      top: -98px;
+      // left: 39.1667%;
+      left: 150px;
     }
   }
 

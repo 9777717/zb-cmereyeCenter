@@ -99,8 +99,8 @@ const callTel = () => {
             <div @click="callTel()">
               <div>
                 <svg
-                  width="22"
-                  height="20"
+                  width="33"
+                  height="30"
                   viewBox="0 0 22 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +120,8 @@ const callTel = () => {
             <div @click="goWhatsApp()">
               <div>
                 <svg
-                  width="24"
-                  height="24"
+                  width="33"
+                  height="33"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,8 +143,8 @@ const callTel = () => {
             <div>
               <div>
                 <svg
-                  width="28"
-                  height="23"
+                  width="33"
+                  height="27"
                   viewBox="0 0 28 23"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,6 @@ const callTel = () => {
   position: relative;
   width: 100%;
   height: 100vh;
-
   & > div:nth-child(2) {
     position: absolute;
     top: 37%;
@@ -194,29 +193,23 @@ const callTel = () => {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     & > div:nth-child(1) {
       display: flex;
       justify-content: center;
       margin-bottom: 196px;
       flex-direction: column;
       align-items: flex-start;
-
       & > div:nth-child(1) {
         letter-spacing: 0.1em;
       }
-
       & > div:nth-child(3) {
         letter-spacing: 0.78em;
       }
-
       font-family: 'Metropolis';
       font-style: normal;
       font-weight: 700;
       font-size: 24.0948px;
       line-height: 28px;
-      /* identical to box height, or 114% */
-
       letter-spacing: 0.62em;
       text-transform: uppercase;
 
@@ -225,73 +218,63 @@ const callTel = () => {
 
     & > div:nth-child(2) {
       display: flex;
-      margin-left: -8%;
-
       & > div {
         background: #ffffffbf;
       }
-
+      img {
+        width: 100%;
+      }
       & > div:nth-child(1) {
-        width: 470px;
+        width: 626px;
         padding: 0 24px;
         margin-right: 53px;
-
         & > div:nth-child(1) {
-          margin: 6px 0;
+          margin: 10px 0 9px;
           display: flex;
           flex-direction: row;
           align-items: center;
-
           font-family: 'Metropolis';
           font-style: normal;
           font-weight: 400;
-          font-size: 15.9237px;
+          font-size: 18px;
           line-height: 27px;
-          /* identical to box height, or 172% */
-
           text-align: center;
           letter-spacing: 0.05em;
-
           color: #2958a3;
-
           & > div {
             margin-left: 8px;
+          }
+          svg {
+            margin-top: -3px;
           }
         }
 
         & > div:nth-child(3) {
-          margin: 6px 0;
+          margin: 10px 0;
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
+          font-size: 16px;
           line-height: 20px;
-          /* or 167% */
-
+          line-height: 160%;
           text-align: justify;
           letter-spacing: 0.1em;
-
           color: #2958a3;
         }
       }
 
       & > div:nth-child(2) {
-        width: 400px;
+        width: 530px;
 
         & > div:nth-child(1) {
           display: flex;
-          flex-wrap: nowrap;
           align-items: center;
-          margin: 10px 0 0 30px;
-
+          margin: 15px 0 0 30px;
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 700;
-          font-size: 20px;
+          font-size: 24px;
           line-height: 35px;
-          /* identical to box height, or 175% */
-
-          text-align: center;
           letter-spacing: 0.05em;
 
           color: #2958a3;
@@ -299,52 +282,41 @@ const callTel = () => {
           & > div {
             margin-left: 12px;
           }
+          svg {
+            margin-top: 6px;
+          }
         }
 
         & > div:nth-child(2) {
           display: flex;
           position: relative;
           justify-content: space-evenly;
-          align-items: flex-end;
-          flex-direction: row;
-          margin-top: 44px;
-
+          align-items: center;
+          padding-bottom: 50px;
+          height: 100%;
           & > div {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px;
+            justify-content: center;
             cursor: pointer;
-
+            flex: 1;
+            min-height: 100px;
             & > div:nth-child(2) {
               margin-top: 2px;
               font-family: 'Metropolis';
               font-style: normal;
               font-weight: 400;
-              font-size: 13px;
+              font-size: 16px;
               line-height: 28px;
-              /* identical to box height, or 212% */
-
               text-align: center;
               letter-spacing: 0.05em;
 
               color: #2958a3;
             }
           }
-
-          & > div::after {
-            content: '';
-            height: 76px;
-            color: #2958a3;
-            border-left: 0.75px solid #2958a3;
-            margin-left: 120px;
-            position: absolute;
-            margin-top: -20px;
-          }
-
-          & > div:last-child::after {
-            height: 0;
-            border: 0;
+          & > div:not(:last-child) {
+            border-right: 0.75px solid #2958a3;
           }
         }
       }
@@ -358,8 +330,6 @@ const callTel = () => {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         display: flex;
-        transform: scale(1.5);
-        margin-left: -8%;
         margin-top: 5%;
       }
     }

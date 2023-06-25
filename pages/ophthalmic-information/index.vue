@@ -63,10 +63,10 @@ const mainContent = [
 <template>
   <div class="doctorClass">
     <!-- 起始 -->
-    <div>
+    <div class="doctorClass-top">
       <div>
         <img
-          src="https://static.cmereye.com/imgs/2023/06/0a3d8c4682dfbc3e.png"
+          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
           alt="醫生小教室"
         />
       </div>
@@ -207,8 +207,18 @@ const mainContent = [
 </template>
 <style lang="scss" scoped>
 .doctorClass {
-  margin-left: 94px;
-
+  // margin-left: 94px;
+  &::before {
+    content: '';
+    background: #f2f2f2;
+    width: 80%;
+    height: 780px;
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 98px;
+  }
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -216,22 +226,15 @@ const mainContent = [
 
     & > div:nth-child(1) {
       & > img {
+        width: 100%;
+        max-width: 1494px;
         z-index: 5;
+        top: 261px;
+        left: 50%;
+        transform: translateX(-50%);
         position: relative;
       }
     }
-
-    & > div:nth-child(1)::before {
-      content: '';
-      background: #f2f2f2;
-      width: 1780px;
-      height: 1080px;
-      display: inline-block;
-      z-index: 1;
-      position: absolute;
-      left: -94px;
-    }
-
     & > div:nth-child(2) {
       z-index: 5;
       position: absolute;
@@ -242,7 +245,7 @@ const mainContent = [
       text-align: center;
       left: 0;
       right: 0;
-      bottom: 50px;
+      bottom: -100px;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -311,30 +314,35 @@ const mainContent = [
 
     & > svg {
       position: absolute;
-      bottom: -122px;
+      bottom: -350px;
       z-index: 5;
       left: 50%;
     }
   }
 
   & > div:nth-child(2) {
-    margin-top: 288px;
-    margin-left: 281px;
-    margin-right: 375px;
-
+    // margin-top: 288px;
+    // margin-left: 281px;
+    // margin-right: 375px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 388px auto 0;
     & > div {
       max-width: 1163px;
+      // width: 100%;
       margin-bottom: 70px;
       background: #f2f2f2;
       height: 386px;
       position: relative;
       padding-top: 46px;
-      padding-left: 22.2476%;
+      padding-left: 40px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      justify-content: center;
+      // align-items: center;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+      // padding: 70px 0;
       & > div:nth-child(1) {
         width: 490px;
         display: flex;
@@ -345,6 +353,7 @@ const mainContent = [
         font-style: normal;
         font-weight: 400;
         font-size: 24.608px;
+        // font-size: 28px;
         line-height: 44px;
 
         letter-spacing: 0.1em;
@@ -374,6 +383,7 @@ const mainContent = [
           font-style: normal;
           font-weight: 400;
           font-size: 17.5771px;
+          // font-size: 24px;
           line-height: 25px;
 
           & > svg {
@@ -388,6 +398,7 @@ const mainContent = [
           font-style: normal;
           font-weight: 350;
           font-size: 13.1828px;
+          // font-size: 18px;
           line-height: 26px;
           /* or 200% */
 
@@ -409,7 +420,7 @@ const mainContent = [
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 500;
-          font-size: 13.1538px;
+          font-size: 18px;
           line-height: 26px;
           /* identical to box height, or 194% */
 
@@ -424,7 +435,7 @@ const mainContent = [
       }
 
       & > div:nth-child(2) {
-        position: absolute;
+        // position: absolute;
         right: 0;
         margin-right: 64px;
         margin-top: 39px;
@@ -433,7 +444,8 @@ const mainContent = [
 
     & > div:nth-child(2n) {
       flex-direction: row-reverse;
-      justify-content: flex-start;
+      // justify-content: flex-start;
+      justify-content: center;
 
       & > div:nth-child(2) {
         right: 511px;
@@ -469,21 +481,72 @@ const mainContent = [
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .doctorClass {
-    width: 1780px;
-    margin: auto;
-    margin-left: 26vw;
-  }
-
-  .doctorClass > div:nth-child(2) {
-    margin-left: 5.20833%;
-  }
-
-  .doctorClass > div:nth-child(2) > div {
-    padding-left: 22.2476%;
-  }
-
-  .doctorClass > div:nth-child(2) > div > div:nth-child(1) {
-    width: 53%;
+    width: 100%;
+    &::before {
+      content: '';
+      background: #f2f2f2;
+      width: 80%;
+      height: 880px;
+      display: inline-block;
+      z-index: 1;
+      position: absolute;
+      left: 0px;
+      top: 98px;
+    }
+    & > div:nth-child(1) {
+      width: 1780px;
+      margin: 260px auto 0;
+      & > div:nth-child(1) {
+        & > img {
+          width: 100%;
+          max-width: 100%;
+          z-index: 5;
+          top: 0px;
+          position: relative;
+        }
+      }
+      & > div:nth-child(2) {
+        bottom: 150px;
+      }
+      & > svg {
+        // position: absolute;
+        bottom: -80px;
+      }
+    }
+    & > div:nth-child(2) {
+      width: 100%;
+      max-width: 1380px;
+      margin: 200px auto 0;
+      & > div {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 70px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 130px 70px 160px;
+        height: auto;
+        & > div:nth-child(1) {
+          width: 653px;
+          font-size: 28px;
+          & > div:nth-child(2) {
+            font-size: 24px;
+          }
+          & > div:nth-child(3) {
+            font-size: 18px;
+            line-height: 180%;
+            margin-top: 10px;
+          }
+        }
+        & > div:nth-child(2) {
+          img {
+            min-width: 413px;
+          }
+        }
+      }
+    }
   }
 }
 </style>

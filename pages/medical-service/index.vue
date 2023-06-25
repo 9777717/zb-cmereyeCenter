@@ -144,17 +144,21 @@ const SerListL = [
 
 <style scoped lang="scss">
 .serContent {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
   .title {
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    margin-left: 35.39375%;
+    // margin-left: 35.39375%;
     position: relative;
-    top: 98px;
+    top: 102px;
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
     font-size: 40.1431px;
     line-height: 46px;
+    margin-left: 60px;
     /* or 115% */
 
     text-align: center;
@@ -196,10 +200,11 @@ const SerListL = [
   }
 
   .serList {
-    margin-left: 41.14583%;
-    margin-right: 26.6146%;
-    width: 620px;
-    max-width: 620px;
+    // margin-left: 41.14583%;
+    // margin-right: 26.6146%;
+    margin: 150px auto 0;
+    width: 100%;
+    max-width: 920px;
     display: flex;
     flex-wrap: wrap;
 
@@ -232,8 +237,8 @@ const SerListL = [
         color: transparent; //字体颜色设置为透明
         background-color: transparent;
         text-transform: uppercase;
-        top: -15%;
-        left: 0;
+        top: -23%;
+        left: 20%;
 
         font-family: 'Metropolis';
         font-style: normal;

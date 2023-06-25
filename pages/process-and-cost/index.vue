@@ -36,7 +36,16 @@ const scrollHeight = () => {
 </script>
 
 <template>
-  <div :class="isShowLanguageBool === true ? 'cp_bg' : 'cp'">
+  <div
+    :class="['processAndCost']"
+    :style="{
+      background:
+        isShowLanguageBool === true
+          ? 'url(https://static.cmereye.com/imgs/2023/06/4a2313c1c2ea93d3.jpg) right bottom'
+          : 'url(https://static.cmereye.com/imgs/2023/06/616bfd619f8d434e.jpg) right top',
+      'background-size': isShowLanguageBool === true ? '50%' : 'cover',
+    }"
+  >
     <div>
       <div id="cost">
         <div class="content">
@@ -276,13 +285,12 @@ const scrollHeight = () => {
   </div>
 </template>
 <style lang="scss" scoped>
-.cp {
-  background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.processAndCost {
+  transition: all 0.5s;
+  background-repeat: no-repeat !important;
 }
 
-.cp > div:nth-child(1) {
+.processAndCost > div:nth-child(1) {
   max-width: 1200px;
   margin: auto;
 }
@@ -420,17 +428,7 @@ const scrollHeight = () => {
   }
 }
 
-.cp_bg {
-  background: url('https://static.cmereye.com/imgs/2023/06/dd5e64b3b4bf5bdb.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
 .processMain {
-  // background-image: url(https://static.cmereye.com/imgs/2023/02/a6d4d2ee3661fcf9.jpg);
-  // background-size: cover;
-  // background-repeat: no-repeat;
-
   .titleBox {
     h2 {
       color: #8ad8dd;

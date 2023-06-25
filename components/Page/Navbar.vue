@@ -625,12 +625,12 @@ a {
 }
 
 .childpage {
-  background: rgba(41, 88, 163, 0.82);
+  background: rgba(41, 88, 163, 1);
   width: 130px;
   position: absolute;
   right: -130px;
   top: 0;
-
+  opacity: 82%;
   & > div {
     // height: 49px;
     font-family: 'Noto Sans HK';
