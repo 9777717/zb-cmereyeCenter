@@ -220,7 +220,7 @@ const callTel = () => {
 .medicalOptometry_nav {
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.85);
+  transform: scale(0.9);
   margin-top: -3.7%;
 
   & > #brief_introduction {

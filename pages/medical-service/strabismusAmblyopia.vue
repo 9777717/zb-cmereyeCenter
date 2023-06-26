@@ -423,7 +423,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 .strabismusAmblyopia_nav {
   max-width: 1200px;
-  transform: scale(0.85);
+  transform: scale(0.9);
   margin: auto;
   margin-top: -40%;
 
@@ -548,7 +548,7 @@ const callTel = () => {
       align-items: center;
       justify-content: center;
       background-size: 100%;
-      transform: scale(0.85);
+      transform: scale(0.9);
       margin-left: -40px;
     }
 
@@ -1057,7 +1057,7 @@ const callTel = () => {
     & > #treat {
       & > div:nth-child(2) {
         background-size: 100%;
-        transform: scale(0.85);
+        transform: scale(0.9);
         margin-left: -5%;
       }
     }
