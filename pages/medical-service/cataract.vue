@@ -1064,7 +1064,7 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -43%;
 
   & > div:nth-child(2) {
@@ -1380,7 +1380,7 @@ const callTel = () => {
           padding: 0 10px;
 
           & > div {
-            transform: scale(0.9);
+            transform: scale(0.85);
 
             & > div {
               margin-top: 31px;
@@ -1507,7 +1507,7 @@ const callTel = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        transform: scale(0.9);
+        transform: scale(0.85);
         margin-left: -60px;
 
         & > div {
@@ -1650,7 +1650,7 @@ const callTel = () => {
           line-height: 36px;
           letter-spacing: 0px;
           color: #66c5dc;
-          transform: scale(0.9);
+          transform: scale(0.85);
           margin-top: -15px;
         }
       }

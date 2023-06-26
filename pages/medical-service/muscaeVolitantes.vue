@@ -511,7 +511,7 @@ const callTel = () => {
   margin-top: 100px;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -36.2%;
 
   // 什麼是飛蚊症？
@@ -525,7 +525,7 @@ const callTel = () => {
     }
 
     & > div:nth-child(1) {
-      transform: scale(0.9);
+      transform: scale(0.85);
     }
 
     & > div:nth-child(1)::after {
@@ -1130,7 +1130,7 @@ const callTel = () => {
         justify-content: space-between;
 
         & > div {
-          transform: scale(0.9);
+          transform: scale(0.85);
 
           & > div {
             width: 375px;

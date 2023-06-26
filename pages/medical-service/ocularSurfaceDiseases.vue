@@ -1066,7 +1066,7 @@ const keratoplastyList1 = [
   max-width: 1200px;
   margin: auto;
   margin-top: -76.3%;
-  transform: scale(0.9);
+  transform: scale(0.85);
 
   & > #pterygium {
     margin-bottom: 160px;
@@ -1137,7 +1137,7 @@ const keratoplastyList1 = [
           height: 261px;
           padding: 97px 31px 61px 280px;
           font-size: 22px;
-          transform: scale(0.9);
+          transform: scale(0.85);
         }
 
         & > div:nth-child(1) {
@@ -1720,7 +1720,7 @@ const keratoplastyList1 = [
             box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             overflow: hidden;
-            transform: scale(0.9);
+            transform: scale(0.85);
 
             & > div:nth-child(1) {
               width: 100%;
@@ -2183,7 +2183,7 @@ const keratoplastyList1 = [
             align-items: center;
             justify-content: center;
             padding: 0 20px;
-            transform: scale(0.9);
+            transform: scale(0.85);
           }
         }
 

@@ -369,7 +369,7 @@ const preventList1 = [
 .amotioRetinae_nav {
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -39.5%;
 
   & > #intro {

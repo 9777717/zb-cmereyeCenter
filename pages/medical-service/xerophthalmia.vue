@@ -774,7 +774,7 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   position: relative;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -60%;
 
   & > div:nth-child(1) {
@@ -824,7 +824,7 @@ const callTel = () => {
       background: #f2f2f2;
       width: 633px;
       height: 606px;
-      transform: scale(0.9);
+      transform: scale(0.85);
     }
   }
 
@@ -1804,7 +1804,7 @@ const callTel = () => {
           no-repeat;
         height: 257px;
         padding: 42px 60px;
-        transform: scale(0.9);
+        transform: scale(0.85);
         background-size: 100%;
 
         & > div {

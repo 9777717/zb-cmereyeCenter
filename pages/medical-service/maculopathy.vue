@@ -520,7 +520,7 @@ const callTel = () => {
   // margin: 0 300px;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -48.8%;
 
   // 什麼是黃斑病變？
@@ -863,7 +863,7 @@ const callTel = () => {
 
       & > div:nth-child(1) {
         position: absolute;
-        transform: scale(0.9);
+        transform: scale(0.85);
       }
 
       & > div:nth-child(2) {
@@ -901,7 +901,7 @@ const callTel = () => {
     & > div:nth-child(3) {
       display: flex;
       flex-direction: column;
-      transform: scale(0.9);
+      transform: scale(0.85);
 
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Bold';

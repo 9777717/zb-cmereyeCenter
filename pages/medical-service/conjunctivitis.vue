@@ -398,7 +398,7 @@ const callTel = () => {
   // margin: 0 300px;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.85);
   margin-top: -34%;
 
   // 什麼是結膜炎？
@@ -436,7 +436,7 @@ const callTel = () => {
     }
 
     & > div:nth-child(2) {
-      transform: scale(0.9);
+      transform: scale(0.85);
 
       & > img {
         z-index: 5;

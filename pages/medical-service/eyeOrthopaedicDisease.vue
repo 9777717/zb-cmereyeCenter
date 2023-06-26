@@ -883,7 +883,7 @@ const serviceNavigation = [
   margin: auto;
   margin-top: -66.2%;
   margin-bottom: 290px;
-  transform: scale(0.9);
+  transform: scale(0.85);
 
   & > #ophthalmoplasty {
     margin-bottom: 160px;
@@ -904,7 +904,7 @@ const serviceNavigation = [
 
         & > div:nth-child(1) {
           width: 752px;
-          transform: scale(0.9);
+          transform: scale(0.85);
 
           & > div {
             margin-bottom: 78px;
@@ -961,7 +961,7 @@ const serviceNavigation = [
 
         & > div:nth-child(2) {
           width: 752px;
-          transform: scale(0.9);
+          transform: scale(0.85);
 
           & > div {
             & > div:nth-child(1) {
@@ -1519,7 +1519,7 @@ const serviceNavigation = [
           justify-content: space-between;
 
           & > div {
-            transform: scale(0.9);
+            transform: scale(0.85);
             width: 398px;
             height: 417px;
             background-color: #ffffff;
