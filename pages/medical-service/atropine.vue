@@ -957,7 +957,7 @@ const goWhatsApp = () => {
       & > div:nth-child(1) {
         & > div:nth-child(1) {
           font-family: 'NotoSansCJKtc-Bold';
-          font-size: 119px;
+          font-size: 100px;
           font-weight: Bold;
           font-stretch: normal;
           letter-spacing: 0px;
@@ -970,7 +970,7 @@ const goWhatsApp = () => {
           position: relative;
           z-index: 5;
           font-family: 'DINCondensed-Bold';
-          font-size: 126px;
+          font-size: 105px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 1;
@@ -1001,6 +1001,7 @@ const goWhatsApp = () => {
         left: -5px;
 
         & > img {
+          max-width: 751px;
           position: relative;
           z-index: 5;
         }
