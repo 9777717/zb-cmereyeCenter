@@ -57,24 +57,26 @@ const goWhatsApp = () => {
 <template>
   <div class="atropine">
     <div class="atropine_head">
-      <div>
+      <div class="maxCon">
         <div>
           <div>
-            {{ $t('pages.medical_service.atropine_text.atropine_text1') }}
+            <div>
+              {{ $t('pages.medical_service.atropine_text.atropine_text1') }}
+            </div>
+            <div>ATROPINE EYE DROPS</div>
           </div>
-          <div>ATROPINE EYE DROPS</div>
-        </div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/10f1717cd6906298.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/527dfa1a9d012d5b.png"
-          />
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/06/10f1717cd6906298.png"
+            />
+            <img
+              src="https://static.cmereye.com/imgs/2023/06/527dfa1a9d012d5b.png"
+            />
+          </div>
         </div>
       </div>
     </div>
-    <div class="atropine_nav">
+    <div class="atropine_nav maxCon">
       <div id="introduce">
         <div class="atropine_title_text">
           {{ $t('pages.medical_service.atropine_text.atropine_title1_text1') }}
@@ -82,50 +84,94 @@ const goWhatsApp = () => {
         <div>
           <div>
             <p>
-              {{ $t('pages.medical_service.atropine_text.atropine_title1_p1') }}
+              {{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p1_span1'
+                )
+              }}
+              <span>{{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p1_span2'
+                )
+              }}</span>
               <span class="up_bid">1</span>
-              {{ $t('pages.medical_service.atropine_text.atropine_title1_p2') }}
-              <span>
-                {{
-                  $t(
-                    'pages.medical_service.atropine_text.atropine_title1_span1'
-                  )
-                }}</span
-              >
-              <span>
-                {{
-                  $t(
-                    'pages.medical_service.atropine_text.atropine_title1_span2'
-                  )
-                }}</span
-              >
+              {{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p1_span3'
+                )
+              }}
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p2_span1'
+                )
+              }}
+              <span>{{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p2_span2'
+                )
+              }}</span>
+            </p>
+            <p>
+              {{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p3_span1'
+                )
+              }}
+              <span>{{
+                $t(
+                  'pages.medical_service.atropine_text.atropine_title1_p3_span2'
+                )
+              }}</span>
             </p>
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/5974955c8c92b875.png"
+              src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
               alt=""
             />
           </div>
         </div>
         <div>
+          1. Chia, A., Lu, Q.S., and Tan, D. Five-year clinical trial on
+          atropine for the treatment of myopia 2: myopia control with atropine
+          0.01% eyedrops. Ophthalmology. 123:391–399, 2016.
+        </div>
+        <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/38efdda5cb231155.png"
+              src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
               alt=""
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/ffc7c17a1db82cb1.png"
+              src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
               alt=""
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/e90e688e9ad179b6.png"
+              src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
               alt=""
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/e28eccacc0101197.png"
+              src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
               alt=""
             />
+          </div>
+          <div>
+            <div>
+              <span>低濃度</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <span>高濃度</span>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/f78528260ec72142.png"
+                alt=""
+              />
+            </div>
           </div>
           <div>
             {{
@@ -140,31 +186,47 @@ const goWhatsApp = () => {
         </div>
         <div>
           <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/c6f1efe65818cbf7.png"
-              alt=""
-            />
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                根據最新一期美國醫學會雜誌的研究
+                <span class="up_bid">2</span>
+                ，發現0.05%濃度的阿托品眼藥水對於控制近視加深率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
+              </p>
+              <p>
+                有研究數據顯示0.05%濃度比起0.01%濃度的阿托品眼藥水更有效減慢近視加深速度。使用0.05%濃度阿托品眼藥水兩年累積的近視加深率是最低，為28.4%
+                <span class="up_bid">3</span>
+                。
+                使用0.01%濃度的近視加深率是45.9%。此外，使用0.05%濃度阿托品眼藥水的近視加深度數和眼球增長速度也比較低。
+              </p>
+            </div>
           </div>
           <div>
-            <p>
-              {{ $t('pages.medical_service.atropine_text.atropine_title2_p1')
-              }}<span class="up_bid">2</span>
-              {{ $t('pages.medical_service.atropine_text.atropine_title2_p2') }}
-            </p>
-            <p>
-              {{ $t('pages.medical_service.atropine_text.atropine_title2_p3')
-              }}<span class="up_bid">3</span
-              >{{
-                $t('pages.medical_service.atropine_text.atropine_title2_p4')
-              }}
-              <span>{{
-                $t('pages.medical_service.atropine_text.atropine_title2_span1')
-              }}</span
-              ><span>{{
-                $t('pages.medical_service.atropine_text.atropine_title2_span2')
-              }}</span>
-            </p>
+            <span> 由此可見0.05%低濃度阿托品眼藥水控制近視效果較為理想。 </span>
           </div>
+        </div>
+        <div>
+          <p>
+            2.Yam JC, Jiang Y, Tang SM, et al. Low-Concentration Atropine for
+            Myopia Progression (LAMP) Study: a randomized, double-blinded,
+            placebo-controlled trial of 0.05%, 0.025%, and 0.01% atropine eye
+            drops in myopia control. Ophthalmology 2019; 126:113-24.
+          </p>
+          <p>
+            3.Yam JC, Zhang XJ, Zhang Y, Yip BHK, Tang F, Wong ES, Bui CHT, Kam
+            KW, Ng MPH, Ko ST, Yip WWK, Young AL, Tham CC, Chen LJ, Pang CP.
+            Effect of Low-Concentration Atropine Eyedrops vs Placebo on Myopia
+            Incidence in Children: The LAMP2 Randomized Clinical Trial. JAMA.
+            2023 Feb 14;329(6):472-481. 
+          </p>
+        </div>
+        <div>
+          <div>立即WhatApp查詢{{ '\n' }}了解兒童控制近視方案</div>
         </div>
       </div>
       <div id="benefit">
@@ -245,65 +307,11 @@ const goWhatsApp = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div id="matters">
-        <div class="atropine_title_text">
-          {{ $t('pages.medical_service.atropine_text.atropine_title5_text5') }}
-        </div>
         <div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/8d3b7b0927abdb0f.png"
-              alt=""
-            />
-            <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_title5_p1') }}
-            </div>
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/5735636447fd5cfc.png"
-              alt=""
-            />
-            <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_title5_p2') }}
-            </div>
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/4eea04dbe4e4b1f1.png"
-              alt=""
-            />
-            <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_title5_p3')
-              }}<span>{{
-                $t('pages.medical_service.atropine_text.atropine_title5_span1')
-              }}</span>
-              <span>{{
-                $t('pages.medical_service.atropine_text.atropine_title5_span2')
-              }}</span>
-            </div>
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/f840c8d3291767f8.png"
-              alt=""
-            />
-            <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_title5_p4') }}
-            </div>
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/21fd778043f6cfcb.png"
-              alt=""
-            />
-            <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_title5_p5') }}
-            </div>
-          </div>
+          <div>立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
         </div>
       </div>
+
       <div id="method">
         <div class="atropine_title_text">
           {{ $t('pages.medical_service.atropine_text.atropine_title6_text6') }}
@@ -346,9 +354,49 @@ const goWhatsApp = () => {
           <div>
             {{ $t('pages.medical_service.atropine_text.atropine_title6_p6') }}
           </div>
-          <div class="atropine_title_btn" @click="goWhatsApp">
+          <!-- <div class="atropine_title_btn" @click="goWhatsApp">
             {{ $t('pages.medical_service.atropine_text.atropine_title6_btn') }}
+          </div> -->
+        </div>
+      </div>
+      <div class="matters">
+        <div class="atropine_title_text">
+          {{ $t('pages.medical_service.atropine_text.atropine_title5_text5') }}
+        </div>
+        <div>
+          <div>
+            <span>1</span>
+            <span>{{
+              $t('pages.medical_service.atropine_text.atropine_title5_p1')
+            }}</span>
           </div>
+          <div>
+            <span>2</span>
+            <span>{{
+              $t('pages.medical_service.atropine_text.atropine_title5_p2')
+            }}</span>
+          </div>
+          <div>
+            <span>3</span>
+            <span>{{
+              $t('pages.medical_service.atropine_text.atropine_title5_p3')
+            }}</span>
+          </div>
+          <div>
+            <span>4</span>
+            <span>{{
+              $t('pages.medical_service.atropine_text.atropine_title5_p4')
+            }}</span>
+          </div>
+          <div>
+            <span>5</span>
+            <span>{{
+              $t('pages.medical_service.atropine_text.atropine_title5_p5')
+            }}</span>
+          </div>
+        </div>
+        <div>
+          <div>立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
         </div>
       </div>
     </div>
@@ -365,58 +413,91 @@ const goWhatsApp = () => {
 </template>
 <style lang="scss" scoped>
 .atropine_nav {
-  max-width: 1200px;
-  margin: auto;
-  transform: scale(0.85);
-  margin-top: -18%;
-
+  margin: 280px auto;
   & > #introduce {
-    margin-bottom: 264px;
-
+    margin-bottom: 164px;
     & > div:nth-child(2) {
       margin-top: 100px;
       display: flex;
       justify-content: space-between;
-
       & > div:nth-child(1) {
-        width: 667px;
+        width: 610px;
         font-family: 'NotoSansHK-Regular';
-        font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
-        font-stretch: normal;
-        line-height: 48px;
-        letter-spacing: 0px;
+        line-height: 160%;
         color: #7e9da3;
-
-        text-indent: 50px;
-        letter-spacing: 0;
         text-align: justify;
-
+        margin-right: 70px;
         & > p {
           & > span {
-            font-family: 'NotoSansHK-Medium';
-            font-weight: 550;
+            font-weight: bold;
+            color: #3a8f9e;
           }
-
-          & > span:nth-child(2) {
-            letter-spacing: -1px;
+          &:not(:last-child) {
+            margin-bottom: 30px;
           }
+        }
+      }
+      & > div:nth-of-type(2) {
+        flex: 1;
+        img {
+          width: 100%;
         }
       }
     }
 
     & > div:nth-child(3) {
+      font-family: 'NotoSansHK-Regular';
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 160%;
+      letter-spacing: 0px;
+      color: #777777;
+      margin-top: 29px;
+    }
+    & > div:nth-child(4) {
       & > div:nth-child(1) {
-        margin-top: 165px;
-        padding: 0 182px;
+        margin-top: 120px;
+        padding: 0 180px;
         display: flex;
         justify-content: space-between;
+        img {
+          width: 120px;
+        }
       }
-
       & > div:nth-child(2) {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 33px;
+        padding: 0 180px;
+        div {
+          flex: 1;
+          span {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 160%;
+            letter-spacing: 0px;
+            color: #3a8f9e;
+          }
+          img {
+            width: 90%;
+          }
+          &:last-child {
+            img {
+              float: right;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
         margin-top: 48px;
         font-family: 'NotoSansHK-Regular';
-        font-size: 20px;
+        font-size: 18px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 48px;
@@ -426,45 +507,126 @@ const goWhatsApp = () => {
       }
     }
   }
-
   & > #effect {
     margin-bottom: 200px;
-
     & > div:nth-child(2) {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 110px;
-      padding: 104px 50px;
-      box-shadow: 0px 0px 10px 8px #5151518f;
-
-      & > div:nth-child(2) {
+      margin-top: 80px;
+      padding: 80px 40px 40px;
+      box-shadow: 0px 0px 10px 8px #cecece8f;
+      & > div:nth-of-type(1) {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        width: 620px;
-
-        & > p {
-          text-indent: 50px;
-          font-family: 'NotoSansHK-Regular';
-          font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          line-height: 50px;
-          letter-spacing: 0px;
-          color: #777777;
-          text-align: justify;
-        }
-
-        & > p:nth-child(2) {
-          letter-spacing: -1px;
-
-          & > span:nth-child(2) {
-            font-family: 'NotoSansHK-Medium';
-            font-size: 24px;
-            font-weight: bold;
-            color: #555555;
+        & > div:nth-child(1) {
+          width: 350px;
+          margin-right: 40px;
+          img {
+            // width: 80%;
+            width: 100%;
+            border-radius: 10px;
           }
         }
+        & > div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          // width: 620px;
+          flex: 1;
+          & > p {
+            // text-indent: 50px;
+            font-family: 'NotoSansHK-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 40px;
+            letter-spacing: 0px;
+            color: #777777;
+            text-align: justify;
+            &:not(:last-child) {
+              margin-bottom: 30px;
+            }
+          }
+
+          & > p:nth-child(2) {
+            letter-spacing: -1px;
+
+            & > span:nth-child(2) {
+              font-family: 'NotoSansHK-Medium';
+              font-size: 24px;
+              font-weight: bold;
+              color: #555555;
+            }
+          }
+        }
+      }
+      & > div:nth-of-type(2) {
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'NotoSansHK-Regular';
+        font-size: 26px;
+        font-weight: 600;
+        font-stretch: normal;
+        line-height: 160%;
+        letter-spacing: 2px;
+        color: #3a8f9e;
+        span {
+          margin: 0 auto;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: -50px;
+            background: url(https://static.cmereye.com/imgs/2023/06/f4d7bea70c1e9140.png)
+              no-repeat;
+            background-size: 100% 100%;
+            width: 30px;
+            height: 55px;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: -25px;
+            background: url(https://static.cmereye.com/imgs/2023/06/0b4845048eb8622b.png)
+              no-repeat;
+            background-size: 100% 100%;
+            width: 25px;
+            height: 36px;
+          }
+        }
+      }
+    }
+    & > div:nth-of-type(3) {
+      margin-top: 40px;
+      p {
+        margin-top: 20px;
+        font-size: 12px;
+      }
+    }
+    & > div:nth-of-type(4) {
+      margin-top: 60px;
+      div {
+        width: max-content;
+        padding: 20px 90px;
+        cursor: pointer;
+        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+          linear-gradient(#529fd3, #529fd3);
+        background-blend-mode: normal, normal;
+        border-radius: 20px;
+        font-family: 'NotoSansHK-Regular';
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        white-space: pre-wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 50px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
       }
     }
   }
@@ -480,16 +642,18 @@ const goWhatsApp = () => {
       justify-content: space-between;
 
       & > div {
-        max-width: 335px;
+        max-width: 300px;
         font-family: 'NotoSansHK-Regular';
-        font-size: 24px;
+        font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 40px;
         letter-spacing: 0;
         color: #777777;
         text-align: center;
-
+        img {
+          width: 100%;
+        }
         & > div:nth-child(2) {
           margin-top: 50px;
 
@@ -514,7 +678,7 @@ const goWhatsApp = () => {
         border-bottom: 2px solid #c1e8f3;
         height: 210px;
         align-items: center;
-
+        justify-content: space-between;
         & > div:nth-child(1) {
           font-family: 'OPPOSans-B';
           font-size: 80px;
@@ -546,60 +710,36 @@ const goWhatsApp = () => {
         }
       }
     }
-  }
-
-  & > #matters {
-    & > div:nth-child(2) {
-      margin-top: 132px;
-      margin-bottom: 200px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      & > div {
-        & > div:nth-child(2) {
-          width: 289px;
-          font-family: 'NotoSansHK-Regular';
-          font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          line-height: 46px;
-          letter-spacing: 0px;
-          color: #777777;
-          text-align: center;
-          margin: auto;
-          margin-top: 49px;
-        }
-      }
-
-      & > div:nth-child(3) {
-        & > div {
-          & > span:nth-child(1) {
-            letter-spacing: 1px;
-          }
-
-          & > div:nth-child(2) {
-            letter-spacing: -2px;
-          }
-        }
-      }
-
-      & > div:nth-child(n + 4) {
-        margin-top: 138px;
-      }
-
-      & > div:nth-child(4) {
-        margin-left: 210px;
-      }
-
-      & > div:nth-child(5) {
-        margin-right: 210px;
+    & > div:nth-of-type(3) {
+      margin-top: 130px;
+      div {
+        width: max-content;
+        padding: 20px 50px;
+        cursor: pointer;
+        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+          linear-gradient(#529fd3, #529fd3);
+        background-blend-mode: normal, normal;
+        border-radius: 20px;
+        font-family: 'NotoSansHK-Regular';
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        white-space: pre-wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 50px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
       }
     }
   }
 
   & > #method {
-    margin-bottom: 442px;
+    margin-bottom: 200px;
 
     & > div:nth-child(2) {
       & > div:nth-child(1) {
@@ -608,21 +748,26 @@ const goWhatsApp = () => {
         justify-content: space-between;
 
         & > div {
-          width: 580px;
-          height: 378px;
+          width: 500px;
+          // height: 378px;
           border-radius: 10px;
           border: solid 2px #c1e8f3;
           position: relative;
 
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Regular';
-            font-size: 24px;
+            font-size: 20px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 48px;
+            line-height: 46px;
             letter-spacing: 0px;
             color: #777777;
-            padding: 84px 37px 78px;
+            padding: 64px 30px 58px;
+            text-align: justify;
+            span {
+              font-weight: bold;
+              color: #555555;
+            }
           }
 
           & > div:nth-child(1) {
@@ -633,8 +778,8 @@ const goWhatsApp = () => {
             border-radius: 38px 38px 38px 0px;
             top: -36px;
             font-family: 'NotoSansHK-Bold';
-            font-size: 36px;
-            font-weight: normal;
+            font-size: 34px;
+            font-weight: 600;
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
@@ -649,12 +794,12 @@ const goWhatsApp = () => {
       & > div:nth-child(2) {
         margin-top: 120px;
         margin-bottom: 178px;
-        width: 1314px;
+        width: 100%;
         height: 145px;
         border-radius: 73px;
         border: solid 1px #98ccef;
         font-family: 'NotoSansHK-Regular';
-        font-size: 24px;
+        font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 1.5;
@@ -669,7 +814,7 @@ const goWhatsApp = () => {
         position: absolute;
         z-index: -1;
         display: inline-block;
-        width: 1314px;
+        width: 100%;
         height: 145px;
         background-image: linear-gradient(#e8f5f9, #e8f5f9),
           linear-gradient(#daf0f7, #daf0f7);
@@ -684,10 +829,80 @@ const goWhatsApp = () => {
       }
     }
   }
+  .matters {
+    & > div:nth-of-type(2) {
+      margin-top: 87px;
+      div {
+        display: flex;
+        &:not(:last-child) {
+          margin-bottom: 76px;
+        }
+        span {
+          &:first-child {
+            width: 40px;
+            height: 40px;
+            background-color: #7bbfcb;
+            font-family: 'OPPOSans-B';
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 40px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            border-radius: 50%;
+            display: block;
+            text-align: center;
+            margin-right: 12px;
+          }
+          &:last-child {
+            flex: 1;
+            font-family: 'NotoSansHK-Regular';
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 46px;
+            letter-spacing: 0px;
+            color: #777777;
+          }
+        }
+      }
+    }
+    & > div:nth-of-type(3) {
+      margin-top: 130px;
+      div {
+        width: max-content;
+        padding: 20px 50px;
+        cursor: pointer;
+        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+          linear-gradient(#529fd3, #529fd3);
+        background-blend-mode: normal, normal;
+        border-radius: 20px;
+        font-family: 'NotoSansHK-Regular';
+        font-size: 30px;
+        font-weight: normal;
+        font-stretch: normal;
+        white-space: pre-wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 50px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        margin: 0 auto;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 
   .up_bid {
     font-size: 12px !important;
-    vertical-align: super !important;
+    // vertical-align: super !important;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -17px;
+    font-family: 'NotoSansHK-Medium';
+    font-weight: 550;
   }
 }
 
@@ -729,75 +944,70 @@ const goWhatsApp = () => {
   justify-content: center;
 }
 
-.fromTable {
-  margin-top: -35%;
-}
-
 .atropine_head {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 98px;
-    margin-left: 40vw;
-
+  & > div {
     & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: Bold;
-        font-stretch: normal;
-        letter-spacing: 0px;
-        color: #99d4dd;
-        z-index: 5;
-        position: relative;
-        top: -20px;
-      }
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 98px;
+      // float: right;
+      // margin-left: 40vw;
 
-      & > div:nth-child(2) {
-        position: relative;
-        z-index: 5;
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          font-family: 'NotoSansCJKtc-Bold';
+          font-size: 119px;
+          font-weight: Bold;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #99d4dd;
+          z-index: 5;
+          position: relative;
+          top: -20px;
+        }
+        & > div:nth-child(2) {
+          position: relative;
+          z-index: 5;
+          font-family: 'DINCondensed-Bold';
+          font-size: 126px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 1;
+          letter-spacing: 3.4px;
+          color: #99d4dd;
+        }
         font-family: 'DINCondensed-Bold';
-        font-size: 126px;
+        font-size: 131px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 1;
-        letter-spacing: 3.4px;
-        color: #99d4dd;
+        line-height: 1.2;
+        text-align: right;
+        letter-spacing: 3px;
+        color: #9cc4e2;
       }
-
-      font-family: 'DINCondensed-Bold';
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: 0;
-      left: -5px;
-
-      & > img {
+      & > div:nth-child(1)::after {
+        content: '';
+        background: #f2f2f2;
+        width: 40vw;
+        height: 300px;
+        position: absolute;
+        top: 211px;
+        right: 0;
+      }
+      & > div:nth-child(2) {
         position: relative;
-        z-index: 5;
-      }
+        top: 0;
+        left: -5px;
 
-      & > img:nth-child(1) {
-        margin-bottom: 10px;
+        & > img {
+          position: relative;
+          z-index: 5;
+        }
+
+        & > img:nth-child(1) {
+          margin-bottom: 10px;
+        }
       }
     }
   }
@@ -805,18 +1015,5 @@ const goWhatsApp = () => {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .atropine_head {
-    & > div:nth-child(1) {
-      margin-left: 50vw;
-    }
-  }
-
-  .atropine_nav {
-    margin-top: -11.2%;
-  }
-
-  .fromTable {
-    margin-top: -25%;
-  }
 }
 </style>

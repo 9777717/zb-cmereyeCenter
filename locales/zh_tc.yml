@@ -758,12 +758,15 @@ pages:
     atropine: 阿托品滴眼液
     atropine_text: 
       atropine_text1: 阿托品眼藥水
-      atropine_title1_text1: 介紹阿托品眼藥水
+      atropine_title1_text1: 阿托品眼藥水控制兒童近視方法
       atropine_title1_text2: 阿托品眼藥水有不同的劑量，低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視
-      atropine_title1_p1: 除了光學控制兒童近視，由眼科醫生處方的阿托品眼藥水已被證明是目前控制近視有效之方法
-      atropine_title1_p2: 。阿托品藥水是屬於抗膽鹼藥品，有擴大瞳孔的作用，能抑制鞏膜纖維組織生長、防止或減慢眼球進一步延長，以減慢小朋友近視加深速度。阿托品的副作用是令眼睛內的睫狀體肌肉放鬆，使得看近變得困難。
-      atropine_title1_span1: 阿托品眼藥水有不同的劑量，分為
-      atropine_title1_span2: 低濃度阿托品眼藥水及高濃度阿托品眼藥水，包括0.01%，0.05%，0.125%及1%等，低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視。
+      atropine_title1_p1_span1: 除了光學控制兒童近視，
+      atropine_title1_p1_span2: 由眼科醫生處方的阿托品眼藥水已被證明是目前有效控制近視方法之一
+      atropine_title1_p1_span3: 。阿托品藥水是屬於抗膽鹼藥品，有擴大瞳孔的作用，能抑制鞏膜纖維組織生長、防止或減慢眼球進一步延長，以減慢小朋友近視加深速度。
+      atropine_title1_p2_span1: 阿托品的副作用是令眼睛內的睫狀體肌肉放鬆，使得看近變得困難，
+      atropine_title1_p2_span2: 因此必須由眼科醫生處方適當劑量。 
+      atropine_title1_p3_span1: 阿托品眼藥水有不同的劑量，分為低濃度阿托品眼藥水及高濃度阿托品眼藥水，包括0.01%，0.05%，0.125%及1%等。
+      atropine_title1_p3_span2: 低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視。
       atropine_title2_text2: 阿托品眼藥水作用
       atropine_title2_p1: 根據最新一期美國醫學會雜誌的研究
       atropine_title2_p2: ，發現0.05%濃度的阿托品眼藥水對於減低近視發生率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
@@ -783,13 +786,11 @@ pages:
       atropine_title4_p3: 此外，小朋友對戴近視控制隱形眼鏡有抗拒或不適應，亦可考慮使用阿托品眼藥水控制近視，使用方法簡單只需每日滴眼藥水即可有效減慢近視加深。
       atropine_title4_p4: 若小朋友有斜視或有眼睛協調問題，用阿托品眼藥水會比其他近視控制產品較為適合。
       atropine_title5_text5: 使用阿托品眼藥水注意事項
-      atropine_title5_p1: 部分兒童可能對阿托品藥物敏感及出現不良反應，如發燒、皮膚泛紅、心跳過快等
-      atropine_title5_p2: 瞳孔放大導致會有畏光或視力模糊的情況出現
-      atropine_title5_p3: 控制晶體調節的睫狀肌可能 
-      atropine_title5_span1: 出現麻痺，失去調節能力
-      atropine_title5_span2: （兒童或因此需要另配眼鏡）
-      atropine_title5_p4: 使用阿托品眼藥水不能矯正近視或散光，兒童仍需要佩戴眼鏡才能看清楚
-      atropine_title5_p5: 如果小朋友使用後出現不適或畏光的徵狀，可以選擇佩戴太陽眼鏡或漸進眼鏡以幫助近距離事物的觀察
+      atropine_title5_p1: 部分兒童可能對阿托品藥物敏感及出現不良反應，如發燒、皮膚泛紅、心跳過快等。
+      atropine_title5_p2: 瞳孔放大導致會有畏光或視力模糊的情況出現。
+      atropine_title5_p3: 控制晶體調節的睫狀肌可能出現麻痺，失去調節能力（兒童或因此需要另配眼鏡）。
+      atropine_title5_p4: 使用阿托品眼藥水不能矯正近視或散光，兒童仍需要佩戴眼鏡才能看清楚。
+      atropine_title5_p5: 如果小朋友使用後出現不適或畏光的徵狀，可以選擇佩戴太陽眼鏡或漸進眼鏡以幫助近距離事物的觀察。
       atropine_title6_text6: 阿托品眼藥水的使用方法/療程
       atropine_title6_p1: 使用頻率以及次數
       atropine_title6_p2: 阿托品眼藥水只需
