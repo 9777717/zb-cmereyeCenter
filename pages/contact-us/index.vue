@@ -269,8 +269,10 @@ const goWhatsApp = () => {
             :space-between="40"
             :slides-per-view="4"
             :modules="[Autoplay]"
-            :pagination="{ clickable: true }"
-            :autoplay="{ delay: 2500 }"
+            :loop="true"
+            :autoplay="{ delay: 0 }"
+            speed="3000"
+            class="contact_eye-swiper"
           >
             <swiper-slide v-for="(item, index) in bannerList" :key="index">
               <div class="imgBox flex items-center justify-center">
@@ -432,6 +434,9 @@ const goWhatsApp = () => {
 </template>
 
 <style lang="scss" scoped>
+:deep(.contact_eye-swiper .swiper-wrapper) {
+  transition-timing-function: linear;
+}
 .contact_eye {
   margin-bottom: 50px;
 

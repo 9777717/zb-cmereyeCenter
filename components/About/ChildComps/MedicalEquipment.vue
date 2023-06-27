@@ -248,19 +248,21 @@ const setThumbsSwiper = (swiper: any) => {
 }
 </script>
 <template>
-  <div id="medicalEquipment">
-    <AboutTitle
-      :zh-title="$t('pages.about_us.equipment_centre')"
-      :en-ttitle="'MEDICAL EQUIPMENT'"
-      class="title"
-    />
+  <div id="medicalEquipment" class="maxCon">
+    <div class="medicalEquipment-title">
+      <AboutTitle
+        :zh-title="$t('pages.about_us.equipment_centre')"
+        :en-ttitle="'MEDICAL EQUIPMENT'"
+        class="title"
+      />
+    </div>
     <div class="mainText">
       <swiper
         id="father"
         :loop="true"
         :navigation="true"
         :space-between="20"
-        :slides-per-view="4"
+        :slides-per-view="3"
         :free-mode="true"
         :watch-slides-progress="true"
         :modules="[FreeMode, Navigation, Thumbs]"
@@ -271,8 +273,11 @@ const setThumbsSwiper = (swiper: any) => {
           v-for="(slideContent, index) in medicalEquipment"
           :key="index"
           :virtual-index="index"
+          class="mySwiper-slide"
         >
-          <img :src="slideContent.href" />
+          <div>
+            <img :src="slideContent.href" />
+          </div>
           <p class="info pr-3">
             {{ slideContent.title }}<br />{{ slideContent.title2 }}
           </p>
@@ -361,22 +366,49 @@ const setThumbsSwiper = (swiper: any) => {
 <style scoped lang="scss">
 #medicalEquipment {
   margin-top: 130px;
-  margin-left: 32.0625%;
-  width: 50.7%;
-  height: 770px;
+  // margin-left: 32.0625%;
+  // width: 50.7%;
+  // height: 770px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
   position: relative;
-  background: #f2f2f2;
+  // background: #f2f2f2;
 }
-
-:deep(.mySwiper .swiper-slide) {
-  opacity: 0.4;
+.medicalEquipment-title {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-
+.mySwiper {
+  padding: 120px 40px 0;
+}
+.mySwiper-slide {
+  padding: 0 47px;
+  cursor: pointer;
+  & > div {
+    position: relative;
+    &::before {
+      content: '';
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
 :deep(.mySwiper .swiper-slide-thumb-active) {
-  opacity: 1;
+  & > div {
+    &::before {
+      background: rgba(0, 0, 0, 0);
+    }
+  }
 }
 
 .mainSon {
@@ -388,7 +420,7 @@ const setThumbsSwiper = (swiper: any) => {
   position: relative;
   margin: auto;
   margin: 0 240px;
-  margin-top: 100px;
+  margin-top: 50px;
   min-height: 220px;
   background-color: #fff;
 
@@ -434,7 +466,7 @@ const setThumbsSwiper = (swiper: any) => {
 }
 
 .swiper {
-  margin-left: 12%;
+  // margin-left: 12%;
   overflow: revert;
 }
 
@@ -464,19 +496,19 @@ const setThumbsSwiper = (swiper: any) => {
 
 :deep(.swiper-button-next) {
   top: 50%;
-  right: 60px;
-  transform: translateY(-100%);
+  right: 30px;
+  // transform: translateY(-100%);
 }
 
 :deep(.swiper-button-prev) {
   top: 50%;
-  left: 3px;
-  transform: translateY(-100%);
+  left: 30px;
+  // transform: translateY(-100%);
 }
 
 .title {
-  margin-left: 12.3958%;
-  margin-top: -22px;
+  // margin-left: 12.3958%;
+  // margin-top: -22px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -492,8 +524,9 @@ const setThumbsSwiper = (swiper: any) => {
 .mainText {
   overflow: hidden;
   width: 100%;
+  max-width: 980px;
   position: relative;
-
+  background: #f2f2f2;
   & > P {
     font-family: 'Noto Sans HK';
     font-style: normal;
@@ -512,12 +545,18 @@ const setThumbsSwiper = (swiper: any) => {
     width: 100%;
   }
 }
+.mainSon {
+  width: 100%;
+  max-width: 980px;
+  background: #f2f2f2;
+  padding-bottom: 90px;
+}
 </style>
 <style>
 @media screen and (min-width: 1920px) {
   #medicalEquipment {
-    width: 50.7%;
-    margin-left: 34.3%;
+    /* width: 50.7%; */
+    /* margin-left: 34.3%; */
   }
 }
 </style>

@@ -143,12 +143,14 @@ const historyList = ref([
 ])
 </script>
 <template>
-  <div id="history">
-    <AboutTitle
-      :zh-title="$t('pages.about_us.development_course')"
-      :en-ttitle="'our history'"
-      class="title relative z-50"
-    />
+  <div id="history" class="maxCon">
+    <div class="history-title">
+      <AboutTitle
+        :zh-title="$t('pages.about_us.development_course')"
+        :en-ttitle="'our history'"
+        class="title relative z-50"
+      />
+    </div>
     <div class="mainHistoryBox">
       <div
         v-for="(years, i) in historyList"
@@ -177,26 +179,31 @@ const historyList = ref([
 </template>
 <style lang="scss" scoped>
 #history {
-  width: 41.5%;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-  margin: auto;
   margin-top: 12.75rem;
-  background: #f2f2f2;
   position: relative;
 }
 
-.title {
-  margin-left: -14%;
-  margin-top: 45px;
+.history-title {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  max-width: 960px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  .title {
+    width: max-content;
+  }
 }
 
 .mainHistoryBox {
-  width: 91%;
+  width: 100%;
+  max-width: 790px;
   position: relative;
   margin-bottom: 34px;
-
+  background: #f2f2f2;
+  padding: 110px 0 30px;
+  margin-left: 17%;
   .historyContent {
     padding: 0 8%;
 
@@ -245,21 +252,9 @@ const historyList = ref([
       }
     }
   }
-
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 112%;
-  //   background: #f2f2f2;
-  //   top: -7%;
-  // }
 }
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  #history {
-    margin-left: 36.3%;
-  }
 }
 </style>

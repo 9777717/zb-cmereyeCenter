@@ -42,11 +42,11 @@ const leaveActive = () => {
 }
 </script>
 <template>
-  <div class="aboutHead">
+  <div class="aboutHead maxCon">
     <div class="title">{{ $t('pages.about_us.about_us') }}</div>
     <div class="imgBox">
       <img
-        src="https://static.cmereye.com/imgs/2023/06/7ee2bada2167f4a0.png"
+        src="https://static.cmereye.com/imgs/2023/06/8095216b29f693c7.jpg"
         alt=""
       />
       <img
@@ -54,7 +54,7 @@ const leaveActive = () => {
         alt=""
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/05/4bcb9773a45f1d35.jpg"
+        src="https://static.cmereye.com/imgs/2023/06/d72dad915e01bf72.jpg"
         alt=""
       />
     </div>
@@ -106,10 +106,12 @@ const leaveActive = () => {
 
 .title {
   position: absolute;
+  top: 102px;
+  left: 100px;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  left: 24.416667%;
-  top: -105px;
+  // left: 24.416667%;
+  // top: -105px;
   font-family: 'Noto Sans HK';
   font-style: normal;
   font-weight: 400;
@@ -122,10 +124,10 @@ const leaveActive = () => {
   &::after {
     content: 'About Us';
     position: absolute;
-    left: -80.08333%;
-    top: 3px;
+    // left: -80.08333%;
+    bottom: 0;
     text-transform: uppercase;
-
+    left: -50px;
     font-family: 'Metropolis';
     font-style: normal;
     font-weight: 500;
@@ -141,31 +143,32 @@ const leaveActive = () => {
 }
 
 .imgBox {
-  max-width: 810px;
-  min-width: 810px;
+  width: 100%;
+  max-width: 606px;
   position: relative;
   background: #f2f2f2;
-  width: 41.9%;
-  height: 640px;
-  margin-left: 30.1667%;
-  margin-top: 203px;
+  // width: 41.9%;
+  height: 840px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+  // padding-top: 200px;
 
   img {
     position: absolute;
 
     &:nth-child(1) {
-      left: -6.8%;
-      top: 17.5%;
+      left: -146px;
+      top: 350px;
     }
 
     &:nth-child(2) {
-      right: 9.18%;
-      top: -13.8%;
+      right: -30px;
+      top: 130px;
     }
 
     &:nth-child(3) {
-      right: 12%;
-      bottom: -8.14%;
+      right: 20px;
+      bottom: -50px;
     }
   }
 }
@@ -202,17 +205,6 @@ const leaveActive = () => {
       top: 0;
       background-color: #ffffff;
     }
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and(min-width:1920px) {
-  .imgBox {
-    margin-left: 36.1667vw;
-  }
-
-  .title {
-    left: 29vw;
   }
 }
 </style>

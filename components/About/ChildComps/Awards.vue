@@ -47,25 +47,27 @@ const awardsList = [
 </script>
 <template>
   <div id="awards" class="">
-    <AboutTitle
-      :zh-title="$t('pages.about_us.awards.awards')"
-      :en-ttitle="'awards'"
-      class="title"
-    />
+    <div class="awards-title">
+      <AboutTitle
+        :zh-title="$t('pages.about_us.awards.awards')"
+        :en-ttitle="'awards'"
+        class="title"
+      />
+    </div>
     <div v-if="awardsList.length" class="awardslide">
       <swiper
-        :loop="true"
-        :space-between="30"
-        :centered-slides="true"
+        :space-between="40"
+        :slides-per-view="4"
         :modules="[Autoplay]"
-        :free-mode="true"
-        :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false,
-        }"
-        class="mySwiper"
+        :loop="true"
+        :autoplay="{ delay: 0 }"
+        speed="3000"
       >
-        <swiper-slide v-for="(item, index) in awardsList" :key="index">
+        <swiper-slide
+          v-for="(item, index) in awardsList"
+          :key="index"
+          class="ccSwiper-slide"
+        >
           <div class="brand">
             <div><img :src="item.imgUrl" :alt="item.des" /></div>
             <div>
@@ -82,20 +84,22 @@ const awardsList = [
 #awards {
   width: 100%;
   max-width: 1080px;
-  margin-left: 630px;
-  margin-top: 253px;
-  margin-bottom: 160px;
+  margin: 253px auto 160px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
-
-  & > .title {
-    margin-left: -180px;
+  .awards-title {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    :deep(h1) {
+      text-align: left;
+    }
   }
 
   & > .awardslide {
     width: 100%;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   .brand {
@@ -103,8 +107,9 @@ const awardsList = [
     flex-direction: column;
     align-items: center;
 
+    width: 100%;
     & > div:nth-child(1) {
-      width: 224px;
+      // width: 224px;
       height: 224px;
       display: flex;
       justify-content: center;
@@ -147,17 +152,7 @@ const awardsList = [
   }
 }
 
-:deep(.swiper) {
-  width: 224px;
-  overflow: initial;
-  margin-left: auto;
-  margin-right: 0;
-}
-</style>
-<style lang="scss" scoped>
-@media screen and(min-width:1920px) {
-  #awards {
-    margin-left: 29.8%;
-  }
+:deep(.ccSwiper > .swiper-wrapper) {
+  transition-timing-function: linear;
 }
 </style>

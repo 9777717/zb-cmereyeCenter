@@ -11,12 +11,12 @@ const menus = [
   {
     type: 'link',
     text: t('pages.index.home'),
-    link: '/'
+    link: '/',
   },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
-    link: '/about-us',// 关于我们
+    link: '/about-us', // 关于我们
     childMenuList: [
       {
         type: 'link',
@@ -182,7 +182,7 @@ const menus = [
         route: { name: 'contact-us-appointmentForm' },
       },
     ],
-  }
+  },
 ]
 </script>
 
@@ -197,60 +197,73 @@ const menus = [
       </div>
     </div>
     <div class="mbHeader-content">
-      <div class="mbHeader-content-item" v-for="(menusItem,index) in menus" :key="index">
+      <div
+        v-for="(menusItem, index) in menus"
+        :key="index"
+        class="mbHeader-content-item"
+      >
         <div>
-          {{menusItem.text}}
+          {{ menusItem.text }}
         </div>
       </div>
     </div>
   </div>
 </template>
 
-
 <style lang="scss" scoped>
-.mbHeader{
+.mbHeader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  &-in{
+  &-in {
     width: 100%;
     // height: 100px;
-    background: linear-gradient(rgba(255,255,255,0),rgba(255, 255, 255,.3) 30%,rgba(255, 255, 255,.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255,255,255,0));
+    background: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.3) 30%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.3) 70%,
+      rgba(255, 255, 255, 0)
+    );
     padding: 19px 26px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &-logo{
+    &-logo {
       width: 69px;
       height: 36px;
-      background: url(https://static.cmereye.com/imgs/2023/06/a05a8310283f5a06.png)no-repeat;
+      background: url(https://static.cmereye.com/imgs/2023/06/a05a8310283f5a06.png)
+        no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
     }
-    &-muenBtn{
+    &-muenBtn {
       width: 36px;
       height: 26px;
-      background: url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat;
+      background: url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)
+        no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
     }
   }
-  &-content{
+  &-content {
     background: #f2f2f2;
-    &-item{
-      &>div{
-	      font-size: 16px;
-	      font-weight: normal;
-	      font-stretch: normal;
-	      line-height: 38px;
-	      letter-spacing: 0px;
-	      color: #2958a3;
+    &-item {
+      & > div {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 38px;
+        letter-spacing: 0px;
+        color: #2958a3;
       }
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media (min-width: 768px) and (max-width: 1452px) {
+}
+@media screen and (max-width: 768px) {
+}
 </style>

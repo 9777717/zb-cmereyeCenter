@@ -9,13 +9,12 @@
 </script>
 
 <template>
-  <div>
-    
-  </div>
+  <div></div>
 </template>
 
-
 <style lang="scss" scoped>
-@media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media (min-width: 768px) and (max-width: 1452px) {
+}
+@media screen and (max-width: 768px) {
+}
 </style>

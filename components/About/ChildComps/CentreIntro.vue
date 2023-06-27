@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Autoplay } from 'swiper'
 // 眼科中心
 const eyeCenterImgList = [
   'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
@@ -67,10 +68,12 @@ const goInstagram = (type: string) => {
   <div id="centreIntro" class="centreIntro">
     <!-- 中心簡介 -->
     <div>
-      <AboutTitle
-        :zh-title="$t('pages.about_us.center_profile')"
-        :en-ttitle="'introduction'"
-      />
+      <div class="IntroCon">
+        <AboutTitle
+          :zh-title="$t('pages.about_us.center_profile')"
+          :en-ttitle="'introduction'"
+        />
+      </div>
       <p class="preface text-justify my-16 px-9 py-12">
         {{ $t('pages.about_us.profile_centent.profile_text') }}
       </p>
@@ -101,7 +104,7 @@ const goInstagram = (type: string) => {
     </div>
 
     <!-- 希瑪眼科中心 -->
-    <div>
+    <div class="maxCon">
       <div>
         <div class="float-right">
           {{ $t('pages.about_us.hema_eye.hema_eye') }}
@@ -111,12 +114,12 @@ const goInstagram = (type: string) => {
         <div>
           <Swiper
             :height="380"
-            :modules="[SwiperAutoplay, SwiperEffectCreative]"
+            :modules="[Autoplay]"
             :slides-per-view="1"
             :loop="true"
             :effect="'creative'"
             :autoplay="{
-              delay: 3000,
+              delay: 2500,
             }"
           >
             <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
@@ -146,7 +149,7 @@ const goInstagram = (type: string) => {
     </div>
 
     <!-- 希瑪微笑矯視中心 -->
-    <div>
+    <div class="maxCon">
       <div>
         <div class="float-right">
           {{ $t('pages.about_us.hema_smile.hema_smile') }}
@@ -160,12 +163,12 @@ const goInstagram = (type: string) => {
         <div>
           <Swiper
             :height="380"
-            :modules="[SwiperAutoplay, SwiperEffectCreative]"
+            :modules="[Autoplay]"
             :slides-per-view="1"
             :loop="true"
             :effect="'creative'"
             :autoplay="{
-              delay: 3000,
+              delay: 2500,
             }"
           >
             <SwiperSlide v-for="(slide, idx) in smileImgList" :key="idx">
@@ -191,7 +194,7 @@ const goInstagram = (type: string) => {
     </div>
 
     <!-- 希瑪視光中心 -->
-    <div>
+    <div class="maxCon">
       <div>
         <div class="float-right">
           {{ $t('pages.about_us.hema_vision.hema_vision') }}
@@ -201,12 +204,12 @@ const goInstagram = (type: string) => {
         <div>
           <Swiper
             :height="380"
-            :modules="[SwiperAutoplay, SwiperEffectCreative]"
+            :modules="[Autoplay]"
             :slides-per-view="1"
             :loop="true"
             :effect="'creative'"
             :autoplay="{
-              delay: 3000,
+              delay: 2500,
             }"
           >
             <SwiperSlide v-for="(slide, idx) in visionImgList" :key="idx">
@@ -241,7 +244,7 @@ const goInstagram = (type: string) => {
   </div>
   <!-- 社交媒体 -->
   <div class="media">
-    <div>
+    <div class="maxCon">
       <div>
         <img
           src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
@@ -289,41 +292,49 @@ const goInstagram = (type: string) => {
       </div>
     </div>
     <div>
-      <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
-          alt=""
-        />
-        <a
-          class="downloadpdf"
-          href="../../../assets/pdf/cmer.pdf"
-          :download="`${$t('pages.about_us.download.download')}.pdf`"
-          >{{ $t('pages.about_us.download.download') }}</a
-        >
+      <div class="maxCon">
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
+            alt=""
+          />
+          <a
+            class="downloadpdf"
+            href="../../../assets/pdf/cmer.pdf"
+            :download="`${$t('pages.about_us.download.download')}.pdf`"
+            >{{ $t('pages.about_us.download.download') }}</a
+          >
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.IntroCon {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  :deep(h1) {
+    text-align: left !important;
+  }
+}
 .centreIntro {
-  margin-left: 23.4375%;
   margin-bottom: 320px;
-
   // 简介
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
 
     & > p {
-      width: 960px;
-      margin-left: 15px;
+      width: 100%;
+      max-width: 960px;
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
@@ -339,9 +350,13 @@ const goInstagram = (type: string) => {
       background: linear-gradient(90deg, #fbfdff 0%, #f5fbfe 100%);
       box-shadow: 1px 2px 4px rgba(170, 169, 166, 0.2);
       border-radius: 20px;
+      margin: 100px auto;
     }
 
     & > div:nth-child(3) {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
       .color1 {
         color: #8ad8dd;
       }
@@ -358,7 +373,8 @@ const goInstagram = (type: string) => {
         letter-spacing: 0.06em;
         text-indent: 45px;
         text-transform: uppercase;
-        margin-left: 150px;
+        // margin-left: 150px;
+        // margin: 0 auto;
 
         color: #515151;
       }
@@ -366,7 +382,7 @@ const goInstagram = (type: string) => {
       & > p:last-child {
         width: 860px;
         margin-top: 70px;
-        margin-left: 78px;
+        // margin-left: 78px;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -386,13 +402,14 @@ const goInstagram = (type: string) => {
 
   // 希瑪眼科中心
   & > div:nth-child(2) {
-    width: 1186px;
+    width: 100%;
+    max-width: 1080px;
     margin-top: 180px;
     position: relative;
 
     .swiper {
       filter: drop-shadow(6px 7px 4px rgba(128, 123, 123, 0.25));
-      width: 523px;
+      width: 500px;
     }
 
     .swiper-slide {
@@ -438,7 +455,7 @@ const goInstagram = (type: string) => {
 
       & > div:nth-child(2) {
         margin-left: 50px;
-        margin-top: 43px;
+        // margin-top: 43px;
 
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -485,7 +502,7 @@ const goInstagram = (type: string) => {
       }
 
       & > div:nth-child(1) {
-        margin-left: 98px;
+        margin-left: 48px;
       }
 
       & > div:nth-child(2) {
@@ -496,7 +513,8 @@ const goInstagram = (type: string) => {
 
   // 希瑪微笑矯視中心
   & > div:nth-child(3) {
-    width: 1186px;
+    width: 100%;
+    max-width: 1080px;
     margin-top: 180px;
     position: relative;
 
@@ -515,7 +533,7 @@ const goInstagram = (type: string) => {
       justify-content: flex-start;
 
       & > div {
-        background: #1b407a;
+        background: #4570b6;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 30px 0px;
         width: 332px;
@@ -548,7 +566,7 @@ const goInstagram = (type: string) => {
 
       & > div:nth-child(1) {
         margin-right: 50px;
-        margin-top: 43px;
+        // margin-top: 43px;
 
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -596,7 +614,7 @@ const goInstagram = (type: string) => {
       }
 
       & > div:nth-child(1) {
-        margin-left: 98px;
+        margin-left: 48px;
       }
 
       & > div:nth-child(2) {
@@ -607,7 +625,8 @@ const goInstagram = (type: string) => {
 
   // 希瑪視光中心
   & > div:nth-child(4) {
-    width: 1186px;
+    width: 100%;
+    max-width: 1080px;
     margin-top: 180px;
     position: relative;
 
@@ -659,7 +678,7 @@ const goInstagram = (type: string) => {
 
       & > div:nth-child(2) {
         margin-left: 50px;
-        margin-top: 43px;
+        // margin-top: 43px;
 
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -706,7 +725,7 @@ const goInstagram = (type: string) => {
       }
 
       & > div:nth-child(1) {
-        margin-left: 98px;
+        margin-left: 48px;
       }
 
       & > div:nth-child(2) {
@@ -714,64 +733,53 @@ const goInstagram = (type: string) => {
       }
     }
   }
-
-  // & > div:nth-child(2),
-  // & > div:nth-child(3),
-  // & > div:nth-child(4) {
-  //   margin-left: 11.7%;
-  // }
 }
 
 .media {
   margin-bottom: 50px;
-
+  position: relative;
+  &::before {
+    content: '';
+    width: calc((100% - 1080px) / 2 + 1160px);
+    background: #f2f2f2;
+    height: 337px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+  }
   & > div:nth-child(1) {
     position: relative;
-    background: #f2f2f2;
-    width: 86.875%;
-    height: 337px;
-
-    & > div > img {
-      position: absolute;
-    }
+    display: flex;
 
     & > div > img:nth-child(1) {
-      top: -95px;
-      left: 35.9375%;
+      margin-left: 150px;
+      margin-right: 94px;
     }
 
     & > div > img:nth-child(2) {
-      bottom: -17px;
-      left: 26.5265%;
+      margin-top: 58px;
     }
 
     & > div:nth-child(2) {
       color: red;
-      margin-left: 63.291667%;
-      padding-top: 65px;
-
+      padding-top: 165px;
       & > a {
         & > img {
           width: 55px;
           height: 55px;
         }
-
         display: flex;
         align-items: center;
         margin-bottom: 26px;
-
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 34px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
-        text-indent: 45px;
+        text-indent: 30px;
         text-transform: uppercase;
-
         color: #515151;
       }
     }
@@ -779,35 +787,38 @@ const goInstagram = (type: string) => {
 
   & > div:nth-child(2) {
     position: relative;
-    background: #f2f2f2;
-    width: 86.875%;
-    height: 150px;
     margin-top: 30px;
-
-    & > div:nth-child(1) {
-      margin-left: 40.625%;
-    }
-
-    & > div:nth-child(2) {
+    &::before {
+      content: '';
+      width: calc((100% - 1080px) / 2 + 1160px);
+      background: #f2f2f2;
+      height: 150px;
       position: absolute;
-      top: 28px;
-      margin-left: 62.2617%;
+      top: -20px;
+      left: 0;
+    }
+    & > div {
+      position: relative;
       display: flex;
-      align-items: center;
+      & > div:nth-child(1) {
+        margin: 28px 94px 0 150px;
+      }
+      & > div:nth-child(2) {
+        top: 28px;
+        display: flex;
+        align-items: center;
+        font-family: 'Noto Sans HK';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: justify;
+        letter-spacing: 0.06em;
+        text-indent: 30px;
+        text-transform: uppercase;
 
-      font-family: 'Noto Sans HK';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 34px;
-      /* or 170% */
-
-      text-align: justify;
-      letter-spacing: 0.06em;
-      text-indent: 45px;
-      text-transform: uppercase;
-
-      color: #515151;
+        color: #515151;
+      }
     }
   }
 
@@ -846,15 +857,6 @@ const goInstagram = (type: string) => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .centreIntro {
-    // 简介
-    & > div:nth-child(1) {
-      margin-left: 120px;
-
-      & > div:nth-child(1) {
-        margin-left: -4vw;
-      }
-    }
-
     // 希瑪視光中心
     & > div:nth-child(4) {
       width: 1186px;
@@ -874,24 +876,19 @@ const goInstagram = (type: string) => {
         display: flex;
         width: 100%;
         justify-content: flex-end;
-
         & > div {
           background: #00a4cf;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 30px 0px;
           width: 332px;
           height: 69px;
-
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 400;
           font-size: 34.6916px;
           line-height: 2;
-          /* identical to box height, or 144% */
-
           text-align: center;
           letter-spacing: 0.05em;
-
           color: #ffffff;
         }
       }
@@ -909,7 +906,6 @@ const goInstagram = (type: string) => {
 
         & > div:nth-child(2) {
           margin-left: 50px;
-          margin-top: 43px;
 
           font-family: 'Noto Sans HK';
           font-style: normal;
@@ -917,14 +913,11 @@ const goInstagram = (type: string) => {
           font-size: 20px;
           line-height: 34px;
           /* or 170% */
-
           text-align: justify;
           letter-spacing: 0.06em;
           text-indent: 45px;
           text-transform: uppercase;
-
           color: #515151;
-
           & > p {
             margin-top: 40px;
           }
@@ -945,46 +938,29 @@ const goInstagram = (type: string) => {
           font-weight: 700;
           font-size: 20px;
           line-height: 34px;
-          /* or 170% */
-
           text-align: justify;
           letter-spacing: 0.06em;
           text-indent: 5px;
           text-transform: uppercase;
-
           color: #2958a3;
         }
 
         & > div:nth-child(1) {
-          margin-left: 98px;
+          margin-left: 48px;
         }
 
         & > div:nth-child(2) {
           margin-left: 50px;
+          margin-right: 48px;
         }
       }
     }
-
-    // & > div:nth-child(2),
-    // & > div:nth-child(3),
-    // & > div:nth-child(4) {
-    //   margin-left: 11.7%;
-    // }
   }
 
   .centreIntro {
-    margin: auto;
-    max-width: 1300px;
-    margin-left: 28.5%;
+    margin: 0 auto;
+    width: 100%;
   }
-
-  // .centreIntro {
-  //   & > div:nth-child(2),
-  //   & > div:nth-child(3),
-  //   & > div:nth-child(4) {
-  //     margin-left: 11.3%;
-  //   }
-  // }
 
   .media {
     margin-top: 210px;
