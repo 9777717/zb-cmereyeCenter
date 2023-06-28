@@ -90,7 +90,7 @@ const props = defineProps({
     width: 165px;
     border: 0.5px solid #515151;
     margin: 5px 0;
-    padding: 10px 0 5px;
+    padding: 5px 0 0;
     font-size: 15px;
     background: #fff;
     display: flex;
@@ -123,7 +123,7 @@ const props = defineProps({
     width: 165px;
     border: 0.5px solid #515151;
     margin: 5px 0;
-    padding: 10px 0 5px;
+    padding: 5px 0 0;
     font-size: 15px;
     background: #fff;
     display: flex;

@@ -144,6 +144,11 @@ const menus = [
         text: t('pages.ophthalmic_information.ophthalmic_message'),
         route: { name: 'ophthalmic-information-healthInfo' },
       },
+      {
+        type: 'link',
+        text: '視力健康測試',
+        route: { name: 'ophthalmic-information-eyesight' }
+      }
     ],
   },
   {

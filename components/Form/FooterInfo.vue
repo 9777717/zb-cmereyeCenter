@@ -85,9 +85,10 @@ const postData = async () => {
   },
   body: _data
   })
-  let res = JSON.parse(data.value)
-  if (res) {
-    if(res.code){
+  let res = data.value
+  // console.log(res)
+  if (res == '发送成功！') {
+    // if(res.code){
       ElMessage({
         showClose: true,
         message: '表單提交成功！我們會盡快回覆閣下。',
@@ -95,7 +96,7 @@ const postData = async () => {
         duration: 0
       })
       localStorage.setItem('contactForm',JSON.stringify(ruleForm))
-    }
+    // }
   }
 }
 

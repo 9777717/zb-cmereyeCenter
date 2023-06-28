@@ -2465,7 +2465,7 @@ const serviceNavigation = [
   }
 
   .fromTable {
-    margin-top: -50%;
+    margin-top: -70%;
   }
 }
 </style>

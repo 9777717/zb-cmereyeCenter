@@ -20,44 +20,93 @@ useHead(() => ({
 }))
 
 // 内容
-const mainContent = [
+// const mainContent = [
+//   {
+//     img: 'https://static.cmereye.com/imgs/2023/05/68d06f9abbaa270e.png',
+//     link: 'https://youtu.be/6QMK-B_WKvk',
+//     title:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_title',
+//     doctor:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_doctor',
+//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_text',
+//   },
+//   {
+//     img: 'https://static.cmereye.com/imgs/2023/05/ae11245a90ee4dfe.png',
+//     link: 'https://youtu.be/gsFpvvDkJiE',
+//     title:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_title',
+//     doctor:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_doctor',
+//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_text',
+//   },
+//   {
+//     img: 'https://static.cmereye.com/imgs/2023/05/2d88b98970f31ba1.png',
+//     link: 'https://youtu.be/zMoqXZgXDsk',
+//     title:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_title',
+//     doctor:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_doctor',
+//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_text',
+//   },
+//   {
+//     img: 'https://static.cmereye.com/imgs/2023/05/f3aab3c7f7cec643.png',
+//     link: 'https://youtu.be/XbWbpVc-39k',
+//     title:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_title',
+//     doctor:
+//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_doctor',
+//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_text',
+//   },
+// ]
+let mainContent = ref([
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/68d06f9abbaa270e.png',
-    link: 'https://youtu.be/6QMK-B_WKvk',
-    title:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_title',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_doctor',
-    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_text',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/ae11245a90ee4dfe.png',
-    link: 'https://youtu.be/gsFpvvDkJiE',
-    title:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_title',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_doctor',
-    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_text',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/2d88b98970f31ba1.png',
-    link: 'https://youtu.be/zMoqXZgXDsk',
-    title:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_title',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_doctor',
-    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_text',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/f3aab3c7f7cec643.png',
-    link: 'https://youtu.be/XbWbpVc-39k',
-    title:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_title',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_doctor',
-    text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_text',
-  },
-]
+    img: '',
+    link: '',
+    title: '',
+    doctor: '',
+    text: ''
+  }
+])
+let totalPageNum = ref(0)
+let actPageNum = ref(1) 
+const getMainContent = async () => {
+  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
+  let res = JSON.parse(data.value)
+  // console.log(res)
+  totalPageNum.value = Math.ceil(res.rowtotal / 4)
+  // console.log(totalPageNum.value)
+  mainContent.value = res.data.map((item:any) => {
+    return {
+      img: `https://hkcmereye.com${item.ico}`,
+      link: item.source,
+      title: item.title,
+      doctor: item.ext_doctor_name,
+      text: item.ext_context
+    }
+  })
+}
+
+const subNum = () => {
+  if(actPageNum.value > 1){
+    actPageNum.value --
+    getMainContent()
+  }
+}
+
+const addNum = () => {
+  if(actPageNum.value < totalPageNum.value){
+    actPageNum.value ++
+    getMainContent()
+  }
+}
+
+onMounted(()=>{
+  setTimeout(()=>{
+    getMainContent()
+  },0)
+})
+
+
 </script>
 
 <template>
@@ -164,7 +213,7 @@ const mainContent = [
     </div>
     <!-- 可能是切数据 -->
     <div>
-      <div>
+      <div @click="subNum">
         <svg
           width="9"
           height="15"
@@ -181,8 +230,8 @@ const mainContent = [
           />
         </svg>
       </div>
-      <div>1/5</div>
-      <div>
+      <div>{{actPageNum}}/{{totalPageNum}}</div>
+      <div @click="addNum">
         <svg
           width="9"
           height="15"
@@ -439,6 +488,9 @@ const mainContent = [
         right: 0;
         margin-right: 64px;
         margin-top: 39px;
+        img{
+          max-width: 312px;
+        }
       }
     }
 

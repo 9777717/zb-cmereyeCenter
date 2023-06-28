@@ -174,22 +174,23 @@ const articleList = [
 <style lang="scss" scoped>
 .article {
   & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
+    margin-top: 122px;
     position: relative;
-    margin-top: 86.63px;
-
-    width: 1695px;
-    height: 767px;
-    background: #f2f2f2;
-    display: inline-block;
-
+    padding: 50px 0;
+    &::before{
+      content: '';
+      width: calc((100% - 1080px)/2 + 1000px);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #f2f2f2;
+    }
     & > div:nth-child(1) {
-      margin: auto;
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
       position: relative;
-      margin-left: 18vw;
-      margin-top: 8vw;
-
       & > img {
         z-index: 5;
         position: relative;
@@ -198,6 +199,8 @@ const articleList = [
       & > svg {
         z-index: 5;
         left: 45%;
+        bottom: 0;
+        transform: translateY(50%);
         position: absolute;
       }
     }
@@ -205,10 +208,12 @@ const articleList = [
     & > div:nth-child(2) {
       position: absolute;
       z-index: 5;
-      top: 18vw;
-      left: 10vw;
-      right: 0;
-      bottom: 294.58px;
+      top: 30%;
+      // left: 10vw;
+      // right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      // bottom: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -264,27 +269,31 @@ const articleList = [
   }
 
   & > div:nth-child(2) {
-    margin-top: 303.42px;
-    margin-bottom: 294px;
+    width: 100%;
+    max-width: 1140px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 203px;
-    margin-right: 265px;
+    margin: 170px auto 300px;
 
     & > div {
-      width: 401px;
-      height: 401px;
+      width: calc(50% - 66px);
+      max-height: 500px;
       background: #f2f2f2;
-      margin-right: 120px;
-      padding: 0;
-
+      padding: 35px 0;
+      margin: 0 33px 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      cursor: pointer;
       & > div:nth-child(1) {
-        padding-top: 36px;
-        padding-right: 37px;
-        padding-left: 34px;
+        padding: 0 35px;
+        img{
+          width: 100%;
+        }
       }
 
       & > div:nth-child(2) {
+        margin: 10px 0 5px;
         padding-left: 34px;
         white-space: pre-wrap;
         font-family: 'Noto Sans HK';
@@ -335,33 +344,12 @@ const articleList = [
     }
 
     & > div:nth-child(3n) {
-      margin-right: 0;
+      // margin-right: 0;
     }
 
     & > div:nth-child(n + 4) {
-      margin-top: 164px;
+      // margin-top: 164px;
     }
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .article {
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        margin-left: 8vw;
-      }
-
-      & > div:nth-child(2) {
-        left: 3vw;
-      }
-    }
-  }
-
-  .article_Out {
-    width: 1920px;
-    margin: auto;
-    margin-left: 20vw;
   }
 }
 </style>
