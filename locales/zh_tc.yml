@@ -5,8 +5,8 @@ components:
     theme: 主题
     change_theme: 切换主题
   footerInfo:
-    Instagram: Instagram：
-    YouTube: YouTube：
+    Instagram: Instagram
+    YouTube: YouTube
     sidekicker: 親友介紹
     staff: 員工介紹
     website: 透過其他網頁

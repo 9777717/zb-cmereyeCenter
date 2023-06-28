@@ -61,7 +61,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
     if (valid) {
       console.log('submit!')
       postData()
-      // resetForm(formEl) // 成功提交清空表单内容
+      resetForm(formEl) // 成功提交清空表单内容
     } else {
       console.log('error submit!', fields)
     }
@@ -69,8 +69,6 @@ const submitForm = async (formEl: FormInstance | undefined) => {
 }
 
 const postData = async () => {
-  console.log(ruleForm)
-  let _formData = new FormData()
   let _message = `姓名：${ruleForm.name}\n
 電話號碼：${ruleForm.phone}\n
 電郵地址：${ruleForm.email}\n
@@ -79,25 +77,13 @@ const postData = async () => {
 其他：${ruleForm.rest}\n
 訊息：${ruleForm.desc}\n
 來源：${location.href}`
-  // let _message = '1'
-  _formData.append('message',_message)
+  let _data = 'message=' + encodeURIComponent(_message);
   const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
   method: 'post',
-  body: _formData
-  // body: {
-//    "msgtype": "markdown",
-//    "markdown":{
-//   title: "消息通知",
-//   text: `姓名：${ruleForm.name}\n
-// 電話號碼：${ruleForm.phone}\n
-// 電郵地址：${ruleForm.email}\n
-// 預約日期：${ruleForm.region}\n
-// 從哪裏找到網站：${ruleForm.type}\n
-// 其他：${ruleForm.rest}\n
-// 訊息：${ruleForm.desc}\n
-// 來源：[${location.href}](${location.href})`
-//       }
-    // }
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: _data
   })
   let res = JSON.parse(data.value)
   if (res) {
@@ -320,12 +306,13 @@ defineProps({
 
       :deep(.el-checkbox-group) {
         flex: 4;
+        margin-top: 25px;
       }
 
       :deep(.el-form-item__content) {
         align-content: space-between;
         align-items: normal;
-        margin: 25px 0;
+        // margin: 25px 0;
       }
 
       :deep(.el-checkbox__input.is-checked .el-checkbox__inner) {
@@ -350,7 +337,7 @@ defineProps({
           padding-left: 15px;
 
           display: flex;
-          height: 50px;
+          height: 37px;
           align-content: flex-end;
         }
 
