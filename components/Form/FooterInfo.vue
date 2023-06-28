@@ -4,14 +4,14 @@ import type { FormInstance, FormRules } from 'element-plus'
 definePageMeta({
   layout: 'page',
 })
-
+const {t} = useLang()
 const cities = [
-  'components.footerInfo.Instagram',
-  'components.footerInfo.YouTube',
-  'components.footerInfo.sidekicker',
-  'components.footerInfo.staff',
-  'components.footerInfo.website',
-  'components.footerInfo.leaflet',
+  t('components.footerInfo.Instagram'),
+  t('components.footerInfo.YouTube'),
+  t('components.footerInfo.sidekicker'),
+  t('components.footerInfo.staff'),
+  t('components.footerInfo.website'),
+  t('components.footerInfo.leaflet'),
 ]
 
 const formSize = ref('default')
@@ -49,7 +49,7 @@ const rules = reactive<FormRules>({
   region: [
     {
       required: true,
-      message: 'Please select Activity zone',
+      message: '請選擇日期',
       trigger: 'change',
     },
   ],
@@ -60,12 +60,60 @@ const submitForm = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       console.log('submit!')
-      resetForm(formEl) // 成功提交清空表单内容
+      postData()
+      // resetForm(formEl) // 成功提交清空表单内容
+      resetForm(formEl)
     } else {
       console.log('error submit!', fields)
     }
   })
 }
+
+const postData = async () => {
+  console.log(ruleForm)
+  const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
+  method: 'post',
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: {
+    message: `姓名：${ruleForm.name}\n
+// 電話號碼：${ruleForm.phone}\n
+// 電郵地址：${ruleForm.email}\n
+// 預約日期：${ruleForm.region}\n
+// 從哪裏找到網站：${ruleForm.type}\n
+// 其他：${ruleForm.rest}\n
+// 訊息：${ruleForm.desc}\n
+// 來源：[${location.href}](${location.href})`
+//    "msgtype": "markdown",
+//    "markdown":{
+//   title: "消息通知",
+//   text: `姓名：${ruleForm.name}\n
+// 電話號碼：${ruleForm.phone}\n
+// 電郵地址：${ruleForm.email}\n
+// 預約日期：${ruleForm.region}\n
+// 從哪裏找到網站：${ruleForm.type}\n
+// 其他：${ruleForm.rest}\n
+// 訊息：${ruleForm.desc}\n
+// 來源：[${location.href}](${location.href})`
+//       }
+    }
+  })
+  let res = JSON.parse(data.value)
+  if (res) {
+    if(res.code){
+      ElMessage({
+        showClose: true,
+        message: '表單提交成功！我們會盡快回覆閣下。',
+        type: 'success',
+        duration: 0
+      })
+      localStorage.setItem('contactForm',JSON.stringify(ruleForm))
+    }
+  }
+}
+
+
 
 const resetForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return
@@ -113,6 +161,7 @@ defineProps({
           </el-form-item>
           <el-form-item prop="phone">
             <el-input
+              maxLength="11"
               v-model="ruleForm.phone"
               :placeholder="$t('components.footerInfo.placeholder2')"
               clearable
@@ -126,14 +175,14 @@ defineProps({
             />
           </el-form-item>
           <el-form-item prop="region">
-            <el-select
+            <el-date-picker
               v-model="ruleForm.region"
+              type="date"
+              format="YYYY/MM/DD"
+              value-format="YYYY-MM-DD"
               :placeholder="$t('components.footerInfo.placeholder4')"
-              clearable
-            >
-              <el-option label="Zone one" value="shanghai" />
-              <el-option label="Zone two" value="beijing" />
-            </el-select>
+              :size="'large'"
+            />
           </el-form-item>
           <el-form-item prop="type" :label="$t('components.footerInfo.label1')">
             <el-checkbox-group v-model="ruleForm.type" clearable>
@@ -143,7 +192,7 @@ defineProps({
                 class="serve"
                 :label="serve"
                 name="type"
-                >{{ $t(serve) }}</el-checkbox
+                >{{ serve }}</el-checkbox
               >
             </el-checkbox-group>
             <el-form-item
@@ -184,7 +233,7 @@ defineProps({
       flex-direction: column;
       align-items: center;
 
-      font-family: 'NotoSansHK-Regular';
+      // font-family: 'NotoSansHK-Regular';
       font-size: 28px;
       font-weight: normal;
       font-stretch: normal;
@@ -221,7 +270,12 @@ defineProps({
           height: 84px;
         }
       }
-
+      :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper){
+        width: 100%;
+      }
+      :deep(.el-input--large .el-input__wrapper){
+        width: 100%;
+      }
       :deep(.el-form-item) {
         width: 340px;
       }
@@ -231,7 +285,7 @@ defineProps({
       }
 
       :deep(.el-form-item__label) {
-        font-family: 'NotoSansHK-Regular';
+        font-family: none;
         font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
@@ -242,7 +296,7 @@ defineProps({
 
       :deep(.el-input__inner) {
         height: 50px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: none;
         padding: 14px;
         font-size: 22px;
         font-weight: normal;
@@ -253,7 +307,7 @@ defineProps({
       }
 
       :deep(.el-textarea__inner) {
-        font-family: 'NotoSansHK-Regular';
+        font-family: none;
         font-size: 22px;
         letter-spacing: 0px;
         color: #828383;
@@ -286,7 +340,7 @@ defineProps({
         align-items: flex-end;
 
         :deep(.el-form-item__label) {
-          font-family: 'NotoSansHK-Regular';
+          font-family: none;
           font-size: 18px;
           font-weight: normal;
           font-stretch: normal;
@@ -319,7 +373,7 @@ defineProps({
       }
 
       :deep(.el-checkbox__label) {
-        font-family: 'NotoSansHK-Regular';
+        font-family: none;
         font-size: 18px;
         font-weight: normal;
         font-stretch: normal;
@@ -335,7 +389,7 @@ defineProps({
       margin: auto;
       margin-top: 74px;
 
-      font-family: 'NotoSansHK-Medium';
+      font-family: none;
       font-size: 30px;
       font-weight: normal;
       font-stretch: normal;

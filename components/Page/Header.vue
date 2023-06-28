@@ -12,6 +12,7 @@ const menus = [
     type: 'link',
     text: t('pages.index.home'),
     link: '/',
+    childMenuList: []
   },
   {
     type: 'link',
@@ -21,17 +22,17 @@ const menus = [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        route: { path: '/about-us', hash: '#centreIntro' },
+        link: '/about-us#centreIntro'
       },
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
-        route: { path: '/about-us', hash: '#history' },
+        link: '/about-us#history'
       },
       {
         type: 'link', // 企业愿景
         text: t('pages.about_us.enterprise_vision'),
-        route: { path: '/about-us', hash: '#awards' },
+        link: '/about-us#awards'
       },
     ],
   },
@@ -39,6 +40,7 @@ const menus = [
     type: 'link',
     text: t('pages.medical_team.medical_team'),
     link: '/medical-team', // 醫療團隊
+    childMenuList: []
   },
   {
     type: 'link',
@@ -48,62 +50,62 @@ const menus = [
       {
         type: 'link',
         text: t('pages.medical_service.cataract'),
-        route: { name: 'medical-service-cataract' }, // 白內障
+        link: '/medical-service/cataract'
       },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
-        route: { name: 'medical-service-glaucoma' },
+        link: '/medical-service/glaucoma'
       },
       {
         type: 'link',
         text: t('pages.medical_service.xerophthalmia'),
-        route: { name: 'medical-service-xerophthalmia' },
+        link: '/medical-service/xerophthalmia'
       },
       {
         type: 'link',
         text: t('pages.medical_service.muscae_volitantes'),
-        route: { name: 'medical-service-muscaeVolitantes' },
+        link: '/medical-service/muscaeVolitantes'
       },
       {
         type: 'link',
         text: t('pages.medical_service.conjunctivitis'),
-        route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+        link: '/medical-service/conjunctivitis'
       },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
-        route: { name: 'medical-service-maculopathy' },
+        link: '/medical-service/maculopathy'
       },
       {
         type: 'link', // 兒童斜弱視
         text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name: 'medical-service-strabismusAmblyopia' },
+        link: '/medical-service/strabismusAmblyopia'
       },
       {
         type: 'link', // 視網膜脫落
         text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
+        link: '/medical-service/amotioRetinae'
       },
       {
         type: 'link', // 眼表及角膜疾病
         text: t('pages.medical_service.ocularSurfaceDiseases'),
-        route: { name: 'medical-service-ocularSurfaceDiseases' },
+        link: '/medical-service/ocularSurfaceDiseases'
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
-        route: { name: 'medical-service-eyeOrthopaedicDisease' },
+        link: '/medical-service/eyeOrthopaedicDisease'
       },
       {
         type: 'link', // 醫學驗光配鏡
         text: t('pages.medical_service.medicalOptometry'),
-        route: { name: 'medical-service-medicalOptometry' },
+        link: '/medical-service/medicalOptometry'
       },
       {
         type: 'link', // 阿托品滴眼液
         text: t('pages.medical_service.atropine'),
-        route: { name: 'medical-service-atropine' },
+        link: '/medical-service/atropine'
       },
     ],
   },
@@ -165,6 +167,7 @@ const menus = [
     type: 'link',
     text: t('pages.talent_recruitment.talent_recruitment'),
     link: '/talent-recruitment',
+    childMenuList: []
   },
   {
     type: 'link',
@@ -184,26 +187,64 @@ const menus = [
     ],
   },
 ]
+
+const toIndex = () => {
+  window.location.href = '/'
+}
+
+const toLinks = (data:any) =>{
+  window.location.href = data.link || ''
+}
+
+let menuBool = ref(false)
+const handleMuenBtn = () =>{
+  menuBool.value = !menuBool.value
+}
 </script>
 
 <template>
   <div class="mbHeader">
-    <div class="mbHeader-in">
-      <div class="mbHeader-in-logo">
-        <!-- <img src="" alt=""> -->
-      </div>
-      <div class="mbHeader-in-muenBtn">
-        <!-- <img src="" alt=""> -->
-      </div>
+    <div class="mbHeader-in" :style="{
+      background: (menuBool?'#fff':'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))')
+    }">
+      <div class="mbHeader-in-logo" @click="toIndex"></div>
+      <div class="mbHeader-in-muenBtn" :style="{
+        background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat')
+      }" @click="handleMuenBtn"></div>
     </div>
-    <div class="mbHeader-content">
-      <div
-        v-for="(menusItem, index) in menus"
-        :key="index"
-        class="mbHeader-content-item"
+    <div class="mbHeader-content" :style="{display: (menuBool? 'block': 'none')}">
+      <el-menu
+        default-active="2"
+        unique-opened
+        class="el-menu-vertical-demo"
       >
+        <section v-for="(menusItem, menusIndex) in menus" :key="menusIndex">
+          <el-sub-menu v-if="menusItem.childMenuList.length" :index="menusIndex">
+            <template #title>{{menusItem.text}}</template>
+            <el-menu-item v-for="(childItem,childIndex) in menusItem.childMenuList" :key="`${menusIndex}-${childIndex}`" :index="`${menusIndex}-${childIndex}`" @click="toLinks(childItem)">
+              <!-- <nuxt-link :to="childItem.link">{{childItem.text}}</nuxt-link> -->
+              {{childItem.text}}
+            </el-menu-item>
+          </el-sub-menu>
+          <el-menu-item v-else :index="menusIndex" @click="toLinks(menusItem)">
+            <span>{{menusItem.text}}</span>
+          </el-menu-item>
+        </section>
+      </el-menu>
+      <div class="mbHeader-content-btn">
         <div>
-          {{ menusItem.text }}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="12" height="12" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_2197_549" transform="scale(0.0833333)"/>
+            </pattern>
+            <image id="image0_2197_549" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAL9JREFUKFNj/P//PwMQ9AFxJBDfBWJbIAYLYgOMQA29QIkiJMlAIHsDPg3fgZIcSArWAdnB+DT8BEqyoSlgBfL/4HLSWaCEEVTyE5BuAOKJQPwPl4ZUoMQsqOQ5IG2MyzkgcZCnQfQzIJYEYhAnHIhX4/MDSM4ciE8gKTIFss/gchJMvBTI6IJyQO6PAGJQiE0GYhsgBvn1CMxJME39QEYBksmPgWxZZJvQNYDkGoC4npAf0OU9gQIdQKyIJvEZAIEAQi93YCN3AAAAAElFTkSuQmCC"/>
+            </defs>
+          </svg>
+          <span>
+            立即致電（852）3956 2026
+          </span>
         </div>
       </div>
     </div>
@@ -215,17 +256,19 @@ const menus = [
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  z-index: 999;
   &-in {
     width: 100%;
     // height: 100px;
-    background: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.3) 30%,
-      rgba(255, 255, 255, 0.4) 50%,
-      rgba(255, 255, 255, 0.3) 70%,
-      rgba(255, 255, 255, 0)
-    );
+    // background: linear-gradient(
+    //   rgba(255, 255, 255, 0),
+    //   rgba(255, 255, 255, 0.3) 30%,
+    //   rgba(255, 255, 255, 0.4) 50%,
+    //   rgba(255, 255, 255, 0.3) 70%,
+    //   rgba(255, 255, 255, 0)
+    // );
+    transition: all .3s;
     padding: 19px 26px;
     box-sizing: border-box;
     display: flex;
@@ -241,26 +284,59 @@ const menus = [
     }
     &-muenBtn {
       width: 36px;
-      height: 26px;
-      background: url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)
-        no-repeat;
+      height: 36px;
+      transition: all .3s;
+      // background: url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)
+      //   no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
     }
   }
   &-content {
     background: #f2f2f2;
-    &-item {
-      & > div {
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 38px;
-        letter-spacing: 0px;
-        color: #2958a3;
+    width: 100%;
+    height: calc(100vh - 74px);
+    overflow: hidden;
+    overflow-y: auto;
+    transition: all 5s;
+    padding: 0 9px 100px;
+    &-btn{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      &>div{
+        background: #2958A3;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+        span{
+          margin-left: 5px;
+          color: #fff;
+          padding-top: 5px;
+        }
       }
     }
   }
+}
+:deep(.el-menu){
+  background-color: #f2f2f2;
+  border-right: none;
+}
+:deep(.el-sub-menu){
+  border-bottom: 1px solid #dcdcdc;
+}
+:deep(.el-menu>section>.el-menu-item){
+  border-bottom: 1px solid #dcdcdc;
+}
+:deep(.el-menu-item){
+  color: #2958A3;
+  font-size: 16px;
+  padding: 0 20px !important;
+}
+:deep(.el-sub-menu__title){
+  color: #2958A3;
+  font-size: 16px;
 }
 @media (min-width: 768px) and (max-width: 1452px) {
 }

@@ -52,6 +52,15 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+
+const toWhatsApp = ()=>{
+  window.open('https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2')
+}
+
+const tozoosnet =()=>{
+  window.open('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571')
+}
+
 </script>
 
 <template>
@@ -226,7 +235,7 @@ const goWhatsApp = () => {
           </p>
         </div>
         <div>
-          <div>立即WhatApp查詢{{ '\n' }}了解兒童控制近視方案</div>
+          <div @click="toWhatsApp">立即WhatApp查詢{{ '\n' }}了解兒童控制近視方案</div>
         </div>
       </div>
       <div id="benefit">
@@ -308,7 +317,7 @@ const goWhatsApp = () => {
           </div>
         </div>
         <div>
-          <div>立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
+          <div @click="tozoosnet">立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
         </div>
       </div>
 
@@ -396,7 +405,7 @@ const goWhatsApp = () => {
           </div>
         </div>
         <div>
-          <div>立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
+          <div @click="tozoosnet">立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
         </div>
       </div>
     </div>

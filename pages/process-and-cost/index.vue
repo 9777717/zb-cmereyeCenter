@@ -403,7 +403,7 @@ const scrollHeight = () => {
   a {
     border: 0.5px solid #515151;
     margin: 5px 0;
-    padding: 5px 40px;
+    padding: 10px 40px 5px;
     font-size: 15px;
     background-color: #fff;
     text-align: center;
@@ -451,7 +451,7 @@ const scrollHeight = () => {
     a {
       border: 0.5px solid #515151;
       margin: 5px 0;
-      padding: 5px 40px;
+      padding: 10px 40px 5px;
       font-size: 15px;
       background-color: #fff;
       text-align: center;

@@ -609,7 +609,7 @@ const goInstagram = (type: string) => {
         letter-spacing: 0.06em;
         text-indent: 5px;
         text-transform: uppercase;
-
+        
         color: #2958a3;
       }
 
@@ -816,7 +816,7 @@ const goInstagram = (type: string) => {
         letter-spacing: 0.06em;
         text-indent: 30px;
         text-transform: uppercase;
-
+        height: 110px;
         color: #515151;
       }
     }

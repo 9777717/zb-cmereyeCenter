@@ -506,6 +506,8 @@ const goWhatsApp = () => {
         border: solid 1px #515151;
         padding: 3px 55px;
         font-size: 24px;
+        line-height: 160%;
+        font-family: auto;
       }
 
       .activeBtn {

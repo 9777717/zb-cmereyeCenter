@@ -62,6 +62,7 @@ const awardsList = [
         :loop="true"
         :autoplay="{ delay: 0 }"
         speed="3000"
+        class="ccSwiper"
       >
         <swiper-slide
           v-for="(item, index) in awardsList"

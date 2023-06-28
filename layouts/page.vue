@@ -1,30 +1,51 @@
 <script setup>
 const route = useRoute()
 const rt = ref(route)
-const windowWidth = ref(1920)
-onMounted(() => {
-  getWindowWidth()
-  window.addEventListener('resize', getWindowWidth)
-})
-const getWindowWidth = () => {
-  windowWidth.value = window.innerWidth
-}
+
 </script>
 <template>
   <div>
     <div>
       <slot name="header">
-        <PageNavbar v-if="windowWidth > 768" :rt="rt.name" />
-        <PageHeader v-else :rt="rt.name" />
+        <PageNavbar :rt="rt.name" />
+        <PageHeader :rt="rt.name" />
       </slot>
       <div>
         <slot />
       </div>
       <slot name="footer">
-        <PageFooter v-if="windowWidth > 768" />
-        <PageMbFooter v-else />
+        <PageFooter />
+        <PageMbFooter />
       </slot>
     </div>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.headerTem{
+  display: block;
+}
+.headerTemPage{
+  display: block;
+}
+.footerTem{
+  display: block;
+}
+.mbHeader{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .headerTem{
+   display: none;
+  }
+  .headerTemPage{
+    display: none;
+  }
+  .footerTem{
+    display: none;
+  }
+  .mbHeader{
+    display: block;
+  }
+}
+</style>
