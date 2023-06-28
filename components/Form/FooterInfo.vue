@@ -62,7 +62,6 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       console.log('submit!')
       postData()
       // resetForm(formEl) // 成功提交清空表单内容
-      resetForm(formEl)
     } else {
       console.log('error submit!', fields)
     }
@@ -73,21 +72,17 @@ const postData = async () => {
   console.log(ruleForm)
   let _formData = new FormData()
   let _message = `姓名：${ruleForm.name}\n
-// 電話號碼：${ruleForm.phone}\n
-// 電郵地址：${ruleForm.email}\n
-// 預約日期：${ruleForm.region}\n
-// 從哪裏找到網站：${ruleForm.type}\n
-// 其他：${ruleForm.rest}\n
-// 訊息：${ruleForm.desc}\n
-// 來源：[${location.href}](${location.href})`
+電話號碼：${ruleForm.phone}\n
+電郵地址：${ruleForm.email}\n
+預約日期：${ruleForm.region}\n
+從哪裏找到網站：${ruleForm.type}\n
+其他：${ruleForm.rest}\n
+訊息：${ruleForm.desc}\n
+來源：${location.href}`
+  // let _message = '1'
   _formData.append('message',_message)
-  let _url = 'https://ddwebhook.hkcmereye.com/send'
-  // let _url = '/send'
-  const {data}:any = await useFetch(_url,{
+  const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
   method: 'post',
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
   body: _formData
   // body: {
 //    "msgtype": "markdown",
