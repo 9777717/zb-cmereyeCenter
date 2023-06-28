@@ -71,13 +71,8 @@ const submitForm = async (formEl: FormInstance | undefined) => {
 
 const postData = async () => {
   console.log(ruleForm)
-  const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
-  method: 'post',
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
-  body: {
-    message: `姓名：${ruleForm.name}\n
+  let _formData = new FormData()
+  let _message = `姓名：${ruleForm.name}\n
 // 電話號碼：${ruleForm.phone}\n
 // 電郵地址：${ruleForm.email}\n
 // 預約日期：${ruleForm.region}\n
@@ -85,6 +80,16 @@ const postData = async () => {
 // 其他：${ruleForm.rest}\n
 // 訊息：${ruleForm.desc}\n
 // 來源：[${location.href}](${location.href})`
+  _formData.append('message',_message)
+  let _url = 'https://ddwebhook.hkcmereye.com/send'
+  // let _url = '/send'
+  const {data}:any = await useFetch(_url,{
+  method: 'post',
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: _formData
+  // body: {
 //    "msgtype": "markdown",
 //    "markdown":{
 //   title: "消息通知",
@@ -97,7 +102,7 @@ const postData = async () => {
 // 訊息：${ruleForm.desc}\n
 // 來源：[${location.href}](${location.href})`
 //       }
-    }
+    // }
   })
   let res = JSON.parse(data.value)
   if (res) {
