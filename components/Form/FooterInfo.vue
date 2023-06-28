@@ -69,13 +69,13 @@ const submitForm = async (formEl: FormInstance | undefined) => {
 }
 
 const postData = async () => {
-  let _message = `姓名：${ruleForm.name}\n
-電話號碼：${ruleForm.phone}\n
-電郵地址：${ruleForm.email}\n
-預約日期：${ruleForm.region}\n
-從哪裏找到網站：${ruleForm.type}\n
-其他：${ruleForm.rest}\n
-訊息：${ruleForm.desc}\n
+  let _message = `姓名：${ruleForm.name}
+電話號碼：${ruleForm.phone}
+電郵地址：${ruleForm.email}
+預約日期：${ruleForm.region}
+從哪裏找到網站：${ruleForm.type}
+其他：${ruleForm.rest}
+訊息：${ruleForm.desc}
 來源：${location.href}`
   let _data = 'message=' + encodeURIComponent(_message);
   const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
