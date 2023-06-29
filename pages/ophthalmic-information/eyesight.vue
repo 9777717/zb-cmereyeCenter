@@ -9,87 +9,74 @@ const eyesightLists = [
   {
     id: '1',
     title: '白內障測試',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_白內障測試-1.6k8js9qpqmc0.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/fed778326c1c14d4.jpg',
-    bgColor: '#65C4DA, #D5F2F9'
+    icon: 'https://static.cmereye.com/imgs/2023/06/0517140842702146.png',
+    bgColor: '#2BB6D7, #D5F2F9'
   },
   {
     id: '2',
     title: '黃斑病變',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_黃班病變-1.k1d3mua7vhs.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/4c0f4bdaa7c0d694.jpg',
-    bgColor: '#FFEDC6, #F3DCA8'
+    icon: 'https://static.cmereye.com/imgs/2023/06/eef8ae8c445a9865.png',
+    bgColor: '#F3BB42, #FFEDC6'
   },
   {
     id: '3',
     title: '乾眼症測試',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_乾眼症-1.11j5117fypls.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/d659396044bb2db9.jpg',
-    bgColor: '#B6B3DC, #E8E7FC'
+    icon: 'https://static.cmereye.com/imgs/2023/06/4203c20d5ceb403a.png',
+    bgColor: '#8F88E1, #E8E7FC'
   },
   {
     id: '4',
     title: '色盲測試',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_色盲測試-1.39wsslf37ww0.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/d682a35164fd9df6.jpg',
-    bgColor: '#FCDCCD, #FFD6C1'
+    icon: 'https://static.cmereye.com/imgs/2023/06/82321915f3211446.png',
+    bgColor: '#FAA276, #FCDCCD'
   },
   {
     id: '5',
     title: '散光測試',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_散光測試-1.3vmzx9lz7960.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/4dbbf65f2520b488.jpg',
-    bgColor: '#BDF6F3, #93DED5'
+    icon: 'https://static.cmereye.com/imgs/2023/06/9343743d3ae245d5.png',
+    bgColor: '#65D2C5, #BDF6F3'
   },
   {
     id: '6',
     title: '近視遠視',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_近視遠視-1.2a0uqbjx0zms.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/1f75f0e805d0e0dd.jpg',
-    bgColor: '#B9DFFA, #ACCFE4'
+    icon: 'https://static.cmereye.com/imgs/2023/06/3746c070f927624c.png',
+    bgColor: '#42ABEB, #C9E8FF'
   },
   {
     id: '7',
     title: '眼鏡檢查',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_眼鏡檢查.6e3p0hzr9c80.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/8969f9433d3bc152.jpg',
-    bgColor: '#90E9B9, #D2F1E0',
-    hoverBg: '#90E9B9'
+    icon: 'https://static.cmereye.com/imgs/2023/06/eace652fbc4d063e.png',
+    bgColor: '#3DAAD9, #DBF2FF'
   },
   {
     id: '8',
     title: '調節功能',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_調節功能.30dr1mdhcrw0.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/1e57f39b0531cec7.jpg',
-    bgColor: '#9AD3DD, #E7FAFD'
+    icon: 'https://static.cmereye.com/imgs/2023/06/0dcf2c16da63a000.png',
+    bgColor: '#52C0D3, #E7FAFD'
   },
   {
     id: '9',
     title: '視神經測試',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_視神經測試.5em4h6v8zfg0.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/9ff8510f4ad9a271.jpg',
-    bgColor: '#EBC8A5, #FCEDDE'
+    icon: 'https://static.cmereye.com/imgs/2023/06/60a1c82ff1e5436e.png',
+    bgColor: '#D99959, #FCEDDE'
   },
   {
     id: '10',
     title: '視覺敏感度',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_視覺敏感度.hm4hr14nbc8.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/eb179419188ee4f1.jpg',
-    bgColor: '#F1C1B7, #FFECE9'
+    icon: 'https://static.cmereye.com/imgs/2023/06/da00d03c272d0728.png',
+    bgColor: '#F3A999, #FFD9D2'
   },
   {
     id: '11',
     title: '對比敏感度',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_對比敏感度.twme60s8300.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/cfc2f27e213c37db.jpg',
-    bgColor: '#C0C0E6, #EEEEFF'
+    icon: 'https://static.cmereye.com/imgs/2023/06/ced99148aa67acc3.png',
+    bgColor: '#A6A6E4, #EEEEFF'
   },
   {
     id: '12',
     title: '中心視力',
-    icon: 'https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/icon_中心視力.2mhjy4jqhie0.webp',
-    imgUrl: 'https://static.cmereye.com/imgs/2023/06/b76edb5561597e2f.jpg',
-    bgColor: '#C8DCA8, #EDFFD0'
+    icon: 'https://static.cmereye.com/imgs/2023/06/667502d2fe2be290.png',
+    bgColor: '#A3D64F, #E1F8BC'
   }
 ]
 
@@ -104,11 +91,10 @@ const eyesightLists = [
     </div>
     <div class="eyesight-content">
       <div class="eyesight-content-in" v-for="(item,index) in eyesightLists" :key="index">
-        <div :style="{background: `linear-gradient(30deg, ${item.bgColor})`}">
+        <div :style="{background: `linear-gradient(0deg, ${item.bgColor})`}">
           <img :src="item.icon" alt="">
           <span>{{item.title}}</span>
         </div>
-        <!-- <img :src="item.imgUrl" alt=""> -->
       </div>
     </div>
     <div class="eyesight-remark">
@@ -175,7 +161,7 @@ const eyesightLists = [
         span{
           margin-top: 15px;
           color: #FFF;
-          text-shadow: 0px 5px 4px rgba(255, 255, 255, 0.25);
+          text-shadow: 0px 4px 4px rgba(54, 33, 33, 0.25);
           font-size: 28px;
           transition: all .3s;
         }
@@ -184,13 +170,15 @@ const eyesightLists = [
         }
         &:hover{
           transform: translateY(-10px);
+          // animation: a 1s;
           border-radius: 5px;
           box-shadow: 5px 20px 12px rgba(0,0,0,.1);
           span{
-            text-shadow: 0px 6px 6px rgba(107, 53, 53, 0.25);
+            text-shadow: 0px 6px 6px rgba(107, 53, 53, 0.5);
           }
           img{
-            filter: drop-shadow(0px 6px 6px rgba(107, 53, 53, 0.25));
+            filter: drop-shadow(0px 6px 6px rgba(107, 53, 53, 0.4));
+            // animation: a .5s;
           }
         }
       }
@@ -206,4 +194,21 @@ const eyesightLists = [
     line-height: 180%;
   }
 }
+// @keyframes a {
+//   0%{
+//     transform: scaleX(1);
+//   }
+//   25%{
+//     transform: scale(1.2,0.8);
+//   }
+//   50%{
+//     transform: scale(1.1,0.9);
+//   }
+//   75%{
+//     transform: scale(1.15,0.85);
+//   }
+//   100%{
+//     transform: translateY(-10px) scaleX(1);
+//   }
+// }
 </style>

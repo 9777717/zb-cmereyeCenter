@@ -134,32 +134,47 @@ const eyeDisease = [
 
 <style lang="scss" scoped>
 .publicity {
+  position: relative;
+  &::before{
+    content: '';
+    background: #f1f1f1;
+    position: absolute;
+    top: -146px;
+    left: 0;
+    width: calc((100vw - 1493px)/2 + 1427px);
+    height: 706px;
+  }
   & > div:nth-child(1) {
-    margin-top: 102px;
+    margin: 179px auto 0;
     display: flex;
     position: relative;
     flex-direction: column;
-    background: #f1f1f1;
+    // background: #f1f1f1;
     height: 706px;
-    width: 1630px;
-    max-width: 1630px;
+    width: 100%;
+    max-width: 1493px;
 
     & > div:nth-child(1) {
       position: absolute;
-      bottom: -3vw;
-      right: -2vw;
+      // top: 179px;
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      // bottom: -3vw;/
+      // right: -2vw;
     }
 
     & > div:nth-child(2) {
       position: absolute;
-      left: 15vw;
-      top: 26vw;
-      bottom: 66.65px;
+      bottom: 130px;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
       flex-direction: column;
       align-items: center;
       z-index: 5;
-      margin-left: 28vw;
+      // margin-left: 28vw;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -191,8 +206,6 @@ const eyeDisease = [
         font-weight: 700;
         font-size: 30px;
         line-height: 60px;
-        /* identical to box height, or 200% */
-
         text-align: right;
         letter-spacing: 0.3em;
 
@@ -205,8 +218,6 @@ const eyeDisease = [
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
-        /* or 150% */
-
         text-align: center;
         letter-spacing: 0.3em;
 
@@ -220,22 +231,10 @@ const eyeDisease = [
         z-index: 5;
       }
     }
-
-    // & > div:nth-child(1)::after {
-    //   content: '';
-    //   background: #f2f2f2;
-    //   width: 1544px;
-    //   height: 725px;
-    //   position: absolute;
-    //   right: 56px;
-    //   bottom: -73.35px;
-    //   z-index: 1;
-    // }
   }
 
   & > div:nth-child(2) {
-    margin-top: 240px;
-    margin-left: 350px;
+    margin-top: 108px;
     margin-bottom: 277px;
 
     & > div {
@@ -245,11 +244,11 @@ const eyeDisease = [
         font-weight: 400;
         font-size: 35px;
         line-height: 35px;
-        /* identical to box height, or 100% */
-
         letter-spacing: 0.05em;
-
         color: #515151;
+        width: 100%;
+        max-width: 1190px;
+        margin: 0 auto;
       }
     }
   }
@@ -260,7 +259,7 @@ const eyeDisease = [
   border-top: 1.75771px solid #8ad8dd;
   padding-top: 73px;
   padding-bottom: 63px;
-  margin-top: 25px;
+  margin: 25px auto 0;
 }
 
 :deep(.swiper-wrapper) {
@@ -273,29 +272,5 @@ const eyeDisease = [
 
 .household {
   border-bottom: 1.75771px solid #8ad8dd;
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .publicity {
-    width: 1920px;
-    margin: auto;
-
-    & > div:nth-child(1) {
-      width: 1630px;
-      max-width: 1630px;
-
-      & > div:nth-child(1) {
-        bottom: -3vw;
-        right: -2vw;
-      }
-
-      & > div:nth-child(2) {
-        left: 15vw;
-        top: 18vw;
-        margin-left: 15vw;
-      }
-    }
-  }
 }
 </style>
