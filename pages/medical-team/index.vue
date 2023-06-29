@@ -334,11 +334,11 @@ const doctorList = [
     </div>
     <div class="mainCon">
       <ul>
-        <li v-for="(item, index) in doctorList" :key="index" class="docList">
+        <li v-for="(item, index) in doctorList" :key="item.doctorName" class="docList">
           <div class="docDes">
             <div class="docName">{{ $t(item.doctorName) }}</div>
             <p v-if="item.doctorIntro" class="doctorIntro">
-              {{ $t(item.doctorIntro) }}
+              {{ item.doctorIntro }}
             </p>
             <div class="docEducation">
               <div class="edutitle">

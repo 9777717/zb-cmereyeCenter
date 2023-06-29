@@ -222,7 +222,7 @@ const hashActive = (child: any) => {
         <div class="navigtion">
           <div
             v-for="(item, index) in menus"
-            :key="index"
+            :key="item.text"
             class="hover:bg-red-901 hover:text-while"
           >
             <Anchor
@@ -236,7 +236,7 @@ const hashActive = (child: any) => {
               v-if="item.childMenuList && item.childMenuList.length"
               :class="rt.name === 'index' ? 'child' : 'childpage'"
             >
-              <div v-for="(child, i) in item.childMenuList" :key="i">
+              <div v-for="(child, i) in item.childMenuList" :key="child.text">
                 <Anchor
                   v-if="child.type === 'link'"
                   :to="child.route ? child.route : undefined"

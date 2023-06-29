@@ -48,27 +48,12 @@ const awardsList = [
 <template>
   <div id="awards" class="">
     <div class="awards-title">
-      <AboutTitle
-        :zh-title="$t('pages.about_us.awards.awards')"
-        :en-ttitle="'awards'"
-        class="title"
-      />
+      <AboutTitle :zh-title="$t('pages.about_us.awards.awards')" :en-ttitle="'awards'" class="title" />
     </div>
     <div v-if="awardsList.length" class="awardslide">
-      <swiper
-        :space-between="40"
-        :slides-per-view="4"
-        :modules="[Autoplay]"
-        :loop="true"
-        :autoplay="{ delay: 0 }"
-        speed="3000"
-        class="ccSwiper"
-      >
-        <swiper-slide
-          v-for="(item, index) in awardsList"
-          :key="index"
-          class="ccSwiper-slide"
-        >
+      <swiper :space-between="40" :slides-per-view="4" :modules="[Autoplay]" :loop="true" :autoplay="{ delay: 0 }"
+        :speed=3000 class="ccSwiper">
+        <swiper-slide v-for="(item, index) in awardsList" :key="index" class="ccSwiper-slide">
           <div class="brand">
             <div><img :src="item.imgUrl" :alt="item.des" /></div>
             <div>
@@ -89,16 +74,18 @@ const awardsList = [
   display: flex;
   flex-flow: column;
   align-items: flex-end;
+
   .awards-title {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+
     :deep(h1) {
       text-align: left;
     }
   }
 
-  & > .awardslide {
+  &>.awardslide {
     width: 100%;
     // overflow: hidden;
   }
@@ -109,7 +96,8 @@ const awardsList = [
     align-items: center;
 
     width: 100%;
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       // width: 224px;
       height: 224px;
       display: flex;
@@ -117,12 +105,12 @@ const awardsList = [
       align-items: center;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'Metropolis';
         font-style: normal;
         font-weight: 500;
@@ -136,7 +124,7 @@ const awardsList = [
         color: #8ad8dd;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;

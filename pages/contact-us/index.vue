@@ -265,15 +265,8 @@ const goWhatsApp = () => {
       <div>
         <div></div>
         <div>
-          <swiper
-            :space-between="40"
-            :slides-per-view="4"
-            :modules="[Autoplay]"
-            :loop="true"
-            :autoplay="{ delay: 0 }"
-            speed="3000"
-            class="contact_eye-swiper"
-          >
+          <swiper :space-between="40" :slides-per-view="4" :modules="[Autoplay]" :loop="true" :autoplay="{ delay: 0 }"
+            :speed=3000 class="contact_eye-swiper">
             <swiper-slide v-for="(item, index) in bannerList" :key="index">
               <div class="imgBox flex items-center justify-center">
                 <img :src="item" alt="" />
@@ -282,10 +275,7 @@ const goWhatsApp = () => {
           </swiper>
         </div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png"
-            alt="診所資料"
-          />
+          <img src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png" alt="診所資料" />
         </div>
       </div>
       <div class="mainCon">
@@ -300,30 +290,19 @@ const goWhatsApp = () => {
           <div class="content">
             <div class="addressBox">
               <div class="switchReionBtnBox flex justify-between items-center">
-                <button
-                  v-for="(addressItem, index) in addressList"
-                  :key="index"
-                  :class="{ activeBtn: index == showIndex }"
-                  @click="switchReion(index)"
-                >
+                <button v-for="(addressItem, index) in addressList" :key="index"
+                  :class="{ activeBtn: index == showIndex }" @click="switchReion(index)">
                   {{ $t(addressItem.regionName) }}
                 </button>
               </div>
 
               <div class="addressDetailBox">
-                <div
-                  v-for="(addressItem, index) in addressList"
-                  v-show="showIndex == index"
-                  :id="addressItem.id"
-                  :key="index"
-                >
-                  <div
-                    v-for="(
+                <div v-for="(addressItem, index) in addressList" v-show="showIndex == index" :id="addressItem.id"
+                  :key="index">
+                  <div v-for="(
                       addressDetailItem, index
-                    ) in addressItem.addressDetailList"
-                    :key="index"
-                    class="addressDetailItem flex items-start justify-between mb-24"
-                  >
+                    ) in addressItem.addressDetailList" :key="index"
+                    class="addressDetailItem flex items-start justify-between mb-24">
                     <div class="imgBox mr-14">
                       <img :src="addressDetailItem.addressImg" alt="" />
                     </div>
@@ -331,29 +310,20 @@ const goWhatsApp = () => {
                       <h3 class="addressName text-xl mb-4">
                         {{ $t(addressDetailItem.addressName) }}
                       </h3>
-                      <div
-                        v-if="addressDetailItem.addressDetail !== ''"
-                        class="addressDetail flex items-center justify-start mb-4"
-                      >
+                      <div v-if="addressDetailItem.addressDetail !== ''"
+                        class="addressDetail flex items-center justify-start mb-4">
                         <span class="text-sm">
-                          <Iconify
-                            icon="material-symbols:location-on-outline"
-                          />
+                          <Iconify icon="material-symbols:location-on-outline" />
                         </span>
                         <p>{{ $t(addressDetailItem.addressDetail) }}</p>
                       </div>
-                      <div
-                        v-if="addressDetailItem.subwayExit !== ''"
-                        class="subwayExit flex items-center justify-start mb-4"
-                      >
+                      <div v-if="addressDetailItem.subwayExit !== ''"
+                        class="subwayExit flex items-center justify-start mb-4">
                         <span class="text-sm">
                           <Iconify icon="ion:subway-outline" />
                         </span>
                         <div v-if="Array.isArray(addressDetailItem.subwayExit)">
-                          <p
-                            v-for="(ele, index) in addressDetailItem.subwayExit"
-                            :key="index"
-                          >
+                          <p v-for="(ele, index) in addressDetailItem.subwayExit" :key="index">
                             {{ $t(ele) }}
                           </p>
                         </div>
@@ -361,58 +331,39 @@ const goWhatsApp = () => {
                           {{ $t(addressDetailItem.subwayExit) }}
                         </div>
                       </div>
-                      <div
-                        v-if="addressDetailItem.contactNumber !== ''"
-                        class="contactNumber flex items-center justify-start mb-4"
-                      >
+                      <div v-if="addressDetailItem.contactNumber !== ''"
+                        class="contactNumber flex items-center justify-start mb-4">
                         <span class="text-sm">
                           <Iconify icon="icon-park-outline:phone-telephone" />
                         </span>
                         <p>{{ $t(addressDetailItem.contactNumber) }}</p>
                       </div>
-                      <div
-                        class="clinicHours flex items-start justify-start mb-4"
-                      >
+                      <div class="clinicHours flex items-start justify-start mb-4">
                         <span class="text-sm mt-1">
                           <Iconify icon="ic:outline-calendar-month" />
                         </span>
                         <div>
-                          <p
-                            v-for="(
+                          <p v-for="(
                               ele, index
-                            ) in addressDetailItem.clinicHours"
-                            :key="index"
-                          >
+                            ) in addressDetailItem.clinicHours" :key="index">
                             {{ $t(ele) }}
                           </p>
                         </div>
                       </div>
-                      <div
-                        class="addressDetailBtnBox flex items-center justify-between"
-                      >
+                      <div class="addressDetailBtnBox flex items-center justify-between">
                         <div class="googleMaps">
-                          <a
-                            :href="addressDetailItem.googleMaps"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >{{
-                              $t(
-                                'pages.contact_us.clinic_information_title.clinic_information_map'
-                              )
-                            }}</a
-                          >
+                          <a :href="addressDetailItem.googleMaps" target="_blank" rel="noopener noreferrer">{{
+                            $t(
+                              'pages.contact_us.clinic_information_title.clinic_information_map'
+                            )
+                          }}</a>
                         </div>
                         <div class="orderBtn" @click="goWhatsApp">
-                          <a
-                            href=" "
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >{{
-                              $t(
-                                'pages.contact_us.clinic_information_title.clinic_information_make'
-                              )
-                            }}</a
-                          >
+                          <a href=" " target="_blank" rel="noopener noreferrer">{{
+                            $t(
+                              'pages.contact_us.clinic_information_title.clinic_information_make'
+                            )
+                          }}</a>
                         </div>
                       </div>
                     </div>
@@ -422,11 +373,9 @@ const goWhatsApp = () => {
             </div>
           </div>
         </div>
-        <FormFooterInfo
-          :from-style="'margin: 0 232px'"
+        <FormFooterInfo :from-style="'margin: 0 232px'"
           :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}max-width:960px;margin: auto;`"
-          :co="`color:${'#6a91cf;'}`"
-        />
+          :co="`color:${'#6a91cf;'}`" />
         <PageInformation :service-navigation="serviceNavigation" />
       </div>
     </div>
@@ -437,30 +386,31 @@ const goWhatsApp = () => {
 :deep(.contact_eye-swiper .swiper-wrapper) {
   transition-timing-function: linear;
 }
+
 .contact_eye {
   margin-bottom: 50px;
 
-  & > div:nth-child(1) {
-    & > div:nth-child(1) {
+  &>div:nth-child(1) {
+    &>div:nth-child(1) {
       display: flex;
       flex-direction: column;
       margin-top: 60px;
       position: relative;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         width: 1150px;
         height: 550px;
         background-color: #f2f2f2;
         margin: auto;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         position: absolute;
         width: 100%;
         top: 22.5%;
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         position: absolute;
         z-index: 5;
         left: 50%;
