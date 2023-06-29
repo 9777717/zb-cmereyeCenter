@@ -187,7 +187,7 @@ const eyesightLists = [
           border-radius: 5px;
           box-shadow: 5px 20px 12px rgba(0,0,0,.1);
           span{
-            text-shadow: 0px 4px 4px rgba(107, 53, 53, 0.25);
+            text-shadow: 0px 6px 6px rgba(107, 53, 53, 0.25);
           }
           img{
             filter: drop-shadow(0px 6px 6px rgba(107, 53, 53, 0.25));

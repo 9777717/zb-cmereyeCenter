@@ -70,6 +70,11 @@ let mainContent = ref([
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
 const getMainContent = async () => {
+  const loading = ElLoading.service({
+    lock: true,
+    text: 'Loading',
+    background: 'rgba(0, 0, 0, 0.7)',
+  })
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
   let res = JSON.parse(data.value)
   // console.log(res)
@@ -84,6 +89,7 @@ const getMainContent = async () => {
       text: item.ext_context
     }
   })
+  loading.close()
 }
 
 const subNum = () => {
