@@ -128,29 +128,38 @@ const videoList = [
     display: flex;
     flex-direction: column;
     position: relative;
-
+    width: 100%;
+    &::before{
+      content: '';
+      background:#f1f1f1;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      height: 800px;
+      width: calc( (100vw - 1490px )/2 + 1300px);
+    }
     & > div:nth-child(1) {
-      margin-top: 10vw;
-
+      width: 100%;
+      max-width: 1490px;
+      margin: 150px auto 0;
       & > img {
-        margin: 0 auto;
+        width: 100%;
         z-index: 5;
         position: relative;
-        margin-left: 18vw;
       }
 
       & > div:nth-child(2) {
         z-index: 6;
         position: absolute;
         left: 50%;
-        bottom: -115px;
+        bottom: -60px;
       }
     }
 
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      width: 1700px;
+      // width: 1700px;
       height: 858px;
       display: inline-block;
       position: absolute;
@@ -162,7 +171,7 @@ const videoList = [
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: 160px;
       z-index: 5;
       display: flex;
       flex-direction: column;
@@ -214,9 +223,12 @@ const videoList = [
   }
 
   & > div:nth-child(2) {
-    margin: 0 392px;
+    // margin: 0 392px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
     min-height: 900px;
-    margin-top: 363.49px;
+    margin-top: 150px;
 
     & > div {
       display: flex;
@@ -298,29 +310,6 @@ const videoList = [
           align-items: center;
           justify-content: center;
         }
-      }
-    }
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .currentpage {
-    width: 1920px;
-    margin: auto;
-    margin-left: 23vw;
-  }
-
-  .theatre {
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        & > img {
-          margin-left: 9vw;
-        }
-      }
-
-      & > div:nth-child(1)::after {
-        margin: auto;
       }
     }
   }

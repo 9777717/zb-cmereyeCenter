@@ -60,7 +60,7 @@ useHead(() => ({
     </div>
 
     <div class="mianConten mainCon pb-64 flex items-center justify-between">
-      <div class="desBox mt-52 ml-10">
+      <div class="desBox mt-52 mr-10">
         <h1 class="text-4xl mb-10">
           {{ $t('pages.talent_recruitment.text2') }}
         </h1>
@@ -89,24 +89,39 @@ useHead(() => ({
           alt=""
           class="right2"
         />
+        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .careers {
-  max-width: 1884px;
+  width: 100%;
+  // max-width: 1884px;
 
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     position: relative;
-
+    &::before{
+      content: '';
+      top: 56px;
+      left: 0;
+      width: calc((100vw - 1080px)/2 + 800px);
+      position: absolute;
+      background: #f1f1f1;
+      height: 880px;
+    }
     & > div:nth-child(1) {
+      width: 100%;
+      max-width: 1080px;
+      margin: 245px auto 0;
+      position: relative;
       & > img {
-        padding-left: 160px;
-        padding-top: 50px;
-        background: #f7fcff;
+        width: 100%;
+        // padding-left: 160px;
+        // padding-top: 50px;
+        // background: #f7fcff;
       }
     }
 
@@ -117,43 +132,24 @@ useHead(() => ({
 
     & > div:nth-child(2) {
       z-index: 5;
-      left: 23%;
+      left: 50%;
+      transform: translateX(-50%);
       right: 0;
-      bottom: 95px;
-
+      bottom: 10px;
+      width: max-content;
       & > p {
         font-size: 55px;
         color: #fff;
         margin-bottom: 30px;
+         display: inline-block;
       }
     }
 
     & > svg:nth-child(3) {
       position: absolute;
-      bottom: -75px;
+      bottom: -150px;
       left: 50%;
     }
-  }
-
-  & > div:nth-child(1)::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    background-color: #f2f2f2;
-    left: 0;
-    top: 0;
-    height: 100%;
-  }
-
-  & > div:nth-child(1)::before {
-    content: '';
-    position: absolute;
-    width: 98.5%;
-    background-color: #f2f2f2;
-    left: 0;
-    bottom: 0;
-    height: 30px;
-    z-index: 0;
   }
 }
 
@@ -177,13 +173,14 @@ useHead(() => ({
 }
 
 .mianConten {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1080px;
   margin: auto;
   font-family: 'Noto Sans HK';
 
   .imgBox {
     background-color: #f2f2f2;
-    width: 60%;
+    width: 55%;
     height: 370px;
     position: relative;
     margin-top: 390px;
@@ -204,13 +201,12 @@ useHead(() => ({
       z-index: 11;
       width: 44%;
     }
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .careers {
-    margin: auto;
+    .right3 {
+      left: 40px;
+      bottom: -35%;
+      z-index: 12;
+      width: 50%;
+    }
   }
 }
 </style>
