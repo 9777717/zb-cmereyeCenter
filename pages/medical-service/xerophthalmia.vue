@@ -2047,9 +2047,10 @@ const callTel = () => {
       & > div:nth-child(2) {
         position: relative;
         z-index: 5;
+        font-family: 'DINCondensed-Bold';
       }
 
-      font-family: 'DINCondensed-Bold';
+      
       font-size: 131px;
       font-weight: normal;
       font-stretch: normal;

@@ -259,10 +259,17 @@ const mmmmm = (num: any) => {
           font-style: normal;
           font-weight: 700;
           font-size: 44.48px;
-          line-height: 56px;
-          letter-spacing: 0.02em;
+          line-height: 100%;
+          letter-spacing: 0.023em;
           text-transform: uppercase;
+          margin-top: 20px;
           color: #ffffff;
+          div:first-child{
+            margin-left: -6px;
+          }
+          div:last-child{
+            margin-top: 10px;
+          }
         }
       }
       &>img{
