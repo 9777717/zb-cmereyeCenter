@@ -122,14 +122,14 @@ const goYoutube = (link: string) => {
 :deep(.swiper-button-prev) {
   left: var(--swiper-navigation-sides-offset, 0px);
   width: calc(var(--swiper-navigation-size)/ 44 * 40);
-  background: url('https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Polygon-1.7e5jrc1zmzg0.webp')no-repeat;
+  background: url('https://static.cmereye.com/imgs/2023/06/28f4bf2d89a3d3b0.png')no-repeat;
   background-size: auto 100%;
 }
 
 :deep(.swiper-button-next) {
   right: var(--swiper-navigation-sides-offset, 0px);
   width: calc(var(--swiper-navigation-size)/ 44 * 40);
-  background: url('https://cdn.staticaly.com/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Polygon-2.3141hbfxqiq0.webp')no-repeat;
+  background: url('https://static.cmereye.com/imgs/2023/06/e27f1fa3facd9c57.png')no-repeat;
   background-size: auto 100%;
 }
 
