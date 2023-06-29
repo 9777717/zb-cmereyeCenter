@@ -1,50 +1,5 @@
 <script lang="ts" setup>
 import { Pagination, Navigation } from 'swiper'
-// 眼疾影片
-const eyeDisease = [
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease1_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease1_text',
-    link: 'https://youtu.be/0pN3E5ewLjE',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease2_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease2_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease3_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease3_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease4_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease4_text',
-    link: 'https://youtu.be/0pN3E5ewLjE',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease5_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease5_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease6_title',
-    text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDiseaseeye_disease6_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
-  },
-]
 const props = defineProps({
   eyeDisease: {
     type: [Array, Object, String],

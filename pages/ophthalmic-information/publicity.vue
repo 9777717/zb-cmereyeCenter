@@ -139,7 +139,7 @@ const eyeDisease = [
             <PageVideoSwiper :eye-disease="eyeDisease" />
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div>
             {{
               $t(
@@ -150,7 +150,7 @@ const eyeDisease = [
           <div class="videoBorder household">
             <PageVideoSwiper :eye-disease="eyeDisease" />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div>
