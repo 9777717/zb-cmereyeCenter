@@ -73,6 +73,8 @@ const eyeDisease = [
               }}
             </div>
             <div>promotional video</div>
+            <div>
+            </div>
           </div>
           <div>
             {{
@@ -97,6 +99,31 @@ const eyeDisease = [
               }}
             </div>
           </div>
+          <svg
+              width="9"
+              height="144"
+              viewBox="0 0 9 144"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              data-v-1d8b93bf=""
+              data-v-a125a221=""
+              data-v-4b343dd3=""
+              data-v-ee7ab105=""
+              data-v-040e870e=""
+            >
+              <path
+                d="M1 1V143L7.5 130.5"
+                stroke="#2958A3"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-v-1d8b93bf=""
+                data-v-a125a221=""
+                data-v-4b343dd3=""
+                data-v-ee7ab105=""
+                data-v-040e870e=""
+              ></path>
+            </svg>
         </div>
       </div>
       <div>
@@ -167,7 +194,7 @@ const eyeDisease = [
 
     & > div:nth-child(2) {
       position: absolute;
-      bottom: 130px;
+      bottom: -50px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -222,6 +249,9 @@ const eyeDisease = [
         letter-spacing: 0.3em;
 
         color: #ffffff;
+      }
+      &>svg{
+        margin-top: 100px;
       }
     }
 

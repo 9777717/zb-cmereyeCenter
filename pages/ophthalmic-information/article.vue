@@ -17,63 +17,54 @@ useHead(() => ({
     },
   ],
 }))
-const articleList = [
+
+const toLinkPage = (_data: any) => {
+  window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
+}
+
+const articleList = ref([
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2a42431d5f95a077.png',
-    title: [
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_title1',
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_title2',
-    ],
-    data: '2022.11.03',
-    source: 'BowTie',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList1_doctor',
+    img: '',
+    title: [],
+    date: '',
+    source: '',
+    doctor:'',
   },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/d6a534735d60a396.png',
-    title: [
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_title1',
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_title2',
-    ],
-    data: '2022.11.03',
-    source: 'BowTie',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList2_doctor',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/4e79136cac72b4f8.png',
-    title: [
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_title1',
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_title2',
-    ],
-    data: '2020.07.19',
-    source: 'am730',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList3_doctor',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/2c186779c179368d.png',
-    title: [
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_title1',
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_title2',
-    ],
-    data: '2022.05.11',
-    source: 'HK01',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList4_doctor',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/21eaea9d70787203.png',
-    title: [
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_title1',
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_title2',
-    ],
-    data: '2020.04.05',
-    source: 'BowTie',
-    doctor:
-      'pages.ophthalmic_information.ophthalmic_article_text.article_articleList.articleList5_doctor',
-  },
-]
+])
+
+const getArticleList = async () => {
+  const loading = ElLoading.service({
+    lock: true,
+    text: 'Loading',
+    background: 'rgba(0, 0, 0, 0.7)',
+  })
+  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/204`)
+  let res = JSON.parse(data.value)
+  console.log(res)
+  articleList.value = res.data.map((item:any) => {
+    let date = new Date(item.date);
+    let y = date.getFullYear();
+    let MM:any = date.getMonth() + 1;
+    MM = MM < 10 ? ('0' + MM) : MM;
+    let d = date.getDate();
+    return {
+      id: item.id,
+      img: `https://hkcmereye.com${item.ico}`,
+      title: [item.title],
+      date: y+'-'+MM+'-'+d,
+      source: item.ext_paperRecoFrom,
+      doctor: item.ext_paperRecoDoctor,
+    }
+  })
+  loading.close()
+}
+
+onMounted(()=>{
+  setTimeout(()=>{
+    getArticleList()
+  },0)
+})
+
 </script>
 
 <template>
@@ -153,13 +144,13 @@ const articleList = [
         </div>
       </div>
       <div>
-        <div v-for="(item, index) in articleList" :key="index">
+        <div v-for="(item, index) in articleList" :key="index" @click="toLinkPage(item)">
           <div><img :src="item.img" /></div>
           <div>
             <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
           </div>
           <div>
-            <span>{{ item.data }}</span
+            <span>{{ item.date }}</span
             ><span>{{ item.source }}</span
             ><span v-if="$t(item.doctor)">{{ $t(item.doctor) }}</span>
           </div>
@@ -179,7 +170,7 @@ const articleList = [
     padding: 50px 0;
     &::before{
       content: '';
-      width: calc((100% - 1080px)/2 + 1000px);
+      width: calc((100% - 1490px)/2 + 1400px);
       height: 100%;
       position: absolute;
       top: 0;
@@ -188,12 +179,13 @@ const articleList = [
     }
     & > div:nth-child(1) {
       width: 100%;
-      max-width: 1080px;
+      max-width: 1490px;
       margin: 0 auto;
       position: relative;
       & > img {
         z-index: 5;
         position: relative;
+        width: 100%;
       }
 
       & > svg {
@@ -283,7 +275,7 @@ const articleList = [
       margin: 0 33px 45px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
       cursor: pointer;
       & > div:nth-child(1) {
         padding: 0 35px;

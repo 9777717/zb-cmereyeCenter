@@ -19,54 +19,75 @@ useHead(() => ({
     },
   ],
 }))
-const healthList = [
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/44ab119d3622daa3.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList1_title',
-    text: [
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList1_text_1',
-    ],
-    link: '',
-    date: '2022.11.30',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/a57e87d973cd0587.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_title',
-    text: [
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_text_1',
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList2_text_2',
-    ],
-    link: '',
-    date: '2022.11.30',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/0d5743383f2c8242.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_title',
-    text: [
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_text_1',
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList3_text_2',
-    ],
-    link: '',
-    date: '2022.11.30',
-  },
-  {
-    img: 'https://static.cmereye.com/imgs/2023/05/fd41adf9b658e7aa.png',
-    title:
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_title',
-    text: [
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_text_1',
-      'pages.ophthalmic_information.ophthalmic_message_text.message_healthList.healthList4_text_2',
-    ],
-    link: '',
-    date: '2022.11.30',
-  },
-]
-const mmmmm = (num: any) => {
-  console.log(num)
+
+const toLinkPage = (_data: any) => {
+  // console.log(_data)
+  window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
+let healthList = ref([
+  {
+    id: '',
+    img: '',
+    title: '',
+    text: [],
+    link: '',
+    date: ''
+  }
+])
+let totalPageNum = ref(0)
+let actPageNum = ref(1) 
+const getMainContent = async () => {
+  
+  const loading = ElLoading.service({
+    lock: true,
+    text: 'Loading',
+    background: 'rgba(0, 0, 0, 0.7)',
+  })
+  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/194/page/${actPageNum.value}/num/4`)
+  let res = JSON.parse(data.value)
+  // console.log(res)
+  totalPageNum.value = Math.ceil(res.rowtotal / 4)
+  healthList.value = res.data.map((item:any) => {
+    let date = new Date(item.date);
+    let y = date.getFullYear();
+    let MM:any = date.getMonth() + 1;
+    MM = MM < 10 ? ('0' + MM) : MM;
+    let d = date.getDate();
+    return {
+      id: item.id,
+      img: `https://hkcmereye.com${item.ico}`,
+      title: item.title,
+      text: [item.description],
+      link: `/ophthalmic-information/detail?id=${item.id}`,
+      date: y+'-'+MM+'-'+d
+    }
+  })
+  loading.close()
+}
+
+const subNum = () => {
+  if(actPageNum.value > 1){
+    actPageNum.value --
+    sessionStorage.setItem('healthInfoPage',JSON.stringify(actPageNum.value))
+    getMainContent()
+  }
+}
+
+const addNum = () => {
+  if(actPageNum.value < totalPageNum.value){
+    actPageNum.value ++
+    sessionStorage.setItem('healthInfoPage',JSON.stringify(actPageNum.value))
+    getMainContent()
+  }
+}
+
+onMounted(()=>{
+  setTimeout(()=>{
+    actPageNum.value = Number(sessionStorage.getItem('healthInfoPage')) || 1
+    getMainContent()
+  },0)
+})
+
 </script>
 
 <template>
@@ -151,7 +172,7 @@ const mmmmm = (num: any) => {
       <div
         v-for="(item, index) in healthList"
         :key="index"
-        @click="mmmmm(index + 1)"
+        @click="toLinkPage(item)"
       >
         <div>
           <img :src="item.img" :alt="item.title" />
@@ -174,7 +195,7 @@ const mmmmm = (num: any) => {
     </div>
     <!-- 预计分页 -->
     <div class="paging">
-      <div>
+      <div @click="subNum">
         <svg
           width="9"
           height="15"
@@ -191,8 +212,8 @@ const mmmmm = (num: any) => {
           />
         </svg>
       </div>
-      <div>1/5</div>
-      <div>
+      <div>{{actPageNum}}/{{totalPageNum}}</div>
+      <div @click="addNum">
         <svg
           width="9"
           height="15"
@@ -217,10 +238,8 @@ const mmmmm = (num: any) => {
 </template>
 <style lang="scss" scoped>
 .healthInfo {
-  // height: 650px;
   width: 100vw;
   position: relative;
-
   &::before{
     content: '';
     background:#f1f1f1;
@@ -231,9 +250,7 @@ const mmmmm = (num: any) => {
     width: 100%;
   }
   & > div:nth-child(1) {
-    // background: #f2f2f2;
     width: 100%;
-    // height: 640px;
     padding: 284px 0 0;
     position: relative;
     width: 100%;
@@ -350,18 +367,18 @@ const mmmmm = (num: any) => {
   flex-direction: column;
 
   & > div {
+    cursor: pointer;
     width: 1120px;
-    height: 410px;
     background: #f2f2f2;
     margin-bottom: 61px;
 
     display: flex;
     align-items: center;
     padding: 38px 33px 38px 52px;
-
+    position: relative;
     & > div:nth-child(1) {
       width: 321px;
-      height: 321px;
+      min-height: 321px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -393,8 +410,9 @@ const mmmmm = (num: any) => {
       height: 100%;
       display: flex;
       flex-direction: column;
-      padding-top: 55px;
-      position: relative;
+      justify-content: center;
+      // padding-top: 55px;
+      // position: relative;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -439,8 +457,8 @@ const mmmmm = (num: any) => {
 
       & > div:nth-child(3) {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 38px;
+        right: 38px;
         width: 95px;
         height: 37.27px;
         background: #8ad8dd;
@@ -464,11 +482,10 @@ const mmmmm = (num: any) => {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: 281px;
-  margin-right: 375px;
   color: #2958a3;
-  margin-bottom: 256px;
-
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto 256px;
   & > div:nth-child(2) {
     margin: 0 33px;
     font-family: 'Metropolis';
