@@ -74,10 +74,6 @@ const mmmmm = (num: any) => {
     <div class="healthInfo">
       <div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"
-            alt="健康資訊"
-          />
           <div>
             <div>
               {{
@@ -95,11 +91,15 @@ const mmmmm = (num: any) => {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/a918e24576d0b392.png"
+                  src="https://static.cmereye.com/imgs/2023/06/5e6b4f26cb2593f4.png"
                 />
               </div>
             </div>
           </div>
+          <img
+            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"
+            alt="健康資訊"
+          />
         </div>
         <div><span></span> BLOG</div>
         <div>
@@ -217,45 +217,42 @@ const mmmmm = (num: any) => {
 </template>
 <style lang="scss" scoped>
 .healthInfo {
-  height: 650px;
+  // height: 650px;
   width: 100vw;
+  position: relative;
 
-  & > div:nth-child(1) {
-    background: #f2f2f2;
+  &::before{
+    content: '';
+    background:#f1f1f1;
+    position: absolute;
+    top: 315px;
+    left: 0;
+    height: 644px;
     width: 100%;
-    height: 640px;
-    margin-top: 315px;
+  }
+  & > div:nth-child(1) {
+    // background: #f2f2f2;
+    width: 100%;
+    // height: 640px;
+    padding: 284px 0 0;
     position: relative;
-
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
     & > div:nth-child(1) {
       position: relative;
-      display: flex;
-      flex-direction: row-reverse;
-      margin-right: 14vw;
-
-      & > div:nth-child(2) {
-        width: 500.49px;
+      width: 100%;
+      & > div:nth-child(1) {
         position: relative;
-        top: -31px;
-        text-align: center;
-
+        z-index: 2;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 62.14px;
         line-height: 1;
-        text-align: center;
         letter-spacing: 0.2em;
         color: #3e3a39;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-
-        & > div:nth-child(1) {
-          margin-bottom: 10px;
-          position: relative;
-          left: -45px;
-        }
 
         & > div:nth-child(2) {
           font-family: 'Metropolis';
@@ -263,26 +260,16 @@ const mmmmm = (num: any) => {
           font-weight: 700;
           font-size: 44.48px;
           line-height: 56px;
-          text-align: center;
-          letter-spacing: 0.04em;
+          letter-spacing: 0.02em;
           text-transform: uppercase;
           color: #ffffff;
-
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          & > div:nth-child(2) {
-            padding-right: 5px;
-          }
-
-          & > div:nth-child(2),
-          & > div:nth-child(3) {
-            display: flex;
-            justify-content: center;
-            padding-top: 5px;
-          }
         }
+      }
+      &>img{
+        position: relative;
+        z-index: 1;
+        margin-left: 25%;
+        margin-top: -56px;
       }
     }
 
@@ -294,8 +281,8 @@ const mmmmm = (num: any) => {
       }
 
       position: absolute;
-      bottom: 220px;
-      left: 25vw;
+      bottom: 80px;
+      left: 10%;
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
@@ -310,7 +297,7 @@ const mmmmm = (num: any) => {
     & > div:nth-child(3) {
       position: absolute;
       left: 50%;
-      bottom: -33%;
+      bottom: -300px;
     }
   }
 
@@ -318,11 +305,12 @@ const mmmmm = (num: any) => {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: -40vw;
-    margin-top: -8.5vw;
     z-index: 5;
     position: relative;
-
+    width: 100%;
+    max-width: 1080px;
+    margin-left: calc((100% - 1080px)/2 + 200px);
+    margin-top: -80px;
     & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
       font-style: normal;

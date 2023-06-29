@@ -375,20 +375,39 @@ const pageTurning = (flag: string) => {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1664px;
+    width: 100%;
     height: 731px;
     margin-top: 80px;
-    background: #f1f1f1;
-
+    position: relative;
+    &::before{
+      content: '';
+      background: #f1f1f1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc((100vw - 1493px)/2 + 1460px);
+      height: 750px;
+    }
     & > div:nth-child(1) {
       position: relative;
-      margin: auto;
+      margin: 122px auto 0;
       margin-top: 122px;
-      margin-left: 340px;
-      right: -1vw;
       bottom: -2vw;
+      width: 100%;
+      max-width: 1490px;
+      &::before{
+        content: '';
+        background: rgba($color: #000000, $alpha: .2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
 
+      }
       & > img {
+        width: 100%;
         position: relative;
         z-index: 5;
       }
@@ -396,22 +415,22 @@ const pageTurning = (flag: string) => {
       & > svg {
         position: absolute;
         left: 50%;
-        bottom: -130px;
-        z-index: 5;
+        bottom: -100px;
+        z-index: 7;
       }
     }
 
     & > div:nth-child(2) {
-      padding: 22.8% 0 0 5%;
       text-align: center;
       position: absolute;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0px;
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      z-index: 5;
+      z-index: 7;
 
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -464,9 +483,9 @@ const pageTurning = (flag: string) => {
   }
 
   & > div:nth-child(2) {
-    margin-top: 290px;
-    margin-left: 38%;
-    margin-right: 13.5%;
+    width: 100%;
+    max-width: 1080px;
+    margin: 290px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -671,24 +690,6 @@ const pageTurning = (flag: string) => {
         margin: 0 60px;
       }
     }
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .current {
-    width: 1920px;
-    margin: auto;
-  }
-
-  .press {
-    & > div:nth-child(2) {
-      margin-left: 28%;
-    }
-  }
-
-  .content_press {
-    margin-bottom: 80px;
   }
 }
 </style>
