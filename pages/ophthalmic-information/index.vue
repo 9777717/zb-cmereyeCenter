@@ -19,45 +19,6 @@ useHead(() => ({
   ],
 }))
 
-// 内容
-// const mainContent = [
-//   {
-//     img: 'https://static.cmereye.com/imgs/2023/05/68d06f9abbaa270e.png',
-//     link: 'https://youtu.be/6QMK-B_WKvk',
-//     title:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_title',
-//     doctor:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_doctor',
-//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent1_text',
-//   },
-//   {
-//     img: 'https://static.cmereye.com/imgs/2023/05/ae11245a90ee4dfe.png',
-//     link: 'https://youtu.be/gsFpvvDkJiE',
-//     title:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_title',
-//     doctor:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_doctor',
-//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent2_text',
-//   },
-//   {
-//     img: 'https://static.cmereye.com/imgs/2023/05/2d88b98970f31ba1.png',
-//     link: 'https://youtu.be/zMoqXZgXDsk',
-//     title:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_title',
-//     doctor:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_doctor',
-//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent3_text',
-//   },
-//   {
-//     img: 'https://static.cmereye.com/imgs/2023/05/f3aab3c7f7cec643.png',
-//     link: 'https://youtu.be/XbWbpVc-39k',
-//     title:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_title',
-//     doctor:
-//       'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_doctor',
-//     text: 'pages.ophthalmic_information.ophthalmic_information_text.information_mainContent.mainContent4_text',
-//   },
-// ]
 let mainContent = ref([
   {
     img: '',
@@ -262,7 +223,6 @@ onMounted(()=>{
 </template>
 <style lang="scss" scoped>
 .doctorClass {
-  // margin-left: 94px;
   &::before {
     content: '';
     background: #f2f2f2;
@@ -301,15 +261,12 @@ onMounted(()=>{
       left: 0;
       right: 0;
       bottom: -100px;
-
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 49.14px;
         line-height: 46px;
-        /* identical to box height, or 94% */
-
         text-align: center;
         letter-spacing: 0.2em;
 
@@ -321,8 +278,6 @@ onMounted(()=>{
           font-weight: 500;
           font-size: 25.64px;
           line-height: 44px;
-          /* identical to box height, or 173% */
-
           text-align: center;
           letter-spacing: 0.1em;
           text-transform: uppercase;
@@ -343,8 +298,6 @@ onMounted(()=>{
           font-weight: 700;
           font-size: 30px;
           line-height: 60px;
-          /* identical to box height, or 200% */
-
           text-align: right;
           letter-spacing: 0.3em;
 
@@ -357,8 +310,6 @@ onMounted(()=>{
           font-weight: 400;
           font-size: 20px;
           line-height: 30px;
-          /* or 150% */
-
           text-align: center;
           letter-spacing: 0.3em;
 
@@ -376,28 +327,21 @@ onMounted(()=>{
   }
 
   & > div:nth-child(2) {
-    // margin-top: 288px;
-    // margin-left: 281px;
-    // margin-right: 375px;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1080px;
     margin: 388px auto 0;
     & > div {
       max-width: 1163px;
-      // width: 100%;
       margin-bottom: 70px;
       background: #f2f2f2;
-      height: 386px;
+      min-height: 386px;
       position: relative;
-      padding-top: 46px;
       padding-left: 40px;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      align-items: center;
       justify-content: center;
-      // align-items: center;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      // padding: 70px 0;
       & > div:nth-child(1) {
         width: 490px;
         display: flex;
@@ -408,7 +352,6 @@ onMounted(()=>{
         font-style: normal;
         font-weight: 400;
         font-size: 24.608px;
-        // font-size: 28px;
         line-height: 44px;
 
         letter-spacing: 0.1em;
@@ -438,7 +381,6 @@ onMounted(()=>{
           font-style: normal;
           font-weight: 400;
           font-size: 17.5771px;
-          // font-size: 24px;
           line-height: 25px;
 
           & > svg {
@@ -453,9 +395,7 @@ onMounted(()=>{
           font-style: normal;
           font-weight: 350;
           font-size: 13.1828px;
-          // font-size: 18px;
           line-height: 26px;
-          /* or 200% */
 
           text-align: justify;
           letter-spacing: 0.1em;
@@ -477,7 +417,6 @@ onMounted(()=>{
           font-weight: 500;
           font-size: 18px;
           line-height: 26px;
-          /* identical to box height, or 194% */
 
           text-align: center;
           letter-spacing: 0.1em;
@@ -502,7 +441,6 @@ onMounted(()=>{
 
     & > div:nth-child(2n) {
       flex-direction: row-reverse;
-      // justify-content: flex-start;
       justify-content: center;
 
       & > div:nth-child(2) {
@@ -515,10 +453,12 @@ onMounted(()=>{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 281px;
-    margin-right: 375px;
+    // margin-left: 281px;
+    // margin-right: 375px;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 256px;
     color: #2958a3;
-    margin-bottom: 256px;
 
     & > div:nth-child(2) {
       margin: 0 33px;
@@ -538,73 +478,72 @@ onMounted(()=>{
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .doctorClass {
-    width: 100%;
-    &::before {
-      content: '';
-      background: #f2f2f2;
-      width: 80%;
-      height: 880px;
-      display: inline-block;
-      z-index: 1;
-      position: absolute;
-      left: 0px;
-      top: 98px;
-    }
-    & > div:nth-child(1) {
-      width: 1780px;
-      margin: 260px auto 0;
-      & > div:nth-child(1) {
-        & > img {
-          width: 100%;
-          max-width: 100%;
-          z-index: 5;
-          top: 0px;
-          position: relative;
-        }
-      }
-      & > div:nth-child(2) {
-        bottom: 150px;
-      }
-      & > svg {
-        // position: absolute;
-        bottom: -80px;
-      }
-    }
-    & > div:nth-child(2) {
-      width: 100%;
-      max-width: 1380px;
-      margin: 200px auto 0;
-      & > div {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 70px;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 70px 130px 70px 160px;
-        height: auto;
-        & > div:nth-child(1) {
-          width: 653px;
-          font-size: 28px;
-          & > div:nth-child(2) {
-            font-size: 24px;
-          }
-          & > div:nth-child(3) {
-            font-size: 18px;
-            line-height: 180%;
-            margin-top: 10px;
-          }
-        }
-        & > div:nth-child(2) {
-          img {
-            min-width: 413px;
-          }
-        }
-      }
-    }
-  }
+//   .doctorClass {
+//     width: 100%;
+//     &::before {
+//       content: '';
+//       background: #f2f2f2;
+//       width: 80%;
+//       height: 880px;
+//       display: inline-block;
+//       z-index: 1;
+//       position: absolute;
+//       left: 0px;
+//       top: 98px;
+//     }
+//     & > div:nth-child(1) {
+//       width: 1780px;
+//       margin: 260px auto 0;
+//       & > div:nth-child(1) {
+//         & > img {
+//           width: 100%;
+//           max-width: 100%;
+//           z-index: 5;
+//           top: 0px;
+//           position: relative;
+//         }
+//       }
+//       & > div:nth-child(2) {
+//         bottom: 150px;
+//       }
+//       & > svg {
+//         bottom: -80px;
+//       }
+//     }
+//     & > div:nth-child(2) {
+//       width: 100%;
+//       max-width: 1380px;
+//       margin: 200px auto 0;
+//       & > div {
+//         width: 100%;
+//         max-width: 100%;
+//         margin-bottom: 70px;
+//         position: relative;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 70px 130px 70px 160px;
+//         height: auto;
+//         & > div:nth-child(1) {
+//           width: 653px;
+//           font-size: 28px;
+//           & > div:nth-child(2) {
+//             font-size: 24px;
+//           }
+//           & > div:nth-child(3) {
+//             font-size: 18px;
+//             line-height: 180%;
+//             margin-top: 10px;
+//           }
+//         }
+//         & > div:nth-child(2) {
+//           img {
+//             min-width: 413px;
+//           }
+//         }
+//       }
+//     }
+//   }
 }
 </style>
