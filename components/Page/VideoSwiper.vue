@@ -36,7 +36,7 @@ const goYoutube = (link: string) => {
 .videoList {
   cursor: pointer;
   width: 440px;
-  height: 430px;
+  min-height: 430px;
 
   & > div:nth-child(1) {
     display: flex;
@@ -44,6 +44,9 @@ const goYoutube = (link: string) => {
     align-items: center;
     background: #f2f2f2;
     padding: 13px 9px 8px;
+    img{
+      width: 100%;
+    }
   }
 
   & > div:nth-child(2) {

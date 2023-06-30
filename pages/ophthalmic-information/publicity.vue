@@ -23,32 +23,32 @@ const eyeDisease = [
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/1664b018cca2148a.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
+    link: 'https://youtu.be/qNF78pbRx6c',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/53b1b85f90011cda.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_text',
-    link: 'https://youtu.be/0pN3E5ewLjE',
+    link: 'https://youtu.be/oYTtMkqVK4w',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/c6cd62a4b837e9b1.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
+    link: 'https://youtu.be/L9DHmvCTAZk',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/56e33eb0198fc5dc.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_text',
-    link: 'https://youtu.be/fM2cCC5zxWw',
+    link: 'https://youtu.be/9CnKIu04Nkk',
   },
 ]
 </script>
