@@ -166,7 +166,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 就診流程
         text: t('pages.process_cost.process'),
-        route: { path: '/process-and-cost', hash: '#process' },
+        route: { path: '/process-and-cost', hash: '#processed' },
       },
     ],
   },

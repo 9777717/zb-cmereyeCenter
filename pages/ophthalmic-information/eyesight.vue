@@ -7,78 +7,87 @@ definePageMeta({
 
 const eyesightLists = [
   {
-    id: '1',
+    id: '08', //08
     title: '白內障測試',
     icon: 'https://static.cmereye.com/imgs/2023/06/0517140842702146.png',
     bgColor: '#2BB6D7, #D5F2F9'
   },
   {
-    id: '2',
+    id: '04', //04
     title: '黃斑病變',
     icon: 'https://static.cmereye.com/imgs/2023/06/eef8ae8c445a9865.png',
     bgColor: '#F3BB42, #FFEDC6'
   },
   {
-    id: '3',
+    id: '07', //07
     title: '乾眼症測試',
     icon: 'https://static.cmereye.com/imgs/2023/06/4203c20d5ceb403a.png',
     bgColor: '#8F88E1, #E8E7FC'
   },
   {
-    id: '4',
-    title: '色盲測試',
+    id: '01', //01
+    title: '色盲測試', 
     icon: 'https://static.cmereye.com/imgs/2023/06/82321915f3211446.png',
     bgColor: '#FAA276, #FCDCCD'
   },
   {
-    id: '5',
+    id: '02', //02
     title: '散光測試',
     icon: 'https://static.cmereye.com/imgs/2023/06/9343743d3ae245d5.png',
     bgColor: '#65D2C5, #BDF6F3'
   },
   {
-    id: '6',
+    id: '03', //03
     title: '近視遠視',
     icon: 'https://static.cmereye.com/imgs/2023/06/3746c070f927624c.png',
     bgColor: '#42ABEB, #C9E8FF'
   },
   {
-    id: '7',
+    id: '05', //05
     title: '眼鏡檢查',
     icon: 'https://static.cmereye.com/imgs/2023/06/eace652fbc4d063e.png',
     bgColor: '#3DAAD9, #DBF2FF'
   },
   {
-    id: '8',
+    id: '06', //06
     title: '調節功能',
     icon: 'https://static.cmereye.com/imgs/2023/06/0dcf2c16da63a000.png',
     bgColor: '#52C0D3, #E7FAFD'
   },
   {
-    id: '9',
+    id: '09', //09
     title: '視神經測試',
     icon: 'https://static.cmereye.com/imgs/2023/06/60a1c82ff1e5436e.png',
     bgColor: '#D99959, #FCEDDE'
   },
   {
-    id: '10',
+    id: '10', //10
     title: '視覺敏感度',
     icon: 'https://static.cmereye.com/imgs/2023/06/da00d03c272d0728.png',
     bgColor: '#F3A999, #FFD9D2'
   },
   {
-    id: '11',
+    id: '11', //11
     title: '對比敏感度',
     icon: 'https://static.cmereye.com/imgs/2023/06/ced99148aa67acc3.png',
     bgColor: '#A6A6E4, #EEEEFF'
   },
   {
-    id: '12',
+    id: '12', //12
     title: '中心視力',
     icon: 'https://static.cmereye.com/imgs/2023/06/667502d2fe2be290.png',
     bgColor: '#A3D64F, #E1F8BC'
   }
 ]
+
+const toTestPage = (_id:string) =>{
+  // localStorage.setItem("testId", _id);
+  if(['06','07','08'].includes(_id)){
+    location.href = `/vision-health-test/qa?id=${_id}`
+  }else{
+    location.href = `/vision-health-test?id=${_id}`
+  }
+}
 
 </script>
 
@@ -91,7 +100,7 @@ const eyesightLists = [
     </div>
     <div class="eyesight-content">
       <div class="eyesight-content-in" v-for="(item,index) in eyesightLists" :key="index">
-        <div :style="{background: `linear-gradient(0deg, ${item.bgColor})`}">
+        <div :style="{background: `linear-gradient(0deg, ${item.bgColor})`}" @click="toTestPage(item.id)">
           <img :src="item.icon" alt="">
           <span>{{item.title}}</span>
         </div>

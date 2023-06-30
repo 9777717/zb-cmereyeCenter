@@ -11,15 +11,15 @@ useHead({
 const serviceNavigation = [
   {
     anchorName: 'pages.process_cost.cost',
-    anchorLink: '/process-and-cost/#cost',
+    anchorLink: '/process-and-cost#cost',
   },
   {
     anchorName: 'pages.process_cost.process',
-    anchorLink: '/process-and-cost/#process',
+    anchorLink: '/process-and-cost#processed',
   },
 ]
 const isShowLanguageBool = ref(false)
-const process = ref({
+const processBox = ref({
   offsetTop: 0,
 })
 onMounted(() => {
@@ -27,7 +27,7 @@ onMounted(() => {
   window.addEventListener('scroll', scrollHeight)
 })
 const scrollHeight = () => {
-  if (window.scrollY >= process.value.offsetTop - 300) {
+  if (window.scrollY >= processBox.value.offsetTop - 300) {
     isShowLanguageBool.value = true
   } else {
     isShowLanguageBool.value = false
@@ -39,11 +39,8 @@ const scrollHeight = () => {
   <div
     :class="['processAndCost']"
     :style="{
-      background:
-        isShowLanguageBool === true
-          ? 'url(https://static.cmereye.com/imgs/2023/06/4a2313c1c2ea93d3.jpg) right bottom'
-          : 'url(https://static.cmereye.com/imgs/2023/06/616bfd619f8d434e.jpg) right top',
-      'background-size': isShowLanguageBool === true ? '50%' : 'cover',
+      'background-position': isShowLanguageBool === true ? '100% 100%' : '100% 0',
+      'background-size': isShowLanguageBool === true ? 'auto 100%' : '100% auto'
     }"
   >
     <div>
@@ -221,7 +218,7 @@ const scrollHeight = () => {
           </div>
         </div>
       </div>
-      <div id="process" ref="process" class="process">
+      <div id="processed" ref="processBox">
         <div
           class="processMain mainCon relative flex items-start justify-center"
         >
@@ -288,6 +285,7 @@ const scrollHeight = () => {
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;
+  background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')no-repeat;
 }
 
 .processAndCost > div:nth-child(1) {
