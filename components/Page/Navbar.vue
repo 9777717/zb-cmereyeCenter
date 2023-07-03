@@ -697,14 +697,14 @@ a {
 @media screen and (min-width: 1920px) {
   .headerTemPage {
     top: 95px;
-    left: 17.0305%;
+    left: 12%;
     transform: scale(1.2);
     margin-top: 4%;
   }
 
   .headerTem {
     top: 95px;
-    left: 17.0305%;
+    left: 12%;
     transform: scale(1.2);
     margin-top: 4%;
   }

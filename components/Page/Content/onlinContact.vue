@@ -13,113 +13,184 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+const toquery = () =>{
+  location.href = 'tel:+(852) 3956 2026'
+}
+  
 const route = useRoute()
 const rt = ref(route)
 </script>
 
 <template>
-  <!-- 側邊欄聯係 -->
-  <div
-    v-if="router.name !== 'index'"
-    class="onlinContact"
-    :class="[
-      rt.name === 'medical-service-eyeOrthopaedicDisease'
-        ? 'onlinContact_top'
-        : 'onlinContact',
-    ]"
-  >
-    <a
-      class="contactItem flex items-center justify-center flex-col mb-6"
-      href="tel:+(852) 3956 2026"
-    >
-      <svg
-        width="24"
-        height="20"
-        viewBox="0 0 24 20"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.4452 0.75C4.20214 0.75 0.949951 3.20524 0.949951 6.76094C0.949951 7.23719 1.0218 7.69494 1.1128 8.0741C1.24212 8.6197 1.83125 8.93412 2.37727 8.74455L6.07011 7.44988C6.44849 7.31579 6.70235 6.96901 6.70235 6.58061V4.91604C6.70235 4.40743 7.13342 3.99128 7.66028 3.99128H17.2396C17.7665 3.99128 18.1976 4.40743 18.1976 4.91604V6.58061C18.1976 6.96901 18.4514 7.31579 18.8298 7.44988L22.5226 8.74455C23.0687 8.93412 23.6578 8.6197 23.7871 8.0741C23.8733 7.69494 23.95 7.24181 23.95 6.76094C23.95 3.20524 20.6978 0.75 12.4547 0.75H12.4452Z"
-          fill="white"
-        />
-        <path
-          d="M20.2378 12.3212L16.5624 8.01439C16.2818 7.68674 16.13 7.27718 16.13 6.85469V6.21233C16.13 5.7381 15.716 5.3501 15.21 5.3501H9.69C9.184 5.3501 8.77 5.7381 8.77 6.21233V6.85469C8.77 7.27718 8.6182 7.68243 8.3376 8.01439L4.6622 12.3212C3.7468 13.3904 3.25 14.7225 3.25 16.0935V17.4256C3.25 18.3784 4.0734 19.1501 5.09 19.1501H19.81C20.8266 19.1501 21.65 18.3784 21.65 17.4256V16.0935C21.65 14.7225 21.1532 13.3947 20.2378 12.3212ZM12.45 16.5591C10.4168 16.5591 8.77 15.0157 8.77 13.1102C8.77 11.2046 10.4168 9.66125 12.45 9.66125C14.4832 9.66125 16.13 11.2046 16.13 13.1102C16.13 15.0157 14.4832 16.5591 12.45 16.5591Z"
-          fill="white"
-        />
-      </svg>
-      <span>3056 2026</span>
-    </a>
-
-    <a
-      class="contactItem flex items-center justify-center flex-col mb-8"
-      @click="goWhatsApp()"
-    >
-      <svg
-        width="26"
-        height="25"
-        viewBox="0 0 26 25"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0.740967 24.5354L2.50509 18.0009C1.08236 15.4526 0.630342 12.4791 1.23199 9.62582C1.83363 6.77256 3.44858 4.231 5.78048 2.46753C8.11239 0.704056 11.0048 -0.163059 13.9271 0.025333C16.8493 0.213725 19.6052 1.44497 21.6892 3.49313C23.7732 5.54129 25.0455 8.26899 25.2725 11.1757C25.4995 14.0824 24.6661 16.9731 22.9252 19.3173C21.1842 21.6616 18.6526 23.3022 15.7947 23.9381C12.9369 24.5739 9.94456 24.1624 7.36688 22.7791L0.740967 24.5354ZM7.68638 20.3243L8.09616 20.5663C10.1672 21.7972 12.6191 22.2311 14.9893 21.786C17.3596 21.3409 19.4842 20.0476 20.9626 18.1501C22.4409 16.2526 23.1707 13.8821 23.0143 11.4857C22.8579 9.08937 21.826 6.83284 20.1134 5.14181C18.4009 3.45078 16.1259 2.44217 13.7177 2.30624C11.3096 2.17031 8.93473 2.91646 7.04114 4.40394C5.14755 5.89141 3.86614 8.01738 3.43867 10.3808C3.0112 12.7442 3.46721 15.1816 4.72067 17.2333L4.97765 17.6551L3.99141 21.3062L7.68638 20.3243Z"
-          fill="white"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M17.6321 13.8521C17.3917 13.6597 17.1104 13.5242 16.8096 13.4559C16.5088 13.3876 16.1963 13.3883 15.8958 13.458C15.4443 13.6447 15.1526 14.3431 14.8609 14.7027C14.7982 14.7877 14.7066 14.8472 14.6031 14.8701C14.4997 14.893 14.3914 14.8777 14.2984 14.8271C12.6464 14.1841 11.2628 13.0017 10.3742 11.4734C10.298 11.3781 10.262 11.2571 10.2736 11.1358C10.2853 11.0146 10.3438 10.9026 10.4367 10.8234C10.7621 10.5027 11.0009 10.1056 11.1312 9.66862C11.1602 9.18666 11.0493 8.70659 10.8118 8.28565C10.6281 7.6955 10.2787 7.17002 9.80467 6.77129C9.55912 6.65798 9.28566 6.61855 9.01791 6.65786C8.75016 6.69717 8.49978 6.81349 8.29753 6.99255C7.94965 7.28946 7.67346 7.66061 7.48949 8.07842C7.30551 8.49623 7.21847 8.94995 7.23486 9.40585C7.23593 9.6624 7.2686 9.91786 7.33211 10.1665C7.49338 10.7639 7.7414 11.3346 8.06832 11.8606C8.30418 12.2636 8.56154 12.6537 8.83927 13.0292C9.74186 14.2628 10.8764 15.3102 12.18 16.1133C12.8342 16.5213 13.5333 16.8532 14.2636 17.1021C15.0223 17.4445 15.8599 17.5759 16.6876 17.4824C17.1591 17.4114 17.6059 17.226 17.9887 16.9426C18.3714 16.6593 18.6783 16.2866 18.8823 15.8574C19.0022 15.5982 19.0386 15.3083 18.9865 15.0276C18.8754 14.4537 18.0975 14.1149 17.6321 13.8521Z"
-          fill="white"
-        />
-      </svg>
-      <span>WhatsApp</span>
-    </a>
-
-    <a
-      class="contactItem relative flex items-center justify-center flex-col pt-9"
-    >
-      <img
-        class="absolute -top-7 w-20"
-        src="https://static.cmereye.com/imgs/2023/05/c9b597fcaf53f399.png"
-        alt=""
-      />
-      <span>在線查詢</span>
-    </a>
+  <div class="onlinContact">
+    <div>
+      <div class="topitem">
+        <img src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
+      </div>
+      <div class="ocitem" @click="toquery">
+        <div>
+          <div><div>在線查詢</div></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
+        </div>
+      </div>
+      <div class="ocitem" @click="goWhatsApp">
+        <div>
+          <div><div>WhatApp</div></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
+        </div>
+      </div>
+      <div class="ocitem">
+        <div>
+          <div><div>立即致電</div></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
-.onlinContact {
+.onlinContact{
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   position: fixed;
   right: 83px;
-  top: 620px;
-
-  .contactItem {
-    cursor: pointer;
-    color: white;
-    background-color: #2958a3;
-    width: 69px;
-    height: 69px;
-    border-radius: 100%;
-
-    & > span {
-      transform: scale(66%);
-      font-family: 'Metropolis';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8.01px;
-      line-height: 28px;
-      /* or 344% */
-
-      text-align: center;
-      letter-spacing: 0.05em;
-
-      color: #ffffff;
+  top: 520px;
+  &>div{
+    .topitem{
+      width: 160px;
+      img{
+        width: 100%;
+        cursor: pointer;
+        animation: ss 3s linear infinite;
+        transform-origin: bottom center;
+        &:hover{
+          transform-origin: bottom center;
+          animation: ss 0s linear infinite;
+        }
+      }
     }
+    .ocitem{
+      width: 160px;
+      height: 38px;
+      border: 2px solid #8FD2E4;
+      margin-top: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all .3s;
+      background: #fff;
+      &>div{
+        display: flex;
+        height: 100%;
+        transition: all .3s;
+        &>div:nth-of-type(1){
+          text-align: center;
+          flex: 1;
+          line-height: 38px;
+          position: relative;
+          transition: all .3s;
+          border-right: 1px solid rgba(143, 210, 228, .5);
+          &>div{
+            position: relative;
+            z-index: 2;
+            font-size: 20px;
+            padding-top: 2px;
+            color: #8FD2E4;
+            transition: all .3s;
+          }
+          &::before{
+            content: "";
+            width: 100%;
+            height: 51%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 1);
+            z-index: 1;
+            transition: all .3s;
+          }
+          &::after{
+            content: "";
+            width: 100%;
+            height: 51%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(239, 239, 239, 1);
+            z-index: 1;
+            transition: all .3s;
+          }
+        }
+        &>div:nth-of-type(2){
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-left: 1px solid rgba(143, 210, 228, 1);
+          position: relative;
+          transition: all .3s;
+          &::before{
+            content: "";
+            width: 100%;
+            height: 51%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(143, 210, 228, .5);
+            z-index: 1;
+          }
+          &::after{
+            content: "";
+            width: 100%;
+            height: 51%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #8FD2E4;
+            z-index: 1;
+          }
+          img{
+            position: relative;
+            width: 60%;
+            z-index: 2;
+          }
+        }
+      }
+      &:hover{
+        border: 2px solid #fff;
+        &>div{
+          border: 1px solid #8FD2E4;
+          &>div:nth-of-type(1){
+            &>div{
+              color: #fff;
+              padding-top: 0px;
+            }
+            &::before{
+              background: rgba(143, 210, 228, .5);
+            }
+            &::after{
+              background: #8FD2E4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes ss {
+  0%{
+    transform: rotate(0deg);
+  }
+  33%{
+    transform: rotate(10deg);
+  }
+  66%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
   }
 }
 </style>
@@ -127,6 +198,7 @@ const rt = ref(route)
 @media screen and (min-width: 1920px) {
   .onlinContact {
     top: 700px;
+    right: 12%;
   }
   .onlinContact_top {
     top: 900px;
