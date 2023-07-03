@@ -131,14 +131,10 @@ const handleNext = () => {
     testSwiperRef.slideNext()
   }else if(cnum.value === _l.value){
     let url = '';
-    if(['01','05'].includes(testId)){
-      url = '/vision-health-test/pictest01?id='+testId;
-    }
-    if(['02','03','04','09','10','11'].includes(testId)){
-      url = '/vision-health-test/pictest02?id='+testId;
-    }
     if(testId == '12'){
       url = '/vision-health-test/center';
+    }else{
+      url = '/vision-health-test/pictest?id='+testId;
     }
     location.href = url;
   }

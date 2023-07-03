@@ -79,11 +79,11 @@ const postData = async () => {
 來源：${location.href}`
   let _data = 'message=' + encodeURIComponent(_message);
   const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
-  method: 'post',
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
-  },
-  body: _data
+    method: 'post',
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: _data
   })
   let res = data.value
   // console.log(res)

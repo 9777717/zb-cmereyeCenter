@@ -1,5 +1,6 @@
 var CDN_DOMAIN = 'https://e.yiyantong.vip';
-export default [ {
+export default [ 
+  {
     id: "02",
     title: "散光测试",
     questions: [ {
@@ -51,7 +52,7 @@ export default [ {
             whicheye: "rightEyeScore",
             score: [ 1, 0 ]
     } ]
-}, {
+  }, {
     id: "03",
     title: "近视远视测试",
     questions: [ {
@@ -124,7 +125,7 @@ export default [ {
             score: [ 1, 10, 100 ]
         }
     ]
-}, {
+  }, {
     id: "04",
     title: "黄斑病变测试",
     questions: [ {
@@ -176,7 +177,7 @@ export default [ {
             whicheye: "rightEyeScore",
             score: [ 1, 1, 1, 0]
     } ]
-}, {
+  }, {
     id: "09",
     title: "视神经测试",
     questions: [ {
@@ -216,7 +217,7 @@ export default [ {
             whicheye: "rightEyeScore",
             score: [ 1, 1, 1, 0, 1 ]
     } ]
-}, {
+  }, {
     id: "10",
     title: "视觉敏感度测试",
     questions: [ {
@@ -448,7 +449,7 @@ export default [ {
             imageOptions: [ "a", "b", "c", "d" ],
             answer: "c"
     } ]
-}, {
+  }, {
     id: "11",
     title: "对比敏感度测试",
     questions: [ {
@@ -746,4 +747,5 @@ export default [ {
         imageOptions: [ "a", "b", "c", "d" ],
         answer: "c"
     } ]
-} ]
+  } 
+]

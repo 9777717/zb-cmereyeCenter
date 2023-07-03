@@ -6,6 +6,8 @@ definePageMeta({
 const route = useRoute()
 let testId:any = route.query.id
 let testSum:any = route.query.sum
+let leftSum:any = route.query.leftSum || 0
+let rightSum:any = route.query.rightSum || 0
 
 var list = [
   [ 
@@ -93,7 +95,156 @@ var list = [
       ct: "请您重新测试",
       img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
-  ] 
+  ],
+  [
+    {
+        id: "01",
+        title: "恭喜！",
+        ct: "您的左眼没有散光症状。",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "02",
+        title: "注意！",
+        ct: "您的左眼有散光症状。",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "03",
+        title: "恭喜！",
+        ct: "您的右眼没有散光症状。",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "04",
+        title: "注意！",
+        ct: "您的右眼有散光症状。",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+  } ],
+  [ {
+        id: "01",
+        title: "抱歉！",
+        ct: "您左眼有近视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "02",
+        title: "抱歉！",
+        ct: "您左眼有远视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "03",
+        title: "恭喜！",
+        ct: "您左眼没有近视或远视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "04",
+        title: "抱歉！",
+        ct: "您右眼有近视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "05",
+        title: "抱歉！",
+        ct: "您右眼有远视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "06",
+        title: "恭喜！",
+        ct: "您右眼没有近视或远视症状！",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "07",
+        title: "注意！",
+        ct: "请您重新测试！",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    } 
+  ],[  {
+        id: "01",
+        title: "恭喜！",
+        ct: "您的左眼没有黄斑病变症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "02",
+        title: "抱歉！",
+        ct: "您的左眼有黄斑病变症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "03",
+        title: "恭喜！",
+        ct: "您的右眼没有黄斑病变症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "04",
+        title: "抱歉！",
+        ct: "您的右眼有黄斑病变症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+     } 
+  ], [ {
+        id: "01",
+        title: "恭喜！",
+        ct: "您的左眼视力正常",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "02",
+        title: "抱歉！",
+        ct: "您的左眼有视神经疾病的症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }, {
+        id: "03",
+        title: "恭喜！",
+        ct: "您的右眼视力正常",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, {
+        id: "04",
+        title: "抱歉！",
+        ct: "您的右眼有视神经疾病的症状",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    } 
+  ], [ {
+        id: "01",
+        title: "",
+        ct: "您的左眼的视觉敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, 
+    {
+        id: "02",
+        title: "",
+        ct: "您的左眼的视觉敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    },
+    {
+        id: "03",
+        title: "",
+        ct: "您的右眼的视觉敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    }, 
+    {
+        id: "04",
+        title: "",
+        ct: "您的右眼的视觉敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    }
+  ], [ {
+        id: "01",
+        title: "",
+        ct: "您的左眼的对比敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+    },
+    {
+        id: "02",
+        title: "",
+        ct: "您的左眼的对比敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+    },
+     {
+        id: "03",
+        title: "",
+        ct: "您的右眼的对比敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      },
+      {
+        id: "04",
+        title: "",
+        ct: "您的右眼的对比敏感度为",
+        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+      } 
+  ]
 ]
 
 let resultTitle = ref('')
@@ -103,8 +254,17 @@ let datalist = ref({
   ct: '',
   img: ''
 })
+let rightDataList = ref({
+  id: '',
+  title: '',
+  ct: '',
+  img: ''
+})
 
-// console.log('id:',testId,'----sum:',testSum)
+let ShowBool = ref(false)
+if(!['01','05','06','07','08'].includes(testId)){
+  ShowBool.value = true
+}
 if(testId == '01'){
     resultTitle.value = '色盲色弱测试';
     if(testSum > 0){datalist.value = list[3][1];}
@@ -135,7 +295,57 @@ if(testId == '08'){
     else if(testSum >= 2 && testSum <= 3){datalist.value = list[2][1];}
     else{datalist.value = list[2][2];}
 }
-console.log(datalist.value)
+
+if(testId == '02'){
+  resultTitle.value = '散光测试';
+  datalist.value = (leftSum > 0) ? list[5][1] : list[5][0];
+  rightDataList.value = (rightSum > 0) ? list[5][3] : list[5][2];
+}
+if(testId == '03'){
+  resultTitle.value = '近视远视';
+  if(leftSum == 3 || leftSum == 12 || leftSum == 102){datalist.value = list[6][0];}
+  else if(leftSum == 30 || leftSum == 21 || leftSum == 120){datalist.value = list[6][1];}
+  else if(leftSum == 300 || leftSum == 201 || leftSum == 210){datalist.value = list[6][2];}
+  else{datalist.value = list[6][6];}
+  if(rightSum == 3 || rightSum == 12 || rightSum == 102){rightDataList.value = list[6][0];}
+  else if(rightSum == 30 || rightSum == 21 || rightSum == 120){rightDataList.value = list[6][1];}
+  else if(rightSum == 300 || rightSum == 201 || rightSum == 210){rightDataList.value = list[6][2];}
+  else{rightDataList.value = list[6][6];}
+}
+if(testId == '04'){
+    resultTitle.value = '黄斑病变';
+    datalist.value = (leftSum > 0) ? list[7][1] : list[7][0];
+    rightDataList.value = (rightSum > 0) ? list[7][3] : list[7][2];
+}
+if(testId == '09'){
+  resultTitle.value = '视神经测试';
+  datalist.value = leftSum == 0 ? list[8][0] : list[8][1];
+  rightDataList.value = rightSum == 0 ? list[8][2] : list[8][3];
+}
+if(testId == '10'){
+  resultTitle.value = '视觉敏感度测试';
+  datalist.value = (leftSum >= 3) ? list[9][1] : list[9][0];
+  rightDataList.value = (rightSum >=3) ? list[9][3] : list[9][2];
+}
+if(testId == '11'){
+  resultTitle.value = '对比敏感度测试';
+  datalist.value = (leftSum >= 4) ? list[10][1] : list[10][0];
+  rightDataList.value = (rightSum >=4) ? list[10][3] : list[10][2];
+}
+if(testId == '10'){
+  let l_per = 100 - leftSum * 10;
+  let r_per = 100 - rightSum * 10; 
+  datalist.value.ct += l_per + "%";
+  rightDataList.value.ct += r_per + "%";
+}
+if(testId == '11'){
+  let l_per:any = Number(((13 - leftSum) / 13).toFixed(4)) * 100;
+  let r_per:any = Number(((13 - rightSum) / 13).toFixed(4)) * 100; 
+  datalist.value.ct += l_per + "%";
+  rightDataList.value.ct += r_per + "%";
+}
+
+
 const toEyesight = () =>{
   location.href = '/ophthalmic-information/eyesight'
 }
@@ -155,9 +365,16 @@ const toEyesight = () =>{
       <div>{{resultTitle}}</div>
     </div>
     <div class="resultPage-content">
-      <div>{{datalist.title}}</div>
-      <div><img :src="datalist.img" alt=""></div>
-      <div>{{datalist.ct}}</div>
+      <div>
+        <div>{{datalist.title}}</div>
+        <div><img :src="datalist.img" alt=""></div>
+        <div>{{datalist.ct}}</div>
+      </div>
+      <div v-if="ShowBool">
+        <div>{{rightDataList.title}}</div>
+        <div><img :src="rightDataList.img" alt=""></div>
+        <div>{{rightDataList.ct}}</div>
+      </div>
     </div>
     <div class="resultPage-btn">
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hkcmereye.com%2F/result01&amp;src=sdkpreparse" target="_block"><div>分享</div></a>
@@ -191,14 +408,18 @@ const toEyesight = () =>{
     }
   }
   &-content{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 100px;
+    display: flex;
     &>div{
-      width: 100%;
-      img{
-        width: 50%;
-        margin: 0 auto;
+      flex: 1;
+      text-align: center;
+      font-size: 25px;
+      margin-top: 100px;
+      &>div{
+        width: 100%;
+        img{
+          width: 50%;
+          margin: 0 auto;
+        }
       }
     }
   }
