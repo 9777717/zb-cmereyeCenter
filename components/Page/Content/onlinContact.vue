@@ -22,7 +22,14 @@ const rt = ref(route)
 </script>
 
 <template>
-  <div class="onlinContact">
+  <div
+    v-if="router.name !== 'index'"
+    class="onlinContact"
+    :class="[
+      rt.name === 'medical-service-eyeOrthopaedicDisease'
+        ? 'onlinContact_top'
+        : 'onlinContact',
+    ]">
     <div>
       <div class="topitem">
         <img src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
