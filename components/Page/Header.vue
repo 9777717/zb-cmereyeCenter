@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-
+import { useRoute } from 'vue-router'
+const route = useRoute()
 const { t } = useLang()
 const menus = [
   {
@@ -189,26 +190,33 @@ const menus = [
 
 const toIndex = () => {
   window.location.href = '/'
+  menuBool.value = false
 }
 
 const toLinks = (data:any) =>{
   window.location.href = data.link || ''
+  menuBool.value = false
 }
 
 let menuBool = ref(false)
 const handleMuenBtn = () =>{
   menuBool.value = !menuBool.value
+  console.log(menuBool.value)
+  console.log(route.name,route.name !== 'index')
 }
+
+console.log(route.name,route.name !== 'index')
 </script>
 
 <template>
   <div class="mbHeader">
     <div class="mbHeader-in" :style="{
-      background: (menuBool?'#fff':'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))')
+      background: ((route.name !== 'index' || menuBool)?'#fff':'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'),
+      'border-bottom': ((route.name === 'index' || menuBool)? 'none' :'4px solid rgba(242, 242, 242, 1)')
     }">
       <div class="mbHeader-in-logo" @click="toIndex"></div>
       <div class="mbHeader-in-muenBtn" :style="{
-        background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat')
+        background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
       }" @click="handleMuenBtn"></div>
     </div>
     <div class="mbHeader-content" :style="{display: (menuBool? 'block': 'none')}">

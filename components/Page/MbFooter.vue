@@ -36,6 +36,7 @@
   padding: 20px 0;
   background: rgba(41, 88, 163, 1);
   display: block;
+  z-index: 999;
   &-in{
     display: flex;
     &>div{

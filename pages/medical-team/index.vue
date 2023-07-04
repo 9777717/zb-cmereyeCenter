@@ -1082,24 +1082,375 @@ const doctorList = [
   .medical-team {
     & > div:first-child {
       margin-left: 0px;
+      margin-top: 78px;
       & > .title {
         -ms-writing-mode: initial;
         writing-mode: initial;
+        font-size: 28px;
+        text-align: left;
+        letter-spacing: -0.1em;
+        padding-top: 30px;
+        margin-left: 20px;
+        &::after {
+          left: 0px;
+          top: 60px;
+          letter-spacing: 0.01em;
+          font-size: 16px;
+        }
       }
       & > div:last-child {
-        width: 100%;
+        width: calc(100% - 48%);
         top: 0;
-        left: 0;
-        height: 348px;
+        left: 48%;
+        height: 220px;
       }
     }
     .mainCon {
+      margin-left: 0;
+      margin-top: 145px;
+      padding: 0 30px;
       .docList {
         flex-direction: row-reverse;
         width: 100%;
+        padding-top: 70px;
+        margin-bottom: 76px;
+        padding-bottom: 70px;
+        .docDes{
+          margin-top: 0px;
+        }
         .orderLink {
           left: auto;
+          right: 10vw;
+          width: 90px;
+          height: 34px;
+          font-size: 16px;
+          line-height: 34px;
+          bottom: 10px;
+        }
+        .docName{
+          position: absolute;
+          width: calc(100vw - 60px);
           right: 0;
+          top: -70px;
+          text-align: left;
+          font-size: 24px;
+        }
+        .doctorIntro{
+          position: absolute;
+          width: calc(100vw - 60px);
+          right: 0;
+          top: -20px;
+          text-align: left;
+          font-size: 12px;
+        }
+        .docImg{
+          width: 55%;
+          margin-top: 29px;
+          margin-right: 15px;
+          .docEnName{
+            font-size: 20px;
+            left: 50px;
+            width: calc(100vw - 110px);
+            text-align: left;
+            line-height: 25px;
+            top: auto;
+            bottom: -25px ;
+          }
+        }
+        .docEducation {
+          & > div:first-child {
+            margin-right: 0px;
+            font-size: 12px;
+            min-width: 40px;
+            text-align: left;
+            line-height: 16px;
+          }
+          & > div:last-child {
+            font-size: 12px;
+            line-height: 160%;
+            margin-bottom: 6px;
+            padding-right: 5px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    ul > li:nth-child(1) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: -5px !important;
+        }
+      }
+      & > div:nth-child(1) {
+        margin-top: 0 !important;
+      }
+      &::before {
+        content: '';
+        background: #f2f2f2;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+      }
+    }
+    ul > li:nth-child(2) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 65px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(3) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 10px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: 100%;
+          left: -30px;
+          top: 38px;
+          height: 140px;
+        }
+      }
+    }
+    ul > li:nth-child(4) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: -25px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: 100%;
+          left: -30px;
+          top: 38px;
+          height: 120px;
+        }
+      }
+    }
+    ul > li:nth-child(5) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 15px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: -30px;
+          height: 170px;
+        }
+      }
+    }
+    ul > li:nth-child(6) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 70px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: -30px;
+          height: 180px;
+        }
+      }
+    }
+    ul > li:nth-child(7) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: 100%;
+          left: -30px;
+          top: 38px;
+          height: 170px;
+        }
+      }
+    }
+    ul > li:nth-child(8) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 35px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: -30px;
+          height: 170px;
+        }
+      }
+    }
+    ul > li:nth-child(9) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: -25px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: 30px;
+          height: 110px;
+        }
+      }
+    }
+    ul > li:nth-child(10) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 100px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: 30px;
+          height: 110px;
+        }
+      }
+    }
+    ul > li:nth-child(11) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: 30px;
+          height: 110px;
+        }
+      }
+    }
+    ul > li:nth-child(12) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: 30px;
+          height: 110px;
+        }
+      }
+    }
+    ul > li:nth-child(13) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 10px);
+          left: -30px;
+          top: 30px;
+          height: 110px;
+        }
+      }
+    }
+    ul > li:nth-child(14) {
+      .docEnName{
+        bottom: 30px !important;
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(15) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(16) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(17) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: -5px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(18) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: -5px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(19) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(20) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(21) {
+      & > div:nth-child(2) {
+        .docEnName{
+          bottom: 25px !important;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(22) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1)::before {
+          width: calc(100% + 30px);
+          left: -30px;
+          top: 38px;
+          height: 150px;
+        }
+      }
+    }
+    ul > li:nth-child(23) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          width: 100%;
+          height: auto;
+        }
+        & > div:nth-child(1)::before {
+          width: calc(100% + 70px);
+          left: -30px;
+          top: 0px;
+          height: 110px;
         }
       }
     }
