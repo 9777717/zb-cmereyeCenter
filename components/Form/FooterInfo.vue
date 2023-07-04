@@ -29,8 +29,6 @@ const ruleForm = reactive({
 const telValidator = (rule: any, value: any, callback: any) => {
   if (!value) {
     callback(new Error('請輸入手機號'))
-  } else if (value.length < 11 || value.length > 11) {
-    callback(new Error('手機號格式不正確'))
   } else {
     callback()
   }

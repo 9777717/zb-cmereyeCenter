@@ -1077,6 +1077,34 @@ const doctorList = [
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .medical-team {
+    & > div:first-child {
+      margin-left: 0px;
+      & > .title {
+        -ms-writing-mode: initial;
+        writing-mode: initial;
+      }
+      & > div:last-child {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 348px;
+      }
+    }
+    .mainCon {
+      .docList {
+        flex-direction: row-reverse;
+        width: 100%;
+        .orderLink {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
@@ -1090,6 +1118,13 @@ const doctorList = [
 
     & > div:first-child {
       margin-left: 190px;
+    }
+    ul > li:nth-child(23) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          right: 0;
+        }
+      }
     }
   }
 }
