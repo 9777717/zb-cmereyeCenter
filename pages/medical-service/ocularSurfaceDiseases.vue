@@ -20,9 +20,9 @@ useHead(() => ({
 }))
 // 传递背景色
 const backgd = [
-  '#acd9c1;',
-  '-webkit-linear-gradient(to right, #cfecdd, #acd9c1);',
-  'linear-gradient(to right, #cfecdd, #acd9c1);',
+  '#7DBE9C;',
+  '-webkit-linear-gradient(to right, #cfecdd, #7DBE9C);',
+  'linear-gradient(to right, #cfecdd, #7DBE9C);',
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
@@ -1044,7 +1044,7 @@ const keratoplastyList1 = [
           <PageCollapse
             :answer="meetArr"
             :downarr="'ocularSurfaceDiseases'"
-            :style="{ '--subassembly-color': '#acd9c1' }"
+            :style="{ '--subassembly-color': '#7DBE9C' }"
           />
         </div>
       </div>
@@ -1056,7 +1056,7 @@ const keratoplastyList1 = [
     <div class="fromTable">
       <FormFooterInfo
         :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#acd9c1;'}`"
+        :co="`color:${'#7DBE9C;'}`"
       />
     </div>
   </div>
@@ -1080,7 +1080,7 @@ const keratoplastyList1 = [
       & > div:nth-child(1) {
         width: 698px;
         line-height: 46px;
-        color: #acd9c1;
+        color: #419368;
         margin-right: 65px;
       }
     }
@@ -1101,7 +1101,7 @@ const keratoplastyList1 = [
             width: 580px;
             height: 73px;
             border-radius: 10px;
-            border: solid 1px #acd9c1;
+            border: solid 1px #7DBE9C;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1114,7 +1114,7 @@ const keratoplastyList1 = [
           width: 580px;
           height: 333px;
           border-radius: 10px;
-          border: solid 1px #acd9c1;
+          border: solid 1px #7DBE9C;
           padding: 82px 66px;
           line-height: 48px;
           font-size: 26px;
@@ -1162,7 +1162,7 @@ const keratoplastyList1 = [
           width: 290px;
           height: 292px;
           border-radius: 10px;
-          border: solid 1px #acd9c1;
+          border: solid 1px #7DBE9C;
           position: relative;
 
           & > div:nth-child(1) {
@@ -1205,7 +1205,7 @@ const keratoplastyList1 = [
       & > div:nth-child(2) {
         width: 627px;
         line-height: 46px;
-        color: #acd9c1;
+        color: #419368;
         margin-left: 65px;
       }
     }
@@ -1229,7 +1229,7 @@ const keratoplastyList1 = [
               display: flex;
               width: 42px;
               height: 42px;
-              background: #acd9c1;
+              background: #7DBE9C;
               border-radius: 50%;
               color: #fff;
               justify-content: center;
@@ -1289,7 +1289,7 @@ const keratoplastyList1 = [
               font-stretch: normal;
               line-height: 94px;
               letter-spacing: 0px;
-              color: #acd9c1;
+              color: #7DBE9C;
               margin-right: 26px;
             }
           }
@@ -1397,7 +1397,7 @@ const keratoplastyList1 = [
           height: 145px;
           background-color: #ffffff;
           border-radius: 20px;
-          border: solid 2px #acd9c1;
+          border: solid 2px #7DBE9C;
 
           font-size: 22px;
           line-height: 38px;
@@ -1442,8 +1442,8 @@ const keratoplastyList1 = [
 
           & > div:nth-child(2) {
             padding: 75px 0 72px;
-            border-top: dashed 1px #acd9c1;
-            border-bottom: dashed 1px #acd9c1;
+            border-top: dashed 1px #7DBE9C;
+            border-bottom: dashed 1px #7DBE9C;
             width: 667px;
           }
         }
@@ -1486,7 +1486,7 @@ const keratoplastyList1 = [
           width: 520 px;
           height: 140px;
           border-radius: 10px;
-          border: solid 2px #acd9c1;
+          border: solid 2px #7DBE9C;
           position: relative;
           padding: 40px 45px;
 
@@ -1509,7 +1509,7 @@ const keratoplastyList1 = [
             font-stretch: normal;
             line-height: 1;
             letter-spacing: 0px;
-            color: #acd9c1;
+            color: #7DBE9C;
             background: #fff;
             border-top: 10px solid #fff;
             border-bottom: 10px solid #fff;
@@ -1534,7 +1534,7 @@ const keratoplastyList1 = [
           border-radius: 10px;
           font-size: 22px;
           line-height: 38px;
-          border-top: 10px solid #acd9c1;
+          border-top: 10px solid #7DBE9C;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1598,8 +1598,8 @@ const keratoplastyList1 = [
             font-size: 52px;
             line-height: 38px;
             letter-spacing: 0px;
-            color: #acd9c1;
-            border-right: solid 3px #acd9c1;
+            color: #7DBE9C;
+            border-right: solid 3px #7DBE9C;
           }
 
           & > div:nth-child(2) {
@@ -1660,7 +1660,7 @@ const keratoplastyList1 = [
             & > div:nth-child(1) {
               width: 562px;
               height: 60px;
-              background-color: #acd9c1;
+              background-color: #7DBE9C;
               border-radius: 30px;
               margin-bottom: 45px;
 
@@ -1725,7 +1725,7 @@ const keratoplastyList1 = [
             & > div:nth-child(1) {
               width: 100%;
               height: 68px;
-              background-color: #acd9c1;
+              background-color: #7DBE9C;
 
               font-family: 'NotoSansHK-Regular';
               font-size: 26px;
@@ -1804,7 +1804,7 @@ const keratoplastyList1 = [
 
         font-size: 24px;
         line-height: 46px;
-        color: #acd9c1;
+        color: #419368;
         letter-spacing: -1px;
       }
     }
@@ -1869,7 +1869,7 @@ const keratoplastyList1 = [
             width: 272px;
             height: 164px;
             border-radius: 10px;
-            border: solid 2px #acd9c1;
+            border: solid 2px #7DBE9C;
 
             font-size: 22px;
             font-family: 'NotoSansHK-Regular';
@@ -1969,7 +1969,7 @@ const keratoplastyList1 = [
           & > div:nth-child(1)::after {
             content: '';
             width: 357px;
-            border-bottom: dashed 1px #acd9c1;
+            border-bottom: dashed 1px #7DBE9C;
             display: inline-block;
             position: absolute;
             bottom: 0;
@@ -2001,7 +2001,7 @@ const keratoplastyList1 = [
       & > div:nth-child(1) {
         max-width: 626px;
         margin-right: 63px;
-        color: #acd9c1;
+        color: #7DBE9C;
 
         & > span {
           letter-spacing: -1px;
@@ -2059,7 +2059,7 @@ const keratoplastyList1 = [
                 display: flex;
                 width: 40px;
                 height: 40px;
-                background: #acd9c1;
+                background: #7DBE9C;
                 border-radius: 50%;
                 font-family: OPPOSans-B;
                 font-size: 24px;
@@ -2097,7 +2097,7 @@ const keratoplastyList1 = [
             left: 32px;
             width: 349px;
             height: 57px;
-            background: #acd9c1;
+            background: #7DBE9C;
             border-radius: 29px;
 
             font-family: 'NotoSansHK-Medium';
@@ -2112,7 +2112,7 @@ const keratoplastyList1 = [
             width: 1200px;
             height: 206px;
             border-radius: 20px;
-            border: solid 2px #acd9c1;
+            border: solid 2px #7DBE9C;
 
             font-size: 22px;
             line-height: 40px;
@@ -2150,7 +2150,7 @@ const keratoplastyList1 = [
       & > div:nth-child(1) {
         margin-bottom: 120px;
         line-height: 46px;
-        color: #acd9c1;
+        color: #419368;
       }
     }
 
@@ -2177,7 +2177,7 @@ const keratoplastyList1 = [
             height: 160px;
             background-color: #ffffff;
             border-radius: 20px;
-            border: solid 2px #acd9c1;
+            border: solid 2px #7DBE9C;
             font-size: 22px;
             display: flex;
             align-items: center;
@@ -2254,7 +2254,7 @@ const keratoplastyList1 = [
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
-            color: #acd9c1;
+            color: #7DBE9C;
             margin-bottom: 30px;
           }
 
@@ -2274,7 +2274,7 @@ const keratoplastyList1 = [
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
-            color: #acd9c1;
+            color: #7DBE9C;
             margin-bottom: 30px;
           }
 
@@ -2289,7 +2289,7 @@ const keratoplastyList1 = [
             content: '';
             width: 6px;
             height: 6px;
-            background: #acd9c1;
+            background: #7DBE9C;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2304,7 +2304,7 @@ const keratoplastyList1 = [
             content: '';
             width: 6px;
             height: 6px;
-            background: #acd9c1;
+            background: #7DBE9C;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2338,7 +2338,7 @@ const keratoplastyList1 = [
 
           & > div:nth-child(1) {
             height: 80px;
-            background: #acd9c1;
+            background: #7DBE9C;
 
             font-family: 'NotoSansHK-Medium';
             font-size: 26px;
@@ -2458,7 +2458,7 @@ const keratoplastyList1 = [
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0px;
-  color: #acd9c1;
+  color: #7DBE9C;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2480,7 +2480,7 @@ const keratoplastyList1 = [
   font-stretch: normal;
   line-height: 52px;
   letter-spacing: 0px;
-  color: #acd9c1;
+  color: #7DBE9C;
 
   display: flex;
   flex-direction: row;
@@ -2540,7 +2540,7 @@ const keratoplastyList1 = [
         font-weight: normal;
         font-stretch: normal;
         letter-spacing: 0px;
-        color: #acd9c1;
+        color: #7DBE9C;
         z-index: 5;
         position: relative;
       }
@@ -2553,7 +2553,7 @@ const keratoplastyList1 = [
         font-weight: normal;
         font-stretch: normal;
         line-height: 1;
-        color: #acd9c1;
+        color: #7DBE9C;
         margin-top: 15px;
         font-size: 76px;
         letter-spacing: 0px;

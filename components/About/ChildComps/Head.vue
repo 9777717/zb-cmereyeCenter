@@ -75,8 +75,8 @@ const leaveActive = () => {
         />
       </svg>
     </div>
-    <div class="anchor fixed right-10">
-      <div
+    <div>
+      <!-- <div
         v-for="(item, index) in anchorList"
         :key="index"
         class="flex flex-col"
@@ -93,7 +93,8 @@ const leaveActive = () => {
         >
           {{ $t(item.anchorName) }}
         </a>
-      </div>
+      </div> -->
+      <rightSidesNavigation :service-navigation="anchorList" />
     </div>
   </div>
 </template>
@@ -178,33 +179,33 @@ const leaveActive = () => {
   left: 3.69792%;
 }
 
-.anchor {
-  top: 310px;
+// .anchor {
+//   top: 310px;
 
-  a {
-    border: 0.5px solid #515151;
-    margin: 5px 0;
-    padding: 10px 40px 5px;
-    font-size: 15px;
-    background: #ffffff;
-  }
+//   a {
+//     border: 0.5px solid #515151;
+//     margin: 5px 0;
+//     padding: 10px 40px 5px;
+//     font-size: 15px;
+//     background: #ffffff;
+//   }
 
-  .anchorActive,
-  .exactActive {
-    border: 0.5px solid #8ad8dd;
-    background: #8ad8dd;
-    color: #fff;
-    position: relative;
+//   .anchorActive,
+//   .exactActive {
+//     border: 0.5px solid #8ad8dd;
+//     background: #8ad8dd;
+//     color: #fff;
+//     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 12%;
-      height: 100%;
-      right: 0;
-      top: 0;
-      background-color: #ffffff;
-    }
-  }
-}
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       width: 12%;
+//       height: 100%;
+//       right: 0;
+//       top: 0;
+//       background-color: #ffffff;
+//     }
+//   }
+// }
 </style>

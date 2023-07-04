@@ -70,11 +70,11 @@ const rt = ref(route)
       img{
         width: 100%;
         cursor: pointer;
-        animation: ss 3s linear infinite;
+        // animation: ss 3s linear infinite;
         transform-origin: bottom center;
         &:hover{
           transform-origin: bottom center;
-          animation: ss 0s linear infinite;
+          animation: ss 3s linear infinite;
         }
       }
     }

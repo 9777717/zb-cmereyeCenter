@@ -73,6 +73,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_2',
       'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_3',
       'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_4',
+      'pages.medical_team.doctorList.doctor_4.doctor_4_education.doctor_4_education_5',
     ],
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor04.jpg',
@@ -553,6 +554,9 @@ const doctorList = [
   }
 
   ul > li:nth-child(1) {
+    .orderLink{
+      bottom: -80px !important;
+    }
     & > div:nth-child(1) {
       margin-top: 65px !important;
     }
@@ -1176,6 +1180,9 @@ const doctorList = [
       }
     }
     ul > li:nth-child(1) {
+      .orderLink{
+        bottom: 10px !important;
+      }
       & > div:nth-child(2) {
         .docEnName{
           bottom: -5px !important;
