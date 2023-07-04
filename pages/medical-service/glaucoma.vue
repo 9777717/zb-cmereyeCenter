@@ -1099,7 +1099,7 @@ const callTel = () => {
     <div class="dow">
       <div>
         <a
-          href="../../assets/pdf/glaucoma.pdf"
+          href="https://static.cmereye.com/static/pdf/glaucoma.pdf"
           :download="`${$t(
             'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
           )}.pdf`"

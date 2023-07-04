@@ -484,7 +484,7 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="../../assets/pdf/muscaeVolitantes.pdf" download="飛蚊症.pdf">
+        <a href="https://static.cmereye.com/static/pdf/muscaeVolitantes.pdf" download="飛蚊症.pdf">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"

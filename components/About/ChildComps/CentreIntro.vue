@@ -306,7 +306,7 @@ const goInstagram = (type: string) => {
           />
           <a
             class="downloadpdf"
-            href="../../../assets/pdf/cmer.pdf"
+            href="https://static.cmereye.com/static/pdf/cmer.pdf"
             :download="`${$t('pages.about_us.download.download')}.pdf`"
             >{{ $t('pages.about_us.download.download') }}</a
           >

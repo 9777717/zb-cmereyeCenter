@@ -950,7 +950,7 @@ const callTel = () => {
     <div class="dow">
       <div>
         <a
-          href="../../assets/pdf/cataract2.pdf"
+          href="https://static.cmereye.com/static/pdf/cataract2.pdf"
           :download="`${$t(
             'pages.medical_service.service_cataract_title.service_cataract_down1'
           )}.pdf`"
@@ -982,7 +982,7 @@ const callTel = () => {
       </div>
       <div>
         <a
-          href="../../assets/pdf/cataract1.pdf"
+          href="https://static.cmereye.com/static/pdf/cataract1.pdf"
           :download="`${$t(
             'pages.medical_service.service_cataract_title.service_cataract_down2'
           )}.pdf`"

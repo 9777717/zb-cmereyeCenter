@@ -396,7 +396,7 @@ const callTel = () => {
     <div class="dow">
       <div>
         <a
-          href="../../assets/pdf/strabismusAmblyopia.pdf"
+          href="https://static.cmereye.com/static/pdf/strabismusAmblyopia.pdf"
           download="兒童斜弱視.pdf"
         >
           <div>

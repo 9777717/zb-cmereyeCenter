@@ -371,7 +371,7 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="../../assets/pdf/conjunctivitis.pdf" download="結膜炎.pdf">
+        <a href="https://static.cmereye.com/static/pdf/conjunctivitis.pdf" download="結膜炎.pdf">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"

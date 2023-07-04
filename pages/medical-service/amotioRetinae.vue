@@ -343,7 +343,7 @@ const preventList1 = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="../../assets/pdf/amotioRetinae.pdf" download="視網膜脫落.pdf">
+        <a href="https://static.cmereye.com/static/pdf/amotioRetinae.pdf" download="視網膜脫落.pdf">
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
