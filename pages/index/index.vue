@@ -26,6 +26,40 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+
+const homeSwiperImgs = [
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
+  },
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
+  },
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/07/7bba82871272f273.jpg'
+  },
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
+  }
+]
+
+let currentImg = ref(0)
+var timer:any = null
+const setSwiperImg = () =>{
+  timer = setInterval(()=>{
+    if(currentImg.value < homeSwiperImgs.length-1){
+      currentImg.value++
+    }else{
+      currentImg.value = 0
+    }
+  },5000)
+}
+onMounted(()=>{
+  setSwiperImg()
+})
+onUnmounted(()=>{
+  clearInterval(timer)
+})
+
 // 拨打电话
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2026'
@@ -42,6 +76,10 @@ const callTel = () => {
         muted
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4"
       ></video>
+      <div class="mbHomeSwiper" :style="{
+        background: `url(${homeSwiperImgs[currentImg].imgUrl})no-repeat`
+      }">
+      </div>
     </div>
     <div>
       <div>
@@ -177,6 +215,29 @@ const callTel = () => {
           </div>
         </div>
       </div>
+      <div class="mbCar">
+        <div>
+          <svg
+            width="10"
+            height="15"
+            viewBox="0 0 10 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.72727 0L0 2.72727L4.54545 7.27273L0 11.8182L2.72727 14.5455L10 7.27273L2.72727 0Z"
+              fill="#2958A3"
+            />
+          </svg>
+          <div>
+            NEWS
+          </div>
+        </div>
+        <div>
+          <div><img src="https://static.cmereye.com/imgs/2023/07/503253529af76aea.jpg" alt=""></div>
+          <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -185,6 +246,11 @@ const callTel = () => {
   position: relative;
   width: 100%;
   height: 100vh;
+  &>div:nth-of-type(1){
+    .mbHomeSwiper{
+      display: none;
+    }
+  }
   & > div:nth-child(2) {
     position: absolute;
     top: 37%;
@@ -317,6 +383,73 @@ const callTel = () => {
           }
           & > div:not(:last-child) {
             border-right: 0.75px solid #2958a3;
+          }
+        }
+      }
+      
+    }
+    .mbCar{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .home{
+    &>div:nth-of-type(1){
+      video{
+        display: none;
+      }
+      .mbHomeSwiper{
+        width: 100%;
+        height: 100vh;
+        transition: all 1s;
+        display: block;
+        background-size: 100% 100% !important;
+      }
+    }
+    & > div:nth-child(2) {
+      top: auto;
+      bottom: 190px;
+      & > div:nth-child(1) {
+        display: none;
+      }
+      & > div:nth-child(2) {
+        display: none;
+      }
+      .mbCar{
+        display: block;
+        background: rgba($color: #fff, $alpha: .7);
+        margin-left: 30px;
+        padding: 20px 22px 30px;
+        &>div:nth-of-type(1){
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: #2958A3;
+          font-size: 20px;
+          font-weight: 400;
+          svg{
+            margin-top: -8px;
+          }
+        }
+        &>div:nth-of-type(2){
+          display: flex;
+          &>div:nth-of-type(1){
+            width: 80px;
+            height: 80px;
+            margin-right: 12px;
+            img{
+              width: 100%;
+            }
+          }
+          &>div:nth-of-type(2){
+            // margin-top: 15px;
+            flex: 1;
+            color: #2958A3;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: justify;
           }
         }
       }

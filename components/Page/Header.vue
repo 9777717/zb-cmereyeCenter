@@ -1,11 +1,5 @@
 <script lang="ts" setup>
-// import { defineProps } from "vue";
-// defineProps({
-//   str:{
-//     type: String,
-//     default: ''
-//   }
-// })
+
 const { t } = useLang()
 const menus = [
   {
@@ -117,37 +111,37 @@ const menus = [
       {
         type: 'link', // 医生小课堂
         text: t('pages.ophthalmic_information.ophthalmic_class'),
-        route: { name: 'ophthalmic-information' },
+        link: '/ophthalmic-information',
       },
       {
         type: 'link', // 護眼宣傳片
         text: t('pages.ophthalmic_information.ophthalmic_publicity'),
-        route: { name: 'ophthalmic-information-publicity' },
+        link: '/ophthalmic-information/publicity',
       },
       {
         type: 'link', // 希瑪小劇場
         text: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
-        route: { name: 'ophthalmic-information-littleTheatre' },
+        link: '/ophthalmic-information/littleTheatre',
       },
       {
         type: 'link', // 文章推薦
         text: t('pages.ophthalmic_information.ophthalmic_press'),
-        route: { name: 'ophthalmic-information-press' },
+        link: '/ophthalmic-information/press',
       },
       {
         type: 'link', // 文章推薦
         text: t('pages.ophthalmic_information.ophthalmic_article'),
-        route: { name: 'ophthalmic-information-article' },
+        link: '/ophthalmic-information/article',
       },
       {
         type: 'link', // 健康資訊
         text: t('pages.ophthalmic_information.ophthalmic_message'),
-        route: { name: 'ophthalmic-information-healthInfo' },
+        link: '/ophthalmic-information/healthInfo',
       },
       {
         type: 'link',
         text: '視力健康測試',
-        route: { name: 'ophthalmic-information-eyesight' }
+        link: '/ophthalmic-information/eyesight',
       }
     ],
   },
@@ -159,12 +153,12 @@ const menus = [
       {
         type: 'link', // 費用一覽
         text: t('pages.process_cost.cost'),
-        route: { path: '/process-and-cost', hash: '#cost' },
+        link: '/process-and-cost#cost'
       },
       {
         type: 'link', // 就診流程
         text: t('pages.process_cost.process'),
-        route: { path: '/process-and-cost', hash: '#process' },
+        link: '/process-and-cost#processed'
       },
     ],
   },
@@ -182,12 +176,12 @@ const menus = [
       {
         type: 'link', // 診所資料
         text: t('pages.contact_us.clinic_information'),
-        route: { name: 'contact-us' },
+        link: '/contact-us'
       },
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'contact-us-appointmentForm' },
+        link: '/contact-us#appointmentForm'
       },
     ],
   },
