@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Autoplay } from 'swiper'
+const { t } = useLang()
 // 眼科中心
 const eyeCenterImgList = [
   'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
@@ -63,8 +64,33 @@ const goInstagram = (type: string) => {
     window.open('https://www.instagram.com/cmervision/', '_blank')
   }
 }
+
+const getPdf = () =>{
+  fetch('/api/static/pdf/cmer.pdf').then(res => res.blob())
+    .then(blob => {
+        downloadFile(blob, t('pages.about_us.download.download'))
+    })
+    .catch(error => {
+        console.log('下载失败')
+    })
+}
+
+
+const downloadFile = (blob:any, filename:any) => {
+    let url = window.URL.createObjectURL(blob);
+    // 创建隐藏的可下载链接
+    let link = document.createElement('a');
+    link.style.display = 'none';
+    link.href = url;
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+}
+
+
 </script>
 <template>
+<div>
   <div id="centreIntro" class="centreIntro">
     <!-- 中心簡介 -->
     <div>
@@ -304,16 +330,18 @@ const goInstagram = (type: string) => {
             src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
             alt=""
           />
-          <a
+          <div
             class="downloadpdf"
             href="https://static.cmereye.com/static/pdf/cmer.pdf"
             :download="`${$t('pages.about_us.download.download')}.pdf`"
-            >{{ $t('pages.about_us.download.download') }}</a
+            @click="getPdf"
+            >{{ $t('pages.about_us.download.download') }}</div
           >
         </div>
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <style scoped lang="scss">
