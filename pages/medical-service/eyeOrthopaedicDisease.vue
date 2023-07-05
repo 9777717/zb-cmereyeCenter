@@ -33,14 +33,14 @@ const backgd = [
 ]
 const ophthalmoplastyList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a20c0768a3dfc148.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/fbfec5b88d05a4b2.png',
     title: '眼瞼缺陷',
     text: [
       '眼瞼缺陷由眼瞼撕裂、外傷或眼瞼腫瘤切除後造成的；也有可能是先天性眼瞼缺陷。矯正術可保持眼瞼外觀自然，從簡單修復到使用膜瓣修復也有案例。',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a539ea055085ea7e.png ',
+    img: 'https://static.cmereye.com/imgs/2023/06/a20c0768a3dfc148.png',
     title: '甲亢突眼',
     text: [
       '甲亢突眼常見於成年人，徵狀為眼球向前突出。它往往是從活躍階段逐漸發展至非活躍階段，而患者會因為眼瞼的收縮、眼球凸出，使得面部猙獰。',
@@ -48,7 +48,7 @@ const ophthalmoplastyList1 = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/a539ea055085ea7e.png ',
     title: '淚水過多',
     text: [
       '淚腺堵塞是引發淚眼的原因之一，我們稱之為原發性鼻淚管阻塞（PANDO）。有些人在出生時就有這症狀，但可通過按摩來緩解，否則需要透過外力來清理鼻淚道。成年人一開始病徵為大量流淚，繼而引發感染。此外，創傷、腫瘤和鼻腔疾病也可能引發淚道堵塞。',
@@ -56,14 +56,14 @@ const ophthalmoplastyList1 = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
     title: '眼眶再造',
     text: [
       '眼球摘除的原因有許多，包括：腫瘤、感染、盲眼以及眼整容所造成的傷害。摘除術包括：眼球摘除、以及眼內容物摘除（保留眼眶和眼肌）。摘除的部分由人工植入義眼填充。其餘部分則通過打磨和噴塗的義眼來保持其美觀效果。義眼都是參照真眼度身訂做。',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/fbfec5b88d05a4b2.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
     title: '眼眶收縮',
     text: [
       '眼眶收縮下眼眶無法固定義眼。首次治療後如果沒有即時植入義眼，眼眶容易收縮。眼眶收縮的再造是為了達到美觀的效果，包括穹窿構成、義眼二次植入和以自體脂肪移植來還原本來的外觀。',
@@ -316,7 +316,7 @@ const goWhatsApp = () => {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png"
+                src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png"
                 alt=""
               />
             </div>
@@ -619,10 +619,10 @@ const goWhatsApp = () => {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png"
+                      src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png"
                     />
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png"
+                      src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png"
                     />
                   </div>
                 </div>
@@ -2463,6 +2463,9 @@ const goWhatsApp = () => {
     }
   }
 }
+.fromTable {
+  margin-top: -90%;
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
@@ -2475,7 +2478,7 @@ const goWhatsApp = () => {
   }
 
   .fromTable {
-    margin-top: -70%;
+    margin-top: -60%;
   }
 }
 </style>
