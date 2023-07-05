@@ -757,7 +757,7 @@ const callTel = () => {
             />
           </div>
           <div>
-            <p>青光眼</p>
+            <p>乾眼症</p>
             <p>下載小冊子</p>
           </div>
         </a>

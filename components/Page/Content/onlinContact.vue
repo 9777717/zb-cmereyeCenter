@@ -63,7 +63,8 @@ const rt = ref(route)
   justify-content: center;
   position: fixed;
   right: 83px;
-  top: 520px;
+  // top: 520px;
+  bottom: 150px;
   &>div{
     .topitem{
       width: 160px;
@@ -186,6 +187,19 @@ const rt = ref(route)
     }
   }
 }
+.onlinContact_top{
+  bottom: 50px;
+  &>div{
+    .topitem{
+      // width: 160px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .ocitem{
+      margin-top: 10px;
+    }
+  }
+}
 @keyframes ss {
   0%{
     transform: rotate(0deg);
@@ -204,11 +218,11 @@ const rt = ref(route)
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .onlinContact {
-    top: 700px;
+    // top: 700px;
     right: 12%;
   }
   .onlinContact_top {
-    top: 900px;
+    // top: 900px;
   }
 }
 </style>

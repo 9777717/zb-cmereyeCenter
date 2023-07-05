@@ -56,18 +56,28 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
+        text: t('pages.medical_service.muscae_volitantes'),
+        route: { name: 'medical-service-muscaeVolitantes' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.maculopathy'),
+        route: { name: 'medical-service-maculopathy' },
+      },
+      {
+        type: 'link',
         text: t('pages.medical_service.glaucoma'),
         route: { name: 'medical-service-glaucoma' },
       },
       {
-        type: 'link',
-        text: t('pages.medical_service.xerophthalmia'),
-        route: { name: 'medical-service-xerophthalmia' },
+        type: 'link', // 阿托品滴眼液
+        text: t('pages.medical_service.atropine'),
+        route: { name: 'medical-service-atropine' },
       },
       {
-        type: 'link',
-        text: t('pages.medical_service.muscae_volitantes'),
-        route: { name: 'medical-service-muscaeVolitantes' },
+        type: 'link', // 兒童斜弱視
+        text: t('pages.medical_service.strabismusAmblyopia'),
+        route: { name: 'medical-service-strabismusAmblyopia' },
       },
       {
         type: 'link',
@@ -76,13 +86,13 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: t('pages.medical_service.maculopathy'),
-        route: { name: 'medical-service-maculopathy' },
+        text: t('pages.medical_service.xerophthalmia'),
+        route: { name: 'medical-service-xerophthalmia' },
       },
       {
-        type: 'link', // 兒童斜弱視
-        text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name: 'medical-service-strabismusAmblyopia' },
+        type: 'link', // 醫學驗光配鏡
+        text: t('pages.medical_service.medicalOptometry'),
+        route: { name: 'medical-service-medicalOptometry' },
       },
       {
         type: 'link', // 視網膜脫落
@@ -98,16 +108,6 @@ const menus = computed((): IMenuItem[] => [
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
         route: { name: 'medical-service-eyeOrthopaedicDisease' },
-      },
-      {
-        type: 'link', // 醫學驗光配鏡
-        text: t('pages.medical_service.medicalOptometry'),
-        route: { name: 'medical-service-medicalOptometry' },
-      },
-      {
-        type: 'link', // 阿托品滴眼液
-        text: t('pages.medical_service.atropine'),
-        route: { name: 'medical-service-atropine' },
       },
     ],
   },
@@ -234,7 +234,12 @@ const hashActive = (child: any) => {
             >
             <div
               v-if="item.childMenuList && item.childMenuList.length"
-              :class="rt.name === 'index' ? 'child' : 'childpage'"
+              :class="[
+                rt.name === 'index' ? 'child' : 'childpage',
+                {
+                  'ccccc': item.route.name === 'medical-service'
+                }
+              ]"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
                 <Anchor
@@ -674,6 +679,39 @@ a {
 
   & > div:hover {
     background: #ffffff80;
+  }
+}
+
+.ccccc{
+  width: 390px;
+  right: 0;
+  left: 130px;
+  // display: flex;
+  // flex-wrap: wrap;
+  
+  & > div {
+    width: 130px;
+    float: left;
+    position: relative;
+  }
+  & > div > a::after {
+    position: absolute;
+    left: 26px;
+    content: '';
+    width: 76px;
+    margin-top: -1px;
+    border: 0.75px solid #8ad8dd;
+    bottom: 0;
+  }
+  & > div:nth-child(1) > a::after {
+    content: '';
+    width: 76px;
+    border: 0.75px solid #8ad8dd;
+  }
+   & > div:last-child(1) > a::after {
+    content: '';
+    width: 0;
+    border: 0;
   }
 }
 
