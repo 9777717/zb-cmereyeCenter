@@ -2,6 +2,7 @@
 import { url } from '@nuxt/test-utils-edge'
 import { Autoplay } from 'swiper'
 const { t } = useLang()
+import { getPdf } from '../../../assets/js/common'
 // 眼科中心
 const eyeCenterImgList = [
   'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
@@ -67,28 +68,17 @@ const goInstagram = (type: string) => {
 }
 
 
-const getPdf = async () => {
-  let file:any = new URL('../../../assets/pdf/cmer.pdf', import.meta.url).href
-  fetch(file).then(res => res.blob())
-    .then(blob => {
-      downloadFile(blob, t('pages.about_us.download.download'))
-    })
-    .catch(error => {
-        console.log('下载失败')
-    })
-}
-
-
-const downloadFile = (blob:any, filename:any) => {
-    let url = window.URL.createObjectURL(blob);
-    // 创建隐藏的可下载链接
-    let link = document.createElement('a');
-    link.style.display = 'none';
-    link.href = url;
-    link.setAttribute('download', filename);
-    document.body.appendChild(link);
-    link.click();
-}
+// const getPdf = () => {
+//   let file:any = new URL('../../../assets/pdf/cmer.pdf', import.meta.url).href
+//   fetch(file).then(res => res.blob())
+//     .then(blob => {
+//       downloadFile(blob, t('pages.about_us.download.download'))
+//     })
+//     .catch(error => {
+//         console.log('下载失败')
+//     })
+//   getPdf('../../../assets/pdf/cmer.pdf',t('pages.about_us.download.download'))
+// }
 </script>
 <template>
 <div>
@@ -333,9 +323,7 @@ const downloadFile = (blob:any, filename:any) => {
           />
           <div
             class="downloadpdf"
-            href="~/assets/pdf/cmer.pdf"
-            :download="`${$t('pages.about_us.download.download')}.pdf`"
-            @click="getPdf"
+            @click="getPdf('../../../assets/pdf/cmer.pdf',$t('pages.about_us.download.download'))"
             >{{ $t('pages.about_us.download.download') }}</div
           >
         </div>
