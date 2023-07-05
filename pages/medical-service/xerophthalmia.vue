@@ -310,6 +310,7 @@ const callTel = () => {
 </script>
 
 <template>
+  <div>
   <div class="xeroheader">
     <!-- 头部 -->
     <div>
@@ -766,6 +767,7 @@ const callTel = () => {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#b6b3e0;'}`"
     />
+  </div>
   </div>
 </template>
 

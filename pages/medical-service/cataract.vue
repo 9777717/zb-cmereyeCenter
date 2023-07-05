@@ -1032,18 +1032,25 @@ const callTel = () => {
 <style lang="scss" scoped>
 .cataract_head {
   position: relative;
-  margin-top: 202px;
-  height: 288px;
-  background-color: #f2f2f2;
-  width: 40vw;
-  right: -60vw;
-
-  & > div {
+  &::before{
+    content: '';
+    background-color: #f2f2f2;
+    width: calc((100% - 1080px) / 2 + 300px);
+    height: 288px;
+    bottom: -50px;
+    right: 0;
     position: absolute;
-    top: -110px;
-    left: -200px;
+  }
+  & > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-align: right;
-
+    
+    width: 100%;
+    max-width: 1080px;
+    margin: 202px auto 100px;
     & > div:first-child {
       font-family: 'NotoSansCJKtc-Bold';
       font-size: 107px;
@@ -1060,11 +1067,8 @@ const callTel = () => {
         letter-spacing: 2px;
       }
     }
-
-    & > div:nth-child(2) {
-      left: -192px;
-      right: 0;
-      top: 120px;
+    &>div:last-child{
+      margin-right: 10px;
     }
   }
 }
@@ -1073,8 +1077,8 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.85);
-  margin-top: -43%;
+  transform: scale(0.9);
+  margin-top: -40%;
 
   & > div:nth-child(2) {
     padding-top: 165px;
@@ -2197,8 +2201,8 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .cataract {
-    margin: auto;
-    margin-top: -28%;
+    // margin: auto;
+    margin-top: -20%;
   }
 
   .dow {

@@ -2529,10 +2529,12 @@ const keratoplastyList1 = [
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 35vw;
-
+    align-items: flex-end;
+    // margin-top: 100px;
+    // margin-left: 35vw;
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto 0;
     & > div:nth-child(1) {
       & > div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
@@ -2599,11 +2601,11 @@ const keratoplastyList1 = [
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .ocularSurfaceDiseases_head {
-    margin-left: 12vw;
+    // margin-left: 12vw;
   }
 
   .ocularSurfaceDiseases_nav {
-    margin-top: -48%;
+    margin-top: -55%;
   }
 
   .fromTable {

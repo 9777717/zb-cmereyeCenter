@@ -2395,9 +2395,12 @@ const goWhatsApp = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 30vw;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto 0;
+    // margin-top: 100px;
+    // margin-left: 30vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -2464,11 +2467,11 @@ const goWhatsApp = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .eyeOrthopaedicDisease_nav {
-    margin-top: -41.1%;
+    margin-top: -45%;
   }
 
   .eyeOrthopaedicDisease_head {
-    margin-left: 15vw;
+    // margin-left: 15vw;
   }
 
   .fromTable {

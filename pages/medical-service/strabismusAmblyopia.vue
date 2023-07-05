@@ -922,9 +922,12 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 33vw;
+    align-items: flex-end;
+    // margin-top: 100px;
+    // margin-left: 33vw;
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto 0;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -1027,7 +1030,7 @@ const callTel = () => {
 @media screen and (min-width: 1920px) {
   .strabismusAmblyopia_head {
     & > div:nth-child(1) {
-      margin-left: 40vw;
+      // margin-left: 40vw;
     }
   }
 

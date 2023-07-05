@@ -1178,10 +1178,12 @@ const callTel = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 36vw;
-
+    align-items: flex-end;
+    // margin-top: 100px;
+    // margin-left: 36vw;
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto 0;
     & > div:nth-child(1) {
       & > div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';

@@ -488,9 +488,12 @@ const goVision = () => {
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 40vw;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1080px;
+    margin: 100px auto 0;
+    // margin-top: 100px;
+    // margin-left: 40vw;
 
     & > div:nth-child(1) {
       & > div:nth-child(1) {
@@ -559,7 +562,7 @@ const goVision = () => {
 @media screen and (min-width: 1920px) {
   .medicalOptometry_head {
     & > div:nth-child(1) {
-      margin-left: 50vw;
+      // margin-left: 50vw;
     }
   }
 
