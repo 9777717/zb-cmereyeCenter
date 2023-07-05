@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { getPdf } from '../../../assets/js/common'
 import { url } from '@nuxt/test-utils-edge'
 import { Autoplay } from 'swiper'
 const { t } = useLang()
-import { getPdf } from '../../../assets/js/common'
 // 眼科中心
 const eyeCenterImgList = [
   'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
@@ -67,18 +67,6 @@ const goInstagram = (type: string) => {
   }
 }
 
-
-// const getPdf = () => {
-//   let file:any = new URL('../../../assets/pdf/cmer.pdf', import.meta.url).href
-//   fetch(file).then(res => res.blob())
-//     .then(blob => {
-//       downloadFile(blob, t('pages.about_us.download.download'))
-//     })
-//     .catch(error => {
-//         console.log('下载失败')
-//     })
-//   getPdf('../../../assets/pdf/cmer.pdf',t('pages.about_us.download.download'))
-// }
 </script>
 <template>
 <div>
@@ -323,7 +311,7 @@ const goInstagram = (type: string) => {
           />
           <div
             class="downloadpdf"
-            @click="getPdf('../../../assets/pdf/cmer.pdf',$t('pages.about_us.download.download'))"
+            @click="getPdf('cmer.pdf',$t('pages.about_us.download.download'))"
             >{{ $t('pages.about_us.download.download') }}</div
           >
         </div>
