@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { url } from '@nuxt/test-utils-edge'
 import { Autoplay } from 'swiper'
 const { t } = useLang()
 // 眼科中心
@@ -65,10 +66,12 @@ const goInstagram = (type: string) => {
   }
 }
 
-const getPdf = () => {
-  fetch('/pdfApi/static/pdf/cmer.pdf').then(res => res.blob())
+
+const getPdf = async () => {
+  let file:any = new URL('../../../assets/pdf/cmer.pdf', import.meta.url).href
+  fetch(file).then(res => res.blob())
     .then(blob => {
-        downloadFile(blob, t('pages.about_us.download.download'))
+      downloadFile(blob, t('pages.about_us.download.download'))
     })
     .catch(error => {
         console.log('下载失败')
@@ -86,8 +89,6 @@ const downloadFile = (blob:any, filename:any) => {
     document.body.appendChild(link);
     link.click();
 }
-
-
 </script>
 <template>
 <div>
@@ -332,7 +333,7 @@ const downloadFile = (blob:any, filename:any) => {
           />
           <div
             class="downloadpdf"
-            href="https://static.cmereye.com/static/pdf/cmer.pdf"
+            href="~/assets/pdf/cmer.pdf"
             :download="`${$t('pages.about_us.download.download')}.pdf`"
             @click="getPdf"
             >{{ $t('pages.about_us.download.download') }}</div
