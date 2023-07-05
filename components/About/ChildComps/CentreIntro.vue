@@ -65,8 +65,8 @@ const goInstagram = (type: string) => {
   }
 }
 
-const getPdf = () =>{
-  fetch('/api/static/pdf/cmer.pdf').then(res => res.blob())
+const getPdf = () => {
+  fetch('/pdfApi/static/pdf/cmer.pdf').then(res => res.blob())
     .then(blob => {
         downloadFile(blob, t('pages.about_us.download.download'))
     })
