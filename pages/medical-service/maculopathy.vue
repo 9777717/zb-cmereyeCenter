@@ -174,7 +174,7 @@ const serviceNavigation = [
   },
   {
     anchorName: '濕性黃班病變',
-    anchorLink: '/medical-service/maculopathy#wet_maculopathy',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy_in',
   },
   {
     anchorName: '預防方法',
@@ -432,7 +432,7 @@ const callTel = () => {
         </div>
       </div>
       <!-- 老年黃斑病變治療 -->
-      <div>
+      <div id="wet_maculopathy_in">
         <div class="maculopathy_color_title">老年黃斑病變治療</div>
         <div>
           <div>

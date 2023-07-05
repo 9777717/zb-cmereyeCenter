@@ -76,24 +76,6 @@ const leaveActive = () => {
       </svg>
     </div>
     <div>
-      <!-- <div
-        v-for="(item, index) in anchorList"
-        :key="index"
-        class="flex flex-col"
-        @click="changeActive(index)"
-        @mouseenter="enterActive(index)"
-        @mouseleave="leaveActive"
-      >
-        <a
-          :href="item.anchorLink"
-          :class="{
-            anchorActive: acIdex === index,
-            exactActive: exactIdex === index,
-          }"
-        >
-          {{ $t(item.anchorName) }}
-        </a>
-      </div> -->
       <rightSidesNavigation :service-navigation="anchorList" />
     </div>
   </div>

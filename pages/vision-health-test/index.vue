@@ -9,40 +9,40 @@ let testId:any = route.query.id
 var  w = [ 
 {
     url: 'https://static.cmereye.com/imgs/2023/06/228956d09e6aba26.png',
-    ct: "测前摘下您的眼镜"
+    ct: "測前摘下您的眼鏡"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
-    ct: "持手机一臂距离，平视屏幕"
+    ct: "持手機一臂距離，平視屏幕"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
     ct: null
 } ], 
 j =[ {
     url: 'https://static.cmereye.com/imgs/2023/06/a7ae6cd2578a2a87.png',
-    ct: "测前戴上您的眼镜"
+    ct: "測前戴上您的眼鏡"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
-    ct: "持手机一臂距离，平视屏幕"
+    ct: "持手機一臂距離，平視屏幕"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
     ct: null
 } ], 
 O = [ {
     url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
-    ct: "持手机一臂距离，平视屏幕"
+    ct: "持手機一臂距離，平視屏幕"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
     ct: null
 } ], 
 N = [ {
     url: 'https://static.cmereye.com/imgs/2023/06/228956d09e6aba26.png',
-    ct: "若摘下眼镜测试的是裸眼中心视力"
+    ct: "若摘下眼鏡測試的是裸眼中心視力"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/a7ae6cd2578a2a87.png',
-    ct: "若戴上眼镜测试的是配镜后中心视力"
+    ct: "若戴上眼鏡測試的是配鏡后中心視力"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
-    ct: "持手机25cm距离，平视屏幕"
+    ct: "持手機25cm距離，平視屏幕"
 }, {
     url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
     ct: null
@@ -50,74 +50,74 @@ N = [ {
 const list = [
   {
     id: "01",
-    title: "色盲色弱测试",
-    ct: "请您仔细查看即将出现的图形或数字",
+    title: "色盲色弱測試",
+    ct: "請您仔細查看即將出現的圖形或數字",
     imageUrl: O
   }, 
   {
     id: "02",
-    title: "散光测试",
-    ct: "请您观察各方向线条的粗细",
+    title: "散光測試",
+    ct: "請您觀各方向綫條的粗細",
     imageUrl: w
   }, 
   {
     id: "03",
-    title: "近视远视(双色敏度)测试 ",
-    ct: "请您判断红绿背景中哪个字符更清楚",
+    title: "近視遠視(雙色敏度)測試 ",
+    ct: "請您判斷紅綠背景中哪個字符更清楚",
     imageUrl: w
   },
   {
     id: "04",
-    title: "黄斑病变(中央视力)测试",
-    ct: "请凝视图中央的小圆点",
+    title: "黃斑病變(中央視力)測試",
+    ct: "請凝視圖中央的小圓點",
     imageUrl: O
   }, 
   {
     id: "05",
-    title: "眼镜检查",
-    ct: "辨别物体清晰还是模糊",
+    title: "眼鏡檢查",
+    ct: "辨別物體清晰還是模糊",
     imageUrl: j
   }, 
   {
     id: "06",
-    title: "调节功能测试",
+    title: "調節功能測試",
     ct: "",
     imageUrl: []
   }, 
   {
     id: "07",
-    title: "干眼症测试",
+    title: "乾眼症測試",
     ct: "",
     imageUrl: []
   }, 
   {
     id: "08",
-    title: "白内障测试",
+    title: "白内障測試",
     ct: "",
     imageUrl: []
   }, 
   {
     id: "09",
-    title: "视神经(去饱和红色)测试",
-    ct: "请对比两张图中的红色",
+    title: "視神經(去飽和紅色)測試",
+    ct: "請對比兩張圖中的紅色",
     imageUrl: O
   }, 
   {
     id: "10",
-    title: "视觉敏感度测试",
-    ct: "请判断图形的方向",
+    title: "視覺敏感度測試",
+    ct: "請判斷圖形的方向",
     imageUrl: w
   }, 
   {
     id: "11",
-    title: "对比敏感度测试",
-    ct: "请判断图形的方向",
+    title: "對比敏感度測試",
+    ct: "請判斷圖形的方向",
     imageUrl: w
   }, 
   {
     id: "12",
-    title: "中心视力测试",
-    ct: "选择E的方向",
+    title: "中心視力測試",
+    ct: "選擇E的方向",
     imageUrl: N
   } 
 ]
@@ -203,7 +203,7 @@ const setTestSwiperRef = (swiper:any) => {
       </swiper>
     </div>
     <div :class="['testPage-nextBtn','bg-blue-900']" @click="handleNext">
-      {{cnum === _l ? '开始' : '下一步'}}
+      {{cnum === _l ? '開始' : '下一步'}}
     </div>
   </div>
 </template>

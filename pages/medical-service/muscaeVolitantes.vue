@@ -712,10 +712,13 @@ const callTel = () => {
 
         & > div:nth-child(2) {
           display: flex;
-          text-align: right;
+          text-align: left;
           flex-direction: column;
           padding-right: 350px;
-
+          padding-left: 0;
+          & > div:nth-child(1) {
+            text-align: right;
+          }
           & > div:nth-child(1)::after {
             left: auto;
             right: 0;

@@ -46,6 +46,12 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2026'
 }
+const toCmer = () =>{
+  location.href = 'https://www.cmervision.com/'
+}
+const goVision = () => {
+  location.href = 'https://www.cmervision.com/myopia-control-programme-2/'
+}
 </script>
 
 <template>
@@ -72,13 +78,10 @@ const callTel = () => {
           <div class="medicalOptometry_text_p_span">
             <p>
               現代人生活模式改變，每天花大量時間看電子螢幕，雙眼休息不足，容易加速眼睛老化，還造成各種視力甚至眼疾問題。我們相信預防勝於治療。為了預防眼疾，無論任何年齡，都需要定期進行眼睛健康檢查，保持良好視力和擁有健康眼睛。
-              VISION ，提供
-              成人眼睛檢查、兒童眼睛檢查、近視控制檢查等，照顧不同客人的需要。在視光檢查後，如發現有任何眼疾先兆或問題，我們會立即轉介予
-              眼科專科醫生跟進，務求令患者得到最合適的治療。
             </p>
             <p>
               希瑪眼科中心旗下的視光中心──
-              <span>希瑪眼科視光中心CMER VISION</span>，提供
+              <span style="cursor: pointer;" @click="toCmer">希瑪眼科視光中心CMER VISION</span>，提供
               <span>成人眼睛檢查、兒童眼睛檢查、近視控制檢查</span>
               等，照顧不同客人的需要。在視光檢查後，如發現有任何眼疾先兆或問題，我們會立即轉介予
               <span>眼科專科醫生</span> 跟進，務求令患者得到最合適的治療。
@@ -151,7 +154,7 @@ const callTel = () => {
               <div class="medicalOptometry_text_p_span">
                 希瑪視光中心十分重視兒童近視控制。視力發育不良會影響孩子日後發展和眼睛健康。所以，希瑪視光中心十分關注學童近視率偏高的問題，並提供詳細眼睛檢查服務及針對性的兒童近視控制方案，包括︰角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片、MyoVision鏡片），希望能助兒童把握控制近視的黃金治療期。
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+              <div class="medicalOptometry_btn_bg" @click="goVision">
                 <div>了解更多</div>
                 <div>兒童近視控制方案</div>
               </div>

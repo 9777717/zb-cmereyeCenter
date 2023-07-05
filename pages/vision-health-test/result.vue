@@ -14,34 +14,34 @@ var list = [
     {
       id: "01",
       title: "恭喜！",
-      ct: "您双眼的调节能力正常。",
+      ct: "您雙眼的調節能力正常。",
       img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
-      ct: "您双眼的调节能力一般。",
+      ct: "您雙眼的調節能力一般。",
       img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
-      ct: "您双眼的调节能力不佳。",
+      ct: "您雙眼的調節能力不佳。",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }
   ], [ 
     {
       id: "01",
       title: "恭喜！",
-      ct: "您有干眼症的可能性很低。",
+      ct: "您有乾眼症的可能性很低。",
       img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
-      ct: "您有干眼症的可能性中等。",
+      ct: "您有乾眼症的可能性中等。",
       img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
-      ct: "您有干眼症的可能性很高。",
+      ct: "您有乾眼症的可能性很高。",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
@@ -65,34 +65,34 @@ var list = [
     {
       id: "01",
       title: "恭喜！",
-      ct: "测试显示您色觉正常！",
+      ct: "測試顯示您色覺正常！",
       img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "03",
       title: "抱歉！",
-      ct: "测试显示您有色盲症状！",
+      ct: "測試顯示您有色盲症狀！",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
     {
       id: "01",
       title: "抱歉！",
-      ct: "您的眼镜近视眼矫正不足，远视眼矫正偏高。",
+      ct: "您的眼鏡近視眼矯正不足，遠視眼矯正偏高。",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }, {
       id: "02",
       title: "抱歉！",
-      ct: "您的眼镜近视眼矫正偏高，远视眼矫正不足。",
+      ct: "您的眼鏡近視眼矯正偏高，遠視眼矯正不足。",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }, {
         id: "03",
       title: "恭喜！",
-      ct: "您的眼镜为您提供了最佳的视力状态！",
+      ct: "您的眼鏡为您提供了最佳的視力狀態！",
       img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "04",
       title: "注意！",
-      ct: "请您重新测试",
+      ct: "請您重新測試",
       img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ],
@@ -100,148 +100,148 @@ var list = [
     {
         id: "01",
         title: "恭喜！",
-        ct: "您的左眼没有散光症状。",
+        ct: "您的左眼没有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "注意！",
-        ct: "您的左眼有散光症状。",
+        ct: "您的左眼有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您的右眼没有散光症状。",
+        ct: "您的右眼没有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "注意！",
-        ct: "您的右眼有散光症状。",
+        ct: "您的右眼有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
   } ],
   [ {
         id: "01",
         title: "抱歉！",
-        ct: "您左眼有近视症状！",
+        ct: "您左眼有近視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "02",
         title: "抱歉！",
-        ct: "您左眼有远视症状！",
+        ct: "您左眼有遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您左眼没有近视或远视症状！",
+        ct: "您左眼没有近視或遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
-        ct: "您右眼有近视症状！",
+        ct: "您右眼有近視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "05",
         title: "抱歉！",
-        ct: "您右眼有远视症状！",
+        ct: "您右眼有遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "06",
         title: "恭喜！",
-        ct: "您右眼没有近视或远视症状！",
+        ct: "您右眼没有近視或遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "07",
         title: "注意！",
-        ct: "请您重新测试！",
+        ct: "請您重新測試！",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ],[  {
         id: "01",
         title: "恭喜！",
-        ct: "您的左眼没有黄斑病变症状",
+        ct: "您的左眼没有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "抱歉！",
-        ct: "您的左眼有黄斑病变症状",
+        ct: "您的左眼有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您的右眼没有黄斑病变症状",
+        ct: "您的右眼没有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
-        ct: "您的右眼有黄斑病变症状",
+        ct: "您的右眼有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
      } 
   ], [ {
         id: "01",
         title: "恭喜！",
-        ct: "您的左眼视力正常",
+        ct: "您的左眼視力正常",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "抱歉！",
-        ct: "您的左眼有视神经疾病的症状",
+        ct: "您的左眼有視神經疾病的症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您的右眼视力正常",
+        ct: "您的右眼視力正常",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
-        ct: "您的右眼有视神经疾病的症状",
+        ct: "您的右眼有視神經疾病的症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ], [ {
         id: "01",
         title: "",
-        ct: "您的左眼的视觉敏感度为",
+        ct: "您的左眼的視覺敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, 
     {
         id: "02",
         title: "",
-        ct: "您的左眼的视觉敏感度为",
+        ct: "您的左眼的視覺敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     },
     {
         id: "03",
         title: "",
-        ct: "您的右眼的视觉敏感度为",
+        ct: "您的右眼的視覺敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, 
     {
         id: "04",
         title: "",
-        ct: "您的右眼的视觉敏感度为",
+        ct: "您的右眼的視覺敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }
   ], [ {
         id: "01",
         title: "",
-        ct: "您的左眼的对比敏感度为",
+        ct: "您的左眼的對比敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     },
     {
         id: "02",
         title: "",
-        ct: "您的左眼的对比敏感度为",
+        ct: "您的左眼的對比敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     },
      {
         id: "03",
         title: "",
-        ct: "您的右眼的对比敏感度为",
+        ct: "您的右眼的對比敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
       },
       {
         id: "04",
         title: "",
-        ct: "您的右眼的对比敏感度为",
+        ct: "您的右眼的對比敏感度为",
         img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
       } 
   ]
@@ -266,43 +266,43 @@ if(!['01','05','06','07','08'].includes(testId)){
   ShowBool.value = true
 }
 if(testId == '01'){
-    resultTitle.value = '色盲色弱测试';
+    resultTitle.value = '色盲色弱測試';
     if(testSum > 0){datalist.value = list[3][1];}
     if(testSum == 0){datalist.value = list[3][0];}
 }
 if(testId == '05'){
-    resultTitle.value = '眼镜测试';
+    resultTitle.value = '眼鏡測試';
     if(testSum == 3 || testSum == 12  || testSum == 102){datalist.value = list[4][0];}
     else if(testSum == 30 || testSum == 21  || testSum == 120){datalist.value = list[4][1];}
     else if(testSum == 300 || testSum == 201  || testSum == 210){datalist.value = list[4][2];}
     else{datalist.value = list[4][3];}
 }
 if(testId == '06'){
-    resultTitle.value = '调节功能测试';
+    resultTitle.value = '調節功能測試';
     if(testSum <= 9 ){datalist.value = list[0][0];}
     else if(testSum >= 10 && testSum <= 18){datalist.value = list[0][1];}
     else{datalist.value = list[0][2];}
 }
 if(testId == '07'){
-    resultTitle.value = '干眼症测试';
+    resultTitle.value = '乾眼症測試';
     if(testSum <= 9 ){datalist.value = list[1][0];}
     else if(testSum >= 10 && testSum <= 18){datalist.value = list[1][1];}
     else{datalist.value = list[1][2];}
 }
 if(testId == '08'){
-    resultTitle.value = '白内障测试';
+    resultTitle.value = '白内障測試';
     if(testSum <= 1 ){datalist.value = list[2][0];}
     else if(testSum >= 2 && testSum <= 3){datalist.value = list[2][1];}
     else{datalist.value = list[2][2];}
 }
 
 if(testId == '02'){
-  resultTitle.value = '散光测试';
+  resultTitle.value = '散光測試';
   datalist.value = (leftSum > 0) ? list[5][1] : list[5][0];
   rightDataList.value = (rightSum > 0) ? list[5][3] : list[5][2];
 }
 if(testId == '03'){
-  resultTitle.value = '近视远视';
+  resultTitle.value = '近視遠視';
   if(leftSum == 3 || leftSum == 12 || leftSum == 102){datalist.value = list[6][0];}
   else if(leftSum == 30 || leftSum == 21 || leftSum == 120){datalist.value = list[6][1];}
   else if(leftSum == 300 || leftSum == 201 || leftSum == 210){datalist.value = list[6][2];}
@@ -313,22 +313,22 @@ if(testId == '03'){
   else{rightDataList.value = list[6][6];}
 }
 if(testId == '04'){
-    resultTitle.value = '黄斑病变';
+    resultTitle.value = '黃斑病變';
     datalist.value = (leftSum > 0) ? list[7][1] : list[7][0];
     rightDataList.value = (rightSum > 0) ? list[7][3] : list[7][2];
 }
 if(testId == '09'){
-  resultTitle.value = '视神经测试';
+  resultTitle.value = '視神經測試';
   datalist.value = leftSum == 0 ? list[8][0] : list[8][1];
   rightDataList.value = rightSum == 0 ? list[8][2] : list[8][3];
 }
 if(testId == '10'){
-  resultTitle.value = '视觉敏感度测试';
+  resultTitle.value = '視覺敏感度測試';
   datalist.value = (leftSum >= 3) ? list[9][1] : list[9][0];
   rightDataList.value = (rightSum >=3) ? list[9][3] : list[9][2];
 }
 if(testId == '11'){
-  resultTitle.value = '对比敏感度测试';
+  resultTitle.value = '對比敏感度測試';
   datalist.value = (leftSum >= 4) ? list[10][1] : list[10][0];
   rightDataList.value = (rightSum >=4) ? list[10][3] : list[10][2];
 }

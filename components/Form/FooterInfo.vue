@@ -12,13 +12,15 @@ const cities = [
   t('components.footerInfo.staff'),
   t('components.footerInfo.website'),
   t('components.footerInfo.leaflet'),
+  t('components.footerInfo.Google'),
+  t('components.footerInfo.Facebook'),
 ]
 
 const formSize = ref('default')
 const ruleFormRef = ref<FormInstance>()
 const ruleForm = reactive({
   name: '',
-  phone: '',
+  phone: '+852',
   email: '',
   region: '',
   type: [],
@@ -28,6 +30,8 @@ const ruleForm = reactive({
 
 const telValidator = (rule: any, value: any, callback: any) => {
   if (!value) {
+    callback(new Error('請輸入手機號'))
+  }else if(value === '+852'){
     callback(new Error('請輸入手機號'))
   } else {
     callback()
@@ -241,7 +245,7 @@ defineProps({
       :deep(.el-form) {
         & > .el-form-item:nth-child(5) {
           width: 100%;
-          height: 186px;
+          // height: 186px;
           background: #ffffff;
           border-radius: 5px;
           padding: 26px 32px 27px 18px;

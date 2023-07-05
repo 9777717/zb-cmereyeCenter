@@ -76,50 +76,57 @@ const scrollHeight = () => {
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
                   </td>
-                  <td class="text-center">$420</td>
-                  <td class="text-center">$700</td>
+                  <td class="text-center">$450</td>
+                  <td class="text-center">$750</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
                   </td>
-                  <td class="text-center">$900</td>
-                  <td class="text-center">$1,650</td>
+                  <td class="text-center">$1000</td>
+                  <td class="text-center">$1,800</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
                   </td>
-                  <td class="text-center">$900</td>
-                  <td class="text-center">$1,650</td>
+                  <td class="text-center">$1000</td>
+                  <td class="text-center">$1,800</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
                   </td>
-                  <td class="text-center">$1,300</td>
-                  <td class="text-center">$2,000</td>
+                  <td class="text-center">$1,500</td>
+                  <td class="text-center">$2,600</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
                   </td>
-                  <td class="text-center">$360</td>
-                  <td class="text-center">$600</td>
+                  <td class="text-center">$400</td>
+                  <td class="text-center">$800</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    光學生物測量儀
+                  </td>
+                  <td class="text-center">$400</td>
+                  <td class="text-center">$650</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
                   </td>
-                  <td class="text-center">$300</td>
-                  <td class="text-center">$500</td>
+                  <td class="text-center">$400</td>
+                  <td class="text-center">$600</td>
                 </tr>
                 <tr>
                   <td colspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
                   </td>
-                  <td class="text-center">$550</td>
-                  <td class="text-center">$900</td>
+                  <td class="text-center">$620</td>
+                  <td class="text-center">$960</td>
                 </tr>
                 <tr>
                   <td colspan="2">
@@ -372,7 +379,7 @@ const scrollHeight = () => {
         }
       }
 
-      & > tr:nth-child(16) {
+      & > tr:nth-child(17) {
         & > td:nth-child(2) {
           text-align: left;
         }

@@ -872,7 +872,7 @@ const keratoplastyList1 = [
                   >角膜變尖的部分發生水腫甚至穿孔，令視功能突然下降及疼痛
                 </div>
               </div>
-              <div class="ocularSurfaceDiseases_title_btn">
+              <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
                 <span>懷疑自己有錐形角膜？</span
                 ><span>WhatsApp預約檢查及治療</span>
               </div>

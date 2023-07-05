@@ -32,11 +32,11 @@ const fatorArr = [
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a83300c944834450.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/77092ee46cf226d9.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/77092ee46cf226d9.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/a83300c944834450.png', 
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2',
@@ -70,32 +70,32 @@ const fatorArr = [
 ]
 const symptomArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/03c86d6ac63e3454.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/e493e6f5a154cd97.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a4f207cfb55a0903.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/c864d708858a3f2e.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e493e6f5a154cd97.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/848679d9bcce652d.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/848679d9bcce652d.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/a4f207cfb55a0903.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c864d708858a3f2e.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/03c86d6ac63e3454.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_2',
@@ -842,8 +842,9 @@ const callTel = () => {
               </div>
               <div>
                 <div v-if="Array.isArray(item.monofocal)">
-                  <div v-for="(ele, index) in item.monofocal" :key="index">
+                  <div v-for="(ele, eleIndex) in item.monofocal" :key="eleIndex">
                     <img
+                      v-if="index"
                       src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
@@ -857,11 +858,19 @@ const callTel = () => {
                 </div>
               </div>
               <div>
-                <div v-if="Array.isArray(item.astigmatism)">
+                <div v-if="Array.isArray(item.astigmatism) && index">
                   <div v-for="(ele, index) in item.astigmatism" :key="index">
                     <img
                       src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
+                    <div v-if="Array.isArray(ele)">
+                      <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
+                    </div>
+                    <div v-else>{{ $t(ele) }}</div>
+                  </div>
+                </div>
+                <div v-else>
+                  <div v-for="(ele, index) in item.astigmatism" :key="index">
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                     </div>
@@ -1759,7 +1768,9 @@ const callTel = () => {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-
+                &>div{
+                  padding-top: 5px;
+                }
                 & > img {
                   margin-right: 5px;
                 }

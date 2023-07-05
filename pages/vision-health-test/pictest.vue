@@ -8,79 +8,79 @@ let testId:any = route.query.id
 const list = [
   {
     id: "01",
-    title: "色盲色弱测试",
+    title: "色盲色弱測試",
     questions: [ {
       type: "image",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       image: 'https://static.cmereye.com/imgs/2023/06/afe062ee9f2bcb30.jpg'
     }, {
       type: "question",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       options: [ "75", "73", "14", "26" ],
       answer: "73",
       score: [ 1, 0, 1, 1 ]
     }, {
       type: "image",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       image: 'https://static.cmereye.com/imgs/2023/06/bb324faaa50d58e2.jpg'
     }, {
       type: "question",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       options: [ "12", "17", "18", "21" ],
       answer: "12",
       score: [ 0, 1, 1, 1 ]
     }, {
       type: "image",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       image: 'https://static.cmereye.com/imgs/2023/06/01e3e79295cd13a5.jpg'
     }, {
       type: "question",
-      question: "请问您看到了什么？",
-      options: [ "上半部分有一条紫色的曲线", "下半部分有一条红色的曲线", "一条紫色曲线和一条红色曲线", "什么都没有" ],
-      answer: "一条紫色曲线和一条红色曲线",
+      question: "請問您看到了什麽？",
+      options: [ "上半部分有一條紫色的曲綫", "下半部分有一條紅色的曲綫", "一條紫色曲綫和一條紅色曲綫", "什麽都沒有" ],
+      answer: "一條紫色曲綫和一條紅色曲綫",
       score: [ 1, 1, 0, 1 ]
     }, {
       type: "image",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       image: 'https://static.cmereye.com/imgs/2023/06/74b0f092e710d3f1.jpg'
     }, {
       type: "question",
-      question: "请问您看到了什么？",
+      question: "請問您看到了什麽？",
       options: [ "2", "6", "26", "92" ],
       answer: "26",
       score: [ 1, 1, 0, 1 ]
     } 
   ]}, {
   id: "05",
-  title: "眼镜检查",
+  title: "眼鏡檢查",
   questions: [ {
       type: "image",
-      question: "请问哪个背景中的字符更清晰明亮？",
+      question: "請問哪個背景中的字符更清晰明亮？",
       image: 'https://static.cmereye.com/imgs/2023/06/34ffe189f740b93c.jpg'
     }, {
       type: "question",
-      question: "请问哪个背景中的字符更清晰明亮？",
-      options: [ "红区字符", "绿区字符", "完全一样" ],
+      question: "請問哪個背景中的字符更清晰明亮？",
+      options: [ "紅區字符", "綠區字符", "完全一樣" ],
       answer: "",
       score: [ 1, 10, 100 ]
     }, {
       type: "image",
-      question: "请问哪个背景中的字符更清晰明亮？",
+      question: "請問哪個背景中的字符更清晰明亮？",
       image: 'https://static.cmereye.com/imgs/2023/06/943e456bc741befb.jpg'
     }, {
       type: "question",
-      question: "请问哪个背景中的字符更清晰明亮？",
-      options: [ "红区字符", "绿区字符", "完全一样" ],
+      question: "請問哪個背景中的字符更清晰明亮？",
+      options: [ "紅區字符", "綠區字符", "完全一樣" ],
       answer: "",
       score: [ 1, 10, 100 ]
     }, {
       type: "image",
-      question: "请问哪个背景中的字符更清晰明亮？",
+      question: "請問哪個背景中的字符更清晰明亮？",
       image: 'https://static.cmereye.com/imgs/2023/06/ef523bd0c1f7788d.jpg'
     }, {
       type: "question",
-      question: "请问哪个背景中的字符更清晰明亮？",
-      options: [ "红区字符", "绿区字符", "完全一样" ],
+      question: "請問哪個背景中的字符更清晰明亮？",
+      options: [ "紅區字符", "綠區字符", "完全一樣" ],
       answer: "",
       score: [ 1, 10, 100 ]
     }]
@@ -201,7 +201,7 @@ checkAcItem()
     </div>
     <div class="pictestPage-content">
       <div class="pictestPage-content-image" v-if="_data.questions[acQuestions].type === 'image'">
-        <div>倒计时：{{timeNum}}s</div>
+        <div>倒計時：{{timeNum}}s</div>
         <div>{{_data.questions[acQuestions].question}}</div>
         <div>
           <img :src="_data.questions[acQuestions].image" alt="">

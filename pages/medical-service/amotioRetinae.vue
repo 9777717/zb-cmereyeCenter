@@ -227,7 +227,7 @@ const preventList1 = [
           <div v-for="(item, index) in factorList1" :key="index">
             <div><img :src="item.img" /></div>
             <div>
-              <p v-for="(ele, index) in item.text" :key="index">{{ ele }}</p>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ ele }}</p>
             </div>
           </div>
         </div>
@@ -243,7 +243,7 @@ const preventList1 = [
           <div v-for="(item, index) in styptomList1" :key="index">
             <div>{{ item.title }}</div>
             <div>
-              <p v-for="(ele, index) in item.text" :key="index">{{ ele }}</p>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ ele }}</p>
             </div>
             <div>
               <img :src="item.img" />
@@ -277,7 +277,7 @@ const preventList1 = [
             </div>
           </div>
         </div>
-        <div class="amotioRetinae_title_btn">
+        <div class="amotioRetinae_title_btn" @click="goWhatsApp">
           <p>視網膜脫落需要哪一種治療？</p>
           <p>立即WhatsApp了解更多</p>
         </div>

@@ -235,7 +235,7 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours2',
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours3',
         ],
-        googleMaps: 'https://goo.gl/maps/9ghQzRFUT5iKspMB7',
+        googleMaps: 'https://goo.gl/maps/o4DpCAr4F52L12Vu8',
       },
     ],
   },

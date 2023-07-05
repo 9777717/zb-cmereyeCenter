@@ -611,6 +611,7 @@ const callTel = () => {
       </div>
       <!-- 青光眼的類別 -->
       <div id="category">
+        <div>青光眼的類別</div>
         <!-- 慢性青光眼 -->
         <div>
           <div>
@@ -835,7 +836,7 @@ const callTel = () => {
               </svg>
               {{
                 $t(
-                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title8'
+                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title16'
                 )
               }}
             </div>
@@ -1489,7 +1490,17 @@ const callTel = () => {
 
   // 青光眼的類別
   & > div:nth-child(5) {
-    & > div:nth-child(1) {
+    &>div:nth-of-type(1){
+      text-align: center;
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      // line-height: 36px;
+      margin-bottom: 100px;
+      letter-spacing: 0px;
+      color: #58a49f;
+    }
+    & > div:nth-child(2) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -1534,7 +1545,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
-        width: 1163px;
+        width: 1050px;
         height: 350px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
@@ -1564,7 +1575,7 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(2) {
+    & > div:nth-child(3) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -1610,7 +1621,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
-        width: 1163px;
+        width: 1050px;
         height: 350px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
@@ -1640,7 +1651,7 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(3) {
+    & > div:nth-child(4) {
       cursor: pointer;
       margin: 100px auto;
 
@@ -1664,7 +1675,7 @@ const callTel = () => {
       justify-content: center;
     }
 
-    & > div:nth-child(4) {
+    & > div:nth-child(5) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -1824,7 +1835,7 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(5) {
+    & > div:nth-child(6) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -1904,7 +1915,7 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(6) {
+    & > div:nth-child(7) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -1950,7 +1961,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
-        width: 1163px;
+        width: 1050px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
         background-blend-mode: normal, normal;
@@ -2048,7 +2059,7 @@ const callTel = () => {
             }
 
             & > div:nth-child(2) {
-              width: 590px;
+              width: 480px;
               position: absolute;
               right: 30px;
               font-family: 'NotoSansHK-Regular';

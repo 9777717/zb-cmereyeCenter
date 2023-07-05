@@ -28,6 +28,10 @@ const serviceNavigation = [
     anchorName: 'pages.ophthalmic_information.ophthalmic_message',
     anchorLink: '/ophthalmic-information/healthInfo',
   },
+  {
+    anchorName: 'pages.ophthalmic_information.ophthalmic_eyesight',
+    anchorLink: '/ophthalmic-information/eyesight',
+  },
 ]
 </script>
 

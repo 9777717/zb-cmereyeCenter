@@ -7,6 +7,8 @@ components:
   footerInfo:
     Instagram: Instagram
     YouTube: YouTube
+    Google: Google
+    Facebook: Facebook
     sidekicker: 親友介紹
     staff: 員工介紹
     website: 透過其他網頁
@@ -471,7 +473,7 @@ pages:
       service_cataract_text4: 視力模糊是白內障的主要症狀，隨病情惡化，可能有更多症狀困擾你。
       service_cataract_text5: 如果你有一項或以上的症狀，請不用感到焦慮，可聯絡我們約見眼科專科醫生，以盡快獲得正確的診斷和適合你的治療方案。
       service_cataract_text6: 到目前為止，並沒有藥物可以使混濁的晶體（白內障）恢復透明。手術是治療白內障的唯一方法。
-      service_cataract_text7: 當下主流的白內障手術方式為超聲乳化白內障切除術聯合人工晶狀體植入術。只需要經過一個直徑不到3毫米的切口，用超聲波將混濁的晶體乳化成微細碎片，然後吸出，最後置入一個人工晶狀體，整個過程只需10~20分鐘。術後傷口一般毋須縫線。大部分手術只需要使用表面麻醉，不必打針便可完成手術。
+      service_cataract_text7: 當下主流的白內障手術方式為超聲乳化白內障切除術聯合人工晶狀體植入術。只需要經過一個直徑不到3毫米的切口，用超聲波將混濁的晶體乳化成微細碎片，然後吸出，最後置入一個人工晶體，整個過程只需10~20分鐘。術後傷口一般毋須縫線。大部分手術只需要使用表面麻醉，不必打針便可完成手術。
       service_cataract_text8: 最新一代的微創超聲波乳化手術，可以提高治療的精準度。只需使用較低超聲波能量，將混濁晶體乳化分解並吸走，傷口小、恢復時間快、手術時間短，大大減低手術對角膜造成的傷害、傷口感染或併發症。
       service_cataract_text9: 經過術前詳細檢查及規劃，可制訂個人化人工晶體置換方案。根據患者實際情況、對用眼的要求以及經濟狀況等因素來考慮。 人工晶體根據其功能可分以下幾種︰
       service_cataract_text10: "*此表格內預設單焦點人工晶體為看遠。"
@@ -612,6 +614,7 @@ pages:
       service_glaucoma_title13: 青光眼的治療
       service_glaucoma_title14: 預防青光眼
       service_glaucoma_title15: 青光眼誤區
+      service_glaucoma_title16: 繼發性青光眼種類
       service_glaucoma_btn1_1: 如您是青光眼高危人士
       service_glaucoma_btn1_2: 立即WhatsApp預約檢查
       service_glaucoma_btn2_1: 不想青光眼惡化？
@@ -726,7 +729,7 @@ pages:
         treat_range4: 適用於有白內障的青光眼患者
       service_glaucoma_guardAgainst:
         guardAgainst_text1: 定期安排眼科檢查
-        guardAgainst_text2: 預防深近視
+        guardAgainst_text2: 預防深近視及遠視
         guardAgainst_text3: 保持良好生活習慣
         guardAgainst_detail1: 建議40歲以上或青光眼高危人士，每半年或一年接受一次眼睛檢查。
         guardAgainst_detail2: 從小開始養成良好用眼習慣，以免深近視或遠視增加青光眼風險。
@@ -962,6 +965,7 @@ pages:
         healthList4_title: '【放眼逐格睇】眼妝卸乾淨！同眼挑針Say Bye~'
         healthList4_text_1: 出席party要化個靚妝，不過完咗後記得要卸乾淨眼妝，先可以預防到眼疾㗎！眼妝冇卸好，殘留嘅化妝品可能堵塞眼睛黏板腺，有機會導致生眼挑針，即係生眼瘡。
         healthList4_text_2: '#眼妝 #化眼妝 #卸妝 #眼挑針 #眼瘡 #眼瘡成因 #眼瘡治療 #眼瘡治療 #眼瘡放膿 #眼瘡初期 #眼睛發炎 #眼瘡放膿手術 #眼挑針治療 #希瑪眼科中心 #希瑪眼科 #希瑪醫療'
+    ophthalmic_eyesight: 視力測試
   process_cost:
     process_cost: 流程及費用
     cost: 費用一覽

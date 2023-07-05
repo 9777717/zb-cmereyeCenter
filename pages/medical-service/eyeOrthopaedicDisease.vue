@@ -188,6 +188,13 @@ const serviceNavigation = [
     anchorLink: '/medical-service/eyeOrthopaedicDisease#eyeProsthesis',
   },
 ]
+// 跳转Whatsapp
+const goWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    '_blank'
+  )
+}
 </script>
 
 <template>
@@ -303,7 +310,7 @@ const serviceNavigation = [
               />
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn">
+          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>眼睛外形影響視野及外觀？</span><span>即WhatsApp預約治療</span>
           </div>
           <div>
@@ -746,7 +753,7 @@ const serviceNavigation = [
               </div>
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn">
+          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>更多詳情</span><span>請WhatsApp聯絡我們</span>
           </div>
         </div>
@@ -2076,17 +2083,17 @@ const serviceNavigation = [
           }
 
           & > div:nth-child(2)::before {
-            content: '08';
-            top: -48px;
-          }
-
-          & > div:nth-child(3)::before {
             content: '07';
             top: -48px;
           }
 
-          & > div:nth-child(4)::before {
+          & > div:nth-child(3)::before {
             content: '06';
+            top: -48px;
+          }
+
+          & > div:nth-child(4)::before {
+            content: '05';
             top: -48px;
             left: -72px;
           }
@@ -2181,17 +2188,17 @@ const serviceNavigation = [
           }
 
           & > div:nth-child(2)::before {
-            content: '08';
-            top: -48px;
-          }
-
-          & > div:nth-child(3)::before {
             content: '07';
             top: -48px;
           }
 
-          & > div:nth-child(4)::before {
+          & > div:nth-child(3)::before {
             content: '06';
+            top: -48px;
+          }
+
+          & > div:nth-child(4)::before {
+            content: '05';
             top: -48px;
             left: -72px;
           }
