@@ -109,6 +109,12 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
         route: { name: 'medical-service-eyeOrthopaedicDisease' },
       },
+      {
+        type: 'link', // 眼矯形及眼眶疾病
+        text: t('pages.medical_service.smileHk'),
+        route: false,
+        href: 'https://smile.hkcmereye.com/'
+      },
     ],
   },
   {
@@ -708,7 +714,7 @@ a {
     width: 76px;
     border: 0.75px solid #8ad8dd;
   }
-   & > div:last-child(1) > a::after {
+  & > div:last-child > a::after {
     content: '';
     width: 0;
     border: 0;

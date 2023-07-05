@@ -110,7 +110,7 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
     des: '屈光矯視',
-    link: '',
+    link: 'https://smile.hkcmereye.com/',
   }
 ]
 </script>
