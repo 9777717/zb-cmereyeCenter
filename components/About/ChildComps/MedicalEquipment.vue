@@ -366,14 +366,10 @@ const setThumbsSwiper = (swiper: any) => {
 <style scoped lang="scss">
 #medicalEquipment {
   margin-top: 130px;
-  // margin-left: 32.0625%;
-  // width: 50.7%;
-  // height: 770px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
   position: relative;
-  // background: #f2f2f2;
 }
 .medicalEquipment-title {
   width: 100%;
@@ -551,12 +547,70 @@ const setThumbsSwiper = (swiper: any) => {
   background: #f2f2f2;
   padding-bottom: 90px;
 }
+@media screen and (max-width: 768px) {
+  .medicalEquipment-title {
+    width: max-content;
+    left: 30px;
+    transform: none;
+    top: -60px;
+  }
+  .mySwiper {
+    padding: 30px 20px 0;
+  }
+  .mySwiper-slide {
+    padding: 0;
+  }
+  .mainText { 
+    width: calc(100% - 30px);
+    margin: 0 auto;
+  }
+  :deep(.swiper-button-prev:after) {
+    width: 20px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  :deep(.swiper-button-next::after) {
+    width: 20px;
+    height: 36px;
+    font-size: 20px;
+  }
+  :deep(.swiper-button-next) {
+    top: 30%;
+    right: 17px;
+  }
+
+  :deep(.swiper-button-prev) {
+    top: 30%;
+    left: 16px;
+  }
+  .info {
+    font-size: 12px;
+  }
+  .mainSon {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .swiper_from {
+    width: 80%;
+    margin: 0 auto;
+    & > div:first-child {
+      top: -10px;
+      left: -10px;
+    }
+    & > div:last-child {
+      right:-10px;
+      bottom: -10px;
+    }
+  }
+}
 </style>
 <style>
 @media screen and (min-width: 1920px) {
   #medicalEquipment {
-    /* width: 50.7%; */
-    /* margin-left: 34.3%; */
+
   }
 }
 </style>

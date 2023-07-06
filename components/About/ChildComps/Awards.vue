@@ -44,6 +44,18 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_7',
   },
 ]
+
+let windowWidth = ref(1920)
+
+const getWindowWidth = () => {
+  windowWidth.value = window.innerWidth
+  // console.log(windowWidth)
+}
+
+onMounted(()=>{
+  getWindowWidth()
+  window.addEventListener('resize',getWindowWidth)
+})
 </script>
 <template>
   <div id="awards" class="">
@@ -57,7 +69,7 @@ const awardsList = [
     <div v-if="awardsList.length" class="awardslide">
       <swiper
         :space-between="40"
-        :slides-per-view="4"
+        :slides-per-view="windowWidth>768? 4: 3"
         :modules="[Autoplay]"
         :loop="true"
         :autoplay="{ delay: 0 }"
@@ -155,5 +167,19 @@ const awardsList = [
 
 :deep(.ccSwiper > .swiper-wrapper) {
   transition-timing-function: linear;
+}
+
+@media screen and (max-width: 768px) {
+  #awards {
+    margin: 100px auto;
+    .awards-title {
+      width: calc(100% - 60px);
+    }
+    .brand {
+      & > div:nth-child(1) {
+        height: 170px;
+      }
+    }
+  }
 }
 </style>

@@ -865,6 +865,7 @@ const goInstagram = (type: string) => {
     & > div:nth-child(1) {
       .IntroCon{
         margin-left: 30px;
+        width: max-content;
       }
       &>p{
         width: calc(100% - 74px);
@@ -1076,7 +1077,33 @@ const goInstagram = (type: string) => {
       }
     }
     & > div:nth-child(2){
-
+      margin-top: 60px;
+      &::before {
+        width: 100%;
+        height: 115px;
+        top: -20px;
+      }
+      & > div {
+        & > div:nth-child(1) {
+          width: 130px;
+          margin: 0 0 0 30px;
+          img{
+            width: 100%;
+          }
+        }
+        & > div:nth-child(2) {
+          flex:1;
+          font-size: 12px;
+          margin-left: 20px;
+          text-indent: 0;
+          top: 0;
+          height: 80px;
+          img{
+            width: 36px;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }

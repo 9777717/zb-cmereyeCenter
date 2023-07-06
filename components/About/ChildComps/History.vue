@@ -155,7 +155,7 @@ const historyList = ref([
       <div
         v-for="(years, i) in historyList"
         :key="i"
-        class="historyContent relative z-50 mb-14"
+        class="historyContent relative z-50"
       >
         <h1 class="year en-font text-center pb-2 mb-5">{{ $t(years.year) }}</h1>
         <div
@@ -206,7 +206,7 @@ const historyList = ref([
   margin-left: 17%;
   .historyContent {
     padding: 0 8%;
-
+    margin-bottom: 3.5rem;
     .year {
       font-family: 'Metropolis';
       font-style: normal;
@@ -253,6 +253,43 @@ const historyList = ref([
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  #history {
+    margin-top: 100px;
+  }
+  .history-title {
+    width: max-content;
+    left: 30px;
+    transform: none;
+  }
+  .mainHistoryBox {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    padding: 80px 0 30px;
+    .historyContent {
+      margin-bottom: 30px;
+      .year{
+        font-size: 14px;
+        line-height: 20px;
+        
+      }
+      .content{
+        width: 90%;
+        font-size: 14px;
+        .month {
+          width: 45px;
+          padding-right: 0;
+        }
+        .info {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {

@@ -32,7 +32,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 20px 0;
   background: rgba(41, 88, 163, 1);
   display: block;

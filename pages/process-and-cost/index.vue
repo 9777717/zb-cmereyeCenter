@@ -300,10 +300,6 @@ const scrollHeight = () => {
   margin: auto;
 }
 
-.content {
-  // padding-left: 320px;
-}
-
 .titleBox {
   padding-top: 100px;
   font-family: 'Noto Sans HK';
@@ -335,6 +331,7 @@ const scrollHeight = () => {
   background-color: rgba(255, 255, 255, 0.75);
 
   table {
+    width: 100%;
     thead {
       td {
         padding-bottom: 35px;
@@ -541,6 +538,139 @@ const scrollHeight = () => {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .titleBox {
+    width: max-content;
+    color: #515151;
+     h1 {
+      font-size: 24px;
+      padding-left: 30px;
+      
+    }
+
+    h2 {
+      padding-left: 30px;
+      font-size: 18px;
+      letter-spacing: -.05em;
+    }
+
+    h3 {
+      font-size: 20px;
+      padding-left: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-left: 30px;
+    }
+  }
+  .costsTable {
+    width: calc(100% - 60px);
+    margin: 50px auto;
+    padding: 30px 20px 1px;
+    &>h3{
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    table {
+      thead {
+        td {
+          font-size: 16px;
+          padding-bottom: 15px;
+          &::before{
+            border-bottom: 1px solid;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 16px;
+            padding: 10px 0 5px;
+          }
+          td:nth-child(1) {
+            width: 140px;
+            padding: 10px 10px 5px;
+          }
+        }
+      }
+    }
+    &>p{
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+  .processMain{
+    .titleBox {
+      padding-top: 50px;
+      h2 {
+        font-size: 18px;
+        letter-spacing: -.05em;
+      }
+    }
+    .processItem {
+      margin-bottom: 70px;
+      &::before {
+        top: 50px;
+        left: 45px;
+        width: 10px;
+        height: 30px;
+      }
+      &:nth-of-type(5):before{
+        top: 75px;
+      }
+      & > p,& > div {
+        padding: 7px 0px 2px;
+        br{
+          display: none;
+        }
+      }
+      &:not(:last-child){
+        &>div{
+          padding: 7px 10px 2px;
+          p{
+            text-align: left;
+          }
+        }
+      }
+      & > p {
+        margin-right: 50px;
+        width: 100px;
+      }
+
+      & > div {
+        flex: 1;
+      }
+      h3{
+        padding-top: 10px;
+        padding-bottom: 0;
+      }
+    }
+    &>div{
+      width: 100%;
+      &>div:last-child{
+        margin-top: 0;
+      }
+    }
+    .itemdes > p:after {
+      left: 110px;
+      top: 16px;
+      margin: auto 0;
+      width: 30px;
+      height: 1px;
+      border-bottom: 2px #5376d0 dotted;
+    }
+  }
+  .processAndCost{
+    background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
+    background-position: top left !important;
+    background-size: 100% auto !important;
+  }
+  #processed{
+    background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
+  }
+}
+
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
