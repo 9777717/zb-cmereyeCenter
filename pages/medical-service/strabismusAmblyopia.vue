@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { getPdf } from '@/assets/js/common'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -395,22 +396,19 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a
-          href="https://static.cmereye.com/static/pdf/strabismusAmblyopia.pdf"
-          download="兒童斜弱視.pdf"
-        >
-          <div>
+        <div>
+          <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
           </div>
-          <div>
+          <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
             <p>兒童斜弱視</p>
             <p>下載小冊子</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <!-- 表单 -->
@@ -999,7 +997,7 @@ const callTel = () => {
   font-size: 30px;
 
   & > div:nth-child(1) {
-    & > a {
+    & > div {
       width: 62.5%;
       height: 202px;
       background: #fbbfa1;
@@ -1010,7 +1008,7 @@ const callTel = () => {
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
-
+        cursor: pointer;
         & > img {
           width: 120px;
           height: 135px;
@@ -1021,6 +1019,7 @@ const callTel = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
       }
     }
   }
@@ -1077,7 +1076,7 @@ const callTel = () => {
     font-size: 30px;
 
     & > div:nth-child(1) {
-      & > a {
+      & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;
         }

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { getPdf } from '@/assets/js/common'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -343,19 +344,19 @@ const preventList1 = [
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a href="https://static.cmereye.com/static/pdf/amotioRetinae.pdf" download="視網膜脫落.pdf">
-          <div>
+        <div>
+          <div @click.stop="getPdf('amotioRetinae.pdf','視網膜脫落')">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
           </div>
-          <div>
+          <div @click.stop="getPdf('amotioRetinae.pdf','視網膜脫落')">
             <p>視網膜脫落</p>
             <p>下載小冊子</p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <!-- 表单 -->
@@ -869,7 +870,7 @@ const preventList1 = [
   font-size: 30px;
 
   & > div:nth-child(1) {
-    & > a {
+    & > div {
       width: 62.5%;
       height: 202px;
       background: #f7d6cf;
@@ -880,7 +881,7 @@ const preventList1 = [
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
-
+        cursor: pointer;
         & > img {
           width: 120px;
           height: 135px;
@@ -891,6 +892,7 @@ const preventList1 = [
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
       }
     }
   }
@@ -912,7 +914,7 @@ const preventList1 = [
     margin-top: -25%;
 
     & > div:nth-child(1) {
-      & > a {
+      & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;
         }

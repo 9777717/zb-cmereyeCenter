@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { getPdf } from '@/assets/js/common'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -958,20 +959,19 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a
-          href="https://static.cmereye.com/static/pdf/cataract2.pdf"
-          :download="`${$t(
+        <div>
+          <div @click.stop="getPdf('cataract2.pdf',$t(
             'pages.medical_service.service_cataract_title.service_cataract_down1'
-          )}.pdf`"
-        >
-          <div>
+          ))">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
           </div>
-          <div>
+          <div @click.stop="getPdf('cataract2.pdf',$t(
+            'pages.medical_service.service_cataract_title.service_cataract_down1'
+          ))">
             <p>
               {{
                 $t(
@@ -987,23 +987,22 @@ const callTel = () => {
               }}
             </p>
           </div>
-        </a>
+        </div>
       </div>
       <div>
-        <a
-          href="https://static.cmereye.com/static/pdf/cataract1.pdf"
-          :download="`${$t(
+        <div>
+          <div @click.stop="getPdf('cataract1.pdf',$t(
             'pages.medical_service.service_cataract_title.service_cataract_down2'
-          )}.pdf`"
-        >
-          <div>
+          ))">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
           </div>
-          <div>
+          <div @click.stop="getPdf('cataract1.pdf',$t(
+            'pages.medical_service.service_cataract_title.service_cataract_down2'
+          ))">
             <p>
               {{
                 $t(
@@ -1019,7 +1018,7 @@ const callTel = () => {
               }}
             </p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <!-- 公共底部表单 -->
@@ -2143,7 +2142,7 @@ const callTel = () => {
   font-size: 30px;
 
   & > div:nth-child(1) {
-    & > a {
+    & > div {
       width: 62.93%;
       height: 202px;
       background: #64bcd1;
@@ -2154,7 +2153,7 @@ const callTel = () => {
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
-
+        cursor: pointer;
         & > img {
           width: 120px;
           height: 135px;
@@ -2165,12 +2164,13 @@ const callTel = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
       }
     }
   }
 
   & > div:nth-child(2) {
-    & > a {
+    & > div {
       margin-top: 88px;
       width: 58.2%;
       height: 202px;
@@ -2182,7 +2182,7 @@ const callTel = () => {
       & > div:nth-child(1) {
         margin-left: 30vw;
         margin-right: 3vw;
-
+        cursor: pointer;
         & > img {
           width: 120px;
           height: 135px;
@@ -2193,6 +2193,7 @@ const callTel = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
+        cursor: pointer;
       }
     }
   }
@@ -2207,7 +2208,7 @@ const callTel = () => {
 
   .dow {
     & > div:nth-child(1) {
-      & > a {
+      & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;
         }
@@ -2215,7 +2216,7 @@ const callTel = () => {
     }
 
     & > div:nth-child(2) {
-      & > a {
+      & > div {
         & > div:nth-child(1) {
           margin-left: 36.6vw;
         }

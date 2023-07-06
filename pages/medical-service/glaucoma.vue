@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { newGetPdf } from '@/assets/js/common'
+import { getPdf } from '@/assets/js/common'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -1100,20 +1100,15 @@ const callTel = () => {
     <!-- 下载 -->
     <div class="dow">
       <div>
-        <a
-          :href="newGetPdf('glaucoma.pdf')"
-          :download="`${$t(
-            'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
-          )}.pdf`"
-        >
-          <div>
+        <div>
+          <div @click.stop="getPdf('glaucoma.pdf',$t('pages.medical_service.service_glaucoma_title.service_glaucoma_down'))">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
           </div>
-          <div>
+          <div @click.stop="getPdf('glaucoma.pdf',$t('pages.medical_service.service_glaucoma_title.service_glaucoma_down'))">
             <p>
               {{
                 $t(
@@ -1129,7 +1124,7 @@ const callTel = () => {
               }}
             </p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <FormFooterInfo
@@ -2611,7 +2606,7 @@ const callTel = () => {
   font-size: 30px;
 
   & > div:nth-child(1) {
-    & > a {
+    & > div {
       width: 62.5%;
       height: 202px;
       background: #9ccfc8;
@@ -2622,7 +2617,7 @@ const callTel = () => {
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
-
+        cursor: pointer;
         & > img {
           width: 120px;
           height: 135px;
@@ -2630,6 +2625,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2658,7 +2654,7 @@ const callTel = () => {
     margin-top: -23%;
 
     & > div:nth-child(1) {
-      & > a {
+      & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;
         }
