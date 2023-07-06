@@ -26,7 +26,7 @@ useHead(() => ({
       <AboutChildCompsHead />
     </div>
 
-    <div class="textbg en-font whitespace-nowrap -ml-10 overflow-hidden">
+    <div class="textbg en-font whitespace-nowrap overflow-hidden">
       OUR VISION FOR A BETTER FUTURE.
     </div>
     <div class="introduction">
@@ -60,7 +60,14 @@ useHead(() => ({
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
+  
   color: rgba(138, 216, 221, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .textbg {
+    width: 100%;
+    font-size: 50px;
+    line-height: 160px;
+  }
 }
 </style>

@@ -77,4 +77,15 @@ h2 {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .title2 {
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  h2 {
+    font-size: 12px;
+  }
+}
 </style>

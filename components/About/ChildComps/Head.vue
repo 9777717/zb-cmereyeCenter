@@ -86,15 +86,12 @@ const leaveActive = () => {
   z-index: 99;
   position: relative;
 }
-
 .title {
   position: absolute;
   top: 102px;
   left: 100px;
   -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
-  // left: 24.416667%;
-  // top: -105px;
   font-family: 'Noto Sans HK';
   font-style: normal;
   font-weight: 400;
@@ -103,11 +100,9 @@ const leaveActive = () => {
   text-align: center;
   letter-spacing: 0.05em;
   color: #515151;
-
   &::after {
     content: 'About Us';
     position: absolute;
-    // left: -80.08333%;
     bottom: 0;
     text-transform: uppercase;
     left: -50px;
@@ -116,11 +111,8 @@ const leaveActive = () => {
     font-weight: 500;
     font-size: 23.0172px;
     line-height: 55px;
-    /* identical to box height, or 238% */
-
     text-align: center;
     letter-spacing: 0.1em;
-
     color: #8ad8dd;
   }
 }
@@ -130,25 +122,19 @@ const leaveActive = () => {
   max-width: 606px;
   position: relative;
   background: #f2f2f2;
-  // width: 41.9%;
   height: 840px;
   margin-bottom: 30px;
   margin-left: 30%;
-  // padding-top: 200px;
-
   img {
     position: absolute;
-
     &:nth-child(1) {
       left: -146px;
       top: 350px;
     }
-
     &:nth-child(2) {
       right: -30px;
       top: 130px;
     }
-
     &:nth-child(3) {
       right: 20px;
       bottom: -50px;
@@ -160,34 +146,43 @@ const leaveActive = () => {
   position: absolute;
   left: 3.69792%;
 }
-
-// .anchor {
-//   top: 310px;
-
-//   a {
-//     border: 0.5px solid #515151;
-//     margin: 5px 0;
-//     padding: 10px 40px 5px;
-//     font-size: 15px;
-//     background: #ffffff;
-//   }
-
-//   .anchorActive,
-//   .exactActive {
-//     border: 0.5px solid #8ad8dd;
-//     background: #8ad8dd;
-//     color: #fff;
-//     position: relative;
-
-//     &::after {
-//       content: '';
-//       position: absolute;
-//       width: 12%;
-//       height: 100%;
-//       right: 0;
-//       top: 0;
-//       background-color: #ffffff;
-//     }
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .title {
+    z-index: 2;
+    -ms-writing-mode: initial;
+    writing-mode: initial;
+    font-size: 30px;
+    top: -35px;
+    left: 30px;
+    &::after {
+      font-size: 16px;
+      left: 0;
+      bottom: -20px;
+      line-height: 20px;
+    }
+  }
+  .imgBox {
+    width: calc(100% - 80px);
+    height: 300px;
+    margin-top: 130px;
+    margin-left: 80px;
+    img {
+      position: absolute;
+      &:nth-child(1) {
+        left: -65px;
+        width: 210px;
+        top: 100px;
+      }
+      &:nth-child(2) {
+        width: 120px;
+        right: 25px;
+        top: 25px;
+      }
+      &:nth-child(3) {
+        right: 40px;
+        width: 200px;
+      }
+    }
+  }
+}
 </style>

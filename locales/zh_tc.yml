@@ -123,7 +123,7 @@ pages:
       hema_vision_facebooke: 希瑪視光中心
     media:
       media_redbook: 香港希瑪眼科中心
-      media_youtube: CMER SMILE EYE CENTER 香港希瑪眼科
+      media_youtube: CMER SMILE & EYE CENTER 香港希瑪眼科
       media_wechat: 香港希瑪眼科中心
     download:
       download: 下載希瑪眼科業務小冊子
@@ -558,8 +558,8 @@ pages:
           icl6_astigmatism1: 不介意配戴眼鏡人士
           icl6_astigmatism2: 要求更好視力質素人士
           icl6_astigmatism3: 術前患有散光人士
-          icl6_multipleFocus1_1: 不優先考慮夜間駕駛
-          icl6_multipleFocus1_2: 視力需要人士
+          icl6_multipleFocus1_1: 不想配戴眼鏡人士
+          icl6_multipleFocus1_2: 不優先考慮夜間駕駛視力需要人士
           icl6_multipleFocus2: 經濟能力較好人士
           icl6_multipleFocus3: 無其他嚴重眼病人士
       service_cataract_array_announcements:

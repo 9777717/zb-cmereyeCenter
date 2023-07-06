@@ -149,6 +149,11 @@ const props = defineProps({
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .anchor{
+    display: none;
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {

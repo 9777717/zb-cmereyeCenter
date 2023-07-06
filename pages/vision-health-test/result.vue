@@ -446,20 +446,20 @@ const toEyesight = () =>{
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {}
 @media screen and (min-width: 1920px) {
-  .resultPage{
-    margin: 200px auto;
-    &-content{
-      &>div{
-        &>div{
-          img{
-            width: 80%;
-          }
-        }
-      }
-    }
-    &-btn{
-      margin-top: 200px;
-    }
-  }
+  // .resultPage{
+  //   margin: 200px auto;
+  //   &-content{
+  //     &>div{
+  //       &>div{
+  //         img{
+  //           width: 80%;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   &-btn{
+  //     margin-top: 200px;
+  //   }
+  // }
 }
 </style>

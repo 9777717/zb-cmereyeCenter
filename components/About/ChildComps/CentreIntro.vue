@@ -79,7 +79,7 @@ const goInstagram = (type: string) => {
           :en-ttitle="'introduction'"
         />
       </div>
-      <p class="preface text-justify my-16 px-9 py-12">
+      <p class="preface text-justify">
         {{ $t('pages.about_us.profile_centent.profile_text') }}
       </p>
 
@@ -345,7 +345,7 @@ const goInstagram = (type: string) => {
       font-size: 20px;
       line-height: 40px;
       /* or 200% */
-
+      padding: 3rem 2.5rem;
       text-align: justify;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -857,6 +857,228 @@ const goInstagram = (type: string) => {
 
 .media > div:nth-child(1) > div > img:nth-child(1) {
   left: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .centreIntro{
+    margin-bottom: 80px;
+    & > div:nth-child(1) {
+      .IntroCon{
+        margin-left: 30px;
+      }
+      &>p{
+        width: calc(100% - 74px);
+        margin: 30px 44px 30px 30px;
+        font-size: 14px;
+        line-height: 180%;
+        padding: 30px 20px;
+        box-shadow: 14px 14px 0px rgba(170, 169, 166, 0.2);
+      }
+      & > div:nth-child(3) {
+        width: calc(100% - 80px);
+        .color1{
+          letter-spacing: 0;
+        }
+        &>p{
+          font-size: 14px;
+          text-indent: 0;
+          line-height: 200%;
+          margin-top: 10px;
+        }
+        & > p:last-child {
+          width: 100%;
+          font-size: 14px;
+          text-indent: 0;
+          letter-spacing: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 100px;
+      .swiper {
+        width: 100vw;
+      }
+      .swiper-slide {
+        padding: 30px;
+      }
+      & > div:nth-child(1) {
+        justify-content: center;
+        & > div {
+          width: 200px;
+          height: 50px;
+          font-size: 20px;
+          padding-top: 5px;
+        }
+      }
+      & > div:nth-child(2) {
+        flex-direction: column-reverse;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        & > div:nth-child(2) {
+          margin: 0 30px;
+          font-size: 14px;
+          line-height: 25px;
+          text-indent: 0;
+          & > p {
+            margin-top: 30px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        justify-content: space-between;
+        &>div{
+          font-size: 16px;
+        }
+        & > div:nth-child(1) {
+          margin-left: 0;
+        }
+        & > div:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+    & > div:nth-child(3) {
+      margin-top: 100px;
+      .swiper {
+        width: 100vw;
+      }
+      .swiper-slide {
+        padding: 30px;
+      }
+      & > div:nth-child(1) {
+        justify-content: center;
+        & > div {
+          width: 200px;
+          height: 50px;
+          font-size: 20px;
+          padding-top: 5px;
+        }
+      }
+      & > div:nth-child(2) {
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        & > div:nth-child(1) {
+          margin: 0 30px;
+          font-size: 14px;
+          line-height: 25px;
+          text-indent: 0;
+          & > p {
+            margin-top: 30px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        justify-content: space-between;
+        &>div{
+          font-size: 16px;
+        }
+        & > div:nth-child(1) {
+          margin-left: 0;
+        }
+        & > div:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+    & > div:nth-child(4) {
+      margin-top: 100px;
+      .swiper {
+        width: 100vw;
+      }
+      .swiper-slide {
+        padding: 30px;
+      }
+      & > div:nth-child(1) {
+        justify-content: center;
+        & > div {
+          width: 200px;
+          height: 50px;
+          font-size: 20px;
+          padding-top: 5px;
+        }
+      }
+      & > div:nth-child(2) {
+        flex-direction: column-reverse;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        & > div:nth-child(2) {
+          margin: 0 30px;
+          font-size: 14px;
+          line-height: 25px;
+          text-indent: 0;
+          & > p {
+            margin-top: 30px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        justify-content: space-between;
+        &>div{
+          font-size: 16px;
+        }
+        & > div:nth-child(1) {
+          margin-left: 0;
+        }
+        & > div:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .media {
+    &::before {
+      width: 100%;
+      height: 200px;
+      top: 20px;
+    }
+    & > div:nth-child(1){
+      & > div:nth-of-type(1){
+        margin-left: 30px;
+        width: 130px;
+      }
+      & > div > img:nth-child(1) {
+        margin-left: 0;
+      }
+      & > div > img:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+      }
+      & > div:nth-child(2) {
+        padding-top: 40px;
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 30px;
+        & > a {
+          & > img {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+          }
+          font-size: 12px;
+          text-indent: 0;
+          line-height: 16px;
+        }
+      }
+    }
+    & > div:nth-child(2){
+
+    }
+  }
 }
 </style>
 <style lang="scss" scoped>

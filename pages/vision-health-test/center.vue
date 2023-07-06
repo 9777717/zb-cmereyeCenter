@@ -658,20 +658,20 @@ let rightResult = ref({
   }
 }
 @media screen and (min-width: 1920px) {
-  .centerPage{
-    margin: 200px auto;
-    &-content{
-      &-closeeye{
-        &>div:nth-of-type(1){
-          img{
-            width: 60%;
-          }
-        }
-      }
-      &-canvas{
-        margin-top: 100px;
-      }
-    }
-  }
+  // .centerPage{
+  //   margin: 200px auto;
+  //   &-content{
+  //     &-closeeye{
+  //       &>div:nth-of-type(1){
+  //         img{
+  //           width: 60%;
+  //         }
+  //       }
+  //     }
+  //     &-canvas{
+  //       margin-top: 100px;
+  //     }
+  //   }
+  // }
 }
 </style>

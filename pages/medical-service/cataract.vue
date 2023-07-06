@@ -1897,7 +1897,7 @@ const callTel = () => {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
+              
               & > div {
                 & > img {
                   display: none;
@@ -1925,7 +1925,7 @@ const callTel = () => {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
+              text-align: left;
               & > div {
                 display: flex;
                 flex-direction: row;
@@ -1943,6 +1943,7 @@ const callTel = () => {
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start;
+                  text-align: left;
                 }
               }
             }

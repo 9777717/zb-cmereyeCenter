@@ -214,7 +214,7 @@ const setTestSwiperRef = (swiper:any) => {
   width: 100%;
   max-width: 1080px;
   margin: 100px auto;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -282,19 +282,19 @@ const setTestSwiperRef = (swiper:any) => {
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {}
 @media screen and (min-width: 1920px){
-  .testPage{
-    margin: 200px auto;
-    &-content{
-      .testPage-swiper{
-        .testPage-in{
-          div{
-            img{
-              width: 80%;
-            }
-          }
-        }
-      }
-    }
-  }
+  // .testPage{
+  //   margin: 200px auto;
+  //   &-content{
+  //     .testPage-swiper{
+  //       .testPage-in{
+  //         div{
+  //           img{
+  //             width: 80%;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 </style>

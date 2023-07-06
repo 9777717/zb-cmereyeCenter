@@ -175,13 +175,14 @@ let timeNum = ref(3)
 const checkAcItem = () => {
   if(_data.value.questions[acQuestions.value].type === 'image'){
     let timer = setInterval(()=>{
-      timeNum.value -- 
+      timeNum.value --
     },1000)
     setTimeout(()=>{
       clearInterval(timer)
       acQuestions.value++
       timeNum.value = 3
       _loading.value = false
+      checkAcItem()
     },3000)
   }
 }
@@ -398,13 +399,13 @@ checkAcItem()
 @media screen and (max-width: 768px) {}
 @media screen and (min-width: 1920px) {
   .pictestPage{
-    margin: 200px auto;
+    // margin: 200px auto;
     &-content{
-      margin-top: 100px;
+      // margin-top: 100px;
       &-closeeye{
         &>div:nth-of-type(1){
           img{
-            width: 80%;
+            // width: 80%;
           }
         }
       }
