@@ -52,7 +52,7 @@ const SerListL = [
   {
     i: '05',
     imgUrl: 'https://static.cmereye.com/imgs/2023/06/18da333b4728e821.png',
-    des: '阿托品',
+    des: '阿托品眼藥水',
     link: '/medical-service/atropine',
   },
   {

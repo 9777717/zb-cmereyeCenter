@@ -241,7 +241,7 @@ checkAcItem()
 .pictestPage{
   width: 100%;
   max-width: 1080px;
-  margin: 200px auto 0;
+  margin: 100px auto;
   &-header{
     width: 100%;
     display: flex;
@@ -261,13 +261,13 @@ checkAcItem()
     }
   }
   &-content{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     &-closeeye{
       &>div:nth-of-type(1){
         width: 100%;
         img{
-          width: 60%;
+          width: 50%;
           margin: 0 auto;
         }
       }
@@ -396,4 +396,19 @@ checkAcItem()
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {}
+@media screen and (min-width: 1920px) {
+  .pictestPage{
+    margin: 200px auto;
+    &-content{
+      margin-top: 100px;
+      &-closeeye{
+        &>div:nth-of-type(1){
+          img{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

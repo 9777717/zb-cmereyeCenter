@@ -839,7 +839,7 @@ const callTel = () => {
             <div v-for="(item, index) in iclArr" :key="index">
               <div>
                 <img v-if="item.img" :src="item.img" alt="" srcset="" />
-                {{ $t(item.type) }}
+                <div>{{ $t(item.type) }}</div>
               </div>
               <div>
                 <div v-if="Array.isArray(item.monofocal)">
@@ -851,7 +851,7 @@ const callTel = () => {
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                     </div>
-                    <div v-else>{{ $t(ele) }}</div>
+                    <div v-else><strong v-if="index === 5" >· </strong>{{ $t(ele) }}</div>
                   </div>
                 </div>
                 <div v-else>
@@ -859,8 +859,8 @@ const callTel = () => {
                 </div>
               </div>
               <div>
-                <div v-if="Array.isArray(item.astigmatism) && index">
-                  <div v-for="(ele, index) in item.astigmatism" :key="index">
+                <div v-if="Array.isArray(item.astigmatism) && index === 4">
+                  <div v-for="(ele, eleIndex) in item.astigmatism" :key="eleIndex">
                     <img
                       src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
@@ -871,24 +871,37 @@ const callTel = () => {
                   </div>
                 </div>
                 <div v-else>
-                  <div v-for="(ele, index) in item.astigmatism" :key="index">
+                  <div v-for="(ele, eleIndex) in item.astigmatism" :key="eleIndex">
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                     </div>
-                    <div v-else>{{ $t(ele) }}</div>
+                    <div v-else><strong v-if="index === 5" >· </strong>{{ $t(ele) }}</div>
                   </div>
                 </div>
               </div>
               <div>
-                <div v-if="Array.isArray(item.multipleFocus)">
-                  <div v-for="(ele, index) in item.multipleFocus" :key="index">
+                <div v-if="Array.isArray(item.multipleFocus) && index === 4">
+                  <div v-for="(ele, eleIndex) in item.multipleFocus" :key="eleIndex">
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                    />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                     </div>
                     <div v-else>{{ $t(ele) }}</div>
                   </div>
                 </div>
-                <div v-else>{{ $t(item.multipleFocus) }}</div>
+                <div v-else-if="Array.isArray(item.multipleFocus)">
+                  <div v-for="(ele, eleIndex) in item.multipleFocus" :key="eleIndex">
+                    <div v-if="Array.isArray(ele)">
+                      <div v-for="(el, i) in ele" :key="i"><strong v-if="index === 5" >· </strong>{{ $t(el) }}</div>
+                    </div>
+                    <div v-else><strong v-if="index === 5" >· </strong>{{ $t(ele) }}</div>
+                  </div>
+                </div>
+                <div v-else>
+                  {{ $t(item.multipleFocus) }}
+                </div>
               </div>
             </div>
           </div>
@@ -1771,6 +1784,7 @@ const callTel = () => {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                justify-content: center;
                 &>div{
                   padding-top: 5px;
                 }
@@ -1946,7 +1960,9 @@ const callTel = () => {
         flex: none;
         display: flex;
         justify-content: flex-start;
-
+        &>div{
+          padding-top: 8px;
+        }
         & > img {
           margin-right: 10px;
         }

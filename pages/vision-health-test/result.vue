@@ -388,7 +388,7 @@ const toEyesight = () =>{
 .resultPage{
   width: 100%;
   max-width: 1080px;
-  margin: 200px auto 0;
+  margin: 100px auto;
   &-header{
     width: 100%;
     display: flex;
@@ -409,8 +409,10 @@ const toEyesight = () =>{
   }
   &-content{
     display: flex;
+    justify-content: center;
     &>div{
       flex: 1;
+      max-width: 50%;
       text-align: center;
       font-size: 25px;
       margin-top: 100px;
@@ -426,7 +428,7 @@ const toEyesight = () =>{
   &-btn{
     display: flex;
     justify-content: space-around;
-    margin-top: 200px;
+    margin-top: 100px;
     div{
       text-align: center;
       // width: 100%;
@@ -443,4 +445,21 @@ const toEyesight = () =>{
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {}
+@media screen and (min-width: 1920px) {
+  .resultPage{
+    margin: 200px auto;
+    &-content{
+      &>div{
+        &>div{
+          img{
+            width: 80%;
+          }
+        }
+      }
+    }
+    &-btn{
+      margin-top: 200px;
+    }
+  }
+}
 </style>

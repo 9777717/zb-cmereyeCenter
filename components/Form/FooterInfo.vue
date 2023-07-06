@@ -183,13 +183,13 @@ defineProps({
                 name="type"
                 >{{ serve }}</el-checkbox
               >
+              <el-form-item
+                class="rest"
+                :label="$t('components.footerInfo.rest')"
+              >
+                <input v-model="ruleForm.rest" />
+              </el-form-item>
             </el-checkbox-group>
-            <el-form-item
-              class="rest"
-              :label="$t('components.footerInfo.rest')"
-            >
-              <input v-model="ruleForm.rest" />
-            </el-form-item>
           </el-form-item>
           <el-form-item prop="desc">
             <el-input
@@ -324,11 +324,12 @@ defineProps({
       }
 
       .rest {
-        flex: 1;
+        // flex: 1;
+        
         margin-bottom: 0;
         display: flex;
         align-items: flex-end;
-
+        float: right;
         :deep(.el-form-item__label) {
           font-family: none;
           font-size: 18px;
@@ -357,9 +358,10 @@ defineProps({
       }
 
       :deep(.el-checkbox) {
-        margin-right: 55px;
-        width: 135px;
-        height: 35px;
+        // margin-right: 55px;
+        // width: 135px;
+        // height: 35px;
+        width: 25%;
       }
 
       :deep(.el-checkbox__label) {

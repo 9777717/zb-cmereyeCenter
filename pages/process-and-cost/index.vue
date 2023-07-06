@@ -184,7 +184,7 @@ const scrollHeight = () => {
                   <td class="text-center">/</td>
                   <td class="text-center">$600/$800</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td rowspan="2">
                     {{ $t('pages.process_cost.cont.cost_tr17_td1') }}
                   </td>
@@ -200,7 +200,7 @@ const scrollHeight = () => {
                   </td>
                   <td class="text-center border-0">/</td>
                   <td class="text-center border-0">$750</td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
             <p class="text-center mt-20 mb-16 leading-10">
@@ -229,7 +229,7 @@ const scrollHeight = () => {
         <div
           class="processMain mainCon relative flex items-start justify-center"
         >
-          <div class="content mt-20 ml-20 relative">
+          <div class="content relative">
             <div class="titleBox">
               <h1 class="text-3xl font-normal">
                 {{ $t('pages.process_cost.process_1.process_h1') }}
@@ -296,12 +296,12 @@ const scrollHeight = () => {
 }
 
 .processAndCost > div:nth-child(1) {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: auto;
 }
 
 .content {
-  padding-left: 320px;
+  // padding-left: 320px;
 }
 
 .titleBox {
@@ -543,9 +543,9 @@ const scrollHeight = () => {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1920px) {
   .content {
-    padding-left: 160px;
+    // padding-left: 160px;
   }
 }
 </style>

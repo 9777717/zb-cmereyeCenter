@@ -1717,7 +1717,7 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
-        width: 1163px;
+        width: 1050px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
         background-blend-mode: normal, normal;
@@ -1731,8 +1731,7 @@ const callTel = () => {
         flex-direction: column;
         padding: 60px 44px 77px 41px;
 
-        & > div:nth-child(1),
-        div:nth-child(2) {
+        & > div:nth-child(1), &>div:nth-child(2) {
           margin-right: 26px;
 
           font-family: 'NotoSansHK-Regular';
@@ -1774,8 +1773,11 @@ const callTel = () => {
           margin-top: 45px;
 
           & > div {
-            width: 312px;
-
+            // width: 312px;
+            flex: 1;
+            &:not(:last-child){
+              margin-right: 20px;
+            }
             & > div:nth-child(1) {
               display: flex;
               justify-content: center;
@@ -1817,7 +1819,7 @@ const callTel = () => {
 
             & > div:nth-child(2) {
               width: 100%;
-              height: 200px;
+              height: 230px;
               font-family: 'NotoSansHK-Regular';
               font-size: 24px;
               font-weight: normal;
@@ -1877,8 +1879,8 @@ const callTel = () => {
       }
 
       & > div:nth-child(2) {
-        width: 1163px;
-        height: 350px;
+        width: 1050px;
+        // height: 350px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
         background-blend-mode: normal, normal;

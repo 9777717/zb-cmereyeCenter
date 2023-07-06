@@ -13,8 +13,13 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
-const toquery = () =>{
+
+const toTel  = () =>{
   location.href = 'tel:+(852) 3956 2026'
+  
+}
+const toquery = () =>{
+  location.href = 'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=449bcd0bfe6943789bd5322a74b1b809&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1688614605754'
 }
   
 const route = useRoute()

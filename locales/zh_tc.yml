@@ -759,7 +759,7 @@ pages:
     eyeOrthopaedicDisease: 眼矯形及眼眶疾病
     medicalOptometry: 醫學驗光配鏡
     smileHk: 屈光矯視
-    atropine: 阿托品滴眼液
+    atropine: 阿托品眼藥水
     atropine_text: 
       atropine_text1: 阿托品眼藥水
       atropine_title1_text1: 阿托品眼藥水控制兒童近視方法
@@ -1006,7 +1006,7 @@ pages:
       cost_p6_1: 不等
       cost_p7: (每份報告的實際價錢以報價為準)。
       cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
-      cost_p9: "最後更新: 07/12/2022"
+      cost_p9: "最後更新: 01/04/2023"
     process: 就診流程
     process_1:
       process_h1: 就診流程

@@ -1477,13 +1477,13 @@ const doctorList = [
     & > div:first-child {
       margin-left: 190px;
     }
-    ul > li:nth-child(23) {
-      & > div:nth-child(2) {
-        & > div:nth-child(2) {
-          right: 0;
-        }
-      }
-    }
+    // ul > li:nth-child(23) {
+    //   & > div:nth-child(2) {
+    //     & > div:nth-child(2) {
+    //       right: 0;
+    //     }
+    //   }
+    // }
   }
 }
 </style>

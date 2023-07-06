@@ -175,7 +175,15 @@ const serviceNavigation = [
   },
   {
     anchorName: '濕性黃班病變',
-    anchorLink: '/medical-service/maculopathy#wet_maculopathy_in',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy',
+  },
+  {
+    anchorName: '老年黃斑病變成因',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy_factor',
+  },
+  {
+    anchorName: '老年黃斑病變治療',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy_cure',
   },
   {
     anchorName: '預防方法',
@@ -423,7 +431,7 @@ const callTel = () => {
         </div>
       </div>
       <!-- 老年黃斑病變成因s -->
-      <div>
+      <div id="wet_maculopathy_factor">
         <div class="maculopathy_color_title">老年黃斑病變成因</div>
         <div>
           <div v-for="(item, i) in factor" :key="i">
@@ -433,7 +441,7 @@ const callTel = () => {
         </div>
       </div>
       <!-- 老年黃斑病變治療 -->
-      <div id="wet_maculopathy_in">
+      <div id="wet_maculopathy_cure">
         <div class="maculopathy_color_title">老年黃斑病變治療</div>
         <div>
           <div>

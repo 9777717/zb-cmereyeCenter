@@ -511,7 +511,7 @@ let rightResult = ref({
 .centerPage{
   width: 100%;
   max-width: 1080px;
-  margin: 200px auto;
+  margin: 100px auto;
   &-header{
     width: 100%;
     display: flex;
@@ -536,7 +536,7 @@ let rightResult = ref({
       &>div:nth-of-type(1){
         width: 100%;
         img{
-          width: 60%;
+          width: 40%;
           margin: 0 auto;
         }
       }
@@ -568,7 +568,7 @@ let rightResult = ref({
     }
     &-canvas{
       height: 300px;
-      margin-top: 100px;
+      margin-top: 50px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -653,6 +653,23 @@ let rightResult = ref({
             font-size: 25px;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .centerPage{
+    margin: 200px auto;
+    &-content{
+      &-closeeye{
+        &>div:nth-of-type(1){
+          img{
+            width: 60%;
+          }
+        }
+      }
+      &-canvas{
+        margin-top: 100px;
       }
     }
   }
