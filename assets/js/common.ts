@@ -1,7 +1,7 @@
 const getPdf = (_url:any,_title:any) => {
-  console.log('../pdf/'+_url,_title)
-  let file:any = new URL('../pdf/'+_url, import.meta.url).href
-  console.log(file)
+  // console.log('/assets/pdf/'+_url,_title)
+  let file:any = new URL('/assets/pdf/'+_url, import.meta.url).href
+  // console.log(file)
   fetch(file).then(res => res.blob())
     .then(blob => {
       downloadFile(blob, _title)
@@ -23,7 +23,7 @@ const downloadFile = (blob:any, filename:any) => {
 }
 
 const newGetPdf = (_url:any) => {
-  let newUrl:any = new URL('../pdf/'+_url, import.meta.url).href
+  let newUrl:any = new URL('/assets/pdf/'+_url, import.meta.url).href
   return newUrl
 }
 
