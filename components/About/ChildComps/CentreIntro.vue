@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getPdf } from '../../../assets/js/common'
+import { getPdf } from '@/assets/js/common'
 import { url } from '@nuxt/test-utils-edge'
 import { Autoplay } from 'swiper'
 const { t } = useLang()
@@ -304,14 +304,13 @@ const goInstagram = (type: string) => {
             alt=""
           />
         </div>
-        <div>
+        <div @click.stop="getPdf('cmer.pdf',$t('pages.about_us.download.download'))">
           <img
             src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
             alt=""
           />
           <div
             class="downloadpdf"
-            @click="getPdf('cmer.pdf',$t('pages.about_us.download.download'))"
             >{{ $t('pages.about_us.download.download') }}</div
           >
         </div>
@@ -823,6 +822,7 @@ const goInstagram = (type: string) => {
         text-transform: uppercase;
         height: 110px;
         color: #515151;
+        cursor: pointer;
       }
     }
   }

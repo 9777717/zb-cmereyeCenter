@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { newGetPdf } from '@/assets/js/common'
 // compiler macro
 definePageMeta({
   layout: 'page',
@@ -1100,7 +1101,7 @@ const callTel = () => {
     <div class="dow">
       <div>
         <a
-          href="https://static.cmereye.com/static/pdf/glaucoma.pdf"
+          :href="newGetPdf('glaucoma.pdf')"
           :download="`${$t(
             'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
           )}.pdf`"
