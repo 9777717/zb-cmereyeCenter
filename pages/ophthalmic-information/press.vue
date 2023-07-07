@@ -196,10 +196,10 @@ const pageTurning = (flag: string) => {
     <div class="press">
       <div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
-            alt="新聞資訊"
-          />
+          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png" 
+          srcset="https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w, https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"  
+          alt="新聞資訊" 
+          src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"/>
           <svg
             width="9"
             height="144"
@@ -254,7 +254,7 @@ const pageTurning = (flag: string) => {
             <div>
               {{
                 $t(
-                  'pages.ophthalmic_information.ophthalmic_press_text.press_text2'
+                  'pages.ophthalmic_information.ophthalmic_press_text.press_text3'
                 )
               }}
             </div>
@@ -391,7 +391,6 @@ const pageTurning = (flag: string) => {
     & > div:nth-child(1) {
       position: relative;
       margin: 122px auto 0;
-      margin-top: 122px;
       bottom: -2vw;
       width: 100%;
       max-width: 1490px;
@@ -688,6 +687,83 @@ const pageTurning = (flag: string) => {
       & > div {
         cursor: pointer;
         margin: 0 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .press {
+    & > div:nth-child(1) {
+      margin-top: 78px;
+      height: auto;
+      &::before{
+        width: calc(100% - 50px);
+        height: 300px;
+        left: 50px;
+      }
+      & > div:nth-child(1) {
+        margin: 0 auto;
+        bottom: 0;
+        &::before{
+          display: none;
+        }
+        & > svg {
+          transform: scale(0.5);
+          bottom: -90px;
+        }
+      }
+      & > div:nth-child(2) {
+        bottom: 20px;
+        & > div:nth-child(1) {
+          font-size: 28px;
+          line-height: 120%;
+          margin-bottom: 5px;
+        }
+        & > div:nth-child(2) {
+          margin-bottom: 18px;
+          & > div:nth-child(1) {
+            font-size: 30px;
+            line-height: 100%;
+          }
+          div{
+            img{
+              width: 110px;
+              margin: 0 auto;
+            }
+          }
+        }
+        & > div:nth-child(3) {
+          font-size: 16px;
+          line-height: 160%;
+          text-align: center;
+          & > div:nth-child(2) {
+            font-size: 12px;
+            line-height: 120%;
+          }
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      margin: 120px auto 0;
+      width: calc(100% - 60px);
+      & > div {
+        margin-bottom: 60px;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+        & > div:nth-child(1) {
+          padding: 20px;
+          min-height: 180px;
+        }
+        & > div:nth-child(2) {
+          margin-top: 0;
+          padding-top: 5px;
+        }
+        & > div:nth-child(3) {
+          font-size: 18px;
+          width: calc(100% - 40px);
+          margin: 10px auto;
+        }
       }
     }
   }

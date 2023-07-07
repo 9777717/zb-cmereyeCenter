@@ -182,7 +182,7 @@ const menus = [
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        link: '/contact-us#appointmentForm'
+        link: '/contact-us/appointmentForm'
       },
     ],
   },

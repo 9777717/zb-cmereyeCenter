@@ -123,7 +123,6 @@ const toTestPage = (_id:string) =>{
     max-width: 968px;
     margin: 134px auto 0;
     &-in{
-      // background: linear-gradient();
       color: #515151;
       writing-mode: vertical-lr;
       font-size: 40.143px;
@@ -179,7 +178,6 @@ const toTestPage = (_id:string) =>{
         }
         &:hover{
           transform: translateY(-10px);
-          // animation: a 1s;
           border-radius: 5px;
           box-shadow: 5px 20px 12px rgba(0,0,0,.1);
           span{
@@ -187,7 +185,6 @@ const toTestPage = (_id:string) =>{
           }
           img{
             filter: drop-shadow(0px 6px 6px rgba(107, 53, 53, 0.4));
-            // animation: a .5s;
           }
         }
       }
@@ -203,21 +200,64 @@ const toTestPage = (_id:string) =>{
     line-height: 180%;
   }
 }
-// @keyframes a {
-//   0%{
-//     transform: scaleX(1);
-//   }
-//   25%{
-//     transform: scale(1.2,0.8);
-//   }
-//   50%{
-//     transform: scale(1.1,0.9);
-//   }
-//   75%{
-//     transform: scale(1.15,0.85);
-//   }
-//   100%{
-//     transform: translateY(-10px) scaleX(1);
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .eyesight{
+    &-title{
+      &-in{
+        writing-mode:initial;
+        font-size: 30px;
+        margin-left: 30px;
+        &::before{
+          left: 0;
+          bottom: -20px;
+          font-size: 18px;
+          line-height: 1.6;
+          letter-spacing: .03em;
+        }
+      }
+    }
+    &-content{
+      width: calc(100% - 60px);
+      margin: 45px auto 0;
+      &>div{
+        margin-bottom: 40px;
+        &>div{
+          border-radius: 10px;
+          width: 90px;
+          height: 90px;
+          box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+          span{
+            margin-top: 7px;
+            font-size: 12px;
+          }
+          img{
+            max-width: 60%;
+            max-height: 60%;
+          }
+          &:hover{
+            transform: translateY(-5px);
+            border-radius: 5px;
+            box-shadow: 5px 10px 5px rgba(0,0,0,.1);
+            span{
+              text-shadow: 0px 6px 6px rgba(107, 53, 53, 0.5);
+            }
+            img{
+              filter: drop-shadow(0px 6px 6px rgba(107, 53, 53, 0.4));
+            }
+          }
+        }
+        &:nth-of-type(3n){
+          justify-content: flex-end;
+        }
+        &:nth-of-type(3n-2){
+          justify-content: flex-start;
+        }
+      }
+    }
+    &-remark{
+      width: calc(100% - 60px);
+      font-size: 14px;
+    }
+  }
+}
 </style>

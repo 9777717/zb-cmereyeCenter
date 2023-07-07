@@ -72,10 +72,10 @@ onMounted(()=>{
     <div class="article">
       <div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"
-            alt="文章推薦"
-          />
+           <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png" 
+          srcset="https://static.cmereye.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w, https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"  
+          alt="文章推薦" 
+          src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"/>
           <svg
             width="9"
             height="144"
@@ -334,14 +334,90 @@ onMounted(()=>{
         }
       }
     }
-
-    & > div:nth-child(3n) {
-      // margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article {
+    > div:nth-child(1) {
+    margin-top: 78px;
+    padding: 0;
+    &::before{
+      width: calc( 100% - 50px);
+      height: 300px;
+      left: 50px;
     }
-
-    & > div:nth-child(n + 4) {
-      // margin-top: 164px;
+    & > div:nth-child(1) {
+      & > svg {
+        left: 49%;
+        bottom: -90px;
+        transform: scale(.5);
+      }
+    }
+    & > div:nth-child(2) {
+      top: auto;
+      bottom: 20px;
+      & > div:nth-child(1) {
+        font-size: 28px;
+        line-height: 120%;
+        & > div:nth-child(2) {
+          margin-bottom: 20px;
+          & > div:nth-child(1) {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 100%;
+          }
+          &>div{
+            img{
+              width: 100px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(2) {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 160%;
+        & > p:nth-child(2) {
+          font-size: 14px;
+          line-height: 120%;
+          margin-top: 0;
+        }
+      }
     }
   }
+  & > div:nth-child(2) {
+    width: 100%;
+    margin: 100px auto 200px;
+    & > div {
+      width: 100%;
+      padding: 20px 0;
+      margin: 0 30px 45px;
+      & > div:nth-child(1) {
+        padding: 0 20px;
+      }
+      & > div:nth-child(2) {
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      & > div:nth-child(3) {
+        font-size: 12px;
+        height: 34px;
+        & > span:nth-child(1) {
+          font-size: 12px;
+          letter-spacing: 0.03em;
+        }
+        & > span:nth-child(2)::before,
+        & > span:nth-child(3)::before {
+          content: '|';
+          padding: 0 8px;
+          display: inline-block;
+          vertical-align: middle;
+          color: #515151;
+        }
+      }
+    }
+  }
+}
 }
 </style>

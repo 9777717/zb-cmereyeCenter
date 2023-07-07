@@ -136,7 +136,7 @@ defineProps({
       <div>BOOKING</div>
     </div>
     <div>
-      <div :style="formTitleColor">
+      <div :style="formTitleColor" v-show="!isShowTopTitle">
         <div>{{ $t('components.footerInfo.text1') }}</div>
         <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
@@ -434,10 +434,12 @@ defineProps({
       width: 100%;
       padding-top: 70px;
       & > div:nth-child(1) {
-        display: none;
+        padding: 0 30px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 30px;
       }
       & > div:nth-child(2) {
-        // display: none;
         margin-top: 0;
         :deep(.el-form) {
           justify-content: space-around;

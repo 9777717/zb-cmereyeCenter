@@ -25,7 +25,7 @@ const serviceNavigation = [
 </script>
 
 <template>
-  <div class="form">
+  <div class="appointmentForm">
     <div>
       <div>
         {{ $t('pages.contact_us.appointmentForm_title.appointmentForm_title') }}
@@ -44,13 +44,14 @@ const serviceNavigation = [
   </div>
 </template>
 <style lang="scss" scoped>
-.form {
-  background-image: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg');
-  background-size: 100%;
+.appointmentForm {
+  background: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
+  background-size: auto 100%;
 
   & > div:nth-child(1) {
-    padding-top: 100px;
-    margin-left: 600px;
+    width: 100%;
+    max-width: 860px;
+    margin: 100px auto 0;
     color: #515151;
 
     & > div:nth-child(1) {
@@ -66,6 +67,23 @@ const serviceNavigation = [
       font-weight: 500;
       margin-bottom: 40px;
       letter-spacing: 5px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .appointmentForm {
+    padding-bottom: 50px;
+    & > div:nth-child(1) {
+      width: calc(100% - 60px);
+      & > div:nth-child(1) {
+        font-size: 28px;
+        color: #515151;
+      }
+      & > div:nth-child(2) {
+        letter-spacing: -.01em;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
     }
   }
 }

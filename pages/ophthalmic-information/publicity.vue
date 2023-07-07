@@ -58,10 +58,12 @@ const eyeDisease = [
     <div class="publicity">
       <div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
-            alt="護眼宣傳"
-          />
+          <div>
+            <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png" 
+            srcset="https://static.cmereye.com/imgs/2023/07/c77bfeb27c892e8e.jpg 768w, https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"  
+            alt="護眼宣傳" 
+            src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"/>
+          </div>
         </div>
         <div>
           <div>
@@ -126,7 +128,7 @@ const eyeDisease = [
             </svg>
         </div>
       </div>
-      <div>
+      <div class="publicity-content-swiper">
         <div>
           <div>
             {{
@@ -152,6 +154,26 @@ const eyeDisease = [
           </div>
         </div> -->
       </div>
+      <div class="publicity-content-mb">
+        <div v-for="(item, index) in eyeDisease" :key="index">
+          <div>
+            <img :src="item.img" :alt="item.title" srcset="" />
+          </div>
+          <div>
+            <div>{{ $t(item.title) }}</div>
+            <div>
+              {{ $t(item.text) }}
+            </div>
+            <div>
+              <a :href="item.link" target="_blank" rel="noopener noreferrer">{{
+                $t(
+                  'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_a1'
+                )
+              }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div>
       <PageInformation />
@@ -176,22 +198,16 @@ const eyeDisease = [
     display: flex;
     position: relative;
     flex-direction: column;
-    // background: #f1f1f1;
     height: 706px;
     width: 100%;
     max-width: 1493px;
-
     & > div:nth-child(1) {
       position: absolute;
-      // top: 179px;
       width: 100%;
       img{
         width: 100%;
       }
-      // bottom: -3vw;/
-      // right: -2vw;
     }
-
     & > div:nth-child(2) {
       position: absolute;
       bottom: -50px;
@@ -201,8 +217,6 @@ const eyeDisease = [
       flex-direction: column;
       align-items: center;
       z-index: 5;
-      // margin-left: 28vw;
-
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -211,9 +225,7 @@ const eyeDisease = [
         line-height: 46px;
         text-align: center;
         letter-spacing: 0.2em;
-
         color: #ffffff;
-
         & > div:nth-child(2) {
           font-family: 'Metropolis';
           font-style: normal;
@@ -225,7 +237,6 @@ const eyeDisease = [
           color: #8ad8dd;
         }
       }
-
       & > div:nth-child(2) {
         margin-top: 34px;
         font-family: 'Noto Sans HK';
@@ -235,10 +246,8 @@ const eyeDisease = [
         line-height: 60px;
         text-align: right;
         letter-spacing: 0.3em;
-
         color: #ffffff;
       }
-
       & > div:nth-child(3) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -247,14 +256,12 @@ const eyeDisease = [
         line-height: 30px;
         text-align: center;
         letter-spacing: 0.3em;
-
         color: #ffffff;
       }
       &>svg{
         margin-top: 100px;
       }
     }
-
     & > div:nth-child(1) {
       & > img {
         position: relative;
@@ -262,11 +269,9 @@ const eyeDisease = [
       }
     }
   }
-
   & > div:nth-child(2) {
     margin-top: 108px;
     margin-bottom: 277px;
-
     & > div {
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -282,8 +287,10 @@ const eyeDisease = [
       }
     }
   }
+  &-content-mb{
+    display: none;
+  }
 }
-
 .videoBorder {
   width: 1190px;
   border-top: 1.75771px solid #8ad8dd;
@@ -291,7 +298,6 @@ const eyeDisease = [
   padding-bottom: 63px;
   margin: 25px auto 0;
 }
-
 :deep(.swiper-wrapper) {
   & > div:nth-child(n) {
     & > div:nth-child(1) {
@@ -299,8 +305,130 @@ const eyeDisease = [
     }
   }
 }
-
 .household {
   border-bottom: 1.75771px solid #8ad8dd;
+}
+@media screen and (max-width: 768px) {
+  .publicity {
+    &::before{
+      width: calc(100% - 50px);
+      top: 0;
+      left: 50px;
+      height: 300px;
+    }
+    & > div:nth-child(1) {
+      margin: 78px auto 0;
+      height: 290px;
+      & > div:nth-child(2) {
+        bottom: -90px;
+        & > div:nth-child(1) {
+          font-size: 28px;
+          line-height: 1.6;
+          & > div:nth-child(2) {
+            font-size: 12px;
+            line-height: 1.2;
+          }
+        }
+        & > div:nth-child(2) {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-top: 20px;
+        }
+        & > div:nth-child(3) {
+          font-size: 14px;
+          line-height: 1.6;
+          letter-spacing: 0em;
+        }
+        &>svg{
+          margin-top: -25px;
+          transform: scale(.5);
+        }
+      }
+    }
+    &-content-swiper {
+      display: none;
+    }
+    &-content-mb{
+      width: calc(100% - 60px);
+      max-width: 1080px;
+      margin: 120px auto 0;
+      min-height: 900px;
+      display: block;
+      & > div {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+        & > div:nth-child(1) {
+          margin-right: 72px;
+          width: 100%;
+          height: auto;
+          background: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        & > div:nth-child(2) {
+          width: 100%;
+          position: relative;
+          margin-bottom: 90px;
+          & > div:nth-child(1) {
+            font-family: 'Noto Sans HK';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            padding-bottom: 5px;
+            color: #515151;
+            position: relative;
+          }
+          & > div:nth-child(1)::after {
+            content: '';
+            width: 65.04px;
+            border-bottom: 1.75771px solid #8ad8dd;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+          & > div:nth-child(2) {
+            margin-top: 25px;
+            font-family: 'Noto Sans HK';
+            font-style: normal;
+            font-weight: 350;
+            font-size: 13.1828px;
+            line-height: 26px;
+            text-align: justify;
+            letter-spacing: 0.1em;
+            text-indent: 30px;
+            text-transform: uppercase;
+            color: #232323;
+            & > div:nth-child(1) {
+              margin-bottom: 20px;
+            }
+          }
+          & > div:nth-child(3) {
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95px;
+            height: 37.27px;
+            background: #8ad8dd;
+            font-family: 'Noto Sans HK';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13.1538px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
 </style>

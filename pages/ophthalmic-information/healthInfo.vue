@@ -117,10 +117,10 @@ onMounted(()=>{
               </div>
             </div>
           </div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"
-            alt="健康資訊"
-          />
+          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png" 
+            srcset="https://static.cmereye.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"  
+            alt="健康資訊" 
+            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"/>
         </div>
         <div><span></span> BLOG</div>
         <div>
@@ -411,9 +411,6 @@ onMounted(()=>{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // padding-top: 55px;
-      // position: relative;
-
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -498,6 +495,132 @@ onMounted(()=>{
   & > div:nth-child(1),
   & > div:nth-child(3) {
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 768px) {
+  .healthInfo {
+    &::before{
+      height: 300px;
+      top: 0;
+      left: 30px;
+      width: calc(100% - 30px);
+    }
+    & > div:nth-child(1){
+      margin-top: 78px;
+      padding: 0;
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          position: absolute;
+          font-size: 26px;
+          line-height: 160%;
+          color: #ffffff;
+          left: 40%;
+          text-align: center;
+          top: 100px;
+          & > div:nth-child(2) {
+            font-size: 18px;
+            margin-top: 0;
+            img{
+              width: 148px;
+              margin: 0 auto;
+            }
+            div:first-child{
+              margin-left: 0px;
+            }
+            div:nth-of-type(2){
+              opacity: .6;
+            }
+            div:last-child{
+              margin-top: 5px;
+              opacity: .3;
+            }
+          }
+        }
+        
+        &>img{
+          width: 70%;
+          margin-left: 30%;
+          margin-top: 0;
+        }
+      }
+      & > div:nth-child(2) {
+        bottom: 125px;
+        left: 65px;
+        transform-origin: left top;
+        font-size: 16px;
+      }
+      & > div:nth-child(3) {
+        transform: scale(.5);
+        bottom: -90px;
+        left: 60%;
+      }
+    }
+    
+    & > div:nth-child(2){
+      position: relative;
+      margin-left: 30px;
+      margin-top: 40px;
+      width: max-content;
+      & > div:nth-child(1) {
+        font-size: 20px;
+      }
+      & > div:nth-child(2) {
+        font-size: 18px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .content_health {
+    margin-top: 100px;
+    &>div{
+      width: calc(100% - 60px);
+      padding: 25px 20px;
+      flex-direction: column-reverse;
+      & > div:nth-child(1) {
+        width: 100%;
+        margin-right: 0;
+        min-height: 200px;
+        margin-top: 28px;
+        &>div{
+          bottom: 0;
+          left: 0;
+          font-size: 14px;
+          padding-top: 5px;
+          height: auto;
+          line-height: 2;
+          width: 100px;
+          letter-spacing: 0.03;
+        }
+        img{
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+      & > div:nth-child(2) {
+        width: 100%;
+        & > div:nth-child(1) {
+          font-size: 18px;
+          line-height: 1.6;
+          padding-bottom: 10px;
+        }
+        & > div:nth-child(1)::after {
+          width: 140px;
+          height: 1.5px;
+          border: none;
+          background: #8ad8dd;
+        }
+        & > div:nth-child(2) {
+          margin-top: 26px;
+        }
+        & > div:nth-child(3) {
+          position: initial;
+          margin: 25px auto 0;
+        }
+      }
+    }
+  }
+  .paging{
+    justify-content: center;
   }
 }
 </style>

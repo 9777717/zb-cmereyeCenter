@@ -29,10 +29,6 @@ useHead(() => ({
           src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
           alt="加入我們，攜手未來"
         />
-        <!-- <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg" 
-          srcset="https://static.cmereye.com/imgs/2023/07/842c5a27be573183.jpg 768w, https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"  
-          alt="加入我們，攜手未來" 
-          src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"/> -->
       </div>
       <div>
         <p class="">{{ $t('pages.talent_recruitment.text1') }}</p>

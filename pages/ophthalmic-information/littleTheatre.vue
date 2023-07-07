@@ -41,10 +41,10 @@ const videoList = [
     <div class="theatre">
       <div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"
-            alt="希碼小劇場"
-          />
+          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png" 
+          srcset="https://static.cmereye.com/imgs/2023/07/755d969719a32368.jpg 768w, https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"  
+          alt="希碼小劇場" 
+          src="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"/>
           <div>
             <svg
               width="9"
@@ -309,6 +309,70 @@ const videoList = [
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .theatre{
+    & > div:nth-child(1) {
+      margin-top: 78px;
+      &::before{
+        width: calc(100% - 20px);
+        height: 300px;
+        top: 0;
+      }
+      & > div:nth-child(1) {
+        margin: 0 auto;
+        & > div:nth-child(2) {
+          bottom: -90px;
+          transform: scale(.5);
+        }
+      }
+      & > div:nth-child(2) {
+        bottom: 20px;
+        & > div:nth-child(1) {
+          font-size: 28px;
+          line-height: 120%;
+          & > div:nth-child(2) {
+            font-size: 12px;
+            line-height: 120%;
+          }
+        }
+        & > div:nth-child(2) {
+          font-size: 14px;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 120px;
+      width: calc(100% - 60px);
+      &>div{
+        flex-direction: column-reverse;
+        & > div:nth-child(1) {
+          width: 100%;
+          padding: 15px;
+          height: auto;
+        }
+        & > div:nth-child(2) {
+          width: 100%;
+          margin-bottom: 90px;
+          & > div:nth-child(1) {
+            font-size: 20px;
+            padding-bottom: 5px;
+          }
+          & > div:nth-child(2) {
+            margin-top: 25px;
+            & > div:nth-child(1) {
+              margin-bottom: 20px;
+            }
+          }
+          & > div:nth-child(3) {
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
         }
       }
     }

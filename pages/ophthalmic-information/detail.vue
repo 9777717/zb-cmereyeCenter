@@ -83,5 +83,32 @@ onMounted(()=>{
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .healthInfoDetail{
+    width: calc(100% - 40px);
+    margin: 100px auto 200px;
+    .goBack{
+      a{
+        font-size: 20px;
+      }
+    }
+    &-title{
+      &>div:first-child{
+        font-size: 24px;
+        margin: 20px 0;
+        border-left: 6px solid #1b407a;
+        padding-left: 10px;
+        padding-top: 4px;
+        height: 35px;
+        line-height: 35px;
+      }
+      &>div:last-child{
+        font-size: 22px;
+      }
+    }
+    &-content{
+      margin-top: 30px;
+    }
+  }
+}
 </style>

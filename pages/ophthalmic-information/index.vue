@@ -81,10 +81,10 @@ onMounted(()=>{
     <!-- 起始 -->
     <div class="doctorClass-top">
       <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
-          alt="醫生小教室"
-        />
+        <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg" 
+          srcset="https://static.cmereye.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w, https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"  
+          alt="醫生小教室" 
+          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"/>
       </div>
       <div>
         <div>
@@ -453,8 +453,6 @@ onMounted(()=>{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    // margin-left: 281px;
-    // margin-right: 375px;
     width: 100%;
     max-width: 1080px;
     margin: 0 auto 256px;
@@ -475,75 +473,92 @@ onMounted(()=>{
     }
   }
 }
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-//   .doctorClass {
-//     width: 100%;
-//     &::before {
-//       content: '';
-//       background: #f2f2f2;
-//       width: 80%;
-//       height: 880px;
-//       display: inline-block;
-//       z-index: 1;
-//       position: absolute;
-//       left: 0px;
-//       top: 98px;
-//     }
-//     & > div:nth-child(1) {
-//       width: 1780px;
-//       margin: 260px auto 0;
-//       & > div:nth-child(1) {
-//         & > img {
-//           width: 100%;
-//           max-width: 100%;
-//           z-index: 5;
-//           top: 0px;
-//           position: relative;
-//         }
-//       }
-//       & > div:nth-child(2) {
-//         bottom: 150px;
-//       }
-//       & > svg {
-//         bottom: -80px;
-//       }
-//     }
-//     & > div:nth-child(2) {
-//       width: 100%;
-//       max-width: 1380px;
-//       margin: 200px auto 0;
-//       & > div {
-//         width: 100%;
-//         max-width: 100%;
-//         margin-bottom: 70px;
-//         position: relative;
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: center;
-//         align-items: center;
-//         padding: 70px 130px 70px 160px;
-//         height: auto;
-//         & > div:nth-child(1) {
-//           width: 653px;
-//           font-size: 28px;
-//           & > div:nth-child(2) {
-//             font-size: 24px;
-//           }
-//           & > div:nth-child(3) {
-//             font-size: 18px;
-//             line-height: 180%;
-//             margin-top: 10px;
-//           }
-//         }
-//         & > div:nth-child(2) {
-//           img {
-//             min-width: 413px;
-//           }
-//         }
-//       }
-//     }
-//   }
+@media screen and (max-width: 768px) {
+  .doctorClass {
+    &::before {
+      width: calc(100% - 30px);
+      height: 380px;
+      top: 0;
+    }
+    & > div:nth-child(1) {
+      margin-top: 78px;
+      & > div:nth-child(1) {
+        & > img {
+          top: 0;
+          left: 0;
+          transform: none;
+        }
+      }
+      & > div:nth-child(2) {
+        bottom: 20px;
+        & > div:nth-child(1) {
+          font-size: 28px;
+          line-height: 100%;
+          & > p:nth-child(2) {
+            font-size: 12px;
+            line-height: 160%;
+          }
+        }
+        & > div:nth-child(2) {
+          margin-top: 20px;
+          & > div:nth-child(1) {
+            font-size: 16px;
+            line-height: 160%;
+          }
+          & > div:nth-child(2) {
+            font-size: 12px;
+            line-height: 160%;
+          }
+        }
+      }
+      & > svg{
+        bottom: -90px;
+        transform: scale(0.5);
+      }
+    }
+    & > div:nth-child(2) {
+      width: calc(100% - 60px);
+      margin: 100px auto 0;
+      &>div{
+        max-width: 100%;
+        flex-direction: column;
+        padding: 25px 20px 30px;
+        & > div:nth-child(1) {
+          width: 100%;
+          margin-right: 0;
+          font-size: 20px;
+          line-height: 160%;
+          & > div:nth-child(2) {
+            font-size: 16px;
+          }
+          & > div:nth-child(3) {
+            font-size: 14px;
+            margin-left: 0;
+          }
+          & > div:nth-child(4) {
+            font-size: 16px;
+            margin: 18px auto 0;
+          }
+        }
+        & > div:nth-child(2) {
+          margin-right: 0;
+          margin-top: 36px;
+          img{
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+        &:last-child{
+          margin-bottom: 30px;
+        }
+      }
+      & > div:nth-child(2n) {
+        flex-direction: column;
+      }
+    }
+    & > div:nth-child(3) {
+      justify-content: center;
+    }
+  }
 }
 </style>
