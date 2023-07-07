@@ -257,6 +257,18 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+
+
+let windowWidth = ref(1920)
+const getWindowWidth = () => {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(()=>{
+  getWindowWidth()
+  window.addEventListener('resize',getWindowWidth)
+})
+
 </script>
 
 <template>
@@ -266,15 +278,15 @@ const goWhatsApp = () => {
         <div></div>
         <div>
           <swiper
-            :space-between="40"
-            :slides-per-view="4"
+            :space-between="windowWidth>768? 40:10"
+            :slides-per-view="windowWidth>768? 4:2.5"
             :modules="[Autoplay]"
             :loop="true"
             :autoplay="{ delay: 0 }"
             speed="3000"
             class="contact_eye-swiper"
           >
-            <swiper-slide v-for="(item, index) in bannerList" :key="index">
+            <swiper-slide v-for="(item, itemIndex) in bannerList" :key="itemIndex">
               <div class="imgBox flex items-center justify-center">
                 <img :src="item" alt="" />
               </div>
@@ -301,10 +313,10 @@ const goWhatsApp = () => {
             <div class="addressBox">
               <div class="switchReionBtnBox flex justify-between items-center">
                 <button
-                  v-for="(addressItem, index) in addressList"
-                  :key="index"
-                  :class="{ activeBtn: index == showIndex }"
-                  @click="switchReion(index)"
+                  v-for="(addressItem, addressItemIndex) in addressList"
+                  :key="addressItemIndex"
+                  :class="{ 'activeBtn': addressItemIndex === showIndex }"
+                  @click="switchReion(addressItemIndex)"
                 >
                   {{ $t(addressItem.regionName) }}
                 </button>
@@ -312,16 +324,16 @@ const goWhatsApp = () => {
 
               <div class="addressDetailBox">
                 <div
-                  v-for="(addressItem, index) in addressList"
-                  v-show="showIndex == index"
+                  v-for="(addressItem, addressItemIndex) in addressList"
+                  v-show="showIndex === addressItemIndex"
                   :id="addressItem.id"
-                  :key="index"
+                  :key="addressItemIndex"
                 >
                   <div
                     v-for="(
-                      addressDetailItem, index
+                      addressDetailItem, addressDetailItemIndex
                     ) in addressItem.addressDetailList"
-                    :key="index"
+                    :key="addressDetailItemIndex"
                     class="addressDetailItem flex items-start justify-between mb-24"
                   >
                     <div class="imgBox mr-14">
@@ -351,8 +363,8 @@ const goWhatsApp = () => {
                         </span>
                         <div v-if="Array.isArray(addressDetailItem.subwayExit)">
                           <p
-                            v-for="(ele, index) in addressDetailItem.subwayExit"
-                            :key="index"
+                            v-for="(ele, eleIndex) in addressDetailItem.subwayExit"
+                            :key="eleIndex"
                           >
                             {{ $t(ele) }}
                           </p>
@@ -368,7 +380,7 @@ const goWhatsApp = () => {
                         <span class="text-sm">
                           <Iconify icon="icon-park-outline:phone-telephone" />
                         </span>
-                        <p>{{ $t(addressDetailItem.contactNumber) }}</p>
+                        <p>{{ addressDetailItem.contactNumber }}</p>
                       </div>
                       <div
                         class="clinicHours flex items-start justify-start mb-4"
@@ -379,9 +391,9 @@ const goWhatsApp = () => {
                         <div>
                           <p
                             v-for="(
-                              ele, index
+                              ele, eleIndex
                             ) in addressDetailItem.clinicHours"
-                            :key="index"
+                            :key="eleIndex"
                           >
                             {{ $t(ele) }}
                           </p>
@@ -424,7 +436,8 @@ const goWhatsApp = () => {
         </div>
         <FormFooterInfo
           :from-style="'margin: 0 232px'"
-          :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}max-width:960px;margin: auto;`"
+          :isShowTopTitle="windowWidth<=768"
+          :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};max-width:960px;margin: auto;`:'background:rgba(135, 166, 212, 1);'"
           :co="`color:${'#6a91cf;'}`"
         />
         <PageInformation :service-navigation="serviceNavigation" />
@@ -438,7 +451,7 @@ const goWhatsApp = () => {
   transition-timing-function: linear;
 }
 .contact_eye {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   & > div:nth-child(1) {
     & > div:nth-child(1) {
@@ -582,6 +595,109 @@ const goWhatsApp = () => {
           &::before {
             left: 30px;
             top: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact_eye {
+    & > div:nth-child(1) {
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          width: calc(100% - 30px);
+          height: 250px;
+          margin: 40px 0 0 30px;
+        }
+        & > div:nth-child(2) {
+          top: 50%;
+        }
+        & > div:nth-child(3) {
+          width: 80px;
+          top: 67%;
+        }
+      }
+    }
+  }
+  .mainCon{
+    width: 100%;
+  }
+  .contactBody{
+    width: 100%;
+    margin-top: 40px;
+    .title{
+      position: absolute;
+      top: 130px;
+      writing-mode: initial;
+      margin-left: 0;
+      margin-right: 0;
+      left: 40px;
+      font-size: 28px;
+      letter-spacing: -.1em;
+      color: #515151;
+      &::after {
+        font-size: 18px;
+        left: 0;
+        top: auto;
+        bottom: -80%;
+        letter-spacing: 0em;
+      }
+    }
+    .addressBox {
+      .switchReionBtnBox {
+        // justify-content: space-around;
+        width: calc(100% - 60px);
+        margin: 0 auto 40px;
+        button{
+          font-size: 20px;
+          padding: 0px 24px;
+        }
+      }
+    }
+    .addressDetailBox{
+      width: calc(100% - 60px);
+      margin: 0 auto;
+      .addressDetailItem {
+        flex-direction: column;
+        .textBox{
+          width: 100%;
+          font-size: 16px;
+          margin-top: 30px;
+          .addressName{
+            font-size: 30px;
+          }
+          .addressDetailBtnBox {
+            .googleMaps {
+              padding: 15px 0 10px;
+            }
+            .orderBtn {
+              padding: 15px 0 10px;
+            }
+          }
+        }
+        .imgBox {
+          width: calc(100% - 30px);
+          margin-left: 30px;
+          &::before {
+            left: -30px;
+            top: -30px;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        &:nth-child(even) {
+          .imgBox {
+            margin-left: 0;
+            &::before {
+              left: 30px;
+              top: 30px;
+            }
+          }
+          .textBox{
+            margin-top: 60px;
           }
         }
       }

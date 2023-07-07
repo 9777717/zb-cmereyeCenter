@@ -1,11 +1,26 @@
 <script lang="ts" setup>
-// import { defineProps } from "vue";
-// defineProps({
-//   str:{
-//     type: String,
-//     default: ''
-//   }
-// })
+const toTop = () => {
+  let top = document.documentElement.scrollTop || document.body.scrollTop
+  // 实现滚动效果
+  const timeTop = setInterval(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = top -= 50
+    if (top <= 0) {
+      clearInterval(timeTop)
+    }
+  }, 10)
+}
+const handleScroll = () => {
+  const scrollHeight = document.documentElement.scrollTop
+  if (scrollHeight >= 900) {
+    isShowTopBtn.value = true
+  } else {
+    isShowTopBtn.value = false
+  }
+}
+const isShowTopBtn = ref(false)
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
@@ -23,6 +38,9 @@
         <div><img src="https://static.cmereye.com/imgs/2023/07/9c9ca82dbc0545a7.png" alt=""></div>
         <div>線上對話</div>
       </div>
+    </div>
+    <div v-show="isShowTopBtn" class="mbFooter-top" @click="toTop">
+      <img src="https://static.cmereye.com/imgs/2023/07/3a2e901023d9c537.png" alt="">
     </div>
   </div>
 </template>
@@ -64,6 +82,11 @@
         flex: 1.5;
       }
     }
+  }
+  &-top{
+    position: absolute;
+    right: 20px;
+    top: -150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {

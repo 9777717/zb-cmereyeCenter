@@ -8,12 +8,12 @@ const {t} = useLang()
 const cities = [
   t('components.footerInfo.Instagram'),
   t('components.footerInfo.YouTube'),
+  t('components.footerInfo.Google'),
+  t('components.footerInfo.Facebook'),
   t('components.footerInfo.sidekicker'),
   t('components.footerInfo.staff'),
   t('components.footerInfo.website'),
   t('components.footerInfo.leaflet'),
-  t('components.footerInfo.Google'),
-  t('components.footerInfo.Facebook'),
 ]
 
 const formSize = ref('default')
@@ -122,11 +122,19 @@ defineProps({
     type: [String],
     default: '',
   },
+  isShowTopTitle: {
+    type: Boolean,
+    default: false
+  }
 })
 </script>
 
 <template>
   <div class="form" :style="bg">
+    <div class="formTopTitle" v-if="isShowTopTitle">
+      <div>預約</div>
+      <div>BOOKING</div>
+    </div>
     <div>
       <div :style="formTitleColor">
         <div>{{ $t('components.footerInfo.text1') }}</div>
@@ -358,9 +366,6 @@ defineProps({
       }
 
       :deep(.el-checkbox) {
-        // margin-right: 55px;
-        // width: 135px;
-        // height: 35px;
         width: 25%;
       }
 
@@ -394,6 +399,112 @@ defineProps({
       width: 201px;
       height: 68px;
       border-radius: 34px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    .formTopTitle{
+      color: #fff;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 60px;
+      padding-bottom: 0px;
+      &>div:first-child{
+        font-size: 36px;
+        display: block;
+      }
+      &>div:last-child{
+        font-size: 16px;
+        position: relative;
+        &::before{
+          content: '';
+          width: 0;
+          height: 0;
+          border: 6px solid;
+          position: absolute;
+          left: -10px;
+          top: 3px;
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+    }
+    & > div {
+      width: 100%;
+      padding-top: 70px;
+      & > div:nth-child(1) {
+        display: none;
+      }
+      & > div:nth-child(2) {
+        // display: none;
+        margin-top: 0;
+        :deep(.el-form) {
+          justify-content: space-around;
+        }
+        :deep(.el-form-item--default) {
+          margin-bottom: 30px;
+        }
+        :deep(.el-form) {
+          & > .el-form-item:nth-child(5) {
+            width: calc(100% - 80px);
+            border-radius: 10px;
+            padding: 20px 18px 0;
+          }
+          & > .el-form-item:nth-child(6) {
+            width: calc(100% - 80px);
+          }
+        }
+        :deep(.el-form-item) {
+          width: calc(100% - 80px);
+        }
+        :deep(.el-input__wrapper){
+          border-radius: 10px !important;
+        }
+        :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper){
+          height: auto;
+        }
+        :deep(.el-form-item__label) {
+          font-size: 14px;
+          line-height: 25px;
+        }
+        :deep(.el-input__inner) {
+          font-size: 14px;
+          padding: 5px 14px;
+          height: auto;
+          line-height: 200%;
+        }
+        :deep(.el-textarea__inner) {
+          border-radius: 10px !important;
+          font-size: 14px;
+        }
+        .rest {
+          float: left;
+          width: 100%;
+          :deep(.el-form-item__label) {
+            font-size: 14px;
+          }
+          & > :deep(.el-form-item__content) > input {
+            width: 100%;
+          }
+        }
+        :deep(.el-checkbox) {
+          width: 45%;
+          margin-right: 10px;
+        }
+        :deep(.el-checkbox__label) {
+          font-size: 14px;
+          letter-spacing: .2px;
+          padding-left: 5px;
+        }
+      }
+      & > div:nth-child(3) {
+        width: max-content;
+        font-size: 20px;
+        padding: 0 50px;
+        height: auto;
+        margin-top: 20px;
+      }
     }
   }
 }

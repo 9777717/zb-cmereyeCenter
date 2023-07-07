@@ -49,7 +49,6 @@ let windowWidth = ref(1920)
 
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
-  // console.log(windowWidth)
 }
 
 onMounted(()=>{

@@ -29,6 +29,10 @@ useHead(() => ({
           src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
           alt="加入我們，攜手未來"
         />
+        <!-- <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg" 
+          srcset="https://static.cmereye.com/imgs/2023/07/842c5a27be573183.jpg 768w, https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"  
+          alt="加入我們，攜手未來" 
+          src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"/> -->
       </div>
       <div>
         <p class="">{{ $t('pages.talent_recruitment.text1') }}</p>
@@ -213,11 +217,26 @@ useHead(() => ({
   .careers {
     & > div:nth-child(1) {
       &::before{
-        width: 100%;
-        height: 200px;
+        width: calc(100% - 30px);
+        height: 290px;
       }
       & > div:nth-child(1) {
-        margin: 10px auto;
+        margin: 70px auto;
+      }
+      & > div:nth-child(2) {
+        left: 30px;
+        transform: none;
+        width: calc(100% - 60px);
+        bottom: 90px;
+        &>p{
+          font-size: 30px;
+          margin-bottom: 0;
+          filter: drop-shadow(2px 2px 1px #515151);
+        }
+        img{
+          width: 100%;
+          margin-top: -10px;
+        }
       }
       & > svg{
         display: none;
@@ -227,7 +246,22 @@ useHead(() => ({
   .mianConten {
     flex-direction: column;
     .imgBox{
-      margin-top: 130px;
+      width: calc(100% - 60px);
+      margin: 130px auto 0;
+      height: 180px;
+      .right1 {
+        width: 55%;
+        top: -50px;
+      }
+      .right2 {
+        right: 3px;
+        top: 40px;
+        width: 50%;
+      }
+      .right3 {
+        left: 30px;
+        width: 45%;
+      }
     }
   }
   .desBox{  
@@ -236,7 +270,7 @@ useHead(() => ({
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 60px auto;
+    margin: 20px auto;
     h1{
       font-size: 26px;
       margin-bottom: 20px;

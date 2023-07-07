@@ -227,8 +227,8 @@ const hashActive = (child: any) => {
       <template #menu>
         <div class="navigtion">
           <div
-            v-for="(item, index) in menus"
-            :key="index"
+            v-for="(item, itemIndex) in menus"
+            :key="itemIndex"
             class="hover:bg-red-901 hover:text-while"
           >
             <Anchor
