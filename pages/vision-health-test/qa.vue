@@ -171,8 +171,5 @@ const toEyesight = () =>{
   }
 }
 @media screen and (min-width: 1920px) {
-  // .qaPage{
-  //   margin: 200px auto;
-  // }
 }
 </style>

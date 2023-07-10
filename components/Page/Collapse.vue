@@ -142,6 +142,7 @@ const props = defineProps({
   display: inline-block;
   width: 25px;
   height: 25px;
+  min-width: 25px;
   background-repeat: round;
 }
 
@@ -191,5 +192,23 @@ const props = defineProps({
 }
 .amotioRetinae2 {
   background-image: url(../../assets/images/-amotioRetinae.png);
+}
+@media screen and (max-width: 768px) {
+  :deep(.el-collapse-item__header) {
+    height: 90px;
+    font-size: 16px;
+  }
+  :deep(.el-collapse-item__content) {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #515151;
+    & > div:nth-child(1) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
 }
 </style>

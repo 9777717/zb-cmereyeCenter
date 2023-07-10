@@ -151,7 +151,6 @@ const SerListL = [
   .title {
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    // margin-left: 35.39375%;
     position: relative;
     top: 102px;
     font-family: 'Noto Sans HK';
@@ -160,13 +159,9 @@ const SerListL = [
     font-size: 40.1431px;
     line-height: 46px;
     margin-left: 60px;
-    /* or 115% */
-
     text-align: center;
     letter-spacing: 0.05em;
-
     color: #515151;
-
     &::after {
       content: 'medical services';
       position: absolute;
@@ -178,12 +173,9 @@ const SerListL = [
       font-weight: 500;
       font-size: 23.0172px;
       line-height: 55px;
-      /* identical to box height, or 238% */
-
       text-align: center;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-
       color: #8ad8dd;
       white-space: nowrap;
     }
@@ -199,39 +191,29 @@ const SerListL = [
     left: 45.8333%;
     z-index: 0;
   }
-
   .serList {
-    // margin-left: 41.14583%;
-    // margin-right: 26.6146%;
     margin: 150px auto 0;
     width: 100%;
     max-width: 920px;
     display: flex;
     flex-wrap: wrap;
-
     li {
       width: 33.3333%;
       margin-bottom: 66px;
-
       img {
         width: 131px;
         margin-bottom: 15px;
       }
-
       p {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 50px;
-        /* identical to box height, or 278% */
-
         text-align: center;
         letter-spacing: 0.05em;
-
         color: #515151;
       }
-
       .i {
         font-size: 50px;
         -webkit-text-stroke: 1.5px #2958a3; //文字描边
@@ -240,12 +222,54 @@ const SerListL = [
         text-transform: uppercase;
         top: -23%;
         left: 20%;
-
         font-family: 'Metropolis';
         font-style: normal;
         font-weight: 500;
         font-size: 45.182px;
         line-height: 108px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .serContent {
+    .title{
+      -ms-writing-mode: initial;
+      writing-mode: initial;
+      letter-spacing: -.1em;
+      font-size: 28px;
+      margin-left: 0;
+      text-align: left;
+      text-indent: 30px;
+      &::after {
+        font-size: 16px;
+        left: 0;
+        top: 40px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+      }
+    }
+    &::before{
+      display: none;
+    }
+    .serList {
+      margin: 150px auto 0;
+      max-width: calc(100% - 40px);
+      li{
+        img {
+          width: 80%;
+          margin: 0 auto 15px;
+          max-width: 130px;
+        }
+        p{
+          font-size: 14px;
+          line-height: 160%;
+        }
+        .i{
+          top: -20px;
+          font-size: 30px;
+          line-height: 160%;
+        }
       }
     }
   }
