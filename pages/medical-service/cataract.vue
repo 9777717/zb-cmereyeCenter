@@ -110,6 +110,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_2',
     ],
+    lineText: '步驟一'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/55d34019e98d8e65.png',
@@ -117,6 +118,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_2',
     ],
+    lineText: '步驟二'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7b14a5086daa3610.png',
@@ -124,6 +126,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_2',
     ],
+    lineText: '步驟三'
   },
 ]
 const iclArr = [
@@ -670,6 +673,9 @@ const callTel = () => {
                   </div>
                 </div>
                 <div v-else>{{ $t(item.text) }}</div>
+              </div>
+              <div class="lineText">
+                <div>{{item.lineText}}</div>
               </div>
             </div>
           </div>
@@ -1609,7 +1615,7 @@ const callTel = () => {
         display: flex;
         justify-content: space-between;
 
-        & > div > div {
+        &  > div > div {
           margin-top: 37px;
           white-space: pre-wrap !important;
           text-align: center;
@@ -1620,6 +1626,9 @@ const callTel = () => {
           line-height: 32px;
           letter-spacing: 0px;
           color: #515151;
+        }
+        .lineText{
+          display: none;    
         }
       }
     }
@@ -2548,24 +2557,6 @@ const callTel = () => {
             display: flex;
             align-items: center;
             position: relative;
-            &::before{
-              content: '步驟一';
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: 3;
-              width: 60px;
-              height: 60px;
-              background: #51d6d8;
-              border-radius: 50%;
-              // border: 5px solid transparent;
-              line-height: 60px;
-              text-align: center;
-              box-shadow: 1px 0px 1px 0#000,
-              -1px 0px 1px 0#000,
-              0px -1px 1px 0#000,
-              0px 1px 1px 0#000;
-            }
             &:not(:first-child){
               margin-top: 30px;
             }
@@ -2573,15 +2564,16 @@ const callTel = () => {
               width: 150px;
               position: relative;
               z-index: 2;
+              margin-left: 20px;
             }
           }
-          & > div > div {
+          & > div > div:nth-of-type(1) {
             font-size: 16px;
             border: 2px solid #A6DEF0;
             border-radius: 20px;
             width: 230px;
             justify-content: flex-end;
-            padding-right: 20px;
+            padding-right: 10px;
             margin-left: -60px;
             height: 120px;
             display: flex;
@@ -2589,6 +2581,32 @@ const callTel = () => {
             margin-top: 0;
             position: relative;
             z-index: 1;
+            div{
+              width: 130px;
+              display: initial;
+            }
+          }
+          .lineText{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            color: #fff;
+            font-size: 12px;
+            border: 1px solid #51D6D8;
+            padding: 5px;
+            border-radius: 50%;
+            margin-top: 10px;
+            &>div{
+              width: 45px;
+              height: 45px;
+              background: linear-gradient(270deg, #2296BB 0%, #51D6D8 100%);
+              line-height: 45px;
+              padding-top: 2px;
+              text-align: center;
+              border-radius: 50%;
+            }
           }
         }
       }
