@@ -280,21 +280,39 @@ const setTestSwiperRef = (swiper:any) => {
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .testPage{
+    &-header{
+      div:first-child{
+        left: 20px;
+      }
+      div:last-child{
+        font-size: 24px;
+      }
+    }
+    &-content{
+      .testPage-swiper{
+        .testPage-in{
+          padding-bottom: 50px;
+          div{
+            font-size: 22px;
+            img{
+              width: calc(100% - 40px);
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    &-nextBtn{
+      width: calc(100% - 40px);
+      height: 50px;
+      line-height: 50px;
+      font-size: 22px;
+      border-radius: 10px;
+    }
+  }
+}
 @media screen and (min-width: 1920px){
-  // .testPage{
-  //   margin: 200px auto;
-  //   &-content{
-  //     .testPage-swiper{
-  //       .testPage-in{
-  //         div{
-  //           img{
-  //             width: 80%;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 </style>

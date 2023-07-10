@@ -143,7 +143,33 @@ const toEyesight = () =>{
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .qaPage{
+    &-header{
+      div:first-child{
+        left: 20px;
+      }
+      div:last-child{
+        font-size: 24px;
+      }
+    }
+    &-content{
+      margin-top: 100px;
+      &>div{
+        &>div:first-child{
+          font-size: 20px;
+          padding: 0 20px;
+        }
+        &>div:last-child{
+          &>div{
+            width: 90%;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1920px) {
   // .qaPage{
   //   margin: 200px auto;

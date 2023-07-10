@@ -396,20 +396,70 @@ checkAcItem()
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 768px) {
   .pictestPage{
-    // margin: 200px auto;
+    &-header{
+      div:first-child{
+        left: 20px;
+      }
+      div:last-child{
+        font-size: 24px;
+      }
+    }
     &-content{
-      // margin-top: 100px;
       &-closeeye{
         &>div:nth-of-type(1){
           img{
-            // width: 80%;
+            width: calc(100% - 40px);
+          }
+        }
+        &>div:nth-of-type(2){
+          font-size: 22px;
+        }
+        &>div:nth-of-type(3){
+          &>div{
+            width: calc(100% - 40px);
+            font-size: 22px;
+          }
+        }
+      }
+      &-image{
+        &>div:nth-of-type(1){
+          font-size: 22px;
+        }
+        &>div:nth-of-type(2){
+          font-size: 24px;
+        }
+        &>div:nth-of-type(3){
+          img{
+            width: calc(100% - 40px);
+          }
+        }
+      }
+      &-picQuestion{
+        &>div:first-child{
+          font-size: 24px;
+        }
+        &>div:last-child{
+          width: calc(100% - 40px);
+        }
+      }
+      &-question{
+        &>div:first-child{
+          font-size: 24px;
+          padding-bottom: 30px;
+        }
+        &>div:last-child{
+          &>div{
+            width: calc(100% - 40px);
+            font-size: 22px;
+            margin: 30px auto 0;
           }
         }
       }
     }
   }
+}
+@media screen and (min-width: 1920px) {
 }
 </style>

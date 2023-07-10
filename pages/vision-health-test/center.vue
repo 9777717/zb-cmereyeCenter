@@ -572,6 +572,10 @@ let rightResult = ref({
       display: flex;
       justify-content: space-between;
       align-items: center;
+      &>div:last-child,&>div:first-child{
+        width: 40px;
+        text-align: center;
+      }
     }
     &-btn{
       display: flex;
@@ -639,12 +643,39 @@ let rightResult = ref({
 @media screen and (max-width: 768px) {
   .centerPage{
     margin: 100px auto;
+    &-header{
+      div:first-child{
+        left: 20px;
+      }
+      div:last-child{
+        font-size: 24px;
+      }
+    }
     &-content{
+      &-closeeye{
+        &>div:nth-of-type(1){
+          img{
+            width: calc(100% - 40px);
+          }
+        }
+        &>div:nth-of-type(2){
+          font-size: 22px;
+        }
+        &>div:nth-of-type(3){
+          &>div{
+            height: 40px;
+            line-height: 40px;
+            font-size: 22px;
+            width: calc(100% - 40px);
+            margin: 30px auto 0;
+          }
+        }
+      }
       &-canvas{
         margin-top: 50px;
       }
       &-btn{
-        margin-top: 50px;
+        margin-top: 0px;
         &>div{
           div{
             width: 100px;
@@ -655,23 +686,37 @@ let rightResult = ref({
         }
       }
     }
+    &-result{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &>div{
+        font-size: 22px;
+        margin-top: 50px;
+        &>div{
+          width: 100%;
+          img{
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    &-btn{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      div{
+        width: calc(100vw - 40px);
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 @media screen and (min-width: 1920px) {
-  // .centerPage{
-  //   margin: 200px auto;
-  //   &-content{
-  //     &-closeeye{
-  //       &>div:nth-of-type(1){
-  //         img{
-  //           width: 60%;
-  //         }
-  //       }
-  //     }
-  //     &-canvas{
-  //       margin-top: 100px;
-  //     }
-  //   }
-  // }
 }
 </style>

@@ -444,7 +444,41 @@ const toEyesight = () =>{
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .resultPage{
+    &-header{
+      div:first-child{
+        left: 20px;
+      }
+      div:last-child{
+        font-size: 24px;
+      }
+    }
+    &-content{
+      flex-direction: column;
+      align-items: center;
+      &>div{
+        margin-top: 50px;
+        width: calc(100% - 40px);
+        max-width: 100%;
+        font-size: 22px;
+        &>div{
+          margin-top: 20px;
+        }
+      }
+    }
+    &-btn{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      div{
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 1920px) {
   // .resultPage{
   //   margin: 200px auto;
