@@ -648,7 +648,7 @@ const goVision = () => {
       }
 
       &>div:nth-child(1)::after {
-        width: 250px;
+        width: 50%;
         height: 200px;
         top: 190px;
       }
@@ -661,7 +661,7 @@ const goVision = () => {
 
   .medicalOptometry_nav {
     max-width: 100%;
-    margin-top: -45%;
+    margin-top: 0;
 
     &>#brief_introduction {
       margin-bottom: 0;
