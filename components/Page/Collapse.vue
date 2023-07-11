@@ -197,6 +197,10 @@ const props = defineProps({
   :deep(.el-collapse-item__header) {
     height: 90px;
     font-size: 16px;
+    line-height: 1.6;
+    i{
+      margin-left: 10px;
+    }
   }
   :deep(.el-collapse-item__content) {
     font-size: 16px;
