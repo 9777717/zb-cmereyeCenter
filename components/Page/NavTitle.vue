@@ -61,4 +61,18 @@ const props = defineProps({
   color: #6c899e;
   padding: 0 30px;
 }
+@media screen and (max-width: 768px) {
+  .title {
+    & > div:nth-child(2) {
+      letter-spacing: 0.06em;
+    }
+    svg{
+      transform: scale(.6);
+    }
+  }
+  .caption_text_color {
+    font-size: 24px;
+    padding: 0 ;
+  }
+}
 </style>

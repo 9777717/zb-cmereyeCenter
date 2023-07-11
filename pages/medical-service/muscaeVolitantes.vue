@@ -1327,6 +1327,284 @@ const callTel = () => {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .volitantes {
+    &>div:nth-child(1) {
+      width: calc(100% - 60px);
+      justify-content: flex-end;
+      align-items: flex-end;
+      display: flex;
+      margin: 150px auto 0;
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 40px;
+          text-align: right;
+        }
+        &>div:nth-child(2) {
+          font-size: 45px;
+          letter-spacing: 0.01em;
+          margin-top: 0;
+          text-align: right;
+          line-height: 1;
+        }
+      }
+      &>div:nth-child(1)::after {
+        width: 200px;
+        height: 200px;
+        top: 190px;
+      }
+      &>div:nth-child(2) {
+        top: 0;
+        width: 194px;
+        &>img:nth-child(1){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .muscaeNav {
+    transform: scale(1);
+    margin-top: 190px;
+    & > div:nth-child(1) {
+      width: calc(100% - 60px);
+      margin: 0 auto;
+      flex-direction: column-reverse;
+      & > div:nth-child(1) {
+        transform: scale(1);
+        margin-top: 30px;
+        width: calc(100% - 20px);
+      }
+      & > div:nth-child(1)::after {
+        // display: none;
+        width: 100%;
+        height: 100%;
+        left: 20px;
+        bottom: -20px;
+        border-radius: 10px;
+      }
+      & > div:nth-child(2) {
+        position: relative;
+        padding: 0;
+        & > div:nth-child(1) {
+          font-size: 24px;
+          text-align: center;
+        }
+        & > div:nth-child(2) {
+          margin-top: 15px;
+          font-size: 14px;
+          line-height: 2;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(1) {
+        font-size: 24px;
+      }
+      & > div:nth-child(2) {
+        margin-top: 50px;
+        padding: 0;
+        & > div {
+          width: 27%;
+          margin-bottom: 50px;
+          & > div:nth-child(2) {
+            width: 100%;
+            font-size: 16px;
+            line-height: 1.2;
+            margin-top: 10px;
+          }
+        }
+        & > div:nth-child(2),
+        & > div:nth-child(5) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        & > div:nth-child(3),
+        & > div:nth-child(6) {
+          display: flex;
+          justify-content: right;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        & > div:nth-child(n + 4) {
+          margin-top: 0px;
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 10px;
+        width: max-content;
+        height: 85px;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 5px 30px 0;
+      }
+    }
+    & > div:nth-child(3) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        & > div {
+          margin-top: 40px;
+          & > div:nth-child(1) {
+            width: 120px;   
+            min-width: 120px;
+            margin-right: 20px;
+          }
+          & > div:nth-child(1)::after {
+            width: 120px;
+            height: 90px;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+          }
+          & > div:nth-child(2) {
+            position: relative;
+            padding-left: 0;
+            & > div:nth-child(1) {
+              font-size: 15px;
+              line-height: 1.2;
+              padding-bottom: 10px;
+            }
+            & > div:nth-child(2) {
+              font-size: 12px;
+              line-height: 2;
+              margin-top: 15px;
+            }
+          }
+        }
+        & > div:nth-child(2n) {
+          & > div:nth-child(1){
+            margin-right: 0;
+          }
+          & > div:nth-child(1)::after {
+            right: 10px;
+          }
+          & > div:nth-child(2) {
+            padding: 0;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    & > div:nth-child(4) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 30px;
+        margin-left: 20px;
+        & > div:nth-child(1) {
+          font-size: 18px;
+          height: 40px;
+          line-height: 1.2;
+          width: 160px;
+          left: -20px;
+        }
+        & > div:nth-child(2) {
+          margin-left: 15px;
+          position: relative;
+          & > div:nth-child(1) {
+            margin-top: 40px;
+            padding-right: 20px;
+            line-height: 2;
+            font-size: 14px;
+            
+          }
+          & > div:nth-child(2) {
+            padding-bottom: 150px;
+            & > div:nth-child(1) {
+              svg{
+                // width: 34px;
+                image{
+                  // width: 34px;
+                }
+              }
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              margin-right: 20px;
+              line-height: 1.6;
+              margin-left: 10px;
+              & > div:nth-child(1) {
+                margin-top: 20px;
+              }
+              & > div:nth-child(2) {
+                margin-top: 30px;
+                margin-bottom: 60px;
+              }
+            }
+            & > div:nth-child(3) {
+              position: absolute;
+              flex-direction: row;
+              bottom: 20px;
+              left: 0;
+              justify-content: flex-start;
+              img{
+                width: 45%;
+                margin-right: 15px;
+              }
+            }
+          }
+          
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 30px;
+        margin-left: 20px;
+        & > div:nth-child(1) {
+          font-size: 18px;
+          height: 40px;
+          line-height: 1.2;
+          width: 160px;
+          left: -20px;
+        }
+        & > div:nth-child(2) {
+          flex-flow: column-reverse;
+          margin: 50px 0 0;
+          img{
+            width: calc(100% - 40px);
+            margin: 30px auto 0;
+          }
+          & > div:nth-child(2) {
+            margin-left: 20px;
+            font-size: 14px;
+            line-height: 1.8;
+            padding-right: 30px;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        margin-top: 50px;
+        width: max-content;
+        height: 85px;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 5px 50px 0;
+      }
+    }
+  }
+  .dow {
+    margin-top: 100px;
+    font-size: 16px;
+    & > div:nth-child(1) {
+      & > div {
+        width: 80%;
+        height: 90px;
+        & > div:nth-child(1) {
+          margin-left: 30%;
+          margin-right: 30px;
+          &>img{
+            width: 55px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
