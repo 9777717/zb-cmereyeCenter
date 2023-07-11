@@ -46,7 +46,7 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2026'
 }
-const toCmer = () =>{
+const toCmer = () => {
   location.href = 'https://www.cmervision.com/'
 }
 const goVision = () => {
@@ -63,12 +63,8 @@ const goVision = () => {
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
         </div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/64091db20360171d.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/8efa1f6c72fbf9b9.png"
-          />
+          <img src="https://static.cmereye.com/imgs/2023/06/64091db20360171d.png" />
+          <img src="https://static.cmereye.com/imgs/2023/06/8efa1f6c72fbf9b9.png" />
         </div>
       </div>
     </div>
@@ -88,11 +84,7 @@ const goVision = () => {
             </p>
           </div>
           <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png"
-              alt=""
-              srcset=""
-            />
+            <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" alt="" srcset="" />
           </div>
         </div>
         <div @click="goWhatsApp">
@@ -105,11 +97,7 @@ const goVision = () => {
         <div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png"
-                alt=""
-                srcset=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" alt="" srcset="" />
             </div>
             <div>
               <div>3-6歲</div>
@@ -124,11 +112,7 @@ const goVision = () => {
           </div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png"
-                alt=""
-                srcset=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" alt="" srcset="" />
             </div>
             <div>
               <div>6-18歲</div>
@@ -143,11 +127,7 @@ const goVision = () => {
           </div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png"
-                alt=""
-                srcset=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png" alt="" srcset="" />
             </div>
             <div>
               <div></div>
@@ -162,11 +142,7 @@ const goVision = () => {
           </div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png"
-                alt=""
-                srcset=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" alt="" srcset="" />
             </div>
             <div>
               <div>18-55歲</div>
@@ -181,11 +157,7 @@ const goVision = () => {
           </div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png"
-                alt=""
-                srcset=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" alt="" srcset="" />
             </div>
             <div>
               <div>55歲以上</div>
@@ -199,6 +171,100 @@ const goVision = () => {
             </div>
           </div>
         </div>
+
+        <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+          <div>18 - 55歲以上 成人眼睛檢查</div>
+          <div>立即預約</div>
+        </div>
+      </div>
+      <div id="cause-mb">
+        <div>&nbsp;&nbsp;為何人生中不同階段都需要眼睛健康檢查？</div>
+        <div>
+          <div>
+            <div>3-6歲</div>
+            <div>
+              <div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/07/5e23052605a6a862.png  " alt="" srcset="" />
+                </div>
+                <div class="medicalOptometry_text_p_span">
+                  這個階段的兒童大概能夠理解及配合許多眼科檢查，能夠在註冊視光師和眼科專科醫生指導下完成檢查。兒童能在這段時期透過定期檢查，及早發現和治療弱視、斜視，以及控制近視等。
+                </div>
+              </div>
+              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+                <div>3 - 6歲兒童眼睛檢查</div>
+                <div>立即預約</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>6-18歲</div>
+            <div>
+              <div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/07/143a8a47246f1fb5.png  " alt="" srcset="" />
+                </div>
+                <div class="medicalOptometry_text_p_span">
+                  青少年時期的眼睛及身體發育較快，若用眼習慣不良，近視、散光等度數也增加得較快。定期檢查可觀察眼睛屈光度數的變化，及時控制近視等度數。
+                </div>
+              </div>
+              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+                <div>6-18歲兒童眼睛檢查</div>
+                <div>立即預約</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/07/cc9aa29e72e2fe1f.png" alt="" srcset="" />
+                </div>
+                <div class="medicalOptometry_text_p_span">
+                  希瑪視光中心十分重視兒童近視控制。視力發育不良會影響孩子日後發展和眼睛健康。所以，希瑪視光中心十分關注學童近視率偏高的問題，並提供詳細眼睛檢查服務及針對性的兒童近視控制方案，包括︰角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片、MyoVision鏡片），希望能助兒童把握控制近視的黃金治療期。
+                </div>
+              </div>
+              <div class="medicalOptometry_btn_bg" @click="goVision">
+                <div>了解更多</div>
+                <div>兒童近視控制方案</div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>18-55歲</div>
+            <div>
+              <div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/07/3379ff699f2869d0.png  " alt="" srcset="" />
+                </div>
+                <div class="medicalOptometry_text_p_span">
+                  這時期的眼部檢查，主要針對家族有眼疾病史及患眼疾的高危人士，例如︰青光眼。除了常規眼科檢查外，還有相應的特殊檢查。如中高度近視及糖尿病患者應定期檢查眼底，及早發現眼疾。
+                </div>
+              </div>
+              <div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>55歲以上</div>
+            <div>
+              <div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/07/3e8d41f263dc003f.png" alt="" srcset="" />
+                </div>
+                <div class="medicalOptometry_text_p_span">
+                  隨著年齡增長，患上與年齡相關眼疾的機會也會增加，如白內障、老年黃斑病變等，透過眼底檢查能及早發現眼疾，需要時能及早治療。
+                </div>
+              </div>
+              <div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
           <div>18 - 55歲以上 成人眼睛檢查</div>
           <div>立即預約</div>
@@ -210,14 +276,20 @@ const goVision = () => {
     </div>
     <!-- 表单 -->
     <div class="fromTable">
-      <FormFooterInfo
-        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#bcd09c;'}`"
-      />
+      <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#bcd09c;'}`" />
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
+@media screen and(min-width: 768px) {
+
+  // 隐藏手机版布局
+  #cause-mb {
+    display: none;
+  }
+}
+
 @import url('../../assets/font/font.css');
 
 .medicalOptometry_nav {
@@ -226,34 +298,34 @@ const goVision = () => {
   transform: scale(0.85);
   margin-top: -3.7%;
 
-  & > #brief_introduction {
+  &>#brief_introduction {
     margin-bottom: 200px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       display: flex;
       justify-content: space-between;
       margin-bottom: 90px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         width: 670px;
         line-height: 36px;
 
-        & > p {
+        &>p {
           text-indent: 50px;
 
-          & > span {
+          &>span {
             letter-spacing: -1px;
             color: #8ca761;
           }
         }
 
-        & > p:nth-child(2) {
+        &>p:nth-child(2) {
           margin-top: 80px;
         }
       }
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       width: 629px;
       height: 120px;
       border-radius: 30px;
@@ -270,7 +342,7 @@ const goVision = () => {
       letter-spacing: 0px;
       cursor: pointer;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         width: 290px;
         height: 120px;
         background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
@@ -283,7 +355,7 @@ const goVision = () => {
         color: #ffffff;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         font-size: 40px;
         line-height: 50px;
         letter-spacing: 0px;
@@ -293,9 +365,9 @@ const goVision = () => {
     }
   }
 
-  & > #cause {
-    & > div:nth-child(1) {
-      margin: 200px auto 150px;
+  &>#cause {
+    &>div:nth-child(1) {
+      margin: 100px auto 75px;
       font-family: 'NotoSansHK-Bold';
       font-size: 42px;
       font-weight: normal;
@@ -311,7 +383,7 @@ const goVision = () => {
       position: relative;
     }
 
-    & > div:nth-child(1)::before {
+    &>div:nth-child(1)::before {
       content: '';
       position: absolute;
       top: 50%;
@@ -322,7 +394,7 @@ const goVision = () => {
       background: #fff;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       position: absolute;
       top: 50%;
@@ -333,16 +405,16 @@ const goVision = () => {
       background: #fff;
     }
 
-    & > div:nth-child(2) {
-      & > div {
+    &>div:nth-child(2) {
+      &>div {
         padding: 100px 0;
         display: flex;
         justify-content: space-between;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           width: 675px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 38px;
             font-weight: normal;
@@ -354,7 +426,7 @@ const goVision = () => {
             align-items: center;
           }
 
-          & > div:nth-child(1)::before {
+          &>div:nth-child(1)::before {
             content: '';
             width: 6px;
             display: inline-block;
@@ -364,7 +436,7 @@ const goVision = () => {
             margin-right: 36px;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 50px;
             margin-bottom: 60px;
             line-height: 46px;
@@ -372,25 +444,25 @@ const goVision = () => {
         }
       }
 
-      & > div:nth-child(even) {
+      &>div:nth-child(even) {
         border-top: 1px dashed #bcd09c;
         border-bottom: 1px dashed #bcd09c;
       }
 
-      & > div:nth-child(3) {
-        & > div:nth-child(2) {
-          & > div:nth-child(1)::before {
+      &>div:nth-child(3) {
+        &>div:nth-child(2) {
+          &>div:nth-child(1)::before {
             content: none;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 0;
           }
         }
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin: 60px auto 462px;
     }
   }
@@ -412,11 +484,11 @@ const goVision = () => {
   border-radius: 30px;
   border: solid 2px #bcd09c;
 
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     padding: 33px 60px;
   }
 
-  & > div:nth-child(2) {
+  &>div:nth-child(2) {
     width: fit-content;
     min-width: 223px;
     height: 101px;
@@ -485,7 +557,7 @@ const goVision = () => {
 
 // 头部样式
 .medicalOptometry_head {
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -495,8 +567,8 @@ const goVision = () => {
     // margin-top: 100px;
     // margin-left: 40vw;
 
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 119px;
         font-weight: Bold;
@@ -508,7 +580,7 @@ const goVision = () => {
         top: -20px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         font-family: 'DINCondensed-Bold';
@@ -531,7 +603,7 @@ const goVision = () => {
       color: #9cc4e2;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
       width: 40vw;
@@ -541,27 +613,289 @@ const goVision = () => {
       right: 0;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       position: relative;
       top: 0;
       left: -5px;
 
-      & > img {
+      &>img {
         position: relative;
         z-index: 5;
       }
 
-      & > img:nth-child(1) {
+      &>img:nth-child(1) {
         margin-bottom: 10px;
       }
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .medicalOptometry_head {
+    margin-top: 150px;
+    margin-right: 40px;
+
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 45.916px;
+        }
+
+        &>div:nth-child(2) {
+          font-size: 21.6px;
+          margin-top: 0;
+        }
+      }
+
+      &>div:nth-child(1)::after {
+        width: 250px;
+        height: 200px;
+        top: 190px;
+      }
+
+      &>div:nth-child(2) {
+        width: 86.2%;
+      }
+    }
+  }
+
+  .medicalOptometry_nav {
+    max-width: 100%;
+    margin-top: -45%;
+
+    &>#brief_introduction {
+      margin-bottom: 0;
+
+      &>div:nth-child(1) {
+        flex-direction: column;
+
+
+        &>div:nth-child(1) {
+          width: 100%;
+          color: #BEAD9C;
+          font-family: 'Noto Sans HK';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.8;
+          margin-bottom: 40px;
+
+          &>p {
+            text-indent: 0;
+
+            &>span {
+              letter-spacing: -1px;
+              color: #8ca761;
+            }
+          }
+
+          &>p:nth-child(2) {
+            margin-top: 40px;
+          }
+        }
+      }
+
+      &>div:nth-child(2) {
+        width: 100%;
+        height: 70px;
+        padding-right: 28px;
+        font-size: 24px;
+        line-height: 1.8;
+        border-radius: 16px;
+
+        &>div:nth-child(1) {
+          width: 175.66px;
+          height: 70px;
+          border-radius: 16px;
+        }
+
+        &>div:nth-child(2) {
+          font-size: 24px;
+          line-height: 1.8;
+          margin-left: 26px;
+        }
+      }
+    }
+
+    &>#cause {
+      display: none;
+    }
+
+    &>#cause-mb {
+      &>div:nth-child(1) {
+        margin: 100px auto 15px;
+        font-size: 24px;
+        line-height: 1.8;
+        letter-spacing: 0;
+        padding: 16px 66px;
+        border: 3px solid #afc58c;
+        border-radius: 16px;
+
+        color: #8CA761;
+        font-family: 'Noto Sans HK';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6;
+      }
+
+      &>div:nth-child(1)::before {
+        content: none;
+      }
+
+      &>div:nth-child(1)::after {
+        content: none;
+      }
+
+      &>div:nth-child(2) {
+        &>div {
+          &>div:nth-child(1) {
+            color: #8CA761;
+            font-family: Noto Sans HK;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+
+          &>div:nth-child(1)::before {
+            content: '';
+            width: 3px;
+            display: inline-block;
+            height: 34px;
+            background-color: #ccdfae;
+            border-radius: 3px;
+            margin-right: 6px;
+          }
+
+          &>div:nth-child(2) {
+            width: 100%;
+
+            &>div:nth-child(1) {
+              display: flex;
+              font-family: 'NotoSansHK-Bold';
+              font-size: 38px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 52px;
+              letter-spacing: 0px;
+              color: #8ca761;
+              display: flex;
+              align-items: flex-start;
+              margin-top: 22px;
+
+              &>div:nth-child(1) {
+                min-width: 125px;
+              }
+
+              &>div:nth-child(2) {
+                color: #BEAD9C;
+                font-family: 'Noto Sans HK';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.6;
+                margin-left: 12px;
+              }
+            }
+
+            &>div:nth-child(2) {
+              margin-top: 50px;
+              margin-bottom: 0;
+              line-height: 46px;
+            }
+          }
+
+          padding: 50px 0;
+          border-bottom: 1px dashed #BCD09C;
+        }
+
+        &>div:nth-child(4) {
+          &>div:nth-child(2) {
+            &>div:nth-child(2) {
+              margin: 0;
+            }
+          }
+        }
+
+        &>div:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        &>div:nth-child(3) {
+          padding-top: 0;
+
+          &>div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+
+            &>div:nth-child(1) {
+              width: auto;
+              display: flex;
+              margin-top: 48px;
+              margin-bottom: 36px;
+
+              &>div:nth-child(1) {
+                min-width: 128px;
+              }
+
+              &>div:nth-child(2) {
+                color: #BEAD9C;
+                font-family: 'Noto Sans HK';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8;
+                margin-left: 12px;
+              }
+            }
+          }
+
+          &>div:nth-child(1)::before {
+            content: none;
+          }
+        }
+      }
+
+      &>div:nth-child(3) {
+        margin: 60px auto 120px;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .medicalOptometry_btn_bg {
+    font-size: 22px;
+    line-height: 1.8;
+    letter-spacing: 0px;
+    height: auto;
+    border-radius: 18px;
+    font-family: 'Noto Sans HK';
+
+    &>div:nth-child(1) {
+      padding: 8px 25px;
+      padding-top: 13px;
+    }
+
+    &>div:nth-child(2) {
+      height: auto;
+      min-width: auto;
+      padding: 13px 20px;
+      border-radius: 16px;
+    }
+  }
+
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .medicalOptometry_head {
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       // margin-left: 50vw;
     }
   }
