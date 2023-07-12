@@ -72,7 +72,7 @@ const props = defineProps({
   }
   .caption_text_color {
     font-size: 24px;
-    padding: 0 ;
+    padding: 0;
   }
 }
 </style>

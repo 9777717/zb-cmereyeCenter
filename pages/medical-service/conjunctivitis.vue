@@ -998,6 +998,271 @@ const callTel = () => {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .conjun_header {
+    &>div:nth-child(1) {
+      width: calc(100% - 60px);
+      justify-content: flex-end;
+      align-items: flex-end;
+      display: flex;
+      margin: 150px auto 0;
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 40px;
+          text-align: right;
+        }
+        &>div:nth-child(2) {
+          font-size: 42px;
+          letter-spacing: 0.01em;
+          margin-top: 0;
+          text-align: right;
+          line-height: 1;
+        }
+      }
+      &>div:nth-child(1)::after {
+        width: 160px;
+        height: 200px;
+        top: 190px;
+      }
+      &>div:nth-child(2) {
+        top: 0;
+        width: 207px;
+        &>img:nth-child(1){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .conjunctivitis_nav {
+    transform: scale(1);
+    margin-top: 190px;
+    & > div:nth-child(1) {
+      width: calc(100% - 60px);
+      margin: 0 auto;
+      flex-direction: column;
+      & > div:nth-child(1) {
+        position: relative;
+        margin-top: 0;
+        padding-right: 0;
+        & > div:nth-child(1) {
+          font-size: 24px;
+          text-align: center;
+        }
+        & > div:nth-child(2) {
+          font-size: 14px;
+          line-height: 1.8;
+          margin-top: 20px;
+        }
+      }
+      & > div:nth-child(2) {
+        width: calc(100% - 30px);
+        margin-top: 30px;
+        transform: scale(1);
+        img{
+          width: 100%;
+          margin-left: 30px;
+        }
+      }
+      & > div:nth-child(2)::before {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        top: 30px;
+        right: 0px;
+      }
+    }
+    & > div:nth-child(2) {
+      width: calc(100% - 60px);
+      margin: 100px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 25px;
+        & > div{
+          width: calc(50% - 25px);
+          margin-right: 0;
+          margin-bottom: 25px;
+          & > div:nth-child(2) {
+            font-size: 16px;
+          }
+        }
+        & > div:nth-child(n + 4) {
+          margin-top: 0;
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 30px;
+        width: max-content;
+        height: 85px;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 5px 50px 0;
+      }
+    }
+    & > div:nth-child(3) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 50px;
+        & > div {
+          margin-bottom: 50px;
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              width: 90px;
+              height: 90px;
+              border: solid 5px #c0c0e6;
+              position: relative;
+              left: 25px;
+              top: 0;
+            }
+            & > div:nth-child(2) {
+              width: 210px;
+              border: solid 3px #c0c0e6;
+              height: 45px;
+              font-size: 16px;
+              font-weight: 600;
+              position: absolute;
+              left: 70px;
+              bottom: 15px;
+              padding-left: 30px;
+              padding-top: 7px;
+              border-radius: 15px;
+            }
+          }
+          & > div:nth-child(2) {
+            margin-top: -30px;
+            font-size: 14px;
+            line-height: 1.8;
+            padding: 40px 15px 25px;
+          }
+        }
+        & > :last-child {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              margin-bottom: 0;
+            }
+            & > div:nth-child(3),
+            & > div:nth-child(4),
+            & > div:nth-child(5){
+              font-size: 14px;
+              line-height: 1.8;
+              & > div > div:nth-child(1) {
+                font-size: 16px;
+                margin-bottom: 0;
+                margin-top: 20px;
+                line-height: 1.8;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 55px;
+        width: max-content;
+        height: 85px;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 5px 50px 0;
+      }
+    }
+    // 傳播途徑
+    & > div:nth-child(4) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      & > div:nth-child(3) {
+        margin-top: 20px;
+        & > div:nth-child(1) {
+          font-size: 14px;
+        }
+        & > div:nth-child(2) {
+          flex-direction: column;
+          padding: 0;
+          margin-top: 25px;
+          & > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            & > div:nth-child(1) {
+              width: 90px;
+              position: relative;
+              z-index: 2;
+            }
+            & > div:nth-child(2) {
+              position: relative;
+              z-index: 1;
+              width: auto;
+              flex: 1;
+              margin-left: -40px;
+              padding: 10px 15px 5px 50px;
+              font-size: 13px;
+              line-height: 1.6;
+              border-radius: 15px;
+              border: 2px solid #E5E5E5;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        font-size: 14px;
+        line-height: 1.8;
+        padding: 25px 20px 20px 30px;
+        border-radius: 30px;
+        margin-left: 22px;
+        margin-top: 0;
+        &>svg{
+          width: 45px;
+          height: 45px;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          left: 0;
+          image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .conjun_text_color {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+  .conjun_button_bg_color {
+    margin-top: 55px;
+    width: max-content;
+    height: 70px;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 5px 30px 0;
+  }
+  .conjun_text_color::after {
+    width: 50px;
+    height: 2px;
+  }
+  .dow {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 16px;
+    & > div:nth-child(1) {
+      & > div {
+        width: 80%;
+        height: 90px;
+        & > div:nth-child(1) {
+          margin-left: 30%;
+          margin-right: 30px;
+          &>img{
+            width: 55px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
