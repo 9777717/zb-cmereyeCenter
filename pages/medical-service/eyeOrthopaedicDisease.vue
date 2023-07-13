@@ -647,7 +647,7 @@ const goWhatsApp = () => {
               <div id="eye_in_canceration">眼内癌變</div>
               <div>
                 <div>黑色素細胞瘤<span>VS</span> 黑色素瘤</div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   <p>
                     兩者皆是發生於眼內的病變，特點是早期多無病徵，當病變發展至影響視功能時，腫起物的大小多已相當明顯。黑色素細胞瘤較為少見，病徵主要是眼底生長出黑色腫起物，多數是單眼發病及發生於視神經，較多見於深膚色人種及女性。這種病變一般屬於良性病變，因此多不需要治療，但極少數病例可能出現惡性病變情況，則需要考慮放射治療或切除。而黑色素瘤則是惡性病變，會向眼內生長，入侵視網膜和玻璃體，還可能會轉移全身影響重要器官。若確診黑色素瘤，則需要盡快治療，盡可能保存視功能及減低全身轉移的機會。
                   </p>
@@ -656,7 +656,7 @@ const goWhatsApp = () => {
               <div>
                 <div>柯氏症<span>VS</span>視網膜母細胞瘤</div>
                 <div>
-                  <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                  <div class="eyeOrthopaedicDisease_text_p_span">
                     <p>
                       兩種疾病均多見於兒童，多數是家長觀察到孩子有斜視及白瞳孔現象後而發現的。柯氏症又稱為「滲出性視網膜炎」或「視網膜末梢血管擴張症」，可造成視功能減退，甚至失明。柯氏症一般為單眼入侵，大多在十歲內發作，主要的症狀是視網膜毛細血管異常擴張及增生，導致血漿滲漏到視網膜下，引起一系列病徵。早期可考慮使用放射或是冷凍治療的方式，破壞視網膜異常毛細血管，以阻止病情惡化。
                     </p>
@@ -679,25 +679,25 @@ const goWhatsApp = () => {
             <div>
               <div>
                 <div>激光治療</div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   激光治療對於治療體積較小的腫瘤效果良好，多需在全身麻醉的情況下進行。無需在眼睛切割傷口，術後定期複診，直至腫瘤縮小甚至消失為止，治療期間如有需要亦可再次進行激光治療。
                 </div>
               </div>
               <div>
                 <div>冷凍治療</div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   與激光治療一樣，冷凍治療對治療體積較小的腫瘤的效果較好。不過這種方法需要切斷結膜，直接在病人的鞏膜外進行。醫生需要使用間接眼底鏡定位，然後將冷凍頭放置到腫瘤位置相應的鞏膜外，進行冷凍，目的是有效地把腫瘤冷凍並消滅。治療後，結膜會有傷口，眼皮及眼睛會出現浮腫，約1至5天便消退。
                 </div>
               </div>
               <div>
                 <div>放射治療</div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   放射治療用於控制局部腫瘤，同時可以保留視功能。視網膜母細胞瘤對放射線十分敏感，而以往放射治療的副作用較大，引起併發症較多，醫生並不常使用，現時的放射線技術可更有效地摧毀局部腫瘤。
                 </div>
               </div>
               <div>
                 <div>化學治療</div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   全身化療是通過靜脈注射進行，經血液迴圈到達腫瘤細胞，達到減慢腫瘤生長的目的。
                 </div>
               </div>
@@ -727,28 +727,28 @@ const goWhatsApp = () => {
           </div>
           <div>
             <div class="ophthalmoplasty_bg_text">傳統義眼術</div>
-            <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+            <div class="eyeOrthopaedicDisease_text_p_span">
               傳統義眼片製作主要是為了改善患者的外觀，盡可能提供義眼靈活度和舒適度；但總的來說舒適度及活動靈活度上的工藝仍有限制。
             </div>
           </div>
           <div>
             <div class="ophthalmoplasty_bg_text">現代義眼術</div>
-            <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+            <div class="eyeOrthopaedicDisease_text_p_span">
               <div>現代義眼經過高度改良，每個細節都透過現代高科技製作。</div>
               <div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   <div>01</div>
                   <div>
                     患者安裝好義眼台6至8周後，醫生會給患者佩戴臨時義眼片，再根據另一隻眼的情況，配上不同大小和凹槽的義眼片等。
                   </div>
                 </div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   <div>02</div>
                   <div>
                     然後在義眼片上刻畫虹膜、鞏膜甚至血管紋理等，高度仿真另一眼的外觀。然後，打磨拋光，確保其舒適度及與正常眼之匹配度。
                   </div>
                 </div>
-                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span">
                   <div>03</div>
                   <div>
                     大約2至3周後，戴上訂制好的義眼片。如有需要，可再作局部調整，以達高度仿真及確保義眼片的舒適度，幫助患者重拾自信。
@@ -816,7 +816,9 @@ const goWhatsApp = () => {
             <span>注意：</span>取下義眼片需放在乾淨的軟紙巾上，避免接觸。
           </div>
           <div>
-            <span>注意：</span>安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。
+            <span>注意：</span>安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制
+            <span
+              class="usage-box-text">技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。</span>
           </div>
         </div>
         <div>
@@ -2530,7 +2532,7 @@ const goWhatsApp = () => {
     width: 100%;
     margin: auto;
     margin-top: 210px;
-    margin-bottom: 290px;
+    margin-bottom: 240px;
     transform: scale(1);
     padding: 0 40px;
 
@@ -3079,15 +3081,15 @@ const goWhatsApp = () => {
                   flex-direction: column;
                   background: #fff;
                   border: 2px solid #E4C6A9;
-                  margin-top:75px;
-                  border-radius:10px;
-                  position:relative;
+                  margin-top: 75px;
+                  border-radius: 10px;
+                  position: relative;
 
                   &>div {
                     color: #515151;
                     width: 100%;
                     border: 2px solid #E4C6A9;
-                    border-radius:10px;
+                    border-radius: 10px;
                     font-size: 16px;
                     display: flex;
                     flex-direction: column;
@@ -3097,42 +3099,49 @@ const goWhatsApp = () => {
                     &>div:nth-child(3),
                     &>div:nth-child(4) {
                       display: flex;
-                      margin-top:5px;
-                      &>div{
+                      margin-top: 5px;
+
+                      &>div {
                         color: #D0AA85;
                         font-family: Noto Sans HK;
                         font-size: 18px;
-                        &>span{
+
+                        &>span {
                           color: #515151;
                           font-family: Noto Sans HK;
                           font-size: 16px;
                         }
                       }
                     }
-                    &>div:nth-child(1){
-                      line-height:1.6;
-                      text-align:justify;
-                      &>span:last-child{
-                        color:#D0AA85;
+
+                    &>div:nth-child(1) {
+                      line-height: 1.6;
+                      text-align: justify;
+
+                      &>span:last-child {
+                        color: #D0AA85;
                       }
                     }
-                    &>div:nth-child(2){
-                      margin-top:14px;
+
+                    &>div:nth-child(2) {
+                      margin-top: 14px;
                     }
                   }
-                  &>div:nth-child(1){
-                    position:absolute;
+
+                  &>div:nth-child(1) {
+                    position: absolute;
                     width: fit-content;
-                    top:-7%;
-                    line-height:1.6;
+                    top: -7%;
+                    line-height: 1.6;
                     left: 10%;
                     padding: 8px 65px;
                     background: #fff;
                   }
-                  &>div:nth-child(2){
-                    border:0;
-                    padding:45px 26px 30px 20px;
-                    line-height:1.8;
+
+                  &>div:nth-child(2) {
+                    border: 0;
+                    padding: 45px 26px 30px 20px;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -3151,7 +3160,7 @@ const goWhatsApp = () => {
 
       &>div:nth-child(3) {
         &>div:nth-child(1) {
-          margin-top:75px;
+          margin-top: 75px;
           margin-bottom: 75px;
 
           &>div:nth-child(2) {
@@ -3180,7 +3189,7 @@ const goWhatsApp = () => {
                 color: #d0aa85;
                 text-align: center;
                 padding-top: 28px;
-                padding-bottom:20px;
+                padding-bottom: 20px;
               }
 
               &>div:nth-child(2) {
@@ -3242,13 +3251,13 @@ const goWhatsApp = () => {
                   letter-spacing: 0px;
                   color: #d0aa85;
                   margin: 0 10px;
-                  margin-top:7px;  
+                  margin-top: 7px;
                 }
               }
 
               &>div:nth-child(2) {
                 &>p {
-                  font-size: 16px;
+                  font-size: 14px;
                   line-height: 1.8;
                 }
 
@@ -3262,10 +3271,10 @@ const goWhatsApp = () => {
           &>div:nth-child(3) {
             &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
-              font-size: 32px;
+              font-size: 20px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 42px;
+              line-height: 1.8;
               letter-spacing: 0px;
               color: #d0aa85;
               margin-top: 74px;
@@ -3276,13 +3285,13 @@ const goWhatsApp = () => {
               margin-bottom: 75px;
               border-radius: 10px;
               border: solid 2px #e4c6a9;
-              padding:60px 26px 30px 20px;
+              padding: 40px 26px 30px 20px;
               position: relative;
 
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -1%;
+                top: -3%;
                 width: fit-content;
                 height: auto;
                 background-color: #ffffff;
@@ -3296,7 +3305,7 @@ const goWhatsApp = () => {
                 line-height: 42px;
                 letter-spacing: 0px;
                 color: #d0aa85;
-                padding:0 5px;
+                padding: 0 5px;
 
                 display: flex;
                 align-items: center;
@@ -3308,22 +3317,22 @@ const goWhatsApp = () => {
                   letter-spacing: 0px;
                   color: #d0aa85;
                   margin: 0 10px;
-                  margin-top:7px;
+                  margin-top: 7px;
                 }
               }
 
               &>div:nth-child(2) {
                 display: flex;
                 justify-content: space-between;
-                flex-direction:column;
+                flex-direction: column;
 
                 &>div:nth-child(1) {
                   width: 100%;
 
                   &>p {
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 1.6;
-                    text-align:justify;
+                    text-align: justify;
                   }
 
                   &>p:nth-child(2) {
@@ -3336,8 +3345,8 @@ const goWhatsApp = () => {
                   flex-direction: row;
                   justify-content: space-between;
 
-                  &>img{
-                    width:48%;
+                  &>img {
+                    width: 48%;
                     margin-top: 26px;
                   }
                 }
@@ -3346,65 +3355,65 @@ const goWhatsApp = () => {
           }
 
           &>div:nth-child(4) {
-            margin-bottom: 120px;
+            margin-bottom: 75px;
 
             &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
-              font-size: 32px;
+              font-size: 20px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 42px;
+              line-height: 1.8;
               letter-spacing: 0px;
               color: #d0aa85;
-              margin-top: 120px;
-              margin-bottom: 90px;
+              margin-top: 70px;
+              margin-bottom: 50px;
             }
 
             &>div:nth-child(2) {
-              margin-bottom: 120px;
+              margin-bottom: 80px;
               border-radius: 10px;
               border: solid 2px #e4c6a9;
-              padding-left: 37px;
-              padding-right: 25px;
-              padding-top: 80px;
-              padding-bottom: 50px;
+              padding: 40px 26px 30px 20px;
               position: relative;
+              text-align: justify;
 
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -41px;
-                width: 513px;
-                height: 82px;
+                top: -5%;
+                width: fit-content;
+                height: auto;
                 background-color: #ffffff;
                 border-radius: 10px 10px 10px 0px;
                 border: solid 2px #e4c6a9;
 
                 font-family: 'NotoSansHK-Medium';
-                font-size: 28px;
+                font-size: 18px;
                 font-weight: normal;
                 font-stretch: normal;
-                line-height: 42px;
+                line-height: 1.8;
                 letter-spacing: 0px;
                 color: #d0aa85;
+                padding: 0 5px;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 &>span {
-                  font-size: 48px;
-                  line-height: 42px;
+                  font-size: 18px;
+                  line-height: 1.8;
                   letter-spacing: 0px;
                   color: #d0aa85;
-                  margin: 0 29px;
+                  margin: 0 10px;
+                  margin-top: 7px;
                 }
               }
 
               &>div:nth-child(2) {
                 &>p {
-                  font-size: 22px;
-                  line-height: 42px;
+                  font-size: 14px;
+                  line-height: 1.6;
                 }
 
                 &>p:nth-child(2) {
@@ -3414,30 +3423,27 @@ const goWhatsApp = () => {
             }
 
             &>div:nth-child(3) {
-              margin-bottom: 120px;
+              margin-bottom: 80px;
               border-radius: 10px;
               border: solid 2px #e4c6a9;
-              padding-left: 37px;
-              padding-right: 25px;
-              padding-top: 80px;
-              padding-bottom: 50px;
+              padding: 40px 28px 35px 20px;
               position: relative;
 
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -41px;
-                width: 513px;
-                height: 82px;
+                top: -2.5%;
+                width: fit-content;
+                height: auto;
                 background-color: #ffffff;
                 border-radius: 10px 10px 10px 0px;
                 border: solid 2px #e4c6a9;
 
                 font-family: 'NotoSansHK-Medium';
-                font-size: 28px;
+                font-size: 18px;
                 font-weight: normal;
                 font-stretch: normal;
-                line-height: 42px;
+                line-height: 1.8;
                 letter-spacing: 0px;
                 color: #d0aa85;
 
@@ -3446,24 +3452,26 @@ const goWhatsApp = () => {
                 justify-content: center;
 
                 &>span {
-                  font-size: 48px;
-                  line-height: 42px;
+                  font-size: 18px;
+                  line-height: 1.8;
                   letter-spacing: 0px;
                   color: #d0aa85;
-                  margin: 0 29px;
+                  margin: 0 10px;
+                  margin-top: 7px;
                 }
               }
 
               &>div:nth-child(2) {
                 display: flex;
+                flex-direction: column;
 
                 &>div:nth-child(1) {
-                  width: 815px;
+                  width: 100%;
                   margin-right: 50px;
 
                   &>p {
-                    font-size: 22px;
-                    line-height: 42px;
+                    font-size: 14px;
+                    line-height: 1.6;
                   }
 
                   &>p:nth-child(2) {
@@ -3475,18 +3483,18 @@ const goWhatsApp = () => {
                   display: flex;
                   flex-direction: column;
                   text-align: center;
+                  width: 50%;
+                  margin: auto;
+                  max-width: 50%;
+                  margin-top: 26px;
 
                   &>div {
                     margin-top: 11px;
                     font-family: 'NotoSansHK-Regular';
-                    font-size: 20px;
-                    line-height: 42px;
+                    font-size: 14px;
+                    line-height: 1.6;
                     letter-spacing: 2px;
                     color: #777777;
-                  }
-
-                  &>img:nth-child(2) {
-                    margin-top: 26px;
                   }
                 }
               }
@@ -3496,19 +3504,21 @@ const goWhatsApp = () => {
 
         &>div:nth-child(3) {
           &>div:nth-child(2) {
-            margin: 80px auto 160px;
+            margin: 30px auto 70px;
 
             &>div {
               margin-bottom: 50px;
               position: relative;
-              border-radius: 20px;
-              border: solid 2px #e4c6a9;
+              border-radius: 0;
+              border: none;
               overflow: hidden;
 
               &>div:nth-child(1) {
+                padding: 8.3px 52.5px 9.2px 52.5px;
+                border-radius: 55px;
                 background-color: #e4c6a9;
-                width: 157px;
-                height: 100%;
+                width: fit-content;
+                height: auto;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -3517,20 +3527,20 @@ const goWhatsApp = () => {
                 justify-content: center;
 
                 font-family: 'NotoSansHK-Bold';
-                font-size: 28px;
+                font-size: 16px;
                 font-weight: normal;
                 font-stretch: normal;
-                line-height: 42px;
+                line-height: 1.6;
                 letter-spacing: 0px;
                 color: #fff;
               }
 
               &>div:nth-child(2) {
-                margin-left: 192px;
-                padding: 40px 37px 44px 0;
-                font-size: 22px;
-                line-height: 42px;
-                letter-spacing: -0.7px;
+                margin-left: 0;
+                padding: 75px 0 0 0;
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: justify;
               }
             }
 
@@ -3545,44 +3555,48 @@ const goWhatsApp = () => {
     }
 
     &>#eyeProsthesis {
-      margin-bottom: 160px;
+      margin-bottom: 80px;
 
       &>div:nth-child(2) {
         &>div:nth-child(1) {
-          margin-top: 50px;
-          text-indent: 50px;
+          margin-top: 30px;
+          text-indent: 0;
         }
 
         &>div:nth-child(2) {
-          margin: 60px auto 120px;
+          margin: 20px auto 50px;
           display: flex;
           justify-content: space-between;
-          padding: 0 77px 0 78px;
+          padding: 0;
 
           &>div {
             text-align: center;
-
             font-family: 'NotoSansHK-Regular';
-            font-size: 22px;
+            font-size: 12px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 46px;
+            line-height: 1.8;
             letter-spacing: 0px;
             color: #515151;
+
+            &>img {
+              width: 100px;
+              height: 100px;
+            }
           }
         }
 
         &>div:nth-child(3),
         &>div:nth-child(4) {
-          margin-bottom: 120px;
+          margin-bottom: 50px;
 
           &>div:nth-child(1) {
             margin-bottom: 40px;
           }
 
           &>div:nth-child(2) {
-            font-size: 22px;
-            line-height: 42px;
+            font-size: 14px;
+            line-height: 1.8;
           }
         }
 
@@ -3591,35 +3605,43 @@ const goWhatsApp = () => {
             &>div:nth-child(2) {
               margin-top: 50px;
               display: flex;
+              flex-direction: column;
               justify-content: space-between;
 
               &>div {
                 display: flex;
                 align-items: center;
-                width: 413px;
-                height: 273px;
+                width: 100%;
+                height: auto;
 
-                font-size: 22px;
-                line-height: 42px;
+                font-size: 12px;
+                line-height: 1.8;
                 padding-right: 20px;
+                padding-top: 25px;
+                padding-bottom: 25px;
                 border-top: 1px solid #e4c6a9;
                 border-bottom: 1px solid #e4c6a9;
+                margin-top: 30px;
 
                 &>div:nth-child(1) {
                   margin-left: 10px;
-                  margin-right: 30px;
+                  margin-right: 20px;
                   font-family: 'OPPOSans-B';
-                  font-size: 50px;
+                  font-size: 35px;
                   font-weight: normal;
                   font-stretch: normal;
-                  line-height: 42px;
+                  line-height: 1.8;
                   letter-spacing: 0px;
                   color: #d5bb96;
                 }
 
                 &>div:nth-child(2) {
-                  width: 304px;
+                  width: auto;
                 }
+              }
+
+              &>div:first-child {
+                margin: 0;
               }
             }
           }
@@ -3628,116 +3650,173 @@ const goWhatsApp = () => {
     }
 
     &>#usage {
-      margin-bottom: 160px;
+      margin-bottom: 50px;
 
       &>div:nth-child(2) {
+        width: 100%;
         margin-top: 60px;
-        margin-bottom: 125px;
+        margin-bottom: 95px;
 
         &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
-          font-size: 32px;
+          font-size: 20px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 52px;
           letter-spacing: 0px;
           color: #d0aa85;
-          margin-bottom: 71px;
+          margin-bottom: 0;
         }
 
         &>div:nth-child(2) {
-          background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
-          background-repeat: no-repeat;
-          background-size: 100%;
-          width: 1210px;
-          min-height: 466px;
-          margin-left: 55px;
-
+          background: #fff;
+          width: 100%;
           display: flex;
+          min-height: auto;
+          margin-left: 30px;
           flex-direction: column;
 
           &>div {
             display: flex;
             justify-content: space-between;
-            margin-top: 46px;
-            margin-right: 20px;
+            flex-direction: column;
+            margin-top: 0;
+            margin-right: 31px;
+            text-align: justify;
 
             &>div {
-              width: 205px;
-              height: 173px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
+              width: 100%;
+              height: auto;
+              display: block;
               font-family: 'NotoSansHK-Regular';
-              font-size: 22px;
-              line-height: 38px;
+              font-size: 14px;
+              line-height: 1.6;
               letter-spacing: 0px;
               color: #515151;
               position: relative;
+              margin-bottom: 40px;
             }
 
             &>div::before {
               position: absolute;
               content: '';
               font-family: 'OPPOSans-B';
-              font-size: 40px;
+              font-size: 20px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 42px;
+              line-height: 1.2;
               letter-spacing: 0px;
               color: #d5bb96;
-              top: -64px;
-              left: -56px;
+              top: 0;
+              left: -30px;
+            }
+
+            &>div::after {
+              content: '';
+              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              width: 10px;
+              display: inline-block;
+              height: 19px;
+              position: absolute;
+              left: -22px;
+              top: 32px;
             }
           }
 
           &>div:nth-child(1) {
+            &>div {
+              margin-top: 5px;
+            }
+
+            &>div:nth-child(1)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/e5d62f0f593df732.png') no-repeat;
+              height: 40px;
+            }
+
             &>div:nth-child(1)::before {
               content: '01';
+            }
+
+            &>div:nth-child(2)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
             }
 
             &>div:nth-child(2)::before {
               content: '02';
             }
 
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
             &>div:nth-child(3)::before {
               content: '03';
             }
 
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
             &>div:nth-child(4)::before {
               content: '04';
-              left: -72px;
+              left: -30px;
             }
           }
 
           &>div:nth-child(2) {
-            margin-top: 72px;
+            flex-direction: column-reverse;
+            margin-top: 0;
+
+            &>div:nth-child(1) {
+              margin: 0;
+              padding: 0;
+            }
 
             &>div:nth-child(1)::before {
-              content: '';
+              content: none;
+            }
+
+            &>div:nth-child(1)::after {
+              content: none;
+            }
+
+            &>div:nth-child(2)::after {
+              content: none;
+            }
+
+            &>div:nth-child(2) {
+              margin: 0;
             }
 
             &>div:nth-child(2)::before {
               content: '07';
-              top: -48px;
+              top: 0;
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
             }
 
             &>div:nth-child(3)::before {
               content: '06';
-              top: -48px;
+              top: 0;
             }
 
             &>div:nth-child(4)::before {
               content: '05';
-              top: -48px;
-              left: -72px;
+              top: 0;
+              left: -30px;
             }
           }
         }
       }
 
       &>div:nth-child(3) {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
 
         &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
@@ -3747,52 +3826,60 @@ const goWhatsApp = () => {
           line-height: 52px;
           letter-spacing: 0px;
           color: #d0aa85;
-          margin-bottom: 71px;
+          margin-bottom: 20px;
         }
 
         &>div:nth-child(2) {
-          background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
-          background-repeat: no-repeat;
-          background-size: 100%;
-          width: 1210px;
-          min-height: 466px;
-          margin-left: 55px;
-
+          background: #fff;
+          width: 100%;
+          min-height: auto;
+          margin-left: 35px;
           display: flex;
           flex-direction: column;
 
           &>div {
             display: flex;
             justify-content: space-between;
-            margin-top: 46px;
-            margin-right: 20px;
+            flex-direction: column;
+            margin-top: 0;
+            margin-right: 31px;
 
             &>div {
-              width: 205px;
-              height: 173px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-family: 'NotoSansHK-Regular';
-              font-size: 22px;
-              line-height: 38px;
+              width: 100%;
+              height: auto;
+              display: block;
+              font-family: "NotoSansHK-Regular";
+              font-size: 14px;
+              line-height: 1.6;
               letter-spacing: 0px;
               color: #515151;
               position: relative;
+              margin-bottom: 40px;
             }
 
             &>div::before {
               position: absolute;
               content: '';
               font-family: 'OPPOSans-B';
-              font-size: 40px;
+              font-size: 20px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 42px;
+              line-height: 1.2;
               letter-spacing: 0px;
               color: #d5bb96;
-              top: -64px;
-              left: -56px;
+              top: 0;
+              left: -30px;
+            }
+
+            &>div::after {
+              content: '';
+              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              width: 10px;
+              display: inline-block;
+              height: 19px;
+              position: absolute;
+              left: -22px;
+              top: 32px;
             }
           }
 
@@ -3805,93 +3892,145 @@ const goWhatsApp = () => {
               content: '02';
             }
 
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
             &>div:nth-child(3)::before {
               content: '03';
             }
 
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
             &>div:nth-child(4)::before {
               content: '04';
-              left: -72px;
+              left: -30px;
             }
           }
 
           &>div:nth-child(2) {
-            margin-top: 72px;
+            margin-top: 0;
+            flex-direction: column-reverse;
+
+            &>div:nth-child(1) {
+              margin: 0;
+            }
+
+            &>div:nth-child(1)::after {
+              content: none;
+            }
 
             &>div:nth-child(1)::before {
-              content: '';
+              content: none;
+            }
+
+            &>div:nth-child(2) {
+              margin: 0;
+            }
+
+            &>div:nth-child(2)::after {
+              content: none;
             }
 
             &>div:nth-child(2)::before {
               content: '07';
-              top: -48px;
+              top: 0;
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
             }
 
             &>div:nth-child(3)::before {
               content: '06';
-              top: -48px;
+              top: 0;
+            }
+
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
             }
 
             &>div:nth-child(4)::before {
               content: '05';
-              top: -48px;
-              left: -72px;
+              top: 0;
+              left: -30px;
             }
           }
         }
       }
 
       &>div:nth-child(4) {
-        margin-bottom: 140px;
+        margin-bottom: 75px;
 
         &>div {
           font-family: 'NotoSansHK-Regular';
-          font-size: 22px;
-          font-weight: normal;
+          font-size: 12px;
+          font-weight: 700;
           letter-spacing: 0px;
           color: #515151;
 
           &>span {
             font-family: 'NotoSansHK-Bold';
-            font-size: 22px;
+            font-size: 12px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 38px;
+            line-height: 1.6;
             letter-spacing: 0px;
             color: #d0aa85;
+          }
+
+          &>.usage-box-text {
+            font-weight: 400;
+            color: #515151;
           }
         }
 
         &>div:nth-child(2) {
-          margin-top: 80px;
+          margin-top: 15px;
         }
       }
 
       &>div:nth-child(5) {
         &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
-          font-size: 32px;
+          font-size: 20px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 52px;
+          line-height: 1.8;
           letter-spacing: 0px;
           color: #d0aa85;
-          margin-bottom: 50px;
+          margin-bottom: 20px;
+        }
+
+        .eye_attention {
+          font-size: 12px;
+          line-height: 1.6;
         }
 
         &>div:nth-child(3) {
-          margin-top: 80px;
+          margin-top: 40px;
 
           &>div {
+            display: flex;
+            margin-bottom: 14px;
+
             &>div:nth-child(1) {
+              min-width: 120px;
               width: fit-content;
-              height: 44px;
+              height: fit-content;
               background-color: #d0aa85;
               border-radius: 10px;
               padding: 10px 19px;
               color: #fff;
-              margin-bottom: 16px;
-              margin-top: 16px;
+              margin-bottom: 0;
+              margin-top: 0;
+              margin-right: 10px;
             }
 
             &>div>p {
@@ -3902,8 +4041,9 @@ const goWhatsApp = () => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 34px;
-                height: 34px;
+                min-width: 25px;
+                width: 25px;
+                height: 25px;
                 color: #d5bb96;
                 background-color: #ffffff;
                 border: solid 2px #decbaf;
@@ -3911,6 +4051,45 @@ const goWhatsApp = () => {
                 padding-top: 8px;
                 margin-right: 10px;
                 margin-top: 5px;
+              }
+            }
+          }
+
+          &>div:nth-child(4) {
+            flex-direction: column;
+
+            &>div:nth-child(2) {
+              margin-top: 15px;
+
+              &>p {
+                align-items: flex-start;
+                margin-bottom: 15px;
+              }
+              &>p>span{
+                padding: 0;
+                padding-top: 5px;
+                margin-right: 5px;
+                margin-top:-3px;
+                font-size: 14px;
+              }
+            }
+          }
+
+          &>div:nth-child(5) {
+            flex-direction: column;
+
+            &>div:nth-child(2) {
+              margin-top: 15px;
+              &>p {
+                align-items: flex-start;
+                margin-bottom: 15px;
+              }
+              &>p>span{
+                padding: 0;
+                padding-top: 5px;
+                margin-right: 5px;
+                margin-top: -3px;
+                font-size: 14px;
               }
             }
           }
@@ -3954,5 +4133,4 @@ const goWhatsApp = () => {
   .fromTable {
     margin-top: -60%;
   }
-}
-</style>
+}</style>
