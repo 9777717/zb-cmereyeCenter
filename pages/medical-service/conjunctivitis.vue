@@ -392,6 +392,7 @@ const callTel = () => {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#c0c0e6;'}`"
     />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

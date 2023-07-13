@@ -364,6 +364,7 @@ const preventList1 = [
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#eab1a6;'}`"
     />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

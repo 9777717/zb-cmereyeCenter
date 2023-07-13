@@ -178,10 +178,16 @@ const eyeDisease = [
     <div>
       <PageInformation />
     </div>
+    <div class="footerMenuPom">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.footerMenuPom{
+  margin-bottom: 50px;
+}
 .publicity {
   position: relative;
   &::before{

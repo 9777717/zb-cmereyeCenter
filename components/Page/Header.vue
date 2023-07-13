@@ -201,11 +201,16 @@ const toLinks = (data:any) =>{
 let menuBool = ref(false)
 const handleMuenBtn = () =>{
   menuBool.value = !menuBool.value
-  console.log(menuBool.value)
-  console.log(route.name,route.name !== 'index')
+  // console.log(menuBool.value)
+  // console.log(route.name,route.name !== 'index')
 }
 
-console.log(route.name,route.name !== 'index')
+// console.log(route.name,route.name !== 'index')
+
+
+const handleToLinks = (_link:any) => {
+  location.href = _link
+}
 </script>
 
 <template>
@@ -249,7 +254,7 @@ console.log(route.name,route.name !== 'index')
             <image id="image0_2197_549" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAL9JREFUKFNj/P//PwMQ9AFxJBDfBWJbIAYLYgOMQA29QIkiJMlAIHsDPg3fgZIcSArWAdnB+DT8BEqyoSlgBfL/4HLSWaCEEVTyE5BuAOKJQPwPl4ZUoMQsqOQ5IG2MyzkgcZCnQfQzIJYEYhAnHIhX4/MDSM4ciE8gKTIFss/gchJMvBTI6IJyQO6PAGJQiE0GYhsgBvn1CMxJME39QEYBksmPgWxZZJvQNYDkGoC4npAf0OU9gQIdQKyIJvEZAIEAQi93YCN3AAAAAElFTkSuQmCC"/>
             </defs>
           </svg>
-          <span>
+          <span @click="handleToLinks('tel:（852）3956 2026')">
             立即致電（852）3956 2026
           </span>
         </div>

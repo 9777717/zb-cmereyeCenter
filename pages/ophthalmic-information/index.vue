@@ -219,6 +219,9 @@ onMounted(()=>{
     <div>
       <PageInformation />
     </div>
+    <div class="footerMenuPom">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -475,6 +478,7 @@ onMounted(()=>{
 }
 @media screen and (max-width: 768px) {
   .doctorClass {
+    margin-bottom: 50px;
     &::before {
       width: calc(100% - 30px);
       height: 380px;

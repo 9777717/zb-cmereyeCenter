@@ -881,6 +881,7 @@ const goWhatsApp = () => {
         :co="`color:${'#b6b3e0;'}`"
       />
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

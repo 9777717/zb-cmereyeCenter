@@ -279,6 +279,7 @@ const goVision = () => {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${'#bcd09c;'}`" />
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

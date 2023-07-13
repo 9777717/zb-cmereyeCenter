@@ -1059,6 +1059,7 @@ const keratoplastyList1 = [
         :co="`color:${'#7DBE9C;'}`"
       />
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

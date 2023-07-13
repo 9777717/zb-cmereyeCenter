@@ -47,7 +47,7 @@ const rt = ref(route)
       </div>
       <div class="ocitem" @click="goWhatsApp">
         <div>
-          <div><div>WhatApp</div></div>
+          <div><div>WhatsApp</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
       </div>

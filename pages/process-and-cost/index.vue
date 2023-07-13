@@ -36,6 +36,7 @@ const scrollHeight = () => {
 </script>
 
 <template>
+<div class="processAndCostPage">
   <div
     :class="['processAndCost']"
     :style="{
@@ -286,9 +287,15 @@ const scrollHeight = () => {
       </div>
     </div>
     <PageInformation :service-navigation="serviceNavigation" />
+    
   </div>
+  <PageFooterMenu />
+</div>
 </template>
 <style lang="scss" scoped>
+.processAndCostPage{
+  margin-bottom: 50px;
+}
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;

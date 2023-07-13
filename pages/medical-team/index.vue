@@ -363,13 +363,16 @@ const doctorList = [
       </ul>
     </div>
     <Footer class="-mt-24" />
+    <div class="mt-50">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 @import url(~/assets/font/font.css);
 
 .medical-team {
-  margin-bottom: 455px;
+  margin-bottom: 50px;
 
   & > div:first-child {
     margin-left: 695px;

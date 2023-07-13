@@ -1131,6 +1131,7 @@ const callTel = () => {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#bbe0d5;'}`"
     />
+    <PageFooterMenu />
   </div>
 </template>
 

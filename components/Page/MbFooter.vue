@@ -17,6 +17,11 @@ const handleScroll = () => {
     isShowTopBtn.value = false
   }
 }
+
+const handleToLinks = (_link:any) => {
+  location.href = _link
+}
+
 const isShowTopBtn = ref(false)
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
@@ -26,15 +31,15 @@ onMounted(() => {
 <template>
   <div class="mbFooter">
     <div class="mbFooter-in">
-      <div>
-        <div><img src="https://static.cmereye.com/imgs/2023/07/25871528f005d41a.png" alt=""></div>
+      <div @click="handleToLinks('tel: (852) 3956 2026')">
+        <div><img src="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2" alt=""></div>
         <div>WhatsApp</div>
       </div>
-      <div>
+      <div @click="handleToLinks('tel: (852) 3956 2026')">
         <div><img src="https://static.cmereye.com/imgs/2023/07/8bb225b21f8baa35.png" alt=""></div>
         <div>立即致電{{'\n'}}(852) 3956 2026</div>
       </div>
-      <div>
+      <div @click="handleToLinks('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=97750bccda494a99a1c3cd76d4894b8d&p=https%3A//hkcmereye.com/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1689239423902')">
         <div><img src="https://static.cmereye.com/imgs/2023/07/9c9ca82dbc0545a7.png" alt=""></div>
         <div>線上對話</div>
       </div>

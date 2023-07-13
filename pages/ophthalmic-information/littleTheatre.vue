@@ -120,9 +120,15 @@ const videoList = [
     <div>
       <PageInformation />
     </div>
+    <div class="footerMenuPom">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
+.footerMenuPom{
+  margin-bottom: 50px;
+}
 .theatre {
   & > div:nth-child(1) {
     display: flex;

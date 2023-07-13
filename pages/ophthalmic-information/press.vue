@@ -361,13 +361,15 @@ const pageTurning = (flag: string) => {
     <div>
       <PageInformation />
     </div>
+    <div class="footerMenuPom">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .current {
-  margin-bottom: 180px;
+  margin-bottom: 50px;
 }
-
 .press {
   position: relative;
 

@@ -434,15 +434,16 @@ onMounted(()=>{
             </div>
           </div>
         </div>
-        <FormFooterInfo
-          :from-style="'margin: 0 232px'"
-          :isShowTopTitle="windowWidth<=768"
-          :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};max-width:960px;margin: auto;`:'background:rgba(135, 166, 212, 1);'"
-          :co="`color:${'#6a91cf;'}`"
-        />
-        <PageInformation :service-navigation="serviceNavigation" />
       </div>
     </div>
+    <FormFooterInfo
+      :from-style="'margin: 0 232px'"
+      :isShowTopTitle="windowWidth<=768"
+      :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: auto;`:'background:rgba(135, 166, 212, 1);'"
+      :co="`color:${'#6a91cf;'}`"
+    />
+    <PageInformation :service-navigation="serviceNavigation" />
+    <PageFooterMenu />
   </div>
 </template>
 

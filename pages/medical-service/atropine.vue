@@ -235,7 +235,7 @@ const tozoosnet =()=>{
           </p>
         </div>
         <div>
-          <div @click="toWhatsApp">立即WhatApp查詢{{ '\n' }}了解兒童控制近視方案</div>
+          <div @click="toWhatsApp">立即WhatsApp查詢{{ '\n' }}了解兒童控制近視方案</div>
         </div>
       </div>
       <div id="benefit">
@@ -418,9 +418,13 @@ const tozoosnet =()=>{
         :co="`color:${'#99d3dd;'}`"
       />
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
+.atropine{
+  margin-bottom: 50px;
+}
 .atropine_nav {
   margin: 280px auto;
   & > #introduce {

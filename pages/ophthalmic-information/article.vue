@@ -160,9 +160,15 @@ onMounted(()=>{
     <div>
       <PageInformation />
     </div>
+    <div class="footerMenuPom">
+      <PageFooterMenu />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
+.footerMenuPom{
+  margin-bottom: 50px;
+}
 .article {
   & > div:nth-child(1) {
     margin-top: 122px;

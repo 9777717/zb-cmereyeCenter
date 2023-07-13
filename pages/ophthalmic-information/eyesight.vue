@@ -92,6 +92,7 @@ const toTestPage = (_id:string) =>{
 </script>
 
 <template>
+<div>
   <div class="eyesight">
     <div class="eyesight-title">
       <div class="eyesight-title-in">
@@ -110,9 +111,16 @@ const toTestPage = (_id:string) =>{
       本網站提供的視力測試只是初步評估測試者的視力，如果您有任何眼睛不適的症狀，應盡快尋求眼科專科醫生檢查及治療。
     </div>
   </div>
+  <div class="footerMenuPom">
+    <PageFooterMenu />
+  </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
+.footerMenuPom{
+  margin-bottom: 50px;
+}
 .eyesight{
   width: 100%;
   max-width: 1080px;

@@ -140,6 +140,7 @@ const SerListL = [
 
     <div class="h-32"></div>
     <Footer />
+    <PageFooterMenu />
   </div>
 </template>
 

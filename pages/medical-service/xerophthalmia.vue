@@ -778,6 +778,7 @@ const callTel = () => {
       :co="`color:${'#b6b3e0;'}`"
     />
   </div>
+  <PageFooterMenu />
   </div>
 </template>
 
