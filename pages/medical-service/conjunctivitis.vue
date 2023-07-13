@@ -1226,6 +1226,115 @@ const callTel = () => {
         }
       }
     }
+    & > div:nth-child(5) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          font-size: 13px;
+          margin-top: 35px;
+          line-height: 1.8;
+        }
+        & > div:nth-child(2) {
+          margin-top: 32px;
+          & > div {
+            width: calc(50% - 20px);
+            margin-bottom: 50px;
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.6;
+              margin-top: 15px;
+              width: 120%;
+              text-align: center;
+            }
+          }
+          & > div:nth-child(n + 4) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    & > div:nth-child(6) {
+      width: calc(100% - 60px);
+      margin: 20px auto 0;
+      & > div:nth-child(2) {
+        & > div {
+          margin-top: 35px;
+          & > div:nth-child(1) {
+            width: 160px;
+            height: 40px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          & > div:nth-child(2) {
+            font-size: 14px;
+            margin-top: 5px;
+            line-height: 1.8;
+          }
+        }
+        & > div:first-child {
+          margin-top: 35px;
+        }
+      }
+    }
+    & > div:nth-child(7) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 45px;
+        margin-bottom: 0px;
+        padding: 0;
+        justify-content: center;
+        & > div {
+          width: 50%;
+          margin-bottom: 60px;
+          align-content: flex-start;
+          & > div:nth-child(1) {
+            font-size: 15px;
+            font-weight: 600;
+            width: calc(100% - 25px);
+            text-align: center;
+          }
+          & > div:nth-child(2) {
+            width: calc(100% - 25px);
+            padding: 20px 0 25px;
+            height: 120px;
+            img{
+              width: 50%;
+            }
+          }
+          & > div:nth-child(3) {
+            width: calc(100% - 25px);
+            font-size: 13px;
+            line-height: 1.7;
+          }
+        }
+        & > div:nth-child(4) {
+          margin-left: 0;
+        }
+        & > div:nth-child(5) {
+          margin-right: 0;
+        }
+        & > div:nth-child(n + 4) {
+          margin-top: 0;
+        }
+        &>div:last-child{
+          width: 80%;
+          & > div:nth-child(1) {
+            width: 100%;
+          }
+          & > div:nth-child(2) {
+            width: 60%;
+          }
+          & > div:nth-child(3) {
+            width: 100%;
+          }
+        }
+        & > div:nth-child(2n) {
+          align-items: flex-end;
+        }
+      }
+    }
   }
   .conjun_text_color {
     font-size: 24px;
@@ -1244,7 +1353,7 @@ const callTel = () => {
     height: 2px;
   }
   .dow {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 100px;
     font-size: 16px;
     & > div:nth-child(1) {
