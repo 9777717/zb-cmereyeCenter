@@ -522,6 +522,7 @@ const callTel = () => {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#dec692;'}`"
     />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -1372,7 +1373,7 @@ const callTel = () => {
     }
     & > div:nth-child(3) {
       width: calc(100% - 60px);
-      margin: 70px auto 0;
+      margin: 0 auto;
       & > div:nth-child(2) {
         margin-top: 45px;
         flex-direction: column;
@@ -1467,6 +1468,246 @@ const callTel = () => {
         }
       }
     }
+    & > div:nth-child(4) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        padding: 0;
+        margin: 0;
+        & > div:nth-child(1){
+          width: 90px;
+          height: 90px;
+          min-width: 90px;
+          font-size: 18px;
+          line-height: 1.2;
+        }
+        &>svg{
+          
+          width: 40px;
+          height: 10px;
+          path{
+            transform: scale(.4) translate(-20px, 0);
+          }
+        }
+        & > div:nth-child(3) {
+          width: 80px;
+          height: 80px;
+          min-width: 80px;
+          font-size: 16px;
+          line-height: 1.2;
+          margin-left: 10px;
+        }
+        & > div:nth-child(4) {
+          margin-right: 0;
+          width: 30px;
+          svg{
+            // transform: scale(.3) translateX(-200px);
+            &:nth-of-type(1){
+              transform: scale(.3) translate(-230px,30px);
+            }
+            &:nth-of-type(2){
+              transform: scale(.3) translate(-210px,-30px);
+            }
+          }
+          
+        }
+        & > div:nth-child(5) {
+          & > div {
+            width: 70px;
+            height: 70px;
+            min-width: 70px;
+            font-size: 14px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+    & > div:nth-child(5) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 0;
+        flex-direction: column;
+        margin-left: 0;
+        & > div:nth-child(1) {
+          position: relative;
+          transform: scale(1);
+          margin-top: 30px;
+          img{
+            width: 60%;
+            margin: 0 auto;
+          }
+        }
+        & > div:nth-child(2) {
+          margin-left: 0;
+          border: 2px solid #DEC692;
+          width: 100%;
+          svg{
+            display: none;
+          }
+          & > div:nth-child(2) {
+            padding: 22px 12px;
+            font-size: 14px;
+            line-height: 1.8;
+            position: relative;
+          }
+        }
+      }
+    }
+    & > div:nth-child(6) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 0;
+      }
+      & > div:nth-child(2),
+      & > div:nth-child(3) {
+        transform: scale(1);
+        & > div:nth-child(1) {
+          font-size: 20px;
+          text-align: right;
+          margin-right: 20px;
+          margin-top: 50px;
+        }
+        & > div:nth-child(2) {
+          margin-top: -5px;
+          & > div:nth-child(1) {
+            width: 50%;
+            height: auto;
+            margin-left: 0;
+          }
+          & > div:nth-child(2) {
+            margin-top: -10px;
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            padding: 60px 15px 15px;
+            line-height: 1.8;
+            & > div:nth-child(2) {
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 100px;
+        & > div:nth-child(1) {
+          font-size: 20px;
+          text-align: left;
+          margin-left: 20px;
+        }
+        & > div:nth-child(2) {
+          margin-right: 0;
+          &>div:nth-child(2){
+            padding: 60px 15px 15px;
+          }
+        }
+      }
+    }
+    & > div:nth-child(7) {
+      width: calc(100% - 60px);
+      margin: 120px auto 0;
+      
+      & > div:nth-child(2) {
+        margin-top: 40px;
+        & > div {
+          margin-bottom: 50px;
+          align-items: center;
+          width: calc(50% - 25px);
+          & > div:nth-child(2) {
+            font-size: 14px;
+            height: auto;
+          }
+          &:last-child{
+            width: 100%;
+            & > div:nth-child(1) {
+              width: calc(50% - 25px);
+            }
+          }
+        }
+        & > div:nth-child(1) {
+          margin-left: 0;
+        }
+
+        & > div:nth-child(3) {
+          margin-right: 0;
+        }
+
+        & > div:nth-child(n + 4) {
+          margin-top: 0;
+        }
+      }
+    }
+    & > div:nth-child(8) {
+      width: calc(100% - 60px);
+      margin: 20px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 35px;
+        margin-bottom: 0;
+        & > div {
+          margin-bottom: 50px;
+          & > div:nth-child(1) {
+            font-size: 18px;
+            padding: 0 20px;
+            width: max-content;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 0 20px 0 0;
+            margin-bottom: 15px;
+          }
+          & > div:nth-child(2) {
+            font-size: 14px;
+            line-height: 1.8;
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            width: max-content;
+          }
+        }
+        & > div:nth-child(4) {
+          & > div:nth-child(1) {
+            width: max-content;
+          }
+        }
+      }
+    }
+    & > div:nth-child(9) {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 45px;
+        &>div{
+          width: calc(50% - 25px);
+          height: auto;
+          margin-bottom: 50px;
+          & > div:nth-child(2) {
+            font-size: 14px;
+            height: 70px;
+            line-height: 1.6;
+          }
+          & > div:nth-child(3) {
+            font-size: 12px;
+            padding: 0 20px 15px;
+            line-height: 1.8;
+          }
+        }
+        & > div:nth-child(n + 4) {
+          margin-top: 0;
+
+          & > div:nth-child(2) {
+            height: auto;
+          }
+        }
+      }
+    }
+    & > :last-child {
+      width: calc(100% - 60px);
+      margin: 20px auto 0;
+      & > div:first-child {
+        margin-bottom: 30px;
+      }
+    }
   }
   .maculopathy_button_bg_color{
     margin-top: 55px;
@@ -1481,7 +1722,7 @@ const callTel = () => {
     line-height: 1.6;
   }
   .dow {
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 100px;
     font-size: 16px;
     & > div:nth-child(1) {
@@ -1506,10 +1747,8 @@ const callTel = () => {
   .maculopathy_nav {
     margin-top: -30%;
   }
-
   .dow {
     margin-top: -20%;
-
     & > div:nth-child(1) {
       & > div {
         & > div:nth-child(1) {
