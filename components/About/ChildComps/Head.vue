@@ -1,33 +1,35 @@
 <script setup lang="ts">
 const anchorList = ref([
+  
   {
-    anchorName: 'pages.about_us.about_us',
+    anchorName: '企業願景',
+    anchorLink: '/about-us#corporate',
+  },
+  {
+    anchorName: '中心簡介',
     anchorLink: '/about-us#centreIntro',
   },
   {
     anchorName: 'pages.about_us.development_course',
     anchorLink: '/about-us#history',
   },
-  // {
-  //   anchorName: '企業願景',
-  //   anchorLink: '/about-us#corporateVision',
-  // },
-  // {
-  //   anchorName: '中心設備',
-  //   anchorLink: '/about-us#medicalEquipment',
-  // },
+  
+  {
+    anchorName: '中心設備',
+    anchorLink: '/about-us#medicalEquipment',
+  },
   {
     anchorName: 'pages.about_us.enterprise_awards',
     anchorLink: '/about-us#awards',
   },
-  {
-    anchorName: 'pages.process_cost.cost',
-    anchorLink: '/process-and-cost',
-  },
-  {
-    anchorName: 'pages.process_cost.process',
-    anchorLink: '/process-and-cost#process',
-  },
+  // {
+  //   anchorName: 'pages.process_cost.cost',
+  //   anchorLink: '/process-and-cost',
+  // },
+  // {
+  //   anchorName: 'pages.process_cost.process',
+  //   anchorLink: '/process-and-cost#process',
+  // },
 ])
 const acIdex = ref(-1)
 const exactIdex = ref(-1)

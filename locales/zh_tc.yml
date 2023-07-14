@@ -84,13 +84,13 @@ pages:
     index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
     home: 首頁
     footer:
-      company: 希瑪林順潮眼科中心
+      company: 希瑪眼科中心
       copy_right: 版權所有
       language: 語言
       fonts: 字體
       privacy: 私隱政策
       disclaimer: 免責條款
-    subscribe: 立即預約
+    subscribe: 立即查詢/預約
     inquire: 在線查詢
   about_us:
     about_us: 關於我們
@@ -101,14 +101,14 @@ pages:
       profile_group_start: 我們的集團名稱
       profile_group_name: 「C-MER」
       profile_group_idea: ，正正反映著我們的理念與執著：
-      profile_group_C: 「C」 ：專業臨床服務 Profession al Clinical Services
+      profile_group_C: 「C」 ：專業臨床服務 Profession Clinical Services
       profile_group_M: 「Ｍ」：現代化管理 Modern Management
       profile_group_E: 「Ｅ」：優質教育 Quality Education
       profile_group_R: 「Ｒ」：開創性科研 Pioneering Research
       profile_group_hema: 「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
     hema_eye:
       hema_eye: 希瑪眼科中心
-      hema_eye_introduce_one: 現時全港有12間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上21名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
+      hema_eye_introduce_one: 現時全港有11間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上22名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
       hema_eye_introduce_two: 眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」的原則，為病人提供安全、準確、可靠的眼科檢查及治療。
       hema_eye_facebooke: 希瑪眼科
     hema_smile:
@@ -143,10 +143,12 @@ pages:
         child21_month_1: 11月
         child21_month_2: 7月
         child21_month_3: 3月
+        child21_month_4: 12月
         child21_info_1: 尖沙咀 希瑪醫療集團成立 (眼科、牙科、醫美)
         child21_info_2_1: 中環 希瑪眼科視光中心成立
         child21_info_2_2: 旺角 希瑪眼科視光中心成立
         child21_info_3: 惠州希瑪眼科醫院成立
+        child21_info_3_2: 沙田(第二間)希瑪眼科中心成立
       year_20: "2020"
       child_20:
         child_month: 11月
@@ -184,7 +186,7 @@ pages:
       year_14: "2014"
       child_14:
         child_month: 1月
-        child_info: 深圳 希瑪林順潮眼科醫院成立
+        child_info: 旺角 希瑪眼科中心成立
       year_13: "2013"
       child_13:
         child_month: 3月
@@ -981,12 +983,12 @@ pages:
       cost_tr3_td1: 光學相干斷層掃描（青光眼）
       cost_tr4_td1: 光學相干斷層掃描（黃斑）
       cost_tr5_td1: 光學相干斷層掃描（青光眼+黃斑）
-      cost_tr6_td1: 人工晶體測量/ A 超聲波掃描
+      cost_tr6_td1: A 超聲波掃描
       cost_tr7_td1: 角膜內皮細胞檢查
       cost_tr8_td1: 視野分析
       cost_tr9_td1: 掃描激光眼底檢查
       cost_tr10_td1: 眼底照相
-      cost_tr11_td1: 眼前節分析 / 角膜厚度測量 / 角膜地形分析
+      cost_tr11_td1: 眼前節分析 / 角膜厚度測量
       cost_tr12_td1: 眼底照相 + 眼底熒光血管造影（包藥費）
       cost_tr13_td1: 眼底照相 + 靛青綠血管造影（包藥費）
       cost_tr14_td1: 眼底照相 + 眼底熒光血管造影 + 靛青綠血管造影（包藥費）
@@ -1037,7 +1039,7 @@ pages:
     contact_us: 聯絡我們
     clinic_information: 診所資料
     clinic_information_title:
-      clinic_information_title: 眼 科 诊 所
+      clinic_information_title: 眼 科 診 所
       clinic_information_map: Google 地圖
       clinic_information_make: 預約
       clinic_information_serviceNavigation1: 診所資料

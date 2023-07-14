@@ -8,7 +8,7 @@ const locale = useState<string>('locale.setting')
 const app = useAppConfig() as AppConfigInput
 useHead({
   title: app.name,
-  titleTemplate: '%s - 希玛眼科',
+  titleTemplate: '%s - 希瑪眼科',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
@@ -20,6 +20,21 @@ useHead({
   ],
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 })
+let cookieBoxShow = ref(false)
+const handleSetCookie = () =>{
+  cookieBoxShow.value = false
+  localStorage.setItem('userCookie','1');
+}
+onMounted(()=>{
+  try{
+    let getCookie = localStorage.getItem('userCookie');
+    if(!getCookie){
+      cookieBoxShow.value = true
+    }
+  }catch(e){
+    console.log(3)
+  }
+})
 </script>
 
 <template>
@@ -30,6 +45,12 @@ useHead({
       <NuxtLayout>
         <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
         <NuxtPage />
+        <div v-if="cookieBoxShow" :class="['cookieBox']" @click="handleSetCookie">
+          <div>我們使用 Cookies 和其他形式的網站導航信息爲您提供更好的瀏覽體驗、分析網站流量、個性化內容並提供有針對性的廣告。 在我們的隱私政策中閱讀有關我們如何使用
+                Cookies的信息。如果您繼續使用本網站，即表示您同意我們使用 Cookies。</div>
+          <div>全部接受</div>
+          <div>X</div>
+        </div>
       </NuxtLayout>
     </Body>
   </Html>
@@ -53,5 +74,72 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: #ffffff;
+}
+
+.cookieBox{
+  width: calc(100% - 60px);
+  max-width: 880px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 15px;
+  background: #fff;
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  opacity: .9;
+  transition: .5s;
+  &>div{
+    &:nth-of-type(1){
+      font-size: 16px;
+    }
+    &:nth-of-type(2){
+      min-width: 100px;
+      margin: 0 0 0 20px;
+      color: #fff;
+      background: #1b407a;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size:16px;
+    }
+    &:nth-of-type(3){
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      font-family: '正体';
+      transform: scaleX(1.2);
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .cookieBox{
+    flex-direction: column;
+    padding: 10px;
+    &>div{
+      &:nth-of-type(1){
+        font-size: 12px;
+      }
+      &:nth-of-type(2){
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      &:nth-of-type(3){
+        bottom: 10px;
+        top: auto;
+      }
+    }
+  }
 }
 </style>

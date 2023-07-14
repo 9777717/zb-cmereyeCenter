@@ -10,17 +10,17 @@ export interface ILocales {
 
 export const availableLocales: ILocales = {
   zh_tc: {
-    name: '繁体中文',
+    name: '中文（香港）',
     iso: 'zh_tc',
     flag: 'tc',
   },
-  zh: {
-    name: '简体中文',
-    iso: 'zh',
-    flag: 'cn',
-  },
+  // zh: {
+  //   name: '简体中文',
+  //   iso: 'zh',
+  //   flag: 'cn',
+  // },
   en: {
-    name: 'English',
+    name: 'ENG',
     iso: 'en',
     flag: 'en',
   },

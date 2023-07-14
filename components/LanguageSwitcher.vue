@@ -51,7 +51,8 @@ const localeSetting = useState<string>('locale.setting')
               stroke-linejoin="round"
             />
           </svg>
-          <div class="font">{{ $t('pages.index.footer.language') }}</div>
+          <!-- <div class="font">{{ $t('pages.index.footer.language') }}</div> -->
+          <div class="font">Languages</div>
         </span>
       </ListboxButton>
       <ListboxOptions
@@ -70,11 +71,11 @@ const localeSetting = useState<string>('locale.setting')
           }"
         >
           <span class="text-sm mr-2">
-            {{ lang.flag }}
+            <!-- {{ lang.flag }} -->
           </span>
           <span class="flex-1 truncate">
             {{ lang.name }}
-            <span class="text-xs">({{ lang.iso }})</span>
+            <!-- <span class="text-xs">({{ lang.iso }})</span> -->
           </span>
         </ListboxOption>
       </ListboxOptions>

@@ -24,6 +24,12 @@ const menus = computed((): IMenuItem[] => [
     childMenuList: [
       {
         type: 'link',
+        text: '企業願景',
+        route: { path: '/about-us', hash: '#corporate' },
+      },
+      
+      {
+        type: 'link',
         text: t('pages.about_us.center_profile'),
         route: { path: '/about-us', hash: '#centreIntro' },
       },
@@ -33,7 +39,12 @@ const menus = computed((): IMenuItem[] => [
         route: { path: '/about-us', hash: '#history' },
       },
       {
-        type: 'link', // 企业愿景
+        type: 'link',
+        text: '中心設備',
+        route: { path: '/about-us', hash: '#medicalEquipment' },
+      },
+      {
+        type: 'link', 
         text: t('pages.about_us.enterprise_vision'),
         route: { path: '/about-us', hash: '#awards' },
       },
@@ -133,6 +144,11 @@ const menus = computed((): IMenuItem[] => [
         route: { name: 'ophthalmic-information-publicity' },
       },
       {
+        type: 'link',
+        text: '視力健康測試',
+        route: { name: 'ophthalmic-information-eyesight' }
+      },
+      {
         type: 'link', // 希瑪小劇場
         text: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
         route: { name: 'ophthalmic-information-littleTheatre' },
@@ -151,11 +167,6 @@ const menus = computed((): IMenuItem[] => [
         type: 'link', // 健康資訊
         text: t('pages.ophthalmic_information.ophthalmic_message'),
         route: { name: 'ophthalmic-information-healthInfo' },
-      },
-      {
-        type: 'link',
-        text: '視力健康測試',
-        route: { name: 'ophthalmic-information-eyesight' }
       }
     ],
   },

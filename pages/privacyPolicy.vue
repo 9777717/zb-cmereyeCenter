@@ -91,7 +91,8 @@ useHead(() => ({
 </template>
 <style lang="scss" scoped>
 .privacyPolicy {
-  width: 1020px;
+  width: 100%;
+  max-width: 1080px;
   margin: 0 auto;
   margin-bottom: 50px;
 

@@ -13,6 +13,10 @@ const serviceNavigation = [
     anchorLink: '/ophthalmic-information/publicity',
   },
   {
+    anchorName: 'pages.ophthalmic_information.ophthalmic_eyesight',
+    anchorLink: '/ophthalmic-information/eyesight',
+  },
+  {
     anchorName: 'pages.ophthalmic_information.ophthalmic_little_theatre',
     anchorLink: '/ophthalmic-information/littleTheatre',
   },
@@ -28,10 +32,7 @@ const serviceNavigation = [
     anchorName: 'pages.ophthalmic_information.ophthalmic_message',
     anchorLink: '/ophthalmic-information/healthInfo',
   },
-  {
-    anchorName: 'pages.ophthalmic_information.ophthalmic_eyesight',
-    anchorLink: '/ophthalmic-information/eyesight',
-  },
+  
 ]
 </script>
 

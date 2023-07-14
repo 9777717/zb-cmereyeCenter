@@ -781,7 +781,7 @@ const goInstagram = (type: string) => {
         font-size: 20px;
         line-height: 34px;
         text-align: justify;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.01em;
         text-indent: 30px;
         text-transform: uppercase;
         color: #515151;

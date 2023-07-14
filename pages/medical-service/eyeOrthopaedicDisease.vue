@@ -874,7 +874,7 @@ const goWhatsApp = () => {
         </div>
       </div>
     </div>
-    <div>
+    <div class="rightSidesNavigation">
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <div class="fromTable">
@@ -2492,7 +2492,9 @@ const goWhatsApp = () => {
     line-height: 1.6;
     padding: 16px 30px;
   }
-
+  .eyeOrthopaedicDisease_title_text {
+    font-size: 32px;
+  }
   // 头部样式
   .eyeOrthopaedicDisease_head {
     &>div:nth-child(1) {
@@ -4118,6 +4120,9 @@ const goWhatsApp = () => {
 
   .mb_text_p_span {
     margin-top: 262px;
+  }
+  .rightSidesNavigation{
+    display: none;
   }
 }
 </style>
