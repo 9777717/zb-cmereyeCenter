@@ -56,14 +56,14 @@ const ophthalmoplastyList1 = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
     title: '眼眶再造',
     text: [
       '眼球摘除的原因有許多，包括：腫瘤、感染、盲眼以及眼整容所造成的傷害。摘除術包括：眼球摘除、以及眼內容物摘除（保留眼眶和眼肌）。摘除的部分由人工植入義眼填充。其餘部分則通過打磨和噴塗的義眼來保持其美觀效果。義眼都是參照真眼度身訂做。',
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
+    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
     title: '眼眶收縮',
     text: [
       '眼眶收縮下眼眶無法固定義眼。首次治療後如果沒有即時植入義眼，眼眶容易收縮。眼眶收縮的再造是為了達到美觀的效果，包括穹窿構成、義眼二次植入和以自體脂肪移植來還原本來的外觀。',
@@ -99,6 +99,28 @@ const ophthalmoplastyList2 = [
     recovery: ['14-21天', '（7-10天拆線）'],
   },
 ]
+const ophthalmoplastyListMb2 = [
+  {
+    operation: '穿線式（吊線）',
+    introduce: [
+      '在眼皮上製造3至5個小孔，並用外科手術線把小孔縫合，製造雙眼皮的褶痕。數個小孔，並用外科手術線把小孔縫合，製造雙眼皮的折痕。',
+      '適合較年輕、眼皮單薄、較小脂肪及眼皮沒有鬆弛緊緻的人士。',
+    ],
+    durability: ['2-3年', '（會逐漸變得不穩）'],
+    time: '~45分鐘',
+    recovery: ['7-10天'],
+  },
+  {
+    operation: '切割式（開刀）',
+    introduce: [
+      '醫生按雙眼皮位置開刀以手術刀切開上眼瞼，抽取多餘的脂肪及皮膚組織，再以縫線縫合切口，將提眼瞼肌的組織與皮膚連接，形成雙眼皮。',
+      '適合眼皮鬆弛及皮下脂肪較厚的人士。',
+    ],
+    durability: ['長久性'],
+    time: '~60-90分鐘',
+    recovery: ['14-21天', '（7-10天拆線）'],
+  },
+]
 const ophthalmoplastyList3 = [
   {
     operation: '手術名稱',
@@ -107,6 +129,29 @@ const ophthalmoplastyList3 = [
     time: '手術時程',
     recovery: ['康復時間'],
   },
+  {
+    operation: '穿線式（吊線）',
+    introduce: [
+      '過程不需要切開皮膚，只需開幾個細小傷口，再縫合皮膚肌肉、底層瞼板及提眼瞼肌，達致摺眼皮的效果從而令睫毛向外翻。此方法造成的傷口較小，復原得較快，',
+      '適合眼皮鬆弛輕微和皮膚薄的患者。',
+    ],
+    durability: ['2-3年', '（會逐漸變得不穩）'],
+    time: '~45分鐘',
+    recovery: ['7-10天'],
+  },
+  {
+    operation: '切割式（開刀）',
+    introduce: [
+      '醫生會將皮膚肌肉、眼肌筋膜打開，切除多餘的脂肪，然後直接將皮膚、瞼板及提眼瞼肌縫合。術後傷口雖然較大和明顯，但傷口一般可收藏在「雙眼皮」的線位，不易被察覺。此方',
+      '法較',
+      '適合眼皮鬆弛及皮下脂肪較厚的人士。',
+    ],
+    durability: ['長久性'],
+    time: '~60-90分鐘',
+    recovery: ['14-21天', '（7-10天拆線）'],
+  },
+]
+const ophthalmoplastyListMb3 = [
   {
     operation: '穿線式（吊線）',
     introduce: [
@@ -207,12 +252,8 @@ const goWhatsApp = () => {
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
         </div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/a521caceb1fb4b5f.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/96b09fd6a7d94db4.png"
-          />
+          <img src="https://static.cmereye.com/imgs/2023/06/a521caceb1fb4b5f.png" />
+          <img src="https://static.cmereye.com/imgs/2023/06/96b09fd6a7d94db4.png" />
         </div>
       </div>
     </div>
@@ -230,7 +271,7 @@ const goWhatsApp = () => {
             <div>
               <div>
                 <div><span>1</span>上瞼下垂</div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                   <p>
                     上眼瞼下垂可能是先天或後天因素影響。大多數是由提拉眼瞼肌肉無力或斷裂造成。大部分先天性病例是由於出生後肌肉發育不良導致。
                   </p>
@@ -248,24 +289,18 @@ const goWhatsApp = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png"
-                alt=""
-              />
+            <div class="img-size">
+              <img src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png" alt="" />
             </div>
           </div>
           <div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png"
-                alt=""
-              />
+            <div class="img-size">
+              <img src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png" alt="" />
             </div>
             <div>
               <div>
                 <div><span>2</span>瞼內翻</div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                   <p>
                     瞼內翻指瞼緣向眼球方向卷曲。這種病常見於老年人。一般由於眼瞼肌異常、結膜二次創傷（化學，灼熱或機械導致）、感染、炎症疾病，如：史蒂文詹森綜合征所造成。
                   </p>
@@ -288,7 +323,7 @@ const goWhatsApp = () => {
             <div>
               <div>
                 <div><span>3</span>瞼外翻</div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                   <p>
                     瞼外翻指眼瞼邊緣向外翻轉，通常是因為眼瞼鬆弛所致，繼發於更年期老年人的眼部結構變化。另外，眼瞼皮膚疤痕、面部肌肉麻痺，以及眼瞼的鬆弛都會導致瞼外翻。先天性原因造成的此類疾病較為少見。
                   </p>
@@ -303,27 +338,21 @@ const goWhatsApp = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png"
-                alt=""
-              />
+            <div class="img-size">
+              <img src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png" alt="" />
             </div>
           </div>
           <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>眼睛外形影響視野及外觀？</span><span>即WhatsApp預約治療</span>
           </div>
           <div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png"
-                alt=""
-              />
+            <div class="img-size">
+              <img src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png" alt="" />
             </div>
             <div>
               <div>
                 <div><span>4</span>兔眼</div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                   <p>
                     兔眼是由於臉部肌肉麻痺，或是眼瞼皮膚疤痕而導致上下眼瞼無法完全閉合；可導致眼乾，甚至角膜潰瘍。
                   </p>
@@ -343,20 +372,16 @@ const goWhatsApp = () => {
         <div>
           <div class="eyeOrthopaedicDisease_title_text_border">其他眼整形</div>
           <div>
-            <div
-              v-for="(item, index) in ophthalmoplastyList1"
-              :id="`eye-id_${index}`"
-              :key="index"
-            >
+            <div v-for="(item, index) in ophthalmoplastyList1" :id="`eye-id_${index}`" :key="index">
               <div>
                 <div class="ophthalmoplasty_bg_text">{{ item.title }}</div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                   <p v-for="(ele, index) in item.text" :key="index">
                     {{ ele }}
                   </p>
                 </div>
               </div>
-              <div><img :src="item.img" alt="" /></div>
+              <div class="mb-img"><img :src="item.img" alt="" /></div>
             </div>
           </div>
           <div>
@@ -371,11 +396,8 @@ const goWhatsApp = () => {
                   </p>
                 </div>
               </div>
-              <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png"
-                  alt=""
-                />
+              <div class="img-size">
+                <img src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png" alt="" />
               </div>
             </div>
             <div>
@@ -384,8 +406,7 @@ const goWhatsApp = () => {
                 <div>
                   <div>內開式（眼內結膜切口）</div>
                   <div class="eyeOrthopaedicDisease_text_p_span">
-                    <span>在下眼瞼結膜內製造切口，把多餘脂肪移位或除去</span
-                    >。完成後無需縫線，也不會在眼皮上留有疤痕。這方法適合較年輕及眼皮緊緻的人士。
+                    <span>在下眼瞼結膜內製造切口，把多餘脂肪移位或除去</span>。完成後無需縫線，也不會在眼皮上留有疤痕。這方法適合較年輕及眼皮緊緻的人士。
                   </div>
                 </div>
                 <div>
@@ -403,23 +424,19 @@ const goWhatsApp = () => {
                 <div id="double_fold_eyelids" class="ophthalmoplasty_bg_text">
                   雙眼皮手術
                 </div>
-                <div class="eyeOrthopaedicDisease_text_p_span">
+                <div class="eyeOrthopaedicDisease_text_p_span  mb_text_p_span">
                   <p>
                     當提眼瞼肌組織連接到眼皮褶痕處，便會產生皺折，形成雙眼皮。由於亞洲人的上眼瞼皮膚較厚、脂肪較多、提眼瞼肌組織連接到的眼皮位置較低（近睫毛），故此較多人擁有單眼皮，而接受雙眼皮手術的目的便是︰連接製造提眼瞼肌和眼皮，使眼部看起更精神之間的人工連結。
                   </p>
                 </div>
               </div>
-              <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png"
-                  alt=""
-                  srcset=""
-                />
+              <div class="img-size">
+                <img src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png" alt="" srcset="" />
               </div>
             </div>
             <div>
               <div>手術方法</div>
-              <div>
+              <div class="pc-table">
                 <div v-for="(item, index) in ophthalmoplastyList2" :key="index">
                   <div>{{ item.operation }}</div>
                   <div>
@@ -428,17 +445,33 @@ const goWhatsApp = () => {
                     }}</span>
                   </div>
                   <div>
-                    <span
-                      v-for="(ele, index) in item.durability"
-                      :key="index"
-                      >{{ ele }}</span
-                    >
+                    <span v-for="(ele, index) in item.durability" :key="index">{{ ele }}</span>
                   </div>
                   <div>{{ item.time }}</div>
                   <div>
                     <span v-for="(ele, index) in item.recovery" :key="index">{{
                       ele
                     }}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-table-box">
+                <div v-for="(item, index) in ophthalmoplastyListMb2" :key="index" class="mb-nav-box">
+                  <div class="mb-operation">{{ item.operation }}</div>
+                  <div class="mb-content-box2">
+                    <div>
+                      <span v-for="(ele, index) in item.introduce" :key="index">{{ ele }}</span>
+                    </div>
+                    <div>
+                      <div>維持性：<span v-for="el in item.durability" :key="el">{{ el }}</span></div>
+                    </div>
+                    <div>
+                      <div>手術時程：<span>{{ item.time }}</span></div>
+                    </div>
+                    <div>
+                      <div>康復時間：</div>
+                      <div><span v-for="el in item.recovery" :key="el">{{ el }}</span></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -455,34 +488,19 @@ const goWhatsApp = () => {
                 </div>
                 <div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png"
-                      alt=""
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png" alt="" />
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png"
-                      alt=""
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png" alt="" />
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png"
-                      alt=""
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png" alt="" />
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png"
-                      alt=""
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png" alt="" />
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png"
-                      alt=""
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png" alt="" />
                   </div>
                 </div>
                 <div>
@@ -499,7 +517,7 @@ const goWhatsApp = () => {
               <div>
                 <div>
                   <div id="slack" class="ophthalmoplasty_bg_text">眼皮鬆弛</div>
-                  <div class="eyeOrthopaedicDisease_text_p_span">
+                  <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
                     <p>
                       眼皮鬆弛較常見於中老年人，眼睛皮下組織因老化而變弱和失去彈性，導致皮膚脂肪積聚過多，形成眼皮浮腫及下垂。近年，亦有不少年輕人因長期配戴隱形眼鏡時，過分拉扯眼周組織，而造成眼皮鬆弛。
                     </p>
@@ -509,41 +527,43 @@ const goWhatsApp = () => {
                   </div>
                 </div>
                 <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png"
-                    alt=""
-                  />
+                  <img src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png" alt="" />
                 </div>
               </div>
               <div>
                 <div>手術方法</div>
-                <div>
-                  <div
-                    v-for="(item, index) in ophthalmoplastyList3"
-                    :key="index"
-                  >
+                <div class="pc-table">
+                  <div v-for="(item, index) in ophthalmoplastyList3" :key="index">
                     <div>{{ item.operation }}</div>
                     <div>
-                      <span
-                        v-for="(ele, index) in item.introduce"
-                        :key="index"
-                        >{{ ele }}</span
-                      >
+                      <span v-for="(ele, index) in item.introduce" :key="index">{{ ele }}</span>
                     </div>
                     <div>
-                      <span
-                        v-for="(ele, index) in item.durability"
-                        :key="index"
-                        >{{ ele }}</span
-                      >
+                      <span v-for="(ele, index) in item.durability" :key="index">{{ ele }}</span>
                     </div>
                     <div>{{ item.time }}</div>
                     <div>
-                      <span
-                        v-for="(ele, index) in item.recovery"
-                        :key="index"
-                        >{{ ele }}</span
-                      >
+                      <span v-for="(ele, index) in item.recovery" :key="index">{{ ele }}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-table-box">
+                  <div v-for="(item, index) in ophthalmoplastyListMb3" :key="index" class="mb-nav-box">
+                    <div class="mb-operation">{{ item.operation }}</div>
+                    <div class="mb-content-box2">
+                      <div>
+                        <span v-for="(ele, index) in item.introduce" :key="index">{{ ele }}</span>
+                      </div>
+                      <div>
+                        <div>維持性：<span v-for="el in item.durability" :key="el">{{ el }}</span></div>
+                      </div>
+                      <div>
+                        <div>手術時程：<span>{{ item.time }}</span></div>
+                      </div>
+                      <div>
+                        <div>康復時間：</div>
+                        <div><span v-for="el in item.recovery" :key="el">{{ el }}</span></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -584,8 +604,7 @@ const goWhatsApp = () => {
               </div>
             </div>
             <div class="eyeOrthopaedicDisease_title_btn">
-              <span>眼腫瘤延誤治療 後果嚴重</span
-              ><span>即致電預約醫生問清問楚</span>
+              <span>眼腫瘤延誤治療 後果嚴重</span><span>即致電預約醫生問清問楚</span>
             </div>
           </div>
           <div>
@@ -618,12 +637,8 @@ const goWhatsApp = () => {
                     </p>
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png"
-                    />
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png"
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png" />
                   </div>
                 </div>
               </div>
@@ -650,9 +665,7 @@ const goWhatsApp = () => {
                     </p>
                   </div>
                   <div>
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png"
-                    />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png" />
                     <div>眼球內的腫瘤</div>
                   </div>
                 </div>
@@ -695,29 +708,20 @@ const goWhatsApp = () => {
       <div id="eyeProsthesis">
         <div class="eyeOrthopaedicDisease_title_text">義眼術</div>
         <div>
-          <div class="eyeOrthopaedicDisease_text_p_span">
+          <div class="eyeOrthopaedicDisease_text_p_span mb_text_p_span">
             植入義眼台可以填充眼窩大部分的空間，殘留的位置可安裝義眼片。通過義眼台帶動義眼片轉動，義眼的活動性較高。義眼台根據不同材料分類：
           </div>
           <div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png" alt="" />
               <div>矽膠義眼台</div>
             </div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png" alt="" />
               <div>羥基磷灰石義眼台</div>
             </div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png"
-                alt=""
-              />
+              <img src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png" alt="" />
               <div>多孔聚乙烯義眼台</div>
             </div>
           </div>
@@ -812,8 +816,9 @@ const goWhatsApp = () => {
             <span>注意：</span>取下義眼片需放在乾淨的軟紙巾上，避免接觸。
           </div>
           <div>
-            <span>注意：</span
-            >安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。
+            <span>注意：</span>安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制
+            <span
+              class="usage-box-text">技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。</span>
           </div>
         </div>
         <div>
@@ -843,8 +848,7 @@ const goWhatsApp = () => {
                 </p>
                 <p class="eye_attention"><span>2</span>安放前洗淨雙手；</p>
                 <p class="eye_attention">
-                  <span>3</span
-                  >先在義眼片上滴2-3滴清洗液，再擦去其表面的沉積物。再用溫開水徹底沖洗，然後紙巾擦乾，仔細查看有沒有殘留沉積物，如有可重複步驟清洗。
+                  <span>3</span>先在義眼片上滴2-3滴清洗液，再擦去其表面的沉積物。再用溫開水徹底沖洗，然後紙巾擦乾，仔細查看有沒有殘留沉積物，如有可重複步驟清洗。
                 </p>
               </div>
             </div>
@@ -856,15 +860,13 @@ const goWhatsApp = () => {
                   <span>2</span> 建議佩戴護目鏡以保護健眼；
                 </p>
                 <p class="eye_attention">
-                  <span>3</span
-                  >游泳及水上運動時需戴上護目鏡。跳水、滑水、潛水時需取下義眼片；
+                  <span>3</span>游泳及水上運動時需戴上護目鏡。跳水、滑水、潛水時需取下義眼片；
                 </p>
                 <p class="eye_attention">
                   <span>4</span>兒童佩戴義眼片需成人監護，避免誤吞；
                 </p>
                 <p class="eye_attention">
-                  <span>5</span
-                  >有明顯紅腫、疼痛或有惡臭分泌物等，不能繼續佩戴義眼片，並需及時諮詢醫生。
+                  <span>5</span>有明顯紅腫、疼痛或有惡臭分泌物等，不能繼續佩戴義眼片，並需及時諮詢醫生。
                 </p>
               </div>
             </div>
@@ -876,10 +878,8 @@ const goWhatsApp = () => {
       <rightSidesNavigation :service-navigation="serviceNavigation" />
     </div>
     <div class="fromTable">
-      <FormFooterInfo
-        :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#b6b3e0;'}`"
-      />
+      <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#b6b3e0;'}`" />
     </div>
     <PageFooterMenu />
   </div>
@@ -893,31 +893,31 @@ const goWhatsApp = () => {
   margin-bottom: 290px;
   transform: scale(0.85);
 
-  & > #ophthalmoplasty {
+  &>#ophthalmoplasty {
     margin-bottom: 160px;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin: 60px auto 120px;
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin: 100px auto 160px;
 
-      & > div:nth-child(2),
-      & > div:nth-child(4) {
+      &>div:nth-child(2),
+      &>div:nth-child(4) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 99px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           width: 752px;
           transform: scale(0.85);
 
-          & > div {
+          &>div {
             margin-bottom: 78px;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
               font-size: 32px;
               font-weight: normal;
@@ -929,7 +929,7 @@ const goWhatsApp = () => {
               display: flex;
               align-items: center;
 
-              & > span {
+              &>span {
                 width: 34px;
                 height: 34px;
                 margin-right: 10px;
@@ -944,15 +944,15 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               font-size: 22px;
               line-height: 44px;
             }
           }
 
-          & > div:nth-child(1) {
-            & > div:nth-child(2) {
-              & > p:nth-child(1) {
+          &>div:nth-child(1) {
+            &>div:nth-child(2) {
+              &>p:nth-child(1) {
                 margin-bottom: 23px;
               }
             }
@@ -960,19 +960,19 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(3),
-      & > div:nth-child(6) {
+      &>div:nth-child(3),
+      &>div:nth-child(6) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 99px;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           width: 752px;
           transform: scale(0.85);
 
-          & > div {
-            & > div:nth-child(1) {
+          &>div {
+            &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
               font-size: 32px;
               font-weight: normal;
@@ -984,7 +984,7 @@ const goWhatsApp = () => {
               display: flex;
               align-items: center;
 
-              & > span {
+              &>span {
                 width: 34px;
                 height: 34px;
                 margin-right: 10px;
@@ -999,17 +999,17 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               font-size: 22px;
               line-height: 44px;
             }
           }
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             margin-bottom: 78px;
 
-            & > div:nth-child(2) {
-              & > p:nth-child(1) {
+            &>div:nth-child(2) {
+              &>p:nth-child(1) {
                 margin-bottom: 23px;
               }
             }
@@ -1017,24 +1017,24 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(3),
-      & > div:nth-child(4),
-      & > div:nth-child(5),
-      & > div:nth-child(6) {
+      &>div:nth-child(3),
+      &>div:nth-child(4),
+      &>div:nth-child(5),
+      &>div:nth-child(6) {
         margin-top: 160px;
       }
     }
 
-    & > div:nth-child(4) {
-      & > div:nth-child(2) {
-        & > div {
+    &>div:nth-child(4) {
+      &>div:nth-child(2) {
+        &>div {
           display: flex;
           margin-bottom: 120px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             width: 898px;
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-top: 51px;
               margin-right: 37px;
               font-size: 22px;
@@ -1042,20 +1042,20 @@ const goWhatsApp = () => {
             }
           }
 
-          & > :nth-child(2) {
+          &> :nth-child(2) {
             margin-top: 40px;
           }
         }
       }
 
-      & > div:nth-child(3) {
-        & > div:nth-child(1) {
+      &>div:nth-child(3) {
+        &>div:nth-child(1) {
           display: flex;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             width: 898px;
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-top: 51px;
               margin-right: 37px;
               font-size: 22px;
@@ -1063,15 +1063,15 @@ const goWhatsApp = () => {
             }
           }
 
-          & > :nth-child(2) {
+          &> :nth-child(2) {
             margin-top: 40px;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-bottom: 120px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 28px;
             font-weight: normal;
@@ -1081,11 +1081,11 @@ const goWhatsApp = () => {
             color: #d0aa85;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             display: flex;
             justify-content: space-between;
 
-            & > div {
+            &>div {
               margin-top: 85px;
               width: 624px;
               height: 305px;
@@ -1094,7 +1094,7 @@ const goWhatsApp = () => {
               border: solid 2px #e4c6a9;
               position: relative;
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 position: absolute;
                 top: -35px;
                 left: 111px;
@@ -1117,7 +1117,7 @@ const goWhatsApp = () => {
                 align-items: center;
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 font-size: 22px;
                 line-height: 44px;
                 padding: 0 46px;
@@ -1128,17 +1128,17 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(4) {
+      &>div:nth-child(4) {
         margin-bottom: 120px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           display: flex;
           margin-bottom: 40px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             width: 898px;
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-top: 51px;
               margin-right: 37px;
               font-size: 22px;
@@ -1146,13 +1146,13 @@ const goWhatsApp = () => {
             }
           }
 
-          & > :nth-child(2) {
+          &> :nth-child(2) {
             margin-top: 40px;
           }
         }
 
-        & > div:nth-child(2) {
-          & > div:nth-child(1) {
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 28px;
             font-weight: normal;
@@ -1163,12 +1163,12 @@ const goWhatsApp = () => {
             margin-bottom: 50px;
           }
 
-          & > div {
-            & > div {
+          &>div {
+            &>div {
               display: flex;
               border: 1px solid #e5e5e5;
 
-              & > div {
+              &>div {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1182,7 +1182,7 @@ const goWhatsApp = () => {
                 color: #515151;
               }
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 width: 254px;
                 font-family: 'NotoSansHK-Medium';
                 font-size: 30px;
@@ -1193,32 +1193,32 @@ const goWhatsApp = () => {
                 color: #515151;
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 width: 520px;
                 border-left: 1px solid #e5e5e5;
                 border-right: 1px solid #e5e5e5;
               }
 
-              & > div:nth-child(3) {
+              &>div:nth-child(3) {
                 width: 218px;
               }
 
-              & > div:nth-child(4) {
+              &>div:nth-child(4) {
                 width: 153px;
                 border-left: 1px solid #e5e5e5;
                 border-right: 1px solid #e5e5e5;
               }
 
-              & > div:nth-child(5) {
+              &>div:nth-child(5) {
                 width: 170px;
               }
             }
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               height: 76px;
               background-color: #e4c6a9;
 
-              & > div {
+              &>div {
                 font-family: 'NotoSansHK-Medium';
                 font-size: 26px;
                 font-weight: normal;
@@ -1229,16 +1229,16 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               height: 295px;
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 display: block;
                 padding-left: 35px;
                 padding-right: 33px;
                 padding-top: 53px;
 
-                & > span {
+                &>span {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
@@ -1246,7 +1246,7 @@ const goWhatsApp = () => {
                   line-height: 42px;
                 }
 
-                & > span:nth-child(2) {
+                &>span:nth-child(2) {
                   font-size: 22px;
                   font-weight: bold;
                   letter-spacing: 0px;
@@ -1257,24 +1257,24 @@ const goWhatsApp = () => {
               border-top: 1px solid #e5e5e5;
               border-bottom: 1px solid #e5e5e5;
 
-              & > div:nth-child(3) {
-                & > span:nth-child(1) {
+              &>div:nth-child(3) {
+                &>span:nth-child(1) {
                   font-weight: bold;
                 }
               }
             }
 
-            & > div:nth-child(3) {
+            &>div:nth-child(3) {
               height: 305px;
               background-color: #f8f8f9;
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 display: block;
                 padding-left: 35px;
                 padding-right: 33px;
                 padding-top: 53px;
 
-                & > span {
+                &>span {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
@@ -1282,7 +1282,7 @@ const goWhatsApp = () => {
                   line-height: 42px;
                 }
 
-                & > span:nth-child(2) {
+                &>span:nth-child(2) {
                   font-size: 22px;
                   font-weight: bold;
                   letter-spacing: 0px;
@@ -1290,8 +1290,8 @@ const goWhatsApp = () => {
                 }
               }
 
-              & > div:nth-child(5) {
-                & > span:nth-child(1) {
+              &>div:nth-child(5) {
+                &>span:nth-child(1) {
                   font-weight: bold;
                 }
               }
@@ -1300,14 +1300,14 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(5) {
-        & > div:nth-child(1) {
+      &>div:nth-child(5) {
+        &>div:nth-child(1) {
           margin-bottom: 120px;
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin: 50px 0;
 
-            & > div {
+            &>div {
               font-family: 'NotoSansHK-Regular';
               font-size: 22px;
               line-height: 44px;
@@ -1315,7 +1315,7 @@ const goWhatsApp = () => {
               color: #515151;
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin: 50px 0;
               display: flex;
               justify-content: space-between;
@@ -1323,7 +1323,7 @@ const goWhatsApp = () => {
             }
           }
 
-          & > div:nth-child(3) {
+          &>div:nth-child(3) {
             font-family: 'NotoSansHK-Regular';
             font-size: 22px;
             font-weight: normal;
@@ -1332,21 +1332,21 @@ const goWhatsApp = () => {
             letter-spacing: 0px;
             color: #515151;
 
-            & > p > span {
+            &>p>span {
               color: #d0aa85;
             }
           }
         }
 
-        & > div:nth-child(2) {
-          & > div:nth-child(1) {
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
             display: flex;
             margin-bottom: 40px;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               width: 898px;
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 margin-top: 51px;
                 margin-right: 37px;
                 font-size: 22px;
@@ -1354,13 +1354,13 @@ const goWhatsApp = () => {
               }
             }
 
-            & > :nth-child(2) {
+            &> :nth-child(2) {
               margin-top: 40px;
             }
           }
 
-          & > div:nth-child(2) {
-            & > div:nth-child(1) {
+          &>div:nth-child(2) {
+            &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
               font-size: 28px;
               font-weight: normal;
@@ -1371,12 +1371,12 @@ const goWhatsApp = () => {
               margin-bottom: 50px;
             }
 
-            & > div {
-              & > div {
+            &>div {
+              &>div {
                 display: flex;
                 border: 1px solid #e5e5e5;
 
-                & > div {
+                &>div {
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -1390,7 +1390,7 @@ const goWhatsApp = () => {
                   color: #515151;
                 }
 
-                & > div:nth-child(1) {
+                &>div:nth-child(1) {
                   width: 254px;
                   font-family: 'NotoSansHK-Medium';
                   font-size: 30px;
@@ -1401,32 +1401,32 @@ const goWhatsApp = () => {
                   color: #515151;
                 }
 
-                & > div:nth-child(2) {
+                &>div:nth-child(2) {
                   width: 520px;
                   border-left: 1px solid #e5e5e5;
                   border-right: 1px solid #e5e5e5;
                 }
 
-                & > div:nth-child(3) {
+                &>div:nth-child(3) {
                   width: 218px;
                 }
 
-                & > div:nth-child(4) {
+                &>div:nth-child(4) {
                   width: 153px;
                   border-left: 1px solid #e5e5e5;
                   border-right: 1px solid #e5e5e5;
                 }
 
-                & > div:nth-child(5) {
+                &>div:nth-child(5) {
                   width: 170px;
                 }
               }
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 height: 76px;
                 background-color: #e4c6a9;
 
-                & > div {
+                &>div {
                   font-family: 'NotoSansHK-Medium';
                   font-size: 26px;
                   font-weight: normal;
@@ -1437,16 +1437,16 @@ const goWhatsApp = () => {
                 }
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 height: 295px;
 
-                & > div:nth-child(2) {
+                &>div:nth-child(2) {
                   display: block;
                   padding-left: 35px;
                   padding-right: 33px;
                   padding-top: 53px;
 
-                  & > span {
+                  &>span {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
@@ -1454,7 +1454,7 @@ const goWhatsApp = () => {
                     line-height: 42px;
                   }
 
-                  & > span:nth-child(2) {
+                  &>span:nth-child(2) {
                     font-size: 22px;
                     font-weight: bold;
                     letter-spacing: 0px;
@@ -1465,24 +1465,24 @@ const goWhatsApp = () => {
                 border-top: 1px solid #e5e5e5;
                 border-bottom: 1px solid #e5e5e5;
 
-                & > div:nth-child(3) {
-                  & > span:nth-child(1) {
+                &>div:nth-child(3) {
+                  &>span:nth-child(1) {
                     font-weight: bold;
                   }
                 }
               }
 
-              & > div:nth-child(3) {
+              &>div:nth-child(3) {
                 height: 305px;
                 background-color: #f8f8f9;
 
-                & > div:nth-child(2) {
+                &>div:nth-child(2) {
                   display: block;
                   padding-left: 35px;
                   padding-right: 33px;
                   padding-top: 53px;
 
-                  & > span {
+                  &>span {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
@@ -1490,7 +1490,7 @@ const goWhatsApp = () => {
                     line-height: 42px;
                   }
 
-                  & > span:nth-child(2) {
+                  &>span:nth-child(2) {
                     font-size: 22px;
                     font-weight: bold;
                     letter-spacing: 0px;
@@ -1498,8 +1498,8 @@ const goWhatsApp = () => {
                   }
                 }
 
-                & > div:nth-child(5) {
-                  & > span:nth-child(1) {
+                &>div:nth-child(5) {
+                  &>span:nth-child(1) {
                     font-weight: bold;
                   }
                 }
@@ -1511,22 +1511,22 @@ const goWhatsApp = () => {
     }
   }
 
-  & > #eyeNeoplasms {
-    & > div:nth-child(2) {
+  &>#eyeNeoplasms {
+    &>div:nth-child(2) {
       margin-top: 50px;
       padding-right: 1px;
     }
 
-    & > div:nth-child(3) {
-      & > div:nth-child(1) {
+    &>div:nth-child(3) {
+      &>div:nth-child(1) {
         margin-bottom: 150px;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin: 80px 0 100px;
           display: flex;
           justify-content: space-between;
 
-          & > div {
+          &>div {
             transform: scale(0.85);
             width: 398px;
             height: 417px;
@@ -1534,7 +1534,7 @@ const goWhatsApp = () => {
             border-radius: 30px;
             border: solid 2px #e4c6a9;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               font-family: 'NotoSansHK-Bold';
               font-size: 32px;
               font-weight: normal;
@@ -1546,7 +1546,7 @@ const goWhatsApp = () => {
               padding: 30px 0;
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               padding: 0 42px;
               font-size: 22px;
               line-height: 42px;
@@ -1555,16 +1555,16 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(2) {
-        & > div:nth-child(1) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1) {
           margin-top: 150px;
           margin-bottom: 80px;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-bottom: 120px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 32px;
             font-weight: normal;
@@ -1575,7 +1575,7 @@ const goWhatsApp = () => {
             margin-bottom: 90px;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             border-radius: 10px;
             border: solid 2px #e4c6a9;
             padding-left: 37px;
@@ -1584,7 +1584,7 @@ const goWhatsApp = () => {
             padding-bottom: 50px;
             position: relative;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               position: absolute;
               left: -2px;
               top: -41px;
@@ -1606,7 +1606,7 @@ const goWhatsApp = () => {
               align-items: center;
               justify-content: center;
 
-              & > span {
+              &>span {
                 font-size: 48px;
                 line-height: 42px;
                 letter-spacing: 0px;
@@ -1615,21 +1615,21 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
-              & > p {
+            &>div:nth-child(2) {
+              &>p {
                 font-size: 22px;
                 line-height: 42px;
               }
 
-              & > p:nth-child(1) {
+              &>p:nth-child(1) {
                 margin-bottom: 29px;
               }
             }
           }
         }
 
-        & > div:nth-child(3) {
-          & > div:nth-child(1) {
+        &>div:nth-child(3) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 32px;
             font-weight: normal;
@@ -1641,7 +1641,7 @@ const goWhatsApp = () => {
             margin-bottom: 90px;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-bottom: 120px;
             border-radius: 10px;
             border: solid 2px #e4c6a9;
@@ -1651,7 +1651,7 @@ const goWhatsApp = () => {
             padding-bottom: 50px;
             position: relative;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               position: absolute;
               left: -2px;
               top: -41px;
@@ -1673,7 +1673,7 @@ const goWhatsApp = () => {
               align-items: center;
               justify-content: center;
 
-              & > span {
+              &>span {
                 font-size: 48px;
                 line-height: 42px;
                 letter-spacing: 0px;
@@ -1682,28 +1682,28 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               display: flex;
               justify-content: space-between;
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 width: 815px;
 
-                & > p {
+                &>p {
                   font-size: 22px;
                   line-height: 42px;
                 }
 
-                & > p:nth-child(2) {
+                &>p:nth-child(2) {
                   margin-top: 29px;
                 }
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 display: flex;
                 flex-direction: column;
 
-                & > img:nth-child(2) {
+                &>img:nth-child(2) {
                   margin-top: 26px;
                 }
               }
@@ -1711,10 +1711,10 @@ const goWhatsApp = () => {
           }
         }
 
-        & > div:nth-child(4) {
+        &>div:nth-child(4) {
           margin-bottom: 120px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 32px;
             font-weight: normal;
@@ -1726,7 +1726,7 @@ const goWhatsApp = () => {
             margin-bottom: 90px;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-bottom: 120px;
             border-radius: 10px;
             border: solid 2px #e4c6a9;
@@ -1736,7 +1736,7 @@ const goWhatsApp = () => {
             padding-bottom: 50px;
             position: relative;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               position: absolute;
               left: -2px;
               top: -41px;
@@ -1758,7 +1758,7 @@ const goWhatsApp = () => {
               align-items: center;
               justify-content: center;
 
-              & > span {
+              &>span {
                 font-size: 48px;
                 line-height: 42px;
                 letter-spacing: 0px;
@@ -1767,19 +1767,19 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
-              & > p {
+            &>div:nth-child(2) {
+              &>p {
                 font-size: 22px;
                 line-height: 42px;
               }
 
-              & > p:nth-child(2) {
+              &>p:nth-child(2) {
                 margin-top: 29px;
               }
             }
           }
 
-          & > div:nth-child(3) {
+          &>div:nth-child(3) {
             margin-bottom: 120px;
             border-radius: 10px;
             border: solid 2px #e4c6a9;
@@ -1789,7 +1789,7 @@ const goWhatsApp = () => {
             padding-bottom: 50px;
             position: relative;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               position: absolute;
               left: -2px;
               top: -41px;
@@ -1811,7 +1811,7 @@ const goWhatsApp = () => {
               align-items: center;
               justify-content: center;
 
-              & > span {
+              &>span {
                 font-size: 48px;
                 line-height: 42px;
                 letter-spacing: 0px;
@@ -1820,29 +1820,29 @@ const goWhatsApp = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               display: flex;
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 width: 815px;
                 margin-right: 50px;
 
-                & > p {
+                &>p {
                   font-size: 22px;
                   line-height: 42px;
                 }
 
-                & > p:nth-child(2) {
+                &>p:nth-child(2) {
                   margin-top: 29px;
                 }
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
 
-                & > div {
+                &>div {
                   margin-top: 11px;
                   font-family: 'NotoSansHK-Regular';
                   font-size: 20px;
@@ -1851,7 +1851,7 @@ const goWhatsApp = () => {
                   color: #777777;
                 }
 
-                & > img:nth-child(2) {
+                &>img:nth-child(2) {
                   margin-top: 26px;
                 }
               }
@@ -1860,18 +1860,18 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(3) {
-        & > div:nth-child(2) {
+      &>div:nth-child(3) {
+        &>div:nth-child(2) {
           margin: 80px auto 160px;
 
-          & > div {
+          &>div {
             margin-bottom: 50px;
             position: relative;
             border-radius: 20px;
             border: solid 2px #e4c6a9;
             overflow: hidden;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               background-color: #e4c6a9;
               width: 157px;
               height: 100%;
@@ -1891,7 +1891,7 @@ const goWhatsApp = () => {
               color: #fff;
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-left: 192px;
               padding: 40px 37px 44px 0;
               font-size: 22px;
@@ -1900,8 +1900,8 @@ const goWhatsApp = () => {
             }
           }
 
-          & > div:nth-child(1) {
-            & > duv:nth-child(2) {
+          &>div:nth-child(1) {
+            &>duv:nth-child(2) {
               letter-spacing: -0.2px;
             }
           }
@@ -1910,22 +1910,22 @@ const goWhatsApp = () => {
     }
   }
 
-  & > #eyeProsthesis {
+  &>#eyeProsthesis {
     margin-bottom: 160px;
 
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         margin-top: 50px;
         text-indent: 50px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin: 60px auto 120px;
         display: flex;
         justify-content: space-between;
         padding: 0 77px 0 78px;
 
-        & > div {
+        &>div {
           text-align: center;
 
           font-family: 'NotoSansHK-Regular';
@@ -1938,28 +1938,28 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(3),
-      & > div:nth-child(4) {
+      &>div:nth-child(3),
+      &>div:nth-child(4) {
         margin-bottom: 120px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           margin-bottom: 40px;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           font-size: 22px;
           line-height: 42px;
         }
       }
 
-      & > div:nth-child(4) {
-        & > div:nth-child(2) {
-          & > div:nth-child(2) {
+      &>div:nth-child(4) {
+        &>div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 50px;
             display: flex;
             justify-content: space-between;
 
-            & > div {
+            &>div {
               display: flex;
               align-items: center;
               width: 413px;
@@ -1971,7 +1971,7 @@ const goWhatsApp = () => {
               border-top: 1px solid #e4c6a9;
               border-bottom: 1px solid #e4c6a9;
 
-              & > div:nth-child(1) {
+              &>div:nth-child(1) {
                 margin-left: 10px;
                 margin-right: 30px;
                 font-family: 'OPPOSans-B';
@@ -1983,7 +1983,7 @@ const goWhatsApp = () => {
                 color: #d5bb96;
               }
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 width: 304px;
               }
             }
@@ -1993,14 +1993,14 @@ const goWhatsApp = () => {
     }
   }
 
-  & > #usage {
+  &>#usage {
     margin-bottom: 160px;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 60px;
       margin-bottom: 125px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 32px;
         font-weight: normal;
@@ -2011,7 +2011,7 @@ const goWhatsApp = () => {
         margin-bottom: 71px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -2022,13 +2022,13 @@ const goWhatsApp = () => {
         display: flex;
         flex-direction: column;
 
-        & > div {
+        &>div {
           display: flex;
           justify-content: space-between;
           margin-top: 46px;
           margin-right: 20px;
 
-          & > div {
+          &>div {
             width: 205px;
             height: 173px;
             display: flex;
@@ -2042,7 +2042,7 @@ const goWhatsApp = () => {
             position: relative;
           }
 
-          & > div::before {
+          &>div::before {
             position: absolute;
             content: '';
             font-family: 'OPPOSans-B';
@@ -2057,43 +2057,43 @@ const goWhatsApp = () => {
           }
         }
 
-        & > div:nth-child(1) {
-          & > div:nth-child(1)::before {
+        &>div:nth-child(1) {
+          &>div:nth-child(1)::before {
             content: '01';
           }
 
-          & > div:nth-child(2)::before {
+          &>div:nth-child(2)::before {
             content: '02';
           }
 
-          & > div:nth-child(3)::before {
+          &>div:nth-child(3)::before {
             content: '03';
           }
 
-          & > div:nth-child(4)::before {
+          &>div:nth-child(4)::before {
             content: '04';
             left: -72px;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-top: 72px;
 
-          & > div:nth-child(1)::before {
+          &>div:nth-child(1)::before {
             content: '';
           }
 
-          & > div:nth-child(2)::before {
+          &>div:nth-child(2)::before {
             content: '07';
             top: -48px;
           }
 
-          & > div:nth-child(3)::before {
+          &>div:nth-child(3)::before {
             content: '06';
             top: -48px;
           }
 
-          & > div:nth-child(4)::before {
+          &>div:nth-child(4)::before {
             content: '05';
             top: -48px;
             left: -72px;
@@ -2102,10 +2102,10 @@ const goWhatsApp = () => {
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin-bottom: 100px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 32px;
         font-weight: normal;
@@ -2116,7 +2116,7 @@ const goWhatsApp = () => {
         margin-bottom: 71px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
         background-repeat: no-repeat;
         background-size: 100%;
@@ -2127,13 +2127,13 @@ const goWhatsApp = () => {
         display: flex;
         flex-direction: column;
 
-        & > div {
+        &>div {
           display: flex;
           justify-content: space-between;
           margin-top: 46px;
           margin-right: 20px;
 
-          & > div {
+          &>div {
             width: 205px;
             height: 173px;
             display: flex;
@@ -2147,7 +2147,7 @@ const goWhatsApp = () => {
             position: relative;
           }
 
-          & > div::before {
+          &>div::before {
             position: absolute;
             content: '';
             font-family: 'OPPOSans-B';
@@ -2162,43 +2162,43 @@ const goWhatsApp = () => {
           }
         }
 
-        & > div:nth-child(1) {
-          & > div:nth-child(1)::before {
+        &>div:nth-child(1) {
+          &>div:nth-child(1)::before {
             content: '01';
           }
 
-          & > div:nth-child(2)::before {
+          &>div:nth-child(2)::before {
             content: '02';
           }
 
-          & > div:nth-child(3)::before {
+          &>div:nth-child(3)::before {
             content: '03';
           }
 
-          & > div:nth-child(4)::before {
+          &>div:nth-child(4)::before {
             content: '04';
             left: -72px;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-top: 72px;
 
-          & > div:nth-child(1)::before {
+          &>div:nth-child(1)::before {
             content: '';
           }
 
-          & > div:nth-child(2)::before {
+          &>div:nth-child(2)::before {
             content: '07';
             top: -48px;
           }
 
-          & > div:nth-child(3)::before {
+          &>div:nth-child(3)::before {
             content: '06';
             top: -48px;
           }
 
-          & > div:nth-child(4)::before {
+          &>div:nth-child(4)::before {
             content: '05';
             top: -48px;
             left: -72px;
@@ -2207,17 +2207,17 @@ const goWhatsApp = () => {
       }
     }
 
-    & > div:nth-child(4) {
+    &>div:nth-child(4) {
       margin-bottom: 140px;
 
-      & > div {
+      &>div {
         font-family: 'NotoSansHK-Regular';
         font-size: 22px;
         font-weight: normal;
         letter-spacing: 0px;
         color: #515151;
 
-        & > span {
+        &>span {
           font-family: 'NotoSansHK-Bold';
           font-size: 22px;
           font-weight: normal;
@@ -2228,13 +2228,13 @@ const goWhatsApp = () => {
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 80px;
       }
     }
 
-    & > div:nth-child(5) {
-      & > div:nth-child(1) {
+    &>div:nth-child(5) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 32px;
         font-weight: normal;
@@ -2245,11 +2245,11 @@ const goWhatsApp = () => {
         margin-bottom: 50px;
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         margin-top: 80px;
 
-        & > div {
-          & > div:nth-child(1) {
+        &>div {
+          &>div:nth-child(1) {
             width: fit-content;
             height: 44px;
             background-color: #d0aa85;
@@ -2260,11 +2260,11 @@ const goWhatsApp = () => {
             margin-top: 16px;
           }
 
-          & > div > p {
+          &>div>p {
             display: flex;
             align-items: flex-start;
 
-            & > span {
+            &>span {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -2393,7 +2393,7 @@ const goWhatsApp = () => {
 
 // 头部样式
 .eyeOrthopaedicDisease_head {
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -2403,8 +2403,8 @@ const goWhatsApp = () => {
     // margin-top: 100px;
     // margin-left: 30vw;
 
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 118px;
         font-weight: Bold;
@@ -2415,7 +2415,7 @@ const goWhatsApp = () => {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         font-family: 'DINCondensed-Bold';
@@ -2438,7 +2438,7 @@ const goWhatsApp = () => {
       color: #9cc4e2;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
       width: 40vw;
@@ -2448,24 +2448,1677 @@ const goWhatsApp = () => {
       right: 0;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       position: relative;
       top: 0;
       left: -5px;
 
-      & > img {
+      &>img {
         position: relative;
         z-index: 5;
       }
 
-      & > img:nth-child(1) {
+      &>img:nth-child(1) {
         margin-bottom: 10px;
       }
     }
   }
 }
+
 .fromTable {
   margin-top: -90%;
+}
+
+@media screen and (min-width: 768px) {
+  .mb-table-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ophthalmoplasty_bg_text {
+    width: fit-content;
+    padding: 4px 32px;
+    height: auto;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .eyeOrthopaedicDisease_title_btn {
+    cursor: pointer;
+    width: fit-content;
+    height: auto;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 16px 30px;
+  }
+
+  // 头部样式
+  .eyeOrthopaedicDisease_head {
+    &>div:nth-child(1) {
+      align-items: center;
+      max-width: 100%;
+      margin: 150px auto 0;
+
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 40px;
+          letter-spacing: 0px;
+        }
+
+        &>div:nth-child(2) {
+          font-size: 24px;
+        }
+      }
+
+      &>div:nth-child(1)::after {
+        width: 250px;
+        height: 200px;
+      }
+
+      &>div:nth-child(2) {
+        width: 88%;
+        left: 0;
+      }
+    }
+  }
+
+  .fromTable {
+    margin-top: 0;
+  }
+
+  // 内容
+  .eyeOrthopaedicDisease_nav {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 210px;
+    margin-bottom: 240px;
+    transform: scale(1);
+    padding: 0 40px;
+
+    &>#ophthalmoplasty {
+      margin-bottom: 75px;
+
+      .img-size {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>img {
+          max-width: 260px;
+        }
+      }
+
+      &>div:nth-child(2) {
+        margin: 25px auto 55px;
+      }
+
+      &>div:nth-child(3) {
+        margin: 55px auto;
+
+        &>div:nth-child(2),
+        &>div:nth-child(4) {
+          flex-direction: column-reverse;
+          margin-top: 42px;
+          position: relative;
+
+          &>div:nth-child(1) {
+            width: 100%;
+            transform: scale(1);
+
+            &>div {
+              margin-bottom: 42px;
+              position: relative;
+
+              &>div:nth-child(1) {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 25px;
+
+                &>span {
+                  width: 26px;
+                  height: 26px;
+                  font-size: 14px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                font-size: 16px;
+                line-height: 1.8;
+                font-weight: 400;
+              }
+            }
+
+            &>div:nth-child(1) {
+              &>div:nth-child(2) {
+                &>p:nth-child(1) {
+                  margin-bottom: 22px;
+                }
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(3),
+        &>div:nth-child(6) {
+          flex-direction: column;
+          margin-top: 42px;
+          position: relative;
+
+          &>div:nth-child(2) {
+            width: 100%;
+            transform: scale(1);
+
+            &>div {
+              position: relative;
+
+              &>div:nth-child(1) {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 25px;
+
+                &>span {
+                  width: 26px;
+                  height: 26px;
+                  font-size: 14px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                font-size: 16px;
+                line-height: 1.8;
+              }
+            }
+
+            &>div:nth-child(1) {
+              margin-bottom: 42px;
+
+              &>div:nth-child(2) {
+                &>p:nth-child(1) {
+                  margin-bottom: 23px;
+                }
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(3),
+        &>div:nth-child(4),
+        &>div:nth-child(5),
+        &>div:nth-child(6) {
+          margin-top: 42px;
+        }
+      }
+
+      &>div:nth-child(4) {
+        .mb-img {
+          position: absolute;
+          top: 80px;
+        }
+
+        &>div:nth-child(2) {
+          .mb_text_p_span {
+            margin-top: 262px !important;
+          }
+
+          margin-bottom: 50px;
+
+          &>div {
+            color: pink;
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 0;
+
+            &>div:nth-child(1) {
+              width: 100%;
+              margin-top: 50px;
+              position: relative;
+
+              &>div:nth-child(2) {
+                margin-top: 25px;
+                margin-right: 0;
+                font-size: 16px;
+                line-height: 1.8;
+              }
+            }
+
+            &>div:nth-child(2) {
+              width: 100%;
+              margin-top: 50px;
+
+              &>img {
+                max-width: 260px;
+                margin: auto;
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(3) {
+          .mb_text_p_span {
+            margin-top: 262px !important;
+          }
+
+          margin-bottom: 50px;
+
+          &>div:nth-child(1) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            &>div:nth-child(1) {
+              width: 100%;
+            }
+
+            &>div :nth-child(2) {
+              position: relative;
+              margin-top: 40px;
+              margin-right: 0 !important;
+              font-size: 16px !important;
+              line-height: 1.8 !important;
+            }
+
+            .img-size {
+              position: unset;
+              display: flex;
+            }
+          }
+
+          &>div:nth-child(2) {
+            margin-top: 50px;
+            margin-bottom: 0px;
+
+            &>div:nth-child(1) {
+              font-family: 'NotoSansHK-Bold';
+              font-size: 28px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 52px;
+              letter-spacing: 0px;
+              color: #d0aa85;
+            }
+
+            &>div:nth-child(2) {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+
+              &>div {
+                margin-top: 50px;
+                width: 100%;
+                height: auto;
+                position: relative;
+
+                &>div:nth-child(1) {
+                  padding: 8px 20px;
+                  left: 20px;
+                  top: -18px;
+                  width: fit-content;
+                  height: auto;
+                  font-size: 20px;
+                  line-height: 1;
+                }
+
+                &>div:nth-child(2) {
+                  font-size: 14px;
+                  line-height: 1.8;
+                  padding: 0 20px;
+                  padding-right: 30px;
+                  padding-top: 46px;
+                  padding-bottom: 30px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                &>div:nth-child(1) {
+                  left: 50px;
+                }
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(4) {
+          margin-bottom: 50px;
+
+          .img-size {
+            position: unset;
+          }
+
+          &>div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            position: relative;
+
+            &>div:nth-child(1) {
+              width: 100%;
+
+              &>div:nth-child(2) {
+                margin-top: 51px;
+                margin-right: 0;
+                font-size: 16px;
+                line-height: 1.8;
+              }
+            }
+
+            &>div:nth-child(2) {
+              margin-top: 40px;
+            }
+          }
+
+          .pc-table {
+            display: none;
+          }
+
+          &>div:nth-child(2) {
+            &>div:nth-child(3) {
+
+              &>div {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                border: none;
+              }
+
+              &>div:nth-child(1) {
+                position: relative;
+                width: 100%;
+                border: 2px solid #e4c6a9;
+                border-radius: 15px;
+
+                &>div:nth-child(1) {
+                  position: absolute;
+                  top: -5%;
+                  height: auto;
+                  padding: 5px 25px;
+                  width: fit-content;
+                  left: 20%;
+                  background: #fff;
+                  border-radius: 15px;
+                  border: 2px solid #e4c6a9;
+                }
+
+                &>div {
+                  padding: 30px 10px;
+                  text-align: justify;
+                  color: #515151;
+                  font-family: Noto Sans HK;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  display: flex;
+                  align-items: flex-start;
+                  width: 100%;
+                  border: none;
+
+                  &>div:nth-child(1) {
+                    color: #515151;
+                    font-family: Noto Sans HK;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    &>span:nth-child(2) {
+                      color: #D0AA85;
+                    }
+                  }
+
+                  &>div:nth-child(2),
+                  &>div:nth-child(3),
+                  &>div:nth-child(4) {
+                    display: flex;
+                    margin-top: 10px;
+
+                    &>div {
+                      color: #D0AA85;
+                      font-size: 18px;
+                      line-height: 1.6;
+
+                      &>span {
+                        font-size: 16px;
+                        color: #515151;
+                        line-height: 1.6;
+                      }
+                    }
+                  }
+                }
+              }
+
+              &>div:nth-child(2) {
+                margin-top: 75px;
+                border: none;
+                color: #515151;
+                font-family: Noto Sans HK;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                border: 2px solid #e4c6a9;
+                border-radius: 10px;
+
+                &>div:nth-child(1) {
+                  position: absolute;
+                  top: -5%;
+                  height: auto;
+                  padding: 5px 25px;
+                  width: fit-content;
+                  left: 20%;
+                  background: #fff;
+                  border-radius: 15px;
+                  border: 2px solid #e4c6a9;
+                  text-align: justify;
+                  color: #515151;
+                  font-family: Noto Sans HK;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  display: flex;
+                  align-items: flex-start;
+                }
+
+                &>div:nth-child(2) {
+                  padding: 30px 10px;
+                  text-align: justify;
+                  color: #515151;
+                  font-family: Noto Sans HK;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  display: flex;
+                  align-items: flex-start;
+                  width: 100%;
+                  border: none;
+
+                  &>div:nth-child(1) {
+                    color: #515151;
+                    font-family: Noto Sans HK;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+
+                    &>span:nth-child(2) {
+                      color: #D0AA85;
+                    }
+                  }
+
+                  &>div:nth-child(2),
+                  &>div:nth-child(3),
+                  &>div:nth-child(4) {
+                    display: flex;
+                    margin-top: 10px;
+
+                    &>div {
+                      color: #D0AA85;
+                      font-size: 18px;
+                      line-height: 1.6;
+
+                      &>span {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        color: #515151;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(5) {
+          &>div:nth-child(1) {
+            margin-bottom: 75px;
+
+            &>div:nth-child(2) {
+              margin: 50px 0;
+              margin-bottom: 25px;
+
+              &>div {
+                font-family: 'NotoSansHK-Regular';
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.8;
+                letter-spacing: 0px;
+                color: #515151;
+              }
+
+              &>div:nth-child(2) {
+                margin: 36px 0;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 0;
+
+                &>div {
+                  margin-right: 20px;
+                }
+
+                &>div:last-child {
+                  margin: 0;
+                }
+              }
+            }
+
+            &>div:nth-child(3) {
+              font-family: 'NotoSansHK-Regular';
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.6;
+              letter-spacing: 0px;
+              color: #515151;
+
+              &>p {
+                margin-top: 12px;
+              }
+
+              &>p>span {
+                color: #d0aa85;
+              }
+            }
+          }
+
+          &>div:nth-child(2) {
+
+            &>div:nth-child(1) {
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 40px;
+              width: 100%;
+
+              &>div:nth-child(1) {
+                width: 100%;
+
+                &>div:nth-child(2) {
+                  margin-top: 51px;
+                  margin-right: 0;
+                  font-size: 16px;
+                  line-height: 1.8;
+                }
+              }
+
+              &>div:nth-child(2) {
+                margin-top: 40px;
+
+                &>img {
+                  width: 80%;
+                  margin: auto;
+                }
+              }
+            }
+
+            &>div:nth-child(2) {
+              .pc-table {
+                display: none;
+              }
+
+              &>div:nth-child(1) {
+                font-family: 'NotoSansHK-Bold';
+                font-size: 28px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 52px;
+                letter-spacing: 0px;
+                color: #d0aa85;
+                margin-bottom: 50px;
+              }
+
+              &>div:nth-child(3) {
+                &>div:nth-child(n) {
+                  height: auto;
+                  display: flex;
+                  flex-direction: column;
+                  background: #fff;
+                  border: 2px solid #E4C6A9;
+                  margin-top: 75px;
+                  border-radius: 10px;
+                  position: relative;
+
+                  &>div {
+                    color: #515151;
+                    width: 100%;
+                    border: 2px solid #E4C6A9;
+                    border-radius: 10px;
+                    font-size: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    &>div:nth-child(2),
+                    &>div:nth-child(3),
+                    &>div:nth-child(4) {
+                      display: flex;
+                      margin-top: 5px;
+
+                      &>div {
+                        color: #D0AA85;
+                        font-family: Noto Sans HK;
+                        font-size: 18px;
+
+                        &>span {
+                          color: #515151;
+                          font-family: Noto Sans HK;
+                          font-size: 16px;
+                        }
+                      }
+                    }
+
+                    &>div:nth-child(1) {
+                      line-height: 1.6;
+                      text-align: justify;
+
+                      &>span:last-child {
+                        color: #D0AA85;
+                      }
+                    }
+
+                    &>div:nth-child(2) {
+                      margin-top: 14px;
+                    }
+                  }
+
+                  &>div:nth-child(1) {
+                    position: absolute;
+                    width: fit-content;
+                    top: -7%;
+                    line-height: 1.6;
+                    left: 10%;
+                    padding: 8px 65px;
+                    background: #fff;
+                  }
+
+                  &>div:nth-child(2) {
+                    border: 0;
+                    padding: 45px 26px 30px 20px;
+                    line-height: 1.8;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+    &>#eyeNeoplasms {
+      &>div:nth-child(2) {
+        margin-top: 25px;
+        padding-right: 1px;
+      }
+
+      &>div:nth-child(3) {
+        &>div:nth-child(1) {
+          margin-top: 75px;
+          margin-bottom: 75px;
+
+          &>div:nth-child(2) {
+            margin: 40px 0 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            &>div {
+              margin-top: 30px;
+              transform: scale(1);
+              width: 100%;
+              height: auto;
+              background-color: #ffffff;
+              border-radius: 30px;
+              border: solid 2px #e4c6a9;
+              padding-bottom: 30px;
+
+              &>div:nth-child(1) {
+                font-family: 'NotoSansHK-Bold';
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 1.8;
+                letter-spacing: 0px;
+                color: #d0aa85;
+                text-align: center;
+                padding-top: 28px;
+                padding-bottom: 20px;
+              }
+
+              &>div:nth-child(2) {
+                padding: 0 20px;
+                font-size: 14px;
+                line-height: 1.6;
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
+            margin-top: 80px;
+            margin-bottom: 50px;
+          }
+
+          &>div:nth-child(2) {
+            margin-bottom: 0;
+
+            &>div:nth-child(1) {
+              font-size: 20px;
+              line-height: 1.8;
+              margin-bottom: 75px;
+            }
+
+            &>div:nth-child(2) {
+              border-radius: 10px;
+              border: solid 2px #e4c6a9;
+              padding: 50px 20px 20px 20px;
+              position: relative;
+
+              &>div:nth-child(1) {
+                position: absolute;
+                left: -2px;
+                top: -3%;
+                width: fit-content;
+                padding: 0 5px;
+                height: auto;
+                background-color: #ffffff;
+                border-radius: 10px 10px 10px 0px;
+                border: solid 2px #e4c6a9;
+
+                font-family: 'NotoSansHK-Medium';
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 42px;
+                letter-spacing: 0px;
+                color: #d0aa85;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &>span {
+                  font-size: 18px;
+                  line-height: 1.8;
+                  letter-spacing: 0px;
+                  color: #d0aa85;
+                  margin: 0 10px;
+                  margin-top: 7px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                &>p {
+                  font-size: 14px;
+                  line-height: 1.8;
+                }
+
+                &>p:nth-child(1) {
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+
+          &>div:nth-child(3) {
+            &>div:nth-child(1) {
+              font-family: 'NotoSansHK-Bold';
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.8;
+              letter-spacing: 0px;
+              color: #d0aa85;
+              margin-top: 74px;
+              margin-bottom: 75px;
+            }
+
+            &>div:nth-child(2) {
+              margin-bottom: 75px;
+              border-radius: 10px;
+              border: solid 2px #e4c6a9;
+              padding: 40px 26px 30px 20px;
+              position: relative;
+
+              &>div:nth-child(1) {
+                position: absolute;
+                left: -2px;
+                top: -3%;
+                width: fit-content;
+                height: auto;
+                background-color: #ffffff;
+                border-radius: 10px 10px 10px 0px;
+                border: solid 2px #e4c6a9;
+
+                font-family: 'NotoSansHK-Medium';
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 42px;
+                letter-spacing: 0px;
+                color: #d0aa85;
+                padding: 0 5px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &>span {
+                  font-size: 18px;
+                  line-height: 1.8;
+                  letter-spacing: 0px;
+                  color: #d0aa85;
+                  margin: 0 10px;
+                  margin-top: 7px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                &>div:nth-child(1) {
+                  width: 100%;
+
+                  &>p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                    text-align: justify;
+                  }
+
+                  &>p:nth-child(2) {
+                    margin-top: 12px;
+                  }
+                }
+
+                &>div:nth-child(2) {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+
+                  &>img {
+                    width: 48%;
+                    margin-top: 26px;
+                  }
+                }
+              }
+            }
+          }
+
+          &>div:nth-child(4) {
+            margin-bottom: 75px;
+
+            &>div:nth-child(1) {
+              font-family: 'NotoSansHK-Bold';
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.8;
+              letter-spacing: 0px;
+              color: #d0aa85;
+              margin-top: 70px;
+              margin-bottom: 50px;
+            }
+
+            &>div:nth-child(2) {
+              margin-bottom: 80px;
+              border-radius: 10px;
+              border: solid 2px #e4c6a9;
+              padding: 40px 26px 30px 20px;
+              position: relative;
+              text-align: justify;
+
+              &>div:nth-child(1) {
+                position: absolute;
+                left: -2px;
+                top: -5%;
+                width: fit-content;
+                height: auto;
+                background-color: #ffffff;
+                border-radius: 10px 10px 10px 0px;
+                border: solid 2px #e4c6a9;
+
+                font-family: 'NotoSansHK-Medium';
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 1.8;
+                letter-spacing: 0px;
+                color: #d0aa85;
+                padding: 0 5px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &>span {
+                  font-size: 18px;
+                  line-height: 1.8;
+                  letter-spacing: 0px;
+                  color: #d0aa85;
+                  margin: 0 10px;
+                  margin-top: 7px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                &>p {
+                  font-size: 14px;
+                  line-height: 1.6;
+                }
+
+                &>p:nth-child(2) {
+                  margin-top: 29px;
+                }
+              }
+            }
+
+            &>div:nth-child(3) {
+              margin-bottom: 80px;
+              border-radius: 10px;
+              border: solid 2px #e4c6a9;
+              padding: 40px 28px 35px 20px;
+              position: relative;
+
+              &>div:nth-child(1) {
+                position: absolute;
+                left: -2px;
+                top: -2.5%;
+                width: fit-content;
+                height: auto;
+                background-color: #ffffff;
+                border-radius: 10px 10px 10px 0px;
+                border: solid 2px #e4c6a9;
+
+                font-family: 'NotoSansHK-Medium';
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 1.8;
+                letter-spacing: 0px;
+                color: #d0aa85;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &>span {
+                  font-size: 18px;
+                  line-height: 1.8;
+                  letter-spacing: 0px;
+                  color: #d0aa85;
+                  margin: 0 10px;
+                  margin-top: 7px;
+                }
+              }
+
+              &>div:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+
+                &>div:nth-child(1) {
+                  width: 100%;
+                  margin-right: 50px;
+
+                  &>p {
+                    font-size: 14px;
+                    line-height: 1.6;
+                  }
+
+                  &>p:nth-child(2) {
+                    margin-top: 29px;
+                  }
+                }
+
+                &>div:nth-child(2) {
+                  display: flex;
+                  flex-direction: column;
+                  text-align: center;
+                  width: 50%;
+                  margin: auto;
+                  max-width: 50%;
+                  margin-top: 26px;
+
+                  &>div {
+                    margin-top: 11px;
+                    font-family: 'NotoSansHK-Regular';
+                    font-size: 14px;
+                    line-height: 1.6;
+                    letter-spacing: 2px;
+                    color: #777777;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(3) {
+          &>div:nth-child(2) {
+            margin: 30px auto 70px;
+
+            &>div {
+              margin-bottom: 50px;
+              position: relative;
+              border-radius: 0;
+              border: none;
+              overflow: hidden;
+
+              &>div:nth-child(1) {
+                padding: 8.3px 52.5px 9.2px 52.5px;
+                border-radius: 55px;
+                background-color: #e4c6a9;
+                width: fit-content;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-family: 'NotoSansHK-Bold';
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 1.6;
+                letter-spacing: 0px;
+                color: #fff;
+              }
+
+              &>div:nth-child(2) {
+                margin-left: 0;
+                padding: 75px 0 0 0;
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: justify;
+              }
+            }
+
+            &>div:nth-child(1) {
+              &>duv:nth-child(2) {
+                letter-spacing: -0.2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>#eyeProsthesis {
+      margin-bottom: 80px;
+
+      &>div:nth-child(2) {
+        &>div:nth-child(1) {
+          margin-top: 30px;
+          text-indent: 0;
+        }
+
+        &>div:nth-child(2) {
+          margin: 20px auto 50px;
+          display: flex;
+          justify-content: space-between;
+          padding: 0;
+
+          &>div {
+            text-align: center;
+            font-family: 'NotoSansHK-Regular';
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1.8;
+            letter-spacing: 0px;
+            color: #515151;
+
+            &>img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+
+        &>div:nth-child(3),
+        &>div:nth-child(4) {
+          margin-bottom: 50px;
+
+          &>div:nth-child(1) {
+            margin-bottom: 40px;
+          }
+
+          &>div:nth-child(2) {
+            font-size: 14px;
+            line-height: 1.8;
+          }
+        }
+
+        &>div:nth-child(4) {
+          &>div:nth-child(2) {
+            &>div:nth-child(2) {
+              margin-top: 50px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              &>div {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: auto;
+
+                font-size: 12px;
+                line-height: 1.8;
+                padding-right: 20px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                border-top: 1px solid #e4c6a9;
+                border-bottom: 1px solid #e4c6a9;
+                margin-top: 30px;
+
+                &>div:nth-child(1) {
+                  margin-left: 10px;
+                  margin-right: 20px;
+                  font-family: 'OPPOSans-B';
+                  font-size: 35px;
+                  font-weight: normal;
+                  font-stretch: normal;
+                  line-height: 1.8;
+                  letter-spacing: 0px;
+                  color: #d5bb96;
+                }
+
+                &>div:nth-child(2) {
+                  width: auto;
+                }
+              }
+
+              &>div:first-child {
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &>#usage {
+      margin-bottom: 50px;
+
+      &>div:nth-child(2) {
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 95px;
+
+        &>div:nth-child(1) {
+          font-family: 'NotoSansHK-Medium';
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 52px;
+          letter-spacing: 0px;
+          color: #d0aa85;
+          margin-bottom: 0;
+        }
+
+        &>div:nth-child(2) {
+          background: #fff;
+          width: 100%;
+          display: flex;
+          min-height: auto;
+          margin-left: 30px;
+          flex-direction: column;
+
+          &>div {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0;
+            margin-right: 31px;
+            text-align: justify;
+
+            &>div {
+              width: 100%;
+              height: auto;
+              display: block;
+              font-family: 'NotoSansHK-Regular';
+              font-size: 14px;
+              line-height: 1.6;
+              letter-spacing: 0px;
+              color: #515151;
+              position: relative;
+              margin-bottom: 40px;
+            }
+
+            &>div::before {
+              position: absolute;
+              content: '';
+              font-family: 'OPPOSans-B';
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.2;
+              letter-spacing: 0px;
+              color: #d5bb96;
+              top: 0;
+              left: -30px;
+            }
+
+            &>div::after {
+              content: '';
+              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              width: 10px;
+              display: inline-block;
+              height: 19px;
+              position: absolute;
+              left: -22px;
+              top: 32px;
+            }
+          }
+
+          &>div:nth-child(1) {
+            &>div {
+              margin-top: 5px;
+            }
+
+            &>div:nth-child(1)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/e5d62f0f593df732.png') no-repeat;
+              height: 40px;
+            }
+
+            &>div:nth-child(1)::before {
+              content: '01';
+            }
+
+            &>div:nth-child(2)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(2)::before {
+              content: '02';
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(3)::before {
+              content: '03';
+            }
+
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(4)::before {
+              content: '04';
+              left: -30px;
+            }
+          }
+
+          &>div:nth-child(2) {
+            flex-direction: column-reverse;
+            margin-top: 0;
+
+            &>div:nth-child(1) {
+              margin: 0;
+              padding: 0;
+            }
+
+            &>div:nth-child(1)::before {
+              content: none;
+            }
+
+            &>div:nth-child(1)::after {
+              content: none;
+            }
+
+            &>div:nth-child(2)::after {
+              content: none;
+            }
+
+            &>div:nth-child(2) {
+              margin: 0;
+            }
+
+            &>div:nth-child(2)::before {
+              content: '07';
+              top: 0;
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(3)::before {
+              content: '06';
+              top: 0;
+            }
+
+            &>div:nth-child(4)::before {
+              content: '05';
+              top: 0;
+              left: -30px;
+            }
+          }
+        }
+      }
+
+      &>div:nth-child(3) {
+        margin-bottom: 50px;
+
+        &>div:nth-child(1) {
+          font-family: 'NotoSansHK-Medium';
+          font-size: 32px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 52px;
+          letter-spacing: 0px;
+          color: #d0aa85;
+          margin-bottom: 20px;
+        }
+
+        &>div:nth-child(2) {
+          background: #fff;
+          width: 100%;
+          min-height: auto;
+          margin-left: 35px;
+          display: flex;
+          flex-direction: column;
+
+          &>div {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 0;
+            margin-right: 31px;
+
+            &>div {
+              width: 100%;
+              height: auto;
+              display: block;
+              font-family: "NotoSansHK-Regular";
+              font-size: 14px;
+              line-height: 1.6;
+              letter-spacing: 0px;
+              color: #515151;
+              position: relative;
+              margin-bottom: 40px;
+            }
+
+            &>div::before {
+              position: absolute;
+              content: '';
+              font-family: 'OPPOSans-B';
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.2;
+              letter-spacing: 0px;
+              color: #d5bb96;
+              top: 0;
+              left: -30px;
+            }
+
+            &>div::after {
+              content: '';
+              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              width: 10px;
+              display: inline-block;
+              height: 19px;
+              position: absolute;
+              left: -22px;
+              top: 32px;
+            }
+          }
+
+          &>div:nth-child(1) {
+            &>div:nth-child(1)::before {
+              content: '01';
+            }
+
+            &>div:nth-child(2)::before {
+              content: '02';
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(3)::before {
+              content: '03';
+            }
+
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(4)::before {
+              content: '04';
+              left: -30px;
+            }
+          }
+
+          &>div:nth-child(2) {
+            margin-top: 0;
+            flex-direction: column-reverse;
+
+            &>div:nth-child(1) {
+              margin: 0;
+            }
+
+            &>div:nth-child(1)::after {
+              content: none;
+            }
+
+            &>div:nth-child(1)::before {
+              content: none;
+            }
+
+            &>div:nth-child(2) {
+              margin: 0;
+            }
+
+            &>div:nth-child(2)::after {
+              content: none;
+            }
+
+            &>div:nth-child(2)::before {
+              content: '07';
+              top: 0;
+            }
+
+            &>div:nth-child(3)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(3)::before {
+              content: '06';
+              top: 0;
+            }
+
+            &>div:nth-child(4)::after {
+              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              height: 55px;
+            }
+
+            &>div:nth-child(4)::before {
+              content: '05';
+              top: 0;
+              left: -30px;
+            }
+          }
+        }
+      }
+
+      &>div:nth-child(4) {
+        margin-bottom: 75px;
+
+        &>div {
+          font-family: 'NotoSansHK-Regular';
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0px;
+          color: #515151;
+
+          &>span {
+            font-family: 'NotoSansHK-Bold';
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0px;
+            color: #d0aa85;
+          }
+
+          &>.usage-box-text {
+            font-weight: 400;
+            color: #515151;
+          }
+        }
+
+        &>div:nth-child(2) {
+          margin-top: 15px;
+        }
+      }
+
+      &>div:nth-child(5) {
+        &>div:nth-child(1) {
+          font-family: 'NotoSansHK-Medium';
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 1.8;
+          letter-spacing: 0px;
+          color: #d0aa85;
+          margin-bottom: 20px;
+        }
+
+        .eye_attention {
+          font-size: 12px;
+          line-height: 1.6;
+        }
+
+        &>div:nth-child(3) {
+          margin-top: 40px;
+
+          &>div {
+            display: flex;
+            margin-bottom: 14px;
+
+            &>div:nth-child(1) {
+              min-width: 120px;
+              width: fit-content;
+              height: fit-content;
+              background-color: #d0aa85;
+              border-radius: 10px;
+              padding: 10px 19px;
+              color: #fff;
+              margin-bottom: 0;
+              margin-top: 0;
+              margin-right: 10px;
+            }
+
+            &>div>p {
+              display: flex;
+              align-items: flex-start;
+
+              &>span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 25px;
+                width: 25px;
+                height: 25px;
+                color: #d5bb96;
+                background-color: #ffffff;
+                border: solid 2px #decbaf;
+                border-radius: 50%;
+                padding-top: 8px;
+                margin-right: 10px;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          &>div:nth-child(4) {
+            flex-direction: column;
+
+            &>div:nth-child(2) {
+              margin-top: 15px;
+
+              &>p {
+                align-items: flex-start;
+                margin-bottom: 15px;
+              }
+              &>p>span{
+                padding: 0;
+                padding-top: 5px;
+                margin-right: 5px;
+                margin-top:-3px;
+                font-size: 14px;
+              }
+            }
+          }
+
+          &>div:nth-child(5) {
+            flex-direction: column;
+
+            &>div:nth-child(2) {
+              margin-top: 15px;
+              &>p {
+                align-items: flex-start;
+                margin-bottom: 15px;
+              }
+              &>p>span{
+                padding: 0;
+                padding-top: 5px;
+                margin-right: 5px;
+                margin-top: -3px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .eyeOrthopaedicDisease_p {
+    font-size: 16px;
+    text-indent: 0;
+    line-height: 1.8;
+  }
+
+  .eyeOrthopaedicDisease_title_text_border {
+    padding: 5px 0;
+    font-size: 24px;
+    line-height: 1.8;
+  }
+
+  .eyeOrthopaedicDisease_text_p_span {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .mb_text_p_span {
+    margin-top: 262px;
+  }
 }
 </style>
 <style lang="scss" scoped>
@@ -2481,5 +4134,4 @@ const goWhatsApp = () => {
   .fromTable {
     margin-top: -60%;
   }
-}
-</style>
+}</style>

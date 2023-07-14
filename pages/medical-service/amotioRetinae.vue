@@ -191,12 +191,8 @@ const preventList1 = [
           <div>RETINAL DETACHMENT</div>
         </div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/98c0c654ac2b16f3.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/af7656b552044873.png"
-          />
+          <img src="https://static.cmereye.com/imgs/2023/06/98c0c654ac2b16f3.png" />
+          <img src="https://static.cmereye.com/imgs/2023/06/af7656b552044873.png" />
         </div>
       </div>
     </div>
@@ -212,9 +208,7 @@ const preventList1 = [
           </p>
         </div>
         <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png"
-          />
+          <img src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png" />
         </div>
         <div class="amotioRetinae_title_btn" @click="goWhatsApp">
           <span>懷疑視網膜脫落？</span><span>立即致電求醫！</span>
@@ -252,12 +246,8 @@ const preventList1 = [
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          如果飛蚊症患者眼前飛蚊（不同形狀的黑點或暗影）突然明顯增加，或者眼前閃光突然出現或者明顯增加，很大機會是視網膜脫落的先兆。<span
-            >若懷疑出現視網膜脫落的先兆或症狀，必須盡快求醫，向眼科醫生查詢，若確診視網膜脫離，很可能需要緊急手術。</span
-          >
-          視網膜脫落如沒有及時治療，視網膜脫離的範圍可能會越來越大，一旦脫離到黃斑位置，<span
-            >將嚴重影響視力，不及時治療將會造成永久性的損害。</span
-          >
+          如果飛蚊症患者眼前飛蚊（不同形狀的黑點或暗影）突然明顯增加，或者眼前閃光突然出現或者明顯增加，很大機會是視網膜脫落的先兆。<span>若懷疑出現視網膜脫落的先兆或症狀，必須盡快求醫，向眼科醫生查詢，若確診視網膜脫離，很可能需要緊急手術。</span>
+          視網膜脫落如沒有及時治療，視網膜脫離的範圍可能會越來越大，一旦脫離到黃斑位置，<span>將嚴重影響視力，不及時治療將會造成永久性的損害。</span>
         </div>
       </div>
       <div id="treat">
@@ -266,15 +256,14 @@ const preventList1 = [
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
-            <div><img :src="item.img" /></div>
+            <div class="amotioRetinae_img"><img :src="item.img" /></div>
             <div>
               <div>
                 <p>
-                  <span>{{ item.id }}</span
-                  ><span>{{ item.title }}</span>
+                  <span>{{ item.id }}</span><span>{{ item.title }}</span>
                 </p>
               </div>
-              <div class="amotioRetinae_text_p_span">{{ item.text }}</div>
+              <div class="amotioRetinae_text_p_span amotioRetinae_text_top">{{ item.text }}</div>
             </div>
           </div>
         </div>
@@ -289,9 +278,7 @@ const preventList1 = [
         </div>
         <div>
           <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png"
-            />
+            <img src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png" />
           </div>
           <div class="amotioRetinae_text_p_span">
             <p>
@@ -320,9 +307,7 @@ const preventList1 = [
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。<span
-            >一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。</span
-          >
+          視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。<span>一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。</span>
         </div>
       </div>
       <div id="faq">
@@ -330,11 +315,7 @@ const preventList1 = [
           常見問題
         </div>
         <div>
-          <PageCollapse
-            :answer="meetArr"
-            :downarr="'amotioRetinae'"
-            :style="{ '--subassembly-color': '#eab1a6' }"
-          />
+          <PageCollapse :answer="meetArr" :downarr="'amotioRetinae'" :style="{ '--subassembly-color': '#eab1a6' }" />
         </div>
       </div>
     </div>
@@ -345,14 +326,10 @@ const preventList1 = [
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('amotioRetinae.pdf','視網膜脫落')">
-            <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
-              srcset=""
-            />
+          <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
+            <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
-          <div @click.stop="getPdf('amotioRetinae.pdf','視網膜脫落')">
+          <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
             <p>視網膜脫落</p>
             <p>下載小冊子</p>
           </div>
@@ -360,10 +337,8 @@ const preventList1 = [
       </div>
     </div>
     <!-- 表单 -->
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#eab1a6;'}`"
-    />
+    <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+      :co="`color:${'#eab1a6;'}`" />
     <PageFooterMenu />
   </div>
 </template>
@@ -374,14 +349,14 @@ const preventList1 = [
   transform: scale(0.85);
   margin-top: -39.5%;
 
-  & > #intro {
+  &>#intro {
     margin-top: 220px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       font-size: 50px;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 64px;
       margin-bottom: 99px;
 
@@ -394,17 +369,17 @@ const preventList1 = [
       color: #988a89;
       text-indent: 54px;
 
-      & > p {
+      &>p {
         margin-bottom: 80px;
 
-        & > span {
+        &>span {
           color: #e8a89b;
           font-family: 'NotoSansHK-Bold';
         }
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       width: 824px;
       height: 507px;
       background-color: #f2f2f2;
@@ -417,20 +392,20 @@ const preventList1 = [
     }
   }
 
-  & > #factor {
+  &>#factor {
     margin-top: 160px;
     margin-bottom: 160px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       margin-bottom: 120px;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
 
-      & > div {
+      &>div {
         width: 260px;
         height: 308px;
         background-color: #ffffff;
@@ -438,7 +413,7 @@ const preventList1 = [
         // margin-right: 94px;
         border-radius: 75px 0;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           max-width: 240px;
           height: 60px;
           display: flex;
@@ -458,44 +433,44 @@ const preventList1 = [
         }
       }
 
-      & > div:nth-child(4) {
+      &>div:nth-child(4) {
         margin-right: 0;
       }
 
-      & > div:nth-child(5) {
+      &>div:nth-child(5) {
         margin-left: 156px;
       }
 
-      & > div:last-child {
+      &>div:last-child {
         margin-right: 156px;
       }
 
-      & > div:nth-child(n + 5) {
+      &>div:nth-child(n + 5) {
         margin-top: 96px;
       }
     }
   }
 
-  & > #styptom {
+  &>#styptom {
     margin-bottom: 160px;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin: 100px auto 60px;
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       margin-bottom: 112px;
 
-      & > div {
+      &>div {
         width: 268px;
         height: 309px;
         border: solid 1px #eed3cf;
         position: relative;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           height: 50px;
           font-family: 'HelveticaNeue-MediumItalic';
           font-size: 20px;
@@ -511,7 +486,7 @@ const preventList1 = [
           justify-content: center;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           height: 99px;
           width: 100%;
           background-color: #eab1a6;
@@ -529,12 +504,12 @@ const preventList1 = [
           align-items: center;
         }
 
-        & > div:nth-child(3) {
+        &>div:nth-child(3) {
           height: 160px;
         }
       }
 
-      & > div::after {
+      &>div::after {
         content: '';
         background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
         width: 14px;
@@ -546,13 +521,13 @@ const preventList1 = [
         transform: translateY(-50%);
       }
 
-      & > div:last-child::after {
+      &>div:last-child::after {
         content: '';
         width: 0;
       }
     }
 
-    & > div:nth-child(4) {
+    &>div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
       width: 1200px;
       height: 304px;
@@ -560,34 +535,34 @@ const preventList1 = [
       line-height: 46px;
       background-size: 100% 100%;
 
-      & > span {
+      &>span {
         color: #e8a89b;
       }
     }
   }
 
-  & > #treat {
+  &>#treat {
     margin: 160px auto;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin: 100px auto 140px;
 
-      & > div {
+      &>div {
         margin-bottom: 140px;
         display: flex;
         flex-direction: row;
 
-        & > div:nth-child(1) {
-          & > img {
+        &>div:nth-child(1) {
+          &>img {
             width: 100%;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           width: 732px;
           margin-left: 50px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Medium';
             font-size: 30px;
             font-weight: normal;
@@ -596,12 +571,12 @@ const preventList1 = [
             letter-spacing: 0px;
             color: #e8a89b;
 
-            & > p {
+            &>p {
               display: flex;
               flex-direction: row;
               margin-bottom: 34px;
 
-              > span:nth-child(1) {
+              >span:nth-child(1) {
                 color: #fff;
                 background: #eab1a6;
                 width: 40px;
@@ -615,17 +590,17 @@ const preventList1 = [
             }
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             line-height: 48px;
             text-indent: 54px;
           }
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         flex-direction: row-reverse;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-left: 0;
           margin-right: 50px;
         }
@@ -633,45 +608,45 @@ const preventList1 = [
     }
   }
 
-  & > #diabetes {
+  &>#diabetes {
     margin: 160px auto;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin: 100px auto 160px;
       display: flex;
       flex-direction: row;
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         width: 776px;
         margin-left: 60px;
         line-height: 48px;
         text-indent: 54px;
 
-        & > p:nth-child(2) {
+        &>p:nth-child(2) {
           margin-top: 80px;
         }
       }
     }
   }
 
-  & > #prevent {
+  &>#prevent {
     margin: 160px auto;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin: 100px auto 60px;
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin-bottom: 100px;
       display: flex;
       justify-content: space-between;
 
-      & > div {
+      &>div {
         width: 385px;
         border-radius: 30px 0 30px 0;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           background: url('https://static.cmereye.com/imgs/2023/06/e26c60861f4311e0.png');
           background-size: 100% 100%;
           height: 456px;
@@ -681,7 +656,7 @@ const preventList1 = [
           padding: 0 36px;
           padding-top: 78px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             width: 273px;
             height: 44px;
             background-color: #eab1a6;
@@ -699,7 +674,7 @@ const preventList1 = [
             justify-content: center;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             font-family: 'NotoSansHK-Regular';
             line-height: 46px;
             color: #555555;
@@ -708,7 +683,7 @@ const preventList1 = [
       }
     }
 
-    & > div:nth-child(4) {
+    &>div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
       width: 1200px;
       height: 185px;
@@ -717,17 +692,17 @@ const preventList1 = [
       padding-right: 2px;
       background-size: 100% 100%;
 
-      & > span {
+      &>span {
         color: #e8a89b;
         text-indent: 54px;
       }
     }
   }
 
-  & > #faq {
+  &>#faq {
     margin-bottom: 260px;
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 120px;
     }
   }
@@ -793,15 +768,15 @@ const preventList1 = [
 
 // 头部样式
 .amotioRetinae_head {
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 100px;
     margin-left: 28vw;
 
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 119px;
         font-weight: normal;
@@ -812,7 +787,7 @@ const preventList1 = [
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         line-height: 27px;
@@ -836,7 +811,7 @@ const preventList1 = [
       color: #9cc4e2;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
       width: 40vw;
@@ -846,17 +821,17 @@ const preventList1 = [
       right: 0;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       position: relative;
       top: 0;
       left: -5px;
 
-      & > img {
+      &>img {
         position: relative;
         z-index: 5;
       }
 
-      & > img:nth-child(1) {
+      &>img:nth-child(1) {
         margin-bottom: 10px;
       }
     }
@@ -870,8 +845,8 @@ const preventList1 = [
   color: #fff;
   font-size: 30px;
 
-  & > div:nth-child(1) {
-    & > div {
+  &>div:nth-child(1) {
+    &>div {
       width: 62.5%;
       height: 202px;
       background: #f7d6cf;
@@ -879,21 +854,585 @@ const preventList1 = [
       display: flex;
       align-items: center;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
-        & > img {
+
+        &>img {
           width: 120px;
           height: 135px;
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .amotioRetinae_head {
+    &>div:nth-child(1) {
+      align-items: self-end;
+      max-width: 100%;
+      margin: 150px auto 0;
+      padding-right: 45px;
+
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 45px;
+          letter-spacing: 0px;
+        }
+
+        &>div:nth-child(2) {
+          font-size: 31px;
+          letter-spacing: 4.7px;
+          text-align: justify;
+        }
+      }
+
+      &>div:nth-child(1)::after {
+        width: 250px;
+        height: 200px;
+      }
+
+      &>div:nth-child(2) {
+        width: 85%;
+        left: 0;
+      }
+    }
+  }
+
+  .amotioRetinae_nav {
+    max-width: 100%;
+    margin: auto;
+    transform: scale(1);
+    margin-top: 0;
+    padding: 0 40px 0 40px;
+
+    &>#intro {
+      margin-top: 180px;
+
+      &>div:nth-child(1) {
+        font-size: 25px;
+      }
+
+      &>div:nth-child(2) {
+        margin-top: 25px;
+        margin-bottom: 30px;
+
+        font-family: 'NotoSansHK-Regular';
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 1.8;
+        letter-spacing: 0;
+        color: #988a89;
+        text-indent: 0;
+        text-align: justify;
+
+        &>p {
+          margin-bottom: 30px;
+
+          &>span {
+            color: #e8a89b;
+            font-family: 'NotoSansHK-Bold';
+          }
+        }
+      }
+
+      &>div:nth-child(3) {
+        width: 100%;
+        height: auto;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        padding: 25px 22px 25px 40px;
+
+        &>img {
+          width: 80%;
+        }
+      }
+    }
+
+    &>#factor {
+      margin-top: 80px;
+      margin-bottom: 90px;
+
+      &>div:nth-child(1) {
+        margin-bottom: 0;
+      }
+
+      &>div:nth-child(2) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &>div {
+          width: 145px;
+          height: auto;
+
+          background-color: #ffffff;
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+          // margin-right: 94px;
+          border-radius: 45px 0;
+
+          &>div:nth-child(2) {
+            max-width: 240px;
+            padding: 10px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            margin-top: 5px;
+            flex-direction: column;
+
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1.4;
+            letter-spacing: 0px;
+            color: #515151;
+          }
+        }
+
+        &>div:nth-child(4) {
+          margin-right: 0;
+        }
+
+        &>div:nth-child(5) {
+          margin-left: 0;
+        }
+
+        &>div:last-child {
+          margin-right: 0;
+          margin-left: 25%;
+        }
+
+        &>div:nth-child(n) {
+          margin-top: 50px;
+        }
+      }
+    }
+
+    &>#styptom {
+      margin-bottom: 80px;
+
+      &>div:nth-child(2) {
+        margin: 40px auto 25px;
+      }
+
+      &>div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        &>div {
+          width: 100%;
+          height: auto;
+          border: solid 1px #eed3cf;
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 45px;
+
+          &>div:nth-child(1) {
+            width: 100%;
+            height: 50px;
+            font-family: 'HelveticaNeue-MediumItalic';
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0px;
+            color: #eed3cf;
+            font-style: oblique;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &>div:nth-child(2) {
+            height: auto;
+            width: 40%;
+            background-color: #eab1a6;
+
+            font-family: 'NotoSansHK-Regular';
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1.6;
+            letter-spacing: 0px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 15px;
+          }
+
+          &>div:nth-child(3) {
+            width: 60%;
+            height: auto;
+          }
+        }
+
+        &>div:nth-child(1) {
+          &>div:nth-child(2) {
+            background: #3360a8;
+          }
+        }
+
+        &>div::after {
+          content: '';
+          background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
+          width: 14px;
+          height: 25px;
+          display: inline-block;
+          position: absolute;
+          left: 50%;
+          right: auto;
+          top: auto;
+          bottom: -30%;
+          transform: translateY(-50%) rotate(90deg);
+        }
+
+        &>div:last-child::after {
+          content: none;
+        }
+      }
+
+      &>div:nth-child(4) {
+        background: url('https://static.cmereye.com/imgs/2023/07/5b7d7027ccc3fc0d.png') no-repeat;
+        width: 100%;
+        height: auto;
+        padding: 28px 24px 24px 24px;
+        line-height: 1.9;
+        background-size: 100%;
+
+        &>span {
+          color: #e8a89b;
+        }
+      }
+    }
+
+    &>#treat {
+      margin: 80px auto;
+
+      &>div:nth-child(2) {
+        margin: 30px auto 55px;
+
+        &>div {
+          margin-bottom: 60px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          &>div:nth-child(1) {
+            &>img {
+              width: 100%;
+            }
+          }
+
+          .amotioRetinae_text_top {
+            margin-top: 260px;
+          }
+
+          .amotioRetinae_img {
+            position: absolute;
+            top: 60px;
+          }
+
+          &>div:nth-child(2) {
+            width: 100%;
+            margin-left: 0;
+
+            &>div:nth-child(1) {
+              font-family: 'NotoSansHK-Medium';
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 36px;
+              letter-spacing: 0px;
+              color: #e8a89b;
+
+              &>p {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 34px;
+
+                &>span:nth-child(1) {
+                  padding-top: 4px;
+                  color: #fff;
+                  background: #eab1a6;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 10px;
+                }
+              }
+            }
+
+            &>div:nth-child(2) {
+              line-height: 1.8;
+              text-indent: 0;
+            }
+          }
+        }
+
+        &>div:nth-child(2) {
+          flex-direction: column-reverse;
+
+          &>div:nth-child(2) {
+            margin-left: 0;
+            margin-right: 50px;
+          }
+        }
+      }
+
+      &>div:nth-child(3) {
+        padding: 16px 20px;
+
+        &>p {
+          font-size: 16px;
+          line-height: 1.8;
+        }
+      }
+    }
+
+    &>#diabetes {
+      margin: 80px auto;
+
+      &>div:nth-child(2) {
+        margin: 40px auto 60px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        &>div:nth-child(2) {
+          width: 100%;
+          margin-left: 0;
+          line-height: 1.8;
+          text-indent: 0;
+          font-size: 12px;
+
+          &>p:nth-child(2) {
+            margin-top: 34px;
+          }
+        }
+
+        &>div:nth-child(1) {
+          padding: 20px 7px 0 7px;
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+
+    &>#prevent {
+      margin: 80px auto;
+
+      &>div:nth-child(2) {
+        margin: 30px auto 25px;
+        font-size: 12px;
+      }
+
+      &>div:nth-child(3) {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &>div {
+          width: 100%;
+          border-radius: 25px 25px 25px 25px;
+          overflow: hidden;
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          padding: 10px;
+          padding-top: 70px;
+          margin-bottom: 30px;
+
+          &>div:nth-child(1) {
+            width: 40%;
+          }
+
+          &>div:nth-child(2) {
+            width: 60%;
+            background: #fff;
+            background-size: 100% 100%;
+            height: auto;
+            margin-top: -67px;
+            z-index: 5;
+            position: static;
+            padding: 0;
+            padding-top: 28px;
+
+
+            &>div:nth-child(1) {
+              width: 70%;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              height: auto;
+              font-size: 18px;
+              height: auto;
+              padding: 4px 10px;
+              padding-top: 8px;
+              background-color: #eab1a6;
+              border-radius: 22px;
+
+              font-size: 20px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 1.6;
+              letter-spacing: 0px;
+              color: #ffffff;
+              margin-bottom: 0;
+              margin: auto;
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            &>div:nth-child(2) {
+              font-family: 'NotoSansHK-Regular';
+              line-height: 1.8;
+              color: #555555;
+              margin-top: 35px;
+              margin-left: 10px;
+              text-align: justify;
+            }
+          }
+        }
+      }
+
+      &>div:nth-child(4) {
+        background: url('https://static.cmereye.com/imgs/2023/07/7030a59cf91a8775.png') no-repeat;
+        width: 100%;
+        height: auto;
+        padding: 28px;
+        background-size: 100% 100%;
+        text-align: justify;
+
+        &>span {
+          color: #e8a89b;
+          text-indent: 0;
+        }
+      }
+    }
+
+    &>#faq {
+      margin-bottom: 260px;
+
+      &>div:nth-child(2) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .amotioRetinae_text_p_span {
+    font-family: 'NotoSansHK-Regular';
+    font-size: 12px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #515151;
+  }
+
+  .amotioRetinae_title_text {
+    font-family: 'NotoSansHK-Bold';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: 0px;
+    color: #e8a89b;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .amotioRetinae_title_text_bg {
+    background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 54px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .amotioRetinae_title_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+    padding: 16px 40px;
+    height: auto;
+    border-radius: 20px;
+    background-blend-mode: normal, normal;
+    background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
+      linear-gradient(#eda2a6, #eda2a6);
+
+    font-family: 'NotoSansHK-Regular';
+    font-size: 22px;
+    text-align: center;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .dow {
+    margin-top: -160px;
+    margin-bottom: 130px;
+    font-size: 14px;
+
+    &>div:nth-child(1) {
+      &>div {
+        width: 80%;
+        height: 94px;
+
+        &>div:nth-child(1) {
+          &>img {
+            width: 55px;
+            height: auto;
+          }
+        }
+
+        &>div:nth-child(2) {
+          padding-top: 5px;
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -906,7 +1445,7 @@ const preventList1 = [
   }
 
   .amotioRetinae_head {
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       margin-left: 39vw;
     }
   }
@@ -914,9 +1453,9 @@ const preventList1 = [
   .dow {
     margin-top: -25%;
 
-    & > div:nth-child(1) {
-      & > div {
-        & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div {
+        &>div:nth-child(1) {
           margin-left: 32.2vw;
         }
       }
