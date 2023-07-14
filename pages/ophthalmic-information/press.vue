@@ -23,6 +23,10 @@ useHead(() => ({
 // 新闻列表
 const newList = [
   {
+    newSource: 'BOWTIE',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 1,
     img: 'https://static.cmereye.com/imgs/2023/05/829d049493cda56b.png',
     title: [
@@ -37,6 +41,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 2,
     img: 'https://static.cmereye.com/imgs/2023/05/1156cbf4a6ece4d6.png',
     title: [
@@ -49,6 +57,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 3,
     img: 'https://static.cmereye.com/imgs/2023/05/91e2405635ca3e7b.png',
     title: [
@@ -62,6 +74,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 4,
     img: 'https://static.cmereye.com/imgs/2023/05/875d23d64608ef4e.png',
     title: [
@@ -79,6 +95,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 5,
     img: 'https://static.cmereye.com/imgs/2023/05/a4d26289335be5c0.jpg',
     title: [
@@ -98,6 +118,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 6,
     img: 'https://static.cmereye.com/imgs/2023/05/9276ab02f3abc115.jpg',
     title: [
@@ -111,6 +135,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 7,
     img: 'https://static.cmereye.com/imgs/2023/05/88621485630632e9.png',
     title: [
@@ -126,6 +154,10 @@ const newList = [
     ],
   },
   {
+    newSource: '',
+    principles: '',
+    datumSource: '',
+    viewCount: '',
     id: 8,
     img: 'https://static.cmereye.com/imgs/2023/05/1720c9a3331071b2.png',
     title: [
@@ -196,30 +228,13 @@ const pageTurning = (flag: string) => {
     <div class="press">
       <div>
         <div>
-          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png" 
-          srcset="https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w, https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"  
-          alt="新聞資訊" 
-          src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"/>
-          <svg
-            width="9"
-            height="144"
-            viewBox="0 0 9 144"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            data-v-1d8b93bf=""
-            data-v-a125a221=""
-            data-v-4b343dd3=""
-          >
-            <path
-              d="M1 1V143L7.5 130.5"
-              stroke="#2958A3"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              data-v-1d8b93bf=""
-              data-v-a125a221=""
-              data-v-4b343dd3=""
-            ></path>
+          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+            srcset="https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w, https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+            alt="新聞資訊" src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png" />
+          <svg width="9" height="144" viewBox="0 0 9 144" fill="none" xmlns="http://www.w3.org/2000/svg"
+            data-v-1d8b93bf="" data-v-a125a221="" data-v-4b343dd3="">
+            <path d="M1 1V143L7.5 130.5" stroke="#2958A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              data-v-1d8b93bf="" data-v-a125a221="" data-v-4b343dd3=""></path>
           </svg>
         </div>
         <div>
@@ -233,14 +248,10 @@ const pageTurning = (flag: string) => {
           <div>
             <div>NEWS</div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/05/e3060c56238575c3.png"
-              />
+              <img src="https://static.cmereye.com/imgs/2023/05/e3060c56238575c3.png" />
             </div>
             <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/05/90e21d8b0b56ea96.png"
-              />
+              <img src="https://static.cmereye.com/imgs/2023/05/90e21d8b0b56ea96.png" />
             </div>
           </div>
           <div>
@@ -262,25 +273,14 @@ const pageTurning = (flag: string) => {
         </div>
       </div>
       <div>
-        <div
-          v-for="(item, index) in newList"
-          v-show="isNewLIst"
-          :key="index"
-          @click="newDeatil(index)"
-        >
+        <div v-for="(item, index) in newList" v-show="isNewLIst" :key="index" @click="newDeatil(index)">
           <div><img :src="item.img" /></div>
           <div>{{ item.date }}</div>
           <div>
             <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
           </div>
           <div>
-            <svg
-              width="17"
-              height="17"
-              viewBox="0 0 17 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 16H16V0" stroke="#2958A3" stroke-width="2" />
             </svg>
           </div>
@@ -370,10 +370,11 @@ const pageTurning = (flag: string) => {
 .current {
   margin-bottom: 50px;
 }
+
 .press {
   position: relative;
 
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,7 +382,8 @@ const pageTurning = (flag: string) => {
     height: 731px;
     margin-top: 80px;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       background: #f1f1f1;
       position: absolute;
@@ -390,13 +392,15 @@ const pageTurning = (flag: string) => {
       width: calc((100vw - 1493px)/2 + 1460px);
       height: 750px;
     }
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       position: relative;
       margin: 122px auto 0;
       bottom: -2vw;
       width: 100%;
       max-width: 1490px;
-      &::before{
+
+      &::before {
         content: '';
         background: rgba($color: #000000, $alpha: .2);
         position: absolute;
@@ -407,13 +411,14 @@ const pageTurning = (flag: string) => {
         z-index: 6;
 
       }
-      & > img {
+
+      &>img {
         width: 100%;
         position: relative;
         z-index: 5;
       }
 
-      & > svg {
+      &>svg {
         position: absolute;
         left: 50%;
         bottom: -100px;
@@ -421,7 +426,7 @@ const pageTurning = (flag: string) => {
       }
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       text-align: center;
       position: absolute;
       left: 50%;
@@ -433,7 +438,7 @@ const pageTurning = (flag: string) => {
       align-items: center;
       z-index: 7;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -445,10 +450,10 @@ const pageTurning = (flag: string) => {
         margin-bottom: 12px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-bottom: 41px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           font-family: 'Metropolis';
           font-style: normal;
           font-weight: 700;
@@ -462,7 +467,7 @@ const pageTurning = (flag: string) => {
         }
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 700;
@@ -472,7 +477,7 @@ const pageTurning = (flag: string) => {
         letter-spacing: 0.3em;
         color: #ffffff;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           font-weight: 400;
           font-size: 15.8025px;
           line-height: 24px;
@@ -483,7 +488,7 @@ const pageTurning = (flag: string) => {
     }
   }
 
-  & > div:nth-child(2) {
+  &>div:nth-child(2) {
     width: 100%;
     max-width: 1080px;
     margin: 290px auto 0;
@@ -491,7 +496,7 @@ const pageTurning = (flag: string) => {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    & > div {
+    &>div {
       cursor: pointer;
       width: 400px;
       height: 400px;
@@ -499,13 +504,13 @@ const pageTurning = (flag: string) => {
       margin-bottom: 120px;
       position: relative;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         padding: 33px 31px;
         min-height: 240px;
         padding-bottom: 0;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 10px;
         width: 141px;
         height: 38px;
@@ -524,7 +529,7 @@ const pageTurning = (flag: string) => {
         justify-content: center;
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         margin-left: 31px;
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -537,7 +542,7 @@ const pageTurning = (flag: string) => {
         white-space: pre-wrap;
       }
 
-      & > div:nth-child(4) {
+      &>div:nth-child(4) {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -551,8 +556,8 @@ const pageTurning = (flag: string) => {
   margin: 0 26.0412%;
   margin-top: 122px;
 
-  & > div:nth-child(1) {
-    & > div:nth-child(1) {
+  &>div:nth-child(1) {
+    &>div:nth-child(1) {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
@@ -564,7 +569,7 @@ const pageTurning = (flag: string) => {
       position: relative;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       border-bottom: 3px solid #515151;
       display: inline-block;
@@ -574,25 +579,25 @@ const pageTurning = (flag: string) => {
       left: 0;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
       position: relative;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         width: 780px;
         height: 540px;
         margin-top: 24px;
 
-        & > img {
+        &>img {
           position: relative;
           z-index: 5;
           width: 100%;
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 20px;
         position: absolute;
         bottom: 0;
@@ -607,7 +612,7 @@ const pageTurning = (flag: string) => {
         color: #8ad8dd;
       }
 
-      & > div:nth-child(1)::after {
+      &>div:nth-child(1)::after {
         content: '';
         width: 813px;
         height: 440px;
@@ -620,11 +625,11 @@ const pageTurning = (flag: string) => {
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin-top: 97px;
       margin-bottom: 80px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         margin-bottom: 120px;
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -638,12 +643,12 @@ const pageTurning = (flag: string) => {
 
         color: #515151;
 
-        & > p {
+        &>p {
           margin-bottom: 35px;
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -656,13 +661,13 @@ const pageTurning = (flag: string) => {
     }
   }
 
-  & > div:nth-child(2) {
+  &>div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       width: 152px;
       height: 37.27px;
       background: #8ad8dd;
@@ -681,90 +686,196 @@ const pageTurning = (flag: string) => {
       cursor: pointer;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
 
-      & > div {
+      &>div {
         cursor: pointer;
         margin: 0 60px;
       }
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .press {
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       margin-top: 78px;
       height: auto;
-      &::before{
+
+      &::before {
         width: calc(100% - 50px);
         height: 300px;
         left: 50px;
       }
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         margin: 0 auto;
         bottom: 0;
-        &::before{
+
+        &::before {
           display: none;
         }
-        & > svg {
+
+        &>svg {
           transform: scale(0.5);
           bottom: -90px;
         }
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         bottom: 20px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 28px;
           line-height: 120%;
           margin-bottom: 5px;
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
           margin-bottom: 18px;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             font-size: 30px;
             line-height: 100%;
           }
-          div{
-            img{
+
+          div {
+            img {
               width: 110px;
               margin: 0 auto;
             }
           }
         }
-        & > div:nth-child(3) {
+
+        &>div:nth-child(3) {
           font-size: 16px;
           line-height: 160%;
           text-align: center;
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             font-size: 12px;
             line-height: 120%;
           }
         }
       }
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       margin: 120px auto 0;
       width: calc(100% - 60px);
-      & > div {
+
+      &>div {
         margin-bottom: 60px;
         width: 100%;
         height: auto;
         padding-bottom: 20px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           padding: 20px;
           min-height: 180px;
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
           margin-top: 0;
           padding-top: 5px;
         }
-        & > div:nth-child(3) {
+
+        &>div:nth-child(3) {
           font-size: 18px;
           width: calc(100% - 40px);
           margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  .content_press {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0 25px;
+
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      &>div:nth-child(1)::after {
+        content: '';
+        border-bottom: 3px solid #515151;
+        display: inline-block;
+        width: 486px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &>div:nth-child(2) {
+        width: 90%;
+
+        &>div:nth-child(1) {
+          width: 100%;
+          height: auto;
+          margin: auto;
+
+          &>img {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            margin: auto;
+            right: -30px;
+            top: 30px;
+          }
+        }
+
+        &>div:nth-child(2) {
+          margin-top: 20px;
+          font-size: 20px;
+          line-height: 36px;
+        }
+
+        &>div:nth-child(1)::after {
+          content: '';
+          width: 100%;
+          height: 200px;
+        }
+      }
+
+      &>div:nth-child(3) {
+        margin-top: 157px;
+
+        &>div:nth-child(1) {
+          margin-bottom: 72px;
+          font-size: 16px;
+          line-height: 1.8;
+          text-align: justify;
+        }
+
+        &>div:nth-child(2) {
+          display: none;
+          font-size: 16px;
+          line-height: 1.8;
+        }
+      }
+    }
+
+    &>div:nth-child(2) {
+
+      &>div:nth-child(1) {
+        width: fit-content;
+        height: auto;
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      &>div:nth-child(2) {
+        &>div {
+          margin: 0 15px;
         }
       }
     }
