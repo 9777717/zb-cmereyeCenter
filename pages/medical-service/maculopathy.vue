@@ -162,6 +162,10 @@ const prevent = [
 // 内部导航
 const serviceNavigation = [
   {
+    anchorName: '黃斑病變',
+    anchorLink: '/medical-service/maculopathy#maculopathyInfo',
+  },
+  {
     anchorName: '症狀',
     anchorLink: '/medical-service/maculopathy#sympotm',
   },
@@ -228,7 +232,7 @@ const callTel = () => {
     </div>
     <div class="maculopathy_nav">
       <!-- 什麼是黃斑病變？ -->
-      <div>
+      <div id="maculopathyInfo">
         <div>什麼是黃斑病變？</div>
         <div>
           黃斑區域位於視網膜中央，集中九成的感光神經細胞，負責中心視力和顏色視力。因此，健康黃斑點對人看清事物尤其重要。黃斑病變是指黃斑點出現了病徵，引起視力下降、視物扭曲變形及中心視力變差。

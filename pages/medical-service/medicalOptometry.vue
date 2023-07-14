@@ -27,7 +27,7 @@ const backgd = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '簡介',
+    anchorName: '醫學驗光配鏡',
     anchorLink: '/medical-service/medicalOptometry#brief_introduction',
   },
   {

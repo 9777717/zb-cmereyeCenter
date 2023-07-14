@@ -335,6 +335,11 @@ const guardAgainst = [
 const serviceNavigation = [
   {
     anchorName:
+      'pages.medical_service.glaucoma',
+    anchorLink: '/medical-service/glaucoma#glaucoma',
+  },
+  {
+    anchorName:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_navgation.navgation_text1',
     anchorLink: '/medical-service/glaucoma#factor',
   },
@@ -437,7 +442,7 @@ const callTel = () => {
         <!-- 请勿删除 -->
       </div>
       <!-- 什麼是青光眼？ -->
-      <div>
+      <div id="glaucoma">
         <div>
           {{
             $t(

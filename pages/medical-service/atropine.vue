@@ -16,7 +16,7 @@ const backgd = [
 const serviceNavigation = [
   {
     anchorName:
-      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName1',
+      'pages.medical_service.atropine_text.atropine_text1',
     anchorLink: '/medical-service/atropine#introduce',
   },
   {

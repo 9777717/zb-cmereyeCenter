@@ -39,7 +39,7 @@ const callTel = () => {
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '簡介',
+    anchorName: '視網膜脫落',
     anchorLink: '/medical-service/amotioRetinae#intro',
   },
   {

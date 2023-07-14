@@ -272,6 +272,10 @@ useHead(() => ({
 // 内部导航
 const serviceNavigation = [
   {
+    anchorName: '乾眼症',
+    anchorLink: '/medical-service/xerophthalmia#xerophthalmiaInfo',
+  },
+  {
     anchorName: '症状',
     anchorLink: '/medical-service/xerophthalmia#xerophthalmiaType',
   },
@@ -334,7 +338,7 @@ const callTel = () => {
     <!-- 内容 -->
     <div class="xerophthalmia">
       <!-- 什麼是乾眼症 -->
-      <div>
+      <div id="xerophthalmiaInfo">
         <div>
           <div>什麼是乾眼症 ？</div>
           <div>

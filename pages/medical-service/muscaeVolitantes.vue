@@ -146,6 +146,10 @@ const meetArr: any = [
 // 内部导航
 const serviceNavigation = [
   {
+    anchorName: '飛蚊症',
+    anchorLink: '/medical-service/muscaeVolitantes#muscaeInfo',
+  },
+  {
     anchorName: '成因',
     anchorLink: '/medical-service/muscaeVolitantes#factor',
   },
@@ -204,7 +208,7 @@ const callTel = () => {
     </div>
     <div class="muscaeNav">
       <!-- 什麼是飛蚊症？ -->
-      <div>
+      <div id="muscaeInfo">
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/06/eaed11ab4604268b.png"

@@ -160,6 +160,10 @@ const prevent = [
 // 内部导航
 const serviceNavigation = [
   {
+    anchorName: '結膜炎',
+    anchorLink: '/medical-service/conjunctivitis#conjunctivitisInfo',
+  },
+  {
     anchorName: '症狀',
     anchorLink: '/medical-service/conjunctivitis#symptom',
   },
@@ -219,7 +223,7 @@ const callTel = () => {
     <!-- 結膜炎 -->
     <div class="conjunctivitis_nav">
       <!-- 什麼是結膜炎？ -->
-      <div>
+      <div id="conjunctivitisInfo">
         <div>
           <div>什麼是結膜炎？</div>
           <div>

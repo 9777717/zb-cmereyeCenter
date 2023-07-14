@@ -310,6 +310,11 @@ const meetArr = [
 const serviceNavigation = [
   {
     anchorName:
+      'pages.medical_service.cataract',
+    anchorLink: '/medical-service/cataract#cataract',
+  },
+  {
+    anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation1',
     anchorLink: '/medical-service/cataract#fatorArr',
   },
@@ -403,7 +408,7 @@ const callTel = () => {
         <!-- 请勿删除 -->
       </div>
       <!-- 白內障影響日常生活？ -->
-      <div>
+      <div id="cataract">
         <div>
           <div>
             <div>
