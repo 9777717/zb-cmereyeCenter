@@ -205,7 +205,7 @@ const goWhatsApp = () => {
 }
 // 拨打电话
 const callTel = () => {
-  location.href = 'tel://+(852) 3956 2026'
+  location.href = 'tel://+(852) 3956 2025'
 }
 </script>
 
@@ -840,7 +840,7 @@ const callTel = () => {
   margin: 82px auto 220px;
   width: 1020px;
   height: 357px;
-  background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png');
+  background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png')no-repeat;
   background-size: 100% 100%;
 
   & > div:nth-child(1) {
@@ -1025,14 +1025,397 @@ const callTel = () => {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .strabismusAmblyopia_head {
+    &>div:nth-child(1) {
+      width: calc(100% - 60px);
+      justify-content: flex-end;
+      align-items: flex-end;
+      display: flex;
+      margin: 150px auto 0;
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 36px;
+          text-align: right;
+        }
+        &>div:nth-child(2) {
+          font-size: 24px;
+          letter-spacing: 0.01em;
+          margin-top: 3px;
+          text-align: right;
+          line-height: 1;
+        }
+      }
+      &>div:nth-child(1)::after {
+        width: 190px;
+        height: 200px;
+        top: 195px;
+      }
+      &>div:nth-child(2) {
+        top: 0;
+        width: 325px;
+        left: -1px;
+        &>img:nth-child(1){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .strabismusAmblyopia_nav {
+    transform: scale(1);
+    margin-top: 190px;
+    & > #strabismus {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        line-height: 1.8;
+        &>p{
+          margin-top: 25px;
+        }
+      }
+    }
+    & > #kind {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 45px;
+        margin-bottom: 20px;
+        & > div {
+          & > div:nth-child(1) {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            background-size: 100% 100%;
+          }
+          & > div:nth-child(2) {
+            margin-top: 20px;
+            & > div:nth-child(1) {
+              line-height: 1.8;
+            }
+            & > div:nth-child(2) {
+              margin-top: 35px;
+              flex-direction: column;
+              padding: 0;
+              & > div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 0;
+                margin-bottom: 50px;
+                img{
+                  width: 55%;
+                }
+                & > div:nth-child(2) {
+                  width: 100px;
+                  height: 35px;
+                  border-radius: 40%;
+                  margin: 0;
+                  font-size: 16px;
+                  line-height: 35px;
+                }
+              }
+            }
+          }
+        }
+        & > div:nth-child(2) {
+          margin-top: 0;
+        }
+        & > div:nth-child(3) {
+          margin-top: 30px;
+          & > div:nth-child(1) {
+            width: 250px;
+            height: 50px;
+            background-size: 100% 100%;
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              & > div {
+                & > div:nth-child(2) {
+                  background: url('https://static.cmereye.com/imgs/2023/06/71124468b48b8228.png');
+                  background-size: 100% 100%;
+                  border-radius: 0;
+                  width: 130px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        background: url('https://static.cmereye.com/imgs/2023/07/40cf5540e35a2cde.jpg');
+        background-size: 100% 100%;
+        transform: scale(1);
+        margin: 50px 0 0;
+        font-size: 15px;
+        line-height: 1.8;
+      }
+      & > div:nth-child(5) {
+        margin-top: 30px;
+        & > div:nth-child(1) {
+          width: 250px;
+          height: 50px;
+          background-size: 100% 100%;
+          font-size: 18px;
+          line-height: 50px;
+        }
+        & > div:nth-child(2) {
+          margin-top: 25px;
+          line-height: 1.6;
+        }
+        & > div:nth-child(3) {
+          padding: 0;
+          margin-top: 40px;
+          & > div {
+            width: calc(50% - 30px);
+            margin-bottom: 40px;
+            &> div:nth-child(1) {
+              img{
+                border-radius: 50%;
+                // box-shadow: -2px 2px 3px 3px #ccc;
+              }
+            }
+            & > div:nth-child(2) {
+              margin-top: 15px;
+              p{
+                display: inline;
+              }
+            }
+          }
+        }
+      }
+    }
+    &> #cure{
+      width: calc(100% - 60px);
+      margin: 30px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 35px;
+        & > div {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+          margin-bottom: 55px;
+          & > div:nth-child(1) {
+            border-radius: 15px 15px 0 0;
+            height: 60px;
+            font-size: 22px;
+          }
+          & > div:nth-child(2) {
+            padding: 25px;
+            & > div:nth-child(1) {
+              width: 100%;
+              height: auto;
+              margin-bottom: 20px;
+              min-height: 110px;
+              background: #F2F3F4;
+            }
+            & > div:nth-child(2) {
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+    }
+    & > #amblyopia {
+      width: calc(100% - 60px);
+      margin: 10px auto 0;
+      & > div:nth-child(2) {
+        margin: 25px 0 0;
+        flex-direction: column;
+        & > div:nth-child(1) {
+          width: 100%;
+          margin-bottom: 25px;
+          & > img {
+            width: 100%;
+          }
+        }
+        & > div:nth-child(2) {
+          width: 100%;
+          line-height: 1.8;
+          margin-left: 0;
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 30px;
+        & > div:nth-child(2) {
+          margin: 35px auto 0;
+          & > div {
+            border: none;
+            padding: 75px 0 0;
+            position: relative;
+            margin-bottom: 60px;
+            & > div:nth-child(1) {
+              flex: 1;
+              margin-left: 18px;
+              img{
+                width: 100%;
+              }
+            }
+            & > div:nth-child(2) {
+              flex: 1.2;
+              & > div:nth-child(1) {
+                width: 180px;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: 100% 100%;
+                font-size: 18px;
+                line-height: 45px;
+                height: 45px;
+              }
+              & > div:nth-child(2) {
+                line-height: 1.8;
+              }
+            }
+          }
+          & > div:nth-child(2),
+          & > div:nth-child(3),
+          & > div:nth-child(4) {
+            & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                width: 100%;
+                height: 45px;
+                line-height: 45px;
+                background-size: 100% 100%;
+              }
+            }
+          }
+          & > div:nth-child(2),
+          & > div:nth-child(4){
+            & > div:nth-child(1) {
+              margin-right: 18px;
+              margin-left: 0;
+            }
+          }
+        }
+        
+      }
+    }
+    & > #treat {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        background: url('https://static.cmereye.com/imgs/2023/07/24a18c74e1189515.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 46px 25px;
+        line-height: 1.8;
+        margin: 25px 0 0;
+        height: auto;
+        & > p {
+          margin-bottom: 20px;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div {
+          & > div:nth-child(1) {
+            align-items: center;
+            padding-bottom: 0;
+            width: 100%;
+            img{
+              width: 30px;
+              min-width: 30px;
+              height: 21px;
+            }
+            & > div:nth-child(2) {
+              font-size: 18px;
+            }
+          }
+          & > div:nth-child(1)::after {
+            width: 62.5vw;
+            left: auto;
+            right: 0;
+          }
+          & > div:nth-child(2) {
+            margin: 25px auto 55px;
+            align-items: flex-start;
+            & > div:nth-child(2) {
+              width: 100%;
+              margin-left: 20px;
+              & > p {
+                margin-bottom: 0;
+                &:not(:first-child){
+                  margin-top: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #curativeTime {
+    width: calc(100% - 60px);
+    margin: 70px auto 0;
+    background: url('https://static.cmereye.com/imgs/2023/07/a5064687f337bf13.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: auto;
+    padding-bottom: 50px;
+    & > div:nth-child(1) {
+      font-size: 18px;
+      line-height: 1.6;
+      padding-left: 0;
+      padding-top: 10px;
+    }
+    & > div:nth-child(2) {
+      margin-top: 40px;
+      padding: 0 25px;
+      line-height: 1.8;
+    }
+  }
+  #bg_strabismusAmblyopia_nav {
+    margin-top: 70px;
+    width: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 35px;
+  }
+  .strabismusAmblyopia_title_btn{
+    margin-top: 30px;
+    width: max-content;
+    height: 70px;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 5px 40px 0;
+  }
+  .strabismusAmblyopia_title_text{
+    font-size: 24px;
+  }
+  .strabismusAmblyopia_text_p_span{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .dow {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    font-size: 16px;
+    & > div:nth-child(1) {
+      & > div {
+        width: 80%;
+        height: 90px;
+        & > div:nth-child(1) {
+          margin-left: 30%;
+          margin-right: 30px;
+          &>img{
+            width: 55px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .strabismusAmblyopia_head {
-    & > div:nth-child(1) {
-      // margin-left: 40vw;
-    }
-  }
 
   .strabismusAmblyopia_nav {
     margin-top: -20%;

@@ -33,7 +33,7 @@ const goWhatsApp = () => {
 }
 // 拨打电话
 const callTel = () => {
-  location.href = 'tel://+(852) 3956 2026'
+  location.href = 'tel://+(852) 3956 2025'
 }
 // 内部导航
 const serviceNavigation = [
@@ -270,7 +270,7 @@ const keratoplastyList1 = [
   },
   {
     therapy: '板層角膜移植',
-    involve: ['深層前角膜移植 前面3層結構', '後層角膜移植  後面3層結構'],
+    involve: ['深層前角膜移植\n前面3層結構', '後層角膜移植\n後面3層結構'],
     postoperation: [
       ['對角膜內皮細胞損傷少', '術後散光較少', '移植排斥率低，復原時間較快'],
       ['無需縫線', '術後散光少', '術後移植失敗率低', '復原時間較快'],
@@ -1098,7 +1098,7 @@ const keratoplastyList1 = [
           flex-direction: column;
           justify-content: space-between;
 
-          &div {
+          &>div {
             width: 580px;
             height: 73px;
             border-radius: 10px;
@@ -1484,7 +1484,7 @@ const keratoplastyList1 = [
 
         & > div {
           display: flex;
-          width: 520 px;
+          width: 520px;
           height: 140px;
           border-radius: 10px;
           border: solid 2px #7DBE9C;
@@ -2596,6 +2596,1023 @@ const keratoplastyList1 = [
         margin-bottom: 10px;
       }
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .ocularSurfaceDiseases_head {
+    &>div:nth-child(1) {
+      width: calc(100% - 60px);
+      justify-content: flex-end;
+      align-items: flex-end;
+      display: flex;
+      margin: 150px auto 0;
+      &>div:nth-child(1) {
+        &>div:nth-child(1) {
+          font-size: 36px;
+          text-align: right;
+        }
+        &>div:nth-child(2) {
+          font-size: 24px;
+          letter-spacing: 0.01em;
+          margin-top: 3px;
+          text-align: right;
+          line-height: 1;
+        }
+      }
+      &>div:nth-child(1)::after {
+        width: 190px;
+        height: 200px;
+        top: 195px;
+      }
+      &>div:nth-child(2) {
+        top: 0;
+        width: 320px;
+        left: -1px;
+        &>img:nth-child(1){
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .ocularSurfaceDiseases_nav {
+    transform: scale(1);
+    margin-top: 190px;
+    & > #pterygium {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        flex-direction: column;
+        margin: 25px auto 45px;
+        & > div:nth-child(1) {
+          width: 100%;
+          line-height: 1.8;
+          margin-right: 0;
+          margin-bottom: 40px;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          margin: 35px auto 50px;
+          flex-direction: column;
+          & > div:nth-child(1) {
+            & >div {
+              margin-bottom: 20px;
+              width: 100%;
+              font-size: 14px;
+              line-height: 1.8;
+              height: 40px;
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;
+            padding: 15px 12px;
+            font-size: 14px;
+            line-height: 1.8;
+            height: auto;
+          }
+        }
+        & > div:nth-child(3) {
+          margin: 40px auto 50px;
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          flex-direction: column;
+          margin: 25px auto 0;
+          justify-content: flex-start;
+          width: 100%;
+          & > div {
+            width: 100%;
+            height: auto;
+            font-size: 13px;
+            line-height: 1.8;
+            transform: scale(1);
+            min-height: 180px;
+          }
+          & > div:nth-child(1) {
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            padding: 14% 10px 20% 45%;
+          }
+          & > div:nth-child(2) {
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            padding: 35px 10px 20% 45%;
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          flex-wrap: wrap;
+          margin-top: 30px;
+          & > div {
+            width: calc(50% - 15px);
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            & > div:nth-child(1) {
+              font-size: 20px;
+            }
+            & > div:nth-child(2) {
+              padding: 25px 15px;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+    }
+    & > #blepharitis {
+      width: calc(100% - 60px);
+      margin: 30px auto 0;
+      & > div:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 25px auto 50px;
+        & > div:nth-child(2) {
+          width: 100%;
+          line-height: 1.8;
+          margin-left: 0;
+          margin-bottom: 25px;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          margin: 30px auto 0;
+          flex-direction: column;
+          padding-left: 0;
+          & > div:nth-child(1) {
+            & > div {
+              margin-bottom: 30px;
+              & > span:nth-child(1) {
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                font-size: 14px;
+                min-width: 22px;
+                margin-right: 10px;
+              }
+              & > span:nth-child(2) {
+                line-height: 1.8;
+                font-size: 14px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            margin-top: 20px;
+          }
+        }
+        & > div:last-child{
+          margin-top: 50px;
+        }
+      }
+      & > div:nth-child(4) {
+        margin-top: 50px;
+        & > div:nth-child(2) {
+          margin: 35px 0 0;
+          flex-wrap: wrap;
+          & > div {
+            width: calc(50% - 25px);
+            margin-bottom: 25px;
+            & > div:nth-child(2) {
+              width: 100%;
+              padding: 0;
+              margin: 12px 0 0;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        margin-top: 20px;
+        & > div:nth-child(2) {
+          margin: 35px 0 0;
+          flex-direction: column;
+          & > div{
+            width: 100%;
+            margin-bottom: 35px;
+            padding-bottom: 60px;
+            & > div:nth-child(1) {
+              & > div:nth-child(2) {
+                margin-right: 0;
+              }
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+              margin-top: 25px;
+            }
+          }
+          & > div::after {
+            transform: rotate(90deg);
+            background-size: 100% auto;
+            height: calc(100vw - 60px);
+            right: 0;
+            top: 100%;
+            transform: rotate(90deg);
+            transform-origin: top right;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            height: calc(100vw - 60px);
+          }
+        }
+      }
+    }
+    & > #keratitis {
+      width: calc(100% - 60px);
+      margin: 0 auto;
+      & > div:nth-child(2) {
+        margin-top: 30px;
+        & > div:nth-child(2) {
+          margin: 35px auto 20px;
+          flex-wrap: wrap;
+          & > div {
+            width: 26%;
+            margin-bottom: 30px;
+            div:nth-child(2) {
+              margin-top: 15px;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        margin: 55px auto;
+        & > div:nth-child(2) {
+          margin-top: 15px;
+          line-height: 1.8;
+          font-size: 14px;
+          &>div:not(:first-child){
+            margin-top: 15px;
+          }
+        }
+        & > div:nth-child(3) {
+          padding: 0;
+          margin: 30px 0 0;
+          align-items: flex-start;
+          & > div {
+            width: calc(50% - 15px);
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+              margin-top: 10px;
+              text-align: left;
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          margin-top: 15px;
+          flex-wrap: wrap;
+          & > div {
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            padding: 12px 15px;
+            &:nth-of-type(2),&:nth-of-type(3){
+              width: calc(50% - 10px);
+            }
+          }
+        }
+      }
+    }
+    & > #iritis {
+      width: calc(100% - 60px);
+      margin: 50px auto 0;
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          flex-direction: column;
+          padding-left: 0;
+          & > div:nth-child(1) {
+            font-size: 13px;
+            line-height: 1.8;
+            padding: 5px 0 15px;
+            &>div{
+              padding: 10px 0;
+            }
+            & > div::before {
+              margin-right: 7px;
+              margin-bottom: 0;
+            }
+            & > div:nth-child(2) {
+              width: 100%;
+              padding: 15px 0 10px;
+            }
+          }
+           & > div:nth-child(2) {
+             width: 80%;
+             margin: 0 auto;
+           }
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 50px;
+        & > div:nth-child(2) {
+          padding-left: 0;
+          margin-top: 25px;
+          flex-wrap: wrap;
+          justify-content: center;
+          & > div {
+            width: calc((100vw - 60px)/4 - 10px);
+            height: calc((100vw - 60px)/4 - 10px);
+            margin: 0 5px 25px;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            line-height: 1.4;
+            font-size: 13px;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        margin-top: 55px;
+        & > div:nth-child(2) {
+          margin: 25px auto 0;
+          padding-left: 0;
+          flex-direction: column;
+          & > div {
+            width: calc(100% - 10px);
+            margin-bottom: 30px;
+            margin-left: 10px;
+            height: auto;
+            padding: 15px 20px;
+            & > div:nth-child(2) {
+              font-size: 14px;
+              margin-left: 10px;
+              line-height: 1.8;
+            }
+            & > div:nth-child(1) {
+              left: -30px;
+              font-size: 40px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        margin-top: 20px;
+        & > div:nth-child(2) {
+          flex-direction: column;
+          padding-left: 0;
+          margin-top: 0;
+          &>div{
+            width: 100%;
+            margin-top: 25px;
+            height: auto;
+            font-size: 14px;
+            line-height: 1.8;
+            padding: 25px 0;
+            border-top: none;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            &::before{
+              content: '';
+              height: 5px;
+              width: 100%;
+              position: absolute;
+              background: #7DBE9C;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    & > #episcleritis {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 15px;
+        & > div:nth-child(2) {
+          width: 100%;
+          height: auto;
+          padding: 0;
+          box-shadow: none;
+          display: flex;
+          align-items: flex-start;
+          margin-top: 25px;
+          margin-bottom: 10px;
+          &> div {
+            width: calc(33% - 20px);
+            flex-direction: column;
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+              margin-left: 0;
+            }
+          }
+          & > div:nth-child(2) {
+            border: none;
+            width: calc(33% - 20px);
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          flex-direction: column;
+          margin-top: 20px;
+          padding-left: 0;
+          margin-bottom: 30px;
+          & > div {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            & > div:nth-child(1) {
+              padding: 25px 20px 30px 15px;
+              font-size: 30px;
+              line-height: 1;
+              border-right: solid 2px #7DBE9C;
+            }
+            & > div:nth-child(2) {
+              margin-left: 15px;
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          padding-left: 0;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          & > div {
+            width: 150px;
+            height: 60px;
+            background-size: 100% 100%;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            & > span {
+              font-size: 16px;
+              line-height: 1.6;
+              left: 16px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          margin-top: 25px;
+          margin-bottom: 50px;
+          & > div {
+            flex-direction: column;
+            padding-left: 0;
+            & > div:nth-child(1) {
+              margin-right: 0;
+              & > div:nth-child(1) {
+                width: 100%;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                margin-bottom: 20px;
+              }
+              & > div:nth-child(2) {
+                font-size: 14px;
+                line-height: 1.8;
+              }
+            }
+            & > div:nth-child(2) {
+              width: 80%;
+              margin: 25px auto 0;
+              & > div {
+                font-size: 13px;
+                line-height: 1.4;
+              }
+            }
+          }
+          & > div:nth-child(1) {
+            margin-bottom: 50px;
+          }
+        }
+      }
+      & > div:nth-child(6) {
+        & > div:nth-child(2) {
+          padding: 0;
+          margin-top: 15px;
+          margin-bottom: 0;
+          & > div:nth-child(1) {
+            line-height: 1.8;
+            font-size: 14px;
+            padding-left: 0;
+          }
+          & > div:nth-child(2) {
+            flex-direction: column;
+            margin-top: 20px;
+            & > div {
+              width: 100%;
+              transform: scale(1);
+              height: auto;
+              margin-bottom: 25px;
+              & > div:nth-child(1) {
+                font-size: 18px;
+                line-height: 45px;
+                height: 45px;
+              }
+              & > div:nth-child(2) {
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: center;
+                margin-top: 0;
+              }
+            }
+            & > div:nth-child(1) {
+              width: 100%;
+
+              & > div:nth-child(2) {
+                padding: 20px;
+              }
+            }
+            & > div:nth-child(2) {
+              & > div:nth-child(2) {
+                padding: 20px;
+              }
+            }
+            & > div:nth-child(3) {
+              & > div:nth-child(2) {
+                padding: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & > #damage {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div {
+        & > div:nth-child(2) {
+          padding-left: 0;
+        }
+      }
+      & > div:nth-child(2) {
+        flex-direction: column-reverse;
+        margin: 15px auto 50px;
+        & > div:nth-child(1) {
+          margin-top: 20px;
+        }
+        & > div:nth-child(2) {
+          font-size: 14px;
+          line-height: 1.8;
+          margin-left: 0;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          margin: 20px auto 30px;
+          & > div {
+            width: 155px;
+            background: none;
+            height: auto;
+            padding: 10px 15px;
+            border: solid 4px #eeeeee;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            & > span {
+              font-size: 12px;
+              background: #ACD9C1;
+              width: 30px;
+              height: 20px;
+              display: block;
+              text-align: center;
+              line-height: 20px;
+              border-radius: 20px 2px 30px 0;
+              top: -4px;
+              left: -4px;
+            }
+            & > div {
+              font-size: 14px;
+              line-height: 1.8;
+              text-align: left;
+              p{
+                display: inline;
+              }
+            }
+          }
+          & > div:nth-child(n + 4) {
+             margin-top: 0;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          margin: 25px auto 30px;
+          & > div {
+            width: 100%;
+            margin-bottom: 30px;
+            & > div:nth-child(1) {
+              position: relative;
+              left: 0;
+            }
+            & > div:nth-child(2) {
+              width: 100%;
+              height: auto;
+              font-size: 14px;
+              line-height: 1.8;
+              margin-left: -4px;
+              border-radius: 0 10px 10px 0;
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+              justify-content: center;
+            }
+          }
+          & > div:nth-child(1),
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              width: 100%;
+            }
+          }
+
+          & > div:nth-child(1) {
+            margin-left: 0;
+            margin-right: 0;
+
+            & > div:nth-child(2) {
+              padding: 0;
+              padding-left: 20px;
+            }
+          }
+
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              padding-left: 20px;
+              align-items: flex-start;
+            }
+          }
+           & > div:nth-child(3) {
+            margin-left: 0;
+
+            & > div:nth-child(2) {
+              padding-left: 20px;
+              align-items: flex-start;
+            }
+          }
+
+          & > div:nth-child(4) {
+            margin-left: 0;
+            margin-right: 0;
+
+            & > :nth-child(1) {
+              left: 0;
+            }
+
+            & > div:nth-child(2) {
+              padding-left: 20px;
+              align-items: flex-start;
+            }
+          }
+
+          & > div:nth-child(5) {
+            & > :nth-child(1) {
+              left: 0;
+            }
+
+            & > div:nth-child(2) {
+              padding-left: 20px;
+              align-items: flex-start;
+            }
+          }
+
+          & > div:nth-child(n + 3) {
+            margin-top: 0;
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          margin-top: 25px;
+          & > div {
+            margin-bottom: 45px;
+            & > div:nth-child(1) {
+              font-size: 20px;
+              line-height: 1;
+              margin-bottom: 0;
+            }
+            & > div:nth-child(1)::after {
+              width: 100%;
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+              margin-top: 15px;
+            }
+          }
+          &:last-child(){
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    & > #keratoconus {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        flex-direction: column;
+        margin: 15px auto 50px;
+        & > div:nth-child(1) {
+          margin-right: 0;
+          & > span {
+            letter-spacing: 0px;
+          }
+        }
+        & > div:nth-child(2) {
+          margin-top: 20px;
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          padding: 0;
+          margin: 30px 0 0 0;
+          flex-wrap: wrap;
+          & > div {
+            width: calc(50% - 15px);
+            margin-bottom: 45px;
+            & > img:nth-child(1) {
+              width: 80%;
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              margin-top: 10px;
+              line-height: 1.8;
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          margin: 25px auto 50px;
+          padding-left: 0;
+          flex-direction: column;
+          & > div:nth-child(1) {
+            width: 80%;
+            margin: 0 auto;
+          }
+          & > div:nth-child(2) {
+            margin-left: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            & > div:nth-child(1) {
+              margin-top: 30px;
+              & > div {
+                line-height: 1.6;
+                & > span {
+                  width: 25px;
+                  min-width: 25px;
+                  height: 25px;
+                  line-height: 25px;
+                  font-size: 14px;
+                  margin-right: 1-px;
+                }
+              }
+            }
+            & > div:nth-child(2) {
+              margin: 20px auto 0;
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          margin-top: 45px;
+          & > div {
+            margin-bottom: 50px;
+            & > div:nth-child(1) {
+              top: -18px;
+              left: 15px;
+              width: max-content;
+              font-size: 14px;
+              line-height: 35px;
+              height: 35px;
+              padding: 0 40px;
+            }
+            & > div:nth-child(2) {
+              width: 100%;
+              height: auto;
+              font-size: 14px;
+              line-height: 1.8;
+              padding: 30px 15px 20px;
+            }
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              width: max-content;
+              padding: 0 10px;
+              font-size: 13px;
+            }
+          }
+
+          & > div:nth-child(3) {
+            margin-bottom: 0;
+
+            & > div:nth-child(1) {
+              width: max-content;
+              padding: 0 20px;
+            }
+          }
+        }
+      }
+    }
+    & > #keratoplasty {
+      width: calc(100% - 60px);
+      margin: 70px auto 0;
+      & > div:nth-child(2) {
+        margin-top: 15px;
+        margin-bottom: 0;
+        & > div:nth-child(1) {
+          margin-bottom: 0;
+          line-height: 1.8;
+        }
+      }
+      & > div:nth-child(3) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        & > div:nth-child(2) {
+          padding-left: 0;
+          & > div:nth-child(1) {
+            flex-direction: column;
+            margin: 30px 0 0 0;
+            & > div {
+              width: 100%;
+              height: auto;
+              font-size: 14px;
+              line-height: 1.8;
+              padding: 15px 25px;
+              transform: scale(1);
+              margin-bottom: 20px;
+            }
+          }
+          & > div:nth-child(2) {
+            margin-top: 25px;
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                margin-right: 10px;
+              }
+            }
+            & > div:nth-child(2) {
+              font-size: 12px;
+              line-height: 1.8;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          padding-left: 0;
+          margin: 25px auto 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+          & > div {
+            width: 33%;
+            height: 90px;
+            margin-bottom: 35px;
+            line-height: 1.4;
+            &:nth-of-type(1),&:nth-of-type(2){
+              width: 35%;
+            }
+          }
+          & > div::before {
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          padding-left: 0;
+          & > div:nth-child(1) {
+            margin-bottom: 30px;
+            margin-top: 20px;
+
+            & > div:nth-child(1) {
+              margin-bottom: 15px;
+              font-size: 18px;
+              line-height: 1.6;
+              
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+          & > div:nth-child(2) {
+            margin-bottom: 30px;
+            & > div:nth-child(1) {
+              margin-bottom: 15px;
+              font-size: 18px;
+              line-height: 1.6;
+            }
+            & > div:nth-child(2) {
+              font-size: 14px;
+              line-height: 1.8;
+            }
+          }
+          & > div:nth-child(3) {
+            & > div {
+              & > div:nth-child(1) {
+                width: 20%;
+              }
+              & > div:nth-child(2) {
+                width: 29%;
+              }
+              & > div:nth-child(3) {
+                width: 51%;
+              }
+            }
+            & > div:nth-child(1) {
+              height: 40px;
+              font-size: 14px;
+            }
+            & > div:nth-child(2) {
+              font-size: 12px;
+              height: auto;
+              line-height: 1.8;
+              &>div{
+                padding: 15px 0;
+              }
+              & > div:nth-child(1) {
+                font-size: 14px;
+                text-align: center;
+              }
+            }
+            & > div:nth-child(3) {
+              font-size: 12px;
+              line-height: 1.8;
+              height: auto;
+              &>div{
+                padding: 15px 0;
+              }
+              & > div:nth-child(1) {
+                font-size: 14px;
+                text-align: center;
+              }
+              & > div:nth-child(2) {
+                padding: 0;
+                & > div:nth-child(1) {
+                  & > div:nth-child(1) {
+                    height: 100px;
+                    white-space: pre-wrap;
+                    text-align: center;
+                  }
+                  & > div:nth-child(2) {
+                    height: 120px;
+                    white-space: pre-wrap;
+                    text-align: center;
+                  }
+                }
+              }
+              & > div:nth-child(3) {
+                padding: 0;
+                & > div:nth-child(1) {
+                  & > div:nth-child(1) {
+                    height: 100px;
+                  }
+                  & > div:nth-child(2) {
+                    height: 120px;
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & > #faq {
+      width: calc(100% - 60px);
+      margin: 70px auto 200px;
+      & > div:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .fromTable {
+    margin-top: 0;
+  }
+  .ocularSurfaceDiseases_text_p_span{
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .ocularSurfaceDiseases_title{
+    font-size: 24px;
+  }
+  .ocularSurfaceDiseases_title_text{
+    font-size: 24px;
+  }
+  .ocularSurfaceDiseases_title_btn {
+    margin-top: 30px;
+    width: max-content;
+    height: 70px;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 5px 40px 0;
+    border-radius: 10px;
   }
 }
 </style>

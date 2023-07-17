@@ -44,7 +44,7 @@ const goWhatsApp = () => {
 }
 // 拨打电话
 const callTel = () => {
-  location.href = 'tel://+(852) 3956 2026'
+  location.href = 'tel://+(852) 3956 2025'
 }
 const toCmer = () => {
   location.href = 'https://www.cmervision.com/'

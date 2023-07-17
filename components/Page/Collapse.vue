@@ -193,6 +193,12 @@ const props = defineProps({
 .amotioRetinae2 {
   background-image: url(../../assets/images/-amotioRetinae.png);
 }
+.ocularSurfaceDiseases1{
+  background-image: url(../../assets/images/+ocularSurfaceDiseases.png);
+}
+.ocularSurfaceDiseases2{
+  background-image: url(../../assets/images/-ocularSurfaceDiseases.png);
+}
 @media screen and (max-width: 768px) {
   :deep(.el-collapse-item__header) {
     height: 90px;

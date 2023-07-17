@@ -96,7 +96,7 @@ const menuLists = [
     title: '聯絡我們',
     lists: [
       {
-        name: 'Tel: (852) 3956 2026',
+        name: 'Tel: (852) 3956 2025',
         icon: 'https://static.cmereye.com/imgs/2023/07/724ec499dbc6fbfd.png',
         link: ''
       },
