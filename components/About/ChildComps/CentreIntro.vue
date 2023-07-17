@@ -909,7 +909,6 @@ const goInstagram = (type: string) => {
           width: 200px;
           height: 50px;
           font-size: 20px;
-          padding-top: 5px;
         }
       }
       & > div:nth-child(2) {
@@ -957,7 +956,6 @@ const goInstagram = (type: string) => {
           width: 200px;
           height: 50px;
           font-size: 20px;
-          padding-top: 5px;
         }
       }
       & > div:nth-child(2) {
@@ -1005,7 +1003,6 @@ const goInstagram = (type: string) => {
           width: 200px;
           height: 50px;
           font-size: 20px;
-          padding-top: 5px;
         }
       }
       & > div:nth-child(2) {

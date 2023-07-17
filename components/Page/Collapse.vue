@@ -90,7 +90,7 @@ const props = defineProps({
 }
 
 :deep(.el-collapse-item__content) {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;

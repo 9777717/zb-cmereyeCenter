@@ -431,10 +431,8 @@ const toEyesight = () =>{
     margin-top: 100px;
     div{
       text-align: center;
-      // width: 100%;
       width: 350px;
       height: 50px;
-      padding-top: 5px;
       line-height: 50px;
       font-size: 25px;
       background: #1b407a;

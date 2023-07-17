@@ -91,7 +91,7 @@ const props = defineProps({
     width: 165px;
     border: 0.5px solid #515151;
     margin: 5px 0;
-    padding: 5px 0 0;
+    padding: 3px 0;
     font-size: 15px;
     background: #fff;
     display: flex;
@@ -124,7 +124,7 @@ const props = defineProps({
     width: 165px;
     border: 0.5px solid #515151;
     margin: 5px 0;
-    padding: 5px 0 0;
+    padding: 3px 0;
     font-size: 15px;
     background: #fff;
     display: flex;

@@ -1237,7 +1237,6 @@ const keratoplastyList1 = [
               align-items: center;
               line-height: 38px;
               margin-right: 20px;
-              padding-top: 5px;
             }
 
             & > span:nth-child(2) {
@@ -1728,7 +1727,7 @@ const keratoplastyList1 = [
               height: 68px;
               background-color: #7DBE9C;
 
-              font-family: 'NotoSansHK-Regular';
+              font-family: 'Noto Sans HK';
               font-size: 26px;
               line-height: 46px;
               letter-spacing: 0px;
@@ -1873,7 +1872,7 @@ const keratoplastyList1 = [
             border: solid 2px #7DBE9C;
 
             font-size: 22px;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
           }
         }
 
@@ -2025,7 +2024,7 @@ const keratoplastyList1 = [
             margin-top: 30px;
             max-width: 262px;
             text-align: center;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             line-height: 40px;
             letter-spacing: 0px;
@@ -2466,7 +2465,7 @@ const keratoplastyList1 = [
 }
 
 .ocularSurfaceDiseases_text_p_span {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -2512,7 +2511,7 @@ const keratoplastyList1 = [
   background-image: linear-gradient(-90deg, #b3dfc8 0%, #d2f1e0 100%),
     linear-gradient(#eda2a6, #eda2a6);
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;

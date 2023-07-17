@@ -547,7 +547,6 @@ let rightResult = ref({
       }
       &>div:nth-of-type(3){
         &>div{
-          padding-top: 5px;
           height: 50px;
           line-height: 50px;
           font-size: 25px;
@@ -589,7 +588,6 @@ let rightResult = ref({
           color: #fff;
           background: green;
           line-height: 90px;
-          padding-top: 5px;
           font-size: 28px;
           text-align: center;
           cursor: pointer;
@@ -627,10 +625,8 @@ let rightResult = ref({
     margin-top: 200px;
     div{
       text-align: center;
-      // width: 100%;
       width: 350px;
       height: 50px;
-      padding-top: 5px;
       line-height: 50px;
       font-size: 25px;
       background: #1b407a;

@@ -230,7 +230,7 @@ defineProps({
       flex-direction: column;
       align-items: center;
 
-      // font-family: 'NotoSansHK-Regular';
+      // font-family: 'Noto Sans HK';
       font-size: 28px;
       font-weight: normal;
       font-stretch: normal;

@@ -431,7 +431,7 @@ const callTel = () => {
 
       & > div:nth-child(2) {
         margin-top: 38px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
@@ -482,7 +482,7 @@ const callTel = () => {
         align-items: center;
 
         & > div:nth-child(2) {
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -567,7 +567,7 @@ const callTel = () => {
           border: solid 2px #c0c0e6;
           padding: 80px 41px 80px 32px;
 
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
@@ -588,7 +588,7 @@ const callTel = () => {
           & > div:nth-child(3),
           & > div:nth-child(4),
           & > div:nth-child(5) {
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
@@ -626,7 +626,7 @@ const callTel = () => {
 
     & > div:nth-child(2) {
       margin-top: 60px;
-      font-family: 'NotoSansHK-Regular';
+      font-family: 'Noto Sans HK';
       font-size: 22px;
       font-weight: normal;
       font-stretch: normal;
@@ -639,7 +639,7 @@ const callTel = () => {
       margin-top: 50px;
 
       & > div:nth-child(1) {
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
@@ -660,7 +660,7 @@ const callTel = () => {
             width: 260px;
             margin-top: 40px;
 
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
@@ -680,7 +680,7 @@ const callTel = () => {
       border: solid 2px #c0c0e6;
       padding: 27px 61px;
 
-      font-family: 'NotoSansHK-Regular';
+      font-family: 'Noto Sans HK';
       font-size: 26px;
       font-weight: normal;
       font-stretch: normal;
@@ -701,7 +701,7 @@ const callTel = () => {
 
     & > div:nth-child(2) {
       & > div:nth-child(1) {
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
@@ -724,7 +724,7 @@ const callTel = () => {
 
           & > div:nth-child(2) {
             margin-top: 39px;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 26px;
             font-weight: normal;
             font-stretch: normal;
@@ -770,7 +770,7 @@ const callTel = () => {
         }
 
         & > div:nth-child(2) {
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -827,7 +827,7 @@ const callTel = () => {
         }
 
         & > div:nth-child(3) {
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
@@ -885,7 +885,7 @@ const callTel = () => {
     linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;

@@ -435,7 +435,7 @@ const tozoosnet =()=>{
       justify-content: space-between;
       & > div:nth-child(1) {
         width: 610px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 20px;
         font-weight: normal;
         line-height: 160%;
@@ -461,7 +461,7 @@ const tozoosnet =()=>{
     }
 
     & > div:nth-child(3) {
-      font-family: 'NotoSansHK-Regular';
+      font-family: 'Noto Sans HK';
       font-size: 12px;
       font-weight: normal;
       font-stretch: normal;
@@ -509,7 +509,7 @@ const tozoosnet =()=>{
       }
       & > div:nth-child(3) {
         margin-top: 48px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 18px;
         font-weight: normal;
         font-stretch: normal;
@@ -543,7 +543,7 @@ const tozoosnet =()=>{
           justify-content: space-between;
           flex: 1;
           & > p {
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 20px;
             font-weight: normal;
             font-stretch: normal;
@@ -570,7 +570,7 @@ const tozoosnet =()=>{
       & > div:nth-of-type(2) {
         margin-top: 50px;
         text-align: center;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 26px;
         font-weight: 600;
         font-stretch: normal;
@@ -622,7 +622,7 @@ const tozoosnet =()=>{
           linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 30px;
         font-weight: normal;
         font-stretch: normal;
@@ -652,7 +652,7 @@ const tozoosnet =()=>{
 
       & > div {
         max-width: 300px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
@@ -700,7 +700,7 @@ const tozoosnet =()=>{
         }
 
         & > div:nth-child(2) {
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -729,7 +729,7 @@ const tozoosnet =()=>{
           linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 30px;
         font-weight: normal;
         font-stretch: normal;
@@ -764,7 +764,7 @@ const tozoosnet =()=>{
           position: relative;
 
           & > div:nth-child(2) {
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 20px;
             font-weight: normal;
             font-stretch: normal;
@@ -807,7 +807,7 @@ const tozoosnet =()=>{
         height: 145px;
         border-radius: 73px;
         border: solid 1px #98ccef;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
@@ -865,7 +865,7 @@ const tozoosnet =()=>{
           }
           &:last-child {
             flex: 1;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
@@ -886,7 +886,7 @@ const tozoosnet =()=>{
           linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 30px;
         font-weight: normal;
         font-stretch: normal;
@@ -930,7 +930,7 @@ const tozoosnet =()=>{
     linear-gradient(#529fd3, #529fd3);
   background-blend-mode: normal, normal;
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;

@@ -101,7 +101,7 @@ const rt = ref(route)
         &>div:nth-of-type(1){
           text-align: center;
           flex: 1;
-          line-height: 38px;
+          line-height: 34px;
           position: relative;
           transition: all .3s;
           border-right: 1px solid rgba(143, 210, 228, .5);
@@ -109,7 +109,6 @@ const rt = ref(route)
             position: relative;
             z-index: 2;
             font-size: 20px;
-            padding-top: 2px;
             color: #8FD2E4;
             transition: all .3s;
           }

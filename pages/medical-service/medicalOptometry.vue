@@ -506,7 +506,7 @@ const goVision = () => {
 }
 
 .medicalOptometry_text_p_span {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -543,7 +543,7 @@ const goVision = () => {
     linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;

@@ -1174,7 +1174,7 @@ const goWhatsApp = () => {
                 align-items: center;
                 flex-direction: column;
 
-                font-family: 'NotoSansHK-Regular';
+                font-family: 'Noto Sans HK';
                 font-size: 22px;
                 font-stretch: normal;
                 line-height: 42px;
@@ -1242,7 +1242,7 @@ const goWhatsApp = () => {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
-                  font-family: 'NotoSansHK-Regular';
+                  font-family: 'Noto Sans HK';
                   line-height: 42px;
                 }
 
@@ -1278,7 +1278,7 @@ const goWhatsApp = () => {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
-                  font-family: 'NotoSansHK-Regular';
+                  font-family: 'Noto Sans HK';
                   line-height: 42px;
                 }
 
@@ -1308,7 +1308,7 @@ const goWhatsApp = () => {
             margin: 50px 0;
 
             &>div {
-              font-family: 'NotoSansHK-Regular';
+              font-family: 'Noto Sans HK';
               font-size: 22px;
               line-height: 44px;
               letter-spacing: 0px;
@@ -1324,7 +1324,7 @@ const goWhatsApp = () => {
           }
 
           &>div:nth-child(3) {
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
@@ -1382,7 +1382,7 @@ const goWhatsApp = () => {
                   align-items: center;
                   flex-direction: column;
 
-                  font-family: 'NotoSansHK-Regular';
+                  font-family: 'Noto Sans HK';
                   font-size: 22px;
                   font-stretch: normal;
                   line-height: 42px;
@@ -1450,7 +1450,7 @@ const goWhatsApp = () => {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
-                    font-family: 'NotoSansHK-Regular';
+                    font-family: 'Noto Sans HK';
                     line-height: 42px;
                   }
 
@@ -1486,7 +1486,7 @@ const goWhatsApp = () => {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
-                    font-family: 'NotoSansHK-Regular';
+                    font-family: 'Noto Sans HK';
                     line-height: 42px;
                   }
 
@@ -1844,7 +1844,7 @@ const goWhatsApp = () => {
 
                 &>div {
                   margin-top: 11px;
-                  font-family: 'NotoSansHK-Regular';
+                  font-family: 'Noto Sans HK';
                   font-size: 20px;
                   line-height: 42px;
                   letter-spacing: 2px;
@@ -1928,7 +1928,7 @@ const goWhatsApp = () => {
         &>div {
           text-align: center;
 
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
@@ -2034,7 +2034,7 @@ const goWhatsApp = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             line-height: 38px;
             letter-spacing: 0px;
@@ -2139,7 +2139,7 @@ const goWhatsApp = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 22px;
             line-height: 38px;
             letter-spacing: 0px;
@@ -2211,7 +2211,7 @@ const goWhatsApp = () => {
       margin-bottom: 140px;
 
       &>div {
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
         letter-spacing: 0px;
@@ -2269,12 +2269,13 @@ const goWhatsApp = () => {
               justify-content: center;
               align-items: center;
               width: 34px;
+              min-width: 34px;
               height: 34px;
               color: #d5bb96;
               background-color: #ffffff;
               border: solid 2px #decbaf;
               border-radius: 50%;
-              padding-top: 8px;
+              padding-top: 0;
               margin-right: 10px;
               margin-top: 5px;
             }
@@ -2286,7 +2287,7 @@ const goWhatsApp = () => {
 }
 
 .eye_attention {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -2315,7 +2316,7 @@ const goWhatsApp = () => {
 }
 
 .eyeOrthopaedicDisease_p {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -2326,7 +2327,7 @@ const goWhatsApp = () => {
 }
 
 .eyeOrthopaedicDisease_text_p_span {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -2382,7 +2383,7 @@ const goWhatsApp = () => {
     linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -2989,7 +2990,7 @@ const goWhatsApp = () => {
               margin-bottom: 25px;
 
               &>div {
-                font-family: 'NotoSansHK-Regular';
+                font-family: 'Noto Sans HK';
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 1.8;
@@ -3014,7 +3015,7 @@ const goWhatsApp = () => {
             }
 
             &>div:nth-child(3) {
-              font-family: 'NotoSansHK-Regular';
+              font-family: 'Noto Sans HK';
               font-size: 16px;
               font-weight: normal;
               font-stretch: normal;
@@ -3493,7 +3494,7 @@ const goWhatsApp = () => {
 
                   &>div {
                     margin-top: 11px;
-                    font-family: 'NotoSansHK-Regular';
+                    font-family: 'Noto Sans HK';
                     font-size: 14px;
                     line-height: 1.6;
                     letter-spacing: 2px;
@@ -3574,7 +3575,7 @@ const goWhatsApp = () => {
 
           &>div {
             text-align: center;
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 12px;
             font-weight: normal;
             font-stretch: normal;
@@ -3691,7 +3692,7 @@ const goWhatsApp = () => {
               width: 100%;
               height: auto;
               display: block;
-              font-family: 'NotoSansHK-Regular';
+              font-family: 'Noto Sans HK';
               font-size: 14px;
               line-height: 1.6;
               letter-spacing: 0px;
@@ -3851,7 +3852,7 @@ const goWhatsApp = () => {
               width: 100%;
               height: auto;
               display: block;
-              font-family: "NotoSansHK-Regular";
+              font-family: "Noto Sans HK";
               font-size: 14px;
               line-height: 1.6;
               letter-spacing: 0px;
@@ -3972,7 +3973,7 @@ const goWhatsApp = () => {
         margin-bottom: 75px;
 
         &>div {
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 12px;
           font-weight: 700;
           letter-spacing: 0px;
@@ -4070,7 +4071,6 @@ const goWhatsApp = () => {
               }
               &>p>span{
                 padding: 0;
-                padding-top: 5px;
                 margin-right: 5px;
                 margin-top:-3px;
                 font-size: 14px;
@@ -4089,7 +4089,6 @@ const goWhatsApp = () => {
               }
               &>p>span{
                 padding: 0;
-                padding-top: 5px;
                 margin-right: 5px;
                 margin-top: -3px;
                 font-size: 14px;

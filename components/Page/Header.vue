@@ -325,7 +325,6 @@ const handleToLinks = (_link:any) => {
         span{
           margin-left: 5px;
           color: #fff;
-          padding-top: 5px;
         }
       }
     }

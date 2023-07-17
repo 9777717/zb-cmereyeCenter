@@ -121,7 +121,6 @@ const toEyesight = () =>{
       }
       &>div:last-child{
         &>div{
-          padding-top: 5px;
           height: 50px;
           line-height: 50px;
           font-size: 25px;

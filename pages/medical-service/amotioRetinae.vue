@@ -360,7 +360,7 @@ const preventList1 = [
       margin-top: 64px;
       margin-bottom: 99px;
 
-      font-family: 'NotoSansHK-Regular';
+      font-family: 'Noto Sans HK';
       font-size: 24px;
       font-weight: normal;
       font-stretch: normal;
@@ -491,7 +491,7 @@ const preventList1 = [
           width: 100%;
           background-color: #eab1a6;
 
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 21px;
           font-weight: normal;
           font-stretch: normal;
@@ -675,7 +675,7 @@ const preventList1 = [
           }
 
           &>div:nth-child(2) {
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             line-height: 46px;
             color: #555555;
           }
@@ -709,7 +709,7 @@ const preventList1 = [
 }
 
 .amotioRetinae_text_p_span {
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -757,7 +757,7 @@ const preventList1 = [
   background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
     linear-gradient(#eda2a6, #eda2a6);
 
-  font-family: 'NotoSansHK-Regular';
+  font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -926,7 +926,7 @@ const preventList1 = [
         margin-top: 25px;
         margin-bottom: 30px;
 
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
@@ -1071,7 +1071,7 @@ const preventList1 = [
             width: 40%;
             background-color: #eab1a6;
 
-            font-family: 'NotoSansHK-Regular';
+            font-family: 'Noto Sans HK';
             font-size: 14px;
             font-weight: normal;
             font-stretch: normal;
@@ -1316,7 +1316,7 @@ const preventList1 = [
             }
 
             &>div:nth-child(2) {
-              font-family: 'NotoSansHK-Regular';
+              font-family: 'Noto Sans HK';
               line-height: 1.8;
               color: #555555;
               margin-top: 35px;
@@ -1352,7 +1352,7 @@ const preventList1 = [
   }
 
   .amotioRetinae_text_p_span {
-    font-family: 'NotoSansHK-Regular';
+    font-family: 'Noto Sans HK';
     font-size: 12px;
     font-weight: 400;
     font-stretch: normal;
@@ -1402,7 +1402,7 @@ const preventList1 = [
     background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
       linear-gradient(#eda2a6, #eda2a6);
 
-    font-family: 'NotoSansHK-Regular';
+    font-family: 'Noto Sans HK';
     font-size: 22px;
     text-align: center;
     font-weight: normal;

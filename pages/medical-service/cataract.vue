@@ -1176,7 +1176,7 @@ const callTel = () => {
     & > div:nth-child(2) {
       margin-top: 122px;
       padding-left: 3px;
-      font-family: 'NotoSansHK-Regular';
+      font-family: 'Noto Sans HK';
       font-size: 24px;
       font-weight: normal;
       font-stretch: normal;
@@ -1246,7 +1246,7 @@ const callTel = () => {
         height: 133px;
         border: solid 2px #66c5dc;
 
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1362,7 +1362,7 @@ const callTel = () => {
       & > div:nth-child(2) {
         margin-top: 81px;
         padding-left: 4px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1437,7 +1437,7 @@ const callTel = () => {
         & > div:nth-child(3) {
           position: relative;
           margin-top: 102px;
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -1526,7 +1526,7 @@ const callTel = () => {
 
       & > div:nth-child(1) {
         padding-left: 7px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1568,7 +1568,7 @@ const callTel = () => {
         border: solid 2px #66c5dc;
         padding: 51px 61px;
 
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1607,7 +1607,7 @@ const callTel = () => {
 
       & > div:nth-child(2) {
         margin-top: 68px;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1625,7 +1625,7 @@ const callTel = () => {
           margin-top: 37px;
           white-space: pre-wrap !important;
           text-align: center;
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -1751,7 +1751,7 @@ const callTel = () => {
         padding-left: 2px;
         padding-right: 6px;
         margin: 61px auto;
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -1798,9 +1798,6 @@ const callTel = () => {
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                &>div{
-                  padding-top: 5px;
-                }
                 & > img {
                   margin-right: 5px;
                 }
@@ -1840,7 +1837,7 @@ const callTel = () => {
               }
 
               & > div:nth-child(2) {
-                font-family: 'NotoSansHK-Regular';
+                font-family: 'Noto Sans HK';
                 font-size: 18px;
 
                 & > img {
@@ -1985,7 +1982,7 @@ const callTel = () => {
       & > div:nth-child(3) {
         margin-top: 45px;
 
-        font-family: 'NotoSansHK-Regular';
+        font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
@@ -2063,7 +2060,7 @@ const callTel = () => {
 
         & > div:nth-child(2) {
           margin-right: 40px;
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -2082,7 +2079,7 @@ const callTel = () => {
       & > div:nth-child(2n + 1) {
         & > div:nth-child(2) {
           margin-left: 40px;
-          font-family: 'NotoSansHK-Regular';
+          font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;

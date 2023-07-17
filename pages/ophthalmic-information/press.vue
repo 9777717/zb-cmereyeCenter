@@ -780,7 +780,6 @@ const pageTurning = (flag: string) => {
 
         &>div:nth-child(2) {
           margin-top: 0;
-          padding-top: 5px;
         }
 
         &>div:nth-child(3) {

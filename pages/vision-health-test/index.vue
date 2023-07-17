@@ -276,7 +276,6 @@ const setTestSwiperRef = (swiper:any) => {
     display: block;
     margin: 50px auto;
     text-align: center;
-    padding-top: 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}

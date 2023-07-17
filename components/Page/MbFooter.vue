@@ -81,7 +81,6 @@ onMounted(() => {
         white-space: pre-wrap;
         color: #FFF;
         font-size: 12px;
-        padding-top: 5px;
       }
       &:nth-of-type(2){
         flex: 1.5;

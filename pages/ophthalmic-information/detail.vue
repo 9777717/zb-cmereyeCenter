@@ -69,7 +69,6 @@ onMounted(()=>{
       margin: 20px 0;
       border-left: 10px solid #1b407a;
       padding-left: 20px;
-      padding-top: 5px;
       height: 50px;
       line-height: 50px;
     }

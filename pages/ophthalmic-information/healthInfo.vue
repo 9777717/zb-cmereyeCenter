@@ -591,7 +591,6 @@ onMounted(()=>{
           bottom: 0;
           left: 0;
           font-size: 14px;
-          padding-top: 5px;
           height: auto;
           line-height: 2;
           width: 100px;
