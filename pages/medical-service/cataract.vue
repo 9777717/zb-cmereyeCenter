@@ -1091,7 +1091,15 @@ const callTel = () => {
       }
     }
     &>div:last-child{
-      margin-right: 10px;
+      margin-right: 16px;
+      svg{
+        width: 415px;
+        height: auto;
+        image{
+          width: 415px;
+          height: auto;
+        }
+      }
     }
   }
 }
@@ -1180,7 +1188,7 @@ const callTel = () => {
       font-size: 24px;
       font-weight: normal;
       font-stretch: normal;
-      line-height: 35px;
+      line-height: 1.6;
       letter-spacing: 0px;
       color: #515151;
 
@@ -1250,12 +1258,12 @@ const callTel = () => {
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 35px;
+        line-height: 1.6;
         letter-spacing: 0px;
         color: #515151;
         border-radius: 133px 0 133px 0;
 
-        padding-top: 31px;
+        padding-top: 25px;
         padding-left: 75px;
         margin-left: -35px;
       }
@@ -1441,7 +1449,7 @@ const callTel = () => {
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 35px;
+          line-height: 1.6;
           letter-spacing: 0px;
           color: #515151;
 
@@ -1572,7 +1580,7 @@ const callTel = () => {
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 35px;
+        line-height: 1.6;
         letter-spacing: 0px;
         color: #515151;
       }
@@ -1611,7 +1619,7 @@ const callTel = () => {
         font-size: 24px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 35px;
+        line-height: 1.6;
         letter-spacing: 0px;
         color: #515151;
       }
@@ -1629,7 +1637,7 @@ const callTel = () => {
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 32px;
+          line-height: 1.6;
           letter-spacing: 0px;
           color: #515151;
         }

@@ -199,6 +199,9 @@ const props = defineProps({
 .ocularSurfaceDiseases2{
   background-image: url(../../assets/images/-ocularSurfaceDiseases.png);
 }
+:deep(.el-collapse-item__content){
+  padding-bottom: 50px;
+}
 @media screen and (max-width: 768px) {
   :deep(.el-collapse-item__header) {
     height: 90px;
@@ -212,6 +215,7 @@ const props = defineProps({
     font-size: 16px;
     line-height: 1.6;
     color: #515151;
+    padding-bottom: 25px;
     & > div:nth-child(1) {
       & > div:nth-child(2) {
         & > div:nth-child(1) {
