@@ -293,17 +293,17 @@ let drawer = ref(false)
       </div>
     </div>
   </transition>
-  <div>
-    <el-drawer v-model="drawer" size="50%" :direction="'btt'">
-      <div class="drawerIn">
-        <img
-          src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-          alt="微信QR"
-          srcset=""
-        />
-      </div>
-    </el-drawer>
-  </div>
+      <client-only>
+        <el-drawer v-model="drawer" size="50%" :direction="'btt'">
+          <div class="drawerIn">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+              alt="微信QR"
+              srcset=""
+            />
+          </div>
+        </el-drawer>
+      </client-only>
   </div>
 </template>
 

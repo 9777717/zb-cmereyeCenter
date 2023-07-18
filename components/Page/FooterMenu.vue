@@ -209,7 +209,7 @@ let drawer = ref(false)
         <div>香港聯交所上市編號03309.HK</div>
       </div>
     </div>
-    <div>
+    <client-only>
       <el-drawer v-model="drawer" size="50%" :direction="'btt'">
         <div class="drawerIn">
           <img
@@ -219,7 +219,7 @@ let drawer = ref(false)
           />
         </div>
       </el-drawer>
-    </div>
+    </client-only>
   </div>
 </template>
 
