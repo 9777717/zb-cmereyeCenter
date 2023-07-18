@@ -429,8 +429,9 @@ const callTel = () => {
           color: #2958A3;
           font-size: 20px;
           font-weight: 400;
+          margin-bottom: 10px;
           svg{
-            margin-top: -8px;
+            // margin-top: -8px;
           }
         }
         &>div:nth-of-type(2){

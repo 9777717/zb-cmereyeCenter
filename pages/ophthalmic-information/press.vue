@@ -515,7 +515,7 @@ const pageTurning = (flag: string) => {
         width: 141px;
         height: 38px;
         background: #ffffff;
-
+        line-height: 43px;
         font-family: 'Metropolis';
         font-style: normal;
         font-weight: 500;
@@ -525,7 +525,7 @@ const pageTurning = (flag: string) => {
         color: #8ad8dd;
 
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
       }
 

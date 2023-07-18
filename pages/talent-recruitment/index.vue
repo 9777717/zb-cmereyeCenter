@@ -279,7 +279,7 @@ useHead(() => ({
     }
     a{
       font-size: 20px;
-      padding: 10px 20px 5px;
+      padding: 10px 20px;
       margin-top: 30px;
     }
   }

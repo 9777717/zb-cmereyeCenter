@@ -136,18 +136,23 @@ const menuLists = [
 
 const imgLists = [
   {
+    type: 'link',
     link: 'https://www.facebook.com/cmereyecenter/'
   },
   {
+    type: 'link',
     link: 'https://www.instagram.com/cmer_eye_center/'
   },
   {
+    type: 'link',
     link: 'https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg'
   },
   {
+    type: 'drawer',
     link: ''
   },
   {
+    type: 'link',
     link: 'https://weibo.com/u/7083441648?refer_flag=1001030103_&is_all=1'
   }
 ]
@@ -155,6 +160,16 @@ const imgLists = [
 const handleToLinks = (_data:any) => {
   location.href = _data.link
 }
+
+const handleImgLists = (_link:any) => {
+  if(_link.type = 'drawer'){
+    drawer.value = true
+  }else{
+    location.href = _link
+  }
+}
+let drawer = ref(false)
+
 
 </script>
 
@@ -188,13 +203,22 @@ const handleToLinks = (_data:any) => {
         <div><span @click="handleToLinks({link: '/privacyPolicy'})">私隱政策</span> | <span @click="handleToLinks({link: '/disclaimer'})">免責條款</span></div>
         <div>©2023 希瑪眼科中心 版權所有</div>
         <div class="imgLists">
-          <div @click="handleToLinks(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex">
-            <!-- <img src="https://static.cmereye.com/imgs/2023/07/28d1674922e892cc.png" alt=""> -->
-          </div>
+          <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
         </div>
         <div>希瑪眼科醫療控股有限公司</div>
         <div>香港聯交所上市編號03309.HK</div>
       </div>
+    </div>
+    <div>
+      <el-drawer v-model="drawer" size="50%" :direction="'btt'">
+        <div class="drawerIn">
+          <img
+            src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+            alt="微信QR"
+            srcset=""
+          />
+        </div>
+      </el-drawer>
     </div>
   </div>
 </template>
@@ -273,6 +297,13 @@ const handleToLinks = (_data:any) => {
       }
     }
   }
+}
+.drawerIn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {

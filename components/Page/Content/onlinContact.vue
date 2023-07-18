@@ -177,6 +177,7 @@ const rt = ref(route)
           &>div:nth-of-type(1){
             &>div{
               color: #fff;
+              margin-top: -1px;
               padding-top: 0px;
             }
             &::before{

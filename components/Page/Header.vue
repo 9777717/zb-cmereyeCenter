@@ -201,16 +201,43 @@ const toLinks = (data:any) =>{
 let menuBool = ref(false)
 const handleMuenBtn = () =>{
   menuBool.value = !menuBool.value
-  // console.log(menuBool.value)
-  // console.log(route.name,route.name !== 'index')
 }
 
-// console.log(route.name,route.name !== 'index')
-
+const imgLists = [
+  {
+    type: 'link',
+    link: 'https://www.facebook.com/cmereyecenter/'
+  },
+  {
+    type: 'link',
+    link: 'https://www.instagram.com/cmer_eye_center/'
+  },
+  {
+    type: 'link',
+    link: 'https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg'
+  },
+  {
+    type: 'drawer',
+    link: ''
+  },
+  {
+    type: 'link',
+    link: 'https://weibo.com/u/7083441648?refer_flag=1001030103_&is_all=1'
+  }
+]
 
 const handleToLinks = (_link:any) => {
   location.href = _link
 }
+
+const handleImgLists = (_link:any) => {
+  if(_link.type = 'drawer'){
+    drawer.value = true
+  }else{
+    location.href = _link
+  }
+}
+let drawer = ref(false)
 </script>
 
 <template>
@@ -220,11 +247,17 @@ const handleToLinks = (_link:any) => {
       'border-bottom': ((route.name === 'index' || menuBool)? 'none' :'4px solid rgba(242, 242, 242, 1)')
     }">
       <div class="mbHeader-in-logo" @click="toIndex"></div>
-      <div class="mbHeader-in-muenBtn" :style="{
-        background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
-      }" @click="handleMuenBtn"></div>
+      <div class="mbHeader-in-rightBtn">
+        <div class="imgLists">
+          <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
+        </div>
+        <div class="mbHeader-in-muenBtn" :style="{
+          background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
+        }" @click.stop="handleMuenBtn"></div>
+      </div>
     </div>
-    <div class="mbHeader-content" :style="{display: (menuBool? 'block': 'none')}">
+  <transition name="ddd">
+    <div class="mbHeader-content" v-show="menuBool">
       <el-menu
         default-active="2"
         unique-opened
@@ -234,7 +267,6 @@ const handleToLinks = (_link:any) => {
           <el-sub-menu v-if="menusItem.childMenuList.length" :index="menusIndex">
             <template #title>{{menusItem.text}}</template>
             <el-menu-item v-for="(childItem,childIndex) in menusItem.childMenuList" :key="`${menusIndex}-${childIndex}`" :index="`${menusIndex}-${childIndex}`" @click="toLinks(childItem)">
-              <!-- <nuxt-link :to="childItem.link">{{childItem.text}}</nuxt-link> -->
               {{childItem.text}}
             </el-menu-item>
           </el-sub-menu>
@@ -260,10 +292,34 @@ const handleToLinks = (_link:any) => {
         </div>
       </div>
     </div>
+  </transition>
+  <div>
+    <el-drawer v-model="drawer" size="50%" :direction="'btt'">
+      <div class="drawerIn">
+        <img
+          src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+          alt="微信QR"
+          srcset=""
+        />
+      </div>
+    </el-drawer>
+  </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.ddd-enter,.ddd-leave-to{
+    /* 刚进入时或完全离开后透明度为0 */
+    opacity: 0;
+}
+.ddd-enter-active,.ddd-leave-active{
+    /* 设置过渡 */
+    transition:all .5s linear; 
+}
+.ddd-enter-to,.ddd-leave{
+    /* 刚离开时或完全进入后透明度为1 */
+    opacity: 1;
+}
 .mbHeader {
   position: fixed;
   top: 0;
@@ -288,11 +344,15 @@ const handleToLinks = (_link:any) => {
     align-items: center;
     &-logo {
       width: 69px;
+      min-width: 69px;
       height: 36px;
       background: url(https://static.cmereye.com/imgs/2023/06/a05a8310283f5a06.png)
         no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
+    }
+    &-rightBtn{
+      display: flex;
     }
     &-muenBtn {
       width: 36px;
@@ -310,7 +370,6 @@ const handleToLinks = (_link:any) => {
     height: calc(100vh - 74px);
     overflow: hidden;
     overflow-y: auto;
-    transition: all 5s;
     padding: 0 9px 100px;
     &-btn{
       display: flex;
@@ -348,6 +407,41 @@ const handleToLinks = (_link:any) => {
 :deep(.el-sub-menu__title){
   color: #2958A3;
   font-size: 16px;
+}
+.imgLists{
+  display: flex;
+  justify-content: center;
+  margin: 10px 40px 10px 0;
+  div{
+    background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+    background-repeat: no-repeat;
+    background-position: 5px 0;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    &:nth-of-type(2){
+      background-position: -27px 0;
+    }
+    &:nth-of-type(3){
+      background-position: -58px 0;
+    }
+    &:nth-of-type(4){
+      background-position: -92px 0;
+    }
+    &:nth-of-type(5){
+      background-position: -125.5px 0;
+    }
+    &:not(:last-child){
+      margin-right: 15px;
+    }
+  }
+}
+.drawerIn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) and (max-width: 1452px) {
 }

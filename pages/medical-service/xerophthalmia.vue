@@ -325,15 +325,17 @@ const callTel = () => {
       <div>
         <div>乾眼症</div>
         <div>DRY EYE</div>
+        <div>DRY EYE</div>
+        <div>DRY EYE</div>
       </div>
-      <div>
+      <!-- <div>
         <img
           src="https://static.cmereye.com/imgs/2023/05/2881f2949b9da5af.png"
         />
         <img
           src="https://static.cmereye.com/imgs/2023/05/2db9158b5d3b1602.png"
         />
-      </div>
+      </div> -->
     </div>
     <!-- 内容 -->
     <div class="xerophthalmia">
@@ -895,7 +897,7 @@ const callTel = () => {
           font-size: 26px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 28px;
+          line-height: 1.6;
           letter-spacing: 0px;
           color: #a9a6d2;
         }
@@ -1082,6 +1084,7 @@ const callTel = () => {
               line-height: 36px;
               letter-spacing: 0px;
               color: #ae7d1f;
+              padding-bottom: 5px;
             }
           }
         }
@@ -1539,6 +1542,11 @@ const callTel = () => {
                   color: #525280;
                 }
               }
+              & > div:nth-child(2) , > div:nth-child(3){
+                color: #515151;
+                line-height: 1.8;
+                letter-spacing: .1em;
+              }
             }
           }
 
@@ -1786,7 +1794,7 @@ const callTel = () => {
             font-size: 18px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 25px;
+            line-height: 1.6;
             letter-spacing: -0.01em;
             color: #515151;
           }
@@ -1805,11 +1813,11 @@ const callTel = () => {
 
           & > div:nth-child(2),
           & > div:nth-child(3) {
-            margin-bottom: 57px;
+            margin-bottom: 45px;
           }
 
           & > div:nth-child(2) {
-            margin-top: 62px;
+            margin-top: 55px;
           }
         }
       }
@@ -1838,6 +1846,7 @@ const callTel = () => {
           }
 
           & > div:nth-child(2) {
+            margin-top: 5px;
             font-family: 'Noto Sans HK';
             font-size: 18px;
             font-weight: normal;
@@ -1915,7 +1924,7 @@ const callTel = () => {
               font-size: 24px;
               font-weight: normal;
               font-stretch: normal;
-              line-height: 1.4;
+              line-height: 1.6;
               letter-spacing: 0px;
               color: #515151;
             }
@@ -2066,7 +2075,19 @@ const callTel = () => {
         z-index: 5;
         font-family: 'DINCondensed-Bold';
       }
-
+      & > div:nth-child(3) ,& > div:nth-child(4){
+        -webkit-text-stroke: 1.5px #a9a6d2;
+        font-family: 'DINCondensed-Bold';
+        position: relative;
+        z-index: 5;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-45%);
+      }
+      & > div:nth-child(4) {
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-115%);
+      }
       
       font-size: 131px;
       font-weight: normal;
@@ -2159,6 +2180,17 @@ const callTel = () => {
           margin-top: 0;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 50px;
+          line-height: 1;
+          margin-top: 0;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-73%);
         }
       }
       &>div:nth-child(1)::after {
@@ -2613,6 +2645,12 @@ const callTel = () => {
                   line-height: 1.6;
                 }
               }
+              &>div{
+                & > div:nth-child(2) , > div:nth-child(3){
+                  line-height: 1.6;
+                  letter-spacing: 0.06em;
+                }
+              }
             }
             & > div:nth-child(2) {
               position: absolute;
@@ -2751,7 +2789,7 @@ const callTel = () => {
         & > div:nth-child(8) {
           width: 100%;
           margin-top: 40px;
-          padding: 30px;
+          padding: 25px 30px;
           background: url(https://static.cmereye.com/imgs/2023/07/7de6d60faf433c9a.png);
           transform: scale(1);
           background-size: 100% 100%;
