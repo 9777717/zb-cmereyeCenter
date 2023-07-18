@@ -219,15 +219,17 @@ const callTel = () => {
         <div>
           <div>黃斑病變</div>
           <div>MACULAR DEGENERATION</div>
+          <div>MACULAR DEGENERATION</div>
+          <div>MACULAR DEGENERATION</div>
         </div>
-        <div>
+        <!-- <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/228b1b2296c9c93d.png"
           />
           <img
             src="https://static.cmereye.com/imgs/2023/05/6a3241d38332501f.png"
           />
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="maculopathy_nav">
@@ -1217,7 +1219,20 @@ const callTel = () => {
         position: relative;
         z-index: 5;
       }
-
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        -webkit-text-stroke: 1.5px #dec692;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-45%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-115%);
+      }
       font-size: 131px;
       font-weight: normal;
       font-stretch: normal;
@@ -1309,6 +1324,16 @@ const callTel = () => {
           margin-top: 3px;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 36px;
+          letter-spacing: 0.01em;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-77%);
         }
       }
       &>div:nth-child(1)::after {

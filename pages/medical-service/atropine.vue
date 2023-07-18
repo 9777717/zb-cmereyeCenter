@@ -73,14 +73,8 @@ const tozoosnet =()=>{
               {{ $t('pages.medical_service.atropine_text.atropine_text1') }}
             </div>
             <div>ATROPINE EYE DROPS</div>
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/10f1717cd6906298.png"
-            />
-            <img
-              src="https://static.cmereye.com/imgs/2023/06/527dfa1a9d012d5b.png"
-            />
+            <div>ATROPINE EYE DROPS</div>
+            <div>ATROPINE EYE DROPS</div>
           </div>
         </div>
       </div>
@@ -986,6 +980,22 @@ const tozoosnet =()=>{
           letter-spacing: 3.4px;
           color: #99d4dd;
         }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-family: 'DINCondensed-Bold';
+          display: block;
+          position: relative;
+          z-index: 5;
+          font-size: 105px;
+          letter-spacing: 3.4px;
+          -webkit-text-stroke: 1.5px #99d4dd;
+          color: transparent;
+          clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+          transform: translateY(-35%);
+        }
+        & > div:nth-child(4){
+          clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+          transform: translateY(-105%);
+        }
         font-family: 'DINCondensed-Bold';
         font-size: 131px;
         font-weight: normal;
@@ -1043,6 +1053,16 @@ const tozoosnet =()=>{
             margin-top: 0;
             text-align: right;
             line-height: 1;
+          }
+          & > div:nth-child(3),& > div:nth-child(4) {
+            font-size: 35px;
+            letter-spacing: 0.01em;
+            clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+            transform: translateY(-20%);
+          }
+          & > div:nth-child(4) {
+            clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+            transform: translateY(-77%);
           }
         }
         &>div:nth-child(1)::after {

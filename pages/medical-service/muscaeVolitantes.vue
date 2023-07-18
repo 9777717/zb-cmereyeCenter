@@ -195,15 +195,17 @@ const callTel = () => {
         <div>
           <div>飛蚊症</div>
           <div>EYE FLOATERS</div>
+          <div>EYE FLOATERS</div>
+          <div>EYE FLOATERS</div>
         </div>
-        <div>
+        <!-- <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/5a4b6219f26dba3e.png"
           />
           <img
             src="https://static.cmereye.com/imgs/2023/05/0e37066bfcab4331.png"
           />
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="muscaeNav">
@@ -1270,6 +1272,20 @@ const callTel = () => {
         position: relative;
         z-index: 5;
       }
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        -webkit-text-stroke: 1.5px #9cc4e2;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-45%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-113%);
+      }
 
       font-size: 131px;
       font-weight: normal;
@@ -1362,6 +1378,16 @@ const callTel = () => {
           margin-top: 0;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 45px;
+          letter-spacing: 0.01em;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-77%);
         }
       }
       &>div:nth-child(1)::after {
