@@ -879,7 +879,7 @@ const goWhatsApp = () => {
     </div>
     <div class="fromTable">
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#b6b3e0;'}`" />
+        :co="`color:${backgd[0]}`" />
     </div>
     <PageFooterMenu />
   </div>
@@ -1087,8 +1087,8 @@ const goWhatsApp = () => {
 
             &>div {
               margin-top: 85px;
-              width: 624px;
-              height: 305px;
+              width: calc(50% - 30px);
+              // height: 305px;
               background-color: #ffffff;
               border-radius: 15px;
               border: solid 2px #e4c6a9;
@@ -1120,8 +1120,8 @@ const goWhatsApp = () => {
               &>div:nth-child(2) {
                 font-size: 22px;
                 line-height: 44px;
-                padding: 0 46px;
-                padding-top: 82px;
+                padding: 80px 46px 40px;
+                padding-top: 62px;
               }
             }
           }
@@ -1200,7 +1200,7 @@ const goWhatsApp = () => {
               }
 
               &>div:nth-child(3) {
-                width: 218px;
+                width: 238px;
               }
 
               &>div:nth-child(4) {
@@ -1210,7 +1210,7 @@ const goWhatsApp = () => {
               }
 
               &>div:nth-child(5) {
-                width: 170px;
+                width: 200px;
               }
             }
 
@@ -2222,7 +2222,7 @@ const goWhatsApp = () => {
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 38px;
+          line-height: 1.8;
           letter-spacing: 0px;
           color: #d0aa85;
         }
@@ -2249,6 +2249,9 @@ const goWhatsApp = () => {
         margin-top: 80px;
 
         &>div {
+          &:nth-of-type(1){
+            font-size: 24px;
+          }
           &>div:nth-child(1) {
             width: fit-content;
             height: 44px;

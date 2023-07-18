@@ -765,7 +765,7 @@ const callTel = () => {
         font-size: 26px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 36px;
+        line-height: 1.6;
         letter-spacing: 0px;
         color: #ffffff;
         display: flex;
@@ -871,7 +871,7 @@ const callTel = () => {
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 36px;
+          line-height: 1.8;
           letter-spacing: 0px;
           color: #515151;
         }
@@ -1032,6 +1032,7 @@ const callTel = () => {
         }
 
         & > div:nth-child(2) {
+          line-height: 2;
           padding-top: 31px;
         }
       }
@@ -1052,6 +1053,7 @@ const callTel = () => {
 
             & > div:nth-child(1) {
               margin-bottom: 49px;
+              line-height: 1.8;
             }
           }
 
@@ -1081,7 +1083,7 @@ const callTel = () => {
             font-size: 28px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 36px;
+            line-height: 1.6;
             letter-spacing: 0px;
             color: #ffffff;
             display: flex;

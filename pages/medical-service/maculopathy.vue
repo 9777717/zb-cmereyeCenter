@@ -962,7 +962,7 @@ const callTel = () => {
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 36px;
+          line-height: 1.7;
           letter-spacing: 0px;
           color: #515151;
 
@@ -1014,6 +1014,7 @@ const callTel = () => {
           align-items: center;
           margin-top: 28px;
           height: 60px;
+          font-size: 20px;
         }
       }
 

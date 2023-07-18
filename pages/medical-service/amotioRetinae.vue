@@ -495,7 +495,7 @@ const preventList1 = [
           font-size: 21px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 27px;
+          line-height: 1.6;
           letter-spacing: 0px;
           color: #ffffff;
           display: flex;
@@ -516,7 +516,7 @@ const preventList1 = [
         height: 25px;
         display: inline-block;
         position: absolute;
-        right: -50px;
+        right: -30px;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -567,7 +567,7 @@ const preventList1 = [
             font-size: 30px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 36px;
+            line-height: 40px;
             letter-spacing: 0px;
             color: #e8a89b;
 
@@ -634,6 +634,7 @@ const preventList1 = [
 
     &>div:nth-child(2) {
       margin: 100px auto 60px;
+      font-size: 24px;
     }
 
     &>div:nth-child(3) {
@@ -687,11 +688,11 @@ const preventList1 = [
       background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
       width: 1200px;
       height: 185px;
-      padding-top: 65px;
+      padding-top: 55px;
       padding-left: 48px;
       padding-right: 2px;
       background-size: 100% 100%;
-
+      line-height: 1.8;
       &>span {
         color: #e8a89b;
         text-indent: 54px;
@@ -785,6 +786,7 @@ const preventList1 = [
         color: #eab1a6;
         z-index: 5;
         position: relative;
+        font-weight: bold;
       }
 
       &>div:nth-child(2) {

@@ -603,17 +603,17 @@ const callTel = () => {
       justify-content: space-between;
 
       & > div {
-        width: 620px;
-        height: 681px;
+        width: calc(50% - 30px);
+        // min-height: 681px;
         background-color: #ffffff;
         box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
-        border-radius: 10px 26px 10px 22px;
+        border-radius: 20px;
         margin-bottom: 80px;
-
+        padding-bottom: 20px;
         & > div:nth-child(1) {
           width: 100%;
           height: 95px;
-          border-radius: 10px 26px 0 0;
+          border-radius: 20px 20px 0 0;
           background-image: linear-gradient(#e9a98c, #e9a98c),
             linear-gradient(#fe9f59, #fe9f59);
           background-blend-mode: normal, normal;
@@ -634,14 +634,18 @@ const callTel = () => {
           padding: 45px 45px 0 45px;
 
           & > div:nth-child(1) {
-            width: 530px;
-            height: 209px;
+            // width: 530px;
+            width: 100%;
+            min-height: 209px;
             border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             background: #ffefcf;
             margin-bottom: 35px;
+            img{
+              width: 100%;
+            }
           }
 
           & > div:nth-child(2) {
@@ -699,7 +703,7 @@ const callTel = () => {
           padding: 61px 36px;
 
           & > div:nth-child(2) {
-            width: 680px;
+            width: 600px;
 
             & > div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
@@ -820,6 +824,7 @@ const callTel = () => {
 
             & > p {
               margin-bottom: 30px;
+              line-height: 1.8;
             }
           }
         }
@@ -938,6 +943,7 @@ const callTel = () => {
         color: #fbbfa1;
         z-index: 5;
         position: relative;
+        font-weight: bold;
       }
 
       & > div:nth-child(2) {
@@ -1193,11 +1199,13 @@ const callTel = () => {
       margin: 30px auto 0;
       & > div:nth-child(2) {
         margin-top: 35px;
+        
         & > div {
           width: 100%;
           height: auto;
           border-radius: 20px;
           margin-bottom: 55px;
+          padding-bottom: 0;
           & > div:nth-child(1) {
             border-radius: 15px 15px 0 0;
             height: 60px;

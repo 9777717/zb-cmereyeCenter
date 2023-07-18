@@ -571,7 +571,7 @@ const callTel = () => {
           font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 34px;
+          line-height: 1.8;
           letter-spacing: 0px;
           color: #6a6e8e;
         }
@@ -592,7 +592,7 @@ const callTel = () => {
             font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 34px;
+            line-height: 1.8;
             letter-spacing: -1px;
             color: #6a6e8e;
 

@@ -1250,6 +1250,7 @@ const keratoplastyList1 = [
     }
 
     & > div:nth-child(4) {
+      margin-top: 120px;
       & > div:nth-child(2) {
         margin: 60px auto 120px;
         display: flex;
@@ -1870,7 +1871,7 @@ const keratoplastyList1 = [
             height: 164px;
             border-radius: 10px;
             border: solid 2px #7DBE9C;
-
+            line-height: 1.8;
             font-size: 22px;
             font-family: 'Noto Sans HK';
           }
@@ -1888,7 +1889,7 @@ const keratoplastyList1 = [
           margin-right: 214px;
 
           & > div:nth-child(2) {
-            padding: 30px 41px 32px 58px;
+            padding: 20px 41px 20px 58px;
           }
         }
 
@@ -2281,6 +2282,7 @@ const keratoplastyList1 = [
           & > div:nth-child(2) {
             font-size: 22px;
             line-height: 36px;
+            margin-bottom: 40px;
           }
         }
 
@@ -2363,7 +2365,7 @@ const keratoplastyList1 = [
             font-size: 26px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 36px;
+            line-height: 1.8;
             letter-spacing: 0px;
             color: #515151;
 
@@ -2382,7 +2384,7 @@ const keratoplastyList1 = [
             font-size: 26px;
             font-weight: normal;
             font-stretch: normal;
-            line-height: 36px;
+            line-height: 1.8;
             letter-spacing: 0px;
             color: #515151;
 
@@ -3510,6 +3512,7 @@ const keratoplastyList1 = [
             & > div:nth-child(2) {
               font-size: 14px;
               line-height: 1.8;
+              margin-bottom: 0;
             }
           }
           & > div:nth-child(3) {

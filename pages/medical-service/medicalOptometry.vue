@@ -309,7 +309,7 @@ const goVision = () => {
 
       &>div:nth-child(1) {
         width: 670px;
-        line-height: 36px;
+        line-height: 1.8;
 
         &>p {
           text-indent: 50px;
