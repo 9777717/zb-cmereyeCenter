@@ -189,10 +189,8 @@ const preventList1 = [
         <div>
           <div>視網膜脫落</div>
           <div>RETINAL DETACHMENT</div>
-        </div>
-        <div>
-          <img src="https://static.cmereye.com/imgs/2023/06/98c0c654ac2b16f3.png" />
-          <img src="https://static.cmereye.com/imgs/2023/06/af7656b552044873.png" />
+          <div>RETINAL DETACHMENT</div>
+          <div>RETINAL DETACHMENT</div>
         </div>
       </div>
     </div>
@@ -802,7 +800,22 @@ const preventList1 = [
         font-size: 126px;
         letter-spacing: 0px;
       }
-
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 126px;
+        letter-spacing: 0px;
+        -webkit-text-stroke: 1.5px #eab1a6;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-35%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-105%);
+      }
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -895,6 +908,17 @@ const preventList1 = [
           font-size: 31px;
           letter-spacing: 4.7px;
           text-align: justify;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 31px;
+          letter-spacing: 4.7px;
+          -webkit-text-stroke: 1px #eab1a6;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-73%);
         }
       }
 

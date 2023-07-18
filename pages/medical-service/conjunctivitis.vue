@@ -209,14 +209,8 @@ const callTel = () => {
         <div>
           <div>結膜炎</div>
           <div>CONJUNCTIVITIS</div>
-        </div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/367a3f33016a234d.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/3c77be312d3b2d66.png"
-          />
+          <div>CONJUNCTIVITIS</div>
+          <div>CONJUNCTIVITIS</div>
         </div>
       </div>
     </div>
@@ -930,7 +924,20 @@ const callTel = () => {
         position: relative;
         z-index: 5;
       }
-
+       & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        -webkit-text-stroke: 1.5px #c0c0e6;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-45%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-115%);
+      }
       font-size: 131px;
       font-weight: normal;
       font-stretch: normal;
@@ -1022,6 +1029,17 @@ const callTel = () => {
           margin-top: 0;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 42px;
+          letter-spacing: 0.01em;
+          -webkit-text-stroke: 1px #c0c0e6;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-77%);
         }
       }
       &>div:nth-child(1)::after {

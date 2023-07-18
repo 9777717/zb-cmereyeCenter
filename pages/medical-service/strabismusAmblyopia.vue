@@ -217,14 +217,8 @@ const callTel = () => {
         <div>
           <div>兒童斜弱視</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
-        </div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/85528979042686c0.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/4d49440c3c9c1c77.png"
-          />
+          <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
+          <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
         </div>
       </div>
     </div>
@@ -958,7 +952,22 @@ const callTel = () => {
         color: #fbbfa1;
         margin-top: 15px;
       }
-
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 76px;
+        letter-spacing: 0.003em;
+        -webkit-text-stroke: 1.5px #fbbfa1;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-35%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-105%);
+      }
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -1050,6 +1059,17 @@ const callTel = () => {
           margin-top: 3px;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 24px;
+          letter-spacing: 0.01em;
+          -webkit-text-stroke: 1px #fbbfa1;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-77%);
         }
       }
       &>div:nth-child(1)::after {

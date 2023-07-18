@@ -287,14 +287,8 @@ const keratoplastyList1 = [
         <div>
           <div>眼表及角膜疾病</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
-        </div>
-        <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/01e16119c7ad0554.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/06/64ee1fb8f58e6549.png"
-          />
+          <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
+          <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
         </div>
       </div>
     </div>
@@ -2562,7 +2556,22 @@ const keratoplastyList1 = [
         font-size: 76px;
         letter-spacing: 0px;
       }
-
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 76px;
+        letter-spacing: 0px;
+        -webkit-text-stroke: 1.5px #7DBE9C;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-35%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-105%);
+      }
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -2618,6 +2627,17 @@ const keratoplastyList1 = [
           margin-top: 3px;
           text-align: right;
           line-height: 1;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 24px;
+          letter-spacing: 0.01em;
+          -webkit-text-stroke: 1px #7DBE9C;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-73%);
         }
       }
       &>div:nth-child(1)::after {

@@ -61,10 +61,8 @@ const goVision = () => {
         <div>
           <div>醫學驗光配鏡</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
-        </div>
-        <div>
-          <img src="https://static.cmereye.com/imgs/2023/06/64091db20360171d.png" />
-          <img src="https://static.cmereye.com/imgs/2023/06/8efa1f6c72fbf9b9.png" />
+          <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
+          <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
         </div>
       </div>
     </div>
@@ -593,7 +591,22 @@ const goVision = () => {
         color: #bcd09c;
         margin-top: 15px;
       }
-
+       & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 72px;
+        letter-spacing: 0;
+        -webkit-text-stroke: 1.5px #bcd09c;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-35%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-105%);
+      }
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -645,6 +658,16 @@ const goVision = () => {
         &>div:nth-child(2) {
           font-size: 21.6px;
           margin-top: 0;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 21.6px;
+          -webkit-text-stroke: 1px #bcd09c;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-73%);
         }
       }
 

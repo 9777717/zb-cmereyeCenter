@@ -250,10 +250,8 @@ const goWhatsApp = () => {
         <div>
           <div>眼矯形及眼眶疾病</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
-        </div>
-        <div>
-          <img src="https://static.cmereye.com/imgs/2023/06/a521caceb1fb4b5f.png" />
-          <img src="https://static.cmereye.com/imgs/2023/06/96b09fd6a7d94db4.png" />
+          <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
+          <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
         </div>
       </div>
     </div>
@@ -2431,7 +2429,22 @@ const goWhatsApp = () => {
         color: #e4c6a9;
         margin-top: 15px;
       }
-
+      & > div:nth-child(3),& > div:nth-child(4) {
+        font-family: 'DINCondensed-Bold';
+        display: block;
+        position: relative;
+        z-index: 5;
+        font-size: 73px;
+        letter-spacing: 0.003em;
+        -webkit-text-stroke: 1.5px #e4c6a9;
+        color: transparent;
+        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        transform: translateY(-35%);
+      }
+      & > div:nth-child(4){
+        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+        transform: translateY(-105%);
+      }
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -2514,6 +2527,16 @@ const goWhatsApp = () => {
 
         &>div:nth-child(2) {
           font-size: 24px;
+        }
+        & > div:nth-child(3),& > div:nth-child(4) {
+          font-size: 24px;
+          -webkit-text-stroke: 1px #e4c6a9;
+          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          transform: translateY(-20%);
+        }
+        & > div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+          transform: translateY(-73%);
         }
       }
 
