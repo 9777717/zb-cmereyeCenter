@@ -251,7 +251,13 @@ let drawer = ref(false)
         <div class="imgLists">
           <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
         </div>
-        <client-only>
+        <div class="mbHeader-in-muenBtn" :style="{
+          background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
+        }" @click.stop="handleMuenBtn"></div>
+      </div>
+    </div>
+    <div class="hh">
+      <client-only>
           <el-drawer v-model="drawer" size="50%" :direction="'btt'">
             <div class="drawerIn">
               <img
@@ -262,49 +268,44 @@ let drawer = ref(false)
             </div>
           </el-drawer>
         </client-only>
-        <div class="mbHeader-in-muenBtn" :style="{
-          background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
-        }" @click.stop="handleMuenBtn"></div>
-      </div>
     </div>
-  <transition name="ddd">
-    <div class="mbHeader-content" v-show="menuBool">
-      <el-menu
-        default-active="2"
-        unique-opened
-        class="el-menu-vertical-demo"
-      >
-        <section v-for="(menusItem, menusIndex) in menus" :key="menusIndex">
-          <el-sub-menu v-if="menusItem.childMenuList.length" :index="menusIndex">
-            <template #title>{{menusItem.text}}</template>
-            <el-menu-item v-for="(childItem,childIndex) in menusItem.childMenuList" :key="`${menusIndex}-${childIndex}`" :index="`${menusIndex}-${childIndex}`" @click="toLinks(childItem)">
-              {{childItem.text}}
+    <transition name="ddd">
+      <div class="mbHeader-content" v-show="menuBool">
+        <el-menu
+          default-active="2"
+          unique-opened
+          class="el-menu-vertical-demo"
+        >
+          <section v-for="(menusItem, menusIndex) in menus" :key="menusIndex">
+            <el-sub-menu v-if="menusItem.childMenuList.length" :index="menusIndex">
+              <template #title>{{menusItem.text}}</template>
+              <el-menu-item v-for="(childItem,childIndex) in menusItem.childMenuList" :key="`${menusIndex}-${childIndex}`" :index="`${menusIndex}-${childIndex}`" @click="toLinks(childItem)">
+                {{childItem.text}}
+              </el-menu-item>
+            </el-sub-menu>
+            <el-menu-item v-else :index="menusIndex" @click="toLinks(menusItem)">
+              <span>{{menusItem.text}}</span>
             </el-menu-item>
-          </el-sub-menu>
-          <el-menu-item v-else :index="menusIndex" @click="toLinks(menusItem)">
-            <span>{{menusItem.text}}</span>
-          </el-menu-item>
-        </section>
-      </el-menu>
-      <div class="mbHeader-content-btn">
-        <div>
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="12" height="12" fill="url(#pattern0)"/>
-            <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image0_2197_549" transform="scale(0.0833333)"/>
-            </pattern>
-            <image id="image0_2197_549" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAL9JREFUKFNj/P//PwMQ9AFxJBDfBWJbIAYLYgOMQA29QIkiJMlAIHsDPg3fgZIcSArWAdnB+DT8BEqyoSlgBfL/4HLSWaCEEVTyE5BuAOKJQPwPl4ZUoMQsqOQ5IG2MyzkgcZCnQfQzIJYEYhAnHIhX4/MDSM4ciE8gKTIFss/gchJMvBTI6IJyQO6PAGJQiE0GYhsgBvn1CMxJME39QEYBksmPgWxZZJvQNYDkGoC4npAf0OU9gQIdQKyIJvEZAIEAQi93YCN3AAAAAElFTkSuQmCC"/>
-            </defs>
-          </svg>
-          <span @click="handleToLinks('tel:（852）3956 2025')">
-            立即致電（852）3956 2025
-          </span>
+          </section>
+        </el-menu>
+        <div class="mbHeader-content-btn">
+          <div>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="12" height="12" fill="url(#pattern0)"/>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_2197_549" transform="scale(0.0833333)"/>
+              </pattern>
+              <image id="image0_2197_549" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAL9JREFUKFNj/P//PwMQ9AFxJBDfBWJbIAYLYgOMQA29QIkiJMlAIHsDPg3fgZIcSArWAdnB+DT8BEqyoSlgBfL/4HLSWaCEEVTyE5BuAOKJQPwPl4ZUoMQsqOQ5IG2MyzkgcZCnQfQzIJYEYhAnHIhX4/MDSM4ciE8gKTIFss/gchJMvBTI6IJyQO6PAGJQiE0GYhsgBvn1CMxJME39QEYBksmPgWxZZJvQNYDkGoC4npAf0OU9gQIdQKyIJvEZAIEAQi93YCN3AAAAAElFTkSuQmCC"/>
+              </defs>
+            </svg>
+            <span @click="handleToLinks('tel:（852）3956 2025')">
+              立即致電（852）3956 2025
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-  </transition>
-    
+    </transition>
   </div>
 </template>
 

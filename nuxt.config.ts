@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         enableRouterSync: true,
         devtools: true,
       },
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://hkcmereye.com/',
     }
   },
   // auto import components
