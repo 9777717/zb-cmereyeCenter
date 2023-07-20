@@ -251,6 +251,17 @@ let drawer = ref(false)
         <div class="imgLists">
           <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
         </div>
+        <client-only>
+          <el-drawer v-model="drawer" size="50%" :direction="'btt'">
+            <div class="drawerIn">
+              <img
+                src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                alt="微信QR"
+                srcset=""
+              />
+            </div>
+          </el-drawer>
+        </client-only>
         <div class="mbHeader-in-muenBtn" :style="{
           background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
         }" @click.stop="handleMuenBtn"></div>
@@ -293,19 +304,7 @@ let drawer = ref(false)
       </div>
     </div>
   </transition>
-  <!-- <div>
-    <client-only>
-        <el-drawer v-model="drawer" size="50%" :direction="'btt'">
-          <div class="drawerIn">
-            <img
-              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-              alt="微信QR"
-              srcset=""
-            />
-          </div>
-        </el-drawer>
-      </client-only>
-  </div> -->
+    
   </div>
 </template>
 

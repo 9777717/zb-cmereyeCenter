@@ -6,16 +6,20 @@ definePageMeta({
   layout: 'page',
 })
 
-const toljyy = () =>{
-  // chat('wangyePCyoucezixun')
-  // location.href = "javascript:chat('wangyePCyoucezixun')"
-}
+// useHead({
+//   script: [
+//     { 
+//       src: 'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5'
+//     }
+//   ],
+// })
 
 function chat(p?: string): void {
   var host = window.location.host;
   p = p ? p : host;
   // console.log(window)
-  // location.href = `javascript:openZoosUrl('chatwin', &e=${host}[${p}]);`
+  // openZoosUrl('chatwin', `&e=${host}[${p}]`)
+  // wangyePCyoucezixun
 }
 
 const route = useRoute()
@@ -32,7 +36,7 @@ const rt = ref(route)
         : 'onlinContact',
     ]">
     <div>
-      <a class="topitem" id="ga-pc-right-ljyy" href="javascript:chat('wangyePCyoucezixun')">
+      <a class="topitem" id="ga-pc-right-ljyy" href="javaScript:chat('wangyePCyoucezixun')">
         <img id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
       </a>
       <a class="ocitem" id="ga-pc-right-zxcx" href="javascript:chat('wangyePCzaixianchaxun')">
