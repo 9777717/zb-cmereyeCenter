@@ -43,7 +43,21 @@ export default defineNuxtConfig({
   experimental: {
     reactivityTransform: false,
   },
-
+  runtimeConfig: {
+    public: {
+      gtm: {
+        id: 'GTM-MRC2R6D',
+        defer: false,
+        compatibility: false,
+        enabled: true,
+        debug: true,
+        loadScript: true,
+        enableRouterSync: true,
+        devtools: true,
+      },
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
+    }
+  },
   // auto import components
   components: true,
 

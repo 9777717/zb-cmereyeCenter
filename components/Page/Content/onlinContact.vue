@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
-
 const router = useRoute()
 // compiler macro
 definePageMeta({
@@ -15,13 +14,32 @@ const goWhatsApp = () => {
 }
 
 const toTel  = () =>{
-  location.href = 'tel:+(852) 3956 2025'
+  location.href = 'tel:+(852)3956 2025'
   
 }
 const toquery = () =>{
-  location.href = 'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=449bcd0bfe6943789bd5322a74b1b809&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1688614605754'
+  location.href = 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'
 }
-  
+
+
+const toljyy = () =>{
+  chat('wangyePCyoucezixun')
+  // location.href = "javascript:chat('wangyePCyoucezixun')"
+}
+
+// function chat(a:string){
+//   var host = window.location.host;
+// 	var p = arguments[0]?arguments[0]:host;
+// 	// openZoosUrl('chatwin','&e='+host+'['+p+']');
+//   location.href = "javascript:openZoosUrl('chatwin','&e='+host+'['+p+']')"
+// }
+
+function chat(p?: string): void {
+  var host = window.location.host;
+  p = p ? p : host;
+  // openZoosUrl('chatwin', `&e=${host}[${p}]`);
+}
+
 const route = useRoute()
 const rt = ref(route)
 </script>
@@ -36,22 +54,22 @@ const rt = ref(route)
         : 'onlinContact',
     ]">
     <div>
-      <div class="topitem">
-        <img src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
+      <div class="topitem" id="ga-pc-right-ljyy" @click="toljyy">
+        <img id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
       </div>
-      <div class="ocitem" @click="toquery">
+      <div class="ocitem" id="ga-pc-right-zxcx" @click="toquery">
         <div>
           <div><div>在線查詢</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
         </div>
       </div>
-      <div class="ocitem" @click="goWhatsApp">
+      <div class="ocitem" id="ga-pc-right-WhatsApp" @click="goWhatsApp">
         <div>
           <div><div>WhatsApp</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
       </div>
-      <div class="ocitem">
+      <div class="ocitem" id="ga-pc-right-ljzd" @click="toTel">
         <div>
           <div><div>立即致電</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>

@@ -293,7 +293,8 @@ let drawer = ref(false)
       </div>
     </div>
   </transition>
-      <client-only>
+  <div>
+    <client-only>
         <el-drawer v-model="drawer" size="50%" :direction="'btt'">
           <div class="drawerIn">
             <img
@@ -304,6 +305,7 @@ let drawer = ref(false)
           </div>
         </el-drawer>
       </client-only>
+  </div>
   </div>
 </template>
 
