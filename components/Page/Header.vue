@@ -256,21 +256,9 @@ let drawer = ref(false)
         }" @click.stop="handleMuenBtn"></div>
       </div>
     </div>
-    <div class="hh">
-      <client-only>
-          <el-drawer v-model="drawer" size="50%" :direction="'btt'">
-            <div class="drawerIn">
-              <img
-                src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-                alt="微信QR"
-                srcset=""
-              />
-            </div>
-          </el-drawer>
-        </client-only>
-    </div>
     <transition name="ddd">
       <div class="mbHeader-content" v-show="menuBool">
+        <client-only>
         <el-menu
           default-active="2"
           unique-opened
@@ -288,6 +276,7 @@ let drawer = ref(false)
             </el-menu-item>
           </section>
         </el-menu>
+        </client-only>
         <div class="mbHeader-content-btn">
           <div>
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -306,6 +295,19 @@ let drawer = ref(false)
         </div>
       </div>
     </transition>
+    <div class="hh">
+      <client-only>
+        <el-drawer v-model="drawer" size="50%" :direction="'btt'">
+          <div class="drawerIn">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+              alt="微信QR"
+              srcset=""
+            />
+          </div>
+        </el-drawer>
+      </client-only>
+    </div>
   </div>
 </template>
 
