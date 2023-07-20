@@ -293,7 +293,7 @@ let drawer = ref(false)
       </div>
     </div>
   </transition>
-  <div>
+  <!-- <div>
     <client-only>
         <el-drawer v-model="drawer" size="50%" :direction="'btt'">
           <div class="drawerIn">
@@ -305,7 +305,7 @@ let drawer = ref(false)
           </div>
         </el-drawer>
       </client-only>
-  </div>
+  </div> -->
   </div>
 </template>
 

@@ -5,39 +5,17 @@ const router = useRoute()
 definePageMeta({
   layout: 'page',
 })
-// 跳转Whatsapp
-const goWhatsApp = () => {
-  window.open(
-    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
-    '_blank'
-  )
-}
-
-const toTel  = () =>{
-  location.href = 'tel:+(852)3956 2025'
-  
-}
-const toquery = () =>{
-  location.href = 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'
-}
-
 
 const toljyy = () =>{
-  chat('wangyePCyoucezixun')
+  // chat('wangyePCyoucezixun')
   // location.href = "javascript:chat('wangyePCyoucezixun')"
 }
-
-// function chat(a:string){
-//   var host = window.location.host;
-// 	var p = arguments[0]?arguments[0]:host;
-// 	// openZoosUrl('chatwin','&e='+host+'['+p+']');
-//   location.href = "javascript:openZoosUrl('chatwin','&e='+host+'['+p+']')"
-// }
 
 function chat(p?: string): void {
   var host = window.location.host;
   p = p ? p : host;
-  // openZoosUrl('chatwin', `&e=${host}[${p}]`);
+  // console.log(window)
+  // location.href = `javascript:openZoosUrl('chatwin', &e=${host}[${p}]);`
 }
 
 const route = useRoute()
@@ -54,27 +32,27 @@ const rt = ref(route)
         : 'onlinContact',
     ]">
     <div>
-      <div class="topitem" id="ga-pc-right-ljyy" @click="toljyy">
+      <a class="topitem" id="ga-pc-right-ljyy" href="javascript:chat('wangyePCyoucezixun')">
         <img id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
-      </div>
-      <div class="ocitem" id="ga-pc-right-zxcx" @click="toquery">
+      </a>
+      <a class="ocitem" id="ga-pc-right-zxcx" href="javascript:chat('wangyePCzaixianchaxun')">
         <div>
           <div><div>在線查詢</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
         </div>
-      </div>
-      <div class="ocitem" id="ga-pc-right-WhatsApp" @click="goWhatsApp">
+      </a>
+      <a class="ocitem" id="ga-pc-right-WhatsApp" href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2" target="_blank">
         <div>
           <div><div>WhatsApp</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
-      </div>
-      <div class="ocitem" id="ga-pc-right-ljzd" @click="toTel">
+      </a>
+      <a class="ocitem" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
         <div>
           <div><div>立即致電</div></div>
           <div><img src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
@@ -91,6 +69,7 @@ const rt = ref(route)
   &>div{
     .topitem{
       width: 160px;
+      display: block;
       img{
         width: 100%;
         cursor: pointer;
@@ -112,6 +91,7 @@ const rt = ref(route)
       overflow: hidden;
       transition: all .3s;
       background: #fff;
+      display: block;
       &>div{
         display: flex;
         height: 100%;
