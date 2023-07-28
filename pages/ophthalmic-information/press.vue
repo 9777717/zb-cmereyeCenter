@@ -188,11 +188,34 @@ const detail = ref({
   content: [''],
 })
 const newId = ref(0)
+
+const detailImgHeight = (id: number) => {
+  const ad: any = []
+  newList.forEach((item) => {
+    ad.push(item.img)
+  })
+  const id_1 = id + 1 || 1
+
+  const img_own = ad[id_1]
+  const myImage = new Image()
+  myImage.src = img_own
+  let width_img = ref(0)
+  let height_img = ref(0)
+  myImage.onload = () => {
+    // 获取图像的宽度和高度
+    myImage
+    const ratio = Number((780 / myImage.width).toFixed(2))
+    width_img.value = Math.floor(ratio * Number(myImage.width))
+    height_img.value = Math.floor(ratio * Number(myImage.height))
+  }
+  return height_img
+}
 const newDeatil = (id: number) => {
   newId.value = id
   detail.value = newList[id]
   isNewLIst.value = false
   isDetail.value = true
+  detailImgHeight(id)
 }
 const showNewList = () => {
   isNewLIst.value = true
@@ -221,6 +244,8 @@ const pageTurning = (flag: string) => {
     })
   }
 }
+
+
 </script>
 
 <template>
@@ -290,12 +315,14 @@ const pageTurning = (flag: string) => {
     <div v-if="isDetail" class="content_press">
       <div>
         <div>
+
           <div v-for="(el, index) in detail.title" :key="index">
             {{ $t(el) }}
           </div>
         </div>
         <div>
-          <div><img :src="detail.img" /></div>
+          <div class="height_after"><img :src="detail.img" /></div>
+          <!-- <div class="height_after" :style="{ '--heightPress': `${height_img}` }"><img :src="detail.img" /></div> -->
           <div>{{ detail.date }}</div>
         </div>
         <div>
@@ -555,6 +582,7 @@ const pageTurning = (flag: string) => {
   position: relative;
   margin: 0 26.0412%;
   margin-top: 122px;
+  margin-bottom: 122px;
 
   &>div:nth-child(1) {
     &>div:nth-child(1) {
@@ -585,10 +613,10 @@ const pageTurning = (flag: string) => {
       align-items: center;
       position: relative;
 
-      &>div:nth-child(1) {
+      .height_after {
         width: 780px;
-        height: 540px;
         margin-top: 24px;
+        position: static;
 
         &>img {
           position: relative;
@@ -597,11 +625,23 @@ const pageTurning = (flag: string) => {
         }
       }
 
-      &>div:nth-child(2) {
-        margin-top: 20px;
+      .height_after::after {
+        content: '';
+        width: 813px;
+        height: var(--heightPress);
+        display: inline-block;
         position: absolute;
-        bottom: 0;
-        right: 65px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: #f2f2f2;
+      }
+
+      &>div:nth-child(2) {
+        // margin-top: 20px;
+        position: static;
+        // bottom: -35px;
+        // right: 65px;
         font-family: 'Metropolis';
         font-style: normal;
         font-weight: 500;
@@ -610,18 +650,11 @@ const pageTurning = (flag: string) => {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #8ad8dd;
-      }
-
-      &>div:nth-child(1)::after {
-        content: '';
-        width: 813px;
-        height: 440px;
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        background: #f2f2f2;
+        display: flex;
+        width: 100%;
+        /* text-align: right; */
+        justify-content: flex-end;
+        padding-right: 10%;
       }
     }
 
@@ -668,14 +701,14 @@ const pageTurning = (flag: string) => {
     flex-direction: row;
 
     &>div:nth-child(1) {
-      width: 152px;
-      height: 37.27px;
+      width: fit-content;
+      padding: 15px 25px;
       background: #8ad8dd;
 
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 500;
-      font-size: 13.1538px;
+      font-size: 20px;
       line-height: 28px;
       text-align: center;
       letter-spacing: 0.1em;
