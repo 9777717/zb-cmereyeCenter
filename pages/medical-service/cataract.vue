@@ -1555,7 +1555,8 @@ const callTel = () => {
       & > div:nth-child(3) {
         border-radius: 20px;
         border: solid 2px #66c5dc;
-        padding: 51px 61px;
+        padding: 51px 50px;
+        text-align: justify;
 
         font-family: 'Noto Sans HK';
         font-size: 24px;
