@@ -21,8 +21,8 @@ useHead(() => ({
 // 传递背景色
 const backgd = [
   '#7DBE9C;',
-  '-webkit-linear-gradient(to right, #cfecdd, #7DBE9C);',
-  'linear-gradient(to right, #cfecdd, #7DBE9C);',
+  '-webkit-linear-gradient(to right, #C1DFB4, #68BE92);',
+  'linear-gradient(to right, #C1DFB4, #68BE92);',
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
@@ -2504,8 +2504,8 @@ const keratoplastyList1 = [
   height: 140px;
   border-radius: 20px;
   background-blend-mode: normal, normal;
-  background-image: linear-gradient(-90deg, #b3dfc8 0%, #d2f1e0 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  background-image: linear-gradient(-90deg, #68BE92 0%, #C1DFB4 100%),
+    linear-gradient(#68BE92, #C1DFB4);
 
   font-family: 'Noto Sans HK';
   font-size: 32px;
