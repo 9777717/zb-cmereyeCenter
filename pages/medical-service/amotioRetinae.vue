@@ -667,6 +667,7 @@ const preventList1 = [
             line-height: 36px;
             letter-spacing: 0px;
             color: #ffffff;
+            margin: auto;
             margin-bottom: 30px;
             display: flex;
             align-items: center;
