@@ -323,7 +323,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_23.doctor_23_education.doctor_23_education_5',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/2023/02/5d01933b13f4a2eb.png',
+      'https://static.cmereye.com/imgs/2023/07/6b20f513c8d4d402.png',
   },
 ]
 </script>
@@ -374,11 +374,12 @@ const doctorList = [
 .medical-team {
   margin-bottom: 50px;
 
-  & > div:first-child {
+  &>div:first-child {
     margin-left: 695px;
     margin-top: 98px;
     position: relative;
-    & > .title {
+
+    &>.title {
       position: relative;
       -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -406,7 +407,7 @@ const doctorList = [
       }
     }
 
-    & > div:last-child {
+    &>div:last-child {
       background: #f2f2f2;
       width: 738px;
       height: 543px;
@@ -443,8 +444,8 @@ const doctorList = [
       .docImg {
         position: relative;
 
-        & > div:first-child {
-          & > img {
+        &>div:first-child {
+          &>img {
             z-index: 9;
             position: relative;
           }
@@ -518,7 +519,7 @@ const doctorList = [
         flex-direction: row;
         margin-top: 29px;
 
-        & > div:first-child {
+        &>div:first-child {
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 350;
@@ -533,7 +534,7 @@ const doctorList = [
           margin-right: 36px;
         }
 
-        & > div:last-child {
+        &>div:last-child {
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 350;
@@ -550,40 +551,47 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(10) {
-    & > a {
+  ul>li:nth-child(2) {
+    .orderLink {
+      bottom: -40px !important;
+    }
+  }
+
+  ul>li:nth-child(10) {
+    &>a {
       bottom: -40px;
     }
   }
 
-  ul > li:nth-child(1) {
-    .orderLink{
+  ul>li:nth-child(1) {
+    .orderLink {
       bottom: -80px !important;
     }
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       margin-top: 65px !important;
     }
 
-    & > div:nth-child(2) {
-      & > div:nth-child(2) {
+    &>div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 74px;
         left: -37px;
       }
     }
   }
 
-  ul > li:nth-child(2) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(2) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 102px;
         left: -116px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -595,18 +603,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(3) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(3) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 37px;
         left: -53px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -618,18 +626,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(4) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(4) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 129px;
         left: -107px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -641,18 +649,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(5) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(5) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 33px;
         left: -82px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -664,18 +672,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(6) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(6) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 102px;
         left: -62px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -687,18 +695,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(7) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(7) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 75px;
         right: -66px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -710,18 +718,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(8) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(8) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 69px;
         left: -40px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -733,18 +741,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(9) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(9) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: -3px;
         right: -71px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -756,18 +764,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(10) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(10) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 69px;
         left: -55px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -778,23 +786,23 @@ const doctorList = [
       }
     }
 
-    & > a {
+    &>a {
       bottom: -40px !important;
     }
   }
 
-  ul > li:nth-child(11) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(11) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 39px;
         left: -72px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -806,18 +814,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(12) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(12) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 86px;
         right: -68px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -829,18 +837,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(13) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(13) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 135px;
         left: -136px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -852,18 +860,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(14) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(14) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 83px;
         right: -92px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -875,18 +883,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(15) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(15) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 15px;
         right: -43px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -898,18 +906,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(16) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(16) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 13px;
         left: -86px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -921,18 +929,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(17) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(17) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 129px;
         left: -111px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -944,18 +952,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(18) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(18) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 40px;
         right: -56px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -967,18 +975,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(19) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(19) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 40px;
         left: -68px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -990,18 +998,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(20) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(20) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 16px;
         right: -92px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -1013,18 +1021,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(21) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(21) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 156px;
         left: -73px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -1036,18 +1044,18 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(22) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(22) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 7px;
         left: -103px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -1059,20 +1067,20 @@ const doctorList = [
     }
   }
 
-  ul > li:nth-child(23) {
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
+  ul>li:nth-child(23) {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
         position: relative;
         width: 264px;
         height: 330px;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         top: 157px;
         right: -103px;
       }
 
-      & > div:nth-child(1)::before {
+      &>div:nth-child(1)::before {
         content: '';
         background: #f2f2f2;
         position: absolute;
@@ -1087,10 +1095,11 @@ const doctorList = [
 
 @media screen and (max-width: 768px) {
   .medical-team {
-    & > div:first-child {
+    &>div:first-child {
       margin-left: 0px;
       margin-top: 78px;
-      & > .title {
+
+      &>.title {
         -ms-writing-mode: initial;
         writing-mode: initial;
         font-size: 28px;
@@ -1098,6 +1107,7 @@ const doctorList = [
         letter-spacing: -0.1em;
         padding-top: 30px;
         margin-left: 20px;
+
         &::after {
           left: 0px;
           top: 60px;
@@ -1105,26 +1115,31 @@ const doctorList = [
           font-size: 16px;
         }
       }
-      & > div:last-child {
+
+      &>div:last-child {
         width: calc(100% - 48%);
         top: 0;
         left: 48%;
         height: 220px;
       }
     }
+
     .mainCon {
       margin-left: 0;
       margin-top: 145px;
       padding: 0 30px;
+
       .docList {
         flex-direction: row-reverse;
         width: 100%;
         padding-top: 70px;
         margin-bottom: 76px;
         padding-bottom: 70px;
-        .docDes{
+
+        .docDes {
           margin-top: 0px;
         }
+
         .orderLink {
           left: auto;
           right: 10vw;
@@ -1134,7 +1149,8 @@ const doctorList = [
           line-height: 34px;
           bottom: 10px;
         }
-        .docName{
+
+        .docName {
           position: absolute;
           width: calc(100vw - 60px);
           right: 0;
@@ -1142,7 +1158,8 @@ const doctorList = [
           text-align: left;
           font-size: 24px;
         }
-        .doctorIntro{
+
+        .doctorIntro {
           position: absolute;
           width: calc(100vw - 60px);
           right: 0;
@@ -1150,29 +1167,33 @@ const doctorList = [
           text-align: left;
           font-size: 12px;
         }
-        .docImg{
+
+        .docImg {
           width: 55%;
           margin-top: 29px;
           margin-right: 15px;
-          .docEnName{
+
+          .docEnName {
             font-size: 20px;
             left: 50px;
             width: calc(100vw - 110px);
             text-align: left;
             line-height: 25px;
             top: auto;
-            bottom: -25px ;
+            bottom: -25px;
           }
         }
+
         .docEducation {
-          & > div:first-child {
+          &>div:first-child {
             margin-right: 0px;
             font-size: 12px;
             min-width: 40px;
             text-align: left;
             line-height: 16px;
           }
-          & > div:last-child {
+
+          &>div:last-child {
             font-size: 12px;
             line-height: 160%;
             margin-bottom: 6px;
@@ -1182,18 +1203,22 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(1) {
-      .orderLink{
+
+    ul>li:nth-child(1) {
+      .orderLink {
         bottom: 10px !important;
       }
-      & > div:nth-child(2) {
-        .docEnName{
+
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: -5px !important;
         }
       }
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         margin-top: 0 !important;
       }
+
       &::before {
         content: '';
         background: #f2f2f2;
@@ -1204,12 +1229,14 @@ const doctorList = [
         height: 200px;
       }
     }
-    ul > li:nth-child(2) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(2) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 65px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1217,12 +1244,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(3) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(3) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 10px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: 100%;
           left: -30px;
           top: 38px;
@@ -1230,12 +1259,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(4) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(4) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: -25px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: 100%;
           left: -30px;
           top: 38px;
@@ -1243,12 +1274,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(5) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(5) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 15px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: -30px;
@@ -1256,12 +1289,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(6) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(6) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 70px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: -30px;
@@ -1269,9 +1304,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(7) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(7) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: 100%;
           left: -30px;
           top: 38px;
@@ -1279,12 +1315,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(8) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(8) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 35px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: -30px;
@@ -1292,12 +1330,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(9) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(9) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: -25px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: 30px;
@@ -1305,12 +1345,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(10) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(10) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 100px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: 30px;
@@ -1318,9 +1360,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(11) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(11) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: 30px;
@@ -1328,9 +1371,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(12) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(12) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: 30px;
@@ -1338,9 +1382,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(13) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(13) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
           top: 30px;
@@ -1348,12 +1393,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(14) {
-      .docEnName{
+
+    ul>li:nth-child(14) {
+      .docEnName {
         bottom: 30px !important;
       }
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1361,9 +1408,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(15) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(15) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1371,9 +1419,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(16) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(16) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1381,12 +1430,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(17) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(17) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: -5px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1394,12 +1445,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(18) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(18) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: -5px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1407,9 +1460,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(19) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(19) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1417,9 +1471,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(20) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(20) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1427,12 +1482,14 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(21) {
-      & > div:nth-child(2) {
-        .docEnName{
+
+    ul>li:nth-child(21) {
+      &>div:nth-child(2) {
+        .docEnName {
           bottom: 25px !important;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1440,9 +1497,10 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(22) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1)::before {
+
+    ul>li:nth-child(22) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
           top: 38px;
@@ -1450,13 +1508,15 @@ const doctorList = [
         }
       }
     }
-    ul > li:nth-child(23) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1) {
+
+    ul>li:nth-child(23) {
+      &>div:nth-child(2) {
+        &>div:nth-child(1) {
           width: 100%;
           height: auto;
         }
-        & > div:nth-child(1)::before {
+
+        &>div:nth-child(1)::before {
           width: calc(100% + 70px);
           left: -30px;
           top: 0px;
@@ -1477,9 +1537,10 @@ const doctorList = [
       margin-left: 8.6vw;
     }
 
-    & > div:first-child {
+    &>div:first-child {
       margin-left: 190px;
     }
+
     // ul > li:nth-child(23) {
     //   & > div:nth-child(2) {
     //     & > div:nth-child(2) {
