@@ -1175,7 +1175,7 @@ const goWhatsApp = () => {
                 font-family: 'Noto Sans HK';
                 font-size: 22px;
                 font-stretch: normal;
-                line-height: 42px;
+                line-height: 38px;
                 letter-spacing: 0px;
                 color: #515151;
               }
@@ -1232,16 +1232,15 @@ const goWhatsApp = () => {
 
               &>div:nth-child(2) {
                 display: block;
-                padding-left: 35px;
-                padding-right: 33px;
-                padding-top: 53px;
+                padding: 30px 35px;
+                text-align: justify;
 
                 &>span {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
                   font-family: 'Noto Sans HK';
-                  line-height: 42px;
+                  line-height: 38px;
                 }
 
                 &>span:nth-child(2) {
@@ -1268,16 +1267,15 @@ const goWhatsApp = () => {
 
               &>div:nth-child(2) {
                 display: block;
-                padding-left: 35px;
-                padding-right: 33px;
-                padding-top: 53px;
+                padding: 30px 35px;
+                text-align: justify;
 
                 &>span {
                   font-size: 22px;
                   letter-spacing: 0px;
                   color: #515151;
                   font-family: 'Noto Sans HK';
-                  line-height: 42px;
+                  line-height: 38px;
                 }
 
                 &>span:nth-child(2) {
@@ -1406,7 +1404,7 @@ const goWhatsApp = () => {
                 }
 
                 &>div:nth-child(3) {
-                  width: 218px;
+                  width: 220px;
                 }
 
                 &>div:nth-child(4) {
@@ -1416,7 +1414,7 @@ const goWhatsApp = () => {
                 }
 
                 &>div:nth-child(5) {
-                  width: 170px;
+                  width: 175px;
                 }
               }
 
@@ -1440,16 +1438,15 @@ const goWhatsApp = () => {
 
                 &>div:nth-child(2) {
                   display: block;
-                  padding-left: 35px;
-                  padding-right: 33px;
-                  padding-top: 53px;
+                  padding: 30px 35px;
+                  text-align: justify;
 
                   &>span {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
                     font-family: 'Noto Sans HK';
-                    line-height: 42px;
+                    line-height: 38px;
                   }
 
                   &>span:nth-child(2) {
@@ -1476,16 +1473,15 @@ const goWhatsApp = () => {
 
                 &>div:nth-child(2) {
                   display: block;
-                  padding-left: 35px;
-                  padding-right: 33px;
-                  padding-top: 53px;
+                  padding: 30px 35px;
+                  text-align: justify;
 
                   &>span {
                     font-size: 22px;
                     letter-spacing: 0px;
                     color: #515151;
                     font-family: 'Noto Sans HK';
-                    line-height: 42px;
+                    line-height: 38px;
                   }
 
                   &>span:nth-child(2) {
@@ -2247,9 +2243,10 @@ const goWhatsApp = () => {
         margin-top: 80px;
 
         &>div {
-          &:nth-of-type(1){
+          &:nth-of-type(1) {
             font-size: 24px;
           }
+
           &>div:nth-child(1) {
             width: fit-content;
             height: 44px;
@@ -2429,7 +2426,9 @@ const goWhatsApp = () => {
         color: #e4c6a9;
         margin-top: 15px;
       }
-      & > div:nth-child(3),& > div:nth-child(4) {
+
+      &>div:nth-child(3),
+      &>div:nth-child(4) {
         font-family: 'DINCondensed-Bold';
         display: block;
         position: relative;
@@ -2438,13 +2437,15 @@ const goWhatsApp = () => {
         letter-spacing: 0.003em;
         -webkit-text-stroke: 1.5px #e4c6a9;
         color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
         transform: translateY(-35%);
       }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+
+      &>div:nth-child(4) {
+        clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
         transform: translateY(-105%);
       }
+
       font-family: 'DINCondensed-Bold';
       font-size: 131px;
       font-weight: normal;
@@ -2509,9 +2510,11 @@ const goWhatsApp = () => {
     line-height: 1.6;
     padding: 16px 30px;
   }
+
   .eyeOrthopaedicDisease_title_text {
     font-size: 32px;
   }
+
   // 头部样式
   .eyeOrthopaedicDisease_head {
     &>div:nth-child(1) {
@@ -2528,14 +2531,17 @@ const goWhatsApp = () => {
         &>div:nth-child(2) {
           font-size: 24px;
         }
-        & > div:nth-child(3),& > div:nth-child(4) {
+
+        &>div:nth-child(3),
+        &>div:nth-child(4) {
           font-size: 24px;
           -webkit-text-stroke: 1px #e4c6a9;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
           transform: translateY(-20%);
         }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+
+        &>div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
           transform: translateY(-73%);
         }
       }
@@ -4095,10 +4101,11 @@ const goWhatsApp = () => {
                 align-items: flex-start;
                 margin-bottom: 15px;
               }
-              &>p>span{
+
+              &>p>span {
                 padding: 0;
                 margin-right: 5px;
-                margin-top:-3px;
+                margin-top: -3px;
                 font-size: 14px;
               }
             }
@@ -4109,11 +4116,13 @@ const goWhatsApp = () => {
 
             &>div:nth-child(2) {
               margin-top: 15px;
+
               &>p {
                 align-items: flex-start;
                 margin-bottom: 15px;
               }
-              &>p>span{
+
+              &>p>span {
                 padding: 0;
                 margin-right: 5px;
                 margin-top: -3px;
@@ -4146,7 +4155,8 @@ const goWhatsApp = () => {
   .mb_text_p_span {
     margin-top: 262px;
   }
-  .rightSidesNavigation{
+
+  .rightSidesNavigation {
     display: none;
   }
 }
@@ -4164,4 +4174,5 @@ const goWhatsApp = () => {
   .fromTable {
     margin-top: -60%;
   }
-}</style>
+}
+</style>
