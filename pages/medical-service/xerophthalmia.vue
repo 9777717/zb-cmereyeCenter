@@ -319,16 +319,16 @@ const callTel = () => {
 
 <template>
   <div>
-  <div class="xeroheader">
-    <!-- 头部 -->
-    <div>
+    <div class="xeroheader">
+      <!-- 头部 -->
       <div>
-        <div>乾眼症</div>
-        <div>DRY EYE</div>
-        <div>DRY EYE</div>
-        <div>DRY EYE</div>
-      </div>
-      <!-- <div>
+        <div>
+          <div>乾眼症</div>
+          <div>DRY EYE</div>
+          <div>DRY EYE</div>
+          <div>DRY EYE</div>
+        </div>
+        <!-- <div>
         <img
           src="https://static.cmereye.com/imgs/2023/05/2881f2949b9da5af.png"
         />
@@ -336,455 +336,352 @@ const callTel = () => {
           src="https://static.cmereye.com/imgs/2023/05/2db9158b5d3b1602.png"
         />
       </div> -->
-    </div>
-    <!-- 内容 -->
-    <div class="xerophthalmia">
-      <!-- 什麼是乾眼症 -->
-      <div id="xerophthalmiaInfo">
-        <div>
-          <div>什麼是乾眼症 ？</div>
-          <div>
-            眼睛表面的淚水層（淚膜）對於維持眼睛健康、舒適及良好的視力十分重要。淚膜中的脂質、水液和黏液層，其中一層出現問題，以致淚水質量或分泌量有變，便會導致眼睛滋潤不足，並造成「乾眼症」。
-          </div>
-        </div>
-        <div>
-          <div>
-            <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png" 
-              srcset="https://static.cmereye.com/imgs/2023/07/4c021489e013750f.jpg 768w, https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"  
-              alt="什麼是乾眼症 ？" 
-              src="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"/>
-          </div>
-        </div>
       </div>
-      <!-- 乾眼症症狀 -->
-      <div id="xerophthalmiaType">
-        <div>乾眼症症狀</div>
-        <div>
-          <div v-for="(item, index) in xerophthalmiaType" :key="index">
-            <div><img :src="item.img" :alt="item.text" srcset="" /></div>
-            <div>{{ item.text }}</div>
-          </div>
-        </div>
-        <div @click="goWhatsApp()">已出現以上症狀？立即聯絡我們</div>
-      </div>
-      <!-- 乾眼症成因 -->
-      <div id="factor">
-        <div>乾眼症成因</div>
-        <div>
+      <!-- 内容 -->
+      <div class="xerophthalmia">
+        <!-- 什麼是乾眼症 -->
+        <div id="xerophthalmiaInfo">
           <div>
-            眼睛表面有一層淚膜，覆蓋在眼角膜及結膜上，形成一層濕潤保護膜，維持眼睛表面健康，淚液層由外到內可分為三層：
-          </div>
-          <div>
-            <img
-              src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png"
-            />
-            <img
-              src="https://static.cmereye.com/imgs/2023/05/84ab47f3810c1d07.png"
-            />
-          </div>
-        </div>
-        <div>
-          <div v-for="(item, index) in factor" :key="index">
+            <div>什麼是乾眼症 ？</div>
             <div>
-              <!-- <img :src="item.img" :alt="item.title" srcset="" /> -->
-              <img :data-cfsrc="item.img" 
-                :srcset="`${item.mbImg} 768w, ${item.img}`"  
-                :alt="item.title"
-                :src="item.img"/>
+              眼睛表面的淚水層（淚膜）對於維持眼睛健康、舒適及良好的視力十分重要。淚膜中的脂質、水液和黏液層，其中一層出現問題，以致淚水質量或分泌量有變，便會導致眼睛滋潤不足，並造成「乾眼症」。
             </div>
+          </div>
+          <div>
             <div>
-              <div>{{ item.title }}</div>
+              <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                srcset="https://static.cmereye.com/imgs/2023/07/4c021489e013750f.jpg 768w, https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                alt="什麼是乾眼症 ？" src="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png" />
+            </div>
+          </div>
+        </div>
+        <!-- 乾眼症症狀 -->
+        <div id="xerophthalmiaType">
+          <div>乾眼症症狀</div>
+          <div>
+            <div v-for="(item, index) in xerophthalmiaType" :key="index">
+              <div><img :src="item.img" :alt="item.text" srcset="" /></div>
               <div>{{ item.text }}</div>
             </div>
           </div>
+          <div @click="goWhatsApp()"><span>已出現以上症狀？</span> <span>立即聯絡我們</span></div>
         </div>
-        <div>
-          <div>淚膜中若有一層分泌不足或分佈不均勻，均可能造成「乾眼症」。</div>
+        <!-- 乾眼症成因 -->
+        <div id="factor">
+          <div>乾眼症成因</div>
           <div>
-            <div v-for="(item, index) in tearFilm" :key="index">
-              <div><img :src="item.img" :alt="item.title" /></div>
+            <div>
+              眼睛表面有一層淚膜，覆蓋在眼角膜及結膜上，形成一層濕潤保護膜，維持眼睛表面健康，淚液層由外到內可分為三層：
+            </div>
+            <div>
+              <img src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png" />
+              <img src="https://static.cmereye.com/imgs/2023/05/84ab47f3810c1d07.png" />
+            </div>
+          </div>
+          <div>
+            <div v-for="(item, index) in factor" :key="index">
+              <div>
+                <!-- <img :src="item.img" :alt="item.title" srcset="" /> -->
+                <img :data-cfsrc="item.img" :srcset="`${item.mbImg} 768w, ${item.img}`" :alt="item.title"
+                  :src="item.img" />
+              </div>
               <div>
                 <div>{{ item.title }}</div>
-                <div v-for="(ele, index) in item.text" :key="index">
-                  · {{ ele }}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 乾眼症的類別 -->
-      <div id="category">
-        <div>乾眼症的類別</div>
-        <div>
-          <div v-for="(item, index) in category" :key="index">
-            <div><img :src="item.img" :alt="item.title" /></div>
-            <div>
-              <div>{{ item.title }}</div>
-              <div>{{ item.text }}</div>
-            </div>
-          </div>
-        </div>
-        <div @click="goWhatsApp()">
-          <div>想知道屬於哪一種類別？</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="10px"
-            height="16px"
-          >
-            <image
-              x="0px"
-              y="0px"
-              width="10px"
-              height="16px"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC"
-            />
-          </svg>
-        </div>
-      </div>
-      <!-- 患乾眼症的高危人士 -->
-      <div id="highRisk">
-        <div>患乾眼症的高危人士</div>
-        <div>
-          <div v-for="(item, index) in highRisk" :key="index">
-            <div><img :src="item.img" /></div>
-            <div>{{ item.text }}</div>
-          </div>
-        </div>
-        <div @click="callTel()">
-          <div>懷疑是高危人士? 立即預約檢查</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="10px"
-            height="16px"
-          >
-            <image
-              x="0px"
-              y="0px"
-              width="10px"
-              height="16px"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC"
-            />
-          </svg>
-        </div>
-      </div>
-      <!-- 乾眼症的診斷 -->
-      <div id="fourthly">
-        <div>乾眼症的診斷</div>
-        <div>
-          <div>
-            眼科專科醫生會先了解患者病徵和生活習慣，再根據臨床檢查診斷乾眼症，包括︰檢查角膜表面有沒有傷口、眼皮是否清潔、瞼板腺是否暢通等。透過眼睛檢查，以判斷乾眼症的嚴重程度。
-          </div>
-          <div>乾眼症研討會︰乾眼症四個等級</div>
-          <div>
-            <div v-for="(item, index) in fourthly" :key="index">
-              <div v-for="(it, i) in item" :key="i">
-                <div>{{ it }}</div>
-              </div>
-            </div>
-          </div>
-          <div>診斷過程</div>
-          <div>
-            <div v-for="(item, i) in process" :key="i">
-              <div>
-                <div>setp</div>
-                <div>{{ item.id }}</div>
-              </div>
-              <div>{{ item.text }}</div>
-            </div>
-          </div>
-          <!-- 常見診斷測試 -->
-          <div>
-            <div>常見診斷測試</div>
-            <div>
-              <div>
-                <div v-for="(item, i) in testMethod" :key="i">
-                  <div>
-                    <div>{{ item.id }}</div>
-                    <div>{{ item.title }}</div>
-                  </div>
-                  <div v-for="(ele, index) in item.text" :key="index">
-                    <div>{{ ele }}</div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/05/96be300a751eee94.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div @click="callTel()">
-          <div>我需要預約診斷</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="10px"
-            height="16px"
-          >
-            <image
-              x="0px"
-              y="0px"
-              width="10px"
-              height="16px"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC"
-            />
-          </svg>
-        </div>
-      </div>
-      <!-- 乾眼症治療 -->
-      <div id="means">
-        <div>乾眼症治療</div>
-        <div>
-          乾眼症治療的主要目的是減輕乾眼症狀，增加眼球表面的淚液，增加淚水分泌和減少淚水蒸發。乾眼症是慢性疾病，需長期接受治療，並需要患者配合去改變生活習慣。
-        </div>
-        <div>
-          <div>治療方法</div>
-          <div v-for="(item, i) in means" :key="i">
-            <div>{{ item.title }}</div>
-            <div>{{ item.text }}</div>
-          </div>
-          <div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png"
-              />
-            </div>
-            <div>
-              <div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="76px"
-                    height="63px"
-                  >
-                    <image
-                      x="0px"
-                      y="0px"
-                      width="76px"
-                      height="63px"
-                      xlink:href="data:img/png;base64,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"
-                    />
-                  </svg>
-                  <div>1</div>
-                </div>
-                <div>抑制炎症</div>
-              </div>
-              <div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="76px"
-                    height="63px"
-                  >
-                    <image
-                      x="0px"
-                      y="0px"
-                      width="76px"
-                      height="63px"
-                      xlink:href="data:img/png;base64,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"
-                    />
-                  </svg>
-                  <div>2</div>
-                </div>
-                <div>改善不正常血管</div>
-              </div>
-              <div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="76px"
-                    height="63px"
-                  >
-                    <image
-                      x="0px"
-                      y="0px"
-                      width="76px"
-                      height="63px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAA/CAMAAAB9/952AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACeVBMVEVtbZ5SUoBgYI9hYZBhYZFiYpJiYpJgYI9SUoBSUoBhYZBjY5NmZpdqappSUoBSUoBhYZBkZJRqaptSUoBhYZFnZ5hSUoBhYZBoaJhSUoBSUoBgYJBlZZVSUoBhYZFSUoBSUoBjY5NSUoBgYI9lZZVSUoBSUoBmZpZSUoBgYI9mZpZSUoBSUoBSUoBSUoBiYpJSUoBsbJ1SUoBSUoBpaZlSUoBkZJRSUoBSUoBgYJBSUoBSUoBSUoBgYJBSUoBkZJRSUoBra5xSUoBSUoBiYpJSUoBmZpZSUoBSUoBqaptSUoBhYZBSUoBSUoBjY5NSUoBlZZVSUoBSUoBnZ5dSUoBpaZpSUoBSUoBSUoBoaJhtbZ5ra5xtbZ5qapptbZ5tbZ5nZ5htbZ5lZZVtbZ5tbZ5jY5NtbZ5hYZFtbZ5tbZ5gYI9sbJxtbZ5nZ5dtbZ5tbZ5jY5NtbZ5gYI9tbZ5tbZ5mZpZtbZ5hYZFtbZ5tbZ5tbZ5hYZFtbZ5mZpZtbZ5tbZ5gYJBtbZ5iYpJtbZ5tbZ5lZZVtbZ5gYI9oaJhtbZ5tbZ5gYJBpaZptbZ5gYJBtbZ5tbZ5oaJltbZ5gYJBnZ5dtbZ5tbZ5tbZ5hYZFtbZ5tbZ5gYI9jY5NtbZ5gYI9kZJRtbZ5gYJBtbZ5hYZBkZJRnZ5dtbZ5gYJBiYpFkZJRlZZVlZZZmZpZoaJhtbZ5tbZ5tbZ5WVoVSUoBkZJRYWIdmZpdaWoloaJlsbJ1cXItqappTU4FeXo1ra5xTU4JgYI9UVINiYpFWVoRXV4ZmZpZZWYhnZ5hbW4ppaZpdXYxqaptfX45UVIJhYZFVVYRjY5NXV4VlZZX///884+zJAAAAsHRSTlMAAApIbX2OglUSUrDl+dIDSsf7RWvrtlnv+yof0ZZk8RaveATQ4AjhWALfyAH+Opar/vgi9ou26xAxbNgELE7Fvf39MYCe2vQa/H9D5QudYcjOAudC+LEnk0vE/k761APtYNPiCKpyYe0PBv6G6PUZnpgh+ybeq1X+Nb1dRtzOAShahtwFzmwM7ugNHfd+NfEW9ZAZ6fkho2f9LwiztSXBPxvIRbTqUTp5w83X49OqgztQCM8AAAABYktHRNLg2K6wAAAAB3RJTUUH5wUPDy8kclWFPQAAAmpJREFUWMOt1wV3FDEQwPHp4VJoixZ3KO5e3N3d4XB3b3F3d3cbDjukuDvfiF7h2Eyy2d1k+H+A39t9ySQvANpCuXLnyeuUL79fBTRQwUKFE1HqbsS7IkXdpKTkFHTpng9WLEGlipdATfc9rZKgYKVKo7YHXlZqGRkrWw69euiBlQcJq5DiaeEjvVWxkoRVjqJPj7VYFSBY1Wp+FOKTpxqreg2ChWr6W4jPNFgtELG02kEszHruatWpS7DkQBbiCzerXn0QsQYBLYy+dMEagoglNQqK4SvVatxExEJNA1sYfa1gzUDEmge3XOa9RUsRaxX8J2O9kbDWIGIBdqvYW2q1aSti6b5TJPWOYO1AxNobWvhetDqAiIU6mmL4wbE6dSZYF2MLPzpYVyBYN3MMP8Wt7j0o1tMC+xw/inoBwXpbWIhf/lh9+lKsnxWW9TUH6w8UG2CF4beYNXCQhA22w6Lfs7EhIGFD7TD8EYkMAxkz37J/+5k6XMFMB/Nfv0aAgtlaiCP/JzZKxUbba2MUbKw9Nm68jE2wx3CijE1iYJOnSFiYgeFUCZvGwabPoNjMWRxtNsVgDgebO49i8zkYLqDYQuvpjLVoMcFgCevTllJsGQtbvoJgvCXAlRRbxcJwNcFgDQtbm0GwTOuzO6d1BIP1LGzDRoLBJpa2mWJbtnKwbdsJBjt2crRdFIPdiQxsz16KQfo+hrZfwuDAQXvs0GEJgzSjxwXtiIwBHLVehmPHFQxOnDR7rTidUjGA02cs7/izLhjAubDBI8/pfIYblt2Fi5fML63LGiy2tFeuhq9dv3Ez3q3bft1J+A1XGwN3dGGhCAAAAABJRU5ErkJggg=="
-                    />
-                  </svg>
-                  <div>3</div>
-                </div>
-                <div>減少眼睛蠕形蟎的數量</div>
-              </div>
-              <div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="76px"
-                    height="63px"
-                  >
-                    <image
-                      x="0px"
-                      y="0px"
-                      width="76px"
-                      height="63px"
-                      xlink:href="data:img/png;base64,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"
-                    />
-                  </svg>
-                  <div>4</div>
-                </div>
-                <div>調節油脂分泌</div>
-              </div>
-              <div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="76px"
-                    height="63px"
-                  >
-                    <image
-                      x="0px"
-                      y="0px"
-                      width="76px"
-                      height="63px"
-                      xlink:href="data:img/png;base64,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"
-                    />
-                  </svg>
-                  <div>5</div>
-                </div>
-                <div>激活瞼板腺功能</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
-            </div>
-          </div>
-          <!-- 減少淚液流失 -->
-          <div>
-            <div>
-              <div>使用人工淚液</div>
-              <div>
-                應用人工淚液（盡量使用不含防腐劑的人工淚液），嚴重者可能需要使用自體血清。
-              </div>
-              <div>
-                乾眼症治療除了針對病因治療外，使用人工淚液也是有效的方法。隨著藥物學不斷發展，人工淚液不斷改良。現時有不少新藥物用於治療乾眼症，針對淚膜三層結構來進行治療，大大提高了乾眼症藥物的治療療效。
-              </div>
-              <div>
-                使用人工淚水也有需要注意的細節。市面上，大部分眼藥水為了方便長時間保存，均有添加防腐劑。正常情況下，使用含有防腐劑的眼藥水多數不會對人體造成影響。不過，乾眼症患者的眼睛對防腐劑的耐受性可能較低，因此比較適合使用不含防腐劑的人工淚液，以避免長期接觸防腐劑導致眼睛敏感等問題。人工淚液可分為眼藥水及眼藥膏：
-              </div>
-            </div>
-            <div>
-              <img
-                src="https://static.cmereye.com/imgs/2023/05/cf53e666d96890d0.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-          </div>
-          <!-- 眼藥水 -->
-          <div>
-            <div>
-              <div>眼藥水</div>
-              <div>
-                使用方便、簡單，可在眼球乾澀時直接補充水分，但水分蒸發較快，症狀嚴重的話需要頻密使用。
-              </div>
-            </div>
-            <div>
-              <div>藥膏狀</div>
-              <div>
-                藥膏狀的人工淚液黏貼度較高，可留存在眼內更長的時間，以保持眼睛濕潤，但因太黏，往往會造成短暫的視力模糊，所以一般建議在眼睛休息時（如睡前）使用。
-              </div>
-            </div>
-          </div>
-          <!-- 減少淚液流失 配戴鞏膜鏡 -->
-          <div>
-            <div>
-              <div>減少淚液流失</div>
-              <div>
-                使用淚道塞子堵塞淚道開口，從而減少淚液流失，病情嚴重者可考慮永久封閉淚道開口。
-              </div>
-            </div>
-            <div>
-              <div>配戴鞏膜鏡</div>
-              <div>
-                鞏膜鏡是一款高透氣的特製隱形眼鏡，覆蓋眼角膜和角膜周圍的表面，有助淚水停留眼表，滋潤角膜表面。
-              </div>
-            </div>
-          </div>
-          <!-- 其他紓緩眼乾症狀的方法︰ -->
-          <div>
-            <div>其他紓緩眼乾症狀的方法︰</div>
-            <div>
-              <div v-for="(item, index) in wayOther" :key="index">
-                <div><img :src="item.img" alt="" /></div>
                 <div>{{ item.text }}</div>
               </div>
             </div>
           </div>
+          <div>
+            <div>淚膜中若有一層分泌不足或分佈不均勻，均可能造成「乾眼症」。</div>
+            <div>
+              <div v-for="(item, index) in tearFilm" :key="index">
+                <div><img :src="item.img" :alt="item.title" /></div>
+                <div>
+                  <div>{{ item.title }}</div>
+                  <div v-for="(ele, index) in item.text" :key="index">
+                    · {{ ele }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div @click="callTel()">
-          <div>人工淚液沒有改善？</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="18px"
-            height="18px"
-          >
-            <image
-              x="0px"
-              y="0px"
-              width="18px"
-              height="18px"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8RKjrjlcJhAAAAvElEQVQoz4XSoQ9BURTH8Z/HBEWU7E16NtL7M0RdsFEEQTSbJKuaJKiKZrpoGkl8mMYmfAV3nue9y++mc/fZzjnbEcJjxZEusj3hcuOVlh2NCVNORo4KCjNRYhxtP6pcMhKld7MAzzaTWBi0tA8uXIPOZOxIDA2b/kJiY1j7F8pzNaxpR6LCw7CR+fGpkYoi4XM3bEuPAQB76lEkqlyIp//dv8guruK7ZJj/R0I0OHyYle3Q0nRYcyJgRvYJKHJ9GjIJFIwAAAAASUVORK5CYII="
-            />
-          </svg>
-          <div>立即致電查詢其他方案</div>
+        <!-- 乾眼症的類別 -->
+        <div id="category">
+          <div>乾眼症的類別</div>
+          <div>
+            <div v-for="(item, index) in category" :key="index">
+              <div><img :src="item.img" :alt="item.title" /></div>
+              <div>
+                <div>{{ item.title }}</div>
+                <div>{{ item.text }}</div>
+              </div>
+            </div>
+          </div>
+          <div @click="goWhatsApp()">
+            <div>想知道屬於哪一種類別？</div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
+              <image x="0px" y="0px" width="10px" height="16px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
+            </svg>
+          </div>
         </div>
-      </div>
-      <!-- 預防乾眼症 -->
-      <div id="prevent">
-        <div>預防乾眼症</div>
-        <div>
-          <div v-for="(item, index) in prevent" :key="index">
-            <div>{{ item.title }}</div>
-            <div>{{ item.text }}</div>
+        <!-- 患乾眼症的高危人士 -->
+        <div id="highRisk">
+          <div>患乾眼症的高危人士</div>
+          <div>
+            <div v-for="(item, index) in highRisk" :key="index">
+              <div><img :src="item.img" /></div>
+              <div>{{ item.text }}</div>
+            </div>
+          </div>
+          <div @click="callTel()">
+            <div>懷疑是高危人士? 立即預約檢查</div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
+              <image x="0px" y="0px" width="10px" height="16px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
+            </svg>
+          </div>
+        </div>
+        <!-- 乾眼症的診斷 -->
+        <div id="fourthly">
+          <div>乾眼症的診斷</div>
+          <div>
+            <div>
+              眼科專科醫生會先了解患者病徵和生活習慣，再根據臨床檢查診斷乾眼症，包括︰檢查角膜表面有沒有傷口、眼皮是否清潔、瞼板腺是否暢通等。透過眼睛檢查，以判斷乾眼症的嚴重程度。
+            </div>
+            <div>乾眼症研討會︰乾眼症四個等級</div>
+            <div>
+              <div v-for="(item, index) in fourthly" :key="index">
+                <div v-for="(it, i) in item" :key="i">
+                  <div>{{ it }}</div>
+                </div>
+              </div>
+            </div>
+            <div>診斷過程</div>
+            <div>
+              <div v-for="(item, i) in process" :key="i">
+                <div>
+                  <div>setp</div>
+                  <div>{{ item.id }}</div>
+                </div>
+                <div>{{ item.text }}</div>
+              </div>
+            </div>
+            <!-- 常見診斷測試 -->
+            <div>
+              <div>常見診斷測試</div>
+              <div>
+                <div>
+                  <div v-for="(item, i) in testMethod" :key="i">
+                    <div>
+                      <div>{{ item.id }}</div>
+                      <div>{{ item.title }}</div>
+                    </div>
+                    <div v-for="(ele, index) in item.text" :key="index">
+                      <div>{{ ele }}</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/05/96be300a751eee94.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div @click="callTel()">
+            <div>我需要預約診斷</div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
+              <image x="0px" y="0px" width="10px" height="16px"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
+            </svg>
+          </div>
+        </div>
+        <!-- 乾眼症治療 -->
+        <div id="means">
+          <div>乾眼症治療</div>
+          <div>
+            乾眼症治療的主要目的是減輕乾眼症狀，增加眼球表面的淚液，增加淚水分泌和減少淚水蒸發。乾眼症是慢性疾病，需長期接受治療，並需要患者配合去改變生活習慣。
+          </div>
+          <div>
+            <div>治療方法</div>
+            <div v-for="(item, i) in means" :key="i">
+              <div>{{ item.title }}</div>
+              <div>{{ item.text }}</div>
+            </div>
+            <div>
+              <div>
+                <img src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png" />
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                      height="63px">
+                      <image x="0px" y="0px" width="76px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div>1</div>
+                  </div>
+                  <div>抑制炎症</div>
+                </div>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                      height="63px">
+                      <image x="0px" y="0px" width="76px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div>2</div>
+                  </div>
+                  <div>改善不正常血管</div>
+                </div>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                      height="63px">
+                      <image x="0px" y="0px" width="76px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div>3</div>
+                  </div>
+                  <div>減少眼睛蠕形蟎的數量</div>
+                </div>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                      height="63px">
+                      <image x="0px" y="0px" width="76px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div>4</div>
+                  </div>
+                  <div>調節油脂分泌</div>
+                </div>
+                <div>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                      height="63px">
+                      <image x="0px" y="0px" width="76px" height="63px"
+                        xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div>5</div>
+                  </div>
+                  <div>激活瞼板腺功能</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
+              </div>
+            </div>
+            <!-- 減少淚液流失 -->
+            <div>
+              <div>
+                <div>使用人工淚液</div>
+                <div>
+                  應用人工淚液（盡量使用不含防腐劑的人工淚液），嚴重者可能需要使用自體血清。
+                </div>
+                <div>
+                  乾眼症治療除了針對病因治療外，使用人工淚液也是有效的方法。隨著藥物學不斷發展，人工淚液不斷改良。現時有不少新藥物用於治療乾眼症，針對淚膜三層結構來進行治療，大大提高了乾眼症藥物的治療療效。
+                </div>
+                <div>
+                  使用人工淚水也有需要注意的細節。市面上，大部分眼藥水為了方便長時間保存，均有添加防腐劑。正常情況下，使用含有防腐劑的眼藥水多數不會對人體造成影響。不過，乾眼症患者的眼睛對防腐劑的耐受性可能較低，因此比較適合使用不含防腐劑的人工淚液，以避免長期接觸防腐劑導致眼睛敏感等問題。人工淚液可分為眼藥水及眼藥膏：
+                </div>
+              </div>
+              <div>
+                <img src="https://static.cmereye.com/imgs/2023/05/cf53e666d96890d0.png" alt="" srcset="" />
+              </div>
+            </div>
+            <!-- 眼藥水 -->
+            <div>
+              <div>
+                <div>眼藥水</div>
+                <div>
+                  使用方便、簡單，可在眼球乾澀時直接補充水分，但水分蒸發較快，症狀嚴重的話需要頻密使用。
+                </div>
+              </div>
+              <div>
+                <div>藥膏狀</div>
+                <div>
+                  藥膏狀的人工淚液黏貼度較高，可留存在眼內更長的時間，以保持眼睛濕潤，但因太黏，往往會造成短暫的視力模糊，所以一般建議在眼睛休息時（如睡前）使用。
+                </div>
+              </div>
+            </div>
+            <!-- 減少淚液流失 配戴鞏膜鏡 -->
+            <div>
+              <div>
+                <div>減少淚液流失</div>
+                <div>
+                  使用淚道塞子堵塞淚道開口，從而減少淚液流失，病情嚴重者可考慮永久封閉淚道開口。
+                </div>
+              </div>
+              <div>
+                <div>配戴鞏膜鏡</div>
+                <div>
+                  鞏膜鏡是一款高透氣的特製隱形眼鏡，覆蓋眼角膜和角膜周圍的表面，有助淚水停留眼表，滋潤角膜表面。
+                </div>
+              </div>
+            </div>
+            <!-- 其他紓緩眼乾症狀的方法︰ -->
+            <div>
+              <div>其他紓緩眼乾症狀的方法︰</div>
+              <div>
+                <div v-for="(item, index) in wayOther" :key="index">
+                  <div><img :src="item.img" alt="" /></div>
+                  <div>{{ item.text }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div @click="callTel()">
+            <div>人工淚液沒有改善？</div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
+                height="18px">
+                <image x="0px" y="0px" width="18px" height="18px"
+                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8RKjrjlcJhAAAAvElEQVQoz4XSoQ9BURTH8Z/HBEWU7E16NtL7M0RdsFEEQTSbJKuaJKiKZrpoGkl8mMYmfAV3nue9y++mc/fZzjnbEcJjxZEusj3hcuOVlh2NCVNORo4KCjNRYhxtP6pcMhKld7MAzzaTWBi0tA8uXIPOZOxIDA2b/kJiY1j7F8pzNaxpR6LCw7CR+fGpkYoi4XM3bEuPAQB76lEkqlyIp//dv8guruK7ZJj/R0I0OHyYle3Q0nRYcyJgRvYJKHJ9GjIJFIwAAAAASUVORK5CYII=" />
+              </svg>
+              <div>立即致電查詢其他方案</div>
+            </div>
+          </div>
+        </div>
+        <!-- 預防乾眼症 -->
+        <div id="prevent">
+          <div>預防乾眼症</div>
+          <div>
+            <div v-for="(item, index) in prevent" :key="index">
+              <div>{{ item.title }}</div>
+              <div>{{ item.text }}</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div>
-    <!-- 右侧边导航 -->
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
-    </div>
-    <!-- 下载 -->
-    <div class="dow">
+      <!-- 右侧边导航 -->
       <div>
+        <rightSidesNavigation :service-navigation="serviceNavigation" />
+      </div>
+      <!-- 下载 -->
+      <div class="dow">
         <div>
-          <div @click.stop="getPdf('xerophthalmia.pdf','乾眼症')">
-            <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
-              srcset=""
-            />
-          </div>
-          <div @click.stop="getPdf('xerophthalmia.pdf','乾眼症')">
-            <p>乾眼症</p>
-            <p>下載小冊子</p>
+          <div>
+            <div @click.stop="getPdf('xerophthalmia.pdf', '乾眼症')">
+              <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
+            </div>
+            <div @click.stop="getPdf('xerophthalmia.pdf', '乾眼症')">
+              <p>乾眼症</p>
+              <p>下載小冊子</p>
+            </div>
           </div>
         </div>
       </div>
+      <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+        :co="`color:${'#b6b3e0;'}`" />
     </div>
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#b6b3e0;'}`"
-    />
-  </div>
-  <PageFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 
@@ -796,17 +693,17 @@ const callTel = () => {
   transform: scale(0.85);
   margin-top: -60%;
 
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       width: 577px;
       margin-right: 60px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         margin-bottom: 37px;
         font-family: 'NotoSansHK-Medium';
         font-size: 48px;
@@ -817,7 +714,7 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         font-family: 'NotoSansHK-Medium';
         font-size: 24px;
         font-weight: normal;
@@ -828,11 +725,11 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       // position: relative;
 
-      & > div {
-        & > img {
+      &>div {
+        &>img {
           width: 100%;
           position: relative;
           top: 60px;
@@ -847,12 +744,12 @@ const callTel = () => {
     }
   }
 
-  & > div:nth-child(2) {
+  &>div:nth-child(2) {
     margin-top: 166px;
     padding: 0 70px;
     min-width: 1175px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
       font-weight: normal;
@@ -863,32 +760,32 @@ const callTel = () => {
       text-align: center;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
       margin-top: 120px;
 
-      & > div {
+      &>div {
         width: 235px;
         white-space: pre-wrap;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           width: 145px;
           height: 120px;
           display: flex;
           align-items: center;
 
-          & > img {
+          &>img {
             width: 100%;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-top: 33px;
           text-align: center;
           height: 65px;
@@ -903,24 +800,22 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(n + 5) {
+      &>div:nth-child(n + 5) {
         margin-top: 145px;
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin: auto;
       cursor: pointer;
       margin-top: 118px;
       background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
         linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
-      width: 414px;
-      height: 65px;
-      border-radius: 65px;
+      border-radius: 14px;
 
       font-family: 'NotoSansHK-Medium';
-      font-size: 22px;
+      font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       letter-spacing: 0px;
@@ -929,13 +824,17 @@ const callTel = () => {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      width: fit-content;
+      padding: 25px 160px;
+      line-height: 50px;
     }
   }
 
-  & > div:nth-child(3) {
+  &>div:nth-child(3) {
     margin-top: 117px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -946,10 +845,10 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 68px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 20px;
         font-weight: normal;
@@ -959,18 +858,18 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 60px;
         display: flex;
         justify-content: space-between;
         padding-right: 95px;
 
-        & > img {
+        &>img {
           position: relative;
           right: 60px;
         }
 
-        & > img:nth-child(1) {
+        &>img:nth-child(1) {
           z-index: 5;
           top: 50px;
           left: 85px;
@@ -978,28 +877,28 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin-top: 195px;
       display: flex;
       justify-content: space-between;
       flex-direction: row;
 
-      & > div {
+      &>div {
         display: flex;
         position: relative;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           overflow: hidden;
           box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.15);
           border-radius: 22px;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           top: 264px;
           padding: 0 34px;
           position: absolute;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 30px;
             font-weight: normal;
@@ -1010,7 +909,7 @@ const callTel = () => {
             text-align: center;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 38px;
             font-family: 'Noto Sans HK';
             font-size: 18px;
@@ -1023,27 +922,27 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(2) {
-        & > div:nth-child(2) {
-          & > div:nth-child(1) {
+      &>div:nth-child(2) {
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
             color: #1b80a0;
           }
         }
       }
 
-      & > div:nth-child(3) {
-        & > div:nth-child(2) {
-          & > div:nth-child(1) {
+      &>div:nth-child(3) {
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
             color: #595757;
           }
         }
       }
     }
 
-    & > div:nth-child(4) {
+    &>div:nth-child(4) {
       margin-top: 117px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         margin-bottom: 49px;
         font-family: 'NotoSansHK-Medium';
         font-size: 20px;
@@ -1055,8 +954,8 @@ const callTel = () => {
         text-align: center;
       }
 
-      & > div:nth-child(2) {
-        & > div {
+      &>div:nth-child(2) {
+        &>div {
           margin-top: 20px;
           background-image: linear-gradient(#f8f8f8, #f8f8f8),
             linear-gradient(#ffffff, #ffffff);
@@ -1066,7 +965,7 @@ const callTel = () => {
           display: flex;
           align-items: center;
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-left: 80px;
             font-family: 'Noto Sans HK';
             font-size: 18px;
@@ -1076,7 +975,7 @@ const callTel = () => {
             letter-spacing: 0px;
             color: #515151;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 20px;
               font-weight: normal;
@@ -1089,38 +988,38 @@ const callTel = () => {
           }
         }
 
-        & > div:nth-child(1) {
-          & > div:nth-child(2) {
+        &>div:nth-child(1) {
+          &>div:nth-child(2) {
             padding: 26px 0;
           }
         }
 
-        & > div:nth-child(2) {
-          & > div:nth-child(2) {
+        &>div:nth-child(2) {
+          &>div:nth-child(2) {
             padding: 34px 0;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               color: #1b80a0;
             }
           }
         }
 
-        & > div:nth-child(3) {
-          & > div:nth-child(2) {
+        &>div:nth-child(3) {
+          &>div:nth-child(2) {
             padding: 29px 0;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               color: #1b80a0;
             }
           }
         }
 
-        & > div:nth-child(4) {
-          & > div:nth-child(2) {
+        &>div:nth-child(4) {
+          &>div:nth-child(2) {
             padding-top: 33px;
             padding-bottom: 40px;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               color: #3aaad2;
             }
           }
@@ -1129,10 +1028,10 @@ const callTel = () => {
     }
   }
 
-  & > div:nth-child(4) {
+  &>div:nth-child(4) {
     margin-top: 180px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
       font-weight: normal;
@@ -1143,29 +1042,29 @@ const callTel = () => {
       text-align: center;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 80px;
       padding: 0 100px;
 
-      & > div {
+      &>div {
         margin-top: 79px;
         display: flex;
         align-items: center;
         position: relative;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           width: 173px;
 
-          & > img {
+          &>img {
             width: 100%;
           }
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           position: absolute;
           margin-left: 218px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 28px;
             font-weight: normal;
@@ -1175,7 +1074,7 @@ const callTel = () => {
             color: #525280;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 19px;
             font-family: 'Noto Sans HK';
             font-size: 18px;
@@ -1189,31 +1088,32 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       cursor: pointer;
       margin: auto;
       margin-top: 148px;
-      width: 414px;
-      height: 66px;
       background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
         linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
-      border-radius: 66px;
+      border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
 
       font-family: 'NotoSansHK-Medium';
-      font-size: 22px;
+      font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       letter-spacing: 0px;
       color: #ffffff;
+      width: fit-content;
+      padding: 25px 105px;
+      line-height: 50px;
     }
   }
 
-  & > div:nth-child(5) {
-    & > div:nth-child(1) {
+  &>div:nth-child(5) {
+    &>div:nth-child(1) {
       text-align: center;
       margin-top: 170px;
       font-family: 'NotoSansHK-Bold';
@@ -1225,21 +1125,21 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 68px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       white-space: pre-wrap;
 
-      & > div {
+      &>div {
         width: 388px;
         height: 356px;
         background: #fff;
         box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-top: 35px;
           display: flex;
           align-items: center;
@@ -1256,12 +1156,12 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(n + 4) {
+      &>div:nth-child(n + 4) {
         margin-top: 80px;
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       cursor: pointer;
       margin: auto;
       margin-top: 100px;
@@ -1269,32 +1169,33 @@ const callTel = () => {
       align-items: center;
       justify-content: center;
 
-      width: 414px;
-      height: 66px;
       background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
         linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
-      border-radius: 66px;
+      border-radius: 14px;
 
       font-family: 'NotoSansHK-Medium';
-      font-size: 22px;
+      font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       line-height: 36px;
       letter-spacing: 0px;
       color: #ffffff;
+      width: fit-content;
+      padding: 25px 55px;
+      line-height: 50px;
 
-      & > svg {
+      &>svg {
         margin-top: 5px;
         margin-left: 20px;
       }
     }
   }
 
-  & > div:nth-child(6) {
+  &>div:nth-child(6) {
     margin-top: 154px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -1305,10 +1206,10 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 60px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         border-radius: 10px;
         border: solid 2px #dbd9d9;
         padding: 47px 30px;
@@ -1322,7 +1223,7 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 180px;
         text-align: center;
 
@@ -1335,10 +1236,10 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         margin-top: 90px;
 
-        & > div {
+        &>div {
           background-image: linear-gradient(-90deg, #a9a6d2 0%, #ffffff 100%);
           height: 121px;
           margin-top: 10px;
@@ -1347,32 +1248,32 @@ const callTel = () => {
           white-space: pre-wrap;
           text-align: center;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-size: 30px;
             color: #525280;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             font-size: 30px;
             color: #8686b5;
           }
 
-          & > div:nth-child(3) {
+          &>div:nth-child(3) {
             font-size: 30px;
             color: #6d6d9e;
           }
 
-          & > div:nth-child(4) {
+          &>div:nth-child(4) {
             font-size: 30px;
             color: #525280;
           }
 
-          & > div:nth-child(5) {
+          &>div:nth-child(5) {
             font-size: 30px;
             color: #3c3c63;
           }
 
-          & > div {
+          &>div {
             font-family: 'Noto Sans HK';
             line-height: 36px;
             font-weight: normal;
@@ -1385,12 +1286,12 @@ const callTel = () => {
           }
         }
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           font-family: 'NotoSansHK-Bold';
         }
       }
 
-      & > div:nth-child(4) {
+      &>div:nth-child(4) {
         margin-top: 100px;
         text-align: center;
         font-family: 'NotoSansHK-Bold';
@@ -1402,7 +1303,7 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(5) {
+      &>div:nth-child(5) {
         max-width: 1200px;
         margin: 0 auto;
         margin-top: 43px;
@@ -1410,21 +1311,21 @@ const callTel = () => {
         justify-content: space-between;
         position: relative;
 
-        & > div {
+        &>div {
           width: 330px;
           border: solid 2px #dbd9d9;
           height: 266px;
           border-right: none;
           position: relative;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             position: absolute;
             width: 76px;
             height: 77px;
             background-color: #6d6d9e;
             border-radius: 50%;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               font-family: 'ArialMT';
               font-size: 12px;
               font-weight: normal;
@@ -1433,7 +1334,7 @@ const callTel = () => {
               text-transform: uppercase;
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               font-family: 'Metropolis-SemiBold';
               font-size: 45px;
               font-weight: normal;
@@ -1451,7 +1352,7 @@ const callTel = () => {
             box-shadow: 0px 0px 0px 15px #ffffff;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             padding-top: 76px;
             padding-left: 38px;
             padding-right: 35px;
@@ -1465,7 +1366,7 @@ const callTel = () => {
           }
         }
 
-        & > div::after {
+        &>div::after {
           content: '';
           background: url('https://static.cmereye.com/imgs/2023/05/24a8fecc85da78e0.jpg');
           width: 15px;
@@ -1476,20 +1377,20 @@ const callTel = () => {
           transform: translate(-50%, -50%);
         }
 
-        & > div:first-child::after {
+        &>div:first-child::after {
           position: relative;
         }
 
-        & > div:last-child {
+        &>div:last-child {
           border-right: solid 2px #dbd9d9;
         }
       }
 
-      & > div:nth-child(6) {
+      &>div:nth-child(6) {
         margin-top: 134px;
         padding-right: 30px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           font-family: 'NotoSansHK-Bold';
           font-size: 36px;
           font-weight: normal;
@@ -1499,28 +1400,28 @@ const callTel = () => {
           color: #525280;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
           position: relative;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             position: absolute;
             padding-right: 359px;
             margin-top: 49px;
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-top: 112px;
             }
 
-            & > div {
-              & > div:nth-child(1) {
+            &>div {
+              &>div:nth-child(1) {
                 display: flex;
                 align-items: center;
                 margin-bottom: 20px;
 
-                & > div:nth-child(1) {
+                &>div:nth-child(1) {
                   width: 31px;
                   height: 30px;
                   background-color: #6d6d9e;
@@ -1532,7 +1433,7 @@ const callTel = () => {
                   margin-right: 10px;
                 }
 
-                & > div:nth-child(2) {
+                &>div:nth-child(2) {
                   font-family: 'NotoSansHK-Medium';
                   font-size: 26px;
                   font-weight: normal;
@@ -1542,7 +1443,9 @@ const callTel = () => {
                   color: #525280;
                 }
               }
-              & > div:nth-child(2) , > div:nth-child(3){
+
+              &>div:nth-child(2),
+              >div:nth-child(3) {
                 color: #515151;
                 line-height: 1.8;
                 letter-spacing: .1em;
@@ -1550,46 +1453,47 @@ const callTel = () => {
             }
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 5px;
           }
         }
       }
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       cursor: pointer;
       margin: auto;
       margin-top: 100px;
-      width: 414px;
-      height: 66px;
       background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
         linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
-      border-radius: 66px;
+      border-radius: 14px;
 
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'NotoSansHK-Medium';
-      font-size: 22px;
+      font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       line-height: 36px;
       letter-spacing: 0px;
       color: #fff;
+      width: fit-content;
+      padding: 25px 160px;
+      line-height: 50px;
 
-      & > svg {
+      &>svg {
         margin-left: 22px;
         margin-top: 5px;
       }
     }
   }
 
-  & > div:nth-child(7) {
+  &>div:nth-child(7) {
     margin-top: 182px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -1600,7 +1504,7 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 59px;
       border-radius: 10px;
       border: solid 2px #dbd9d9;
@@ -1614,10 +1518,10 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       margin-top: 178px;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansHK-Bold';
         font-size: 49px;
         font-weight: normal;
@@ -1627,10 +1531,10 @@ const callTel = () => {
         color: #525280;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         padding-left: 14px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           margin-top: 92px;
           font-family: 'NotoSansHK-Bold';
           font-size: 38px;
@@ -1641,7 +1545,7 @@ const callTel = () => {
           color: #6d6d9e;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-top: 57px;
           font-family: 'Noto Sans HK';
           font-size: 22px;
@@ -1653,11 +1557,11 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(3),
-      & > div:nth-child(4) {
+      &>div:nth-child(3),
+      &>div:nth-child(4) {
         padding-left: 14px;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           margin-top: 70px;
           font-family: 'NotoSansHK-Bold';
           font-size: 28px;
@@ -1669,7 +1573,7 @@ const callTel = () => {
           margin-bottom: 33px;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
@@ -1680,21 +1584,21 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(4) {
-        & > div:nth-child(1) {
+      &>div:nth-child(4) {
+        &>div:nth-child(1) {
           margin-top: 104px;
         }
       }
 
-      & > div:nth-child(5) {
+      &>div:nth-child(5) {
         margin-top: 60px;
         display: flex;
         flex-direction: row;
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           margin-left: 50px;
 
-          & > div {
+          &>div {
             margin-top: 20px;
             display: flex;
             align-items: center;
@@ -1704,10 +1608,10 @@ const callTel = () => {
             border-radius: 34px;
             margin-bottom: 24px;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               position: relative;
 
-              & > div:nth-child(2) {
+              &>div:nth-child(2) {
                 position: absolute;
                 top: 20%;
                 left: 25%;
@@ -1721,7 +1625,7 @@ const callTel = () => {
               }
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               margin-left: 25px;
               font-family: 'Noto Sans HK';
               font-size: 28px;
@@ -1735,14 +1639,14 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(6) {
+      &>div:nth-child(6) {
         margin-top: 68px;
         border: solid 1px #a9a6d2;
         padding: 38px 0;
         padding-left: 45px;
         transform: perspective(492px) rotateX(350deg);
 
-        & > div {
+        &>div {
           // 抵消文字变形
           transform: perspective(180px) rotateX(3deg);
           font-family: 'Noto Sans HK';
@@ -1755,7 +1659,7 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(6)::after {
+      &>div:nth-child(6)::after {
         position: absolute;
         right: -15px;
         content: '';
@@ -1766,7 +1670,7 @@ const callTel = () => {
         box-shadow: 0px 0px 0px 10px #fff;
       }
 
-      & > div:nth-child(6)::before {
+      &>div:nth-child(6)::before {
         position: absolute;
         content: '';
         background: url('https://static.cmereye.com/imgs/2023/05/dd10e67efe7af43c.jpg');
@@ -1778,16 +1682,16 @@ const callTel = () => {
       }
 
       // 使用人工淚液
-      & > div:nth-child(7) {
+      &>div:nth-child(7) {
         margin-top: 138px;
         display: flex;
         justify-content: flex-end;
         position: relative;
 
-        & > div:nth-child(1) {
+        &>div:nth-child(1) {
           position: absolute;
 
-          & > div {
+          &>div {
             padding-left: 14px;
             padding-right: 632px;
             font-family: 'Noto Sans HK';
@@ -1799,7 +1703,7 @@ const callTel = () => {
             color: #515151;
           }
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             padding-left: 1px;
             margin-top: 24px;
             font-family: 'NotoSansHK-Bold';
@@ -1811,31 +1715,30 @@ const callTel = () => {
             color: #6d6d9e;
           }
 
-          & > div:nth-child(2),
-          & > div:nth-child(3) {
+          &>div:nth-child(2),
+          &>div:nth-child(3) {
             margin-bottom: 45px;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 55px;
           }
         }
       }
 
       // 使用人工淚液
-      & > div:nth-child(8) {
+      &>div:nth-child(8) {
         margin-top: 59px;
-        background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png')
-          no-repeat;
+        background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png') no-repeat;
         height: 257px;
         padding: 42px 60px;
         transform: scale(0.85);
         background-size: 100%;
 
-        & > div {
+        &>div {
           margin-bottom: 24px;
 
-          & > div:nth-child(1) {
+          &>div:nth-child(1) {
             font-family: 'Noto Sans HK';
             font-size: 25px;
             font-weight: normal;
@@ -1845,7 +1748,7 @@ const callTel = () => {
             color: #525280;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             margin-top: 5px;
             font-family: 'Noto Sans HK';
             font-size: 18px;
@@ -1859,11 +1762,11 @@ const callTel = () => {
       }
 
       // 減少淚液流失
-      & > div:nth-child(9) {
+      &>div:nth-child(9) {
         margin-top: 114px;
 
-        & > div {
-          & > div:nth-child(1) {
+        &>div {
+          &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 38px;
             font-weight: normal;
@@ -1873,7 +1776,7 @@ const callTel = () => {
             color: #6d6d9e;
           }
 
-          & > div:nth-child(2) {
+          &>div:nth-child(2) {
             padding-left: 14px;
             font-family: 'Noto Sans HK';
             font-size: 22px;
@@ -1889,8 +1792,8 @@ const callTel = () => {
       }
 
       // 其他紓緩眼乾症狀的方法
-      & > div:nth-child(10) {
-        & > div:nth-child(1) {
+      &>div:nth-child(10) {
+        &>div:nth-child(1) {
           font-family: 'NotoSansHK-Bold';
           font-size: 38px;
           font-weight: normal;
@@ -1900,23 +1803,23 @@ const callTel = () => {
           color: #6d6d9e;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           display: flex;
           flex-wrap: wrap;
           padding: 0 30px;
           max-width: 1200px;
           justify-content: space-between;
 
-          & > div {
+          &>div {
             margin-top: 104px;
             margin-left: 100px;
 
-            & > div:nth-child(1) {
+            &>div:nth-child(1) {
               box-shadow: -14px 10px 0px 0px #eae9f1;
               border-radius: 50%;
             }
 
-            & > div:nth-child(2) {
+            &>div:nth-child(2) {
               padding: 0 21px;
               margin-top: 53px;
               width: 308px;
@@ -1930,15 +1833,15 @@ const callTel = () => {
             }
           }
 
-          & > div:first-child {
+          &>div:first-child {
             margin-left: 0;
           }
 
-          & > div:nth-child(4) {
+          &>div:nth-child(4) {
             margin-left: 216px;
           }
 
-          & > div:nth-child(5) {
+          &>div:nth-child(5) {
             margin-left: 0;
             margin-right: 216px;
           }
@@ -1946,19 +1849,17 @@ const callTel = () => {
       }
     }
 
-    & > div:nth-child(4) {
+    &>div:nth-child(4) {
       cursor: pointer;
       margin: auto;
       margin-top: 120px;
-      width: 558px;
-      height: 66px;
       background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
         linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
-      border-radius: 66px;
+      border-radius: 14px;
 
       font-family: 'NotoSansHK-Medium';
-      font-size: 22px;
+      font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       line-height: 36px;
@@ -1968,20 +1869,29 @@ const callTel = () => {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      width: fit-content;
+      padding: 25px 160px;
+      line-height: 50px;
 
-      & > svg {
-        margin-top: 6px;
-        margin-left: 5px;
-        margin-right: 5px;
+      &>div:nth-child(2) {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-top: 6px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
       }
     }
   }
 
   // 預防乾眼症
-  & > div:nth-child(8) {
+  &>div:nth-child(8) {
     margin-top: 180px;
 
-    & > div:nth-child(1) {
+    &>div:nth-child(1) {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -1992,12 +1902,12 @@ const callTel = () => {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       margin-top: 71px;
       padding-left: 46px;
 
-      & > div {
-        & > div:nth-child(1) {
+      &>div {
+        &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
           font-size: 24px;
           font-weight: normal;
@@ -2011,7 +1921,7 @@ const callTel = () => {
           margin-top: 61px;
         }
 
-        & > div:nth-child(2) {
+        &>div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 20px;
           font-weight: normal;
@@ -2021,10 +1931,9 @@ const callTel = () => {
           color: #515151;
         }
 
-        & > div:nth-child(1)::before {
+        &>div:nth-child(1)::before {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/05/2f91d710e3b319e6.png')
-            no-repeat;
+          background: url('https://static.cmereye.com/imgs/2023/05/2f91d710e3b319e6.png') no-repeat;
           width: 15px;
           height: 17px;
           display: block;
@@ -2032,19 +1941,19 @@ const callTel = () => {
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         margin-top: 73px;
       }
 
-      & > div:nth-child(3) {
+      &>div:nth-child(3) {
         margin-top: 96px;
       }
 
-      & > div:nth-child(4) {
+      &>div:nth-child(4) {
         margin-top: 95px;
       }
 
-      & > div:nth-child(5) {
+      &>div:nth-child(5) {
         margin-top: 65px;
       }
     }
@@ -2052,14 +1961,14 @@ const callTel = () => {
 }
 
 .xeroheader {
-  & > div:nth-child(1) {
+  &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
     margin-left: 55vw;
 
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 119px;
         font-weight: 700;
@@ -2070,25 +1979,28 @@ const callTel = () => {
         position: sticky;
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         font-family: 'DINCondensed-Bold';
       }
-      & > div:nth-child(3) ,& > div:nth-child(4){
+
+      &>div:nth-child(3),
+      &>div:nth-child(4) {
         -webkit-text-stroke: 1.5px #a9a6d2;
         font-family: 'DINCondensed-Bold';
         position: relative;
         z-index: 5;
         color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
+        clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
         transform: translateY(-45%);
       }
-      & > div:nth-child(4) {
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
+
+      &>div:nth-child(4) {
+        clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
         transform: translateY(-115%);
       }
-      
+
       font-size: 131px;
       font-weight: normal;
       font-stretch: normal;
@@ -2099,7 +2011,7 @@ const callTel = () => {
       margin-left: -0.6vw;
     }
 
-    & > div:nth-child(1)::after {
+    &>div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
       width: 40vw;
@@ -2109,17 +2021,17 @@ const callTel = () => {
       right: 0;
     }
 
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       position: relative;
       top: -20px;
       left: -5px;
 
-      & > img {
+      &>img {
         position: relative;
         z-index: 5;
       }
 
-      & > img:nth-child(1) {
+      &>img:nth-child(1) {
         margin-bottom: 20px;
       }
     }
@@ -2132,9 +2044,9 @@ const callTel = () => {
   color: #fff;
   font-size: 30px;
 
-  & > div:nth-child(1) {
-    & > div {
-      
+  &>div:nth-child(1) {
+    &>div {
+
       width: 62.5%;
       height: 202px;
       background: #a9a6d2;
@@ -2142,18 +2054,18 @@ const callTel = () => {
       display: flex;
       align-items: center;
 
-      & > div:nth-child(1) {
+      &>div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
 
-        & > img {
+        &>img {
           width: 120px;
           height: 135px;
           cursor: pointer;
         }
       }
 
-      & > div:nth-child(2) {
+      &>div:nth-child(2) {
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -2162,6 +2074,7 @@ const callTel = () => {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .xeroheader {
     &>div:nth-child(1) {
@@ -2170,72 +2083,87 @@ const callTel = () => {
       align-items: flex-end;
       display: flex;
       margin: 150px auto 0;
+
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           font-size: 40px;
           text-align: right;
         }
+
         &>div:nth-child(2) {
           font-size: 50px;
           margin-top: 0;
           text-align: right;
           line-height: 1;
         }
-        & > div:nth-child(3),& > div:nth-child(4) {
+
+        &>div:nth-child(3),
+        &>div:nth-child(4) {
           font-size: 50px;
           line-height: 1;
           margin-top: 0;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
           transform: translateY(-20%);
         }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
+
+        &>div:nth-child(4) {
+          clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
           transform: translateY(-73%);
         }
       }
+
       &>div:nth-child(1)::after {
         width: 160px;
         height: 200px;
         top: 190px;
       }
+
       &>div:nth-child(2) {
         top: 0;
         width: 140px;
-        &>img:nth-child(1){
+
+        &>img:nth-child(1) {
           margin-bottom: 5px;
         }
       }
     }
   }
+
   .xerophthalmia {
     transform: scale(1);
     margin-top: 190px;
-    & > div:nth-child(1) {
+
+    &>div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
       flex-direction: column;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         width: 100%;
         margin-right: 0;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 24px;
           text-align: center;
           margin-bottom: 20px;
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
           font-size: 14px;
           line-height: 2;
         }
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         width: calc(100% - 20px);
         height: auto;
         transform: scale(1);
         margin-top: 45px;
         border-radius: 10px;
         margin-left: 20px;
-        &>div{
-          &>img{
+
+        &>div {
+          &>img {
             width: 100%;
             height: auto;
             top: -20px;
@@ -2245,44 +2173,54 @@ const callTel = () => {
         }
       }
     }
-    & > div:nth-child(2) {
+
+    &>div:nth-child(2) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
       min-width: 0;
       padding: 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 40px;
         justify-content: center;
-        & > div {
+
+        &>div {
           width: 33%;
           margin-bottom: 30px;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             width: 100px;
             height: 85px;
             justify-content: center;
-            img{
+
+            img {
               width: 70%;
               max-width: 100px;
             }
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             font-size: 14px;
             height: auto;
             margin-top: 10px;
             line-height: 1.6;
           }
         }
-        & > div:nth-child(n + 5) {
+
+        &>div:nth-child(n + 5) {
           margin-top: 0;
         }
-        & > div:nth-child(n + 7) {
+
+        &>div:nth-child(n + 7) {
           width: 40%;
         }
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         width: max-content;
         font-size: 16px;
         height: 50px;
@@ -2291,55 +2229,68 @@ const callTel = () => {
         margin-top: 40px;
       }
     }
-    & > div:nth-child(3) {
+
+    &>div:nth-child(3) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 30px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 14px;
           line-height: 2;
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
           margin-top: 30px;
           padding-right: 0;
-          &>img{
+
+          &>img {
             width: 40%;
             right: 15%;
             height: 70%;
           }
-           & > img:nth-child(1) {
+
+          &>img:nth-child(1) {
             width: 75%;
             top: 6px;
             left: 0;
           }
         }
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         margin-top: 60px;
         flex-direction: column;
-        & > div {
+
+        &>div {
           margin-bottom: 30px;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             width: 100%;
-            img{
+
+            img {
               width: 100%;
             }
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             top: 0;
             right: 0;
             padding: 20px 15px 0;
             z-index: 2;
             width: 70%;
-            
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               font-size: 20px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               font-size: 14px;
               line-height: 1.6;
               margin-top: 5px;
@@ -2349,89 +2300,109 @@ const callTel = () => {
           }
         }
       }
-      & > div:nth-child(4) {
+
+      &>div:nth-child(4) {
         margin-top: 20px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 18px;
           line-height: 1.6;
           text-align: left;
         }
-        & > div:nth-child(2) {
-          & > div {
+
+        &>div:nth-child(2) {
+          &>div {
             padding-left: 0;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               margin-left: 10px;
               width: 80px;
               min-width: 80px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               margin-left: 10px;
               font-size: 14px;
               line-height: 1.6;
-              & > div:nth-child(1) {
+
+              &>div:nth-child(1) {
                 font-size: 16px;
               }
             }
           }
-          & > div:nth-child(1) {
-            & > div:nth-child(2) {
+
+          &>div:nth-child(1) {
+            &>div:nth-child(2) {
               padding: 30px 0;
             }
           }
-          & > div:nth-child(2) {
-            & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
+            &>div:nth-child(2) {
               padding: 30px 0;
             }
           }
-          & > div:nth-child(3) {
-            & > div:nth-child(2) {
+
+          &>div:nth-child(3) {
+            &>div:nth-child(2) {
               padding: 30px 0;
             }
           }
-          & > div:nth-child(4) {
-            & > div:nth-child(2) {
+
+          &>div:nth-child(4) {
+            &>div:nth-child(2) {
               padding: 30px 0;
             }
           }
         }
       }
     }
-    & > div:nth-child(4) {
+
+    &>div:nth-child(4) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 40px;
         padding: 0;
-        & > div {
+
+        &>div {
           margin-top: 40px;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             position: absolute;
             top: 0;
             left: 0;
-            &>img{
+
+            &>img {
               width: 32px;
               height: auto;
             }
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             position: relative;
             margin-left: 0;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               font-size: 18px;
               margin-left: 45px;
               line-height: 32px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               font-size: 14px;
               line-height: 1.6;
             }
           }
         }
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         width: max-content;
         font-size: 18px;
         padding: 0 30px;
@@ -2440,33 +2411,40 @@ const callTel = () => {
         margin-top: 50px;
       }
     }
-    & > div:nth-child(5) {
+
+    &>div:nth-child(5) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
         margin-top: 0;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 28px;
         white-space: initial;
-        & > div {
+
+        &>div {
           width: calc(50% - 20px);
           height: auto;
           margin: 0 10px 30px;
           border-radius: 10px;
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             margin-top: 10px;
             font-size: 12px;
             line-height: 1.6;
             padding: 0 15px 10px;
           }
         }
-        & > div:nth-child(n + 4) {
+
+        &>div:nth-child(n + 4) {
           margin-top: 0px;
         }
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         width: max-content;
         font-size: 18px;
         padding: 0 30px;
@@ -2475,90 +2453,112 @@ const callTel = () => {
         margin-top: 30px;
       }
     }
-    & > div:nth-child(6) {
+
+    &>div:nth-child(6) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
         margin-top: 0;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 20px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 14px;
           padding: 10px 15px;
           line-height: 2;
         }
-        & > div:nth-child(2) {
+
+        &>div:nth-child(2) {
           font-size: 22px;
           margin-top: 50px;
         }
-        & > div:nth-child(3) {
+
+        &>div:nth-child(3) {
           margin-top: 20px;
-          & > div {
+
+          &>div {
             margin-top: 5px;
             height: 55px;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               font-size: 14px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               font-size: 12px;
             }
-            & > div:nth-child(3) {
+
+            &>div:nth-child(3) {
               font-size: 12px;
             }
-            & > div:nth-child(4) {
+
+            &>div:nth-child(4) {
               font-size: 12px;
             }
-            & > div:nth-child(5) {
+
+            &>div:nth-child(5) {
               font-size: 12px;
             }
-            & > div {
+
+            &>div {
               line-height: 1.6;
             }
           }
         }
-        & > div:nth-child(4) {
+
+        &>div:nth-child(4) {
           font-size: 22px;
           margin-top: 50px;
         }
-        & > div:nth-child(5) {
+
+        &>div:nth-child(5) {
           margin-top: 25px;
           flex-direction: column;
-          &>div{
+
+          &>div {
             width: 100%;
             height: auto;
             border: none;
             display: flex;
             align-items: center;
             margin-bottom: 22px;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               position: relative;
               min-width: 40px;
               width: 40px;
               height: 40px;
               box-shadow: none;
               transform: none;
-              & > div:nth-child(1) {
+
+              &>div:nth-child(1) {
                 transform: scale(.6);
                 margin-top: 5px;
               }
-              & > div:nth-child(2) {
+
+              &>div:nth-child(2) {
                 font-size: 22px;
                 line-height: 1.5;
                 margin-top: -8px;
               }
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               padding: 5px 0 0 12px;
               font-size: 13px;
               line-height: 1.6;
             }
           }
-          & > div::after {
+
+          &>div::after {
             display: none;
           }
-          &::before{
+
+          &::before {
             content: '';
             width: 4px;
             height: 80%;
@@ -2568,48 +2568,59 @@ const callTel = () => {
             top: 20px;
             left: 18px;
           }
-          & > div:last-child {
+
+          &>div:last-child {
             border-right: none;
           }
         }
-        & > div:nth-child(6) {
+
+        &>div:nth-child(6) {
           margin-top: 50px;
           padding-right: 0;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             font-size: 22px;
             text-align: center;
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             margin-top: 40px;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               padding-right: 0;
               margin-top: 0;
               position: relative;
-              & > div:nth-child(2) {
+
+              &>div:nth-child(2) {
                 margin-top: 20px;
-              } 
-              &>div:nth-child(1){
-                & > div:nth-child(1) {
+              }
+
+              &>div:nth-child(1) {
+                &>div:nth-child(1) {
                   width: calc(100% - 120px);
                   margin-bottom: 10px;
-                  & > div:nth-child(1) {
+
+                  &>div:nth-child(1) {
                     width: 22px;
                     height: 22px;
                     font-size: 14px;
                     line-height: 16px;
                   }
-                  & > div:nth-child(2) {
+
+                  &>div:nth-child(2) {
                     font-size: 18px;
                   }
                 }
-                & > div:nth-child(2) {
+
+                &>div:nth-child(2) {
                   width: calc(100% - 120px);
                   font-size: 14px;
                   margin-bottom: 15px;
                   text-align: justify;
                   line-height: 1.6;
                 }
-                & > div:nth-child(3) {
+
+                &>div:nth-child(3) {
                   width: 100%;
                   font-size: 14px;
                   margin-bottom: 15px;
@@ -2617,27 +2628,32 @@ const callTel = () => {
                   line-height: 1.6;
                 }
               }
-              &>div:nth-child(2){
-                & > div:nth-child(1) {
+
+              &>div:nth-child(2) {
+                &>div:nth-child(1) {
                   margin-bottom: 10px;
-                  & > div:nth-child(1) {
+
+                  &>div:nth-child(1) {
                     width: 22px;
                     height: 22px;
                     font-size: 14px;
                     line-height: 16px;
                   }
-                  & > div:nth-child(2) {
+
+                  &>div:nth-child(2) {
                     font-size: 18px;
                   }
                 }
-                & > div:nth-child(2) {
+
+                &>div:nth-child(2) {
                   width: 100%;
                   font-size: 14px;
                   margin-bottom: 15px;
                   text-align: justify;
                   line-height: 1.6;
                 }
-                & > div:nth-child(3) {
+
+                &>div:nth-child(3) {
                   width: 100%;
                   font-size: 14px;
                   margin-bottom: 15px;
@@ -2645,14 +2661,18 @@ const callTel = () => {
                   line-height: 1.6;
                 }
               }
-              &>div{
-                & > div:nth-child(2) , > div:nth-child(3){
+
+              &>div {
+
+                &>div:nth-child(2),
+                >div:nth-child(3) {
                   line-height: 1.6;
                   letter-spacing: 0.06em;
                 }
               }
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               position: absolute;
               right: 0;
               top: 10px;
@@ -2662,155 +2682,189 @@ const callTel = () => {
           }
         }
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         width: max-content;
         font-size: 18px;
         padding: 0 30px;
         height: 50px;
         line-height: 20px;
         margin-top: 20px;
-        div{
+
+        div {
           margin-top: 7px;
         }
-        & > svg {
+
+        &>svg {
           margin-top: 0;
         }
       }
     }
-    & > div:nth-child(7) {
+
+    &>div:nth-child(7) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
         margin-top: 0;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         padding: 15px;
         font-size: 14px;
         line-height: 2;
         margin-top: 20px;
       }
-      & > div:nth-child(3) {
+
+      &>div:nth-child(3) {
         margin-top: 70px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           font-size: 24px;
           text-align: center;
         }
-        & > div:nth-child(2) {
-          & > div:nth-child(1) {
+
+        &>div:nth-child(2) {
+          &>div:nth-child(1) {
             margin-top: 35px;
             font-size: 22px;
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             font-size: 14px;
             line-height: 2;
             margin-top: 16px;
             text-align: justify;
           }
         }
-        & > div:nth-child(3),
-        & > div:nth-child(4) {
-          & > div:nth-child(1) {
+
+        &>div:nth-child(3),
+        &>div:nth-child(4) {
+          &>div:nth-child(1) {
             font-size: 20px;
             margin: 20px 0 18px;
             font-weight: bold;
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             font-size: 14px;
             line-height: 2;
           }
         }
-        & > div:nth-child(5) {
+
+        &>div:nth-child(5) {
           margin-top: 30px;
           flex-direction: column;
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             margin-left: 0;
-            & > div {
+
+            &>div {
               width: 100%;
               height: 45px;
-              & > div:nth-child(1) {
-                & > div:nth-child(2) {
+
+              &>div:nth-child(1) {
+                &>div:nth-child(2) {
                   font-size: 30px;
                   top: 8%;
                 }
-                svg{
+
+                svg {
                   width: 60px;
                   height: 45px;
-                  image{
+
+                  image {
                     width: 54px;
                     height: 45px;
                   }
                 }
               }
-              & > div:nth-child(2) {
+
+              &>div:nth-child(2) {
                 font-size: 20px;
                 margin-left: 10px;
               }
             }
           }
         }
-        & > div:nth-child(6) {
+
+        &>div:nth-child(6) {
           margin-top: 35px;
           padding: 20px 30px;
           transform: none;
           position: relative;
-          & > div {
+
+          &>div {
             transform: none;
             font-size: 14px;
           }
         }
-        & > div:nth-child(7) {
+
+        &>div:nth-child(7) {
           margin-top: 100px;
           flex-direction: column;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             position: relative;
-            & > div {
+
+            &>div {
               padding: 0;
               font-size: 14px;
               line-height: 2;
             }
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               font-size: 24px;
               margin-top: 0;
             }
 
-            & > div:nth-child(2),
-            & > div:nth-child(3) {
+            &>div:nth-child(2),
+            &>div:nth-child(3) {
               margin-bottom: 20px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               margin-top: 15px;
             }
           }
-          &>div:nth-child(2){
+
+          &>div:nth-child(2) {
             margin-top: 30px;
           }
         }
-        & > div:nth-child(8) {
+
+        &>div:nth-child(8) {
           width: 100%;
           margin-top: 40px;
           padding: 25px 30px;
           background: url(https://static.cmereye.com/imgs/2023/07/7de6d60faf433c9a.png);
           transform: scale(1);
           background-size: 100% 100%;
-          & > div {
+
+          &>div {
             margin-bottom: 10px;
-            & > div:nth-child(1) {
+
+            &>div:nth-child(1) {
               font-size: 16px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               font-size: 12px;
               line-height: 2;
             }
           }
         }
-        & > div:nth-child(9) {
+
+        &>div:nth-child(9) {
           margin-top: 50px;
-          & > div {
-            & > div:nth-child(1) {
+
+          &>div {
+            &>div:nth-child(1) {
               font-size: 22px;
             }
-            & > div:nth-child(2) {
+
+            &>div:nth-child(2) {
               font-size: 14px;
               line-height: 2;
               padding-left: 0;
@@ -2818,30 +2872,36 @@ const callTel = () => {
             }
           }
         }
-        & > div:nth-child(10) {
-          & > div:nth-child(1) {
+
+        &>div:nth-child(10) {
+          &>div:nth-child(1) {
             font-size: 22px;
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             width: 100%;
             padding: 0;
-            & > div {
+
+            &>div {
               width: 100%;
               display: flex;
               align-items: center;
               margin-top: 0px;
               margin-left: 0px;
               padding: 20px 0;
-              border-bottom:  1px dashed #DDD;
-              & > div:nth-child(1) {
+              border-bottom: 1px dashed #DDD;
+
+              &>div:nth-child(1) {
                 width: 100px;
                 min-width: 100px;
                 box-shadow: -4px 4px 0px 0px #eae9f1;
-                img{
+
+                img {
                   width: 100%;
                 }
               }
-              & > div:nth-child(2) {
+
+              &>div:nth-child(2) {
                 flex: 1;
                 width: auto;
                 font-size: 14px;
@@ -2850,75 +2910,93 @@ const callTel = () => {
                 margin-top: 0;
               }
             }
-            & > div:first-child {
+
+            &>div:first-child {
               margin-left: 0;
             }
-            & > div:nth-child(4) {
+
+            &>div:nth-child(4) {
               margin-left: 0;
             }
-            & > div:nth-child(5) {
+
+            &>div:nth-child(5) {
               margin-left: 0;
               margin-right: 0;
             }
-            &> div:nth-child(even){
+
+            &>div:nth-child(even) {
               flex-direction: row-reverse;
-              & > div:nth-child(2) {
+
+              &>div:nth-child(2) {
                 padding: 0 15px 0 0;
               }
             }
           }
         }
       }
-      & > div:nth-child(4) {
+
+      &>div:nth-child(4) {
         width: max-content;
         font-size: 15px;
         padding: 0 10px;
         height: 50px;
         line-height: 20px;
         margin-top: 20px;
-        div{
+
+        div {
           margin-top: 7px;
         }
-        & > svg {
+
+        &>svg {
           margin-top: 0;
         }
       }
     }
-    & > div:nth-child(8) {
+
+    &>div:nth-child(8) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(1) {
+
+      &>div:nth-child(1) {
         font-size: 24px;
       }
-      & > div:nth-child(2) {
+
+      &>div:nth-child(2) {
         margin-top: 35px;
         padding-left: 0;
-        & > div {
+
+        &>div {
           margin-top: 0 !important;
           margin-bottom: 50px;
-          & > div:nth-child(1) {
+
+          &>div:nth-child(1) {
             margin-bottom: 10px;
             margin-top: 0;
             font-size: 20px;
           }
-          & > div:nth-child(2) {
+
+          &>div:nth-child(2) {
             font-size: 14px;
           }
         }
       }
     }
   }
+
   .dow {
     margin-top: 100px;
     font-size: 16px;
-    & > div:nth-child(1) {
-      & > div {
+
+    &>div:nth-child(1) {
+      &>div {
         width: 80%;
         height: 90px;
-        & > div:nth-child(1) {
+
+        &>div:nth-child(1) {
           margin-left: 30%;
           margin-right: 30px;
-          &>img{
+
+          &>img {
             width: 55px;
             height: auto;
           }
@@ -2938,9 +3016,9 @@ const callTel = () => {
   .dow {
     margin-top: -30%;
 
-    & > div:nth-child(1) {
-      & > div {
-        & > div:nth-child(1) {
+    &>div:nth-child(1) {
+      &>div {
+        &>div:nth-child(1) {
           margin-left: 32.2vw;
         }
       }
