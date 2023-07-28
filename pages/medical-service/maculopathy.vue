@@ -984,9 +984,9 @@ const callTel = () => {
         & > div:nth-child(2) {
           position: absolute;
           left: 0;
-          padding-left: 40px;
+          padding-left: 30px;
           padding-top: 40px;
-          padding-right: 300px;
+          padding-right: 295px;
           letter-spacing: -1px;
         }
       }
