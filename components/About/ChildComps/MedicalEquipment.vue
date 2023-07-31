@@ -428,7 +428,7 @@ const setThumbsSwiper = (swiper: any) => {
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     /* or 167% */
 
