@@ -119,7 +119,7 @@ const callTel = () => {
                     fill="#2958A3" />
                 </svg>
               </div>
-              <div>3056 2026</div>
+              <div>3956 2025</div>
             </div>
             <div @click="goWhatsApp()">
               <div>
