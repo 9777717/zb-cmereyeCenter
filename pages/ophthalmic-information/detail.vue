@@ -33,7 +33,7 @@ onMounted(()=>{
   <div class="healthInfoDetail">
     <div class="goBack">
       <nuxt-link to="javascript:history.go(-1)">
-        上一页
+        上一頁
       </nuxt-link>
     </div>
     <div class="healthInfoDetail-title">
