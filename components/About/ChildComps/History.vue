@@ -250,8 +250,8 @@ const historyList = ref([
       }
 
       .info {
-        width: 360px;
-        max-width: 400px;
+        // width: 360px;
+        // max-width: 400px;
         white-space: pre-wrap !important;
       }
     }
