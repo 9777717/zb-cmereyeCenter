@@ -100,7 +100,7 @@ var list = [
     {
         id: "01",
         title: "恭喜！",
-        ct: "您的左眼没有散光症狀。",
+        ct: "您的左眼沒有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
@@ -110,7 +110,7 @@ var list = [
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您的右眼没有散光症狀。",
+        ct: "您的右眼沒有散光症狀。",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
@@ -131,7 +131,7 @@ var list = [
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您左眼没有近視或遠視症狀！",
+        ct: "您左眼沒有近視或遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
@@ -146,7 +146,7 @@ var list = [
     }, {
         id: "06",
         title: "恭喜！",
-        ct: "您右眼没有近視或遠視症狀！",
+        ct: "您右眼沒有近視或遠視症狀！",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "07",
@@ -157,7 +157,7 @@ var list = [
   ],[  {
         id: "01",
         title: "恭喜！",
-        ct: "您的左眼没有黃斑病變症狀",
+        ct: "您的左眼沒有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
@@ -167,7 +167,7 @@ var list = [
     }, {
         id: "03",
         title: "恭喜！",
-        ct: "您的右眼没有黃斑病變症狀",
+        ct: "您的右眼沒有黃斑病變症狀",
         img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
