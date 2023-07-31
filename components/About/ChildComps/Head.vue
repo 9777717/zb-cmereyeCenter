@@ -2,10 +2,6 @@
 const anchorList = ref([
   
   {
-    anchorName: '企業願景',
-    anchorLink: '/about-us#corporate',
-  },
-  {
     anchorName: '中心簡介',
     anchorLink: '/about-us#centreIntro',
   },
@@ -13,7 +9,10 @@ const anchorList = ref([
     anchorName: 'pages.about_us.development_course',
     anchorLink: '/about-us#history',
   },
-  
+  {
+    anchorName: '企業願景',
+    anchorLink: '/about-us#corporate',
+  },
   {
     anchorName: '中心設備',
     anchorLink: '/about-us#medicalEquipment',

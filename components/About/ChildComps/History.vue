@@ -189,7 +189,7 @@ const historyList = ref([
 
 .history-title {
   position: absolute;
-  top: 30px;
+  top: 0;
   width: 100%;
   max-width: 960px;
   left: 50%;
