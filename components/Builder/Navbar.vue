@@ -50,6 +50,10 @@ const toggleOptions = (show?: boolean) => {
   }
 }
 const menuStyle = ref('style1')
+
+const toLink = () =>{
+  location.href = 'https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3309&sc_lang=zh-HK'
+}
 </script>
 
 <template>
@@ -60,13 +64,14 @@ const menuStyle = ref('style1')
           <NuxtLink tag="a" :to="{ name: 'index' }">
             <img
               v-if="router.name === 'index'"
-              src="https://static.cmereye.com/imgs/2023/04/d1d8aa8018398ad1.png"
+              src="https://static.cmereye.com/imgs/2023/07/fafec7fe0142ad3f.png"
             />
             <img
               v-else
-              src="https://static.cmereye.com/imgs/2023/04/4d019db1ea24013f.png"
+              src="https://static.cmereye.com/imgs/2023/07/662e515b654b923c.png"
             />
           </NuxtLink>
+          <span @click="toLink" class="barspan" :style="{color: (router.name === 'index'?'#2958A3':'#fff')}">03309.HK</span>
         </slot>
       </div>
       <!-- menu -->
@@ -78,6 +83,10 @@ const menuStyle = ref('style1')
 </template>
 
 <style lang="scss" scoped>
+.barspan{
+  font-size: 14px;
+  cursor: pointer;
+}
 .bar {
   width: 130px;
 

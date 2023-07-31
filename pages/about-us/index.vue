@@ -125,8 +125,17 @@ const CORPORATE_Lists = [
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  
+  animation: textbgAnim 10s linear infinite;
   color: rgba(138, 216, 221, 0.3);
+  width: max-content;
+}
+@keyframes textbgAnim {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
 }
 .CORPORATE_VISION{
   margin-top: 180px;

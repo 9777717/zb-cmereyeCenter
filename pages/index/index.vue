@@ -92,7 +92,7 @@ const callTel = () => {
             <div>NEWS</div>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/04/46ae5f25ec1a96fd.png" />
+            <img src="https://static.cmereye.com/imgs/2023/07/3db2af36cfc41534.png" />
           </div>
           <div>
             【2023 夢想 ·

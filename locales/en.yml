@@ -112,7 +112,7 @@ pages:
     clinic_information: 诊所资料
     appointmentForm: 电子预约表格
 banners:
-  welcome: 你好, 欢迎来到 %{app_name}!
+  welcome: 您好, 欢迎来到 %{app_name}!
 others:
   learn_more: 了解更多
   copy: 复制

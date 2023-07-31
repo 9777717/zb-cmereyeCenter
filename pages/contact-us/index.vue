@@ -147,7 +147,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
+          'https://static.cmereye.com/imgs/2023/07/44e44190b497309f.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressName',
         addressDetail:
@@ -188,7 +188,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+          'https://static.cmereye.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressName',
         addressDetail:
@@ -201,7 +201,7 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours2',
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
         ],
-        googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
+        googleMaps: 'https://goo.gl/maps/Nfh4nebSBo5zTHycA',
       },
       {
         addressImg:

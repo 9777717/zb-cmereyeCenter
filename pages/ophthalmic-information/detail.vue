@@ -79,6 +79,7 @@ onMounted(()=>{
   }
   &-content{
     margin-top: 50px;
+    max-width: 700px;
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {}

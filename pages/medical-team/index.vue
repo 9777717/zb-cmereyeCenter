@@ -63,7 +63,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_3.doctor_3_education.doctor_3_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor03.jpg',
+      'https://static.cmereye.com/imgs/2023/07/41e0d233e7c04b33.png',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_4.doctor_4_name',
@@ -90,7 +90,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_5.doctor_5_education.doctor_5_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor05.jpg',
+      'https://static.cmereye.com/imgs/2023/07/b875a2f3ff87282d.png',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_6.doctor_6_name',
@@ -131,7 +131,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor08.jpg',
+      'https://static.cmereye.com/imgs/2023/07/124ecdd1faf1791f.png',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_9.doctor_9_name',

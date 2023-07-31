@@ -50,6 +50,7 @@ const getMainContent = async () => {
       text: item.ext_context
     }
   })
+  toTop()
   loading.close()
 }
 
@@ -65,6 +66,11 @@ const addNum = () => {
     actPageNum.value ++
     getMainContent()
   }
+}
+
+const toTop = () => {
+  let topHeight:number = document.getElementById('doctorClassConetnt')?.offsetTop || 0
+  document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100
 }
 
 onMounted(()=>{
@@ -144,7 +150,7 @@ onMounted(()=>{
       </svg>
     </div>
     <!-- 内容 -->
-    <div>
+    <div id="doctorClassConetnt">
       <div v-for="(item, index) in mainContent" :key="index">
         <div>
           <div>{{ $t(item.title) }}</div>

@@ -42,6 +42,11 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+const toVision = () =>{
+  window.open(
+    'https://api.whatsapp.com/send?phone=85269180511&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'
+  )
+}
 // 拨打电话
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
@@ -85,7 +90,7 @@ const goVision = () => {
             <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" alt="" srcset="" />
           </div>
         </div>
-        <div @click="goWhatsApp">
+        <div @click="toVision">
           <div>立即預約</div>
           <div>全面眼睛檢查</div>
         </div>
@@ -102,7 +107,7 @@ const goVision = () => {
               <div class="medicalOptometry_text_p_span">
                 這個階段的兒童大概能夠理解及配合許多眼科檢查，能夠在註冊視光師和眼科專科醫生指導下完成檢查。兒童能在這段時期透過定期檢查，及早發現和治療弱視、斜視，以及控制近視等。
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+              <div class="medicalOptometry_btn_bg" @click="toVision">
                 <div>3 - 6歲兒童眼睛檢查</div>
                 <div>立即預約</div>
               </div>
@@ -117,7 +122,7 @@ const goVision = () => {
               <div class="medicalOptometry_text_p_span">
                 青少年時期的眼睛及身體發育較快，若用眼習慣不良，近視、散光等度數也增加得較快。定期檢查可觀察眼睛屈光度數的變化，及時控制近視等度數。
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
+              <div class="medicalOptometry_btn_bg" @click="toVision">
                 <div>6-18歲兒童眼睛檢查</div>
                 <div>立即預約</div>
               </div>

@@ -340,9 +340,6 @@ const goWhatsApp = () => {
               <img src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png" alt="" />
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
-            <span>眼睛外形影響視野及外觀？</span><span>即WhatsApp預約治療</span>
-          </div>
           <div>
             <div class="img-size">
               <img src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png" alt="" />
@@ -365,6 +362,9 @@ const goWhatsApp = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+            <span>眼睛外形影響視野及外觀？</span><span>即WhatsApp預約治療</span>
           </div>
         </div>
         <div>
@@ -601,7 +601,7 @@ const goWhatsApp = () => {
                 </div>
               </div>
             </div>
-            <div class="eyeOrthopaedicDisease_title_btn">
+            <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
               <span>眼腫瘤延誤治療 後果嚴重</span><span>即致電預約醫生問清問楚</span>
             </div>
           </div>
@@ -783,6 +783,9 @@ const goWhatsApp = () => {
               </div>
               <div>同時避免義眼片旋轉。</div>
             </div>
+            <div class="usage_1_Image">
+              <img src="https://static.cmereye.com/imgs/2023/07/152ce2771477c508.png" alt="">
+            </div>
           </div>
         </div>
         <div>
@@ -806,15 +809,22 @@ const goWhatsApp = () => {
                 擠壓吸盤內空氣然後放鬆，使吸盤吸附牢固，可重複動
                 作直到吸附良好。
               </div>
+              
             </div>
+            <div class="usage_2_Image">
+                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" alt="">
+              </div>
           </div>
         </div>
         <div>
           <div>
-            <span>注意：</span>取下義眼片需放在乾淨的軟紙巾上，避免接觸。
+            注意：
           </div>
           <div>
-            <span>注意：</span>安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制
+            1. 取下義眼片需放在乾淨的軟紙巾上，避免接觸。
+          </div>
+          <div>
+            2. 安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制
             <span
               class="usage-box-text">技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。</span>
           </div>
@@ -829,7 +839,7 @@ const goWhatsApp = () => {
             <div>
               <div>清洗頻率：</div>
               <div class="eye_attention">
-                醫師會根據患者的眼睛及分泌物情況做評估，請遵照醫囑定期清洗；
+                醫生會根據患者的眼睛及分泌物情況做評估，請遵照醫囑定期清洗；
               </div>
             </div>
             <div>
@@ -959,7 +969,7 @@ const goWhatsApp = () => {
       }
 
       &>div:nth-child(3),
-      &>div:nth-child(6) {
+      &>div:nth-child(5) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1993,7 +2003,7 @@ const goWhatsApp = () => {
     &>div:nth-child(2) {
       margin-top: 60px;
       margin-bottom: 125px;
-
+      position: relative;
       &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 32px;
@@ -2093,12 +2103,17 @@ const goWhatsApp = () => {
             left: -72px;
           }
         }
+      }
+      .usage_1_Image{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
       }
     }
 
     &>div:nth-child(3) {
       margin-bottom: 100px;
-
+      position: relative;
       &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 32px;
@@ -2198,6 +2213,11 @@ const goWhatsApp = () => {
             left: -72px;
           }
         }
+      }
+      .usage_2_Image{
+        position: absolute;
+        bottom: 10px;
+        left: 0;
       }
     }
 
@@ -2223,7 +2243,7 @@ const goWhatsApp = () => {
       }
 
       &>div:nth-child(2) {
-        margin-top: 80px;
+        // margin-top: 80px;
       }
     }
 
@@ -2639,7 +2659,7 @@ const goWhatsApp = () => {
         }
 
         &>div:nth-child(3),
-        &>div:nth-child(6) {
+        &>div:nth-child(5) {
           flex-direction: column;
           margin-top: 42px;
           position: relative;
@@ -3692,7 +3712,6 @@ const goWhatsApp = () => {
         width: 100%;
         margin-top: 60px;
         margin-bottom: 95px;
-
         &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
           font-size: 20px;
@@ -3711,7 +3730,7 @@ const goWhatsApp = () => {
           min-height: auto;
           margin-left: 30px;
           flex-direction: column;
-
+          position: relative;
           &>div {
             display: flex;
             justify-content: space-between;
@@ -3848,6 +3867,10 @@ const goWhatsApp = () => {
               left: -30px;
             }
           }
+          
+        }
+        .usage_1_Image{
+          display: none !important;
         }
       }
 
@@ -3998,6 +4021,9 @@ const goWhatsApp = () => {
               left: -30px;
             }
           }
+        }
+        .usage_2_Image{
+          display: none !important;
         }
       }
 

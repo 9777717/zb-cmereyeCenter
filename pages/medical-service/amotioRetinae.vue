@@ -166,7 +166,7 @@ const preventList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/13de992a2503809a.png',
     title: '定期進行眼科檢查',
-    text: '如果你有近視（尤其是高度近視，600度或以上），眼科檢查是很重要。因為近視使你更容易發生視網膜脫離。而且眼睛檢查中應包含散瞳檢查，以發現有沒有視網膜撕裂先兆。',
+    text: '如果您有近視（尤其是高度近視，600度或以上），眼科檢查是很重要。因為近視使您更容易發生視網膜脫離。而且眼睛檢查中應包含散瞳檢查，以發現有沒有視網膜撕裂先兆。',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/273a3786c416e9c5.png',
@@ -176,7 +176,7 @@ const preventList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2af412dd5ff25eb6.png',
     title: '有需要時及時治療',
-    text: '如果你發現視網膜脫落症狀（突然看到很多飛蚊症和閃光），請立即諮詢您的眼科醫生進行全面的眼科檢查',
+    text: '如果您發現視網膜脫落症狀（突然看到很多飛蚊症和閃光），請立即諮詢您的眼科醫生進行全面的眼科檢查',
   },
 ]
 </script>
@@ -208,7 +208,7 @@ const preventList1 = [
         <div>
           <img src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png" />
         </div>
-        <div class="amotioRetinae_title_btn" @click="goWhatsApp">
+        <div class="amotioRetinae_title_btn" @click="callTel">
           <span>懷疑視網膜脫落？</span><span>立即致電求醫！</span>
         </div>
       </div>
@@ -305,7 +305,8 @@ const preventList1 = [
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。<span>一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。</span>
+          視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。
+          <span>一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。</span>
         </div>
       </div>
       <div id="faq">
@@ -692,9 +693,11 @@ const preventList1 = [
       padding-right: 2px;
       background-size: 100% 100%;
       line-height: 1.8;
+      text-align: center;
       &>span {
         color: #e8a89b;
-        text-indent: 54px;
+        // text-indent: 54px;
+        display: block;
       }
     }
   }
