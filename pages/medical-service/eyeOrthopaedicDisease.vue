@@ -15,12 +15,12 @@ useHead(() => ({
     {
       name: 'description',
       content:
-        '希瑪眼科中心提供眼整形及眼腫瘤檢查及治療。對於眼瞼、眼眶、淚腺等患有先天性和後天性缺陷的患者，如眼瞼移位、眼瞼缺陷、甲亢突眼、淚眼、眼眶再造及眼眶收縮等，提供整形外科手術和植入義眼術，以修復他們眼部及面部，回復自然外觀。此外對於眼部腫瘤患者，如眼瞼癌變、眼睛表面癌變及眼内癌變等提供專業治療方案包括激光治療、冷凍治療、放射治療及化學治療。立即查詢治療眼矯形及眼腫瘤詳細及相關費用。',
+        '希瑪眼科中心提供眼整形及眼腫瘤檢查及治療。對於眼瞼、眼眶、淚腺等患有先天性和後天性缺陷的患者，如眼瞼移位、眼瞼缺陷、甲亢突眼、淚眼、眼眶再造及眼眶收縮等，提供整形外科手術和植入義眼術，以修復他們眼部及面部，回復自然外觀。此外對於眼部腫瘤患者，如眼瞼癌變、眼睛表面癌變及眼內癌變等提供專業治療方案包括激光治療、冷凍治療、放射治療及化學治療。立即查詢治療眼矯形及眼腫瘤詳細及相關費用。',
     },
     {
       name: 'keywords',
       content:
-        '眼整形 眼腫瘤 眼瞼移位 眼瞼缺陷 甲亢突眼  突眼 眼突 眼眶再造 眼眶收縮 眼整形手術 義眼術 眼瞼癌變 眼内癌變  眼皮手術 眼皮下垂手術 眼窩凹陷 淚管閉塞 眼凸手術 眼皮下垂改善 眼凸 甲亢眼疾 義眼 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 眼疾 眼睛疾病  眼睛檢查 林順潮 希瑪醫療集團 希瑪醫療',
+        '眼整形 眼腫瘤 眼瞼移位 眼瞼缺陷 甲亢突眼  突眼 眼突 眼眶再造 眼眶收縮 眼整形手術 義眼術 眼瞼癌變 眼內癌變  眼皮手術 眼皮下垂手術 眼窩凹陷 淚管閉塞 眼凸手術 眼皮下垂改善 眼凸 甲亢眼疾 義眼 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 眼疾 眼睛疾病  眼睛檢查 林順潮 希瑪醫療集團 希瑪醫療',
     },
   ],
 }))
@@ -225,7 +225,7 @@ const serviceNavigation = [
     anchorLink: '/medical-service/eyeOrthopaedicDisease#ocular_surface',
   },
   {
-    anchorName: '眼内癌變',
+    anchorName: '眼內癌變',
     anchorLink: '/medical-service/eyeOrthopaedicDisease#eye_in_canceration',
   },
   {
@@ -642,7 +642,7 @@ const goWhatsApp = () => {
               </div>
             </div>
             <div>
-              <div id="eye_in_canceration">眼内癌變</div>
+              <div id="eye_in_canceration">眼內癌變</div>
               <div>
                 <div>黑色素細胞瘤<span>VS</span> 黑色素瘤</div>
                 <div class="eyeOrthopaedicDisease_text_p_span">
@@ -2562,7 +2562,7 @@ const goWhatsApp = () => {
     margin-top: 0;
   }
 
-  // 内容
+  // 內容
   .eyeOrthopaedicDisease_nav {
     max-width: 100%;
     width: 100%;

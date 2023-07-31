@@ -48,17 +48,17 @@ var list = [
     {
       id: "01",
       title: "恭喜！",
-      ct: "您患有白内障的可能性很低。",
+      ct: "您患有白內障的可能性很低。",
       img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
-      ct: "您患有白内障的可能性中等。",
+      ct: "您患有白內障的可能性中等。",
       img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
-      ct: "您患有白内障的可能性很高。",
+      ct: "您患有白內障的可能性很高。",
       img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
@@ -290,7 +290,7 @@ if(testId == '07'){
     else{datalist.value = list[1][2];}
 }
 if(testId == '08'){
-    resultTitle.value = '白内障測試';
+    resultTitle.value = '白內障測試';
     if(testSum <= 1 ){datalist.value = list[2][0];}
     else if(testSum >= 2 && testSum <= 3){datalist.value = list[2][1];}
     else{datalist.value = list[2][2];}

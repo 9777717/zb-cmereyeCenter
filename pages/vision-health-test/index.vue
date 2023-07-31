@@ -92,7 +92,7 @@ const list = [
   }, 
   {
     id: "08",
-    title: "白内障測試",
+    title: "白內障測試",
     ct: "",
     imageUrl: []
   }, 
