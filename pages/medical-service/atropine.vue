@@ -36,13 +36,13 @@ const serviceNavigation = [
   },
   {
     anchorName:
-      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName5',
-    anchorLink: '/medical-service/atropine#matters',
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName6',
+    anchorLink: '/medical-service/atropine#method',
   },
   {
     anchorName:
-      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName6',
-    anchorLink: '/medical-service/atropine#method',
+      'pages.medical_service.atropine_serviceNavigation.serviceNavigation_anchorName5',
+    anchorLink: '/medical-service/atropine#matters',
   },
 ]
 // 跳转Whatsapp
