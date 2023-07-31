@@ -19,11 +19,12 @@ export const availableLocales: ILocales = {
   //   iso: 'zh',
   //   flag: 'cn',
   // },
-  en: {
-    name: 'ENG',
-    iso: 'en',
-    flag: 'en',
-  },
+  // Eng 未开发好不展示
+  // en: {
+  //   name: 'ENG',
+  //   iso: 'en',
+  //   flag: 'en',
+  // },
 }
 
 export function LanguageManager() {
