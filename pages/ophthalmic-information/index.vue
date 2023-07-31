@@ -437,7 +437,7 @@ onMounted(()=>{
         margin-right: 64px;
         margin-top: 39px;
         img{
-          max-width: 312px;
+          max-width: 410px;
         }
       }
     }
