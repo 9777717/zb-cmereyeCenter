@@ -1096,7 +1096,7 @@ pages:
         addressList3_regionName: 新界
         addressList3_addressDetailList:
           addressDetailList1_addressName: 沙田
-          addressDetailList1_addressDetail: 沙田正街11-17號偉華中心2樓1C—1F號鋪
+          addressDetailList1_addressDetail: 沙田正街11-17號偉華中心2樓5A及1C—1F號鋪
           addressDetailList1_subwayExit: 沙田站A3出口
           addressDetailList1_subwayExit2: 可享限時泊車優惠，詳情請向診所職員查詢
           addressDetailList1_clinicHours:
@@ -1104,21 +1104,21 @@ pages:
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList2_addressName: 元朗（恆香老餅家對面）
-          addressDetailList2_addressDetail: 元朗青山公路45及47號誠信商業大廈地鋪
+          addressDetailList2_addressDetail: 青山公路45及47號誠信商業大廈地鋪
           addressDetailList2_subwayExit: ""
           addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList3_addressName: 荃灣
-          addressDetailList3_addressDetail: 荃灣沙咀道255號思源樓地下
+          addressDetailList3_addressDetail: 沙咀道255號思源樓地下
           addressDetailList3_subwayExit: ""
           addressDetailList3_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList4_addressName: 將軍澳
-          addressDetailList4_addressDetail: 將軍澳運亨路1號新都城中心一期地下55-56號鋪（寶琳站B2出口）
+          addressDetailList4_addressDetail: 運亨路1號新都城中心一期地下55-56號鋪（寶琳站B2出口）
           addressDetailList4_subwayExit: ""
           addressDetailList4_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
