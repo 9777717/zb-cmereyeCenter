@@ -237,11 +237,12 @@ let drawer = ref(false)
     margin: 0 auto;
     &-t{
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0 17vw;
       .t-in{
         &-t{
           color: #2958A3;
-          font-size: 25.84px;
+          font-size: 1.085416vw;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -265,7 +266,7 @@ let drawer = ref(false)
               }
               span{
                 color: #2958A3;
-                font-size: 20.672px;
+                font-size: 1.0766666vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -275,7 +276,7 @@ let drawer = ref(false)
               }
             }
             &.twoD{
-              margin-left: 120px;
+              margin-left: 6.25vw;
             }
           }
         }
