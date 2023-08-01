@@ -1656,6 +1656,7 @@ const callTel = () => {
       background-blend-mode: normal, normal;
       position: relative;
       overflow: hidden;
+      text-shadow: 0 2px 5px #2ca3de;
       &::before {
         content: "";
         position: absolute;
@@ -1663,7 +1664,7 @@ const callTel = () => {
         left: -100%;
         bottom: -100%;
         right: -100%;
-        background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
         background-size: 100% 100%;
         animation: bgposition 5s infinite linear alternate;
         z-index: -1;
@@ -1963,8 +1964,8 @@ const callTel = () => {
     &>div:nth-child(3) {
       width: 556px;
       height: 86px;
-      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-      //   linear-gradient(90deg, #edd12e 0%, #fe7e76 100%);
+      background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+        linear-gradient(90deg, #edd12e 0%, #fe7e76 100%);
       background-blend-mode: normal, normal;
       margin: auto;
 
@@ -1982,17 +1983,42 @@ const callTel = () => {
       margin-top: 105px;
       cursor: pointer;
       position: relative;
-      overflow: hidden;
+      // overflow: hidden;
+      text-shadow: 0 2px 5px #2ca3de;
       &::before {
         content: "";
         position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        // top: -100%;
+        // left: -100%;
+        // bottom: -100%;
+        // right: -100%;
+        // background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        width: 150%;
+        height: 150%;
+        background: radial-gradient(#65c4da,#fff,#65c4da);
+        // background-size: 100% 100%;
+        animation: btnAnim 3s infinite linear;
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        // top: -100%;
+        // left: -100%;
+        // bottom: -100%;
+        // right: -100%;
+        // background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        // width: 150%;
+        // height: 150%;
+        background: radial-gradient(#65c4da,#fff,#65c4da);
+        // background-size: 100% 100%;
+        animation: btnAnim 3s .3s infinite linear;
         z-index: -1;
       }
     }
@@ -2141,6 +2167,26 @@ const callTel = () => {
 
   &>div:nth-child(2) {
     margin: 0;
+  }
+}
+@keyframes btnAnim {
+  0%{
+    width: 100%;
+    height: 100%;
+    border-radius: 85px;
+    opacity: 0;
+  }
+  50%{
+    width: 100%;
+    height: 100%;
+    border-radius: 85px;
+    opacity: 1;
+  }
+  100%{
+    width: 150%;
+    height: 200%;
+    opacity: 0;
+    border-radius: 143px;
   }
 }
 @keyframes bgposition {
