@@ -3,47 +3,102 @@ import { Autoplay } from 'swiper'
 const awardsList = [
   {
     imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/2952335675aaf8b0.jpg',
+    year: 'pages.about_us.awards.awards_year_13',
+    des: 'pages.about_us.awards.awards_des_13',
+    link: 'https://hkct-awards.com/articles/59'
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    year: 'pages.about_us.awards.awards_year_12',
+    des: 'pages.about_us.awards.awards_des_12',
+    link: ''
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
+    year: 'pages.about_us.awards.awards_year_11',
+    des: 'pages.about_us.awards.awards_des_11',
+    link: 'https://features.hkej.com/template/features/html/2022_sc/winners.html'
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png',
+    year: 'pages.about_us.awards.awards_year_10',
+    des: 'pages.about_us.awards.awards_des_10',
+    link: ''
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png',
+    year: 'pages.about_us.awards.awards_year_9',
+    des: 'pages.about_us.awards.awards_des_9',
+    link: ''
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png',
+    year: 'pages.about_us.awards.awards_year_8',
+    des: 'pages.about_us.awards.awards_des_8',
+    link: ''
+  },
+  {
+    imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
     year: 'pages.about_us.awards.awards_year_1',
     des: 'pages.about_us.awards.awards_des_1',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
     year: 'pages.about_us.awards.awards_year_2',
     des: 'pages.about_us.awards.awards_des_2',
+    link: 'https://www.caringcompany.org.hk/b5_index.php'
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
     year: 'pages.about_us.awards.awards_year_3',
     des: 'pages.about_us.awards.awards_des_3',
+    link: 'https://www.youtube.com/watch?v=7k0FhEoCXus'
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards4.jpg',
     year: 'pages.about_us.awards.awards_year_4',
     des: 'pages.about_us.awards.awards_des_4',
+    link: ''
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
     year: 'pages.about_us.awards.awards_year_5',
     des: 'pages.about_us.awards.awards_des_5',
+    link: 'https://corphub.asia/awards/?route=events&id=1'
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
     year: 'pages.about_us.awards.awards_year_6',
     des: 'pages.about_us.awards.awards_des_6',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
   },
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards7.jpg',
     year: 'pages.about_us.awards.awards_year_7',
     des: 'pages.about_us.awards.awards_des_7',
-  },
+    link: 'https://hkhealthawards.com/'
+  }
 ]
+
+const handleSlide = (_data:any) =>{
+  if(_data.link){
+    location.href = _data.link
+  }
+}
 
 let windowWidth = ref(1920)
 
@@ -57,7 +112,7 @@ onMounted(()=>{
 })
 </script>
 <template>
-  <div id="awards" class="">
+  <div id="awards">
     <div class="awards-title">
       <AboutTitle
         :zh-title="$t('pages.about_us.awards.awards')"
@@ -80,7 +135,7 @@ onMounted(()=>{
           :key="index"
           class="ccSwiper-slide"
         >
-          <div class="brand">
+          <div class="brand" @click="handleSlide(item)">
             <div><img :src="item.imgUrl" :alt="item.des" /></div>
             <div>
               <div>{{ $t(item.year) }}</div>
@@ -118,7 +173,7 @@ onMounted(()=>{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    cursor: pointer;
     width: 100%;
     & > div:nth-child(1) {
       // width: 224px;
@@ -126,6 +181,10 @@ onMounted(()=>{
       display: flex;
       justify-content: center;
       align-items: center;
+      img{
+        width: 100%;
+        max-height: 100%;
+      }
     }
 
     & > div:nth-child(2) {

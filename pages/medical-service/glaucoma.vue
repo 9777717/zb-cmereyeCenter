@@ -1183,7 +1183,7 @@ const callTel = () => {
 
   // 什麼是青光眼？
   & > div:nth-child(2) {
-    padding-top: 360px;
+    padding-top: 200px;
 
     & > div:nth-child(1) {
       margin: auto;
@@ -2587,7 +2587,7 @@ const callTel = () => {
 
   // 公共使用
   & > div {
-    margin-top: 180px;
+    padding-top: 180px;
   }
 
   & > div:first-child {
@@ -2698,6 +2698,9 @@ const callTel = () => {
   .glaucoma {
     transform: scale(1);
     margin-top: 0;
+    & > div {
+      padding-top: 0px;
+    }
     & > div:nth-child(2) {
       padding-top: 0;
       width: calc(100% - 60px);

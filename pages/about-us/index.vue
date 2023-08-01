@@ -114,6 +114,7 @@ const CORPORATE_Lists = [
 <style lang="scss" scoped>
 .about {
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .textbg {

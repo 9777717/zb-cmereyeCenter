@@ -639,13 +639,10 @@ const tozoosnet =()=>{
 
     & > div:nth-child(2) {
       margin-top: 100px;
-      padding: 0 162px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
-        max-width: 300px;
+        width: 20%;
         font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
@@ -667,7 +664,7 @@ const tozoosnet =()=>{
       }
 
       & > div:nth-child(n + 3) {
-        margin-top: 110px;
+        // margin-top: 110px;
       }
     }
   }
@@ -1240,6 +1237,7 @@ const tozoosnet =()=>{
       & > div:nth-child(2) {
         padding: 0;
         margin-top: 45px;
+        flex-wrap: wrap;
         &>div{
           width: calc(50% - 20px);
           margin-bottom: 50px;
