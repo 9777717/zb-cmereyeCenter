@@ -3,6 +3,31 @@
 definePageMeta({
   layout: 'page',
 })
+
+let fontSizeNum = ref(16)
+const setFontSize = (type:string) => {
+  const tags = ['h1','h2','h3','h4','h5','h6','p','span','div'];
+  tags.forEach(item=>{
+    const elements:any = document.getElementsByTagName(item);
+    for(let i = 0; i < elements.length; i++){
+      let oldFontSize = getComputedStyle(elements[i]).fontSize
+      let newFontSize = 0
+      if(type === 'add')
+        newFontSize = Number(oldFontSize.slice(0,oldFontSize.length - 2)) + 2
+      else
+        newFontSize = Number(oldFontSize.slice(0,oldFontSize.length - 2)) - 2
+      elements[i].style.fontSize = `${newFontSize}px`
+    }
+  })
+}
+
+const addFont = () =>{
+  setFontSize('add')
+}
+const ellFont = () =>{
+  setFontSize('obb')
+}
+
 </script>
 
 <template>
@@ -27,8 +52,8 @@ definePageMeta({
     </div>
     <div>{{ $t('pages.index.footer.fonts') }}</div>
     <div>
-      <div></div>
-      <div></div>
+      <div @click="addFont">+</div>
+      <div @click="ellFont">-</div>
     </div>
   </div>
 </template>
@@ -65,32 +90,16 @@ definePageMeta({
     & > div {
       width: 11px;
       height: 11px;
+      line-height: 11px;
       border-radius: 3px;
       background: #fff;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '+';
-      font-family: 'Noto Sans HK';
-      font-style: normal;
-      font-weight: 500;
+      cursor: pointer;
       font-size: 9px;
+      // font-size: var(--allTextFootSize);
       color: #2958a3;
-      position: absolute;
-      top: -5px;
-      left: 1px;
-    }
-
-    & > div:nth-child(2)::after {
-      content: '-';
-      font-family: 'Noto Sans HK';
-      font-style: normal;
       font-weight: 500;
-      font-size: 9px;
-      color: #2958a3;
-      position: absolute;
-      top: -5px;
-      left: 25px;
+      font-style: normal;
+      text-align: center;
     }
   }
 }
