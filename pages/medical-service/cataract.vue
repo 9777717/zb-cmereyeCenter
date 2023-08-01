@@ -1037,14 +1037,28 @@ const callTel = () => {
           font-size: 36px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 2.2;
+          line-height: 85px;
           letter-spacing: 0px;
           color: #ffffff;
-          background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-            linear-gradient(90deg, #accbee 0%, #e7f0fd 100%);
+          // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+          //   linear-gradient(90deg, #accbee 0%, #e7f0fd 100%);
           background-blend-mode: normal, normal;
           border-radius: 85px;
           text-align: center;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            bottom: -100%;
+            right: -100%;
+            background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+            background-size: 100% 100%;
+            animation: bgposition 5s infinite linear alternate;
+            z-index: -1;
+          }
         }
       }
 
@@ -1096,17 +1110,31 @@ const callTel = () => {
       margin-top: 103px;
       width: 695px;
       height: 85px;
-      background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-        linear-gradient(90deg, #edd32c 0%, #fe7c76 100%);
+      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+      //   linear-gradient(90deg, #edd32c 0%, #fe7c76 100%);
       background-blend-mode: normal, normal;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
       font-weight: normal;
       font-stretch: normal;
-      line-height: 2.2;
+      line-height: 85px;
       letter-spacing: 0px;
       color: #ffffff;
       border-radius: 85px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
+      }
     }
   }
 
@@ -1281,7 +1309,7 @@ const callTel = () => {
         font-size: 30px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 2.2;
+        line-height: 75px;
         letter-spacing: 0px;
         color: #fff;
 
@@ -1373,19 +1401,33 @@ const callTel = () => {
         margin-top: 103px;
         width: 556px;
         height: 86px;
-        background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-          linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
+        // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+        //   linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
         background-blend-mode: normal, normal;
 
         font-family: 'NotoSansHK-Bold';
         font-size: 36px;
         font-weight: normal;
         font-stretch: normal;
-        line-height: 2.2;
+        line-height: 86px;
         letter-spacing: 0px;
         color: #ffffff;
         border-radius: 86px;
         text-align: center;
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          bottom: -100%;
+          right: -100%;
+          background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+          background-size: 100% 100%;
+          animation: bgposition 5s infinite linear alternate;
+          z-index: -1;
+        }
       }
     }
   }
@@ -1603,15 +1645,29 @@ const callTel = () => {
       border-radius: 86px;
       font-weight: normal;
       font-stretch: normal;
-      line-height: 2.2;
+      line-height: 86px;
       letter-spacing: 0px;
       color: #f8fcff;
 
       width: 556px;
       height: 86px;
-      background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-        linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
+      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+      //   linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
       background-blend-mode: normal, normal;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
+      }
     }
   }
 
@@ -1907,8 +1963,8 @@ const callTel = () => {
     &>div:nth-child(3) {
       width: 556px;
       height: 86px;
-      background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-        linear-gradient(90deg, #edd12e 0%, #fe7e76 100%);
+      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
+      //   linear-gradient(90deg, #edd12e 0%, #fe7e76 100%);
       background-blend-mode: normal, normal;
       margin: auto;
 
@@ -1925,6 +1981,20 @@ const callTel = () => {
       border-radius: 85px;
       margin-top: 105px;
       cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #ffc700 0%, #e91e1e 50%, #6f27b0 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
+      }
     }
   }
 
@@ -2073,7 +2143,23 @@ const callTel = () => {
     margin: 0;
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .dow {
   margin-top: -350px;
   margin-bottom: 150px;
