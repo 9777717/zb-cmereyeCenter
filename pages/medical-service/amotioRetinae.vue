@@ -757,8 +757,8 @@ const preventList1 = [
   height: 140px;
   border-radius: 20px;
   background-blend-mode: normal, normal;
-  background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  // background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
+  //   linear-gradient(#eda2a6, #eda2a6);
 
   font-family: 'Noto Sans HK';
   font-size: 32px;
@@ -767,6 +767,21 @@ const preventList1 = [
   line-height: 50px;
   letter-spacing: 0px;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #fbddd8;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg,  #e2789d 0%, #fef7cf 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
 
 // 头部样式
@@ -893,7 +908,23 @@ const preventList1 = [
     }
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 @media screen and (max-width: 768px) {
   .amotioRetinae_head {
     &>div:nth-child(1) {

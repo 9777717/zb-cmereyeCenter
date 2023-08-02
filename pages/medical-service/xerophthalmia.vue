@@ -809,8 +809,8 @@ const callTel = () => {
       margin: auto;
       cursor: pointer;
       margin-top: 118px;
-      background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-        linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
+      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
+      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -828,6 +828,21 @@ const callTel = () => {
       width: fit-content;
       padding: 25px 160px;
       line-height: 50px;
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 2px 5px #ccc9f0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #2352a3 0%, #cb97c2 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
+      }
     }
   }
 
@@ -1092,8 +1107,8 @@ const callTel = () => {
       cursor: pointer;
       margin: auto;
       margin-top: 148px;
-      background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-        linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
+      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
+      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
       display: flex;
@@ -1109,6 +1124,21 @@ const callTel = () => {
       width: fit-content;
       padding: 25px 105px;
       line-height: 50px;
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 2px 5px #ccc9f0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #2352a3 0%, #cb97c2 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
+      }
     }
   }
 
@@ -1169,8 +1199,8 @@ const callTel = () => {
       align-items: center;
       justify-content: center;
 
-      background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-        linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
+      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
+      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -1188,6 +1218,21 @@ const callTel = () => {
       &>svg {
         margin-top: 5px;
         margin-left: 20px;
+      }
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 2px 5px #ccc9f0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #2352a3 0%, #cb97c2 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
       }
     }
   }
@@ -1464,8 +1509,8 @@ const callTel = () => {
       cursor: pointer;
       margin: auto;
       margin-top: 100px;
-      background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-        linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
+      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
+      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -1486,6 +1531,21 @@ const callTel = () => {
       &>svg {
         margin-left: 22px;
         margin-top: 5px;
+      }
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 2px 5px #ccc9f0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #2352a3 0%, #cb97c2 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
       }
     }
   }
@@ -1849,8 +1909,8 @@ const callTel = () => {
       cursor: pointer;
       margin: auto;
       margin-top: 120px;
-      background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-        linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
+      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
+      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -1879,6 +1939,21 @@ const callTel = () => {
           margin-left: 5px;
           margin-right: 5px;
         }
+      }
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 2px 5px #ccc9f0;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        bottom: -100%;
+        right: -100%;
+        background: linear-gradient(45deg,  #2352a3 0%, #cb97c2 100%);
+        background-size: 100% 100%;
+        animation: bgposition 5s infinite linear alternate;
+        z-index: -1;
       }
     }
   }
@@ -2033,7 +2108,23 @@ const callTel = () => {
     }
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .dow {
   margin-top: -45%;
   margin-bottom: 233px;

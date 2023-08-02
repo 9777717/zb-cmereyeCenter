@@ -2397,8 +2397,8 @@ const goWhatsApp = () => {
   width: 580px;
   height: 140px;
   border-radius: 20px;
-  background-image: linear-gradient(-90deg, #ebc7a5 0%, #f0d9c2 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  // background-image: linear-gradient(-90deg, #ebc7a5 0%, #f0d9c2 100%),
+  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
 
   font-family: 'Noto Sans HK';
@@ -2408,8 +2408,39 @@ const goWhatsApp = () => {
   line-height: 50px;
   letter-spacing: 0px;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #ebc7a5;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg, #d1b1aa 0%, #eec660 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 // 头部样式
 .eyeOrthopaedicDisease_head {
   &>div:nth-child(1) {

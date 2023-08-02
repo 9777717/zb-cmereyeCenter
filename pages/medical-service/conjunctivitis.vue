@@ -394,6 +394,23 @@ const callTel = () => {
   </div>
 </template>
 <style lang="scss" scoped>
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .conjunctivitis_nav {
   // margin: 0 300px;
   max-width: 1200px;
@@ -875,8 +892,8 @@ const callTel = () => {
 // 圆角 矩形按钮样式
 .conjun_button_bg_color {
   cursor: pointer;
-  background-image: linear-gradient(-90deg, #c0c0e6 0%, #d8d8f4 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  // background-image: linear-gradient(-90deg, #c0c0e6 0%, #d8d8f4 100%),
+  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
 
   font-family: 'Noto Sans HK';
@@ -897,6 +914,21 @@ const callTel = () => {
   margin-top: 100px;
   width: 580px;
   height: 140px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #d8d8f4;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg,  #fce7e8 0%, #a9a8d0 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
 
 .conjun_header {

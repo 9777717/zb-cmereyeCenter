@@ -2504,8 +2504,8 @@ const keratoplastyList1 = [
   height: 140px;
   border-radius: 20px;
   background-blend-mode: normal, normal;
-  background-image: linear-gradient(-90deg, #68BE92 0%, #C1DFB4 100%),
-    linear-gradient(#68BE92, #C1DFB4);
+  // background-image: linear-gradient(-90deg, #68BE92 0%, #C1DFB4 100%),
+  //   linear-gradient(#68BE92, #C1DFB4);
 
   font-family: 'Noto Sans HK';
   font-size: 32px;
@@ -2514,8 +2514,39 @@ const keratoplastyList1 = [
   line-height: 50px;
   letter-spacing: 0px;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #68BE92;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg,  #cae09b 0%, #5ea351 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .fromTable {
   margin-top: -85%;
 }

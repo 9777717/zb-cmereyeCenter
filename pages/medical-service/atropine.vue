@@ -419,6 +419,23 @@ const tozoosnet =()=>{
 .atropine{
   margin-bottom: 50px;
 }
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .atropine_nav {
   margin: 280px auto;
   & > #introduce {
@@ -612,8 +629,8 @@ const tozoosnet =()=>{
         width: max-content;
         padding: 20px 90px;
         cursor: pointer;
-        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-          linear-gradient(#529fd3, #529fd3);
+        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -630,6 +647,20 @@ const tozoosnet =()=>{
         color: #ffffff;
         margin: 0 auto;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          bottom: -100%;
+          right: -100%;
+          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background-size: 100% 100%;
+          animation: bgposition 5s infinite linear alternate;
+          z-index: -1;
+        }
       }
     }
   }
@@ -716,8 +747,8 @@ const tozoosnet =()=>{
         width: max-content;
         padding: 20px 50px;
         cursor: pointer;
-        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-          linear-gradient(#529fd3, #529fd3);
+        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -734,6 +765,20 @@ const tozoosnet =()=>{
         color: #ffffff;
         margin: 0 auto;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          bottom: -100%;
+          right: -100%;
+          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background-size: 100% 100%;
+          animation: bgposition 5s infinite linear alternate;
+          z-index: -1;
+        }
       }
     }
   }
@@ -873,8 +918,8 @@ const tozoosnet =()=>{
         width: max-content;
         padding: 20px 50px;
         cursor: pointer;
-        background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-          linear-gradient(#529fd3, #529fd3);
+        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
+        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -891,6 +936,20 @@ const tozoosnet =()=>{
         color: #ffffff;
         margin: 0 auto;
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          bottom: -100%;
+          right: -100%;
+          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background-size: 100% 100%;
+          animation: bgposition 5s infinite linear alternate;
+          z-index: -1;
+        }
       }
     }
   }

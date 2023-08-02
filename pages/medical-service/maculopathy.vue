@@ -1153,15 +1153,31 @@ const callTel = () => {
     }
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .maculopathy_button_bg_color {
   cursor: pointer;
   width: 580px;
   height: 140px;
   margin: auto;
 
-  background-image: linear-gradient(-90deg, #dec692 0%, #e9d7b0 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  // background-image: linear-gradient(-90deg, #dec692 0%, #e9d7b0 100%),
+  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
   border-radius: 14px;
 
@@ -1178,6 +1194,21 @@ const callTel = () => {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #f0a87d;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg,  #b9d8bf 0%, #f0a87d 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
 
 .maculopathy_color_title {

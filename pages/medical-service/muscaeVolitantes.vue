@@ -1209,8 +1209,8 @@ const callTel = () => {
 
 // 点击按钮 样式
 .button_bg_text_color {
-  background-image: linear-gradient(-90deg, #7bb3db 0%, #add0e5 100%),
-    linear-gradient(#eda2a6, #eda2a6);
+  // background-image: linear-gradient(-90deg, #7bb3db 0%, #add0e5 100%),
+  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
   border-radius: 20px;
 
@@ -1229,6 +1229,21 @@ const callTel = () => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 2px 5px #6aa0d6;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    bottom: -100%;
+    right: -100%;
+    background: linear-gradient(45deg,  #6aa0d6 0%, #fffde5 100%);
+    background-size: 100% 100%;
+    animation: bgposition 5s infinite linear alternate;
+    z-index: -1;
+  }
 }
 
 //  没有svg的文字标题
@@ -1323,7 +1338,23 @@ const callTel = () => {
     }
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 // 下载
 .dow {
   margin-top: -30%;

@@ -349,14 +349,29 @@ const goVision = () => {
       &>div:nth-child(1) {
         width: 290px;
         height: 120px;
-        background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
-          linear-gradient(#eda2a6, #eda2a6);
+        // background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
+        //   linear-gradient(#eda2a6, #eda2a6);
         background-blend-mode: normal, normal;
         border-radius: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        text-shadow: 0 2px 5px #aac086;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -100%;
+          left: -100%;
+          bottom: -100%;
+          right: -100%;
+          background: linear-gradient(45deg,  #b1d35f 0%, #aedbd8 100%);
+          background-size: 100% 100%;
+          animation: bgposition 5s infinite linear alternate;
+          z-index: -1;
+        }
       }
 
       &>div:nth-child(2) {
@@ -495,9 +510,9 @@ const goVision = () => {
   &>div:nth-child(2) {
     width: fit-content;
     min-width: 223px;
-    height: 101px;
-    background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
-      linear-gradient(#eda2a6, #eda2a6);
+    height: 100%;
+    // background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
+    //   linear-gradient(#eda2a6, #eda2a6);
     background-blend-mode: normal, normal;
     border-radius: 30px;
     color: #ffffff;
@@ -505,9 +520,40 @@ const goVision = () => {
     align-items: center;
     justify-content: center;
     padding: 33px 47px;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 2px 5px #aac086;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      bottom: -100%;
+      right: -100%;
+      background: linear-gradient(45deg,  #b1d35f 0%, #aedbd8 100%);
+      background-size: 100% 100%;
+      animation: bgposition 5s infinite linear alternate;
+      z-index: -1;
+    }
   }
 }
-
+@keyframes bgposition {
+    0% {
+        transform: translate(30%, 30%);
+    }
+    25% {
+        transform: translate(30%, -30%);
+    }
+    50% {
+        transform: translate(-30%, -30%);
+    }
+    75% {
+        transform: translate(-30%, 30%);
+    }
+    100% {
+        transform: translate(30%, 30%);
+    }
+}
 .medicalOptometry_text_p_span {
   font-family: 'Noto Sans HK';
   font-size: 22px;
