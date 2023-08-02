@@ -4,7 +4,7 @@ definePageMeta({
   layout: 'page',
 })
 
-let fontSizeNum = ref(16)
+let fontSizeNum = ref(1)
 const setFontSize = (type:string) => {
   const tags = ['h1','h2','h3','h4','h5','h6','p','span','div'];
   tags.forEach(item=>{
@@ -22,12 +22,21 @@ const setFontSize = (type:string) => {
 }
 
 const addFont = () =>{
-  setFontSize('add')
+  if(fontSizeNum.value < 7){
+    fontSizeNum.value ++
+    setFontSize('add')
+  }
 }
 const ellFont = () =>{
-  setFontSize('obb')
+  if(fontSizeNum.value > 1){
+    fontSizeNum.value --
+    setFontSize('obb')
+  }
+  
 }
-
+const refature = () => {
+  location.reload()
+}
 </script>
 
 <template>
@@ -50,14 +59,14 @@ const ellFont = () =>{
         />
       </svg>
     </div>
-    <!-- <el-tooltip
-        class="box-item"
-        effect="dark"
-        content="Top Left prompts info"
-        placement="top-start"
-      > -->
-      <div>{{ $t('pages.index.footer.fonts') }}</div>
-    <!-- </el-tooltip> -->
+    <div class="fontTitle">
+      {{ $t('pages.index.footer.fonts') }}
+      <div class="fontTitle-in">
+        <span @click="refature">
+          默認大小
+        </span>
+      </div>
+    </div>
     <div>
       <div @click="addFont">+</div>
       <div @click="ellFont">-</div>
@@ -78,6 +87,8 @@ const ellFont = () =>{
     font-weight: 500;
     font-size: 14px;
     line-height: 35px;
+    width: max-content;
+    white-space: nowrap;
     /* identical to box height, or 250% */
 
     text-align: center;
@@ -85,7 +96,36 @@ const ellFont = () =>{
 
     color: #ffffff;
   }
-
+  .fontTitle{
+    position: relative;
+    cursor: pointer;
+    &-in{
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      background: #fff;
+      border-radius: 8px;
+      height: 44px;
+      color: #4d4d4d;
+      line-height: 36px;
+      display: none;
+      padding: 4px;
+      border: 1px solid #f3f3f3;
+      span{
+        padding: 0 20px;
+        background: #f3f3f3;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+    &:hover{
+      .fontTitle-in{
+        display: block;
+      }
+    }
+  }
   & > div:nth-child(3) {
     position: relative;
     display: flex;
@@ -97,7 +137,7 @@ const ellFont = () =>{
     & > div {
       width: 11px;
       height: 11px;
-      line-height: 11px;
+      line-height: 9px;
       border-radius: 3px;
       background: #fff;
       cursor: pointer;

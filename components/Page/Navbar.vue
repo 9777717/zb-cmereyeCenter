@@ -24,12 +24,6 @@ const menus = computed((): IMenuItem[] => [
     childMenuList: [
       {
         type: 'link',
-        text: '企業願景',
-        route: { path: '/about-us', hash: '#corporate' },
-      },
-      
-      {
-        type: 'link',
         text: t('pages.about_us.center_profile'),
         route: { path: '/about-us', hash: '#centreIntro' },
       },
@@ -37,6 +31,11 @@ const menus = computed((): IMenuItem[] => [
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
         route: { path: '/about-us', hash: '#history' },
+      },
+      {
+        type: 'link',
+        text: '企業願景',
+        route: { path: '/about-us', hash: '#corporate' },
       },
       {
         type: 'link',
