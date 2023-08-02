@@ -183,13 +183,14 @@ const historyList = ref([
 </template>
 <style lang="scss" scoped>
 #history {
-  margin-top: 12.75rem;
+  margin-top: 10rem;
+  padding-top: 2.75rem;
   position: relative;
 }
 
 .history-title {
   position: absolute;
-  top: 0;
+  top: 2.75rem;
   width: 100%;
   max-width: 960px;
   left: 50%;

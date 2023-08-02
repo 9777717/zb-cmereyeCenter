@@ -50,7 +50,14 @@ const ellFont = () =>{
         />
       </svg>
     </div>
-    <div>{{ $t('pages.index.footer.fonts') }}</div>
+    <!-- <el-tooltip
+        class="box-item"
+        effect="dark"
+        content="Top Left prompts info"
+        placement="top-start"
+      > -->
+      <div>{{ $t('pages.index.footer.fonts') }}</div>
+    <!-- </el-tooltip> -->
     <div>
       <div @click="addFont">+</div>
       <div @click="ellFont">-</div>
@@ -94,7 +101,7 @@ const ellFont = () =>{
       border-radius: 3px;
       background: #fff;
       cursor: pointer;
-      font-size: 9px;
+      font-size: 9px !important;
       // font-size: var(--allTextFootSize);
       color: #2958a3;
       font-weight: 500;

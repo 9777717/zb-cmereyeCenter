@@ -229,20 +229,20 @@ let drawer = ref(false)
 <style lang="scss" scoped>
 .footerMenu{
   width: 100%;
-  padding: 100px 0 70px;
+  padding: 100px 0;
   border-top: 4px solid #F2F2F2;
   &-in{
     width: 100%;
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
     &-t{
       display: flex;
       justify-content: space-between;
-      padding: 0 17vw;
+      // padding: 0 17vw;
       .t-in{
         &-t{
           color: #2958A3;
-          font-size: 1.085416vw;
+          font-size: 25.84px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -266,7 +266,7 @@ let drawer = ref(false)
               }
               span{
                 color: #2958A3;
-                font-size: 1.0766666vw;
+                font-size: 20.672px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -276,7 +276,7 @@ let drawer = ref(false)
               }
             }
             &.twoD{
-              margin-left: 6.25vw;
+              margin-left: 120px;
             }
           }
         }

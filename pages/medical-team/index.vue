@@ -349,6 +349,9 @@ const doctorList = [
                 <div v-for="(ele, i) in item.doctorEducation" :key="i">
                   <span>{{ $t(ele) }}</span>
                 </div>
+                <nuxt-link class="orderLink text-white inline-block" to="">{{
+                  $t('pages.medical_team.doctor_order')
+                }}</nuxt-link>
               </div>
             </div>
           </div>
@@ -356,9 +359,9 @@ const doctorList = [
             <div><img :src="item.doctorImgUrl" /></div>
             <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
-          <nuxt-link class="orderLink text-white inline-block" to="">{{
+          <!-- <nuxt-link class="orderLink text-white inline-block" to="">{{
             $t('pages.medical_team.doctor_order')
-          }}</nuxt-link>
+          }}</nuxt-link> -->
         </li>
       </ul>
     </div>
@@ -468,7 +471,7 @@ const doctorList = [
       }
 
       .orderLink {
-        position: absolute;
+        // position: absolute;
         width: 130px;
         height: 51px;
         background: #8ad8dd;
@@ -480,10 +483,11 @@ const doctorList = [
         text-align: center;
         letter-spacing: 0.1em;
         color: #ffffff;
-        bottom: 0;
-        left: 250px;
+        // bottom: 0;
+        // left: 250px;
         cursor: pointer;
         z-index: 15;
+        margin: 43px 0 0 200px;
       }
 
       .docName {
@@ -1134,27 +1138,29 @@ const doctorList = [
         width: 100%;
         padding-top: 70px;
         margin-bottom: 76px;
-        padding-bottom: 70px;
+        // padding-bottom: 70px;
 
         .docDes {
           margin-top: 0px;
         }
 
         .orderLink {
-          left: auto;
-          right: 10vw;
+          // left: auto;
+          // right: 10vw;
           width: 90px;
           height: 34px;
           font-size: 16px;
           line-height: 34px;
-          bottom: 10px;
+          margin: 24.5px auto 0;
+          display: block;
+          // bottom: 10px;
         }
 
         .docName {
           position: absolute;
           width: calc(100vw - 60px);
           right: 0;
-          top: -70px;
+          top: -50px;
           text-align: left;
           font-size: 24px;
         }

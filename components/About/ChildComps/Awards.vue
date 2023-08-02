@@ -136,7 +136,7 @@ onMounted(()=>{
           class="ccSwiper-slide"
         >
           <div class="brand" @click="handleSlide(item)">
-            <div><img :src="item.imgUrl" :alt="item.des" /></div>
+            <div><img :class="`brandImg${index}`" :src="item.imgUrl" :alt="item.des" /></div>
             <div>
               <div>{{ $t(item.year) }}</div>
               <div>{{ $t(item.des) }}</div>
@@ -183,7 +183,10 @@ onMounted(()=>{
       align-items: center;
       img{
         width: 100%;
-        max-height: 100%;
+        max-height: 80%;
+        &.brandImg3{
+          max-height: 50%;
+        }
       }
     }
 
