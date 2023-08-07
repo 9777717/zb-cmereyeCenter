@@ -221,6 +221,11 @@ const rt = ref(route)
     transform: rotate(0deg);
   }
 }
+@media (min-width: 768px) and (max-width: 1920px){
+  .onlinContact{
+    bottom: 100px;
+  }
+}
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {

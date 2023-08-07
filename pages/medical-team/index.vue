@@ -660,8 +660,8 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 33px;
-        left: -82px;
+        top: 70px;
+        left: -100px;
       }
 
       &>div:nth-child(1)::before {
@@ -706,7 +706,7 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 75px;
+        top: 0px;
         right: -66px;
       }
 
@@ -776,7 +776,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 69px;
-        left: -55px;
+        left: -100px;
       }
 
       &>div:nth-child(1)::before {
@@ -802,8 +802,8 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 39px;
-        left: -72px;
+        top: 100px;
+        left: -140px;
       }
 
       &>div:nth-child(1)::before {
@@ -871,8 +871,8 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 83px;
-        right: -92px;
+        top: 30px;
+        left: -100px;
       }
 
       &>div:nth-child(1)::before {
@@ -894,8 +894,8 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 15px;
-        right: -43px;
+        top: 130px;
+        left: -120px;
       }
 
       &>div:nth-child(1)::before {
@@ -964,7 +964,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 40px;
-        right: -56px;
+        right: -96px;
       }
 
       &>div:nth-child(1)::before {
@@ -1010,7 +1010,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 16px;
-        right: -92px;
+        left: -100px;
       }
 
       &>div:nth-child(1)::before {
@@ -1033,7 +1033,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 156px;
-        left: -73px;
+        left: -100px;
       }
 
       &>div:nth-child(1)::before {
@@ -1355,7 +1355,7 @@ const doctorList = [
     ul>li:nth-child(10) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 100px !important;
+          bottom: 0px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1402,7 +1402,7 @@ const doctorList = [
 
     ul>li:nth-child(14) {
       .docEnName {
-        bottom: 30px !important;
+        bottom: 0px !important;
       }
 
       &>div:nth-child(2) {

@@ -64,11 +64,11 @@ const toLink = () =>{
           <NuxtLink tag="a" :to="{ name: 'index' }">
             <img
               v-if="router.name === 'index'"
-              src="https://static.cmereye.com/imgs/2023/07/fafec7fe0142ad3f.png"
+              src="https://static.cmereye.com/imgs/2023/08/7e6ae1191e294b6f.png"
             />
             <img
               v-else
-              src="https://static.cmereye.com/imgs/2023/07/662e515b654b923c.png"
+              src="https://static.cmereye.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
             />
           </NuxtLink>
           <span @click="toLink" class="barspan" :style="{color: (router.name === 'index'?'#2958A3':'#fff')}">03309.HK</span>

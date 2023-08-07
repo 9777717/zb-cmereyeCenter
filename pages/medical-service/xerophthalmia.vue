@@ -276,7 +276,7 @@ const serviceNavigation = [
     anchorLink: '/medical-service/xerophthalmia#xerophthalmiaInfo',
   },
   {
-    anchorName: '症状',
+    anchorName: '症狀',
     anchorLink: '/medical-service/xerophthalmia#xerophthalmiaType',
   },
   {
@@ -874,20 +874,26 @@ const callTel = () => {
       }
 
       &>div:nth-child(2) {
-        margin-top: 60px;
+        width: 100%;
+        max-width: 1400px;
+        margin: 60px auto 0;
         display: flex;
         justify-content: space-between;
-        padding-right: 95px;
-
+        padding-left: 140px;
         &>img {
           position: relative;
-          right: 60px;
+          height: max-content;
+          width: 35%;
+          // margin-left: -40px;
+          left: -140px;
         }
 
         &>img:nth-child(1) {
           z-index: 5;
-          top: 50px;
-          left: 85px;
+          width: 65%;
+          top: 20px;
+          // margin-left: 0px;
+          left: 0;
         }
       }
     }

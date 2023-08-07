@@ -126,15 +126,18 @@ const CORPORATE_Lists = [
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  animation: textbgAnim 10s linear infinite;
+  animation: textbgAnim 30s linear infinite;
   color: rgba(138, 216, 221, 0.3);
   width: max-content;
+  position: relative;
 }
 @keyframes textbgAnim {
   0%{
-    transform: translateX(100%);
+    left: 100%;
+    transform: translateX(0)
   }
   100%{
+    left: 0;
     transform: translateX(-100%);
   }
 }

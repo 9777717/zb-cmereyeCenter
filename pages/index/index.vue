@@ -95,8 +95,7 @@ const callTel = () => {
             <img src="https://static.cmereye.com/imgs/2023/07/3db2af36cfc41534.png" />
           </div>
           <div>
-            【2023 夢想 ·
-            齊躍動】「我是小小醫生體驗日將於2023年4月2日(星期日)」舉行，了解詳情。
+            【放暑期啦】除咗安排去旅行外，記得安排全家人一齊做年度眼睛檢查。CMER ‧ C YOU IN SUMMER 。
           </div>
         </div>
         <div>

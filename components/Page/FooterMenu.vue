@@ -233,7 +233,7 @@ let drawer = ref(false)
   border-top: 4px solid #F2F2F2;
   &-in{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     &-t{
       display: flex;
@@ -242,7 +242,7 @@ let drawer = ref(false)
       .t-in{
         &-t{
           color: #2958A3;
-          font-size: 25.84px;
+          font-size: 24px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
@@ -266,7 +266,7 @@ let drawer = ref(false)
               }
               span{
                 color: #2958A3;
-                font-size: 20.672px;
+                font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
@@ -276,7 +276,7 @@ let drawer = ref(false)
               }
             }
             &.twoD{
-              margin-left: 120px;
+              margin-left: 60px;
             }
           }
         }
@@ -285,7 +285,7 @@ let drawer = ref(false)
     &-b{
       margin-top: 76px;
       color: #2958A3;
-      font-size: 20.672px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;

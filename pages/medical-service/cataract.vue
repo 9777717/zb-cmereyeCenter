@@ -369,6 +369,13 @@ const callTel = () => {
         </div>
       </div>
     </div>
+    <div class="cataract-nav">
+      <div v-for="(cataractNav,cataractNavIndex) in serviceNavigation" :key="cataractNavIndex">
+        <nuxt-link :to="cataractNav.anchorLink">
+          <div>{{$t(cataractNav.anchorName)}}</div>
+        </nuxt-link>
+      </div>
+    </div>
     <div class="cataract">
       <!-- 白內障 -->
       <div>
@@ -855,7 +862,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -928,8 +935,8 @@ const callTel = () => {
     content: '';
     background-color: #f2f2f2;
     width: calc((100% - 1080px) / 2 + 300px);
-    height: 288px;
-    bottom: -50px;
+    height: 200px;
+    bottom: 100px;
     right: 0;
     position: absolute;
   }
@@ -943,7 +950,7 @@ const callTel = () => {
 
     width: 100%;
     max-width: 1080px;
-    margin: 202px auto 100px;
+    margin: 100px auto 100px;
 
     &>div:first-child {
       font-family: 'NotoSansCJKtc-Bold';
@@ -953,12 +960,15 @@ const callTel = () => {
       font-stretch: normal;
       letter-spacing: 12px;
       color: #63bacc;
-
+      &>div:nth-child(1) {
+        margin-right: -10px;
+      }
       &>div:nth-child(2) {
         font-family: 'DINCondensed';
         display: block;
         font-size: 140px;
         letter-spacing: 2px;
+        margin-top: 30px;
       }
 
       &>div:nth-child(3),
@@ -980,7 +990,7 @@ const callTel = () => {
     }
 
     &>div:last-child {
-      margin-right: 16px;
+      // margin-right: 16px;
 
       svg {
         width: 415px;
@@ -994,7 +1004,49 @@ const callTel = () => {
     }
   }
 }
-
+.cataract-nav{
+  width: 100%;
+  max-width: 960px;
+  margin: -100px auto 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &>div{
+    min-width: 20%;
+    margin-bottom: 35px;
+    div{
+      color: #515151;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      transition: all .3s;
+      &::after{
+        content: '';
+        height: 2px;
+        width: 0;
+        transition: all .3s;
+        background: #7AC0D4;
+        position: absolute;
+        left: -10px;
+        bottom: -5px;
+      }
+      &:hover{
+        color: #7AC0D4;
+        &::after{
+          width: calc(100% + 20px);
+        }
+      }  
+    }
+    &:last-child{
+      margin-left: 100px;
+    }
+    
+  }
+}
 .cataract {
   position: relative;
   max-width: 1200px;
@@ -1182,7 +1234,7 @@ const callTel = () => {
         line-height: 1.6;
         letter-spacing: 0px;
         color: #515151;
-        border-radius: 133px 0 133px 0;
+        border-radius: 120px 20px 120px 20px;
 
         padding-top: 25px;
         padding-left: 75px;
@@ -1200,19 +1252,19 @@ const callTel = () => {
         font-stretch: normal;
         line-height: 35px;
         letter-spacing: 0px;
-        color: #ffffff;
-
+        // color: #ffffff;
+        color: #5AB7D5;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 312px;
         height: 66px;
-        background-image: linear-gradient(#5ab7d5, #5ab7d5),
-          linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-        background-blend-mode: normal, normal;
-        box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
-        border-radius: 20px;
+        // background-image: linear-gradient(#5ab7d5, #5ab7d5),
+        //   linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        // background-blend-mode: normal, normal;
+        // box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+        // border-radius: 20px;
       }
 
       &>div:nth-child(2) {
@@ -2249,10 +2301,13 @@ const callTel = () => {
       &>div:first-child {
         font-size: 50px;
         letter-spacing: 0.05em;
-
+        &>div:nth-of-type(1){
+          margin-right: 0px;
+        }
         // padding-right: 40px;
         &>div:nth-child(2) {
           font-size: 52px;
+          margin-top: 10px;
         }
 
         &>div:nth-child(3),
@@ -2284,14 +2339,16 @@ const callTel = () => {
       }
     }
   }
-
+  .cataract-nav{
+    display: none;
+  }
   .cataract {
     transform: scale(1);
-
+    
     &>div:nth-child(2) {
       width: calc(100% - 60px);
       margin: 0 auto;
-
+      padding-top: 100px;
       &>div:nth-child(1) {
         width: 100%;
         flex-direction: row-reverse;

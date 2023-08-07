@@ -144,7 +144,7 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: '視力健康測試',
+        text: '視力測試',
         route: { name: 'ophthalmic-information-eyesight' }
       },
       {

@@ -94,78 +94,29 @@ onMounted(()=>{
   <div>
     <div class="healthInfo">
       <div>
-        <div>
-          <div>
-            <div>
-              {{
-                $t(
-                  'pages.ophthalmic_information.ophthalmic_message_text.message_text1'
-                )
-              }}
-            </div>
-            <div>
-              <div>Health topics</div>
-              <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/05/30b46ae600698254.png"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/06/5e6b4f26cb2593f4.png"
-                />
-              </div>
-            </div>
-          </div>
-          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png" 
-            srcset="https://static.cmereye.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"  
+        <!-- <img src="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg" alt=""> -->
+        <img data-cfsrc="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg" 
+            srcset="https://static.cmereye.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg"  
             alt="健康資訊" 
-            src="https://static.cmereye.com/imgs/2023/06/59966d0b8622f785.png"/>
-        </div>
-        <div><span></span> BLOG</div>
-        <div>
-          <svg
-            width="9"
-            height="144"
-            viewBox="0 0 9 144"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            data-v-1d8b93bf=""
-            data-v-a125a221=""
-            data-v-4b343dd3=""
-            data-v-ee7ab105=""
-            data-v-040e870e=""
-          >
-            <path
-              d="M1 1V143L7.5 130.5"
-              stroke="#2958A3"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              data-v-1d8b93bf=""
-              data-v-a125a221=""
-              data-v-4b343dd3=""
-              data-v-ee7ab105=""
-              data-v-040e870e=""
-            ></path>
-          </svg>
-        </div>
+            src="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg"/>
       </div>
       <div>
-        <div>
-          {{
-            $t(
-              'pages.ophthalmic_information.ophthalmic_message_text.message_text2'
-            )
-          }}
-        </div>
-        <div>
-          {{
-            $t(
-              'pages.ophthalmic_information.ophthalmic_message_text.message_text3'
-            )
-          }}
-        </div>
+        <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text1')}}</div>
+        <div>Health topics</div>
+        <div>Health topics</div>
+        <div>Health topics</div>
+      </div>
+      <div>
+        <img data-cfsrc="https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" srcset="https://static.cmereye.com/imgs/2023/08/03053fe9edf3c7ad.png 768w, https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" src="https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" alt="">
+      </div>
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="173" viewBox="0 0 11 173" fill="none">
+          <path d="M1 1V172L9.5 159" stroke="#1B407A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text2')}}</div>
+        <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text3')}}</div>
       </div>
     </div>
     <div class="content_health">
@@ -250,124 +201,80 @@ onMounted(()=>{
     content: '';
     background:#f1f1f1;
     position: absolute;
-    top: 315px;
+    top: 100px;
     left: 0;
-    height: 644px;
-    width: 100%;
+    height: 700%;
+    max-height: 550px;
+    width: calc(100% - (100% - 1200px) / 2 - 25px);
   }
   & > div:nth-child(1) {
     width: 100%;
-    padding: 284px 0 0;
+    padding: 170px 0 0;
     position: relative;
     width: 100%;
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
-    & > div:nth-child(1) {
-      position: relative;
-      width: 100%;
-      & > div:nth-child(1) {
-        position: relative;
-        z-index: 2;
-        font-family: 'Noto Sans HK';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 62.14px;
-        line-height: 1;
-        letter-spacing: 0.2em;
-        color: #3e3a39;
-        align-items: center;
-
-        & > div:nth-child(2) {
-          font-family: 'Metropolis';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 44.48px;
-          line-height: 100%;
-          letter-spacing: 0.023em;
-          text-transform: uppercase;
-          margin-top: 20px;
-          color: #ffffff;
-          div:first-child{
-            margin-left: -6px;
-          }
-          div:last-child{
-            margin-top: 10px;
-          }
-        }
-      }
-      &>img{
-        position: relative;
-        z-index: 1;
-        margin-left: 25%;
-        margin-top: -56px;
-      }
-    }
-
-    & > div:nth-child(2) {
-      & > span {
-        border-top: 2px solid;
-        width: 121px;
-        display: inline-block;
-      }
-
-      position: absolute;
-      bottom: 80px;
-      left: 10%;
-      font-family: 'Noto Sans HK';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 46px;
-      text-align: center;
-      letter-spacing: 0.2em;
-      color: #b7b7b7;
-      transform: rotate(90deg);
-    }
-
-    & > div:nth-child(3) {
-      position: absolute;
-      left: 50%;
-      bottom: -300px;
-    }
   }
 
   & > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 5;
-    position: relative;
-    width: 100%;
-    max-width: 1080px;
-    margin-left: calc((100% - 1080px)/2 + 200px);
-    margin-top: -80px;
-    & > div:nth-child(1) {
-      font-family: 'Noto Sans HK';
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    &>div:nth-of-type(1){
+      color: #FFF;
+      text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 40.1px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46.286px; /* 115.426% */
+      letter-spacing: 8.02px;
+      margin-bottom: 10px;
+    }
+    &>div:nth-of-type(n+2){
+      color: #FFF;
+      text-align: center;
+      font-family: Metropolis;
+      font-size: 40.032px;
       font-style: normal;
       font-weight: 700;
-      font-size: 64px;
-      line-height: 1;
-      text-align: right;
-      letter-spacing: 0.3em;
-      color: #2958a3;
+      line-height: 50.285px; /* 125.612% */
+      letter-spacing: 0.801px;
+      text-transform: uppercase;
     }
-
-    & > div:nth-child(2) {
-      margin-top: 42px;
-      font-family: 'Noto Sans HK';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 48px;
-      line-height: 1;
-      text-align: center;
-      letter-spacing: 0.3em;
-      color: #8ad8dd;
+    &>div:nth-of-type(3){
+      opacity: .6;
+      clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 100%);
+      transform: translateY(-20%);
     }
+    &>div:nth-of-type(4){
+      opacity: .6;
+      clip-path: polygon(0 45%, 100% 45%, 100% 100%, 0 100%);
+      transform: translateY(-65%);
+    }
+  }
+  & > div:nth-child(3) {
+    position: absolute;
+    right: calc((100% - 1200px) / 2 + 25px);
+    bottom: 40px;
+    img{
+      width: 100%;
+    }
+  }
+  & > div:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,80%);
+  }
+  & > div:nth-child(5) {
+    display: none;
   }
 }
 
 .content_health {
-  margin-top: 403px;
+  margin-top: 203px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -506,78 +413,71 @@ onMounted(()=>{
 @media screen and (max-width: 768px) {
   .healthInfo {
     &::before{
-      height: 300px;
-      top: 0;
+      height: 280px;
+      top: 100px;
       left: 30px;
       width: calc(100% - 30px);
     }
     & > div:nth-child(1){
-      margin-top: 78px;
-      padding: 0;
-      & > div:nth-child(1) {
-        & > div:nth-child(1) {
-          position: absolute;
-          font-size: 26px;
-          line-height: 160%;
-          color: #ffffff;
-          left: 40%;
-          text-align: center;
-          top: 100px;
-          & > div:nth-child(2) {
-            font-size: 18px;
-            margin-top: 0;
-            img{
-              width: 148px;
-              margin: 0 auto;
-            }
-            div:first-child{
-              margin-left: 0px;
-            }
-            div:nth-of-type(2){
-              opacity: .6;
-            }
-            div:last-child{
-              margin-top: 5px;
-              opacity: .3;
-            }
-          }
-        }
-        
-        &>img{
-          width: 70%;
-          margin-left: 30%;
-          margin-top: 0;
-        }
-      }
-      & > div:nth-child(2) {
-        bottom: 125px;
-        left: 65px;
-        transform-origin: left top;
-        font-size: 16px;
-      }
-      & > div:nth-child(3) {
-        transform: scale(.5);
-        bottom: -90px;
-        left: 60%;
+      width: 70%;
+      padding: 70px 0 0;
+      margin-left: 30%;
+      img{
+        width: 100%;
       }
     }
     
     & > div:nth-child(2){
-      position: relative;
-      margin-left: 30px;
-      margin-top: 40px;
-      width: max-content;
-      & > div:nth-child(1) {
-        font-size: 20px;
+      margin-left: 10px;
+      &>div:nth-of-type(1){
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 0;
       }
-      & > div:nth-child(2) {
-        font-size: 18px;
-        margin-top: 5px;
+      &>div:nth-of-type(n+2){
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: 0;
+      }
+    }
+    & > div:nth-child(3) {
+      left: 40px;
+      bottom: 10px;
+      img{
+        width: max-content;
+        transform: scale(1.5);
+      }
+    }
+    & > div:nth-child(4) {
+      transform: translate(-50%,60%) scale(.5);
+    }
+    & > div:nth-child(5) {
+      position: absolute;
+      display: block;
+      width: 50%;
+      text-align: center;
+      left: 0;
+      bottom: -100px;
+      &>div{
+        &:nth-of-type(1){
+          color: #2958A3;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        &:nth-of-type(2){
+          color: #8AD8DD;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
       }
     }
   }
   .content_health {
-    margin-top: 100px;
+    margin-top: 150px;
     &>div{
       width: calc(100% - 60px);
       padding: 25px 20px;

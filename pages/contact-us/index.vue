@@ -283,7 +283,7 @@ onMounted(()=>{
             :modules="[Autoplay]"
             :loop="true"
             :autoplay="{ delay: 0 }"
-            speed="3000"
+            speed="3500"
             class="contact_eye-swiper"
           >
             <swiper-slide v-for="(item, itemIndex) in bannerList" :key="itemIndex">

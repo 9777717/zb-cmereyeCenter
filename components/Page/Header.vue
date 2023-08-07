@@ -141,7 +141,7 @@ const menus = [
       },
       {
         type: 'link',
-        text: '視力健康測試',
+        text: '視力測試',
         link: '/ophthalmic-information/eyesight',
       }
     ],

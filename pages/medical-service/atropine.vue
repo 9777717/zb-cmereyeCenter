@@ -675,7 +675,7 @@ const tozoosnet =()=>{
       & > div {
         width: 20%;
         font-family: 'Noto Sans HK';
-        font-size: 22px;
+        font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 40px;

@@ -26,7 +26,7 @@ const getDetail = async () => {
     content: res.data.content,
     visits: res.data.visits,
     update_time: res.data.update_time,
-    author: res.data.author,
+    author: res.data.ext_paperRecoDoctor,
     ext_paperRecoFrom: res.data.ext_paperRecoFrom,
     source: res.data.source
   }

@@ -2648,7 +2648,8 @@ const callTel = () => {
 
   // 公共使用
   & > div {
-    padding-top: 180px;
+    margin-top: 100px;
+    padding-top: 80px;
   }
 
   & > div:first-child {
