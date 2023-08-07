@@ -443,6 +443,7 @@ onMounted(()=>{
     & > div:nth-child(3) {
       left: 40px;
       bottom: 10px;
+      right: 0;
       img{
         width: max-content;
         transform: scale(1.5);
