@@ -402,6 +402,9 @@ const callTel = () => {
         <div>GLAUCOMA</div>
       </div>
     </div>
+    <div class="glaucoma-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
+    </div>
     <div class="glaucoma">
       <!-- 青光眼 -->
       <div>
@@ -1065,7 +1068,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载和公共脚部 -->
     <!-- 下载 -->
@@ -1190,12 +1193,15 @@ const callTel = () => {
         transform: translate(30%, 30%);
     }
 }
+.glaucoma-nav{
+  margin-top: 450px;
+}
 .glaucoma {
   position: relative;
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: -50%;
+  margin-top: -60%;
 
   // 什麼是青光眼？
   & > div:nth-child(2) {
@@ -2759,7 +2765,7 @@ const callTel = () => {
   }
   .glaucoma {
     transform: scale(1);
-    margin-top: 0;
+    margin-top: -120%;
     & > div {
       padding-top: 0px;
     }
@@ -3515,12 +3521,27 @@ const callTel = () => {
     }
   }
 }
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .glaucoma{
+    margin-top: -70%;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .glaucoma{
+    margin-top: -90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .glaucoma{
+    margin-top: -120%;
+  }
+}
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1980px) {
   .glaucoma {
     margin: auto;
-    margin-top: -30%;
+    margin-top: -50%;
 
     & > div:nth-child(2) {
       padding-top: 350px;

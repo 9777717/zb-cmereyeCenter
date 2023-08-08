@@ -255,6 +255,9 @@ const goWhatsApp = () => {
         </div>
       </div>
     </div>
+    <div class="eyeOrthopaedicDisease-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
+    </div>
     <div class="eyeOrthopaedicDisease_nav">
       <div id="ophthalmoplasty">
         <div class="eyeOrthopaedicDisease_title_text">眼整形</div>
@@ -884,7 +887,7 @@ const goWhatsApp = () => {
       </div>
     </div>
     <div class="rightSidesNavigation">
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <div class="fromTable">
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
@@ -894,6 +897,9 @@ const goWhatsApp = () => {
   </div>
 </template>
 <style lang="scss" scoped>
+.eyeOrthopaedicDisease-nav{
+  margin-top: 150px;
+}
 .eyeOrthopaedicDisease_nav {
   max-width: 1200px;
   width: 1200px;

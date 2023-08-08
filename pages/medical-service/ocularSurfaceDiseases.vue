@@ -292,6 +292,9 @@ const keratoplastyList1 = [
         </div>
       </div>
     </div>
+    <div class="ocularSurfaceDiseases-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'ocularSurfaceDiseases'" />
+    </div>
     <div class="ocularSurfaceDiseases_nav">
       <div id="pterygium">
         <div class="ocularSurfaceDiseases_title">翼狀胬肉</div>
@@ -1044,7 +1047,7 @@ const keratoplastyList1 = [
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 表单 -->
     <div class="fromTable">
@@ -2445,6 +2448,10 @@ const keratoplastyList1 = [
       margin-top: 120px;
     }
   }
+}
+
+.ocularSurfaceDiseases-nav{
+  margin-top: 150px;
 }
 
 .ocularSurfaceDiseases_title {

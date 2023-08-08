@@ -79,6 +79,9 @@ const tozoosnet =()=>{
         </div>
       </div>
     </div>
+    <div class="atropine-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
+    </div>
     <div class="atropine_nav maxCon">
       <div id="introduce">
         <div class="atropine_title_text">
@@ -404,7 +407,7 @@ const tozoosnet =()=>{
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <div class="fromTable">
       <FormFooterInfo
@@ -435,6 +438,10 @@ const tozoosnet =()=>{
     100% {
         transform: translate(30%, 30%);
     }
+}
+
+.atropine-nav{
+  margin-top: 100px;
 }
 .atropine_nav {
   margin: 280px auto;

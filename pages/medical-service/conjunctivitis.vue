@@ -214,6 +214,7 @@ const callTel = () => {
         </div>
       </div>
     </div>
+    <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
     <div class="conjunctivitis_nav">
       <!-- 什麼是結膜炎？ -->
@@ -365,7 +366,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">

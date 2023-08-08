@@ -369,13 +369,7 @@ const callTel = () => {
         </div>
       </div>
     </div>
-    <div class="cataract-nav">
-      <div v-for="(cataractNav,cataractNavIndex) in serviceNavigation" :key="cataractNavIndex">
-        <nuxt-link :to="cataractNav.anchorLink">
-          <div>{{$t(cataractNav.anchorName)}}</div>
-        </nuxt-link>
-      </div>
-    </div>
+    <serviceNav :arrData="serviceNavigation" />
     <div class="cataract">
       <!-- 白內障 -->
       <div>
@@ -1004,55 +998,12 @@ const callTel = () => {
     }
   }
 }
-.cataract-nav{
-  width: 100%;
-  max-width: 960px;
-  margin: -100px auto 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  &>div{
-    min-width: 20%;
-    margin-bottom: 35px;
-    div{
-      color: #515151;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-align: center;
-      position: relative;
-      display: inline-block;
-      transition: all .3s;
-      &::after{
-        content: '';
-        height: 2px;
-        width: 0;
-        transition: all .3s;
-        background: #7AC0D4;
-        position: absolute;
-        left: -10px;
-        bottom: -5px;
-      }
-      &:hover{
-        color: #7AC0D4;
-        &::after{
-          width: calc(100% + 20px);
-        }
-      }  
-    }
-    &:last-child{
-      margin-left: 100px;
-    }
-    
-  }
-}
 .cataract {
   position: relative;
   max-width: 1200px;
   margin: auto;
   transform: scale(0.9);
-  margin-top: -40%;
+  margin-top: -35%;
 
   &>div:nth-child(2) {
     padding-top: 165px;
@@ -2339,9 +2290,6 @@ const callTel = () => {
       }
     }
   }
-  .cataract-nav{
-    display: none;
-  }
   .cataract {
     transform: scale(1);
     
@@ -3130,27 +3078,14 @@ const callTel = () => {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
+@media (min-width: 678px) and (max-width: 1200px) {
+  .cataract {
+    margin-top: -60%;
+  }
+}
+@media screen and (min-width: 1980px) {
   .cataract {
     margin-top: -20%;
-  }
-
-  .dow {
-    &>div:nth-child(1) {
-      &>div {
-        &>div:nth-child(1) {
-          margin-left: 32.2vw;
-        }
-      }
-    }
-
-    &>div:nth-child(2) {
-      &>div {
-        &>div:nth-child(1) {
-          margin-left: 36.6vw;
-        }
-      }
-    }
   }
 }
 </style>

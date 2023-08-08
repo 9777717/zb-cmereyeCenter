@@ -194,6 +194,7 @@ const preventList1 = [
         </div>
       </div>
     </div>
+    <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
     <div class="amotioRetinae_nav">
       <div id="intro">
         <div class="amotioRetinae_title_text">什麼是視網膜脫落？</div>
@@ -319,7 +320,7 @@ const preventList1 = [
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">

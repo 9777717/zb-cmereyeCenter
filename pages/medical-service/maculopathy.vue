@@ -181,14 +181,14 @@ const serviceNavigation = [
     anchorName: '濕性黃班病變',
     anchorLink: '/medical-service/maculopathy#wet_maculopathy',
   },
-  {
-    anchorName: '老年黃斑病變成因',
-    anchorLink: '/medical-service/maculopathy#wet_maculopathy_factor',
-  },
-  {
-    anchorName: '老年黃斑病變治療',
-    anchorLink: '/medical-service/maculopathy#wet_maculopathy_cure',
-  },
+  // {
+  //   anchorName: '老年黃斑病變成因',
+  //   anchorLink: '/medical-service/maculopathy#wet_maculopathy_factor',
+  // },
+  // {
+  //   anchorName: '老年黃斑病變治療',
+  //   anchorLink: '/medical-service/maculopathy#wet_maculopathy_cure',
+  // },
   {
     anchorName: '預防方法',
     anchorLink: '/medical-service/maculopathy#prevent',
@@ -231,6 +231,9 @@ const callTel = () => {
           />
         </div> -->
       </div>
+    </div>
+    <div class="maculopathy-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
     <div class="maculopathy_nav">
       <!-- 什麼是黃斑病變？ -->
@@ -503,7 +506,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -532,6 +535,9 @@ const callTel = () => {
   </div>
 </template>
 <style lang="scss" scoped>
+.maculopathy-nav{
+  margin-top: 50px;
+}
 .maculopathy_nav {
   // margin: 0 300px;
   max-width: 1200px;
@@ -1337,6 +1343,9 @@ const callTel = () => {
 }
 
 @media screen and (max-width: 768px) {
+  .maculopathy-nav{
+    display: none;
+  }
   .maculopathy_header {
     &>div:nth-child(1) {
       width: calc(100% - 60px);

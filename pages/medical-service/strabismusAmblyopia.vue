@@ -222,6 +222,10 @@ const callTel = () => {
         </div>
       </div>
     </div>
+    <div class="strabismusAmblyopia-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
+    </div>
+    
     <div class="strabismusAmblyopia_nav">
       <div id="strabismus">
         <div class="strabismusAmblyopia_title_text">甚麼是斜視？</div>
@@ -385,7 +389,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -430,6 +434,9 @@ const callTel = () => {
     100% {
         transform: translate(30%, 30%);
     }
+}
+.strabismusAmblyopia-nav{
+  margin-top: 150px;
 }
 .strabismusAmblyopia_nav {
   max-width: 1200px;

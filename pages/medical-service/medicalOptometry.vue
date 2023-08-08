@@ -71,6 +71,9 @@ const goVision = () => {
         </div>
       </div>
     </div>
+    <div class="medicalOptometry-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
+    </div>
     <div class="medicalOptometry_nav">
       <div id="brief_introduction">
         <div>
@@ -275,7 +278,7 @@ const goVision = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 表单 -->
     <div class="fromTable">
@@ -295,7 +298,9 @@ const goVision = () => {
 }
 
 @import url('../../assets/font/font.css');
-
+.medicalOptometry-nav{
+  margin-top: 150px;
+}
 .medicalOptometry_nav {
   max-width: 1200px;
   margin: auto;

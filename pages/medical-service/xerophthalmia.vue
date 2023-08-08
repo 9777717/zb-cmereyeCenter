@@ -337,6 +337,7 @@ const callTel = () => {
         />
       </div> -->
       </div>
+      <serviceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
       <!-- 内容 -->
       <div class="xerophthalmia">
         <!-- 什麼是乾眼症 -->
@@ -662,7 +663,7 @@ const callTel = () => {
     <div>
       <!-- 右侧边导航 -->
       <div>
-        <rightSidesNavigation :service-navigation="serviceNavigation" />
+        <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
       </div>
       <!-- 下载 -->
       <div class="dow">

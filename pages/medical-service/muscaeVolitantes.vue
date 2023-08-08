@@ -208,6 +208,9 @@ const callTel = () => {
         </div> -->
       </div>
     </div>
+    <div class="muscaeVolitantes-nav">
+      <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
+    </div>
     <div class="muscaeNav">
       <!-- 什麼是飛蚊症？ -->
       <div id="muscaeInfo">
@@ -491,7 +494,7 @@ const callTel = () => {
       </div>
     </div>
     <div>
-      <rightSidesNavigation :service-navigation="serviceNavigation" />
+      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -520,6 +523,9 @@ const callTel = () => {
   </div>
 </template>
 <style lang="scss" scoped>
+.muscaeVolitantes-nav{
+  margin-top: 50px;
+}
 .muscaeNav {
   margin-top: 100px;
   max-width: 1200px;
@@ -1391,6 +1397,9 @@ const callTel = () => {
   }
 }
 @media screen and (max-width: 768px) {
+  .muscaeVolitantes-nav{
+    display: none;
+  }
   .volitantes {
     &>div:nth-child(1) {
       width: calc(100% - 60px);
