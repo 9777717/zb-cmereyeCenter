@@ -405,7 +405,7 @@ const callTel = () => {
     <div class="glaucoma-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
-    <div class="glaucoma">
+    <div class="glaucoma-in">
       <!-- 青光眼 -->
       <div>
         <!-- 请勿删除 -->
@@ -1111,18 +1111,31 @@ const callTel = () => {
 
 <style lang="scss" scoped>
 .glaucoma_heaf {
+  // position: relative;
+  // top: 202px;
+  // right: 0;
+  // width: 40vw;
+  // margin-left: 60vw;
+  // height: 288px;
+  width: 100%;
+  // max-width: 1080px;
+  margin: 100px auto 0;
   position: relative;
-  top: 202px;
-  right: 0;
-  width: 40vw;
-  margin-left: 60vw;
-  height: 288px;
-  background-color: #f2f2f2;
-
-  & > div {
+  &::before{
+    content: '';
     position: absolute;
-    top: -110px;
-    left: -18vw;
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 70%;
+    background-color: #f2f2f2;
+    z-index: 0;
+  }
+  & > div {
+    // margin-left: calc();
+    // position: absolute;
+    // top: -110px;
+    // left: -18vw;
     text-align: right;
   }
 
@@ -1134,7 +1147,11 @@ const callTel = () => {
     font-stretch: normal;
     letter-spacing: 12px;
     color: #9bcfcc;
-
+    width: 100%;
+    max-width: 1080px;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
     & > div:nth-child(2) {
       font-family: 'DINCondensed';
       display: block;
@@ -1194,9 +1211,10 @@ const callTel = () => {
     }
 }
 .glaucoma-nav{
-  margin-top: 450px;
+  // position: relative;
+  margin-top: 100px;
 }
-.glaucoma {
+.glaucoma-in{
   position: relative;
   max-width: 1200px;
   margin: auto;
@@ -2763,9 +2781,9 @@ const callTel = () => {
       }
     }
   }
-  .glaucoma {
+  .glaucoma-in {
     transform: scale(1);
-    margin-top: -120%;
+    margin-top: 0%;
     & > div {
       padding-top: 0px;
     }
@@ -3522,47 +3540,47 @@ const callTel = () => {
   }
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .glaucoma{
+  .glaucoma-in{
     margin-top: -70%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
-  .glaucoma{
+  .glaucoma-in{
     margin-top: -90%;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
-  .glaucoma{
+  .glaucoma-in{
     margin-top: -120%;
   }
 }
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
-  .glaucoma {
-    margin: auto;
-    margin-top: -50%;
+  // .glaucoma {
+  //   margin: auto;
+  //   margin-top: -50%;
 
-    & > div:nth-child(2) {
-      padding-top: 350px;
-    }
-  }
+  //   & > div:nth-child(2) {
+  //     padding-top: 350px;
+  //   }
+  // }
 
-  .glaucoma_heaf > div {
-    top: -110px;
-    left: -12vw;
-  }
+  // .glaucoma_heaf > div {
+  //   top: -110px;
+  //   left: -12vw;
+  // }
 
-  .dow {
-    margin-top: -23%;
+  // .dow {
+  //   margin-top: -23%;
 
-    & > div:nth-child(1) {
-      & > div {
-        & > div:nth-child(1) {
-          margin-left: 32.2vw;
-        }
-      }
-    }
-  }
+  //   & > div:nth-child(1) {
+  //     & > div {
+  //       & > div:nth-child(1) {
+  //         margin-left: 32.2vw;
+  //       }
+  //     }
+  //   }
+  // }
 }
 </style>
