@@ -45,6 +45,13 @@ const awardsList = [
   },
   {
     imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+    year: 'pages.about_us.awards.awards_year_6',
+    des: 'pages.about_us.awards.awards_des_6',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
+  },
+  {
+    imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
     year: 'pages.about_us.awards.awards_year_1',
     des: 'pages.about_us.awards.awards_des_1',
@@ -81,7 +88,7 @@ const awardsList = [
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
-    year: 'pages.about_us.awards.awards_year_6',
+    year: 'pages.about_us.awards.awards_year_5',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
   },
