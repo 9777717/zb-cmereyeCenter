@@ -1219,7 +1219,7 @@ const callTel = () => {
   max-width: 1200px;
   margin: auto;
   transform: scale(0.85);
-  margin-top: -60%;
+  margin-top: -55%;
 
   // 什麼是青光眼？
   & > div:nth-child(2) {
@@ -3557,9 +3557,12 @@ const callTel = () => {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
+  .glaucoma-in{
+    margin-top: -40%;
+  }
   // .glaucoma {
-  //   margin: auto;
-  //   margin-top: -50%;
+    // margin: auto;
+    // margin-top: -50%;
 
   //   & > div:nth-child(2) {
   //     padding-top: 350px;
