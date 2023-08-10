@@ -64,6 +64,10 @@ onUnmounted(() => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const toLink = (a:string) => {
+  location.href = a
+}
 </script>
 
 <template>
@@ -83,7 +87,7 @@ const callTel = () => {
         <div>SERVICE</div>
       </div>
       <div>
-        <div>
+        <div :style="{cursor: 'pointer'}" @click="toLink('https://bit.ly/44r9F7M')">
           <div>
             <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 5.5L1 10" stroke="#2958A3" stroke-width="1.25" stroke-linecap="round"
@@ -92,10 +96,10 @@ const callTel = () => {
             <div>NEWS</div>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/07/3db2af36cfc41534.png" />
+            <img src="https://static.cmereye.com/imgs/2023/08/c57715cb80837edf.png" />
           </div>
           <div>
-            【放暑期啦】除咗安排去旅行外，記得安排全家人一齊做年度眼睛檢查。CMER ‧ C YOU IN SUMMER 。
+            「瞳護眼睛工作坊」網上公開報名，立即申請！*截止報名日期：2023年8月20日
           </div>
         </div>
         <div>
