@@ -1220,7 +1220,9 @@ const callTel = () => {
   margin: auto;
   transform: scale(0.85);
   margin-top: -55%;
-
+  & > div:nth-child(1) {
+    pointer-events: none;
+  }
   // 什麼是青光眼？
   & > div:nth-child(2) {
     padding-top: 200px;
