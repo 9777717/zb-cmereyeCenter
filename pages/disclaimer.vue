@@ -23,6 +23,7 @@ useHead(() => ({
         <div>本網站部分圖片來自於網絡，如果侵犯到閣下的權益，請及時與本中心聯絡，本中心將在第一時間內整改、刪除。</div>
       </div>
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -33,6 +34,7 @@ useHead(() => ({
 
   &>div:nth-child(1) {
     margin-top: 20%;
+    margin-bottom: 200px;
 
     &>div:nth-child(1) {
       font-family: 'Noto Sans HK';

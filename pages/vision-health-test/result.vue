@@ -345,6 +345,10 @@ if(testId == '11'){
   rightDataList.value.ct += r_per + "%";
 }
 
+console.log(datalist.value);
+
+console.log(rightDataList.value);
+
 
 const toEyesight = () =>{
   location.href = '/ophthalmic-information/eyesight'

@@ -237,7 +237,7 @@ const scrollHeight = () => {
                 {{ $t('pages.process_cost.cont.cost_p6')
                 }}<span class="font-bold">$1,500-$6,000</span>{{ $t('pages.process_cost.cont.cost_p6_1') }}
                 {{ $t('pages.process_cost.cont.cost_p7') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p8') }} <br />
+                <!-- {{ $t('pages.process_cost.cont.cost_p8') }} <br /> -->
                 {{ $t('pages.process_cost.cont.cost_p9') }}
               </p>
             </div>

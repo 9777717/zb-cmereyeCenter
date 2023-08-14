@@ -87,6 +87,7 @@ useHead(() => ({
         </div>
       </div>
     </div>
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -95,10 +96,9 @@ useHead(() => ({
   max-width: 1080px;
   margin: 0 auto;
   margin-bottom: 50px;
-
   & > div:nth-child(1) {
     margin-top: 20%;
-
+    margin-bottom: 200px;
     & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
       font-size: 22px;
