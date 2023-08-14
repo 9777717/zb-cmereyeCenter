@@ -262,6 +262,10 @@ let rightDataList = ref({
 })
 
 let ShowBool = ref(false)
+
+onMounted(()=>{
+
+
 if(!['01','05','06','07','08'].includes(testId)){
   ShowBool.value = true
 }
@@ -344,10 +348,11 @@ if(testId == '11'){
   datalist.value.ct += l_per + "%";
   rightDataList.value.ct += r_per + "%";
 }
-
 console.log(datalist.value);
 
 console.log(rightDataList.value);
+})
+
 
 
 const toEyesight = () =>{
