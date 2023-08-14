@@ -904,7 +904,7 @@ const goWhatsApp = () => {
   max-width: 1200px;
   width: 1200px;
   margin: auto;
-  margin-top: -66.2%;
+  margin-top: -66%;
   margin-bottom: 290px;
   transform: scale(0.85);
 
@@ -2544,7 +2544,16 @@ const goWhatsApp = () => {
 .fromTable {
   margin-top: -90%;
 }
-
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .eyeOrthopaedicDisease_nav{
+    margin-top: -90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .eyeOrthopaedicDisease_nav{
+    margin-top: -120%;
+  }
+}
 @media screen and (min-width: 768px) {
   .mb-table-box {
     display: none;
@@ -4226,17 +4235,4 @@ const goWhatsApp = () => {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .eyeOrthopaedicDisease_nav {
-    margin-top: -45%;
-  }
-
-  .eyeOrthopaedicDisease_head {
-    // margin-left: 15vw;
-  }
-
-  .fromTable {
-    margin-top: -60%;
-  }
-}
 </style>

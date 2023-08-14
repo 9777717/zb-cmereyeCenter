@@ -348,9 +348,6 @@ if(testId == '11'){
   datalist.value.ct += l_per + "%";
   rightDataList.value.ct += r_per + "%";
 }
-console.log(datalist.value);
-
-console.log(rightDataList.value);
 })
 
 
