@@ -180,42 +180,43 @@ const newList = [
 const isNewLIst = ref(true)
 const isDetail = ref(false)
 const detail = ref({
-  title: [
-    'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList1_title',
-  ],
+  id: '',
+  title: '',
   img: '',
   date: '',
-  content: [''],
+  content: '',
+  ext_paperRecoFrom: '',
+  visits: ''
 })
 const newId = ref(0)
 
-const detailImgHeight = (id: number) => {
-  const ad: any = []
-  newList.forEach((item) => {
-    ad.push(item.img)
-  })
-  const id_1 = id + 1 || 1
+// const detailImgHeight = (id: number) => {
+//   const ad: any = []
+//   newList.forEach((item) => {
+//     ad.push(item.img)
+//   })
+//   const id_1 = id + 1 || 1
 
-  const img_own = ad[id_1]
-  const myImage = new Image()
-  myImage.src = img_own
-  let width_img = ref(0)
-  let height_img = ref(0)
-  myImage.onload = () => {
-    // 获取图像的宽度和高度
-    myImage
-    const ratio = Number((780 / myImage.width).toFixed(2))
-    width_img.value = Math.floor(ratio * Number(myImage.width))
-    height_img.value = Math.floor(ratio * Number(myImage.height))
-  }
-  return height_img
-}
+//   const img_own = ad[id_1]
+//   const myImage = new Image()
+//   myImage.src = img_own
+//   let width_img = ref(0)
+//   let height_img = ref(0)
+//   myImage.onload = () => {
+//     // 获取图像的宽度和高度
+//     myImage
+//     const ratio = Number((780 / myImage.width).toFixed(2))
+//     width_img.value = Math.floor(ratio * Number(myImage.width))
+//     height_img.value = Math.floor(ratio * Number(myImage.height))
+//   }
+//   return height_img
+// }
 const newDeatil = (id: number) => {
   newId.value = id
-  detail.value = newList[id]
+  detail.value = pressLists.value[id]
   isNewLIst.value = false
   isDetail.value = true
-  detailImgHeight(id)
+  // detailImgHeight(id)
 }
 const showNewList = () => {
   isNewLIst.value = true
@@ -224,27 +225,90 @@ const showNewList = () => {
 const pageTurning = (flag: string) => {
   if (flag === 'up') {
     if (newId.value === 0) {
-      ElMessage.error('當前是第一條！')
+      ElMessage.error('當前是本页第一條！')
     } else {
-      const index = newId.value--
-      newList.forEach((el) => {
-        if (el.id === index) {
-          detail.value = el
-        }
-      })
+      newId.value--
+      detail.value = pressLists.value[newId.value]
+      toTop()
     }
-  } else if (newId.value > newList.length) {
-    ElMessage.error('當前是最後一條！')
+  } else if (newId.value+1 >= newList.length) {
+    ElMessage.error('當前是本页最後一條！')
   } else {
-    const index = newId.value++
-    newList.forEach((el) => {
-      if (el.id === index) {
-        detail.value = el
-      }
-    })
+    newId.value++
+    detail.value = pressLists.value[newId.value]
+    toTop()
   }
 }
 
+let pressLists:any = ref([])
+let totalPageNum = ref(0)
+let actPageNum = ref(1) 
+const getPressContent = async () => {
+  const loading = ElLoading.service({
+    lock: true,
+    text: 'Loading',
+    background: 'rgba(0, 0, 0, 0.7)',
+  })
+  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/4/page/${actPageNum.value}/num/8/order/date`)
+  let res = JSON.parse(data.value)
+  // console.log(res)
+  totalPageNum.value = Math.ceil(res.rowtotal / 8)
+  pressLists.value = res.data.map((item:any) => {
+    let date = new Date(item.date);
+    let y = date.getFullYear();
+    let MM:any = date.getMonth() + 1;
+    MM = MM < 10 ? ('0' + MM) : MM;
+    let d = date.getDate();
+    return {
+      id: item.id,
+      img: `https://hkcmereye.com${item.ico}`,
+      content: item.content,
+      ext_paperRecoFrom: item.source,
+      visits: item.visits,
+      title: item.title,
+      date: y+'-'+MM+'-'+d
+    }
+  })
+  toTop()
+  loading.close()
+}
+
+const subNum = () => {
+  if(actPageNum.value > 1){
+    actPageNum.value --
+    sessionStorage.setItem('pressPage',JSON.stringify(actPageNum.value))
+    getPressContent()
+  }
+}
+
+const addNum = () => {
+  if(actPageNum.value < totalPageNum.value){
+    actPageNum.value ++
+    sessionStorage.setItem('pressPage',JSON.stringify(actPageNum.value))
+    getPressContent()
+  }
+}
+
+const toLinkPage = (_data: any) => {
+  // console.log(_data)
+  window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
+}
+
+const toTop = () => {
+  let topHeight:number = document.getElementById('pressContent')?.offsetTop || 0
+  document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100
+}
+
+const to_ext_paperRecoFrom = () =>{
+  location.href = detail.value.ext_paperRecoFrom
+}
+
+onMounted(()=>{
+  setTimeout(()=>{
+    actPageNum.value = Number(sessionStorage.getItem('pressPage')) || 1
+    getPressContent()
+  },0)
+})
 
 </script>
 
@@ -297,12 +361,12 @@ const pageTurning = (flag: string) => {
           </div>
         </div>
       </div>
-      <div>
-        <div v-for="(item, index) in newList" v-show="isNewLIst" :key="index" @click="newDeatil(index)">
+      <div id="pressContent">
+        <div v-for="(item, index) in pressLists" v-show="isNewLIst" :key="index" @click="newDeatil(index)">
           <div><img :src="item.img" /></div>
-          <div>{{ item.date }}</div>
+          <div>{{item.date}}</div>
           <div>
-            <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
+            <p>{{item.title}}</p>
           </div>
           <div>
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -315,36 +379,34 @@ const pageTurning = (flag: string) => {
     <div v-if="isDetail" class="content_press">
       <div>
         <div>
-
-          <div v-for="(el, index) in detail.title" :key="index">
+          <div>{{detail.title}}</div>
+          <!-- <div v-for="(el, index) in detail.title" :key="index">
             {{ $t(el) }}
-          </div>
+          </div> -->
         </div>
         <div>
-          <div class="height_after"><img :src="detail.img" /></div>
-          <!-- <div class="height_after" :style="{ '--heightPress': `${height_img}` }"><img :src="detail.img" /></div> -->
-          <div>{{ detail.date }}</div>
+          <!-- <div class="height_after"><img :src="detail.img" /></div>
+          <div>{{ detail.date }}</div> -->
         </div>
         <div>
-          <div>
-            <p v-for="(el, i) in detail.content" :key="i">{{ $t(el) }}</p>
+          <div v-html="detail.content">
           </div>
           <div>
             <div>
-              {{
+              <!-- {{
                 $t(
                   'pages.ophthalmic_information.ophthalmic_press_text.press_span1'
                 )
-              }}<span>{{ 'am730' }}</span>
+              }}<span>{{ 'am730' }}</span> -->
             </div>
             <div>
-              {{
+              <!-- {{
                 $t(
                   'pages.ophthalmic_information.ophthalmic_press_text.press_span2'
                 )
-              }}<span>{{ '李琬微' }}</span>
+              }}<span>{{ '李琬微' }}</span> -->
             </div>
-            <div>
+            <div @click="to_ext_paperRecoFrom()">
               {{
                 $t(
                   'pages.ophthalmic_information.ophthalmic_press_text.press_span3'
@@ -356,7 +418,7 @@ const pageTurning = (flag: string) => {
                 $t(
                   'pages.ophthalmic_information.ophthalmic_press_text.press_span4'
                 )
-              }}<span>{{ '3789' }}</span>
+              }}<span>{{ detail.visits }}</span>
             </div>
           </div>
         </div>
@@ -385,6 +447,44 @@ const pageTurning = (flag: string) => {
         </div>
       </div>
     </div>
+    <!-- 预计分页 -->
+    <div class="paging" v-show="isNewLIst">
+      <div @click="subNum">
+        <svg
+          width="9"
+          height="15"
+          viewBox="0 0 9 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.15198 13.3037L0.999984 7.15172L7.15198 0.999723"
+            stroke="#2958A3"
+            stroke-width="1.75771"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div>{{actPageNum}}/{{totalPageNum}}</div>
+      <div @click="addNum">
+        <svg
+          width="9"
+          height="15"
+          viewBox="0 0 9 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 1L7.15199 7.15199L1 13.304"
+            stroke="#2958A3"
+            stroke-width="1.75771"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
     <div>
       <PageInformation />
     </div>
@@ -405,6 +505,7 @@ const pageTurning = (flag: string) => {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // align-items: center;
     width: 100%;
     height: 731px;
     margin-top: 80px;
@@ -517,7 +618,7 @@ const pageTurning = (flag: string) => {
 
   &>div:nth-child(2) {
     width: 100%;
-    max-width: 1080px;
+    max-width: 927px;
     margin: 290px auto 0;
     display: flex;
     flex-wrap: wrap;
@@ -526,15 +627,22 @@ const pageTurning = (flag: string) => {
     &>div {
       cursor: pointer;
       width: 400px;
-      height: 400px;
+      height: 420px;
       background: #f2f2f2;
       margin-bottom: 120px;
       position: relative;
-
       &>div:nth-child(1) {
-        padding: 33px 31px;
-        min-height: 240px;
-        padding-bottom: 0;
+        margin: 33px 31px 0;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        overflow: hidden;
+        img{
+          max-width: 100%;
+          max-height: 100%;
+        }
       }
 
       &>div:nth-child(2) {
@@ -550,14 +658,12 @@ const pageTurning = (flag: string) => {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #8ad8dd;
-
         display: flex;
-        // align-items: center;
         justify-content: center;
       }
 
       &>div:nth-child(3) {
-        margin-left: 31px;
+        margin: 0 31px;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -567,6 +673,13 @@ const pageTurning = (flag: string) => {
         text-transform: uppercase;
         color: #515151;
         white-space: pre-wrap;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+        overflow: hidden;
+        // width: 100%;
       }
 
       &>div:nth-child(4) {
@@ -577,11 +690,32 @@ const pageTurning = (flag: string) => {
     }
   }
 }
+.paging {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #2958a3;
+  width: 100%;
+  max-width: 927px;
+  margin: 0 auto 256px;
+  & > div:nth-child(2) {
+    margin: 0 33px;
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.6441px;
+    letter-spacing: 0.5em;
+  }
 
+  & > div:nth-child(1),
+  & > div:nth-child(3) {
+    cursor: pointer;
+  }
+}
 .content_press {
   position: relative;
   margin: 0 26.0412%;
-  margin-top: 122px;
+  // margin-top: 122px;
   margin-bottom: 122px;
 
   &>div:nth-child(1) {
@@ -659,9 +793,9 @@ const pageTurning = (flag: string) => {
     }
 
     &>div:nth-child(3) {
-      margin-top: 97px;
+      // margin-top: 97px;
       margin-bottom: 80px;
-
+      
       &>div:nth-child(1) {
         margin-bottom: 120px;
         font-family: 'Noto Sans HK';
@@ -690,6 +824,9 @@ const pageTurning = (flag: string) => {
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #515151;
+        &>div:nth-child(3){
+          cursor: pointer;
+        }
       }
     }
   }
@@ -807,7 +944,9 @@ const pageTurning = (flag: string) => {
         padding-bottom: 20px;
 
         &>div:nth-child(1) {
-          padding: 20px;
+          // padding: 20px;
+          margin: 20px;
+          height: auto;
           min-height: 180px;
         }
 
@@ -840,7 +979,7 @@ const pageTurning = (flag: string) => {
         content: '';
         border-bottom: 3px solid #515151;
         display: inline-block;
-        width: 486px;
+        width: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -878,7 +1017,7 @@ const pageTurning = (flag: string) => {
       }
 
       &>div:nth-child(3) {
-        margin-top: 157px;
+        // margin-top: 157px;
 
         &>div:nth-child(1) {
           margin-bottom: 72px;
@@ -911,6 +1050,9 @@ const pageTurning = (flag: string) => {
         }
       }
     }
+  }
+  .paging{
+    justify-content: center;
   }
 }
 </style>

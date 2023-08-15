@@ -62,6 +62,7 @@ const getMainContent = async () => {
       date: y+'-'+MM+'-'+d
     }
   })
+  toTop()
   loading.close()
 }
 
@@ -79,6 +80,11 @@ const addNum = () => {
     sessionStorage.setItem('healthInfoPage',JSON.stringify(actPageNum.value))
     getMainContent()
   }
+}
+
+const toTop = () => {
+  let topHeight:number = document.getElementById('healthInfoContent')?.offsetTop || 0
+  document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100
 }
 
 onMounted(()=>{
@@ -119,7 +125,7 @@ onMounted(()=>{
         <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text3')}}</div>
       </div>
     </div>
-    <div class="content_health">
+    <div class="content_health" id="healthInfoContent">
       <div
         v-for="(item, index) in healthList"
         :key="index"

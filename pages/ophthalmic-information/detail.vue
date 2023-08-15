@@ -16,7 +16,9 @@ let pageDetail = ref({
   source: ''
 })
 pageId.value = route.query.id
+let contentLoading = ref(false)
 const getDetail = async () => {
+  contentLoading.value = true
   const {data}:any = await useFetch(`https://hkcmereye.com/api.php/content/${pageId.value}`)
   let res = JSON.parse(data.value)
   // console.log(res)
@@ -30,6 +32,9 @@ const getDetail = async () => {
     ext_paperRecoFrom: res.data.ext_paperRecoFrom,
     source: res.data.source
   }
+  setTimeout(()=>{
+    contentLoading.value = false
+  },2000)
 }
 
 onMounted(()=>{
@@ -58,13 +63,13 @@ const goLink = (_data:any) => {
         {{pageDetail.title}}
       </div>
     </div>
-    <div class="healthInfoDetail-content" v-html="pageDetail.content"></div>
+    <div class="healthInfoDetail-content" v-loading="contentLoading" v-html="pageDetail.content"></div>
     <div class="healthInfoDetail-bottom">
       <div class="healthInfoDetail-bottom-info">
-        <span v-if="pageDetail.ext_paperRecoFrom">新聞來源︰{{pageDetail.ext_paperRecoFrom}}</span>
-        <span v-if="pageDetail.ext_paperRecoFrom === 'Bowtie'" @click="goLink('https://www.bowtie.com.hk')">合作醫療夥伴︰Bowtie</span>
-        <span v-if="pageDetail.author">作者︰{{pageDetail.author}}</span>
-        <span v-if="pageDetail.source" @click="goLink(pageDetail.source)">資料來源︰原文鏈接</span>
+        <span class="ext_paperRecoFrom" v-if="pageDetail.ext_paperRecoFrom">新聞來源︰{{pageDetail.ext_paperRecoFrom}}</span>
+        <span class="Bowtie" v-if="pageDetail.ext_paperRecoFrom === 'Bowtie'" @click="goLink('https://www.bowtie.com.hk')">合作醫療夥伴︰Bowtie</span>
+        <span class="author" v-if="pageDetail.author">作者︰{{pageDetail.author}}</span>
+        <span class="source" v-if="pageDetail.source" @click="goLink(pageDetail.source)">資料來源︰原文鏈接</span>
         <span v-if="pageDetail.visits">瀏覽次數︰{{pageDetail.visits}}</span>
         <span v-if="pageDetail.update_time">更新時間︰{{pageDetail.update_time}}</span>
         <!-- <span>閱讀更多文章︰</span> -->
@@ -77,6 +82,7 @@ const goLink = (_data:any) => {
         <!-- <span>下一篇</span> -->
       </div>
     </div>
+    <!-- <PageFooterMenu /> -->
   </div>
 </template>
 
@@ -85,7 +91,7 @@ const goLink = (_data:any) => {
 .healthInfoDetail{
   width: 100%;
   max-width: 1080px;
-  margin: 200px auto 300px;
+  margin: 150px auto 0;
   .goBack{
     text-align: right;
     a{
@@ -112,53 +118,55 @@ const goLink = (_data:any) => {
   &-content{
     margin-top: 50px;
     max-width: 700px;
+    min-height: 50vh;
   }
   &-bottom{
     border-top: 1px dashed #1b407a;
     padding-top: 30px;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     &-info{
-      span{
+      &>span{
         display: block;
         font-size: 18px;
         color: #6c757d;
         margin-bottom: 5px;
-        &:nth-of-type(1){
+        &.ext_paperRecoFrom{
           color: #4d4d4d;
         }
-        &:nth-of-type(2){
+        &.Bowtie{
           cursor: pointer;
           color: #4d4d4d;
           &:hover{
             color: #1b407a;
           }
         }
-        &:nth-of-type(3){
+        &.author{
           color: #4d4d4d;
         }
-        &:nth-of-type(4){
-          margin-top: 30px;
+        &.source{
+          // margin-top: 30px;
           cursor: pointer;
           &:hover{
             color: #1b407a;
           }
         }
-        &:nth-of-type(7){
-          font-size: 16px;
-          margin-top: 30px;
-        }
-        &:nth-of-type(8){
-          font-size: 14px;
-          cursor: pointer;
-          &:hover{
-            color: #1b407a;
-          }
-        }
-        &:nth-of-type(9){
-          font-size: 14px;
-        }
+        // &:nth-of-type(7){
+        //   font-size: 16px;
+        //   margin-top: 30px;
+        // }
+        // &:nth-of-type(8){
+        //   font-size: 14px;
+        //   cursor: pointer;
+        //   &:hover{
+        //     color: #1b407a;
+        //   }
+        // }
+        // &:nth-of-type(9){
+        //   font-size: 14px;
+        // }
       }
     }
     &-btn{
@@ -196,7 +204,7 @@ const goLink = (_data:any) => {
         margin: 20px 0;
         border-left: 6px solid #1b407a;
         padding-left: 10px;
-        padding-top: 4px;
+        // padding-top: 4px;
         height: 35px;
         line-height: 35px;
       }
@@ -209,6 +217,7 @@ const goLink = (_data:any) => {
     }
     &-bottom{
       flex-direction: column;
+      margin-bottom: 100px;
       &-btn{
         margin-top: 30px;
       }
