@@ -527,11 +527,10 @@ const callTel = () => {
   margin-top: 50px;
 }
 .muscaeNav {
-  margin-top: 100px;
   max-width: 1200px;
-  margin: auto;
+  margin: 100px auto -40%;
   transform: scale(0.9);
-  margin-top: -20%;
+  transform-origin: center top;
 
   // 什麼是飛蚊症？
   & > div:nth-child(1) {
@@ -1446,7 +1445,7 @@ const callTel = () => {
   }
   .muscaeNav {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
@@ -1935,7 +1934,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .muscaeNav {
-    margin-top: -10%;
+    margin-bottom: -30%;
   }
 
   .dow {

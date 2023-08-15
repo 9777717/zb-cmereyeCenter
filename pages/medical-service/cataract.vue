@@ -1001,12 +1001,11 @@ const callTel = () => {
 .cataract {
   position: relative;
   max-width: 1200px;
-  margin: auto;
+  margin: 100px auto -40%;
   transform: scale(0.9);
-  margin-top: -35%;
+  transform-origin: center top;
 
   &>div:nth-child(2) {
-    padding-top: 165px;
 
     &>div:nth-child(1) {
       display: flex;
@@ -2292,11 +2291,11 @@ const callTel = () => {
   }
   .cataract {
     transform: scale(1);
-    
+    margin: 0;
     &>div:nth-child(2) {
       width: calc(100% - 60px);
       margin: 0 auto;
-      padding-top: 100px;
+      // padding-top: 100px;
       &>div:nth-child(1) {
         width: 100%;
         flex-direction: row-reverse;
@@ -3080,12 +3079,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media (min-width: 678px) and (max-width: 1200px) {
   .cataract {
-    margin-top: -60%;
-  }
-}
-@media screen and (min-width: 1980px) {
-  .cataract {
-    margin-top: -20%;
+    margin-bottom: -80%;
   }
 }
 </style>

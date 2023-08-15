@@ -689,13 +689,13 @@ const callTel = () => {
 <style lang="scss" scoped>
 .xerophthalmia {
   max-width: 1200px;
-  margin: auto;
+  margin: 100px auto -40%;
   position: relative;
-  transform: scale(0.85);
-  margin-top: -60%;
+  transform: scale(0.9);
+  transform-origin: center top;
 
   &>div:nth-child(1) {
-    margin-top: 130px;
+    // margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2225,7 +2225,7 @@ const callTel = () => {
 
   .xerophthalmia {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px 0 0;
 
     &>div:nth-child(1) {
       width: calc(100% - 60px);
@@ -2318,7 +2318,7 @@ const callTel = () => {
         width: max-content;
         font-size: 16px;
         height: 50px;
-        line-height: 50px;
+        line-height: 160%;
         padding: 0 30px;
         margin-top: 40px;
       }
@@ -3095,8 +3095,8 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .xerophthalmia {
-    margin: auto;
-    margin-top: -37.3%;
+    // margin: auto;
+    // margin-top: -37.3%;
   }
 
   .dow {

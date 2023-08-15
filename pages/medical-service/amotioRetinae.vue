@@ -345,12 +345,13 @@ const preventList1 = [
 <style lang="scss" scoped>
 .amotioRetinae_nav {
   max-width: 1200px;
-  margin: auto;
-  transform: scale(0.85);
-  margin-top: -39.5%;
+  margin: 100px auto -50%;
+  transform: scale(0.9);
+  transform-origin: center top;
+  // margin-top: -39.5%;
 
   &>#intro {
-    margin-top: 220px;
+    // margin-top: 220px;
 
     &>div:nth-child(1) {
       font-size: 50px;
@@ -972,13 +973,12 @@ const preventList1 = [
 
   .amotioRetinae_nav {
     max-width: 100%;
-    margin: auto;
+    margin: 100px 0 0;
     transform: scale(1);
-    margin-top: 0;
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
 
     &>#intro {
-      margin-top: 180px;
+      // margin-top: 180px;
 
       &>div:nth-child(1) {
         font-size: 25px;
@@ -1503,7 +1503,7 @@ const preventList1 = [
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .amotioRetinae_nav {
-    margin-top: -23.7%;
+    margin-bottom: -40%;
   }
 
   .amotioRetinae_head {

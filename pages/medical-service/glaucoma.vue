@@ -1218,14 +1218,16 @@ const callTel = () => {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  transform: scale(0.85);
-  margin-top: -55%;
+  transform: scale(0.9);
+  transform-origin: center top;
+  margin: 100px auto -40%;
   & > div:nth-child(1) {
     pointer-events: none;
+    padding-top: 0;
   }
   // 什麼是青光眼？
   & > div:nth-child(2) {
-    padding-top: 200px;
+    padding-top: 0px;
 
     & > div:nth-child(1) {
       margin: auto;
@@ -2785,7 +2787,7 @@ const callTel = () => {
   }
   .glaucoma-in {
     transform: scale(1);
-    margin-top: 0%;
+    margin: 100px 0 0;
     & > div {
       padding-top: 0px;
     }
@@ -3543,24 +3545,24 @@ const callTel = () => {
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
   .glaucoma-in{
-    margin-top: -70%;
+    // margin-top: -70%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
   .glaucoma-in{
-    margin-top: -90%;
+    // margin-top: -90%;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
   .glaucoma-in{
-    margin-top: -120%;
+    // margin-top: -120%;
   }
 }
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
   .glaucoma-in{
-    margin-top: -40%;
+    // margin-top: -40%;
   }
   // .glaucoma {
     // margin: auto;

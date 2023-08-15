@@ -303,9 +303,9 @@ const goVision = () => {
 }
 .medicalOptometry_nav {
   max-width: 1200px;
-  margin: auto;
-  transform: scale(0.85);
-  margin-top: -3.7%;
+  transform: scale(0.9);
+  transform-origin: center top;
+  margin: 100px auto -40%;
 
   &>#brief_introduction {
     margin-bottom: 200px;
@@ -981,11 +981,11 @@ const goVision = () => {
   }
 
   .medicalOptometry_nav {
-    margin-top: 0.3%;
+    margin-bottom: -20%;
   }
 
   .fromTable {
-    margin-top: -15%;
+    // margin-top: -15%;
   }
 }
 </style>

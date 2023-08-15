@@ -415,13 +415,13 @@ const callTel = () => {
 .conjunctivitis_nav {
   // margin: 0 300px;
   max-width: 1200px;
-  margin: auto;
-  transform: scale(0.85);
-  margin-top: -34%;
+  margin: 100px auto -50%;
+  transform: scale(0.9);
+  transform-origin: center top;
 
   // 什麼是結膜炎？
   & > div:nth-child(1) {
-    margin-top: 130px;
+    // margin-top: 130px;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -1091,7 +1091,7 @@ const callTel = () => {
   }
   .conjunctivitis_nav {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
@@ -1432,7 +1432,7 @@ const callTel = () => {
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .conjunctivitis_nav {
-    margin-top: -20%;
+    margin-bottom: -40%;
   }
 
   .conjun_header {

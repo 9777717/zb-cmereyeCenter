@@ -903,11 +903,11 @@ const goWhatsApp = () => {
 .eyeOrthopaedicDisease_nav {
   max-width: 1200px;
   width: 1200px;
-  margin: auto;
-  margin-top: -66%;
-  margin-bottom: 290px;
-  transform: scale(0.85);
-
+  margin: 100px auto 0;
+  // margin-top: -66%;
+  // margin-bottom: 290px;
+  transform: scale(0.9);
+  transform-origin: center top;
   &>#ophthalmoplasty {
     margin-bottom: 160px;
 
@@ -2546,12 +2546,17 @@ const goWhatsApp = () => {
 }
 @media (min-width: 1200px) and (max-width: 1600px) {
   .eyeOrthopaedicDisease_nav{
-    margin-top: -90%;
+    // margin-top: -90%;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .eyeOrthopaedicDisease_nav{
-    margin-top: -120%;
+    // margin-top: -120%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .eyeOrthopaedicDisease_nav{
+    margin-bottom: 20%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2633,9 +2638,9 @@ const goWhatsApp = () => {
   .eyeOrthopaedicDisease_nav {
     max-width: 100%;
     width: 100%;
-    margin: auto;
-    margin-top: 210px;
-    margin-bottom: 240px;
+    margin: 100px 0 0;
+    // margin-top: 210px;
+    // margin-bottom: 240px;
     transform: scale(1);
     padding: 0 40px;
 
@@ -4233,6 +4238,4 @@ const goWhatsApp = () => {
     display: none;
   }
 }
-</style>
-<style lang="scss" scoped>
 </style>

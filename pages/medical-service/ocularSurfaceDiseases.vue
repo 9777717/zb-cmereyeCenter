@@ -1062,10 +1062,9 @@ const keratoplastyList1 = [
 <style lang="scss" scoped>
 .ocularSurfaceDiseases_nav {
   max-width: 1200px;
-  margin: auto;
-  margin-top: -76.3%;
-  transform: scale(0.85);
-
+  margin: 100px auto -120%;
+  transform: scale(0.9);
+  transform-origin: center top;
   & > #pterygium {
     margin-bottom: 160px;
 
@@ -2695,7 +2694,7 @@ const keratoplastyList1 = [
   }
   .ocularSurfaceDiseases_nav {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px auto 0;
     & > #pterygium {
       width: calc(100% - 60px);
       margin: 70px auto 0;
@@ -3677,17 +3676,17 @@ const keratoplastyList1 = [
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1980px) {
   .ocularSurfaceDiseases_head {
     // margin-left: 12vw;
   }
 
   .ocularSurfaceDiseases_nav {
-    margin-top: -55%;
+    margin-bottom: -70%;
   }
 
   .fromTable {
-    margin-top: -55%;
+    // margin-top: -55%;
   }
 }
 </style>

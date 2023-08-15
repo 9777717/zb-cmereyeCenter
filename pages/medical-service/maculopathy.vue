@@ -535,19 +535,14 @@ const callTel = () => {
   </div>
 </template>
 <style lang="scss" scoped>
-.maculopathy-nav{
-  margin-top: 50px;
-}
 .maculopathy_nav {
-  // margin: 0 300px;
   max-width: 1200px;
-  margin: auto;
-  transform: scale(0.85);
-  margin-top: -48.8%;
-
+  margin: 100px auto -40%;
+  transform: scale(0.9);
+  transform-origin: center top;
   // 什麼是黃斑病變？
   & > div:nth-child(1) {
-    margin-top: 253px;
+    // margin-top: 253px;
     margin-left: 41px;
 
     & > div:nth-child(1) {
@@ -1343,9 +1338,6 @@ const callTel = () => {
 }
 
 @media screen and (max-width: 768px) {
-  .maculopathy-nav{
-    display: none;
-  }
   .maculopathy_header {
     &>div:nth-child(1) {
       width: calc(100% - 60px);
@@ -1392,7 +1384,7 @@ const callTel = () => {
   }
   .maculopathy_nav {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
@@ -1811,9 +1803,9 @@ const callTel = () => {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1980px) {
   .maculopathy_nav {
-    margin-top: -30%;
+    // margin-top: -30%;
   }
   .dow {
     margin-top: -20%;

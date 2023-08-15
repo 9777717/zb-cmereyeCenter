@@ -440,10 +440,9 @@ const callTel = () => {
 }
 .strabismusAmblyopia_nav {
   max-width: 1200px;
-  transform: scale(0.85);
-  margin: auto;
-  margin-top: -40%;
-
+  transform: scale(0.9);
+  transform-origin: center top;
+  margin: 100px auto -60%;
   & > #strabismus {
     & > div:nth-child(2) {
       line-height: 46px;
@@ -1128,7 +1127,7 @@ const callTel = () => {
   }
   .strabismusAmblyopia_nav {
     transform: scale(1);
-    margin-top: 190px;
+    margin: 100px 0 0;
     & > #strabismus {
       width: calc(100% - 60px);
       margin: 70px auto 0;
@@ -1483,10 +1482,10 @@ const callTel = () => {
 
 </style>
 <style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1980px) {
 
   .strabismusAmblyopia_nav {
-    margin-top: -20%;
+    // margin-top: -20%;
 
     & > #cure {
       & > div:nth-child(2) {

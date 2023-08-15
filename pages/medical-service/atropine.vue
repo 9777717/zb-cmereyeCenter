@@ -444,7 +444,7 @@ const tozoosnet =()=>{
   margin-top: 100px;
 }
 .atropine_nav {
-  margin: 280px auto;
+  margin: 100px auto 280px;
   & > #introduce {
     margin-bottom: 164px;
     & > div:nth-child(2) {
@@ -1159,7 +1159,7 @@ const tozoosnet =()=>{
     line-height: 1.6;
   }
   .atropine_nav {
-    margin: 190px auto;
+    margin: 100px auto;
     & > #introduce {
       margin-bottom: 0;
       width: calc(100% - 60px);
