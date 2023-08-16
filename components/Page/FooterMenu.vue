@@ -98,27 +98,27 @@ const menuLists = [
       {
         name: 'Tel: (852) 3956 2025',
         icon: 'https://static.cmereye.com/imgs/2023/07/724ec499dbc6fbfd.png',
-        link: ''
+        link: 'tel:+(852) 3956 2026'
       },
       {
         name: 'WhatsApp: (852) 9345 1508',
         icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
-        link: ''
+        link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'
       },
-      {
-        name: 'SMILE專線: (852) 6730 8554',
-        icon: 'https://static.cmereye.com/imgs/2023/07/e4927ce3113f0a5d.png',
-        link: ''
-      },
+      // {
+      //   name: 'SMILE專線: (852) 6730 8554',
+      //   icon: 'https://static.cmereye.com/imgs/2023/07/e4927ce3113f0a5d.png',
+      //   link: ''
+      // },
       {
         name: 'Facebook: cmereyecenter',
         icon: 'https://static.cmereye.com/imgs/2023/07/28d1674922e892cc.png',
-        link: ''
+        link: 'https://www.facebook.com/cmereyecenter'
       },
       {
         name: 'Instagram: @cmer_eye_center',
         icon: 'https://static.cmereye.com/imgs/2023/07/28f20047d8233ea4.png',
-        link: ''
+        link: 'https://www.instagram.com/cmer_eye_center/'
       },
       {
         name: 'Wechat 公眾號: 香港希瑪眼科中心',
@@ -126,9 +126,9 @@ const menuLists = [
         link: ''
       },
       {
-        name: 'Email: (852) booking@hkcmer.com',
+        name: 'Email: booking@hkcmer.com',
         icon: 'https://static.cmereye.com/imgs/2023/07/0f897e88c12c7f8e.png',
-        link: ''
+        link: 'mailto:booking@hkcmer.com'
       }
     ]
   },
@@ -185,10 +185,17 @@ let drawer = ref(false)
           </div>
           <div class="t-in-b">
             <div>
-              <div v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" @click="handleToLinks(itemChild)">
+              <div :class="{weChatItem: index===2 && itemChildIndex === 4}" v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" @click="handleToLinks(itemChild)">
                 <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                 <span v-if="index === 1">{{`<`}}</span>
                 <span>{{itemChild.name}}</span>
+                <div class="drawerIn" v-if="index===2 && itemChildIndex === 4">
+                  <img
+                    src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                    alt="微信QR"
+                    srcset=""
+                  />
+                </div>
               </div>
             </div>
             <div class="twoD" v-if="item.lists.length > 7">
@@ -254,6 +261,7 @@ let drawer = ref(false)
             &>div{
               cursor: pointer;
               margin-top: 15px;
+              position: relative;
               &>div{
                 display: inline-block;
                 vertical-align: middle;
@@ -274,10 +282,32 @@ let drawer = ref(false)
                   margin-right: 10px;
                 }
               }
+              .drawerIn{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(-100%,-50%);
+                width: 0;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                transition: all .3s;
+                img{
+                  width: 100%;
+                }
+              }
+              &.weChatItem{
+                &:hover{
+                  .drawerIn{
+                    width: 200px;
+                  }
+                }
+              }
             }
             &.twoD{
               margin-left: 60px;
             }
+
           }
         }
       }

@@ -194,19 +194,6 @@ const rt = ref(route)
     }
   }
 }
-.onlinContact_top{
-  bottom: 50px;
-  &>div{
-    .topitem{
-      // width: 160px;
-      width: 80%;
-      margin: 0 auto;
-    }
-    .ocitem{
-      margin-top: 10px;
-    }
-  }
-}
 @keyframes ss {
   0%{
     transform: rotate(0deg);
@@ -232,9 +219,6 @@ const rt = ref(route)
   .onlinContact {
     // top: 700px;
     right: 12%;
-  }
-  .onlinContact_top {
-    // top: 900px;
   }
 }
 </style>

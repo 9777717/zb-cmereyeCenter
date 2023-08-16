@@ -1315,14 +1315,14 @@ const callTel = () => {
         font-stretch: normal;
         line-height: 75px;
         letter-spacing: 0px;
-        color: #fff;
+        color: #1b80a0;
 
         width: 501px;
         height: 75px;
-        background-image: linear-gradient(#5ab7d5, #5ab7d5),
-          linear-gradient(#f6fbfe, #f6fbfe);
+        // background-image: linear-gradient(#5ab7d5, #5ab7d5),
+        //   linear-gradient(#f6fbfe, #f6fbfe);
         background-blend-mode: normal, normal;
-        box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+        // box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
         border-radius: 20px;
       }
 
