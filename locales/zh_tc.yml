@@ -1009,8 +1009,8 @@ pages:
       cost_tr17_td1: 隱形眼鏡驗配
       cost_tr17_td2: 八歲以上
       cost_tr18_td2: 八歲或以下
-      cost_p2: 以上價格
-      cost_p2_1: 以港幣
+      cost_p2: 以上價格以
+      cost_p2_1: 港幣
       cost_p2_2: 結算
       cost_p3_1_s: '*如需索取以上特殊檢查的複本，我們將會收取行政費用' 
       cost_p3: 每份詳細眼睛檢查複本將收取
