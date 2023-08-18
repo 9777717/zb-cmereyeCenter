@@ -158,7 +158,7 @@ onMounted(()=>{
 #awards {
   width: 100%;
   max-width: 1080px;
-  margin: 253px auto 160px;
+  margin: 115px auto 160px;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
