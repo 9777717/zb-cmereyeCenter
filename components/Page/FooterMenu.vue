@@ -125,11 +125,11 @@ const menuLists = [
         icon: 'https://static.cmereye.com/imgs/2023/07/56fb4969e6637ae4.png',
         link: ''
       },
-      {
-        name: 'Email: booking@hkcmer.com',
-        icon: 'https://static.cmereye.com/imgs/2023/07/0f897e88c12c7f8e.png',
-        link: 'mailto:booking@hkcmer.com'
-      }
+      // {
+      //   name: 'Email: booking@hkcmer.com',
+      //   icon: 'https://static.cmereye.com/imgs/2023/07/0f897e88c12c7f8e.png',
+      //   link: 'mailto:booking@hkcmer.com'
+      // }
     ]
   },
 ]
