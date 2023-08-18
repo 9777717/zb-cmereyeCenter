@@ -73,8 +73,13 @@ const toLink = (a:string) => {
 <template>
   <div class="home">
     <div>
-      <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted
-        src="https://static.cmereye.com/static/loffee/video/OPD.mp4"></video>
+      <div style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
+        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted
+        src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
+         </video>
+      </div>
+      
+     
       <div class="mbHomeSwiper" :style="{
         background: `url(${homeSwiperImgs[currentImg].imgUrl})no-repeat`
       }">
@@ -179,7 +184,7 @@ const toLink = (a:string) => {
   position: relative;
   width: 100%;
   height: 100vh;
-
+  
   &>div:nth-of-type(1) {
     .mbHomeSwiper {
       display: none;
@@ -195,14 +200,14 @@ const toLink = (a:string) => {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    pointer-events: none;
     &>div:nth-child(1) {
       display: flex;
       justify-content: center;
       margin-bottom: 196px;
       flex-direction: column;
       align-items: flex-start;
-
+      
       &>div:nth-child(1) {
         letter-spacing: 2.409px;
       }
@@ -225,7 +230,7 @@ const toLink = (a:string) => {
 
     &>div:nth-child(2) {
       display: flex;
-
+      pointer-events: initial;
       &>div {
         background: #ffffffbf;
       }
