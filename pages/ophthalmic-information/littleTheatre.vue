@@ -306,7 +306,7 @@ const videoList = [
           font-family: 'Noto Sans HK';
           font-style: normal;
           font-weight: 500;
-          font-size: 13.1538px;
+          font-size: 18px;
           line-height: 26px;
           text-align: center;
           letter-spacing: 0.1em;
