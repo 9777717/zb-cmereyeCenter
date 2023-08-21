@@ -41,8 +41,8 @@ onMounted(()=>{
             :modules="[Grid,Navigation]"
             class="feedbackSwiper"
           >
-            <swiper-slide v-for="feedback in 25" :key="feedback">
-              <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${feedback>=10? feedback: '0'+String(feedback)}.png`" alt="">
+            <swiper-slide v-for="feedback in 21" :key="feedback">
+              <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${feedback>=10? feedback: '0'+String(feedback)}.jpg`" alt="">
             </swiper-slide>
           </swiper>
         </div>
