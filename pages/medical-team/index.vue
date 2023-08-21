@@ -803,7 +803,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 100px;
-        left: -140px;
+        left: -80px;
       }
 
       &>div:nth-child(1)::before {
@@ -1010,7 +1010,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 16px;
-        left: -100px;
+        left: -120px;
       }
 
       &>div:nth-child(1)::before {
