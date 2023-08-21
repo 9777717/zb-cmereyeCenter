@@ -436,10 +436,11 @@ onMounted(()=>{
         </div>
       </div>
     </div>
+    <feedback-con />
     <FormFooterInfo
       :from-style="'margin: 0 232px'"
       :isShowTopTitle="windowWidth<=768"
-      :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: auto;`:'background:rgba(135, 166, 212, 1);'"
+      :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`:'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'"
       :co="`color:${'#6a91cf;'}`"
     />
     <PageInformation :service-navigation="serviceNavigation" />
