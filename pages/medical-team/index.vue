@@ -825,8 +825,8 @@ const doctorList = [
       }
 
       &>div:nth-child(2) {
-        top: 86px;
-        right: -68px;
+        top: 30px;
+        left: -120px;
       }
 
       &>div:nth-child(1)::before {
