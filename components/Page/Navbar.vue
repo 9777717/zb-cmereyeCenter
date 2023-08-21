@@ -44,9 +44,14 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link', 
+        text: '客戶評分',
+        route: { path: '/about-us', hash: '#feedback' },
+      },
+      {
+        type: 'link', 
         text: t('pages.about_us.enterprise_vision'),
         route: { path: '/about-us', hash: '#awards' },
-      },
+      }
     ],
   },
   {
@@ -200,6 +205,11 @@ const menus = computed((): IMenuItem[] => [
         type: 'link', // 診所資料
         text: t('pages.contact_us.clinic_information'),
         route: { name: 'contact-us' },
+      },
+      {
+        type: 'link', 
+        text: '客戶評分',
+        route: { path: 'contact-us', hash: '#feedback' },
       },
       {
         type: 'link', // 電子預約表格

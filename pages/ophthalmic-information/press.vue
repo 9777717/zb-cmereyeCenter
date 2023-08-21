@@ -221,6 +221,7 @@ const newDeatil = (id: number) => {
 const showNewList = () => {
   isNewLIst.value = true
   isDetail.value = false
+  toTop()
 }
 const pageTurning = (flag: string) => {
   if (flag === 'up') {

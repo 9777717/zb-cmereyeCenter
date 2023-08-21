@@ -209,7 +209,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_14.doctor_14_education.doctor_14_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/2023/08/055979dfdddaa38f.jpg',
+      'https://static.cmereye.com/imgs/2023/08/b9a03d7323a8ee22.png',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_15.doctor_15_name',

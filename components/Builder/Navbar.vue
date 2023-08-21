@@ -86,6 +86,7 @@ const toLink = () =>{
 .barspan{
   font-size: 14px;
   cursor: pointer;
+  font-weight: bold;
 }
 .bar {
   width: 130px;

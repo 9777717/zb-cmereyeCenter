@@ -29,6 +29,11 @@ const serviceNavigation = [
   },
   {
     anchorName:
+      '客戶評分',
+    anchorLink: '/contact-us#feedback',
+  },
+  {
+    anchorName:
       'pages.contact_us.clinic_information_title.clinic_information_serviceNavigation2',
     anchorLink: '/contact-us/appointmentForm',
   },
@@ -36,7 +41,7 @@ const serviceNavigation = [
 const bannerList = [
   'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
   'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
-  'https://static.cmereye.com/imgs/2023/02/a24560b4df5de9f9.jpg',
+  'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
   'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
   'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
   'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
@@ -87,7 +92,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/a24560b4df5de9f9.jpg',
+          'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressName',
         addressDetail:

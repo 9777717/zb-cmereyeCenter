@@ -382,7 +382,7 @@ onMounted(()=>{
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 500;
-        font-size: 13.1538px;
+        font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: center;

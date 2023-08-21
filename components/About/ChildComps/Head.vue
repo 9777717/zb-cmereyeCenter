@@ -18,6 +18,10 @@ const anchorList = ref([
     anchorLink: '/about-us#medicalEquipment',
   },
   {
+    anchorName: '客戶評分',
+    anchorLink: '/about-us#feedback',
+  },
+  {
     anchorName: 'pages.about_us.enterprise_awards',
     anchorLink: '/about-us#awards',
   },

@@ -505,9 +505,9 @@ const goInstagram = (type: string) => {
         color: #2958a3;
       }
 
-      & > div:nth-child(1) {
-        margin-left: 48px;
-      }
+      // & > div:nth-child(1) {
+      //   margin-left: 48px;
+      // }
 
       & > div:nth-child(2) {
         margin-left: 50px;
@@ -617,9 +617,9 @@ const goInstagram = (type: string) => {
         color: #2958a3;
       }
 
-      & > div:nth-child(1) {
-        margin-left: 48px;
-      }
+      // & > div:nth-child(1) {
+      //   margin-left: 48px;
+      // }
 
       & > div:nth-child(2) {
         margin-left: 50px;
@@ -729,7 +729,7 @@ const goInstagram = (type: string) => {
       }
 
       & > div:nth-child(1) {
-        margin-left: 48px;
+        // margin-left: 48px;
       }
 
       & > div:nth-child(2) {
@@ -1197,7 +1197,7 @@ const goInstagram = (type: string) => {
         }
 
         & > div:nth-child(1) {
-          margin-left: 48px;
+          // margin-left: 48px;
         }
 
         & > div:nth-child(2) {
