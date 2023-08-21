@@ -107,32 +107,32 @@ const doctorList = [
     doctorImgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor06.jpg',
   },
-  // {
-  //   doctorName: 'pages.medical_team.doctorList.doctor_7.doctor_7_name',
-  //   doctorEnName: 'pages.medical_team.doctorList.doctor_7.doctor_7_en_name',
-  //   doctorEducation: [
-  //     'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_1',
-  //     'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_2',
-  //     'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_3',
-  //     'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_4',
-  //   ],
-  //   doctorImgUrl:
-  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor07.jpg',
-  // },
-  // {
-  //   doctorName: 'pages.medical_team.doctorList.doctor_8.doctor_8_name',
-  //   doctorEnName: 'pages.medical_team.doctorList.doctor_8.doctor_8_en_name',
-  //   doctorEducation: [
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_1',
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_2',
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_3',
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_4',
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_5',
-  //     'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_6',
-  //   ],
-  //   doctorImgUrl:
-  //     'https://static.cmereye.com/imgs/2023/07/124ecdd1faf1791f.png',
-  // },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_7.doctor_7_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_7.doctor_7_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_1',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_2',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_3',
+      'pages.medical_team.doctorList.doctor_7.doctor_7_education.doctor_7_education_4',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor07.jpg',
+  },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_8.doctor_8_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_8.doctor_8_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_1',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_2',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_3',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_4',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_5',
+      'pages.medical_team.doctorList.doctor_8.doctor_8_education.doctor_8_education_6',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/2023/07/124ecdd1faf1791f.png',
+  },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_9.doctor_9_name',
     doctorEnName: 'pages.medical_team.doctorList.doctor_9.doctor_9_en_name',
@@ -730,7 +730,7 @@ const doctorList = [
 
       &>div:nth-child(2) {
         top: 69px;
-        left: -40px;
+        left: -80px;
       }
 
       &>div:nth-child(1)::before {
