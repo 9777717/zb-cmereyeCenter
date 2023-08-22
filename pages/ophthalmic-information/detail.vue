@@ -205,7 +205,7 @@ const goLink = (_data:any) => {
   }
   &-btn{
     margin-top: 130px;
-    max-width: 700px;
+    max-width: 1080px;
     display: flex;
     justify-content: center;
     &-anim{
