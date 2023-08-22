@@ -37,6 +37,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-windicss',
     'nuxt-swiper',
+    '@zadigetvoltaire/nuxt-gtm'
   ],
 
   // experimental features
