@@ -419,8 +419,9 @@ onMounted(()=>{
                             }}</a
                           >
                         </div>
-                        <div class="orderBtn" @click="goWhatsApp">
+                        <div class="orderBtn contactUsWhatsapp" @click="goWhatsApp">
                           <a
+                            class="contactUsWhatsapp"
                             href=" "
                             target="_blank"
                             rel="noopener noreferrer"

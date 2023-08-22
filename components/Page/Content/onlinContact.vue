@@ -36,25 +36,25 @@ const rt = ref(route)
         : 'onlinContact',
     ]">
     <div>
-      <a class="topitem" id="ga-pc-right-ljyy" href="javaScript:chat('wangyePCyoucezixun')">
-        <img id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
+      <a class="topitem ga-pc-right-ljyy" id="ga-pc-right-ljyy" href="javaScript:chat('wangyePCyoucezixun')">
+        <img class="ga-pc-right-ljyy" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
       </a>
-      <a class="ocitem" id="ga-pc-right-zxcx" href="javascript:chat('wangyePCzaixianchaxun')">
-        <div>
-          <div><div>在線查詢</div></div>
-          <div><img src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
+      <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="javascript:chat('wangyePCzaixianchaxun')">
+        <div class="ga-pc-right-zxcx">
+          <div class="ga-pc-right-zxcx"><div class="ga-pc-right-zxcx">在線查詢</div></div>
+          <div class="ga-pc-right-zxcx"><img class="ga-pc-right-zxcx" src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
         </div>
       </a>
-      <a class="ocitem" id="ga-pc-right-WhatsApp" href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2" target="_blank">
-        <div>
-          <div><div>WhatsApp</div></div>
-          <div><img src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
+      <a class="ocitem ga-pc-right-WhatsApp" id="ga-pc-right-WhatsApp" href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2" target="_blank">
+        <div class="ga-pc-right-WhatsApp">
+          <div class="ga-pc-right-WhatsApp"><div class="ga-pc-right-WhatsApp">WhatsApp</div></div>
+          <div class="ga-pc-right-WhatsApp"><img class="ga-pc-right-WhatsApp" src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
       </a>
-      <a class="ocitem" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
-        <div>
-          <div><div>立即致電</div></div>
-          <div><img src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
+      <a class="ocitem ga-pc-right-ljzd" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
+        <div class="ga-pc-right-ljzd">
+          <div class="ga-pc-right-ljzd"><div class="ga-pc-right-ljzd">立即致電</div></div>
+          <div class="ga-pc-right-ljzd"><img class="ga-pc-right-ljzd" src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
         </div>
       </a>
     </div>

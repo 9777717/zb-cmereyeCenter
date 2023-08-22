@@ -129,9 +129,9 @@ const toLink = (a:string) => {
               </div>
               <div>3956 2025</div>
             </div>
-            <div id="pcIndexWhatsapp" @click="goWhatsApp()">
-              <div>
-                <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="pcIndexWhatsapp" @click="goWhatsApp()">
+              <div class="pcIndexWhatsapp">
+                <svg class="pcIndexWhatsapp" width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 24L1.72332 17.608C0.333494 15.1154 -0.108066 12.2067 0.479664 9.41575C1.06739 6.62476 2.64499 4.13866 4.92297 2.41368C7.20094 0.688691 10.0265 -0.1595 12.8811 0.0247802C15.7358 0.209061 18.428 1.41344 20.4638 3.4169C22.4996 5.42036 23.7424 8.08853 23.9642 10.9318C24.186 13.775 23.3718 16.6027 21.6712 18.8958C19.9705 21.1889 17.4974 22.7937 14.7056 23.4157C11.9139 24.0377 8.99074 23.6351 6.47267 22.2819L0 24ZM6.78479 19.8807L7.18509 20.1175C9.20823 21.3216 11.6034 21.7459 13.9188 21.3106C16.2343 20.8752 18.3098 19.6101 19.754 17.754C21.1981 15.8979 21.911 13.5791 21.7582 11.2351C21.6054 8.89101 20.5974 6.68372 18.9245 5.0296C17.2515 3.37547 15.0291 2.38887 12.6767 2.25591C10.3242 2.12295 8.00427 2.85281 6.15447 4.30783C4.30467 5.76284 3.0529 7.84241 2.63532 10.1542C2.21773 12.4661 2.6632 14.8503 3.88767 16.8573L4.1387 17.2698L3.17528 20.8412L6.78479 19.8807Z"
                     fill="#2958A3" />
@@ -140,11 +140,11 @@ const toLink = (a:string) => {
                     fill="#2958A3" />
                 </svg>
               </div>
-              <div>WhatsApp</div>
+              <div class="pcIndexWhatsapp">WhatsApp</div>
             </div>
-            <div id="pcIndexXscx">
-              <div>
-                <svg width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="pcIndexXscx">
+              <div class="pcIndexXscx">
+                <svg class="pcIndexXscx" width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M1 13.5537C1 10.8591 3.625 10.187 6.25 10.187V21.9995C3.3505 21.9995 1 19.649 1 16.7495V13.5537Z"
                     stroke="#2958A3" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" />
@@ -156,7 +156,7 @@ const toLink = (a:string) => {
                     stroke="#2958A3" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <div>{{ $t('pages.index.inquire') }}</div>
+              <div class="pcIndexXscx">{{ $t('pages.index.inquire') }}</div>
             </div>
           </div>
         </div>
