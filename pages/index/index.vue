@@ -129,7 +129,7 @@ const toLink = (a:string) => {
               </div>
               <div>3956 2025</div>
             </div>
-            <div @click="goWhatsApp()">
+            <div id="pcIndexWhatsapp" @click="goWhatsApp()">
               <div>
                 <svg width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -142,7 +142,7 @@ const toLink = (a:string) => {
               </div>
               <div>WhatsApp</div>
             </div>
-            <div>
+            <div id="pcIndexXscx">
               <div>
                 <svg width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path

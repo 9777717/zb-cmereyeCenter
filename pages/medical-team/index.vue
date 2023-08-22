@@ -349,7 +349,7 @@ const doctorList = [
                 <div v-for="(ele, i) in item.doctorEducation" :key="i">
                   <span>{{ $t(ele) }}</span>
                 </div>
-                <nuxt-link class="orderLink text-white inline-block" to="">{{
+                <nuxt-link class="orderLink text-white inline-block" id="medicalTeamLink" to="">{{
                   $t('pages.medical_team.doctor_order')
                 }}</nuxt-link>
               </div>

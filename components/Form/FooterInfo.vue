@@ -209,7 +209,7 @@ defineProps({
           </el-form-item>
         </el-form>
       </div>
-      <div :style="co" @click="submitForm(ruleFormRef)">
+      <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
         {{ $t('components.footerInfo.submitForm') }}
       </div>
     </div>
