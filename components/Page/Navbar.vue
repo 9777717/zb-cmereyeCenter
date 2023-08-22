@@ -209,7 +209,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', 
         text: '客戶評分',
-        route: { path: 'contact-us', hash: '#feedback' },
+        route: { path: '/contact-us', hash: '#feedback' },
       },
       {
         type: 'link', // 電子預約表格

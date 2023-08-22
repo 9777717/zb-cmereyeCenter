@@ -43,6 +43,9 @@ onMounted(()=>{
   },0)
 })
 
+const toWhatsapp = () =>{
+  window.open('https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2')
+}
 
 const goLink = (_data:any) => {
   if(_data === '-1'){
@@ -65,7 +68,7 @@ const goLink = (_data:any) => {
     </div>
     <div class="healthInfoDetail-content" v-loading="contentLoading" v-html="pageDetail.content"></div>
     <div class="healthInfoDetail-btn healthInfoDetailBtnGA4">
-      <div class="healthInfoDetail-btn-anim healthInfoDetailBtnGA4">
+      <div class="healthInfoDetail-btn-anim healthInfoDetailBtnGA4" @click="toWhatsapp">
         <div class="healthInfoDetail-btn-line healthInfoDetailBtnGA4"></div>
         <div class="healthInfoDetail-btn-line2 healthInfoDetailBtnGA4"></div>
         <div class="healthInfoDetail-btn-in healthInfoDetailBtnGA4">
