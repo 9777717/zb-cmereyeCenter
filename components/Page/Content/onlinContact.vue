@@ -36,10 +36,10 @@ const rt = ref(route)
         : 'onlinContact',
     ]">
     <div>
-      <a class="topitem ga-pc-right-ljyy" id="ga-pc-right-ljyy" href="javaScript:chat('wangyePCyoucezixun')">
+      <a class="topitem ga-pc-right-ljyy" id="ga-pc-right-ljyy" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714">
         <img class="ga-pc-right-ljyy" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/07/5e1ee955594fae19.png" alt="">
       </a>
-      <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="javascript:chat('wangyePCzaixianchaxun')">
+      <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
         <div class="ga-pc-right-zxcx">
           <div class="ga-pc-right-zxcx"><div class="ga-pc-right-zxcx">在線查詢</div></div>
           <div class="ga-pc-right-zxcx"><img class="ga-pc-right-zxcx" src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>

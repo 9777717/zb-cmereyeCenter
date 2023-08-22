@@ -349,7 +349,7 @@ const doctorList = [
                 <div v-for="(ele, i) in item.doctorEducation" :key="i">
                   <span>{{ $t(ele) }}</span>
                 </div>
-                <nuxt-link class="orderLink text-white inline-block" id="medicalTeamLink" to="">{{
+                <nuxt-link class="orderLink text-white inline-block" id="medicalTeamLink" to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714">{{
                   $t('pages.medical_team.doctor_order')
                 }}</nuxt-link>
               </div>

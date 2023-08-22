@@ -142,7 +142,7 @@ const toLink = (a:string) => {
               </div>
               <div class="pcIndexWhatsapp">WhatsApp</div>
             </div>
-            <div class="pcIndexXscx">
+            <div class="pcIndexXscx" @click="toLink('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853')">
               <div class="pcIndexXscx">
                 <svg class="pcIndexXscx" width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
