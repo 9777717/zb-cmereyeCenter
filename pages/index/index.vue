@@ -73,7 +73,7 @@ const toLink = (a:string) => {
 <template>
   <div class="home">
     <div>
-      <div style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
+      <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
         <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
          </video>
@@ -355,6 +355,9 @@ const toLink = (a:string) => {
   .home {
     &>div:nth-of-type(1) {
       video {
+        display: none;
+      }
+      .pcHomeVideoBox{
         display: none;
       }
 
