@@ -296,8 +296,8 @@ const goLink = (_data:any) => {
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .healthInfoDetail{
-    width: calc(100% - 40px);
-    margin: 100px auto 200px;
+    width: 100%;
+    margin: 100px auto 150px;
     .goBack{
       a{
         font-size: 20px;
@@ -309,24 +309,50 @@ const goLink = (_data:any) => {
         margin: 20px 0;
         border-left: 6px solid #1b407a;
         padding-left: 10px;
-        // padding-top: 4px;
         height: 35px;
         line-height: 35px;
       }
       &>div:last-child{
         font-size: 22px;
+        padding: 0 10px 5px;
       }
     }
     &-content{
       margin-top: 30px;
     }
     &-bottom{
+      padding-left: 20px;
       flex-direction: column;
       margin-bottom: 100px;
       &-btn{
         margin-top: 30px;
       }
     }
+    &-btn{
+      padding: 0 20px;
+      margin-top: 50px;
+      &-anim{
+        animation: btnMbAnima 5s linear infinite;
+      }
+      &-in{
+        span{
+          height: 61px;
+          line-height: 61px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@keyframes btnMbAnima {
+  0%{
+    box-shadow: none;
+  }
+  50%{
+    box-shadow: 0px 3px 10px 3px rgba(0, 221, 139, 0.7);
+  }
+  100%{
+    box-shadow: none;
   }
 }
 </style>
