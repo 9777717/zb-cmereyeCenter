@@ -296,8 +296,8 @@ const goLink = (_data:any) => {
 @media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .healthInfoDetail{
-    width: 100%;
-    margin: 100px auto 150px;
+    width: auto;
+    margin: 100px 20px 150px;
     .goBack{
       a{
         font-size: 20px;
@@ -314,14 +314,14 @@ const goLink = (_data:any) => {
       }
       &>div:last-child{
         font-size: 22px;
-        padding: 0 10px 5px;
+        // padding: 0 10px 5px;
       }
     }
     &-content{
       margin-top: 30px;
     }
     &-bottom{
-      padding-left: 20px;
+      // padding-left: 20px;
       flex-direction: column;
       margin-bottom: 100px;
       &-btn{
