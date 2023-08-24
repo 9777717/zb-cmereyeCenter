@@ -249,7 +249,10 @@ let drawer = ref(false)
       <div class="mbHeader-in-logo" @click="toIndex"></div>
       <div class="mbHeader-in-rightBtn">
         <div class="imgLists">
-          <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
+          <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex">
+            <div class="w-full h-full" @click="handleImgLists(iconItem)" v-if="iconItem.type === 'drawer'" ></div>
+            <a class="w-full h-full" v-else :href="iconItem.link"></a>
+          </div>
         </div>
         <div class="mbHeader-in-muenBtn" :style="{
           background: (menuBool? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center':'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center')
@@ -278,7 +281,7 @@ let drawer = ref(false)
         </el-menu>
         </client-only>
         <div class="mbHeader-content-btn">
-          <div>
+          <a href="tel:（852）3956 2025">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="12" height="12" fill="url(#pattern0)"/>
               <defs>
@@ -288,10 +291,10 @@ let drawer = ref(false)
               <image id="image0_2197_549" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAL9JREFUKFNj/P//PwMQ9AFxJBDfBWJbIAYLYgOMQA29QIkiJMlAIHsDPg3fgZIcSArWAdnB+DT8BEqyoSlgBfL/4HLSWaCEEVTyE5BuAOKJQPwPl4ZUoMQsqOQ5IG2MyzkgcZCnQfQzIJYEYhAnHIhX4/MDSM4ciE8gKTIFss/gchJMvBTI6IJyQO6PAGJQiE0GYhsgBvn1CMxJME39QEYBksmPgWxZZJvQNYDkGoC4npAf0OU9gQIdQKyIJvEZAIEAQi93YCN3AAAAAElFTkSuQmCC"/>
               </defs>
             </svg>
-            <span @click="handleToLinks('tel:（852）3956 2025')">
+            <span>
               立即致電（852）3956 2025
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </transition>
@@ -313,15 +316,12 @@ let drawer = ref(false)
 
 <style lang="scss" scoped>
 .ddd-enter,.ddd-leave-to{
-    /* 刚进入时或完全离开后透明度为0 */
     opacity: 0;
 }
 .ddd-enter-active,.ddd-leave-active{
-    /* 设置过渡 */
     transition:all .5s linear; 
 }
 .ddd-enter-to,.ddd-leave{
-    /* 刚离开时或完全进入后透明度为1 */
     opacity: 1;
 }
 .mbHeader {
@@ -332,14 +332,6 @@ let drawer = ref(false)
   z-index: 999;
   &-in {
     width: 100%;
-    // height: 100px;
-    // background: linear-gradient(
-    //   rgba(255, 255, 255, 0),
-    //   rgba(255, 255, 255, 0.3) 30%,
-    //   rgba(255, 255, 255, 0.4) 50%,
-    //   rgba(255, 255, 255, 0.3) 70%,
-    //   rgba(255, 255, 255, 0)
-    // );
     transition: all .3s;
     padding: 19px 26px;
     box-sizing: border-box;
@@ -362,8 +354,6 @@ let drawer = ref(false)
       width: 36px;
       height: 36px;
       transition: all .3s;
-      // background: url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)
-      //   no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
     }
@@ -379,7 +369,7 @@ let drawer = ref(false)
       display: flex;
       justify-content: center;
       margin-top: 30px;
-      &>div{
+      &>a{
         background: #2958A3;
         display: flex;
         align-items: center;
@@ -416,23 +406,26 @@ let drawer = ref(false)
   display: flex;
   justify-content: center;
   margin: 10px 40px 10px 0;
-  div{
-    background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
-    background-repeat: no-repeat;
-    background-position: 5px 0;
-    background-size: cover;
+  &>div{
     width: 15px;
     height: 15px;
-    &:nth-of-type(2){
+    &>div,&>a{
+      background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+      background-repeat: no-repeat;
+      background-position: 5px 0;
+      background-size: cover;
+      display: block;
+    }
+    &:nth-of-type(2)>a{
       background-position: -27px 0;
     }
-    &:nth-of-type(3){
+    &:nth-of-type(3)>a{
       background-position: -58px 0;
     }
-    &:nth-of-type(4){
+    &:nth-of-type(4)>div{
       background-position: -92px 0;
     }
-    &:nth-of-type(5){
+    &:nth-of-type(5)>a{
       background-position: -125.5px 0;
     }
     &:not(:last-child){

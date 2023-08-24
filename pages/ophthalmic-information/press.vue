@@ -290,11 +290,6 @@ const addNum = () => {
   }
 }
 
-const toLinkPage = (_data: any) => {
-  // console.log(_data)
-  window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
-}
-
 const toTop = () => {
   let topHeight:number = document.getElementById('pressContent')?.offsetTop || 0
   document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100

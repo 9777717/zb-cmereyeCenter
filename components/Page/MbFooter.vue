@@ -18,10 +18,6 @@ const handleScroll = () => {
   }
 }
 
-const handleToLinks = (_link:any) => {
-  location.href = _link
-}
-
 const isShowTopBtn = ref(false)
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)

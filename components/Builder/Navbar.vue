@@ -71,7 +71,7 @@ const toLink = () =>{
               src="https://static.cmereye.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
             />
           </NuxtLink>
-          <span @click="toLink" class="barspan" :style="{color: (router.name === 'index'?'#2958A3':'#fff')}">03309.HK</span>
+          <a href="https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3309&sc_lang=zh-HK" class="barspan" :style="{color: (router.name === 'index'?'#2958A3':'#fff')}">03309.HK</a>
         </slot>
       </div>
       <!-- menu -->

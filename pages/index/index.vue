@@ -92,7 +92,7 @@ const toLink = (a:string) => {
         <div>SERVICE</div>
       </div>
       <div>
-        <div :style="{cursor: 'pointer'}" @click="toLink('https://bit.ly/44r9F7M')">
+        <a :style="{cursor: 'pointer'}" href="https://bit.ly/44r9F7M">
           <div>
             <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 5.5L1 10" stroke="#2958A3" stroke-width="1.25" stroke-linecap="round"
@@ -106,7 +106,7 @@ const toLink = (a:string) => {
           <div>
             「瞳護眼睛工作坊」網上公開報名，立即申請！*截止報名日期：2023年8月20日
           </div>
-        </div>
+        </a>
         <div>
           <div>
             <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +142,7 @@ const toLink = (a:string) => {
               </div>
               <div class="pcIndexWhatsapp">WhatsApp</div>
             </div>
-            <div class="pcIndexXscx" @click="toLink('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853')">
+            <a class="pcIndexXscx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
               <div class="pcIndexXscx">
                 <svg class="pcIndexXscx" width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -157,7 +157,7 @@ const toLink = (a:string) => {
                 </svg>
               </div>
               <div class="pcIndexXscx">{{ $t('pages.index.inquire') }}</div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@ const toLink = (a:string) => {
     &>div:nth-child(2) {
       display: flex;
       pointer-events: initial;
-      &>div {
+      &>div,&>a {
         background: #ffffffbf;
       }
 
@@ -239,7 +239,7 @@ const toLink = (a:string) => {
         width: 100%;
       }
 
-      &>div:nth-child(1) {
+      &>a {
         width: 626px;
         padding: 0 24px;
         margin-right: 53px;
@@ -281,7 +281,7 @@ const toLink = (a:string) => {
         }
       }
 
-      &>div:nth-child(2) {
+      &>div {
         width: 530px;
 
         &>div:nth-child(1) {
@@ -314,7 +314,7 @@ const toLink = (a:string) => {
           padding-bottom: 50px;
           height: 100%;
 
-          &>div {
+          &>div,&>a {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -322,7 +322,7 @@ const toLink = (a:string) => {
             cursor: pointer;
             flex: 1;
             min-height: 100px;
-
+            
             &>div:nth-child(2) {
               margin-top: 2px;
               font-family: 'Metropolis';
@@ -336,8 +336,7 @@ const toLink = (a:string) => {
               color: #2958a3;
             }
           }
-
-          &>div:not(:last-child) {
+          &>div{
             border-right: 0.75px solid #2958a3;
           }
         }

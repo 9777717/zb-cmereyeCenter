@@ -185,7 +185,7 @@ let drawer = ref(false)
           </div>
           <div class="t-in-b">
             <div>
-              <div :class="{weChatItem: index===2 && itemChildIndex === 4}" v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" @click="handleToLinks(itemChild)">
+              <a :class="{weChatItem: index===2 && itemChildIndex === 4}" v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" :href="itemChild.link">
                 <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                 <span v-if="index === 1">{{`<`}}</span>
                 <span>{{itemChild.name}}</span>
@@ -196,14 +196,14 @@ let drawer = ref(false)
                     srcset=""
                   />
                 </div>
-              </div>
+              </a>
             </div>
             <div class="twoD" v-if="item.lists.length > 7">
-              <div v-for="(itemChild,itemChildIndex) in item.lists.slice(7,item.lists.length)" :key="itemChildIndex" @click="handleToLinks(itemChild)">
+              <a v-for="(itemChild,itemChildIndex) in item.lists.slice(7,item.lists.length)" :key="itemChildIndex" :href="itemChild.link">
                 <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                 <span v-if="index === 1">{{`<`}}</span>
                 <span>{{itemChild.name}}</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>  
@@ -258,7 +258,8 @@ let drawer = ref(false)
           margin-top: 5px;
           display: flex;
           &>div{
-            &>div{
+            &>a{
+              display: block;
               cursor: pointer;
               margin-top: 15px;
               position: relative;
