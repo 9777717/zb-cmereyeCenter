@@ -266,6 +266,16 @@ useHead(() => ({
       content:
         '眼乾原因 乾眼症症狀 眼睛乾澀 人工淚液 眼乾 乾眼症眼藥水 眼乾眼 藥水 眼乾症 乾眼症治療 眼乾症治療 乾眼症改善 眼澀原因 眼睛乾 乾眼症熱敷 乾眼症成因 眼藥水推薦 乾眼 乾眼症 乾眼病 眼乾痛 淚水分泌不足 眼乾眼痛 眼乾症狀 流眼水 流眼淚 塞淚管 人工淚管 乾眼症原因 乾眼症治療費用 乾眼症藥水 乾眼症手術 眼乾澀 眼睛檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪醫療集團 希瑪醫療 ',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 

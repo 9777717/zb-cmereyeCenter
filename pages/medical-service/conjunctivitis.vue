@@ -17,6 +17,16 @@ useHead(() => ({
       content:
         '結膜炎 紅眼症 結膜炎症狀 結膜炎原因 眼角膜發炎 紅眼症初期 紅眼症傳染 結膜炎先兆 眼發炎 急性結膜炎 紅眼症症狀 慢性結膜炎 眼睛發炎 病毒性結膜炎 角膜發炎 紅眼症治療 結膜炎傳染 結膜炎初期 結膜發炎 紅眼症原因 紅眼症治療 結膜炎角膜炎 眼角膜發炎 眼紅症 急性結膜炎症狀 結膜炎治療 眼睛紅 眼睛紅腫 眼睛檢查 眼睛疾病 眼科醫生 香港眼科  希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 ',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 // 传递背景色

@@ -17,6 +17,16 @@ useHead(() => ({
       content:
         '視網膜疾病 視網膜檢查 視網膜治療 視網膜脫落 糖尿上眼 飛蚊症 視網膜剝離 糖尿上眼初期 視網膜脫落手術 視網膜病變 視網膜脫落症狀 視網膜剝離手術 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 林順潮 眼疾 眼睛疾病  眼睛檢查 希瑪 希瑪醫療集團 希瑪醫療',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 // 传递背景色

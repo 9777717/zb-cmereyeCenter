@@ -17,6 +17,16 @@ useHead(() => ({
       content:
         '飛蚊症 飛蚊症檢查 飛蚊 飛蚊症成因 飛蚊症改善方法 飛蚊症初期 飛蚊症治療方法 眼睛黑點 飛蚊症閃光 玻璃體 玻璃體退化 飛蚊症手術 飛蚊症症狀 玻璃體混濁 飛蚊症測試 飛蚊症病徵 改善飛蚊症 玻璃體脫落 治療飛蚊症 飛蚊症檢查 飛蚊閃光 飛蚊症黑點 眼球玻璃體 激光治療飛蚊症 飛蚊症激光 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 ',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 // 传递背景色

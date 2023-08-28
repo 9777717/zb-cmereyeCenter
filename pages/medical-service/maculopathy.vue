@@ -17,6 +17,16 @@ useHead(() => ({
       content:
         '阿姆斯勒方格表 黃斑病變 黃斑點 黃斑部 黃斑病變治療 黃斑病變原因 黃斑病變預防 黃斑病變症狀 黃斑病變手術 黃斑病變測試 黃斑病變治療費用 黃斑病變成因 黃斑病變病徵 黃斑病變先兆 黃斑病變種類 黃斑病變檢查 濕性黃斑病變 乾性黃斑病變 老年黃斑病變 黃斑前膜病變 黃斑裂孔 黃斑裂孔檢查 玻璃體切除術 黃斑水腫 黃斑水腫成因 黃斑水腫症狀 糖尿上眼 糖尿眼症狀 糖尿眼 糖尿眼檢查 糖尿眼治療 糖尿眼手術 眼底檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科  希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 ',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 // 传递背景色

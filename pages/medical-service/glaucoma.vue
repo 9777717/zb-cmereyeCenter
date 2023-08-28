@@ -18,6 +18,16 @@ useHead(() => ({
       content:
         '青光眼 眼壓高 青光眼手術 青光眼症狀 青光眼成因 青光眼治療 青光眼前兆 眼壓 眼壓高原因 急性青光眼 慢性青光眼 青光眼手術 青光眼測試 青光眼初期 青光眼前兆 青光眼藥水 青光眼檢查 眼壓高治療方法 降眼壓藥水 急性青光眼症狀 青光眼激光治療 降眼壓 青光眼預防 預防青光眼 眼壓檢查 青光眼手術費用 急性青光眼成因 青光眼激光治療 眼壓高治療 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療',
     },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
+    {
+      name: 'keywords',
+      content:
+        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+    },
   ],
 }))
 // 传递背景色
