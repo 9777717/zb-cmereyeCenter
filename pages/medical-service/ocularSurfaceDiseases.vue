@@ -2588,6 +2588,7 @@ const keratoplastyList1 = [
         color: #7DBE9C;
         z-index: 5;
         position: relative;
+        font-weight: 700;
       }
 
       & > div:nth-child(2) {
