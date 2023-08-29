@@ -182,14 +182,20 @@ const toLink = (a:string) => {
           </div>
         </div>
         <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/07/503253529af76aea.jpg" alt=""></div>
-          <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>
+          <div><img src="https://static.cmereye.com/imgs/2023/08/c623b10e7da95869.jpg" alt=""></div>
+          <!-- <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>s -->
         </div>
       </div>
+    </div>
+    <div class="home-bottom">
+      <PageFooterMenu />
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
+.home-bottom{
+  display: none;
+}
 .home {
   position: relative;
   width: 100%;
@@ -361,7 +367,11 @@ const toLink = (a:string) => {
 }
 
 @media screen and (max-width: 768px) {
+  .home-bottom{
+    display: block;
+  }
   .home {
+    height: auto;
     &>div:nth-of-type(1) {
       video {
         display: none;
@@ -380,8 +390,8 @@ const toLink = (a:string) => {
     }
 
     &>div:nth-child(2) {
-      top: auto;
-      bottom: 190px;
+      top: 60vh;
+      // bottom: 190px;
 
       &>div:nth-child(1) {
         display: none;
@@ -394,8 +404,9 @@ const toLink = (a:string) => {
       .mbCar {
         display: block;
         background: rgba($color: #fff, $alpha: .7);
-        margin-left: 30px;
-        padding: 20px 22px 30px;
+        margin: 0 20px;
+        width: auto;
+        padding: 10px 20px 20px;
 
         &>div:nth-of-type(1) {
           display: flex;
@@ -415,9 +426,9 @@ const toLink = (a:string) => {
           display: flex;
 
           &>div:nth-of-type(1) {
-            width: 80px;
-            height: 80px;
-            margin-right: 12px;
+            // width: 80px;
+            // height: 80px;
+            // margin-right: 12px;
 
             img {
               width: 100%;

@@ -805,7 +805,7 @@ const keratoplastyList1 = [
               <div>藥物治療</div>
               <div class="ocularSurfaceDiseases_text_p_span">
                 使用抗生素眼藥水預防感染，並且在每天睡前塗藥膏，在眼皮及角膜之間形成保護膜，避免眼皮把新生角膜上皮層扯下來，並戴上繃帶式隱形眼鏡（Bandage
-                Contact Lens），待傷口癒合
+                Contact Lens），待傷口癒合。
               </div>
             </div>
             <div>
@@ -818,7 +818,7 @@ const keratoplastyList1 = [
               <div>激光治療</div>
               <div class="ocularSurfaceDiseases_text_p_span">
                 激光治療性角膜切割術（Photo-Therapeutic Keratectomy,
-                PTK）可治療復發性角膜上皮破損，成效相當不俗，而且復發率低於10%
+                PTK）可治療復發性角膜上皮破損，成效相當不俗，而且復發率低於10%。
               </div>
             </div>
           </div>
@@ -911,7 +911,7 @@ const keratoplastyList1 = [
             <div>
               <div>角膜基質環植入術（Intacs Implant）</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                為治療錐形角膜的方法，但若角膜疤痕較嚴重時，病人最終可能需要通過角膜移植來改善視功能
+                為治療錐形角膜的方法，但若角膜疤痕較嚴重時，病人最終可能需要通過角膜移植來改善視功能。
               </div>
             </div>
           </div>
@@ -1632,7 +1632,7 @@ const keratoplastyList1 = [
           display: flex;
           align-items: center;
           justify-content: center;
-          padding-left: 40px;
+          padding-left: 25px;
           position: relative;
 
           & > span {
@@ -3681,7 +3681,7 @@ const keratoplastyList1 = [
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
-    padding: 5px 40px 0;
+    padding: 5px 40px;
     border-radius: 10px;
   }
 }

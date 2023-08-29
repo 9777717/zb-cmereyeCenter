@@ -953,8 +953,15 @@ const goVision = () => {
 
       &>div:nth-child(3) {
         margin: 60px auto 120px;
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 500;
+        &>div:first-child{
+          padding: 13px 15px;
+        }
+        &>div:last-child{
+          padding: 13px 15px;
+          font-size: 20px;
+        }
       }
     }
   }
@@ -969,7 +976,7 @@ const goVision = () => {
 
     &>div:nth-child(1) {
       padding: 8px 25px;
-      padding-top: 13px;
+      // padding-top: 13px;
     }
 
     &>div:nth-child(2) {

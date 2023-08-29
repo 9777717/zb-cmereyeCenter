@@ -162,10 +162,11 @@ const handleToLinks = (_data:any) => {
 }
 
 const handleImgLists = (_link:any) => {
-  if(_link.type = 'drawer'){
+  console.log(_link)
+  if(_link.type === 'drawer'){
     drawer.value = true
   }else{
-    location.href = _link
+    location.href = _link.link
   }
 }
 let drawer = ref(false)

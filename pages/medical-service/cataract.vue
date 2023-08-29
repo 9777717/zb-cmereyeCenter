@@ -2308,7 +2308,7 @@ const callTel = () => {
       // padding-top: 100px;
       &>div:nth-child(1) {
         width: 100%;
-        flex-direction: row-reverse;
+        flex-direction: column;
         align-items: center;
         margin-left: 0;
         margin-top: 50px;
@@ -2316,7 +2316,7 @@ const callTel = () => {
         &>div:nth-child(1) {
           margin-top: 0;
           flex: 1;
-          margin-left: 10px;
+          // margin-left: 10px;
         }
 
         &>div {
@@ -2327,6 +2327,7 @@ const callTel = () => {
           }
 
           &>div:nth-child(2) {
+            margin-left: 0;
             font-size: 14px;
             line-height: 1.6;
             width: auto;
@@ -2338,7 +2339,8 @@ const callTel = () => {
         }
 
         &>div:nth-child(2) {
-          width: 45%;
+          width: 60%;
+          margin-top: 34px;
 
           &>div::after {
             width: 100%;

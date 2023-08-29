@@ -1152,7 +1152,7 @@ const tozoosnet =()=>{
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
-    padding: 5px 30px 0;
+    padding: 5px 30px;
   }
   .atropine_title_text {
     font-size: 22px;
@@ -1292,7 +1292,7 @@ const tozoosnet =()=>{
           height: 70px;
           font-size: 16px;
           line-height: 1.6;
-          padding: 5px 30px 0;
+          padding: 5px 30px;
           border-radius: 15px;
         }
       }
@@ -1365,7 +1365,7 @@ const tozoosnet =()=>{
           height: 70px;
           font-size: 16px;
           line-height: 1.6;
-          padding: 5px 30px 0;
+          padding: 5px 30px;
           border-radius: 15px;
         }
       }
@@ -1441,7 +1441,7 @@ const tozoosnet =()=>{
           height: 70px;
           font-size: 16px;
           line-height: 1.6;
-          padding: 5px 30px 0;
+          padding: 5px 30px;
           border-radius: 15px;
         }
       }

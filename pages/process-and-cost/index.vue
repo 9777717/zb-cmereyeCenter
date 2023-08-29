@@ -670,7 +670,7 @@ const scrollHeight = () => {
 
       &>p,
       &>div {
-        padding: 7px 0px 2px;
+        padding: 7px 0px;
 
         br {
           display: none;
@@ -679,7 +679,7 @@ const scrollHeight = () => {
 
       &:not(:last-child) {
         &>div {
-          padding: 7px 10px 2px;
+          padding: 7px 10px 16px;
 
           p {
             text-align: left;

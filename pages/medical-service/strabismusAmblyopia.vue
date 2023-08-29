@@ -37,43 +37,43 @@ const backgd = [
 ]
 const strabismusList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/c6538e74f667255f.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/714c9a2fceed9b86.jpg',
     text: '正常眼位',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/ac10f2963ea4e934.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/7ea53d3734476d0a.jpg',
     text: '內斜視',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/b61e2ddd17636d74.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/a36770ffa76f3e2e.jpg',
     text: '外斜視',
   },
 ]
 const strabismusList2 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/8f812fd75d944041.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/3eed40559da38526.jpg',
     text: '正常眼位',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/8b74483d3999cc82.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/21b0fa246561c5bd.jpg',
     text: '上斜視',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/d7ab6fa9a859bec4.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/ff6403d529d952d2.jpg',
     text: '下斜視',
   },
 ]
 const strabismusList3 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/be7d21516fa68144.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/f5435fd75e99b400.jpg',
     text: '正常眼位',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/f25fdfd4a14e2bed.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/18fee48a5021a82e.jpg',
     text: '假性內斜視',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/05269ce104f5d003.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/fa5db6e208cf321f.jpg',
     text: '（真）內斜視',
   },
 ]
@@ -1182,7 +1182,7 @@ const callTel = () => {
                 & > div:nth-child(2) {
                   width: 100px;
                   height: 35px;
-                  border-radius: 40%;
+                  border-radius: 45%;
                   margin: 0;
                   font-size: 16px;
                   line-height: 35px;
@@ -1278,6 +1278,7 @@ const callTel = () => {
             border-radius: 15px 15px 0 0;
             height: 60px;
             font-size: 22px;
+            background: #E9A98C;
           }
           & > div:nth-child(2) {
             padding: 25px;
@@ -1460,7 +1461,7 @@ const callTel = () => {
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
-    padding: 5px 40px 0;
+    padding: 5px 40px;
   }
   .strabismusAmblyopia_title_text{
     font-size: 24px;

@@ -908,6 +908,7 @@ const goInstagram = (type: string) => {
         & > div {
           width: 200px;
           height: 50px;
+          line-height: 50px;
           font-size: 20px;
         }
       }
@@ -955,6 +956,7 @@ const goInstagram = (type: string) => {
         & > div {
           width: 200px;
           height: 50px;
+          line-height: 50px;
           font-size: 20px;
         }
       }
@@ -1002,6 +1004,7 @@ const goInstagram = (type: string) => {
         & > div {
           width: 200px;
           height: 50px;
+          line-height: 50px;
           font-size: 20px;
         }
       }

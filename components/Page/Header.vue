@@ -231,10 +231,10 @@ const handleToLinks = (_link:any) => {
 }
 
 const handleImgLists = (_link:any) => {
-  if(_link.type = 'drawer'){
+  if(_link.type === 'drawer'){
     drawer.value = true
   }else{
-    location.href = _link
+    location.href = _link.link
   }
 }
 let drawer = ref(false)
@@ -249,7 +249,7 @@ let drawer = ref(false)
       <div class="mbHeader-in-logo" @click="toIndex"></div>
       <div class="mbHeader-in-rightBtn">
         <div class="imgLists">
-          <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex">
+          <div v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex">
             <div class="w-full h-full" @click="handleImgLists(iconItem)" v-if="iconItem.type === 'drawer'" ></div>
             <a class="w-full h-full" v-else :href="iconItem.link"></a>
           </div>

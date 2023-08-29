@@ -487,7 +487,7 @@ onMounted(()=>{
     margin-top: 150px;
     &>div{
       width: calc(100% - 60px);
-      padding: 25px 20px;
+      padding: 25px 20px 57px;
       flex-direction: column-reverse;
       & > div:nth-child(1) {
         width: 100%;
@@ -495,16 +495,16 @@ onMounted(()=>{
         min-height: 200px;
         margin-top: 28px;
         &>div{
-          bottom: 0;
-          left: 0;
+          bottom: -15px;
+          left: -10px;
           font-size: 14px;
           height: auto;
           line-height: 2;
           width: 100px;
-          letter-spacing: 0.03;
+          letter-spacing: 0.03em;
         }
         img{
-          width: 80%;
+          width: 75%;
           margin: 0 auto;
         }
       }

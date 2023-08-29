@@ -468,7 +468,7 @@ const callTel = () => {
             </div>
           </div>
           <div class="button_bg_text_color" @click="callTel()">
-            致電預約了解治療方案
+            致電預約{{'\n'}}了解治療方案
           </div>
         </div>
       </div>
@@ -1531,7 +1531,7 @@ const callTel = () => {
         height: 85px;
         font-size: 18px;
         line-height: 1.6;
-        padding: 5px 30px 0;
+        padding: 0 30px;
       }
     }
     & > div:nth-child(3) {
@@ -1673,7 +1673,7 @@ const callTel = () => {
         height: 85px;
         font-size: 18px;
         line-height: 1.6;
-        padding: 5px 50px 0;
+        padding: 0 50px;
       }
     }
     & > div:nth-child(5) {
@@ -1855,7 +1855,8 @@ const callTel = () => {
           height: 85px;
           font-size: 18px;
           line-height: 1.6;
-          padding: 5px 50px 0;
+          padding: 0 70px;
+          white-space: pre-wrap;
         }
       }
     }

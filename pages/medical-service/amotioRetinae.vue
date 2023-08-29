@@ -132,22 +132,22 @@ const factorList1 = [
 ]
 const styptomList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/395082110044babb.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/eeb150720a808928.jpg',
     title: 'STEP 1',
     text: ['見到大量飛蚊，', ' 數量異常地多'],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/2a00453f60e048e1.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/23aab65d449ee915.jpg',
     title: 'STEP 2',
     text: [' 見到閃光或', '黑影飄動'],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/01642ceb7961423f.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/72980b97125764fe.jpg',
     title: 'STEP 3',
     text: ['眼前固定黑影'],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/fa60690b4b991bda.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
     title: 'STEP 4',
     text: ['視野缺失、視力', '突然明顯下降'],
   },
@@ -167,7 +167,7 @@ const treatList1 = [
   },
   {
     id: 0o3,
-    img: 'https://static.cmereye.com/imgs/2023/06/e445afd7a354ce54.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/f5055f0dc5249495.png',
     title: '微創玻璃體切除術（PPV）',
     text: '以微創模式，在眼球表面開三個直徑小於一毫米的小洞，直接在眼球內進行玻璃體切除，之後注入擴充性氣體（或者注入硅油），將視網膜頂壓回復到原來正常位置，使得神經視網膜層和色素上皮層重新貼合，術前還會以冷凍或激光的方式把視網膜破孔封上。術後病人需要採取俯臥的位置，保持對視網膜頂壓的力量。',
   },
@@ -516,7 +516,10 @@ const preventList1 = [
         }
 
         &>div:nth-child(3) {
-          height: 160px;
+          // height: 160px;
+          img{
+            width: 100%;
+          }
         }
       }
 
@@ -564,6 +567,7 @@ const preventList1 = [
         flex-direction: row;
 
         &>div:nth-child(1) {
+          flex: 1;
           &>img {
             width: 100%;
           }
@@ -1333,14 +1337,13 @@ const preventList1 = [
 
         &>div {
           width: 100%;
-          border-radius: 25px 25px 25px 25px;
+          border-radius: 10px;
           overflow: hidden;
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
           display: flex;
           flex-direction: row;
           position: relative;
-          padding: 10px;
-          padding-top: 70px;
+          padding: 80px 10px 20px;
           margin-bottom: 30px;
 
           &>div:nth-child(1) {
@@ -1369,7 +1372,7 @@ const preventList1 = [
               font-size: 18px;
               height: auto;
               padding: 4px 10px;
-              padding-top: 8px;
+              // padding-top: 8px;
               background-color: #eab1a6;
               border-radius: 22px;
 
@@ -1381,7 +1384,7 @@ const preventList1 = [
               color: #ffffff;
               margin-bottom: 0;
               margin: auto;
-              margin-top: 10px;
+              margin-top: 20px;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1403,13 +1406,14 @@ const preventList1 = [
         background: url('https://static.cmereye.com/imgs/2023/07/7030a59cf91a8775.png') no-repeat;
         width: 100%;
         height: auto;
-        padding: 28px;
-        background-size: 100% 100%;
+        padding: 33px 28px 28px;
+        background-size: 100% auto;
         text-align: justify;
 
         &>span {
           color: #e8a89b;
           text-indent: 0;
+          display: inline;
         }
       }
     }

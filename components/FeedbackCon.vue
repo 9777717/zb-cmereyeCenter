@@ -43,6 +43,7 @@ onMounted(()=>{
           <swiper
             class="feedbackSwiper"
             @swiper="setSwiperRef"
+            v-if="windowWidth>768"
           >
             <!-- <swiper-slide v-for="feedback in 18" :key="feedback">
               <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${feedback>=10? feedback: '0'+String(feedback)}.jpg`" alt="">
@@ -60,6 +61,17 @@ onMounted(()=>{
             <swiper-slide class="feedbackSwiperSlide">
               <div v-for="feedback in 6" :key="feedback">
                 <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${12+feedback}.jpg`" alt="">
+              </div>
+            </swiper-slide>
+          </swiper>
+          <swiper
+            class="feedbackSwiper"
+            @swiper="setSwiperRef"
+            v-else
+          >
+            <swiper-slide class="feedbackSwiperSlide" v-for="(item,index) in 12" :key="index">
+              <div v-for="feedback in 2" :key="`${index}${feedback}`">
+                <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${(2*index + feedback)<10?'0'+String(2*index + feedback):2*index + feedback}.jpg`" alt="">
               </div>
             </swiper-slide>
           </swiper>
@@ -90,9 +102,6 @@ onMounted(()=>{
   &-swiper{
     position: relative;
     padding: 0 70px;
-    .feedbackSwiper{
-      // padding: 0 70px;
-    }
     .feedbackSwiperSlide{
       display: flex;
       flex-wrap: wrap;
@@ -103,7 +112,6 @@ onMounted(()=>{
       }
     }
     :deep(.swiper-wrapper){
-      // width: 100% !important;
       flex-direction: row !important;
     }
     :deep(.swiper-slide){
@@ -115,38 +123,13 @@ onMounted(()=>{
       left: 0;
       top: 40%;
       cursor: pointer;
-      // transform: translateY(-50%);
     }
     .btn-next{
       position: absolute;
       right: 0;
       top: 40%;
       cursor: pointer;
-      // transform: translateY(-50%);
     }
-    // :deep(.swiper-button-prev:after) {
-    //   background: #8ad8dd;
-    //   color: #fff;
-    //   padding: 5px;
-    //   width: 34px;
-    //   height: 52px;
-    //   padding-top: 8px;
-    //   font-size: 24px;
-    //   line-height: 38px;
-    //   text-align: center;
-    // }
-
-    // :deep(.swiper-button-next::after) {
-    //   background: #8ad8dd;
-    //   color: #fff;
-    //   padding: 5px;
-    //   width: 34px;
-    //   height: 52px;
-    //   padding-top: 8px;
-    //   font-size: 24px;
-    //   line-height: 38px;
-    //   text-align: center;
-    // }
   }
 }
 @media (min-width: 768px) and (max-width: 1452px) {
@@ -167,6 +150,20 @@ onMounted(()=>{
           width: calc(100% / 2);
           padding: 10px;
         }
+      }
+      .btn-prev{
+        position: absolute;
+        left: 0;
+        top: 29%;
+        cursor: pointer;
+        width: 30px;
+      }
+      .btn-next{
+        position: absolute;
+        right: 0;
+        top: 29%;
+        cursor: pointer;
+        width: 30px;
       }
     }
   }

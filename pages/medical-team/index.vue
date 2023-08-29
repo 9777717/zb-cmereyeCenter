@@ -1148,7 +1148,7 @@ const doctorList = [
         flex-direction: row-reverse;
         width: 100%;
         padding-top: 70px;
-        margin-bottom: 76px;
+        margin-bottom: 50px;
         // padding-bottom: 70px;
 
         .docDes {
@@ -1196,8 +1196,11 @@ const doctorList = [
             width: calc(100vw - 110px);
             text-align: left;
             line-height: 25px;
-            top: auto;
-            bottom: -25px;
+            // top: auto;
+            top: 160px;
+            // bottom: -25px;
+            // position: initial;
+            // margin-left: 20px;
           }
         }
 
@@ -1228,7 +1231,8 @@ const doctorList = [
 
       &>div:nth-child(2) {
         .docEnName {
-          bottom: -5px !important;
+          // bottom: -5px !important;
+          top: 150px;
         }
       }
 
@@ -1250,7 +1254,8 @@ const doctorList = [
     ul>li:nth-child(2) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 65px !important;
+          // bottom: 65px !important;
+          top: 150px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1280,7 +1285,8 @@ const doctorList = [
     ul>li:nth-child(4) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: -25px !important;
+          // bottom: -25px !important;
+          top: 170px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1295,7 +1301,8 @@ const doctorList = [
     ul>li:nth-child(5) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 15px !important;
+          // bottom: 15px !important;
+          top: 175px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1324,6 +1331,9 @@ const doctorList = [
 
     ul>li:nth-child(7) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: 100%;
           left: -30px;
@@ -1336,9 +1346,8 @@ const doctorList = [
     ul>li:nth-child(8) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 35px !important;
+          top: 175px !important;
         }
-
         &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
@@ -1351,7 +1360,7 @@ const doctorList = [
     ul>li:nth-child(9) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: -25px !important;
+          top: 175px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1366,9 +1375,8 @@ const doctorList = [
     ul>li:nth-child(10) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 0px !important;
+          top: 175px !important;
         }
-
         &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
@@ -1380,6 +1388,9 @@ const doctorList = [
 
     ul>li:nth-child(11) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
@@ -1391,6 +1402,9 @@ const doctorList = [
 
     ul>li:nth-child(12) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 10px);
           left: -30px;
@@ -1428,6 +1442,9 @@ const doctorList = [
 
     ul>li:nth-child(15) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
@@ -1439,6 +1456,9 @@ const doctorList = [
 
     ul>li:nth-child(16) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
@@ -1480,6 +1500,9 @@ const doctorList = [
 
     ul>li:nth-child(19) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
@@ -1491,6 +1514,9 @@ const doctorList = [
 
     ul>li:nth-child(20) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
@@ -1503,7 +1529,7 @@ const doctorList = [
     ul>li:nth-child(21) {
       &>div:nth-child(2) {
         .docEnName {
-          bottom: 25px !important;
+          top: 175px !important;
         }
 
         &>div:nth-child(1)::before {
@@ -1517,6 +1543,9 @@ const doctorList = [
 
     ul>li:nth-child(22) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1)::before {
           width: calc(100% + 30px);
           left: -30px;
@@ -1528,6 +1557,9 @@ const doctorList = [
 
     ul>li:nth-child(23) {
       &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
         &>div:nth-child(1) {
           width: 100%;
           height: auto;

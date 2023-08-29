@@ -2811,7 +2811,7 @@ const callTel = () => {
       }
       & > div:nth-child(2) {
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 2;
         padding: 20px;
       }
     }
@@ -2846,7 +2846,7 @@ const callTel = () => {
         width: max-content;
         margin: 50px auto 0;
         height: auto;
-        padding:  10px 30px 5px;
+        padding:  10px 30px;
         border-radius: 10px;
         & > div {
           font-size: 18px;
@@ -3485,7 +3485,7 @@ const callTel = () => {
                 width: 200px;
                 height: 30px;
                 line-height: 1.6;
-                padding: 3px 0 0 40px;
+                padding: 0 0 0 40px;
                 font-size: 16px;
                 left: 10px;
               }

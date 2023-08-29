@@ -425,7 +425,8 @@ defineProps({
           border: 6px solid;
           position: absolute;
           left: -10px;
-          top: 3px;
+          top: 50%;
+          transform: translateY(-40%);
           border-color: transparent transparent transparent #fff;
         }
       }

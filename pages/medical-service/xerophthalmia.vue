@@ -2352,11 +2352,12 @@ const callTel = () => {
 
         &>div:nth-child(2) {
           margin-top: 30px;
-          padding-right: 0;
+          padding-left: 0;
 
           &>img {
             width: 40%;
             right: 15%;
+            left: auto;
             height: 70%;
           }
 
@@ -2594,10 +2595,12 @@ const callTel = () => {
 
             &>div:nth-child(2) {
               font-size: 12px;
+              
             }
 
             &>div:nth-child(3) {
               font-size: 12px;
+              
             }
 
             &>div:nth-child(4) {
@@ -2610,6 +2613,12 @@ const callTel = () => {
 
             &>div {
               line-height: 1.6;
+              
+            }
+          }
+          &>div:nth-of-type(1){
+            &>div:nth-of-type(2),&>div:nth-of-type(3),&>div:nth-of-type(4),&>div:nth-of-type(5){
+              font-weight: 700;
             }
           }
         }
@@ -2709,6 +2718,7 @@ const callTel = () => {
                     height: 22px;
                     font-size: 14px;
                     line-height: 16px;
+                    align-items: center;
                   }
 
                   &>div:nth-child(2) {
@@ -2742,6 +2752,7 @@ const callTel = () => {
                     height: 22px;
                     font-size: 14px;
                     line-height: 16px;
+                    align-items: center;
                   }
 
                   &>div:nth-child(2) {

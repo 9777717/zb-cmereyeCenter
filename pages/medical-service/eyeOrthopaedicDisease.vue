@@ -50,7 +50,7 @@ const ophthalmoplastyList1 = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a20c0768a3dfc148.png',
+    img: 'https://static.cmereye.com/imgs/2023/08/225d20699840e2a8.png',
     title: '甲亢突眼',
     text: [
       '甲亢突眼常見於成年人，徵狀為眼球向前突出。它往往是從活躍階段逐漸發展至非活躍階段，而患者會因為眼瞼的收縮、眼球凸出，使得面部猙獰。',
@@ -1060,7 +1060,7 @@ const goWhatsApp = () => {
             width: 898px;
 
             &>div:nth-child(2) {
-              margin-top: 51px;
+              margin-top: 28px;
               margin-right: 37px;
               font-size: 22px;
               line-height: 44px;
@@ -1081,7 +1081,7 @@ const goWhatsApp = () => {
             width: 898px;
 
             &>div:nth-child(2) {
-              margin-top: 51px;
+              margin-top: 28px;
               margin-right: 37px;
               font-size: 22px;
               line-height: 44px;
@@ -1164,7 +1164,7 @@ const goWhatsApp = () => {
             width: 898px;
 
             &>div:nth-child(2) {
-              margin-top: 51px;
+              margin-top: 28px;
               margin-right: 37px;
               font-size: 22px;
               line-height: 44px;
@@ -1178,14 +1178,15 @@ const goWhatsApp = () => {
 
         &>div:nth-child(2) {
           &>div:nth-child(1) {
-            font-family: 'NotoSansHK-Bold';
-            font-size: 28px;
+            font-family: Noto Sans HK;
+            font-size: 20px;
+            font-weight: 700;
             font-weight: normal;
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
             color: #d0aa85;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
           }
 
           &>div {
@@ -1370,7 +1371,7 @@ const goWhatsApp = () => {
               width: 898px;
 
               &>div:nth-child(2) {
-                margin-top: 51px;
+                margin-top: 28px;
                 margin-right: 37px;
                 font-size: 22px;
                 line-height: 44px;
@@ -2652,7 +2653,7 @@ const goWhatsApp = () => {
     // margin-top: 210px;
     // margin-bottom: 240px;
     transform: scale(1);
-    padding: 0 40px;
+    padding: 0 30px;
 
     &>#ophthalmoplasty {
       margin-bottom: 75px;
@@ -2695,7 +2696,8 @@ const goWhatsApp = () => {
                 font-size: 16px;
                 line-height: 1.6;
                 margin-bottom: 25px;
-
+                font-weight: 700;
+                font-family: Noto Sans HK;
                 &>span {
                   width: 26px;
                   height: 26px;
@@ -2737,7 +2739,8 @@ const goWhatsApp = () => {
                 font-size: 16px;
                 line-height: 1.6;
                 margin-bottom: 25px;
-
+                font-weight: 700;
+                font-family: Noto Sans HK;
                 &>span {
                   width: 26px;
                   height: 26px;
@@ -2851,8 +2854,9 @@ const goWhatsApp = () => {
             margin-bottom: 0px;
 
             &>div:nth-child(1) {
-              font-family: 'NotoSansHK-Bold';
-              font-size: 28px;
+              font-family: Noto Sans HK;
+              font-size: 20px;
+              font-weight: 700;
               font-weight: normal;
               font-stretch: normal;
               line-height: 52px;
@@ -2866,7 +2870,7 @@ const goWhatsApp = () => {
               flex-direction: column;
 
               &>div {
-                margin-top: 50px;
+                margin-top: 30px;
                 width: 100%;
                 height: auto;
                 position: relative;
@@ -2917,7 +2921,7 @@ const goWhatsApp = () => {
               width: 100%;
 
               &>div:nth-child(2) {
-                margin-top: 51px;
+                margin-top: 28px;
                 margin-right: 0;
                 font-size: 16px;
                 line-height: 1.8;
@@ -3011,7 +3015,7 @@ const goWhatsApp = () => {
               }
 
               &>div:nth-child(2) {
-                margin-top: 75px;
+                margin-top: 60px;
                 border: none;
                 color: #515151;
                 font-family: Noto Sans HK;
@@ -3100,7 +3104,7 @@ const goWhatsApp = () => {
             margin-bottom: 75px;
 
             &>div:nth-child(2) {
-              margin: 50px 0;
+              margin: 27px 0;
               margin-bottom: 25px;
 
               &>div {
@@ -3159,7 +3163,7 @@ const goWhatsApp = () => {
                 width: 100%;
 
                 &>div:nth-child(2) {
-                  margin-top: 51px;
+                  margin-top: 28px;
                   margin-right: 0;
                   font-size: 16px;
                   line-height: 1.8;
@@ -3182,14 +3186,15 @@ const goWhatsApp = () => {
               }
 
               &>div:nth-child(1) {
-                font-family: 'NotoSansHK-Bold';
-                font-size: 28px;
+                font-family: Noto Sans HK;
+                font-size: 20px;
+                font-weight: 700;
                 font-weight: normal;
                 font-stretch: normal;
                 line-height: 52px;
                 letter-spacing: 0px;
                 color: #d0aa85;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
               }
 
               &>div:nth-child(3) {
@@ -3199,10 +3204,12 @@ const goWhatsApp = () => {
                   flex-direction: column;
                   background: #fff;
                   border: 2px solid #E4C6A9;
-                  margin-top: 75px;
+                  margin-top: 70px;
                   border-radius: 10px;
                   position: relative;
-
+                  &:first-child{
+                    margin-top: 0;
+                  }
                   &>div {
                     color: #515151;
                     width: 100%;
@@ -3251,9 +3258,14 @@ const goWhatsApp = () => {
                     width: fit-content;
                     top: -7%;
                     line-height: 1.6;
-                    left: 10%;
-                    padding: 8px 65px;
+                    left: 15%;
+                    font-size: 20px;
+                    padding: 8px 0;
+                    font-family: Noto Sans HK;
+                    font-weight: 500;
                     background: #fff;
+                    width: 70%;
+                    align-items: center;
                   }
 
                   &>div:nth-child(2) {
@@ -3282,7 +3294,7 @@ const goWhatsApp = () => {
           margin-bottom: 75px;
 
           &>div:nth-child(2) {
-            margin: 40px 0 50px;
+            margin: 10px 0 50px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -3331,7 +3343,7 @@ const goWhatsApp = () => {
             &>div:nth-child(1) {
               font-size: 20px;
               line-height: 1.8;
-              margin-bottom: 75px;
+              margin-bottom: 40px;
             }
 
             &>div:nth-child(2) {
@@ -3343,9 +3355,9 @@ const goWhatsApp = () => {
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -3%;
+                top: -7%;
                 width: fit-content;
-                padding: 0 5px;
+                padding: 0 10px;
                 height: auto;
                 background-color: #ffffff;
                 border-radius: 10px 10px 10px 0px;
@@ -3395,8 +3407,8 @@ const goWhatsApp = () => {
               line-height: 1.8;
               letter-spacing: 0px;
               color: #d0aa85;
-              margin-top: 74px;
-              margin-bottom: 75px;
+              margin-top: 50px;
+              margin-bottom: 40px;
             }
 
             &>div:nth-child(2) {
@@ -3409,7 +3421,7 @@ const goWhatsApp = () => {
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -3%;
+                top: -4%;
                 width: fit-content;
                 height: auto;
                 background-color: #ffffff;
@@ -3423,7 +3435,7 @@ const goWhatsApp = () => {
                 line-height: 42px;
                 letter-spacing: 0px;
                 color: #d0aa85;
-                padding: 0 5px;
+                padding: 0 10px;
 
                 display: flex;
                 align-items: center;
@@ -3484,7 +3496,7 @@ const goWhatsApp = () => {
               letter-spacing: 0px;
               color: #d0aa85;
               margin-top: 70px;
-              margin-bottom: 50px;
+              margin-bottom: 40px;
             }
 
             &>div:nth-child(2) {
@@ -3498,7 +3510,7 @@ const goWhatsApp = () => {
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -5%;
+                top: -6%;
                 width: fit-content;
                 height: auto;
                 background-color: #ffffff;
@@ -3512,7 +3524,7 @@ const goWhatsApp = () => {
                 line-height: 1.8;
                 letter-spacing: 0px;
                 color: #d0aa85;
-                padding: 0 5px;
+                padding: 0 10px;
 
                 display: flex;
                 align-items: center;
@@ -3550,13 +3562,13 @@ const goWhatsApp = () => {
               &>div:nth-child(1) {
                 position: absolute;
                 left: -2px;
-                top: -2.5%;
+                top: -3.2%;
                 width: fit-content;
                 height: auto;
                 background-color: #ffffff;
                 border-radius: 10px 10px 10px 0px;
                 border: solid 2px #e4c6a9;
-
+                padding: 0 10px;
                 font-family: 'NotoSansHK-Medium';
                 font-size: 18px;
                 font-weight: normal;
@@ -3655,7 +3667,7 @@ const goWhatsApp = () => {
 
               &>div:nth-child(2) {
                 margin-left: 0;
-                padding: 75px 0 0 0;
+                padding: 70px 0 0 0;
                 font-size: 14px;
                 line-height: 1.8;
                 text-align: justify;
@@ -3709,7 +3721,7 @@ const goWhatsApp = () => {
           margin-bottom: 50px;
 
           &>div:nth-child(1) {
-            margin-bottom: 40px;
+            margin-bottom: 28px;
           }
 
           &>div:nth-child(2) {
@@ -3721,7 +3733,7 @@ const goWhatsApp = () => {
         &>div:nth-child(4) {
           &>div:nth-child(2) {
             &>div:nth-child(2) {
-              margin-top: 50px;
+              margin-top: 35px;
               display: flex;
               flex-direction: column;
               justify-content: space-between;
@@ -3772,10 +3784,10 @@ const goWhatsApp = () => {
 
       &>div:nth-child(2) {
         width: 100%;
-        margin-top: 60px;
-        margin-bottom: 95px;
+        margin-top: 20px;
+        margin-bottom: 70px;
         &>div:nth-child(1) {
-          font-family: 'NotoSansHK-Medium';
+          font-family: Noto Sans HK;
           font-size: 20px;
           font-weight: normal;
           font-stretch: normal;
@@ -3783,6 +3795,7 @@ const goWhatsApp = () => {
           letter-spacing: 0px;
           color: #d0aa85;
           margin-bottom: 0;
+          font-weight: 500;
         }
 
         &>div:nth-child(2) {
@@ -3937,17 +3950,18 @@ const goWhatsApp = () => {
       }
 
       &>div:nth-child(3) {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         &>div:nth-child(1) {
-          font-family: 'NotoSansHK-Medium';
-          font-size: 32px;
+          font-family: Noto Sans HK;
+          font-size: 20px;
+          font-weight: 500;
           font-weight: normal;
           font-stretch: normal;
           line-height: 52px;
           letter-spacing: 0px;
           color: #d0aa85;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
 
         &>div:nth-child(2) {
@@ -4133,7 +4147,7 @@ const goWhatsApp = () => {
         }
 
         .eye_attention {
-          font-size: 12px;
+          font-size: 16px;
           line-height: 1.6;
         }
 
@@ -4193,7 +4207,7 @@ const goWhatsApp = () => {
               &>p>span {
                 padding: 0;
                 margin-right: 5px;
-                margin-top: -3px;
+                margin-top: 0px;
                 font-size: 14px;
               }
             }
@@ -4213,7 +4227,7 @@ const goWhatsApp = () => {
               &>p>span {
                 padding: 0;
                 margin-right: 5px;
-                margin-top: -3px;
+                margin-top: 0px;
                 font-size: 14px;
               }
             }

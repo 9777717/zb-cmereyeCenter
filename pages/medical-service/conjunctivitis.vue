@@ -1160,7 +1160,7 @@ const callTel = () => {
         height: 85px;
         font-size: 18px;
         line-height: 1.6;
-        padding: 5px 50px 0;
+        padding: 0 50px;
       }
     }
     & > div:nth-child(3) {
@@ -1189,7 +1189,7 @@ const callTel = () => {
               left: 70px;
               bottom: 15px;
               padding-left: 30px;
-              padding-top: 7px;
+              padding-top: 0;
               border-radius: 15px;
             }
           }
@@ -1226,7 +1226,7 @@ const callTel = () => {
         height: 85px;
         font-size: 18px;
         line-height: 1.6;
-        padding: 5px 50px 0;
+        padding: 0 50px;
       }
     }
     // 傳播途徑
@@ -1412,7 +1412,7 @@ const callTel = () => {
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
-    padding: 5px 30px 0;
+    padding: 5px 30px;
   }
   .conjun_text_color::after {
     width: 50px;

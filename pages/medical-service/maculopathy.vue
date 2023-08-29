@@ -1753,8 +1753,9 @@ const callTel = () => {
           margin-bottom: 50px;
           & > div:nth-child(2) {
             font-size: 14px;
-            height: 70px;
+            height: auto;
             line-height: 1.6;
+            margin: 16px 0 10px;
           }
           & > div:nth-child(3) {
             font-size: 12px;
@@ -1785,7 +1786,7 @@ const callTel = () => {
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
-    padding: 5px 30px 0;
+    padding: 5px 30px;
   }
   .maculopathy_color_title{
     font-size: 22px;
