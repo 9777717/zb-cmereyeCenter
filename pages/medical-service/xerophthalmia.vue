@@ -2207,12 +2207,12 @@ const callTel = () => {
           line-height: 1;
           margin-top: 0;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-          transform: translateY(-20%);
+          transform: translateY(-15%);
         }
 
         &>div:nth-child(4) {
           clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-          transform: translateY(-73%);
+          transform: translateY(-65%);
         }
       }
 
