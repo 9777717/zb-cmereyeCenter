@@ -311,7 +311,7 @@ let drawer = ref(false)
         </el-drawer>
       </client-only>
     </div>
-    <PageMbFooter :showTop="false" />
+    <!-- <PageMbFooter :showTop="false" /> -->
   </div>
 </template>
 

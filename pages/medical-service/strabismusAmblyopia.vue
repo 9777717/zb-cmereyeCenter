@@ -1104,7 +1104,7 @@ const callTel = () => {
         &>div:nth-child(2) {
           font-size: 24px;
           letter-spacing: 0.01em;
-          margin-top: 3px;
+          margin-top: 10px;
           text-align: right;
           line-height: 1;
         }
