@@ -2196,7 +2196,7 @@ const callTel = () => {
 
         &>div:nth-child(2) {
           font-size: 50px;
-          margin-top: 0;
+          margin-top: 5px;
           text-align: right;
           line-height: 1;
         }
