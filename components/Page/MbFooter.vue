@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const route:any = useRoute()
 const toTop = () => {
   let top = document.documentElement.scrollTop || document.body.scrollTop
   // 实现滚动效果
@@ -40,7 +41,7 @@ onMounted(() => {
         <div>線上對話</div>
       </a>
     </div>
-    <div id="mbFooterTop" class="mbFooter-top" @click="toTop">
+    <div v-if="route.name !== 'index'" id="mbFooterTop" class="mbFooter-top" @click="toTop">
       <img src="https://static.cmereye.com/imgs/2023/07/3a2e901023d9c537.png" alt="">
     </div>
   </div>

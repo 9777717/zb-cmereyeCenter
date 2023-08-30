@@ -253,7 +253,10 @@ watch(
     var a:any = document.getElementById('userwayAccessibilityIcon')   
     a.style.display = n ? 'none' : 'block'
     var b:any = document.getElementById('mbFooterTop')
-    b.style.display = n ? 'block' : 'none'
+    if(route.name !== 'index'){
+      b.style.display = n ? 'block' : 'none'
+    }
+    
   }
 )
 </script>

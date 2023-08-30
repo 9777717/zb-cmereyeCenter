@@ -2328,12 +2328,12 @@ const callTel = () => {
 
           &>div:nth-child(2) {
             margin-left: 0;
-            font-size: 14px;
+            font-size: 18px;
             line-height: 1.6;
             width: auto;
-            height: 35px;
+            height: 45px;
             line-height: 35px;
-            padding: 0 10px;
+            padding: 5px 40px;
             margin-top: 20px;
           }
         }
@@ -2366,8 +2366,8 @@ const callTel = () => {
       &>div:nth-child(3) {
         width: 100%;
         font-size: 18px;
-        height: 40px;
-        line-height: 40px;
+        height: 45px;
+        line-height: 45px;
         margin-top: 30px;
       }
     }
