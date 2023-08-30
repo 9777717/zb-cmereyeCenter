@@ -250,7 +250,7 @@ useHead({
 watch(
   menuBool,
   (o,n)=>{
-    var a:any = document.getElementById('userwayAccessibilityIcon')
+    var a:any = document.getElementById('userwayAccessibilityIcon')   
     a.style.display = n ? 'none' : 'block'
     var b:any = document.getElementById('mbFooterTop')
     b.style.display = n ? 'block' : 'none'
@@ -333,19 +333,19 @@ watch(
 </template>
 <style>
 body .uwy.userway_p3 .uai{
-  bottom: 170px !important;
+  bottom: 165px !important;
   display: none;
 }
 body .uwy .uai{
-  width: 50px !important;
-  max-width: 50px !important;
-  height: 50px !important;
-  max-height: 50px !important;
-  background: #2958A3 !important;
+  width: 54px !important;
+  max-width: 54px !important;
+  height: 54px !important;
+  max-height: 54px !important;
+  /* background: #2958A3 !important; */
 }
 .uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
-  width: 50px !important;
-  height: 50px !important;
+  width: 54px !important;
+  height: 54px !important;
 }
 </style>
 <style lang="scss" scoped>
