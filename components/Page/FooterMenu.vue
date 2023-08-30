@@ -162,7 +162,7 @@ const handleToLinks = (_data:any) => {
 }
 
 const handleImgLists = (_link:any) => {
-  console.log(_link)
+  // console.log(_link)
   if(_link.type === 'drawer'){
     drawer.value = true
   }else{
@@ -186,18 +186,32 @@ let drawer = ref(false)
           </div>
           <div class="t-in-b">
             <div>
-              <a :class="{weChatItem: index===2 && itemChildIndex === 4}" v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" :href="itemChild.link">
-                <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
-                <span v-if="index === 1">{{`<`}}</span>
-                <span>{{itemChild.name}}</span>
-                <div class="drawerIn" v-if="index===2 && itemChildIndex === 4">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-                    alt="微信QR"
-                    srcset=""
-                  />
+              <section v-for="(itemChild,itemChildIndex) in item.lists.slice(0,7)" :key="itemChildIndex" >
+                <div class="weChatItem" v-if="index===2 && itemChildIndex === 4">
+                  <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
+                  <span>{{itemChild.name}}</span>
+                  <div class="drawerIn" v-if="index===2 && itemChildIndex === 4">
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                      alt="微信QR"
+                      srcset=""
+                    />
+                  </div>
                 </div>
-              </a>
+                <a v-else :href="itemChild.link">
+                  <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
+                  <span v-if="index === 1">{{`<`}}</span>
+                  <span>{{itemChild.name}}</span>
+                  <!-- <div class="drawerIn" v-if="index===2 && itemChildIndex === 4">
+                    <img
+                      src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                      alt="微信QR"
+                      srcset=""
+                    />
+                  </div> -->
+                </a>
+                
+              </section>
             </div>
             <div class="twoD" v-if="item.lists.length > 7">
               <a v-for="(itemChild,itemChildIndex) in item.lists.slice(7,item.lists.length)" :key="itemChildIndex" :href="itemChild.link">
@@ -259,7 +273,7 @@ let drawer = ref(false)
           margin-top: 5px;
           display: flex;
           &>div{
-            &>a{
+            a,.weChatItem{
               display: block;
               cursor: pointer;
               margin-top: 15px;
@@ -358,12 +372,24 @@ let drawer = ref(false)
           &-b{
             display: block;
             &>div{
-              &>div{
+              a,.weChatItem{
                 margin-top: 9px;
                 span{
                   font-size: 15px;
                    &:first-child{
                     margin-right: 5px;
+                  }
+                }
+                .drawerIn{
+                  top: 30px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                }
+                &.weChatItem{
+                  &:hover{
+                    .drawerIn{
+                      width: 200px;
+                    }
                   }
                 }
               }
