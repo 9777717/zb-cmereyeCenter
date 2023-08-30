@@ -1163,13 +1163,13 @@ const callTel = () => {
     z-index: 1;
     margin: 0 auto;
     & > div:nth-child(2) {
-      font-family: 'DINCondensed';
+      font-family: 'DINCondensed-Bold';
       display: block;
       font-size: 140px;
       letter-spacing: 13px;
     }
     & > div:nth-child(3),& > div:nth-child(4) {
-      font-family: 'DINCondensed';
+      font-family: 'DINCondensed-Bold';
       display: block;
       font-size: 140px;
       letter-spacing: 13px;
@@ -2770,11 +2770,11 @@ const callTel = () => {
         font-size: 45px;
         letter-spacing: .05em;
         clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-        transform: translateY(-20%);
+        transform: translateY(-15%);
       }
       & > div:nth-child(4) {
         clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-        transform: translateY(-73%);
+        transform: translateY(-65%);
       }
     }
     & > div:nth-child(2) {

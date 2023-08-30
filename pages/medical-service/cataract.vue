@@ -968,7 +968,7 @@ const callTel = () => {
         margin-right: -10px;
       }
       &>div:nth-child(2) {
-        font-family: 'DINCondensed';
+        font-family: 'DINCondensed-Bold';
         display: block;
         font-size: 140px;
         letter-spacing: 2px;
@@ -977,7 +977,7 @@ const callTel = () => {
 
       &>div:nth-child(3),
       &>div:nth-child(4) {
-        font-family: 'DINCondensed';
+        font-family: 'DINCondensed-Bold';
         display: block;
         font-size: 140px;
         letter-spacing: 2px;
@@ -2275,12 +2275,12 @@ const callTel = () => {
           font-size: 52px;
           // letter-spacing: .05em;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-          transform: translateY(-20%);
+          transform: translateY(-15%);
         }
 
         &>div:nth-child(4) {
           clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-          transform: translateY(-73%);
+          transform: translateY(-65%);
         }
       }
 
@@ -2842,7 +2842,7 @@ const callTel = () => {
           &>div:nth-child(5) {
             &>div:nth-child(2) {
               &>div {
-                padding: 15px 0;
+                padding: 15px 5px 15px 0;
 
                 &>div {
                   align-items: flex-start;
@@ -2859,7 +2859,9 @@ const callTel = () => {
             }
 
             &>div:nth-child(3) {
+              align-items: flex-start;
               &>div {
+                padding: 15px 5px 15px 0;
                 &>div {
                   align-items: flex-start;
 
@@ -2875,7 +2877,9 @@ const callTel = () => {
             }
 
             &>div:nth-child(4) {
+              align-items: flex-start;
               &>div {
+                padding: 15px 5px 15px 0;
                 &>div {
                   align-items: flex-start;
 
@@ -2897,6 +2901,9 @@ const callTel = () => {
 
             &>div {
               padding: 15px 5px;
+              &:nth-of-type(n+2){
+                align-items: flex-start;
+              }
             }
           }
         }

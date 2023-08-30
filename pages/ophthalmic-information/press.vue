@@ -969,6 +969,8 @@ onMounted(()=>{
       &>div:nth-child(1) {
         font-size: 24px;
         margin-bottom: 30px;
+        display: inline-block;
+        padding-bottom: 5px;
       }
 
       &>div:nth-child(1)::after {
