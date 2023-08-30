@@ -968,7 +968,7 @@ const callTel = () => {
         margin-right: -10px;
       }
       &>div:nth-child(2) {
-        // font-family: "DINCondensed-Bold";
+        font-family: "DINCondensed-Bold";
         display: block;
         font-size: 140px;
         letter-spacing: 2px;
@@ -977,7 +977,7 @@ const callTel = () => {
 
       &>div:nth-child(3),
       &>div:nth-child(4) {
-        // font-family: 'DINCondensed-Bold';
+        font-family: 'DINCondensed-Bold';
         display: block;
         font-size: 140px;
         letter-spacing: 2px;
