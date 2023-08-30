@@ -311,6 +311,7 @@ let drawer = ref(false)
         </el-drawer>
       </client-only>
     </div>
+    <PageMbFooter :showTop="false" />
   </div>
 </template>
 
@@ -438,7 +439,7 @@ let drawer = ref(false)
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 @media (min-width: 768px) and (max-width: 1452px) {
 }

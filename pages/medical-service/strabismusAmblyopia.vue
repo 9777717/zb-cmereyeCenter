@@ -1113,11 +1113,11 @@ const callTel = () => {
           letter-spacing: 0.01em;
           -webkit-text-stroke: 1px #fbbfa1;
           clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-20%);
+          transform: translateY(-15%);
         }
         & > div:nth-child(4) {
           clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-77%);
+          transform: translateY(-60%);
         }
       }
       &>div:nth-child(1)::after {
