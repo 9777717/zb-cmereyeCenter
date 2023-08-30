@@ -1056,6 +1056,7 @@ const callTel = () => {
           //   linear-gradient(90deg, #accbee 0%, #e7f0fd 100%);
           background-blend-mode: normal, normal;
           border-radius: 85px;
+          -webkit-border-radius: 85px;
           text-align: center;
           position: relative;
           overflow: hidden;
