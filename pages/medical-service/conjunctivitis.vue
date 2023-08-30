@@ -1069,7 +1069,7 @@ const callTel = () => {
         &>div:nth-child(2) {
           font-size: 42px;
           letter-spacing: 0.01em;
-          margin-top: 0;
+          margin-top: 5px;
           text-align: right;
           line-height: 1;
         }

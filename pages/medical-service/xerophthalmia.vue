@@ -2205,14 +2205,14 @@ const callTel = () => {
         &>div:nth-child(4) {
           font-size: 50px;
           line-height: 1;
-          margin-top: 0;
+          margin-top: 5px;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
           transform: translateY(-15%);
         }
 
         &>div:nth-child(4) {
           clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-          transform: translateY(-60%);
+          transform: translateY(-58%);
         }
       }
 

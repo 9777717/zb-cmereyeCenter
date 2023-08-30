@@ -2765,6 +2765,7 @@ const callTel = () => {
       & > div:nth-child(2) {
         font-size: 45px;
         letter-spacing: .05em;
+        margin-top: 5px;
       }
       & > div:nth-child(3),& > div:nth-child(4) {
         font-size: 45px;
@@ -2774,7 +2775,7 @@ const callTel = () => {
       }
       & > div:nth-child(4) {
         clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-        transform: translateY(-60%);
+        transform: translateY(-58%);
       }
     }
     & > div:nth-child(2) {
