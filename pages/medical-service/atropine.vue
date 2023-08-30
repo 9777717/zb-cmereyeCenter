@@ -656,6 +656,8 @@ const tozoosnet =()=>{
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
         position: relative;
         overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
         &::before {
           content: "";
           position: absolute;
@@ -774,6 +776,8 @@ const tozoosnet =()=>{
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
         position: relative;
         overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
         &::before {
           content: "";
           position: absolute;
@@ -945,6 +949,8 @@ const tozoosnet =()=>{
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
         position: relative;
         overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
         &::before {
           content: "";
           position: absolute;

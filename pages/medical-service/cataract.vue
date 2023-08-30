@@ -1060,6 +1060,8 @@ const callTel = () => {
           text-align: center;
           position: relative;
           overflow: hidden;
+          -webkit-backface-visibility: hidden;
+          -webkit-transform: translate3d(0, 0, 0);
           text-shadow: 0 2px 5px #2ca3de;
           &::before {
             content: "";
@@ -1137,6 +1139,8 @@ const callTel = () => {
       border-radius: 85px;
       position: relative;
       overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
       text-shadow: 0 2px 5px #2ca3de;
       &::before {
         content: "";
@@ -1431,6 +1435,8 @@ const callTel = () => {
         text-align: center;
         position: relative;
         overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
         &::before {
           content: "";
           position: absolute;
@@ -1671,6 +1677,8 @@ const callTel = () => {
       background-blend-mode: normal, normal;
       position: relative;
       overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
       text-shadow: 0 2px 5px #2ca3de;
       &::before {
         content: "";
@@ -1999,6 +2007,8 @@ const callTel = () => {
       cursor: pointer;
       position: relative;
       overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
       text-shadow: 0 2px 5px #2ca3de;
       &::before {
         content: "";

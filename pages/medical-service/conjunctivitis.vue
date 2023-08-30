@@ -927,6 +927,8 @@ const callTel = () => {
   height: 140px;
   position: relative;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
   text-shadow: 0 2px 5px #d8d8f4;
   &::before {
     content: "";

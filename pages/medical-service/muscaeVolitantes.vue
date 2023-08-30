@@ -1246,6 +1246,8 @@ const callTel = () => {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
   text-shadow: 0 2px 5px #6aa0d6;
   &::before {
     content: "";

@@ -785,6 +785,8 @@ const preventList1 = [
   color: #ffffff;
   position: relative;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
   text-shadow: 0 2px 5px #fbddd8;
   &::before {
     content: "";
