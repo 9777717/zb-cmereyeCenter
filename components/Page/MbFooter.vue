@@ -1,10 +1,4 @@
 <script lang="ts" setup>
-const props = defineProps({
-  showTop: {
-    type: String,
-    default: true,
-  },
-})
 const toTop = () => {
   let top = document.documentElement.scrollTop || document.body.scrollTop
   // 实现滚动效果
@@ -46,7 +40,7 @@ onMounted(() => {
         <div>線上對話</div>
       </a>
     </div>
-    <div v-show="isShowTopBtn" v-if="showTop" class="mbFooter-top" @click="toTop">
+    <div id="mbFooterTop" class="mbFooter-top" @click="toTop">
       <img src="https://static.cmereye.com/imgs/2023/07/3a2e901023d9c537.png" alt="">
     </div>
   </div>
@@ -61,7 +55,7 @@ onMounted(() => {
   padding: 20px 0;
   background: rgba(41, 88, 163, 1);
   display: block;
-  z-index: 50;
+  z-index: 1000;
   &-in{
     display: flex;
     &>a{

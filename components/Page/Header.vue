@@ -238,6 +238,24 @@ const handleImgLists = (_link:any) => {
   }
 }
 let drawer = ref(false)
+
+useHead({
+  script: [
+    {
+      src: 'https://cdn.userway.org/widget.js',
+      'data-account': 'eSwu5OqOdn'
+    }
+  ],
+})
+watch(
+  menuBool,
+  (o,n)=>{
+    var a:any = document.getElementById('userwayAccessibilityIcon')
+    a.style.display = n ? 'none' : 'block'
+    var b:any = document.getElementById('mbFooterTop')
+    b.style.display = n ? 'block' : 'none'
+  }
+)
 </script>
 
 <template>
@@ -311,10 +329,25 @@ let drawer = ref(false)
         </el-drawer>
       </client-only>
     </div>
-    <!-- <PageMbFooter :showTop="false" /> -->
   </div>
 </template>
-
+<style>
+body .uwy.userway_p3 .uai{
+  bottom: 170px !important;
+  display: none;
+}
+body .uwy .uai{
+  width: 50px !important;
+  max-width: 50px !important;
+  height: 50px !important;
+  max-height: 50px !important;
+  background: #2958A3 !important;
+}
+.uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
+  width: 50px !important;
+  height: 50px !important;
+}
+</style>
 <style lang="scss" scoped>
 .ddd-enter,.ddd-leave-to{
     opacity: 0;
@@ -441,8 +474,10 @@ let drawer = ref(false)
   height: 100%;
   padding-bottom: 100px;
 }
+
 @media (min-width: 768px) and (max-width: 1452px) {
 }
 @media screen and (max-width: 768px) {
+  
 }
 </style>
