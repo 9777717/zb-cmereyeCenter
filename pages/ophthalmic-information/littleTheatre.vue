@@ -33,6 +33,16 @@ const videoList = [
     ],
     link: 'https://youtu.be/oYTtMkqVK4w',
   },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/08/34b9b04d95b61a4c.jpg',
+    title:
+      '母親必看！如果你有呢種仔女',
+    text: [
+      '今年5月14日就喺母親節喇！👩平日媽媽為屋企人辛苦打理家務，🎁身為子女嘅你又準備咗送咩禮物慰勞媽媽呢？',
+      '但如果子女準備嘅驚喜禮物令你有驚無喜，你又會點？一齊睇到影片最尾，😉睇吓希瑪仔到底準備咗咩「驚喜」畀媽媽啦~',
+    ],
+    link: 'https://www.youtube.com/watch?v=qNF78pbRx6c',
+  },
 ]
 </script>
 
@@ -238,7 +248,9 @@ const videoList = [
 
     & > div {
       display: flex;
-
+      &:not(:last-child){
+          margin-bottom: 94px;
+        }
       & > div:nth-child(1) {
         margin-right: 72px;
         width: 518px;
@@ -252,7 +264,7 @@ const videoList = [
       & > div:nth-child(2) {
         width: 518px;
         position: relative;
-
+        
         & > div:nth-child(1) {
           font-family: 'Noto Sans HK';
           font-style: normal;
@@ -356,6 +368,7 @@ const videoList = [
       width: calc(100% - 60px);
       &>div{
         flex-direction: column-reverse;
+        margin-bottom: 94px;
         & > div:nth-child(1) {
           width: 100%;
           padding: 15px;
