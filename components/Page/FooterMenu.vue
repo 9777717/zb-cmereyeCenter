@@ -198,7 +198,7 @@ let drawer = ref(false)
                     />
                   </div>
                 </div>
-                <a v-else :href="itemChild.link">
+                <nuxt-link :to="itemChild.link" v-else>
                   <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                   <span v-if="index === 1">{{`<`}}</span>
                   <span>{{itemChild.name}}</span>
@@ -209,16 +209,16 @@ let drawer = ref(false)
                       srcset=""
                     />
                   </div> -->
-                </a>
+                </nuxt-link>
                 
               </section>
             </div>
             <div class="twoD" v-if="item.lists.length > 7">
-              <a v-for="(itemChild,itemChildIndex) in item.lists.slice(7,item.lists.length)" :key="itemChildIndex" :href="itemChild.link">
+              <nuxt-link v-for="(itemChild,itemChildIndex) in item.lists.slice(7,item.lists.length)" :key="itemChildIndex" :to="itemChild.link">
                 <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                 <span v-if="index === 1">{{`<`}}</span>
                 <span>{{itemChild.name}}</span>
-              </a>
+              </nuxt-link>
             </div>
           </div>
         </div>  

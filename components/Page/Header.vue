@@ -193,8 +193,11 @@ const toIndex = () => {
   menuBool.value = false
 }
 
+const router = useRouter()
 const toLinks = (data:any) =>{
-  window.location.href = data.link || ''
+  router.push({
+    path: data.link || ''
+  })
   menuBool.value = false
 }
 
