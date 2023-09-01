@@ -158,7 +158,7 @@ defineProps({
           </el-form-item>
           <el-form-item prop="phone">
             <el-input
-              maxLength="11"
+              maxLength="12"
               v-model="ruleForm.phone"
               :placeholder="$t('components.footerInfo.placeholder2')"
               clearable
