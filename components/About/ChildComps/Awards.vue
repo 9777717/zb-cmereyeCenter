@@ -239,7 +239,8 @@ onMounted(()=>{
 
 @media screen and (max-width: 768px) {
   #awards {
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 100px 0;
     .awards-title {
       width: calc(100% - 60px);
     }

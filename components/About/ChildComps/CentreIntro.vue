@@ -861,6 +861,8 @@ const goInstagram = (type: string) => {
 
 @media screen and (max-width: 768px) {
   .centreIntro{
+    padding-top: 100px;
+    margin-top: -100px;
     margin-bottom: 80px;
     & > div:nth-child(1) {
       .IntroCon{

@@ -262,7 +262,8 @@ const historyList = ref([
 @media screen and (max-width: 768px) {
 
   #history {
-    margin-top: 100px;
+    margin-top: 0px;
+    padding-top: 100px;
   }
   .history-title {
     width: max-content;

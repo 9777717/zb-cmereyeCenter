@@ -17,18 +17,33 @@ const menus = [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        link: {path: '/about-us',hash: '#centreIntro'}
+        link: { path: '/about-us', hash: '#centreIntro' },
       },
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
-        link: {path: '/about-us',hash: '#history'}
+        link: { path: '/about-us', hash: '#history' },
       },
       {
-        type: 'link', // 企业愿景
-        text: t('pages.about_us.enterprise_vision'),
-        link: {path: '/about-us',hash: '#awards'}
+        type: 'link',
+        text: '企業願景',
+        link: { path: '/about-us', hash: '#corporate' },
       },
+      {
+        type: 'link',
+        text: '中心設備',
+        link: { path: '/about-us', hash: '#medicalEquipment' },
+      },
+      {
+        type: 'link', 
+        text: '客戶評分',
+        link: { path: '/about-us', hash: '#feedback' },
+      },
+      {
+        type: 'link', 
+        text: t('pages.about_us.enterprise_vision'),
+        link: { path: '/about-us', hash: '#awards' },
+      }
     ],
   },
   {

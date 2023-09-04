@@ -259,7 +259,8 @@ const CORPORATE_Lists = [
     line-height: 160px;
   }
   .CORPORATE_VISION{
-    margin-top: 72px;
+    margin-top: 0px;
+    padding-top: 72px;
     &-in{
       &-title{
         width: calc(100% - 60px);

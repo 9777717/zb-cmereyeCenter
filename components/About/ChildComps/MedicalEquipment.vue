@@ -548,11 +548,15 @@ const setThumbsSwiper = (swiper: any) => {
   padding-bottom: 90px;
 }
 @media screen and (max-width: 768px) {
+  #medicalEquipment{
+    margin-top: 60px;
+    padding-top: 130px;
+  }
   .medicalEquipment-title {
     width: max-content;
     left: 30px;
     transform: none;
-    top: -60px;
+    top: 70px;
   }
   .mySwiper {
     padding: 30px 20px 0;

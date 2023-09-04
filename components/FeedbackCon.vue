@@ -137,6 +137,8 @@ onMounted(()=>{
 }
 @media screen and (max-width: 768px) {
   .feedback{
+    margin: 0 auto;
+    padding-top: 93px;
     &-in{
       &-title{
         padding-left: 30px;
