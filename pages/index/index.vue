@@ -84,7 +84,7 @@ const toLink = (a:string) => {
   <div class="home">
     <div>
       <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
-        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted
+        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted x5-playsinline="" playsinline="" webkit-playsinline=""
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
          </video>
       </div>
@@ -182,7 +182,7 @@ const toLink = (a:string) => {
           </div>
         </div>
         <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/08/c623b10e7da95869.jpg" alt=""></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/09/83dfb116cf1ee827.jpg" alt=""></div>
           <!-- <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>s -->
         </div>
       </div>
@@ -379,7 +379,6 @@ const toLink = (a:string) => {
       .pcHomeVideoBox{
         display: none;
       }
-
       .mbHomeSwiper {
         width: 100%;
         height: 100vh;
