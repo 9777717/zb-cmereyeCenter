@@ -370,9 +370,6 @@ const doctorList = [
             <div><img :src="item.doctorImgUrl" /></div>
             <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
-          <!-- <nuxt-link class="orderLink text-white inline-block" to="">{{
-            $t('pages.medical_team.doctor_order')
-          }}</nuxt-link> -->
         </li>
       </ul>
     </div>
@@ -1186,21 +1183,21 @@ const doctorList = [
         }
 
         .docImg {
-          width: 55%;
+          width: 60%;
           margin-top: 29px;
           margin-right: 15px;
 
           .docEnName {
             font-size: 20px;
             left: 50px;
-            width: calc(100vw - 110px);
-            text-align: left;
+            width: 100%;
+            text-align: right;
             line-height: 25px;
-            // top: auto;
             top: 160px;
-            // bottom: -25px;
-            // position: initial;
-            // margin-left: 20px;
+            position: relative;
+            top: 0 !important;
+            left: 0 !important;
+            z-index: 5;
           }
         }
 
