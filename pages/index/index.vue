@@ -84,7 +84,7 @@ const toLink = (a:string) => {
   <div class="home">
     <div>
       <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
-        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted x5-playsinline="" playsinline="" webkit-playsinline=""
+        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted x5-playsinline="" webkit-playsinline=""
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
          </video>
       </div>
