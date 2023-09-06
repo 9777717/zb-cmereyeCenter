@@ -40,7 +40,7 @@ const serviceNavigation = [
   },
   {
     anchorName:
-      '客戶評分',
+      'pages.about_us.feedback',
     anchorLink: '/contact-us#feedback',
   },
   {

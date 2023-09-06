@@ -6,33 +6,33 @@ defineProps({
     default: ''
   }
 })
-
+const { t } = useLang()
 const menuLists = [
   {
     title: '希瑪眼科中心',
     lists: [
       {
-        name: '中心簡介',
+        name: t('pages.about_us.center_profile'),
         link: '/about-us#centreIntro',
         icon: ''
       },{
-        name: '發展歷程',
+        name: t('pages.about_us.development_course'),
         link: '/about-us#history',
         icon: ''
       },{
-        name: '企業願景',
+        name: t('pages.about_us.enterprise_vision'),
         link: '/about-us#corporate',
         icon: ''
       },{
-        name: '醫療團隊',
+        name: t('pages.medical_team.medical_team'),
         link: '/medical-team',
         icon: ''
       },{
-        name: '中心設備',
+        name: t('pages.about_us.equipment_centre'),
         link: '/about-us#medicalEquipment',
         icon: ''
       },{
-        name: '人才招聘',
+        name: t('pages.talent_recruitment.talent_recruitment'),
         link: '/talent-recruitment',
         icon: ''
       }
@@ -42,51 +42,51 @@ const menuLists = [
     title: '醫療服務',
     lists: [
       {
-        name: '白內障',
+        name: t('pages.medical_service.cataract'),
         icon: '',
         link: '/medical-service/cataract',
       },{
-        name: '青光眼',
+        name: t('pages.medical_service.glaucoma'),
         icon: '',
         link: '/medical-service/glaucoma'
       },{
-        name: '乾眼症',
+        name: t('pages.medical_service.xerophthalmia'),
         icon: '',
         link: '/medical-service/xerophthalmia'
       },{
-        name: '飛蚊症',
+        name: t('pages.medical_service.muscae_volitantes'),
         icon: '',
         link: '/medical-service/muscaeVolitantes'
       },{
-        name: '結膜炎',
+        name: t('pages.medical_service.conjunctivitis'),
         icon: '',
         link: '/medical-service/conjunctivitis'
       },{
-        name: '黃斑病變',
+        name: t('pages.medical_service.maculopathy'),
         icon: '',
         link: '/medical-service/maculopathy'
       },{
-        name: '兒童斜弱視',
+        name: t('pages.medical_service.strabismusAmblyopia'),
         icon: '',
         link: '/medical-service/strabismusAmblyopia'
       },{
-        name: '阿托品眼藥水',
+        name: t('pages.medical_service.atropine'),
         icon: '',
         link: '/medical-service/atropine'
       },{
-        name: '眼表及角膜疾病',
+        name: t('pages.medical_service.ocularSurfaceDiseases'),
         icon: '',
         link: '/medical-service/ocularSurfaceDiseases'
       },{
-        name: '視網膜脫落',
+        name: t('pages.medical_service.amotioRetinae'),
         icon: '',
         link: '/medical-service/amotioRetinae'
       },{
-        name: '眼矯形及眼眶疾病',
+        name: t('pages.medical_service.eyeOrthopaedicDisease'),
         icon: '',
         link: '/medical-service/eyeOrthopaedicDisease'
       },{
-        name: '醫學驗光配鏡',
+        name: t('pages.medical_service.medicalOptometry'),
         icon: '',
         link: '/medical-service/medicalOptometry'
       }
@@ -224,7 +224,7 @@ let drawer = ref(false)
         </div>  
       </div>
       <div class="footerMenu-in-b">
-        <div><span @click="handleToLinks({link: '/privacyPolicy'})">私隱政策</span> | <span @click="handleToLinks({link: '/disclaimer'})">免責條款</span></div>
+        <div><span @click="handleToLinks({link: '/privacyPolicy'})">{{$t('pages.index.footer.privacy')}}</span> | <span @click="handleToLinks({link: '/disclaimer'})">{{$t('pages.index.footer.disclaimer')}}</span></div>
         <div>©2023 希瑪眼科中心 版權所有</div>
         <div class="imgLists">
           <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>

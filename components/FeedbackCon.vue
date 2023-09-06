@@ -33,7 +33,7 @@ onMounted(()=>{
         <div class="feedback-in">
           <div class="feedback-in-title">
             <AboutTitle
-              :zh-title="'客戶評分'"
+              :zh-title="'pages.about_us.feedback'"
               :en-ttitle="'FEEDBACK'"
               class="title"
             />

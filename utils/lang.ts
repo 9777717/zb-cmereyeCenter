@@ -20,11 +20,11 @@ export const availableLocales: ILocales = {
   //   flag: 'cn',
   // },
   // Eng 未开发好不展示
-  // en: {
-  //   name: 'ENG',
-  //   iso: 'en',
-  //   flag: 'en',
-  // },
+  en: {
+    name: 'ENG',
+    iso: 'en',
+    flag: 'en',
+  },
 }
 
 export function LanguageManager() {

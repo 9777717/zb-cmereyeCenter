@@ -34,22 +34,22 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: '企業願景',
+        text: t('pages.about_us.enterprise_vision'),
         route: { path: '/about-us', hash: '#corporate' },
       },
       {
         type: 'link',
-        text: '中心設備',
+        text: t('pages.about_us.equipment_centre'),
         route: { path: '/about-us', hash: '#medicalEquipment' },
       },
       {
         type: 'link', 
-        text: '客戶評分',
+        text: t('pages.about_us.feedback'),
         route: { path: '/about-us', hash: '#feedback' },
       },
       {
         type: 'link', 
-        text: t('pages.about_us.enterprise_vision'),
+        text: t('pages.about_us.enterprise_awards'),
         route: { path: '/about-us', hash: '#awards' },
       }
     ],
@@ -158,7 +158,7 @@ const menus = computed((): IMenuItem[] => [
         route: { name: 'ophthalmic-information-littleTheatre' },
       },
       {
-        type: 'link', // 文章推薦
+        type: 'link', // 新闻资讯
         text: t('pages.ophthalmic_information.ophthalmic_press'),
         route: { name: 'ophthalmic-information-press' },
       },
@@ -208,7 +208,7 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link', 
-        text: '客戶評分',
+        text: t('pages.about_us.feedback'),
         route: { path: '/contact-us', hash: '#feedback' },
       },
       {

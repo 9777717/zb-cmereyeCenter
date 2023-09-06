@@ -139,7 +139,7 @@ const scrollHeight = () => {
                   </tr>
                   <tr>
                     <td colspan="2">
-                      光學生物測量儀
+                      {{$t('pages.process_cost.cont.cost_tr18_td1')}}
                     </td>
                     <td class="text-center">$400</td>
                     <td class="text-center">$650</td>

@@ -4,6 +4,26 @@ components:
   theme_switcher:
     theme: theme
     change_theme: change theme
+  footerInfo:
+    Instagram: Instagram
+    YouTube: YouTube
+    Google: Google
+    Facebook: Facebook
+    sidekicker: 親友介紹
+    staff: 員工介紹
+    website: 透過其他網頁
+    leaflet: 透過宣傳單張/卡片
+    rest: 其他
+    label1: 從哪裡找到我們的網站？ （可選擇多於一項）
+    text1: 立即預約，填寫您的資料
+    text2: 我們收到預約要求後，會盡快聯絡您。
+    placeholder1: Name
+    placeholder2: Contact number
+    placeholder3: Email
+    placeholder4: Date
+    placeholder5: Message
+    submitForm: Submit
+  menus: haha
 pages:
   404:
     title: page not found
@@ -62,7 +82,7 @@ pages:
       nav: home
       title: home
   index:
-    home: home
+    home: Home
     footer:
       company: Shimalin Shunchao Eye Center
       copy_right: copyRight
@@ -70,29 +90,35 @@ pages:
       fonts: fonts
       privacy: privacy policy 
       disclaimer: disclaimer
+    subscribe: Chat/Booking now
+    inquire: Chat now
   about_us:
-    about_us: about Us
-    center_profile: 中心简介
-    development_course: 发展历程
-    enterprise_vision: 企业愿景
+    about_us: About Us
+    center_profile: Introduction
+    development_course: Our History
+    enterprise_vision: Corporate Vision
+    enterprise_awards: Awards
+    equipment_centre: Medical Equipment
+    feedback: Feedback
     download:
       download: Download the Hema Ophthalmic Practice booklet
   medical_team:
-    medical_team: 医疗团队
+    medical_team: Medical Team
   medical_service:
-    medical_service: 医疗服务
-    cataract: 白內障
-    glaucoma: 青光眼
-    xerophthalmia: 干眼症
-    muscae_volitantes: 飞蚊症
-    conjunctivitis: 结膜炎
-    maculopathy: 黄斑病变
-    # : 儿童斜弱视
-    # : 眼表及角膜疾病
-    # : 视网膜脱落及疾病
-    # : 眼疾形及眼眶疾病
-    # : 医学验光配镜
-    # : 屈光矫正
+    medical_service: Medical Services
+    cataract: Cataract
+    glaucoma: Glaucoma
+    xerophthalmia: Dry Eyes
+    muscae_volitantes: Eye floaters
+    conjunctivitis: Conjunctivitis
+    maculopathy: Macular Degeneration
+    strabismusAmblyopia: Amblyopia and Strabismus in Children
+    amotioRetinae: Retinal Detachment
+    ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
+    eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
+    medicalOptometry: Myopia Control and Ophthalmic Services
+    smileHk: Vision Correction
+    atropine: Atropine Eye Drops
   ophthalmic_information:
     ophthalmic_information: 眼科咨询
     ophthalmic_class: 医生小教室
@@ -102,15 +128,164 @@ pages:
     ophthalmic_article: 文章推荐
     ophthalmic_message: 健康资讯
   process_cost:
-    process_cost: 流程及费用
-    cost: 费用一览
-    process: 就诊流程
+    process_cost: Services & Fees
+    cost: Fees & Charges
+    cont:
+      cost_h1: Fees & Charges
+      cost_h3_1: 眼科
+      cost_p1: No additional charge
+      cost_h3_2: 特殊檢查項目
+      cost_tr1_td1: Single eye
+      cost_tr1_td2: Both eyes
+      cost_tr2_td1: Optical Coherence Tomography (OCT) - Anterior Segment
+      cost_tr3_td1: Optical Coherence Tomography (OCT) - Glaucoma
+      cost_tr4_td1: Optical Coherence Tomography (OCT) - Macular
+      cost_tr5_td1: Optical Coherence Tomography (OCT) – Glaucoma + Macular
+      cost_tr6_td1: A Scan
+      cost_tr7_td1: Specular Microscopy
+      cost_tr8_td1: Visual Field (VF)
+      cost_tr9_td1: 200° Retina Laser Scanning (SLO)
+      cost_tr10_td1: Fundus Photography (FP)
+      cost_tr11_td1: Pentacam / Sirius
+      cost_tr12_td1: FP + FFA (including medicine)
+      cost_tr13_td1: FP + ICG (including medicine)
+      cost_tr14_td1: FP + FFA + ICG (include medicine)
+      cost_tr15_td1: B-Scan
+      cost_tr16_td1: Phaco Work-Up
+      cost_tr18_td1: IOL Master
+      cost_tr17_td1: 隱形眼鏡驗配
+      cost_tr17_td2: 八歲以上
+      cost_tr18_td2: 八歲或以下
+      cost_p2: ''
+      cost_p2_1: This pricelist is only eligible in Hong Kong currency.
+      cost_p2_2: ''
+      cost_p3_1_s: '*Handling charge will be applied for each copy of the investigation above' 
+      cost_p3: 每份詳細眼睛檢查複本將收取
+      cost_p3_1: 行政費
+      cost_p4: "，Please ask our nurse for details."
+      cost_p5: (VF $10/sheet, OCT $30/sheet, FP $100/sheet)
+      cost_p6: '*Request for Medical Report:'
+      cost_p6_1: ''
+      cost_p7: (per doctor for each report, subject to quotation).
+      cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
+      cost_p9: "Last update: 01/04/2023"
+    process: Outpatient Services
+    process_1:
+      process_h1: 就診流程
+      process_p1: 登記
+      process_p2: 基本檢查
+      process_h3_1: 初步眼睛檢查
+      process_p3_1: 為全面了解您的眼睛狀況，
+      process_p3_2: 我們會先為您進行3-5項基本眼睛檢查。
+      process_p4: 醫生診症
+      process_h3_2: 詳細眼睛檢查
+      process_p5_1: 醫生會根據您的眼睛狀況，
+      process_p5_2: 進行詳細眼睛檢查，
+      process_p5_3: 以準確診斷並作出相應治療。
+      process_p6: 詳細檢查
+      process_p7_1: 門診 / 針灸
+      process_p7_2: 手術
+      process_p8: 付款及取藥
+      process_p9: 其他服務-配鏡
   talent_recruitment:
-    talent_recruitment: 人才招聘
+    talent_recruitment: Careers
+    text1: 加入我們，攜手未來
+    text2: We value our employees
+    p1: the culture of teamwork and are committed to provide quality employee training.
+    p2: We are looking for medical professionals to provide tailor-made ophthalmic services for customers.
+    p3: ''
+    apply: Apply now
   contact_us:
-    contact_us: 联络我们
-    clinic_information: 诊所资料
-    appointmentForm: 电子预约表格
+    contact_us: Contact Us
+    clinic_information: Locations
+    clinic_information_title:
+      clinic_information_title: Eye center
+      clinic_information_map: Google Map
+      clinic_information_make: Booking
+      clinic_information_serviceNavigation1: Locations
+      clinic_information_serviceNavigation2: Comments and Suggestions
+      clinic_information_addressList:
+        addressList1_regionName: Hong Kong
+        addressList1_addressDetailList:
+          addressDetailList1_addressName: Central
+          addressDetailList1_addressDetail: Suite 1515, Central Building, 1-3 Pedder Street
+          addressDetailList1_subwayExit: Central MTR Station (Exit G) , upstairs at The Landmark
+          addressDetailList1_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList2_addressName: Central
+          addressDetailList2_addressDetail: Room 1908, Melbourne Plaza, 33 Queen’s Road Central
+          addressDetailList2_subwayExit: Central MTR Station (Exit D2)
+          addressDetailList2_clinicHours:
+            clinicHours1: Mon-Fri：10:00—13:00 / 15:00—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList3_addressName: Causeway Bay
+          addressDetailList3_addressDetail: Room 1614-15, Hang Lung Centre, 2-20 Paterson Street
+          addressDetailList3_subwayExit: Causeway Bay MTR Station (Exit E)
+          addressDetailList3_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+        addressList2_regionName: Kowloon
+        addressList2_addressDetailList:
+          addressDetailList1_addressName: Tsim Sha Tsui
+          addressDetailList1_addressDetail: Room 1906, 19/F, K11 ATELIER, 18-24 Salisbury Road (near K11 MUSEA)
+          addressDetailList1_subwayExit1: East Tsim Sha Tsui Station MTR Station (Exit J)
+          addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
+          addressDetailList1_clinicHours:
+            clinicHours1: 'Mon-Fri: 09:30—13:30 / 14:30—19:00'
+            clinicHours2: 'Sat: 09:30—14:00'
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList2_addressName: Mong Kok
+          addressDetailList2_addressDetail: Room 1208, One Grand Tower, 625 and 639 Nathan Road
+          addressDetailList2_subwayExit: Mong Kok MTR Station (Exit E1)
+          addressDetailList2_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList3_addressName: Kwun Tong
+          addressDetailList3_addressDetail: Room 1601, 16/F, Crocodile Centre, 79 Hoi Yuen Road
+          addressDetailList3_subwayExit: Kwun Tong MTR Station (Exit A2/B3)
+          addressDetailList3_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+        addressList3_regionName: New Territories
+        addressList3_addressDetailList:
+          addressDetailList1_addressName: Sha Tin
+          addressDetailList1_addressDetail: Shop 1C—1F, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street
+          addressDetailList1_subwayExit: Shatin MTR Station (Exit A3)
+          addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
+          addressDetailList1_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList2_addressName: Yuen Long (Opposite to Hang Heung Cake Shop)
+          addressDetailList2_addressDetail: G/F, Sing Shun Building, 45 & 47 Castle Peak Road, Yuen Long
+          addressDetailList2_subwayExit: ""
+          addressDetailList2_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList3_addressName: Tsuen Wan
+          addressDetailList3_addressDetail: G/F, Sze Yuen Mansion, No. 255 Sha Tsui Road
+          addressDetailList3_subwayExit: ""
+          addressDetailList3_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList4_addressName: Tseung Kwan O
+          addressDetailList4_addressDetail: Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road (Po Lam MTR Station, Exit B2)
+          addressDetailList4_subwayExit: ""
+          addressDetailList4_clinicHours:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+    appointmentForm: Comments and Suggestions
+    appointmentForm_title:
+      appointmentForm_title: Comments and Suggestions
 banners:
   welcome: 您好, 欢迎来到 %{app_name}!
 others:

@@ -23,6 +23,8 @@ components:
     placeholder4: 預約日期
     placeholder5: 訊息
     submitForm: 提交
+  menus: haha
+    
 pages:
   404:
     title: 找不到该页面
@@ -195,9 +197,10 @@ pages:
       child_12:
         child_month: 1月
         child_info: 中環  希瑪眼科中心成立
-    enterprise_vision: 企業榮譽
+    enterprise_vision: 企業願景
     enterprise_awards: 企業榮譽
     equipment_centre: 中心設備
+    feedback: 客戶評分
     equipment:
       equipment_name:
         equipment_name_1: Carl Zeiss Visumax 全飛秒激光3.0系統
@@ -760,10 +763,6 @@ pages:
       service_glaucoma_down: 青光眼
       service_glaucoma_down_text: 下載小冊子
     xerophthalmia: 乾眼症
-    # xerophthalmia_multi_language:
-    # xerophthalmia_multi_title:
-    # xerophthalmia_multi_btn:
-    # xerophthalmia_multi_text:
     muscae_volitantes: 飛蚊症
     conjunctivitis: 結膜炎
     maculopathy: 黃斑病變
@@ -1006,6 +1005,7 @@ pages:
       cost_tr14_td1: 眼底照相 + 眼底熒光血管造影 + 靛青綠血管造影（包藥費）
       cost_tr15_td1: B 超聲波掃描
       cost_tr16_td1: 白內障超聲乳化矯視術前檢查
+      cost_tr18_td1: 光學生物測量儀
       cost_tr17_td1: 隱形眼鏡驗配
       cost_tr17_td2: 八歲以上
       cost_tr18_td2: 八歲或以下

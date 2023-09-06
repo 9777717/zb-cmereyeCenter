@@ -1,6 +1,6 @@
 <template>
   <div class="title2 font-normal">
-    <h1 class="text-2xl">{{ zhTitle }}</h1>
+    <h1 class="text-2xl">{{ $t(zhTitle) }}</h1>
     <h2 class="flex items-center justify-start en-font">
       <span class="text-xs">
         <svg
