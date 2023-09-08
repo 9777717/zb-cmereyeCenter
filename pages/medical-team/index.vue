@@ -4,6 +4,8 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
+
 useHead(() => ({
   title: t('pages.medical_team.medical_team_header_title'),
   meta: [
@@ -34,7 +36,7 @@ useHead(() => ({
 const doctorList = [
   {
     doctorName: 'pages.medical_team.doctorList.doctor_1.doctor_1_name',
-    doctorIntro: '香港希瑪國際眼科醫療集團創辦人',
+    doctorIntro: 'pages.medical_team.doctorList.doctor_1.doctor_1_intro',
     doctorEnName: 'pages.medical_team.doctorList.doctor_1.doctor_1_en_name',
     doctorEducation: [
       'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_1',
@@ -347,13 +349,13 @@ const doctorList = [
     <div class="mainCon">
       <ul>
         <li v-for="(item, index) in doctorList" :key="index" class="docList">
-          <div class="docDes">
-            <div class="docName">{{ $t(item.doctorName) }}</div>
+          <div class="docDes" :class="{'docDes-en': locale === 'en'}">
+            <div :class="['docName',{'docName-en': locale === 'en'}]">{{ $t(item.doctorName) }}</div>
             <p v-if="item.doctorIntro" class="doctorIntro">
               {{ $t(item.doctorIntro) }}
             </p>
             <div class="docEducation">
-              <div class="edutitle">
+              <div class="edutitle" :class="{'edutitle-en': locale === 'en'}">
                 {{ $t('pages.medical_team.doctor_edu') }}
               </div>
               <div>
@@ -366,7 +368,7 @@ const doctorList = [
               </div>
             </div>
           </div>
-          <div class="docImg">
+          <div class="docImg" :class="{'docImg-en': locale === 'en'}">
             <div><img :src="item.doctorImgUrl" /></div>
             <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
@@ -510,6 +512,7 @@ const doctorList = [
         letter-spacing: 0.05em;
 
         color: #515151;
+        
       }
 
       .doctorIntro {
@@ -1150,6 +1153,9 @@ const doctorList = [
 
         .docDes {
           margin-top: 0px;
+          &.docDes-en{
+            max-width: 45%;
+          }
         }
 
         .orderLink {
@@ -1171,6 +1177,9 @@ const doctorList = [
           top: -50px;
           text-align: left;
           font-size: 24px;
+          &.docName-en{
+            font-size: 18px;
+          }
         }
 
         .doctorIntro {
@@ -1186,7 +1195,14 @@ const doctorList = [
           width: 60%;
           margin-top: 29px;
           margin-right: 15px;
-
+          &.docImg-en{
+            min-width: 50%;
+            max-width: 50%;
+            img{
+              width: 100%;
+            }
+          }
+          
           .docEnName {
             font-size: 20px;
             left: 50px;
@@ -1208,6 +1224,9 @@ const doctorList = [
             min-width: 40px;
             text-align: left;
             line-height: 16px;
+            &.edutitle-en{
+              display: none;
+            }
           }
 
           &>div:last-child {
@@ -1215,7 +1234,7 @@ const doctorList = [
             line-height: 160%;
             margin-bottom: 6px;
             padding-right: 5px;
-            text-align: justify;
+            // text-align: justify;
           }
         }
       }

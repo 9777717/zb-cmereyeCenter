@@ -27,11 +27,11 @@
 defineProps({
   zhTitle: {
     type: String,
-    default: undefined,
+    default: '',
   },
   enTtitle: {
     type: String,
-    default: undefined,
+    default: '',
   },
 })
 </script>

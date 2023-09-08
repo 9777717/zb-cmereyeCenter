@@ -5,7 +5,9 @@ definePageMeta({
   layout: 'page',
 })
 const {t} = useLang()
-const cities = [
+const locale = useState<string>('locale.setting')
+
+const cities = computed(()=>[
   t('components.footerInfo.Instagram'),
   t('components.footerInfo.YouTube'),
   t('components.footerInfo.Google'),
@@ -14,7 +16,7 @@ const cities = [
   t('components.footerInfo.staff'),
   t('components.footerInfo.website'),
   t('components.footerInfo.leaflet'),
-]
+])
 
 const formSize = ref('default')
 const ruleFormRef = ref<FormInstance>()
@@ -146,6 +148,7 @@ defineProps({
           :model="ruleForm"
           :rules="rules"
           class="demo-ruleForm"
+          :class="{'demo-ruleForm-en': locale === 'en'}"
           :size="formSize"
           status-icon
         >
@@ -237,6 +240,7 @@ defineProps({
       line-height: 40px;
       letter-spacing: 0px;
       color: #ffffff;
+      text-align: center;
     }
 
     & > div:nth-child(2) {
@@ -368,6 +372,13 @@ defineProps({
       :deep(.el-checkbox) {
         width: 25%;
       }
+      .demo-ruleForm-en{
+        :deep(.el-checkbox) {
+          &:nth-of-type(n+5){
+            width: 50%;
+          }
+        }
+      }
 
       :deep(.el-checkbox__label) {
         font-family: none;
@@ -494,6 +505,13 @@ defineProps({
         :deep(.el-checkbox) {
           width: 45%;
           margin-right: 10px;
+        }
+        .demo-ruleForm-en{
+          :deep(.el-checkbox) {
+            &:nth-of-type(n+5){
+              width: 80%;
+            }
+          }
         }
         :deep(.el-checkbox__label) {
           font-size: 14px;

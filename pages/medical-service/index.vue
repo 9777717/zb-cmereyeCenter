@@ -3,6 +3,7 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead({
   title: '眼科醫療服務｜專科服務｜香港希瑪眼科中心',
   meta: [
@@ -36,76 +37,76 @@ const SerListL = [
     i: '01',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
-    des: '白內障',
+    des: 'pages.medical_service.cataract',
     link: '/medical-service/cataract',
   },
   {
     i: '02',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser4.png',
-    des: '飛蚊症',
+    des: 'pages.medical_service.muscae_volitantes',
     link: '/medical-service/muscaeVolitantes',
   },
   {
     i: '03',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
-    des: '黃斑病變',
+    des: 'pages.medical_service.maculopathy',
     link: '/medical-service/maculopathy',
   },
   {
     i: '04',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
-    des: '青光眼',
+    des: 'pages.medical_service.glaucoma',
     link: '/medical-service/glaucoma',
   },
   {
     i: '05',
     imgUrl: 'https://static.cmereye.com/imgs/2023/06/18da333b4728e821.png',
-    des: '阿托品眼藥水',
+    des: 'pages.medical_service.atropine',
     link: '/medical-service/atropine',
   },
   {
     i: '06',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
-    des: '兒童斜弱視',
+    des: 'pages.medical_service.strabismusAmblyopia',
     link: '/medical-service/strabismusAmblyopia',
   },
   {
     i: '07',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser5.png',
-    des: '結膜炎',
+    des: 'pages.medical_service.conjunctivitis',
     link: '/medical-service/conjunctivitis',
   },
   {
     i: '08',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser3.png',
-    des: '乾眼症',
+    des: 'pages.medical_service.xerophthalmia',
     link: '/medical-service/xerophthalmia',
   },
   {
     i: '09',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
-    des: '醫學驗光配鏡',
+    des: 'pages.medical_service.medicalOptometry',
     link: '/medical-service/medicalOptometry',
   },
   {
     i: '10',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
-    des: '視網膜脫落及疾病',
+    des: 'pages.medical_service.amotioRetinae',
     link: '/medical-service/amotioRetinae',
   },
   {
     i: '11',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
-    des: '眼表及角膜疾病',
+    des: 'pages.medical_service.ocularSurfaceDiseases',
     link: '/medical-service/ocularSurfaceDiseases',
   },
   
@@ -113,14 +114,14 @@ const SerListL = [
     i: '12',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
-    des: '眼矯形及眼眶疾病',
+    des: 'pages.medical_service.eyeOrthopaedicDisease',
     link: '/medical-service/eyeOrthopaedicDisease',
   },
   {
     i: '13',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
-    des: '屈光矯視',
+    des: 'pages.medical_service.smileHk',
     link: 'https://smile.hkcmereye.com/',
   }
 ]
@@ -129,8 +130,8 @@ const SerListL = [
 <template>
   <div id="Service" class="Service">
     <div class="serContent relative">
-      <div class="title">醫 療 服 務</div>
-
+      <!-- <div class="title">醫 療 服 務</div> -->
+      <div class="title">{{$t('pages.medical_service.medical_service_title')}}</div>
       <ul class="serList">
         <li v-for="(item, index) in SerListL" :key="index">
           <nuxt-link
@@ -143,7 +144,7 @@ const SerListL = [
                 item.i
               }}</span>
             </div>
-            <p class="des text-center">{{ item.des }}</p>
+            <p class="des text-center">{{ $t(item.des) }}</p>
           </nuxt-link>
         </li>
       </ul>

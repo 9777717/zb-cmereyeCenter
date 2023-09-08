@@ -7,9 +7,9 @@ defineProps({
   }
 })
 const { t } = useLang()
-const menuLists = [
+const menuLists = computed(()=>[
   {
-    title: '希瑪眼科中心',
+    title: t('components.menus.cmerCenter'),
     lists: [
       {
         name: t('pages.about_us.center_profile'),
@@ -39,7 +39,7 @@ const menuLists = [
     ],
   },
   {
-    title: '醫療服務',
+    title: t('components.menus.medicalService'),
     lists: [
       {
         name: t('pages.medical_service.cataract'),
@@ -93,7 +93,7 @@ const menuLists = [
     ],
   },
   {
-    title: '聯絡我們',
+    title: t('components.menus.contactUs'),
     lists: [
       {
         name: 'Tel: (852) 3956 2025',
@@ -121,7 +121,7 @@ const menuLists = [
         link: 'https://www.instagram.com/cmer_eye_center/'
       },
       {
-        name: 'Wechat 公眾號: 香港希瑪眼科中心',
+        name: t('components.menus.wechat'),
         icon: 'https://static.cmereye.com/imgs/2023/07/56fb4969e6637ae4.png',
         link: ''
       },
@@ -132,7 +132,9 @@ const menuLists = [
       // }
     ]
   },
-]
+])
+
+const locale = useState<string>('locale.setting')
 
 const imgLists = [
   {
@@ -178,7 +180,7 @@ let drawer = ref(false)
 
 <template>
   <div class="footerMenu">
-    <div class="footerMenu-in">
+    <div :class="['footerMenu-in',{ 'footerMenu-in-en':locale === 'en'}]">
       <div class="footerMenu-in-t">
         <div class="t-in" v-for="(item,index) in menuLists" :key="index">
           <div class="t-in-t">
@@ -257,10 +259,31 @@ let drawer = ref(false)
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    &.footerMenu-in-en{
+      .footerMenu-in-t{
+        .t-in{
+          &-b{
+            &>div{
+              a,.weChatItem{
+                display: flex;
+                &>div{
+                  margin-top: 5px;
+                }
+                span{
+                  font-size: 16px;
+                }
+              }
+              &.twoD{
+                margin-left: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
     &-t{
       display: flex;
       justify-content: space-between;
-      // padding: 0 17vw;
       .t-in{
         &-t{
           color: #2958A3;
@@ -360,6 +383,27 @@ let drawer = ref(false)
     padding: 35px 0 120px;
     &-in{
       max-width: calc(100% - 60px);
+      &.footerMenu-in-en{
+      .footerMenu-in-t{
+        .t-in{
+          &-b{
+            &>div{
+              a,.weChatItem{
+                &>div{
+                  margin-top: 3px;
+                }
+                span{
+                  font-size: 15px;
+                }
+              }
+              &.twoD{
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
       &-t{
         flex-direction: column;
         .t-in{

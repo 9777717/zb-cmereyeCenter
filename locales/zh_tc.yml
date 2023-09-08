@@ -23,8 +23,16 @@ components:
     placeholder4: 預約日期
     placeholder5: 訊息
     submitForm: 提交
-  menus: haha
-    
+  menus:
+    cmerCenter: 希瑪眼科中心
+    medicalService: 醫療服務
+    contactUs: 聯絡我們
+    wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
+  content:
+    onlinContact:
+      chatNow: 在線查詢
+      callNow: 立即致電
+      chatNow2: 線上對話
 pages:
   404:
     title: 找不到该页面
@@ -198,6 +206,18 @@ pages:
         child_month: 1月
         child_info: 中環  希瑪眼科中心成立
     enterprise_vision: 企業願景
+    enterprise_vision_con: 
+      name1: 服務宗旨
+      text1: 以客人需求為依歸，提供針對性及達國際水準的眼科醫療服務。
+      name2: 服務理念
+      text2: 以人為本，注重細節，團隊合作，精益求精。
+      name3: 服務特色
+      name3_1: 以客人需求為本，提供一站式眼科醫療服務
+      text3_1: 中心按客人需要提供全面眼科服務，包括驗光、檢查、治療、矯視及配鏡。
+      name3_2: 眼科專科診療
+      text3_2: 除了綜合眼科服務外，我們亦提供眼科專科服務，由23位不同專長且經驗豐富的眼科醫生診治，覆蓋眼科九大專科，為患者提供針對性的治療。
+      name3_3: 國際認可的先進眼科醫療技術
+      text3_3: 中心的醫生具豐富臨床經驗，恆常與國際眼科界交流，引入最新醫療技術及設備，為客人提供可靠的眼科醫療服務。
     enterprise_awards: 企業榮譽
     equipment_centre: 中心設備
     feedback: 客戶評分
@@ -465,6 +485,7 @@ pages:
     doctor_order: 預約
   medical_service:
     medical_service: 醫療服務
+    medical_service_title: 醫 療 服 務
     cataract: 白內障
     medical_service_cataract_head: "白內障｜希瑪眼科｜醫療服務"
     service_cataract_title:

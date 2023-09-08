@@ -40,6 +40,14 @@ onMounted(()=>{
   }catch(e){
     console.log(3)
   }
+  document.onkeydown = (even:any) =>{
+    if(even.key === 'F9'){
+      if(locale.value === 'en')
+        locale.value = 'zh_tc'
+      else
+        locale.value = 'en'
+    }
+  }
 })
 </script>
 

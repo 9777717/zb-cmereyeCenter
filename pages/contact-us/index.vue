@@ -31,6 +31,8 @@ useHead(() => ({
   ],
 }))
 
+const locale = useState<string>('locale.setting')
+
 // 診所資料電子預約表格
 const serviceNavigation = [
   {
@@ -327,7 +329,7 @@ onMounted(()=>{
           </div>
           <div class="content">
             <div class="addressBox">
-              <div class="switchReionBtnBox flex justify-between items-center">
+              <div class="switchReionBtnBox flex justify-between items-center" :class="{'switchReionBtnBox-en': locale === 'en'}">
                 <button
                   v-for="(addressItem, addressItemIndex) in addressList"
                   :key="addressItemIndex"
@@ -672,6 +674,14 @@ onMounted(()=>{
         button{
           font-size: 20px;
           padding: 0px 24px;
+        }
+        &.switchReionBtnBox-en{
+          flex-direction: column;
+          &>button{
+            &:not(:last-child){
+              margin-bottom: 20px;
+            }
+          }
         }
       }
     }

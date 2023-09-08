@@ -9,21 +9,30 @@ components:
     YouTube: YouTube
     Google: Google
     Facebook: Facebook
-    sidekicker: 親友介紹
-    staff: 員工介紹
-    website: 透過其他網頁
-    leaflet: 透過宣傳單張/卡片
-    rest: 其他
-    label1: 從哪裡找到我們的網站？ （可選擇多於一項）
-    text1: 立即預約，填寫您的資料
-    text2: 我們收到預約要求後，會盡快聯絡您。
+    sidekicker: Introduction to family and friends
+    staff: Employee Introduction
+    website: Through other web pages
+    leaflet: Through promotional leaflets/cards
+    rest: other
+    label1: Where can I find our website? (More than one option can be selected)
+    text1: Make an appointment now and fill in your data
+    text2: We will contact you as soon as we receive the appointment request.
     placeholder1: Name
     placeholder2: Contact number
     placeholder3: Email
     placeholder4: Date
     placeholder5: Message
     submitForm: Submit
-  menus: haha
+  menus:
+    cmerCenter: C-MER Eye Center
+    medicalService: Medical Services
+    contactUs: Contact Us
+    wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
+  content:
+    onlinContact:
+      chatNow: chat now
+      callNow: Call now
+      chatNow2: chat now
 pages:
   404:
     title: page not found
@@ -95,17 +104,346 @@ pages:
   about_us:
     about_us: About Us
     center_profile: Introduction
+    profile_centent:
+      profile_text: As a leading one-stop ophthalmology medical group, C-MER Eye Care Holdings Limited (C-MER) was established by Dr. LAM Shun Chiu in 2012. C-MER was successfully listed on the main board of the Hong Kong Stock Exchange in 2018. Aiming to protect the eyes health of the public, over the years our medical team provides safe, accurate and reliable eye examinations and specialized medical services. The ophthalmic services include a comprehensive eye examination and proper treatment of eye diseases, SMILE Surgery, implantable contact lens (ICL), intraocular lens (IOL), Laser-Assisted in Situ Keratomileusis (LASIK) , CLEAR-Vision and optometry services, etc.
+      profile_subjection: 「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
+      profile_group_start: 我們的集團名稱
+      profile_group_name: 「C-MER」
+      profile_group_idea: ，正正反映著我們的理念與執著：
+      profile_group_C: 「C」 - Professional Clinical Services
+      profile_group_M: 「Ｍ」- Modern Management
+      profile_group_E: 「Ｅ」- Quality Education
+      profile_group_R: 「Ｒ」- Pioneering Research
+      profile_group_hema: 「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+    hema_eye:
+      hema_eye: C-MER Eye Center
+      hema_eye_introduce_one: There are 11 C-MER Eye Centers in Hong Kong, located all over Hong Kong, Kowloon, and the New Territories, which can easily be reached by public transport. Led by Dr. LAM Shun Chiu who has over 30 years of experience in ophthalmology, together with 23 experienced ophthalmologists and professional medical nurses, the team provides comprehensive ophthalmology medical services for the public.
+      hema_eye_introduce_two: The Eye Center strictly abides by Hong Kong and international medical technology operating regulations. Equipped with advanced ophthalmic medical instruments, several sterile operating rooms that meet international standards, adheres to the principle of "tailor-made" to provide patients with safe, accurate and reliable eye examination and treatment.
+      hema_eye_facebooke: C-MER Eye Center
+    hema_smile:
+      hema_smile: C-MER SMILE Refractive Center
+      hema_smile_introduce_one: The center adheres to the principle of "tailor-made", providing high-quality services includes SMILE surgery, LASIK surgery, implantable contact lens (ICL), intraocular lens (IOL), as well as solve the troubles of myopia, hyperopia, astigmatism, and presbyopia.
+      hema_smile_introduce_two: As the first center to introduce laser vision correction, there are currently 4 SMILE Refractive Centers in Hong Kong. The centers meet FDA standards, equipped with advanced ophthalmic examination and vision correction equipment. It has a sterile operating room that meets international standards, providing comprehensive and accurate eye examinations and customizes the surgery according to different situations.
+      hema_smile_facebooke: C-MER SMILE Refractive Center
+    hema_vision:
+      hema_vision: C-MER VISION Center
+      hema_vision_introduce_one: C-MER Vision Centers, an optical retailer, are providing comprehensive eye examinations and eye care services in Hong Kong. Regarding different age groups’ eyes condition, and the actual needs of individuals, our optometrists are committed to suggest "tailor-made” vision improvement programs.
+      hema_vision_introduce_two: "Facing high myopia rate of children in Hong Kong, C-MER VISION Center provide a better solution of myopia control for children. Eye examinations for children and targeted children's myopia control services are provided, such as: orthokeratology lenses (OK lenses), children's myopia control lenses, myopia control 1 Day contact lenses, etc."
+      hema_vision_facebooke: C-MER VISION Center
+    media:
+      media_redbook: 香港希瑪眼科中心
+      media_youtube: CMER SMILE & EYE CENTER 香港希瑪眼科
+      media_wechat: 香港希瑪眼科中心
     development_course: Our History
+    course_year:
+      year_22: "2022"
+      child_22:
+        child22_month_1: 9月
+        child22_month_2: 8月
+        child22_month_3: 3月
+        child22_info_1: Tseung Kwan O - C-MER Eye Center
+        child22_info_2: Jieyang - C-MER Eye Hospital
+        child22_info_3_1: Tsim Sha Tsui - C-MER Medical Group (Eye, Dental, Medical Aesthetic )
+        child22_info_3_2: Fuzhou - C-MER Eye Hospital
+      year_21: "2021"
+      child_21:
+        child21_month_1: 11月
+        child21_month_2: 7月
+        child21_month_3: 3月
+        child21_month_4: 12月
+        child21_info_1: Tsim Sha Tsui - C-MER Medical Group (Eye, Dental, Medical Aesthetic )
+        child21_info_2_1: Central - C-MER Vision Center
+        child21_info_2_2: Mongkok - C-MER Vision Center
+        child21_info_3: Huizhou - C-MER Eye Hospital
+        child21_info_3_2: Sha Tin (Second branch) - C-MER Eye Center
+      year_20: "2020"
+      child_20:
+        child_month: 11月
+        child_info_1: Tsuen Wan - C-MER Eye Center
+        child_info_2: Zhuhai - C-MER Eye Hospital
+        child_info_3: Shenzhen Xinan Eye Clinic upgraded to Hospital
+      year_19: "2019"
+      child_19:
+        child_month_1: 12月
+        child_month_2: 11月
+        child_month_3: 10月
+        child_month_4: 6月
+        child_info_1: Yuen Long (Second branch) - C-MER Eye Center
+        child_info_2: Shanghai - C-MER Eye Hospital
+        child_info_3: C-MER Smile Laser Center
+        child_info_4: Kunming - C-MER Eye Hospital
+      year_18: "2018"
+      child_18:
+        child_month_1: 11月
+        child_month_2: 3月
+        child_month_3: 1月
+        child_info_1: Shenzhen Xinan - C-MER Eye Clinic
+        child_info_2: Kwun Tong - C-MER Eye Center
+        child_info_3: Beijing - C-MER Eye Hospital
+      year_17: "2017"
+      child_17:
+        child_month: 2月
+        child_info: Causeway Bay - C-MER Eye Center
+      year_16: "2016"
+      child_16:
+        child_month_1: 6月
+        child_month_2: 1月
+        child_info_1: Shatin - C-MER Eye Center
+        child_info_2: Yuen Long - C-MER Eye Center
+      year_14: "2014"
+      child_14:
+        child_month: 1月
+        child_info: Mongkok - C-MER Eye Center
+      year_13: "2013"
+      child_13:
+        child_month: 3月
+        child_info: Shenzhen - C-MER Eye Hospital
+      year_12: "2012"
+      child_12:
+        child_month: 1月
+        child_info: Central - C-MER Eye Center
     enterprise_vision: Corporate Vision
+    enterprise_vision_con: 
+      name1: Our Mission
+      text1: Based on customers’ needs, we provide targeted treatments which reach international standard.
+      name2: Our Beliefs
+      text2: People-oriented, attention to details, teamwork, excellence.
+      name3: Our Service
+      name3_1: Provide one-stop eyecare services based on customers’ needs
+      text3_1: Our clinics provide comprehensive ophthalmology services according to various needs of customers, including optometry, eye examination, treatment, vision correction and glasses prescription.
+      name3_2: Ophthalmologists diagnosis and treatment
+      text3_2: In addition to comprehensive ophthalmology services, we also provide ophthalmic specialist services which cover nine areas of ophthalmology. These services and targeted treatments are offered by 22 experienced ophthalmologists with different expertise.
+      name3_3: Internationally recognized advanced ophthalmic medical technology
+      text3_3: Our ophthalmologists have extensive clinical experiences. They constantly have international exchanges with other ophthalmologists. Our clinics also have the latest medical technology and equipment in order to provide reliable ophthalmic medical services to our customers.
     enterprise_awards: Awards
     equipment_centre: Medical Equipment
     feedback: Feedback
     download:
       download: Download the Hema Ophthalmic Practice booklet
+    awards: 
+      awards: Awards
   medical_team:
     medical_team: Medical Team
+    medical_team_title: Medical Team
+    medical_team_header_title: 醫療團隊｜眼科專科醫生 | 香港希瑪眼科中心
+    doctorList:
+      doctor_1:
+        doctor_1_name: Dr. LAM Shun Chiu, Dennis
+        doctor_1_intro: Founder of the C-MER Eye Care Holdings Ltd.
+        doctor_1_en_name: Dr. Dennis Lam
+        doctor_1_education:
+          doctor_1_education_1: MBBS (HK)
+          doctor_1_education_2: FHKAM (Ophthalmology)
+          doctor_1_education_3: FCOphth HK
+          doctor_1_education_4: FRCSEd (Ophth)
+          doctor_1_education_5: FRCOphth (UK)
+          doctor_1_education_6: MD (CUHK)
+      doctor_2:
+        doctor_2_name: DR. LEE YAU WING, VINCENT
+        doctor_2_en_name: Dr. Vincent Lee
+        doctor_2_education:
+          doctor_2_education_1: MBChB (CUHK)
+          doctor_2_education_2: FHKAM (Ophthalmology)
+          doctor_2_education_3: FCOphth HK
+          doctor_2_education_4: FRCS (Edinburgh)
+          doctor_2_education_5: FCSHK
+          doctor_2_education_6: MSc Epidemiology & Biostatistics (CUHK)
+          doctor_2_education_7: PDip Epidemiology & Biostatistics (CUHK)
+      doctor_3:
+        doctor_3_name: DR. FAN HOI, ALEX
+        doctor_3_en_name: Dr. Alex Fan
+        doctor_3_education:
+          doctor_3_education_1: MBBS (HK)
+          doctor_3_education_2: FHKAM (Ophthalmology)
+          doctor_3_education_3: FCOphth HK
+          doctor_3_education_4: FRCSEd (Ophth)
+          doctor_3_education_5: FRCOphth (UK)
+          doctor_3_education_6: MMed (Ophth) (Singapore)
+      doctor_4:
+        doctor_4_name: DR. WONG CHUN WAH, ALEX
+        doctor_4_en_name: Dr. Alex Wong
+        doctor_4_education:
+          doctor_4_education_1: MBBS (HK)
+          doctor_4_education_2: FHKAM (Ophthalmology)
+          doctor_4_education_3: FCOphth HK
+          doctor_4_education_4: MRCSEd
+          doctor_4_education_5: FRCS (Glasgow)
+      doctor_5:
+        doctor_5_name: DR. LAU HOI SHAN, FLORA
+        doctor_5_en_name: Dr. Flora Lau
+        doctor_5_education:
+          doctor_5_education_1: MBBS (HK)
+          doctor_5_education_2: FHKAM (Ophthalmology)
+          doctor_5_education_3: FCOphth HK
+          doctor_5_education_4: MRCSEd
+          doctor_5_education_5: MMedSc (HK)
+          doctor_5_education_6: Diploma in Child Health (USYD)
+      doctor_6:
+        doctor_6_name: DR. LEE WAI YIP, JACKY
+        doctor_6_en_name: Dr. Jacky Lee
+        doctor_6_education:
+          doctor_6_education_1: MBBS (HK)
+          doctor_6_education_2: FRCOphth (UK)
+          doctor_6_education_3: FHKAM (Ophthalmology)
+          doctor_6_education_4: FCOphth HK
+          doctor_6_education_5: FRCSEd (Ophth)
+          doctor_6_education_6: MRCSEd
+          doctor_6_education_7: FRCS (Glasg)
+      doctor_7:
+        doctor_7_name: DR. YAU CHUN YUEN, JACKEY
+        doctor_7_en_name: Dr. Jackey Yau
+        doctor_7_education:
+          doctor_7_education_1: MBChB (CUHK)
+          doctor_7_education_2: FCOphth HK
+          doctor_7_education_3: MRCSEd
+          doctor_7_education_4: FHKAM (Ophthalmology)
+      doctor_8:
+        doctor_8_name: DR. LI YUEN MEI, EMMY
+        doctor_8_en_name: Dr. Emmy Li
+        doctor_8_education:
+          doctor_8_education_1: MBBS (HK)
+          doctor_8_education_2: FRCSEd (Ophth)
+          doctor_8_education_3: FHKAM (Ophthalmology)
+          doctor_8_education_4: FCOphth HK
+          doctor_8_education_5: MRCSEd
+          doctor_8_education_6: MPH (HK)
+      doctor_9:
+        doctor_9_name: DR. WU WAI KWAN
+        doctor_9_en_name: Dr. Wu Wai Kwan
+        doctor_9_education:
+          doctor_9_education_1: MBChB (CUHK)
+          doctor_9_education_2: FRCSEd
+          doctor_9_education_3: FHKAM (Ophth)
+          doctor_9_education_4: FCOphth HK
+      doctor_10:
+        doctor_10_name: DR. LI SIU HUNG, PATRICK
+        doctor_10_en_name: Dr. Patrick Li
+        doctor_10_education:
+          doctor_10_education_1: MBChB (CUHK)
+          doctor_10_education_2: FCOphth HK
+          doctor_10_education_3: FHKAM (Ophthalmology)
+          doctor_10_education_4: FRCSEd (Ophth)
+          doctor_10_education_5: FRCS (Glasgow)
+          doctor_10_education_6: M. Med (Ophth) (Singapore)
+          doctor_10_education_7: DipMed (CUHK)
+          doctor_10_education_8: DFM (Monash)
+      doctor_11:
+        doctor_11_name: DFM (Monash)
+        doctor_11_en_name: Dr. Kenny Lai
+        doctor_11_education:
+          doctor_11_education_1: MBChB (CUHK)
+          doctor_11_education_2: FCOphth HK
+          doctor_11_education_3: FHKAM (Ophthalmology)
+          doctor_11_education_4: MRCSEd (Ophth)
+      doctor_12:
+        doctor_12_name: DR. LI TAK LUN, STEPHEN
+        doctor_12_en_name: Dr. Stephen Li
+        doctor_12_education:
+          doctor_12_education_1: MBBS (HK)
+          doctor_12_education_2: MRCSEd
+          doctor_12_education_3: FCOphth HK
+          doctor_12_education_4: FHKAM (Ophthalmology)
+      doctor_13:
+        doctor_13_name: DR. WONG LAI MAN, RAYMOND
+        doctor_13_en_name: Dr. Raymond Wong
+        doctor_13_education:
+          doctor_13_education_1: MBBS (HK)
+          doctor_13_education_2: MRCSEd (Ophthalmology)
+          doctor_13_education_3: FCOphth HK
+          doctor_13_education_4: FHKAM (Ophthalmology)
+      doctor_14:
+        doctor_14_name: DR. CHEUNG, JANICE JING CHEE
+        doctor_14_en_name: Dr. Janice Cheung
+        doctor_14_education:
+          doctor_14_education_1: MBBS (HK)
+          doctor_14_education_2: FCOphth HK
+          doctor_14_education_3: FHKAM (Ophthalmology)
+          doctor_14_education_4: FRCSEd (Ophth)
+          doctor_14_education_5: FRCS (Glasgow)
+          doctor_14_education_6: MRCSEd
+      doctor_15:
+        doctor_15_name: DR. LAM PO SANG, CAROL
+        doctor_15_en_name: Dr. Carol Lam
+        doctor_15_education:
+          doctor_15_education_1: MBChB (CUHK)
+          doctor_15_education_2: MRCSEd
+          doctor_15_education_3: FCOphth HK
+          doctor_15_education_4: FHKAM (Ophthalmology)
+      doctor_16:
+        doctor_16_name: DR. LAM KEE MING, JASMINE
+        doctor_16_en_name: Dr. Jasmine Lam
+        doctor_16_education:
+          doctor_16_education_1: MBBS (HK)
+          doctor_16_education_2: MRCSEd
+          doctor_16_education_3: FHKAM (Ophthalmology)
+          doctor_16_education_4: FCOphth HK
+      doctor_17:
+        doctor_17_name: DR. CHEUNG MING KUEN, PAUL
+        doctor_17_en_name: Dr. Paul Cheung
+        doctor_17_education:
+          doctor_17_education_1: MBBS (HK)
+          doctor_17_education_2: DO(IREL)
+          doctor_17_education_3: DO(GLAS)
+          doctor_17_education_4: FCOphth HK
+          doctor_17_education_5: FHKAM(Ophthalmology)
+      doctor_18:
+        doctor_18_name: DR. CHAN WAI LOK, LEO
+        doctor_18_en_name: Dr. Leo Chan
+        doctor_18_education:
+          doctor_18_education_1: MBBS (HK)
+          doctor_18_education_2: MRCSEd (Ophthalmology)
+          doctor_18_education_3: FCOphth HK
+          doctor_18_education_4: FHKAM (Ophthalmology)
+          doctor_18_education_5: MScHSM (CUHK)
+      doctor_19:
+        doctor_19_name: DR. LEUNG YUEN SHAN, GLORIA
+        doctor_19_en_name: Dr. Gloria Leung
+        doctor_19_education:
+          doctor_19_education_1: MBBS (Syd)
+          doctor_19_education_2: M.Med(Ophth)(Singapore)
+          doctor_19_education_3: MRCS(Edin)
+          doctor_19_education_4: FCOphth(HK)
+          doctor_19_education_5: FHKAM(Ophthalmology)
+      doctor_20:
+        doctor_20_name: DR. CHOW SHE WAN, SHARON
+        doctor_20_en_name: Dr. Sharon Chow
+        doctor_20_education:
+          doctor_20_education_1: MBBS(HK)
+          doctor_20_education_2: MRCS(Ed) 
+          doctor_20_education_3: FCOphth HK
+          doctor_20_education_4: FHKAM(Ophthalmology)
+      doctor_21:
+        doctor_21_name: DR. WAN HO NAM, KELVIN
+        doctor_21_en_name: Dr. Kelvin Wan
+        doctor_21_education:
+          doctor_21_education_1: MBChB (CUHK)
+          doctor_21_education_2: MRCS (Ed)
+          doctor_21_education_3: MRCS (Eng)
+          doctor_21_education_4: MRCS (Glasg)
+          doctor_21_education_5: FCOphth HK
+          doctor_21_education_6: FHKAM (Ophthalmology)
+      doctor_22:
+        doctor_22_name: DR. CHOW LOK WAN, LORAINE
+        doctor_22_en_name: Dr. Loraine Chow
+        doctor_22_education:
+          doctor_22_education_1: MBBS(HK)
+          doctor_22_education_2: MRCS(Ed) 
+          doctor_22_education_3: FHKAM(Ophthalmology)
+          doctor_22_education_4: FCOphth HK
+      doctor_23:
+        doctor_23_name: CHAN DING NAI, DYLAN
+        doctor_23_en_name: Dr. Dylan Chan
+        doctor_23_education:
+          doctor_23_education_1: MBChB (CUHK)
+          doctor_23_education_2: FRCS (Glasg) 
+          doctor_23_education_3: FCSHK
+          doctor_23_education_4: FCOphth HK
+          doctor_23_education_5: FHKAM (Ophthalmology)
+    doctor_edu: education
+    doctor_order: Booking
   medical_service:
     medical_service: Medical Services
+    medical_service_title: Medical Services
     cataract: Cataract
     glaucoma: Glaucoma
     xerophthalmia: Dry Eyes
@@ -132,9 +470,9 @@ pages:
     cost: Fees & Charges
     cont:
       cost_h1: Fees & Charges
-      cost_h3_1: 眼科
+      cost_h3_1: ophthalmology
       cost_p1: No additional charge
-      cost_h3_2: 特殊檢查項目
+      cost_h3_2: Special inspection items
       cost_tr1_td1: Single eye
       cost_tr1_td2: Both eyes
       cost_tr2_td1: Optical Coherence Tomography (OCT) - Anterior Segment
@@ -171,22 +509,22 @@ pages:
       cost_p9: "Last update: 01/04/2023"
     process: Outpatient Services
     process_1:
-      process_h1: 就診流程
-      process_p1: 登記
-      process_p2: 基本檢查
-      process_h3_1: 初步眼睛檢查
-      process_p3_1: 為全面了解您的眼睛狀況，
-      process_p3_2: 我們會先為您進行3-5項基本眼睛檢查。
-      process_p4: 醫生診症
-      process_h3_2: 詳細眼睛檢查
-      process_p5_1: 醫生會根據您的眼睛狀況，
-      process_p5_2: 進行詳細眼睛檢查，
-      process_p5_3: 以準確診斷並作出相應治療。
-      process_p6: 詳細檢查
-      process_p7_1: 門診 / 針灸
-      process_p7_2: 手術
-      process_p8: 付款及取藥
-      process_p9: 其他服務-配鏡
+      process_h1: Outpatient Services
+      process_p1: Register
+      process_p2: Basic Check
+      process_h3_1: Basic Eye Exam
+      process_p3_1: Perform 3 to 5 eye exams to understand your eye condition.
+      process_p3_2: ''
+      process_p4: Ophthalmologist consultation
+      process_h3_2: Comprehensive Eye Exam
+      process_p5_1: Ophthalmologist performs comprehensive eye exam according to your eye condition in order to have accurate diagnosis and plan corresponding treatment.
+      process_p5_2: ''
+      process_p5_3: ''
+      process_p6: Comprehensive Check
+      process_p7_1: Outpatient service / acupuncture / Surgery
+      process_p7_2: ''
+      process_p8: Payment and collect medicine
+      process_p9: Other service – glasses prescription
   talent_recruitment:
     talent_recruitment: Careers
     text1: 加入我們，攜手未來

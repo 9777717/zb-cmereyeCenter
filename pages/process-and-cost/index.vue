@@ -4,6 +4,7 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead({
   title: `${t('pages.process_cost.cost')}| ${t('pages.process_cost.process')}`,
   meta: [
@@ -262,7 +263,7 @@ const scrollHeight = () => {
                 </h1>
                 <h2>Outpatient Services</h2>
               </div>
-              <div class="py-10 px-8 mt-12 mb-40">
+              <div class="py-10 px-8 mt-12 mb-40" :class="{'process-en':locale === 'en'}">
                 <div class="processItem mb-20">
                   <p>{{ $t('pages.process_cost.process_1.process_p1') }}</p>
                 </div>
@@ -571,6 +572,24 @@ const scrollHeight = () => {
   .processItem6::before {
     display: none;
   }
+
+  .process-en{
+    .processItem{
+      &:nth-of-type(3){
+        &::before{
+          transform: translateY(25px);
+        }
+      }
+      &:nth-of-type(4){
+        &::before{
+          transform: translateY(20px);
+        }
+      }
+    }
+    .processItem5::before {
+      top: 105px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -717,6 +736,18 @@ const scrollHeight = () => {
       width: 30px;
       height: 1px;
       border-bottom: 2px #5376d0 dotted;
+    }
+    .process-en{
+      .processItem{
+        &:nth-of-type(4){
+          &::before{
+            transform: translateY(30px);
+          }
+        }
+      }
+      .processItem5::before {
+        top: 130px;
+      }
     }
   }
 

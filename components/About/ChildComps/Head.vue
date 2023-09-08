@@ -2,7 +2,7 @@
 const anchorList = ref([
   
   {
-    anchorName: '中心簡介',
+    anchorName: 'pages.about_us.center_profile',
     anchorLink: '/about-us#centreIntro',
   },
   {
@@ -10,15 +10,15 @@ const anchorList = ref([
     anchorLink: '/about-us#history',
   },
   {
-    anchorName: '企業願景',
+    anchorName: 'pages.about_us.enterprise_vision',
     anchorLink: '/about-us#corporate',
   },
   {
-    anchorName: '中心設備',
+    anchorName: 'pages.about_us.equipment_centre',
     anchorLink: '/about-us#medicalEquipment',
   },
   {
-    anchorName: '客戶評分',
+    anchorName: 'pages.about_us.feedback',
     anchorLink: '/about-us#feedback',
   },
   {

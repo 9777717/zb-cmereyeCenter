@@ -53,16 +53,16 @@ useHead(() => ({
 
 const CORPORATE_Lists = [
   {
-    name: '以客人需求為本，提供一站式眼科醫療服務',
-    text: '中心按客人需要提供全面眼科服務，包括驗光、檢查、治療、矯視及配鏡。'
+    name: 'pages.about_us.enterprise_vision_con.name3_1',
+    text: 'pages.about_us.enterprise_vision_con.name3_1'
   },
   {
-    name: '眼科專科診療',
-    text: '除了綜合眼科服務外，我們亦提供眼科專科服務，由23位不同專長且經驗豐富的眼科醫生診治，覆蓋眼科九大專科，為患者提供針對性的治療。'
+    name: 'pages.about_us.enterprise_vision_con.name3_2',
+    text: 'pages.about_us.enterprise_vision_con.name3_2'
   },
   {
-    name: '國際認可的先進眼科醫療技術',
-    text: '中心的醫生具豐富臨床經驗，恆常與國際眼科界交流，引入最新醫療技術及設備，為客人提供可靠的眼科醫療服務。'
+    name: 'pages.about_us.enterprise_vision_con.name3_3',
+    text: 'pages.about_us.enterprise_vision_con.name3_3'
   }
 ]
 </script>
@@ -87,26 +87,26 @@ const CORPORATE_Lists = [
         <div class="CORPORATE_VISION-in">
           <div class="CORPORATE_VISION-in-title">
             <AboutTitle
-              :zh-title="'企業願景'"
+              :zh-title="'pages.about_us.enterprise_vision'"
               :en-ttitle="'CORPORATE VISION'"
               class="title"
             />
           </div>
           <div class="CORPORATE_VISION-in-content">
             <div>
-              <div class="name">服務宗旨</div>
-              <div class="text">以客人需求為依歸，提供針對性及達國際水準的眼科醫療服務。</div>
+              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name1')}}</div>
+              <div class="text">{{$t('pages.about_us.enterprise_vision_con.text1')}}</div>
             </div>
             <div>
-              <div class="name">服務理念</div>
-              <div class="text">以人為本，注重細節，團隊合作，精益求精。</div>
+              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name2')}}</div>
+              <div class="text">{{$t('pages.about_us.enterprise_vision_con.text2')}}</div>
             </div>
             <div>
-              <div class="name">服務特色</div>
+              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name3')}}</div>
               <div class="textLists">
                 <div v-for="(item,index) in CORPORATE_Lists" :key="index">
-                  <div>{{item.name}}</div>
-                  <div>{{item.text}}</div>
+                  <div>{{$t(item.name)}}</div>
+                  <div>{{$t(item.text)}}</div>
                 </div>
               </div>
             </div>

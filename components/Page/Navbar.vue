@@ -11,7 +11,7 @@ export interface IMenuItem {
 
 const { t } = useLang()
 const app = useAppConfig() as AppConfigInput
-const menus = computed((): IMenuItem[] => [
+let menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.index.home'),
@@ -220,6 +220,13 @@ const menus = computed((): IMenuItem[] => [
   },
 ])
 
+const locale = useState<string>('locale.setting')
+// if(locale.value === 'en'){
+//   menus.value.splice(4,1)
+// }else{
+
+// }
+
 const route = useRoute()
 const rt = ref(route)
 
@@ -239,6 +246,16 @@ const hashActive = (child: any) => {
     }
   }
 }
+
+
+watch(
+  locale,
+  (n,o)=>{
+    if(n === 'en'){
+      menus.value.splice(4,1)
+    }
+  }
+)
 </script>
 
 <template>
@@ -264,6 +281,9 @@ const hashActive = (child: any) => {
                 rt.name === 'index' ? 'child' : 'childpage',
                 {
                   'ccccc': item.route.name === 'medical-service'
+                },
+                {
+                  child_en: locale === 'en' 
                 }
               ]"
             >
@@ -315,7 +335,7 @@ a {
   top: 54px;
   left: 10.0305%;
   background: #ffffffbf;
-
+  transition: all 1s;
   .navigtion {
     & > div {
       font-family: 'Noto Sans HK';
@@ -369,7 +389,7 @@ a {
   top: 54px;
   left: 10.0305%;
   background: #2958a3;
-
+  transition: all 1s;
   .navigtion {
     & > div {
       font-family: 'Noto Sans HK';
@@ -708,6 +728,27 @@ a {
   }
 }
 
+.child_en{
+  &.ccccc{
+    & > div {
+      height: 70px;
+    }
+  }
+  & > div {
+    position: relative;
+    height: 50px;
+    &>a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.2;
+    }
+  }
+  & > div > a::after {
+    top: 0;
+  }
+}
+
 .ccccc{
   width: 390px;
   right: 0;
@@ -727,6 +768,7 @@ a {
     width: 76px;
     margin-top: -1px;
     border: 0.75px solid #8ad8dd;
+    top: auto;
     bottom: 0;
   }
   & > div:nth-child(1) > a::after {

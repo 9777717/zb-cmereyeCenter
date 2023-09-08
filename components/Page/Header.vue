@@ -2,7 +2,9 @@
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const { t } = useLang()
-const menus = [
+const locale = useState<string>('locale.setting')
+
+const menus = computed( ()=>{ return [
   {
     type: 'link',
     text: t('pages.index.home'),
@@ -26,17 +28,17 @@ const menus = [
       },
       {
         type: 'link',
-        text: '企業願景',
+        text: t('pages.about_us.enterprise_vision'),
         link: { path: '/about-us', hash: '#corporate' },
       },
       {
         type: 'link',
-        text: '中心設備',
+        text: t('pages.about_us.equipment_centre'),
         link: { path: '/about-us', hash: '#medicalEquipment' },
       },
       {
         type: 'link', 
-        text: '客戶評分',
+        text: t('pages.about_us.feedback'),
         link: { path: '/about-us', hash: '#feedback' },
       },
       {
@@ -201,7 +203,8 @@ const menus = [
       },
     ],
   },
-]
+]})
+
 const router = useRouter()
 const toIndex = () => {
   // window.location.href = '/'
@@ -245,6 +248,18 @@ const imgLists = [
   }
 ]
 
+let newMenus:any = computed(()=>{
+  console.log(locale.value)
+  if(locale.value === 'en'){
+    let a:any = JSON.parse(JSON.stringify(menus.value))
+    console.log(a)
+    a.splice(4,1)
+    return a
+  }
+  console.log(JSON.parse(JSON.stringify(menus.value)))
+  return JSON.parse(JSON.stringify(menus.value))
+})
+
 const handleToLinks = (_link:any) => {
   location.href = _link
 }
@@ -269,13 +284,22 @@ useHead({
 watch(
   menuBool,
   (o,n)=>{
-    var a:any = document.getElementById('userwayAccessibilityIcon')   
+    var a:any = document.getElementById('userwayAccessibilityIcon') || {style: {display: 'none'}}
     a.style.display = n ? 'none' : 'block'
     var b:any = document.getElementById('mbFooterTop')
     if(route.name !== 'index'){
       b.style.display = n ? 'block' : 'none'
     }
-    
+  }
+)
+watch(
+  locale,
+  (o,n)=>{
+    // if(n === 'en'){
+    //   newMenus = (JSON.parse(JSON.stringify(menus))).splice(4,1)
+    // }else{
+    //   newMenus = menus
+    // }
   }
 )
 </script>
@@ -307,14 +331,14 @@ watch(
           unique-opened
           class="el-menu-vertical-demo"
         >
-          <section v-for="(menusItem, menusIndex) in menus" :key="menusIndex">
-            <el-sub-menu v-if="menusItem.childMenuList.length" :index="menusIndex">
+          <section v-for="(menusItem, menusIndex) in newMenus" :key="menusIndex">
+            <el-sub-menu v-if="menusItem.childMenuList.length" :index="String(menusIndex)">
               <template #title>{{menusItem.text}}</template>
               <el-menu-item v-for="(childItem,childIndex) in menusItem.childMenuList" :key="`${menusIndex}-${childIndex}`" :index="`${menusIndex}-${childIndex}`" @click="toLinks(childItem)">
                 {{childItem.text}}
               </el-menu-item>
             </el-sub-menu>
-            <el-menu-item v-else :index="menusIndex" @click="toLinks(menusItem)">
+            <el-menu-item v-else :index="String(menusIndex)" @click="toLinks(menusItem)">
               <span>{{menusItem.text}}</span>
             </el-menu-item>
           </section>
@@ -332,7 +356,7 @@ watch(
               </defs>
             </svg>
             <span>
-              立即致電（852）3956 2025
+              {{$t('components.content.onlinContact.callNow')}}（852）3956 2025
             </span>
           </a>
         </div>
@@ -355,19 +379,36 @@ watch(
 </template>
 <style>
 body .uwy.userway_p3 .uai{
-  bottom: 165px !important;
-  display: none;
+  /* bottom: 165px !important; */
+  /* display: none; */
 }
 body .uwy .uai{
-  width: 54px !important;
-  max-width: 54px !important;
-  height: 54px !important;
-  max-height: 54px !important;
+  /* width: 54px !important; */
+  /* max-width: 54px !important; */
+  /* height: 54px !important; */
+  /* max-height: 54px !important; */
   /* background: #2958A3 !important; */
 }
 .uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
-  width: 54px !important;
-  height: 54px !important;
+  /* width: 54px !important; */
+  /* height: 54px !important; */
+}
+@media screen and (max-width: 768px) {
+  body .uwy.userway_p3 .uai{
+    bottom: 165px !important;
+    display: none;
+  }
+  body .uwy .uai{
+    width: 54px !important;
+    max-width: 54px !important;
+    height: 54px !important;
+    max-height: 54px !important;
+    /* background: #2958A3 !important; */
+  }
+  .uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
+    width: 54px !important;
+    height: 54px !important;
+  }
 }
 </style>
 <style lang="scss" scoped>

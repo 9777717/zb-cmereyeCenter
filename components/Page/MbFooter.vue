@@ -34,11 +34,11 @@ onMounted(() => {
       </a>
       <a id="ga-mb-bottom-ljzd" href='tel:+(852)3956 2025'>
         <div><img src="https://static.cmereye.com/imgs/2023/07/8bb225b21f8baa35.png" alt=""></div>
-        <div>立即致電{{'\n'}}(852) 3956 2025</div>
+        <div>{{$t('components.content.onlinContact.callNow')}}{{'\n'}}(852) 3956 2025</div>
       </a>
       <a id="ga-mb-bottom-xsdh" href='https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5'>
         <div><img src="https://static.cmereye.com/imgs/2023/07/9c9ca82dbc0545a7.png" alt=""></div>
-        <div>線上對話</div>
+        <div>{{$t('components.content.onlinContact.chatNow2')}}</div>
       </a>
     </div>
     <div v-if="route.name !== 'index'" id="mbFooterTop" class="mbFooter-top" @click="toTop">

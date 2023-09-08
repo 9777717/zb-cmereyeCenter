@@ -96,6 +96,7 @@ const props = defineProps({
     background: #fff;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
   .anchorActive,

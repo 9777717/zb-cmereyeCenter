@@ -63,11 +63,11 @@ const toLink = () =>{
         <slot name="title">
           <NuxtLink tag="a" :to="{ name: 'index' }">
             <img
-              v-if="router.name === 'index'"
+              v-show="router.name === 'index'"
               src="https://static.cmereye.com/imgs/2023/08/7e6ae1191e294b6f.png"
             />
             <img
-              v-else
+              v-show="router.name !== 'index'"
               src="https://static.cmereye.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
             />
           </NuxtLink>

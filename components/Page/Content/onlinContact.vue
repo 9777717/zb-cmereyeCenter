@@ -41,7 +41,7 @@ const rt = ref(route)
       </a>
       <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
         <div class="ga-pc-right-zxcx">
-          <div class="ga-pc-right-zxcx"><div class="ga-pc-right-zxcx">在線查詢</div></div>
+          <div class="ga-pc-right-zxcx"><div class="ga-pc-right-zxcx">{{$t('components.content.onlinContact.chatNow')}}</div></div>
           <div class="ga-pc-right-zxcx"><img class="ga-pc-right-zxcx" src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
         </div>
       </a>
@@ -53,7 +53,7 @@ const rt = ref(route)
       </a>
       <a class="ocitem ga-pc-right-ljzd" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
         <div class="ga-pc-right-ljzd">
-          <div class="ga-pc-right-ljzd"><div class="ga-pc-right-ljzd">立即致電</div></div>
+          <div class="ga-pc-right-ljzd"><div class="ga-pc-right-ljzd">{{$t('components.content.onlinContact.callNow')}}</div></div>
           <div class="ga-pc-right-ljzd"><img class="ga-pc-right-ljzd" src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
         </div>
       </a>
