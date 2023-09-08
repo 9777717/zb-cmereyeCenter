@@ -218,7 +218,7 @@ const historyList = ref([
       font-weight: 500;
       font-size: 32px;
       letter-spacing: 0.05em;
-      text-transform: uppercase;
+      // text-transform: uppercase;
 
       color: #515151;
       border-bottom: 1.5px solid #515151;
@@ -234,7 +234,7 @@ const historyList = ref([
       /* or 140% */
 
       letter-spacing: 0.05em;
-      text-transform: uppercase;
+      // text-transform: uppercase;
 
       color: #515151;
 

@@ -28,6 +28,9 @@ components:
     medicalService: Medical Services
     contactUs: Contact Us
     wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
+    footerMenuB1: ©2023 Shimalin Shunchao Eye Center copyRight
+    footerMenuB2: Subsidiary of C-MER Eye Care Holdings Ltd
+    footerMenuB3:  'Stock code: 03309.HK'
   content:
     onlinContact:
       chatNow: chat now
@@ -114,7 +117,7 @@ pages:
       profile_group_M: 「Ｍ」- Modern Management
       profile_group_E: 「Ｅ」- Quality Education
       profile_group_R: 「Ｒ」- Pioneering Research
-      profile_group_hema: 「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+      profile_group_hema: 「C-MER」："C" to bring hope to the eyes；"Hima" and "C-MER" are homophonic，and the Himalayas are the highest mountain range in the world. which continuously pursues excellence through high-quality clinical services, modern management, superior education and training, and leading research, climbing the peak.
     hema_eye:
       hema_eye: C-MER Eye Center
       hema_eye_introduce_one: There are 11 C-MER Eye Centers in Hong Kong, located all over Hong Kong, Kowloon, and the New Territories, which can easily be reached by public transport. Led by Dr. LAM Shun Chiu who has over 30 years of experience in ophthalmology, together with 23 experienced ophthalmologists and professional medical nurses, the team provides comprehensive ophthalmology medical services for the public.

@@ -227,12 +227,12 @@ let drawer = ref(false)
       </div>
       <div class="footerMenu-in-b">
         <div><span @click="handleToLinks({link: '/privacyPolicy'})">{{$t('pages.index.footer.privacy')}}</span> | <span @click="handleToLinks({link: '/disclaimer'})">{{$t('pages.index.footer.disclaimer')}}</span></div>
-        <div>©2023 希瑪眼科中心 版權所有</div>
+        <div>{{$t('components.menus.footerMenuB1')}}</div>
         <div class="imgLists">
           <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>
         </div>
-        <div>希瑪眼科醫療控股有限公司</div>
-        <div>香港聯交所上市編號03309.HK</div>
+        <div>{{$t('components.menus.footerMenuB2')}}</div>
+        <div>{{$t('components.menus.footerMenuB3')}}</div>
       </div>
     </div>
     <client-only>

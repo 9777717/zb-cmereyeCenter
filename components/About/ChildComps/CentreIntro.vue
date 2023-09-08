@@ -3,6 +3,7 @@ import { getPdf } from '@/assets/js/common'
 import { url } from '@nuxt/test-utils-edge'
 import { Autoplay } from 'swiper'
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 // 眼科中心
 const eyeCenterImgList = [
   'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
@@ -79,11 +80,11 @@ const goInstagram = (type: string) => {
           :en-ttitle="'introduction'"
         />
       </div>
-      <p class="preface text-justify">
+      <p class="preface" :class="{'enStyle': locale === 'en'}">
         {{ $t('pages.about_us.profile_centent.profile_text') }}
       </p>
 
-      <div class="mianText">
+      <div class="mianText" :class="{'enStyle': locale === 'en'}">
         <p>{{ $t('pages.about_us.profile_centent.profile_subjection') }}</p>
         <p>
           {{ $t('pages.about_us.profile_centent.profile_group_start')
@@ -337,6 +338,9 @@ const goInstagram = (type: string) => {
     flex-direction: column;
 
     & > p {
+      &.enStyle{
+        text-transform:initial;
+      }
       width: 100%;
       max-width: 960px;
       font-family: 'Noto Sans HK';
@@ -344,12 +348,9 @@ const goInstagram = (type: string) => {
       font-weight: 400;
       font-size: 20px;
       line-height: 40px;
-      /* or 200% */
       padding: 3rem 2.5rem;
       text-align: justify;
       letter-spacing: 0.08em;
-      text-transform: uppercase;
-
       color: #515151;
       background: linear-gradient(90deg, #fbfdff 0%, #f5fbfe 100%);
       box-shadow: 1px 2px 4px rgba(170, 169, 166, 0.2);
@@ -361,6 +362,11 @@ const goInstagram = (type: string) => {
       width: 100%;
       max-width: 860px;
       margin: 0 auto;
+      &.enStyle{
+        &>p,& > p:last-child{
+          text-transform:initial;
+        }
+      }
       .color1 {
         color: #8ad8dd;
       }
@@ -371,34 +377,23 @@ const goInstagram = (type: string) => {
         font-weight: 400;
         font-size: 20px;
         line-height: 70px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
         text-indent: 45px;
-        text-transform: uppercase;
-        // margin-left: 150px;
-        // margin: 0 auto;
-
         color: #515151;
       }
 
       & > p:last-child {
         width: 860px;
         margin-top: 70px;
-        // margin-left: 78px;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 34px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
         text-indent: 45px;
-        text-transform: uppercase;
-
         color: #515151;
       }
     }
@@ -437,8 +432,6 @@ const goInstagram = (type: string) => {
         font-weight: 400;
         font-size: 34.6916px;
         line-height: 2;
-        /* identical to box height, or 144% */
-
         text-align: center;
         letter-spacing: 0.05em;
 
@@ -459,19 +452,14 @@ const goInstagram = (type: string) => {
 
       & > div:nth-child(2) {
         margin-left: 50px;
-        // margin-top: 43px;
-
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 34px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
         text-indent: 45px;
-        text-transform: uppercase;
 
         color: #515151;
 
@@ -487,6 +475,9 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div {
+        img{
+          margin-right: 5px;
+        }
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -494,20 +485,10 @@ const goInstagram = (type: string) => {
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 34px;
-        /* or 170% */
-
-        text-align: justify;
+        line-height: 20px;
         letter-spacing: 0.06em;
-        text-indent: 5px;
-        text-transform: uppercase;
-
         color: #2958a3;
       }
-
-      // & > div:nth-child(1) {
-      //   margin-left: 48px;
-      // }
 
       & > div:nth-child(2) {
         margin-left: 50px;
@@ -548,8 +529,6 @@ const goInstagram = (type: string) => {
         font-weight: 400;
         font-size: 34.6916px;
         line-height: 2;
-        /* identical to box height, or 144% */
-
         text-align: center;
         letter-spacing: 0.05em;
 
@@ -570,20 +549,14 @@ const goInstagram = (type: string) => {
 
       & > div:nth-child(1) {
         margin-right: 50px;
-        // margin-top: 43px;
-
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 34px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
         text-indent: 45px;
-        text-transform: uppercase;
-
         color: #515151;
 
         & > p {
@@ -599,6 +572,9 @@ const goInstagram = (type: string) => {
       justify-content: flex-end;
 
       & > div {
+        img{
+          margin-right: 5px;
+        }
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -606,21 +582,10 @@ const goInstagram = (type: string) => {
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 34px;
-        /* or 170% */
-
-        text-align: justify;
+        line-height: 20px;
         letter-spacing: 0.06em;
-        text-indent: 5px;
-        text-transform: uppercase;
-        
         color: #2958a3;
       }
-
-      // & > div:nth-child(1) {
-      //   margin-left: 48px;
-      // }
-
       & > div:nth-child(2) {
         margin-left: 50px;
       }
@@ -660,8 +625,6 @@ const goInstagram = (type: string) => {
         font-weight: 400;
         font-size: 34.6916px;
         line-height: 2;
-        /* identical to box height, or 144% */
-
         text-align: center;
         letter-spacing: 0.05em;
 
@@ -681,21 +644,18 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div:nth-child(2) {
+        img{
+          margin-right: 5px;
+        }
         margin-left: 50px;
-        // margin-top: 43px;
-
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 34px;
-        /* or 170% */
-
         text-align: justify;
         letter-spacing: 0.06em;
         text-indent: 45px;
-        text-transform: uppercase;
-
         color: #515151;
 
         & > p {
@@ -710,6 +670,9 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div {
+        img{
+          margin-right: 5px;
+        }
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -717,21 +680,10 @@ const goInstagram = (type: string) => {
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 34px;
-        /* or 170% */
-
-        text-align: justify;
+        line-height: 20px;
         letter-spacing: 0.06em;
-        text-indent: 5px;
-        text-transform: uppercase;
-
         color: #2958a3;
       }
-
-      & > div:nth-child(1) {
-        // margin-left: 48px;
-      }
-
       & > div:nth-child(2) {
         margin-left: 50px;
       }
@@ -783,7 +735,6 @@ const goInstagram = (type: string) => {
         text-align: justify;
         letter-spacing: 0.01em;
         text-indent: 30px;
-        text-transform: uppercase;
         color: #515151;
       }
     }
@@ -808,6 +759,9 @@ const goInstagram = (type: string) => {
         margin: 28px 94px 0 150px;
       }
       & > div:nth-child(2) {
+        img{
+          margin-right: 30px;
+        }
         top: 28px;
         display: flex;
         align-items: center;
@@ -815,11 +769,8 @@ const goInstagram = (type: string) => {
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
-        line-height: 34px;
-        text-align: justify;
+        line-height: 20px;
         letter-spacing: 0.06em;
-        text-indent: 30px;
-        text-transform: uppercase;
         height: 110px;
         color: #515151;
         cursor: pointer;
@@ -870,6 +821,9 @@ const goInstagram = (type: string) => {
         width: max-content;
       }
       &>p{
+        &.enStyle{
+          text-align: initial;
+        }
         width: calc(100% - 74px);
         margin: 30px 44px 30px 30px;
         font-size: 14px;
@@ -1161,6 +1115,9 @@ const goInstagram = (type: string) => {
         align-items: center;
 
         & > div:nth-child(2) {
+          img{
+            margin-right: 5px;
+          }
           margin-left: 50px;
 
           font-family: 'Noto Sans HK';
@@ -1168,11 +1125,9 @@ const goInstagram = (type: string) => {
           font-weight: 400;
           font-size: 20px;
           line-height: 34px;
-          /* or 170% */
           text-align: justify;
           letter-spacing: 0.06em;
           text-indent: 45px;
-          text-transform: uppercase;
           color: #515151;
           & > p {
             margin-top: 40px;
@@ -1186,6 +1141,9 @@ const goInstagram = (type: string) => {
         align-items: center;
 
         & > div {
+          img{
+            margin-right: 5px;
+          }
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -1193,16 +1151,9 @@ const goInstagram = (type: string) => {
           font-style: normal;
           font-weight: 700;
           font-size: 20px;
-          line-height: 34px;
-          text-align: justify;
+          line-height: 20px;
           letter-spacing: 0.06em;
-          text-indent: 5px;
-          text-transform: uppercase;
           color: #2958a3;
-        }
-
-        & > div:nth-child(1) {
-          // margin-left: 48px;
         }
 
         & > div:nth-child(2) {

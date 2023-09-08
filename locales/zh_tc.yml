@@ -28,6 +28,9 @@ components:
     medicalService: 醫療服務
     contactUs: 聯絡我們
     wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
+    footerMenuB1: ©2023 希瑪眼科中心 版權所有
+    footerMenuB2: 希瑪眼科醫療控股有限公司
+    footerMenuB3: 香港聯交所上市編號03309.HK
   content:
     onlinContact:
       chatNow: 在線查詢

@@ -221,12 +221,15 @@ let menus = computed((): IMenuItem[] => [
 ])
 
 const locale = useState<string>('locale.setting')
-// if(locale.value === 'en'){
-//   menus.value.splice(4,1)
-// }else{
 
-// }
-// const newMenus = computed
+const newMenus = computed(()=>{
+  if(locale.value === 'en'){
+    let a:any = JSON.parse(JSON.stringify(menus.value))
+    a.splice(4,1)
+    return a
+  }
+  return JSON.parse(JSON.stringify(menus.value))
+})
 
 const route = useRoute()
 const rt = ref(route)
@@ -248,15 +251,6 @@ const hashActive = (child: any) => {
   }
 }
 
-
-watch(
-  locale,
-  (n,o)=>{
-    if(n === 'en'){
-      menus.value.splice(4,1)
-    }
-  }
-)
 </script>
 
 <template>
@@ -265,7 +259,7 @@ watch(
       <template #menu>
         <div class="navigtion">
           <div
-            v-for="(item, itemIndex) in menus"
+            v-for="(item, itemIndex) in newMenus"
             :key="itemIndex"
             class="hover:bg-red-901 hover:text-while"
           >

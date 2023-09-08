@@ -51,6 +51,8 @@ useHead(() => ({
   ],
 }))
 
+const locale = useState<string>('locale.setting')
+
 const CORPORATE_Lists = [
   {
     name: 'pages.about_us.enterprise_vision_con.name3_1',
