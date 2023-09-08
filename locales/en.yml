@@ -474,6 +474,152 @@ pages:
     medical_service: Medical Services
     medical_service_title: Medical Services
     cataract: Cataract
+    service_cataract_title:
+      service_cataract_title1: Cataract
+      service_cataract_title_son1: 白內障影響日常生活？
+      service_cataract_title_son2: 為什麼會患上白內障？
+      service_cataract_title_son3: Symptoms of cataract
+      service_cataract_title_son4: 白內障治療，手術最快20分鐘，快速恢復正常視力！
+      service_cataract_title_son5: 激光輔助白內障治療的優點︰
+      service_cataract_title_son6: Comparison of Intraocular lens (IOL)
+      service_cataract_title_son7: 白內障的術後注意事項
+      service_cataract_title_son8: Frequently asked questions (FAQ)
+      service_cataract_btn1: 即按為您解決煩惱
+      service_cataract_btn2: 別再遲疑！立即查詢白內障治療方案
+      service_cataract_btn3: Causes of cataract
+      service_cataract_btn4: 簡單自測︰您是否患上白內障？
+      service_cataract_btn5: 已有症狀？立即預約檢查
+      service_cataract_btn6: 立即預約見醫生了解手術！
+      service_cataract_btn7: 哪一款人工晶體適合您？
+      service_cataract_text1: 白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
+      service_cataract_text2: 患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響您的視野，更使您的生活變得十分不便？
+      service_cataract_text3: Around 90% of the cataracts in Hong Kong are due to aging. The lens hardens and becomes less transparent.
+      service_cataract_text4: 視力模糊是白內障的主要症狀，隨病情惡化，可能有更多症狀困擾您。
+      service_cataract_text5: 如果您有一項或以上的症狀，請不用感到焦慮，可聯絡我們約見眼科專科醫生，以盡快獲得正確的診斷和適合您的治療方案。
+      service_cataract_text6: As there are no medications that can restore clear eyesight from cloudy vision resulting from cataract, surgery is the treatment.
+      service_cataract_text7: The mainstream of cataract surgery is phacoemulsification combined with intraocular lens (IOL) implantation. The surgery is performed through an incision less than 3 mm in diameter. The cloudy lens will then be emulsified into tiny fragments by ultrasound and sucked out. Finally, an intraocular lens will be implanted. The surgery only takes 10-20 minutes and most of them are performed under topical anaesthesia (by applying numbing eye drops). The incision normally seals without stitches.
+      service_cataract_text8: 最新一代的微創超聲波乳化手術，可以提高治療的精準度。只需使用較低超聲波能量，將混濁晶體乳化分解並吸走，傷口小、恢復時間快、手術時間短，大大減低手術對角膜造成的傷害、傷口感染或併發症。
+      service_cataract_text9:  Cataract surgeons could customized the IOL planning for their patients according to their visual needs.With the pre-operative assessment, patients can discuss with their ophthalmologists on the selection of IOL according to their ocular condition, vision needs and financial situation, etc. IOLs could be divided into three types,
+      service_cataract_text10: "* This table presumes that the monofocal IOL is used for distant vision."
+      service_cataract_text11: 現代白內障手術更精準！
+      service_cataract_text12: 5大常見症狀︰
+      service_cataract_down1: 如何選擇合適的人工晶體？
+      service_cataract_down2: 白內障
+      service_cataract_down_text: 下載小冊子
+      service_cataract_array_fator:
+        cataract_array_fator1: Excessive ultraviolet-light exposure
+        cataract_array_fator2: Smoking
+        cataract_array_fator3_1: High myopia
+        cataract_array_fator3_2: ''
+        cataract_array_fator4: Diabetes
+        cataract_array_fator5_1: Use of certain medications eg. Steroids
+        cataract_array_fator5_2: ''
+        cataract_array_fator6_1: Congenital cataract
+        cataract_array_fator6_2: ''
+        cataract_array_fator7_1: Eye trauma
+        cataract_array_fator7_2: ''
+      service_cataract_array_symptom:
+        cataract_array_symptom1_1: Clouded or blurred vision
+        cataract_array_symptom1_2: ''
+        cataract_array_symptom2_1: Sensitivity to light, glare and have double vision
+        cataract_array_symptom2_2: ''
+        cataract_array_symptom3_1: Dim or distorted vision
+        cataract_array_symptom3_2: ""
+        cataract_array_symptom4: Decreased night vision
+        cataract_array_symptom5_1: Frequent changes in prescription for eyeglasses or contact lenses
+        cataract_array_symptom5_2: ""
+      service_cataract_array_surgery:
+        cataract_text1: 激光精準度高
+        cataract_text2: 人工晶體位置更準確
+        cataract_text3: 可使用較低的超聲波
+        cataract_text4: 能量處理白內障
+        cataract_array_surgery1_1: The cloudy lens is removed by a micro ultrasonic instrument.
+        cataract_array_surgery1_2: ''
+        cataract_array_surgery2_1: Implantation of an intraocular lens.
+        cataract_array_surgery2_2: ''
+        cataract_array_surgery3_1: The incision normally seals without stitches.
+        cataract_array_surgery3_2: ''
+      service_cataract_array_icl:
+        cataract_array_icl1:
+          icl1_type: Type of IOLs
+          icl1_monofocal1: Monofocal Lens
+          icl1_monofocal2: ''
+          icl1_astigmatism1: Toric Lens
+          icl1_astigmatism2: ''
+          icl1_multipleFocus1: Multifocal Lens
+          icl1_multipleFocus2: ''
+        cataract_array_icl2:
+          icl2_type: Distant vision
+          icl2_monofocal: Excellent
+          icl2_astigmatism1: Excellent
+          icl2_astigmatism2: ''
+          icl2_multipleFocus: Good
+        cataract_array_icl3:
+          icl3_type: Mid-distance vision
+          icl3_monofocal: Excellent(may need glasses)
+          icl3_astigmatism1: Excellent(may need glasses)
+          icl3_astigmatism2: ''
+          icl3_multipleFocus: Good
+        cataract_array_icl4:
+          icl4_type: Near vision
+          icl4_monofocal: Excellent(may need glasses)
+          icl4_astigmatism1: Excellent(may need glasses)
+          icl4_astigmatism2: ''
+          icl4_multipleFocus: Good
+        cataract_array_icl5:
+          icl5_type: Advantages
+          icl5_monofocal1: Good vision quality
+          icl5_monofocal2: (However, can not have good distant and near vision at the same time.)
+          icl5_astigmatism1: Good vision quality
+          icl5_astigmatism2: Correct astigmatism
+          icl5_multipleFocus1: Gain good distant, mid-distance and near vision
+          icl5_multipleFocus2: Most of the patient could get rid of glasses
+        cataract_array_icl6:
+          icl6_type: Suitability
+          icl6_monofocal1: Do not mind wearing glasses
+          icl6_monofocal2: High visual demands
+          icl6_monofocal3: Have financial considerations
+          icl6_astigmatism1: Do not mind wearing glasses
+          icl6_astigmatism2: Patients with astigmatism
+          icl6_astigmatism3: Do not want to wear glasses
+          icl6_multipleFocus1_1: Do not want to wear glasses
+          icl6_multipleFocus1_2: No frequent driving at night
+          icl6_multipleFocus2: Financially affordable
+          icl6_multipleFocus3: No other eye diseases that affect vision
+      service_cataract_array_announcements:
+        cataract_array_announcements1: 為盡快令傷口復原及避免細菌感染，術後蓋上紗布及眼罩需要保留一晚，直到第二天才拆開。如果不慎鬆開，再用消毒紗布重新蓋上。
+        cataract_array_announcements2: 一般建議病人術後於睡覺時蓋上保䕶眼罩兩星期，可以預防不必要的踫撞及捽眼睛。
+        cataract_array_announcements3: 術後當天一般都不建議洗頭，注意沐浴時切勿沾濕紗布。一般建議頭一星期平臥或仰臥洗頭，避免污水流入眼內或於洗頭時戴上如泳鏡作保護。
+        cataract_array_announcements4: 須保持傷口清潔，建議用化妝綿，凍開水，先洗下眼皮，再洗上眼皮，貼近眼睫毛嘅根部，由內至外一下過，一般每次滴眼水前清潔，每天四至六次。
+        cataract_array_announcements5: 禁止揉眼以免影響傷口癒合。應避免拿重物，90度彎身動作如綁鞋帶等。劇烈運動如跑步、跳水、有身體碰撞機會的運動等亦不適宜。
+        cataract_array_announcements6: 跟足指示，定時滴用由醫生處方的眼藥水，並保持均衡飲食。
+        cataract_array_announcements7: 術後如果眼睛無故出血、流膿、劇痛或視力突然模糊等，應盡快求醫，以免延誤治療
+      service_cataract_array_meet:
+        cataract_array_meet_q1: Q：Do we need to wait until the cataract get mature？
+        cataract_array_meet_a1_1: With the advancement of cataract surgery and IOL technology, modern cataract surgery is more effective. Patients can consider earlier cataract surgery as it is more difficult to be removed and the risk of complications will be higher if a cataract is more mature.
+        cataract_array_meet_a1_2: Therefore, patients should consider cataract surgery when their works and daily lives are affected. But it is a totally different story in the old days when there was no intraocular lens for implantation after a cataract surgery. Patients had to wear thick glasses to compensate after the lens was removed. The worse thing is, if only one eye was operated, the huge difference between two eyes would make people feel bad. Therefore, people consider surgery only until the cataract was mature. Even the ophthalmologists would suggest patients to have their cataract removed when it became mature in the old days.
+        cataract_array_meet_q2: Q：How long do IOLs last? Do they need to be replaced?
+        cataract_array_meet_a2: IOLs are placed permanently in your eye and will not "wear out". IOLs need to be replaced only if IOLs shift out of its original position or it is damaged. There is a very small amount of patients who cannot adapt to the implanted IOLs (around 2% in multifocal IOLs and it is much less in that of monofocal IOLs).
+        cataract_array_meet_q3: Q：Do I need to wear glasses after the surgery?
+        cataract_array_meet_a3: IOLs are placed permanently in your eye and will not "wear out". IOLs need to be replaced only if IOLs shift out of its original position or it is damaged. There is a very small amount of patients who cannot adapt to the implanted IOLs (around 2% in multifocal IOLs and it is much less in that of monofocal IOLs).
+        cataract_array_meet_q4: Q：Will I have painful feeling during the surgery?
+        cataract_array_meet_a4: Cataract surgery is performed under topical anesthesia (by applying numbing eye drops). Patients are awake during the surgery, but usually they do not feel pain.
+        cataract_array_meet_q5: Q：Does cataract surgery need to be done in hospital?
+        cataract_array_meet_a5_1: Cataract surgery is a minimally invasive surgery which does not require general anaesthesia which only eye drops are needed in most cases. Therefore, cataract surgery does not have to be performed in hospital medically. Our international standard operating theatres, which equipped with advanced machines and technology for preoperative assessment and surgical procedures, ensure a safe and reliable cataract surgery.
+        cataract_array_meet_a5_2: However, some patients may need general anaesthetic and be treated in the hospital. For further information on surgical planning, please ask your ophthalmologist for more details
+        cataract_array_meet_q6: Q：When can I resume daily activities/ exercises after cataract surgery?
+        cataract_array_meet_a6_1: Patients can resume light exercise such as tai chi, walking or hiking if no abnormalities are found in day 1 post-operative follow-up. However, contact sports such as boxing are not recommended for a period of time. Please consult your doctor for more details and here below are some examples,
+        cataract_array_meet_a6_2: 'Walking: 24 hours after the surgery'
+        cataract_array_meet_a6_3: 'Air travel: 24 hours after the surgery'
+        cataract_array_meet_a6_4: 'Swimming: 1 week after the surgery to reduce the risk of infection'
+        cataract_array_meet_a6_5: 'Other facial or dental treatments: at least 1 week after the surgery. For the safety reason, it is better to be 1 month after the surgery.'
+      service_cataract_array_Navigation:
+        cataract_array_Navigation1: Causes
+        cataract_array_Navigation2: Symptoms
+        cataract_array_Navigation3: Treatment
+        cataract_array_Navigation4: Comparison of Intraocular lens (IOL)
+        cataract_array_Navigation5: 術後注意事項
+        cataract_array_Navigation6: FAQ
     glaucoma: Glaucoma
     xerophthalmia: Dry Eyes
     muscae_volitantes: Eye floaters

@@ -5,6 +5,8 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
+
 useHead(() => ({
   title: t('pages.medical_service.medical_service_cataract_head'),
   meta: [
@@ -380,7 +382,7 @@ const callTel = () => {
       </div>
     </div>
     <serviceNav :arrData="serviceNavigation" />
-    <div class="cataract">
+    <div class="cataract" :class="{'cataract-en': locale === 'en'}" >
       <!-- 白內障 -->
       <div>
         <!-- 请勿删除 -->
@@ -2173,6 +2175,107 @@ const callTel = () => {
     margin: 0;
   }
 }
+.cataract-en{
+  &>div:nth-child(3){
+    &>div:nth-child(2){
+      &>div:nth-child(2){
+        &>div {
+          align-items: start;
+          &> div {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            max-width: 216px;
+            &> div{
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(1){
+      &>div:nth-child(2){
+        width: 100%;
+        max-width: 1280px;
+        margin-left: 0;
+      }
+    }
+  }
+  &>div:nth-child(4){
+    &>div:nth-child(1){
+      &>div:nth-child(1){
+        &>div{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &>div:nth-child(2){
+      &>div:nth-child(2){
+        &>div:nth-child(2){
+          &>div{
+            flex: 1;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+  &>div:nth-child(5){
+    &>div:nth-child(3){
+      &>div:nth-child(3){
+        &>div{
+          flex: 1;
+        }
+      }
+    }
+  }
+  &>div:nth-child(6){
+    &>div:nth-child(1){
+      &>div:nth-child(1){
+        &>div{
+          white-space: nowrap;
+          width: auto;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &>div:nth-child(2){
+      &>div:nth-child(2){
+        &>div{
+          height: auto;
+          min-height: 144px;
+        }
+        &>div:nth-of-type(5){
+          &>div:nth-of-type(4){
+            &>div{
+              &>div:nth-of-type(2){
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+        &>div:nth-of-type(6){
+          height: auto;
+        }
+      }
+    }
+  }
+  &>div:nth-child(8){
+    &>div:nth-child(1){
+      &>div:nth-child(1){
+        &>div{
+          white-space: nowrap;
+          width: auto;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
 @keyframes bgposition {
     0% {
         transform: translate(30%, 30%);
@@ -2723,7 +2826,7 @@ const callTel = () => {
               height: 45px;
               background: linear-gradient(270deg, #2296BB 0%, #51D6D8 100%);
               line-height: 45px;
-              padding-top: 2px;
+              // padding-top: 2px;
               text-align: center;
               border-radius: 50%;
             }
@@ -3062,7 +3165,47 @@ const callTel = () => {
       margin-top: 70px;
     }
   }
-
+  .cataract-en{
+    &>div:nth-child(3){
+      &>div:nth-child(2){
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            &>div:nth-child(3){
+              &>div{
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(4){
+      &>div:nth-child(2){
+        &>div:nth-child(2){
+          &>div:nth-child(2){
+            &>div{
+              flex: initial;
+              // width: ;
+              &>div{
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(6){
+      width: 100%;
+      &>div:nth-child(2){
+        &>div:nth-child(1){
+          padding: 0 30px;
+        }
+        &>div:nth-child(3){
+          padding: 0 30px;
+        }
+      }
+    }
+  }
   .dow {
     margin-top: 70px;
     font-size: 14px;
