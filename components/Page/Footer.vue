@@ -14,7 +14,7 @@ const year = new Date().getFullYear()
         </div>
         <div>
           <PageContentFooterSvg />
-          <LanguageSwitcher />
+          <!-- <LanguageSwitcher /> -->
           <!-- <FontHandle /> -->
           <PivacyPolicy />
         </div>

@@ -249,14 +249,11 @@ const imgLists = [
 ]
 
 let newMenus:any = computed(()=>{
-  console.log(locale.value)
   if(locale.value === 'en'){
     let a:any = JSON.parse(JSON.stringify(menus.value))
-    console.log(a)
     a.splice(4,1)
     return a
   }
-  console.log(JSON.parse(JSON.stringify(menus.value)))
   return JSON.parse(JSON.stringify(menus.value))
 })
 
@@ -290,16 +287,6 @@ watch(
     if(route.name !== 'index'){
       b.style.display = n ? 'block' : 'none'
     }
-  }
-)
-watch(
-  locale,
-  (o,n)=>{
-    // if(n === 'en'){
-    //   newMenus = (JSON.parse(JSON.stringify(menus))).splice(4,1)
-    // }else{
-    //   newMenus = menus
-    // }
   }
 )
 </script>
