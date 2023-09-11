@@ -621,6 +621,156 @@ pages:
         cataract_array_Navigation5: 術後注意事項
         cataract_array_Navigation6: FAQ
     glaucoma: Glaucoma
+    service_glaucoma_title:
+      service_glaucoma_title1: What is Glaucoma?
+      service_glaucoma_title2: Causes
+      service_glaucoma_title3: Symptoms
+      service_glaucoma_title4: The Different Stages of Glaucoma
+      service_glaucoma_title5: Chronic Glaucoma
+      service_glaucoma_title6: Acute Glaucoma
+      service_glaucoma_title7: Congenital Glaucoma
+      service_glaucoma_title8: Symptoms of Congenital Glaucoma
+      service_glaucoma_title9: Primary Glaucoma
+      service_glaucoma_title10: Secondary Glaucoma
+      service_glaucoma_title11: Pisk Factors
+      service_glaucoma_title12: Diagnosis
+      service_glaucoma_title13: Treatment
+      service_glaucoma_title14: Prevention
+      service_glaucoma_title15: Glaucoma Misunderstandings
+      service_glaucoma_title16: Types of Secondary Glaucoma
+      service_glaucoma_title17: Types of Glaucoma
+      service_glaucoma_btn1_1: 如您是青光眼高危人士
+      service_glaucoma_btn1_2: 立即WhatsApp預約檢查
+      service_glaucoma_btn2_1: 不想青光眼惡化？
+      service_glaucoma_btn2_2: 立即致電預約檢查
+      service_glaucoma_btn3_1: 急性青光眼會突然來襲
+      service_glaucoma_btn3_2: 立即致電預約診治
+      service_glaucoma_text1: Glaucoma is a progressive degeneration of the optic nerve. Optic nerve acts like a cable to help transmit visual signals from our eyes to the visual center in the brain. Patients with glaucoma may experience peripheral vision loss followed by a decrease in central vision; permanent visual loss may occur in serious cases. Since there are no symptoms in the early stages of glaucoma, many patients may be unaware that they have glaucoma until the disease has already progressed to a more advanced stage. Hence, chronic glaucoma is sometimes referred to as the "silent thief of sight".
+      service_glaucoma_text2: Glaucoma is associated with increased intraocular pressure (IOP). The anterior chamber which is in front of the eye is filled with clear liquid secreted by ciliary body (aqueous humor). Aqueous humor circulates in anterior chamber. If there is blockage of aqueous humor drainage, it can lead to increased intraocular pressure, and damage the optic nerve.
+      service_glaucoma_text3: "People with high myopia and long-term use of steroid eye drops, or have a history of eye injury, have higher chances of glaucoma. Moreover, several groups of systemic diseases can be associated with elevated intraocular pressure (IOP) and glaucomatous, such as: migraine, cardiovascular disease, Raynaud's syndrome, and low blood pressure, hypercholesterolemia, hyperlipidemia, diabetes."
+      service_glaucoma_text4: "Different types of glaucoma cause different symptoms among patients. The following are the common symptoms of glaucoma:"
+      service_glaucoma_text5: If you are experiencing the above symptoms, it is highly recommended to find an ophthalmologist for examination as soon as possible, otherwise the vision may deteriorate rapidly, and damage to optic nerve may also occur.
+      service_glaucoma_text6: Chronic Glaucoma is a common form of glaucoma. The patient has no obvious symptoms in the early stage but may experience gradual visual loss when the condition becomes worse. As there are no noticeable symptoms, chronic glaucoma's patients may not be alerted, until there is narrowing of the vision field. However, they can have visual loss in the severe stage. Therefore, chronic glaucoma is known as the ＂silent thief of sight ", literally, cause damage to vision slowly without any sign.
+      service_glaucoma_text7: It is an ophthalmological emergency. Acute glaucoma is caused by a rapid or sudden increase of pressure inside the eye. Blurred vision, seeing rainbows or halos, eye redness, eye pain, headache, nausea, and vomiting may affect the patient. If you have any of these signs, please seek urgent medical care immediately. There are combined treatments (oral medications, eyedrops, or surgery) to reduce the eye pressure as soon as possible to avoid damage to the optic nerve. The vision of the patient could be lost permanently if acute glaucoma is not treated in time.
+      service_glaucoma_text8: It is an eye disease related to genetic components. The aqueous humor outflow is blocked due to abnormal prenatal development of the drainage pathway. One-third of cases develop glaucoma in the fetal period, this glaucoma can be detected from birth to 2-3 years of age (infantile glaucoma) and two-third of cases develop in childhood, typically after 2-3 years of age (juvenile glaucoma).
+      service_glaucoma_text9: The damage caused by glaucoma is irreversible, therefore it should be treated early to prevent visual damage. The diagnosis of glaucoma in children can be challenging and the treatments are usually lifelong.
+      service_glaucoma_text10: Primary Glaucoma is defined as isolated, idiopathic disease of the anterior chamber of the eye and the optic nerve. Abnormal angle of anterior chamber may lead to elevated intraocular pressure as the Schlemm canal is failed to circulate the aqueous humor.
+      service_glaucoma_text11: It is a chronic eye disease, which may lead to irreversible visual dysfunction in the long term. Patients need to receive long-term treatment otherwise the vision field will become narrower and eventually lead to vision loss. Primary glaucoma may be inherited. If the patient has high myopia or has a family history of glaucoma, the risk of glaucoma increases.
+      service_glaucoma_text12: Secondary glaucoma is associated with known predisposing events including developmental abnormalities, systemic diseases, drug therapy, or trauma, which result in elevation of the eye pressure and damage to the optic nerve affecting vision.
+      service_glaucoma_text13: "Patients may have to take some examinations and tests for the diagnosis, including vision examination, visual field text, funduscopic examination, intraocular pressure measurement, etc. The medical history and family history of the patient will also be considered. Common examinations are:"
+      service_glaucoma_text14: The goal of glaucoma therapy is to control pressure and slow down the deterioration. Eye drops are considered to be the first-line treatment.
+      service_glaucoma_text15: "If the patient's condition could not be well controlled by medication, surgical treatments may be considered to facilitate the drainage of aqueous humor and lower down the pressure. Common surgical treatments are as follows:"
+      service_glaucoma_meetArr:
+        meetArr_title1: Q：Does glaucoma only affect the elderly? Young people have less risks?
+        meetArr_agree1: "Glaucoma is a progressive degeneration of the optic nerve and is associated with increased intraocular pressure (IOP). People over 40 are at higher risk of having glaucoma. However people who are younger have risk of glaucoma too. Risk factors for glaucoma include: high myopia, family history of glaucoma, diabetes, high blood pressure or cardiovascular disease, as well as a history of eye injury and long-term use of steroids."
+        meetArr_title2: Q：Can glaucoma be cured?
+        meetArr_agree2: The goal of glaucoma therapy is to control pressure and slow down the deterioration. Although there's no cure for glaucoma, early treatment could slow down or even stop the damage and protect your vision.
+        meetArr_title3: Q：Do glaucoma patients have shining eyes?
+        meetArr_agree3: The eyes of glaucoma patients would not shine or turn green. The main symptoms of glaucoma patients are eye pain, redness, and sudden blurred vision. Some patients may also have headaches, migraine, nausea or vomiting, and even peripheral vision loss.
+        meetArr_title4: Q：Do the patients with glaucoma need to seek medical care if have no vision loss?
+        meetArr_agree4: Glaucoma is usually asymptomatic in the early stage. It is probably in late stage if there are blurred vision and impaired visual field. One's vision can be permanently damaged by that time he/she seek medical care. Therefore, it is recommended that people at high risk of glaucoma should have regular eyes check. Acute onset glaucoma usually shows obvious symptoms, including eye pain, blurred vision, red eyes, headache, vomiting, and with increased intraocular pressure (IOP). One should seek medical advice immediately if acute onset of glaucoma is suspected.
+      service_glaucoma_symptoms:
+        symptoms_text1: Eye Pain
+        symptoms_text2: Eyes Redness
+        symptoms_text3_1: Blurred Vision
+        symptoms_text3_2: ""
+        symptoms_text4_1: Headache/
+        symptoms_text4_2: Migraine
+        symptoms_text5: Nausea &Vomiting
+        symptoms_text6: Peripheral Vision Loss
+      service_glaucoma_worsen:
+        worsen_text1: Early
+        worsen_text2: Moderate
+        worsen_text3: Severe
+      service_glaucoma_congenital:
+        congenital_title1: Tearing / Sensitivity to Light
+        congenital_text1: It is caused by corneal edema plus corneal irritation.
+        congenital_title2: Corneal Opacity
+        congenital_text2: In the early stage, mild whitish opacities appear due to corneal epithelium and subepithelial edema. Corneal opacity will become more apparent when edema progresses. After the eye pressure is reduced, corneal transparency may recover but permanent corneal opacification may occur if the high eye pressure results in tears and scarring of the cornea inner layers.
+        congenital_title3: Enlarged Cornea
+        congenital_text3: As the internal eye pressure increases, the wall of the eyeball expands, the diameter of the cornea may increase (more than 12mm in extreme cases).
+      service_glaucoma_kind:
+        kind_text1: Uveitis Glaucoma
+        kind_detail1: Acute inflammation in the eye (uveitis) normally does not lead to elevated pressure. However, severe, or repeated inflammation, where the inflammatory proteins increase, will cause blockage in the trabecular meshwork. Chronic uveitis can recur repeatedly and lead to the formation of adhesions between the iris and lens (posterior synechia) or between the iris and drainage angle (peripheral anterior synechiae) further compromising the drainage pathways. Uveitis glaucoma can by acute, chronic, or acute exacerbation of chronic condition. The visual field or visual loss may not be severe after the uveitis, but such damages are irreversible. In order to minimize the risk of uveitis recurrence, cautions should be taken during follow-ups and each relapse episode must be well treated.
+        kind_text2: Posner-Schlossman Syndrome
+        kind_detail2: It commonly affects adults aged 20-50 years. It presents acutely with markedly elevated intraocular pressure and anterior chamber inflammation. Usually, one eye is affected in Posner-Schlossman Syndrome, but the disease has the tendance of recurrence. Symptoms may be mild, but sudden eye pressure elevation can happen which should be addressed immediately to prevent permanent optic nerve damage.
+        kind_text3: Steroid-Induced Glaucoma
+        kind_detail3: Elevated eye pressure can be caused by topical, oral, or inhaled steroids. Its clinical manifestations are similar as primary open-angle glaucoma. Patients who require long term steroids should talk to their doctor on prevention of secondary glaucoma during steroid treatment.
+        kind_text4: Cataract Induced Glaucoma
+        kind_detail4: The size of lens increases, and it swells as cataract develops. It may push the iris and cause narrow anterior chamber angle. In severe cases, the drainage pathways may be totally blocked and induce elevated pressure. The elderly with far-sightedness (shorter eyeballs) are at higher risk.
+        kind_text5: Traumatic Hyphema
+        kind_detail5_1: Blood in the anterior chamber may block the drainage pathway and therefore lead to pressure rise. Blood in the vitreous cavity may be degraded into red blood cells (ghost cell glaucoma), hemoglobulin (hemolytic glaucoma) and iron (hemosiderotic). These 3 components may cause blockage and damage at the trabecular meshwork and subsequent elevated pressure.
+        kind_detail5_2: ''
+        kind_text6: Angle Recession Glaucoma
+        kind_detail6: In severe blunt trauma, the iris and ciliary body (structures forming the drainage) may be disrupted or torn. It may result in trabecular meshwork damage and may lead elevation in eye pressure (either an immediate effect or subsequent result of scarring). Thus, the pressure of angle recession patients should be checked regularly.
+        kind_text7: Neovascular Glaucoma
+        kind_detail7_1: Neovascular glaucoma is a type of secondary glaucoma where the angle of the eye is closed by “new blood vessels,” hence the name “neovascular.” The “angle” referred to here is the angle between the iris, and the cornea. Neovascular glaucoma typically develops in eyes in which there is severe retinal vein blockage or severe diabetic eye disease. The cause of this disease is complex. In neovascular glaucoma, there is a lack of oxygen or blood supply at the back of the eye which cause the new vessels form in the iris and the angle, and often they are leaky or cause inflammation. New blood vessels growing over the drainage angle can cause scarring and narrowing, which can eventually lead to complete closure of the angle. This process results in elevated eye pressure.
+        kind_detail7_2: ''
+        kind_text8: Ciliary Block Glaucoma
+        kind_detail8: It is a rare surgical complication occurring in patients with pre-existing glaucoma, also known as malignant glaucoma. Misdirected aqueous fluid causes forward movement of the lens/iris diaphragm, shallowing the central and peripheral anterior chamber. This results in a highly elevated pressure like angle-closure glaucoma. If sudden eye pain, redness, blurring, headache, nausea, and vomiting is noted after any eye surgery or laser, one should seek urgent medical consultation.
+      service_glaucoma_crowd:
+        crowd_text1_1: Over 40 years old
+        crowd_text1_2: (aged over 60 have a higher
+        crowd_text1_3: risk for glaucoma)
+        crowd_text2: Having a family history of glaucoma
+        crowd_text3: Being high nearsightedness (myopia)/farsightedness (hypermetropia)
+        crowd_text4: Having diabetes
+        crowd_text5: Suffering from hypertension
+        crowd_text6: Suffering from cardiovascular disease
+        crowd_text7: Having a history of eye injury
+        crowd_text8: Long-term use of steroids
+      service_glaucoma_diagnostic:
+        diagnostic_text1: Eye Pressure Test
+        diagnostic_text2: Visual Field Test
+        diagnostic_text3: Slit Lamp Exam
+        diagnostic_text4: Anterior Chamber Angle Assessment
+        diagnostic_text5: Optic Nerve Damage Evaluation
+        diagnostic_text6_1: Aqueous Humor Analysis
+        diagnostic_text6_2:  ""
+      service_glaucoma_treat:
+        treat_remedy1: Treatment Options
+        treat_name1: Name
+        treat_range1: Suitability
+        treat_remedy2: Common Treatment Options
+        treat_name2_1: Trabeculectomy
+        treat_name2_2: Non-Penetrating Trabeculectomy
+        treat_name2_3: Glaucoma Drainage Device
+        treat_name2_4:  |
+                        Cyclocryotherapy/
+                        Cyclophotocoagulation
+        treat_range2_1: It is suitable for most patients with glaucoma who need to receive external filtration surgery.
+        treat_range2_2: It is an option for open-angle glaucoma, especially for patients with severe visual field loss. It is not suitable for angle-closure glaucoma. 
+        treat_range2_3: The pressure lowering might be less than trabeculectomy, but risks are also less.
+        treat_range2_4: It is for patients with severe, advanced glaucoma or refractory glaucoma.
+        treat_range2_5: It is for patients with severe, advanced glaucoma or refractory glaucoma. (The micropulse cyclophotocoagulation can be use mild or moderate glaucoma.)
+        treat_remedy3_1: Acute Glaucoma Treatment Options
+        treat_remedy3_2: ""
+        treat_name3_1: Anterior Chamber Paracentesis (ACP)
+        treat_name3_2: Argon Laser Peripheral Iridoplasty (ALPI) and Laser Iridotomy (LI)
+        treat_range3_1: Suitable for acute glaucoma patients with high eye pressures.
+        treat_range3_2: It is a laser treatment used as the prevention of acute angle-closure glaucoma attack.
+        treat_remedy4_1: Glaucoma Surgeries Combine with Cataract Surgeries
+        treat_remedy4_2: ""
+        treat_name4: Cataract Surgery
+        treat_range4: Suitable for most glaucoma patients with cataract.
+      service_glaucoma_guardAgainst:
+        guardAgainst_text1: Schedule a Consultation with your Eye Doctor
+        guardAgainst_text2: Prevent High Myopia
+        guardAgainst_text3: Maintain Good Lifestyle
+        guardAgainst_detail1: It is recommended that people over 40 or those at high risk of glaucoma should have an eye examination every six months or annually.
+        guardAgainst_detail2: Develop good eye health starting from childhood to prevent high myopia and this reduces the risk of glaucoma.
+        guardAgainst_detail3: Diabetes, hypertension, and cardiovascular disease may increase the risk of glaucoma. Quit smoking and drinking, have enough sleep, balanced diet, and more aerobic exercise, all of them help to reduce the risk of glaucoma.
+      service_glaucoma_navgation:
+        navgation_text1: Causes
+        navgation_text2: Symptoms
+        navgation_text3: Chronic Glaucoma
+        navgation_text4: Pisk Factors
+        navgation_text5: Diagnosis
+        navgation_text6: Treatment
+        navgation_text7: Prevention
+        navgation_text8: FAQ
+      service_glaucoma_down: 青光眼
+      service_glaucoma_down_text: 下載小冊子
     xerophthalmia: Dry Eyes
     muscae_volitantes: Eye floaters
     conjunctivitis: Conjunctivitis

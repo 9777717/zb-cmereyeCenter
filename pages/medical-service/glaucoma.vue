@@ -4,6 +4,8 @@ import { getPdf } from '@/assets/js/common'
 definePageMeta({
   layout: 'page',
 })
+
+const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.medical_service_glaucoma_head'),
@@ -415,7 +417,7 @@ const callTel = () => {
     <div class="glaucoma-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
-    <div class="glaucoma-in">
+    <div class="glaucoma-in" :class="{'glaucoma-in-en': locale === 'en'}">
       <!-- 青光眼 -->
       <div>
         <!-- 请勿删除 -->
@@ -596,7 +598,11 @@ const callTel = () => {
       </div>
       <!-- 青光眼的類別 -->
       <div id="category">
-        <div>青光眼的類別</div>
+        <div>{{
+                  $t(
+                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title17'
+                  )
+                }}</div>
         <!-- 慢性青光眼 -->
         <div>
           <div>
@@ -2517,11 +2523,15 @@ const callTel = () => {
 
         & > div {
           height: 106px;
-          border-top: 1px solid #939c9b;
-          border-left: 1px solid #939c9b;
+          
+          // border-left: 1px solid #939c9b;
           display: flex;
           align-items: center;
           justify-content: center;
+          &:not(:first-child){
+            border-left: 1px solid #939c9b;
+            border-top: 1px solid #939c9b;
+          }
         }
 
         & > div:nth-child(1) {
@@ -2702,6 +2712,132 @@ const callTel = () => {
 
   & > div:nth-child(2) {
     margin: 0;
+  }
+  &.glaucoma-in-en{
+    & > div:nth-child(3) {
+      &>div:nth-child(2){
+        & > :nth-child(2) {
+          height: auto;
+          position: initial;
+          margin-left: -60px;
+        }
+      }
+    }
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        & > div:nth-child(3) {
+          & > div{
+            &> div{
+              height: auto;
+              line-height: 1.6;
+              padding: 18px 18px 18px 60px;
+              text-align: left;
+              margin-left: 40px;
+            }
+            &>svg{
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(5) {
+      &> div:nth-child(2){
+        & > div:nth-child(2) {
+          height: auto;
+        }
+      }
+      &> div:nth-child(3){
+        & > div:nth-child(2) {
+          height: auto;
+        }
+      }
+      &> div:nth-child(5){
+        & > div:nth-child(2) {
+          &> div:nth-child(4){
+            & > div {
+              display: flex;
+              flex-direction: column;
+              &> div:nth-child(1){
+                font-size: 18px;
+                letter-spacing: 0;
+              }
+              &> div:nth-child(2){
+                height: auto;
+                flex: 1;
+                font-size: 18px;
+                line-height: 1.6;
+                letter-spacing: .5px;
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+      }
+      &> div:nth-child(7){
+        & > div:nth-child(2) {
+          padding: 60px 44px 100px 41px;
+          &> div:nth-child(3){
+            &>div{
+              &> div:nth-child(1){
+                font-size: 20px;
+              }
+              &> div:nth-child(2){
+                font-size: 18px;
+                line-height: 1.6;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+    &> div:nth-child(8){
+      & > div:nth-child(3) {
+        &>div{
+          &>div:nth-child(1){
+            text-align: center;
+          }
+          &>div:nth-child(2){
+            &>div{
+              &>div{
+                font-size: 20px;
+                height: 140px;
+              }
+            }
+          }
+          &>div:nth-child(3){
+            &>div{
+              &>div{
+                height: 140px;
+                font-size: 20px;
+                line-height: 1.4;
+              }
+            }
+          }
+        }
+      }
+    }
+    &> div:nth-child(9){
+      &> div:nth-child(2){
+        &> div:nth-child(1){
+          &>div{
+            &> div:nth-child(1){
+              &> div:nth-child(2){
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &>div:last-child{
+      &>div:nth-child(1){
+        width: max-content;
+        padding-right: 20px;
+      }
+    }
   }
 }
 
@@ -3535,6 +3671,136 @@ const callTel = () => {
             width: 100%;
             height: 100%;
           }
+        }
+      }
+    }
+    &.glaucoma-in-en{
+      & > div:nth-child(3) {
+        &>div:nth-child(2){
+          & > :nth-child(2) {
+            margin-left: 0;
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(3) {
+            & > div{
+              &> div{
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            & > div{
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        &> div:nth-child(5){
+          & > div:nth-child(2) {
+            &> div:nth-child(3){
+              font-size: 18px;
+            }
+            &> div:nth-child(4){
+              & > div {
+                display: initial;
+                &> div:nth-child(2){
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        &> div:nth-child(7){
+          & > div:nth-child(2) {
+            padding: 27px 0 0 0;
+            &> div:nth-child(3){
+              &>div{
+                &> div:nth-child(1){
+                  align-items: center;
+                }
+              }
+            }
+          }
+        }
+
+      }
+      & > div:nth-child(7) {
+        & > div:nth-child(3) {
+          & > div{
+            & > div:nth-child(2) {
+              & > div:nth-child(2) {
+                line-height: 1.2;
+              }
+            }
+          }
+        }
+      }
+      &> div:nth-child(8){
+        width: 100%;
+        & > div:nth-child(2) {
+          padding: 0 30px;
+        }
+        & > div:nth-child(3) {
+          &>div{
+            &>div:nth-child(1){
+              width: 20%;
+              font-size: 14px;
+            }
+            &>div:nth-child(2){
+              width: 40%;
+              &>div{
+                &>div{
+                  font-size: 14px;
+                  height: 300px;
+                }
+              }
+            }
+            &>div:nth-child(3){
+              width: 40%;
+              &>div{
+                &>div{
+                  height: 300px;
+                  font-size: 14px;
+                  line-height: 1.2;
+                  margin-left: 0;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+          & > div:nth-child(4) {
+            &>div{
+              height: 200px;
+            }
+          }
+        }
+      }
+      &> div:nth-child(9){
+        &> div:nth-child(2){
+          &> div:nth-child(1){
+            &>div{
+              &> div:nth-child(1){
+                &> div:nth-child(2){
+                  font-size: 16px;
+                  width: max-content;
+                  max-width: 80vw;
+                  padding-right: 20px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      &>div:last-child{
+        &>div:nth-child(1){
+          font-size: 18px;
         }
       }
     }
