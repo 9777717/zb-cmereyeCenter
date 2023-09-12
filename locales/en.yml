@@ -772,6 +772,160 @@ pages:
       service_glaucoma_down: 青光眼
       service_glaucoma_down_text: 下載小冊子
     xerophthalmia: Dry Eyes
+    xerophthalmia_con: 
+      xerophthalmiaInfo: 
+        name: What is dry eye？
+        text: "The tear layer on the surface of the eye (tear film) is very important for maintaining health and comfort of the eye, as well as good vision. Tear film is made up of three layers: the lipid layer on the outside, the aqueous layer in the middle, and the inner, mucin layer. If one of the layers does not function properly, changes in the quality or secretion of tears, and lack of eye moisturization may result, and dry eye is caused."
+      xerophthalmiaType:
+        name: Symptoms
+        text1: Eye dryness
+        text2: Tiredness, eyelid tightness
+        text3: Scratchy sensation in eyes, grittiness
+        text4: Stinging and burning sensation
+        text5: Stringy mucus in or around eyes
+        text6: Eye redness
+        text7: Sensitivity to wind or light, allergy
+        text8: In serious cases, patients will experience corneal abrasion and stringy mucus etc.
+      factor:
+        name: Causes
+        context: "Tear film is on the surface of the eye, covering the cornea and conjunctiva to keep the surface of eyes lubricated, smooth and clear, has three layers (from outside to inside):"
+        title1: Lipid layer
+        text1: It is in the outermost of tear film, is secreted by the Meibomian glands of the eyelid. The main function is to increase the surface tension of the tear film, avoid the evaporation of the aqueous layer, and moisturize the eyelids and the surface of the eyeball.
+        title2: Aqueous layer
+        text2:  It is in the middle layer, secreted by the lacrimal gland. It moisturizes the surface of the eye, provides oxygen to the cornea, and has the function of sterilizing and removing metabolites.
+        title3: Mucin layer
+        text3: Produced by the goblet cells of conjunctiva, this layer is in the innermost layer. It makes the aqueous layer can be evenly distributed on the surface of the cornea and conjunctiva, reducing the friction generated when winking the eyes.
+        context2: If one of the layers of tear film decreases in tear production or increased tear evaporation, dry eyes may occur.
+        tearFilm: 
+          - title: Lipid layer deficiency
+            text: Meibomian glands do not function well due to eyelid disease
+          - title: Inadequate amount of tears
+            text: Aging lacrimal gland with ages
+            text2: Congenital alacrima
+            text3: Autoimmune diseases
+            text4: Wearing contact lenses
+            text5: Long-term use of certain eye drops or drugs
+            text6: "Hormonal imbalance (i.e.: menopause)"
+            text7: "Systemic disease (i.e.: Sjogren's syndrome)"
+          - title: Mucin layer deficiency
+            text: Lack of vitamin A or chronic conjunctivitis
+          - title: Excessive tear evaporation or lipid film unevenly distributed
+            text: Incomplete closure of eyelid
+            text2: Always stay in the dry environment
+            text3: Low blink rate (Watching TV, computer, or smartphone for a long time)
+      category: 
+        name: Types of dry eyes
+        btnText: 想知道屬於哪一種類別？
+        title1: Aqueous-deficient dry eye
+        text1: "If the lacrimal gland is damaged, degraded, or abnormal, the secretion of tear will decrease. Aqueous-deficient dry eye may be caused by: the lacrimal glands degenerate with increasing age; women who experience menopause; or autoimmune diseases."
+        title2: Evaporative dry eye
+        text2: The meibomian glands are near the eyelashes, and their main function is to secrete lipid of the tear film onto the ocular surface. A healthy lipid layer can slow down the volatilization of the water component of the tear film. If the quality of the lipid layer is not good (due to eyelid diseases, i.e. "Meibomian gland dysfunction”), the water component of tears will evaporate quickly and cause dryness.
+        title3: Mixed (Aqueous-deficient & Evaporative dry eye)
+        text3: Clinically, most patients have mixed dry eye syndrome, including insufficient tear secretion and increased tear evaporation rates.
+      highRisk:
+        name: Risk factors
+        btnText: 懷疑是高危人士? 立即預約檢查
+        text1: People who wear contact lenses for a long time
+        text2: People who stare at screens for a long time without enough blinking
+        text3: |
+                Long-term drug uses,
+                such as: vasoconstrictors,
+                antidepressants,sleeping pills,
+                blood pressure medications
+        text4: |
+                Stay in a low humidity environment,
+                such as: indoor places with
+                air-conditioning or heating,
+                or exposure to sunlight
+        text5: |
+                Patients with
+                immune system diseases,
+                such as: arthritis, diabetes,
+                thyroid disease
+        text6: Women in Menopause(~over 45 years old)
+      fourthly: 
+        name: Diagnosis
+        context1: The patient’s symptom and living habit will be first analyzed by the ophthalmologist. The severity of dry eye will be determined by ocular examinations, including checking corneal surface, eyelids and meibomian glands, etc.
+        name2: Dry Eye Workshop︰Dry Eye Severity
+        name3: Diagnostic Process
+        tables: 
+          th_1: Level
+          th_2: "1"
+          th_3: "2"
+          th_4: "3"
+          th_5: "4"
+          tb_1: Severity
+          tb_2: Mild			
+          tb_3: Moderate
+          tb_4: Severe
+          tb_5: Very Severe
+          tb_6: Frequency	
+          tb_7: Seldom
+          tb_8: Sometimes
+          tb_9: |
+                Frequently
+                and regular
+          tb_10: |
+                Always and
+                constant
+        process1: Collect information on history, symptoms, and eye habits,which help to identify the cause(s) of dry eye.
+        process2: "Ocular examinations: i.e. the eyelid and cornea."
+        process3: Check the stability of the tear film and measure the tear break-up time.
+        process4: Check the stability of the tear film and measure the tear break-up time.
+        name4: Common diagnostic tests
+        testMethod:
+          - title: "Schirmer's test"
+            text1: "Performing a Schirmer’s test: first, apply one drop of anesthetic eye drop into the patient’s eyes and wait for a few minutes. Then place the filter paper on the inner corner of the eyes and ask the patient to close the eyes for 5 minutes to allow the filter paper to absorb the tears. Finally, measure the length of the wet part of the filter paper."
+            text2: "If the length is less than or equal to 5 mm, one should alert the doctor. The ophthalmologist will need to apply additional tests (e.g.: a fluorescein eye stain test) to confirm the diagnosis of dry eyes. If the length is less than 5 mm and a fluorescein eye stain test is positive, the patient probably has already suffered from dry eyes."
+          - title: "Slit-lamp exam"
+            text: To test the stability of tear film, the ophthalmologist will use a slit lamp and a yellow dye drop called fluorescein. Put the fluorescein on the surface of a person's eyes to observe the break-up time of tear film. If the tear film breaks up within 5 seconds, it is likely dry eyes.
+      means: 
+        name: Treatments
+        context: The treatments of dry eyes are to relieve the symptoms of dry eyes, increasing tears on the surface of eyeballs, increasing tear secretion and reducing tear evaporation. Dry eye is a chronic disease syndrome which requires long-term treatment. Patients’ living habits are also important for relieving the symptoms.
+        name1: Types of Treatments
+        name1_1: Avoid Triggers
+        context1: "Should avoid dry eye triggers, such as: using a computer for a long time, staying in air-conditioned rooms, and dusty environments. Patients with meibomian glands dysfunction should clean their eyelids and apply antibiotics etc."
+        name1_2: Artificial tear
+        context2_1: ""
+        context2_2: Applying artificial tear is also an efficient treatment for dry eyes, other than the approaches that target the underlying cause of this disease. With the continuous advancement of pharmaceutics, artificial tears have undergone improvements. In addition, there are many new medications that target the three-layered structure of tear film as a supplement therapy to treat dry eyes. This greatly improves the efficacy of dry eyes medication treatment.
+        context2_3: "Lubricant for eyes is needed to be chosen on the market. Many eye drops contain preservatives for a longer-term storage. Normally, lubricants (i.e., artificial tears) that contain preservatives will not cause damage to the ocular surface. However, preservatives in eye drops have a higher risk of causing discomfort in dry eye patients, so they should use lubricants without preservatives to avoid discomfort such as eye allergy, etc. Generally, lubricants can be divided to eye drops and ointments:"
+        title2_1: Eye drops
+        text2_1: It is convenient and simple to use by directly drop on the surface of the eye. If the symptoms are serious, it may need to be used frequently.
+        title2_2: Eye ointment
+        text2_2: The artificial tears ointment has a high degree of adhesion so it can stay in the eyes for a longer time, keeping the eyes moist. However, they might be too sticky to cause short-term blurred vision. Therefore, it is recommended to use it when the eyes are resting (may use before going to bed).
+        name1_3: Reduce tear loss
+        context3: Use lacrimal plugs to block the drainage holes in the tear duct in order to reduce tear loss; patients with serious conditions can consider permanently closing their tear ducts.
+        name1_4: Scleral lens
+        context4: The scleral lens is a highly breathable special contact lens which covers the cornea and surrounding surface of the cornea, making tears stay on the ocular surface and moisturize the surface of the cornea.
+        name1_5: Others
+        text5_1: "Avoid taking medicines that reduce tear production, such as: anti-hypertensive drugs, antidepressants and analogues of atropine."
+        text5_2: The dry eye type that is caused by a problem of the immune system, immunosuppressive drugs can be used or hormones can be applied in a localized area for a short period of time.
+        text5_3: Reduce the time of wearing contact lenses.
+        text5_4: Drink enough water to keep your body hydrated.
+        text5_5: "Eat more fruits and vegetables that are good for health of eyes, such as: food rich in vitamin A (milk, eggs, carotene-rich vegetables, oral cod liver oil, etc.)"
+      prevent:
+        name: Prevention
+        title1:  Avoid air blowing in your eyes
+        text1: Don't direct fans, heaters, air conditioners toward your eyes.
+        title2: Take eye breaks during long tasks
+        text2: If you're reading or doing another task that requires visual concentration, take periodic eye breaks. Close your eyes for 20 seconds or look far, every 20 minutes.
+        title3: Blink repeatedly
+        text3: Blink repeatedly for a few seconds to help spread your tears evenly over your eyes.
+        title4: Avoid wearing contact lenses too long
+        text4: People with dry eyes should pay attention to the time of wearing contact lenses, so as to avoid dry eyes becoming worse.
+        title5: Eating more food which are good for eyes health
+        text5: Foods containing vitamins A, C, E, Omega-3 or lutein should be eaten more to maintain eyes’ health
+        title6: Using a warm compress for the eyes
+        text6: Use hot towels, hot compress bags, hot compress eye masks and apply on the eyes for 15 minutes to keep the eyes moist, in the mornings and evenings. Remember to keep the temperature at 40°C to avoid burns.
+      navLists: 
+        name1: Dry Eyes
+        name2: Symptoms
+        name3: Causes
+        name4: Types
+        name5: Risk Factors
+        name6: Diagnosis
+        name7: Treatments
+        name8: Prevention
     muscae_volitantes: Eye floaters
     conjunctivitis: Conjunctivitis
     maculopathy: Macular Degeneration

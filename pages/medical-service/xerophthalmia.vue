@@ -5,6 +5,8 @@ definePageMeta({
   layout: 'page',
 })
 
+const locale = useState<string>('locale.setting')
+
 // 传递背景色
 const backgd = [
   '#b6b3e0;',
@@ -15,177 +17,187 @@ const backgd = [
 const xerophthalmiaType = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e9b7f8f01ed8bafc.png',
-    text: '眼睛乾澀',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2429bd6a29fb645c.png',
-    text: '容易疲倦\n眼皮緊繃',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f79ac0c36913185d.png',
-    text: '眼癢、\n有異物感',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/c0fd1f575a8b07cc.png',
-    text: '眼痛、\n有灼熱感',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4623f3b40418874b.png',
-    text: '眼睛分泌物、\n黏稠',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4b9fe2d23526754a.png',
-    text: '眼睛會出現\n紅腫、充血',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a7e034924424d921.png',
-    text: '怕風、畏光、\n對外在刺激很敏感',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text7',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/6271382192cc8a11.png',
-    text: '嚴重者會角膜破皮\n視力模糊',
+    text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text8',
   },
 ]
 const factor = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a3f259e078ea72a5.png',
     mbImg: 'https://static.cmereye.com/imgs/2023/07/0aa695d446127914.jpg',
-    title: '脂質層',
-    text: '由眼瞼的皮脂腺所分泌，在最外層，主要功用是增加淚膜表面張力，延緩水液層的蒸發，使眼瞼及眼球表面濕潤。',
+    title: 'pages.medical_service.xerophthalmia_con.factor.title1',
+    text: 'pages.medical_service.xerophthalmia_con.factor.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4636b55143dcbe36.png',
     mbImg: 'https://static.cmereye.com/imgs/2023/07/473ad45c51c10398.jpg',
-    title: '水液層',
-    text: '由淚腺所分泌，在中間層，使眼睛的表面濕潤、提供角膜氧氣、有殺菌及清除代謝物的作用。',
+    title: 'pages.medical_service.xerophthalmia_con.factor.title2',
+    text: 'pages.medical_service.xerophthalmia_con.factor.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b2645285665a9dfe.png',
     mbImg: 'https://static.cmereye.com/imgs/2023/07/d37cda7797106efa.jpg',
-    title: '黏液層',
-    text: '由結膜的杯狀細胞所產生，在最內層，使水液層能均勻分佈在結膜表面，減少貶眼時產生的摩擦。',
+    title: 'pages.medical_service.xerophthalmia_con.factor.title3',
+    text: 'pages.medical_service.xerophthalmia_con.factor.text3',
   },
 ]
 const tearFilm = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4b8a7f27d3efb04c.png',
-    title: '脂質層分泌不足',
-    text: ['由於眼瞼疾病造成眼瞼皮脂腺功能不良'],
+    title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[0].title',
+    text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[0].text'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/cb6ed9e181f060df.png',
-    title: '水液層淚腺所分泌的淚液不足',
+    title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].title',
     text: [
-      '年齡增長，淚腺功能下降',
-      '先天性無淚腺',
-      '自體免疫疾病',
-      '長時間配戴隱形眼鏡',
-      '長期使用某些眼藥水或藥物',
-      '荷爾蒙影響(如︰更年期婦女)',
-      '某些全身性疾病(如：乾燥綜合症)',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text2',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text3',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text4',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text5',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text6',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text7',
     ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f0c095b2a5ff1d8e.png',
-    title: '黏液層分泌不足',
-    text: ['缺乏維他命Ａ、慢性結膜炎等'],
+    title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[2].title',
+    text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[2].text'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2f4d44f6b2c6d83d.png',
-    title: '淚液過度蒸發或淚膜分佈不均',
+    title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].title',
     text: [
-      '眼瞼疾病造成眼瞼閉合不良',
-      '長期處於乾燥的環境',
-      '眨眼次數減少（長時間注視電子螢幕而減少眨眼次數）',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].text',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].text2',
+      'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].text3',
     ],
   },
 ]
 const category = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a9e66bca4e6780d0.png',
-    title: '缺水型',
-    text: '若淚腺受到破壞、功能退化或異常，淚水分泌會減少。當人年紀增長以致淚腺退化；或女士進入更年期後荷爾蒙改變；或有自體免疫性疾病；這些情況都可能引致淚水分泌不足，造成「缺水型」乾眼症。',
+    title: 'pages.medical_service.xerophthalmia_con.category.title1',
+    text: 'pages.medical_service.xerophthalmia_con.category.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/6b86edd7b9d813ec.png',
-    title: '缺油型',
-    text: '瞼板腺的開口在上下睫毛根部附近，主要的功能為分泌脂質層，健康的脂質層可減緩淚膜水液層的揮發。當淚液缺少脂質層，水分會快速蒸發，造成「瞼板腺功能障礙」。',
+    title: 'pages.medical_service.xerophthalmia_con.category.title2',
+    text: 'pages.medical_service.xerophthalmia_con.category.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bde93bbfe96c35e9.png',
-    title: '混合型﹙缺水及缺油﹚',
-    text: '臨床上，多數患者屬於混合型乾眼症，即是淚水分泌不足（缺水）及淚液蒸發太快（缺油）兩者症狀並存。',
+    title: 'pages.medical_service.xerophthalmia_con.category.title3',
+    text: 'pages.medical_service.xerophthalmia_con.category.text3',
   },
 ]
 const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2b5ce4abba134883.png',
-    text: '長時間配戴隱形眼鏡人士',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/421a73f210b33563.png',
-    text: '長時間注視電子螢幕人士',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8661e3413fd98abf.png',
-    text: '長期服用藥物，\n如︰血管收縮劑、抗抑鬱藥、\n安眠藥、降血壓藥',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/933a2eee445d7e09.png',
-    text: '長時間處於乾燥環境，\n如︰有冷氣或暖氣的室內地方、\n陽光下暴曬',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3d263ab67d6aa0e8.png',
-    text: '免疫系統疾病患者，\n如︰關節炎、糖尿病、\n甲狀腺疾病等',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3267576cc1afabaa.png',
-    text: '更年期婦女﹙約45歲以上﹚',
+    text: 'pages.medical_service.xerophthalmia_con.highRisk.text6',
   },
 ]
 const fourthly = [
-  ['級別', '第一級', '第二級', '第三級', '第四級'],
-  ['程度', '輕微', '中度', '嚴重', '非常嚴重'],
   [
-    '頻率',
-    '偶爾不適',
-    '較常不適',
-    '經常並持續\n感到不適',
-    '嚴重不適，\n持續不減',
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.th_1',
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.th_2',
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.th_3',
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.th_4',
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.th_5'],
+  [
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_1', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_2', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_3', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_4', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_5'],
+  [
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_6', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_7', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_8', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_9', 
+    'pages.medical_service.xerophthalmia_con.fourthly.tables.tb_10'
   ],
 ]
 const process = [
   {
     id: '1',
-    text: '詳細問診以了解應診者的病徵及用眼習慣等，以評估導致乾眼的主因。',
+    text: 'pages.medical_service.xerophthalmia_con.fourthly.process1',
   },
   {
     id: '2',
-    text: '檢查眼瞼和角膜。',
+    text: 'pages.medical_service.xerophthalmia_con.fourthly.process2',
   },
   {
     id: '3',
-    text: '測試以評估淚膜穩定性及量度淚水層破裂時間。',
+    text: 'pages.medical_service.xerophthalmia_con.fourthly.process3',
   },
   {
     id: '4',
-    text: '涙水測試以量度淚水分泌。',
+    text: 'pages.medical_service.xerophthalmia_con.fourthly.process4',
   },
 ]
 const testMethod = [
   {
     id: '1',
-    title: '淚液分泌試紙測試',
+    title: 'pages.medical_service.xerophthalmia_con.fourthly.testMethod[0].title',
     text: [
-      '進行試紙測試時，首先會在應診者的眼睛滴入表面麻醉的眼藥水，數分鐘後將淚液分泌試紙放在眼角內側，閉上眼5分鐘，讓濾紙吸收淚水，取出濾紙後量度淚水弄濕濾紙的長度。',
-      '如果試紙淚水長度少於或等於5毫米，很可能已經患上乾眼症，屆時醫生會應用其他檢查（例如：角膜染色檢查等）來判斷病人是否存在乾眼。一般來說，若淚水長度少於5毫米，而且角膜染色檢查（+），應診者則多已患上乾眼症。',
+      'pages.medical_service.xerophthalmia_con.fourthly.testMethod[0].text1',
+      'pages.medical_service.xerophthalmia_con.fourthly.testMethod[0].text2',
     ],
   },
   {
     id: '2',
-    title: '裂隙燈淚膜破裂測試',
+    title: 'pages.medical_service.xerophthalmia_con.fourthly.testMethod[1].title',
     text: [
-      '此測試是用作分析淚液功能穩定性，醫生會使用裂隙燈及螢光染色，在應診者眼睛的表面點上螢光素，把淚膜染色去觀察淚膜的破裂時間。若淚膜在5秒內破裂，很大機會患上乾眼症。',
+      'pages.medical_service.xerophthalmia_con.fourthly.testMethod[1].text',
     ],
   },
 ]
@@ -207,50 +219,50 @@ const means = [
 const wayOther = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7caf90b190bdd2cc.png',
-    text: '盡量避免服用減少淚液分泌的藥物，如：降血壓藥、抗抑鬱藥、阿托品類似物等。',
+    text: 'pages.medical_service.xerophthalmia_con.means.text5_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e69cbe139e039d40.png',
-    text: '因免疫因素而引起的乾眼問題，可加用免疫抑制劑或短期局部使用激素。',
+    text: 'pages.medical_service.xerophthalmia_con.means.text5_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/82c69bfc9bef143a.png',
-    text: '減少配戴隱形眼鏡的時間。',
+    text: 'pages.medical_service.xerophthalmia_con.means.text5_3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d2cfb7e362fe19ea.png',
-    text: '多喝水來補充身體水份。',
+    text: 'pages.medical_service.xerophthalmia_con.means.text5_4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/20403c32e3ae1ccf.png',
-    text: '多吃護眼蔬果來補充營養所需，可食用含豐富維他命A的食物，如：牛奶、雞蛋，也可食用含豐富胡蘿蔔素的蔬菜。',
+    text: 'pages.medical_service.xerophthalmia_con.means.text5_5',
   },
 ]
 // 預防乾眼症
 const prevent = [
   {
-    title: '避免讓風直接吹眼',
-    text: '不要把風扇、暖氣、冷氣吹出來的風直接往眼睛吹，以免雙眼水分抽走。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title1',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text1',
   },
   {
-    title: '讓眼睛有充分休息',
-    text: '看書本或電子螢幕20分鐘，建議雙眼休息20秒或者遠望20呎﹙約50厘米﹚外的景觀，以紓緩眼乾不適。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title2',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text2',
   },
   {
-    title: '多眨眼保持眼睛濕潤',
-    text: '每數分鐘就要閉上雙眼休息一下，或者眨眼數下，讓淚液更平均分佈在眼球上， 維持淚膜正常狀態。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title3',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text3',
   },
   {
-    title: '避免長期配戴隱形眼鏡',
-    text: '乾眼症患者的角膜比較容易受損，因此要注意配戴隱形眼鏡的時間， 以免乾眼症惡化。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title4',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text4',
   },
   {
-    title: '多吃護眼食物',
-    text: '含有維他命Ａ、Ｃ、Ｅ，Omega-3或葉黃素的食物，適宜多吃， 以保持雙眼健康和促進淚液分泌。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title5',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text5',
   },
   {
-    title: '熱敷眼睛以紓緩症狀',
-    text: '早晚使用熱毛巾、熱敷袋、熱敷眼罩熱敷眼睛15分鐘，以保持眼晴濕潤， 不過要留意溫度應維持在40°C，避免灼傷。',
+    title: 'pages.medical_service.xerophthalmia_con.prevent.title6',
+    text: 'pages.medical_service.xerophthalmia_con.prevent.text6',
   },
 ]
 useHead(() => ({
@@ -282,35 +294,35 @@ useHead(() => ({
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '乾眼症',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name1',
     anchorLink: '/medical-service/xerophthalmia#xerophthalmiaInfo',
   },
   {
-    anchorName: '症狀',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name2',
     anchorLink: '/medical-service/xerophthalmia#xerophthalmiaType',
   },
   {
-    anchorName: '成因',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name3',
     anchorLink: '/medical-service/xerophthalmia#factor',
   },
   {
-    anchorName: '類別',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name4',
     anchorLink: '/medical-service/xerophthalmia#category',
   },
   {
-    anchorName: '高危人士',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name5',
     anchorLink: '/medical-service/xerophthalmia#highRisk',
   },
   {
-    anchorName: '診斷',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name6',
     anchorLink: '/medical-service/xerophthalmia#fourthly',
   },
   {
-    anchorName: '治療',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name7',
     anchorLink: '/medical-service/xerophthalmia#means',
   },
   {
-    anchorName: '預防方法',
+    anchorName: 'pages.medical_service.xerophthalmia_con.navLists.name8',
     anchorLink: '/medical-service/xerophthalmia#prevent',
   },
 ]
@@ -333,7 +345,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>乾眼症</div>
+          <div>{{$t('pages.medical_service.xerophthalmia')}}</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>
@@ -349,13 +361,13 @@ const callTel = () => {
       </div>
       <serviceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
       <!-- 内容 -->
-      <div class="xerophthalmia">
+      <div class="xerophthalmia" :class="{'xerophthalmia-en': locale === 'en'}">
         <!-- 什麼是乾眼症 -->
         <div id="xerophthalmiaInfo">
           <div>
-            <div>什麼是乾眼症 ？</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.xerophthalmiaInfo.name')}}</div>
             <div>
-              眼睛表面的淚水層（淚膜）對於維持眼睛健康、舒適及良好的視力十分重要。淚膜中的脂質、水液和黏液層，其中一層出現問題，以致淚水質量或分泌量有變，便會導致眼睛滋潤不足，並造成「乾眼症」。
+              {{$t('pages.medical_service.xerophthalmia_con.xerophthalmiaInfo.text')}}
             </div>
           </div>
           <div>
@@ -368,21 +380,21 @@ const callTel = () => {
         </div>
         <!-- 乾眼症症狀 -->
         <div id="xerophthalmiaType">
-          <div>乾眼症症狀</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.xerophthalmiaType.name')}}</div>
           <div>
             <div v-for="(item, index) in xerophthalmiaType" :key="index">
               <div><img :src="item.img" :alt="item.text" srcset="" /></div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
           <div @click="goWhatsApp()"><span>已出現以上症狀？</span> <span>立即聯絡我們</span></div>
         </div>
         <!-- 乾眼症成因 -->
         <div id="factor">
-          <div>乾眼症成因</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.factor.name')}}</div>
           <div>
             <div>
-              眼睛表面有一層淚膜，覆蓋在眼角膜及結膜上，形成一層濕潤保護膜，維持眼睛表面健康，淚液層由外到內可分為三層：
+              {{$t('pages.medical_service.xerophthalmia_con.factor.context')}}
             </div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png" />
@@ -397,20 +409,20 @@ const callTel = () => {
                   :src="item.img" />
               </div>
               <div>
-                <div>{{ item.title }}</div>
-                <div>{{ item.text }}</div>
+                <div>{{ $t(item.title) }}</div>
+                <div>{{ $t(item.text) }}</div>
               </div>
             </div>
           </div>
           <div>
-            <div>淚膜中若有一層分泌不足或分佈不均勻，均可能造成「乾眼症」。</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.factor.context2')}}</div>
             <div>
               <div v-for="(item, index) in tearFilm" :key="index">
                 <div><img :src="item.img" :alt="item.title" /></div>
                 <div>
-                  <div>{{ item.title }}</div>
+                  <div>{{ $t(item.title) }}</div>
                   <div v-for="(ele, index) in item.text" :key="index">
-                    · {{ ele }}
+                    · {{ $t(ele) }}
                   </div>
                 </div>
               </div>
@@ -419,13 +431,13 @@ const callTel = () => {
         </div>
         <!-- 乾眼症的類別 -->
         <div id="category">
-          <div>乾眼症的類別</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.category.name')}}</div>
           <div>
             <div v-for="(item, index) in category" :key="index">
               <div><img :src="item.img" :alt="item.title" /></div>
               <div>
-                <div>{{ item.title }}</div>
-                <div>{{ item.text }}</div>
+                <div>{{ $t(item.title) }}</div>
+                <div>{{ $t(item.text) }}</div>
               </div>
             </div>
           </div>
@@ -439,11 +451,11 @@ const callTel = () => {
         </div>
         <!-- 患乾眼症的高危人士 -->
         <div id="highRisk">
-          <div>患乾眼症的高危人士</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.highRisk.name')}}</div>
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
               <div><img :src="item.img" /></div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
           <div @click="callTel()">
@@ -456,41 +468,41 @@ const callTel = () => {
         </div>
         <!-- 乾眼症的診斷 -->
         <div id="fourthly">
-          <div>乾眼症的診斷</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.fourthly.name')}}</div>
           <div>
             <div>
-              眼科專科醫生會先了解患者病徵和生活習慣，再根據臨床檢查診斷乾眼症，包括︰檢查角膜表面有沒有傷口、眼皮是否清潔、瞼板腺是否暢通等。透過眼睛檢查，以判斷乾眼症的嚴重程度。
+              {{$t('pages.medical_service.xerophthalmia_con.fourthly.context1')}}
             </div>
-            <div>乾眼症研討會︰乾眼症四個等級</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.fourthly.name2')}}</div>
             <div>
               <div v-for="(item, index) in fourthly" :key="index">
                 <div v-for="(it, i) in item" :key="i">
-                  <div>{{ it }}</div>
+                  <div>{{ $t(it) }}</div>
                 </div>
               </div>
             </div>
-            <div>診斷過程</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.fourthly.name3')}}</div>
             <div>
               <div v-for="(item, i) in process" :key="i">
                 <div>
                   <div>setp</div>
                   <div>{{ item.id }}</div>
                 </div>
-                <div>{{ item.text }}</div>
+                <div>{{ $t(item.text) }}</div>
               </div>
             </div>
             <!-- 常見診斷測試 -->
             <div>
-              <div>常見診斷測試</div>
+              <div>{{$t('pages.medical_service.xerophthalmia_con.fourthly.name4')}}</div>
               <div>
                 <div>
                   <div v-for="(item, i) in testMethod" :key="i">
                     <div>
                       <div>{{ item.id }}</div>
-                      <div>{{ item.title }}</div>
+                      <div>{{ $t(item.title) }}</div>
                     </div>
                     <div v-for="(ele, index) in item.text" :key="index">
-                      <div>{{ ele }}</div>
+                      <div>{{ $t(ele) }}</div>
                     </div>
                   </div>
                 </div>
@@ -510,95 +522,97 @@ const callTel = () => {
         </div>
         <!-- 乾眼症治療 -->
         <div id="means">
-          <div>乾眼症治療</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.means.name')}}</div>
           <div>
-            乾眼症治療的主要目的是減輕乾眼症狀，增加眼球表面的淚液，增加淚水分泌和減少淚水蒸發。乾眼症是慢性疾病，需長期接受治療，並需要患者配合去改變生活習慣。
+            {{$t('pages.medical_service.xerophthalmia_con.means.context')}}
           </div>
           <div>
-            <div>治療方法</div>
-            <div v-for="(item, i) in means" :key="i">
+            <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1')}}</div>
+            <div v-show="locale !== 'en'" v-for="(item, i) in means" :key="i">
               <div>{{ item.title }}</div>
               <div>{{ item.text }}</div>
             </div>
-            <div>
-              <div>
-                <img src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png" />
+              <div v-show="locale !== 'en'">
+                <div>
+                  <img src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png" />
+                </div>
+                <div>
+                  <div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                        height="63px">
+                        <image x="0px" y="0px" width="76px" height="63px"
+                          xlink:href="data:img/png;base64,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" />
+                      </svg>
+                      <div>1</div>
+                    </div>
+                    <div>抑制炎症</div>
+                  </div>
+                  <div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                        height="63px">
+                        <image x="0px" y="0px" width="76px" height="63px"
+                          xlink:href="data:img/png;base64,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" />
+                      </svg>
+                      <div>2</div>
+                    </div>
+                    <div>改善不正常血管</div>
+                  </div>
+                  <div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                        height="63px">
+                        <image x="0px" y="0px" width="76px" height="63px"
+                          xlink:href="data:img/png;base64,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" />
+                      </svg>
+                      <div>3</div>
+                    </div>
+                    <div>減少眼睛蠕形蟎的數量</div>
+                  </div>
+                  <div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                        height="63px">
+                        <image x="0px" y="0px" width="76px" height="63px"
+                          xlink:href="data:img/png;base64,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" />
+                      </svg>
+                      <div>4</div>
+                    </div>
+                    <div>調節油脂分泌</div>
+                  </div>
+                  <div>
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
+                        height="63px">
+                        <image x="0px" y="0px" width="76px" height="63px"
+                          xlink:href="data:img/png;base64,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" />
+                      </svg>
+                      <div>5</div>
+                    </div>
+                    <div>激活瞼板腺功能</div>
+                  </div>
+                </div>
               </div>
-              <div>
+              <div v-show="locale !== 'en'">
                 <div>
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
-                      height="63px">
-                      <image x="0px" y="0px" width="76px" height="63px"
-                        xlink:href="data:img/png;base64,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" />
-                    </svg>
-                    <div>1</div>
-                  </div>
-                  <div>抑制炎症</div>
-                </div>
-                <div>
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
-                      height="63px">
-                      <image x="0px" y="0px" width="76px" height="63px"
-                        xlink:href="data:img/png;base64,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" />
-                    </svg>
-                    <div>2</div>
-                  </div>
-                  <div>改善不正常血管</div>
-                </div>
-                <div>
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
-                      height="63px">
-                      <image x="0px" y="0px" width="76px" height="63px"
-                        xlink:href="data:img/png;base64,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" />
-                    </svg>
-                    <div>3</div>
-                  </div>
-                  <div>減少眼睛蠕形蟎的數量</div>
-                </div>
-                <div>
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
-                      height="63px">
-                      <image x="0px" y="0px" width="76px" height="63px"
-                        xlink:href="data:img/png;base64,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" />
-                    </svg>
-                    <div>4</div>
-                  </div>
-                  <div>調節油脂分泌</div>
-                </div>
-                <div>
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76px"
-                      height="63px">
-                      <image x="0px" y="0px" width="76px" height="63px"
-                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAA/CAMAAAB9/952AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACeVBMVEVtbZ5SUoBgYI9hYZBhYZFiYpJiYpJgYI9SUoBSUoBhYZBjY5NmZpdqappSUoBSUoBhYZBkZJRqaptSUoBhYZFnZ5hSUoBhYZBoaJhSUoBSUoBgYJBlZZVSUoBhYZFSUoBSUoBjY5NSUoBgYI9lZZVSUoBSUoBmZpZSUoBgYI9mZpZSUoBSUoBSUoBSUoBiYpJSUoBsbJ1SUoBSUoBpaZlSUoBkZJRSUoBSUoBgYJBSUoBSUoBSUoBgYJBSUoBkZJRSUoBra5xSUoBSUoBiYpJSUoBmZpZSUoBSUoBqaptSUoBhYZBSUoBSUoBjY5NSUoBlZZVSUoBSUoBnZ5dSUoBpaZpSUoBSUoBSUoBoaJhtbZ5ra5xtbZ5qapptbZ5tbZ5nZ5htbZ5lZZVtbZ5tbZ5jY5NtbZ5hYZFtbZ5tbZ5gYI9sbJxtbZ5nZ5dtbZ5tbZ5jY5NtbZ5gYI9tbZ5tbZ5mZpZtbZ5hYZFtbZ5tbZ5tbZ5hYZFtbZ5mZpZtbZ5tbZ5gYJBtbZ5iYpJtbZ5tbZ5lZZVtbZ5gYI9oaJhtbZ5tbZ5gYJBpaZptbZ5gYJBtbZ5tbZ5oaJltbZ5gYJBnZ5dtbZ5tbZ5tbZ5hYZFtbZ5tbZ5gYI9jY5NtbZ5gYI9kZJRtbZ5gYJBtbZ5hYZBkZJRnZ5dtbZ5gYJBiYpFkZJRlZZVlZZZmZpZoaJhtbZ5tbZ5tbZ5WVoVSUoBkZJRYWIdmZpdaWoloaJlsbJ1cXItqappTU4FeXo1ra5xTU4JgYI9UVINiYpFWVoRXV4ZmZpZZWYhnZ5hbW4ppaZpdXYxqaptfX45UVIJhYZFVVYRjY5NXV4VlZZX///884+zJAAAAsHRSTlMAAApIbX2OglUSUrDl+dIDSsf7RWvrtlnv+yof0ZZk8RaveATQ4AjhWALfyAH+Opar/vgi9ou26xAxbNgELE7Fvf39MYCe2vQa/H9D5QudYcjOAudC+LEnk0vE/k761APtYNPiCKpyYe0PBv6G6PUZnpgh+ybeq1X+Nb1dRtzOAShahtwFzmwM7ugNHfd+NfEW9ZAZ6fkho2f9LwiztSXBPxvIRbTqUTp5w83X49OqgztQCM8AAAABYktHRNLg2K6wAAAAB3RJTUUH5wUPDy8kclWFPQAAAmpJREFUWMOt1wV3FDEQwPHp4VJoixZ3KO5e3N3d4XB3b3F3d3cbDjukuDvfiF7h2Eyy2d1k+H+A39t9ySQvANpCuXLnyeuUL79fBTRQwUKFE1HqbsS7IkXdpKTkFHTpng9WLEGlipdATfc9rZKgYKVKo7YHXlZqGRkrWw69euiBlQcJq5DiaeEjvVWxkoRVjqJPj7VYFSBY1Wp+FOKTpxqreg2ChWr6W4jPNFgtELG02kEszHruatWpS7DkQBbiCzerXn0QsQYBLYy+dMEagoglNQqK4SvVatxExEJNA1sYfa1gzUDEmge3XOa9RUsRaxX8J2O9kbDWIGIBdqvYW2q1aSti6b5TJPWOYO1AxNobWvhetDqAiIU6mmL4wbE6dSZYF2MLPzpYVyBYN3MMP8Wt7j0o1tMC+xw/inoBwXpbWIhf/lh9+lKsnxWW9TUH6w8UG2CF4beYNXCQhA22w6Lfs7EhIGFD7TD8EYkMAxkz37J/+5k6XMFMB/Nfv0aAgtlaiCP/JzZKxUbba2MUbKw9Nm68jE2wx3CijE1iYJOnSFiYgeFUCZvGwabPoNjMWRxtNsVgDgebO49i8zkYLqDYQuvpjLVoMcFgCevTllJsGQtbvoJgvCXAlRRbxcJwNcFgDQtbm0GwTOuzO6d1BIP1LGzDRoLBJpa2mWJbtnKwbdsJBjt2crRdFIPdiQxsz16KQfo+hrZfwuDAQXvs0GEJgzSjxwXtiIwBHLVehmPHFQxOnDR7rTidUjGA02cs7/izLhjAubDBI8/pfIYblt2Fi5fML63LGiy2tFeuhq9dv3Ez3q3bft1J+A1XGwN3dGGhCAAAAABJRU5ErkJggg==" />
-                    </svg>
-                    <div>5</div>
-                  </div>
-                  <div>激活瞼板腺功能</div>
+                  乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
                 </div>
               </div>
-            </div>
-            <div>
-              <div>
-                乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
-              </div>
-            </div>
+            
+            
             <!-- 減少淚液流失 -->
             <div>
               <div>
-                <div>使用人工淚液</div>
+                <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1_2')}}</div>
                 <div>
-                  應用人工淚液（盡量使用不含防腐劑的人工淚液），嚴重者可能需要使用自體血清。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.context2_1')}}
                 </div>
                 <div>
-                  乾眼症治療除了針對病因治療外，使用人工淚液也是有效的方法。隨著藥物學不斷發展，人工淚液不斷改良。現時有不少新藥物用於治療乾眼症，針對淚膜三層結構來進行治療，大大提高了乾眼症藥物的治療療效。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.context2_2')}}
                 </div>
                 <div>
-                  使用人工淚水也有需要注意的細節。市面上，大部分眼藥水為了方便長時間保存，均有添加防腐劑。正常情況下，使用含有防腐劑的眼藥水多數不會對人體造成影響。不過，乾眼症患者的眼睛對防腐劑的耐受性可能較低，因此比較適合使用不含防腐劑的人工淚液，以避免長期接觸防腐劑導致眼睛敏感等問題。人工淚液可分為眼藥水及眼藥膏：
+                  {{$t('pages.medical_service.xerophthalmia_con.means.context2_3')}}
                 </div>
               </div>
               <div>
@@ -608,40 +622,40 @@ const callTel = () => {
             <!-- 眼藥水 -->
             <div>
               <div>
-                <div>眼藥水</div>
+                <div>{{$t('pages.medical_service.xerophthalmia_con.means.title2_1')}}</div>
                 <div>
-                  使用方便、簡單，可在眼球乾澀時直接補充水分，但水分蒸發較快，症狀嚴重的話需要頻密使用。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.text2_1')}}
                 </div>
               </div>
               <div>
-                <div>藥膏狀</div>
+                <div>{{$t('pages.medical_service.xerophthalmia_con.means.title2_2')}}</div>
                 <div>
-                  藥膏狀的人工淚液黏貼度較高，可留存在眼內更長的時間，以保持眼睛濕潤，但因太黏，往往會造成短暫的視力模糊，所以一般建議在眼睛休息時（如睡前）使用。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.text2_2')}}
                 </div>
               </div>
             </div>
             <!-- 減少淚液流失 配戴鞏膜鏡 -->
             <div>
               <div>
-                <div>減少淚液流失</div>
+                <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1_3')}}</div>
                 <div>
-                  使用淚道塞子堵塞淚道開口，從而減少淚液流失，病情嚴重者可考慮永久封閉淚道開口。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.context3')}}
                 </div>
               </div>
               <div>
-                <div>配戴鞏膜鏡</div>
+                <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1_4')}}</div>
                 <div>
-                  鞏膜鏡是一款高透氣的特製隱形眼鏡，覆蓋眼角膜和角膜周圍的表面，有助淚水停留眼表，滋潤角膜表面。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.context4')}}
                 </div>
               </div>
             </div>
             <!-- 其他紓緩眼乾症狀的方法︰ -->
             <div>
-              <div>其他紓緩眼乾症狀的方法︰</div>
+              <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1_5')}}</div>
               <div>
                 <div v-for="(item, index) in wayOther" :key="index">
                   <div><img :src="item.img" alt="" /></div>
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
@@ -660,11 +674,11 @@ const callTel = () => {
         </div>
         <!-- 預防乾眼症 -->
         <div id="prevent">
-          <div>預防乾眼症</div>
+          <div>{{$t('pages.medical_service.xerophthalmia_con.prevent.name')}}</div>
           <div>
             <div v-for="(item, index) in prevent" :key="index">
-              <div>{{ item.title }}</div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.title) }}</div>
+              <div>{{ $t(item.text)}}</div>
             </div>
           </div>
         </div>
@@ -1615,7 +1629,6 @@ const callTel = () => {
         letter-spacing: 0px;
         color: #525280;
       }
-
       &>div:nth-child(2) {
         padding-left: 14px;
 
@@ -1641,9 +1654,7 @@ const callTel = () => {
           color: #515151;
         }
       }
-
-      &>div:nth-child(3),
-      &>div:nth-child(4) {
+      &>div:nth-child(3) {
         padding-left: 14px;
 
         &>div:nth-child(1) {
@@ -1668,13 +1679,31 @@ const callTel = () => {
           color: #515151;
         }
       }
-
       &>div:nth-child(4) {
+        padding-left: 14px;
+
         &>div:nth-child(1) {
           margin-top: 104px;
+          font-family: 'NotoSansHK-Bold';
+          font-size: 28px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 27px;
+          letter-spacing: 1px;
+          color: #515151;
+          margin-bottom: 33px;
+        }
+
+        &>div:nth-child(2) {
+          font-family: 'Noto Sans HK';
+          font-size: 22px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 34px;
+          letter-spacing: 0px;
+          color: #515151;
         }
       }
-
       &>div:nth-child(5) {
         margin-top: 60px;
         display: flex;
@@ -2056,7 +2085,73 @@ const callTel = () => {
       }
     }
   }
+
+  //接手了一堆爛代碼
+  &.xerophthalmia-en{
+    &>div:nth-child(2) {
+      &>div:nth-child(2) {
+        &>div{
+          &>div:nth-child(2) {
+            height: auto;
+          }
+        }
+      }
+    }
+    &>div:nth-child(3) {
+      &>div:nth-child(3) {
+        &>div{
+          &>div:nth-child(2) {
+            top: 170px;
+          }
+        }
+      }
+    }
+    &>div:nth-child(5) {
+      &>div:nth-child(2) {
+        &>div{
+          height: auto;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    &>div:nth-child(6) {
+      &>div:nth-child(2) {
+        &>div:nth-child(5) {
+          margin-top: 60px;
+          &>div{
+            height: auto;
+            padding-bottom: 30px;
+          }
+        }
+        &>div:nth-child(6) {
+          &>div:nth-child(2) {
+            &>div:nth-child(1) {
+              &>div {
+                &>div:nth-child(1) {
+                  &>div:nth-child(1) {
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(7) {
+      &>div:nth-child(3) {
+        &>div:nth-child(8) {
+          margin-top: 150px;
+          padding: 10px 60px;
+          &>div{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 }
+
 
 .xeroheader {
   &>div:nth-child(1) {
@@ -2218,6 +2313,7 @@ const callTel = () => {
           margin-top: 5px;
           clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
           transform: translateY(-15%);
+              text-align: right;
         }
 
         &>div:nth-child(4) {
@@ -3090,6 +3186,10 @@ const callTel = () => {
             margin-bottom: 10px;
             margin-top: 0;
             font-size: 20px;
+            &::before{
+min-width: 15px;
+            }
+            
           }
 
           &>div:nth-child(2) {
@@ -3098,6 +3198,48 @@ const callTel = () => {
         }
       }
     }
+    &.xerophthalmia-en{
+    &>div:nth-child(3) {
+      &>div:nth-child(3) {
+        &>div{
+          &>div:nth-child(2) {
+            top: 0px;
+            padding-top: 0;
+            &>div:nth-child(1) {
+              font-size: 18px;
+            }
+            &>div:nth-child(2) {
+              font-size: 12px;
+              line-height: 1.4;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+    &>div:nth-child(5) {
+      &>div:nth-child(2) {
+        &>div{
+          padding-bottom: 0px;
+        }
+      }
+    }
+    &>div:nth-child(7) {
+      &>div:nth-child(3) {
+        &>div:nth-child(8) {
+          margin-top: 150px;
+          padding: 10px 30px;
+          &>div{
+            margin-bottom: 0px;
+            &>div:nth-child(2) {
+              margin-top: 0;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
   }
 
   .dow {
