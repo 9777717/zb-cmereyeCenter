@@ -927,6 +927,87 @@ pages:
         name7: Treatments
         name8: Prevention
     muscae_volitantes: Eye floaters
+    muscaeVolitantes_con:
+      muscaeInfo: 
+        name: What are eye floaters?
+        context: Eye floaters are also known as vitreous opacities. The vitreous shrinks as we age, becomes liquified and gradually forms different shapes of dark spots or shadows floating in the field of vision. They can look like raindrops, circles, clouds, cobwebs, amoebas, spiders or mosquitoes and may "fly" around at the front. They become apparent especially when you look at something bright or on monocolour background.
+        name1: "Shapes of floaters:"
+        text1: Raindrops
+        text2: Circles
+        text3: Clouds
+        text4: Cobwebs
+        text5: Amoebas
+        text6: Spiders
+      navLists: 
+        name1: Eye floaters
+        name2: Causes
+        name3: Types
+        name4: Risk Factors
+        name5: Treatments
+        name6: Prevention
+        name7: FAQ
+      factor: 
+        name: CAUSES
+        title1: Age-related Degeneration
+        text1: Most eye floaters are caused by age-related changes. The vitreous becomes liquefied and shrinks as age, gradually occurring as the jelly-like substance (vitreous) inside your eyes becomes more liquid. These jelly-like substances will project as many small black dots on the retina, which will become the floaters.
+        title2: Eye Injuries, Inflammation inside your eye
+        text2: Floaters may result as particles and impurities in the gel-like substance after eye injuries or inflammation inside the eyes.
+        title3: Intraocular Hemorrhage
+        text3: Diabetic retinopathy, hypertensive retinopathy, eye stroke and other diseases can cause intraocular hemorrhage and floaters. It’s advised to seek medical treatment immediately if you are suffering from these diseases.
+        title4: Retinal Disease
+        text4: Presence of floaters might be a sign of retinal tear, retinal detachment, or degeneration. If the floaters are caused by retinal disease, you must seek medical help immediately, otherwise vision loss may occur in severe cases.
+      category:
+        name: TYPES OF FLOATERS
+        name1: Benign Floaters
+        context: "Most of the floaters are benign which is also called physiological floaters. They are basically harmless and can be classified into two types:"
+        text1: Before a baby is born, there are lots of blood vessels that contain blood cells in the vitreous. These blood vessels are usually absorbed naturally before baby birth. However, if they are not completely absorbed, some blood vessels will remain in the vitreous and floaters will appear.
+        text2: As we age, the vitreous gel degenerates gradually and shrinks with liquefaction. During liquefaction, some vitreous fibers become floaters in strands, threads, squiggly lines or transparent colorless shapes which float in the vitreous. These conditions usually appear among elderly and people with high myopia, who will develop eye floaters at an earlier age.
+        name2: Malignant Floaters
+        context1: Malignant floaters can be a warning of some serious eye diseases (e.g. posterior vitreous detachment, retinal degeneration and tears, diabetic retinopathy or age-related macular degeneration, etc.) which will lead to vitreous hemorrhage and uveitis. This type of floaters should be examined and treat (if needed) as early as possible.
+      highRisk:
+        name: RISK FACTORS OF EYE FLOATERS
+        name1: "You're at higher risk if you:"
+        text1: Over 50 years old
+        text2: High myopia(Myopia above 600 degrees)
+        text3: Long term near works
+        text4: Eye injury, eye inflammation
+        text5: Family history of retinal detachment
+        text6: Diabetic patients
+      means:
+        name: TREATMENTS OF EYE FLOATERS
+        context: For benign eye floaters without complications, it is generally not treated but just observed. However, it is necessary to consider treatment in the cases that some patients cannot tolerate the symptoms of floaters or even in serious cases that visual function is being affected and impacting their lives. The current treatments mainly include laser therapy and Pars Plana Vitrectomy. The latter one has become more common to treat apparent eye floaters as it is less risky and has better results.
+        name1: Laser Therapy
+        context1: This treatment aims to treat large or central floaters in order to improve symptoms. The procedure takes around 15 to 20 minutes and can be performed under localized anesthesia. However, it is not fit for those whose floaters are not centralized, or they are too close to the macula or lens. In these cases, the therapy cannot be performed so as to prevent complications such as cataract or macular damage.
+        name2_1: ""
+        name2_2: Pars Plana Vitrectomy (Partial)
+        context2_1: This treatment can be used for severe vitreous opacities. The process lasts for around 10 to 15 minutes. It is a minimally invasive surgery without stitches and the recovery time is short. The treatment requires topical anesthesia. Two incisions are made at the sclera, also known as the white part of the eye, one of them is for cutting, another one is for infusion of saline water. The patient can see floaters during the surgery and therefore the surgeon can communicate with the patient spontaneously in order to ensure vitreous opacities are cleared.
+        context2_2: This technique can remove opacification in vitreous chamber. This surgery can be performed together with cataract treatment which replace opaque lens and remove vitreous opacity at the same time. Therefore, visual quality might be further improved after the surgery.
+        p1: Small incisions, stitches are not required, short operation time and fast recovery.
+        p2: ""
+        p3: Recover transparency of refracting medium in vitreous chamber.
+        p4: ""
+        p5: ""
+        p6_1: Advantages
+        p6_2: of Vitrectomy
+        p7: Precise and efficient.
+        p8: ""
+        p9: Can be carried out with other therapies.
+      prevent: 
+        name: PREVENTION
+        context: It’s suggested to reduce or prevent eye floaters should by good eye health.
+        text1: Rest or look far for 20 seconds after every 20 minutes of screen time.
+        text2: Keep a distance from smartphones, tablets, and computers while using them (suggest at 30 cm, 40 cm, and 50 cm respectively).
+        text3: Read in an adequately illuminated environment.
+        text4: Wear sunglasses to block UV light under sunshine.
+        text5: Avoid smoking and drinking, go to bed early to ensure enough rest for your eyes.
+      faq: 
+        name: FREQUENTLY ASKED QUESTIONS (FAQ)
+        q1: When is the time to see an ophthalmologist for floaters?
+        a1: Most of floaters are benign and basically harmless to the eyes. However, if it seriously affects daily life, or if you notice a sudden increase in floaters, loss of peripheral vision, or other uncommon or unusual symptoms such as eye pain, it’s suggested to see an eye doctor for further eye check.
+        q2: What should I do if there are a sudden increase in floaters?
+        a2: If the floaters suddenly increase with flashes of bright lights, and/or loss of peripheral vision, blurred vision, etc., it can be a sign of severe eye disease. It is highly recommended to seek medical advice as soon as possible.
+        q3: Do eye drops and medications help get rid of floaters?
+        a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
     conjunctivitis: Conjunctivitis
     maculopathy: Macular Degeneration
     strabismusAmblyopia: Amblyopia and Strabismus in Children

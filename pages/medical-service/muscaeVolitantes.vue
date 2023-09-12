@@ -29,6 +29,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#9cc4e2;',
@@ -39,148 +41,148 @@ const backgd = [
 const seston = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/267899886dbaf8d9.png',
-    text: '小雨點',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/225dea4ef8edb2ba.png',
-    text: '圓圈',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d5da51be0ea0658a.png',
-    text: '雲',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/59f096cb588e2704.png',
-    text: '網狀',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d350bf2ddff168ce.png',
-    text: '變形蟲',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f3bb62aace9740a1.png',
-    text: '蜘蛛',
+    text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text6',
   },
 ]
 // 飛蚊症成因
 const factor = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/54e4419baae2b032.png',
-    title: '眼睛退化',
-    text: '眼睛老化引起的飛蚊症屬最常見，隨著年紀增加，眼睛玻璃體退化和變得萎縮，逐漸脫離原本緊密結合的視網膜，而且裡面的玻璃體纖維可能變性，變得混濁。這些混濁的物質，就會在視網膜上投影出許多黑色的小點，成為飛蚊症患者看到的景象。',
+    title: 'pages.medical_service.muscaeVolitantes_con.factor.title1',
+    text: 'pages.medical_service.muscaeVolitantes_con.factor.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b8098843aeb81226.png',
-    title: '眼睛外傷、眼後發炎',
-    text: '如果眼睛受過外傷，或曾經有眼後發炎，都有可能導致有雜質進到玻璃體內引致眼睛會看見「飛蚊」。',
+    title: 'pages.medical_service.muscaeVolitantes_con.factor.title2',
+    text: 'pages.medical_service.muscaeVolitantes_con.factor.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdb733bc982c8bbe.png',
-    title: '眼球內出血',
-    text: '糖尿病視網膜病變、高血壓視網膜病變、眼中風等疾病，也都可以導致眼球出血並引致飛蚊症，若是這類狀況，就要趕緊就醫治療。',
+    title: 'pages.medical_service.muscaeVolitantes_con.factor.title3',
+    text: 'pages.medical_service.muscaeVolitantes_con.factor.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bb13ed69d5a61654.png',
-    title: '視網膜疾病',
-    text: '視網膜出現裂孔、剝離、退化等均可能引致飛蚊症。如果是視網膜疾病造成的飛蚊症，必須立刻求醫，否則嚴重時可能有失明的風險。',
+    title: 'pages.medical_service.muscaeVolitantes_con.factor.title4',
+    text: 'pages.medical_service.muscaeVolitantes_con.factor.text4',
   },
 ]
 // 飛蚊症高危人士
 const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/39afb10f87a7de13.png',
-    text: '50歲以上',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/10a1afee083e56b8.png',
-    text: '深近視（近視600度或以上）',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f2d9ff06f4237aa6.png',
-    text: '長時間看電子螢幕',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d3b82336979411ba.png',
-    text: '眼睛曾受過傷、眼睛發炎',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ee23c5620bd1b8d8.png',
-    text: '有視網膜脫落家族病史',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8eabb04d3e7fb31b.png',
-    text: '糖尿病患者',
+    text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text6',
   },
 ]
 // 預防飛蚊症s
 const prevent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1ae9e363893ea9bf.png',
-    text: '觀看電子產品螢幕20分鐘，建議雙眼休息20秒，或者遠望20呎（約50厘米）外的景觀。',
+    text: 'pages.medical_service.muscaeVolitantes_con.prevent.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/174add34da3b109f.png',
-    text: '使用智能電話、平板電腦及電腦時，建議分別保持30厘米、40厘米、50厘米的距離。',
+    text: 'pages.medical_service.muscaeVolitantes_con.prevent.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3c1f9464c5101f8b.png',
-    text: '在光線充足且穩定不閃爍的環境閱讀。',
+    text: 'pages.medical_service.muscaeVolitantes_con.prevent.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/512837cc2419bc81.png',
-    text: '在猛烈的陽光下，最好戴上能遮擋紫外光和品質良好的太陽眼鏡。',
+    text: 'pages.medical_service.muscaeVolitantes_con.prevent.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b1c59499606c7ee4.png',
-    text: '避免吸煙、飲酒等不良習慣，養成早睡早起的習慣，讓眼睛有充足休息時間。',
+    text: 'pages.medical_service.muscaeVolitantes_con.prevent.text5',
   },
 ]
 // 常見問題
 const meetArr: any = [
   {
-    title: 'Q：出現飛蚊，什麼時候應該求醫？',
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q1',
     agree:
-      '大部分的飛蚊都是良性的，基本上對眼睛無害，但若嚴重影響日常生活，或突然出現大量飛蚊、視野出現異常黑點，建議盡快安排眼科檢查，確定「飛蚊」出現的原因，及早診斷、預防併發症。',
+      'pages.medical_service.muscaeVolitantes_con.faq.a1',
   },
   {
-    title: 'Q：飛蚊症患者眼前飛蚊突然變多怎麼辦？',
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q2',
     agree:
-      '如果飛蚊症數量突然增加，並伴隨有閃光、視野缺損、視力模糊等，即可能是嚴重眼疾先兆，建議盡快求醫。',
+      'pages.medical_service.muscaeVolitantes_con.faq.a2',
   },
   {
-    title: 'Q：點眼藥水或吃藥可以治療飛蚊症嗎？',
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q3',
     agree:
-      '病理性的飛蚊症在療程中可能會使用消炎用的眼藥水，以助患者紓緩不適；但是退化性的飛蚊症與發炎無關，因此點眼藥水用處不大。',
+      'pages.medical_service.muscaeVolitantes_con.faq.a3',
   },
 ]
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '飛蚊症',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name1',
     anchorLink: '/medical-service/muscaeVolitantes#muscaeInfo',
   },
   {
-    anchorName: '成因',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name2',
     anchorLink: '/medical-service/muscaeVolitantes#factor',
   },
   {
-    anchorName: '類別',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name3',
     anchorLink: '/medical-service/muscaeVolitantes#category',
   },
   {
-    anchorName: '高危人士',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name4',
     anchorLink: '/medical-service/muscaeVolitantes#highRisk',
   },
   {
-    anchorName: '治療',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name5',
     anchorLink: '/medical-service/muscaeVolitantes#means',
   },
   {
-    anchorName: '預防方法',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name6',
     anchorLink: '/medical-service/muscaeVolitantes#prevent',
   },
   {
-    anchorName: '常見問題',
+    anchorName: 'pages.medical_service.muscaeVolitantes_con.navLists.name7',
     anchorLink: '/medical-service/muscaeVolitantes#faq',
   },
 ]
@@ -203,7 +205,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>飛蚊症</div>
+          <div>{{$t('pages.medical_service.muscae_volitantes')}}</div>
           <div>EYE FLOATERS</div>
           <div>EYE FLOATERS</div>
           <div>EYE FLOATERS</div>
@@ -221,7 +223,7 @@ const callTel = () => {
     <div class="muscaeVolitantes-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
     </div>
-    <div class="muscaeNav">
+    <div class="muscaeNav" :class="{'muscaeNav-en': locale === 'en'}">
       <!-- 什麼是飛蚊症？ -->
       <div id="muscaeInfo">
         <div>
@@ -231,20 +233,20 @@ const callTel = () => {
           />
         </div>
         <div>
-          <div>什麼是飛蚊症？</div>
+          <div>{{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name')}}</div>
           <div>
-            「飛蚊症」的學名為玻璃體混濁。隨着眼睛老化、玻璃體萎縮，變得液化，逐漸積聚成塊，便會形成不同形狀的黑點或暗影，飛舞飄動；有的像小雨點、圓圈、雲、網狀、變形蟲或蜘蛛，如同有蚊子在眼前飛舞，尤其在光線充足、單色的背景上更為明顯。
+            {{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.context')}}
           </div>
         </div>
       </div>
       <!-- 飛蚊症患者看見的浮游物︰ -->
       <div>
-        <div class="caption_text_color">飛蚊症患者看見的浮游物︰</div>
+        <div class="caption_text_color">{{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name1')}}</div>
         <div>
           <div v-for="(item, index) in seston" :key="index">
             <div><img :src="item.img" :alt="item.text" /></div>
             <div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
@@ -255,26 +257,26 @@ const callTel = () => {
       <!-- 飛蚊症成因 -->
       <div id="factor">
         <div>
-          <PageNavTitle :title="'飛蚊症成因'" />
+          <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.factor.name')" />
         </div>
         <div>
           <div v-for="(item, index) in factor" :key="index">
             <div><img :src="item.img" :alt="item.title" /></div>
             <div>
-              <div>{{ item.title }}</div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.title) }}</div>
+              <div>{{ $t(item.text)}}</div>
             </div>
           </div>
         </div>
       </div>
       <!-- 飛蚊症種類 -->
       <div id="category">
-        <PageNavTitle :title="'飛蚊症種類'" />
+        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.category.name')" />
         <div>
-          <div>良性飛蚊</div>
+          <div>{{$t('pages.medical_service.muscaeVolitantes_con.category.name1')}}</div>
           <div>
             <div>
-              大部分的飛蚊都是良性的，良性飛蚊又稱為生理性飛蚊，基本上對眼睛無害，包括以下兩類：
+              {{$t('pages.medical_service.muscaeVolitantes_con.category.context')}}
             </div>
             <div>
               <div>
@@ -295,12 +297,10 @@ const callTel = () => {
               </div>
               <div>
                 <div>
-                  胎兒在出生前，眼球內的玻璃體充滿血管，血管內有血細胞。這些血管通常在胎兒出生前會被自然吸收。如果未能完全吸收，部分玻璃體的「血管殘留」在玻璃體內，便會出現飛蚊。
+                  {{$t('pages.medical_service.muscaeVolitantes_con.category.text1')}}
                 </div>
                 <div>
-                  隨著年齡的增長，啫喱狀的玻璃體會逐漸發生變性，出現凝縮和液化 (
-                  Liquefaction
-                  )。部分玻璃體中的纖維在液化過程中聚合成絮狀、絲狀、絲狀或無色透明的浮游物，懸浮在液化的玻璃體中，形成飛蚊。年長人士和近視患者一般較常出現這些情況，而近視患者出現這些問題的年齡會較早。
+                  {{$t('pages.medical_service.muscaeVolitantes_con.category.text2')}}
                 </div>
               </div>
               <div>
@@ -317,14 +317,14 @@ const callTel = () => {
           </div>
         </div>
         <div>
-          <div>惡性飛蚊</div>
+          <div>{{$t('pages.medical_service.muscaeVolitantes_con.category.name2')}}</div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/70ece1913636ef3b.png"
               alt=""
             />
             <div>
-              惡性飛蚊可以是一些嚴重眼疾的警告信號，包括後玻璃體脫落、視網膜退化及撕裂、糖尿眼或老年黃斑退化導致玻璃體出血、葡萄膜炎等，應及早治療。
+              {{$t('pages.medical_service.muscaeVolitantes_con.category.context1')}}
             </div>
           </div>
         </div>
@@ -335,14 +335,14 @@ const callTel = () => {
       </div>
       <!-- 飛蚊症高危人士 -->
       <div id="highRisk">
-        <PageNavTitle :title="'飛蚊症高危人士'" />
+        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.highRisk.name')" />
         <div>
-          <div>以下人士較大機會患上飛蚊症︰</div>
+          <div>{{$t('pages.medical_service.muscaeVolitantes_con.highRisk.name1')}}</div>
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
               <div><img :src="item.img" :alt="item.text" /></div>
               <div>
-                <div>{{ item.text }}</div>
+                <div>{{ $t(item.text) }}</div>
               </div>
             </div>
           </div>
@@ -350,7 +350,7 @@ const callTel = () => {
       </div>
       <!-- 飛蚊症治療 -->
       <div id="means">
-        <PageNavTitle :title="'飛蚊症治療'" />
+        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.means.name')" />
         <div>
           <!-- 飛蚊症治療 -->
           <div>
@@ -378,11 +378,11 @@ const callTel = () => {
                 <div>
                   <img
                     src="https://static.cmereye.com/imgs/2023/05/e7d886f97050a60e.png"
-                    alt="飛蚊症治療"
+                    :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
                   />
                 </div>
                 <div>
-                  對於無併發症的良性飛蚊症，一般都只是觀察而不予治療。但部分病人無法忍受飛蚊症狀，嚴重者甚至會感到視功能受干擾且影響生活，則值得考慮治療。目前治療的方法主要有激光和玻璃體切除治療，其中微創玻璃體切除的風險較低，成效較好，成為越來越普遍用於治療症狀明顯飛蚊症的方法。
+                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context')}}
                 </div>
               </div>
               <div>
@@ -404,26 +404,26 @@ const callTel = () => {
             </div>
           </div>
           <div>
-            <div>激光治療</div>
+            <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.name1')}}</div>
             <div>
-              用於把較大和集中的玻璃體浮游物打散，以改善及消除飛蚊症狀。過程約10至15分鐘，少有痛楚，可於局部麻醉下進行。但並不是所有患者都適合這種治療，如：「飛蚊」較鬆散或位置太接近黃斑或晶體，便不宜進行，以免導致白內障或黃斑受損等併發症。
+              {{$t('pages.medical_service.muscaeVolitantes_con.means.context1')}}
             </div>
           </div>
           <div>
-            <div>玻璃體<br />切除治療</div>
+            <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.name2_1')}}<br />{{$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')}}</div>
             <div>
               <div>
                 <div>
-                  用以治療玻璃體混濁，治療過程僅需15至20分鐘，傷口小（小於1mm），毋須縫線，復原期短。只需表面麻醉，在鞏膜（即眼白）位置製造兩個微創切口，一個作為切割入口，一個作為生理鹽水灌注通道。由於患者視神經沒有被麻醉，醫生能即時與患者溝通，確認是否已清除乾淨混濁的玻璃體。
+                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context2_1')}}
                 </div>
                 <div>
-                  此技術能切除混濁的玻璃體、恢復玻璃體腔內的屈光間質透明性，可與白內障治療同時進行，患者在清除混濁晶體的同時處理混濁的玻璃體，有助於術後進一步提升視力質素。
+                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context2_2')}}
                 </div>
               </div>
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/aa0d0fc0cbca2315.png"
-                  alt="切除治療"
+                  :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')"
                 />
               </div>
             </div>
@@ -431,12 +431,12 @@ const callTel = () => {
           <div>
             <div>
               <div>
-                <p>傷口細、無需縫線、</p>
-                <p>治療時間短、恢復快</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p1')}}</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p2')}}</p>
               </div>
               <div>
-                <p>降低周圍組織損傷的風險</p>
-                <p>屈光間質的透明性</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p3')}}</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p4')}}</p>
               </div>
             </div>
             <div>
@@ -455,16 +455,16 @@ const callTel = () => {
                 />
               </svg>
               <div>
-                <p>玻璃體切除</p>
-                <p>治療的<span>好處</span></p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p5')}}</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p6_1')}}<span>{{$t('pages.medical_service.muscaeVolitantes_con.means.p6_2')}}</span></p>
               </div>
             </div>
             <div>
               <div>
-                <p>治療儀器定位系統有效、精細，</p>
-                <p>降低周圍組織損傷的風險</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p7')}}</p>
+                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p8')}}</p>
               </div>
-              <div>能與其他治療同時進行</div>
+              <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.p9')}}</div>
             </div>
           </div>
           <div class="button_bg_text_color" @click="callTel()">
@@ -474,17 +474,17 @@ const callTel = () => {
       </div>
       <!-- 預防飛蚊症 -->
       <div id="prevent">
-        <PageNavTitle :title="'預防飛蚊症'" />
+        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.prevent.name')" />
         <div>
           <div>
-            不良的用眼習慣會誘發或加重飛蚊症症狀，預防飛蚊症建議由日常生活習慣開始。
+            {{$t('pages.medical_service.muscaeVolitantes_con.prevent.context')}}
           </div>
           <div>
             <div v-for="(item, index) in prevent" :key="index">
               <div>
                 <div><img :src="item.img" :alt="item.text" /></div>
                 <div>
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
@@ -493,7 +493,7 @@ const callTel = () => {
       </div>
       <!-- 常見問題 -->
       <div id="faq">
-        <PageNavTitle :title="'常見問題'" />
+        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.faq.name')" />
         <div>
           <PageCollapse
             :answer="meetArr"
@@ -1220,6 +1220,126 @@ const callTel = () => {
       margin-top: 108px;
     }
   }
+
+  &.muscaeNav-en{
+    & > div:nth-child(1) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          line-height: 1.6;
+        }
+      }
+    }
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        & > div {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          width: max-content;
+          padding-right: 30px;
+        }
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              & > div:nth-child(2) {
+                margin-top: 70px;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          width: max-content;
+          padding-right: 30px;
+        }
+      }
+    }
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          &>div{
+            max-width: calc(100% / 3);
+          }
+        }
+      }
+    }
+    & > div:nth-child(6) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div:nth-child(2) {
+            padding: 10px 59px;
+            & > div:nth-child(1) {
+              align-items: center;
+              & > div:nth-child(2) {
+                line-height: 1.6;
+              }
+            }
+          }
+        }
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            line-height: 1.6;
+            padding-top: 15px;
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            height: 650px;
+          }
+          & > div:nth-child(2) {
+            font-size: 20px;
+            line-height: 1.6;
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                line-height: 1.6;
+                margin-bottom: 30px;
+              }
+            }
+            padding-top: 20px;
+          }
+        }
+        & > div:nth-child(4) {
+          & > div:nth-child(1) {
+            &>div{
+              text-align: center;
+              line-height: 1.4;
+            }
+          } 
+          & > div:nth-child(3) {
+            &>div{
+              text-align: center;
+              line-height: 1.4;
+            }
+          } 
+        }
+      }
+    }
+    & > div:nth-child(7) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          &>div{
+            &>div{
+              height: auto;
+              min-height: 100%;
+              & > div:nth-child(2) {
+                padding-bottom: 27px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 // 点击按钮 样式

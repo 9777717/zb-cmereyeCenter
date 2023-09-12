@@ -102,7 +102,7 @@ const toLink = (a:string) => {
         <div>SERVICE</div>
       </div>
       <div>
-        <a :style="{cursor: 'pointer'}" href="https://bit.ly/44r9F7M">
+        <a :style="{cursor: 'pointer'}" href="/medical-service">
           <div>
             <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 5.5L1 10" stroke="#2958A3" stroke-width="1.25" stroke-linecap="round"
@@ -111,10 +111,10 @@ const toLink = (a:string) => {
             <div>NEWS</div>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/08/c57715cb80837edf.png" />
+            <img src="https://static.cmereye.com/imgs/2023/09/dd0567d3c65bc2d3.png" />
           </div>
           <div>
-            「瞳護眼睛工作坊」網上公開報名，立即申請！*截止報名日期：2023年8月20日
+            <!-- 「瞳護眼睛工作坊」網上公開報名，立即申請！*截止報名日期：2023年8月20日 -->
           </div>
         </a>
         <div>
@@ -181,8 +181,8 @@ const toLink = (a:string) => {
             NEWS
           </div>
         </div>
-        <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/09/83dfb116cf1ee827.jpg" alt=""></div>
+        <div @click="toLink('/medical-service')">
+          <div><img src="https://static.cmereye.com/imgs/2023/09/c03f529548e5905a.png" alt=""></div>
           <!-- <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>s -->
         </div>
       </div>
@@ -385,6 +385,7 @@ const toLink = (a:string) => {
         transition: all 1s;
         display: block;
         background-size: 100% 100% !important;
+        pointer-events: none;
       }
     }
 

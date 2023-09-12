@@ -2158,9 +2158,12 @@ const callTel = () => {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    margin-left: 55vw;
-
+    // margin-left: 55vw;
+    margin: 100px auto 0;
+    max-width: 1080px;
+    width: 100%;
     &>div:nth-child(1) {
+      
       &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 119px;
@@ -2170,12 +2173,14 @@ const callTel = () => {
         letter-spacing: 1px;
         color: #a9a6d2;
         position: sticky;
+        text-align: right;
       }
 
       &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         font-family: 'DINCondensed-Bold';
+        text-align: right;
       }
 
       &>div:nth-child(3),
@@ -2187,6 +2192,7 @@ const callTel = () => {
         color: transparent;
         clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
         transform: translateY(-45%);
+        text-align: right;
       }
 
       &>div:nth-child(4) {
