@@ -385,14 +385,13 @@ const toLink = (a:string) => {
         transition: all 1s;
         display: block;
         background-size: 100% 100% !important;
-        pointer-events: none;
       }
     }
 
     &>div:nth-child(2) {
       top: 60vh;
       // bottom: 190px;
-
+      pointer-events: initial;
       &>div:nth-child(1) {
         display: none;
       }
