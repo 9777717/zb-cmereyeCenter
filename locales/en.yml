@@ -1002,11 +1002,11 @@ pages:
         text5: Avoid smoking and drinking, go to bed early to ensure enough rest for your eyes.
       faq: 
         name: FREQUENTLY ASKED QUESTIONS (FAQ)
-        q1: When is the time to see an ophthalmologist for floaters?
+        q1: Q：When is the time to see an ophthalmologist for floaters?
         a1: Most of floaters are benign and basically harmless to the eyes. However, if it seriously affects daily life, or if you notice a sudden increase in floaters, loss of peripheral vision, or other uncommon or unusual symptoms such as eye pain, it’s suggested to see an eye doctor for further eye check.
-        q2: What should I do if there are a sudden increase in floaters?
+        q2: Q：What should I do if there are a sudden increase in floaters?
         a2: If the floaters suddenly increase with flashes of bright lights, and/or loss of peripheral vision, blurred vision, etc., it can be a sign of severe eye disease. It is highly recommended to seek medical advice as soon as possible.
-        q3: Do eye drops and medications help get rid of floaters?
+        q3: Q：Do eye drops and medications help get rid of floaters?
         a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
     conjunctivitis: Conjunctivitis
     conjunctivitis_con:
@@ -1083,6 +1083,119 @@ pages:
         title5: Avoid contact with allergens
         text5: Be aware of allergens such as pollens, house dust mite, and animal dander etc, especially when season changed.
     maculopathy: Macular Degeneration
+    maculopathy_con:
+      navLists:
+        name1: Macular Degeneration
+        name2: Symptoms
+        name3: Self Test
+        name4: Dry macular degeneration
+        name5: Wet macular degeneration
+        name6: Prevention
+        name7: FAQ
+      maculopathyInfo: 
+        name: What is macular degeneration?
+        context: The macula is the central portion of the retina where 90% of photoreceptors locate in this area. It is responsible for central vision of the eye, the ability to see fine details and to recognize colours, so it is important to keep your macula healthy in order to see clearly. Any damage to the macula is called Maculopathy. Symptoms of macular damage are decreased visual acuity, distortions in the appearance of lines and darkening of the central vision.
+      sympotm:
+        name: Symptoms of Macular Degeneration
+        text1: |
+              Blurred or
+              distorted vision
+        text2: |
+              A well-defined blurry
+              spot or blind spot in
+              your field of vision
+        text3: |
+              Size change (e.g. in small
+              characters), bent lines,
+              decreased intensity or
+              brightness of colors
+        text4: |
+              Loss of central
+              vision in severe case
+      inspect:
+        name: Macular Degeneration Simple Self Test
+        name1: The Amsler grid is a useful tool for self-check. It is a chart with straight horizontal and vertical lines.
+        name2: "Below are the basic steps:"
+        text1: Wear eyeglasses (if needed).
+        text2: Hold the Amsler grid in ~30cm-distance with proper lighting environment.
+        text3: Cover your left eye with left hand and look at the central black dot.
+        text4: Repeat step 1 to 3 again to test the other eye.
+        name3: Normally, the Amsler grid is a chart with straight horizontal and vertical lines.
+        context: If you see bent lines, or the boxes in the grid do not look square but appear blurred, distorted or the black dot becomes larger, you may have macular degeneration. Please consult your ophthalmologist immediately.
+        title1: "Graphic 1: Normal field of view"
+        title2: "Graphic 2: Decreased intensity or brightness of colors"
+        title3: "Graphic 3: Distortion of visiont"
+        title4: "Graphic 4: Distortion of vision with central dark spot"
+        title5: "Graphic 5: Blurred central vision"
+      types: 
+        name: Types
+        name1: Macular Degeneration
+        p1: Age-related Macular Degeneration
+        p2: ""
+        p3: Dry Macular Degeneration
+        p4: ""
+        p5: Wet Macular Degeneration
+        p6: ""
+        name2: Age-related Macular Degeneration (AMD)
+        context: The major cause of vision loss in AMD is the degeneration of the retinal pigment epithelial cells and the subsequent photoreceptor cell damage. Some patients have abnormal blood vessels growth and / or leakage from abnormal blood vessels which severely affect the macula and resulting in a significantly impaired vision. The risk of AMD increases with age. AMD affects 1-2 out of 100 persons aged over 50.
+        name3: There are Dry types and Wet types of macular degeneration.
+        name4: Dry macular degeneration
+        text1: In Hong Kong, 90% of macular degeneration patients are dry type. There is degeneration of retinal pigment epithelial cells in the macular area and formation of accumulated metabolic waste. These form drusen (yellow deposits) under the retina, which eventually leads to atrophy of the retinal pigment epithelium.
+        text2: Most patients have no obvious symptoms in the early stage. As more photoreceptor cells are being damaged, one's vision gradually gets blurred. However, there is a chance that dry macular degeneration can become wet macular degeneration, which can lead to sudden and severe vision loss. Up to now, there is no cure for dry macular degeneration. Regular follow-up of the disease is required early intervention when needed.
+        name5: Wet macular degeneration
+        text3: There are 10% of macular degenerations are wet AMD. Patients have abnormal blood vessels under the macula. If these blood vessels have leakage (fluid or blood), they can cause subretinal bleeding and subsequent scarring, which cause permanent damage to the retina.
+        text4: The deterioration of wet AMD can be rapid, and it can lead to central visual field defect. If one of the eyes experiences sudden blurred or distorted vision, wet AMD would be suspected. On the other hand, the fellow eye is also needed to be checked because it may be in the early stage of wet macular degeneration or may carry the risk of suffering from the disease. Wet AMD can lead to severe visual loss in a short period of time, can be a few days. Therefore, you should contact an ophthalmologist immediately when suspected symptoms happen.
+      factor:
+        name: Causes of macular degeneration 
+        text1: Aging
+        text2: Smoking
+        text3: |
+                Eating lots of foods high in saturated fat
+        text4: |
+                Excessive sun exposure
+        text5: |
+                Having vascular disease or high blood pressure
+        text6: |
+                Already have maculardegeneration in one eye
+        text7: Genetic factors
+      cure:
+        name: Treatment of Age-related Macular Degeneration (AMD)
+        title1: Laser photocoagulation
+        text1: Laser photocoagulation uses high-energy laser to destroy area with abnormal blood vessels of the retina. However, the laser would also cause damage to the retinal tissue above the vessels (this will lead to immediate vision impairment or blindness) and thus cannot be applied to the lesions which are close to the center of the macula. It is therefore only suitable for specific type of AMD patients and is not commonly used to treat AMD in clinical practice.
+        title2: Photodynamic therapy
+        text2: Doctor injects a dye called Verteporfin into the vein and the medicine will circulate to the abnormal blood vessels under the retina and then accumulate in the specific area. A special laser is then shone onto the area after saturated, the laser activates the Verteporfin and lead to blockage of the abnormal blood vessels without affecting other surrounding tissues in the retina. By blocking the leaky blood vessels, photodynamic therapy helps to improve macular edema or subretinal hemorrhage and hope to improve vision. It is proved to be a effective method to treat Polypoidal Choroidal Vasculopathy (PCV) which regards to be a special subtype of wet AMD. However, this therapy cannot restore destroyed vision function.
+        title3: Intravitreal Triamcinolone Acetonide "IV TA" injection
+        text3: Triamcinolone acetonide is a mineralocorticoid that can reduce the swelling and leakage of blood vessels at the macula and thus reduce edema. IV TA is commonly given along with other Anti-VEGF drugs in some cases. Intravitreal Triamcinolone Acetonide "IV TA" injections are given under topical anaesthesia in a sterile setting.
+        title4: Intravitreal Anti-VEGF Injection
+        text4: In recent years, intravitreal Anti-VEGF injection becomes the mainstream treatment of wet AMD. Studies have shown that these injections can effectively prevent further vision loss and can even promote visual function improvement. Two most common drugs are Bevacizumab (Avastin®) and Ranibizumab (Lucentis®) which have proven to have similar therapeutic effect. Lucentis® is approved by FDA, Avastin® is used as off-label drugs. This treatment may need to be repeated monthly for long term desired effect. Aflibercept (Eylea®) is a newer drug which has proven to be equally effective with longer intervals between injections for wet AMD. The three anti-VEGF agents are reported to have similar treatment effect for wet AMD. In clinical practice, some patients may show tolerance to one of them, but show good efficacy if using another one.
+      prevent:
+        name: Prevention
+        title1: Avoid smoking
+        text1: 'Smoking increases the chance of developing macular degeneration by 3-4 times.'
+        title2: |
+                Control weight, blood
+                pressure, lipids, glucose
+        text2: Studies found that obesity, hyperglycemia, hyperlipi- demia and hypertension may cause microvascular damage, resulting in the development of macular degeneration.
+        title3: Prevent high myopia
+        text3: People with high myopia (600 degrees or more) have a higher chance of developing macular degeneration.
+        title4: Schedule annual eye checking
+        text4: The risk of developing macular degeneration increase with age. It is recommended to arrange a comprehensive eye examination every year.
+        title5: Maintain a balanced diet
+        text5: High saturated fat and cholesterol foods should be reduced, and nutrients such as lutein, zeaxanthin, Omega-3, and vitamins C and E should be taken.
+        title6: |
+                Wear sunglasses to
+                avoid strong sunlight
+        text6: Prolonged exposure to sunlight may increase the chance of developing macular degeneration.
+      faq: 
+        name: FAQ
+        q1: Q：Will phone in the dark increase the risk of macular degeneration?
+        a1: Prolonged blue light exposure is reported to be harmful to the macula. Our pupil will be more dilated in dark and therefore theoretically we may intake more blue light from the screens in the dark. Some studies have shown that prolonged exposure to high-energy visible light can cause damage to the macula, which is similar to macular degeneration.
+        q2: Q：Older people are more likely to have macular degeneration?
+        a2: The older you are, the higher risk of developing age-related macular degeneration you have. However, these are other risk factors we also need to pay attention to, such as smoking, eating lots of high saturated fat or cholesterol food, excessive sun exposure, having vascular disease or high blood pressure, already having macular degeneration in one eye or genetic factors.
+        q3: Q：What's the difference between dry and wet macular degeneration?
+        a3: Patients suffering from dry macular degeneration have no obvious symptoms in the early stage and deterioration in vision is relatively slow. Drusen or geographic atrophy can be seen in the patient's fundus. But it may develop into wet subtype during its natural disease course. Wet AMD tends to be more severe in term of the visual damage. It has abnormal growth of vessels which lead to leakage beneath macula and the leakage may affect vision significantly. Exudation, edema, or hemorrhage can be seen during eye examination. If wet macular degeneration is not treated properly, photoreceptor cells can be damaged and permanent loss of center vision can be caused.
+        q4: Q：Can injections treat macular degeneration?
+        a4: Yes, injection of drugs (anti-VFGF or steroids, etc.) into the vitreous cavity is one of the effective treatments for macular degeneration. Medical reports show that this method has a good efficacy on treating the macular edema caused by wet AMD and it also has a role to promote visual improvement. Timely treatment is important, the earlier the macular degeneration is treated, the better result one may have. Injection of medicine can also be given along with PDT or other treatment (named as combined treatment in clinical practice) to obtain better treatment outcomes. For further details, you should discuss with your eye doctor so as to come up with a tailor-made treatment regimen for you.
     strabismusAmblyopia: Amblyopia and Strabismus in Children
     amotioRetinae: Retinal Detachment
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases

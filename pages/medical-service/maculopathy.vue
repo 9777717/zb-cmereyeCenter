@@ -4,6 +4,9 @@ import { getPdf } from '@/assets/js/common'
 definePageMeta({
   layout: 'page',
 })
+
+const locale = useState<string>('locale.setting')
+
 useHead(() => ({
   title: '黃斑病變｜希瑪眼科｜醫療服務',
   meta: [
@@ -38,69 +41,69 @@ const backgd = [
 // 常見問題
 const meetArr = [
   {
-    title: 'Q：熄燈玩電話會增加黃斑病變風險？',
+    title: 'pages.medical_service.maculopathy_con.faq.q1',
     agree:
-      '電子屏幕發出的藍光對黃斑無益，特別在黑暗的環境中，瞳孔會放大，眼睛便有機會吸收更多高能量可見光。有些研究已顯示，動物長時間吸收更多高能量可見光，會對黃斑構成傷害，情況類似黃斑病變。但目前沒有研究確切證實電子屏幕發出的藍光損傷黃斑。',
+      'pages.medical_service.maculopathy_con.faq.a1',
   },
   {
-    title: 'Q：年紀愈大愈容易患上黃斑病變？',
+    title: 'pages.medical_service.maculopathy_con.faq.q2',
     agree:
-      '年紀愈大，患上老年黃斑病變風險愈高。同時有吸煙習慣、飲食習慣攝取高飽和脂肪或高膽固醇、眼睛長期被過度日光照射、患有血管系統疾病或高血壓、其中一隻眼已患有黃斑退化、受遺傳因素影響等人士也有較大機會患上黃斑病變。',
+      'pages.medical_service.maculopathy_con.faq.a2',
   },
   {
-    title: 'Q：乾性黃斑病變較濕性黃斑病變對眼睛影響較少？',
+    title: 'pages.medical_service.maculopathy_con.faq.q3',
     agree:
-      '乾性黃斑病變，多數患者早期沒有明顯的病徵，視力下降速度相對較慢，但若病情惡化，也可能明顯影響視力。另外，乾性病變也有可能發展為濕性黃斑退化。而濕性黃斑病變不妥善處理，滲出物和血液聚集於黃斑區會破壞該處的感光細胞，可以永久破壞視野中央位置的視力。相對而言，濕性黃斑病變較乾性黃斑病變嚴重。',
+      'pages.medical_service.maculopathy_con.faq.a3',
   },
   {
-    title: 'Q：藥物注射可以治療黃斑病變？',
+    title: 'pages.medical_service.maculopathy_con.faq.q4',
     agree:
-      '將藥物注射入玻璃體是其中一個治療黃斑病變的方法。透過把藥物注於患者眼內，直接發揮作用。多個醫學報告顯示，這種方法治療糖尿病黃斑水腫療效良好，超過六成患者能獲得不錯的視功能改善。愈早發現並治療，成效就愈好，經治療後有機會回復正常視力水平。',
+      'pages.medical_service.maculopathy_con.faq.a4',
   },
 ]
 // 黃斑病變的症狀
 const sympotm = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a35e84d4d561b775.png',
-    text: '中央視野及\n視力模糊',
+    text: 'pages.medical_service.maculopathy_con.sympotm.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1bc58cb58d984772.png',
-    text: '視野中心\n出現暗點',
+    text: 'pages.medical_service.maculopathy_con.sympotm.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b5d5aa2f6c40815b.png',
-    text: '景物變形、線條扭曲、\n盲點及顏色變暗',
+    text: 'pages.medical_service.maculopathy_con.sympotm.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/43227b62cc0bc253.png',
-    text: '嚴重者完全失去\n中央視野',
+    text: 'pages.medical_service.maculopathy_con.sympotm.text4',
   },
 ]
 // 黃斑病變自我檢查
 const examine = [
   {
-    title: '正常視野',
+    title: 'pages.medical_service.maculopathy_con.inspect.title1',
     img_up: 'https://static.cmereye.com/imgs/2023/05/aa1baf80bab50483.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/9450b89f466321db.png',
   },
   {
-    title: ' 顏色變暗',
+    title: 'pages.medical_service.maculopathy_con.inspect.title2',
     img_up: 'https://static.cmereye.com/imgs/2023/05/233cb17db72b3823.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/be3b25f7e3770d9f.png',
   },
   {
-    title: ' 視野扭曲',
+    title: 'pages.medical_service.maculopathy_con.inspect.title3',
     img_up: 'https://static.cmereye.com/imgs/2023/05/940b9c94d772c689.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/6d3dba4eaa1e1303.png',
   },
   {
-    title: ' 視力模糊 ',
+    title: 'pages.medical_service.maculopathy_con.inspect.title4',
     img_up: 'https://static.cmereye.com/imgs/2023/05/7e436a4e96ccdc37.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
   },
   {
-    title: ' 逐漸失去中央視野',
+    title: 'pages.medical_service.maculopathy_con.inspect.title5',
     img_up: 'https://static.cmereye.com/imgs/2023/05/89704c6401ded877.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/8336f08bbc0cda0e.png',
   },
@@ -109,86 +112,86 @@ const examine = [
 const factor = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d318d9ddc48014f0.png',
-    text: '年齡增長',
+    text: 'pages.medical_service.maculopathy_con.factor.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c30a5bce1f432ab.png',
-    text: '吸煙',
+    text: 'pages.medical_service.maculopathy_con.factor.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/fa056cec9377e0b8.png',
-    text: '飲食習慣攝取高飽\n和脂肪或高膽固醇',
+    text: 'pages.medical_service.maculopathy_con.factor.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/517d3d0735bb283a.png',
-    text: '眼睛長期被\n過度日光照射',
+    text: 'pages.medical_service.maculopathy_con.factor.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/26091d94736c22f3.png',
-    text: '患有血管系統\n疾病或高血壓',
+    text: 'pages.medical_service.maculopathy_con.factor.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3f170433f21acc56.png',
-    text: '其中一隻眼已\n患有黃斑退化',
+    text: 'pages.medical_service.maculopathy_con.factor.text6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7d119ac9fdaca526.png',
-    text: '遺傳因素',
+    text: 'pages.medical_service.maculopathy_con.factor.text7',
   },
 ]
 // 預防黃斑病變
 const prevent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ef27c15a9ab6f560.png',
-    title: '避免吸煙',
-    text: '吸煙會增加患黃斑病變機會 3-4 倍。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title1',
+    text: 'pages.medical_service.maculopathy_con.prevent.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/c5572d289a126f73.png',
-    title: '控制體重、血壓、\n血脂、血糖',
-    text: '研究顯示，肥胖和三高可以引起微血管的損害，從而造成黃斑病變的發生和發展。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title2',
+    text: 'pages.medical_service.maculopathy_con.prevent.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/45fe80f40944cbb0.png',
-    title: '預防深近視',
-    text: '深近視人士（600度或以上）均有較大機會患上黃斑病變。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title3',
+    text: 'pages.medical_service.maculopathy_con.prevent.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/aa448910d3a02a1f.png',
-    title: '每年進行眼科檢查',
-    text: '年紀大也會增加患黃斑病變風險，建議每年安排全面的眼科檢查，及早發現眼睛問題。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title4',
+    text: 'pages.medical_service.maculopathy_con.prevent.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2078dbb368b52cce.png',
-    title: '保持均衡飲食',
-    text: '減少吃高飽和脂肪和高膽固醇食物，多攝取葉黃素、玉米黃素、Omega-3、維他命C及E等營養。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title5',
+    text: 'pages.medical_service.maculopathy_con.prevent.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1edb292db5fb5f21.png',
-    title: '配戴太陽眼鏡\n以避免眼睛暴曬',
-    text: '眼睛長時間受紫外線照射，可能增加患上黃斑病變機會。',
+    title: 'pages.medical_service.maculopathy_con.prevent.title6',
+    text: 'pages.medical_service.maculopathy_con.prevent.text6',
   },
 ]
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '黃斑病變',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name1',
     anchorLink: '/medical-service/maculopathy#maculopathyInfo',
   },
   {
-    anchorName: '症狀',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name2',
     anchorLink: '/medical-service/maculopathy#sympotm',
   },
   {
-    anchorName: '自我檢查',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name3',
     anchorLink: '/medical-service/maculopathy#inspect',
   },
   {
-    anchorName: '乾性黃斑病變',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name4',
     anchorLink: '/medical-service/maculopathy#able_maculopathy',
   },
   {
-    anchorName: '濕性黃班病變',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name5',
     anchorLink: '/medical-service/maculopathy#wet_maculopathy',
   },
   // {
@@ -200,11 +203,11 @@ const serviceNavigation = [
   //   anchorLink: '/medical-service/maculopathy#wet_maculopathy_cure',
   // },
   {
-    anchorName: '預防方法',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name6',
     anchorLink: '/medical-service/maculopathy#prevent',
   },
   {
-    anchorName: '常見問題',
+    anchorName: 'pages.medical_service.maculopathy_con.navLists.name7',
     anchorLink: '/medical-service/maculopathy#faq',
   },
 ]
@@ -227,7 +230,7 @@ const callTel = () => {
     <div class="maculopathy_header">
       <div>
         <div>
-          <div>黃斑病變</div>
+          <div>{{$t('pages.medical_service.maculopathy')}}</div>
           <div>MACULAR DEGENERATION</div>
           <div>MACULAR DEGENERATION</div>
           <div>MACULAR DEGENERATION</div>
@@ -245,52 +248,52 @@ const callTel = () => {
     <div class="maculopathy-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
-    <div class="maculopathy_nav">
+    <div class="maculopathy_nav" :class="{'maculopathyNav-en': locale === 'en'}">
       <!-- 什麼是黃斑病變？ -->
       <div id="maculopathyInfo">
-        <div>什麼是黃斑病變？</div>
+        <div>{{$t('pages.medical_service.maculopathy_con.maculopathyInfo.name')}}</div>
         <div>
-          黃斑區域位於視網膜中央，集中九成的感光神經細胞，負責中心視力和顏色視力。因此，健康黃斑點對人看清事物尤其重要。黃斑病變是指黃斑點出現了病徵，引起視力下降、視物扭曲變形及中心視力變差。
+          {{$t('pages.medical_service.maculopathy_con.maculopathyInfo.context')}}
         </div>
       </div>
       <!-- 黃斑病變的症狀 -->
       <div id="sympotm">
-        <div class="maculopathy_color_title">黃斑病變的症狀</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.sympotm.name')}}</div>
         <div>
           <div v-for="(item, i) in sympotm" :key="i">
             <div><img :src="item.img" /></div>
-            <div>{{ item.text }}</div>
+            <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
       <!-- 黃斑病變自我檢查 -->
       <div id="inspect">
-        <div class="maculopathy_color_title">黃斑病變自我檢查</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.inspect.name')}}</div>
         <div>
           <div>
-            <div>阿姆斯勒方格表（AMSLER GRID）檢查</div>
-            <div>使用方法：</div>
-            <div><span>1</span>如有老花或近視，須配戴原有的眼鏡進行測試</div>
-            <div><span>2</span>把方格表放在眼前距離30cm，光線要清晰及平均</div>
-            <div><span>3</span>先用手蓋著左眼，右眼凝視方格表中心黑點</div>
-            <div><span>4</span>重複步驟1至3檢查左眼</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.inspect.name1')}}</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.inspect.name2')}}</div>
+            <div><span>1</span>{{$t('pages.medical_service.maculopathy_con.inspect.text1')}}</div>
+            <div><span>2</span>{{$t('pages.medical_service.maculopathy_con.inspect.text2')}}</div>
+            <div><span>3</span>{{$t('pages.medical_service.maculopathy_con.inspect.text3')}}</div>
+            <div><span>4</span>{{$t('pages.medical_service.maculopathy_con.inspect.text4')}}</div>
           </div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/e46966e16b3b006a.png"
               alt="黃斑病變自我檢查"
             />
-            <span>正常觀看方格為棋盤狀直線</span>
+            <span>{{$t('pages.medical_service.maculopathy_con.inspect.name3')}}</span>
           </div>
         </div>
         <div>
-          <div>正常觀看方格為棋盤狀直線</div>
+          <div>{{$t('pages.medical_service.maculopathy_con.inspect.name3')}}</div>
           <div>
-            若出現畫面模糊、扭曲或黑點擴散等非直線狀態，有機會是患上了黃斑病變，應立即諮詢您的眼科專科醫生。
+            {{$t('pages.medical_service.maculopathy_con.inspect.context')}}
           </div>
           <div>
             <div v-for="(item, i) in examine" :key="i">
-              <div>{{ item.title }}</div>
+              <div>{{ $t(item.title) }}</div>
               <div><img :src="item.img_up" :alt="item.title" /></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -317,9 +320,9 @@ const callTel = () => {
       </div>
       <!-- 常見類型 -->
       <div>
-        <div class="maculopathy_color_title">常見類型</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name')}}</div>
         <div>
-          <div>黃斑病變</div>
+          <div>{{$t('pages.medical_service.maculopathy_con.types.name1')}}</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -333,8 +336,8 @@ const callTel = () => {
             />
           </svg>
           <div>
-            <p>老年</p>
-            <p>黃斑病變</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.types.p1')}}</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.types.p2')}}</p>
           </div>
           <div>
             <svg
@@ -364,19 +367,19 @@ const callTel = () => {
           </div>
           <div>
             <div>
-              <p>乾性</p>
-              <p>黃斑病變</p>
+              <p>{{$t('pages.medical_service.maculopathy_con.types.p3')}}</p>
+              <p>{{$t('pages.medical_service.maculopathy_con.types.p4')}}</p>
             </div>
             <div>
-              <p>濕性</p>
-              <p>黃斑病變</p>
+              <p>{{$t('pages.medical_service.maculopathy_con.types.p5')}}</p>
+              <p>{{$t('pages.medical_service.maculopathy_con.types.p6')}}</p>
             </div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變 -->
       <div>
-        <div class="maculopathy_color_title">老年黃斑病變</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name2')}}</div>
         <div>
           <div>
             <img
@@ -402,89 +405,89 @@ const callTel = () => {
               />
             </svg>
             <div>
-              主要成因是色素層及視網膜細胞退化，部分患者血管出現滲漏，甚至血管增生，嚴重破壞黃斑點的感光細胞，導致視力受損。患上老年黃斑病變的人口隨著年齡增加，大於50歲的人群中，每100個就有1至2名黃斑退化患者。
+              {{$t('pages.medical_service.maculopathy_con.types.context')}}
             </div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變分為乾性和濕性︰ -->
       <div>
-        <div class="maculopathy_color_title">老年黃斑病變分為乾性和濕性︰</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name3')}}</div>
         <div id="able_maculopathy">
-          <div>乾性黃斑病變</div>
+          <div>{{$t('pages.medical_service.maculopathy_con.types.name4')}}</div>
           <div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/ff4d52af6af21a3e.png"
-                alt="乾性黃斑病變"
+                :alt="$t('pages.medical_service.maculopathy_con.types.name3')"
               />
             </div>
             <div>
               <div>
-                香港每年黃斑病變患者中有九成屬於乾性。乾性黃斑病變是指黃斑區細胞退化並形成積聚代謝物，在黃斑區部下形成玻璃疣，逐步引致視網膜色素上皮萎縮。
+                {{$t('pages.medical_service.maculopathy_con.types.text1')}}
               </div>
               <div>
-                多數患者早期並沒有明顯病徵，隨著病情發展，黃斑功能逐漸減弱，視力慢慢下降，但一旦病情惡化，便有機會發展為濕性黃斑病變，而濕性黃斑病變可導致視力永久喪失。目前尚未有針對乾性黃斑退化的根治的方法，需要透過定期追蹤病情，以確保病患不會惡化。
+                {{$t('pages.medical_service.maculopathy_con.types.text2')}}
               </div>
             </div>
           </div>
         </div>
         <div id="wet_maculopathy">
-          <div>濕性黃班病變</div>
+          <div>{{$t('pages.medical_service.maculopathy_con.types.name5')}}</div>
           <div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a7c511844cb612a3.png"
-                alt="濕性黃班病變"
+                :alt="$t('pages.medical_service.maculopathy_con.types.name5')"
               />
             </div>
             <div>
               <div>
-                濕性黃斑部病變約佔所有病例的一成。患者黃斑點視網膜下出現異常的血管生長，若這些血管爆裂，會導致出血及結疤，使感光細胞永久受損。
+                {{$t('pages.medical_service.maculopathy_con.types.text3')}}
               </div>
               <div>
-                這類病變發病較迅速，對造成中心視野缺損。濕性病變患者常出現其中一隻眼突然發生視功能障礙，另一隻眼正常或已處於病變早期，但幾年後也發生同樣病變。濕性老年黃斑病變可以短時間內造成嚴重視力衰退，有機會於數天內令視力嚴重受損；因此如有懷疑症狀，應立即聯絡眼科醫生。
+                {{$t('pages.medical_service.maculopathy_con.types.text4')}}
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- 老年黃斑病變成因s -->
-      <div id="wet_maculopathy_factor">
-        <div class="maculopathy_color_title">老年黃斑病變成因</div>
-        <div>
-          <div v-for="(item, i) in factor" :key="i">
-            <div><img :src="item.img" /></div>
-            <div>{{ item.text }}</div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變治療 -->
+      <div id="wet_maculopathy_factor">
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.factor.name')}}</div>
+        <div>
+          <div v-for="(item, i) in factor" :key="i">
+            <div><img :src="item.img" /></div>
+            <div>{{ $t(item.text) }}</div>
+          </div>
+        </div>
+      </div>
+      <!-- 老年黃斑病變成因s -->
       <div id="wet_maculopathy_cure">
-        <div class="maculopathy_color_title">老年黃斑病變治療</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.cure.name')}}</div>
         <div>
           <div>
-            <div>激光光凝凝固</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.cure.title1')}}</div>
             <div>
-              利用激光的熱能，去除視網膜下增生的血管，盡量保存未受影響、黃斑病變區內的視網膜。但由於熱力激光並沒有選擇性，病變位置與黃斑點中央需要有一定距離，否則在燒毀增生血管的同時難免會破壞周邊組織，可引致視功能退化或失明，故此治療方法只適用於少數黃斑退化患者。
+              {{$t('pages.medical_service.maculopathy_con.cure.text1')}}
             </div>
           </div>
           <div>
-            <div>光動力療法</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.cure.title2')}}</div>
             <div>
-              這個把光敏劑注射到血液內，光敏劑選擇性地積聚在視網膜下不正常的血管上，經一種非熱能激光活化後，光敏劑便能在不影響視網膜其他正常組織的情況下，堵塞這些不正常增生的血管，從而控制病情惡化、改善患者視功能、縮細黑影以及糾正視覺影像扭曲的情況。然而，此療法不能恢復失去了的視功能。光動力療法對治療PCV有良好效果。
+              {{$t('pages.medical_service.maculopathy_con.cure.text2')}}
             </div>
           </div>
           <div>
-            <div>類固醇玻璃體注射</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.cure.title3')}}</div>
             <div>
-              曲安奈德是一種鹽皮質類固醇，能減少眼內血管對視網膜屏障的破壞。類固醇玻璃體注射須表面麻醉，並在無菌環境下進行。這注射一般可在診所進行，而醫生將採取一切預防措施，減低感染風險。
+              {{$t('pages.medical_service.maculopathy_con.cure.text3')}}
             </div>
           </div>
           <div>
-            <div>抗血管內皮生長因子玻璃體注射</div>
+            <div>{{$t('pages.medical_service.maculopathy_con.cure.title4')}}</div>
             <div>
-              以抗血管內皮生長因子注射來控制濕性黃斑退化是現時主流的治療方法。研究顯示可有效防止視功能進一步衰退，以及能改善視功能。現時普遍使用的藥物有「癌思停」及「樂舒晴」，研究顯示這兩種藥物的治療成效相約。「愛亮眼」是目前治療濕性黃斑退化最新的藥物。有些患者注射了其中一種抗血管內皮生長因子藥物無效，改用另一種，反而有不錯的成效。
+              {{$t('pages.medical_service.maculopathy_con.cure.text4')}}
             </div>
           </div>
         </div>
@@ -495,17 +498,17 @@ const callTel = () => {
       </div>
       <!-- 預防黃斑病變 -->
       <div id="prevent">
-        <div class="maculopathy_color_title">預防黃斑病變</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.prevent.name')}}</div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
             <div><img :src="item.img" :alt="item.text" /></div>
-            <div>{{ item.title }}</div>
-            <div>{{ item.text }}</div>
+            <div>{{ $t(item.title) }}</div>
+            <div>{{ $t(item.text)}}</div>
           </div>
         </div>
       </div>
       <div id="faq">
-        <div class="maculopathy_color_title">常見問題</div>
+        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.faq.name')}}</div>
         <div>
           <PageCollapse
             :answer="meetArr"
@@ -1163,6 +1166,122 @@ const callTel = () => {
       margin-bottom: 90px;
     }
   }
+  &.maculopathyNav-en{
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div:nth-child(2) {
+            width: max-content;
+            padding: 0 30px;
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(3) {
+          & > div {
+            & > div:nth-child(1) {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(4) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          text-align: center;
+          font-size: 40px;
+        }
+        & > div:nth-child(3) {
+          font-size: 35px;
+          text-align: center;
+        }
+        & > div:nth-child(5) {
+          & > div{
+            font-size: 30px;
+            text-align: center;
+          }
+          & > div:nth-child(1) {
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            padding: 15px 38px 15px 64px;
+            line-height: 1.6;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    & > div:nth-child(6) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          padding-left: 18%;
+        }
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            font-size: 20px;
+            padding-top: 20px;
+            line-height: 1.4;
+            & > div:nth-child(2) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          padding-right: 18%;
+        }
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            font-size: 20px;
+            padding-top: 20px;
+            line-height: 1.5;
+            & > div:nth-child(2) {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(7) {
+      & > div:nth-child(2) {
+        &>div{
+          max-width: 25%;
+          align-items: center;
+          & > div:nth-child(2) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    & > div:nth-child(8) {
+      & > div:nth-child(2) {
+        &>div{
+          
+          & > div:nth-child(1) {
+            width: max-content;
+            padding-right: 30px;
+          }
+        }
+      }
+    }
+    & > div:nth-child(9) {
+      & > div:nth-child(2) {
+        & > div{
+          height: auto;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
 }
 @keyframes bgposition {
     0% {
@@ -1779,6 +1898,138 @@ const callTel = () => {
       margin: 20px auto 0;
       & > div:first-child {
         margin-bottom: 30px;
+      }
+    }
+    &.maculopathyNav-en{
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              width: auto;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(3) {
+          & > div:nth-child(3) {
+            &>div{
+              & > div:nth-child(1) {
+                height: auto;
+                min-height: 50px;
+                line-height: 1.6;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(4) {
+        width: 100%;
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            font-size: 14px;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+          }
+          & > div:nth-child(3) {
+            font-size: 12px;
+            margin-left: 0;
+            width: 90px;
+            height: 90px;
+            min-width: 90px;
+          }
+          & > div:nth-child(4) {
+            margin-left: 20px;
+          }
+          & > div:nth-child(5) {
+            &>div{
+              font-size: 12px;
+              width: 80px;
+              height: 80px;
+            }
+            & > div:nth-child(1) {
+              font-size: 12px;
+              
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              padding: 22px 12px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(6) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            padding-left: 0;
+            margin-left: 50%;
+            text-align: right;
+            width: 50%;
+            line-height: 1.6;
+          }
+          & > div:nth-child(2) {
+            margin-bottom: 200px;
+            & > div:nth-child(2) {
+              font-size: 14px;
+              padding-top: 40px;
+            }
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            padding-right: 0;
+            margin-right: 50%;
+            margin-left: 0;
+            text-align: left;
+            width: 50%;
+            line-height: 1.6;
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              font-size: 14px;
+              padding-top: 40px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(7) {
+        margin-top: 200px;
+        & > div:nth-child(2) {
+          & >div{
+            max-width: 50%;
+            &:last-child{
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      & > div:nth-child(8) {
+        & > div:nth-child(2) {
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              height: auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      & > div:nth-child(9) {
+        & > div:nth-child(2) {
+          & > div{
+            padding-bottom: 0;
+            & > div:nth-child(3) {
+              padding: 0 10px 15px;
+            }
+          }
+        }
       }
     }
   }
