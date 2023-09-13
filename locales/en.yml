@@ -1009,6 +1009,79 @@ pages:
         q3: Do eye drops and medications help get rid of floaters?
         a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
     conjunctivitis: Conjunctivitis
+    conjunctivitis_con:
+      navLists:
+        name1: Conjunctivitis
+        name2: Symptoms
+        name3: Types
+        name4: Mode of transmission
+        name5: Risk Factors
+        name6: Treatment
+        name7: Prevention
+      conjunctivitisInfo: 
+        name: What is conjunctivitis?
+        context: Conjunctivitis known as "pink eye", is an inflammation or infection of the semi-transparent membrane (conjunctiva) that lines your eyelid and covers the white part of your eyeball. The semi-transparent layer will turn to pink or red when there is conjunctivitis. This condition is commonly caused by viruses or bacteria. Allergic reactions can also cause conjunctivitis. Anyone can get conjunctivitis, especially children.
+      symptom: 
+        name: Symptoms
+        text1: Redness in the conjunctiva
+        text2: Red and droopy eyelids
+        text3: Itchy and painful eyes
+        text4: Feeling something in the eyes, burning sensation
+        text5: Tearing and sensitive to light
+        text6: Thick discharge
+      kind:
+        name: Types
+        title1: Viral conjunctivitis
+        text1: It is usually related to upper respiratory tract infection and caused by viruses. The main pathogens are adenovirus and enterovirus. This type of conjunctivitis is highly contagious, but the infected eye(s) usually recovers without treatment within a few days.
+        title2: Bacterial conjunctivitis
+        text2: It is caused by a variety of bacteria, the most common are Haemophilus influenzae and Streptococcus pneumoniae. Both new-born babies and adults can be infected by Chlamydia. If bacterial conjunctivitis is not treated, the bacteria can cause serious damage to the eyes.
+        title3: Allergic conjunctivitis
+        text3: Allergic conjunctivitis is a common eye disease. When the allergens lead to inflamed eyes, microorganisms and environmental irritants, the immune system will overreact in responding to the allergens, causing the swollen blood vessels walls in conjunctiva and therefore the eyes become pink or red.
+        detail:
+          context: "The following are common types of allergic conjunctivitis:"
+          caption1: "- Seasonal allergic conjunctivitis"
+          content1: "It usually occurs in spring and summer. The common allergens are mold spores, and plant pollen in the alternation of spring and summer. People with allergies, such as: asthma, allergic rhinitis, are more likely to suffer from seasonal allergic conjunctivitis."
+          caption2: "- Perennial allergic conjunctivitis"
+          content2: Allergens mainly are air pollutants, dust, dust mites or animal dander, etc. Allergic symptoms may occur in the whole year; however, the symptoms are mostly mild.
+          caption3: "- Giant papillary conjunctivitis"
+          content3: Giant papillary conjunctivitis (GPC) is the most common complication of long-term use of contact lenses. A long-term wearing of contact lenses can cause roughness of the conjunctiva, so if contact lenses are not properly selected, examined, worn, or cared for, complications and sequelae will occur.
+      approach:
+        name: Mode of transmission
+        context: Conjunctivitis can be divided into infectious and non-infectious causes. Viral and bacterial are extremely infectious, can be infected by close contact with the patient or indirect contact with contaminated items.
+        name1: "Common ways of transmission:"
+        text1: Touching the infected individuals’eyes or upper respiratory tract secretions with hands.
+        text2: "Sharing personal items, such as: towels, clothing, eye cosmetics or eye drops."
+        text3: If swimmers swim in a contaminated pool, they could also be infected.
+        context1: The incubation period is usually 1-12 days after exposure for bacterial conjunctivitis. It takes about 10 days to several weeks from the onset of symptoms until recovery.
+      highRisk:
+        name: Risk Factors
+        context: Conjunctivitis can occur at all ages, but those below are most frequently affected.
+        text1: Children under 5
+        text2: People who have sensitive eyes and noses
+        text3: People who have vulnerable immune system
+        text4: People who always touch their eyes
+        text5: People who wear contact lenses for a long time
+        text6: People who stare at screens forS a long time
+      means:
+        name: Treatment
+        title1: Viral conjunctivitis
+        text1: Normally, viral conjunctivitis heals within 1 week without treatment. Patients can take more rest and apply cold wet towels on the eyes (several times a day, with eye closed) to relieve the symptoms of discomfort.
+        title2: Bacterial conjunctivitis
+        text2: The bacterial conjunctivitis is usually treated with medications that to be prescribed by doctors, such as eye drops or ointments containing antibiotics.
+        title3: Allergic conjunctivitis
+        text3: If the conjunctivitis is caused by the allergens, avoiding contact with allergens can reduce symptoms or prevent relapse. Contact lenses should be stopped if they cause conjunctivitis. Clinically, the symptoms of allergic conjunctivitis can also be relieved by medications.
+      prevent:
+        name: Prevention
+        title1: Avoid sharing personal items
+        text1: Don’t share personal items like towels, pillows, eye droppers, eye cosmetics, contact lenses, or other items that may touch your eyes.
+        title2: Perform hand hygiene
+        text2: Wash hands thoroughly with soap and water before touching your eyes and always maintain good hygiene.
+        title3: Refrain from high-risk places
+        text3: Avoid using the public facilities such as swimming pool, public bathroom, sauna, and playground while in the outbreak of conjunctivitis.
+        title4: Clean contact lenses thoroughly
+        text4: Clean both sides of your contacts with fresh contact lens disinfecting solution, rinse and leave them to soak overnight (at least 6 hours).
+        title5: Avoid contact with allergens
+        text5: Be aware of allergens such as pollens, house dust mite, and animal dander etc, especially when season changed.
     maculopathy: Macular Degeneration
     strabismusAmblyopia: Amblyopia and Strabismus in Children
     amotioRetinae: Retinal Detachment

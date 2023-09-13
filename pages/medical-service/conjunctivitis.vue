@@ -29,6 +29,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#c0c0e6;',
@@ -39,60 +41,60 @@ const backgd = [
 const symptom = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/49f77c5d99a7780b.png',
-    text: '結膜充血',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d926dc7d76ec029f.png',
-    text: '眼瞼紅腫、沉重',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/850716323d310472.png',
-    text: '眼睛痕癢、疼痛',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bcda02c1c5bf937d.png',
-    text: '異物感、燒灼感',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ccacc25f729b2461.png',
-    text: '流眼水、畏光',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d329a39c077ff928.png',
-    text: '分泌物增多',
+    text: 'pages.medical_service.conjunctivitis_con.symptom.text6',
   },
 ]
 const kind = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/748e5bcb92254caf.png',
-    title: '病毒性結膜炎',
-    text: '通常與上呼吸道感染有關，由病毒引起，主要病原體為腺病毒及腸病毒。這種結膜炎傳染性很高，但通常在數日內，不需要治療的情況下自行復原。',
+    title: 'pages.medical_service.conjunctivitis_con.kind.title1',
+    text: 'pages.medical_service.conjunctivitis_con.kind.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/701397f097eef96c.png',
-    title: '細菌性結膜炎',
-    text: '由多種細菌引起，最常見有流感嗜血桿菌和肺炎鏈球菌，其中衣原體感染會令初生嬰兒和成人患上細菌性結膜炎。若不及時治療，細菌性結膜炎所感染的細菌可造成眼睛嚴重的傷害。',
+    title: 'pages.medical_service.conjunctivitis_con.kind.title2',
+    text: 'pages.medical_service.conjunctivitis_con.kind.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ef14a865c31942b9.png',
-    title: '過敏性結膜炎',
-    text: '過敏性結膜炎是較常見的眼疾。當眼睛受致敏原、微生物及環境中的刺激物而發炎時，免疫系統會針對致敏原產生過度的免疫反應，使結膜裡的血管腫脹，以致眼睛發紅。',
+    title: 'pages.medical_service.conjunctivitis_con.kind.title3',
+    text: 'pages.medical_service.conjunctivitis_con.kind.text3',
     detail: [
-      '以下是常見過敏性結膜炎的種類︰',
+      'pages.medical_service.conjunctivitis_con.kind.detail.context',
       {
-        caption: '- 季節性過敏性結膜炎',
+        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption1',
         content:
-          '多數發生於季節轉換時，常見致敏原是秋冬季的霉菌孢子及春夏交替時的植物花粉。本身有過敏體質的會更容易患上此病，例如︰氣喘、過敏性鼻炎等。',
+          'pages.medical_service.conjunctivitis_con.kind.detail.content1',
       },
       {
-        caption: '- 常年性過敏性結膜炎',
+        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption2',
         content:
-          '致敏原多數是空氣中的污染物、灰塵、塵蟎或動物毛屑等，過敏症狀一年四季都可能發生，但症狀多較輕微。',
+          'pages.medical_service.conjunctivitis_con.kind.detail.content2',
       },
       {
-        caption: '- 巨柱狀敏感性結膜炎',
+        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption3',
         content:
-          '屬長期使用隱形眼鏡常見引起的併發症。由於隱形眼鏡對眼睛來說，屬於異物，長期配戴有可能使得結膜表面發生改變，變得凹凸不平，引起不適症狀。所以若在選擇、驗配、配戴或護理上處理不當，便有機會出現併發和後遺症。',
+          'pages.medical_service.conjunctivitis_con.kind.detail.content3',
       },
     ],
   },
@@ -101,100 +103,100 @@ const kind = [
 const approach = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0d05a89369200317.png',
-    text: '雙手接觸患者的眼睛或上呼吸道的分泌物傳播',
+    text: 'pages.medical_service.conjunctivitis_con.approach.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f0bec1c3ab794f68.png',
-    text: '透過患者的個人日用品，如毛巾、衣物、眼部化妝品或眼藥水等交叉感染',
+    text: 'pages.medical_service.conjunctivitis_con.approach.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4d61a6761a07123c.png',
-    text: '如游泳人士在受污染的水源游泳，也有機會受感染',
+    text: 'pages.medical_service.conjunctivitis_con.approach.text3',
   },
 ]
 // 高危人士
 const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1a586d997866355f.png',
-    text: '5歲或以下兒童及嬰幼兒',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/044719c0b3767bdf.png',
-    text: '有眼或鼻敏感患者',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/9210325662456759.png',
-    text: '抵抗力較差人士',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0820acef48ffd428.png',
-    text: '經常觸摸雙眼人士',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/42fba00cccac8fd8.png',
-    text: '長時間配戴隱形眼鏡人士',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d4a7e8890a9e4e9d.png',
-    text: '長時間注視電子螢幕人士',
+    text: 'pages.medical_service.conjunctivitis_con.highRisk.text6',
   },
 ]
 // 預防結膜炎
 const prevent = [
   {
-    title: '避免共用個人物品',
+    title: 'pages.medical_service.conjunctivitis_con.prevent.title1',
     img: 'https://static.cmereye.com/imgs/2023/05/6f78b53bc80256f1.png',
-    text: '不要與他人共用毛巾、枕頭、眼藥水、眼部化妝品、隱形眼鏡和其他可能接觸到眼睛的物品。',
+    text: 'pages.medical_service.conjunctivitis_con.prevent.text1',
   },
   {
-    title: '觸摸眼睛前要先洗手',
+    title: 'pages.medical_service.conjunctivitis_con.prevent.title2',
     img: 'https://static.cmereye.com/imgs/2023/05/477c1cc938e1c255.png',
-    text: '觸摸眼睛前應以梘液和清水徹底清潔雙手，並經常保持雙手乾淨衛生。',
+    text: 'pages.medical_service.conjunctivitis_con.prevent.text2',
   },
   {
-    title: '避免出入高危地方',
+    title: 'pages.medical_service.conjunctivitis_con.prevent.title3',
     img: 'https://static.cmereye.com/imgs/2023/05/9bdb93a2e7d6cdda.png',
-    text: '結膜炎流行期間，應避免使用公共設施，如游泳池、浴室、桑拿室、遊樂場等高危地方，以減低感染風險。',
+    text: 'pages.medical_service.conjunctivitis_con.prevent.text3',
   },
   {
-    title: '徹底清潔隱形眼鏡',
+    title: 'pages.medical_service.conjunctivitis_con.prevent.title4',
     img: 'https://static.cmereye.com/imgs/2023/05/f72bd496b4dd4560.png',
-    text: '使用隱形眼鏡護理液清洗鏡片，仔細清洗鏡片的兩面，建議讓鏡片浸泡在新鮮的護理液至少6小時。',
+    text: 'pages.medical_service.conjunctivitis_con.prevent.text4',
   },
   {
-    title: '避免接觸過敏原',
+    title: 'pages.medical_service.conjunctivitis_con.prevent.title5',
     img: 'https://static.cmereye.com/imgs/2023/05/324f7391c1f7706f.png',
-    text: '季節交替時，注意小心接觸花粉、塵蟎、動物毛屑等有機會引起結膜炎的過敏原。',
+    text: 'pages.medical_service.conjunctivitis_con.prevent.text5',
   },
 ]
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '結膜炎',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name1',
     anchorLink: '/medical-service/conjunctivitis#conjunctivitisInfo',
   },
   {
-    anchorName: '症狀',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name2',
     anchorLink: '/medical-service/conjunctivitis#symptom',
   },
   {
-    anchorName: '類別',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name3',
     anchorLink: '/medical-service/conjunctivitis#kind',
   },
   {
-    anchorName: '傳播途徑',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name4',
     anchorLink: '/medical-service/conjunctivitis#approach',
   },
   {
-    anchorName: '高危人士',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name5',
     anchorLink: '/medical-service/conjunctivitis#highRisk',
   },
   {
-    anchorName: '治療',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name6',
     anchorLink: '/medical-service/conjunctivitis#means',
   },
   {
-    anchorName: '預防方法',
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name7',
     anchorLink: '/medical-service/conjunctivitis#prevent',
   },
 ]
@@ -217,7 +219,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>結膜炎</div>
+          <div>{{$t('pages.medical_service.conjunctivitis')}}</div>
           <div>CONJUNCTIVITIS</div>
           <div>CONJUNCTIVITIS</div>
           <div>CONJUNCTIVITIS</div>
@@ -226,30 +228,30 @@ const callTel = () => {
     </div>
     <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
-    <div class="conjunctivitis_nav">
+    <div class="conjunctivitis_nav" :class="{'conjunctivitis-en': locale === 'en'}">
       <!-- 什麼是結膜炎？ -->
       <div id="conjunctivitisInfo">
         <div>
-          <div>什麼是結膜炎？</div>
+          <div>{{$t('pages.medical_service.conjunctivitis_con.conjunctivitisInfo.name')}}</div>
           <div>
-            結膜炎俗稱「紅眼症」，指覆蓋著眼白、眼瞼內方及眼球表面的半透明薄膜發生炎症，薄膜會變成粉紅色或紅色。較常見由病毒引起，細菌性感染或過敏反應亦是造成結膜炎的原因。任何人均可能染上結膜炎，兒童更較常受到感染。
+            {{$t('pages.medical_service.conjunctivitis_con.conjunctivitisInfo.context')}}
           </div>
         </div>
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/3ce6dbff76e16a32.png"
-            alt="結膜炎"
+            :alt="$t('pages.medical_service.conjunctivitis')"
           />
         </div>
       </div>
       <!-- 結膜炎症狀 -->
       <div id="symptom">
-        <div class="conjun_text_color">結膜炎症狀</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.symptom.name')}}</div>
         <div>
           <div v-for="(item, index) in symptom" :key="index">
             <div><img :src="item.img" :alt="item.text" /></div>
             <div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
@@ -260,22 +262,22 @@ const callTel = () => {
       </div>
       <!-- 結膜炎種類 -->
       <div id="kind">
-        <div class="conjun_text_color">結膜炎種類</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.kind.name')}}</div>
         <div>
           <div v-for="(item, index) in kind" :key="index">
             <div>
               <div><img :src="item.img" alt="" /></div>
               <div>
-                <div>{{ item.title }}</div>
+                <div>{{ $t(item.title) }}</div>
               </div>
             </div>
             <div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
               <div v-for="(ele, i) in item.detail" :key="i">
-                <div v-if="typeof ele === 'string'">{{ ele }}</div>
+                <div v-if="typeof ele === 'string'">{{ $t(ele) }}</div>
                 <div v-else>
                   <div v-for="(el, index) in ele" :key="index">
-                    {{ el }}
+                    {{ $t(el) }}
                   </div>
                 </div>
               </div>
@@ -289,16 +291,16 @@ const callTel = () => {
       </div>
       <!-- 傳播途徑 -->
       <div id="approach">
-        <div class="conjun_text_color">傳播途徑</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.approach.name')}}</div>
         <div>
-          結膜炎分為傳染性及非傳染性。病毒性和細菌性結膜炎屬傳染性，傳染力極高，主要透過與患者親密接觸，或間接接觸到受污染的物品均可致病。
+          {{$t('pages.medical_service.conjunctivitis_con.approach.context')}}
         </div>
         <div>
-          <div>常見的傳染途徑︰</div>
+          <div>{{$t('pages.medical_service.conjunctivitis_con.approach.name1')}}</div>
           <div>
             <div v-for="(item, index) in approach" :key="index">
               <div><img :src="item.img" :alt="item.text" /></div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
@@ -318,7 +320,7 @@ const callTel = () => {
             />
           </svg>
           <div>
-            當病毒入侵眼睛，會經過一段潛伏期後才發病，潛伏期為1至12天不等，由病發至康復需要大約10天至數星期。
+            {{$t('pages.medical_service.conjunctivitis_con.approach.context1')}}
           </div>
         </div>
         <div class="conjun_button_bg_color" @click="callTel()">
@@ -328,49 +330,49 @@ const callTel = () => {
       </div>
       <!-- 高危人士 -->
       <div id="highRisk">
-        <div class="conjun_text_color">高危人士</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.highRisk.name')}}</div>
         <div>
-          <div>任何人士都有機會感染結膜炎，但以下人士較為高危：</div>
+          <div>{{$t('pages.medical_service.conjunctivitis_con.highRisk.context')}}</div>
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
               <div><img :src="item.img" :alt="item.text" /></div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
       </div>
       <!-- 結膜炎治療 -->
       <div id="means">
-        <div class="conjun_text_color">結膜炎治療</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.means.name')}}</div>
         <div>
           <div>
-            <div>病毒性結膜炎</div>
+            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title1')}}</div>
             <div>
-              一般情況下，病毒性結膜炎患者會在大約1星期內痊癒，毋須特別治療。如要紓緩不適的症狀，患者可多作休息，將冷濕的毛巾敷在眼睛上，一日數次。
+              {{$t('pages.medical_service.conjunctivitis_con.means.text1')}}
             </div>
           </div>
           <div>
-            <div>細菌性結膜炎</div>
+            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title2')}}</div>
             <div>
-              治療細菌性結膜炎，一般以醫生處方藥物作治療，例如︰含抗生素的眼藥水或眼膏。
+              {{$t('pages.medical_service.conjunctivitis_con.means.text2')}}
             </div>
           </div>
           <div>
-            <div>過敏性結膜炎</div>
+            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title3')}}</div>
             <div>
-              如屬於因接觸致敏源而導致的結膜炎，避免接觸致敏源可減輕症狀或減少發作。若因配戴隱形眼鏡所引起則需要停戴。此外，臨床上亦可透過用藥控制過敏性結膜炎的反應。
+              {{$t('pages.medical_service.conjunctivitis_con.means.text3')}}
             </div>
           </div>
         </div>
       </div>
       <!-- 預防結膜炎 -->
       <div id="prevent">
-        <div class="conjun_text_color">預防結膜炎</div>
+        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.prevent.name')}}</div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
-            <div>{{ item.title }}</div>
+            <div>{{ $t(item.title) }}</div>
             <div><img :src="item.img" :alt="item.title" /></div>
-            <div>{{ item.text }}</div>
+            <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
@@ -869,6 +871,60 @@ const callTel = () => {
 
       & > div:nth-child(n + 4) {
         margin-top: 120px;
+      }
+    }
+  }
+  &.conjunctivitis-en{
+    & > div:nth-child(1) {
+      & > div:nth-child(1) {
+        margin-top: 100px;
+        & > div:nth-child(2) {
+          line-height: 1.6;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      & > div:nth-child(2) {
+        &>div{
+          width: calc(100% / 4);
+          & > div:nth-child(2) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        &>div{
+          & > div:nth-child(1) {
+            & > div:nth-child(2) {
+              padding-left: 90px;
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(5) {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          & > div{
+            width: calc(100% / 3);
+            & > div:nth-child(2) {
+              text-align: center;
+              padding: 0 20px;
+            }
+          }
+        }
+      }
+    }
+    & > div:nth-child(6) {
+      & > div:nth-child(2) {
+        & > div {
+          & > div:nth-child(1) {
+            width: max-content;
+            padding: 0 30px;
+          }
+        }
       }
     }
   }
@@ -1400,6 +1456,45 @@ const callTel = () => {
         }
         & > div:nth-child(2n) {
           align-items: flex-end;
+        }
+      }
+    }
+    &.conjunctivitis-en{
+      & > div:nth-child(1) {
+        & > div:nth-child(1) {
+          margin-top: 0;
+        }
+      }
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          &>div{
+            width: 50%;
+            & > div:nth-child(2) {
+              line-height: 1.6;
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(1) {
+              & > div:nth-child(2) {
+                line-height: 1.2;
+                padding-left:50px;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div{
+              justify-content: flex-start;
+            }
+          }
         }
       }
     }

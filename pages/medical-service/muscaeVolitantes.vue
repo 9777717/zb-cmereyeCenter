@@ -1314,6 +1314,17 @@ const callTel = () => {
               line-height: 1.4;
             }
           } 
+          & > div:nth-child(2){
+            &> div:nth-child(2){
+              text-align: center;
+              p{
+                color: #d8a597;
+                span{
+                  color: #6c899e;
+                }
+              }
+            }
+          }
           & > div:nth-child(3) {
             &>div{
               text-align: center;
@@ -2040,6 +2051,77 @@ const callTel = () => {
       margin: 40px auto 0;
       & > div:nth-child(2) {
         margin-top: 30px;
+      }
+    }
+    &.muscaeNav-en{
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              & > div:nth-child(2) {
+                & > div:nth-child(2) {
+                  margin-top: 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(6) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(2) {
+              padding: 10px 20px;
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  margin-right: 0;
+                  margin-top: 20px;
+                }
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            margin-top: 150px;
+            & > div:nth-child(2) {
+              padding-top: 45px;
+              font-size: 14px;
+            }
+          }
+          & > div:nth-child(3) {
+            & > div:nth-child(1) {
+              height: 50px;
+            }
+            & > div:nth-child(2) {
+              padding-top: 45px;
+              font-size: 14px;
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+          & > div:nth-child(4) {
+            & > div:nth-child(1) {
+              & > div{
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      & > div:nth-child(7) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            &>div{
+              &>div{
+                & > div:nth-child(2) {
+                  padding-bottom: 0;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
