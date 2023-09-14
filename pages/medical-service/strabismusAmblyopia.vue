@@ -394,7 +394,7 @@ const callTel = () => {
       </div>
     </div>
     <div id="bg_strabismusAmblyopia_nav"></div>
-    <div id="curativeTime">
+    <div id="curativeTime" :class="{'curativeTime-en': locale === 'en'}">
       <div>{{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.name')}}</div>
       <div class="strabismusAmblyopia_text_p_span">
         {{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.context')}}
@@ -887,6 +887,34 @@ const callTel = () => {
           }
         }
       }
+      & > div:nth-child(5) {
+        & > div:nth-child(3) {
+          &>div{
+            max-width: calc(100% / 3);
+          }
+        }
+      }
+    }
+    &> #amblyopia{
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                line-height: 1.2;
+                font-size: 28px;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    &>#treat{
+      & > div:nth-child(2) {
+        padding: 100px 60px;
+        line-height: 1.4;
+      }
     }
   }
 }
@@ -916,6 +944,17 @@ const callTel = () => {
     margin-top: 90px;
     padding: 0 65px;
     line-height: 42px;
+  }
+  &.curativeTime-en{
+    & > div:nth-child(1) {
+      line-height: 1.4;
+      width: 40%;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+    & > div:nth-child(2) {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -1453,6 +1492,64 @@ const callTel = () => {
         }
       }
     }
+    &.strabismusAmblyopiaNav-en{
+      &>#kind{
+        & > div:nth-child(2) {
+          &>div{
+            & > div:nth-child(1) {
+              line-height: 1.2;
+            }
+            & > div:nth-child(2) {
+              & > div:nth-child(2) {
+                &>div{
+                  & > div:nth-child(2) {
+                    width: 100px;
+                    line-height: 1.6;
+                    padding: 0;
+                    min-width: auto;
+                    line-height: 1;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+        & > div:nth-child(5) {
+          & > div:nth-child(1) {
+            line-height: 1.4;
+            text-align: center;
+          }
+          & > div:nth-child(3) {
+            &>div{
+              max-width: calc(100% / 2);
+            }
+          }
+        }
+      }
+      &> #amblyopia{
+        & > div:nth-child(3) {
+          & > div:nth-child(2) {
+            & > div {
+              & > div:nth-child(2) {
+                & > div:nth-child(1) {
+                  font-size: 18px;
+                  line-height: 1.2;
+                }
+              }
+            }
+          }
+        }
+      }    
+      &>#treat{
+        & > div:nth-child(2) {
+          padding: 30px 25px;
+          &>p{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
   #curativeTime {
     width: calc(100% - 60px);
@@ -1472,6 +1569,19 @@ const callTel = () => {
       margin-top: 40px;
       padding: 0 25px;
       line-height: 1.8;
+    }
+    &.curativeTime-en{
+      & > div:nth-child(1) {
+        line-height: 1.4;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 0;
+        font-size: 16px;
+      }
+      & > div:nth-child(2) {
+        margin-top: 20px;
+        line-height: 1.2;
+      }
     }
   }
   #bg_strabismusAmblyopia_nav {
