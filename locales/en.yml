@@ -1280,6 +1280,37 @@ pages:
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     medicalOptometry: Myopia Control and Ophthalmic Services
+    medicalOptometry_con: 
+      introduction:
+        p1: Changing lifestyle, people nowadays are spending more time on screens every day. However, bad eye health will lead to degeneration and cause many eye problems or even eye diseases. It is believed that prevention is better than cure. Regular eye exams should be scheduled for good eye health and to prevent eye diseases.
+        p2: ""
+        span1: CMER VISION,
+        span2: an optometry center under CMER Eye Center, is committed to providing
+        span3: comprehensive eye examinations for adults and kids and a myopia
+        span4: , taking care of different age groups. We will refer patients to an
+        span5: ophthalmologist
+        span6: follow-up if any signs of eye diseases or problems are found in the eye examination. Therefore, the patient can receive appropriate treatment as fast as possible.
+        btn1: Booking for
+        btn2: comprehensive eye examination
+      cause: 
+        name: Why are eye tests necessary for different age groups?
+        title1: 3-6 years old
+        span1: Children in this age are able to understand and cooperate with most of the eye examinations, such as visual acuity, eye movements and binocular vision. They can follow optometrists’ guidance for good eye health so as to prevent myopia. Furthermore, early detection and treatment for amblyopia and strabismus could be possible through regular eye check-up in early age.
+        text1: Eye examination for children aged 3-6
+        btn1: Booking for service
+        title2: 6-18 years old
+        span2: The eye tends to grow rapidly during this age group. Children who develop myopia at an early age have the tendency of rapid progression because their eyes grow rapidly. Those who develop myopia in late childhood, the growth of eyeballs is slower.
+        text2: Myopia Management Consultation for aged 6-18
+        btn2: Booking for service
+        span3: "The myopia control is important, because abnormal vision development can affect a child's future development and eye health. CMER Vision Center concerns about the high myopia rate of school children, provides eye examination services and targeted myopia control programs for children, including: orthokeratology, daily disposable myopia control contact lenses, children's myopia control Lenses (DIMS lenses, MyoVision lenses), in order to help children in the prevention and control of myopia."
+        btn3_1: Know More
+        btn3_2: About Myopia Control
+        title4: 18-55 years old
+        span4: For this age group, eye examinations are important for people with eye disease and those with high risk of genetic eye diseases, e.g. glaucoma. Apart from having regular eye examinations, there are also other related special examinations. People with moderate to severe myopia or diabetes patients should have regular eye check-ups of their fundus for early detection of related eye diseases. 
+        title5: Over 55 years old
+        span5: When we grow older, we have higher risk of developing age-related eye diseases, such as cataracts and age-related macular degeneration. Eye examination helps in early detection, so that eye diseases can be treated as soon as possible.
+      btn1: Eye examination for adults aged 18-55
+      btn2: Booking for service
     smileHk: Vision Correction
     atropine: Atropine Eye Drops
     atropine_text: 

@@ -28,6 +28,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#bcd09c;',
@@ -74,7 +76,7 @@ const goVision = () => {
     <div class="medicalOptometry_head">
       <div>
         <div>
-          <div>醫學驗光配鏡</div>
+          <div>{{$t('pages.medical_service.medicalOptometry')}}</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
@@ -84,19 +86,19 @@ const goVision = () => {
     <div class="medicalOptometry-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
     </div>
-    <div class="medicalOptometry_nav">
+    <div class="medicalOptometry_nav" :class="{'medicalOptometryNav-en': locale === 'en'}">
       <div id="brief_introduction">
         <div>
           <div class="medicalOptometry_text_p_span">
             <p>
-              現代人生活模式改變，每天花大量時間看電子螢幕，雙眼休息不足，容易加速眼睛老化，還造成各種視力甚至眼疾問題。我們相信預防勝於治療。為了預防眼疾，無論任何年齡，都需要定期進行眼睛健康檢查，保持良好視力和擁有健康眼睛。
+              {{$t('pages.medical_service.medicalOptometry_con.introduction.p1')}}
             </p>
             <p>
-              希瑪眼科中心旗下的視光中心──
-              <span style="cursor: pointer;" @click="toCmer">希瑪眼科視光中心CMER VISION</span>，提供
-              <span>成人眼睛檢查、兒童眼睛檢查、近視控制檢查</span>
-              等，照顧不同客人的需要。在視光檢查後，如發現有任何眼疾先兆或問題，我們會立即轉介予
-              <span>眼科專科醫生</span> 跟進，務求令患者得到最合適的治療。
+              {{$t('pages.medical_service.medicalOptometry_con.introduction.p2')}}
+              <span style="cursor: pointer;" @click="toCmer">{{$t('pages.medical_service.medicalOptometry_con.introduction.span1')}}</span>{{$t('pages.medical_service.medicalOptometry_con.introduction.span2')}}
+              <span>{{$t('pages.medical_service.medicalOptometry_con.introduction.span3')}}</span>
+              {{$t('pages.medical_service.medicalOptometry_con.introduction.span4')}}
+              <span>{{$t('pages.medical_service.medicalOptometry_con.introduction.span5')}}</span> {{$t('pages.medical_service.medicalOptometry_con.introduction.span6')}}
             </p>
           </div>
           <div>
@@ -104,25 +106,25 @@ const goVision = () => {
           </div>
         </div>
         <div @click="toVision">
-          <div>立即預約</div>
-          <div>全面眼睛檢查</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.introduction.btn1')}}</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.introduction.btn2')}}</div>
         </div>
       </div>
       <div id="cause">
-        <div>為何人生中不同階段都需要眼睛健康檢查？</div>
+        <div>{{$t('pages.medical_service.medicalOptometry_con.cause.name')}}</div>
         <div>
           <div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" alt="" srcset="" />
             </div>
             <div>
-              <div>3-6歲</div>
+              <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title1')}}</div>
               <div class="medicalOptometry_text_p_span">
-                這個階段的兒童大概能夠理解及配合許多眼科檢查，能夠在註冊視光師和眼科專科醫生指導下完成檢查。兒童能在這段時期透過定期檢查，及早發現和治療弱視、斜視，以及控制近視等。
+                {{$t('pages.medical_service.medicalOptometry_con.cause.span1')}}
               </div>
-              <div class="medicalOptometry_btn_bg" @click="toVision">
-                <div>3 - 6歲兒童眼睛檢查</div>
-                <div>立即預約</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.text1')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn1')}}</div>
               </div>
             </div>
           </div>
@@ -131,13 +133,13 @@ const goVision = () => {
               <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" alt="" srcset="" />
             </div>
             <div>
-              <div>6-18歲</div>
+              <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title2')}}</div>
               <div class="medicalOptometry_text_p_span">
-                青少年時期的眼睛及身體發育較快，若用眼習慣不良，近視、散光等度數也增加得較快。定期檢查可觀察眼睛屈光度數的變化，及時控制近視等度數。
+                {{$t('pages.medical_service.medicalOptometry_con.cause.span2')}}
               </div>
-              <div class="medicalOptometry_btn_bg" @click="toVision">
-                <div>6-18歲兒童眼睛檢查</div>
-                <div>立即預約</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.text2')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn2')}}</div>
               </div>
             </div>
           </div>
@@ -148,11 +150,11 @@ const goVision = () => {
             <div>
               <div></div>
               <div class="medicalOptometry_text_p_span">
-                希瑪視光中心十分重視兒童近視控制。視力發育不良會影響孩子日後發展和眼睛健康。所以，希瑪視光中心十分關注學童近視率偏高的問題，並提供詳細眼睛檢查服務及針對性的兒童近視控制方案，包括︰角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片、MyoVision鏡片），希望能助兒童把握控制近視的黃金治療期。
+                {{$t('pages.medical_service.medicalOptometry_con.cause.span3')}}
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goVision">
-                <div>了解更多</div>
-                <div>兒童近視控制方案</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_1')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_2')}}</div>
               </div>
             </div>
           </div>
@@ -161,9 +163,9 @@ const goVision = () => {
               <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" alt="" srcset="" />
             </div>
             <div>
-              <div>18-55歲</div>
+              <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title4')}}</div>
               <div class="medicalOptometry_text_p_span">
-                這時期的眼部檢查，主要針對家族有眼疾病史及患眼疾的高危人士，例如︰青光眼。除了常規眼科檢查外，還有相應的特殊檢查。如中高度近視及糖尿病患者應定期檢查眼底，及早發現眼疾。
+                {{$t('pages.medical_service.medicalOptometry_con.cause.span4')}}
               </div>
               <div>
                 <div></div>
@@ -176,9 +178,9 @@ const goVision = () => {
               <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" alt="" srcset="" />
             </div>
             <div>
-              <div>55歲以上</div>
+              <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title5')}}</div>
               <div class="medicalOptometry_text_p_span">
-                隨著年齡增長，患上與年齡相關眼疾的機會也會增加，如白內障、老年黃斑病變等，透過眼底檢查能及早發現眼疾，需要時能及早治療。
+                {{$t('pages.medical_service.medicalOptometry_con.cause.span5')}}
               </div>
               <div>
                 <div></div>
@@ -188,45 +190,45 @@ const goVision = () => {
           </div>
         </div>
 
-        <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
-          <div>18 - 55歲以上 成人眼睛檢查</div>
-          <div>立即預約</div>
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+          <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn1')}}</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn2')}}</div>
         </div>
       </div>
       <div id="cause-mb">
-        <div>&nbsp;&nbsp;為何人生中不同階段都需要眼睛健康檢查？</div>
+        <div>&nbsp;&nbsp;{{$t('pages.medical_service.medicalOptometry_con.cause.name')}}</div>
         <div>
           <div>
-            <div>3-6歲</div>
+            <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title1')}}</div>
             <div>
               <div>
                 <div>
                   <img src="https://static.cmereye.com/imgs/2023/07/5e23052605a6a862.png  " alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
-                  這個階段的兒童大概能夠理解及配合許多眼科檢查，能夠在註冊視光師和眼科專科醫生指導下完成檢查。兒童能在這段時期透過定期檢查，及早發現和治療弱視、斜視，以及控制近視等。
+                  {{$t('pages.medical_service.medicalOptometry_con.cause.span1')}}
                 </div>
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
-                <div>3 - 6歲兒童眼睛檢查</div>
-                <div>立即預約</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.text1')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn1')}}</div>
               </div>
             </div>
           </div>
           <div>
-            <div>6-18歲</div>
+            <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title2')}}</div>
             <div>
               <div>
                 <div>
                   <img src="https://static.cmereye.com/imgs/2023/07/143a8a47246f1fb5.png  " alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
-                  青少年時期的眼睛及身體發育較快，若用眼習慣不良，近視、散光等度數也增加得較快。定期檢查可觀察眼睛屈光度數的變化，及時控制近視等度數。
+                  {{$t('pages.medical_service.medicalOptometry_con.cause.span2')}}
                 </div>
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
-                <div>6-18歲兒童眼睛檢查</div>
-                <div>立即預約</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.text2')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn2')}}</div>
               </div>
             </div>
           </div>
@@ -237,24 +239,24 @@ const goVision = () => {
                   <img src="https://static.cmereye.com/imgs/2023/07/cc9aa29e72e2fe1f.png" alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
-                  希瑪視光中心十分重視兒童近視控制。視力發育不良會影響孩子日後發展和眼睛健康。所以，希瑪視光中心十分關注學童近視率偏高的問題，並提供詳細眼睛檢查服務及針對性的兒童近視控制方案，包括︰角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片、MyoVision鏡片），希望能助兒童把握控制近視的黃金治療期。
+                  {{$t('pages.medical_service.medicalOptometry_con.cause.span3')}}
                 </div>
               </div>
-              <div class="medicalOptometry_btn_bg" @click="goVision">
-                <div>了解更多</div>
-                <div>兒童近視控制方案</div>
+              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_1')}}</div>
+                <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_2')}}</div>
               </div>
             </div>
           </div>
           <div>
-            <div>18-55歲</div>
+            <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title4')}}</div>
             <div>
               <div>
                 <div>
                   <img src="https://static.cmereye.com/imgs/2023/07/3379ff699f2869d0.png  " alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
-                  這時期的眼部檢查，主要針對家族有眼疾病史及患眼疾的高危人士，例如︰青光眼。除了常規眼科檢查外，還有相應的特殊檢查。如中高度近視及糖尿病患者應定期檢查眼底，及早發現眼疾。
+                  {{$t('pages.medical_service.medicalOptometry_con.cause.span4')}}
                 </div>
               </div>
               <div>
@@ -263,14 +265,14 @@ const goVision = () => {
             </div>
           </div>
           <div>
-            <div>55歲以上</div>
+            <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title5')}}</div>
             <div>
               <div>
                 <div>
                   <img src="https://static.cmereye.com/imgs/2023/07/3e8d41f263dc003f.png" alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
-                  隨著年齡增長，患上與年齡相關眼疾的機會也會增加，如白內障、老年黃斑病變等，透過眼底檢查能及早發現眼疾，需要時能及早治療。
+                  {{$t('pages.medical_service.medicalOptometry_con.cause.span5')}}
                 </div>
               </div>
               <div>
@@ -281,9 +283,9 @@ const goVision = () => {
           </div>
         </div>
 
-        <div class="medicalOptometry_btn_bg" @click="goWhatsApp">
-          <div>18 - 55歲以上 成人眼睛檢查</div>
-          <div>立即預約</div>
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+          <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
       </div>
     </div>
@@ -502,6 +504,14 @@ const goVision = () => {
       margin: 60px auto 462px;
     }
   }
+  &.medicalOptometryNav-en{
+    &>#brief_introduction {
+      &>div:nth-child(2) {
+        width: max-content;
+        padding-right: 30px;
+      }
+    }
+  }
 }
 
 // 边框按钮样式
@@ -528,8 +538,6 @@ const goVision = () => {
     width: fit-content;
     min-width: 223px;
     height: 100%;
-    // background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
-    //   linear-gradient(#eda2a6, #eda2a6);
     background-blend-mode: normal, normal;
     border-radius: 30px;
     color: #ffffff;
@@ -554,6 +562,12 @@ const goVision = () => {
       animation: bgposition 5s infinite linear alternate;
       z-index: -1;
     }
+  }
+
+  &.Btn-en{
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
   }
 }
 @keyframes bgposition {
@@ -968,6 +982,21 @@ const goVision = () => {
         }
       }
     }
+
+    &.medicalOptometryNav-en{
+      &>#brief_introduction {
+        &>div:nth-child(2) {
+          max-width: 100%;
+          text-align: center;
+          &>div:nth-child(1) {
+            line-height: 1.2;
+          }
+          &>div:nth-child(2) {
+            line-height: 1.2;
+          }
+        }
+      }
+    }
   }
 
   .medicalOptometry_btn_bg {
@@ -989,6 +1018,16 @@ const goVision = () => {
       padding: 13px 20px;
       border-radius: 16px;
     }
+    &.Btn-en{
+      font-size: 16px;
+      &>div:nth-child(1){
+        line-height: 1.6;
+      }
+      &>div:nth-child(2){
+        line-height: 1.6;
+      }
+    }
+    
   }
 
 }
