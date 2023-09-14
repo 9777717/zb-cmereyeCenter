@@ -1238,6 +1238,44 @@ pages:
         text5_5_1: Squeezing eyes, squinting,
         text5_5_2: rubbing eyes, blinking more than usual
         text5_6: Watery eyes
+      cure: 
+        name: Treatment of strabismus
+        title1: Correction with glasses
+        text1: Mild strabismus can be corrected by glasses. Many patients with strabismus also have refractive error which includes myopia, hyperopia and astigmatism. People with hyperopia are more susceptible to develop esotropia while people with myopia are more susceptible to develop exotropia. For some patients with esotropia, the glasses may be able to provide full correction of the inward squint.
+        title2: Orthoptic exercises
+        text2: There are many types of orthoptic exercises. Patients with exotropia can do convergence exercise while esotropia can do exercise to relax the eye muscles. Orthoptic exercise can train the binocular vision in order to help patients with strabismus to rebuild their fusional ability and also improve their '3D' vision (stereopsis).
+        title3: Occlusion therapy
+        text3: Since many patients with strabismus also have amblyopia, they need to adopt occlusion therapy to patch the eye that has better vision in order to force the amblyopic eye to watch and to improve its visual function. Sometimes, even in the absence of amblyopia, alternate patching might help some patients with intermittent exotropia to improve the ability to control their squint. The time of daily occlusion and the duration of treatment depends on the age of the patient and the severity of amblyopia. When the vision of the lazy eye improves, occlusion treatment can be stopped under the advice of an ophthalmologist.
+        title4: Surgery
+        text4: Surgery is generally the last step in the treatment of strabismus. By changing the tightness of the eye muscles, the visual axis of both eyes can be restored to be balanced, so as to treat strabismus. The timing of surgery involves many considerations and varies from different patients. Patients should consult an ophthalmologist before undergoing surgery.
+      amblyopia:
+        name: What is Amblyopia?
+        context1: Amblyopia is reduced vision in one eye caused by abnormal visual development early in life. Babies' vision is not normal at birth, visual functions develop gradually in their childhood. The first 3 years after birth is the most important period for visual development. If amblyopia is not treated promptly, patients would not be able to develop normal vision, their vision cannot be corrected by glasses or surgery.
+        name1: Types of amblyopia
+        title1: Strabismic amblyopia
+        text1: Strabismic amblyopia is commonly seen in children under 4 years old who have or have had strabismus before. The patient's eyes are misaligned and their brain will suppress the images from the affected eye and lead to amblyopia.
+        title2: Refractive amblyopia(Anisometric amblyopia)
+        text2: There is a significant difference of refraction between two eyes and therefore the size and clarity of retinal images are different. Patient with a diopter difference of more than 300 degrees between two eyes may have amblyopia and strabismus in the eye with higher diopter.
+        title3: Amblyopia due to refractive error
+        text3: It is commonly found in children or adults with high myopia, farsightedness and astigmatism without corrective glasses. Most of them have myopia of more than 600 degrees, farsightedness of more than 500 degrees, and astigmatism greater than or equal to 200 degrees.
+        title4: Deprivation amblyopia
+        text4: Ptosis, corneal opacity, and congenital cataract will block the light entering the eyes, so that the light cannot stimulate the eyeball, hinder or block the macula from receiving visual stimulation, resulting in amblyopia.
+        title5: Congenital amblyopia
+        text5: The cause of this eye condition is still unclear. It may be caused by retinal hemorrhage or optic nerve defects. The development of the visual function is affected. Some cases develop amblyopia because of nystagmus and achromatopsia. 
+      treat: 
+        name: Treatment of amblyopia
+        p1: The earlier amblyopia is treated, the better outcomes there may be. Three to six years of age is a critical period for treatment, and the chance of cure is lower after 12 years of age. The cure rate is up to 80% if treated before the age of 6, while it is only about 50% for patients who start treatment at 6-12 years of age.
+        p2: Ophthalmologists need to customize a treatment plan for each child, and it needs to be adjusted according to the patient's progress.
+        title1: Correction with glasses
+        text1: Mild amblyopia can be corrected by glasses. A proper pair of glasses allow both eyes to see things together and improve binocular vision. To ensure the treatment is effective, the child should always wear the glasses.
+        title2: Occlusion therapy (Eye Patching)
+        text2_1: By patching the good eye, the amblyopic eye is forced to watch so as to improve its vision. The duration of the treatment depends on the severity of the amblyopia, age, and the cooperation between the child and the parent. During the treatment period, the child needs to have regular follow-up visits. An ophthalmologist will check the vision of the good eye and the amblyopic eye, and adjust the time of occlusion. If the treatment is effective, the time of patching eyes will be gradually reduced until the amblyopic eye develops normal vision.
+        text2_2: Eye patching is effective in treating amblyopia and it was suggested to start before the 8. The earlier the treatment starts, the better the effect would be. If amblyopia is diagnosed at 8 years old or later, the chance of full recovery is lower.
+        title3: Correction with eye drops
+        text3: If children are not willing or able to cover their eyes, due to discomfort or sensitive skin. Eye drops to blur the near vision of the good eye will be recommended, thereby encouraging children to use more amblyopic eyes.
+      curativeTime:
+        name: Treat strabismus and amblyopia timely!
+        context: Patients should arrange an eye examination for their children regularly to find out the cause of eye problems as soon as possible. The earlier detection and treatment, the better the effect. The effect of treatment also requires the cooperation of parents and children.
     amotioRetinae: Retinal Detachment
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases

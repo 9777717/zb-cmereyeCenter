@@ -29,6 +29,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#fbbfa1;',
@@ -88,7 +90,7 @@ const strabismusList4 = [
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ee8e638950ef26fd.png',
-    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_3_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/37924e5d99c31f51.png',
@@ -105,77 +107,77 @@ const strabismusList4 = [
 ]
 const strabismusList5 = [
   {
-    title: '眼鏡矯正',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/6a896080eccf672a.png',
-    text: '當孩子眼部輪廓還未發育完全，如鼻樑扁平，雙眼會顯得較靠近鼻樑且眼球鞏膜露出的部分較小，產生斜視的錯覺。但當用手指把鼻樑旁的皮膚輕輕地捏起，就會發現斜視消失。隨著兒童日漸長大，鼻樑長高，兩旁皮膚自然拉起，假斜視會逐漸消失。',
+    text: 'pages.medical_service.strabismusAmblyopia_con.cure.text1',
   },
   {
-    title: '視軸矯形運動',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/9c69590dd98eb332.png',
-    text: '視軸矯形運動有很多種類，外斜視患者可做眼球肌肉匯聚運動，俗稱「鬥雞練習」。而內斜視患者則可做眼球肌肉放鬆運動。視軸矯形運動也可以鍛煉雙眼單一視功能，幫助斜視患者加強或重新建立視覺立體感。',
+    text: 'pages.medical_service.strabismusAmblyopia_con.cure.text2',
   },
   {
-    title: '遮蓋治療（遮眼治療）',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/dd785273b00a7055.png',
-    text: '由於不少斜視患者也有弱視問題，透過遮眼治療法（用眼貼或特製眼鏡遮蓋正常的眼睛），遮蔽正常的眼睛，驅使患者多用有弱視的眼睛，藉以鍛煉弱視眼及恢復其功能。每天遮眼的時間及療程時期視乎患者的年齡和弱視的嚴重程度，當弱視眼的視力有改善，在眼科醫生的評估及指導下可停止遮眼治療。',
+    text: 'pages.medical_service.strabismusAmblyopia_con.cure.text3',
   },
   {
-    title: '手術矯正',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/fb8d95f43e5c758e.png',
-    text: '手術一般是治療斜視的最後一步，透過改變眼球肌肉的鬆緊程度，使得雙眼視軸回復平衡，治療斜視。手術的時機牽涉多方面的考慮，病人接受手術的時機因人而異，斜視患者在接受手術前必須咨詢眼科醫生的意見。',
+    text: 'pages.medical_service.strabismusAmblyopia_con.cure.text4',
   },
 ]
 const amblyopiaList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/5b9e1baac69abb24.png',
-    title: '斜視性弱視',
-    text: '斜視性弱視常見於患有斜視或曾有斜視的4歲以下兒童。患者兩眼視線不平行，大腦皮質會主動抑制斜視眼生成影像，並形成弱視。',
+    title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title1',
+    text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9a3332f88b6d69af.png',
-    title: '屈光參差性弱視（雙眼視差太大）',
-    text: '兩眼視力不同，視網膜成像大小與清晰度都不同。兩眼屈光度數相差300度以上人士，屈光度較高的眼睛會常形成弱視和斜視。',
+    title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title2',
+    text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/7ace87f50adb18dc.png',
-    title: '屈光不正性弱視',
-    text: '多發生在高度近視、遠視及散光而未戴矯正眼鏡的兒童或成年人。多數為近視600度以上、遠視500度以上、散光大過或等於200度人士。',
+    title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title3',
+    text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2a48ee959aee43e2.png',
-    title: '視覺剝奪性弱視',
-    text: '嬰兒期上瞼下垂、角膜混濁、先天性白內障，阻擋光線進入的時間太長，使光線不能刺激眼球、妨礙或阻斷黃斑接受視覺刺激，因而產生弱視。',
+    title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title4',
+    text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c4c979e78450f83.png',
-    title: '先天性弱視',
-    text: '發病原因尚未明確，可能由於出生後視網膜出血或視神經病變而影響視功能的正常發育，有些則是由眼球震顫全色盲等引起。',
+    title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title5',
+    text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text5',
   },
 ]
 const treatList1 = [
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/25507be120bacf59.png',
-    title: '配戴眼鏡',
+    title: 'pages.medical_service.strabismusAmblyopia_con.treat.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/77e219f43e2c6242.png',
     text: [
-      '部分輕微弱視的小朋友，可以透過配戴正確度數的眼鏡矯正屈光不正，從而使兩隻眼睛一起看東西和改善視力。為保證矯正效果，孩子大多數時間都需要戴著眼鏡。',
+      'pages.medical_service.strabismusAmblyopia_con.treat.text1',
     ],
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/af76b91d4e877062.png',
-    title: '遮蓋治療（遮眼治療）',
+    title: 'pages.medical_service.strabismusAmblyopia_con.treat.title2',
     img: 'https://static.cmereye.com/imgs/2023/06/79189b9514be7577.png',
     text: [
-      '透過遮蓋正常眼睛，讓弱視眼鍛鍊出正常視力。療程的時間要視乎孩子弱視的嚴重程度、年齡、孩子及家長在遮眼治療上的合作程度而決定。治療過程中，孩子需要定期覆診，由眼科專科醫生檢查正常眼睛和弱視眼睛的視力，並按治療進度調節遮眼時間。如果療程有效，會慢慢減少遮眼時間，直到弱視眼能追上正常視力。',
-      '遮眼訓練對治療弱視有一定的幫助，若需治療建議盡早進行，愈早治療，效果愈理想。如果8歲後才發現患有弱視，治癒弱眼視力的機會則會較低。',
+      'pages.medical_service.strabismusAmblyopia_con.treat.text2_1',
+      'pages.medical_service.strabismusAmblyopia_con.treat.text2_2',
     ],
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/333142a79088a1b6.png',
-    title: '滴散瞳藥水',
+    title: 'pages.medical_service.strabismusAmblyopia_con.treat.title3',
     img: 'https://static.cmereye.com/imgs/2023/06/f632114cdb47d561.png',
     text: [
-      '如小朋友因外觀、不適或皮膚敏感而不願意遮眼，眼科專科醫生會建議家長考慮用散瞳藥水使主力眼近距離視力模糊，從而促使小朋友多使用弱視眼。',
+      'pages.medical_service.strabismusAmblyopia_con.treat.text3',
     ],
   },
 ]
@@ -235,8 +237,8 @@ const callTel = () => {
     <div class="strabismusAmblyopia-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
     </div>
-    
-    <div class="strabismusAmblyopia_nav">
+    <!-- 这些样式层级套的好啊！！！ -->
+    <div class="strabismusAmblyopia_nav" :class="{'strabismusAmblyopiaNav-en': locale === 'en'}">
       <div id="strabismus">
         <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.name')}}</div>
         <div class="strabismusAmblyopia_text_p_span">
@@ -319,21 +321,21 @@ const callTel = () => {
         </div>
       </div>
       <div id="cure">
-        <div class="strabismusAmblyopia_title_text">治療斜視方法</div>
+        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.cure.name')}}</div>
         <div>
           <div v-for="(item, index) in strabismusList5" :key="index">
-            <div>{{ item.title }}</div>
+            <div>{{ $t(item.title) }}</div>
             <div>
               <div>
                 <img :src="item.img" />
               </div>
-              <div class="strabismusAmblyopia_text_p_span">{{ item.text }}</div>
+              <div class="strabismusAmblyopia_text_p_span">{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
       </div>
       <div id="amblyopia">
-        <div class="strabismusAmblyopia_title_text">甚麼是弱視？</div>
+        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name')}}</div>
         <div>
           <div>
             <img
@@ -341,18 +343,18 @@ const callTel = () => {
             />
           </div>
           <div class="strabismusAmblyopia_text_p_span">
-            嬰兒出生時視功能並未發育完成，隨著外界的刺激才慢慢發展出各種視覺機能，而出生後到3歲期間是視功能發育最重要的階段。如果發育受到不良的影響，就有可能導致弱視。弱視患者無法透過配戴眼鏡、動手術或其他任何方法，達致正常視力水平，無論看遠或近的景物都模糊不清。
+            {{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.context1')}}
           </div>
         </div>
         <div id="amblyopia_kind">
-          <div class="strabismusAmblyopia_title_text">弱視種類</div>
+          <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name1')}}</div>
           <div>
             <div v-for="(item, index) in amblyopiaList1" :key="index">
               <div><img :src="item.img" /></div>
               <div>
-                <div>{{ item.title }}</div>
+                <div>{{ $t(item.title) }}</div>
                 <div class="strabismusAmblyopia_text_p_span">
-                  {{ item.text }}
+                  {{ $t(item.text) }}
                 </div>
               </div>
             </div>
@@ -364,27 +366,27 @@ const callTel = () => {
         </div>
       </div>
       <div id="treat">
-        <div class="strabismusAmblyopia_title_text">治療弱視方法</div>
+        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.treat.name')}}</div>
         <div class="strabismusAmblyopia_text_p_span">
           <p>
-            弱視的治療效果與年齡密切相關，年齡愈小，治療的效果愈好。3至6歲是治療的關鍵期，12歲以後的治癒機率較低。6歲前治癒率高達80%，而大於6歲以及小於12歲的患者，治癒率僅達到50%左右。
+            {{$t('pages.medical_service.strabismusAmblyopia_con.treat.p1')}}
           </p>
           <p>
-            由於每個孩子的視功能情況都不一樣，眼科專科醫生需要為孩子制定針對性治療方案，還需根據患者進展情況而適時調整。
+            {{$t('pages.medical_service.strabismusAmblyopia_con.treat.p2')}}
           </p>
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
             <div>
               <img :src="item.svg" />
-              <div>{{ item.title }}</div>
+              <div>{{ $t(item.title) }}</div>
             </div>
             <div>
               <div>
                 <img :src="item.img" alt="" />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
-                <p v-for="(ele, i) in item.text" :key="i">{{ ele }}</p>
+                <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
               </div>
             </div>
           </div>
@@ -393,9 +395,9 @@ const callTel = () => {
     </div>
     <div id="bg_strabismusAmblyopia_nav"></div>
     <div id="curativeTime">
-      <div>把握治療斜弱視黃金時期</div>
+      <div>{{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.name')}}</div>
       <div class="strabismusAmblyopia_text_p_span">
-        家長應定時帶小朋友檢查視力，及早發現和找出成因。愈早發現和開始治療效果愈好，而治療成效亦需要家長和小朋友配合，才可以有效提升小朋友視力。
+        {{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.context')}}
       </div>
     </div>
     <div>
@@ -860,6 +862,29 @@ const callTel = () => {
       & > div:last-child {
         & > div:nth-child(2) {
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &.strabismusAmblyopiaNav-en{
+    &>#kind{
+      & > div:nth-child(2) {
+        &>div{
+          & > div:nth-child(1) {
+            text-align: center;
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              &>div{
+                & > div:nth-child(2) {
+                  width: max-content;
+                  min-width: 150px;
+                  padding: 0 30px;
+                  background-size: 100% 100%;
+                }
+              }
+            }
+          }
         }
       }
     }
