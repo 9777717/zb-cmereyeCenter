@@ -1282,6 +1282,77 @@ pages:
     medicalOptometry: Myopia Control and Ophthalmic Services
     smileHk: Vision Correction
     atropine: Atropine Eye Drops
+    atropine_text: 
+      introduce: 
+        span1: Low concentration
+        span2: High concentration
+      effect:
+        p1: According to the latest issue of the Journal of the American Medical Association
+        p2: it was found that atropine eye drops with a concentration of 0.05% had a significant effect on reducing the incidence of myopia. In children use 0.05% concentration of atropine eye drops, 67% of the them showed the effect of slowing down the myopia progression.
+        p3: Research data shows that 0.05% concentration of atropine eye drops is more effective in slowing down the myopia progression than 0.01% concentration of atropine eye drops. In the group used 0.05% concentration of atropine eye drops for two years, the cumulative incidence of myopia is the lowest, which is 28.4% 
+        p4: ",while using 0.01% concentration of atropine eye drops was 45.9%. In addition, the degree of myopia progression and eyeball growth rate of using 0.05% concentration of atropine eye drops are also relatively low, so it appeared that low concentration of atropine eye drops."
+        span: Especially 0.05% concentration, is more effective in controlling myopia.
+        btn1: |
+              Inquire now WhatApp
+              Learn about myopia control programs for children
+      congruency:
+        btn1: |
+              Make an appointment to see your doctor immediately
+              Assess whether atropine eye drops are appropriate for your child
+      matters:
+        btn1: |
+              Make an appointment to see your doctor immediately
+              Assess whether atropine eye drops are appropriate for your child
+      atropine_text1: Atropine Eye Drops
+      atropine_title1_text1: Atropine Eye Drops for Myopia Control
+      atropine_title1_text2: The side effects of low concentration atropine eye drops are relatively mild and a 0.05% concentration appeared to achieve the best balance between maximising efficacy and minimising side effects.
+      atropine_title1_p1_span1: In addition to optical correction,
+      atropine_title1_p1_span2: atropine has been proven to be an effective medication in slowing myopia progression 1.
+      atropine_title1_p1_span3: Atropine eye drop is an anticholinergic drug that can inhibit the growth of scleral tissue; if also has the effect of dilating the pupil. By preventing or slowing down the abnormal growth of eyeballs, it slow down the myopia progression in childhood.
+      atropine_title1_p2_span1: Atropine has the side effect of relaxing the ciliary muscle in the eye, making it difficult to see up close. 
+      atropine_title1_p2_span2: The appropriate dosage must therefore be prescribed by an ophthalmologist. 
+      atropine_title1_p3_span1: "Atropine eye drops have different doses: 0.01%, 0.05%, 0.125% and 1%, etc. "
+      atropine_title1_p3_span2: "The side effects of low concentration atropine eye drops are relatively mild and a 0.05% concentration appeared to achieve the best balance between maximising efficacy and minimising side effects."
+      atropine_title2_text2: The effect of atropine eye drops
+      atropine_title2_p1: According to the latest issue of the Journal of the American Medical Association 2
+      atropine_title2_p2: ",it was found that atropine eye drops with a concentration of 0.05% had a significant effect on reducing the incidence of myopia. In children use 0.05% concentration of atropine eye drops, 67% of the them showed the effect of slowing down the myopia progression."
+      atropine_title2_p3: Research data shows that 0.05% concentration of atropine eye drops is more effective in slowing down the myopia progression than 0.01% concentration of atropine eye drops. In the group used 0.05% concentration of atropine eye drops for two years, the cumulative incidence of myopia is the lowest, which is 28.4% 3
+      atropine_title2_p4: ",while using 0.01% concentration of atropine eye drops was 45.9%. In addition, the degree of myopia progression and eyeball growth rate of using 0.05% concentration of atropine eye drops are also relatively low, so it appeared that low concentration of atropine eye drops."
+      atropine_title2_span1: 可見
+      atropine_title2_span2: 低濃度阿托品眼藥水，尤其是0.05%濃度控制近視眼效果較為理想。
+      atropine_title3_text3: Pros of atropine eye drops
+      atropine_title3_p1: Helps control eyeball elongation during development period
+      atropine_title3_p2: Reduce the annual rate of myopia increase
+      atropine_title3_p3_1: Reduce the chance of high myopia
+      atropine_title3_p3_2: (especially children with a family history of high myopia),and therefore lower the risks of myopia-related eye diseases
+      atropine_title3_p4: Easy to use, apply once a day before going to bed
+      atropine_title4_text4: Who is suitable for atropine eye drops?
+      atropine_title4_p1: Atropine eye drops are suitable for myopia control in children with myopia, but it needs to be adjusted according to each children eyes and myopia development, or it may need to be used together with other myopia control products.
+      atropine_title4_p2: If one of the parents has high myopia, young children with hyperopia below 100 degrees can also seek for doctor’s opinion to see if it is suitable to use atropine eye drops.
+      atropine_title4_p3: In addition, if children are resistant or uncomfortable to wear myopia control contact lenses, they can also consider using atropine eye drops to control myopia. The simple method of use can effectively slow down the myopia progression by just instilling eye drops every day.
+      atropine_title4_p4: If children have strabismus or eye coordination problems, atropine eye drops are more suitable than other myopia control products.
+      atropine_title5_text5: Precautions for using atropine eye drops
+      atropine_title5_p1: Some children may be sensitive to atropine and have adverse reactions, such as fever, skin redness, rapid heartbeat, etc.
+      atropine_title5_p2: Dilated pupils lead to photophobia or blurred vision.
+      atropine_title5_p3: The ciliary muscle that controls the adjustment of the crystal may be paralyzed and lose the ability to adjust (children may need additional glasses for this reason)。
+      atropine_title5_p4: The use of atropine eye drops cannot correct myopia or astigmatism, and children still need to wear glasses to see clearly.
+      atropine_title5_p5: If children experience symptoms of discomfort or photophobia after using it, they can choose to wear sunglasses or progressive glasses to help observe things at close range
+      atropine_title6_text6: The using method of atropine eye drops
+      atropine_title6_p1: Frequency and times of use
+      atropine_title6_p2: Atropine eye drops only need
+      atropine_title6_p3: After use, regular monitoring and dosage adjustments are required by a doctor. Atropine eye drops need to be used during development period. Generally, doctors will recommend using the drug until the degree is stable. Users need to discuss with the doctor when it is appropriate to stop using atropine eye drops.
+      atropine_title6_p4: Dosage (if any)
+      atropine_title6_p5: Generally, doctors will prescribe atropine eye drops for a month’s usage before making an evaluation, measuring changes in pupils and vision to determine whether the child is suitable for continued use. Generally, regular check-ups are required every 4 months in the first year, and once then every half year, and the doctor will reassess whether the dosage needs to be adjusted.
+      atropine_title6_p6: Once your child was founded to have myopia, they should take their children to an ophthalmologist for an eye examination as soon as possible, formulate a myopia control plan to prevent them from developing high myopia, and slow down the myopia progression.
+      atropine_title6_btn: Inquire immediately about atropine eye drops
+      atropine_title6_span1: to be taken once a day, one drop at a time.
+    atropine_serviceNavigation:
+      serviceNavigation_anchorName1: atropine
+      serviceNavigation_anchorName2: 作用
+      serviceNavigation_anchorName3: 好處
+      serviceNavigation_anchorName4: 適用
+      serviceNavigation_anchorName5: 注意事項
+      serviceNavigation_anchorName6: 使用方法/療程
   ophthalmic_information:
     ophthalmic_information: 眼科咨询
     ophthalmic_class: 医生小教室

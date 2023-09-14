@@ -6,6 +6,8 @@ definePageMeta({
 useHead(() => ({
   title: '阿托品滴眼液｜希瑪眼科｜醫療服務',
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#99d3dd;',
@@ -82,7 +84,7 @@ const tozoosnet =()=>{
     <div class="atropine-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
-    <div class="atropine_nav maxCon">
+    <div class="atropine_nav maxCon" :class="{'atropineNav-en': locale === 'en'}">
       <div id="introduce">
         <div class="atropine_title_text">
           {{ $t('pages.medical_service.atropine_text.atropine_title1_text1') }}
@@ -165,14 +167,14 @@ const tozoosnet =()=>{
           </div>
           <div>
             <div>
-              <span>低濃度</span>
+              <span>{{$t('pages.medical_service.atropine_text.introduce.span1')}}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
                 alt=""
               />
             </div>
             <div>
-              <span>高濃度</span>
+              <span>{{$t('pages.medical_service.atropine_text.introduce.span2')}}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f78528260ec72142.png"
                 alt=""
@@ -200,20 +202,20 @@ const tozoosnet =()=>{
             </div>
             <div>
               <p>
-                根據最新一期美國醫學會雜誌的研究
+                {{ $t('pages.medical_service.atropine_text.effect.p1')}}
                 <span class="up_bid">2</span>
-                ，發現0.05%濃度的阿托品眼藥水對於控制近視加深率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
+                {{ $t('pages.medical_service.atropine_text.effect.p2')}}
               </p>
               <p>
-                有研究數據顯示0.05%濃度比起0.01%濃度的阿托品眼藥水更有效減慢近視加深速度。使用0.05%濃度阿托品眼藥水兩年累積的近視加深率是最低，為28.4%
+                {{ $t('pages.medical_service.atropine_text.effect.p3')}}
                 <span class="up_bid">3</span>
                 。
-                使用0.01%濃度的近視加深率是45.9%。此外，使用0.05%濃度阿托品眼藥水的近視加深度數和眼球增長速度也比較低。
+                {{ $t('pages.medical_service.atropine_text.effect.p4')}}
               </p>
             </div>
           </div>
           <div>
-            <span> 由此可見0.05%低濃度阿托品眼藥水控制近視效果較為理想。 </span>
+            <span>{{ $t('pages.medical_service.atropine_text.effect.span')}} </span>
           </div>
         </div>
         <div>
@@ -232,7 +234,7 @@ const tozoosnet =()=>{
           </p>
         </div>
         <div>
-          <div @click="toWhatsApp">立即WhatsApp查詢{{ '\n' }}了解兒童控制近視方案</div>
+          <div @click="toWhatsApp">{{$t('pages.medical_service.atropine_text.effect.btn1')}}</div>
         </div>
       </div>
       <div id="benefit">
@@ -314,7 +316,7 @@ const tozoosnet =()=>{
           </div>
         </div>
         <div>
-          <div @click="tozoosnet">立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
+          <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.congruency.btn1')}}</div>
         </div>
       </div>
 
@@ -402,7 +404,7 @@ const tozoosnet =()=>{
           </div>
         </div>
         <div>
-          <div @click="tozoosnet">立即預約見醫生{{ '\n' }}評估孩子是否適用阿托品眼藥水</div>
+          <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.matters.btn1')}}</div>
         </div>
       </div>
     </div>
@@ -976,6 +978,53 @@ const tozoosnet =()=>{
     font-family: 'NotoSansHK-Medium';
     font-weight: 550;
   }
+  &.atropineNav-en{
+    & > #effect {
+      & > div:nth-child(2) {
+        & > div:nth-of-type(1) {
+          & > div:nth-child(2) {
+            &>p{
+              line-height: 1.6;
+            }
+          }
+        }
+        & > div:nth-of-type(2) {
+          font-size: 20px;
+        }
+      }
+    }
+    & > #benefit {
+      & > div:nth-child(2) {
+        & > div{
+          font-size: 18px;
+          line-height: 1.6;
+        }
+      }
+    }
+    & > #method {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(1) {
+              padding: 0 50px;
+              text-align: center;
+              line-height: 1.2;
+            }
+          }
+        }
+        & > div:nth-child(2) {
+          padding: 25px 60px;
+        }
+      }
+    }
+    .matters {
+      & > div:nth-child(2) {
+        &>div{
+          align-items: center;
+        }
+      }
+    }
+  }
 }
 
 .atropine_title_btn {
@@ -1449,6 +1498,59 @@ const tozoosnet =()=>{
           line-height: 1.6;
           padding: 5px 30px;
           border-radius: 15px;
+        }
+      }
+    }
+    &.atropineNav-en{
+      & > #effect {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            font-size: 18px;
+          }
+          & > div:nth-of-type(2) {
+            span{
+              &::before{
+                bottom: 80px;
+              }
+              &::after{
+                bottom: -10px;
+                right: -40px;
+              }
+            }
+          }
+        }
+        & > div:nth-child(4) {
+          &>div{
+            max-width: 100%;
+            height: 90px;
+          }
+        }
+      }
+      & > #congruency {
+        & > div:nth-child(3) {
+          &>div{
+            max-width: 100%;
+            height: 120px;
+          }
+        }
+      }
+      & > #method {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div {
+              & > div:nth-child(1) {
+                padding: 0 30px;
+              }
+            }
+          }
+        }
+      }
+      .matters {
+        & > div:nth-child(3) {
+          &>div{
+            max-width: 100%;
+            height: 120px;
+          }
         }
       }
     }
