@@ -1197,6 +1197,47 @@ pages:
         q4: Q：Can injections treat macular degeneration?
         a4: Yes, injection of drugs (anti-VFGF or steroids, etc.) into the vitreous cavity is one of the effective treatments for macular degeneration. Medical reports show that this method has a good efficacy on treating the macular edema caused by wet AMD and it also has a role to promote visual improvement. Timely treatment is important, the earlier the macular degeneration is treated, the better result one may have. Injection of medicine can also be given along with PDT or other treatment (named as combined treatment in clinical practice) to obtain better treatment outcomes. For further details, you should discuss with your eye doctor so as to come up with a tailor-made treatment regimen for you.
     strabismusAmblyopia: Amblyopia and Strabismus in Children
+    strabismusAmblyopia_con:
+      navLists:
+        name1: Strabismus
+        name2: Types of Strabismus
+        name3: Treatment of Strabismus
+        name4: Amblyopia
+        name5: Types of Amblyopia
+        name6: Treatment of Amblyopia
+      strabismus:
+        name: What is strabismus?
+        p1: When a distant object is viewed with both eyes, the visual axes—a line connecting the center of the cornea with the fovea—are parallel or almost so, and each fovea receives an image of the object. Strabismus is misalignment of the eyes, causing one eye to deviate inward (esotropia) toward the nose, or outward (exotropia), while the other eye remains focused. Strabismus leads to deviation of the affected eye from the normal visual axis frequently, our brain may suppress the image of the affected eye which results in poor vision development and amblyopia in the affected eye.
+        p2: "What causes strabismus? Congenital diseases like: congenital diseases of brain and cranial nerves; or acquired disease: eyes or eye muscles injury; or severe refractive error (e.g. farsightedness) can cause strabismus in children."
+      kind: 
+        name: Types of Strabismus
+        name1: Inwards/Outwards squint
+        context1: Strabismus is a condition in which the eyes are not properly aligned. Esotropia means that one eye is deviated inward. Exotropia is when one or both eyes look outward.
+        text1_1: Normal
+        text1_2: Inwards squint
+        text1_3: Outwards squint
+        name2: Upwards/Downwards squint
+        context2: When the squint eye turns upwards is called hypertropia, whereby the visual axis of one eye is higher than the fellow fixating eye. Hypotropia is the similar condition, the squint eye turns downwards, focus being on the eye with the visual axis lower than the fellow fixating eye.
+        text2_1: Normal
+        text2_2: Upwards squint
+        text2_3: Downwards squint
+        name3: How to determine if a child is a true and false strabismus?
+        context3: Strabismus can be false. "False" strabismus refers to a condition where one or both eyes appear misaligned but really, they are straight. Infants and young children are more likely to have "false" strabismus (commonly known as "false crossed-eyes").
+        text3_1: Normal
+        text3_2: False strabismus
+        text3_3: True strabismus
+        context4: This condition is often due to the fact that babies have a broad flat nasal bridge with small folds of eyelid skin at the inner corner of the eyelids.  These features make the eyes look crossed when in fact they are not. This will lead to a false appearance of strabismus. However, when the fold of skin near to the nose bridge is pinched with fingers, the optical illusion will disappear. As the child grows up, the false strabismus gradually disappears.
+        name5: How to recognize strabismus?
+        context5: "A child's daily behavior may also reflect strabismus:"
+        text5_1: The child's eye problem persistence
+        text5_2_1: The child's eye
+        text5_2_2: problem persistence
+        text5_3_1: Tends to use one eye
+        text5_3_2: when watching or reading
+        text5_4: Tilting the head when looking at objects
+        text5_5_1: Squeezing eyes, squinting,
+        text5_5_2: rubbing eyes, blinking more than usual
+        text5_6: Watery eyes
     amotioRetinae: Retinal Detachment
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases

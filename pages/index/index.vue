@@ -103,13 +103,13 @@ const toLink = (a:string) => {
       </div>
       <div>
         <a :style="{cursor: 'pointer'}" href="/medical-service">
-          <div>
+          <!-- <div>
             <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L5 5.5L1 10" stroke="#2958A3" stroke-width="1.25" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
             <div>NEWS</div>
-          </div>
+          </div> -->
           <div>
             <img src="https://static.cmereye.com/imgs/2023/09/dd0567d3c65bc2d3.png" />
           </div>
@@ -172,7 +172,7 @@ const toLink = (a:string) => {
         </div>
       </div>
       <div class="mbCar">
-        <div>
+        <!-- <div>
           <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.72727 0L0 2.72727L4.54545 7.27273L0 11.8182L2.72727 14.5455L10 7.27273L2.72727 0Z"
               fill="#2958A3" />
@@ -180,7 +180,7 @@ const toLink = (a:string) => {
           <div>
             NEWS
           </div>
-        </div>
+        </div> -->
         <div @click="toLink('/medical-service')">
           <div><img src="https://static.cmereye.com/imgs/2023/09/c03f529548e5905a.png" alt=""></div>
           <!-- <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>s -->
@@ -405,7 +405,7 @@ const toLink = (a:string) => {
         background: rgba($color: #fff, $alpha: .7);
         margin: 0 20px;
         width: auto;
-        padding: 10px 20px 20px;
+        padding: 10px;
 
         &>div:nth-of-type(1) {
           display: flex;
@@ -414,7 +414,7 @@ const toLink = (a:string) => {
           color: #2958A3;
           font-size: 20px;
           font-weight: 400;
-          margin-bottom: 10px;
+          // margin-bottom: 10px;
 
           svg {
             // margin-top: -8px;

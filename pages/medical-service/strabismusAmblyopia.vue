@@ -38,69 +38,69 @@ const backgd = [
 const strabismusList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/714c9a2fceed9b86.jpg',
-    text: '正常眼位',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/7ea53d3734476d0a.jpg',
-    text: '內斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/a36770ffa76f3e2e.jpg',
-    text: '外斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_3',
   },
 ]
 const strabismusList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/3eed40559da38526.jpg',
-    text: '正常眼位',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/21b0fa246561c5bd.jpg',
-    text: '上斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/ff6403d529d952d2.jpg',
-    text: '下斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_3',
   },
 ]
 const strabismusList3 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/f5435fd75e99b400.jpg',
-    text: '正常眼位',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/18fee48a5021a82e.jpg',
-    text: '假性內斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/fa5db6e208cf321f.jpg',
-    text: '（真）內斜視',
+    text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_3',
   },
 ]
 const strabismusList4 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f317dab3447cad52.png',
-    text: ['眼睛持續看起來不正常'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_1'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/92abe075389b8af9.png',
-    text: ['看東西時雙眼沒有同步移動，', '即一隻眼望向一方，另一隻沒有跟隨'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_2_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_2_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ee8e638950ef26fd.png',
-    text: ['單眼或遮蓋一隻眼睛', '看電視或書'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/37924e5d99c31f51.png',
-    text: ['經常側頭看東西'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_4'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9b92ae8185dfbea8.png',
-    text: ['經常瞇眼、斜側', '凝望、眨眼、揉眼睛'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_5_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_5_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/af77985aa7af1b00.png',
-    text: ['經常眼淚汪汪'],
+    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_6'],
   },
 ]
 const strabismusList5 = [
@@ -182,27 +182,27 @@ const treatList1 = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '斜視',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name1',
     anchorLink: '/medical-service/strabismusAmblyopia#strabismus',
   },
   {
-    anchorName: '斜視種類',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name2',
     anchorLink: '/medical-service/strabismusAmblyopia#kind',
   },
   {
-    anchorName: '治療斜視',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name3',
     anchorLink: '/medical-service/strabismusAmblyopia#cure',
   },
   {
-    anchorName: '弱視',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name4',
     anchorLink: '/medical-service/strabismusAmblyopia#amblyopia',
   },
   {
-    anchorName: '弱視種類',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name5',
     anchorLink: '/medical-service/strabismusAmblyopia#amblyopia_kind',
   },
   {
-    anchorName: '治療弱視',
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name6',
     anchorLink: '/medical-service/strabismusAmblyopia#treat',
   },
 ]
@@ -225,7 +225,7 @@ const callTel = () => {
     <div class="strabismusAmblyopia_head">
       <div>
         <div>
-          <div>兒童斜弱視</div>
+          <div>{{$t('pages.medical_service.strabismusAmblyopia')}}</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
@@ -238,57 +238,57 @@ const callTel = () => {
     
     <div class="strabismusAmblyopia_nav">
       <div id="strabismus">
-        <div class="strabismusAmblyopia_title_text">甚麼是斜視？</div>
+        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.name')}}</div>
         <div class="strabismusAmblyopia_text_p_span">
           <p>
-            正常人看事物時，雙眼視軸平行，可以望向同一方向。而斜視是指雙眼看東西時視軸不平行，導致其中一個眼球外斜或內斜（向內、向外、向上或向上傾斜）。若仍處於視覺發育時期，斜視引致其中一隻眼睛經常偏離視軸，大腦可能會抑制該眼睛的影像，久而久之小朋友會慣性棄用斜視眼，從而造成斜視眼視力發育不良，變成弱視眼。
+            {{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.p1')}}
           </p>
           <p>
-            為甚麼會有斜視？腦部、腦神經、眼睛或眼球肌肉的先天性缺陷，或後天的疾病、損傷，又或者是屈光不正（近視或遠視）都可能導致兒童斜視。
+            {{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.p2')}}
           </p>
         </div>
       </div>
       <div id="kind">
-        <div class="strabismusAmblyopia_title_text">常見的斜視種類</div>
+        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name')}}</div>
         <div>
           <div>
-            <div>內斜視／外斜視</div>
+            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name1')}}</div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                小朋友看東西向前直望時，斜視眼斜向鼻樑方向為內斜視，斜向耳朵方向為外斜視。
+                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context1')}}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList1" :key="index">
                   <img :src="item.img" />
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div>上斜視／下斜視</div>
+            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name2')}}</div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                小朋友看東西向前直望時，斜視眼向上斜為上斜視，向下斜為下斜視。
+                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context2')}}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList2" :key="index">
                   <img :src="item.img" />
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div>如何區分孩子真假斜視？</div>
+            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name3')}}</div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                斜視有真假之分，假斜視是指從外觀上兩隻眼珠位置看似有偏差，視軸並沒有出現不平行的狀況，不會影響正常視力發展。嬰幼兒最常見有「假內斜視」（俗稱「假鬥雞眼」）。
+                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context3')}}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList3" :key="index">
                   <img :src="item.img" />
-                  <div>{{ item.text }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
@@ -299,12 +299,12 @@ const callTel = () => {
           <p>立即WhatsApp預約檢查</p>
         </div>
         <div class="strabismusAmblyopia_text_p_span">
-          當孩子眼部輪廓還未發育完全，如鼻樑扁平，雙眼會顯得較靠近鼻樑且眼球鞏膜露出的部分較小，產生斜視的錯覺。但當用手指把鼻樑旁的皮膚輕輕地捏起，就會發現斜視消失。隨著兒童日漸長大，鼻樑長高，兩旁皮膚自然拉起，假斜視會逐漸消失。
+          {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context4')}}
         </div>
         <div>
-          <div>如何發現孩子有斜視？</div>
+          <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name5')}}</div>
           <div class="strabismusAmblyopia_text_p_span">
-            孩子日常的舉動亦可能反映斜視問題︰
+            {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context5')}}
           </div>
           <div>
             <div v-for="(item, index) in strabismusList4" :key="index">
@@ -312,7 +312,7 @@ const callTel = () => {
                 <img :src="item.img" />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
-                <p v-for="(ele, i) in item.text" :key="i">{{ ele }}</p>
+                <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
               </div>
             </div>
           </div>
