@@ -1277,6 +1277,81 @@ pages:
         name: Treat strabismus and amblyopia timely!
         context: Patients should arrange an eye examination for their children regularly to find out the cause of eye problems as soon as possible. The earlier detection and treatment, the better the effect. The effect of treatment also requires the cooperation of parents and children.
     amotioRetinae: Retinal Detachment
+    amotioRetinae_con: 
+      title: retinal detachment
+      intro: 
+        name: What is Retinal Detachment?
+        p1: The retina is a transparent, thin layer (less than 0.5mm in thickness) of tissue that lines the back of the eye. The central portion of the retina is called the macula, which is responsible for central vision. The retina acts like the film of a camera, it receives light that enters the eye, converts the light into neural signals, and sends these signals through the optic nerve to the brain for visual recognition. It is a sophisticated and fragile tissue and it is responsible for detecting qualities such as color and light-intensity. The retina is structured of ten layers, including nine layers of nerve cells and photoreceptors, one pigmented layer. The first nine-layers are called neurosensory retina and the tenth layer is called retinal pigment epithelium. One side of the retina is attached with the vitreous and the other side with the choroid.
+        p2: Due to the retina’s vital role in vision, damage to it can cause permanent blindness. Conditions such as retinal detachment, where the retina is abnormally detached from its usual position, can disturb the retina from receiving or processing light. Therefore, the brain cannot receive visual information, thus leads to blindness. 
+        p3: Retinal detachment is a serious ophthalmic emergency
+        p4: ",which generally refers to the separation of the neurosensory retina (NSR) from the underlying retinal pigment epithelium (RPE). The RPE provides nutrition and oxygen for the NSR. Once the NSR is detached from the RPE, there can be significant loss of photoreceptor cells of the NSR that lead to visual damage, which may be irreversible."
+      factor: 
+        name: Risk Factors
+        text1_1: "High myopia: the higher the myopia,"
+        text1_2: the greater the risk
+        text2_1: Family history of
+        text2_2: retinal detachment
+        text3: Eye injury
+        text4: Previous intraocular surgery
+        text5: Ocular tumors
+        text6: Ocular inflammation
+        text7_1: Diabetic retinopathy
+        text7_2: ""
+      styptom:
+        name: Signs and Symptoms
+        context: "Early retinal detachment can be asymptomatic, but there may have the following symptoms:"
+        text1_1: Sudden, significant increase of floaters
+        text1_2: ""
+        text2_1: Sudden onset of new flashes or increase of flashes
+        text2_2: ""
+        text3: Sudden fixed shadow in peripheral vision
+        text4_1: Loss of visual field
+        text4_2: ""
+        span1: A sudden increase in floaters (black dots or shadows of different shapes) or flashes is a possible symptom of retinal detachment.
+        span2:  If there are suspicions of signs or symptoms of retinal detachment, please seek urgent medical advice, consult your ophthalmologist and have a detailed checkup. 
+        span3: There might be permanent damage to vision and irreversible consequences if retinal detachment is not treated timely.
+        span4: ""
+      treat:
+        name: Treatments
+        title1: Pneumatic retinopexy
+        text1: An expanding gas bubble is injected into the eye, your doctor will position you so that the bubble floats over the detached area and pushes it against the back of your eye. Additional cryosurgery or laser therapy to seal the retina against the wall of the eye may also be needed.
+        title2: Scleral buckle
+        text2: Scleral buckling is a surgical procedure used to repair a retinal detachment. The scleral is the outer supporting layer of the eyeball. In this surgery, a surgeon attaches a piece of silicone or a sponge onto the outer part of the eye at the spot of a retinal tear/detachment, repairing the detachment by pushing the sclera toward the retinal tear or break. This is a surgery involving the outer part of the eye and therefore the risk of intraocular infection is considered to be less.
+        title3: Pars Plana Vitrectomy (PPV)
+        text3: Pars plana vitrectomy (PPV) is a minimally invasive procedure done with special tools inserted through three incisions (less than 1mm) the pars plana, an area in the white of the eye (sclera), to remove vitreous humor and re-attach the retina by injecting expanding gas or silicon oil. Other treatments (when needed) will be done at the same time, such as laser, membrane peeling or injection of anti-VFGF etc.
+      diabetes:
+        name: Diabetic Retinopathy
+        p1: Diabetic retinopathy is a complication of diabetes, caused by high blood sugar levels damaging the retina (high blood sugar damages the endothelial cells of blood vessels). It can cause blindness if left undiagnosed and untreated. Although it usually takes several years for diabetic retinopathy to reach a stage where it could threaten the eyesight, regular eye check is necessary for diabetic patients due to lack of symptom(s) in the early stage. Basically, all type 1 diabetes patients are affected by retinopathy in about 15 to 20 years after the onset of the disease. About 2-30% of type 1 diabetes patients are under the risk of vision loss while more than 60% of patients with type 2 diabetes have retinopathy in their disease course.
+        p2: The retina is the light-sensitive layer that converts light into electrical signals. The signals are sent to the brain which turns them into the images we see. The retina needs a constant supply of blood, which it receives through a network of tiny blood vessels. Over time, a persistently high blood sugar level can damage these blood vessels and retina, this damage can be permanent if not treated timely. Diabetic retinopathy includes blot hemorrhages, microaneurysms, hard exudates, diabetic macular edema, abnormal blood vessel growth in retina, retinal detachment, or secondary glaucoma. Permanent visual damage or even blindness can happen in severe cases.
+      prevent:
+        name: Prevention
+        context: "Literally, one can’t prevent retinal detachment, but one can take steps to lower the risks:"
+        title1: Regular Eye Check
+        text1: If you have nearsightedness (myopia, especially high myopia), eye exams are important. Myopia makes you more prone to retinal detachment. Your eye care provider should include dilated exams to find small retinal tears.
+        title2: Stay Safe
+        text2: Use safety goggles or other protection for your eyes when playing sports or doing other risky activities (e.g. roller coasters, bumper cars, diving, skydiving, bungee jumping).
+        title3: Get Prompt Treatment
+        text3: If you notice detached retina symptoms (seeing a lot of floaters and flashes suddenly), consult your eye doctor right away for a comprehensive eye examination.
+        span1: Any age can experience retinal detachment, and people at high risk should undergo regular comprehensive eye examinations.
+        span2: If you see a lot of floaters and flashes suddenly, you should go to your eye doctor immediately.
+      faq: 
+        name: FAQ
+        q1: Q：Do floaters cause retinal detachment?
+        a1: The vitreous shrinks as we age, becomes liquified and gradually forms different shapes of dark spots or shadows floating in the field of vision, just like the mosquitoes are flying in front of our eyes. If there is a sudden onset of increased floaters, please go see your eye doctor, it is probably the signs of retinal detachment.
+        q2: Q：Does rubbing eyes lead to retinal detachment?
+        a2: The force introduced to the eye when rubbing could be dangerous to those with high myopia which might cause retinal break or tear in them. The eyeball of a high myopia patient is elongated and the retina is very thin which may have pre-existed some degeneration and make them at risk of retinal detachment.
+        q3: Q：Does retinal detachment need surgery for treatment?
+        a3: "Retinal detachment is a visual-threatening emergency that requires prompt treatment. Treatments mainly include laser or surgery: if the retinal detachment is small and located peripherally, lasers can help to repair; if the retinal detachment is large in size, surgery might be the only option."
+        q4: Q：Will retinal detachment recur?
+        a4: "Retinal detachment has the risk of recurrence. Patients with a previous history of eye injury and diabetes have higher risks. It is recommended that a high-risk person should develop good eye health, such as: do not look at electronic screens or read at a close distance for a long time; use electronic products in sufficient light environments; have enough rest and have regular eye check."
+      navLists: 
+        name1: Introduction
+        name2: Risk factors
+        name3: Signs & Symptoms
+        name4: Treatments
+        name5: Diabetic retinopathy
+        name6: Prevention
+        name7: FAQ
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     medicalOptometry: Myopia Control and Ophthalmic Services

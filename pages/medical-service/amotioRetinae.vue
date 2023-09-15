@@ -29,6 +29,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#f7d6cf;',
@@ -49,144 +51,144 @@ const callTel = () => {
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '視網膜脫落',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name1',
     anchorLink: '/medical-service/amotioRetinae#intro',
   },
   {
-    anchorName: '高危因素',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name2',
     anchorLink: '/medical-service/amotioRetinae#factor',
   },
   {
-    anchorName: '先兆及症狀',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name3',
     anchorLink: '/medical-service/amotioRetinae#styptom',
   },
   {
-    anchorName: '治療',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name4',
     anchorLink: '/medical-service/amotioRetinae#treat',
   },
   {
-    anchorName: '糖尿上眼',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name5',
     anchorLink: '/medical-service/amotioRetinae#diabetes',
   },
   {
-    anchorName: '預防方法',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name6',
     anchorLink: '/medical-service/amotioRetinae#prevent',
   },
   {
-    anchorName: '常見問題',
+    anchorName: 'pages.medical_service.amotioRetinae_con.navLists.name7',
     anchorLink: '/medical-service/amotioRetinae#faq',
   },
 ]
 // 常見問題
 const meetArr = [
   {
-    title: 'Q：飛蚊症會引致視網膜脫落？',
+    title: 'pages.medical_service.amotioRetinae_con.faq.q1',
     agree:
-      '隨著眼睛老化、玻璃體逐步收縮、液化。部分退化的細胞逐漸積聚成塊，便會形成不同形狀的黑點或暗影，飛舞飄動，就會好像有蚊子在眼前飛舞。飛蚊可分為良性飛蚊和惡性飛蚊。良性飛蚊屬於生理現象，一般不用擔心。惡性飛蚊若表現為飛蚊數量在短時間內明顯增加，面積擴大，或者眼前閃光出現（或明顯增多），則有機會是眼睛出現視網膜脫落。',
+      'pages.medical_service.amotioRetinae_con.faq.a1',
   },
   {
-    title: 'Q：揉眼睛會致視網膜脫落？',
+    title: 'pages.medical_service.amotioRetinae_con.faq.q2',
     agree:
-      '不能簡單認為揉眼睛這個動作就是會導致視網膜脫落。這個動作在部位高危病人中（例如超高度數近視患者），有可能是一個危險的動作。因為深近視人士的眼軸變得很長，視網膜因此被拉得很薄，於是很容易會破裂或穿洞，這個情況下，大力揉眼就有可能對眼睛造成很大的傷害。',
+      'pages.medical_service.amotioRetinae_con.faq.a2',
   },
   {
-    title: 'Q：視網膜脫落一定要做手術嗎？',
+    title: 'pages.medical_service.amotioRetinae_con.faq.q3',
     agree:
-      '視網膜脫落屬於眼科急症，患者有可能永久失去視力，因此必須盡快治療。治療以激光或手術為主︰如果視網膜脫落範圍較小，沒有內液通過裂孔進入視網膜後方，則眼部激光已經可以固定視網膜；但若範圍較大，手術是主要的醫治方法。',
+      'pages.medical_service.amotioRetinae_con.faq.a3',
   },
   {
-    title: 'Q：視網膜脫落會復發嗎？',
+    title: 'pages.medical_service.amotioRetinae_con.faq.q4',
     agree:
-      '視網膜脫落是有機會復發，而由眼部外傷、糖尿上眼引起的視網膜脫落復發風險相對更高。所以，建議曾經歷視網膜脫落人士要養成正確用眼習慣如︰不要長時間及近距離看電子螢幕和閱讀；使用電子產品時要留意有足夠光線；讓眼睛有足夠時間休息等。',
+      'pages.medical_service.amotioRetinae_con.faq.a4',
   },
 ]
 const factorList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/fc6ff4f8cb23dfcf.png',
-    text: ['近視：度數愈深，', '風險愈高'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text1_1', 'pages.medical_service.amotioRetinae_con.factor.text1_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c56f997c3d97b23.png',
-    text: ['有視網膜脫落', '家族遺傳史'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text2_1', 'pages.medical_service.amotioRetinae_con.factor.text2_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/04455c1207c08c9c.png',
-    text: ['眼睛曾受外傷'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text3'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/88711def3ed108f7.png',
-    text: ['眼內手術史'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text4'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ec5a01a0dbf9f84a.png',
-    text: ['眼部有腫瘤'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text5'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/01900705430260c3.png',
-    text: ['眼內發炎'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text6'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/dab35b2868797ff6.png',
-    text: ['糖尿上眼', '（糖尿性視網膜病變）'],
+    text: ['pages.medical_service.amotioRetinae_con.factor.text7_1', 'pages.medical_service.amotioRetinae_con.factor.text7_2'],
   },
 ]
 const styptomList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/eeb150720a808928.jpg',
     title: 'STEP 1',
-    text: ['見到大量飛蚊，', ' 數量異常地多'],
+    text: ['pages.medical_service.amotioRetinae_con.styptom.text1_1', 'pages.medical_service.amotioRetinae_con.styptom.text1_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/23aab65d449ee915.jpg',
     title: 'STEP 2',
-    text: [' 見到閃光或', '黑影飄動'],
+    text: ['pages.medical_service.amotioRetinae_con.styptom.text2_1', 'pages.medical_service.amotioRetinae_con.styptom.text2_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/72980b97125764fe.jpg',
     title: 'STEP 3',
-    text: ['眼前固定黑影'],
+    text: ['pages.medical_service.amotioRetinae_con.styptom.text3'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
     title: 'STEP 4',
-    text: ['視野缺失、視力', '突然明顯下降'],
+    text: ['pages.medical_service.amotioRetinae_con.styptom.text4_1', 'pages.medical_service.amotioRetinae_con.styptom.text4_2'],
   },
 ]
 const treatList1 = [
   {
     id: 0o1,
     img: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
-    title: '充氣性視網膜固定術',
-    text: '在玻璃體內注入特別的氣泡，再輔以冷凍或視網膜激光治療， 術後病人採用俯臥位，利用氣泡向上浮的特性，將脫落的視網膜頂壓在正常位置，這治療適合視網膜範圍較少、視網膜脫落範圍在眼球內上的三分之一及玻璃體較健康的患者。',
+    title: 'pages.medical_service.amotioRetinae_con.treat.title1',
+    text: 'pages.medical_service.amotioRetinae_con.treat.text1',
   },
   {
     id: 0o2,
     img: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
-    title: '鞏膜外墊壓術',
-    text: '利用特殊硅膠或海綿墊，對視網膜脫落位置的鞏膜產生壓力，使鞏膜向內凸起，頂住脫落的視網膜，使其復位以及封閉撕裂處，讓脫落的視網膜組織與下方的色素上皮層再黏合，有時會再輔以冷凍或視網膜激光治療。這種方法一般適用於發生在較周邊的視網膜脫離。墊壓術在眼球外進行，減少了發生眼內感染的風險。',
+    title: 'pages.medical_service.amotioRetinae_con.treat.title2',
+    text: 'pages.medical_service.amotioRetinae_con.treat.text2',
   },
   {
     id: 0o3,
     img: 'https://static.cmereye.com/imgs/2023/08/f5055f0dc5249495.png',
-    title: '微創玻璃體切除術（PPV）',
-    text: '以微創模式，在眼球表面開三個直徑小於一毫米的小洞，直接在眼球內進行玻璃體切除，之後注入擴充性氣體（或者注入硅油），將視網膜頂壓回復到原來正常位置，使得神經視網膜層和色素上皮層重新貼合，術前還會以冷凍或激光的方式把視網膜破孔封上。術後病人需要採取俯臥的位置，保持對視網膜頂壓的力量。',
+    title: 'pages.medical_service.amotioRetinae_con.treat.title3',
+    text: 'pages.medical_service.amotioRetinae_con.treat.text3',
   },
 ]
 const preventList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/13de992a2503809a.png',
-    title: '定期進行眼科檢查',
-    text: '如果您有近視（尤其是高度近視，600度或以上），眼科檢查是很重要。因為近視使您更容易發生視網膜脫離。而且眼睛檢查中應包含散瞳檢查，以發現有沒有視網膜撕裂先兆。',
+    title: 'pages.medical_service.amotioRetinae_con.prevent.title1',
+    text: 'pages.medical_service.amotioRetinae_con.prevent.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/273a3786c416e9c5.png',
-    title: '注意戶外活動安全',
-    text: '在進行劇烈運動或進行其他高風險活動（例如過山車、碰碰車、潛水、跳傘、蹦極）時，請使用護目鏡或其他保護眼睛的裝備。 ',
+    title: 'pages.medical_service.amotioRetinae_con.prevent.title2',
+    text: 'pages.medical_service.amotioRetinae_con.prevent.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2af412dd5ff25eb6.png',
-    title: '有需要時及時治療',
-    text: '如果您發現視網膜脫落症狀（突然看到很多飛蚊症和閃光），請立即諮詢您的眼科醫生進行全面的眼科檢查',
+    title: 'pages.medical_service.amotioRetinae_con.prevent.title3',
+    text: 'pages.medical_service.amotioRetinae_con.prevent.text3',
   },
 ]
 </script>
@@ -197,7 +199,7 @@ const preventList1 = [
       <!-- 头部 -->
       <div>
         <div>
-          <div>視網膜脫落</div>
+          <div>{{$t('pages.medical_service.amotioRetinae_con.title')}}</div>
           <div>RETINAL DETACHMENT</div>
           <div>RETINAL DETACHMENT</div>
           <div>RETINAL DETACHMENT</div>
@@ -205,15 +207,15 @@ const preventList1 = [
       </div>
     </div>
     <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
-    <div class="amotioRetinae_nav">
+    <div class="amotioRetinae_nav" :class="{'amotioRetinaeNav-en': locale === 'en'}">
       <div id="intro">
-        <div class="amotioRetinae_title_text">什麼是視網膜脫落？</div>
+        <div class="amotioRetinae_title_text">{{$t('pages.medical_service.amotioRetinae_con.intro.name')}}</div>
         <div>
           <p>
-            視網膜是一片厚度不到0.5毫米的透明薄膜，是眼球壁的最內層，佈滿感光神經細胞。視網膜是眼內最重要、最複雜但又最脆弱的部分。視網膜一面與玻璃體接觸，另一面緊貼著脈胳膜。視網膜的作用像是相機的菲林，將接收到的光線和影像轉化成神經電信號，再傳送到大腦的視覺中樞，讓我們可以「看見」。視網膜共有十層，第一至九層稱為「感覺神經視網膜」，第十層則稱為「視網膜色素上皮層」，其中色素上皮層主要負責血液及營養供應以及處理代謝所產生的「廢料」。
+            {{$t('pages.medical_service.amotioRetinae_con.intro.p1')}}
           </p>
           <p>
-            視網膜脫落是一種較嚴重的<span>眼科急症</span>，泛指「感覺神經視網膜」和「視網膜色素上皮層」互相分離，令「感覺神經視網膜」無法得到足夠的血液和營養，新陳代謝產生的廢料也無法被運走。如果脫離狀態持續，「感覺神經視網膜」上的神經細胞會逐漸死亡，看上去原本柔軟而透明的視網膜變得僵硬而發白，情況好比相機的菲林走了光一樣，視網膜無法再正常感應影像的光影信號，也無法將信號傳送到大腦。
+            {{$t('pages.medical_service.amotioRetinae_con.intro.p2')}}<span>{{$t('pages.medical_service.amotioRetinae_con.intro.p3')}}</span>{{$t('pages.medical_service.amotioRetinae_con.intro.p4')}}
           </p>
         </div>
         <div>
@@ -225,29 +227,29 @@ const preventList1 = [
       </div>
       <div id="factor">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          視網膜脫落高危因素
+          {{$t('pages.medical_service.amotioRetinae_con.factor.name')}}
         </div>
         <div>
           <div v-for="(item, index) in factorList1" :key="index">
             <div><img :src="item.img" /></div>
             <div>
-              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ ele }}</p>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ $t(ele) }}</p>
             </div>
           </div>
         </div>
       </div>
       <div id="styptom">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          視網膜脫落先兆及症狀
+          {{$t('pages.medical_service.amotioRetinae_con.styptom.name')}}
         </div>
         <div class="amotioRetinae_text_p_span">
-          早期視網膜脫落可能沒有任何症狀，或者出現以下情況︰
+          {{$t('pages.medical_service.amotioRetinae_con.styptom.context')}}
         </div>
         <div>
           <div v-for="(item, index) in styptomList1" :key="index">
             <div>{{ item.title }}</div>
             <div>
-              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ ele }}</p>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ $t(ele) }}</p>
             </div>
             <div>
               <img :src="item.img" />
@@ -255,13 +257,13 @@ const preventList1 = [
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          如果飛蚊症患者眼前飛蚊（不同形狀的黑點或暗影）突然明顯增加，或者眼前閃光突然出現或者明顯增加，很大機會是視網膜脫落的先兆。<span>若懷疑出現視網膜脫落的先兆或症狀，必須盡快求醫，向眼科醫生查詢，若確診視網膜脫離，很可能需要緊急手術。</span>
-          視網膜脫落如沒有及時治療，視網膜脫離的範圍可能會越來越大，一旦脫離到黃斑位置，<span>將嚴重影響視力，不及時治療將會造成永久性的損害。</span>
+          {{$t('pages.medical_service.amotioRetinae_con.styptom.span1')}}<span>{{$t('pages.medical_service.amotioRetinae_con.styptom.span2')}}</span>
+          {{$t('pages.medical_service.amotioRetinae_con.styptom.span3')}}<span>{{$t('pages.medical_service.amotioRetinae_con.styptom.span4')}}</span>
         </div>
       </div>
       <div id="treat">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          視網膜脫落治療
+          {{$t('pages.medical_service.amotioRetinae_con.treat.name')}}
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
@@ -269,10 +271,10 @@ const preventList1 = [
             <div>
               <div>
                 <p>
-                  <span>{{ item.id }}</span><span>{{ item.title }}</span>
+                  <span>{{ item.id }}</span><span>{{ $t(item.title) }}</span>
                 </p>
               </div>
-              <div class="amotioRetinae_text_p_span amotioRetinae_text_top">{{ item.text }}</div>
+              <div class="amotioRetinae_text_p_span amotioRetinae_text_top">{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
@@ -283,7 +285,7 @@ const preventList1 = [
       </div>
       <div id="diabetes">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          糖尿上眼（糖尿性視網膜病變）
+          {{$t('pages.medical_service.amotioRetinae_con.diabetes.name')}}
         </div>
         <div>
           <div>
@@ -291,38 +293,38 @@ const preventList1 = [
           </div>
           <div class="amotioRetinae_text_p_span">
             <p>
-              糖尿上眼學名為「糖尿性視網膜病變」，是糖尿病的併發症，會影響患者眼睛健康。不論是一型糖尿病或二型糖尿病的患者，長期血糖偏高都會損傷血管內皮細胞，都有機會引起糖尿上眼。幾乎所有一型糖尿病患者在發病後15至20年後都會受到視網膜病變影響，其中兩至三成的患者更有失明之虞，而超過六成的二型患者會有不同程度的視網膜病變。
+              {{$t('pages.medical_service.amotioRetinae_con.diabetes.p1')}}
             </p>
             <p>
-              糖尿病視網膜病變初期通常是無聲無息，多數病人沒有明顯症狀，視功能不受影響。但若血糖控制不穩定，血管內皮細胞就會受到永久破壞，引起一連串的眼底病變，如：微血管瘤、糖尿黃斑水腫、視網膜新生血管，甚至視網膜脫落或繼發性青光眼，嚴重者更有失明的危機。如能及早發現並進行針對性治療，病人的視功能大多能保持。因此糖尿病患者應定期檢查眼底，以免視力受損。
+              {{$t('pages.medical_service.amotioRetinae_con.diabetes.p2')}}
             </p>
           </div>
         </div>
       </div>
       <div id="prevent">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          預防視網膜脫落
+          {{$t('pages.medical_service.amotioRetinae_con.prevent.name')}}
         </div>
-        <div>預防視網膜脫離可以採取措施降低風險：</div>
+        <div>{{$t('pages.medical_service.amotioRetinae_con.prevent.context')}}</div>
         <div>
           <div v-for="(item, index) in preventList1" :key="index">
             <div>
               <img :src="item.img" />
             </div>
             <div>
-              <div>{{ item.title }}</div>
-              <div class="amotioRetinae_text_p_span">{{ item.text }}</div>
+              <div>{{ $t(item.title) }}</div>
+              <div class="amotioRetinae_text_p_span">{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。
-          <span>一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。</span>
+          {{$t('pages.medical_service.amotioRetinae_con.prevent.span1')}}
+          <span>{{$t('pages.medical_service.amotioRetinae_con.prevent.span2')}}</span>
         </div>
       </div>
       <div id="faq">
         <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
-          常見問題
+          {{$t('pages.medical_service.amotioRetinae_con.faq.name')}}
         </div>
         <div>
           <PageCollapse :answer="meetArr" :downarr="'amotioRetinae'" :style="{ '--subassembly-color': '#eab1a6' }" />
@@ -725,6 +727,48 @@ const preventList1 = [
       margin-top: 120px;
     }
   }
+  &.amotioRetinaeNav-en{
+    &>#factor {
+      &>div:nth-child(2) {
+        &>div{
+          &>div:nth-child(2) {
+            font-size: 20px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+    &>#styptom {
+      &>div:nth-child(3) {
+        &>div{
+          &>div:nth-child(2) {
+            line-height: 1.4;
+            text-align: center;
+          }
+        }
+      }
+      &>div:nth-child(4) {
+        padding: 50px 70px;
+        line-height: 1.8;
+      }
+    }
+    &>#prevent {
+      &>div:nth-child(3) {
+        &>div{
+          &>div:nth-child(2) {
+            height: auto;
+            padding-bottom: 30px;
+            &>div:nth-child(2) {
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+      &>div:nth-child(4) {
+        padding-top: 30px;
+      }
+    }
+  }
 }
 
 .amotioRetinae_text_p_span {
@@ -960,7 +1004,7 @@ const preventList1 = [
         &>div:nth-child(2) {
           font-size: 31px;
           letter-spacing: 4.7px;
-          text-align: justify;
+          // text-align: justify;
         }
         & > div:nth-child(3),& > div:nth-child(4) {
           font-size: 31px;
@@ -1425,6 +1469,58 @@ const preventList1 = [
 
       &>div:nth-child(2) {
         margin-top: 40px;
+      }
+    }
+    &.amotioRetinaeNav-en{
+      &>#intro {
+        &>div:nth-child(1){
+          font-size: 20px;
+        }
+      }
+      &>#factor {
+        &>div:nth-child(2) {
+          &>div{
+            &>div:nth-child(2) {
+              font-size: 12px;
+              line-height: 1.4;
+            }
+          }
+        }
+      }
+      &>#styptom {
+        &>div:nth-child(3) {
+          &>div{
+            &>div:nth-child(2) {
+              padding-right: 15px;
+            }
+          }
+        }
+        &>div:nth-child(4) {
+          padding: 28px 24px 24px;
+          line-height: 1.8;
+        }
+      }
+      &>#prevent {
+        &>div:nth-child(3) {
+          &>div{
+            &>div:nth-child(2) {
+              // height: auto;
+              padding-bottom: 0px;
+              &>div:nth-child(1) {
+                font-size: 18px;
+              }
+              &>div:nth-child(2) {
+                line-height: 1.6;
+                text-align: left;
+              }
+            }
+          }
+        }
+        &>div:nth-child(4) {
+          padding: 10px 20px 10px 30px;
+          letter-spacing: 0px;
+
+        }
       }
     }
   }
