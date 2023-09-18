@@ -28,6 +28,8 @@ useHead(() => ({
     },
   ],
 }))
+
+const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
   '#7DBE9C;',
@@ -48,242 +50,242 @@ const callTel = () => {
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '翼狀胬肉',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name1',
     anchorLink: '/medical-service/ocularSurfaceDiseases#pterygium',
   },
   {
-    anchorName: '眼瞼炎',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name2',
     anchorLink: '/medical-service/ocularSurfaceDiseases#blepharitis',
   },
   {
-    anchorName: '角膜炎',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name3',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratitis',
   },
   {
-    anchorName: '虹膜炎',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name4',
     anchorLink: '/medical-service/ocularSurfaceDiseases#iritis',
   },
   {
-    anchorName: '表層鞏膜炎',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name5',
     anchorLink: '/medical-service/ocularSurfaceDiseases#episcleritis',
   },
   {
-    anchorName: '角膜皮上破損',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name6',
     anchorLink: '/medical-service/ocularSurfaceDiseases#damage',
   },
   {
-    anchorName: '錐形角膜',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name7',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratoconus',
   },
   {
-    anchorName: '角膜移植',
+    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name8',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratoplasty',
   },
 ]
 // 常見問題
 const meetArr = [
   {
-    title: 'Q: 角膜移植的成功率怎樣？',
+    title: 'pages.medical_service.ocularSurfaceDiseases_con.faq.q1',
     agree:
-      '由於角膜沒有血管，角膜移植是所有器官移植中成功率最高的。有些病人的角膜出現新生血管增生或同時患上其他眼疾，會降低手術的成功率，但使用適當藥物，術後成功率還是較高的。',
+      'pages.medical_service.ocularSurfaceDiseases_con.faq.a1',
   },
   {
-    title: 'Q: 術前有什麼注意事項？',
-    agree: '應該保持開朗，有充足睡眠和休息，戒煙酒，預防感冒，並保持排便通暢。',
+    title: 'pages.medical_service.ocularSurfaceDiseases_con.faq.q2',
+    agree: 'pages.medical_service.ocularSurfaceDiseases_con.faq.a2',
   },
   {
-    title: 'Q: 角膜移植後需注意什麼？',
+    title: 'pages.medical_service.ocularSurfaceDiseases_con.faq.q3',
     agree: [
-      '1)避免揉眼、眼部外傷、體力勞動及劇烈運動。',
-      '2)遵照醫囑複診（包括：視力、眼壓、裂隙燈檢查等）。',
-      '3)堅持按照醫囑用藥，用藥期間如有不良反應，應及時告訴醫生，以便調整用藥。',
-      '4)需緊急就診的情況：突然視物不清、眼紅、眼痛、畏光、有眼外傷等。',
+      'pages.medical_service.ocularSurfaceDiseases_con.faq.a3_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.faq.a3_2',
+      'pages.medical_service.ocularSurfaceDiseases_con.faq.a3_3',
+      'pages.medical_service.ocularSurfaceDiseases_con.faq.a3_4',
     ],
   },
 ]
 const pterygiumList1 = [
   {
     id: 0o1,
-    text: '翼狀胬肉的治療為盡量避免刺激，小而沒有增大的翼狀胬肉則毋須治療。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text3_1',
   },
   {
     id: 0o2,
-    text: '有明顯徵狀或充血嚴重可使用類固醇眼藥水減輕炎症反應。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text3_2',
   },
   {
     id: 0o3,
-    text: '如果視力受到影響或翼狀胬肉有增大，可以考慮切除。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text3_3',
   },
   {
     id: 0o4,
-    text: '翼狀胬肉術後復發並不少見，減低復發率的方法包括自身結膜移植、使用抗代謝藥物等。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text3_4',
   },
 ]
 const blepharitisList1 = [
   {
-    text: '揉擦眼睛，使細菌自腺體開口處進入眼瞼並引起感染',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1',
   },
   {
-    text: '與食物過敏有關，如：海鮮過敏、巧克力過敏等',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2',
   },
   {
-    text: '如果感染反復發作，要留意是否與全身性疾病有關，例如：糖尿病',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text3',
   },
   {
-    text: '經常熬夜、作息不正常令眼睛過度疲勞，抵抗力下降',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text4',
   },
   {
-    text: '患有糖尿病、習慣高脂高糖飲食',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text5',
   },
 ]
 const blepharitisList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/b12fb31271ef4c0e.png',
-    text: '眼瞼周圍紅腫發癢',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2072d440153d5969.png',
-    text: '眼睫毛的根部出現鱗片（脂漏性眼瞼炎的鱗片是黃色油膩物）',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/7aa1338885c18acb.png',
-    text: '有時會發生眼睫毛長錯方向或倒睫的情況',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/4f1cd4190fdbe151.png',
-    text: '某些感染性眼瞼炎會伴有結膜炎',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_4',
   },
 ]
 const blepharitisList3 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/77695fe77bc38fee.png',
-    text: '眼瘡出現初期可以熱敷處理，能夠改善毛囊阻塞，令受阻的油脂腺打開，幫助油脂排出。可以用連殼熟雞蛋作為熱源，用清潔的毛巾包裹，在眼瘡周圍來回按摩5至10分鐘，按摩3至4次。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9ee874c1ff5832b4.png',
-    text: '同時，醫生會處方抗生素藥水或藥膏。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/0ffb423f9bec8c60.png',
-    text: '若情況沒有改善，便應諮詢眼科醫生並考慮做眼瘡刮除術－於眼瘡位置割一小傷口，將膿泡釋放出來。此治療精準度高，術後傷口極小，可減少感染或腫脹情況發生。',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_3',
   },
 ]
 const keratitisList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/658fd4961f627781.png',
-    text: '疼痛',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/43281acecf701ee5.png',
-    text: '畏光',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/43d36f1afbbadf6b.png',
-    text: '流淚',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/a55f6759de9edca4.png',
-    text: '眼瞼痙攣',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ed2c9360e662c9f8.png',
-    text: '睫狀充血',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/4a355851bbe49ff3.png',
-    text: '角膜混濁、浸潤或潰瘍',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text6',
   },
 ]
 const damageList1 = [
   {
-    text: ['隱形眼鏡佩戴不當造成角膜刮傷'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_1'],
   },
   {
-    text: ['角膜長期缺氧而水腫剝落'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_2'],
   },
   {
     text: [
-      '異物直接傷害角膜，電焊或',
-      '紫外線灼傷（通常在六至十二',
-      '小時後角膜開始破皮）',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_3_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_3_2',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_3_3',
     ],
   },
   {
-    text: ['乾眼症'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_4'],
   },
   {
-    text: ['眼瞼閉合不全', '（角膜因乾燥而破皮）'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_2'],
   },
   {
-    text: ['角膜病變等'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_6'],
   },
 ]
 const damageList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/5a443e29bcab85f7.png',
     text: [
-      '角膜上皮層底下有豐富的神',
-      '經，一旦角膜破皮會使神經',
-      '暴露出來，非常疼痛',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_2',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_3',
     ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f5488a6cf20b2bfb.png',
-    text: ['怕光、流淚'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/35c768eeca793a10.png',
-    text: ['眼睛幾乎睜不開'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_3'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/288f34fab3f9a8cf.png',
-    text: ['角膜周圍的結膜', '會充血發紅'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_2'],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f62bc78110c0bf14.png',
-    text: ['張開或閉上', '眼睛時有異物感'],
+    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_2'],
   },
 ]
 const keratoconusList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/125b93956e0ebff8.png',
-    text: '目前仍未有明確病因，可能是染色體隱性遺傳',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/efe6bc1656aef6bd.png',
-    text: '過敏性疾病',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/8d7ccaa7a5447c03.png',
-    text: '常見於唐氏綜合症以及嚴重過敏者',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/664bfc9e4aeef087.png',
-    text: '經常揉眼',
+    text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_4',
   },
 ]
 const keratoplastyList1 = [
   {
-    therapy: '治療方式',
-    involve: '涉及角膜組織',
-    postoperation: '術後併發症',
+    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy1',
+    involve: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve1',
+    postoperation: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation1',
   },
   {
-    therapy: '全層角膜移植',
-    involve: '全部5層結構',
+    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy2',
+    involve: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve2',
     postoperation: [
-      '對角膜內皮細胞損傷較大',
-      '術後散光較多',
-      '術後10年移植失敗率大於20%',
-      '復原時間較長',
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_2',
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_3',
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_4',
     ],
   },
   {
-    therapy: '板層角膜移植',
-    involve: ['深層前角膜移植\n前面3層結構', '後層角膜移植\n後面3層結構'],
+    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy3',
+    involve: ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_2'],
     postoperation: [
-      ['對角膜內皮細胞損傷少', '術後散光較少', '移植排斥率低，復原時間較快'],
-      ['無需縫線', '術後散光少', '術後移植失敗率低', '復原時間較快'],
+      ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_2', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_3'],
+      ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_2', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_3', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_4'],
     ],
   },
 ]
@@ -295,7 +297,7 @@ const keratoplastyList1 = [
       <!-- 头部 -->
       <div>
         <div>
-          <div>眼表及角膜疾病</div>
+          <div>{{$t('pages.medical_service.ocularSurfaceDiseases')}}</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
@@ -305,13 +307,12 @@ const keratoplastyList1 = [
     <div class="ocularSurfaceDiseases-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'ocularSurfaceDiseases'" />
     </div>
-    <div class="ocularSurfaceDiseases_nav">
+    <div class="ocularSurfaceDiseases_nav" :class="{'ocularSurfaceDiseasesNav-en': locale === 'en'}">
       <div id="pterygium">
-        <div class="ocularSurfaceDiseases_title">翼狀胬肉</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.title')}}</div>
         <div class="ocularSurfaceDiseases_text_p_span">
           <div>
-            翼狀胬肉是指沿著角膜生長的翼狀增生組織，一般起源於眼睛的球結膜發生變性、肥厚、增生的結膜組織，非常緩慢地向角膜內生長，呈三角形。其後日漸增大，嚴重時可能引起角膜弧度改變，引發散光；或者胬肉過大（>
-            3mm）而影響視功能，因其形狀酷似昆蟲的翅膀，故名翼狀胬肉。翼狀胬肉多見於熱帶地區，與長期暴露於日光有關。
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.context')}}
           </div>
           <div>
             <img
@@ -323,18 +324,18 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            翼狀胬肉成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name')}}
           </div>
           <div>
             <div>
-              <div class="ocularSurfaceDiseases_text_p_span">遺傳因素</div>
+              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span1')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                營養缺乏，淚液分泌不足
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span2')}}
               </div>
-              <div class="ocularSurfaceDiseases_text_p_span">過敏反應</div>
+              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span3')}}</div>
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              環境因素，長期受到外界刺激如風沙、煙塵、熱力、日光、花粉等過敏刺激的人群，尤其是漁民、農民、海員、砂石工人等
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span4')}}
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
@@ -346,17 +347,17 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            翼狀胬肉影響
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name2')}}
           </div>
           <div>
             <div>
               <div>
-                翼狀胬肉通常較小，而且不造成影響。有時會出現眼紅、癢、燒灼感或外觀問題。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.text1')}}
               </div>
             </div>
             <div>
               <div>
-                較大的翼狀胬肉可改變角膜形狀和引起散光，導致視物模糊。部分翼狀胬肉會侵及角膜中央，造成視力喪失。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.text2')}}
               </div>
             </div>
           </div>
@@ -365,20 +366,20 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            翼狀胬肉治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name3')}}
           </div>
           <div>
             <div v-for="(item, index) in pterygiumList1" :key="index">
               <div>0{{ item.id }}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{ item.text }}
+                {{ $t(item.text) }}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="blepharitis">
-        <div class="ocularSurfaceDiseases_title">眼瞼炎</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.title')}}</div>
         <div>
           <div>
             <img
@@ -386,14 +387,14 @@ const keratoplastyList1 = [
             />
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            眼瞼炎即是眼瘡，或俗稱「眼挑針」。最靠近眼球邊緣的皮膚就是眼瞼，因發炎或是病菌感染而引起睫毛及眼瞼邊緣處的發炎稱為「眼瞼炎」。引致眼瘡的原因大多是葡萄球菌，如：金黃葡萄球菌，是最常引起外眼部刺激的因素之一。
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.context')}}
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            眼瞼炎成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name')}}
           </div>
           <div>
             <div>
@@ -403,7 +404,7 @@ const keratoplastyList1 = [
                 class="ocularSurfaceDiseases_text_p_span"
               >
                 <span>{{ index + 1 }}</span>
-                <span>{{ item.text }}</span>
+                <span>{{ $t(item.text) }}</span>
               </div>
             </div>
             <div>
@@ -422,13 +423,13 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            眼瞼炎症狀
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name1')}}
           </div>
           <div>
             <div v-for="(item, index) in blepharitisList2" :key="index">
               <div><img :src="item.img" alt="" /></div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{ item.text }}
+                {{ $t(item.text) }}
               </div>
             </div>
           </div>
@@ -437,7 +438,7 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            眼瞼炎治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name2')}}
           </div>
           <div>
             <div v-for="(item, index) in blepharitisList3" :key="index">
@@ -446,19 +447,19 @@ const keratoplastyList1 = [
                 <div>{{ index + 1 }}</div>
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{ item.text }}
+                {{ $t(item.text) }}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="keratitis">
-        <div class="ocularSurfaceDiseases_title">角膜炎</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.title')}}</div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜炎症狀
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name')}}
           </div>
           <div>
             <div v-for="(item, index) in keratitisList" :key="index">
@@ -466,7 +467,7 @@ const keratoplastyList1 = [
                 <img :src="item.img" alt="" />
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{ item.text }}
+                {{ $t(item.text) }}
               </div>
             </div>
           </div>
@@ -478,14 +479,14 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜炎影響
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name2')}}
           </div>
           <div>
             <div>
-              潰瘍癒合後，瘢痕會阻礙光線進入，使角膜表面弧度和屈光折射發生改變，物體不能在視網膜上聚焦形成清晰物象，因此視力下降。
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_1')}}
             </div>
             <div>
-              較為常見的是皰疹病毒引起的角膜炎，是人類常見的一種病毒感染。當身體免疫力下降時，嘴唇周圍會出現皰疹潰瘍症狀，病毒同樣也會侵犯眼睛，引起角膜炎。由皰疹所致的病毒感染而造成的角膜炎如未能及時醫治，容易造成角膜血管增生及形成疤痕（圖A），嚴重者需要透過角膜移植（圖B）才能改善視功能。
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_2')}}
             </div>
           </div>
           <div>
@@ -494,14 +495,14 @@ const keratoplastyList1 = [
                 src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
                 alt=""
               />
-              <div>圖A：角膜血管增生及出現疤痕。</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_3')}}</div>
             </div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
                 alt=""
               />
-              <div>圖B：接受角膜移植，換上透明清晰的角膜，有助改善視功能。</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_4')}}</div>
             </div>
           </div>
         </div>
@@ -509,28 +510,28 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜炎治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name3')}}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>藥物治療：包括抗病毒藥物、抗生素、皮質類固醇等</div>
-            <div>手術治療</div>
-            <div>散瞳</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_1')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_3')}}</div>
           </div>
         </div>
       </div>
       <div id="iritis">
-        <div class="ocularSurfaceDiseases_title">虹膜炎</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.title')}}</div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            虹膜炎成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name')}}
           </div>
           <div>
             <div>
-              <div>外傷使細菌、病毒、異物、化學物品等進入眼內</div>
-              <div>全身性疾病如：結核、麻風、風濕、鉤端螺旋體病等</div>
-              <div>虹膜附近眼組織的感染，如：角膜炎、鞏膜炎等</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_1')}}</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_2')}}</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_3')}}</div>
             </div>
             <div>
               <img
@@ -544,38 +545,38 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            虹膜炎症狀
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name2')}}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>疼痛</div>
-            <div>畏光、流淚</div>
-            <div>睫狀充血</div>
-            <div>角膜後<br />沉著物</div>
-            <div>房水/<br />玻璃體混濁</div>
-            <div>虹膜<br />紋理不清</div>
-            <div>瞳孔縮小</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_1')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_3')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_7')}}</div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>不想虹膜炎有後遺症？</span
-            ><span>即WhatsApp預約 及早治療</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1')}}</span
+            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2')}}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            虹膜炎併發症
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name3')}}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
             <div>
               <div>1</div>
               <div>
-                角膜混濁、虹膜後黏連、瞳孔閉鎖、虹膜周邊前黏連或房角黏連、瞳孔膜閉、虹膜膨隆
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_1')}}
               </div>
             </div>
             <div>
               <div>2</div>
-              <div>併發白內障、繼發性青光眼、眼底病變、眼球萎縮等</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_2')}}</div>
             </div>
           </div>
         </div>
@@ -583,22 +584,22 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            虹膜炎治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name4')}}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>消炎眼藥水、散瞳、降眼壓眼藥水</div>
-            <div>口服類固醇</div>
-            <div>結膜下或眼內注射類固醇</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_1')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_2')}}</div>
+            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_3')}}</div>
           </div>
         </div>
       </div>
       <div id="episcleritis">
-        <div class="ocularSurfaceDiseases_title">表層鞏膜炎</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.title')}}</div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            表層鞏膜炎成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name1')}}
           </div>
           <div>
             <div>
@@ -607,7 +608,7 @@ const keratoplastyList1 = [
                 alt=""
               />
               <div class="ocularSurfaceDiseases_text_p_span">
-                很多時無法找到明確病因，可能與壓力有關
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_1')}}
               </div>
             </div>
             <div>
@@ -615,7 +616,7 @@ const keratoplastyList1 = [
                 src="https://static.cmereye.com/imgs/2023/06/f978fdcd0118b62a.png"
                 alt=""
               />
-              <div class="ocularSurfaceDiseases_text_p_span">內分泌異常</div>
+              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_2')}}</div>
             </div>
             <div>
               <img
@@ -623,7 +624,7 @@ const keratoplastyList1 = [
                 alt=""
               />
               <div class="ocularSurfaceDiseases_text_p_span">
-                由自身免疫類疾病引起
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_3')}}
               </div>
             </div>
           </div>
@@ -632,19 +633,19 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            表層鞏膜炎檢查
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name2')}}
           </div>
           <div>
             <div>
               <div>01</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                表層鞏膜炎的充血和水腫僅局限在鞏膜表層。其充血多呈暗紅色，滴腎上腺素後血管迅速變白。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_1')}}
               </div>
             </div>
             <div>
               <div>02</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                表層鞏膜血管相對不會移動，因此表層鞏膜炎多局限在角膜緣至直肌附著點的區域內，不影響瞼結膜。充血的血管會呈放射狀沿角膜向後延伸。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_2')}}
               </div>
             </div>
           </div>
@@ -653,20 +654,20 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            表層鞏膜炎併發症
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name3')}}
           </div>
           <div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>1</span> 前房積膿
+              <span>1</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_1')}}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>2</span> 鞏膜穿孔
+              <span>2</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_2')}}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>3</span> 角膜<br />後彈力膜膨出
+              <span>3</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_2')}}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>4</span> 白內障
+              <span>4</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_4')}}
             </div>
           </div>
         </div>
@@ -674,14 +675,14 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            表層鞏膜炎種類
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4')}}
           </div>
           <div>
             <div>
               <div>
-                <div>單純性表層鞏膜炎（Simple Episcleritis）</div>
+                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_1')}}</div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  大多數鞏膜炎都屬於單純性表層鞏膜炎，多出現在女性。會出現眼紅、眼痛等症狀，病變部位呈塊狀的鞏膜表層和球結膜有彌漫性充血水腫，呈紫紅色（如圖）。症狀一般較輕，輕微疼痛和灼熱感，有時會出現眼瞼神經血管性水腫，視功能多不受影響，偶然出現瞳孔括約肌和睫狀肌痙攣，導致瞳孔縮小而出現暫時性近視。這類型的鞏膜炎發病較突然，週期性發作，每次持續一至數天，部分病人每隔一至三個月便會復發。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text4_1')}}
                 </div>
               </div>
               <div>
@@ -690,15 +691,15 @@ const keratoplastyList1 = [
                   alt=""
                 />
                 <div>
-                  與流行性角結膜炎的彌漫性眼紅不同，單純表層鞏膜炎病人的眼睛局部發紅，而且多不影響角膜。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_1')}}
                 </div>
               </div>
             </div>
             <div>
               <div>
-                <div>結節性表層鞏膜炎（Nodular Episcleritis）</div>
+                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_2')}}</div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  與單純性鞏膜炎相比，結節性表層鞏膜炎多影響年輕女性，恢復時間亦較長。病人可能出現眼紅、疼痛、畏光和流淚症狀，但一般不影響視功能。每次發病持續約2周左右，炎症逐漸消退，約2/3的病人會多次復發。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2')}}
                 </div>
               </div>
               <div>
@@ -707,7 +708,7 @@ const keratoplastyList1 = [
                   alt=""
                 />
                 <div>
-                  結節性表層鞏膜炎的典型表現是局部隆起的單個結節，周圍有結膜充血和水腫。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_2')}}
                 </div>
               </div>
             </div>
@@ -717,40 +718,40 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            表層鞏膜炎治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5')}}
           </div>
           <div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              由於表層鞏膜炎很多時候與身體其他疾病有關，並可能會復發，因此重要的治療原則是去除病因，預防復發。
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.context')}}
             </div>
             <div>
               <div>
-                <div>若症狀輕微</div>
+                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_1')}}</div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  可以考慮局部使用類固醇藥物。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_1')}}
                 </div>
               </div>
               <div>
-                <div>若病情較重或頻繁發作</div>
+                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_2')}}</div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  應仔細檢查病人是否合併有自身免疫或結締組織的疾病，以免引起嚴重的併發症。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2')}}
                 </div>
               </div>
               <div>
-                <div>病人如若同時有虹膜或睫狀體發炎</div>
+                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_3')}}</div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  應及時滴用放大瞳孔眼藥水，減輕炎症。
+                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_3')}}
                 </div>
               </div>
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>鞏膜炎可能伴隨其他眼疾</span><span>立即致電預約治療</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2')}}</span>
           </div>
         </div>
       </div>
       <div id="damage">
-        <div class="ocularSurfaceDiseases_title">角膜上皮破損</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.title')}}</div>
         <div>
           <div>
             <img
@@ -760,21 +761,20 @@ const keratoplastyList1 = [
             />
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            角膜共有五層，最表面的一層稱為上皮層，這一層出現刮傷或破損剝落的情況俗稱為角膜破皮，即角膜上皮破損（Corneal
-            Abrasion）。
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.context')}}
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜上皮破損成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name1')}}
           </div>
           <div>
             <div v-for="(item, index) in damageList1" :key="index">
               <span>{{ index + 1 }}</span>
               <div>
-                <p v-for="(ele, i) in item.text" :key="i">{{ ele }}</p>
+                <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
               </div>
             </div>
           </div>
@@ -783,13 +783,13 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜上皮破損症狀
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name2')}}
           </div>
           <div>
             <div v-for="(item, index) in damageList2" :key="index">
               <div><img :src="item.img" /></div>
               <div>
-                <span v-for="(ele, i) in item.text" :key="i">{{ ele }}</span>
+                <span v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</span>
               </div>
             </div>
           </div>
@@ -798,41 +798,39 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜上皮破損治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3')}}
           </div>
           <div>
             <div>
-              <div>藥物治療</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_1')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                使用抗生素眼藥水預防感染，並且在每天睡前塗藥膏，在眼皮及角膜之間形成保護膜，避免眼皮把新生角膜上皮層扯下來，並戴上繃帶式隱形眼鏡（Bandage
-                Contact Lens），待傷口癒合。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_1')}}
               </div>
             </div>
             <div>
-              <div>手術治療</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_2')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                用針頭在角膜病變處刺出一些較深的傷口，使表皮與下面組織結疤而緊密黏連。但由於此方法會造成角膜瘢痕且有角膜穿孔風險，因此現時較少使用這種治療方法。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_2')}}
               </div>
             </div>
             <div>
-              <div>激光治療</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_3')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                激光治療性角膜切割術（Photo-Therapeutic Keratectomy,
-                PTK）可治療復發性角膜上皮破損，成效相當不俗，而且復發率低於10%。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_3')}}
               </div>
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>WhatsApp了解治療方案</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')}}</span>
           </div>
         </div>
       </div>
       <div id="keratoconus">
-        <div class="ocularSurfaceDiseases_title">錐形角膜</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.title1')}}</div>
         <div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            又叫圓錐角膜，是角膜擴張、中央變薄向前突出，呈圓錐形為<span
-              >特徵的一種眼病。患上錐形角膜，會導致近視或散光度數不同，嚴重時可能引起角膜水腫，影響視功能。</span
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_1')}}<span
+              >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_2')}}</span
             >
           </div>
           <div>
@@ -845,12 +843,12 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            錐形角膜成因
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name1')}}
           </div>
           <div>
             <div v-for="(item, index) in keratoconusList1" :key="index">
               <img :src="item.img" alt="" />
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
@@ -858,7 +856,7 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            錐形角膜症狀
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name2')}}
           </div>
           <div>
             <div>
@@ -869,19 +867,19 @@ const keratoplastyList1 = [
             <div>
               <div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  <span>1</span>出現向前突起的圓錐，圓錐頂端的角膜基質明顯變薄
+                  <span>1</span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_1')}}
                 </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  <span>2</span>近視或散光度數變化幅度較大、較快
+                  <span>2</span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_2')}}
                 </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  <span>3</span
-                  >角膜變尖的部分發生水腫甚至穿孔，令視功能突然下降及疼痛
+                  <span v-if="locale !== 'en'">3</span
+                  >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_3')}}
                 </div>
               </div>
               <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-                <span>懷疑自己有錐形角膜？</span
-                ><span>WhatsApp預約檢查及治療</span>
+                <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1')}}</span
+                ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2')}}</span>
               </div>
             </div>
           </div>
@@ -890,65 +888,64 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            錐形角膜治療
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3')}}
           </div>
           <div>
             <div>
-              <div>新型隱形眼鏡</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_1')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                硬式隱形眼鏡頂壓力較大，可以頂壓角膜變形，但較難適應，有機會在眼睛表面移位。新型的隱形眼鏡（Hybrid
-                Contact Lens）既能提供良好的頂壓力，舒適度亦較良好。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_1')}}
               </div>
             </div>
             <div>
-              <div>膠原交聯術（Corneal Collagen Cross-linking）</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_2')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
                 <span
-                  >在角膜局部滴核黃素（Riboflavin，即維生素B2，用於增加能量吸收並釋出活性氧）</span
-                >，再經由紫外線（UVA）照射，令角膜組織釋放一些粒子，使角膜纖維中的膠原蛋白緊扣一起，角膜因此而變得堅韌穩定。
+                  >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_1')}}</span
+                >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_2')}}
               </div>
             </div>
             <div>
-              <div>角膜基質環植入術（Intacs Implant）</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_3')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                為治療錐形角膜的方法，但若角膜疤痕較嚴重時，病人最終可能需要通過角膜移植來改善視功能。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_3')}}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="keratoplasty">
-        <div class="ocularSurfaceDiseases_title">角膜移植</div>
+        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.title')}}</div>
         <div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            角膜移植是把病變的眼角膜換成正常的眼角膜，使患眼疾的眼睛恢復視力或控制角膜病變，達致增進視功能或治療某些角膜疾病的效果。一些引起患者嚴重視功能受損甚至失明的角膜疾病，或可以此法治療。因為角膜本身不含血管，不會令身體出現排斥反應，所以角膜移植的成功率是器官移植之首。
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span')}}
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>角膜移植助您重見光明</span><span>即致電約見醫生了解更多</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2')}}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜移植適合患者
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name')}}
           </div>
           <div>
             <div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                外傷如：刺傷、燒傷、燙傷或化學品灼傷角膜等
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_1')}}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                嚴重角膜感染如：細菌及過濾性病毒感染
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_2')}}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                角膜退化性疾病
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_3')}}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                先天性角膜疾病如：錐形角膜
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_4')}}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                術後角膜退化或損傷
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_5')}}
               </div>
             </div>
             <div>
@@ -967,7 +964,7 @@ const keratoplastyList1 = [
                 </div>
               </div>
               <div>
-                角膜病變可嚴重影響視功能（a），而接受角膜移植，換上透明清晰的角膜後，可以重建視功能（b）
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.text1')}}
               </div>
             </div>
           </div>
@@ -976,17 +973,17 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜移植併發症
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name2')}}
           </div>
           <div>
-            <div class="ocularSurfaceDiseases_text_p_span">排斥反應</div>
-            <div class="ocularSurfaceDiseases_text_p_span">眼部感染</div>
-            <div class="ocularSurfaceDiseases_text_p_span">青光眼</div>
+            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_1')}}</div>
+            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_2')}}</div>
+            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_3')}}</div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              角膜縫線<br />鬆脫
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_2')}}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              術後<br />屈光不正
+              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_2')}}
             </div>
           </div>
         </div>
@@ -994,47 +991,47 @@ const keratoplastyList1 = [
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            角膜移植術
+            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3')}}
           </div>
           <div>
             <div>
-              <div>全層角膜移植</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_1')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                傳統的角膜移植多採用全層角膜移植方法，把5層角膜組織全部更換及移植。然而，並非每種病變都會損壞全層角膜。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_1')}}
               </div>
             </div>
             <div>
-              <div>板層角膜移植</div>
+              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_2')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                板層眼角膜移植只更換部分角膜層，盡量保留患者仍具功能的角膜，降低治療入侵及排斥機率，更為安全、有效，術後傷口及視功能恢復也較快。
+                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_2')}}
               </div>
             </div>
             <div>
               <div v-for="(item, index) in keratoplastyList1" :key="index">
-                <div>{{ item.therapy }}</div>
+                <div>{{ $t(item.therapy) }}</div>
                 <div>
                   <div v-if="Array.isArray(item.involve)">
                     <div v-for="(ele, index) in item.involve" :key="index">
                       <div v-if="Array.isArray(ele)">
                         <div v-for="(e, index) in ele" :key="index">
-                          {{ e }}
+                          {{ $t(e) }}
                         </div>
                       </div>
-                      <div v-else>{{ ele }}</div>
+                      <div v-else>{{ $t(ele) }}</div>
                     </div>
                   </div>
-                  <div v-else>{{ item.involve }}</div>
+                  <div v-else>{{ $t(item.involve) }}</div>
                 </div>
                 <div>
                   <div v-if="Array.isArray(item.postoperation)">
                     <div v-for="(el, index) in item.postoperation" :key="index">
                       <div v-if="Array.isArray(el)">
-                        <div v-for="(e, index) in el" :key="index">{{ e }}</div>
+                        <div v-for="(e, index) in el" :key="index">{{ $t(e) }}</div>
                       </div>
-                      <div v-else>{{ el }}</div>
+                      <div v-else>{{ $t(el) }}</div>
                     </div>
                   </div>
-                  <div v-else>{{ item.postoperation }}</div>
+                  <div v-else>{{ $t(item.postoperation) }}</div>
                 </div>
               </div>
             </div>
@@ -1045,7 +1042,7 @@ const keratoplastyList1 = [
         <div
           class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
         >
-          角膜移植常見問題
+          {{$t('pages.medical_service.ocularSurfaceDiseases_con.faq.title')}}
         </div>
         <div>
           <PageCollapse
@@ -2457,6 +2454,210 @@ const keratoplastyList1 = [
       margin-top: 120px;
     }
   }
+
+  &.ocularSurfaceDiseasesNav-en{
+    & > #pterygium {
+      &>div:nth-child(3){
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            &>div{
+              text-align: center;
+            }
+          }
+          &>div:nth-child(2){
+            padding: 40px 30px;
+            line-height: 1.6;
+          }
+        }
+      }
+      &>div:nth-child(4){
+        &>div:nth-child(2){
+          &>div{
+            padding: 60px 31px 30px 280px;
+            font-size: 20px;
+          }
+        }
+      }
+      &>div:nth-child(5){
+        &>div:nth-child(2){
+          &>div{
+            &>div:nth-child(2){
+              line-height: 1.6;
+              padding: 30px 20px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    & > #blepharitis{
+      &>div:nth-child(3){
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            &>div{
+              &>span:nth-child(1){
+                min-width: 42px;
+              }
+            }
+          }
+        }
+      }
+      &>div:nth-child(5){
+        &>div:nth-child(2){
+          &>div{
+            &>div:nth-child(2){
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+    &>#keratitis{
+      &>div:nth-child(2){
+        margin-top: 50px;
+      }
+      &>div:nth-child(3){
+        &>div:nth-child(3){
+          align-items: flex-start;
+          &>div{
+            flex: 1;
+            &:nth-child(1){
+              margin-right: 30px;
+            }
+            img{
+              width: 100%;
+            }
+            &>div:nth-child(2){
+              padding: 0 30px;
+            }
+          }
+        }
+      }
+    }
+    & > #iritis{
+      &>div:nth-child(2){
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            padding: 0;
+            &>div{
+              padding: 30px 0;
+            }
+          }
+        }
+      }
+      &>div:nth-child(3){
+        &>div:nth-child(2){
+          &>div{
+            font-size: 20px;
+            line-height: 1.6;
+          }
+        }
+      }
+      &>div:nth-child(4){
+        &>div:nth-child(2){
+          &>div{
+            &>div:nth-child(2){
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+    &>#episcleritis{
+      &>div:nth-child(3){
+        &>div:nth-child(2){
+          &>div{
+            padding: 30px 30px 30px 0;
+            height: auto;
+          }
+        }
+      }
+      &>div:nth-child(4){
+        &>div:nth-child(2){
+          &>div{
+            padding-left: 40px;
+          }
+        }
+      }
+      &>div:nth-child(6){
+        &>div:nth-child(2){
+          &>div:nth-child(2){
+            &>div{
+              height: auto;
+              &>div:nth-child(1){
+                text-align: center;
+                line-height: 1.2;
+              }
+              &>div:nth-child(2){
+                padding-bottom: 25px;
+              }
+            }
+          }
+        }
+      }
+    }
+    & > #damage {
+      &>div:nth-child(3){
+        &>div:nth-child(2){
+          &>div{
+            &>div{
+              line-height: 1.6;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      &>div:nth-child(4){
+        &>div:nth-child(2){
+          &>div:nth-child(1){
+            &>div:nth-child(2){
+              line-height: 1.6;
+              font-size: 20px;
+              padding: 15px 15px 15px 30px;
+            }
+          }
+          &>div{
+            &>div:nth-child(2){
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+    & > #keratoconus{
+      &>div:nth-child(4){
+        &>div:nth-child(2){
+          &>div:nth-child(2){
+            &>div:nth-child(1){
+              &>div{
+                &>span{
+                  min-width: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    & > #keratoplasty{
+      &>div:nth-child(5){
+        &>div:nth-child(2){
+          &>div:nth-child(3){
+            &>div:nth-child(2){
+              &>div{
+                font-size: 22px;
+                line-height: 1.6;
+              }
+            }
+            &>div:nth-child(3){
+              font-size: 22px;
+              line-height: 1.6;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .ocularSurfaceDiseases-nav{
@@ -3661,6 +3862,199 @@ const keratoplastyList1 = [
       margin: 70px auto 200px;
       & > div:nth-child(2) {
         margin-top: 20px;
+      }
+    }
+    &.ocularSurfaceDiseasesNav-en{
+      & > #pterygium {
+        & > div:nth-child(4){
+          & > div:nth-child(2){
+            &>div:nth-child(1){
+              padding: 10% 10px 20% 45%;
+            }
+            & > div{
+              font-size: 12px;
+              line-height: 1.4;
+            }
+          }
+        }
+        & > div:nth-child(5){
+          & > div:nth-child(2){
+            & > div{
+              & > div:nth-child(2){
+                font-size: 14px;
+                padding: 25px 15px;
+              }
+            }
+          }
+        }
+      }
+      & > #blepharitis {
+        &>div:nth-child(3){
+          &>div:nth-child(2){
+            &>div:nth-child(1){
+              &>div{
+                &>span:nth-child(1){
+                  min-width: 22px;
+                }
+                
+              }
+            }
+          }
+        }
+      }
+      & > #keratitis{
+        &>div:nth-child(3){
+          &>div:nth-child(3){
+            &>div{
+              &>div:nth-child(2){
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+      & > #iritis{
+        &>div:nth-child(2){
+          &>div:nth-child(2){
+            &>div:nth-child(1){
+              &>div{
+                padding: 15px 0;
+              }
+            }
+          }
+        }
+        &>div:nth-child(3){
+          &>div:nth-child(2){
+            &>div{
+              font-size: 12px;
+              line-height: 1.4;
+            }
+          }
+        }
+        &>div:nth-child(5){
+          &>div:nth-child(2){
+            &>div{
+              text-align: center;
+            }
+          }
+        }
+      }
+      & > #episcleritis{
+        &>div:nth-child(2){
+          &>div:nth-child(2){
+            &>div{
+              &>div:nth-child(2){
+                line-height: 1.6;
+              }
+            }
+          }
+        }
+        &>div:nth-child(3){
+          &>div:nth-child(2){
+            &>div{
+              padding: 15px 15px 15px 0;
+            }
+          }
+        }
+        &>div:nth-child(4){
+          &>div:nth-child(2){
+            &>div{
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+      & > #damage{
+        &>div:nth-child(3){
+          &>div:nth-child(1){
+            font-size: 20px;
+          }
+          &>div:nth-child(2){
+            &>div{
+              &>div{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        &>div:nth-child(4){
+          &>div:nth-child(1){
+            font-size: 20px;
+          }
+          &>div:nth-child(2){
+            &>div:nth-child(1){
+              &>div:nth-child(2){
+                font-size: 14px;
+                padding: 0 10px;
+                line-height: 1.4;
+              }
+            }
+          }
+        }
+        &>div:nth-child(5){
+          &>div:nth-child(1){
+            font-size: 20px;
+          }
+        }
+      }
+      & > #keratoconus {
+        &>div:nth-child(4){
+          &>div:nth-child(2){
+            &>div:nth-child(2){
+              &>div:nth-child(1){
+                &>div{
+                  &>span{
+                    min-width: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &>div:nth-child(5){
+          &>div:nth-child(1){
+            font-size: 20px;
+          }
+        }
+      }
+      & > #keratoplasty {
+        &>div:nth-child(4){
+          &>div:nth-child(2){
+            &>div{
+              &::before{
+                z-index: -1;
+              }
+            }
+          }
+        }
+        &>div:nth-child(5){
+          &>div:nth-child(1){
+            font-size: 18px;
+          }
+          &>div:nth-child(2){
+            &>div:nth-child(3){
+              &>div:nth-child(1){
+                line-height: 1.4;
+                font-size: 12px;
+                text-align: center;
+              }
+              &>div:nth-child(2){
+                &>div{
+                  font-size: 12px;
+                  &:nth-child(1){
+                    font-size: 12px;
+                  }
+                }
+              }
+              &>div:nth-child(3){
+                font-size: 12px;
+                &>div:nth-child(1){
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

@@ -1353,6 +1353,245 @@ pages:
         name6: Prevention
         name7: FAQ
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
+    ocularSurfaceDiseases_con: 
+      pterygium: 
+        title: Pterygium
+        context: A pterygium is a triangular fibrovascular growth on the cornea of the eye. It is generally developed from bulbar conjunctiva. A new enlarging tissue from the conjunctiva slowly grows over the cornea and is shaped like a wedge. Pterygium will grow larger gradually. In serious case, it may change the corneal curvature and result in astigmatism; or the pterygium may grow too large (> 3mm) and block the pupil that affects patient’s visual function. Pterygium occurs more common in tropical regions, which is associated with excessive exposure to sunlight.
+        name: Causes of pterygium
+        span1: Genetic factors
+        span2: Nutritional deficiencies, insufficient tear secretion
+        span3: Allergy
+        span4: Environmental factors and external stimuli such as the eyes have been excessively stimulated by wind, sand, dust, heat, sunlight, pollen, etc., especially long-term outdoor workers such as fishermen, farmers, seafarers and gravel workers
+        btn1: 難自行分辨是否有翼狀胬肉？
+        btn2: WhatsApp預約醫生檢查
+        name2: The effects of pterygium
+        text1: Pterygium is generally small in size and does not lead to any effects. Sometimes patients will experience eye redness, itchiness, burning sensation or have appearance problem.
+        text2: Larger pterygium can change the corneal curvature and result in astigmatism and blurred vision. Some pterygia may spread to the central cornea and lead to vision loss.
+        name3: Pterygium treatments
+        text3_1: The treatment to prevent progression of pterygium is to avoid chronic irritation. Treatment is not required if pterygium is small and does not further grow.
+        text3_2: If apparent symptoms or severe hyperemia is experienced, patients can use corticosteroids under medical supervision to reduce inflammation.
+        text3_3: If eyesight is affected or pterygium becomes larger, pterygium removal can be considered.
+        text3_4: In some cases, a pterygium can return after being surgically removed. The ways to lower the recurrence rate include conjunctival autograft and anti-metabolite drugs.
+      blepharitis: 
+        title: Blepharitis
+        context: Blepharitis refers to chalazion or is called as stye. Blepharitis is an inflammation of the eyelashes and the margin of eyelids. It is caused by inflammation or bacterial infection. Chalazion is usually caused by staphylococcus such as staphylococcus aureus, which is the most common external stimuli.
+        name: Causes of blepharitis
+        text1: Bacteria enters eyelid from gland openings and results in inflection due to eyes rubbing
+        text2: Food allergy, such as seafood and chocolate etc.
+        text3: When infection recurs, it is needed to check if it is related to systemic disease such as diabetes etc.
+        text4: Long hours of overnight work without enough rest can cause eye fatigue and weak immunity
+        text5: Have diabetes and/ or have the eating habit of consuming food high in sugar and fat
+        btn1: 眼挑針已好幾日尚未康復？
+        btn2: WhatsApp預約對症下藥治療
+        name1: Symptoms of blepharitis
+        text1_1: Itching, red and swollen eyelids
+        text1_2: Flakes or crusts around the roots of the eyelashes (The crusts of seborrheic blepharitis are yellowish and greasy)
+        text1_3: Sometimes may appear misdirected eyelashes or trichiasis
+        text1_4: Certain infectious blepharitis will be accompanied by conjunctivitis
+        name2: Treatments of blepharitis
+        text2_1: In the early stage, you can try to apply warm compresses to improve the gland occlusion. Blocked oil glands can be unclogged through heat and allow oil discharge. You can use hard-boiled eggs as the heat source, wrap it with a clean towel and message around the area with chalazion for 5 to 10 minutes. Massage it for 3 to 4 times. 
+        text2_2: Ophthalmologists will also prescribe antibiotic drops or ointments.
+        text2_3: If the condition does not improve, you should consult your ophthalmologist for curettage. This surgery involves making a small incision at the chalazion and then cleaning out the contents. It is a high-precision surgery with small incision, so infection or swelling can be reduced.
+      keratitis: 
+        title: Corneal disease
+        name: Symptoms of keratitis
+        text1: Pain
+        text2: Sensitivity to light
+        text3: Tearing
+        text4: Eyelid twitch
+        text5: Ciliary hyperaemia
+        text6: Corneal opacification, infiltrates or ulcer
+        btn1: 已有角膜炎症狀？
+        btn2: 立即致電預約檢查
+        name2: Effects of keratitis
+        text2_1: After the ulcer is recovered, the scar may block the light to enter the eye, it may change the corneal curvature and distort the refraction. Therefore, objects cannot clearly focus on the retina and lead to vision loss.
+        text2_2: The more common kind of keratitis is caused by the herpes virus, which is a common viral infection in humans. When the immune system starts to decline, herpes ulcers will appear around the lips. The virus will also invade the eyes and cause keratitis. If keratitis that is caused by the viral infection of herpes is not treated in time, it will easily lead to new growth of vessel in the cornea and scarring (Figure A). In serious cases, patients may need to improve their visual function through corneal transplant (Figure B).
+        text2_3: "Figure A: New growth of vessel in the cornea and a scar is formed."
+        text2_4: "Figure B: After receiving corneal transplant, a clear cornea is replaced to improve visual function."
+        name3: Treatments of keratitis
+        text3_1: "Medication treatment: including antivirals, antibiotics and antifungals etc."
+        text3_2: Surgery
+        text3_3: Mydriatic
+      iritis:
+        title: Iritis
+        name: The causes of iritis
+        text1_1: Eye trauma causes bacteria, viruses, foreign bodies and chemicals etc. to get into the eye
+        text1_2: Systemic disease such as tuberculosis, leprosy, rheumatic disease and leptospirosis
+        text1_3: The eye tissue around the iris is inflamed, eg. keratitis, scleritis etc.
+        name2: Iritis symptoms
+        text2_1: Pain
+        text2_2: Sensitive to light, tearing
+        text2_3: Ciliary hyperaemia
+        text2_4_1: Keratic precipitate
+        text2_4_2: ""
+        text2_5_1: Aqueous humor/ 
+        text2_5_2: vitreous opacity
+        text2_6_1: Loss of corrugated texture of iris
+        text2_6_2: ''
+        text2_7: Pupils shrink
+        btn1_1: 不想虹膜炎有後遺症？
+        btn1_2: 即WhatsApp預約 及早治療
+        name3: Complications of iritis
+        text3_1: Corneal opacity, posterior synechiae, pupil block, peripheral anterior synechiae or chamber angle synechiae, occlusion of the pupil, iris bombe
+        text3_2: Complications like cataract, secondary glaucoma, retinal degradation and atrophy of eyeball
+        name4: Treatments of iritis
+        text4_1: Anti-inflammatory eye drops, mydriatic and eye drops that reduce intraocular pressure
+        text4_2: Oral steroids
+        text4_3: Inject steroids to subconjunctival space or into your eyes
+      episcleritis:
+        title: Episcleritis
+        name1: The causes of episcleritis
+        text1_1: In most cases, a clear cause cannot be found, it may be related to stress
+        text1_2: Endocrine abnormalities
+        text1_3: Triggered by autoimmune diseases
+        name2: Episcleritis examination
+        span2_1: Hyperemia and edema of episcleritis only appears on the surface of sclera. The color is usually in dark reddish, however, blood vessels turn into white colour quickly after epinephrine is applied.
+        span2_2: The blood vessels on the surface of sclera relatively do not move, so episcleritis is usually found between the corneal margin and the connective tissue layer. This will not reach the palpebral conjunctiva. The vessels that have hyperemia spread out vertically and extend to the back from the corneal margin.
+        name3: Episcleritis complications
+        span3_1: Abscesses accumulate in anterior chamber
+        span3_2: Scleral melt
+        span3_3_1: Cataract
+        span3_3_2: ""
+        span3_4: Cataract
+        name4: Types of episcleritis
+        name4_1: Simple Episcleritis
+        text4_1: This is the most common type of episcleritis which mostly found in females. Patients will have symptoms such as eye redness and eye pain. The scleral surface will form a lump of hyperemic, bulbar conjunctiva will have diffuse congestion and edema which is in purple-reddish colour (as seen in the figure). Its symptoms are generally mild with minimal discomfort and burning sensation. Visual function is not affected. Sphincter pupillae muscle and ciliary muscle spasm will appear sometimes and lead to miosis and temporary myopia. The onset of this episcleritis is periodic and acute. It lasts from one to several days each time and some patients may have it again every one to three months.
+        span4_1: Patients with simple episcleritis have localized eye redness and usually do not affect their cornea. It is different from epidemic keratoconjunctivitis that has diffused eye redness.
+        name4_2: Nodular Episcleritis
+        text4_2: Comparing to simple episcleritis, nodular episcleritis usually develops in young females and the recovery period is longer. Patients may have symptoms of eye redness, eye pain, sensitive to light and tearing, but visual function is generally not affected. It usually lasts for around 2 weeks and inflammation will fade gradually. Around two third of patients will have nodular episcleritis again for several times.
+        span4_2: The typical feature of nodular episcleritis is having a single nodule. It is surrounded by conjunctival hyperemia and edema.
+        name5: Treatments of episcleritis
+        context: Since episcleritis is usually related to other systemic diseases and is easy to have recurrent, so the significant treatment principle is to remove the cause and prevent recurrency.
+        name5_1: "If the symptoms are mild: "
+        text5_1: you can consider applying tropical steroid drugs.
+        name5_2: "If the condition is severe or has frequent attacks: "
+        text5_2: to prevent serious complications, patients should have comprehensive examination to see if they have other autoimmune or connective tissue diseases.
+        name5_3: If patients also have iritis or iridocyclitis
+        text5_3: They should apply dilating eye drops in time to reduce inflammation.
+        btn1: 鞏膜炎可能伴隨其他眼疾
+        btn2: 立即致電預約治療
+      damage: 
+        title: Corneal Abrasion
+        context: Cornea is comprised of five layers. Epithelium is the outer surface. If there is a scratch or a scrape on the surface of your cornea, it is called corneal abrasion.
+        name1: Causes of corneal abrasion
+        text1_1: Corneal scratches caused by improper wearing of contact lenses
+        text1_2: Long-term corneal hypoxia leads to detachment and edema
+        text1_3_1: Foreign bodies directly damages the cornea, exposure to ultraviolet radiation or welder's arc (corneal abrasion generally appears after 6 to 12 hours)
+        text1_3_2: ''
+        text1_3_3: ''
+        text1_4: Dry eyes
+        text1_5_1: Eyelids do not close completely (cornea has a scratch due to dryness)
+        text1_5_2: ''
+        text1_6: Corneal degradation etc.
+        name2: Symptoms of corneal abrasion
+        text2_1_1: There are many nerves under the epithelium. It causes a lot of pain when those nerves underneath are exposed once cornea is damaged
+        text2_1_2: ''
+        text2_1_3: ''
+        text2_2: Sensitive to light, tearing
+        text2_3: Can hardly to open eyes
+        text2_4_1: Conjunctiva around the cornea will have redness
+        text2_4_2: ''
+        text2_5_1: Foreign body sensation when opening or closing eyes
+        text2_5_2: ''
+        name3: Treatments of corneal abrasion
+        name3_1: Medication treatment
+        text3_1: Apply antibiotic eye drops to prevent infection. Using eye ointment everyday before sleeping, so it can form a protection between the eyelids and the cornea to avoid new growth epithelium to be torn down again. Also, wearing bandage contact lens until the wound heal.
+        name3_2: Surgical treatment
+        text3_2: Use a needle to puncture some deeper wounds over the affected area, so the outer surface can form a scar that can tightly attach with the tissue below. However, this method is easily to cause corneal scarring and has the risk of ocular penetrating injuries. Therefore, this method is rarely to be used now.
+        name3_3: Laser treatment
+        text3_3: Photo-Therapeutic Keratectomy can treat recurrent corneal abrasion. It has good efficacy and the recurrent rate is lower than 10%.
+        btn: WhatsApp了解治療方案
+      keratoconus:
+        title1: Keratoconus
+        span1_1: Keratoconus is an eye disease where there is localized corneal thinning and subsequent bulge leading to cone shaped cornea.
+        span1_2: Patients who have keratoconus may have induced myopia or astigmatism. In serious cases, it may cause corneal edema and affect visual function.
+        name1: Causes of keratoconus
+        text1_1: At present, a clear cause is not yet found. It is possible to be recessive modes of inheritance from chromosome
+        text1_2: Allergic diseases
+        text1_3: Common seen in people with Down syndrome and serious allergies
+        text1_4: Excessive eye rubbing
+        name2: Symptoms of keratoconus
+        span2_1: Greater and faster changes in myopia or astigmatism
+        span2_2: In advanced stage, the tip of the cornea may develop edema, so visual function is worsened suddenly and has eye pain
+        span2_3: ""
+        btn1: 懷疑自己有錐形角膜？
+        btn2: WhatsApp預約檢查及治療
+        name3: Treatments of keratoconus
+        name3_1: "Hybrid Contact Lens:"
+        span3_1: Hard contact lenses exert greater pressure on the top, so they can press the cornea to deform. However, they are less comfortable and may move on the surface of our eyes. Hybrid contact lens (Figure 1) can withstand greater pressure and is more comfortable.
+        name3_2: "Corneal Collagen Cross-linking:"
+        span3_2_1: Apply riboflavin (vitamin B2 that boosts energy absorption and generates more reactive oxygen species) on the cornea. Then, UV light will be shone, and the corneal tissue will generate some particles, so the new corneal collagen will cross-link together. Therefore, cornea becomes stiffer and stronger.
+        span3_2_2: ''
+        name3_3: "Intacs Implant:"
+        span3_3: It is a method to treat keratoconus. However, if the condition of corneal scarring is severe, patients may eventually need to improve their visual function through corneal transplant.
+      keratoplasty:
+        title: Corneal transplant
+        span: Corneal transplant is to replace damaged cornea with a normal one, so vision can be restored or corneal diseases can be controlled. This surgery can improve visual function or treat certain corneal diseases. Through this treatment, patients with corneal diseases that can lead to severe visual impairment or even blindness may be able to be treated. As the cornea does not contain blood vessels, so it has immune privilege. The success rate of corneal transplant is the highest among all kinds of organ transplant.
+        btn1: 角膜移植助您重見光明
+        btn2: 即致電約見醫生了解更多
+        name: Suitability for corneal transplant
+        span1_1: "Eye injuries: eg. stab incision, burns or chemical injuries etc."
+        span1_2: Severe corneal infection such as bacterial and filtrable virus infection
+        span1_3: Corneal degeneration diseases
+        span1_4: Congenital corneal diseases eg. keratoconus
+        span1_5: Corneal degeneration or damage after surgery
+        text1: Corneal scar may seriously affect visual function (Figure a). Clear cornea will replace the scarred cornea after receiving corneal transplant in order to improve visual function (Figure b).
+        name2: Corneal Transplant Complications
+        span2_1: Rejection of the donor cornea
+        span2_2: Eye infection
+        span2_3: Glaucoma
+        span2_4_1: Loose stitches
+        span2_4_2: ""
+        span2_5_1: Refractive error after surgery
+        span2_5_2: ""
+        name3: Corneal Transplant Surgery
+        name3_1: Penetrating Keratoplasty
+        span3_1: Traditional corneal transplant surgery mostly adopts full thickness corneal transplant, in which all 5 layers of corneal tissues are replaced and transplanted. However, not every kind of degeneration may damage the full thickness of cornea.
+        name3_2: Lamellar Keratoplasty
+        span3_2: Lamellar keratoplasty is a new technique that only removes part of the cornea and keeps the other part of the cornea that is still able to function, so rejection rates can be lowered. It is a safer and more effective surgery. The recovery of incision and visual function are also faster.
+        therapy1: Treatment Method
+        involve1: Included corneal tissues
+        postoperation1: Complications
+        therapy2: Penetrating Keratoplasty
+        involve2: All 5 layers
+        postoperation2_1: Greater damage to corneal endothelial cells
+        postoperation2_2: Higher degrees of astigmatism after surgery
+        postoperation2_3: Transplant failure is greater than 20% 10 years after the surgery
+        postoperation2_4: Longer recovery period
+        therapy3: Lamellar Keratoplasty
+        involve3_1: |
+                    Deep anterior lamellar keratoplasty
+                    The first 3 layers
+        involve3_2: |
+                    Endothelial keratoplasty
+                    The latter 3 layers
+        postoperation3_1_1: Little damage to corneal endothelial cells
+        postoperation3_1_2: Lower rejection rate
+        postoperation3_1_3: Shorter recovery period
+        postoperation3_2_1: No stitches
+        postoperation3_2_2: Lower degree of astigmatism after surgery
+        postoperation3_2_3: Shorter recovery period
+        postoperation3_2_4: ""
+      faq: 
+        title: Corneal Transplant FAQ
+        q1: "Q: What is the success rate of corneal transplant?"
+        a1: As cornea does not have blood vessels, so the success rate of corneal transplant is the highest among all kinds of organ transplants. The success rate is lower, if the patients have new growth vessels in the cornea or have other eye diseases. However, the overall success rate is still quite high if appropriate medications are used.
+        q2: "Q: Any things need to be aware of before the surgery?"
+        a2: Maintain a good mood, have sufficient sleep and rest, quit smoking and drinking, prevent colds and maintain bowel regularity.
+        q3: "Q: Any things need to be aware of after the surgery?"
+        a3_1: 1) Avoid rubbing eyes, eye trauma, labour work and strenuous exercise.
+        a3_2: "2) Attend follow-up appointments (include: eyesight, intraocular pressure, slit lamp examination etc.)"
+        a3_3: 3) Apply medications according to ophthalmologists’ advice. If there are any adverse reactions during medication, please consult your ophthalmologist for dosage adjustment.
+        a3_4: "4) Conditions that require emergency treatment: sudden blurring of vision, eye redness, eye pain, sensitive to light, eye trauma etc."
+      navLists: 
+        name1: Pterygium
+        name2: Blepharitis
+        name3: Keratitis
+        name4: Iritis
+        name5: Episcleritis
+        name6: Corneal Abrasion
+        name7: Keratoconus
+        name8: Corneal transplant
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     medicalOptometry: Myopia Control and Ophthalmic Services
     medicalOptometry_con: 
