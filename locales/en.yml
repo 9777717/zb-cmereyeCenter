@@ -1593,6 +1593,217 @@ pages:
         name7: Keratoconus
         name8: Corneal transplant
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
+    eyeOrthopaedicDisease_con:
+      ophthalmoplasty:
+        title: Eye plastic surgery
+        p: Eye plastic surgery and orbital surgery are advanced treatments for patients with congenital and acquired defects of their eyelids, eye sockets, eyes and lacrimal glands, so that the natural appearance of their eyes and face will be recovered. Our centre provides rehabilitation services for eye injuries and ocular diseases.
+        name: Types of eyelid malposition
+        name1_1: Ptosis
+        p1_1: Ptosis may appear due to congenital or acquired factors. It is usually developed due to weakness or disinsertion of levator muscle. For most congenital cases, it is caused by dysgenesis of levator muscle.
+        p1_2: If children with ptosis can be treated in the early stage, it can prevent the development of amblyopia or lazy eye. In rare cases, ptosis may be related to Blepharophimosis syndrome. Ophthalmologists diagnose the type of ptosis and decides about appropriate surgical procedure suitable for the patient.
+        name1_2: Ptosis treatment
+        p1_3: The treatment options are Müllerectomy (MMCR), Levator muscle resection or plication, Levator aponeurosis repair and Tarso-frontal sling surgery. These are minimally invasive procedures with good cosmetic outcomes.
+        name2_1: Entropion
+        p2_1: Entropion is an inward turning of the eyelid margin. This is commonly seen in elderly patients. It is usually caused by eyelid muscle abnormalities, conjunctival secondary trauma (by chemicals, burns or machines), infection or inflammatory diseases such as Stevens-Johnson syndrome. And can be due to age-related degeneration of eyelid tissue.
+        p2_2: As a result of eyelash trauma to the cornea, there could be corneal damage which can lead to visual loss. The position of eyelid margin and eyelashes can be corrected by surgery.
+        name2_2: Entropion treatment
+        p2_3: There are several procedures such as jones, Quickert’s, Weiss procedure and lateral canthopexy. Mucosal graft is reserved for cases with severe scarring of the conjunctiva.
+        name3_1: Ectropion
+        p3_1: Ectropion is an outward turning of the eyelid margin. It is a condition usually caused by loose eyelid when eye structure change in elderly after menopause. Besides, scars on eyelids, facial nerve palsy and loose eyelids will also lead to ectropion. Congenital ectropion is rare.
+        name3_2: Ectropion treatment
+        p3_2: The purpose of the surgery is to fix the eyelid position back to normal. Treatment methods will depend on the causes of the malposition, they will be chosen from eyelid tightening to skin graft. Ophthalmologists will advise the most suitable treatment options to patients through clinical diagnosis.
+        name4_1: Lagophthalmus
+        p4_1: Patients with lagophthalmos cannot completely close their eyelids. Lagophthalmos is commonly seen in cases of congenital ptosis, facial palsy and eyelid skin scarring. Improper closure of eyelids can lead to dry eyes or corneal ulceration.
+        name4_2: Treatments of lagophthalmos
+        p4_2: The main objective is to prevent damage to cornea. It can be treated by taping the eyelids at night and copious amount of lubricants.
+        btn_1: 眼睛外形影響視野及外觀？
+        btn_2: 即WhatsApp預約治療
+        name5: Others
+        title5_1: Eyelid disorders/ Eyelid laceration
+        text5_1: Eyelid disorders/ Eyelid laceration is formed by eyelid tear, trauma or lump excision on eyelid; It can be congenital eyelid disorders/ eyelid laceration. Surgery can help eyelids to keep natural appearance. There are several reconstructive techniques to repair the eyelids.
+        title5_2: Exophthalmos
+        text5_2_1: Bulging eyes are also known as exophthalmos or proptosis which can be unilateral or bilateral. The common association with exophthalmos is thyroid eye disease. The other causes could be orbital tumor, high myopia, and orbital inflammation/ infections. The management is generally based on the cause of exophthalmos.
+        text5_2_2: In serious case, it may influence visual function as optic nerve is compressed or lead to damage and ulcer due to exposure of cornea. Eyelid can be treated through surgeries with a tiny incision.
+        title5_3: Watery eyes
+        text5_3_1: Blocked tear duct is one of the reasons for watery eyes. It is called as Primary acquired nasolacrimal duct obstruction (PANDO). For some patients, it can present since birth which is known as congenital nasolacrimal duct obstruction (CNLDO). The initial treatment of CNLDO is lacrimal sac massage which is very effective in first year of life. Syringing and probing is needed in cases of failed conservative treatment. For adults, OANDO is the main cause of watery eyes and secondary causes could be post-trauma, tumor of lacrimal sac, dacryoliths, and chronic rhinosinusitis etc.
+        text5_3_2: The treatment would be surgical, where the blocked tear duct is bypassed by creating an opening into the nasal cavity adjacent to the lacrimal sac.
+        title5_4: Socket reconstruction
+        text5_4: The common reasons for eyeball removal are tumor, intraocular infection, painful blind eye and intraocular infection. Enucleation includes removal of eyeball and other parts inside the eye (eye muscles and eye sockets will remain intact). The prosthetic eyes are customized according to the shape of socket. The colour and appearance are matched with the normal eye of the patient.
+        title5_5: Contracted socket
+        text5_5: It is a condition where there is shrinkage of the orbital tissue and volume which causes inability to retain the prosthesis. It could be due to multiple surgeries in the socket, absence of primary orbital implant after eye removal surgery, chemical or radiation injuries etc. The cosmetic correction can be done by deepening the fornixes and volume replacement by secondary orbital implant or a dermis fat graft. The prosthesis can be worn after the reconstruction surgery.
+        name6: Eye Bag Removal
+        text6: The causes of under-eye bags include genetics, natural aging and lifestyle, chief among which is aging. With the aging process, the tissues and muscles around the eyes begin to weaken and lose tension. This weakening allows the fat surrounding the eye to bulge out and therefore, contribute to the baggy appearance.
+        name7: Eye Bag Removal Treatments
+        title7_1: Internal Incision：
+        text7_1_1: Performed by creating an incision inside the eyelid through the conjunctiva to remove excess fat. No visible skin incisions or scarring will be formed after the procedure. This method is suitable for people who are relatively young and have tight lower eyelid skin.
+        text7_1_2: ""
+        title7_2: External incision：
+        text7_2: Performed by creating an incision on the lower eyelid beneath the eye lashes (around 1-2mm) to remove excess fat and tissue. This method can reposition the excess fat to fill in the tear trough. The incision will be sutured and is less noticeable after healing is complete. This method is suitable for people with more severe aging changes, larger eye bags and sagging of eyelids.
+        name8: Double Eyelid Surgery
+        text8: A double eyelid (crease) forms when the levator muscle extends and attaches to the pretarsal skin. The majority of Asians have single eyelid creases due to thicker eyelid skin, excess fatty tissue and the levator muscle extending to the lower part (the position near to eyelashes) of the eyelid. Thus, double eyelid surgery can be performed to create artificial attachments between the upper eyelid muscle and the overlying upper eyelid skin.
+        name9: Double Eyelid Treatments
+        operation1: name
+        introduce1: introduce
+        durability1: Effectiveness
+        time1: Surgical time
+        recovery1: Recovery time
+        operation2: "Suture method"
+        introduce2_1: The treatment does not need an incision, instead it just requires a few small wounds. Then, the doctor will suture the upper eyelid muscle, tarsal plate and levator together to avoid the problem of ingrown eyelash. 
+        introduce2_2: This method causes less injury so the patient may recover faster. People with mild eyelid sagging and thin skin are recommended to choose this treatment.
+        durability2_1: 2-3 years
+        durability2_2: (reduces over time)
+        time2: around 45 minutes
+        recovery2: around 7-10 days
+        operation3: Open incision
+        introduce3_1: Skin incision is performed followed by exposure of the eyelid muscles and orbital septum. The doctor will then take out the excess fat. The skin, tarsal plate and levator muscle are sutured directly.
+        introduce3_2: Although the treatment will leave a scar, the scar can generally be covered in the line of the "double eyelid"crease. This method is suitable for people with thick skin and have more fat in the eyelids.
+        durability3: long term
+        time3: "around 60-90 minutes"
+        recovery3_1: around 14-21 days 
+        recovery3_2: (remove sutures at 7-10 days)
+        name10: Epicanthoplasty
+        text10_1: Epicanthic fold is a skin fold of the upper eyelid over the inner angle or both angles of the eye. It is one of the most common characteristics found in the Asian ethnicities. In general, the epicanthic fold does not affect vision and appearance, however, it may block the vision, shorten palpebral fissure length (eye length) and widen the distance between eyes in severe cases.
+        text10_2: In addition, the presence of epicanthic fold is one of the major factors that affect the result of double eyelid surgery, as the epicanthic fold may cover the formed crease at the inner corner of the eye. Thus, an epicanthoplasty is often performed in combination with double eyelid surgery. By eliminating the excess upper eyelid fold, the inner angle of the eye will be more visible, and therefore, the distance between eyes will be reduced.
+        span10_1: "Effectiveness: "
+        span10_2: long term
+        span10_3: "Surgical time: "
+        span10_4: around 30-45 minutes
+        span10_5: "Recovery time: "
+        span10_6: around 14-30 days (remove sutures at 7-10 days)
+        name11: Dermatochalasis
+        p11_1: Dermatochalasis is a term used to describe the presence of loose and redundant eyelid skin due to periocular aging and is often seen in middle-aged and elderly people. In recent years, young people who are suffering from dermatochalasis are increasing, because of wearing contact lenses improperly.
+        p11_2: If the symptom of drooping of eyelids is mild, it is unlikely to influence daily life. However, when drooping of eyelids is serious, it will affect the appearance, and even obscure vision.
+        name12: Dermatochalasis Treatments
+        operation12_1: name
+        introduce12_1: introduce
+        durability12_1: Effectiveness
+        time12_1: Surgical time
+        recovery12_1: Recovery time
+        operation12_2: "Suture method"
+        introduce12_2_1: The treatment does not need an incision, instead it just requires a few small wounds. Then, the doctor will suture the upper eyelid muscle, tarsal plate and levator together to avoid the problem of ingrown eyelash.This method causes less injury so the patient may recover faster. 
+        introduce12_2_2: People with mild eyelid sagging and thin skin are recommended to choose this treatment.
+        durability12_2_1: 2-3 years
+        durability12_2_2: (reduces over time)
+        time12_2: around 45 minutes
+        recovery12_2: around 7-10 days
+        operation12_3: Open incision
+        introduce12_3_1: Skin incision is performed followed by exposure of the eyelid muscles and orbital septum. The doctor will then take out the excess fat. The skin, tarsal plate and levator muscle are sutured directly. Although the treatment will leave a scar, the scar can generally be covered in the line of the
+        introduce12_3_2: "\"double eyelid\""
+        introduce12_3_3: crease. This method is suitable for people with thick skin and have more fat in the eyelids.
+        durability12_3: long term
+        time12_3: "around 60-90 minutes"
+        recovery12_3_1: around 14-21 days 
+        recovery12_3_2: remove sutures at 7-10 days)
+      eyeNeoplasms:
+        title1: Orbital and adnexal tumours
+        p1: These tumours can arise from eyelids, conjunctiva, or within the eyeball and periocular tissue. Ocular tumours are also known as eye cancers, which may cause damage to eye tissues and eye functions no matter it is benign or malignant tumour. Malignant tumours have a tendency to spread outside the eyeball, orbit, brain and to whole body. Meanwhile, malignment tumours from other part of body can also reach the eye tissue through blood stream. The normal protrusion degree of both eyeballs is the same, around one third people have 0.5 – 2mm difference while 1% people may have 2mm difference.
+        title2: Symptoms of orbital and adnexal tumours
+        name2_1: "Bulging Eyes:"
+        p2_1: The protrusion degree is more than 22mm and the difference of both eyes is greater than 2mm or the degree keeps increasing during the observation period. These are known as pathological bulging eyes. The reasons that lead to eye protruding include tumours, inflammation in eye sockets, Graves disease, vascular malformations and orbital trauma.
+        name2_2: "Prolapse of the Eye:"
+        p2_2: Orbital pressure increases due to trauma and tumours, so the eyeball protrudes outside eyelids. If eyeballs protrude a lot and with the symptom of eyelid twitch, it will be easy to have prolapse of the eye.
+        name2_3: "Sunken eyeball:"
+        p2_3: Sunken eyeball could be due to lack of fat tissue around the eyeball, after orbital tumour removal, old age, some blood vessels disease such as orbital varices and following orbital wall fracture.
+        btn2_1: 眼腫瘤延誤治療 後果嚴重
+        btn2_2: 即致電預約醫生問清問楚
+        title3: Real and fake eye cancer
+        name3_1: eyelid cancer
+        text3_1: Keratoacanthoma
+        text3_2: squamous cell epithelioma
+        p3_1: Keratoacanthoma and squamous cell epithelioma are both related to prolonged exposure to ultraviolet rays. Since the distribution of skin pigmentation is different, the risk for Asians to have eye cancer is lower than white people. Squamous cell epithelioma is also related to HIV infection.
+        p3_2: The typical appearance of both cancers is swollen bump that newly appears on eyelids. The bump grows fast and may develop ulceration. Sometimes it is hard to differentiate, so the tissue may need to be cut and examine in order to confirm the diagnosis and grading. Once it is confirmed, they can be treated by local chemotherapy, radiotherapy and cryotherapy based on the grading.
+        name4: Ocular surface cancer
+        text4_1: Pterygium
+        text4_2: squamous cell carcinoma on ocular surface
+        p4_1: Both are closely related to gradual damage from ultraviolet rays. Pterygium is a benign chronic degeneration, the typical symptoms are the conjunctiva on the sclera becoming thicker and will become fleshy. The symptoms are not apparent in the early stage. Squamous cell carcinoma is also related to exposure to ultraviolet rays. It is usually not easy to be distinguished with pterygium. However, squamous cell carcinoma can invade the ocular structures and spread through blood vessels and lymphatics, so it must be treated seriously.
+        p4_2: The general development of pterygium is slow, but usually in stationary phase. If there is no symptom or the size is smaller than 3mm, it is not needed to be treated, but observation; If it becomes active or the size is larger than 3mm, it is needed to consider receiving treatment. Generally all pterygium does not need excision or treatment. However, it may cause discomfort to eyes and need to apply eye drops to relieve inflammation and discomfort if pterygium grows larger. If pterygium becomes larger and grows to the central area of cornea, lead to astigmatism and even cover pupils, it may damage visual function, so pterygium removal should be considered. The treatment is safe and effective. Pterygium removal can improve both appearance and astigmatism. For squamous cell carcinoma, it should be removed and sent for histopathological examination to look for margins and base clearance in order to decide further treatment.
+        name5: Intraocular cancer
+        text5_1: Melanocytic tumor
+        text5_2: melanoma
+        p5: Both are degradations inside the eyes. There are usually no symptoms in the early stage. However, when it has progressed to the stage that affects visual function, the size of the swollen lump should be quite apparent.Melanocytic tumor is rarer to be seen. Its typical symptom is to grow black swollen bump in retina and it is usually found in one eye; it is more common to be seen among dark skinned people and females. Melanocytic tumor is often to be grown in optic nerve. This tumour is usually benign, so generally treatment is not needed. However, this tumour can rarely have malignant transformation which requires treatment. If the tumour becomes malignant, radiation therapy or removal surgery should be considered.Melanoma is malignant which will grow inside the eye, invade retina and vitreous. The malignant tumour cell may even spread to whole body and affect important organs. If melanoma is diagnosed, early treatment is required, so visual function can be retained and the possibility to spread to whole body can be reduced.
+        text5_3: Coats' disease
+        text5_4: Retinoblastoma
+        p5_1: Both diseases are common to be seen among children. Parents usually identify them because their children have strabismus and white pupil. Coats' disease is also known as exudative retinitis or retinal telangiectasis. It can lead to decreases in visual acuity and even blindness. Coats' disease usually affects one eye and attacks before 10 years old. Its symptoms include abnormal expansion and growth of capillaries in retina. These will cause a series of symptoms as blood exudates to retina. Radiation therapy or cryotherapy can be considered in the early stage. These therapies can damage the abnormal capillaries in retina in order to prevent the disease from getting worse.
+        p5_2: Retinoblastoma is most found primary eye tumour among children. It is a malignant tumour grown from the retina. If retinoblastoma is not treated, it will quickly grow towards the retina and may spread to areas outside of the eyeball, follow the optic nerve and transfer to the brain or the whole body. However, treatment should be chosen according to patient’s situation and other conditions such as unilateral or bilateral tumour, residual visual function, the position of the tumour and if it is already spread to optic nerve, the brain or haematogenous spread.
+        text5_5: Tumour in the eyeball
+        title6: Treatments of eye tumour
+        name6_1: Laser treatment
+        text6_1: Laser treatment has good efficacy for tumour that is small in size. It is usually performed through general anaesthesia and there will be no incision. Regular follow-ups are required until tumour is under control. A further laser treatment maybe performed if needed.
+        name6_2: Cold therapy
+        text6_2: Cold therapy is same as laser treatment which has good efficacy for tumour in smaller size. However, this treatment needs to cut the conjunctiva and perform the treatment outside of the patient’s sclera. Ophthalmologist will use an indirect ophthalmoscope to fix the position and the freezing device will be placed on the sclera where the tumour is. This therapy aims at destroying the tumour by freezing it. There will be a wound on the conjunctiva after the treatment. Eyelid and the eye will be swollen. This will be disappeared in around 1 to 5 days.
+        name6_3: Radiation therapy
+        text6_3: Radiation therapy is used for treating local tumour. This therapy can also keep the visual function of treated eye. Retinoblastoma is very sensitive to radiation. However, radiation therapy brought a lot of side effects and complications in the past, so it is not commonly used by ophthalmologists. Nowadays, the radiation technique can destroy local tumour effectively.
+        name6_4: Chemotherapy
+        text6_4: The regular way of chemical therapy is systemic treatment. The chemical will reach the tumour cell through blood circulation after intravenous Injection in order to lower the growth of tumour.
+      eyeProsthesis:
+        title: Prosthetic eye surgery
+        context: "The round orbital implant can fill most of the space in the eye socket, then the ocular prosthesis will fill the remain space. The prosthesis is moved with the support of the orbital implant. Orbital implant is made by various materials:"
+        text1_1: "Silicone orbital implant"
+        text1_2: hydroxyapatite orbital implant
+        text1_3: Porous polyethylene orbital implant
+        name1: Traditional prosthetic eye surgery
+        context1: Traditional ocular prosthesis aims at improving patient’s appearance and provide prosthetic eye with flexibility and comfort; However, there is still limitation in terms of flexibility and comfort.
+        name2: Modern prosthetic eye surgery
+        context2: "The technique of prosthetic eye surgery is greatly improved that advancement can be seen in every details. Modern prosthetic eye surgery:"
+        text2_1: After the orbital implant for 6 to 8 weeks, the patient will wear a temporary ocular prosthesis. The permanent one will be made according to the appearance of the other eye, as well as the size and the socket of the orbital implant.
+        text2_2: Then, iris, sclera and even the pattern of blood vessels will be drawn on the ocular prosthesis. It stimulates the appearance of the other eye. The ocular prosthesis will be then polished in order to make it comfortable for the patient and match the appearance of the other eye.
+        text2_3: After 2 to 3 weeks, patients can wear the tailor-made ocular prosthesis; local adjustment can be done if it is needed, so the ocular prosthesis looks like the real eye and to be ensure that it is comfortable for the patients who will gain back their confidence.
+        btn1: 更多詳情
+        btn2: 請WhatsApp聯絡我們
+      usage: 
+        title: How to use ocular prosthesis
+        name1: Steps to wear ocular prosthesis
+        text1_1: Wash your hands before wearing it.
+        text1_2: Use your thumb and middle finger to hold the ocular prosthesis. The side with marking faces upward. You can also use small rubber sucker to hold it.
+        text1_3: Use the other thumb (or the other fingers of the same hand) to pull up the upper eyelid.
+        text1_4: Use index finger to fix the ocular prosthesis and release the upper eyelid. Then, slide the bottom part of the ocular prosthesis into the lower eyelid while pulling it downward until it is fixed in appropriate position.
+        text1_5: Blink your eyes for 2 to 3 times, so the position of ocular prosthesis is fixed.
+        text1_6: Slide the top part of the ocular prosthesis softly until half of it is covered by the upper eyelid.
+        text1_7: At the same time, prevent the ocular prosthesis rotates
+        name2: Steps to remove ocular prosthesis
+        text2_1: It is more convenient to remove ocular prosthesis by rubber sucker.
+        text2_2: Wash your hands and rubber sucker.
+        text2_3: Make the rubber sucker wet by water or sterile solution. Then, put the sucker on top of the ocular prosthesis.
+        text2_4: Pull down the lower eyelid until you can see the bottom part of the ocular prosthesis while inclining the rubber sucker upward. The prosthesis can then be slide out over the lower lid
+        text2_5: Press the rubber sucker until the ocular prosthesis is released from the orbital implant.
+        text2_6: Rubber sucker is put on the middle of the ocular prosthesis where the iris is. Press it softly, so it attaches the ocular prosthesis.
+        text2_7: |
+                  Press the sucker until it is attached firmly and completely on the ocular prosthesis. Then, you can release the rubber sucker.
+        name3: "Note:"
+        text3_1: "1. Put the ocular prosthesis on clean and soft tissue paper after removing it.Avoid touching the ocular prosthesis."
+        text3_2: "2. prosthetic implant is a strict medical treatment."
+        span3: prosthetic implant is a strict medical treatment. It should be tailor made by ocularists with lots of experience according to patient’s eye socket size, appearance and colour of the healthy eye. It is made after accurate calculation. Generally, tailor made eye prosthetic needs to be ordered one day before. Individuals may need extra follow-ups for prosthesis adjustment. If there is no special situation after the implantation, follow-ups generally will be arranged every half year to one year. Since the size of eye socket and the facial shape of children are not mature after the enucleation, their eye prosthesis is needed to be replaced regularly. Therefore, follow-ups are important for them. For adult patients, they require to have adjustment around every 4 to 5 years.
+        name4: Important note for ocular prosthesis
+        text4: Ocular prosthesis can create a more natural appearance and fill the eye socket. It can be used for longer time if the ocular prosthesis has often and essential/ necessary care treatment. It can be more comfortable for the patient, look more shiny in appearance, so it has better wearing outcome. Therefore, care treatment is very important for ocular prosthesis. There are a few important notes for ocular prosthesis as below,
+        name5: "Cleaning frequency:"
+        text5: Ophthalmologist will evaluate patients’ eye and discharge condition. Please clean it regularly according to ophthalmologist’s advice;
+        name6: "Saline solution:"
+        text6: Contact lens solution or ocular prosthesis cleaner. Alcohol cannot be used;
+        name7: "Steps to clean ocular prosthesis:"
+        text7_1: Clean eyelids and eyelashes regularly. Keep orbital implant clean and hygiene;
+        text7_2: Wash your hands before putting it into the eye;
+        text7_3: Apply 2 to 3 drops of saline solution on the ocular prosthesis. Lightly buff the surface. Use warm water to rinse the prosthesis thoroughly and dry it with soft tissue paper. Repeat same steps if there is any sediment on the prosthesis after check.
+        name8: "Additional important note:"
+        text8_1: No need to remove ocular prosthesis everyday;
+        text8_2: Recommend to wear goggles to protect your healthy eyes;
+        text8_3: Wear goggles while swimming and having water sports. Ocular prosthesis is needed to be removed while diving, water skiing and scuba diving;
+        text8_4: Adults guidance is needed for children to prevent swallowing;
+        text8_5: Consult ophthalmologist as soon as possible and do not continue to wear ocular prosthesis if there is apparent redness, pain or stinky discharge etc.
+      navLists: 
+        name1: Eyelid malposition         
+        name2: Eyelid disorders
+        name3: Exophthalmos 
+        name4: Watery eyes
+        name5: Socket reconstruction
+        name6: Contracted socket
+        name7: Eye Bag Removal
+        name8: Double Eyelid Surgery
+        name9: Epicanthoplasty
+        name10: Dermatochalasis
+        name11: Eyelid cancer
+        name12: Eye surface cancer
+        name13: Intraocular cancer
+        name14: Prosthetic eye surgery
     medicalOptometry: Myopia Control and Ophthalmic Services
     medicalOptometry_con: 
       introduction:

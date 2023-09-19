@@ -103,11 +103,11 @@ const worsen = [
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
+    img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text3',
   },
 ]
