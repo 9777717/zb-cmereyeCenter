@@ -44,19 +44,28 @@ const rt = ref(route)
       </a>
       <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
         <div class="ga-pc-right-zxcx">
-          <div class="ga-pc-right-zxcx"><div class="ga-pc-right-zxcx">{{$t('components.content.onlinContact.chatNow')}}</div></div>
+          <div class="ga-pc-right-zxcx">
+            <div class="ga-pc-right-zxcx">{{$t('components.content.onlinContact.chatNow')}}</div>
+            <div class="ga-pc-right-zxcx">{{$t('components.content.onlinContact.chatNow3')}}</div>
+          </div>
           <div class="ga-pc-right-zxcx"><img class="ga-pc-right-zxcx" src="https://static.cmereye.com/imgs/2023/07/80e19816d1bcd08e.png" alt=""></div>
         </div>
       </a>
       <a class="ocitem ga-pc-right-WhatsApp" id="ga-pc-right-WhatsApp" href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2" target="_blank">
         <div class="ga-pc-right-WhatsApp">
-          <div class="ga-pc-right-WhatsApp"><div class="ga-pc-right-WhatsApp">WhatsApp</div></div>
+          <div class="ga-pc-right-WhatsApp">
+            <div class="ga-pc-right-WhatsApp">WhatsApp</div>
+            <div class="ga-pc-right-WhatsApp">9345 1508</div>
+          </div>
           <div class="ga-pc-right-WhatsApp"><img class="ga-pc-right-WhatsApp" src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
       </a>
       <a class="ocitem ga-pc-right-ljzd" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
         <div class="ga-pc-right-ljzd">
-          <div class="ga-pc-right-ljzd"><div class="ga-pc-right-ljzd">{{$t('components.content.onlinContact.callNow')}}</div></div>
+          <div class="ga-pc-right-ljzd">
+            <div class="ga-pc-right-ljzd">{{$t('components.content.onlinContact.callNow')}}</div>
+            <div class="ga-pc-right-ljzd">(852) 3956 2026</div>
+          </div>
           <div class="ga-pc-right-ljzd"><img class="ga-pc-right-ljzd" src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
         </div>
       </a>
@@ -110,10 +119,11 @@ const rt = ref(route)
           position: relative;
           transition: all .3s;
           border-right: 1px solid rgba(143, 210, 228, .5);
+          transition: all .3s;
           &>div{
             position: relative;
             z-index: 2;
-            font-size: 20px;
+            font-size: 18px;
             color: #8FD2E4;
             transition: all .3s;
           }
@@ -175,6 +185,24 @@ const rt = ref(route)
           }
         }
       }
+      &:nth-of-type(2){
+        &>div{
+          &>div:nth-of-type(1){
+            &>div:nth-of-type(2){
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      &:nth-of-type(4){
+        &>div{
+          &>div:nth-of-type(1){
+            &>div:nth-of-type(2){
+              font-size: 14px;
+            }
+          }
+        }
+      }
       &:hover{
         border: 2px solid #fff;
         &>div{
@@ -184,6 +212,7 @@ const rt = ref(route)
               color: #fff;
               margin-top: -1px;
               padding-top: 0px;
+              transform: translateY(-100%);
             }
             &::before{
               background: rgba(143, 210, 228, .5);

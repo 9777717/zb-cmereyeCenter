@@ -203,16 +203,16 @@ const testMethod = [
 ]
 const means = [
   {
-    title: '彩光治療',
-    text: 'Lumenis OptiLight已獲美國食品及藥物管理局（FDA）批准使用。此技術安全有效地治療眼瞼腺體發炎相關的乾眼症，每次治療時間大約需要數分鐘，在門診即可完成。',
+    title: 'pages.medical_service.xerophthalmia_con.means.name6_1',
+    text: 'pages.medical_service.xerophthalmia_con.means.text6_1',
   },
   {
-    title: '脈衝光治療原理',
-    text: 'Lumenis OptiLight治療是以強力脈衝光（IPL）為基礎，利用儀器於患者眼睛周圍發放IPL幫助疏通堵塞的瞼板腺，令油脂分泌回復正常，減少淚水蒸發。適合紓緩中度至重度乾眼症症狀，以及改善因瞼板腺功能障礙（MGD）患者存在的眼乾問題。',
+    title: 'pages.medical_service.xerophthalmia_con.means.name6_2',
+    text: 'pages.medical_service.xerophthalmia_con.means.text6_2',
   },
   {
-    title: '脈衝光治療效果',
-    text: 'Lumenis獲得專利的技術OPT™，治療可提供有針對性、均勻、精確和可控的技術，同時控制炎症過程，並改善由瞼板腺功能障礙（MGD）引起的乾眼症的問題。一般情況，治療能達到以下的功效︰',
+    title: 'pages.medical_service.xerophthalmia_con.means.name6_3',
+    text: 'pages.medical_service.xerophthalmia_con.means.text6_3',
   },
 ]
 // 其他紓緩眼乾症狀的方法︰
@@ -529,10 +529,10 @@ const callTel = () => {
           <div>
             <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1')}}</div>
             <div v-show="locale !== 'en'" v-for="(item, i) in means" :key="i">
-              <div>{{ item.title }}</div>
-              <div>{{ item.text }}</div>
+              <div>{{ $t(item.title) }}</div>
+              <div>{{ $t(item.text)}}</div>
             </div>
-              <div v-show="locale !== 'en'">
+              <div>
                 <div>
                   <img src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png" />
                 </div>
@@ -546,7 +546,7 @@ const callTel = () => {
                       </svg>
                       <div>1</div>
                     </div>
-                    <div>抑制炎症</div>
+                    <div>{{$t('pages.medical_service.xerophthalmia_con.means.name7_1')}}</div>
                   </div>
                   <div>
                     <div>
@@ -557,7 +557,7 @@ const callTel = () => {
                       </svg>
                       <div>2</div>
                     </div>
-                    <div>改善不正常血管</div>
+                    <div>{{$t('pages.medical_service.xerophthalmia_con.means.name7_2')}}</div>
                   </div>
                   <div>
                     <div>
@@ -568,7 +568,7 @@ const callTel = () => {
                       </svg>
                       <div>3</div>
                     </div>
-                    <div>減少眼睛蠕形蟎的數量</div>
+                    <div>{{$t('pages.medical_service.xerophthalmia_con.means.name7_3')}}</div>
                   </div>
                   <div>
                     <div>
@@ -579,7 +579,7 @@ const callTel = () => {
                       </svg>
                       <div>4</div>
                     </div>
-                    <div>調節油脂分泌</div>
+                    <div>{{$t('pages.medical_service.xerophthalmia_con.means.name7_4')}}</div>
                   </div>
                   <div>
                     <div>
@@ -590,13 +590,13 @@ const callTel = () => {
                       </svg>
                       <div>5</div>
                     </div>
-                    <div>激活瞼板腺功能</div>
+                    <div>{{$t('pages.medical_service.xerophthalmia_con.means.name7_5')}}</div>
                   </div>
                 </div>
               </div>
-              <div v-show="locale !== 'en'">
+              <div>
                 <div>
-                  乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
+                  {{$t('pages.medical_service.xerophthalmia_con.means.text7')}}
                 </div>
               </div>
             
@@ -3232,6 +3232,15 @@ min-width: 15px;
     }
     &>div:nth-child(7) {
       &>div:nth-child(3) {
+        &>div:nth-child(5){
+          &>div:nth-child(2){
+            &>div{
+              &>div:nth-child(2){
+                line-height: 1.2;
+              }
+            }
+          }
+        }
         &>div:nth-child(8) {
           margin-top: 150px;
           padding: 10px 30px;

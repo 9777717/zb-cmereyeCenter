@@ -34,6 +34,7 @@ components:
   content:
     onlinContact:
       chatNow: chat now
+      chatNow3: Online Service
       callNow: Call now
       chatNow2: chat now
 pages:
@@ -109,15 +110,15 @@ pages:
     center_profile: Introduction
     profile_centent:
       profile_text: As a leading one-stop ophthalmology medical group, C-MER Eye Care Holdings Limited (C-MER) was established by Dr. LAM Shun Chiu in 2012. C-MER was successfully listed on the main board of the Hong Kong Stock Exchange in 2018. Aiming to protect the eyes health of the public, over the years our medical team provides safe, accurate and reliable eye examinations and specialized medical services. The ophthalmic services include a comprehensive eye examination and proper treatment of eye diseases, SMILE Surgery, implantable contact lens (ICL), intraocular lens (IOL), Laser-Assisted in Situ Keratomileusis (LASIK) , CLEAR-Vision and optometry services, etc. C-MER Dennis Lam & Partners Eye Center located in Central, C-MER Eye Surgery Center located in Mongkok and C-MER Eye Center (Yuen Long) have officially been granted the "Day Procedure Centre Licence" by the Department of Health.
-      profile_subjection: 「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
-      profile_group_start: 我們的集團名稱
-      profile_group_name: 「C-MER」
-      profile_group_idea: ，正正反映著我們的理念與執著：
+      profile_subjection: "\"C-MER Eye Center\" is under the publicly listed company \"C-MER Eye Care Holdings Limited (C-MER)\"."
+      profile_group_start: Our brand 
+      profile_group_name: “C-MER”
+      profile_group_idea: ", indicates our beliefs."
       profile_group_C: 「C」 - Professional Clinical Services
       profile_group_M: 「Ｍ」- Modern Management
       profile_group_E: 「Ｅ」- Quality Education
       profile_group_R: 「Ｒ」- Pioneering Research
-      profile_group_hema: 「C-MER」："C" to bring hope to the eyes；"Hima" and "C-MER" are homophonic，and the Himalayas are the highest mountain range in the world. which continuously pursues excellence through high-quality clinical services, modern management, superior education and training, and leading research, climbing the peak.
+      profile_group_hema: 「CMER」：「C」to bring a ray of hope to the eyes; 「CMER」 and 「Hima」sounds similar to 'Himalayas,' which is the highest mountain range in the world. 「CMER Eye Center」embodies the concept of constantly pursuing excellence, climbing new heights, and is committed to providing high-quality clinical services, modern management, quality education and training, as well as leading research.
     hema_eye:
       hema_eye: C-MER Eye Center
       hema_eye_introduce_one: There are 11 C-MER Eye Centers in Hong Kong, located all over Hong Kong, Kowloon, and the New Territories, which can easily be reached by public transport. Led by Dr. LAM Shun Chiu who has over 30 years of experience in ophthalmology, together with 23 experienced ophthalmologists and professional medical nurses, the team provides comprehensive ophthalmology medical services for the public.
@@ -141,19 +142,19 @@ pages:
     course_year:
       year_22: "2022"
       child_22:
-        child22_month_1: 9月
-        child22_month_2: 8月
-        child22_month_3: 3月
+        child22_month_1: September
+        child22_month_2: August
+        child22_month_3: March
         child22_info_1: Tseung Kwan O - C-MER Eye Center
         child22_info_2: Jieyang - C-MER Eye Hospital
         child22_info_3_1: Tsim Sha Tsui - C-MER Medical Group (Eye, Dental, Medical Aesthetic )
         child22_info_3_2: Fuzhou - C-MER Eye Hospital
       year_21: "2021"
       child_21:
-        child21_month_1: 11月
-        child21_month_2: 7月
-        child21_month_3: 3月
-        child21_month_4: 12月
+        child21_month_1: November
+        child21_month_2: July
+        child21_month_3: March
+        child21_month_4: December
         child21_info_1: Tsim Sha Tsui - C-MER Medical Group (Eye, Dental, Medical Aesthetic )
         child21_info_2_1: Central - C-MER Vision Center
         child21_info_2_2: Mongkok - C-MER Vision Center
@@ -161,49 +162,49 @@ pages:
         child21_info_3_2: Sha Tin (Second branch) - C-MER Eye Center
       year_20: "2020"
       child_20:
-        child_month: 11月
+        child_month: November
         child_info_1: Tsuen Wan - C-MER Eye Center
         child_info_2: Zhuhai - C-MER Eye Hospital
         child_info_3: Shenzhen Xinan Eye Clinic upgraded to Hospital
       year_19: "2019"
       child_19:
-        child_month_1: 12月
-        child_month_2: 11月
-        child_month_3: 10月
-        child_month_4: 6月
+        child_month_1: December
+        child_month_2: November
+        child_month_3: October
+        child_month_4: June
         child_info_1: Yuen Long (Second branch) - C-MER Eye Center
         child_info_2: Shanghai - C-MER Eye Hospital
         child_info_3: C-MER Smile Laser Center
         child_info_4: Kunming - C-MER Eye Hospital
       year_18: "2018"
       child_18:
-        child_month_1: 11月
-        child_month_2: 3月
-        child_month_3: 1月
+        child_month_1: November
+        child_month_2: March
+        child_month_3: January
         child_info_1: Shenzhen Xinan - C-MER Eye Clinic
         child_info_2: Kwun Tong - C-MER Eye Center
         child_info_3: Beijing - C-MER Eye Hospital
       year_17: "2017"
       child_17:
-        child_month: 2月
+        child_month: February
         child_info: Causeway Bay - C-MER Eye Center
       year_16: "2016"
       child_16:
-        child_month_1: 6月
-        child_month_2: 1月
+        child_month_1: June
+        child_month_2: January
         child_info_1: Shatin - C-MER Eye Center
         child_info_2: Yuen Long - C-MER Eye Center
       year_14: "2014"
       child_14:
-        child_month: 1月
+        child_month: January
         child_info: Mongkok - C-MER Eye Center
       year_13: "2013"
       child_13:
-        child_month: 3月
+        child_month: March
         child_info: Shenzhen - C-MER Eye Hospital
       year_12: "2012"
       child_12:
-        child_month: 1月
+        child_month: January
         child_info: Central - C-MER Eye Center
     enterprise_vision: Corporate Vision
     enterprise_vision_con: 
@@ -477,9 +478,9 @@ pages:
     service_cataract_title:
       service_cataract_title1: Cataract
       service_cataract_title_son1: 白內障影響日常生活？
-      service_cataract_title_son2: 為什麼會患上白內障？
+      service_cataract_title_son2: Why do people get cataracts?
       service_cataract_title_son3: Symptoms of cataract
-      service_cataract_title_son4: 白內障治療，手術最快20分鐘，快速恢復正常視力！
+      service_cataract_title_son4: "Cataract Treatment: Surgery in as little as 20 minutes, with a rapid recovery of normal vision."
       service_cataract_title_son5: 激光輔助白內障治療的優點︰
       service_cataract_title_son6: Comparison of Intraocular lens (IOL)
       service_cataract_title_son7: 白內障的術後注意事項
@@ -487,22 +488,22 @@ pages:
       service_cataract_btn1: 即按為您解決煩惱
       service_cataract_btn2: 別再遲疑！立即查詢白內障治療方案
       service_cataract_btn3: Causes of cataract
-      service_cataract_btn4: 簡單自測︰您是否患上白內障？
+      service_cataract_btn4: "Simple self-test : do you have cataracts"
       service_cataract_btn5: 已有症狀？立即預約檢查
       service_cataract_btn6: 立即預約見醫生了解手術！
       service_cataract_btn7: 哪一款人工晶體適合您？
       service_cataract_text1: 白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
       service_cataract_text2: 患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響您的視野，更使您的生活變得十分不便？
       service_cataract_text3: Around 90% of the cataracts in Hong Kong are due to aging. The lens hardens and becomes less transparent.
-      service_cataract_text4: 視力模糊是白內障的主要症狀，隨病情惡化，可能有更多症狀困擾您。
-      service_cataract_text5: 如果您有一項或以上的症狀，請不用感到焦慮，可聯絡我們約見眼科專科醫生，以盡快獲得正確的診斷和適合您的治療方案。
+      service_cataract_text4: Blurred vision is the primary symptom of cataracts. As the condition progresses, you may experience additional symptoms that can be bothersome.
+      service_cataract_text5: If you have one or more of these symptoms. You can contact us to schedule an appointment with a specialized ophthalmologist to receive a proper diagnosis and discuss suitable treatment options as soon as possible.
       service_cataract_text6: As there are no medications that can restore clear eyesight from cloudy vision resulting from cataract, surgery is the treatment.
       service_cataract_text7: The mainstream of cataract surgery is phacoemulsification combined with intraocular lens (IOL) implantation. The surgery is performed through an incision less than 3 mm in diameter. The cloudy lens will then be emulsified into tiny fragments by ultrasound and sucked out. Finally, an intraocular lens will be implanted. The surgery only takes 10-20 minutes and most of them are performed under topical anaesthesia (by applying numbing eye drops). The incision normally seals without stitches.
-      service_cataract_text8: 最新一代的微創超聲波乳化手術，可以提高治療的精準度。只需使用較低超聲波能量，將混濁晶體乳化分解並吸走，傷口小、恢復時間快、手術時間短，大大減低手術對角膜造成的傷害、傷口感染或併發症。
+      service_cataract_text8: The latest generation of minimally invasive ultrasonic phacoemulsification surgery improves the precision of treatment. By using lower levels of ultrasonic energy, the cloudy lens is emulsified and removed through a small incision, resulting in minimal wound size, faster recovery time, and shorter surgical duration. This significantly reduces the risk of corneal damage, wound infection, or complications associated with the surgery.
       service_cataract_text9:  Cataract surgeons could customized the IOL planning for their patients according to their visual needs.With the pre-operative assessment, patients can discuss with their ophthalmologists on the selection of IOL according to their ocular condition, vision needs and financial situation, etc. IOLs could be divided into three types,
       service_cataract_text10: "* This table presumes that the monofocal IOL is used for distant vision."
-      service_cataract_text11: 現代白內障手術更精準！
-      service_cataract_text12: 5大常見症狀︰
+      service_cataract_text11: Modern cataract surgery is more precise!
+      service_cataract_text12: "5 common symptoms:"
       service_cataract_down1: 如何選擇合適的人工晶體？
       service_cataract_down2: 白內障
       service_cataract_down_text: 下載小冊子
@@ -587,13 +588,13 @@ pages:
           icl6_multipleFocus2: Financially affordable
           icl6_multipleFocus3: No other eye diseases that affect vision
       service_cataract_array_announcements:
-        cataract_array_announcements1: 為盡快令傷口復原及避免細菌感染，術後蓋上紗布及眼罩需要保留一晚，直到第二天才拆開。如果不慎鬆開，再用消毒紗布重新蓋上。
-        cataract_array_announcements2: 一般建議病人術後於睡覺時蓋上保䕶眼罩兩星期，可以預防不必要的踫撞及捽眼睛。
-        cataract_array_announcements3: 術後當天一般都不建議洗頭，注意沐浴時切勿沾濕紗布。一般建議頭一星期平臥或仰臥洗頭，避免污水流入眼內或於洗頭時戴上如泳鏡作保護。
-        cataract_array_announcements4: 須保持傷口清潔，建議用化妝綿，凍開水，先洗下眼皮，再洗上眼皮，貼近眼睫毛嘅根部，由內至外一下過，一般每次滴眼水前清潔，每天四至六次。
-        cataract_array_announcements5: 禁止揉眼以免影響傷口癒合。應避免拿重物，90度彎身動作如綁鞋帶等。劇烈運動如跑步、跳水、有身體碰撞機會的運動等亦不適宜。
-        cataract_array_announcements6: 跟足指示，定時滴用由醫生處方的眼藥水，並保持均衡飲食。
-        cataract_array_announcements7: 術後如果眼睛無故出血、流膿、劇痛或視力突然模糊等，應盡快求醫，以免延誤治療
+        cataract_array_announcements1: To promote quick wound healing and prevent bacterial infection, it is recommended to keep the surgical dressing, gauze, and eye shield in place overnight after cataract surgery until the following day when they can be removed. If they accidentally become loose or dislodged, it is advisable to reapply a sterile gauze dressing to protect the eye and maintain proper hygiene. It's important to follow the post-operative instructionminimize the risk of complications.
+        cataract_array_announcements2: It is generally recommended for patients to use a protective eye shield while sleeping for two weeks after surgery. This helps prevent unnecessary bumps or rubbing of the eyes.
+        cataract_array_announcements3: On the day of the surgery, it is generally not recommended to wash the head. During bathing, it is important to avoid getting the dressing wet. Typically, for the first week after surgery, it is advised to wash the hair while lying flat or with the head tilted back to prevent water from entering the eyes. Wearing protective eyewear, such as swim goggles, during hair washing can also provide additional protection.
+        cataract_array_announcements4: It is important to keep the wound clean. It is recommended to use a cotton pad soaked in sterile water. Start by cleaning the lower eyelid and then move to the upper eyelid, making sure to clean close to the roots of the eyelashes and wiping from the inner to the outer corner. This cleaning routine is typically done before instilling eye drops, and it is advised to clean the area four to six times a day.
+        cataract_array_announcements5: Rubbing the eyes should be avoided to prevent interference with wound healing. It is also advised to avoid lifting heavy objects and performing activities that involve bending at a 90-degree angle, such as tying shoelaces. Vigorous exercises like running, diving, and contact sports should be avoided as well to minimize the risk of eye injury.
+        cataract_array_announcements6: Follow the instructions provided and ensure to use the prescribed eye drops at regular intervals as directed by your doctor. It is important to maintain a balanced diet as well to support overall health and aid in the healing process.
+        cataract_array_announcements7: If you experience unexpected bleeding, discharge, severe pain, or sudden blurred vision after surgery, it is important to seek medical attention promptly. These symptoms could indicate a potential complication or infection, and it is crucial not to delay treatment in order to prevent any further complications.
       service_cataract_array_meet:
         cataract_array_meet_q1: Q：Do we need to wait until the cataract get mature？
         cataract_array_meet_a1_1: With the advancement of cataract surgery and IOL technology, modern cataract surgery is more effective. Patients can consider earlier cataract surgery as it is more difficult to be removed and the risk of complications will be higher if a cataract is more mature.
@@ -614,11 +615,11 @@ pages:
         cataract_array_meet_a6_4: 'Swimming: 1 week after the surgery to reduce the risk of infection'
         cataract_array_meet_a6_5: 'Other facial or dental treatments: at least 1 week after the surgery. For the safety reason, it is better to be 1 month after the surgery.'
       service_cataract_array_Navigation:
-        cataract_array_Navigation1: Causes
-        cataract_array_Navigation2: Symptoms
-        cataract_array_Navigation3: Treatment
-        cataract_array_Navigation4: Comparison of Intraocular lens (IOL)
-        cataract_array_Navigation5: 術後注意事項
+        cataract_array_Navigation1: Causes of
+        cataract_array_Navigation2: Symptoms of
+        cataract_array_Navigation3: Treatment for
+        cataract_array_Navigation4: Intraocular Lens (IOL) Information
+        cataract_array_Navigation5: Postoperative Care Instructions
         cataract_array_Navigation6: FAQ
     glaucoma: Glaucoma
     service_glaucoma_title:
@@ -765,7 +766,7 @@ pages:
         navgation_text2: Symptoms
         navgation_text3: Chronic Glaucoma
         navgation_text4: Pisk Factors
-        navgation_text5: Diagnosis
+        navgation_text5: Diagnostic Methods for
         navgation_text6: Treatment
         navgation_text7: Prevention
         navgation_text8: FAQ
@@ -903,6 +904,18 @@ pages:
         text5_3: Reduce the time of wearing contact lenses.
         text5_4: Drink enough water to keep your body hydrated.
         text5_5: "Eat more fruits and vegetables that are good for health of eyes, such as: food rich in vitamin A (milk, eggs, carotene-rich vegetables, oral cod liver oil, etc.)"
+        name6_1: Lumenis
+        text6_1: The Lumenis OptiLight has been approved by the U.S. Food and Drug Administration (FDA) for use. This technology safely and effectively treats dry eye syndrome associated with inflammation of the eyelid glands. Each treatment session takes only a few minutes and can be completed in an outpatient setting.
+        name6_2: The principle of pulsed light therapy
+        text6_2: Lumenis OptiLight treatment is based on Intense Pulsed Light (IPL) therapy, which utilizes the device to deliver IPL around the patient's eyes to help unclog blocked meibomian glands. This helps restore normal oil secretion and reduces tear evaporation. It is suitable for relieving moderate to severe dry eye symptoms and improving dry eye issues caused by meibomian gland dysfunction (MGD).
+        name6_3: The effectiveness of pulsed light therapy
+        text6_3: "Lumenis has obtained a patented technology called OPT™, which provides targeted, uniform, precise, and controllable treatment. It simultaneously controls the inflammatory process and improves dry eye problems caused by meibomian gland dysfunction (MGD). In general, the treatment can achieve the following benefits:"
+        name7_1: Inhibiting inflammation
+        name7_2: Improving abnormal blood vessels
+        name7_3: Reducing the number of eyelash mites
+        name7_4: Regulating oil secretion
+        name7_5: Activating meibomian gland function
+        text7: Dry eye syndrome is a chronic condition that may require 3 to 4 treatment sessions to see results. Before, during, and after the treatment, patients should follow the care instructions provided by the ophthalmologist
       prevent:
         name: Prevention
         title1:  Avoid air blowing in your eyes
@@ -941,10 +954,10 @@ pages:
       navLists: 
         name1: Eye floaters
         name2: Causes
-        name3: Types
-        name4: Risk Factors
+        name3: Types of
+        name4: Risk Factors for
         name5: Treatments
-        name6: Prevention
+        name6: Prevention of
         name7: FAQ
       factor: 
         name: CAUSES
@@ -1087,7 +1100,7 @@ pages:
       navLists:
         name1: Macular Degeneration
         name2: Symptoms
-        name3: Self Test
+        name3: Self-examination for
         name4: Dry macular degeneration
         name5: Wet macular degeneration
         name6: Prevention
@@ -1346,7 +1359,7 @@ pages:
         a4: "Retinal detachment has the risk of recurrence. Patients with a previous history of eye injury and diabetes have higher risks. It is recommended that a high-risk person should develop good eye health, such as: do not look at electronic screens or read at a close distance for a long time; use electronic products in sufficient light environments; have enough rest and have regular eye check."
       navLists: 
         name1: Introduction
-        name2: Risk factors
+        name2: High risk factors
         name3: Signs & Symptoms
         name4: Treatments
         name5: Diabetic retinopathy
@@ -1618,7 +1631,7 @@ pages:
         p4_2: The main objective is to prevent damage to cornea. It can be treated by taping the eyelids at night and copious amount of lubricants.
         btn_1: 眼睛外形影響視野及外觀？
         btn_2: 即WhatsApp預約治療
-        name5: Others
+        name5: Other eye plastic surgery
         title5_1: Eyelid disorders/ Eyelid laceration
         text5_1: Eyelid disorders/ Eyelid laceration is formed by eyelid tear, trauma or lump excision on eyelid; It can be congenital eyelid disorders/ eyelid laceration. Surgery can help eyelids to keep natural appearance. There are several reconstructive techniques to repair the eyelids.
         title5_2: Exophthalmos
@@ -1903,12 +1916,12 @@ pages:
       atropine_title6_btn: Inquire immediately about atropine eye drops
       atropine_title6_span1: to be taken once a day, one drop at a time.
     atropine_serviceNavigation:
-      serviceNavigation_anchorName1: atropine
-      serviceNavigation_anchorName2: 作用
-      serviceNavigation_anchorName3: 好處
-      serviceNavigation_anchorName4: 適用
-      serviceNavigation_anchorName5: 注意事項
-      serviceNavigation_anchorName6: 使用方法/療程
+      serviceNavigation_anchorName1: Atropine eye drops
+      serviceNavigation_anchorName2: Effect
+      serviceNavigation_anchorName3: Pros
+      serviceNavigation_anchorName4: Suitable for
+      serviceNavigation_anchorName5: Precautions
+      serviceNavigation_anchorName6: Using method
   ophthalmic_information:
     ophthalmic_information: 眼科咨询
     ophthalmic_class: 医生小教室
