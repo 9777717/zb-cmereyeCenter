@@ -731,7 +731,7 @@ const goVision = () => {
 @media screen and (max-width: 768px) {
   .medicalOptometry_head {
     margin-top: 150px;
-    margin-right: 40px;
+    margin-right: 20px;
 
     &>div:nth-child(1) {
       &>div:nth-child(1) {

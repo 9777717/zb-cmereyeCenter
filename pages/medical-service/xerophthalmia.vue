@@ -3223,6 +3223,17 @@ min-width: 15px;
         }
       }
     }
+    &>div:nth-child(4){
+      &>div:nth-child(3){
+        max-width: 100%;
+        line-height: 1.2;
+        padding: 0 10px;
+        text-align: center;
+        svg{
+          min-width: 12px;
+        }
+      }
+    }
     &>div:nth-child(5) {
       &>div:nth-child(2) {
         &>div{

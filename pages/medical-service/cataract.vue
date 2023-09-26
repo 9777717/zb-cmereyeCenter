@@ -3227,6 +3227,9 @@ const callTel = () => {
     &>div:nth-child(2){
       &>div:nth-child(1){
         &>div{
+          &>div:nth-child(1){
+            font-size: 20px;
+          }
           &>div:nth-child(2){
             padding: 10px 30px;
             height: auto;

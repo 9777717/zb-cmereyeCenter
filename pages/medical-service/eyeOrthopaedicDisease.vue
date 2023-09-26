@@ -260,7 +260,7 @@ const goWhatsApp = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.eyeOrthopaedicDisease')}}</div>
+          <div :class="{headEn:locale === 'en'}">{{$t('pages.medical_service.eyeOrthopaedicDisease')}}</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
@@ -2774,6 +2774,10 @@ const goWhatsApp = () => {
         &>div:nth-child(1) {
           font-size: 40px;
           letter-spacing: 0px;
+          &.headEn{
+            width: max-content;
+            max-width: 350px;
+          }
         }
 
         &>div:nth-child(2) {
