@@ -28,15 +28,15 @@ components:
     medicalService: Medical Services
     contactUs: Contact Us
     wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
-    footerMenuB1: ©2023 Shimalin Shunchao Eye Center copyRight
-    footerMenuB2: Subsidiary of C-MER Eye Care Holdings Ltd
-    footerMenuB3:  'Stock code: 03309.HK'
+    footerMenuB1: Copyright © 2023 C-MER Eye Center
+    footerMenuB2: C-MER Eye Care Holdings Ltd
+    footerMenuB3: 'Stock code: 03309.HK'
   content:
     onlinContact:
-      chatNow: chat now
+      chatNow: Chat Now
       chatNow3: Online Service
       callNow: Call now
-      chatNow2: chat now
+      chatNow2: Chat Now
 pages:
   404:
     title: page not found
@@ -101,10 +101,10 @@ pages:
       copy_right: copyRight
       language: language
       fonts: fonts
-      privacy: privacy policy 
-      disclaimer: disclaimer
+      privacy: Privacy Policy
+      disclaimer: Disclaimer
     subscribe: Chat/Booking now
-    inquire: Chat now
+    inquire: Chat Now
   about_us:
     about_us: About Us
     center_profile: Introduction
@@ -223,7 +223,7 @@ pages:
     equipment_centre: Medical Equipment
     feedback: Feedback
     download:
-      download: Download the Hema Ophthalmic Practice booklet
+      download: Download C-MER's Ophthalmic Business Brochure
     awards: 
       awards: Awards
       awards_year_1: "2021"
@@ -358,7 +358,7 @@ pages:
           doctor_10_education_7: DipMed (CUHK)
           doctor_10_education_8: DFM (Monash)
       doctor_11:
-        doctor_11_name: DFM (Monash)
+        doctor_11_name: DR. LAI HO WA, KENNY
         doctor_11_en_name: Dr. Kenny Lai
         doctor_11_education:
           doctor_11_education_1: MBChB (CUHK)
@@ -481,7 +481,7 @@ pages:
       service_cataract_title_son2: Why do people get cataracts?
       service_cataract_title_son3: Symptoms of cataract
       service_cataract_title_son4: "Cataract Treatment: Surgery in as little as 20 minutes, with a rapid recovery of normal vision."
-      service_cataract_title_son5: 激光輔助白內障治療的優點︰
+      service_cataract_title_son5: "The advantages of laser-assisted cataract treatment are as follows:"
       service_cataract_title_son6: Comparison of Intraocular lens (IOL)
       service_cataract_title_son7: Postoperative Care Instructions
       service_cataract_title_son8: Frequently asked questions (FAQ)
@@ -492,8 +492,8 @@ pages:
       service_cataract_btn5: Call now to book appointment!
       service_cataract_btn6: Call now to book appointment!
       service_cataract_btn7: Which type of artificial lens is suitable for you?
-      service_cataract_text1: 白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
-      service_cataract_text2: 患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響您的視野，更使您的生活變得十分不便？
+      service_cataract_text1: Cataract is one of the common eye disorders in Hong Kong. In the early stages, there are almost no symptoms, and the condition is often mistaken for normal age-related changes in the eyes. As the condition progresses to the intermediate stage, patients may experience blurry vision, and in severe cases, they may even lose their vision completely. Therefore, early detection is crucial.
+      service_cataract_text2: Having cataracts can cause blurry vision, double vision, and a sense of overlapping or ghosting when looking at objects. Does the condition affect your field of vision and significantly inconvenience your daily life?
       service_cataract_text3: Around 90% of the cataracts in Hong Kong are due to aging. The lens hardens and becomes less transparent.
       service_cataract_text4: Blurred vision is the primary symptom of cataracts. As the condition progresses, you may experience additional symptoms that can be bothersome.
       service_cataract_text5: If you have one or more of these symptoms. You can contact us to schedule an appointment with a specialized ophthalmologist to receive a proper diagnosis and discuss suitable treatment options as soon as possible.
@@ -530,10 +530,10 @@ pages:
         cataract_array_symptom5_1: Frequent changes in prescription for eyeglasses or contact lenses
         cataract_array_symptom5_2: ""
       service_cataract_array_surgery:
-        cataract_text1: 激光精準度高
-        cataract_text2: 人工晶體位置更準確
-        cataract_text3: 可使用較低的超聲波
-        cataract_text4: 能量處理白內障
+        cataract_text1: High precision of laser treatment
+        cataract_text2: More accurate placement of artificial lens
+        cataract_text3: Ability to use lower levels of ultrasonic energy for cataract treatment
+        cataract_text4: ""
         cataract_array_surgery1_1: The cloudy lens is removed by a micro ultrasonic instrument.
         cataract_array_surgery1_2: ''
         cataract_array_surgery2_1: Implantation of an intraocular lens.
@@ -615,9 +615,9 @@ pages:
         cataract_array_meet_a6_4: 'Swimming: 1 week after the surgery to reduce the risk of infection'
         cataract_array_meet_a6_5: 'Other facial or dental treatments: at least 1 week after the surgery. For the safety reason, it is better to be 1 month after the surgery.'
       service_cataract_array_Navigation:
-        cataract_array_Navigation1: Causes of
-        cataract_array_Navigation2: Symptoms of
-        cataract_array_Navigation3: Treatment for
+        cataract_array_Navigation1: Causes
+        cataract_array_Navigation2: Symptoms
+        cataract_array_Navigation3: Treatment
         cataract_array_Navigation4: Intraocular Lens (IOL) Information
         cataract_array_Navigation5: Postoperative Care Instructions
         cataract_array_Navigation6: FAQ
@@ -764,9 +764,9 @@ pages:
       service_glaucoma_navgation:
         navgation_text1: Causes
         navgation_text2: Symptoms
-        navgation_text3: Chronic Glaucoma
+        navgation_text3: Tpyes
         navgation_text4: Pisk Factors
-        navgation_text5: Diagnostic Methods for
+        navgation_text5: Diagnostic
         navgation_text6: Treatment
         navgation_text7: Prevention
         navgation_text8: FAQ
@@ -950,7 +950,7 @@ pages:
       dow:
         text1: Dry Eyes
         text2: Download leaflet
-    muscae_volitantes: Eye floaters
+    muscae_volitantes: Eye Floaters
     muscaeVolitantes_con:
       muscaeInfo: 
         name: What are eye floaters?
@@ -963,12 +963,12 @@ pages:
         text5: Amoebas
         text6: Spiders
       navLists: 
-        name1: Eye floaters
+        name1: Eye Floaters
         name2: Causes
-        name3: Types of
-        name4: Risk Factors for
+        name3: Types
+        name4: Risk Factors
         name5: Treatments
-        name6: Prevention of
+        name6: Prevention
         name7: FAQ
       factor: 
         name: CAUSES
@@ -1033,7 +1033,7 @@ pages:
         q3: Q：Do eye drops and medications help get rid of floaters?
         a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
       dow:
-        text1: Eye floaters
+        text1: Eye Floaters
         text2: Download leaflet
       btn:
         name1_1: Book an appointment vis WhatsApp.
@@ -1131,7 +1131,7 @@ pages:
       navLists:
         name1: Macular Degeneration
         name2: Symptoms
-        name3: Self-examination for
+        name3: Self-examination
         name4: Dry macular degeneration
         name5: Wet macular degeneration
         name6: Prevention
@@ -1913,7 +1913,7 @@ pages:
       btn2: Booking for service
       navLists: 
         name1: Myopia Control and Ophthalmic Services
-        name2: Causes of
+        name2: Causes
     smileHk: Vision Correction
     atropine: Atropine Eye Drops
     atropine_text: 
@@ -1984,7 +1984,7 @@ pages:
       serviceNavigation_anchorName1: Atropine eye drops
       serviceNavigation_anchorName2: Effect
       serviceNavigation_anchorName3: Pros
-      serviceNavigation_anchorName4: Suitable for
+      serviceNavigation_anchorName4: Suitable
       serviceNavigation_anchorName5: Precautions
       serviceNavigation_anchorName6: Using method
   ophthalmic_information:

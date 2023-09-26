@@ -2265,6 +2265,11 @@ const callTel = () => {
         }
       }
     }
+    &>div:nth-child(4){
+      &>div:nth-child(1){
+        line-height: 1.2;
+      }
+    }
   }
   &>div:nth-child(6){
     &>div:nth-child(1){

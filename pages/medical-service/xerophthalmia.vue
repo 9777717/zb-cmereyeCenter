@@ -528,7 +528,7 @@ const callTel = () => {
           </div>
           <div>
             <div>{{$t('pages.medical_service.xerophthalmia_con.means.name1')}}</div>
-            <div v-show="locale !== 'en'" v-for="(item, i) in means" :key="i">
+            <div v-for="(item, i) in means" :key="i">
               <div>{{ $t(item.title) }}</div>
               <div>{{ $t(item.text)}}</div>
             </div>

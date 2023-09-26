@@ -247,7 +247,7 @@ const historyList = ref([
         padding-right: 10%;
         // text-align: right;
         box-sizing: content-box;
-        min-width: 45px;
+        min-width: 13%;
       }
 
       .info {
