@@ -97,8 +97,8 @@ pages:
   index:
     home: Home
     footer:
-      company: Shimalin Shunchao Eye Center
-      copy_right: copyRight
+      company: Copyright © 2023 C-MER Eye Center
+      copy_right: ""
       language: language
       fonts: fonts
       privacy: Privacy Policy

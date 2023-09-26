@@ -9,7 +9,7 @@ const year = new Date().getFullYear()
     <footer class="bg-blue-900">
       <section class="footer">
         <div>
-          ©{{ year }} {{ $t('pages.index.footer.company') }}
+          {{ $t('pages.index.footer.company') }}
           {{ $t('pages.index.footer.copy_right') }}
         </div>
         <div>
