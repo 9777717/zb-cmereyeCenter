@@ -2722,6 +2722,11 @@ const callTel = () => {
           margin-left: -60px;
         }
       }
+      & > div:nth-child(3) {
+        &>div{
+          text-align: center;
+        }
+      }
     }
     & > div:nth-child(4) {
       & > div:nth-child(2) {
@@ -2752,6 +2757,9 @@ const callTel = () => {
         & > div:nth-child(2) {
           height: auto;
         }
+      }
+      &> div:nth-child(4){
+        text-align: center;
       }
       &> div:nth-child(5){
         & > div:nth-child(2) {
@@ -3681,6 +3689,9 @@ const callTel = () => {
             margin-left: 0;
           }
         }
+        & > div:nth-child(3) {
+          padding: 10px;
+        }
       }
       & > div:nth-child(4) {
         & > div:nth-child(2) {
@@ -3699,8 +3710,14 @@ const callTel = () => {
             }
           }
         }
+        & > div:nth-child(4) {
+          padding: 10px 20px;
+        }
       }
       & > div:nth-child(5) {
+        & > div:nth-child(4) {
+          padding: 10px;
+        }
         &> div:nth-child(5){
           & > div:nth-child(2) {
             &> div:nth-child(3){

@@ -477,21 +477,21 @@ pages:
     cataract: Cataract
     service_cataract_title:
       service_cataract_title1: Cataract
-      service_cataract_title_son1: 白內障影響日常生活？
+      service_cataract_title_son1: Cataracts affect daily life?
       service_cataract_title_son2: Why do people get cataracts?
       service_cataract_title_son3: Symptoms of cataract
       service_cataract_title_son4: "Cataract Treatment: Surgery in as little as 20 minutes, with a rapid recovery of normal vision."
       service_cataract_title_son5: 激光輔助白內障治療的優點︰
       service_cataract_title_son6: Comparison of Intraocular lens (IOL)
-      service_cataract_title_son7: 白內障的術後注意事項
+      service_cataract_title_son7: Postoperative Care Instructions
       service_cataract_title_son8: Frequently asked questions (FAQ)
-      service_cataract_btn1: 即按為您解決煩惱
-      service_cataract_btn2: 別再遲疑！立即查詢白內障治療方案
+      service_cataract_btn1: Get immediate assistance through WhatsApp!
+      service_cataract_btn2: WhatsApp now to inquire about your treatment plan!
       service_cataract_btn3: Causes of cataract
       service_cataract_btn4: "Simple self-test : do you have cataracts"
-      service_cataract_btn5: 已有症狀？立即預約檢查
-      service_cataract_btn6: 立即預約見醫生了解手術！
-      service_cataract_btn7: 哪一款人工晶體適合您？
+      service_cataract_btn5: Call now to book appointment!
+      service_cataract_btn6: Call now to book appointment!
+      service_cataract_btn7: Which type of artificial lens is suitable for you?
       service_cataract_text1: 白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
       service_cataract_text2: 患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響您的視野，更使您的生活變得十分不便？
       service_cataract_text3: Around 90% of the cataracts in Hong Kong are due to aging. The lens hardens and becomes less transparent.
@@ -504,9 +504,9 @@ pages:
       service_cataract_text10: "* This table presumes that the monofocal IOL is used for distant vision."
       service_cataract_text11: Modern cataract surgery is more precise!
       service_cataract_text12: "5 common symptoms:"
-      service_cataract_down1: 如何選擇合適的人工晶體？
-      service_cataract_down2: 白內障
-      service_cataract_down_text: 下載小冊子
+      service_cataract_down1: How to choose a suitable artificial lens?
+      service_cataract_down2: Cataract
+      service_cataract_down_text: Download leaflet
       service_cataract_array_fator:
         cataract_array_fator1: Excessive ultraviolet-light exposure
         cataract_array_fator2: Smoking
@@ -640,12 +640,12 @@ pages:
       service_glaucoma_title15: Glaucoma Misunderstandings
       service_glaucoma_title16: Types of Secondary Glaucoma
       service_glaucoma_title17: Types of Glaucoma
-      service_glaucoma_btn1_1: 如您是青光眼高危人士
-      service_glaucoma_btn1_2: 立即WhatsApp預約檢查
-      service_glaucoma_btn2_1: 不想青光眼惡化？
-      service_glaucoma_btn2_2: 立即致電預約檢查
-      service_glaucoma_btn3_1: 急性青光眼會突然來襲
-      service_glaucoma_btn3_2: 立即致電預約診治
+      service_glaucoma_btn1_1: Book an appointment vis WhatsApp.
+      service_glaucoma_btn1_2: ""
+      service_glaucoma_btn2_1: Call now to book appointment!
+      service_glaucoma_btn2_2: ""
+      service_glaucoma_btn3_1: Book an appointment vis WhatsApp.
+      service_glaucoma_btn3_2: ""
       service_glaucoma_text1: Glaucoma is a progressive degeneration of the optic nerve. Optic nerve acts like a cable to help transmit visual signals from our eyes to the visual center in the brain. Patients with glaucoma may experience peripheral vision loss followed by a decrease in central vision; permanent visual loss may occur in serious cases. Since there are no symptoms in the early stages of glaucoma, many patients may be unaware that they have glaucoma until the disease has already progressed to a more advanced stage. Hence, chronic glaucoma is sometimes referred to as the "silent thief of sight".
       service_glaucoma_text2: Glaucoma is associated with increased intraocular pressure (IOP). The anterior chamber which is in front of the eye is filled with clear liquid secreted by ciliary body (aqueous humor). Aqueous humor circulates in anterior chamber. If there is blockage of aqueous humor drainage, it can lead to increased intraocular pressure, and damage the optic nerve.
       service_glaucoma_text3: "People with high myopia and long-term use of steroid eye drops, or have a history of eye injury, have higher chances of glaucoma. Moreover, several groups of systemic diseases can be associated with elevated intraocular pressure (IOP) and glaucomatous, such as: migraine, cardiovascular disease, Raynaud's syndrome, and low blood pressure, hypercholesterolemia, hyperlipidemia, diabetes."
@@ -770,8 +770,8 @@ pages:
         navgation_text6: Treatment
         navgation_text7: Prevention
         navgation_text8: FAQ
-      service_glaucoma_down: 青光眼
-      service_glaucoma_down_text: 下載小冊子
+      service_glaucoma_down: Glaucoma
+      service_glaucoma_down_text: Download leaflet
     xerophthalmia: Dry Eyes
     xerophthalmia_con: 
       xerophthalmiaInfo: 
@@ -939,6 +939,17 @@ pages:
         name6: Diagnosis
         name7: Treatments
         name8: Prevention
+      btn:
+        name1_1: Experiencing initial symptoms?
+        name1_2: Book an appointment vis WhatsApp.
+        name2: WhatsApp now to inquire about your treatment plan!
+        name3: Call now to book appointment!
+        name4: Call now for medical assistance!
+        name5_1: Call now to book appointment!
+        name5_2: ''
+      dow:
+        text1: Dry Eyes
+        text2: Download leaflet
     muscae_volitantes: Eye floaters
     muscaeVolitantes_con:
       muscaeInfo: 
@@ -1021,6 +1032,16 @@ pages:
         a2: If the floaters suddenly increase with flashes of bright lights, and/or loss of peripheral vision, blurred vision, etc., it can be a sign of severe eye disease. It is highly recommended to seek medical advice as soon as possible.
         q3: Q：Do eye drops and medications help get rid of floaters?
         a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
+      dow:
+        text1: Eye floaters
+        text2: Download leaflet
+      btn:
+        name1_1: Book an appointment vis WhatsApp.
+        name1_2: ''
+        name2_1: Call now to book appointment!
+        name2_2: ''
+        name3_1: Call now to book appointment!
+        name3_2: ''
     conjunctivitis: Conjunctivitis
     conjunctivitis_con:
       navLists:
@@ -1095,6 +1116,16 @@ pages:
         text4: Clean both sides of your contacts with fresh contact lens disinfecting solution, rinse and leave them to soak overnight (at least 6 hours).
         title5: Avoid contact with allergens
         text5: Be aware of allergens such as pollens, house dust mite, and animal dander etc, especially when season changed.
+      btn:
+        name1_1: Call now for medical assistance!
+        name1_2: ""
+        name2_1: Call now for medical assistance!
+        name2_2: ""
+        name3_1: Call now for medical assistance!
+        name3_2: ""
+      dow: 
+        text1: conjunctivitis
+        text2: Download leaflet
     maculopathy: Macular Degeneration
     maculopathy_con:
       navLists:
@@ -1209,6 +1240,14 @@ pages:
         a3: Patients suffering from dry macular degeneration have no obvious symptoms in the early stage and deterioration in vision is relatively slow. Drusen or geographic atrophy can be seen in the patient's fundus. But it may develop into wet subtype during its natural disease course. Wet AMD tends to be more severe in term of the visual damage. It has abnormal growth of vessels which lead to leakage beneath macula and the leakage may affect vision significantly. Exudation, edema, or hemorrhage can be seen during eye examination. If wet macular degeneration is not treated properly, photoreceptor cells can be damaged and permanent loss of center vision can be caused.
         q4: Q：Can injections treat macular degeneration?
         a4: Yes, injection of drugs (anti-VFGF or steroids, etc.) into the vitreous cavity is one of the effective treatments for macular degeneration. Medical reports show that this method has a good efficacy on treating the macular edema caused by wet AMD and it also has a role to promote visual improvement. Timely treatment is important, the earlier the macular degeneration is treated, the better result one may have. Injection of medicine can also be given along with PDT or other treatment (named as combined treatment in clinical practice) to obtain better treatment outcomes. For further details, you should discuss with your eye doctor so as to come up with a tailor-made treatment regimen for you.
+      btn: 
+        name1_1: Experiencing initial symptoms? 
+        name1_2: Book an appointment vis WhatsApp.
+        name2_1: WhatsApp now to inquire about your treatment plan!
+        name2_2: ''
+      dow:
+        text1: Macular Degeneration
+        text2: Download leaflet
     strabismusAmblyopia: Amblyopia and Strabismus in Children
     strabismusAmblyopia_con:
       navLists:
@@ -1289,6 +1328,14 @@ pages:
       curativeTime:
         name: Treat strabismus and amblyopia timely!
         context: Patients should arrange an eye examination for their children regularly to find out the cause of eye problems as soon as possible. The earlier detection and treatment, the better the effect. The effect of treatment also requires the cooperation of parents and children.
+      btn:
+        name1_1: Book an appointment vis WhatsApp.
+        name1_2: ''
+        name2_1: Book an appointment vis WhatsApp.
+        name2_2: ''
+      dow:
+        text1: Amblyopia and Strabismus in Children
+        text2: Download leaflet
     amotioRetinae: Retinal Detachment
     amotioRetinae_con: 
       title: retinal detachment
@@ -1365,6 +1412,14 @@ pages:
         name5: Diabetic retinopathy
         name6: Prevention
         name7: FAQ
+      btn:
+        name1_1: Call now for medical assistance!
+        name1_2: ''
+        name2_1: Which treatment is suitable for you?
+        name2_2: WhatsApp us
+      dow:
+        text1: Retinal Detachment
+        text2: Download leaflet
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     ocularSurfaceDiseases_con: 
       pterygium: 
@@ -1375,8 +1430,8 @@ pages:
         span2: Nutritional deficiencies, insufficient tear secretion
         span3: Allergy
         span4: Environmental factors and external stimuli such as the eyes have been excessively stimulated by wind, sand, dust, heat, sunlight, pollen, etc., especially long-term outdoor workers such as fishermen, farmers, seafarers and gravel workers
-        btn1: 難自行分辨是否有翼狀胬肉？
-        btn2: WhatsApp預約醫生檢查
+        btn1: WhatsApp now to inquire about your treatment plan!
+        btn2: ""
         name2: The effects of pterygium
         text1: Pterygium is generally small in size and does not lead to any effects. Sometimes patients will experience eye redness, itchiness, burning sensation or have appearance problem.
         text2: Larger pterygium can change the corneal curvature and result in astigmatism and blurred vision. Some pterygia may spread to the central cornea and lead to vision loss.
@@ -1394,8 +1449,8 @@ pages:
         text3: When infection recurs, it is needed to check if it is related to systemic disease such as diabetes etc.
         text4: Long hours of overnight work without enough rest can cause eye fatigue and weak immunity
         text5: Have diabetes and/ or have the eating habit of consuming food high in sugar and fat
-        btn1: 眼挑針已好幾日尚未康復？
-        btn2: WhatsApp預約對症下藥治療
+        btn1: Book an appointment vis WhatsApp.
+        btn2: ''
         name1: Symptoms of blepharitis
         text1_1: Itching, red and swollen eyelids
         text1_2: Flakes or crusts around the roots of the eyelashes (The crusts of seborrheic blepharitis are yellowish and greasy)
@@ -1414,8 +1469,8 @@ pages:
         text4: Eyelid twitch
         text5: Ciliary hyperaemia
         text6: Corneal opacification, infiltrates or ulcer
-        btn1: 已有角膜炎症狀？
-        btn2: 立即致電預約檢查
+        btn1: Call now to book appointment!
+        btn2: ''
         name2: Effects of keratitis
         text2_1: After the ulcer is recovered, the scar may block the light to enter the eye, it may change the corneal curvature and distort the refraction. Therefore, objects cannot clearly focus on the retina and lead to vision loss.
         text2_2: The more common kind of keratitis is caused by the herpes virus, which is a common viral infection in humans. When the immune system starts to decline, herpes ulcers will appear around the lips. The virus will also invade the eyes and cause keratitis. If keratitis that is caused by the viral infection of herpes is not treated in time, it will easily lead to new growth of vessel in the cornea and scarring (Figure A). In serious cases, patients may need to improve their visual function through corneal transplant (Figure B).
@@ -1442,8 +1497,8 @@ pages:
         text2_6_1: Loss of corrugated texture of iris
         text2_6_2: ''
         text2_7: Pupils shrink
-        btn1_1: 不想虹膜炎有後遺症？
-        btn1_2: 即WhatsApp預約 及早治療
+        btn1_1: Book an appointment vis WhatsApp.
+        btn1_2: ''
         name3: Complications of iritis
         text3_1: Corneal opacity, posterior synechiae, pupil block, peripheral anterior synechiae or chamber angle synechiae, occlusion of the pupil, iris bombe
         text3_2: Complications like cataract, secondary glaucoma, retinal degradation and atrophy of eyeball
@@ -1481,8 +1536,8 @@ pages:
         text5_2: to prevent serious complications, patients should have comprehensive examination to see if they have other autoimmune or connective tissue diseases.
         name5_3: If patients also have iritis or iridocyclitis
         text5_3: They should apply dilating eye drops in time to reduce inflammation.
-        btn1: 鞏膜炎可能伴隨其他眼疾
-        btn2: 立即致電預約治療
+        btn1: Call now for medical assistance!
+        btn2: ''
       damage: 
         title: Corneal Abrasion
         context: Cornea is comprised of five layers. Epithelium is the outer surface. If there is a scratch or a scrape on the surface of your cornea, it is called corneal abrasion.
@@ -1513,7 +1568,7 @@ pages:
         text3_2: Use a needle to puncture some deeper wounds over the affected area, so the outer surface can form a scar that can tightly attach with the tissue below. However, this method is easily to cause corneal scarring and has the risk of ocular penetrating injuries. Therefore, this method is rarely to be used now.
         name3_3: Laser treatment
         text3_3: Photo-Therapeutic Keratectomy can treat recurrent corneal abrasion. It has good efficacy and the recurrent rate is lower than 10%.
-        btn: WhatsApp了解治療方案
+        btn: WhatsApp now to inquire about your treatment plan!
       keratoconus:
         title1: Keratoconus
         span1_1: Keratoconus is an eye disease where there is localized corneal thinning and subsequent bulge leading to cone shaped cornea.
@@ -1527,8 +1582,8 @@ pages:
         span2_1: Greater and faster changes in myopia or astigmatism
         span2_2: In advanced stage, the tip of the cornea may develop edema, so visual function is worsened suddenly and has eye pain
         span2_3: ""
-        btn1: 懷疑自己有錐形角膜？
-        btn2: WhatsApp預約檢查及治療
+        btn1: Book an appointment vis WhatsApp.
+        btn2: ''
         name3: Treatments of keratoconus
         name3_1: "Hybrid Contact Lens:"
         span3_1: Hard contact lenses exert greater pressure on the top, so they can press the cornea to deform. However, they are less comfortable and may move on the surface of our eyes. Hybrid contact lens (Figure 1) can withstand greater pressure and is more comfortable.
@@ -1540,8 +1595,8 @@ pages:
       keratoplasty:
         title: Corneal transplant
         span: Corneal transplant is to replace damaged cornea with a normal one, so vision can be restored or corneal diseases can be controlled. This surgery can improve visual function or treat certain corneal diseases. Through this treatment, patients with corneal diseases that can lead to severe visual impairment or even blindness may be able to be treated. As the cornea does not contain blood vessels, so it has immune privilege. The success rate of corneal transplant is the highest among all kinds of organ transplant.
-        btn1: 角膜移植助您重見光明
-        btn2: 即致電約見醫生了解更多
+        btn1: Call now to book appointment!
+        btn2: ''
         name: Suitability for corneal transplant
         span1_1: "Eye injuries: eg. stab incision, burns or chemical injuries etc."
         span1_2: Severe corneal infection such as bacterial and filtrable virus infection
@@ -1605,6 +1660,13 @@ pages:
         name6: Corneal Abrasion
         name7: Keratoconus
         name8: Corneal transplant
+      btn:
+        name1_1: WhatsApp now to inquire about your treatment plan!
+        name1_2: ''
+        name2_1: Book an appointment vis WhatsApp.
+        name2_2: ''
+        name3_1: Call now to book appointment!
+        name3_2: ''
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
@@ -1629,8 +1691,8 @@ pages:
         p4_1: Patients with lagophthalmos cannot completely close their eyelids. Lagophthalmos is commonly seen in cases of congenital ptosis, facial palsy and eyelid skin scarring. Improper closure of eyelids can lead to dry eyes or corneal ulceration.
         name4_2: Treatments of lagophthalmos
         p4_2: The main objective is to prevent damage to cornea. It can be treated by taping the eyelids at night and copious amount of lubricants.
-        btn_1: 眼睛外形影響視野及外觀？
-        btn_2: 即WhatsApp預約治療
+        btn_1: Book an appointment vis WhatsApp.
+        btn_2: ''
         name5: Other eye plastic surgery
         title5_1: Eyelid disorders/ Eyelid laceration
         text5_1: Eyelid disorders/ Eyelid laceration is formed by eyelid tear, trauma or lump excision on eyelid; It can be congenital eyelid disorders/ eyelid laceration. Surgery can help eyelids to keep natural appearance. There are several reconstructive techniques to repair the eyelids.
@@ -1717,8 +1779,8 @@ pages:
         p2_2: Orbital pressure increases due to trauma and tumours, so the eyeball protrudes outside eyelids. If eyeballs protrude a lot and with the symptom of eyelid twitch, it will be easy to have prolapse of the eye.
         name2_3: "Sunken eyeball:"
         p2_3: Sunken eyeball could be due to lack of fat tissue around the eyeball, after orbital tumour removal, old age, some blood vessels disease such as orbital varices and following orbital wall fracture.
-        btn2_1: 眼腫瘤延誤治療 後果嚴重
-        btn2_2: 即致電預約醫生問清問楚
+        btn2_1: Call now to book appointment!
+        btn2_2: ''
         title3: Real and fake eye cancer
         name3_1: eyelid cancer
         text3_1: Keratoacanthoma
@@ -1761,8 +1823,8 @@ pages:
         text2_1: After the orbital implant for 6 to 8 weeks, the patient will wear a temporary ocular prosthesis. The permanent one will be made according to the appearance of the other eye, as well as the size and the socket of the orbital implant.
         text2_2: Then, iris, sclera and even the pattern of blood vessels will be drawn on the ocular prosthesis. It stimulates the appearance of the other eye. The ocular prosthesis will be then polished in order to make it comfortable for the patient and match the appearance of the other eye.
         text2_3: After 2 to 3 weeks, patients can wear the tailor-made ocular prosthesis; local adjustment can be done if it is needed, so the ocular prosthesis looks like the real eye and to be ensure that it is comfortable for the patients who will gain back their confidence.
-        btn1: 更多詳情
-        btn2: 請WhatsApp聯絡我們
+        btn1: Book an appointment vis WhatsApp.
+        btn2: ""
       usage: 
         title: How to use ocular prosthesis
         name1: Steps to wear ocular prosthesis
@@ -1849,6 +1911,9 @@ pages:
         span5: When we grow older, we have higher risk of developing age-related eye diseases, such as cataracts and age-related macular degeneration. Eye examination helps in early detection, so that eye diseases can be treated as soon as possible.
       btn1: Eye examination for adults aged 18-55
       btn2: Booking for service
+      navLists: 
+        name1: Myopia Control and Ophthalmic Services
+        name2: Causes of
     smileHk: Vision Correction
     atropine: Atropine Eye Drops
     atropine_text: 

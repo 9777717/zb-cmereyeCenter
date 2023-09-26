@@ -2176,6 +2176,24 @@ const callTel = () => {
   }
 }
 .cataract-en{
+  &>div:nth-child(2){
+    &>div:nth-child(1){
+      &>div{
+        &>div:nth-child(1){
+          font-size: 32px;
+        }
+        &>div:nth-child(2){
+          line-height: 1.2;
+          height: auto;
+          padding: 10px 20px;
+          font-size: 30px;
+        }
+      }
+    }
+    &>div:nth-child(3){
+      width: max-content;
+    }
+  }
   &>div:nth-child(3){
     &>div:nth-child(1){
       &>div:nth-child(1){
@@ -2279,6 +2297,28 @@ const callTel = () => {
         }
       }
     }
+    &>div:nth-child(3){
+      width: max-content;
+      max-width: 100%;
+    }
+  }
+  &>div:nth-child(7){
+    &>div:nth-child(1){
+      &>div:nth-child(1){
+        &>div{
+          width: max-content;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    &>div:nth-child(2){
+      &>div{
+        &>div:nth-child(1){
+          min-width: 210px;
+        }
+      }
+    }
   }
   &>div:nth-child(8){
     &>div:nth-child(1){
@@ -2341,6 +2381,7 @@ const callTel = () => {
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        text-align: center;
       }
     }
   }
@@ -3183,6 +3224,23 @@ const callTel = () => {
     }
   }
   .cataract-en{
+    &>div:nth-child(2){
+      &>div:nth-child(1){
+        &>div{
+          &>div:nth-child(2){
+            padding: 10px 30px;
+            height: auto;
+            line-height: 1.2;
+          }
+        }
+      }
+      &>div:nth-child(3){
+        height: auto;
+        line-height: 1.2;
+        text-align: center;
+        padding: 10px 30px;
+      }
+    }
     &>div:nth-child(3){
       &>div:nth-child(2){
         &>div:nth-child(2){
@@ -3209,6 +3267,19 @@ const callTel = () => {
             }
           }
         }
+        &>div:nth-child(3){
+          max-width: 100%;
+          font-size: 18px !important;
+        }
+      }
+    }
+    &>div:nth-child(5){
+      &>div:nth-child(1){
+        &>div:nth-child(1){
+          &>div{
+            line-height: 30px !important;
+          }
+        }
       }
     }
     &>div:nth-child(6){
@@ -3219,6 +3290,19 @@ const callTel = () => {
         }
         &>div:nth-child(3){
           padding: 0 30px;
+        }
+      }
+      &>div:nth-child(3){
+        max-width: 330px;
+        text-align: center;
+      }
+    }
+    &>div:nth-child(7){
+      &>div:nth-child(2){
+        &>div{
+          &>div:nth-child(1){
+            min-width: 130px;
+          }
         }
       }
     }

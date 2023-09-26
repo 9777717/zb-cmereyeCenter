@@ -387,7 +387,7 @@ const callTel = () => {
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
-          <div @click="goWhatsApp()"><span>已出現以上症狀？</span> <span>立即聯絡我們</span></div>
+          <div @click="goWhatsApp()"><span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_1')}}</span> <span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_2')}}</span></div>
         </div>
         <!-- 乾眼症成因 -->
         <div id="factor">
@@ -442,7 +442,7 @@ const callTel = () => {
             </div>
           </div>
           <div @click="goWhatsApp()">
-            <div>想知道屬於哪一種類別？</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name2')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
@@ -459,7 +459,7 @@ const callTel = () => {
             </div>
           </div>
           <div @click="callTel()">
-            <div>懷疑是高危人士? 立即預約檢查</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name3')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
@@ -513,7 +513,7 @@ const callTel = () => {
             </div>
           </div>
           <div @click="callTel()">
-            <div>我需要預約診斷</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name4')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
@@ -661,14 +661,14 @@ const callTel = () => {
             </div>
           </div>
           <div @click="callTel()">
-            <div>人工淚液沒有改善？</div>
+            <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name5_1')}}</div>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
                 height="18px">
                 <image x="0px" y="0px" width="18px" height="18px"
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAQAAAD8x0bcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8RKjrjlcJhAAAAvElEQVQoz4XSoQ9BURTH8Z/HBEWU7E16NtL7M0RdsFEEQTSbJKuaJKiKZrpoGkl8mMYmfAV3nue9y++mc/fZzjnbEcJjxZEusj3hcuOVlh2NCVNORo4KCjNRYhxtP6pcMhKld7MAzzaTWBi0tA8uXIPOZOxIDA2b/kJiY1j7F8pzNaxpR6LCw7CR+fGpkYoi4XM3bEuPAQB76lEkqlyIp//dv8guruK7ZJj/R0I0OHyYle3Q0nRYcyJgRvYJKHJ9GjIJFIwAAAAASUVORK5CYII=" />
               </svg>
-              <div>立即致電查詢其他方案</div>
+              <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name5_2')}}</div>
             </div>
           </div>
         </div>
@@ -697,8 +697,8 @@ const callTel = () => {
               <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
             </div>
             <div @click.stop="getPdf('xerophthalmia.pdf', '乾眼症')">
-              <p>乾眼症</p>
-              <p>下載小冊子</p>
+              <p>{{$t('pages.medical_service.xerophthalmia_con.dow.text1')}}</p>
+              <p>{{$t('pages.medical_service.xerophthalmia_con.dow.text2')}}</p>
             </div>
           </div>
         </div>

@@ -297,8 +297,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="strabismusAmblyopia_title_btn" @click="goWhatsApp">
-          <p>判斷斜視勿猜測</p>
-          <p>立即WhatsApp預約檢查</p>
+          <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_1')}}</p>
+          <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_2')}}</p>
         </div>
         <div class="strabismusAmblyopia_text_p_span">
           {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context4')}}
@@ -361,8 +361,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="strabismusAmblyopia_title_btn" @click="callTel">
-          <p>勿錯過治療弱視黃金期</p>
-          <p>立即致電預約見醫生</p>
+          <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_1')}}</p>
+          <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_2')}}</p>
         </div>
       </div>
       <div id="treat">
@@ -415,8 +415,8 @@ const callTel = () => {
             />
           </div>
           <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
-            <p>兒童斜弱視</p>
-            <p>下載小冊子</p>
+            <p>{{$t('pages.medical_service.strabismusAmblyopia_con.dow.text1')}}</p>
+            <p>{{$t('pages.medical_service.strabismusAmblyopia_con.dow.text2')}}</p>
           </div>
         </div>
       </div>
@@ -1150,6 +1150,7 @@ const callTel = () => {
         flex-direction: column;
         align-items: center;
         cursor: pointer;
+        text-align: center;
       }
     }
   }

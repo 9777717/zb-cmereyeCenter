@@ -966,6 +966,17 @@ pages:
         name6: 診斷
         name7: 治療
         name8: 預防方法
+      btn:
+        name1_1: 已出現以上症狀？
+        name1_2: 立即聯絡我們
+        name2: 想知道屬於哪一種類別？
+        name3: 懷疑是高危人士? 立即預約檢查
+        name4: 我需要預約診斷
+        name5_1: 人工淚液沒有改善？
+        name5_2: 立即致電查詢其他方案
+      dow:
+        text1: 乾眼症
+        text2: 下載小冊子
     muscae_volitantes: 飛蚊症
     muscaeVolitantes_con:
       muscaeInfo: 
@@ -1050,6 +1061,16 @@ pages:
         a2: 如果飛蚊症數量突然增加，並伴隨有閃光、視野缺損、視力模糊等，即可能是嚴重眼疾先兆，建議盡快求醫。
         q3: Q：點眼藥水或吃藥可以治療飛蚊症嗎？
         a3: 病理性的飛蚊症在療程中可能會使用消炎用的眼藥水，以助患者紓緩不適；但是退化性的飛蚊症與發炎無關，因此點眼藥水用處不大。
+      dow:
+        text1: 飛蚊症
+        text2: 下載小冊子
+      btn:
+        name1_1: 經常看見飛蚊
+        name1_2: WhatsApp 預約眼睛檢查
+        name2_1: 分辨良性/惡性飛蚊
+        name2_2: 致電預約檢查
+        name3_1: 致電預約
+        name3_2: 了解治療方案
     conjunctivitis: 結膜炎
     conjunctivitis_con:
       navLists:
@@ -1124,6 +1145,16 @@ pages:
         text4: 使用隱形眼鏡護理液清洗鏡片，仔細清洗鏡片的兩面，建議讓鏡片浸泡在新鮮的護理液至少6小時。
         title5: 避免接觸過敏原
         text5: 季節交替時，注意小心接觸花粉、塵蟎、動物毛屑等有機會引起結膜炎的過敏原。
+      btn:
+        name1_1: 已有結膜炎症狀？
+        name1_2: 致電立即治療
+        name2_1: 結膜炎經常復發？
+        name2_2: 預約見醫生對症下藥！
+        name3_1: 治療結膜炎，避免傳染家人！
+        name3_2: 致電預約診治
+      dow: 
+        text1: 結膜炎
+        text2: 下載小冊子
     maculopathy: 黃斑病變
     maculopathy_con:
       navLists:
@@ -1239,6 +1270,14 @@ pages:
         a3: 乾性黃斑病變，多數患者早期沒有明顯的病徵，視力下降速度相對較慢，但若病情惡化，也可能明顯影響視力。另外，乾性病變也有可能發展為濕性黃斑退化。而濕性黃斑病變不妥善處理，滲出物和血液聚集於黃斑區會破壞該處的感光細胞，可以永久破壞視野中央位置的視力。相對而言，濕性黃斑病變較乾性黃斑病變嚴重。
         q4: Q：藥物注射可以治療黃斑病變？
         a4: 將藥物注射入玻璃體是其中一個治療黃斑病變的方法。透過把藥物注於患者眼內，直接發揮作用。多個醫學報告顯示，這種方法治療糖尿病黃斑水腫療效良好，超過六成患者能獲得不錯的視功能改善。愈早發現並治療，成效就愈好，經治療後有機會回復正常視力水平。
+      btn: 
+        name1_1: 已有初步症狀？
+        name1_2: 別害怕，立即WhatsApp預約治療
+        name2_1: 致電預約治療
+        name2_2: 讓醫生為您選擇合適的治療方案
+      dow:
+        text1: 黃斑病變
+        text2: 下載小冊子
     strabismusAmblyopia: 兒童斜弱視
     strabismusAmblyopia_con:
       navLists:
@@ -1319,6 +1358,14 @@ pages:
       curativeTime:
         name: 把握治療斜弱視黃金時期
         context: 家長應定時帶小朋友檢查視力，及早發現和找出成因。愈早發現和開始治療效果愈好，而治療成效亦需要家長和小朋友配合，才可以有效提升小朋友視力。
+      btn:
+        name1_1: 判斷斜視勿猜測
+        name1_2: 立即WhatsApp預約檢查
+        name2_1: 勿錯過治療弱視黃金期
+        name2_2: 立即致電預約見醫生
+      dow:
+        text1: 兒童斜弱視
+        text2: 下載小冊子
     amotioRetinae: 視網膜脫落及疾病
     amotioRetinae_con: 
       title: 視網膜脫落
@@ -1395,6 +1442,14 @@ pages:
         name5: 糖尿上眼
         name6: 預防方法
         name7: 常見問題
+      btn:
+        name1_1: 懷疑視網膜脫落？
+        name1_2: 立即致電求醫！
+        name2_1: 視網膜脫落需要哪一種治療？
+        name2_2: 立即WhatsApp了解更多
+      dow:
+        text1: 視網膜脫落
+        text2: 下載小冊子
     ocularSurfaceDiseases: 眼表及角膜疾病
     ocularSurfaceDiseases_con: 
       pterygium: 
@@ -1635,6 +1690,13 @@ pages:
         name6: 角膜皮上破損
         name7: 錐形角膜
         name8: 角膜移植
+      btn:
+        name1_1: 難自行分辨是否有翼狀胬肉？
+        name1_2: WhatsApp預約醫生檢查
+        name2_1: 眼挑針已好幾日尚未康復？
+        name2_2: WhatsApp預約對症下藥治療
+        name3_1: 已有角膜炎症狀？
+        name3_2: 立即致電預約檢查
     eyeOrthopaedicDisease: 眼矯形及眼眶疾病
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
@@ -1880,6 +1942,9 @@ pages:
         span5: 隨著年齡增長，患上與年齡相關眼疾的機會也會增加，如白內障、老年黃斑病變等，透過眼底檢查能及早發現眼疾，需要時能及早治療。
       btn1: 18 - 55歲以上 成人眼睛檢查
       btn2: 立即預約
+      navLists: 
+        name1: 醫學驗光配鏡
+        name2: 原因
     smileHk: 屈光矯視
     atropine: 阿托品眼藥水
     atropine_text: 

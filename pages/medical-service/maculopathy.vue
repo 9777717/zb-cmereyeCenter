@@ -313,8 +313,8 @@ const callTel = () => {
             </div>
           </div>
           <div class="maculopathy_button_bg_color" @click="goWhatsApp()">
-            <p>已有初步症狀？</p>
-            <p>別害怕，立即WhatsApp預約治療</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.btn.name1_1')}}</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.btn.name1_2')}}</p>
           </div>
         </div>
       </div>
@@ -492,8 +492,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="maculopathy_button_bg_color" @click="callTel()">
-          <p>致電預約治療</p>
-          <p>讓醫生為您選擇合適的治療方案</p>
+          <p>{{$t('pages.medical_service.maculopathy_con.btn.name2_1')}}</p>
+          <p>{{$t('pages.medical_service.maculopathy_con.btn.name2_2')}}</p>
         </div>
       </div>
       <!-- 預防黃斑病變 -->
@@ -522,7 +522,7 @@ const callTel = () => {
       <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
-    <div class="dow">
+    <div class="dow" :class="{'dow-en': locale === 'en'}">
       <div>
         <div>
           <div @click.stop="getPdf('maculopathy.pdf','黃斑病變')">
@@ -533,8 +533,8 @@ const callTel = () => {
             />
           </div>
           <div @click.stop="getPdf('maculopathy.pdf','黃斑病變')">
-            <p>黃斑病變</p>
-            <p>下載小冊子</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.dow.text1')}}</p>
+            <p>{{$t('pages.medical_service.maculopathy_con.dow.text2')}}</p>
           </div>
         </div>
       </div>
@@ -2036,6 +2036,7 @@ const callTel = () => {
   .maculopathy_button_bg_color{
     margin-top: 55px;
     width: max-content;
+    max-width: 100%;
     height: 70px;
     font-size: 16px;
     line-height: 1.6;
@@ -2059,6 +2060,15 @@ const callTel = () => {
           &>img{
             width: 55px;
             height: auto;
+          }
+        }
+      }
+    }
+    &.dow-en{
+      & > div:nth-child(1) {
+        & > div {
+          & > div:nth-child(2) {
+            text-align: center;
           }
         }
       }

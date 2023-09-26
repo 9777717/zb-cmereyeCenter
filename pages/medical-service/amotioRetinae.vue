@@ -222,7 +222,7 @@ const preventList1 = [
           <img src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png" />
         </div>
         <div class="amotioRetinae_title_btn" @click="callTel">
-          <span>懷疑視網膜脫落？</span><span>立即致電求醫！</span>
+          <span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_1')}}</span><span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_2')}}</span>
         </div>
       </div>
       <div id="factor">
@@ -279,8 +279,8 @@ const preventList1 = [
           </div>
         </div>
         <div class="amotioRetinae_title_btn" @click="goWhatsApp">
-          <p>視網膜脫落需要哪一種治療？</p>
-          <p>立即WhatsApp了解更多</p>
+          <p>{{$t('pages.medical_service.amotioRetinae_con.btn.name2_1')}}</p>
+          <p>{{$t('pages.medical_service.amotioRetinae_con.btn.name2_2')}}</p>
         </div>
       </div>
       <div id="diabetes">
@@ -335,15 +335,15 @@ const preventList1 = [
       <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
-    <div class="dow">
+    <div class="dow" :class="{'dow-en': locale === 'en'}">
       <div>
         <div>
           <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
             <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
           <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
-            <p>視網膜脫落</p>
-            <p>下載小冊子</p>
+            <p>{{$t('pages.medical_service.amotioRetinae_con.dow.text1')}}</p>
+            <p>{{$t('pages.medical_service.amotioRetinae_con.dow.text2')}}</p>
           </div>
         </div>
       </div>
@@ -1609,6 +1609,15 @@ const preventList1 = [
         }
       }
     }
+    &.dow-en{
+      &>div:nth-child(1) {
+        &>div{
+          &>div:nth-child(2) {
+            text-align: center;
+          }
+        }
+      }
+    }
   }
 }
 </style>
@@ -1634,6 +1643,7 @@ const preventList1 = [
         }
       }
     }
+    
   }
 }
 </style>

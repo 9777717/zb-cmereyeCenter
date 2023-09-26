@@ -251,7 +251,7 @@ const callTel = () => {
           </div>
         </div>
         <div class="button_bg_text_color" @click="goWhatsApp()">
-          經常看見飛蚊<br />WhatsApp 預約眼睛檢查
+          {{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_1')}}<br />{{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_2')}}
         </div>
       </div>
       <!-- 飛蚊症成因 -->
@@ -329,8 +329,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="button_bg_text_color" @click="callTel()">
-          分辨良性/惡性飛蚊<br />
-          致電預約檢查
+          {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_1')}}<br />
+          {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')}}
         </div>
       </div>
       <!-- 飛蚊症高危人士 -->
@@ -468,7 +468,7 @@ const callTel = () => {
             </div>
           </div>
           <div class="button_bg_text_color" @click="callTel()">
-            致電預約{{'\n'}}了解治療方案
+            {{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_1')}}{{'\n'}}{{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_2')}}
           </div>
         </div>
       </div>
@@ -518,8 +518,8 @@ const callTel = () => {
             />
           </div>
           <div @click.stop="getPdf('muscaeVolitantes.pdf','飛蚊症')">
-            <p>飛蚊症</p>
-            <p>下載小冊子</p>
+            <p>{{$t('pages.medical_service.muscaeVolitantes_con.dow.text1')}}</p>
+            <p>{{$t('pages.medical_service.muscaeVolitantes_con.dow.text2')}}</p>
           </div>
         </div>
       </div>
@@ -2054,6 +2054,11 @@ const callTel = () => {
       }
     }
     &.muscaeNav-en{
+      & > div:nth-child(2) {
+        & > div:nth-child(3) {
+         padding: 0 10px;
+        }
+      }
       & > div:nth-child(4) {
         & > div:nth-child(2) {
           & > div:nth-child(2) {
@@ -2065,6 +2070,9 @@ const callTel = () => {
               }
             }
           }
+        }
+        & > div:nth-child(4) {
+          padding: 0 20px;
         }
       }
       & > div:nth-child(6) {
@@ -2107,6 +2115,9 @@ const callTel = () => {
                 text-align: left;
               }
             }
+          }
+          & > div:nth-child(5) {
+            padding: 0 30px;
           }
         }
       }

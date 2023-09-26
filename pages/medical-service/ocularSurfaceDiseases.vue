@@ -339,8 +339,8 @@ const keratoplastyList1 = [
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>難自行分辨是否有翼狀胬肉？</span
-            ><span>WhatsApp預約醫生檢查</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1')}}</span
+            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')}}</span>
           </div>
         </div>
         <div>
@@ -415,8 +415,8 @@ const keratoplastyList1 = [
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>眼挑針已好幾日尚未康復？</span
-            ><span>WhatsApp預約對症下藥治療</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1')}}</span
+            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')}}</span>
           </div>
         </div>
         <div>
@@ -472,7 +472,7 @@ const keratoplastyList1 = [
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>已有角膜炎症狀？</span><span>立即致電預約檢查</span>
+            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')}}</span>
           </div>
         </div>
         <div>
@@ -2469,6 +2469,9 @@ const keratoplastyList1 = [
             line-height: 1.6;
           }
         }
+        &>div:nth-child(3){
+          text-align: center;
+        }
       }
       &>div:nth-child(4){
         &>div:nth-child(2){
@@ -2714,7 +2717,7 @@ const keratoplastyList1 = [
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   cursor: pointer;
   margin: auto;
   width: 580px;
@@ -3866,6 +3869,11 @@ const keratoplastyList1 = [
     }
     &.ocularSurfaceDiseasesNav-en{
       & > #pterygium {
+        & > div:nth-child(3){
+          & > div:nth-child(3){
+            max-width: 100%;
+          }
+        }
         & > div:nth-child(4){
           & > div:nth-child(2){
             &>div:nth-child(1){
@@ -3896,9 +3904,11 @@ const keratoplastyList1 = [
                 &>span:nth-child(1){
                   min-width: 22px;
                 }
-                
               }
             }
+          }
+          &>div:last-child{
+            max-width: 100%;
           }
         }
       }
@@ -4079,6 +4089,7 @@ const keratoplastyList1 = [
     line-height: 1.6;
     padding: 5px 40px;
     border-radius: 10px;
+    max-width: 100%;
   }
 }
 </style>

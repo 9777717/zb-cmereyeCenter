@@ -256,8 +256,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="conjun_button_bg_color" @click="callTel()">
-          <p>已有結膜炎症狀？</p>
-          <p>致電立即治療</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name1_1')}}</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name1_2')}}</p>
         </div>
       </div>
       <!-- 結膜炎種類 -->
@@ -285,8 +285,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="conjun_button_bg_color" @click="goWhatsApp()">
-          <p>結膜炎經常復發？</p>
-          <p>預約見醫生對症下藥！</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name2_1')}}</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name2_2')}}</p>
         </div>
       </div>
       <!-- 傳播途徑 -->
@@ -324,8 +324,8 @@ const callTel = () => {
           </div>
         </div>
         <div class="conjun_button_bg_color" @click="callTel()">
-          <p>治療結膜炎，避免傳染家人！</p>
-          <p>致電預約診治</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name3_1')}}</p>
+          <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name3_2')}}</p>
         </div>
       </div>
       <!-- 高危人士 -->
@@ -392,8 +392,8 @@ const callTel = () => {
             />
           </div>
           <div @click.stop="getPdf('conjunctivitis.pdf','結膜炎')">
-            <p>結膜炎</p>
-            <p>下載小冊子</p>
+            <p>{{$t('pages.medical_service.conjunctivitis_con.dow.text1')}}</p>
+            <p>{{$t('pages.medical_service.conjunctivitis_con.dow.text2')}}</p>
           </div>
         </div>
       </div>
@@ -1475,6 +1475,9 @@ const callTel = () => {
             }
           }
         }
+        & > div:nth-child(3) {
+          padding: 0 30px;
+        }
       }
       & > div:nth-child(3) {
         & > div:nth-child(2) {
@@ -1486,6 +1489,9 @@ const callTel = () => {
               }
             }
           }
+        }
+        & > div:nth-child(3) {
+          padding: 0 30px;
         }
       }
       & > div:nth-child(5) {

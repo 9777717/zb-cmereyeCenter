@@ -39,11 +39,11 @@ const backgd = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: '醫學驗光配鏡',
+    anchorName: 'pages.medical_service.medicalOptometry_con.navLists.name1',
     anchorLink: '/medical-service/medicalOptometry#brief_introduction',
   },
   {
-    anchorName: '原因',
+    anchorName: 'pages.medical_service.medicalOptometry_con.navLists.name2',
     anchorLink: '/medical-service/medicalOptometry#cause',
   },
 ]

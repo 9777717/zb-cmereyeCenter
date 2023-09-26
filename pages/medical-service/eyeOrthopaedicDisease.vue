@@ -2750,11 +2750,13 @@ const goWhatsApp = () => {
 
   .eyeOrthopaedicDisease_title_btn {
     cursor: pointer;
-    width: fit-content;
+    width: max-content;
+    max-width: 100%;
     height: auto;
     font-size: 20px;
     line-height: 1.6;
     padding: 16px 30px;
+    text-align: center;
   }
 
   .eyeOrthopaedicDisease_title_text {
@@ -4130,7 +4132,7 @@ const goWhatsApp = () => {
           background: #fff;
           width: 100%;
           min-height: auto;
-          margin-left: 35px;
+          margin-left: 30px;
           display: flex;
           flex-direction: column;
 
@@ -4454,6 +4456,11 @@ const goWhatsApp = () => {
                 &>div:nth-child(1){
                   padding: 0 10px;
                   top: -25px;
+                }
+                &>div:nth-child(2){
+                  &>div:nth-child(1){
+                    margin-right: 0;
+                  }
                 }
               }
             }
