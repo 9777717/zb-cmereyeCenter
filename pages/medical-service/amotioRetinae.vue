@@ -226,7 +226,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="factor">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.factor.name')}}
         </div>
         <div>
@@ -239,7 +239,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="styptom">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.styptom.name')}}
         </div>
         <div class="amotioRetinae_text_p_span">
@@ -262,7 +262,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="treat">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.treat.name')}}
         </div>
         <div>
@@ -284,7 +284,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="diabetes">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.diabetes.name')}}
         </div>
         <div>
@@ -302,7 +302,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="prevent">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.prevent.name')}}
         </div>
         <div>{{$t('pages.medical_service.amotioRetinae_con.prevent.context')}}</div>
@@ -323,7 +323,7 @@ const preventList1 = [
         </div>
       </div>
       <div id="faq">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text">
+        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
           {{$t('pages.medical_service.amotioRetinae_con.faq.name')}}
         </div>
         <div>
@@ -803,6 +803,8 @@ const preventList1 = [
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .amotioRetinae_title_btn {
@@ -1558,6 +1560,9 @@ const preventList1 = [
     display: flex;
     justify-content: center;
     align-items: center;
+    &.amotioRetinae_title_text_bg-en{
+      font-size: 16px;
+    }
   }
 
   .amotioRetinae_title_btn {

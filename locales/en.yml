@@ -624,8 +624,8 @@ pages:
     glaucoma: Glaucoma
     service_glaucoma_title:
       service_glaucoma_title1: What is Glaucoma?
-      service_glaucoma_title2: Causes
-      service_glaucoma_title3: Symptoms
+      service_glaucoma_title2: Causes of Glaucoma
+      service_glaucoma_title3: Symptoms of Glaucoma
       service_glaucoma_title4: The Different Stages of Glaucoma
       service_glaucoma_title5: Chronic Glaucoma
       service_glaucoma_title6: Acute Glaucoma
@@ -633,10 +633,10 @@ pages:
       service_glaucoma_title8: Symptoms of Congenital Glaucoma
       service_glaucoma_title9: Primary Glaucoma
       service_glaucoma_title10: Secondary Glaucoma
-      service_glaucoma_title11: Pisk Factors
-      service_glaucoma_title12: Diagnosis
-      service_glaucoma_title13: Treatment
-      service_glaucoma_title14: Prevention
+      service_glaucoma_title11: Pisk Factors for Glaucoma
+      service_glaucoma_title12: Diagnostic Methods for Glaucoma
+      service_glaucoma_title13: Treatment for Glaucoma
+      service_glaucoma_title14: Prevention of Glaucoma
       service_glaucoma_title15: Glaucoma Misunderstandings
       service_glaucoma_title16: Types of Secondary Glaucoma
       service_glaucoma_title17: Types of Glaucoma
@@ -778,7 +778,7 @@ pages:
         name: What is dry eye？
         text: "The tear layer on the surface of the eye (tear film) is very important for maintaining health and comfort of the eye, as well as good vision. Tear film is made up of three layers: the lipid layer on the outside, the aqueous layer in the middle, and the inner, mucin layer. If one of the layers does not function properly, changes in the quality or secretion of tears, and lack of eye moisturization may result, and dry eye is caused."
       xerophthalmiaType:
-        name: Symptoms
+        name: Symptoms of Dry Eyes
         text1: Eye dryness
         text2: Tiredness, eyelid tightness
         text3: Scratchy sensation in eyes, grittiness
@@ -788,7 +788,7 @@ pages:
         text7: Sensitivity to wind or light, allergy
         text8: In serious cases, patients will experience corneal abrasion and stringy mucus etc.
       factor:
-        name: Causes
+        name: Causes of Dry Eyes
         context: "Tear film is on the surface of the eye, covering the cornea and conjunctiva to keep the surface of eyes lubricated, smooth and clear, has three layers (from outside to inside):"
         title1: Lipid layer
         text1: It is in the outermost of tear film, is secreted by the Meibomian glands of the eyelid. The main function is to increase the surface tension of the tear film, avoid the evaporation of the aqueous layer, and moisturize the eyelids and the surface of the eyeball.
@@ -815,7 +815,7 @@ pages:
             text2: Always stay in the dry environment
             text3: Low blink rate (Watching TV, computer, or smartphone for a long time)
       category: 
-        name: Types of dry eyes
+        name: Types of Dry Eyes
         btnText: 想知道屬於哪一種類別？
         title1: Aqueous-deficient dry eye
         text1: "If the lacrimal gland is damaged, degraded, or abnormal, the secretion of tear will decrease. Aqueous-deficient dry eye may be caused by: the lacrimal glands degenerate with increasing age; women who experience menopause; or autoimmune diseases."
@@ -824,7 +824,7 @@ pages:
         title3: Mixed (Aqueous-deficient & Evaporative dry eye)
         text3: Clinically, most patients have mixed dry eye syndrome, including insufficient tear secretion and increased tear evaporation rates.
       highRisk:
-        name: Risk factors
+        name: Risk factors for Dry Eyes
         btnText: 懷疑是高危人士? 立即預約檢查
         text1: People who wear contact lenses for a long time
         text2: People who stare at screens for a long time without enough blinking
@@ -881,7 +881,7 @@ pages:
           - title: "Slit-lamp exam"
             text: To test the stability of tear film, the ophthalmologist will use a slit lamp and a yellow dye drop called fluorescein. Put the fluorescein on the surface of a person's eyes to observe the break-up time of tear film. If the tear film breaks up within 5 seconds, it is likely dry eyes.
       means: 
-        name: Treatments
+        name: Treatments for Dry Eyes
         context: The treatments of dry eyes are to relieve the symptoms of dry eyes, increasing tears on the surface of eyeballs, increasing tear secretion and reducing tear evaporation. Dry eye is a chronic disease syndrome which requires long-term treatment. Patients’ living habits are also important for relieving the symptoms.
         name1: Types of Treatments
         name1_1: Avoid Triggers
@@ -917,7 +917,7 @@ pages:
         name7_5: Activating meibomian gland function
         text7: Dry eye syndrome is a chronic condition that may require 3 to 4 treatment sessions to see results. Before, during, and after the treatment, patients should follow the care instructions provided by the ophthalmologist
       prevent:
-        name: Prevention
+        name: Prevention of Dry Eyes
         title1:  Avoid air blowing in your eyes
         text1: Don't direct fans, heaters, air conditioners toward your eyes.
         title2: Take eye breaks during long tasks
@@ -1056,7 +1056,7 @@ pages:
         name: What is conjunctivitis?
         context: Conjunctivitis known as "pink eye", is an inflammation or infection of the semi-transparent membrane (conjunctiva) that lines your eyelid and covers the white part of your eyeball. The semi-transparent layer will turn to pink or red when there is conjunctivitis. This condition is commonly caused by viruses or bacteria. Allergic reactions can also cause conjunctivitis. Anyone can get conjunctivitis, especially children.
       symptom: 
-        name: Symptoms
+        name: Symptoms of Conjunctivitis
         text1: Redness in the conjunctiva
         text2: Red and droopy eyelids
         text3: Itchy and painful eyes
@@ -1064,7 +1064,7 @@ pages:
         text5: Tearing and sensitive to light
         text6: Thick discharge
       kind:
-        name: Types
+        name: Types of Conjunctivitis
         title1: Viral conjunctivitis
         text1: It is usually related to upper respiratory tract infection and caused by viruses. The main pathogens are adenovirus and enterovirus. This type of conjunctivitis is highly contagious, but the infected eye(s) usually recovers without treatment within a few days.
         title2: Bacterial conjunctivitis
@@ -1088,7 +1088,7 @@ pages:
         text3: If swimmers swim in a contaminated pool, they could also be infected.
         context1: The incubation period is usually 1-12 days after exposure for bacterial conjunctivitis. It takes about 10 days to several weeks from the onset of symptoms until recovery.
       highRisk:
-        name: Risk Factors
+        name: Risk Factors for Conjunctivitis
         context: Conjunctivitis can occur at all ages, but those below are most frequently affected.
         text1: Children under 5
         text2: People who have sensitive eyes and noses
@@ -1097,7 +1097,7 @@ pages:
         text5: People who wear contact lenses for a long time
         text6: People who stare at screens forS a long time
       means:
-        name: Treatment
+        name: Treatment for Conjunctivitis
         title1: Viral conjunctivitis
         text1: Normally, viral conjunctivitis heals within 1 week without treatment. Patients can take more rest and apply cold wet towels on the eyes (several times a day, with eye closed) to relieve the symptoms of discomfort.
         title2: Bacterial conjunctivitis
@@ -1105,7 +1105,7 @@ pages:
         title3: Allergic conjunctivitis
         text3: If the conjunctivitis is caused by the allergens, avoiding contact with allergens can reduce symptoms or prevent relapse. Contact lenses should be stopped if they cause conjunctivitis. Clinically, the symptoms of allergic conjunctivitis can also be relieved by medications.
       prevent:
-        name: Prevention
+        name: Prevention of Conjunctivitis
         title1: Avoid sharing personal items
         text1: Don’t share personal items like towels, pillows, eye droppers, eye cosmetics, contact lenses, or other items that may touch your eyes.
         title2: Perform hand hygiene
@@ -1172,7 +1172,7 @@ pages:
         title4: "Graphic 4: Distortion of vision with central dark spot"
         title5: "Graphic 5: Blurred central vision"
       types: 
-        name: Types
+        name: Types of Macular Degeneration
         name1: Macular Degeneration
         p1: Age-related Macular Degeneration
         p2: ""
@@ -1213,7 +1213,7 @@ pages:
         title4: Intravitreal Anti-VEGF Injection
         text4: In recent years, intravitreal Anti-VEGF injection becomes the mainstream treatment of wet AMD. Studies have shown that these injections can effectively prevent further vision loss and can even promote visual function improvement. Two most common drugs are Bevacizumab (Avastin®) and Ranibizumab (Lucentis®) which have proven to have similar therapeutic effect. Lucentis® is approved by FDA, Avastin® is used as off-label drugs. This treatment may need to be repeated monthly for long term desired effect. Aflibercept (Eylea®) is a newer drug which has proven to be equally effective with longer intervals between injections for wet AMD. The three anti-VEGF agents are reported to have similar treatment effect for wet AMD. In clinical practice, some patients may show tolerance to one of them, but show good efficacy if using another one.
       prevent:
-        name: Prevention
+        name: Prevention of Macular Degeneration
         title1: Avoid smoking
         text1: 'Smoking increases the chance of developing macular degeneration by 3-4 times.'
         title2: |
@@ -1372,7 +1372,7 @@ pages:
         span3: There might be permanent damage to vision and irreversible consequences if retinal detachment is not treated timely.
         span4: ""
       treat:
-        name: Treatments
+        name: Treatments for Retinal Detachment
         title1: Pneumatic retinopexy
         text1: An expanding gas bubble is injected into the eye, your doctor will position you so that the bubble floats over the detached area and pushes it against the back of your eye. Additional cryosurgery or laser therapy to seal the retina against the wall of the eye may also be needed.
         title2: Scleral buckle
@@ -1384,7 +1384,7 @@ pages:
         p1: Diabetic retinopathy is a complication of diabetes, caused by high blood sugar levels damaging the retina (high blood sugar damages the endothelial cells of blood vessels). It can cause blindness if left undiagnosed and untreated. Although it usually takes several years for diabetic retinopathy to reach a stage where it could threaten the eyesight, regular eye check is necessary for diabetic patients due to lack of symptom(s) in the early stage. Basically, all type 1 diabetes patients are affected by retinopathy in about 15 to 20 years after the onset of the disease. About 2-30% of type 1 diabetes patients are under the risk of vision loss while more than 60% of patients with type 2 diabetes have retinopathy in their disease course.
         p2: The retina is the light-sensitive layer that converts light into electrical signals. The signals are sent to the brain which turns them into the images we see. The retina needs a constant supply of blood, which it receives through a network of tiny blood vessels. Over time, a persistently high blood sugar level can damage these blood vessels and retina, this damage can be permanent if not treated timely. Diabetic retinopathy includes blot hemorrhages, microaneurysms, hard exudates, diabetic macular edema, abnormal blood vessel growth in retina, retinal detachment, or secondary glaucoma. Permanent visual damage or even blindness can happen in severe cases.
       prevent:
-        name: Prevention
+        name: Prevention of Retinal Detachment
         context: "Literally, one can’t prevent retinal detachment, but one can take steps to lower the risks:"
         title1: Regular Eye Check
         text1: If you have nearsightedness (myopia, especially high myopia), eye exams are important. Myopia makes you more prone to retinal detachment. Your eye care provider should include dilated exams to find small retinal tears.
