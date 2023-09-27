@@ -5,7 +5,7 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead(() => ({
-  title: '香港希瑪眼科中心',
+  title: t('pages.index.title'),
   meta: [
     {
       name: 'description',

@@ -95,6 +95,8 @@ pages:
       nav: home
       title: home
   index:
+    title: 'CMER Eye Center'
+    index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
     home: Home
     footer:
       company: Copyright © 2023 C-MER Eye Center
@@ -255,7 +257,7 @@ pages:
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team
-    medical_team_header_title: 醫療團隊｜眼科專科醫生 | 香港希瑪眼科中心
+    medical_team_header_title: Medical Team | CMER Eye Center
     doctorList:
       doctor_1:
         doctor_1_name: Dr. LAM Shun Chiu, Dennis
@@ -475,6 +477,7 @@ pages:
     medical_service: Medical Services
     medical_service_title: Medical Services
     cataract: Cataract
+    medical_service_cataract_head: "Cataract｜CMER｜Medical Services"
     service_cataract_title:
       service_cataract_title1: Cataract
       service_cataract_title_son1: Cataracts affect daily life?
@@ -622,6 +625,7 @@ pages:
         cataract_array_Navigation5: Postoperative Care Instructions
         cataract_array_Navigation6: FAQ
     glaucoma: Glaucoma
+    medical_service_glaucoma_head: Glaucoma｜CMER｜Medical Services
     service_glaucoma_title:
       service_glaucoma_title1: What is Glaucoma?
       service_glaucoma_title2: Causes of Glaucoma
@@ -773,6 +777,7 @@ pages:
       service_glaucoma_down: Glaucoma
       service_glaucoma_down_text: Download leaflet
     xerophthalmia: Dry Eyes
+    xerophthalmia_head: 'Dry Eyes｜CMER｜Medical Services'
     xerophthalmia_con: 
       xerophthalmiaInfo: 
         name: What is dry eye？
@@ -951,6 +956,7 @@ pages:
         text1: Dry Eyes
         text2: Download leaflet
     muscae_volitantes: Eye Floaters
+    muscae_volitantes_head: 'Eye Floaters｜CMER｜Medical Services'
     muscaeVolitantes_con:
       muscaeInfo: 
         name: What are eye floaters?
@@ -1043,6 +1049,7 @@ pages:
         name3_1: Call now to book appointment!
         name3_2: ''
     conjunctivitis: Conjunctivitis
+    conjunctivitis_head: 'Conjunctivitis｜CMER｜Medical Services'
     conjunctivitis_con:
       navLists:
         name1: Conjunctivitis
@@ -1127,6 +1134,7 @@ pages:
         text1: conjunctivitis
         text2: Download leaflet
     maculopathy: Macular Degeneration
+    maculopathy_head: 'Macular Degeneration｜CMER｜Medical Services'
     maculopathy_con:
       navLists:
         name1: Macular Degeneration
@@ -1249,6 +1257,7 @@ pages:
         text1: Macular Degeneration
         text2: Download leaflet
     strabismusAmblyopia: Amblyopia and Strabismus in Children
+    strabismusAmblyopia_con_head: 'Amblyopia and Strabismus in Children｜CMER｜Medical Services'
     strabismusAmblyopia_con:
       navLists:
         name1: Strabismus
@@ -1337,6 +1346,7 @@ pages:
         text1: Amblyopia and Strabismus in Children
         text2: Download leaflet
     amotioRetinae: Retinal Detachment
+    amotioRetinae_head: 'Retinal Detachment｜CMER｜Medical Services'
     amotioRetinae_con: 
       title: retinal detachment
       intro: 
@@ -1421,6 +1431,7 @@ pages:
         text1: Retinal Detachment
         text2: Download leaflet
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
+    ocularSurfaceDiseases_head: 'Ocular Surface and Corneal Diseases｜CMER｜Medical Services'
     ocularSurfaceDiseases_con: 
       pterygium: 
         title: Pterygium
@@ -1668,6 +1679,7 @@ pages:
         name3_1: Call now to book appointment!
         name3_2: ''
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
+    eyeOrthopaedicDisease_head: 'Eye Plastic Surgery and Orbital Diseases｜CMER｜Medical Services'
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
         title: Eye plastic surgery
@@ -1880,6 +1892,7 @@ pages:
         name13: Intraocular cancer
         name14: Prosthetic eye surgery
     medicalOptometry: Myopia Control and Ophthalmic Services
+    medicalOptometry_head: 'Myopia Control and Ophthalmic Services｜CMER｜Medical Services'
     medicalOptometry_con: 
       introduction:
         p1: Changing lifestyle, people nowadays are spending more time on screens every day. However, bad eye health will lead to degeneration and cause many eye problems or even eye diseases. It is believed that prevention is better than cure. Regular eye exams should be scheduled for good eye health and to prevent eye diseases.
@@ -1916,6 +1929,7 @@ pages:
         name2: Causes
     smileHk: Vision Correction
     atropine: Atropine Eye Drops
+    atropine_head: 'Atropine Eye Drops｜CMER｜Medical Services'
     atropine_text: 
       introduce: 
         span1: Low concentration
@@ -2161,3 +2175,5 @@ others:
   copy: 复制
   enabled: 启用
   disabled: 禁用
+app:
+  title: CMER

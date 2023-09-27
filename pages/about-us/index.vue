@@ -4,8 +4,9 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '中心簡介 | 關於我們｜希瑪眼科中心',
+  title: `${t('pages.about_us.center_profile')} | ${t('pages.about_us.about_us')}｜${t('pages.index.title')}`,
   meta: [
     {
       name: 'description',

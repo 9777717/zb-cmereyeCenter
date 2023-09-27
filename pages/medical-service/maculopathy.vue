@@ -6,9 +6,9 @@ definePageMeta({
 })
 
 const locale = useState<string>('locale.setting')
-
+const { t } = useLang()
 useHead(() => ({
-  title: '黃斑病變｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.maculopathy_head'),
   meta: [
     {
       name: 'description',

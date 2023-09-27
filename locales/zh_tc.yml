@@ -95,6 +95,7 @@ pages:
       nav: 主页
       title: 主页
   index:
+    title: '香港希瑪眼科中心'
     index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
     home: 首頁
     footer:
@@ -789,6 +790,7 @@ pages:
       service_glaucoma_down: 青光眼
       service_glaucoma_down_text: 下載小冊子
     xerophthalmia: 乾眼症
+    xerophthalmia_head: '乾眼症｜希瑪眼科｜醫療服務'
     xerophthalmia_con: 
       xerophthalmiaInfo: 
         name: 什麼是乾眼症 ？
@@ -978,6 +980,7 @@ pages:
         text1: 乾眼症
         text2: 下載小冊子
     muscae_volitantes: 飛蚊症
+    muscae_volitantes_head: '飛蚊症｜希瑪眼科｜醫療服務'
     muscaeVolitantes_con:
       muscaeInfo: 
         name: 什麼是飛蚊症？
@@ -1072,6 +1075,7 @@ pages:
         name3_1: 致電預約
         name3_2: 了解治療方案
     conjunctivitis: 結膜炎
+    conjunctivitis_head: '結膜炎｜希瑪眼科｜醫療服務'
     conjunctivitis_con:
       navLists:
         name1: 結膜炎
@@ -1156,6 +1160,7 @@ pages:
         text1: 結膜炎
         text2: 下載小冊子
     maculopathy: 黃斑病變
+    maculopathy_head: '黃斑病變｜希瑪眼科｜醫療服務'
     maculopathy_con:
       navLists:
         name1: 黃斑病變
@@ -1279,6 +1284,7 @@ pages:
         text1: 黃斑病變
         text2: 下載小冊子
     strabismusAmblyopia: 兒童斜弱視
+    strabismusAmblyopia_con_head: '兒童斜弱視｜希瑪眼科｜醫療服務'
     strabismusAmblyopia_con:
       navLists:
         name1: 斜視
@@ -1367,6 +1373,7 @@ pages:
         text1: 兒童斜弱視
         text2: 下載小冊子
     amotioRetinae: 視網膜脫落及疾病
+    amotioRetinae_head: '視網膜脫落｜希瑪眼科｜醫療服務'
     amotioRetinae_con: 
       title: 視網膜脫落
       intro: 
@@ -1451,6 +1458,7 @@ pages:
         text1: 視網膜脫落
         text2: 下載小冊子
     ocularSurfaceDiseases: 眼表及角膜疾病
+    ocularSurfaceDiseases_head: '眼表及角膜疾病｜希瑪眼科｜醫療服務'
     ocularSurfaceDiseases_con: 
       pterygium: 
         title: 翼狀胬肉
@@ -1698,6 +1706,7 @@ pages:
         name3_1: 已有角膜炎症狀？
         name3_2: 立即致電預約檢查
     eyeOrthopaedicDisease: 眼矯形及眼眶疾病
+    eyeOrthopaedicDisease_head: '眼矯形及眼眶疾病｜希瑪眼科｜醫療服務'
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
         title: 眼整形
@@ -1911,6 +1920,7 @@ pages:
         name13: 眼內癌變
         name14: 義眼術
     medicalOptometry: 醫學驗光配鏡
+    medicalOptometry_head: '醫學驗光配鏡｜希瑪眼科｜醫療服務'
     medicalOptometry_con: 
       introduction:
         p1: 現代人生活模式改變，每天花大量時間看電子螢幕，雙眼休息不足，容易加速眼睛老化，還造成各種視力甚至眼疾問題。我們相信預防勝於治療。為了預防眼疾，無論任何年齡，都需要定期進行眼睛健康檢查，保持良好視力和擁有健康眼睛。
@@ -1947,6 +1957,7 @@ pages:
         name2: 原因
     smileHk: 屈光矯視
     atropine: 阿托品眼藥水
+    atropine_head: '阿托品滴眼液｜希瑪眼科｜醫療服務'
     atropine_text: 
       introduce: 
         span1: 低濃度
@@ -2340,3 +2351,5 @@ others:
   copy: 复制
   enabled: 启用
   disabled: 禁用
+app:
+  title: 希瑪眼科

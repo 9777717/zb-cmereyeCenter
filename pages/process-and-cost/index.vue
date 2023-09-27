@@ -6,7 +6,7 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead({
-  title: `${t('pages.process_cost.cost')}| ${t('pages.process_cost.process')}`,
+  title: `${t('pages.process_cost.cost')} | ${t('pages.process_cost.process')}`,
   meta: [
     {
       name: 'description',

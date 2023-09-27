@@ -5,14 +5,14 @@ onMounted(() => {
   // const ophthalmoplastyList = ref(null)
   // console.log(ophthalmoplastyList.value, '456')
 })
-
+const { t } = useLang()
 const locale = useState<string>('locale.setting')
 // compiler macro
 definePageMeta({
   layout: 'page',
 })
 useHead(() => ({
-  title: '眼矯形及眼眶疾病｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.eyeOrthopaedicDisease_head'),
   meta: [
     {
       name: 'description',

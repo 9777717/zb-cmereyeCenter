@@ -3,8 +3,9 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '醫學驗光配鏡｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.medicalOptometry_head'),
   meta: [
     {
       name: 'description',

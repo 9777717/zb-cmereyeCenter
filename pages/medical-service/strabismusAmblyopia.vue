@@ -4,8 +4,10 @@ import { getPdf } from '@/assets/js/common'
 definePageMeta({
   layout: 'page',
 })
+
+const { t } = useLang()
 useHead(() => ({
-  title: '兒童斜弱視｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.strabismusAmblyopia_con_head'),
   meta: [
     {
       name: 'description',

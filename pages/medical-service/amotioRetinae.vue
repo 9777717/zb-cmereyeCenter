@@ -4,8 +4,9 @@ import { getPdf } from '@/assets/js/common'
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '視網膜脫落｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.amotioRetinae_head'),
   meta: [
     {
       name: 'description',

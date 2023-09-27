@@ -6,9 +6,10 @@ AppSetup()
 const theme = useState<ITheme>('theme.current')
 const locale = useState<string>('locale.setting')
 const app = useAppConfig() as AppConfigInput
+const { t } = useLang()
 useHead({
   title: app.name,
-  titleTemplate: '%s - 希瑪眼科',
+  titleTemplate: `%s - ${t('app.title')}`,
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {

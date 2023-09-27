@@ -4,8 +4,9 @@ import { Autoplay } from 'swiper'
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '診所資料｜希瑪眼科｜聯絡我們',
+  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t('pages.contact_us.contact_us')}`,
   meta: [
     {
       name: 'description',

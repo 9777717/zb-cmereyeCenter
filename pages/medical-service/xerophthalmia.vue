@@ -265,8 +265,9 @@ const prevent = [
     text: 'pages.medical_service.xerophthalmia_con.prevent.text6',
   },
 ]
+const { t } = useLang()
 useHead(() => ({
-  title: '乾眼症｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.xerophthalmia_head'),
   meta: [
     {
       name: 'description',

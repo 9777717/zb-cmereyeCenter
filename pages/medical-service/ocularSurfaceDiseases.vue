@@ -3,8 +3,9 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 useHead(() => ({
-  title: '眼表及角膜疾病｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.ocularSurfaceDiseases_head'),
   meta: [
     {
       name: 'description',

@@ -3,8 +3,10 @@
 definePageMeta({
   layout: 'page',
 })
+
+const { t } = useLang()
 useHead(() => ({
-  title: '阿托品滴眼液｜希瑪眼科｜醫療服務',
+  title: t('pages.medical_service.atropine_head'),
 }))
 
 const locale = useState<string>('locale.setting')

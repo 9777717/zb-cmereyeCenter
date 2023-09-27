@@ -5,7 +5,7 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead(() => ({
-  title: '人才招聘｜香港希瑪眼科中心',
+  title: `${t('pages.talent_recruitment.talent_recruitment')}｜${t('pages.index.title')}`,
   meta: [
     {
       name: 'description',

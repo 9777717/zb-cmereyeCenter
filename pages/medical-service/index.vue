@@ -5,7 +5,7 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead({
-  title: '眼科醫療服務｜專科服務｜香港希瑪眼科中心',
+  title: `${t('pages.medical_service.medical_service')} | ${t('pages.index.title')}`,
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
