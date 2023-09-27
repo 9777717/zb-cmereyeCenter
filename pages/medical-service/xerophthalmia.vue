@@ -346,7 +346,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.xerophthalmia')}}</div>
+          <div>乾眼症</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>

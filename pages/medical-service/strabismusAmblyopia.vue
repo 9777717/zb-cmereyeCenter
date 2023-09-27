@@ -229,7 +229,7 @@ const callTel = () => {
     <div class="strabismusAmblyopia_head">
       <div>
         <div>
-          <div>{{$t('pages.medical_service.strabismusAmblyopia')}}</div>
+          <div>兒童斜弱視</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>

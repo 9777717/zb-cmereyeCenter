@@ -200,7 +200,7 @@ const preventList1 = [
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.amotioRetinae_con.title')}}</div>
+          <div>視網膜脫落及疾病</div>
           <div>RETINAL DETACHMENT</div>
           <div>RETINAL DETACHMENT</div>
           <div>RETINAL DETACHMENT</div>

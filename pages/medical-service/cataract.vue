@@ -374,7 +374,7 @@ const callTel = () => {
     <div class="cataract_head">
       <div>
         <div>
-          <div>{{ $t('pages.medical_service.cataract') }}</div>
+          <div>白內障</div>
           <div>CATARACT</div>
           <div>CATARACT</div>
           <div>CATARACT</div>

@@ -408,7 +408,7 @@ const callTel = () => {
   <div>
     <div class="glaucoma_heaf">
       <div>
-        <div>{{ $t('pages.medical_service.glaucoma') }}</div>
+        <div>青光眼</div>
         <div>GLAUCOMA</div>
         <div>GLAUCOMA</div>
         <div>GLAUCOMA</div>

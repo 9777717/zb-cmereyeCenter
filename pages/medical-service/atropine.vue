@@ -74,7 +74,7 @@ const tozoosnet =()=>{
         <div>
           <div>
             <div>
-              {{ $t('pages.medical_service.atropine_text.atropine_text1') }}
+              阿托品眼藥水
             </div>
             <div>ATROPINE EYE DROPS</div>
             <div>ATROPINE EYE DROPS</div>

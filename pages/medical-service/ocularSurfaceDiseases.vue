@@ -298,7 +298,7 @@ const keratoplastyList1 = [
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.ocularSurfaceDiseases')}}</div>
+          <div>眼表及角膜疾病</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>

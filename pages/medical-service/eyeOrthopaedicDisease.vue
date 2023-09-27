@@ -260,7 +260,7 @@ const goWhatsApp = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div :class="{headEn:locale === 'en'}">{{$t('pages.medical_service.eyeOrthopaedicDisease')}}</div>
+          <div :class="{headEn:locale === 'en'}">眼矯形及眼眶疾病</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>

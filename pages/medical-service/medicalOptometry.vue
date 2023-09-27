@@ -77,7 +77,7 @@ const goVision = () => {
     <div class="medicalOptometry_head">
       <div>
         <div>
-          <div>{{$t('pages.medical_service.medicalOptometry')}}</div>
+          <div>醫學驗光配鏡</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>

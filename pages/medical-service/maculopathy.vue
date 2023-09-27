@@ -230,7 +230,7 @@ const callTel = () => {
     <div class="maculopathy_header">
       <div>
         <div>
-          <div>{{$t('pages.medical_service.maculopathy')}}</div>
+          <div>黃斑病變</div>
           <div>MACULAR DEGENERATION</div>
           <div>MACULAR DEGENERATION</div>
           <div>MACULAR DEGENERATION</div>

@@ -260,7 +260,7 @@ pages:
     medical_team_header_title: Medical Team | CMER Eye Center
     doctorList:
       doctor_1:
-        doctor_1_name: Dr. LAM Shun Chiu, Dennis
+        doctor_1_name: DR. LAM SHUN CHIU, DENNIS
         doctor_1_intro: Founder of the C-MER Eye Care Holdings Ltd.
         doctor_1_en_name: Dr. Dennis Lam
         doctor_1_education:
@@ -2168,6 +2168,39 @@ pages:
     appointmentForm: Comments and Suggestions
     appointmentForm_title:
       appointmentForm_title: Comments and Suggestions
+  privacyPolicy:
+    name: Privacy Policy
+    p1: "It is the policy of CMER Eye Care Holding Ltd. and its subsidiaries to comply with the Personal Data (Privacy) Ordinance, Chapter 486 of the laws of the Hong Kong. The Group also strives to ensure compliance by our staff with the strictest standards of security and confidentiality."
+    p2: "The collection of any personal data collected will be subject to the Group’s Personal Information Collection Statement. Personal data is stored securely in the Group’s system and the Group will take all practicable steps to ensure that personal data is not kept longer than is necessary for the fulfillment of the purpose (including any directly related purpose) for which the data is or is to be used. Only trained, authorized staff shall have access to the data, and the Group does not release personal data to parties outside the group except as set out in the Group’s Personal Information Collection Statements. Users have the right to request access to and correction of their personal information in accordance with the procedure set out in the Group’s Personal Information Collection Statements."
+    p3: "But to the extent permitted by law, CMER Eye Care Holding Ltd. shall not be responsible for any loss, damages, or liability (whether direct, indirect or otherwise), including but not limited to any loss of income, profit or reputation, arising in any way out of: (1) any technical failure or malfunction or any other problem in any computer, internet network or system, including due to infection by computer virus, bugs, tampering, unauthorized intervention, fraud, technical failure or any other causes beyond the control of CMER Eye Care Holding Ltd., (2) any shortage or inadequacy of any third party-service, (3) any notice or correspondence which is misdirected, delayed, altered or lost in the information transmission or otherwise. All eligible customers must ensure that all information provided should be true, accurate and complete without any fraud on submission of personal data, or false submission of personal data of others. Customers shall be responsible for any loss, damage or liability arising out of or in connection with any fraud on submission of personal data, or false submission of personal data of others, and indemnify and hold CMER Eye Care Holding Ltd. and the relevant party harmless for any loss, damage, claim arising out of or in connection with any fraud on submission of personal data, or false submission of personal data of others."
+    p4: "The Group may, from time to time, send direct marketing materials promoting products and services to users based on their personal data, but suitable opt-out mechanisms are provided."
+    p5: "The Group makes every effort to protect the privacy of users, but given the nature of the Internet, it cannot guarantee perfect security."
+    p6: "The Group uses third party content and service providers and offers links to third party web sites. These third parties may collect personal data from users and they adhere to their own privacy policies. The Group’s Privacy Policy Statement and Personal Information Collection Statements does not cover third parties."
+    p7: "Users who have any questions about the Group’s privacy policy and practice can contact us at info@hkcmer.com."
+    name2: "Personal Information Collection Statement"
+    p2_1: "This Personal Information Collection Statement sets out the purposes for which the information provided by you will be used following collection, what you are agreeing to with respect to our use of such information and your rights under the Personal Data (Privacy) Ordinance, Cap 486. This statement may change from time to time, so please check back periodically. Each time a user logs in to this web site and uses its services, they agree to be bound by the statement in force at that time."
+    p2_2: "Purpose and Use of Data"
+    p2_3: "Information collected is used for the followings:"
+    p2_4: "Monitoring use of the web site to help its further development"
+    p2_5: "Compiling aggregate statistics about our users to analyze site usage"
+    p2_6: "Identifying and verifying identity of the users who used the services offered on this web site"
+    p2_7: "Communicating with the users in respect of matters related to or arising from the use of the services offered on this web site"
+    p2_8: "We also intend to use your name, contact details and the information as to the goods and services which you were/might be interested in, for delivering information that you may be interested in, such as targeted banners, new services and products and other promotions and marketing materials and conducting direct marketing. We also intend to, and in this regard you consent to, transfer and provide the above mentioned information to the subsidiary of us and the service providers through whom the Group’s products, facilities, services, privileges, benefits or advantages are provided inside and outside Hong Kong for the said purpose. We may not so use or provide the said information unless we have received your consent. Your consent may be communicated to us without charge at the time when you provide such information through our website or by writing to our Group."
+    name3: "Transfer of Data"
+    p3_1: "User information will not generally be disclosed or transferred to any other party in a form that would identify them except those to parties relevant and reasonably necessary for the purposes stated above."
+    name4: "Access of Data"
+    p4_1: "Users have the right to request access to and correction of your personal data in accordance with the provisions of the Personal Data (Privacy) Ordinance (Cap.486). Any data access request or data correction request may be made to us at info@hkcmer.com."
+    p4_2: "CMER Eye Care Holding Ltd. reserves the right to amend, delete or supplement any of these terms and conditions in its sole discretion without giving prior notice to the customers in its sole discretion."
+    p4_3: "Being our valuable customer, we thank you for your continuous support and from time to time we will share with you the latest information about CMER Eye Care Holding Ltd. which might interest you. Should you not wish to receive direct marketing material and/or communications from us, you may exercise your opt-out right by notifying us at info@hkcmer.com."
+    p4_4: ''
+  disclaimer:
+    name: "Disclaimer"
+    p1: "All information and content on the website of Hong Kong C-MER Dennis Lam & Partners Eye Center are for general information, education, and reference only. If you have any questions about health, medical conditions, you should consult your doctor or medic in time."
+    p2: "The center is committed to ensuring the accuracy and timeliness of all information and content on this website. All information and content on this website may be changed at any time without notice."
+    p3: "Accuracy of contents, services, products, and advertisements linked to other websites, which are not maintained or controlled by Hong Kong C-MER Dennis Lam & Partners Eye Center, is not guaranteed."
+    p4: "The online reservation system is only for guests to make appointments and consult medical services at Hong Kong C-MER Dennis Lam & Partners Eye Center. Filling out and submitting the online appointment form does not guarantee your appointment time. Staff of Hong Kong C-MER Dennis Lam & Partners Eye Center will process your application appropriately, and contact you by email, phone, or SMS. Hong Kong C-MER Dennis Lam & Partners Eye Center is not responsible for any consequences caused by the failure of application through this online system.The appointment application submitted on this website is for internal scheduling purposes only. By submitting the online reservation form, you agree to be bound by this website’s disclaimer regarding the online reservation system."
+    p5: "Copyright of articles on this website are only owned by the original author. If the author’s work has a copyright statement or is reproduced from another website and attaches the copyright statement of all the original sites, the copyright belongs to the accompanying statement; the articles do not represent the stand of Hong Kong C-MER Dennis Lam & Partners Eye Center."
+    p6: "Some materials on this website come from the Internet. If we have unintentionally infringed your rights and interests, please contact us in time and we will follow up immediately."
 banners:
   welcome: 您好, 欢迎来到 %{app_name}!
 others:

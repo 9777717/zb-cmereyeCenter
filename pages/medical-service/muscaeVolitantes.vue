@@ -206,7 +206,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.muscae_volitantes')}}</div>
+          <div>飛蚊症</div>
           <div>EYE FLOATERS</div>
           <div>EYE FLOATERS</div>
           <div>EYE FLOATERS</div>

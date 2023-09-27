@@ -220,7 +220,7 @@ const callTel = () => {
       <!-- 头部 -->
       <div>
         <div>
-          <div>{{$t('pages.medical_service.conjunctivitis')}}</div>
+          <div>結膜炎</div>
           <div>CONJUNCTIVITIS</div>
           <div>CONJUNCTIVITIS</div>
           <div>CONJUNCTIVITIS</div>
