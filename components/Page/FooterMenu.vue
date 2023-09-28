@@ -200,7 +200,7 @@ let drawer = ref(false)
                     />
                   </div>
                 </div>
-                <nuxt-link :to="itemChild.link" v-else>
+                <nuxt-link :id="index===2&&itemChildIndex === 0 ? 'ga-mb-footer-tel' : (index===2 && itemChildIndex === 1?'ga-mb-footer-whatsApp': '')" :to="itemChild.link" v-else>
                   <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                   <span v-if="index === 1">{{`<`}}</span>
                   <span>{{itemChild.name}}</span>
