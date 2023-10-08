@@ -402,18 +402,28 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/青光眼1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/青光眼2.png',
+  cnName: '青光眼',
+  enName: 'GLAUCOMA',
+  textColor: '#3EC6BE',
+  pageName: 'glaucoma'
+}
 </script>
 
 <template>
   <div>
-    <div class="glaucoma_heaf">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="glaucoma_heaf">
       <div>
         <div>青光眼</div>
         <div>GLAUCOMA</div>
         <div>GLAUCOMA</div>
         <div>GLAUCOMA</div>
       </div>
-    </div>
+    </div> -->
     <div class="glaucoma-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
@@ -1227,7 +1237,6 @@ const callTel = () => {
     }
 }
 .glaucoma-nav{
-  // position: relative;
   margin-top: 100px;
 }
 .glaucoma-in{
@@ -2948,7 +2957,7 @@ const callTel = () => {
   }
   .glaucoma-in {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: 30px 0 0;
     & > div {
       padding-top: 0px;
     }
@@ -3822,6 +3831,9 @@ const callTel = () => {
       }
     }
   }
+  .glaucoma-nav{
+    margin-top: -100px;
+  }
   .dow {
     margin-top: 50px;
     margin-bottom: 130px;
@@ -3842,52 +3854,5 @@ const callTel = () => {
       }
     }
   }
-}
-@media (min-width: 1200px) and (max-width: 1600px) {
-  .glaucoma-in{
-    // margin-top: -70%;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1200px) {
-  .glaucoma-in{
-    // margin-top: -90%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-  .glaucoma-in{
-    // margin-top: -120%;
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1980px) {
-  .glaucoma-in{
-    // margin-top: -40%;
-  }
-  // .glaucoma {
-    // margin: auto;
-    // margin-top: -50%;
-
-  //   & > div:nth-child(2) {
-  //     padding-top: 350px;
-  //   }
-  // }
-
-  // .glaucoma_heaf > div {
-  //   top: -110px;
-  //   left: -12vw;
-  // }
-
-  // .dow {
-  //   margin-top: -23%;
-
-  //   & > div:nth-child(1) {
-  //     & > div {
-  //       & > div:nth-child(1) {
-  //         margin-left: 32.2vw;
-  //       }
-  //     }
-  //   }
-  // }
 }
 </style>

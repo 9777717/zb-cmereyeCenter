@@ -70,11 +70,20 @@ const toCmer = () => {
 const goVision = () => {
   location.href = 'https://www.cmervision.com/myopia-control-programme-2/'
 }
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/醫學驗光配鏡1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/醫學驗光配鏡2.png',
+  cnName: '醫學驗光配鏡',
+  enName: 'MYOPIA CONTROL AND OPHTHALMIC SERVICES',
+  textColor: '#B9D38F',
+  pageName: 'medicalOptometry'
+}
 </script>
 
 <template>
   <div>
-    <div class="medicalOptometry_head">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="medicalOptometry_head">
       <div>
         <div>
           <div>醫學驗光配鏡</div>
@@ -83,7 +92,7 @@ const goVision = () => {
           <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="medicalOptometry-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
     </div>
@@ -730,6 +739,9 @@ const goVision = () => {
 }
 
 @media screen and (max-width: 768px) {
+  .medicalOptometry-nav{
+    margin-top: -80px;
+  }
   .medicalOptometry_head {
     margin-top: 150px;
     margin-right: 20px;

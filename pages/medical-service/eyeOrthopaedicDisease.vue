@@ -252,12 +252,20 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
+  cnName: '眼矯形及眼眶疾病',
+  enName: 'EYE PLASTIC SURGERY AND ORBITAL DISEASES',
+  textColor: '#E4C6A9',
+  pageName: 'eyeOrthopaedicDisease'
+}
 </script>
 
 <template>
   <div class="eyeOrthopaedicDisease">
-    <div class="eyeOrthopaedicDisease_head">
-      <!-- 头部 -->
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="eyeOrthopaedicDisease_head">
       <div>
         <div>
           <div :class="{headEn:locale === 'en'}">眼矯形及眼眶疾病</div>
@@ -266,7 +274,7 @@ const goWhatsApp = () => {
           <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="eyeOrthopaedicDisease-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
     </div>
@@ -2762,7 +2770,9 @@ const goWhatsApp = () => {
   .eyeOrthopaedicDisease_title_text {
     font-size: 32px;
   }
-
+  .eyeOrthopaedicDisease-nav{
+    margin-top: -100px;
+  }
   // 头部样式
   .eyeOrthopaedicDisease_head {
     &>div:nth-child(1) {
@@ -2818,7 +2828,7 @@ const goWhatsApp = () => {
   .eyeOrthopaedicDisease_nav {
     max-width: 100%;
     width: 100%;
-    margin: 100px 0 0;
+    margin: 30px 0 0;
     // margin-top: 210px;
     // margin-bottom: 240px;
     transform: scale(1);

@@ -65,11 +65,20 @@ const tozoosnet =()=>{
   window.open('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571')
 }
 
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品2.png',
+  cnName: '阿托品眼藥水',
+  enName: 'ATROPINE EYE DROPS',
+  textColor: '#70B8C4',
+  pageName: 'atropine'
+}
 </script>
 
 <template>
   <div class="atropine">
-    <div class="atropine_head">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="atropine_head">
       <div class="maxCon">
         <div>
           <div>
@@ -82,7 +91,7 @@ const tozoosnet =()=>{
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="atropine-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
@@ -1215,8 +1224,11 @@ const tozoosnet =()=>{
     font-size: 22px;
     line-height: 1.6;
   }
+  .atropine-nav{
+    margin-top: -80px;
+  }
   .atropine_nav {
-    margin: 100px auto;
+    margin: 30px auto 100px;
     & > #introduce {
       margin-bottom: 0;
       width: calc(100% - 60px);

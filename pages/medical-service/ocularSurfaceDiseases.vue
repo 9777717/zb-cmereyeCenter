@@ -290,12 +290,21 @@ const keratoplastyList1 = [
     ],
   },
 ]
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病2.png',
+  cnName: '眼表及角膜疾病',
+  enName: 'OCULAR SURFACE AND CORNEAL DISEASES',
+  textColor: '#93C9AC',
+  pageName: 'ocularSurfaceDiseases'
+}
 </script>
 
 <template>
   <div class="ocularSurfaceDiseases">
-    <div class="ocularSurfaceDiseases_head">
-      <!-- 头部 -->
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="ocularSurfaceDiseases_head">
       <div>
         <div>
           <div>眼表及角膜疾病</div>
@@ -304,7 +313,7 @@ const keratoplastyList1 = [
           <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="ocularSurfaceDiseases-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'ocularSurfaceDiseases'" />
     </div>
@@ -2910,12 +2919,15 @@ const keratoplastyList1 = [
       }
     }
   }
+  .ocularSurfaceDiseases-nav{
+    margin-top: -100px;
+  }
   .ocularSurfaceDiseases_nav {
     transform: scale(1);
-    margin: 100px auto 0;
+    margin: 30px auto 0;
     & > #pterygium {
       width: calc(100% - 60px);
-      margin: 70px auto 0;
+      margin: 0 auto 0;
       & > div:nth-child(2) {
         flex-direction: column;
         margin: 25px auto 45px;

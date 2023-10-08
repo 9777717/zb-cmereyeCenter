@@ -192,12 +192,21 @@ const preventList1 = [
     text: 'pages.medical_service.amotioRetinae_con.prevent.text3',
   },
 ]
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落2.png',
+  cnName: '視網膜脫落',
+  enName: 'RETINAL DETACHMENT',
+  textColor: '#EAB1A6',
+  pageName: 'amotioRetinae'
+}
 </script>
 
 <template>
   <div class="amotioRetinae">
-    <div class="amotioRetinae_head">
-      <!-- 头部 -->
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="amotioRetinae_head">
       <div>
         <div>
           <div>視網膜脫落及疾病</div>
@@ -206,7 +215,7 @@ const preventList1 = [
           <div>RETINAL DETACHMENT</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
     <div class="amotioRetinae_nav" :class="{'amotioRetinaeNav-en': locale === 'en'}">
       <div id="intro">
@@ -1036,7 +1045,7 @@ const preventList1 = [
 
   .amotioRetinae_nav {
     max-width: 100%;
-    margin: 100px 0 0;
+    margin: -80px 0 0;
     transform: scale(1);
     padding: 0 40px;
 

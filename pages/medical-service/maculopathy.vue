@@ -222,12 +222,22 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/黄斑病1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/黄斑病2.png',
+  cnName: '黃斑病變',
+  enName: 'MACULAR DEGENERATION',
+  textColor: '#EABE5F',
+  pageName: 'maculopathy'
+}
 </script>
 
 <template>
   <div class="maculopathy">
     <!-- 头部 -->
-    <div class="maculopathy_header">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="maculopathy_header">
       <div>
         <div>
           <div>黃斑病變</div>
@@ -235,16 +245,8 @@ const callTel = () => {
           <div>MACULAR DEGENERATION</div>
           <div>MACULAR DEGENERATION</div>
         </div>
-        <!-- <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/228b1b2296c9c93d.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/6a3241d38332501f.png"
-          />
-        </div> -->
       </div>
-    </div>
+    </div> -->
     <div class="maculopathy-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
@@ -1515,7 +1517,7 @@ const callTel = () => {
   }
   .maculopathy_nav {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: -50px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
@@ -2078,9 +2080,6 @@ const callTel = () => {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
-  .maculopathy_nav {
-    // margin-top: -30%;
-  }
   .dow {
     margin-top: -20%;
     & > div:nth-child(1) {

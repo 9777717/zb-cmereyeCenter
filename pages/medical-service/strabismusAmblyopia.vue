@@ -221,12 +221,22 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视2.png',
+  cnName: '兒童斜弱視',
+  enName: 'AMBLYOPIA AND STRABISMUS IN CHILDREN',
+  textColor: '#F2A178',
+  pageName: 'strabismusAmblyopia'
+}
 </script>
 
 <template>
   <div class="strabismusAmblyopia">
     <!-- 头部 -->
-    <div class="strabismusAmblyopia_head">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="strabismusAmblyopia_head">
       <div>
         <div>
           <div>兒童斜弱視</div>
@@ -235,7 +245,7 @@ const callTel = () => {
           <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="strabismusAmblyopia-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
     </div>
@@ -1158,6 +1168,9 @@ const callTel = () => {
   }
 }
 @media screen and (max-width: 768px) {
+  .strabismusAmblyopia-nav{
+    margin-top: -100px;
+  }
   .strabismusAmblyopia_head {
     &>div:nth-child(1) {
       width: calc(100% - 60px);
@@ -1206,10 +1219,10 @@ const callTel = () => {
   }
   .strabismusAmblyopia_nav {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: 30px 0 0;
     & > #strabismus {
       width: calc(100% - 60px);
-      margin: 70px auto 0;
+      margin: 0 auto 0;
       & > div:nth-child(2) {
         line-height: 1.8;
         &>p{

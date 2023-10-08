@@ -367,11 +367,21 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png',
+  mbSrc: 'https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png',
+  cnName: '白內障',
+  enName: 'CATARACT',
+  textColor: '#3DBAD7',
+  pageName: 'cataract'
+}
 </script>
 
 <template>
   <div>
-    <div class="cataract_head">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="cataract_head">
       <div>
         <div>
           <div>白內障</div>
@@ -380,7 +390,7 @@ const callTel = () => {
           <div>CATARACT</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <serviceNav :arrData="serviceNavigation" />
     <div class="cataract" :class="{'cataract-en': locale === 'en'}" >
       <!-- 白內障 -->
@@ -2488,7 +2498,7 @@ const callTel = () => {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 20px;
 
         &>div:nth-child(1) {
           margin-top: 0;

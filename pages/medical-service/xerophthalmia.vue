@@ -338,27 +338,28 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症2.png',
+  cnName: '乾眼症',
+  enName: 'DRY EYE',
+  textColor: '#8F8BCA'
+}
 </script>
 
 <template>
   <div>
+    <PageServiceBanner :bannerData="bannerData" />
     <div class="xeroheader">
-      <!-- 头部 -->
+      
       <div>
-        <div>
+        <!-- <div>
           <div>乾眼症</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>
           <div>DRY EYE</div>
-        </div>
-        <!-- <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/05/2881f2949b9da5af.png"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2023/05/2db9158b5d3b1602.png"
-        />
-      </div> -->
+        </div> -->
       </div>
       <serviceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
       <!-- 内容 -->
@@ -2293,12 +2294,13 @@ const callTel = () => {
 
 @media screen and (max-width: 768px) {
   .xeroheader {
+    margin-top: -100px;
     &>div:nth-child(1) {
       width: calc(100% - 60px);
       justify-content: flex-end;
       align-items: flex-end;
       display: flex;
-      margin: 150px auto 0;
+      margin: 0 auto;
 
       &>div:nth-child(1) {
         &>div:nth-child(1) {
@@ -2348,7 +2350,7 @@ const callTel = () => {
 
   .xerophthalmia {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: 30px 0 0;
 
     &>div:nth-child(1) {
       width: calc(100% - 60px);

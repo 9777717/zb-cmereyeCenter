@@ -269,6 +269,21 @@ const handleImgLists = (_link:any) => {
   }
 }
 let drawer = ref(false)
+const serciceLists = [
+  "medical-service-cataract",
+  "medical-service-glaucoma",
+  "medical-service-xerophthalmia",
+  "medical-service-muscaeVolitantes",
+  "medical-service-conjunctivitis",
+  "medical-service-maculopathy",
+  "medical-service-strabismusAmblyopia",
+  "medical-service-amotioRetinae",
+  "medical-service-ocularSurfaceDiseases",
+  "medical-service-ocularSurfaceDiseases",
+  "medical-service-eyeOrthopaedicDisease",
+  "medical-service-medicalOptometry",
+  "medical-service-atropine"
+]
 
 useHead({
   script: [
@@ -284,18 +299,49 @@ watch(
     var a:any = document.getElementById('userwayAccessibilityIcon') || {style: {display: 'none'}}
     a.style.display = n ? 'none' : 'block'
     var b:any = document.getElementById('mbFooterTop')
-    if(route.name !== 'index'){
+    let routeName:any = route.name
+    if(route.name === 'index'){
+      // b.style.display = n ? 'block' : 'none'
+    }else if(serciceLists.includes(routeName)){
+
+    }else{
       b.style.display = n ? 'block' : 'none'
     }
   }
 )
+
+const getBg = ()=>{
+  // console.log(route.name);
+  let routeName:any = route.name
+  let str = ''
+  if(route.name === 'index' && !menuBool.value){
+    str = 'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'
+  }else if(serciceLists.includes(routeName) && !menuBool.value){
+    str = 'rgba(255, 255, 255, 0)'
+  }else{
+    str = '#fff'
+  }
+  return str
+}
+const getBb = ()=>{
+  let str = ''
+  let routeName:any = route.name
+  if(route.name === 'index' || menuBool.value){
+    str = 'none'
+  }else if(serciceLists.includes(routeName) || menuBool.value){
+    str = 'none'
+  }else{
+    str = '4px solid rgba(242, 242, 242, 1)'
+  }
+  return str
+}
 </script>
 
 <template>
   <div class="mbHeader">
     <div class="mbHeader-in" :style="{
-      background: ((route.name !== 'index' || menuBool)?'#fff':'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'),
-      'border-bottom': ((route.name === 'index' || menuBool)? 'none' :'4px solid rgba(242, 242, 242, 1)')
+      background: getBg(),
+      'border-bottom': getBb()
     }">
       <div class="mbHeader-in-logo" @click="toIndex"></div>
       <div class="mbHeader-in-rightBtn">

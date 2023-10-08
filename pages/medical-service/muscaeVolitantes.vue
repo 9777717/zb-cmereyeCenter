@@ -198,12 +198,20 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症2.png',
+  cnName: '飛蚊症',
+  enName: 'EYE FLOATERS',
+  textColor: '#568BB4'
+}
 </script>
 
 <template>
   <div class="muscaeVolitantes">
-    <div class="volitantes">
-      <!-- 头部 -->
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="volitantes">
       <div>
         <div>
           <div>飛蚊症</div>
@@ -211,16 +219,8 @@ const callTel = () => {
           <div>EYE FLOATERS</div>
           <div>EYE FLOATERS</div>
         </div>
-        <!-- <div>
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/5a4b6219f26dba3e.png"
-          />
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/0e37066bfcab4331.png"
-          />
-        </div> -->
       </div>
-    </div>
+    </div> -->
     <div class="muscaeVolitantes-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
     </div>
@@ -1589,7 +1589,7 @@ const callTel = () => {
   }
   .muscaeNav {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: 30px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;

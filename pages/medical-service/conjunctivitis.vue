@@ -212,12 +212,20 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel://+(852) 3956 2025'
 }
+
+const bannerData = {
+  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎1.png',
+  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎2.png',
+  cnName: '結膜炎',
+  enName: 'CONJUNCTIVITIS',
+  textColor: '#C0C0E6'
+}
 </script>
 
 <template>
   <div class="conjunctivitis">
-    <div class="conjun_header">
-      <!-- 头部 -->
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="conjun_header">
       <div>
         <div>
           <div>結膜炎</div>
@@ -226,7 +234,7 @@ const callTel = () => {
           <div>CONJUNCTIVITIS</div>
         </div>
       </div>
-    </div>
+    </div> -->
     <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
     <div class="conjunctivitis_nav" :class="{'conjunctivitis-en': locale === 'en'}">
@@ -1160,7 +1168,7 @@ const callTel = () => {
   }
   .conjunctivitis_nav {
     transform: scale(1);
-    margin: 100px 0 0;
+    margin: -80px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;
