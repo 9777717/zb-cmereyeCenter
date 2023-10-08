@@ -446,10 +446,11 @@ defineProps({
       width: 100%;
       padding-top: 70px;
       & > div:nth-child(1) {
-        padding: 0 30px;
+        padding: 0 40px;
         font-size: 14px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        line-height: 32px;
       }
       & > div:nth-child(2) {
         margin-top: 0;
