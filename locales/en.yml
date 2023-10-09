@@ -644,11 +644,11 @@ pages:
       service_glaucoma_title15: Glaucoma Misunderstandings
       service_glaucoma_title16: Types of Secondary Glaucoma
       service_glaucoma_title17: Types of Glaucoma
-      service_glaucoma_btn1_1: Book an appointment vis WhatsApp.
+      service_glaucoma_btn1_1: Book an appointment via WhatsApp.
       service_glaucoma_btn1_2: ""
       service_glaucoma_btn2_1: Call now to book appointment!
       service_glaucoma_btn2_2: ""
-      service_glaucoma_btn3_1: Book an appointment vis WhatsApp.
+      service_glaucoma_btn3_1: Book an appointment via WhatsApp.
       service_glaucoma_btn3_2: ""
       service_glaucoma_text1: Glaucoma is a progressive degeneration of the optic nerve. Optic nerve acts like a cable to help transmit visual signals from our eyes to the visual center in the brain. Patients with glaucoma may experience peripheral vision loss followed by a decrease in central vision; permanent visual loss may occur in serious cases. Since there are no symptoms in the early stages of glaucoma, many patients may be unaware that they have glaucoma until the disease has already progressed to a more advanced stage. Hence, chronic glaucoma is sometimes referred to as the "silent thief of sight".
       service_glaucoma_text2: Glaucoma is associated with increased intraocular pressure (IOP). The anterior chamber which is in front of the eye is filled with clear liquid secreted by ciliary body (aqueous humor). Aqueous humor circulates in anterior chamber. If there is blockage of aqueous humor drainage, it can lead to increased intraocular pressure, and damage the optic nerve.
@@ -946,7 +946,7 @@ pages:
         name8: Prevention
       btn:
         name1_1: Experiencing initial symptoms?
-        name1_2: Book an appointment vis WhatsApp.
+        name1_2: Book an appointment via WhatsApp.
         name2: WhatsApp now to inquire about your treatment plan!
         name3: Call now to book appointment!
         name4: Call now for medical assistance!
@@ -1042,7 +1042,7 @@ pages:
         text1: Eye Floaters
         text2: Download leaflet
       btn:
-        name1_1: Book an appointment vis WhatsApp.
+        name1_1: Book an appointment via WhatsApp.
         name1_2: ''
         name2_1: Call now to book appointment!
         name2_2: ''
@@ -1250,7 +1250,7 @@ pages:
         a4: Yes, injection of drugs (anti-VFGF or steroids, etc.) into the vitreous cavity is one of the effective treatments for macular degeneration. Medical reports show that this method has a good efficacy on treating the macular edema caused by wet AMD and it also has a role to promote visual improvement. Timely treatment is important, the earlier the macular degeneration is treated, the better result one may have. Injection of medicine can also be given along with PDT or other treatment (named as combined treatment in clinical practice) to obtain better treatment outcomes. For further details, you should discuss with your eye doctor so as to come up with a tailor-made treatment regimen for you.
       btn: 
         name1_1: Experiencing initial symptoms? 
-        name1_2: Book an appointment vis WhatsApp.
+        name1_2: Book an appointment via WhatsApp.
         name2_1: WhatsApp now to inquire about your treatment plan!
         name2_2: ''
       dow:
@@ -1338,9 +1338,9 @@ pages:
         name: Treat strabismus and amblyopia timely!
         context: Patients should arrange an eye examination for their children regularly to find out the cause of eye problems as soon as possible. The earlier detection and treatment, the better the effect. The effect of treatment also requires the cooperation of parents and children.
       btn:
-        name1_1: Book an appointment vis WhatsApp.
+        name1_1: Book an appointment via WhatsApp.
         name1_2: ''
-        name2_1: Book an appointment vis WhatsApp.
+        name2_1: Book an appointment via WhatsApp.
         name2_2: ''
       dow:
         text1: Amblyopia and Strabismus in Children
@@ -1460,7 +1460,7 @@ pages:
         text3: When infection recurs, it is needed to check if it is related to systemic disease such as diabetes etc.
         text4: Long hours of overnight work without enough rest can cause eye fatigue and weak immunity
         text5: Have diabetes and/ or have the eating habit of consuming food high in sugar and fat
-        btn1: Book an appointment vis WhatsApp.
+        btn1: Book an appointment via WhatsApp.
         btn2: ''
         name1: Symptoms of blepharitis
         text1_1: Itching, red and swollen eyelids
@@ -1508,7 +1508,7 @@ pages:
         text2_6_1: Loss of corrugated texture of iris
         text2_6_2: ''
         text2_7: Pupils shrink
-        btn1_1: Book an appointment vis WhatsApp.
+        btn1_1: Book an appointment via WhatsApp.
         btn1_2: ''
         name3: Complications of iritis
         text3_1: Corneal opacity, posterior synechiae, pupil block, peripheral anterior synechiae or chamber angle synechiae, occlusion of the pupil, iris bombe
@@ -1593,7 +1593,7 @@ pages:
         span2_1: Greater and faster changes in myopia or astigmatism
         span2_2: In advanced stage, the tip of the cornea may develop edema, so visual function is worsened suddenly and has eye pain
         span2_3: ""
-        btn1: Book an appointment vis WhatsApp.
+        btn1: Book an appointment via WhatsApp.
         btn2: ''
         name3: Treatments of keratoconus
         name3_1: "Hybrid Contact Lens:"
@@ -1674,7 +1674,7 @@ pages:
       btn:
         name1_1: WhatsApp now to inquire about your treatment plan!
         name1_2: ''
-        name2_1: Book an appointment vis WhatsApp.
+        name2_1: Book an appointment via WhatsApp.
         name2_2: ''
         name3_1: Call now to book appointment!
         name3_2: ''
@@ -1703,7 +1703,7 @@ pages:
         p4_1: Patients with lagophthalmos cannot completely close their eyelids. Lagophthalmos is commonly seen in cases of congenital ptosis, facial palsy and eyelid skin scarring. Improper closure of eyelids can lead to dry eyes or corneal ulceration.
         name4_2: Treatments of lagophthalmos
         p4_2: The main objective is to prevent damage to cornea. It can be treated by taping the eyelids at night and copious amount of lubricants.
-        btn_1: Book an appointment vis WhatsApp.
+        btn_1: Book an appointment via WhatsApp.
         btn_2: ''
         name5: Other eye plastic surgery
         title5_1: Eyelid disorders/ Eyelid laceration
@@ -1835,7 +1835,7 @@ pages:
         text2_1: After the orbital implant for 6 to 8 weeks, the patient will wear a temporary ocular prosthesis. The permanent one will be made according to the appearance of the other eye, as well as the size and the socket of the orbital implant.
         text2_2: Then, iris, sclera and even the pattern of blood vessels will be drawn on the ocular prosthesis. It stimulates the appearance of the other eye. The ocular prosthesis will be then polished in order to make it comfortable for the patient and match the appearance of the other eye.
         text2_3: After 2 to 3 weeks, patients can wear the tailor-made ocular prosthesis; local adjustment can be done if it is needed, so the ocular prosthesis looks like the real eye and to be ensure that it is comfortable for the patients who will gain back their confidence.
-        btn1: Book an appointment vis WhatsApp.
+        btn1: Book an appointment via WhatsApp.
         btn2: ""
       usage: 
         title: How to use ocular prosthesis
