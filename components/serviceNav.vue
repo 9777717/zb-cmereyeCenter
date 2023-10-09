@@ -55,7 +55,7 @@ defineProps({
       color: #515151;
       font-size: 30px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 700;
       line-height: normal;
       text-align: center;
       position: relative;
