@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Grid,Navigation } from 'swiper';
-import { defineProps } from "vue";
+// import { defineProps } from "vue";
 defineProps({
   str:{
     type: String,

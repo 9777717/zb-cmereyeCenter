@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { defineProps } from "vue";
+// import { defineProps } from "vue";
 defineProps({
   arrData:{
     type: [Array,Object,String],
