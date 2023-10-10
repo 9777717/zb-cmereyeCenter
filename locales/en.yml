@@ -2176,7 +2176,7 @@ pages:
     p4: "The Group may, from time to time, send direct marketing materials promoting products and services to users based on their personal data, but suitable opt-out mechanisms are provided."
     p5: "The Group makes every effort to protect the privacy of users, but given the nature of the Internet, it cannot guarantee perfect security."
     p6: "The Group uses third party content and service providers and offers links to third party web sites. These third parties may collect personal data from users and they adhere to their own privacy policies. The Group’s Privacy Policy Statement and Personal Information Collection Statements does not cover third parties."
-    p7: "Users who have any questions about the Group’s privacy policy and practice can contact us at info@hkcmer.com."
+    p7: "Users who have any questions about the Group’s privacy policy and practice can contact us at info{'@'}hkcmer.com."
     name2: "Personal Information Collection Statement"
     p2_1: "This Personal Information Collection Statement sets out the purposes for which the information provided by you will be used following collection, what you are agreeing to with respect to our use of such information and your rights under the Personal Data (Privacy) Ordinance, Cap 486. This statement may change from time to time, so please check back periodically. Each time a user logs in to this web site and uses its services, they agree to be bound by the statement in force at that time."
     p2_2: "Purpose and Use of Data"
@@ -2189,9 +2189,9 @@ pages:
     name3: "Transfer of Data"
     p3_1: "User information will not generally be disclosed or transferred to any other party in a form that would identify them except those to parties relevant and reasonably necessary for the purposes stated above."
     name4: "Access of Data"
-    p4_1: "Users have the right to request access to and correction of your personal data in accordance with the provisions of the Personal Data (Privacy) Ordinance (Cap.486). Any data access request or data correction request may be made to us at info@hkcmer.com."
+    p4_1: "Users have the right to request access to and correction of your personal data in accordance with the provisions of the Personal Data (Privacy) Ordinance (Cap.486). Any data access request or data correction request may be made to us at info{'@'}hkcmer.com."
     p4_2: "CMER Eye Care Holding Ltd. reserves the right to amend, delete or supplement any of these terms and conditions in its sole discretion without giving prior notice to the customers in its sole discretion."
-    p4_3: "Being our valuable customer, we thank you for your continuous support and from time to time we will share with you the latest information about CMER Eye Care Holding Ltd. which might interest you. Should you not wish to receive direct marketing material and/or communications from us, you may exercise your opt-out right by notifying us at info@hkcmer.com."
+    p4_3: "Being our valuable customer, we thank you for your continuous support and from time to time we will share with you the latest information about CMER Eye Care Holding Ltd. which might interest you. Should you not wish to receive direct marketing material and/or communications from us, you may exercise your opt-out right by notifying us at info{'@'}hkcmer.com."
     p4_4: ''
   disclaimer:
     name: "Disclaimer"
