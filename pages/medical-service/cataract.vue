@@ -2283,6 +2283,7 @@ const bannerData = {
     &>div:nth-child(4){
       &>div:nth-child(1){
         line-height: 1.2;
+        font-size: 34px;
       }
     }
     &>div:nth-child(5){
