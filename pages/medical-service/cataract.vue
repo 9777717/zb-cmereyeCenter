@@ -2260,6 +2260,11 @@ const bannerData = {
           }
         }
       }
+      &>div:nth-child(3){
+        width: max-content;
+        max-width: 100%;
+        padding: 0 30px;
+      }
     }
   }
   &>div:nth-child(5){
@@ -2279,6 +2284,11 @@ const bannerData = {
       &>div:nth-child(1){
         line-height: 1.2;
       }
+    }
+    &>div:nth-child(5){
+      width: max-content;
+      max-width: 100%;
+      padding: 0 30px;
     }
   }
   &>div:nth-child(6){
@@ -2315,6 +2325,7 @@ const bannerData = {
     &>div:nth-child(3){
       width: max-content;
       max-width: 100%;
+      padding: 0 30px;
     }
   }
   &>div:nth-child(7){
@@ -3288,6 +3299,9 @@ const bannerData = {
         &>div:nth-child(3){
           max-width: 100%;
           font-size: 18px !important;
+          padding: 10px 30px;
+          line-height: 1.6;
+          height: auto;
         }
       }
     }
@@ -3297,6 +3311,11 @@ const bannerData = {
           &>div{
             line-height: 30px !important;
           }
+        }
+      }
+      &>div:nth-child(4){
+        &>div:nth-child(1){
+          max-width: 100%;
         }
       }
     }
