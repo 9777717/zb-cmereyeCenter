@@ -343,7 +343,7 @@ const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症1.png',
   mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症2.png',
   cnName: '乾眼症',
-  enName: 'DRY EYE',
+  enName: 'DRY EYES',
   textColor: '#8F8BCA'
 }
 </script>
