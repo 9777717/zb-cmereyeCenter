@@ -35,12 +35,15 @@ defineProps({
 .serviceBanner{
   position: relative;
   width: 100%;
+  max-height: 460px;
   img{
     width: 100%;
+    height: auto;
   }
   &-text{
     position: absolute;
     left: 50%;
+    // top: 200px;
     bottom: 60px;
     transform: translateX(-50%);
     text-align: center;
@@ -48,7 +51,7 @@ defineProps({
     span{
       font-style: normal;
       font-weight: 700;
-      line-height: 1;
+      line-height: 1.1;
       display: block;
       &:nth-of-type(1){
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

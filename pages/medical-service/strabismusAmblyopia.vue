@@ -460,7 +460,7 @@ const bannerData = {
     }
 }
 .strabismusAmblyopia-nav{
-  margin-top: 150px;
+  margin-top: 30px;
 }
 .strabismusAmblyopia_nav {
   max-width: 1200px;

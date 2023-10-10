@@ -535,7 +535,7 @@ const bannerData = {
 </template>
 <style lang="scss" scoped>
 .muscaeVolitantes-nav{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .muscaeNav {
   max-width: 1200px;

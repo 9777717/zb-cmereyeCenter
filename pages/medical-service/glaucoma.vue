@@ -1237,7 +1237,7 @@ const bannerData = {
     }
 }
 .glaucoma-nav{
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .glaucoma-in{
   position: relative;

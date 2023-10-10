@@ -454,7 +454,7 @@ const bannerData = {
 }
 
 .atropine-nav{
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .atropine_nav {
   margin: 100px auto 280px;

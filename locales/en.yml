@@ -492,8 +492,8 @@ pages:
       service_cataract_btn2: WhatsApp now to inquire about your treatment plan!
       service_cataract_btn3: Causes of cataract
       service_cataract_btn4: "Simple self-test : do you have cataracts"
-      service_cataract_btn5: Call now to book appointment!
-      service_cataract_btn6: Call now to book appointment!
+      service_cataract_btn5: Call now to book an appointment!
+      service_cataract_btn6: Call now to book an appointment!
       service_cataract_btn7: Which type of artificial lens is suitable for you?
       service_cataract_text1: Cataract is one of the common eye disorders in Hong Kong. In the early stages, there are almost no symptoms, and the condition is often mistaken for normal age-related changes in the eyes. As the condition progresses to the intermediate stage, patients may experience blurry vision, and in severe cases, they may even lose their vision completely. Therefore, early detection is crucial.
       service_cataract_text2: Having cataracts can cause blurry vision, double vision, and a sense of overlapping or ghosting when looking at objects. Does the condition affect your field of vision and significantly inconvenience your daily life?
@@ -646,7 +646,7 @@ pages:
       service_glaucoma_title17: Types of Glaucoma
       service_glaucoma_btn1_1: Book an appointment via WhatsApp.
       service_glaucoma_btn1_2: ""
-      service_glaucoma_btn2_1: Call now to book appointment!
+      service_glaucoma_btn2_1: Call now to book an appointment!
       service_glaucoma_btn2_2: ""
       service_glaucoma_btn3_1: Book an appointment via WhatsApp.
       service_glaucoma_btn3_2: ""
@@ -948,9 +948,9 @@ pages:
         name1_1: Experiencing initial symptoms?
         name1_2: Book an appointment via WhatsApp.
         name2: WhatsApp now to inquire about your treatment plan!
-        name3: Call now to book appointment!
+        name3: Call now to book an appointment!
         name4: Call now for medical assistance!
-        name5_1: Call now to book appointment!
+        name5_1: Call now to book an appointment!
         name5_2: ''
       dow:
         text1: Dry Eyes
@@ -1044,9 +1044,9 @@ pages:
       btn:
         name1_1: Book an appointment via WhatsApp.
         name1_2: ''
-        name2_1: Call now to book appointment!
+        name2_1: Call now to book an appointment!
         name2_2: ''
-        name3_1: Call now to book appointment!
+        name3_1: Call now to book an appointment!
         name3_2: ''
     conjunctivitis: Conjunctivitis
     conjunctivitis_head: 'Conjunctivitis｜CMER｜Medical Services'
@@ -1480,7 +1480,7 @@ pages:
         text4: Eyelid twitch
         text5: Ciliary hyperaemia
         text6: Corneal opacification, infiltrates or ulcer
-        btn1: Call now to book appointment!
+        btn1: Call now to book an appointment!
         btn2: ''
         name2: Effects of keratitis
         text2_1: After the ulcer is recovered, the scar may block the light to enter the eye, it may change the corneal curvature and distort the refraction. Therefore, objects cannot clearly focus on the retina and lead to vision loss.
@@ -1606,7 +1606,7 @@ pages:
       keratoplasty:
         title: Corneal transplant
         span: Corneal transplant is to replace damaged cornea with a normal one, so vision can be restored or corneal diseases can be controlled. This surgery can improve visual function or treat certain corneal diseases. Through this treatment, patients with corneal diseases that can lead to severe visual impairment or even blindness may be able to be treated. As the cornea does not contain blood vessels, so it has immune privilege. The success rate of corneal transplant is the highest among all kinds of organ transplant.
-        btn1: Call now to book appointment!
+        btn1: Call now to book an appointment!
         btn2: ''
         name: Suitability for corneal transplant
         span1_1: "Eye injuries: eg. stab incision, burns or chemical injuries etc."
@@ -1676,7 +1676,7 @@ pages:
         name1_2: ''
         name2_1: Book an appointment via WhatsApp.
         name2_2: ''
-        name3_1: Call now to book appointment!
+        name3_1: Call now to book an appointment!
         name3_2: ''
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     eyeOrthopaedicDisease_head: 'Eye Plastic Surgery and Orbital Diseases｜CMER｜Medical Services'
@@ -1791,7 +1791,7 @@ pages:
         p2_2: Orbital pressure increases due to trauma and tumours, so the eyeball protrudes outside eyelids. If eyeballs protrude a lot and with the symptom of eyelid twitch, it will be easy to have prolapse of the eye.
         name2_3: "Sunken eyeball:"
         p2_3: Sunken eyeball could be due to lack of fat tissue around the eyeball, after orbital tumour removal, old age, some blood vessels disease such as orbital varices and following orbital wall fracture.
-        btn2_1: Call now to book appointment!
+        btn2_1: Call now to book an appointment!
         btn2_2: ''
         title3: Real and fake eye cancer
         name3_1: eyelid cancer
@@ -1909,12 +1909,12 @@ pages:
         name: Why are eye tests necessary for different age groups?
         title1: 3-6 years old
         span1: Children in this age are able to understand and cooperate with most of the eye examinations, such as visual acuity, eye movements and binocular vision. They can follow optometrists’ guidance for good eye health so as to prevent myopia. Furthermore, early detection and treatment for amblyopia and strabismus could be possible through regular eye check-up in early age.
-        text1: Eye examination for children aged 3-6
-        btn1: Booking for service
+        text1: Book an eye examination for children aged 3-6.
+        btn1: Book now!
         title2: 6-18 years old
         span2: The eye tends to grow rapidly during this age group. Children who develop myopia at an early age have the tendency of rapid progression because their eyes grow rapidly. Those who develop myopia in late childhood, the growth of eyeballs is slower.
-        text2: Myopia Management Consultation for aged 6-18
-        btn2: Booking for service
+        text2: Book an eye examination for children aged 6-18.
+        btn2: Book now!
         span3: "The myopia control is important, because abnormal vision development can affect a child's future development and eye health. CMER Vision Center concerns about the high myopia rate of school children, provides eye examination services and targeted myopia control programs for children, including: orthokeratology, daily disposable myopia control contact lenses, children's myopia control Lenses (DIMS lenses, MyoVision lenses), in order to help children in the prevention and control of myopia."
         btn3_1: Know More
         btn3_2: About Myopia Control
@@ -1923,7 +1923,7 @@ pages:
         title5: Over 55 years old
         span5: When we grow older, we have higher risk of developing age-related eye diseases, such as cataracts and age-related macular degeneration. Eye examination helps in early detection, so that eye diseases can be treated as soon as possible.
       btn1: Eye examination for adults aged 18-55
-      btn2: Booking for service
+      btn2: Book now!
       navLists: 
         name1: Myopia Control and Ophthalmic Services
         name2: Causes
@@ -2082,7 +2082,7 @@ pages:
     clinic_information: Locations
     clinic_information_title:
       clinic_information_title: Eye center
-      clinic_information_map: Google Map
+      clinic_information_map: Google Maps
       clinic_information_make: Booking
       clinic_information_serviceNavigation1: Locations
       clinic_information_serviceNavigation2: Comments and Suggestions

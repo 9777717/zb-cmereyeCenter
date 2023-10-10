@@ -2161,7 +2161,7 @@ const bannerData = {
     flex-direction: column;
     margin-top: 100px;
     // margin-left: 55vw;
-    margin: 100px auto 0;
+    margin: 0 auto 0;
     max-width: 1080px;
     width: 100%;
     &>div:nth-child(1) {

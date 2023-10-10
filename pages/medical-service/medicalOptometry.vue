@@ -46,7 +46,7 @@ const serviceNavigation = [
   {
     anchorName: 'pages.medical_service.medicalOptometry_con.navLists.name2',
     anchorLink: '/medical-service/medicalOptometry#cause',
-  },
+  }
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
@@ -201,8 +201,8 @@ const bannerData = {
         </div>
 
         <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
-          <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn1')}}</div>
-          <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn2')}}</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
+          <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
       </div>
       <div id="cause-mb">
@@ -321,7 +321,7 @@ const bannerData = {
 
 @import url('../../assets/font/font.css');
 .medicalOptometry-nav{
-  margin-top: 150px;
+  margin-top: 30px;
 }
 .medicalOptometry_nav {
   max-width: 1200px;

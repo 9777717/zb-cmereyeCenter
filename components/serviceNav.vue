@@ -29,7 +29,7 @@ defineProps({
 .serviceNav{
   width: 100%;
   max-width: 1080px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
