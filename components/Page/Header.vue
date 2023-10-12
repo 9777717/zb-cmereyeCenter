@@ -1,5 +1,14 @@
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
+import { availableLocales } from '~/utils/lang'
+
+// micro compiler
+const props = defineProps({
+  type: {
+    type: String,
+    default: 'dropdown-right-top',
+  },
+})
 const route = useRoute()
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
@@ -335,6 +344,9 @@ const getBb = ()=>{
   }
   return str
 }
+const changeLang = (_lang:any) =>{
+  locale.value = _lang
+}
 </script>
 
 <template>
@@ -374,6 +386,14 @@ const getBb = ()=>{
             <el-menu-item v-else :index="String(menusIndex)" @click="toLinks(menusItem)">
               <span>{{menusItem.text}}</span>
             </el-menu-item>
+          </section>
+          <section>
+            <el-sub-menu>
+              <template #title>Languages</template>
+              <el-menu-item v-for="lang in availableLocales" :key="lang.iso" @click="changeLang(lang.iso)">
+                {{ lang.name }}
+              </el-menu-item>
+            </el-sub-menu>
           </section>
         </el-menu>
         </client-only>
