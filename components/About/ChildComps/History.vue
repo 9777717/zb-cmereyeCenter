@@ -1,6 +1,15 @@
 <script setup lang="ts">
 const historyList = ref([
   {
+    year: 'pages.about_us.course_year.year_23',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_23.child23_month_1',
+        info: 'pages.about_us.course_year.child_23.child23_info_1',
+      },
+    ],
+  },
+  {
     year: 'pages.about_us.course_year.year_22',
     contentList: [
       {

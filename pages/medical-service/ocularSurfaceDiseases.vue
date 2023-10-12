@@ -2525,7 +2525,7 @@ const bannerData = {
         }
       }
     }
-    &>#keratitis{
+    & > #keratitis{
       &>div:nth-child(2){
         margin-top: 50px;
       }
@@ -2576,7 +2576,7 @@ const bannerData = {
         }
       }
     }
-    &>#episcleritis{
+    & > #episcleritis{
       &>div:nth-child(3){
         &>div:nth-child(2){
           &>div{
@@ -2660,11 +2660,34 @@ const bannerData = {
               &>div{
                 font-size: 22px;
                 line-height: 1.6;
+                padding: 0 30px;
               }
             }
             &>div:nth-child(3){
               font-size: 22px;
               line-height: 1.6;
+              &>div:nth-child(2){
+                &>div:nth-child(1){
+                  &>div:nth-child(1){
+                    text-align: center;
+                    padding: 0 20px;
+                  }
+                  &>div:nth-child(2){
+                    padding: 0 20px;
+                    text-align: center;
+                  }
+                }
+              }
+              &>div:nth-child(3){
+                &>div:nth-child(1){
+                  &>div:nth-child(1){
+                    padding: 0 30px;
+                  }
+                  &>div:nth-child(2){
+                    padding: 0 30px;
+                  }
+                }
+              }
             }
           }
         }
@@ -4064,6 +4087,7 @@ const bannerData = {
               &>div:nth-child(2){
                 &>div{
                   font-size: 12px;
+                  padding: 0;
                   &:nth-child(1){
                     font-size: 12px;
                   }
@@ -4073,6 +4097,26 @@ const bannerData = {
                 font-size: 12px;
                 &>div:nth-child(1){
                   font-size: 12px;
+                }
+                &>div:nth-child(2){
+                  &>div:nth-child(1){
+                    &>div:nth-child(1){
+                      padding: 0;
+                    }
+                    &>div:nth-child(2){
+                      padding: 0;
+                    }
+                  }
+                }
+                &>div:nth-child(3){
+                  &>div:nth-child(1){
+                    &>div:nth-child(1){
+                      padding: 0;
+                    }
+                    &>div:nth-child(2){
+                      padding: 0;
+                    }
+                  }
                 }
               }
             }

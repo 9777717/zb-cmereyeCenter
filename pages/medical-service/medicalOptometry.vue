@@ -345,7 +345,7 @@ const bannerData = {
           text-indent: 50px;
 
           &>span {
-            letter-spacing: -1px;
+            // letter-spacing: -1px;
             color: #8ca761;
           }
         }

@@ -159,18 +159,21 @@ const treatList1 = [
   {
     id: 0o1,
     img: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
+    enImg: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title1',
     text: 'pages.medical_service.amotioRetinae_con.treat.text1',
   },
   {
     id: 0o2,
     img: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
+    enImg: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title2',
     text: 'pages.medical_service.amotioRetinae_con.treat.text2',
   },
   {
     id: 0o3,
     img: 'https://static.cmereye.com/imgs/2023/08/f5055f0dc5249495.png',
+    enImg: 'https://hkcmereye.com/template/default/picture/swmtl_img/t3_en.jpg',
     title: 'pages.medical_service.amotioRetinae_con.treat.title3',
     text: 'pages.medical_service.amotioRetinae_con.treat.text3',
   },
@@ -277,7 +280,9 @@ const bannerData = {
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
-            <div class="amotioRetinae_img"><img :src="item.img" /></div>
+            <div class="amotioRetinae_img">
+              <img :src="locale === 'en' ? item.enImg : item.img" />
+            </div>
             <div>
               <div>
                 <p>

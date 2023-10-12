@@ -321,8 +321,14 @@ const bannerData = {
           <div>{{$t('pages.medical_service.muscaeVolitantes_con.category.name2')}}</div>
           <div>
             <img
+              src="https://hkcmereye.com/template/default/picture/fwz_img/exfw_en.jpg"
+              alt=""
+              v-if="locale === 'en'"
+            />
+            <img
               src="https://static.cmereye.com/imgs/2023/05/70ece1913636ef3b.png"
               alt=""
+              v-else
             />
             <div>
               {{$t('pages.medical_service.muscaeVolitantes_con.category.context1')}}
@@ -378,8 +384,14 @@ const bannerData = {
               <div>
                 <div>
                   <img
+                    src="https://hkcmereye.com/template/default/picture/fwz_img/tr_en.jpg"
+                    :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
+                    v-if="locale === 'en'"
+                  />
+                  <img
                     src="https://static.cmereye.com/imgs/2023/05/e7d886f97050a60e.png"
                     :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
+                    v-else
                   />
                 </div>
                 <div>
@@ -423,8 +435,14 @@ const bannerData = {
               </div>
               <div>
                 <img
+                  src="https://hkcmereye.com/template/default/picture/fwz_img/ss_en.jpg"
+                  :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')"
+                  v-if="locale === 'en'"
+                />
+                <img
                   src="https://static.cmereye.com/imgs/2023/05/aa0d0fc0cbca2315.png"
                   :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')"
+                  v-else
                 />
               </div>
             </div>
@@ -534,6 +552,7 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
+// 这位9777777写的神奇样式，给我改吐了
 .muscaeVolitantes-nav{
   margin-top: 30px;
 }
@@ -1280,6 +1299,11 @@ const bannerData = {
             padding: 10px 59px;
             & > div:nth-child(1) {
               align-items: center;
+              & > div:nth-child(1) {
+                img{
+                  max-width: 87%;
+                }
+              }
               & > div:nth-child(2) {
                 line-height: 1.6;
               }
@@ -2085,12 +2109,15 @@ const bannerData = {
                 & > div:nth-child(1) {
                   margin-right: 0;
                   margin-top: 20px;
+                  img{
+                    width: 100%;
+                  }
                 }
               }
             }
           }
           & > div:nth-child(2) {
-            margin-top: 150px;
+            margin-top: 330px;
             & > div:nth-child(2) {
               padding-top: 45px;
               font-size: 14px;

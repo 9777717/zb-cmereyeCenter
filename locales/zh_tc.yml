@@ -144,6 +144,10 @@ pages:
       download: 下載希瑪眼科業務小冊子
     development_course: 發展歷程
     course_year:
+      year_23: "2023"
+      child_23:
+        child23_month_1: 8月
+        child23_info_1: 佛山 希瑪眼科醫院成立 
       year_22: "2022"
       child_22:
         child22_month_1: 9月

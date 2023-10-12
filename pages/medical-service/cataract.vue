@@ -2283,7 +2283,13 @@ const bannerData = {
     &>div:nth-child(4){
       &>div:nth-child(1){
         line-height: 1.2;
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 140%;
+      }
+      &>div:nth-child(3){
+        &>div{
+          text-align: center;
+        }
       }
     }
     &>div:nth-child(5){
@@ -3317,6 +3323,11 @@ const bannerData = {
       &>div:nth-child(4){
         &>div:nth-child(1){
           max-width: 100%;
+        }
+        &>div:nth-child(3){
+          &>div{
+            text-align: left;
+          }
         }
       }
     }

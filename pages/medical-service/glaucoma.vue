@@ -2758,12 +2758,28 @@ const bannerData = {
     }
     & > div:nth-child(5) {
       &> div:nth-child(2){
+        &> div:nth-child(1){
+          &> div{
+            &> div:nth-child(2){
+              display: none;
+            }
+          }
+        }
         & > div:nth-child(2) {
           height: auto;
+          width: 1100px;
         }
       }
       &> div:nth-child(3){
+        &> div:nth-child(1){
+          &> div{
+            &> div:nth-child(2){
+              display: none;
+            }
+          }
+        }
         & > div:nth-child(2) {
+          width: 1100px;
           height: auto;
         }
       }
@@ -2771,7 +2787,15 @@ const bannerData = {
         text-align: center;
       }
       &> div:nth-child(5){
+        &> div:nth-child(1){
+          &> div{
+            &> div:nth-child(2){
+              display: none;
+            }
+          }
+        }
         & > div:nth-child(2) {
+          width: 1100px;
           &> div:nth-child(4){
             & > div {
               display: flex;
@@ -2792,9 +2816,29 @@ const bannerData = {
           }
         }
       }
+      &> div:nth-child(6){
+        &> div:nth-child(1){
+          &> div{
+            &> div:nth-child(2){
+              display: none;
+            }
+          }
+        }
+        &>div:nth-child(2){
+          width: 1100px;
+        }
+      }
       &> div:nth-child(7){
+        &> div:nth-child(1){
+          &> div{
+            &> div:nth-child(2){
+              display: none;
+            }
+          }
+        }
         & > div:nth-child(2) {
           padding: 60px 44px 100px 41px;
+          width: 1100px;
           &> div:nth-child(3){
             &>div{
               &> div:nth-child(1){
@@ -2821,6 +2865,7 @@ const bannerData = {
               &>div{
                 font-size: 20px;
                 height: 140px;
+                text-align: center;
               }
             }
           }
@@ -3724,11 +3769,43 @@ const bannerData = {
         }
       }
       & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div{
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;    
+          }
+        }
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
+            & > div{
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;    
+          }
+        }
         & > div:nth-child(4) {
           padding: 10px;
         }
         &> div:nth-child(5){
+          & > div:nth-child(1) {
+            & > div{
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
           & > div:nth-child(2) {
+            width: 100%;
             &> div:nth-child(3){
               font-size: 18px;
             }
@@ -3742,8 +3819,28 @@ const bannerData = {
             }
           }
         }
-        &> div:nth-child(7){
+        &> div:nth-child(6){
+          & > div:nth-child(1) {
+            & > div{
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
           & > div:nth-child(2) {
+            width: 100%;    
+          }
+        }
+        &> div:nth-child(7){
+          & > div:nth-child(1) {
+            & > div{
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;
             padding: 27px 0 0 0;
             &> div:nth-child(3){
               &>div{
@@ -3760,6 +3857,9 @@ const bannerData = {
         & > div:nth-child(3) {
           & > div{
             & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                margin: 0 auto;
+              }
               & > div:nth-child(2) {
                 line-height: 1.2;
               }

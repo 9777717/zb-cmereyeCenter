@@ -114,17 +114,17 @@ const strabismusList5 = [
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text1',
   },
   {
-    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title2',
     img: 'https://static.cmereye.com/imgs/2023/06/9c69590dd98eb332.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text2',
   },
   {
-    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title3',
     img: 'https://static.cmereye.com/imgs/2023/06/dd785273b00a7055.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text3',
   },
   {
-    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
+    title: 'pages.medical_service.strabismusAmblyopia_con.cure.title4',
     img: 'https://static.cmereye.com/imgs/2023/06/fb8d95f43e5c758e.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text4',
   },

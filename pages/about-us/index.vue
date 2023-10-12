@@ -57,15 +57,15 @@ const locale = useState<string>('locale.setting')
 const CORPORATE_Lists = [
   {
     name: 'pages.about_us.enterprise_vision_con.name3_1',
-    text: 'pages.about_us.enterprise_vision_con.name3_1'
+    text: 'pages.about_us.enterprise_vision_con.text3_1'
   },
   {
     name: 'pages.about_us.enterprise_vision_con.name3_2',
-    text: 'pages.about_us.enterprise_vision_con.name3_2'
+    text: 'pages.about_us.enterprise_vision_con.text3_2'
   },
   {
     name: 'pages.about_us.enterprise_vision_con.name3_3',
-    text: 'pages.about_us.enterprise_vision_con.name3_3'
+    text: 'pages.about_us.enterprise_vision_con.text3_3'
   }
 ]
 </script>
@@ -217,6 +217,7 @@ const CORPORATE_Lists = [
           font-size: 20px;
           line-height: 1.6;
           color: #515151;
+          font-family: initial;
         }
         .textLists{
           &>div{
@@ -226,10 +227,8 @@ const CORPORATE_Lists = [
               font-size: 20px;
               font-style: normal;
               font-weight: 400;
-              line-height: 28px; /* 140% */
+              line-height: 28px;
               letter-spacing: 1px;
-              text-transform: uppercase;
-              // text-indent: 10px;
               &::before{
                 content: '>';
                 color: #8AD8DD;
@@ -239,13 +238,11 @@ const CORPORATE_Lists = [
             }
             &>div:nth-of-type(2){
               color: #515151;
-              text-align: justify;
               font-size: 18px;
               font-style: normal;
               font-weight: 300;
-              line-height: 26px; /* 144.444% */
+              line-height: 26px;
               letter-spacing: 1.44px;
-              text-transform: uppercase;
               margin-left: 40px;
               margin-top: 10px;
             }

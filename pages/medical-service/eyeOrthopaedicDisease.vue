@@ -2043,7 +2043,7 @@ const bannerData = {
       }
 
       &>div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
+        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -2153,7 +2153,7 @@ const bannerData = {
       }
 
       &>div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/06/1ffd31990e432ec0.png');
+        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -2332,6 +2332,14 @@ const bannerData = {
   &.eyeOrthopaedicDiseaseNav-en{
     &>#ophthalmoplasty{
       &>div:nth-child(4){
+        &>div:nth-child(2){
+          margin-top: 50px;
+        }
+        &>div:nth-child(3){
+          &>div:nth-child(2){
+            margin-top: 50px;
+          }
+        }
         &>div:nth-child(4){
           &>div:nth-child(2){
             &>div{
@@ -2341,6 +2349,7 @@ const bannerData = {
               &>div:nth-child(1){
                 &>div{
                   line-height: 1.6;
+                  font-family: initial;
                 }
               }
               &>div:nth-child(2){
@@ -2377,6 +2386,9 @@ const bannerData = {
       }
     }
     &>#eyeNeoplasms{
+      &>div:nth-child(2){
+        margin-bottom: 70px;
+      }
       &>div:nth-child(3){
         &>div:nth-child(1){
           &>div:nth-child(2){
@@ -4416,6 +4428,9 @@ const bannerData = {
     &.eyeOrthopaedicDiseaseNav-en{
       &>#ophthalmoplasty{
         &>div:nth-child(4){
+          &>div:nth-child(2){
+            margin-top: 0px;
+          }
           &>div:nth-child(3){
             &>div:nth-child(2){
               &>div:nth-child(2){

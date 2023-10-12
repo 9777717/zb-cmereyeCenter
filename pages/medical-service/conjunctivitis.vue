@@ -637,7 +637,7 @@ const bannerData = {
               line-height: 34px;
               letter-spacing: 0px;
               color: #232967;
-
+              font-weight: 600;
               margin-bottom: 18px;
               margin-top: 50px;
             }

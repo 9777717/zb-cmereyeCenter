@@ -399,8 +399,10 @@ const bannerData = {
               {{$t('pages.medical_service.xerophthalmia_con.factor.context')}}
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png" />
-              <img src="https://static.cmereye.com/imgs/2023/05/84ab47f3810c1d07.png" />
+              <!-- <img src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png" /> -->
+              <!-- <img src="https://static.cmereye.com/imgs/2023/05/84ab47f3810c1d07.png" /> -->
+              <img src="https://hkcmereye.com/template/default/picture/gyz/Group83.jpg" alt="" v-if="locale === 'en'">
+              <img src="https://static.cmereye.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg" alt="" v-else>
             </div>
           </div>
           <div>
@@ -908,21 +910,11 @@ const bannerData = {
         margin: 60px auto 0;
         display: flex;
         justify-content: space-between;
-        padding-left: 140px;
         &>img {
           position: relative;
           height: max-content;
-          width: 35%;
-          // margin-left: -40px;
-          left: -140px;
-        }
-
-        &>img:nth-child(1) {
-          z-index: 5;
-          width: 65%;
-          top: 20px;
-          // margin-left: 0px;
-          left: 0;
+          width: calc(100% - 280px);
+          margin: 0 auto;
         }
       }
     }
@@ -1175,6 +1167,10 @@ const bannerData = {
         background-size: 100% 100%;
         animation: bgposition 5s infinite linear alternate;
         z-index: -1;
+      }
+      svg{
+        margin-top: 5px;
+        margin-left: 20px;
       }
     }
   }
@@ -2470,16 +2466,7 @@ const bannerData = {
           padding-left: 0;
 
           &>img {
-            width: 40%;
-            right: 15%;
-            left: auto;
-            height: 70%;
-          }
-
-          &>img:nth-child(1) {
-            width: 75%;
-            top: 6px;
-            left: 0;
+            width: 100%;
           }
         }
       }
@@ -3243,6 +3230,14 @@ min-width: 15px;
           padding-bottom: 0px;
         }
       }
+      &>div:nth-child(3) {
+        padding: 0 10px;
+      }
+    }
+    &>div:nth-child(6) {
+      &>div:nth-child(3) {
+        padding: 0 10px;
+      }
     }
     &>div:nth-child(7) {
       &>div:nth-child(3) {
@@ -3265,6 +3260,13 @@ min-width: 15px;
               line-height: 1.5;
             }
           }
+        }
+      }    
+      &>div:nth-child(4) {
+        flex-direction: row;
+        &>div:nth-child(2) {
+          margin-left: 10px;
+          margin-top: -5px;
         }
       }
     }

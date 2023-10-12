@@ -132,16 +132,20 @@ pages:
       hema_smile_introduce_two: As the first center to introduce laser vision correction, there are currently 4 SMILE Refractive Centers in Hong Kong. The centers meet FDA standards, equipped with advanced ophthalmic examination and vision correction equipment. It has a sterile operating room that meets international standards, providing comprehensive and accurate eye examinations and customizes the surgery according to different situations.
       hema_smile_facebooke: C-MER SMILE Refractive Center
     hema_vision:
-      hema_vision: C-MER VISION Center
+      hema_vision: C-MER Vision Center
       hema_vision_introduce_one: C-MER Vision Centers, an optical retailer, are providing comprehensive eye examinations and eye care services in Hong Kong. Regarding different age groups’ eyes condition, and the actual needs of individuals, our optometrists are committed to suggest "tailor-made” vision improvement programs.
-      hema_vision_introduce_two: "Facing high myopia rate of children in Hong Kong, C-MER VISION Center provide a better solution of myopia control for children. Eye examinations for children and targeted children's myopia control services are provided, such as: orthokeratology lenses (OK lenses), children's myopia control lenses, myopia control 1 Day contact lenses, etc."
-      hema_vision_facebooke: C-MER VISION Center
+      hema_vision_introduce_two: "Facing high myopia rate of children in Hong Kong, C-MER Vision Center provide a better solution of myopia control for children. Eye examinations for children and targeted children's myopia control services are provided, such as: orthokeratology lenses (OK lenses), children's myopia control lenses, myopia control 1 Day contact lenses, etc."
+      hema_vision_facebooke: C-MER Vision Center
     media:
       media_redbook: 香港希瑪眼科中心
       media_youtube: CMER SMILE & EYE CENTER 香港希瑪眼科
       media_wechat: 香港希瑪眼科中心
     development_course: Our History
     course_year:
+      year_23: "2023"
+      child_23:
+        child23_month_1: August
+        child23_info_1: Foshan - C-MER Eye Hospital
       year_22: "2022"
       child_22:
         child22_month_1: September
@@ -149,7 +153,7 @@ pages:
         child22_month_3: March
         child22_info_1: Tseung Kwan O - C-MER Eye Center
         child22_info_2: Jieyang - C-MER Eye Hospital
-        child22_info_3_1: Tsim Sha Tsui - C-MER Medical Group (Eye, Dental, Medical Aesthetic )
+        child22_info_3_1: Guangzhou - C-MER Eye Hospital
         child22_info_3_2: Fuzhou - C-MER Eye Hospital
       year_21: "2021"
       child_21:
@@ -211,7 +215,7 @@ pages:
     enterprise_vision: Corporate Vision
     enterprise_vision_con: 
       name1: Our Mission
-      text1: Based on customers’ needs, we provide targeted treatments which reach international standard.
+      text1: Based on customers' needs, we provide targeted treatments which reach international standard.
       name2: Our Beliefs
       text2: People-oriented, attention to details, teamwork, excellence.
       name3: Our Service
@@ -384,7 +388,7 @@ pages:
           doctor_13_education_3: FCOphth HK
           doctor_13_education_4: FHKAM (Ophthalmology)
       doctor_14:
-        doctor_14_name: DR. CHEUNG, JANICE JING CHEE
+        doctor_14_name: DR. CHEUNG JING CHEE, JANICE
         doctor_14_en_name: Dr. Janice Cheung
         doctor_14_education:
           doctor_14_education_1: MBBS (HK)
@@ -463,7 +467,7 @@ pages:
           doctor_22_education_3: FHKAM(Ophthalmology)
           doctor_22_education_4: FCOphth HK
       doctor_23:
-        doctor_23_name: CHAN DING NAI, DYLAN
+        doctor_23_name: DR. CHAN DING NAI, DYLAN
         doctor_23_en_name: Dr. Dylan Chan
         doctor_23_education:
           doctor_23_education_1: MBChB (CUHK)
@@ -492,9 +496,9 @@ pages:
       service_cataract_btn2: WhatsApp now to inquire about your treatment plan!
       service_cataract_btn3: Causes of cataract
       service_cataract_btn4: "Simple self-test : do you have cataracts"
-      service_cataract_btn5: Call now to book an appointment!
-      service_cataract_btn6: Call now to book an appointment!
-      service_cataract_btn7: Which type of artificial lens is suitable for you?
+      service_cataract_btn5: Call now!
+      service_cataract_btn6: Call now!
+      service_cataract_btn7: Which type of IOL is suitable for you?
       service_cataract_text1: Cataract is one of the common eye disorders in Hong Kong. In the early stages, there are almost no symptoms, and the condition is often mistaken for normal age-related changes in the eyes. As the condition progresses to the intermediate stage, patients may experience blurry vision, and in severe cases, they may even lose their vision completely. Therefore, early detection is crucial.
       service_cataract_text2: Having cataracts can cause blurry vision, double vision, and a sense of overlapping or ghosting when looking at objects. Does the condition affect your field of vision and significantly inconvenience your daily life?
       service_cataract_text3: Around 90% of the cataracts in Hong Kong are due to aging. The lens hardens and becomes less transparent.
@@ -507,9 +511,9 @@ pages:
       service_cataract_text10: "* This table presumes that the monofocal IOL is used for distant vision."
       service_cataract_text11: Modern cataract surgery is more precise!
       service_cataract_text12: "5 common symptoms:"
-      service_cataract_down1: How to choose a suitable artificial lens?
-      service_cataract_down2: Cataract
-      service_cataract_down_text: Download leaflet
+      service_cataract_down1: Download IOL leaflet
+      service_cataract_down2: Download Cataract leaflet
+      service_cataract_down_text: ""
       service_cataract_array_fator:
         cataract_array_fator1: Excessive ultraviolet-light exposure
         cataract_array_fator2: Smoking
@@ -621,7 +625,7 @@ pages:
         cataract_array_Navigation1: Causes
         cataract_array_Navigation2: Symptoms
         cataract_array_Navigation3: Treatment
-        cataract_array_Navigation4: Intraocular Lens (IOL) Information
+        cataract_array_Navigation4: Comparison of Intraocular lens (IOL)
         cataract_array_Navigation5: Postoperative Care Instructions
         cataract_array_Navigation6: FAQ
     glaucoma: Glaucoma
@@ -774,8 +778,8 @@ pages:
         navgation_text6: Treatment
         navgation_text7: Prevention
         navgation_text8: FAQ
-      service_glaucoma_down: Glaucoma
-      service_glaucoma_down_text: Download leaflet
+      service_glaucoma_down: Download Glaucoma leaflet
+      service_glaucoma_down_text: ''
     xerophthalmia: Dry Eyes
     xerophthalmia_head: 'Dry Eyes｜CMER｜Medical Services'
     xerophthalmia_con: 
@@ -877,7 +881,7 @@ pages:
         process1: Collect information on history, symptoms, and eye habits,which help to identify the cause(s) of dry eye.
         process2: "Ocular examinations: i.e. the eyelid and cornea."
         process3: Check the stability of the tear film and measure the tear break-up time.
-        process4: Check the stability of the tear film and measure the tear break-up time.
+        process4: Apply test(s) to check tear production parameters.
         name4: Common diagnostic tests
         testMethod:
           - title: "Schirmer's test"
@@ -947,14 +951,14 @@ pages:
       btn:
         name1_1: Experiencing initial symptoms?
         name1_2: Book an appointment via WhatsApp.
-        name2: WhatsApp now to inquire about your treatment plan!
+        name2: WhatsApp now to inquire about your treatment plan! 
         name3: Call now to book an appointment!
         name4: Call now for medical assistance!
         name5_1: Call now to book an appointment!
         name5_2: ''
       dow:
-        text1: Dry Eyes
-        text2: Download leaflet
+        text1: Download Dry Eyes leaflet
+        text2: ''
     muscae_volitantes: Eye Floaters
     muscae_volitantes_head: 'Eye Floaters｜CMER｜Medical Services'
     muscaeVolitantes_con:
@@ -1039,8 +1043,8 @@ pages:
         q3: Q：Do eye drops and medications help get rid of floaters?
         a3: Anti-inflammatory eye drops may be used for treating pathological floaters; however, eye drops may not be useful for degenerative floaters which are not related to inflammation.  
       dow:
-        text1: Eye Floaters
-        text2: Download leaflet
+        text1: Download Eye Floaters leaflet
+        text2: ''
       btn:
         name1_1: Book an appointment via WhatsApp.
         name1_2: ''
@@ -1126,20 +1130,20 @@ pages:
       btn:
         name1_1: Call now for medical assistance!
         name1_2: ""
-        name2_1: Call now for medical assistance!
+        name2_1: WhatsApp us
         name2_2: ""
         name3_1: Call now for medical assistance!
         name3_2: ""
       dow: 
-        text1: conjunctivitis
-        text2: Download leaflet
+        text1: Download Conjunctivitis leaflet
+        text2: ''
     maculopathy: Macular Degeneration
     maculopathy_head: 'Macular Degeneration｜CMER｜Medical Services'
     maculopathy_con:
       navLists:
         name1: Macular Degeneration
         name2: Symptoms
-        name3: Self-examination
+        name3: Self Test
         name4: Dry macular degeneration
         name5: Wet macular degeneration
         name6: Prevention
@@ -1254,8 +1258,8 @@ pages:
         name2_1: WhatsApp now to inquire about your treatment plan!
         name2_2: ''
       dow:
-        text1: Macular Degeneration
-        text2: Download leaflet
+        text1: Download Macular
+        text2: Degeneration leaflet
     strabismusAmblyopia: Amblyopia and Strabismus in Children
     strabismusAmblyopia_con_head: 'Amblyopia and Strabismus in Children｜CMER｜Medical Services'
     strabismusAmblyopia_con:
@@ -1343,8 +1347,8 @@ pages:
         name2_1: Book an appointment via WhatsApp.
         name2_2: ''
       dow:
-        text1: Amblyopia and Strabismus in Children
-        text2: Download leaflet
+        text1: Download Amblyopia and Strabismus in Children leaflet
+        text2: ''
     amotioRetinae: Retinal Detachment
     amotioRetinae_head: 'Retinal Detachment｜CMER｜Medical Services'
     amotioRetinae_con: 
@@ -1382,7 +1386,7 @@ pages:
         span3: There might be permanent damage to vision and irreversible consequences if retinal detachment is not treated timely.
         span4: ""
       treat:
-        name: Treatments for Retinal Detachment
+        name: Treatments
         title1: Pneumatic retinopexy
         text1: An expanding gas bubble is injected into the eye, your doctor will position you so that the bubble floats over the detached area and pushes it against the back of your eye. Additional cryosurgery or laser therapy to seal the retina against the wall of the eye may also be needed.
         title2: Scleral buckle
@@ -1428,8 +1432,8 @@ pages:
         name2_1: Which treatment is suitable for you?
         name2_2: WhatsApp us
       dow:
-        text1: Retinal Detachment
-        text2: Download leaflet
+        text1: Download Retinal Detachment leaflet
+        text2: ''
     ocularSurfaceDiseases: Ocular Surface and Corneal Diseases
     ocularSurfaceDiseases_head: 'Ocular Surface and Corneal Diseases｜CMER｜Medical Services'
     ocularSurfaceDiseases_con: 
@@ -1529,7 +1533,7 @@ pages:
         name3: Episcleritis complications
         span3_1: Abscesses accumulate in anterior chamber
         span3_2: Scleral melt
-        span3_3_1: Cataract
+        span3_3_1: Corneal edema
         span3_3_2: ""
         span3_4: Cataract
         name4: Types of episcleritis
@@ -1544,7 +1548,7 @@ pages:
         name5_1: "If the symptoms are mild: "
         text5_1: you can consider applying tropical steroid drugs.
         name5_2: "If the condition is severe or has frequent attacks: "
-        text5_2: to prevent serious complications, patients should have comprehensive examination to see if they have other autoimmune or connective tissue diseases.
+        text5_2: Comparing to simple episcleritis, nodular episcleritis usually develops in young females and the recovery period is longer. Patients may have symptoms of eye redness, eye pain, sensitive to light and tearing, but visual function is generally not affected. It usually lasts for around 2 weeks and inflammation will fade gradually. Around two third of patients will have nodular episcleritis again for several times.
         name5_3: If patients also have iritis or iridocyclitis
         text5_3: They should apply dilating eye drops in time to reduce inflammation.
         btn1: Call now for medical assistance!
@@ -1735,15 +1739,15 @@ pages:
         time1: Surgical time
         recovery1: Recovery time
         operation2: "Suture method"
-        introduce2_1: The treatment does not need an incision, instead it just requires a few small wounds. Then, the doctor will suture the upper eyelid muscle, tarsal plate and levator together to avoid the problem of ingrown eyelash. 
-        introduce2_2: This method causes less injury so the patient may recover faster. People with mild eyelid sagging and thin skin are recommended to choose this treatment.
+        introduce2_1: "Performed by creating a few tiny incisions in the upper eyelid skin, then embedding the surgical suture below the skin to form the double eyelid."
+        introduce2_2: ' This method is suitable for young people and those with thin and firm eyelid skin with little excess fat.'
         durability2_1: 2-3 years
         durability2_2: (reduces over time)
         time2: around 45 minutes
         recovery2: around 7-10 days
-        operation3: Open incision
-        introduce3_1: Skin incision is performed followed by exposure of the eyelid muscles and orbital septum. The doctor will then take out the excess fat. The skin, tarsal plate and levator muscle are sutured directly.
-        introduce3_2: Although the treatment will leave a scar, the scar can generally be covered in the line of the "double eyelid"crease. This method is suitable for people with thick skin and have more fat in the eyelids.
+        operation3: Incisional method
+        introduce3_1: "Performed by creating an incision along the lid crease of the upper eyelid to remove excess fat and tissue. The incision is sutured to create an attachment between upper eyelid muscle and skin."
+        introduce3_2: ' This method is suitable for people who have relatively thicker eyelids with more fatty tissue.'
         durability3: long term
         time3: "around 60-90 minutes"
         recovery3_1: around 14-21 days 
@@ -1794,19 +1798,19 @@ pages:
         btn2_1: Call now to book an appointment!
         btn2_2: ''
         title3: Real and fake eye cancer
-        name3_1: eyelid cancer
+        name3_1: Eyelid cancer
         text3_1: Keratoacanthoma
-        text3_2: squamous cell epithelioma
+        text3_2: Squamous cell epithelioma
         p3_1: Keratoacanthoma and squamous cell epithelioma are both related to prolonged exposure to ultraviolet rays. Since the distribution of skin pigmentation is different, the risk for Asians to have eye cancer is lower than white people. Squamous cell epithelioma is also related to HIV infection.
         p3_2: The typical appearance of both cancers is swollen bump that newly appears on eyelids. The bump grows fast and may develop ulceration. Sometimes it is hard to differentiate, so the tissue may need to be cut and examine in order to confirm the diagnosis and grading. Once it is confirmed, they can be treated by local chemotherapy, radiotherapy and cryotherapy based on the grading.
         name4: Ocular surface cancer
         text4_1: Pterygium
-        text4_2: squamous cell carcinoma on ocular surface
+        text4_2: Squamous cell carcinoma on ocular surface
         p4_1: Both are closely related to gradual damage from ultraviolet rays. Pterygium is a benign chronic degeneration, the typical symptoms are the conjunctiva on the sclera becoming thicker and will become fleshy. The symptoms are not apparent in the early stage. Squamous cell carcinoma is also related to exposure to ultraviolet rays. It is usually not easy to be distinguished with pterygium. However, squamous cell carcinoma can invade the ocular structures and spread through blood vessels and lymphatics, so it must be treated seriously.
         p4_2: The general development of pterygium is slow, but usually in stationary phase. If there is no symptom or the size is smaller than 3mm, it is not needed to be treated, but observation; If it becomes active or the size is larger than 3mm, it is needed to consider receiving treatment. Generally all pterygium does not need excision or treatment. However, it may cause discomfort to eyes and need to apply eye drops to relieve inflammation and discomfort if pterygium grows larger. If pterygium becomes larger and grows to the central area of cornea, lead to astigmatism and even cover pupils, it may damage visual function, so pterygium removal should be considered. The treatment is safe and effective. Pterygium removal can improve both appearance and astigmatism. For squamous cell carcinoma, it should be removed and sent for histopathological examination to look for margins and base clearance in order to decide further treatment.
         name5: Intraocular cancer
         text5_1: Melanocytic tumor
-        text5_2: melanoma
+        text5_2: Melanoma
         p5: Both are degradations inside the eyes. There are usually no symptoms in the early stage. However, when it has progressed to the stage that affects visual function, the size of the swollen lump should be quite apparent.Melanocytic tumor is rarer to be seen. Its typical symptom is to grow black swollen bump in retina and it is usually found in one eye; it is more common to be seen among dark skinned people and females. Melanocytic tumor is often to be grown in optic nerve. This tumour is usually benign, so generally treatment is not needed. However, this tumour can rarely have malignant transformation which requires treatment. If the tumour becomes malignant, radiation therapy or removal surgery should be considered.Melanoma is malignant which will grow inside the eye, invade retina and vitreous. The malignant tumour cell may even spread to whole body and affect important organs. If melanoma is diagnosed, early treatment is required, so visual function can be retained and the possibility to spread to whole body can be reduced.
         text5_3: Coats' disease
         text5_4: Retinoblastoma
@@ -1826,7 +1830,7 @@ pages:
         title: Prosthetic eye surgery
         context: "The round orbital implant can fill most of the space in the eye socket, then the ocular prosthesis will fill the remain space. The prosthesis is moved with the support of the orbital implant. Orbital implant is made by various materials:"
         text1_1: "Silicone orbital implant"
-        text1_2: hydroxyapatite orbital implant
+        text1_2: Hydroxyapatite orbital implant
         text1_3: Porous polyethylene orbital implant
         name1: Traditional prosthetic eye surgery
         context1: Traditional ocular prosthesis aims at improving patient’s appearance and provide prosthetic eye with flexibility and comfort; However, there is still limitation in terms of flexibility and comfort.
@@ -1843,23 +1847,23 @@ pages:
         text1_1: Wash your hands before wearing it.
         text1_2: Use your thumb and middle finger to hold the ocular prosthesis. The side with marking faces upward. You can also use small rubber sucker to hold it.
         text1_3: Use the other thumb (or the other fingers of the same hand) to pull up the upper eyelid.
-        text1_4: Use index finger to fix the ocular prosthesis and release the upper eyelid. Then, slide the bottom part of the ocular prosthesis into the lower eyelid while pulling it downward until it is fixed in appropriate position.
+        text1_4: Slide the top part of the ocular prosthesis softly until half of it is covered by the upper eyelid.
         text1_5: Blink your eyes for 2 to 3 times, so the position of ocular prosthesis is fixed.
-        text1_6: Slide the top part of the ocular prosthesis softly until half of it is covered by the upper eyelid.
+        text1_6: Use index finger to fix the ocular prosthesis and release the upper eyelid. Then, slide the bottom part of the ocular prosthesis into the lower eyelid while pulling it downward until it is fixed in appropriate position.
         text1_7: At the same time, prevent the ocular prosthesis rotates
         name2: Steps to remove ocular prosthesis
         text2_1: It is more convenient to remove ocular prosthesis by rubber sucker.
         text2_2: Wash your hands and rubber sucker.
         text2_3: Make the rubber sucker wet by water or sterile solution. Then, put the sucker on top of the ocular prosthesis.
-        text2_4: Pull down the lower eyelid until you can see the bottom part of the ocular prosthesis while inclining the rubber sucker upward. The prosthesis can then be slide out over the lower lid
+        text2_4: Rubber sucker is put on the middle of the ocular prosthesis where the iris is. Press it softly, so it attaches the ocular prosthesis.
         text2_5: Press the rubber sucker until the ocular prosthesis is released from the orbital implant.
-        text2_6: Rubber sucker is put on the middle of the ocular prosthesis where the iris is. Press it softly, so it attaches the ocular prosthesis.
+        text2_6: Pull down the lower eyelid until you can see the bottom part of the ocular prosthesis while inclining the rubber sucker upward. The prosthesis can then be slide out over the lower lid
         text2_7: |
                   Press the sucker until it is attached firmly and completely on the ocular prosthesis. Then, you can release the rubber sucker.
         name3: "Note:"
         text3_1: "1. Put the ocular prosthesis on clean and soft tissue paper after removing it.Avoid touching the ocular prosthesis."
         text3_2: "2. prosthetic implant is a strict medical treatment."
-        span3: prosthetic implant is a strict medical treatment. It should be tailor made by ocularists with lots of experience according to patient’s eye socket size, appearance and colour of the healthy eye. It is made after accurate calculation. Generally, tailor made eye prosthetic needs to be ordered one day before. Individuals may need extra follow-ups for prosthesis adjustment. If there is no special situation after the implantation, follow-ups generally will be arranged every half year to one year. Since the size of eye socket and the facial shape of children are not mature after the enucleation, their eye prosthesis is needed to be replaced regularly. Therefore, follow-ups are important for them. For adult patients, they require to have adjustment around every 4 to 5 years.
+        span3: It should be tailor made by ocularists with lots of experience according to patient’s eye socket size, appearance and colour of the healthy eye. It is made after accurate calculation. Generally, tailor made eye prosthetic needs to be ordered one day before. Individuals may need extra follow-ups for prosthesis adjustment. If there is no special situation after the implantation, follow-ups generally will be arranged every half year to one year. Since the size of eye socket and the facial shape of children are not mature after the enucleation, their eye prosthesis is needed to be replaced regularly. Therefore, follow-ups are important for them. For adult patients, they require to have adjustment around every 4 to 5 years.
         name4: Important note for ocular prosthesis
         text4: Ocular prosthesis can create a more natural appearance and fill the eye socket. It can be used for longer time if the ocular prosthesis has often and essential/ necessary care treatment. It can be more comfortable for the patient, look more shiny in appearance, so it has better wearing outcome. Therefore, care treatment is very important for ocular prosthesis. There are a few important notes for ocular prosthesis as below,
         name5: "Cleaning frequency:"
@@ -1898,7 +1902,7 @@ pages:
         p1: Changing lifestyle, people nowadays are spending more time on screens every day. However, bad eye health will lead to degeneration and cause many eye problems or even eye diseases. It is believed that prevention is better than cure. Regular eye exams should be scheduled for good eye health and to prevent eye diseases.
         p2: ""
         span1: CMER VISION,
-        span2: an optometry center under CMER Eye Center, is committed to providing
+        span2: " an optometry center under CMER Eye Center, is committed to providing"
         span3: comprehensive eye examinations for adults and kids and a myopia
         span4: , taking care of different age groups. We will refer patients to an
         span5: ophthalmologist
@@ -1913,7 +1917,7 @@ pages:
         btn1: Book now!
         title2: 6-18 years old
         span2: The eye tends to grow rapidly during this age group. Children who develop myopia at an early age have the tendency of rapid progression because their eyes grow rapidly. Those who develop myopia in late childhood, the growth of eyeballs is slower.
-        text2: Book an eye examination for children aged 6-18.
+        text2: Myopia Management Consultation for aged 6-18.
         btn2: Book now!
         span3: "The myopia control is important, because abnormal vision development can affect a child's future development and eye health. CMER Vision Center concerns about the high myopia rate of school children, provides eye examination services and targeted myopia control programs for children, including: orthokeratology, daily disposable myopia control contact lenses, children's myopia control Lenses (DIMS lenses, MyoVision lenses), in order to help children in the prevention and control of myopia."
         btn3_1: Know More
@@ -1945,12 +1949,10 @@ pages:
               Learn about myopia control programs for children
       congruency:
         btn1: |
-              Make an appointment to see your doctor immediately
-              Assess whether atropine eye drops are appropriate for your child
+              Inquire immediately about atropine eye drops
       matters:
         btn1: |
-              Make an appointment to see your doctor immediately
-              Assess whether atropine eye drops are appropriate for your child
+              Inquire immediately about atropine eye drops
       atropine_text1: Atropine Eye Drops
       atropine_title1_text1: Atropine Eye Drops for Myopia Control
       atropine_title1_text2: The side effects of low concentration atropine eye drops are relatively mild and a 0.05% concentration appeared to achieve the best balance between maximising efficacy and minimising side effects.
@@ -2014,7 +2016,7 @@ pages:
     cost: Fees & Charges
     cont:
       cost_h1: Fees & Charges
-      cost_h3_1: ophthalmology
+      cost_h3_1: Pricelist for eye examinations
       cost_p1: No additional charge
       cost_h3_2: Special inspection items
       cost_tr1_td1: Single eye
