@@ -252,6 +252,9 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
+const goTel = () =>{
+  location.href = 'tel: +(852) 3956 2025'
+}
 const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
   mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
@@ -624,7 +627,7 @@ const bannerData = {
                 </div>
               </div>
             </div>
-            <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+            <div class="eyeOrthopaedicDisease_title_btn" @click="goTel">
               <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_2')}}</span>
             </div>
           </div>

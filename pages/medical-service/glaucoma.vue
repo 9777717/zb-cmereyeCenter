@@ -141,6 +141,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail1',
     img: 'https://static.cmereye.com/imgs/2023/05/3fed11ffa5e46d5a.png',
+    enImg: 'https://hkcmereye.com/template/default/picture/qgy_img/type5_en.png'
   },
   {
     id: '2',
@@ -148,6 +149,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail2',
     img: '',
+    enImg: ''
   },
   {
     id: '3',
@@ -155,6 +157,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail3',
     img: '',
+    enImg: ''
   },
   {
     id: '4',
@@ -162,6 +165,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail4',
     img: '',
+    enImg: ''
   },
   {
     id: '5',
@@ -171,6 +175,7 @@ const kind = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail5_2',
     ],
     img: '',
+    enImg: ''
   },
   {
     id: '6',
@@ -178,6 +183,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail6',
     img: '',
+    enImg: ''
   },
   {
     id: '7',
@@ -187,6 +193,7 @@ const kind = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail7_2',
     ],
     img: '',
+    enImg: ''
   },
   {
     id: '8',
@@ -194,6 +201,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail8',
     img: '',
+    enImg: ''
   },
 ]
 // 动态展示先天性青光眼模块
@@ -862,7 +870,8 @@ const bannerData = {
                     </div>
                   </div>
                   <div v-if="item.img">
-                    <img :src="item.img" />
+                    <img :src="item.enImg" v-if="locale === 'en'" />
+                    <img :src="item.img" v-else />
                   </div>
                 </div>
               </div>

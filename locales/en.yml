@@ -609,7 +609,7 @@ pages:
         cataract_array_meet_q2: Q：How long do IOLs last? Do they need to be replaced?
         cataract_array_meet_a2: IOLs are placed permanently in your eye and will not "wear out". IOLs need to be replaced only if IOLs shift out of its original position or it is damaged. There is a very small amount of patients who cannot adapt to the implanted IOLs (around 2% in multifocal IOLs and it is much less in that of monofocal IOLs).
         cataract_array_meet_q3: Q：Do I need to wear glasses after the surgery?
-        cataract_array_meet_a3: IOLs are placed permanently in your eye and will not "wear out". IOLs need to be replaced only if IOLs shift out of its original position or it is damaged. There is a very small amount of patients who cannot adapt to the implanted IOLs (around 2% in multifocal IOLs and it is much less in that of monofocal IOLs).
+        cataract_array_meet_a3: Your doctor will customize the target refraction according to your daily visual tasks and visual demands. Some of the patients may not need glasses after surgery if the target refractions fit their needs well. For those who require a better vision quality, they can be prescribed with glasses in order to assist them to gain a better vision for different purposes.
         cataract_array_meet_q4: Q：Will I have painful feeling during the surgery?
         cataract_array_meet_a4: Cataract surgery is performed under topical anesthesia (by applying numbing eye drops). Patients are awake during the surgery, but usually they do not feel pain.
         cataract_array_meet_q5: Q：Does cataract surgery need to be done in hospital?
@@ -652,7 +652,7 @@ pages:
       service_glaucoma_btn1_2: ""
       service_glaucoma_btn2_1: Call now to book an appointment!
       service_glaucoma_btn2_2: ""
-      service_glaucoma_btn3_1: Book an appointment via WhatsApp.
+      service_glaucoma_btn3_1: Call now!
       service_glaucoma_btn3_2: ""
       service_glaucoma_text1: Glaucoma is a progressive degeneration of the optic nerve. Optic nerve acts like a cable to help transmit visual signals from our eyes to the visual center in the brain. Patients with glaucoma may experience peripheral vision loss followed by a decrease in central vision; permanent visual loss may occur in serious cases. Since there are no symptoms in the early stages of glaucoma, many patients may be unaware that they have glaucoma until the disease has already progressed to a more advanced stage. Hence, chronic glaucoma is sometimes referred to as the "silent thief of sight".
       service_glaucoma_text2: Glaucoma is associated with increased intraocular pressure (IOP). The anterior chamber which is in front of the eye is filled with clear liquid secreted by ciliary body (aqueous humor). Aqueous humor circulates in anterior chamber. If there is blockage of aqueous humor drainage, it can lead to increased intraocular pressure, and damage the optic nerve.
@@ -1255,7 +1255,7 @@ pages:
       btn: 
         name1_1: Experiencing initial symptoms? 
         name1_2: Book an appointment via WhatsApp.
-        name2_1: WhatsApp now to inquire about your treatment plan!
+        name2_1: Call now!
         name2_2: ''
       dow:
         text1: Download Macular
@@ -1344,7 +1344,7 @@ pages:
       btn:
         name1_1: Book an appointment via WhatsApp.
         name1_2: ''
-        name2_1: Book an appointment via WhatsApp.
+        name2_1: Call now!
         name2_2: ''
       dow:
         text1: Download Amblyopia and Strabismus in Children leaflet
