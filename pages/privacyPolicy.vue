@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -98,7 +97,6 @@ useHead(() => ({
       font-family: 'Noto Sans HK';
       font-size: 22px;
       color: #2958a3;
-
       & > div:nth-child(2) {
         margin-top: 50px;
         font-family: 'Noto Sans HK';
@@ -106,13 +104,11 @@ useHead(() => ({
         font-size: 18px;
         color: #5f5f5f;
         letter-spacing: 0.1em;
-
         & > div {
           margin: 10px 0;
         }
       }
     }
-
     & > div:nth-child(2) {
       & > div {
         & > div:nth-child(1) {
@@ -121,7 +117,6 @@ useHead(() => ({
           font-size: 22px;
           color: #2958a3;
         }
-
         & > div:nth-child(2) {
           margin-top: 50px;
           font-family: 'Noto Sans HK';
@@ -129,10 +124,8 @@ useHead(() => ({
           font-size: 18px;
           color: #5f5f5f;
           letter-spacing: 0.1em;
-
           & > div {
             margin: 10px 0;
-
             & > p {
               margin: 10px 0;
             }

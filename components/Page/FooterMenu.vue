@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// import { defineProps } from "vue";
 defineProps({
   str:{
     type: String,
@@ -124,12 +123,7 @@ const menuLists = computed(()=>[
         name: t('components.menus.wechat'),
         icon: 'https://static.cmereye.com/imgs/2023/07/56fb4969e6637ae4.png',
         link: ''
-      },
-      // {
-      //   name: 'Email: booking@hkcmer.com',
-      //   icon: 'https://static.cmereye.com/imgs/2023/07/0f897e88c12c7f8e.png',
-      //   link: 'mailto:booking@hkcmer.com'
-      // }
+      }
     ]
   },
 ])
@@ -164,7 +158,6 @@ const handleToLinks = (_data:any) => {
 }
 
 const handleImgLists = (_link:any) => {
-  // console.log(_link)
   if(_link.type === 'drawer'){
     drawer.value = true
   }else{
@@ -172,9 +165,6 @@ const handleImgLists = (_link:any) => {
   }
 }
 let drawer = ref(false)
-
-
-
 
 </script>
 
@@ -204,15 +194,7 @@ let drawer = ref(false)
                   <div v-if="index === 2"><img :src="itemChild.icon" alt=""></div>
                   <span v-if="index === 1">{{`<`}}</span>
                   <span>{{itemChild.name}}</span>
-                  <!-- <div class="drawerIn" v-if="index===2 && itemChildIndex === 4">
-                    <img
-                      src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-                      alt="微信QR"
-                      srcset=""
-                    />
-                  </div> -->
                 </nuxt-link>
-                
               </section>
             </div>
             <div class="twoD" v-if="item.lists.length > 7">

@@ -3,7 +3,6 @@ definePageMeta({
   layout: 'page',
 })
 const route:any = useRoute()
-// console.log(route.query.id)
 let pageId = ref(0)
 let pageDetail = ref({
   sortname: '',
@@ -21,7 +20,6 @@ const getDetail = async () => {
   contentLoading.value = true
   const {data}:any = await useFetch(`https://hkcmereye.com/api.php/content/${pageId.value}`)
   let res = JSON.parse(data.value)
-  // console.log(res)
   pageDetail.value = {
     sortname: res.data.sortname,
     title: res.data.title,

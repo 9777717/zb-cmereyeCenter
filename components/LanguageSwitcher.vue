@@ -8,7 +8,6 @@ import {
 } from '@headlessui/vue'
 import { availableLocales } from '~/utils/lang'
 
-// micro compiler
 const props = defineProps({
   type: {
     type: String,
@@ -16,7 +15,6 @@ const props = defineProps({
   },
 })
 
-// state
 const currentStyle = toRef(props, 'type')
 const localeSetting = useState<string>('locale.setting')
 </script>
@@ -51,7 +49,6 @@ const localeSetting = useState<string>('locale.setting')
               stroke-linejoin="round"
             />
           </svg>
-          <!-- <div class="font">{{ $t('pages.index.footer.language') }}</div> -->
           <div class="font">Languages</div>
         </span>
       </ListboxButton>
@@ -71,11 +68,9 @@ const localeSetting = useState<string>('locale.setting')
           }"
         >
           <span class="text-sm mr-2">
-            <!-- {{ lang.flag }} -->
           </span>
           <span class="flex-1 truncate">
             {{ lang.name }}
-            <!-- <span class="text-xs">({{ lang.iso }})</span> -->
           </span>
         </ListboxOption>
       </ListboxOptions>
@@ -105,11 +100,8 @@ const localeSetting = useState<string>('locale.setting')
   font-weight: 500;
   font-size: 14px;
   line-height: 35px;
-  /* identical to box height, or 250% */
-
   text-align: center;
   letter-spacing: 0.05em;
-
   color: #ffffff;
 }
 </style>

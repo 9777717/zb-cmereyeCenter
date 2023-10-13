@@ -2,7 +2,6 @@
 import { useRoute } from 'vue-router'
 import { availableLocales } from '~/utils/lang'
 
-// micro compiler
 const props = defineProps({
   type: {
     type: String,
@@ -131,7 +130,7 @@ const menus = computed( ()=>{ return [
     ],
   },
   {
-    type: 'link', // ophthalmic_information 眼科資訊
+    type: 'link', // 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
     link: {path: '/ophthalmic-information'},
     childMenuList: [
@@ -216,7 +215,6 @@ const menus = computed( ()=>{ return [
 
 const router = useRouter()
 const toIndex = () => {
-  // window.location.href = '/'
   router.push({
     path: '/'
   })
@@ -224,7 +222,6 @@ const toIndex = () => {
 }
 
 const toLinks = (data:any) =>{
-  // console.log(router)
   router.push(data.link || {path: ''})
   menuBool.value = false
 }
@@ -310,7 +307,6 @@ watch(
     var b:any = document.getElementById('mbFooterTop')
     let routeName:any = route.name
     if(route.name === 'index'){
-      // b.style.display = n ? 'block' : 'none'
     }else if(serciceLists.includes(routeName)){
 
     }else{
@@ -320,7 +316,6 @@ watch(
 )
 
 const getBg = ()=>{
-  // console.log(route.name);
   let routeName:any = route.name
   let str = ''
   if(route.name === 'index' && !menuBool.value){
@@ -431,21 +426,6 @@ const changeLang = (_lang:any) =>{
   </div>
 </template>
 <style>
-body .uwy.userway_p3 .uai{
-  /* bottom: 165px !important; */
-  /* display: none; */
-}
-body .uwy .uai{
-  /* width: 54px !important; */
-  /* max-width: 54px !important; */
-  /* height: 54px !important; */
-  /* max-height: 54px !important; */
-  /* background: #2958A3 !important; */
-}
-.uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
-  /* width: 54px !important; */
-  /* height: 54px !important; */
-}
 @media screen and (max-width: 768px) {
   body .uwy.userway_p3 .uai{
     bottom: 165px !important;
@@ -456,7 +436,6 @@ body .uwy .uai{
     max-width: 54px !important;
     height: 54px !important;
     max-height: 54px !important;
-    /* background: #2958A3 !important; */
   }
   .uwy .uai img:not(.check_on), body .uwy .uai img:not(.check_on){
     width: 54px !important;
@@ -591,9 +570,4 @@ body .uwy .uai{
   padding-bottom: 100px;
 }
 
-@media (min-width: 768px) and (max-width: 1452px) {
-}
-@media screen and (max-width: 768px) {
-  
-}
 </style>

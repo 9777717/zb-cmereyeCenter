@@ -40,7 +40,6 @@ const getArticleList = async () => {
   })
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/204`)
   let res = JSON.parse(data.value)
-  console.log(res)
   articleList.value = res.data.map((item:any) => {
     let date = new Date(item.date);
     let y = date.getFullYear();

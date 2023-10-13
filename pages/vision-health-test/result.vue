@@ -262,10 +262,7 @@ let rightDataList = ref({
 })
 
 let ShowBool = ref(false)
-
 onMounted(()=>{
-
-
 if(!['01','05','06','07','08'].includes(testId)){
   ShowBool.value = true
 }
@@ -299,7 +296,6 @@ if(testId == '08'){
     else if(testSum >= 2 && testSum <= 3){datalist.value = list[2][1];}
     else{datalist.value = list[2][2];}
 }
-
 if(testId == '02'){
   resultTitle.value = '散光測試';
   datalist.value = (leftSum > 0) ? list[5][1] : list[5][0];
@@ -349,14 +345,9 @@ if(testId == '11'){
   rightDataList.value.ct += r_per + "%";
 }
 })
-
-
-
 const toEyesight = () =>{
   location.href = '/ophthalmic-information/eyesight'
 }
-
-
 </script>
 
 <template>
@@ -388,7 +379,6 @@ const toEyesight = () =>{
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 .resultPage{
@@ -447,7 +437,6 @@ const toEyesight = () =>{
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .resultPage{
     &-header{
@@ -482,22 +471,5 @@ const toEyesight = () =>{
       }
     }
   }
-}
-@media screen and (min-width: 1920px) {
-  // .resultPage{
-  //   margin: 200px auto;
-  //   &-content{
-  //     &>div{
-  //       &>div{
-  //         img{
-  //           width: 80%;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   &-btn{
-  //     margin-top: 200px;
-  //   }
-  // }
 }
 </style>

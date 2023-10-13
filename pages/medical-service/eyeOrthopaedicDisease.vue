@@ -1,13 +1,8 @@
 <script lang="ts" setup>
 import { useTitle } from '@vueuse/core'
 
-onMounted(() => {
-  // const ophthalmoplastyList = ref(null)
-  // console.log(ophthalmoplastyList.value, '456')
-})
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -268,16 +263,6 @@ const bannerData = {
 <template>
   <div class="eyeOrthopaedicDisease">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="eyeOrthopaedicDisease_head">
-      <div>
-        <div>
-          <div :class="{headEn:locale === 'en'}">眼矯形及眼眶疾病</div>
-          <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
-          <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
-          <div>EYE PLASTIC SURGERY AND ORBITAL DISEASES</div>
-        </div>
-      </div>
-    </div> -->
     <div class="eyeOrthopaedicDisease-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
     </div>

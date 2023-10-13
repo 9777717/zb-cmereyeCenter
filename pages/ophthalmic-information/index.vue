@@ -48,9 +48,7 @@ const getMainContent = async () => {
   })
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
   let res = JSON.parse(data.value)
-  // console.log(res)
   totalPageNum.value = Math.ceil(res.rowtotal / 4)
-  // console.log(totalPageNum.value)
   mainContent.value = res.data.map((item:any) => {
     return {
       img: `https://hkcmereye.com${item.ico}`,

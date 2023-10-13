@@ -81,7 +81,6 @@ const eyesightLists = [
 ]
 
 const toTestPage = (_id:string) =>{
-  // localStorage.setItem("testId", _id);
   if(['06','07','08'].includes(_id)){
     location.href = `/vision-health-test/qa?id=${_id}`
   }else{

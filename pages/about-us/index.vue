@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -75,17 +73,12 @@ const CORPORATE_Lists = [
     <div class="header mainCon">
       <AboutChildCompsHead />
     </div>
-
     <div class="textbg en-font whitespace-nowrap overflow-hidden">
       OUR VISION FOR A BETTER FUTURE.
     </div>
     <div class="introduction">
-      <!-- <div class="mainContents mainCon flex items-end flex-col justify-start"> -->
       <AboutChildCompsCentreIntro />
-
       <AboutChildCompsHistory />
-
-      <!-- <AboutChildCompsCorporateVision /> -->
       <div class="CORPORATE_VISION" id="corporate">
         <div class="CORPORATE_VISION-in">
           <div class="CORPORATE_VISION-in-title">
@@ -117,13 +110,10 @@ const CORPORATE_Lists = [
         </div>
       </div>
       <AboutChildCompsMedicalEquipment />
-
       <feedback-con />
       <AboutChildCompsAwards />
-
       <PageFooterMenu />
     </div>
-    <!-- </div> -->
   </div>
 </template>
 <style lang="scss" scoped>

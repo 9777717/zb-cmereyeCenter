@@ -63,11 +63,9 @@ const submitForm = async (formEl: FormInstance | undefined) => {
   if (!formEl) return
   await formEl.validate((valid, fields) => {
     if (valid) {
-      console.log('submit!')
       postData()
       resetForm(formEl) // 成功提交清空表单内容
     } else {
-      console.log('error submit!', fields)
     }
   })
 }
@@ -90,17 +88,14 @@ const postData = async () => {
     body: _data
   })
   let res = data.value
-  // console.log(res)
   if (res == '发送成功！') {
-    // if(res.code){
-      ElMessage({
-        showClose: true,
-        message: '表單提交成功！我們會盡快回覆閣下。',
-        type: 'success',
-        duration: 0
-      })
-      localStorage.setItem('contactForm',JSON.stringify(ruleForm))
-    // }
+    ElMessage({
+      showClose: true,
+      message: '表單提交成功！我們會盡快回覆閣下。',
+      type: 'success',
+      duration: 0
+    })
+    localStorage.setItem('contactForm',JSON.stringify(ruleForm))
   }
 }
 

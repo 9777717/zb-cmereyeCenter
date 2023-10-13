@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -48,7 +47,6 @@ a.router-link-exact-active {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   & > div:nth-child(2) {
     display: flex;
     flex-direction: row;
@@ -59,13 +57,9 @@ a.router-link-exact-active {
     font-weight: 500;
     font-size: 14px;
     line-height: 35px;
-    /* identical to box height, or 250% */
-
     text-align: center;
     letter-spacing: 0.05em;
-
     color: #ffffff;
-
     & > div:nth-child(2) {
       margin: 0 10px;
     }

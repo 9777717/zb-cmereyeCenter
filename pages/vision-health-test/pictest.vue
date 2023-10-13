@@ -393,7 +393,6 @@ checkAcItem()
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .pictestPage{
     &-header{
@@ -457,7 +456,5 @@ checkAcItem()
       }
     }
   }
-}
-@media screen and (min-width: 1920px) {
 }
 </style>

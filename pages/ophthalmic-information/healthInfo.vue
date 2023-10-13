@@ -21,7 +21,6 @@ useHead(() => ({
 }))
 
 const toLinkPage = (_data: any) => {
-  // console.log(_data)
   window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
 let healthList = ref([
@@ -45,7 +44,6 @@ const getMainContent = async () => {
   })
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/194/page/${actPageNum.value}/num/4`)
   let res = JSON.parse(data.value)
-  // console.log(res)
   totalPageNum.value = Math.ceil(res.rowtotal / 4)
   healthList.value = res.data.map((item:any) => {
     let date = new Date(item.date);

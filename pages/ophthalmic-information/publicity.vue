@@ -6,7 +6,6 @@ const { t } = useLang()
 useHead(() => ({
   title: t('pages.ophthalmic_information.ophthalmic_publicity'),
 }))
-// 眼疾影片
 const eyeDisease = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
@@ -141,18 +140,6 @@ const eyeDisease = [
             <PageVideoSwiper :eye-disease="eyeDisease" />
           </div>
         </div>
-        <!-- <div>
-          <div>
-            {{
-              $t(
-                'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_text6'
-              )
-            }}
-          </div>
-          <div class="videoBorder household">
-            <PageVideoSwiper :eye-disease="eyeDisease" />
-          </div>
-        </div> -->
       </div>
       <div class="publicity-content-mb">
         <div v-for="(item, index) in eyeDisease" :key="index">

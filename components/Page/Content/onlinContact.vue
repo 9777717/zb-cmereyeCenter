@@ -1,27 +1,15 @@
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
 const router = useRoute()
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
-
-// useHead({
-//   script: [
-//     { 
-//       src: 'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5'
-//     }
-//   ],
-// })
 
 const locale = useState<string>('locale.setting')
 
 function chat(p?: string): void {
   var host = window.location.host;
   p = p ? p : host;
-  // console.log(window)
-  // openZoosUrl('chatwin', `&e=${host}[${p}]`)
-  // wangyePCyoucezixun
 }
 
 const route = useRoute()

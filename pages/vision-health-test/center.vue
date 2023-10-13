@@ -110,11 +110,7 @@ const DrawEChar = () =>{
   ERightText.value = ceitems[rrCurrent.value].big;
   let c:any = document.getElementById("canvas");
   let cxt = c.getContext("2d")
-  // var width = viewwindow().width;
-  // c.style.width = Ewidth * 3 + 'px';
   c.style.width = Ewidth * 1 + 'px'
-  // if(s > width){c.style.marginLeft = ((Ewidth * 3 - width) / -2) + 'px';}
-  // else{c.style.marginLeft = (( width - Ewidth * 3) / 4) + 'px';}
   cxt.translate( 150, 75);
   cxt.strokeStyle = "#000000";
   cxt.lineWidth = 20;
@@ -133,7 +129,6 @@ const DrawEChar = () =>{
 let showBool = ref(false)
 let isResult = ref(false)
 let isRight = ref(false) 
-
 const handleNextBtn = () => {
   showBool.value = true
   nextTick(()=>{
@@ -712,7 +707,5 @@ let rightResult = ref({
       }
     }
   }
-}
-@media screen and (min-width: 1920px) {
 }
 </style>

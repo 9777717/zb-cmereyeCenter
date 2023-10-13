@@ -9,11 +9,9 @@ import {
 import { capitalize } from '~/utils/str'
 import { Size } from '~/composables/useScreen'
 
-// composable
 const { t } = useLang()
 const screen = useScreen()
 
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -27,7 +25,6 @@ useHead(() => ({
   ],
 }))
 
-// funcs
 const randomToken = () => {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
   let token = ''
@@ -37,16 +34,13 @@ const randomToken = () => {
   return token
 }
 
-// state
 const username = ref('viandwi24')
 const id = ref(randomToken())
 const enableSpamProtection = ref(false)
 const enableDirList = ref(false)
 const enableAdvancedSetting = ref(false)
 
-// methods
 const validate = async () => {
-  // fetch username from github api
   try {
     const response = await fetch(
       `https://api.github.com/users/${username.value}`

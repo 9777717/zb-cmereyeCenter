@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -78,20 +77,6 @@ const bannerData = {
 <template>
   <div class="atropine">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="atropine_head">
-      <div class="maxCon">
-        <div>
-          <div>
-            <div>
-              阿托品眼藥水
-            </div>
-            <div>ATROPINE EYE DROPS</div>
-            <div>ATROPINE EYE DROPS</div>
-            <div>ATROPINE EYE DROPS</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="atropine-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
@@ -649,8 +634,6 @@ const bannerData = {
         width: max-content;
         padding: 20px 90px;
         cursor: pointer;
-        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -715,10 +698,6 @@ const bannerData = {
           }
         }
       }
-
-      & > div:nth-child(n + 3) {
-        // margin-top: 110px;
-      }
     }
   }
 
@@ -769,8 +748,6 @@ const bannerData = {
         width: max-content;
         padding: 20px 50px;
         cursor: pointer;
-        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -818,7 +795,6 @@ const bannerData = {
 
         & > div {
           width: 500px;
-          // height: 378px;
           border-radius: 10px;
           border: solid 2px #c1e8f3;
           position: relative;
@@ -942,8 +918,6 @@ const bannerData = {
         width: max-content;
         padding: 20px 50px;
         cursor: pointer;
-        // background-image: linear-gradient(-90deg, #99d3dd 0%, #ccf0f6 100%),
-        //   linear-gradient(#529fd3, #529fd3);
         background-blend-mode: normal, normal;
         border-radius: 20px;
         font-family: 'Noto Sans HK';
@@ -982,7 +956,6 @@ const bannerData = {
 
   .up_bid {
     font-size: 12px !important;
-    // vertical-align: super !important;
     vertical-align: middle;
     display: inline-block;
     margin-top: -17px;
@@ -1083,9 +1056,6 @@ const bannerData = {
       flex-direction: column;
       align-items: flex-end;
       margin-top: 98px;
-      // float: right;
-      // margin-left: 40vw;
-
       & > div:nth-child(1) {
         & > div:nth-child(1) {
           font-family: 'NotoSansCJKtc-Bold';

@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { Autoplay } from 'swiper'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -474,27 +473,23 @@ onMounted(()=>{
 }
 .contact_eye {
   margin-bottom: 40px;
-
   & > div:nth-child(1) {
     & > div:nth-child(1) {
       display: flex;
       flex-direction: column;
       margin-top: 60px;
       position: relative;
-
       & > div:nth-child(1) {
         width: 1150px;
         height: 550px;
         background-color: #f2f2f2;
         margin: auto;
       }
-
       & > div:nth-child(2) {
         position: absolute;
         width: 100%;
         top: 22.5%;
       }
-
       & > div:nth-child(3) {
         position: absolute;
         z-index: 5;
@@ -506,21 +501,17 @@ onMounted(()=>{
     }
   }
 }
-
 .mainCon {
   max-width: 1200px;
   margin: auto;
 }
-
 .contactBody {
   margin-top: 150px;
   width: 85%;
-
   .title {
     writing-mode: vertical-lr;
     margin-left: 7%;
     margin-right: 8%;
-
     &::after {
       content: 'EYE CENTER';
       position: absolute;
@@ -532,11 +523,9 @@ onMounted(()=>{
       white-space: nowrap;
     }
   }
-
   .addressBox {
     .switchReionBtnBox {
       margin-bottom: 120px;
-
       button {
         border: solid 1px #515151;
         padding: 3px 55px;
@@ -544,34 +533,28 @@ onMounted(()=>{
         line-height: 160%;
         font-family: auto;
       }
-
       .activeBtn {
         background: #2958a3;
         color: #fff;
       }
     }
   }
-
   .addressDetailBox {
     .addressDetailItem {
       .textBox {
         width: 66%;
         font-size: 17px;
-
         .clinicHours {
           white-space: break-spaces;
         }
-
         .addressDetailBtnBox {
           text-align: center;
-
           .googleMaps {
             background-color: #6a91cf;
             color: #fff;
             width: 150px;
             padding: 15px 0;
           }
-
           .orderBtn {
             background-color: #8ad8dd;
             color: #fff;
@@ -580,10 +563,8 @@ onMounted(()=>{
           }
         }
       }
-
       .imgBox {
         position: relative;
-
         &::before {
           content: '';
           position: absolute;
@@ -592,14 +573,11 @@ onMounted(()=>{
           height: 100%;
           z-index: 0;
         }
-
         img {
           position: relative;
           z-index: 1;
         }
       }
-
-      // 奇数
       &:nth-child(odd) {
         .imgBox {
           margin-top: 20px;
@@ -610,8 +588,6 @@ onMounted(()=>{
           }
         }
       }
-
-      // 偶数
       &:nth-child(even) {
         .imgBox {
           &::before {
@@ -669,7 +645,6 @@ onMounted(()=>{
     }
     .addressBox {
       .switchReionBtnBox {
-        // justify-content: space-around;
         width: calc(100% - 60px);
         margin: 0 auto 40px;
         button{

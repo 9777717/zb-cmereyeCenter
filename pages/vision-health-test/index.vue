@@ -147,7 +147,6 @@ let testPageSwipers = ref([
   }
 ])
 var list_item:any = list.find(item => item.id == testId)
-// console.log(list_item)
 testTitle.value = list_item.title
 list_item.imageUrl.forEach((item:any) => {
   if(item.ct === null){
@@ -217,7 +216,6 @@ const setTestSwiperRef = (swiper:any) => {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   &-header{
     width: 100%;
@@ -278,7 +276,6 @@ const setTestSwiperRef = (swiper:any) => {
     text-align: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .testPage{
     &-header{
@@ -311,7 +308,5 @@ const setTestSwiperRef = (swiper:any) => {
       border-radius: 10px;
     }
   }
-}
-@media screen and (min-width: 1920px){
 }
 </style>

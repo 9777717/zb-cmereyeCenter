@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -40,7 +39,6 @@ useHead({
     },
   ],
 })
-// 流程及費用
 const serviceNavigation = [
   {
     anchorName: 'pages.process_cost.cost',
@@ -215,23 +213,6 @@ const scrollHeight = () => {
                     <td class="text-center">/</td>
                     <td class="text-center">$600/$800</td>
                   </tr>
-                  <!-- <tr>
-                  <td rowspan="2">
-                    {{ $t('pages.process_cost.cont.cost_tr17_td1') }}
-                  </td>
-                  <td class="text-center text-left">
-                    {{ $t('pages.process_cost.cont.cost_tr17_td2') }}
-                  </td>
-                  <td class="text-center">/</td>
-                  <td class="text-center">$350</td>
-                </tr>
-                <tr>
-                  <td class="text-center border-0 text-left">
-                    {{ $t('pages.process_cost.cont.cost_tr18_td2') }}
-                  </td>
-                  <td class="text-center border-0">/</td>
-                  <td class="text-center border-0">$750</td>
-                </tr> -->
                 </tbody>
               </table>
               <p class="text-center mt-20 mb-16 leading-10">
@@ -240,15 +221,10 @@ const scrollHeight = () => {
                 {{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
                 {{ $t('pages.process_cost.cont.cost_p3_1_s')
                 }}<br />
-                <!-- <span class="font-bold">{{
-                  $t('pages.process_cost.cont.cost_p3_1')
-                }}</span> -->
-                <!-- {{ $t('pages.process_cost.cont.cost_p4') }} <br /> -->
                 {{ $t('pages.process_cost.cont.cost_p5') }}{{ $t('pages.process_cost.cont.cost_p4') }}<br />
                 {{ $t('pages.process_cost.cont.cost_p6')
                 }}<span class="font-bold">$1,500-$6,000</span>{{ $t('pages.process_cost.cont.cost_p6_1') }}
                 {{ $t('pages.process_cost.cont.cost_p7') }}<br />
-                <!-- {{ $t('pages.process_cost.cont.cost_p8') }} <br /> -->
                 {{ $t('pages.process_cost.cont.cost_p9') }}
               </p>
             </div>
@@ -322,26 +298,21 @@ const scrollHeight = () => {
 .processAndCostPage {
   margin-bottom: 50px;
 }
-
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;
   background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')no-repeat;
 }
-
 .processAndCost>div:nth-child(1) {
   max-width: 1080px;
   margin: auto;
 }
-
 .titleBox {
   padding-top: 100px;
   font-family: 'Noto Sans HK';
-
   h1 {
     font-size: 37.5px;
   }
-
   h2 {
     color: #8ad8dd;
     font-size: 21px;
@@ -351,11 +322,9 @@ const scrollHeight = () => {
     margin-bottom: 40px;
     letter-spacing: 5px;
   }
-
   h3 {
     font-size: 30px;
   }
-
   p {
     font-size: 20px;
   }
@@ -363,15 +332,12 @@ const scrollHeight = () => {
 
 .costsTable {
   background-color: rgba(255, 255, 255, 0.75);
-
   table {
     width: 100%;
-
     thead {
       td {
         padding-bottom: 35px;
         position: relative;
-
         &::before {
           content: '';
           position: absolute;
@@ -382,43 +348,34 @@ const scrollHeight = () => {
         }
       }
     }
-
     tbody {
       tr {
         border-bottom: #dddddd solid 1.5px;
         width: 887.83px;
-
         &:nth-child(odd) {
           background-color: rgba(242, 242, 242, 0.75);
         }
-
         &:nth-child(even) {
           background-color: rgba(255, 255, 255, 0.55);
         }
-
         &:last-child {
           border: none;
         }
-
         td {
           padding: 15px;
           padding-left: 25px;
         }
-
         td:nth-child(1) {
           width: 620px;
           text-align: left;
         }
       }
-
       &>tr:nth-child(17) {
         &>td:nth-child(2) {
           text-align: left;
         }
       }
-
       position: relative;
-
       &::before {
         content: '';
         position: absolute;
@@ -436,7 +393,6 @@ const scrollHeight = () => {
   position: fixed;
   right: 2.5%;
   z-index: 99;
-
   a {
     border: 0.5px solid #515151;
     margin: 5px 0;
@@ -445,14 +401,12 @@ const scrollHeight = () => {
     background-color: #fff;
     text-align: center;
   }
-
   .anchorActive,
   .exactActive {
     border: 0.5px solid #8ad8dd;
     background: #8ad8dd;
     color: #fff;
     position: relative;
-
     &::after {
       content: '';
       position: absolute;
@@ -484,7 +438,6 @@ const scrollHeight = () => {
     right: 2.5%;
     z-index: 99;
     bottom: 20%;
-
     a {
       border: 0.5px solid #515151;
       margin: 5px 0;
@@ -493,14 +446,12 @@ const scrollHeight = () => {
       background-color: #fff;
       text-align: center;
     }
-
     .anchorActive,
     .exactActive {
       border: 0.5px solid #8ad8dd;
       background: #8ad8dd;
       color: #fff;
       position: relative;
-
       &::after {
         content: '';
         position: absolute;
@@ -518,7 +469,6 @@ const scrollHeight = () => {
     align-items: flex-start;
     text-align: center;
     position: relative;
-
     &::before {
       content: '';
       color: #1b407a;
@@ -531,7 +481,6 @@ const scrollHeight = () => {
       width: 25px;
       height: 55px;
     }
-
     &>p,
     &>div {
       padding: 10px 20px;
@@ -539,21 +488,17 @@ const scrollHeight = () => {
       display: inline-block;
       color: #fff;
     }
-
     &>p {
       margin-right: 100px;
       width: 200px;
     }
-
     &>div {
       width: 500px;
     }
-
     h3 {
       border-bottom: 1px solid #fff;
     }
   }
-
   .itemdes>p:after {
     position: absolute;
     content: '';
@@ -564,15 +509,12 @@ const scrollHeight = () => {
     height: 1px;
     border-bottom: 2px #5376d0 dotted;
   }
-
   .processItem5::before {
     top: 75px;
   }
-
   .processItem6::before {
     display: none;
   }
-
   .process-en{
     .processItem{
       &:nth-of-type(3){
@@ -596,40 +538,32 @@ const scrollHeight = () => {
   .titleBox {
     width: max-content;
     color: #515151;
-
     h1 {
       font-size: 24px;
       padding-left: 30px;
-
     }
-
     h2 {
       padding-left: 30px;
       font-size: 18px;
       letter-spacing: -.05em;
     }
-
     h3 {
       font-size: 20px;
       padding-left: 30px;
     }
-
     p {
       font-size: 16px;
       padding-left: 30px;
     }
   }
-
   .costsTable {
     width: calc(100% - 60px);
     margin: 50px auto;
     padding: 30px 20px 1px;
-
     &>h3 {
       font-size: 24px;
       margin-bottom: 15px;
     }
-
     table {
       thead {
         td {
@@ -641,14 +575,12 @@ const scrollHeight = () => {
           }
         }
       }
-
       tbody {
         tr {
           td {
             font-size: 16px;
             padding: 10px 0 5px;
           }
-
           td:nth-child(1) {
             width: 140px;
             padding: 10px 10px 5px;
@@ -656,79 +588,63 @@ const scrollHeight = () => {
         }
       }
     }
-
     &>p {
       font-size: 16px;
       line-height: 30px;
     }
   }
-
   .processMain {
     .titleBox {
       padding-top: 50px;
-
       h2 {
         font-size: 18px;
         letter-spacing: -.05em;
       }
     }
-
     .processItem {
       margin-bottom: 70px;
-
       &::before {
         top: 50px;
         left: 45px;
         width: 10px;
         height: 30px;
       }
-
       &:nth-of-type(5):before {
         top: 75px;
       }
-
       &>p,
       &>div {
         padding: 7px 0px;
-
         br {
           display: none;
         }
       }
-
       &:not(:last-child) {
         &>div {
           padding: 7px 10px 16px;
-
           p {
             text-align: left;
           }
         }
       }
-
       &>p {
         margin-right: 50px;
         width: 100px;
       }
-
       &>div {
         flex: 1;
       }
-
       h3 {
         padding-top: 10px;
         padding-bottom: 0;
       }
     }
-
     &>div {
       width: 100%;
-
       &>div:last-child {
         margin-top: 0;
       }
     }
-
     .itemdes>p:after {
       left: 110px;
       top: 16px;
@@ -750,22 +666,13 @@ const scrollHeight = () => {
       }
     }
   }
-
   .processAndCost {
     background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
   }
-
   #processed {
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
-  }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
-  .content {
-    // padding-left: 160px;
   }
 }
 </style>

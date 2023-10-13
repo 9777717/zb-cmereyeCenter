@@ -252,7 +252,6 @@ const getPressContent = async () => {
   })
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/4/page/${actPageNum.value}/num/8/order/date`)
   let res = JSON.parse(data.value)
-  // console.log(res)
   totalPageNum.value = Math.ceil(res.rowtotal / 8)
   pressLists.value = res.data.map((item:any) => {
     let date = new Date(item.date);

@@ -8,7 +8,7 @@ definePageMeta({
 })
 
 onMounted(() => {
-  console.log(route, '456')
+  // console.log(route, '456')
 })
 </script>
 

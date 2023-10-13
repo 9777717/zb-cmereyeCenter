@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import { Anchor } from '~~/.nuxt/components'
-
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -175,7 +173,6 @@ const videoList = [
     & > div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
-      // width: 1700px;
       height: 858px;
       display: inline-block;
       position: absolute;
@@ -200,52 +197,40 @@ const videoList = [
         font-weight: 400;
         font-size: 49.14px;
         line-height: 46px;
-        /* identical to box height, or 94% */
-
         text-align: center;
         letter-spacing: 0.2em;
-
         color: #ffffff;
-
         & > div:nth-child(2) {
           font-family: 'Metropolis';
           font-style: normal;
           font-weight: 500;
           font-size: 25.64px;
           line-height: 44px;
-          /* identical to box height, or 173% */
-
           text-align: center;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-
           color: #8ad8dd;
         }
       }
-
       & > div:nth-child(2) {
         margin-top: 42px;
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
         font-size: 32px;
-
         text-align: center;
         letter-spacing: 0.3em;
-
         color: #ffffff;
       }
     }
   }
 
   & > div:nth-child(2) {
-    // margin: 0 392px;
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
     min-height: 900px;
     margin-top: 150px;
-
     & > div {
       display: flex;
       &:not(:last-child){
@@ -260,11 +245,9 @@ const videoList = [
         justify-content: center;
         align-items: center;
       }
-
       & > div:nth-child(2) {
         width: 518px;
         position: relative;
-        
         & > div:nth-child(1) {
           font-family: 'Noto Sans HK';
           font-style: normal;
@@ -275,7 +258,6 @@ const videoList = [
           color: #515151;
           position: relative;
         }
-
         & > div:nth-child(1)::after {
           content: '';
           width: 65.04px;
@@ -285,7 +267,6 @@ const videoList = [
           left: 0;
           bottom: 0;
         }
-
         & > div:nth-child(2) {
           margin-top: 34.3px;
           font-family: 'Noto Sans HK';
@@ -293,25 +274,19 @@ const videoList = [
           font-weight: 350;
           font-size: 13.1828px;
           line-height: 26px;
-          /* or 200% */
-
           text-align: justify;
           letter-spacing: 0.1em;
           text-indent: 30px;
           text-transform: uppercase;
-
           color: #232323;
-
           & > div:nth-child(1) {
             margin-bottom: 40px;
           }
         }
-
         & > div:nth-child(3) {
           position: absolute;
           bottom: 15px;
           right: 0;
-
           width: 95px;
           height: 37.27px;
           background: #8ad8dd;
@@ -323,7 +298,6 @@ const videoList = [
           text-align: center;
           letter-spacing: 0.1em;
           color: #ffffff;
-
           display: flex;
           align-items: center;
           justify-content: center;
