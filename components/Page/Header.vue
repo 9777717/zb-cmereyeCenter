@@ -127,6 +127,11 @@ const menus = computed( ()=>{ return [
         text: t('pages.medical_service.atropine'),
         link: {path: '/medical-service/atropine'}
       },
+      {
+        type: 'toPage',
+        text: t('pages.medical_service.smileHk'),
+        link:  'https://smile.hkcmereye.com/'
+      },
     ],
   },
   {
@@ -222,8 +227,12 @@ const toIndex = () => {
 }
 
 const toLinks = (data:any) =>{
-  router.push(data.link || {path: ''})
-  menuBool.value = false
+  if(data.type === 'toPage'){
+    location.href = data.link || ''
+  }else{
+    router.push(data.link || {path: ''})
+    menuBool.value = false
+  }
 }
 
 let menuBool = ref(false)

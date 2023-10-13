@@ -3288,6 +3288,7 @@ min-width: 15px;
 
           &>img {
             width: 55px;
+            max-width: auto;
             height: auto;
           }
         }

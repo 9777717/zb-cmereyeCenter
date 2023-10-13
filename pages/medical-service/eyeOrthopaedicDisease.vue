@@ -2319,6 +2319,14 @@ const bannerData = {
   }
   &.eyeOrthopaedicDiseaseNav-en{
     &>#ophthalmoplasty{
+      &>div:nth-child(3){
+        &>div:nth-child(3),
+        &>div:nth-child(4),
+        &>div:nth-child(5),
+        &>div:nth-child(6) {
+          margin-top: 80px;
+        }
+      }
       &>div:nth-child(4){
         &>div:nth-child(2){
           margin-top: 50px;
@@ -4123,7 +4131,9 @@ const bannerData = {
           
         }
         .usage_1_Image{
-          display: none !important;
+          position: relative;
+          bottom: 0;
+          margin:  30px 46px 0 -15px !important;
         }
       }
 
@@ -4277,7 +4287,9 @@ const bannerData = {
           }
         }
         .usage_2_Image{
-          display: none !important;
+          position: relative;
+          bottom: 0;
+          margin:  30px 46px 0 -15px !important;
         }
       }
 
@@ -4415,6 +4427,14 @@ const bannerData = {
     }
     &.eyeOrthopaedicDiseaseNav-en{
       &>#ophthalmoplasty{
+        &>div:nth-child(3){
+          &>div:nth-child(3),
+          &>div:nth-child(4),
+          &>div:nth-child(5),
+          &>div:nth-child(6) {
+            margin-top: 42px;
+          }
+        }
         &>div:nth-child(4){
           &>div:nth-child(2){
             margin-top: 0px;

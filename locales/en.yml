@@ -1022,7 +1022,7 @@ pages:
         p4: ""
         p5: ""
         p6_1: Advantages
-        p6_2: of Vitrectomy
+        p6_2: " of Vitrectomy"
         p7: Precise and efficient.
         p8: ""
         p9: Can be carried out with other therapies.
@@ -1733,8 +1733,8 @@ pages:
         name8: Double Eyelid Surgery
         text8: A double eyelid (crease) forms when the levator muscle extends and attaches to the pretarsal skin. The majority of Asians have single eyelid creases due to thicker eyelid skin, excess fatty tissue and the levator muscle extending to the lower part (the position near to eyelashes) of the eyelid. Thus, double eyelid surgery can be performed to create artificial attachments between the upper eyelid muscle and the overlying upper eyelid skin.
         name9: Double Eyelid Treatments
-        operation1: name
-        introduce1: introduce
+        operation1: Name
+        introduce1: Introduce
         durability1: Effectiveness
         time1: Surgical time
         recovery1: Recovery time
@@ -1765,8 +1765,8 @@ pages:
         p11_1: Dermatochalasis is a term used to describe the presence of loose and redundant eyelid skin due to periocular aging and is often seen in middle-aged and elderly people. In recent years, young people who are suffering from dermatochalasis are increasing, because of wearing contact lenses improperly.
         p11_2: If the symptom of drooping of eyelids is mild, it is unlikely to influence daily life. However, when drooping of eyelids is serious, it will affect the appearance, and even obscure vision.
         name12: Dermatochalasis Treatments
-        operation12_1: name
-        introduce12_1: introduce
+        operation12_1: Name
+        introduce12_1: Introduce
         durability12_1: Effectiveness
         time12_1: Surgical time
         recovery12_1: Recovery time
@@ -2139,7 +2139,7 @@ pages:
         addressList3_regionName: New Territories
         addressList3_addressDetailList:
           addressDetailList1_addressName: Sha Tin
-          addressDetailList1_addressDetail: Shop 1C—1F, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street
+          addressDetailList1_addressDetail: Shop 5A & 1C—1F, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street
           addressDetailList1_subwayExit: Shatin MTR Station (Exit A3)
           addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
           addressDetailList1_clinicHours:
@@ -2161,8 +2161,8 @@ pages:
             clinicHours2: Sat：09:30—13:30
             clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList4_addressName: Tseung Kwan O
-          addressDetailList4_addressDetail: Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road (Po Lam MTR Station, Exit B2)
-          addressDetailList4_subwayExit: ""
+          addressDetailList4_addressDetail: Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road 
+          addressDetailList4_subwayExit: "Po Lam MTR Station (Exit B2)"
           addressDetailList4_clinicHours:
             clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
             clinicHours2: Sat：09:30—13:30

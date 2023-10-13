@@ -3371,7 +3371,8 @@ const bannerData = {
           margin-right: 8%;
 
           &>img {
-            width: 55px;
+            width: 46px;
+            max-width: auto;
             height: auto;
           }
         }
@@ -3390,7 +3391,8 @@ const bannerData = {
           margin-right: 8%;
 
           &>img {
-            width: 55px;
+            width: 46px;
+            max-width: auto;
             height: auto;
           }
         }

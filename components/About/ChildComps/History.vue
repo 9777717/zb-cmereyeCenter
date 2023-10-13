@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const locale = useState<string>('locale.setting')
 const historyList = ref([
   {
     year: 'pages.about_us.course_year.year_23',
@@ -164,7 +165,7 @@ const historyList = ref([
         class="title relative z-50"
       />
     </div>
-    <div class="mainHistoryBox">
+    <div class="mainHistoryBox" :class="{'mainHistoryBox-en': locale === 'en'}">
       <div
         v-for="(years, i) in historyList"
         :key="i"
@@ -280,15 +281,15 @@ const historyList = ref([
     transform: none;
   }
   .mainHistoryBox {
-    width: calc(100% - 100px);
+    width: calc(100% - 60px);
     margin: 0 auto;
     padding: 80px 0 30px;
     .historyContent {
       margin-bottom: 30px;
+      padding: 0 5%;
       .year{
         font-size: 14px;
         line-height: 20px;
-        
       }
       .content{
         width: 90%;
@@ -297,8 +298,24 @@ const historyList = ref([
           width: 45px;
           padding-right: 0;
         }
+        &>div{
+          width: calc(100% - 45px);
+        }
         .info {
+          width: 100%
+        }
+      }
+    }
+    &.mainHistoryBox{
+      .historyContent {
+        .content{
           width: 100%;
+          .month {
+            width: 100px;
+          }
+          &>div{
+            width: calc(100% - 100px);
+          }
         }
       }
     }

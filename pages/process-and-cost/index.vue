@@ -655,9 +655,20 @@ const scrollHeight = () => {
     }
     .process-en{
       .processItem{
+        &:nth-of-type(2),&:nth-of-type(3){
+          margin-bottom: 30px;
+        }
+        p{
+          font-size: 12px;
+        }
         &:nth-of-type(4){
           &::before{
-            transform: translateY(30px);
+            transform: translateY(20px);
+          }
+        }
+        &:nth-of-type(5){
+          &::before{
+            transform: translateY(-20px);
           }
         }
       }

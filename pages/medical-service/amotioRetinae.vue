@@ -145,7 +145,7 @@ const styptomList1 = [
     text: ['pages.medical_service.amotioRetinae_con.styptom.text2_1', 'pages.medical_service.amotioRetinae_con.styptom.text2_2'],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/72980b97125764fe.jpg',
+    img: 'https://static.cmereye.com/imgs/2023/10/bf20112897ad33ed.jpg',
     title: 'STEP 3',
     text: ['pages.medical_service.amotioRetinae_con.styptom.text3'],
   },
