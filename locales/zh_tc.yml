@@ -556,6 +556,9 @@ pages:
         cataract_text2: 人工晶體位置更準確
         cataract_text3: 可使用較低的超聲波
         cataract_text4: 能量處理白內障
+        cataract_lineText1: 步驟一
+        cataract_lineText2: 步驟二
+        cataract_lineText3: 步驟三
         cataract_array_surgery1_1: 採用局部點眼藥水式
         cataract_array_surgery1_2: 麻醉法
         cataract_array_surgery2_1: 利用微細超聲波儀器

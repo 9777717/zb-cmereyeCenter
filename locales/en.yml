@@ -541,6 +541,9 @@ pages:
         cataract_text2: More accurate placement of artificial lens
         cataract_text3: Ability to use lower levels of ultrasonic energy for cataract treatment
         cataract_text4: ""
+        cataract_lineText1: Step 1
+        cataract_lineText2: Step 2
+        cataract_lineText3: Step 3
         cataract_array_surgery1_1: The cloudy lens is removed by a micro ultrasonic instrument.
         cataract_array_surgery1_2: ''
         cataract_array_surgery2_1: Implantation of an intraocular lens.

@@ -334,6 +334,7 @@ const scrollHeight = () => {
   background-color: rgba(255, 255, 255, 0.75);
   table {
     width: 100%;
+    height: auto;
     thead {
       td {
         padding-bottom: 35px;
@@ -375,15 +376,15 @@ const scrollHeight = () => {
           text-align: left;
         }
       }
-      position: relative;
-      &::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        border-bottom: 1px dashed;
-        bottom: -2%;
-        left: 0;
-      }
+    }
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px dashed;
+      bottom: -20px;
+      left: 0;
     }
   }
 }

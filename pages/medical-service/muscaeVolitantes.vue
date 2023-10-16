@@ -1364,7 +1364,7 @@ const bannerData = {
         & > div:nth-child(2) {
           &>div{
             &>div{
-              height: auto;
+              height: auto !important;
               min-height: 100%;
               & > div:nth-child(2) {
                 padding-bottom: 27px;
@@ -1549,8 +1549,8 @@ const bannerData = {
         margin-right: 3.90625%;
         cursor: pointer;
         & > img {
-          width: 120px;
-          height: 135px;
+          width: 64px;
+          height: auto;
         }
       }
 
@@ -1624,7 +1624,6 @@ const bannerData = {
         width: calc(100% - 20px);
       }
       & > div:nth-child(1)::after {
-        // display: none;
         width: 100%;
         height: 100%;
         left: 20px;
@@ -1764,14 +1763,6 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             padding-bottom: 150px;
-            & > div:nth-child(1) {
-              svg{
-                // width: 34px;
-                image{
-                  // width: 34px;
-                }
-              }
-            }
             & > div:nth-child(2) {
               font-size: 14px;
               margin-right: 20px;
@@ -2177,6 +2168,7 @@ const bannerData = {
           margin-right: 30px;
           &>img{
             width: 55px;
+            min-width: 55px;
             height: auto;
           }
         }

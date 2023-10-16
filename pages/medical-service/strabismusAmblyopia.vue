@@ -1636,6 +1636,7 @@ const bannerData = {
           margin-right: 30px;
           &>img{
             width: 55px;
+            min-width: 55px;
             height: auto;
           }
         }

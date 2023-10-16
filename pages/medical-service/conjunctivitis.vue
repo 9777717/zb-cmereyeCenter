@@ -1106,8 +1106,8 @@ const bannerData = {
         margin-right: 3.90625%;
         cursor: pointer;
         & > img {
-          width: 120px;
-          height: 135px;
+          width: 64px;
+          height: auto;
         }
       }
 
@@ -1543,6 +1543,7 @@ const bannerData = {
           margin-right: 30px;
           &>img{
             width: 55px;
+            min-width: 55px;
             height: auto;
           }
         }

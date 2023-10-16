@@ -912,7 +912,7 @@ const bannerData = {
         justify-content: space-between;
         &>img {
           position: relative;
-          height: max-content;
+          height: auto;
           width: calc(100% - 280px);
           margin: 0 auto;
         }
@@ -2272,8 +2272,8 @@ const bannerData = {
         margin-right: 3.90625%;
 
         &>img {
-          width: 120px;
-          height: 135px;
+          width: 64px;
+          height: auto;
           cursor: pointer;
         }
       }
@@ -3288,6 +3288,7 @@ min-width: 15px;
 
           &>img {
             width: 55px;
+            min-width: 55px;
             max-width: auto;
             height: auto;
           }

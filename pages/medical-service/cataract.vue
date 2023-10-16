@@ -122,7 +122,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_2',
     ],
-    lineText: '步驟一'
+    lineText: 'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_lineText1'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/55d34019e98d8e65.png',
@@ -130,7 +130,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_2',
     ],
-    lineText: '步驟二'
+    lineText: 'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_lineText2'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7b14a5086daa3610.png',
@@ -138,7 +138,7 @@ const surgeryArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_2',
     ],
-    lineText: '步驟三'
+    lineText: 'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_lineText3'
   },
 ]
 const iclArr = [
@@ -649,7 +649,7 @@ const bannerData = {
                 <div v-else>{{ $t(item.text) }}</div>
               </div>
               <div class="lineText">
-                <div>{{ item.lineText }}</div>
+                <div>{{ $t(item.lineText) }}</div>
               </div>
             </div>
           </div>
