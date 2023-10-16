@@ -1191,7 +1191,8 @@ const bannerData = {
 
           & > div {
             width: 375px;
-            height: 501px;
+            height: 100%;
+            padding-bottom: 30px;
             background-color: #ffffff;
             box-shadow: 4px 8px 19px 1px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
@@ -1364,8 +1365,7 @@ const bannerData = {
         & > div:nth-child(2) {
           &>div{
             &>div{
-              height: auto !important;
-              min-height: 100%;
+              padding-bottom: 0;
               & > div:nth-child(2) {
                 padding-bottom: 27px;
               }
@@ -2026,7 +2026,8 @@ const bannerData = {
             margin-bottom: 30px;
             & > div {
               width: 100%;
-              height: 120px !important;
+              // height: 120px !important;
+              padding-bottom: 0;
               flex-direction: row;
               border-radius: 10px;
               box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
