@@ -2026,7 +2026,7 @@ const bannerData = {
             margin-bottom: 30px;
             & > div {
               width: 100%;
-              height: 120px;
+              height: 120px !important;
               flex-direction: row;
               border-radius: 10px;
               box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
@@ -2145,6 +2145,7 @@ const bannerData = {
           & > div:nth-child(2) {
             &>div{
               &>div{
+                height: auto !important;
                 & > div:nth-child(2) {
                   padding-bottom: 0;
                 }
