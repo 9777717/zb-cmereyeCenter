@@ -57,14 +57,15 @@ const rules = reactive<FormRules>({
       trigger: 'change',
     },
   ],
+  desc: [{ required: true, message: '請輸入訊息', trigger: 'change' }],
 })
 
 const submitForm = async (formEl: FormInstance | undefined) => {
   if (!formEl) return
   await formEl.validate((valid, fields) => {
     if (valid) {
-      postData()
-      commitToCms()
+      // postData()
+      // commitToCms()
       resetForm(formEl) // 成功提交清空表单内容
     } else {
     }
