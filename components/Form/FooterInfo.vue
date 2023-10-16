@@ -64,6 +64,7 @@ const submitForm = async (formEl: FormInstance | undefined) => {
   await formEl.validate((valid, fields) => {
     if (valid) {
       postData()
+      commitToCms()
       resetForm(formEl) // 成功提交清空表单内容
     } else {
     }
@@ -88,29 +89,28 @@ const postData = async () => {
     body: _data
   })
   let res = data.value
-  if (res == '发送成功！') {
-    ElMessage({
-      showClose: true,
-      message: '表單提交成功！我們會盡快回覆閣下。',
-      type: 'success',
-      duration: 0
-    })
-    localStorage.setItem('contactForm',JSON.stringify(ruleForm))
-  }
+  // if (res == '发送成功！') {
+  //   ElMessage({
+  //     showClose: true,
+  //     message: '表單提交成功！我們會盡快回覆閣下。',
+  //     type: 'success',
+  //     duration: 0
+  //   })
+  //   localStorage.setItem('contactForm',JSON.stringify(ruleForm))
+  // }
   // commitToCms()
 }
-
 const commitToCms = async () =>{
   let _formData = new FormData()
-  // let _form = form
   _formData.append('contacts',ruleForm.name)
   _formData.append('yysj',ruleForm.region)
   _formData.append('mobile',ruleForm.phone)
   _formData.append('email',ruleForm.email)
-  _formData.append('content',ruleForm.rest)
+  _formData.append('content',ruleForm.desc)
   _formData.append('ly',location.href)
-  _formData.append('dz',ruleForm.type.join(','))
-  const { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addform/fcode/1',{
+  _formData.append('dz',ruleForm.type.join('，'))
+  _formData.append('paramsNoCheck','1')
+  const { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addmsg',{
     method: 'post',
     body: _formData
   });
@@ -124,7 +124,6 @@ const commitToCms = async () =>{
         duration: 0
       })
       localStorage.setItem('contactForm',JSON.stringify(ruleForm))
-      window.location.href = `/messagePage?c=${res.code}`
     }else{
       ElMessage({
         showClose: true,
