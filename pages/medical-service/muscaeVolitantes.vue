@@ -1380,8 +1380,6 @@ const bannerData = {
 
 // 点击按钮 样式
 .button_bg_text_color {
-  // background-image: linear-gradient(-90deg, #7bb3db 0%, #add0e5 100%),
-  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
   border-radius: 20px;
 
@@ -1440,9 +1438,6 @@ const bannerData = {
     width: 100%;
     max-width: 1080px;
     margin: 100px auto 0;
-    // margin-top: 100px;
-    // margin-left: 55vw;
-
     & > div:nth-child(1) {
       & > div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
@@ -2026,7 +2021,7 @@ const bannerData = {
             margin-bottom: 30px;
             & > div {
               width: 100%;
-              // height: 120px !important;
+              height: auto;
               padding-bottom: 0;
               flex-direction: row;
               border-radius: 10px;
@@ -2036,7 +2031,7 @@ const bannerData = {
                 min-width: 130px;
                 &>img{
                   width: auto;
-                  height: 100%;
+                  height: auto;
                   border-radius: 10px;
                 }
               }
@@ -2146,7 +2141,6 @@ const bannerData = {
           & > div:nth-child(2) {
             &>div{
               &>div{
-                height: auto !important;
                 & > div:nth-child(2) {
                   padding-bottom: 0;
                 }
