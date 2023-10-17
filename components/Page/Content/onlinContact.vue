@@ -48,7 +48,7 @@ const rt = ref(route)
           <div class="ga-pc-right-WhatsApp"><img class="ga-pc-right-WhatsApp" src="https://static.cmereye.com/imgs/2023/07/b5c111de8fe784c4.png" alt=""></div>
         </div>
       </a>
-      <a class="ocitem ga-pc-right-ljzd" id="ga-pc-right-ljzd" href="tel:+(852)3956 2025">
+      <a href="tel: +852 3956 2025" class="ocitem ga-pc-right-ljzd" id="ga-pc-right-ljzd">
         <div class="ga-pc-right-ljzd">
           <div class="ga-pc-right-ljzd">
             <div class="ga-pc-right-ljzd">{{$t('components.content.onlinContact.callNow')}}</div>

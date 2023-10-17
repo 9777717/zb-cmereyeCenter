@@ -97,7 +97,7 @@ const menuLists = computed(()=>[
       {
         name: 'Tel: (852) 3956 2025',
         icon: 'https://static.cmereye.com/imgs/2023/07/724ec499dbc6fbfd.png',
-        link: 'tel:+(852) 3956 2026'
+        link: 'tel: +852 3956 2025'
       },
       {
         name: 'WhatsApp: (852) 9345 1508',

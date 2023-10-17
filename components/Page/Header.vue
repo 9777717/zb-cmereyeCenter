@@ -402,7 +402,7 @@ const changeLang = (_lang:any) =>{
         </el-menu>
         </client-only>
         <div class="mbHeader-content-btn">
-          <a href="tel:（852）3956 2025" id="mbHeader-content-btn">
+          <a href="tel: +852 3956 2025" id="mbHeader-content-btn">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="12" height="12" fill="url(#pattern0)"/>
               <defs>

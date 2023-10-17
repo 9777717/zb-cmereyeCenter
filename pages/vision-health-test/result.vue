@@ -375,7 +375,7 @@ const toEyesight = () =>{
     </div>
     <div class="resultPage-btn">
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hkcmereye.com%2F/result01&amp;src=sdkpreparse" target="_block"><div>分享</div></a>
-      <a href="tel:+(852) 3956 2025"><div>立即預約眼睛檢查</div></a>
+      <a href="tel: +852 3956 2025"><div>立即預約眼睛檢查</div></a>
     </div>
   </div>
 </template>

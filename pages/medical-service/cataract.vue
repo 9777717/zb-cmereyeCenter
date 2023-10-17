@@ -365,7 +365,7 @@ const goWhatsApp = () => {
 }
 // 拨打电话
 const callTel = () => {
-  location.href = 'tel: +(852) 3956 2025'
+  location.href = 'tel: +852 3956 2025'
 }
 
 const bannerData = {

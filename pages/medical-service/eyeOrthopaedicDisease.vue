@@ -248,7 +248,7 @@ const goWhatsApp = () => {
   )
 }
 const goTel = () =>{
-  location.href = 'tel: +(852) 3956 2025'
+  location.href = 'tel: +852 3956 2025'
 }
 const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
