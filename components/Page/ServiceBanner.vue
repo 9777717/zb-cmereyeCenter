@@ -147,6 +147,13 @@ defineProps({
           }
         }
       }
+      &.conjunctivitis{
+        span{
+          &:nth-of-type(1){
+            font-size: 52px;
+          }
+        }
+      }
       &.glaucoma{
         span{
           &:nth-of-type(2){

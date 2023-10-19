@@ -11,7 +11,7 @@ useHead(() => ({
     {
       name: 'description',
       content:
-        '結膜炎又稱紅眼症，患者會出現眼睛乾澀、紅、腫及分泌物增多等症狀，嚴重紅眼症的患者會角膜破皮和視力模糊。結膜炎種類分為病毒性結膜炎、細菌性結膜炎、季節性過敏性結膜炎、常年性過敏性結膜炎、巨柱狀敏感性結膜炎，紅眼症傳播途徑主要透過與患者親密接觸，或間接接觸到受污染的物品感染。希瑪眼科中心提供全面結膜炎(紅眼症)診斷，會建議合適患者結膜炎治療方案。導致結膜炎成因包括:長時間配戴隱形眼鏡、注視電子螢幕、處於乾燥環境、有免疫系統疾病，以及更年期婦女。治療結膜炎以減輕不適的症狀為主，使用人工淚液是有效治療結膜炎方法。',
+        '結膜炎(紅眼症)是都市人常見眼疾之一，患者會出現眼睛乾澀、紅、腫及分泌物增多等症狀，嚴重結膜炎(紅眼症)的患者甚至會角膜破皮和視力模糊。希瑪眼科中心提供全面結膜炎(紅眼症)診斷，如有需要會建議合適您的結膜炎(紅眼症)治療方案。導致結膜炎(紅眼症)的原因與日常生活相關，長時間配戴隱形眼鏡、注視電子螢幕、處於乾燥環境、有免疫系統疾病，以及更年期婦女都較大機會患上結膜炎(紅眼症)。治療結膜炎(紅眼症)以減輕不適的症狀為主，使用人工淚液是有效治療結膜炎(紅眼症)方法，同時也需要患者養成良好用眼習慣。',
     },
     {
       name: 'keywords',
@@ -216,9 +216,10 @@ const callTel = () => {
 const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎1.png',
   mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎2.png',
-  cnName: '結膜炎',
+  cnName: '結膜炎(紅眼症)',
   enName: 'CONJUNCTIVITIS',
-  textColor: '#C0C0E6'
+  textColor: '#C0C0E6',
+  pageName: 'conjunctivitis'
 }
 </script>
 
@@ -590,7 +591,8 @@ const bannerData = {
             color: #6b709e;
 
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
+            padding-right: 30px;
             align-items: center;
           }
         }
@@ -783,7 +785,7 @@ const bannerData = {
         margin-top: 100px;
 
         & > div:nth-child(1) {
-          width: 280px;
+          width: 340px;
           height: 70px;
           margin-bottom: 30px;
           background-color: #c0c0e6;
@@ -1247,7 +1249,7 @@ const bannerData = {
               top: 0;
             }
             & > div:nth-child(2) {
-              width: 210px;
+              width: 230px;
               border: solid 3px #c0c0e6;
               height: 45px;
               font-size: 16px;
@@ -1258,6 +1260,7 @@ const bannerData = {
               padding-left: 30px;
               padding-top: 0;
               border-radius: 15px;
+              padding-right: 20px;
             }
           }
           & > div:nth-child(2) {
@@ -1394,7 +1397,7 @@ const bannerData = {
         & > div {
           margin-top: 35px;
           & > div:nth-child(1) {
-            width: 160px;
+            width: 180px;
             height: 40px;
             font-size: 16px;
             margin-bottom: 10px;

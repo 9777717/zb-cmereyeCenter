@@ -29,7 +29,7 @@ useHead({
       name: 'keywords',
       content:
         'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+    }
   ],
 })
 const SerListL = [
