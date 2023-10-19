@@ -18,10 +18,8 @@ useHead(() => ({
         '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療  全面眼睛檢查 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 中環眼科診所 旺角眼科診所 尖沙咀眼科診所 銅鑼灣眼科診所 觀塘 眼科診所 沙田眼科診所 元朗眼科診所 荃灣眼科診所 將軍澳眼科診所 眼科服務',
     },
     {
-      hid: 'description',
       name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+      content: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
     },
     {
       name: 'keywords',
