@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -30,7 +29,6 @@ useHead(() => ({
     },
   ],
 }))
-
 const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
@@ -226,16 +224,6 @@ const bannerData = {
 <template>
   <div class="conjunctivitis">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="conjun_header">
-      <div>
-        <div>
-          <div>結膜炎</div>
-          <div>CONJUNCTIVITIS</div>
-          <div>CONJUNCTIVITIS</div>
-          <div>CONJUNCTIVITIS</div>
-        </div>
-      </div>
-    </div> -->
     <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
     <div class="conjunctivitis_nav" :class="{'conjunctivitis-en': locale === 'en'}">
@@ -388,7 +376,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -435,24 +422,18 @@ const bannerData = {
     }
 }
 .conjunctivitis_nav {
-  // margin: 0 300px;
   max-width: 1200px;
   margin: 100px auto -50%;
   transform: scale(0.9);
   transform-origin: center top;
-
-  // 什麼是結膜炎？
   & > div:nth-child(1) {
-    // margin-top: 130px;
     display: flex;
     justify-content: flex-end;
     position: relative;
-
     & > div:nth-child(1) {
       position: absolute;
       padding-right: 787px;
       margin-top: 185px;
-
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 50px;
@@ -462,7 +443,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #6b709e;
       }
-
       & > div:nth-child(2) {
         margin-top: 38px;
         font-family: 'Noto Sans HK';
@@ -474,16 +454,13 @@ const bannerData = {
         color: #6b709e;
       }
     }
-
     & > div:nth-child(2) {
       transform: scale(0.85);
-
       & > img {
         z-index: 5;
         position: relative;
       }
     }
-
     & > div:nth-child(2)::before {
       content: '';
       width: 663px;
@@ -498,23 +475,19 @@ const bannerData = {
       z-index: 1;
     }
   }
-
   // 結膜炎症狀
   & > div:nth-child(2) {
     margin-top: 260px;
-
     & > div:nth-child(2) {
       margin-top: 62px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
         margin-right: 105px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         & > div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 24px;
@@ -525,37 +498,29 @@ const bannerData = {
           color: #6b709e;
         }
       }
-
       & > div:nth-child(n + 4) {
         margin-top: 55px;
       }
-
       & > div:nth-child(3),
       & > div:nth-child(6) {
         margin-right: 0;
       }
     }
-
     & > div:nth-child(3) {
       width: 580px;
       height: 140px;
       margin-top: 120px;
     }
   }
-
   // 結膜炎種類
   & > div:nth-child(3) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 200px;
-
       & > div {
         margin-bottom: 180px;
-
         & > div:nth-child(1) {
           position: relative;
-
           & > div:nth-child(1) {
             border-radius: 50%;
             width: 170px;
@@ -571,7 +536,6 @@ const bannerData = {
             left: 40px;
             z-index: 5;
           }
-
           & > div:nth-child(2) {
             width: 445px;
             height: 80px;
@@ -581,7 +545,6 @@ const bannerData = {
             position: absolute;
             left: 110px;
             bottom: -25px;
-
             font-family: 'NotoSansHK-Bold';
             font-size: 30px;
             font-weight: normal;
@@ -589,19 +552,16 @@ const bannerData = {
             line-height: 36px;
             letter-spacing: 0px;
             color: #6b709e;
-
             display: flex;
             justify-content: flex-end;
             padding-right: 30px;
             align-items: center;
           }
         }
-
         & > div:nth-child(2) {
           border-radius: 20px;
           border: solid 2px #c0c0e6;
           padding: 80px 41px 80px 32px;
-
           font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
@@ -611,15 +571,12 @@ const bannerData = {
           color: #6a6e8e;
         }
       }
-
       & > :last-child {
         margin-bottom: 0;
-
         & > div:nth-child(2) {
           & > div:nth-child(2) {
             margin-bottom: 50px;
           }
-
           & > div:nth-child(3),
           & > div:nth-child(4),
           & > div:nth-child(5) {
@@ -630,7 +587,6 @@ const bannerData = {
             line-height: 1.8;
             letter-spacing: -1px;
             color: #6a6e8e;
-
             & > div > div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 22px;
@@ -647,7 +603,6 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(3) {
       width: 580px;
       height: 140px;
@@ -658,7 +613,6 @@ const bannerData = {
   // 傳播途徑
   & > div:nth-child(4) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 60px;
       font-family: 'Noto Sans HK';
@@ -669,10 +623,8 @@ const bannerData = {
       letter-spacing: 0px;
       color: #515151;
     }
-
     & > div:nth-child(3) {
       margin-top: 50px;
-
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-size: 22px;
@@ -682,19 +634,16 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         margin-top: 50px;
         padding: 0 72px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         & > div {
           & > div:nth-child(2) {
             width: 260px;
             margin-top: 40px;
-
             font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
@@ -706,7 +655,6 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       position: relative;
       margin-top: 100px;
@@ -714,7 +662,6 @@ const bannerData = {
       border-radius: 60px;
       border: solid 2px #c0c0e6;
       padding: 27px 61px;
-
       font-family: 'Noto Sans HK';
       font-size: 26px;
       font-weight: normal;
@@ -722,18 +669,15 @@ const bannerData = {
       line-height: 34px;
       letter-spacing: 0px;
       color: #515151;
-
       & > svg {
         position: absolute;
         left: -32px;
       }
     }
   }
-
   // 高危人士
   & > div:nth-child(5) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
@@ -744,19 +688,16 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         margin-top: 56px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         & > div {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-
           & > div:nth-child(2) {
             margin-top: 39px;
             font-family: 'Noto Sans HK';
@@ -768,29 +709,24 @@ const bannerData = {
             color: #515151;
           }
         }
-
         & > div:nth-child(n + 4) {
           margin-top: 77px;
         }
       }
     }
   }
-
   // 結膜炎治療
   & > div:nth-child(6) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       & > div {
         margin-top: 100px;
-
         & > div:nth-child(1) {
           width: 340px;
           height: 70px;
           margin-bottom: 30px;
           background-color: #c0c0e6;
           border-radius: 35px;
-
           font-family: 'NotoSansHK-Bold';
           font-size: 30px;
           font-weight: normal;
@@ -798,12 +734,10 @@ const bannerData = {
           line-height: 36px;
           letter-spacing: 0px;
           color: #ffffff;
-
           display: flex;
           justify-content: center;
           align-items: center;
         }
-
         & > div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 24px;
@@ -814,7 +748,6 @@ const bannerData = {
           color: #515151;
         }
       }
-
       & > div:first-child {
         margin-top: 80px;
       }
@@ -824,7 +757,6 @@ const bannerData = {
   // 預防結膜炎
   & > div:nth-child(7) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 150px;
       margin-bottom: 266px;
@@ -832,13 +764,11 @@ const bannerData = {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
         width: 290px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         & > div:nth-child(1) {
           font-family: 'NotoSansHK-Bold';
           font-size: 26px;
@@ -848,19 +778,16 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           height: 180px;
           padding: 50px 0;
           display: flex;
           align-items: center;
           justify-content: center;
-
           & > img {
             width: 100%;
           }
         }
-
         & > div:nth-child(3) {
           font-family: 'Noto Sans HK';
           font-size: 22px;
@@ -871,15 +798,12 @@ const bannerData = {
           color: #515151;
         }
       }
-
       & > div:nth-child(4) {
         margin-left: 180px;
       }
-
       & > div:nth-child(5) {
         margin-right: 180px;
       }
-
       & > div:nth-child(n + 4) {
         margin-top: 120px;
       }
@@ -940,7 +864,6 @@ const bannerData = {
     }
   }
 }
-
 .conjun_text_color {
   font-family: 'NotoSansHK-Bold';
   font-size: 36px;
@@ -953,7 +876,6 @@ const bannerData = {
   position: relative;
   padding-bottom: 20px;
 }
-
 .conjun_text_color::after {
   content: '';
   width: 57px;
@@ -966,14 +888,10 @@ const bannerData = {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 // 圆角 矩形按钮样式
 .conjun_button_bg_color {
   cursor: pointer;
-  // background-image: linear-gradient(-90deg, #c0c0e6 0%, #d8d8f4 100%),
-  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -981,7 +899,6 @@ const bannerData = {
   line-height: 50px;
   letter-spacing: 0px;
   color: #ffffff;
-
   border-radius: 14px;
   display: flex;
   justify-content: center;
@@ -1010,90 +927,12 @@ const bannerData = {
     z-index: -1;
   }
 }
-
-.conjun_header {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 42vw;
-
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: 700;
-        font-stretch: normal;
-        line-height: 0.9;
-        letter-spacing: 1px;
-        color: #c0c0e6;
-        position: sticky;
-      }
-
-      & > div:nth-child(2) {
-        font-family: 'DINCondensed-Bold';
-        position: relative;
-        z-index: 5;
-      }
-       & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        -webkit-text-stroke: 1.5px #c0c0e6;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-45%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-115%);
-      }
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: -3.5px;
-      color: #c0c0e6;
-      margin-left: -15px;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: -20px;
-      left: -5px;
-
-      & > img {
-        position: relative;
-        z-index: 5;
-      }
-
-      & > img:nth-child(1) {
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
-
 // 下载
 .dow {
   margin-top: -40%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
-
   & > div:nth-child(1) {
     & > div {
       width: 62.5%;
@@ -1102,7 +941,6 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
@@ -1112,7 +950,6 @@ const bannerData = {
           height: auto;
         }
       }
-
       & > div:nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -1123,51 +960,6 @@ const bannerData = {
   }
 }
 @media screen and (max-width: 768px) {
-  .conjun_header {
-    &>div:nth-child(1) {
-      width: calc(100% - 60px);
-      justify-content: flex-end;
-      align-items: flex-end;
-      display: flex;
-      margin: 150px auto 0;
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 40px;
-          text-align: right;
-        }
-        &>div:nth-child(2) {
-          font-size: 42px;
-          letter-spacing: 0.01em;
-          margin-top: 5px;
-          text-align: right;
-          line-height: 1;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 42px;
-          letter-spacing: 0.01em;
-          -webkit-text-stroke: 1px #c0c0e6;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-60%);
-        }
-      }
-      &>div:nth-child(1)::after {
-        width: 160px;
-        height: 200px;
-        top: 190px;
-      }
-      &>div:nth-child(2) {
-        top: 0;
-        width: 207px;
-        &>img:nth-child(1){
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
   .conjunctivitis_nav {
     transform: scale(1);
     margin: -80px 0 0;
@@ -1560,16 +1352,8 @@ const bannerData = {
   .conjunctivitis_nav {
     margin-bottom: -40%;
   }
-
-  .conjun_header {
-    & > div:nth-child(1) {
-      margin-left: 48vw;
-    }
-  }
-
   .dow {
     margin-top: -25%;
-
     & > div:nth-child(1) {
       & > div {
         & > div:nth-child(1) {

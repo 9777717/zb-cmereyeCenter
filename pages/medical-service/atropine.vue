@@ -315,7 +315,6 @@ const bannerData = {
           <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.congruency.btn1')}}</div>
         </div>
       </div>
-
       <div id="method">
         <div class="atropine_title_text">
           {{ $t('pages.medical_service.atropine_text.atropine_title6_text6') }}
@@ -358,9 +357,6 @@ const bannerData = {
           <div>
             {{ $t('pages.medical_service.atropine_text.atropine_title6_p6') }}
           </div>
-          <!-- <div class="atropine_title_btn" @click="goWhatsApp">
-            {{ $t('pages.medical_service.atropine_text.atropine_title6_btn') }}
-          </div> -->
         </div>
       </div>
       <div class="matters" id="matters">
@@ -405,7 +401,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <div class="fromTable">
       <FormFooterInfo
@@ -437,7 +432,6 @@ const bannerData = {
         transform: translate(30%, 30%);
     }
 }
-
 .atropine-nav{
   margin-top: 30px;
 }
@@ -669,10 +663,8 @@ const bannerData = {
       }
     }
   }
-
   & > #benefit {
     margin-bottom: 200px;
-
     & > div:nth-child(2) {
       margin-top: 100px;
       display: flex;
@@ -692,7 +684,6 @@ const bannerData = {
         }
         & > div:nth-child(2) {
           margin-top: 50px;
-
           & > span {
             letter-spacing: 2px;
           }
@@ -700,10 +691,8 @@ const bannerData = {
       }
     }
   }
-
   & > #congruency {
     margin-bottom: 200px;
-
     & > div:nth-child(2) {
       & > div {
         display: flex;
@@ -721,7 +710,6 @@ const bannerData = {
           color: #7bbfcb;
           margin-right: 59px;
         }
-
         & > div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 24px;
@@ -732,10 +720,8 @@ const bannerData = {
           color: #777777;
         }
       }
-
       & > div:nth-child(even) {
         flex-direction: row-reverse;
-
         & > div:nth-child(1) {
           margin-left: 59px;
           margin-right: 0;
@@ -783,22 +769,18 @@ const bannerData = {
       }
     }
   }
-
   & > #method {
     margin-bottom: 200px;
-
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         margin-top: 163px;
         display: flex;
         justify-content: space-between;
-
         & > div {
           width: 500px;
           border-radius: 10px;
           border: solid 2px #c1e8f3;
           position: relative;
-
           & > div:nth-child(2) {
             font-family: 'Noto Sans HK';
             font-size: 20px;
@@ -814,7 +796,6 @@ const bannerData = {
               color: #555555;
             }
           }
-
           & > div:nth-child(1) {
             position: absolute;
             width: 410px;
@@ -835,7 +816,6 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         margin-top: 120px;
         margin-bottom: 178px;
@@ -853,7 +833,6 @@ const bannerData = {
         padding: 42px 62px 31px;
         position: relative;
       }
-
       & > div:nth-child(2)::after {
         content: '';
         position: absolute;
@@ -868,7 +847,6 @@ const bannerData = {
         top: -8px;
         left: -6px;
       }
-
       & > div:nth-child(3) {
         margin-top: 170px;
       }
@@ -953,7 +931,6 @@ const bannerData = {
       }
     }
   }
-
   .up_bid {
     font-size: 12px !important;
     vertical-align: middle;
@@ -1010,13 +987,11 @@ const bannerData = {
     }
   }
 }
-
 .atropine_title_btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   margin: auto;
   width: 580px;
@@ -1025,7 +1000,6 @@ const bannerData = {
   background-image: linear-gradient(-90deg, #92d0db 0%, #d2f1f6 100%),
     linear-gradient(#529fd3, #529fd3);
   background-blend-mode: normal, normal;
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -1034,7 +1008,6 @@ const bannerData = {
   letter-spacing: 0px;
   color: #ffffff;
 }
-
 .atropine_title_text {
   font-family: 'NotoSansHK-Bold';
   font-size: 42px;
@@ -1043,145 +1016,12 @@ const bannerData = {
   line-height: 52px;
   letter-spacing: 0px;
   color: #7bbfcb;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.atropine_head {
-  & > div {
-    & > div:nth-child(1) {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin-top: 98px;
-      & > div:nth-child(1) {
-        & > div:nth-child(1) {
-          font-family: 'NotoSansCJKtc-Bold';
-          font-size: 100px;
-          font-weight: Bold;
-          font-stretch: normal;
-          letter-spacing: 0px;
-          color: #99d4dd;
-          z-index: 5;
-          position: relative;
-          top: -20px;
-        }
-        & > div:nth-child(2) {
-          position: relative;
-          z-index: 5;
-          font-family: 'DINCondensed-Bold';
-          font-size: 105px;
-          font-weight: normal;
-          font-stretch: normal;
-          line-height: 1;
-          letter-spacing: 3.4px;
-          color: #99d4dd;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-family: 'DINCondensed-Bold';
-          display: block;
-          position: relative;
-          z-index: 5;
-          font-size: 105px;
-          letter-spacing: 3.4px;
-          -webkit-text-stroke: 1.5px #99d4dd;
-          color: transparent;
-          clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-          transform: translateY(-35%);
-        }
-        & > div:nth-child(4){
-          clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-          transform: translateY(-105%);
-        }
-        font-family: 'DINCondensed-Bold';
-        font-size: 131px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1.2;
-        text-align: right;
-        letter-spacing: 3px;
-        color: #9cc4e2;
-      }
-      & > div:nth-child(1)::after {
-        content: '';
-        background: #f2f2f2;
-        width: 40vw;
-        height: 300px;
-        position: absolute;
-        top: 211px;
-        right: 0;
-      }
-      & > div:nth-child(2) {
-        position: relative;
-        top: 0;
-        left: -5px;
-
-        & > img {
-          max-width: 751px;
-          position: relative;
-          z-index: 5;
-        }
-
-        & > img:nth-child(1) {
-          margin-bottom: 10px;
-        }
-      }
-    }
-  }
-}
 @media screen and (max-width: 768px) {
-  .atropine_head {
-    &>div{
-      &>div:nth-child(1) {
-        width: calc(100% - 60px);
-        justify-content: flex-end;
-        align-items: flex-end;
-        display: flex;
-        margin: 150px auto 0;
-        &>div:nth-child(1) {
-          &>div:nth-child(1) {
-            font-size: 36px;
-            text-align: right;
-            top: 0;
-          }
-          &>div:nth-child(2) {
-            font-size: 35px;
-            letter-spacing: 0.01em;
-            margin-top: 0;
-            text-align: right;
-            line-height: 1;
-          }
-          & > div:nth-child(3),& > div:nth-child(4) {
-            font-size: 35px;
-            letter-spacing: 0.01em;
-            clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-            transform: translateY(-20%);
-          }
-          & > div:nth-child(4) {
-            clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-            transform: translateY(-65%);
-          }
-        }
-        &>div:nth-child(1)::after {
-          width: 50%;
-          height: 200px;
-          top: 190px;
-        }
-        &>div:nth-child(2) {
-          top: 0;
-          width: 230px;
-          &>img{
-            width: 100%;
-          }
-          &>img:nth-child(1){
-            margin-bottom: 5px;
-          }
-        }
-      }
-    }
-  }
   .atropine_title_btn {
     margin-top: 55px;
     width: max-content;
@@ -1539,9 +1379,5 @@ const bannerData = {
       }
     }
   }
-}
-</style>
-<style lang="scss" scoped>
-@media screen and (min-width: 1920px) {
 }
 </style>

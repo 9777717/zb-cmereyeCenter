@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -83,16 +82,6 @@ const bannerData = {
 <template>
   <div>
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="medicalOptometry_head">
-      <div>
-        <div>
-          <div>醫學驗光配鏡</div>
-          <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
-          <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
-          <div>MYOPIA CONTROL AND OPHTHALMIC SERVICES</div>
-        </div>
-      </div>
-    </div> -->
     <div class="medicalOptometry-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
     </div>
@@ -199,7 +188,6 @@ const bannerData = {
             </div>
           </div>
         </div>
-
         <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
@@ -292,7 +280,6 @@ const bannerData = {
             </div>
           </div>
         </div>
-
         <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
@@ -300,7 +287,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 表单 -->
     <div class="fromTable">
@@ -312,13 +298,11 @@ const bannerData = {
 </template>
 <style lang="scss" scoped>
 @media screen and(min-width: 768px) {
-
   // 隐藏手机版布局
   #cause-mb {
     display: none;
   }
 }
-
 @import url('../../assets/font/font.css');
 .medicalOptometry-nav{
   margin-top: 30px;
@@ -328,34 +312,26 @@ const bannerData = {
   transform: scale(0.9);
   transform-origin: center top;
   margin: 100px auto -40%;
-
   &>#brief_introduction {
     margin-bottom: 200px;
-
     &>div:nth-child(1) {
       display: flex;
       justify-content: space-between;
       margin-bottom: 90px;
-
       &>div:nth-child(1) {
         width: 670px;
         line-height: 1.8;
-
         &>p {
           text-indent: 50px;
-
           &>span {
-            // letter-spacing: -1px;
             color: #8ca761;
           }
         }
-
         &>p:nth-child(2) {
           margin-top: 80px;
         }
       }
     }
-
     &>div:nth-child(2) {
       width: 629px;
       height: 120px;
@@ -364,7 +340,6 @@ const bannerData = {
       margin: auto;
       display: flex;
       align-items: center;
-
       font-family: 'NotoSansHK-Medium';
       font-size: 40px;
       font-weight: normal;
@@ -372,12 +347,9 @@ const bannerData = {
       line-height: 50px;
       letter-spacing: 0px;
       cursor: pointer;
-
       &>div:nth-child(1) {
         width: 290px;
         height: 120px;
-        // background-image: linear-gradient(-90deg, #aac086 0%, #cde0af 100%),
-        //   linear-gradient(#eda2a6, #eda2a6);
         background-blend-mode: normal, normal;
         border-radius: 30px;
         display: flex;
@@ -402,7 +374,6 @@ const bannerData = {
           z-index: -1;
         }
       }
-
       &>div:nth-child(2) {
         font-size: 40px;
         line-height: 50px;
@@ -412,7 +383,6 @@ const bannerData = {
       }
     }
   }
-
   &>#cause {
     &>div:nth-child(1) {
       margin: 100px auto 75px;
@@ -430,7 +400,6 @@ const bannerData = {
       border: solid 3px #bcd09c;
       position: relative;
     }
-
     &>div:nth-child(1)::before {
       content: '';
       position: absolute;
@@ -441,7 +410,6 @@ const bannerData = {
       transform: translateY(-50%);
       background: #fff;
     }
-
     &>div:nth-child(1)::after {
       content: '';
       position: absolute;
@@ -452,16 +420,13 @@ const bannerData = {
       transform: translateY(-50%);
       background: #fff;
     }
-
     &>div:nth-child(2) {
       &>div {
         padding: 100px 0;
         display: flex;
         justify-content: space-between;
-
         &>div:nth-child(2) {
           width: 675px;
-
           &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 38px;
@@ -473,7 +438,6 @@ const bannerData = {
             display: flex;
             align-items: center;
           }
-
           &>div:nth-child(1)::before {
             content: '';
             width: 6px;
@@ -483,7 +447,6 @@ const bannerData = {
             border-radius: 3px;
             margin-right: 36px;
           }
-
           &>div:nth-child(2) {
             margin-top: 50px;
             margin-bottom: 60px;
@@ -491,25 +454,21 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(even) {
         border-top: 1px dashed #bcd09c;
         border-bottom: 1px dashed #bcd09c;
       }
-
       &>div:nth-child(3) {
         &>div:nth-child(2) {
           &>div:nth-child(1)::before {
             content: none;
           }
-
           &>div:nth-child(2) {
             margin-top: 0;
           }
         }
       }
     }
-
     &>div:nth-child(3) {
       margin: 60px auto 462px;
     }
@@ -523,11 +482,9 @@ const bannerData = {
     }
   }
 }
-
 // 边框按钮样式
 .medicalOptometry_btn_bg {
   cursor: pointer;
-
   font-family: 'NotoSansHK-Bold';
   font-size: 34px;
   line-height: 50px;
@@ -539,11 +496,9 @@ const bannerData = {
   height: 100px;
   border-radius: 30px;
   border: solid 2px #bcd09c;
-
   &>div:nth-child(1) {
     padding: 33px 60px;
   }
-
   &>div:nth-child(2) {
     width: fit-content;
     min-width: 223px;
@@ -573,7 +528,6 @@ const bannerData = {
       z-index: -1;
     }
   }
-
   &.Btn-en{
     font-size: 26px;
     line-height: 1.6;
@@ -605,7 +559,6 @@ const bannerData = {
   letter-spacing: 0px;
   color: #515151;
 }
-
 .medicalOptometry_title_text {
   font-family: 'NotoSansHK-Bold';
   font-size: 38px;
@@ -614,18 +567,15 @@ const bannerData = {
   line-height: 48px;
   letter-spacing: 0px;
   color: #d37f66;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 .medicalOptometry_title_btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   margin: auto;
   width: 580px;
@@ -634,7 +584,6 @@ const bannerData = {
   background-image: linear-gradient(-90deg, #bcd09c 0%, #ffd6c1 100%),
     linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -643,154 +592,20 @@ const bannerData = {
   letter-spacing: 0px;
   color: #ffffff;
 }
-
 .fromTable {
   margin-top: -28%;
 }
-
-// 头部样式
-.medicalOptometry_head {
-  &>div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 0;
-    // margin-top: 100px;
-    // margin-left: 40vw;
-
-    &>div:nth-child(1) {
-      &>div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: Bold;
-        font-stretch: normal;
-        letter-spacing: 0px;
-        color: #bcd09c;
-        z-index: 5;
-        position: relative;
-        top: -20px;
-      }
-
-      &>div:nth-child(2) {
-        position: relative;
-        z-index: 5;
-        font-family: 'DINCondensed-Bold';
-        font-size: 72px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: 0;
-        color: #bcd09c;
-        margin-top: 15px;
-      }
-       & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        font-size: 72px;
-        letter-spacing: 0;
-        -webkit-text-stroke: 1.5px #bcd09c;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-35%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-105%);
-      }
-      font-family: 'DINCondensed-Bold';
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-    }
-
-    &>div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    &>div:nth-child(2) {
-      position: relative;
-      top: 0;
-      left: -5px;
-
-      &>img {
-        position: relative;
-        z-index: 5;
-      }
-
-      &>img:nth-child(1) {
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: 768px) {
   .medicalOptometry-nav{
     margin-top: -80px;
   }
-  .medicalOptometry_head {
-    margin-top: 150px;
-    margin-right: 20px;
-
-    &>div:nth-child(1) {
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 45.916px;
-        }
-
-        &>div:nth-child(2) {
-          font-size: 21.6px;
-          margin-top: 0;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 21.6px;
-          -webkit-text-stroke: 1px #bcd09c;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-60%);
-        }
-      }
-
-      &>div:nth-child(1)::after {
-        width: 50%;
-        height: 200px;
-        top: 190px;
-      }
-
-      &>div:nth-child(2) {
-        width: 86.2%;
-      }
-    }
-  }
-
   .medicalOptometry_nav {
     max-width: 100%;
     margin-top: 0;
-
     &>#brief_introduction {
       margin-bottom: 0;
-
       &>div:nth-child(1) {
         flex-direction: column;
-
-
         &>div:nth-child(1) {
           width: 100%;
           color: #BEAD9C;
@@ -800,22 +615,18 @@ const bannerData = {
           font-weight: 400;
           line-height: 1.8;
           margin-bottom: 40px;
-
           &>p {
             text-indent: 0;
-
             &>span {
               letter-spacing: -1px;
               color: #8ca761;
             }
           }
-
           &>p:nth-child(2) {
             margin-top: 40px;
           }
         }
       }
-
       &>div:nth-child(2) {
         width: 100%;
         height: 70px;
@@ -823,13 +634,11 @@ const bannerData = {
         font-size: 24px;
         line-height: 1.8;
         border-radius: 16px;
-
         &>div:nth-child(1) {
           width: 175.66px;
           height: 70px;
           border-radius: 16px;
         }
-
         &>div:nth-child(2) {
           font-size: 24px;
           line-height: 1.8;
@@ -837,11 +646,9 @@ const bannerData = {
         }
       }
     }
-
     &>#cause {
       display: none;
     }
-
     &>#cause-mb {
       &>div:nth-child(1) {
         margin: 100px auto 15px;
@@ -851,7 +658,6 @@ const bannerData = {
         padding: 16px 66px;
         border: 3px solid #afc58c;
         border-radius: 16px;
-
         color: #8CA761;
         font-family: 'Noto Sans HK';
         font-size: 24px;
@@ -859,15 +665,12 @@ const bannerData = {
         font-weight: 700;
         line-height: 1.6;
       }
-
       &>div:nth-child(1)::before {
         content: none;
       }
-
       &>div:nth-child(1)::after {
         content: none;
       }
-
       &>div:nth-child(2) {
         &>div {
           &>div:nth-child(1) {
@@ -881,7 +684,6 @@ const bannerData = {
             flex-direction: row;
             align-items: center;
           }
-
           &>div:nth-child(1)::before {
             content: '';
             width: 3px;
@@ -891,10 +693,8 @@ const bannerData = {
             border-radius: 3px;
             margin-right: 6px;
           }
-
           &>div:nth-child(2) {
             width: 100%;
-
             &>div:nth-child(1) {
               display: flex;
               font-family: 'NotoSansHK-Bold';
@@ -907,11 +707,9 @@ const bannerData = {
               display: flex;
               align-items: flex-start;
               margin-top: 22px;
-
               &>div:nth-child(1) {
                 min-width: 125px;
               }
-
               &>div:nth-child(2) {
                 color: #BEAD9C;
                 font-family: 'Noto Sans HK';
@@ -922,18 +720,15 @@ const bannerData = {
                 margin-left: 12px;
               }
             }
-
             &>div:nth-child(2) {
               margin-top: 50px;
               margin-bottom: 0;
               line-height: 46px;
             }
           }
-
           padding: 50px 0;
           border-bottom: 1px dashed #BCD09C;
         }
-
         &>div:nth-child(4) {
           &>div:nth-child(2) {
             &>div:nth-child(2) {
@@ -941,29 +736,23 @@ const bannerData = {
             }
           }
         }
-
         &>div:last-child {
           padding-bottom: 0;
           border-bottom: none;
         }
-
         &>div:nth-child(3) {
           padding-top: 0;
-
           &>div:nth-child(1) {
             display: flex;
             flex-direction: column;
-
             &>div:nth-child(1) {
               width: auto;
               display: flex;
               margin-top: 48px;
               margin-bottom: 36px;
-
               &>div:nth-child(1) {
                 min-width: 128px;
               }
-
               &>div:nth-child(2) {
                 color: #BEAD9C;
                 font-family: 'Noto Sans HK';
@@ -975,13 +764,11 @@ const bannerData = {
               }
             }
           }
-
           &>div:nth-child(1)::before {
             content: none;
           }
         }
       }
-
       &>div:nth-child(3) {
         margin: 60px auto 120px;
         font-size: 18px;
@@ -995,7 +782,6 @@ const bannerData = {
         }
       }
     }
-
     &.medicalOptometryNav-en{
       &>#brief_introduction {
         &>div:nth-child(2) {
@@ -1011,7 +797,6 @@ const bannerData = {
       }
     }
   }
-
   .medicalOptometry_btn_bg {
     font-size: 22px;
     line-height: 1.8;
@@ -1019,12 +804,9 @@ const bannerData = {
     height: auto;
     border-radius: 18px;
     font-family: 'Noto Sans HK';
-
     &>div:nth-child(1) {
       padding: 8px 25px;
-      // padding-top: 13px;
     }
-
     &>div:nth-child(2) {
       height: auto;
       min-width: auto;
@@ -1040,25 +822,11 @@ const bannerData = {
         line-height: 1.6;
       }
     }
-    
   }
-
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .medicalOptometry_head {
-    &>div:nth-child(1) {
-      // margin-left: 50vw;
-    }
-  }
-
   .medicalOptometry_nav {
     margin-bottom: -20%;
-  }
-
-  .fromTable {
-    // margin-top: -15%;
   }
 }
 </style>

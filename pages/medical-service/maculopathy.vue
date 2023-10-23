@@ -1,10 +1,8 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
-
 const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
@@ -194,14 +192,6 @@ const serviceNavigation = [
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name5',
     anchorLink: '/medical-service/maculopathy#wet_maculopathy',
   },
-  // {
-  //   anchorName: '老年黃斑病變成因',
-  //   anchorLink: '/medical-service/maculopathy#wet_maculopathy_factor',
-  // },
-  // {
-  //   anchorName: '老年黃斑病變治療',
-  //   anchorLink: '/medical-service/maculopathy#wet_maculopathy_cure',
-  // },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name6',
     anchorLink: '/medical-service/maculopathy#prevent',
@@ -237,16 +227,6 @@ const bannerData = {
   <div class="maculopathy">
     <!-- 头部 -->
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="maculopathy_header">
-      <div>
-        <div>
-          <div>黃斑病變</div>
-          <div>MACULAR DEGENERATION</div>
-          <div>MACULAR DEGENERATION</div>
-          <div>MACULAR DEGENERATION</div>
-        </div>
-      </div>
-    </div> -->
     <div class="maculopathy-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
@@ -521,7 +501,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow" :class="{'dow-en': locale === 'en'}">
@@ -557,9 +536,7 @@ const bannerData = {
   transform-origin: center top;
   // 什麼是黃斑病變？
   & > div:nth-child(1) {
-    // margin-top: 253px;
     margin-left: 41px;
-
     & > div:nth-child(1) {
       font-family: 'NotoSansHK-Medium';
       font-size: 50px;
@@ -570,7 +547,6 @@ const bannerData = {
       color: #a49b88;
       margin-bottom: 100px;
     }
-
     & > div:nth-child(2) {
       margin-left: 13px;
       font-family: 'Noto Sans HK';
@@ -582,21 +558,17 @@ const bannerData = {
       color: #a49b88;
     }
   }
-
   // 黃斑病變的症狀
   & > div:nth-child(2) {
     margin-top: 274px;
-
     & > div:nth-child(2) {
       margin-top: 80px;
       display: flex;
       justify-content: space-between;
-
       & > div {
         & > div:nth-child(2) {
           margin-top: 40px;
           white-space: pre-wrap;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -609,16 +581,13 @@ const bannerData = {
       }
     }
   }
-
   // 黃斑病變自我檢查
   & > div:nth-child(3) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 84px;
       display: flex;
       justify-content: space-between;
-
       & > div:nth-child(1) {
         & > div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
@@ -629,13 +598,11 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           width: 163px;
           height: 42px;
           border-radius: 42px;
           background-color: #bfa876;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -643,15 +610,12 @@ const bannerData = {
           line-height: 34px;
           letter-spacing: 0px;
           color: #ffffff;
-
           display: flex;
           justify-content: center;
           align-items: center;
-
           margin-top: 75px;
           margin-bottom: 62px;
         }
-
         & > div:nth-child(3),
         & > div:nth-child(4),
         & > div:nth-child(5),
@@ -666,7 +630,6 @@ const bannerData = {
           line-height: 34px;
           letter-spacing: 0px;
           color: #515151;
-
           & > span {
             margin-right: 15px;
             width: 34px;
@@ -674,11 +637,9 @@ const bannerData = {
             background-color: #bfa876;
             border-radius: 50%;
             color: #fff;
-
             display: flex;
             justify-content: center;
             align-items: center;
-
             font-family: 'Metropolis-Bold';
             font-size: 26px;
             font-weight: normal;
@@ -689,16 +650,13 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
         & > span {
           margin-top: 28px;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -709,7 +667,6 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(3) {
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
@@ -720,7 +677,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         font-family: 'Noto Sans HK';
         font-size: 24px;
@@ -732,11 +688,9 @@ const bannerData = {
         margin-top: 68px;
         margin-bottom: 50px;
       }
-
       & > div:nth-child(3) {
         display: flex;
         justify-content: space-between;
-
         & > div {
           background-color: #ffffff;
           border: solid 2px #e3dcce;
@@ -744,7 +698,6 @@ const bannerData = {
           flex-direction: column;
           align-items: center;
           position: relative;
-
           & > div:nth-child(1) {
             width: 237px;
             height: 54px;
@@ -754,71 +707,59 @@ const bannerData = {
             align-items: center;
             color: #fff;
           }
-
           & > div:nth-child(2) {
             margin-top: 16px;
           }
-
           & > svg:nth-child(3) {
             position: absolute;
             top: 51%;
           }
-
           & > div:nth-child(4) {
             margin-top: 12px;
             margin-bottom: 14px;
           }
         }
-
         & > div:nth-child(2) {
           & > div:nth-child(1) {
             background: #b19a68;
           }
         }
-
         & > div:nth-child(3) {
           & > div:nth-child(1) {
             background: #a48d5d;
           }
         }
-
         & > div:nth-child(4) {
           & > div:nth-child(1) {
             background: #8f7848;
           }
         }
-
         & > div:nth-child(5) {
           & > div:nth-child(1) {
             background: #826b3a;
           }
         }
       }
-
       & > div:last-child {
         margin-top: 102px;
       }
     }
   }
-
   // 常見類型
   & > div:nth-child(4) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 91px;
       padding: 0 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-
       & > div:nth-child(1),
       & > div:nth-child(3) {
         width: 292px;
         height: 291px;
         background: #a18a5a;
         border-radius: 50%;
-
         font-family: 'NotoSansHK-Bold';
         font-size: 54px;
         font-weight: 700;
@@ -826,17 +767,14 @@ const bannerData = {
         line-height: 64px;
         letter-spacing: 0px;
         color: #ffffff;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
-
       & > div:nth-child(3) {
         background: #85a1c9;
         margin-left: 30px;
-
         font-family: 'NotoSansHK-Bold';
         font-size: 50px;
         font-weight: 700;
@@ -845,25 +783,21 @@ const bannerData = {
         letter-spacing: 0px;
         color: #ffffff;
       }
-
       & > div:nth-child(4) {
         display: flex;
         flex-direction: column;
         margin-right: 40px;
       }
-
       & > div:nth-child(5) {
         & > div {
           width: 209px;
           height: 209px;
           background: #a4b9d7;
           border-radius: 50%;
-
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-
           font-family: 'NotoSansHK-Bold';
           font-size: 39px;
           font-weight: 500;
@@ -872,18 +806,15 @@ const bannerData = {
           letter-spacing: 0px;
           color: #ffffff;
         }
-
         & > div:nth-child(1) {
           margin-bottom: 42px;
         }
       }
     }
   }
-
   // 老年黃斑病變
   & > div:nth-child(5) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 97px;
       display: flex;
@@ -892,23 +823,18 @@ const bannerData = {
       position: relative;
       align-items: center;
       margin-left: -60px;
-
       & > div:nth-child(1) {
         position: absolute;
         transform: scale(0.85);
       }
-
       & > div:nth-child(2) {
         margin-left: 428px;
         position: relative;
-
         display: flex;
         flex-direction: column;
-
         & > div:nth-child(2) {
           position: absolute;
           padding: 50px 38px 50px 64px;
-
           font-family: 'Noto Sans HK';
           font-size: 26px;
           font-weight: normal;
@@ -920,21 +846,17 @@ const bannerData = {
       }
     }
   }
-
   // 老年黃斑病變分為乾性和濕性︰
   & > div:nth-child(6) {
     margin-top: 128px;
-
     & > div:nth-child(2) {
       margin-top: 107px;
     }
-
     & > div:nth-child(2),
     & > div:nth-child(3) {
       display: flex;
       flex-direction: column;
       transform: scale(0.85);
-
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Bold';
         font-size: 34px;
@@ -946,13 +868,11 @@ const bannerData = {
         text-align: center;
         margin-bottom: 20px;
       }
-
       & > div:nth-child(2) {
         position: relative;
         margin-bottom: 180px;
         display: flex;
         justify-content: space-between;
-
         & > div:nth-child(1) {
           width: 550px;
           height: 360px;
@@ -965,7 +885,6 @@ const bannerData = {
           top: -58px;
           margin-left: -90px;
         }
-
         & > div:nth-child(2) {
           width: 1000px;
           height: 400px;
@@ -975,7 +894,6 @@ const bannerData = {
           padding-left: 300px;
           padding-top: 40px;
           padding-right: 40px;
-
           font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
@@ -983,20 +901,17 @@ const bannerData = {
           line-height: 1.7;
           letter-spacing: 0px;
           color: #515151;
-
           & > div:nth-child(2) {
             margin-top: 40px;
           }
         }
       }
     }
-
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         flex-direction: row-reverse;
         margin-left: 0;
         margin-right: -90px;
-
         & > div:nth-child(2) {
           position: absolute;
           left: 0;
@@ -1008,23 +923,19 @@ const bannerData = {
       }
     }
   }
-
   // 老年黃斑病變成因
   & > div:nth-child(7) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 110px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
-
         & > div:nth-child(2) {
           white-space: pre-wrap;
           display: flex;
@@ -1035,32 +946,25 @@ const bannerData = {
           font-size: 20px;
         }
       }
-
       & > div:nth-child(1) {
         margin-left: 135px;
       }
-
       & > div:nth-child(3) {
         margin-right: 145px;
       }
-
       & > div:nth-child(n + 4) {
         margin-top: 96px;
       }
     }
   }
-
   // 老年黃斑病變治療
   & > div:nth-child(8) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 95px;
       margin-bottom: 120px;
-
       & > div {
         margin-bottom: 100px;
-
         & > div:nth-child(1) {
           margin-bottom: 30px;
           width: 257px;
@@ -1078,7 +982,6 @@ const bannerData = {
           align-items: center;
           padding-left: 40px;
         }
-
         & > div:nth-child(2) {
           font-family: 'Noto Sans HK';
           font-size: 22px;
@@ -1089,13 +992,11 @@ const bannerData = {
           color: #515151;
         }
       }
-
       & > div:nth-child(3) {
         & > div:nth-child(1) {
           width: 320px;
         }
       }
-
       & > div:nth-child(4) {
         & > div:nth-child(1) {
           width: 500px;
@@ -1103,24 +1004,20 @@ const bannerData = {
       }
     }
   }
-
   // 預防黃斑病變
   & > div:nth-child(9) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 130px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
         width: 380px;
         height: 670px;
         background: #fff;
         box-shadow: 7px 7px 29px 0px rgba(6, 0, 1, 0.12);
         border-radius: 170px 170px 0px 0px;
-
         & > div:nth-child(2) {
           height: 150px;
           font-family: 'NotoSansHK-Medium';
@@ -1130,14 +1027,12 @@ const bannerData = {
           line-height: 36px;
           letter-spacing: 0px;
           color: #916b29;
-
           display: flex;
           justify-content: center;
           align-items: center;
           white-space: pre-wrap;
           text-align: center;
         }
-
         & > div:nth-child(3) {
           font-family: 'Noto Sans HK';
           font-size: 24px;
@@ -1146,24 +1041,19 @@ const bannerData = {
           line-height: 38px;
           letter-spacing: 0px;
           color: #515151;
-
           padding: 0 40px;
         }
       }
-
       & > div:nth-child(n + 4) {
         margin-top: 100px;
-
         & > div:nth-child(2) {
           height: 130px;
         }
       }
     }
   }
-
   & > :last-child {
     margin-top: 180px;
-
     & > div:first-child {
       margin-bottom: 90px;
     }
@@ -1307,12 +1197,8 @@ const bannerData = {
   width: 580px;
   height: 140px;
   margin: auto;
-
-  // background-image: linear-gradient(-90deg, #dec692 0%, #e9d7b0 100%),
-  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
   border-radius: 14px;
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -1320,7 +1206,6 @@ const bannerData = {
   line-height: 50px;
   letter-spacing: 0px;
   color: #ffffff;
-
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1344,7 +1229,6 @@ const bannerData = {
     z-index: -1;
   }
 }
-
 .maculopathy_color_title {
   text-align: center;
   font-family: 'NotoSansHK-Bold';
@@ -1355,92 +1239,11 @@ const bannerData = {
   letter-spacing: 0px;
   color: #a18a5a;
 }
-
-.maculopathy_header {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    // margin-top: 100px;
-    // margin-left: 36vw;
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 0;
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: 700;
-        font-stretch: normal;
-        line-height: 0.9;
-        letter-spacing: 1px;
-        color: #dec692;
-        position: sticky;
-        z-index: 9;
-      }
-
-      & > div:nth-child(2) {
-        font-family: 'DINCondensed-Bold';
-        position: relative;
-        z-index: 5;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        -webkit-text-stroke: 1.5px #dec692;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-45%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-115%);
-      }
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: -4px;
-      color: #dec692;
-      margin-left: -10px;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: -20px;
-      left: -5px;
-
-      & > img {
-        position: relative;
-        z-index: 5;
-      }
-
-      & > img:nth-child(1) {
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
-
 .dow {
   margin-top: -35%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
-
   & > div:nth-child(1) {
     & > div {
       width: 62.5%;
@@ -1449,7 +1252,6 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-
       & > div:nth-child(1) {
         margin-left: 520px;
         margin-right: 75px;
@@ -1459,7 +1261,6 @@ const bannerData = {
           height: auto;
         }
       }
-
       & > div:nth-child(2) {
         cursor: pointer;
         display: flex;
@@ -1469,52 +1270,7 @@ const bannerData = {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
-  .maculopathy_header {
-    &>div:nth-child(1) {
-      width: calc(100% - 60px);
-      justify-content: flex-end;
-      align-items: flex-end;
-      display: flex;
-      margin: 150px auto 0;
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 36px;
-          text-align: right;
-        }
-        &>div:nth-child(2) {
-          font-size: 36px;
-          letter-spacing: 0.01em;
-          margin-top: 3px;
-          text-align: right;
-          line-height: 1;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 36px;
-          letter-spacing: 0.01em;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-65%);
-        }
-      }
-      &>div:nth-child(1)::after {
-        width: 190px;
-        height: 200px;
-        top: 190px;
-      }
-      &>div:nth-child(2) {
-        top: 0;
-        width: 281px;
-        &>img:nth-child(1){
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
   .maculopathy_nav {
     transform: scale(1);
     margin: -50px 0 0;
@@ -1702,7 +1458,6 @@ const bannerData = {
               transform: scale(.3) translate(-210px,-30px);
             }
           }
-          
         }
         & > div:nth-child(5) {
           & > div {
@@ -1800,7 +1555,6 @@ const bannerData = {
     & > div:nth-child(7) {
       width: calc(100% - 60px);
       margin: 120px auto 0;
-      
       & > div:nth-child(2) {
         margin-top: 40px;
         & > div {
@@ -1821,11 +1575,9 @@ const bannerData = {
         & > div:nth-child(1) {
           margin-left: 0;
         }
-
         & > div:nth-child(3) {
           margin-right: 0;
         }
-
         & > div:nth-child(n + 4) {
           margin-top: 0;
         }
@@ -1888,7 +1640,6 @@ const bannerData = {
         }
         & > div:nth-child(n + 4) {
           margin-top: 0;
-
           & > div:nth-child(2) {
             height: auto;
           }
@@ -1952,7 +1703,6 @@ const bannerData = {
             }
             & > div:nth-child(1) {
               font-size: 12px;
-              
             }
           }
         }

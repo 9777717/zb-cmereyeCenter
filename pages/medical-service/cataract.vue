@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
-
 useHead(() => ({
   title: t('pages.medical_service.medical_service_cataract_head'),
   meta: [
@@ -381,16 +379,6 @@ const bannerData = {
 <template>
   <div>
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="cataract_head">
-      <div>
-        <div>
-          <div>白內障</div>
-          <div>CATARACT</div>
-          <div>CATARACT</div>
-          <div>CATARACT</div>
-        </div>
-      </div>
-    </div> -->
     <serviceNav :arrData="serviceNavigation" />
     <div class="cataract" :class="{'cataract-en': locale === 'en'}" >
       <!-- 白內障 -->
@@ -878,7 +866,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -944,102 +931,22 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
-.cataract_head {
-  position: relative;
-
-  &::before {
-    content: '';
-    background-color: #f2f2f2;
-    width: calc((100% - 1080px) / 2 + 300px);
-    height: 200px;
-    bottom: 100px;
-    right: 0;
-    position: absolute;
-  }
-
-  &>div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 100px;
-
-    &>div:first-child {
-      // font-family: 'NotoSansCJKtc-Bold';
-      font-size: 107px;
-      font-weight: bold;
-      line-height: 1;
-      font-stretch: normal;
-      letter-spacing: 12px;
-      color: #63bacc;
-      &>div:nth-child(1) {
-        margin-right: -10px;
-      }
-      &>div:nth-child(2) {
-        font-family: "DINCondensed-Bold";
-        display: block;
-        font-size: 140px;
-        letter-spacing: 2px;
-        margin-top: 30px;
-      }
-
-      &>div:nth-child(3),
-      &>div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        font-size: 140px;
-        letter-spacing: 2px;
-        -webkit-text-stroke: 1.5px #63bacc;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0 100%);
-        transform: translateY(-40%);
-      }
-
-      &>div:nth-child(4) {
-        clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
-        transform: translateY(-103%);
-      }
-    }
-
-    &>div:last-child {
-      // margin-right: 16px;
-
-      svg {
-        width: 415px;
-        height: auto;
-
-        image {
-          width: 415px;
-          height: auto;
-        }
-      }
-    }
-  }
-}
 .cataract {
   position: relative;
   max-width: 1200px;
   margin: 100px auto -40%;
   transform: scale(0.9);
   transform-origin: center top;
-
   &>div:nth-child(2) {
-
     &>div:nth-child(1) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin-left: 78px;
       position: relative;
-
       &>div:nth-child(1) {
         margin-top: 191px;
       }
-
       &>div {
         &>div:nth-child(1) {
           font-family: 'NotoSansHK-Medium';
@@ -1050,7 +957,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
         }
-
         &>div:nth-child(2) {
           cursor: pointer;
           margin-top: 77px;
@@ -1064,8 +970,6 @@ const bannerData = {
           line-height: 85px;
           letter-spacing: 0px;
           color: #ffffff;
-          // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-          //   linear-gradient(90deg, #accbee 0%, #e7f0fd 100%);
           background-blend-mode: normal, normal;
           border-radius: 85px;
           -webkit-border-radius: 85px;
@@ -1089,7 +993,6 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         position: relative;
 
@@ -1099,7 +1002,6 @@ const bannerData = {
             z-index: 3;
           }
         }
-
         &>div::after {
           content: '';
           background-color: #f2f2f2;
@@ -1113,7 +1015,6 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(2) {
       margin-top: 122px;
       padding-left: 3px;
@@ -1124,12 +1025,10 @@ const bannerData = {
       line-height: 1.6;
       letter-spacing: 0px;
       color: #515151;
-
       &>p {
         margin-bottom: 41px;
       }
     }
-
     &>div:nth-child(3) {
       cursor: pointer;
       display: flex;
@@ -1138,8 +1037,6 @@ const bannerData = {
       margin-top: 103px;
       width: 695px;
       height: 85px;
-      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-      //   linear-gradient(90deg, #edd32c 0%, #fe7c76 100%);
       background-blend-mode: normal, normal;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -1168,11 +1065,9 @@ const bannerData = {
       }
     }
   }
-
   &>div:nth-child(3) {
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 260px;
         height: 108px;
@@ -1180,7 +1075,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -1196,14 +1090,12 @@ const bannerData = {
           left: -65px;
         }
       }
-
       &>div:nth-child(2) {
         margin: 0 auto;
         margin-top: 78px;
         width: 1280px;
         height: 133px;
         border: solid 2px #66c5dc;
-
         font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
@@ -1212,16 +1104,13 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
         border-radius: 120px 20px 120px 20px;
-
         padding-top: 25px;
         padding-left: 75px;
         margin-left: -35px;
       }
     }
-
     &>div:nth-child(2) {
       margin-top: 94px;
-
       &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 30px;
@@ -1229,7 +1118,6 @@ const bannerData = {
         font-stretch: normal;
         line-height: 35px;
         letter-spacing: 0px;
-        // color: #ffffff;
         color: #5AB7D5;
         margin: auto;
         display: flex;
@@ -1237,37 +1125,27 @@ const bannerData = {
         justify-content: center;
         width: 312px;
         height: 66px;
-        // background-image: linear-gradient(#5ab7d5, #5ab7d5),
-        //   linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
-        // background-blend-mode: normal, normal;
-        // box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
-        // border-radius: 20px;
       }
-
       &>div:nth-child(2) {
         margin-top: 97px;
         display: flex;
         flex-wrap: wrap;
-
         &>div {
           display: flex;
           flex-direction: row;
           align-items: center;
           width: 100%;
           justify-content: space-evenly;
-
           &>div {
             &>img {
               box-shadow: 8px 8px 8px 2px #d8f1f7;
               border-radius: 50%;
               margin-bottom: 37px;
             }
-
             &>div {
               white-space: pre-wrap !important;
               text-align: center;
               height: 54px;
-
               font-family: 'NotoSansHK-Medium';
               font-size: 24px;
               font-weight: normal;
@@ -1278,20 +1156,16 @@ const bannerData = {
             }
           }
         }
-
         &>div:nth-child(2) {
           justify-content: space-between;
         }
       }
     }
   }
-
   &>div:nth-child(4) {
     margin-top: 200px;
-
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 260px;
         height: 108px;
@@ -1299,7 +1173,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -1309,14 +1182,12 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
           background: #fff;
-
           position: absolute;
           top: 27px;
           width: 462px;
           left: -66px;
         }
       }
-
       &>div:nth-child(2) {
         margin-top: 81px;
         padding-left: 4px;
@@ -1329,13 +1200,11 @@ const bannerData = {
         color: #515151;
       }
     }
-
     &>div:nth-child(2) {
       &>div:nth-child(1) {
         margin: auto;
         text-align: center;
         margin-top: 75px;
-
         font-family: 'NotoSansHK-Medium';
         font-size: 30px;
         font-weight: normal;
@@ -1343,19 +1212,13 @@ const bannerData = {
         line-height: 75px;
         letter-spacing: 0px;
         color: #1b80a0;
-
         width: 501px;
         height: 75px;
-        // background-image: linear-gradient(#5ab7d5, #5ab7d5),
-        //   linear-gradient(#f6fbfe, #f6fbfe);
         background-blend-mode: normal, normal;
-        // box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
         border-radius: 20px;
       }
-
       &>div:nth-child(2) {
         margin-top: 52px;
-
         &>div:nth-child(1) {
           padding-left: 3px;
           font-family: 'NotoSansHK-Bold';
@@ -1366,24 +1229,19 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         &>div:nth-child(2) {
           display: flex;
           justify-content: space-between;
           padding: 0 10px;
-
           &>div {
             transform: scale(0.85);
-
             &>div {
               margin-top: 31px;
-
               white-space: pre-wrap !important;
               height: 51px;
               display: flex;
               align-items: center;
               justify-content: center;
-
               font-family: 'NotoSansHK-Medium';
               font-size: 22px;
               letter-spacing: 0px;
@@ -1391,7 +1249,6 @@ const bannerData = {
             }
           }
         }
-
         &>div:nth-child(3) {
           position: relative;
           margin-top: 102px;
@@ -1402,12 +1259,10 @@ const bannerData = {
           line-height: 1.6;
           letter-spacing: 0px;
           color: #515151;
-
           border: solid 2px #65c4da;
           border-radius: 143px;
           box-sizing: border-box;
           padding: 27px 80px;
-
           &>div:first-child {
             position: absolute;
             background: #fff;
@@ -1415,7 +1270,6 @@ const bannerData = {
             right: 70px;
             top: -50px;
           }
-
           &>div:last-child {
             position: absolute;
             background: #fff;
@@ -1425,17 +1279,13 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(3) {
         cursor: pointer;
         margin: auto;
         margin-top: 103px;
         width: 556px;
         height: 86px;
-        // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-        //   linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
         background-blend-mode: normal, normal;
-
         font-family: 'NotoSansHK-Bold';
         font-size: 36px;
         font-weight: normal;
@@ -1464,11 +1314,9 @@ const bannerData = {
       }
     }
   }
-
   &>div:nth-child(5) {
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 829px;
         height: 108px;
@@ -1476,7 +1324,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -1486,7 +1333,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
           background: #fff;
-
           position: absolute;
           top: 27px;
           width: 980px;
@@ -1494,10 +1340,8 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(2) {
       margin-top: 81px;
-
       &>div:nth-child(1) {
         padding-left: 7px;
         font-family: 'Noto Sans HK';
@@ -1508,7 +1352,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       &>div:nth-child(2) {
         margin-top: 77px;
         margin-bottom: 171px;
@@ -1518,15 +1361,12 @@ const bannerData = {
         align-items: center;
         transform: scale(0.85);
         margin-left: -60px;
-
         &>div {
           display: flex;
-
           &>img:nth-child(1) {
             width: 847px;
             z-index: 5;
           }
-
           &>img:nth-child(2) {
             width: 565px;
             position: relative;
@@ -1536,13 +1376,11 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(3) {
         border-radius: 20px;
         border: solid 2px #66c5dc;
         padding: 51px 50px;
         text-align: justify;
-
         font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
@@ -1552,10 +1390,8 @@ const bannerData = {
         color: #515151;
       }
     }
-
     &>div:nth-child(3) {
       margin-top: 123px;
-
       &>div:nth-child(1) {
         background: linear-gradient(to right, #51d6d8, #2296bb);
         background: -webkit-gradient(linear,
@@ -1568,7 +1404,6 @@ const bannerData = {
         background: -o-linear-gradient(to right, #51d6d8, #2296bb);
         background-clip: text;
         color: transparent;
-
         font-family: 'NotoSansHK-Bold';
         font-size: 38px;
         font-weight: normal;
@@ -1577,7 +1412,6 @@ const bannerData = {
         text-align: center;
         line-height: 1;
       }
-
       &>div:nth-child(2) {
         margin-top: 68px;
         font-family: 'Noto Sans HK';
@@ -1588,12 +1422,10 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       &>div:nth-child(3) {
         margin: 48px 30px;
         display: flex;
         justify-content: space-between;
-
         &>div>div {
           margin-top: 37px;
           white-space: pre-wrap !important;
@@ -1606,24 +1438,20 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         .lineText {
           display: none;
         }
       }
     }
-
     &>div:nth-child(4) {
       max-width: 1530px;
       margin: 0 auto;
-
       &>div:nth-child(1) {
         width: 557px;
         height: 98px;
         margin: auto;
         border-radius: 43px;
         border: solid 2px #66c5dc;
-
         font-family: 'NotoSansHK-Medium';
         font-size: 36px;
         font-weight: normal;
@@ -1633,28 +1461,23 @@ const bannerData = {
         line-height: 2.5;
         text-align: center;
       }
-
       &>div:nth-child(2) {
         margin: 10px auto 7px auto;
         display: flex;
         justify-content: center;
       }
-
       &>div:nth-child(3) {
         display: flex;
         margin: auto 57px;
         justify-content: space-between;
-
         &>div {
           width: 369px;
           height: 175px;
           border-radius: 17px;
           border: solid 2px #66c5dc;
-
           display: flex;
           align-items: center;
           justify-content: center;
-
           font-family: 'NotoSansHK-Medium';
           font-size: 34px;
           font-weight: normal;
@@ -1667,7 +1490,6 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(5) {
       cursor: pointer;
       font-family: 'NotoSansHK-Bold';
@@ -1681,11 +1503,8 @@ const bannerData = {
       line-height: 86px;
       letter-spacing: 0px;
       color: #f8fcff;
-
       width: 556px;
       height: 86px;
-      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-      //   linear-gradient(90deg, #edd22d 0%, #fe7d76 100%);
       background-blend-mode: normal, normal;
       position: relative;
       overflow: hidden;
@@ -1706,11 +1525,9 @@ const bannerData = {
       }
     }
   }
-
   &>div:nth-child(6) {
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 204px;
         height: 108px;
@@ -1718,7 +1535,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -1728,7 +1544,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
           background: #fff;
-
           position: absolute;
           top: 27px;
           width: 350px;
@@ -1736,7 +1551,6 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(2) {
       &>div:nth-child(1) {
         padding-left: 2px;
@@ -1750,14 +1564,12 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       &>div:nth-child(2) {
         max-width: 1530px;
         margin: 0 auto;
         border: #21a1c1 solid 2px;
         border-radius: 20px;
         overflow: hidden;
-
         font-family: 'NotoSansHK-Medium';
         font-size: 24px;
         font-weight: normal;
@@ -1765,7 +1577,6 @@ const bannerData = {
         line-height: 31px;
         letter-spacing: 0px;
         color: #515151;
-
         &>div {
           display: flex;
           flex-direction: row;
@@ -1775,45 +1586,37 @@ const bannerData = {
           border-bottom: 2px solid #21a1c1;
           white-space: pre-wrap !important;
           text-align: center;
-
           &>div {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             border-right: 2px solid #21a1c1;
-
             &>div {
               &>div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-
                 &>img {
                   margin-right: 5px;
                 }
               }
             }
           }
-
           &>div:last-child {
             border-right: none;
           }
         }
-
         .else_multipleFocus {
           display: flex;
         }
-
         .ele_strong {
           width: 25px;
           display: block;
         }
-
         &>div:nth-child(1) {
           background: #64bcd1;
-
           font-family: 'NotoSansHK-Bold';
           font-size: 28px;
           font-weight: normal;
@@ -1823,76 +1626,63 @@ const bannerData = {
           color: #ffffff;
           text-align: center;
         }
-
         &>div:nth-child(5) {
           &>div:nth-child(2) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: center;
-
               &>div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
               }
-
               &>div:nth-child(2) {
                 font-family: 'Noto Sans HK';
                 font-size: 18px;
-
                 &>img {
                   display: none;
                 }
               }
             }
           }
-
           &>div:nth-child(3) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
               &>div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-
                 &>img {
                   margin-right: 5px;
                 }
               }
-
               &>div:nth-child(2) {
                 margin-top: 20px;
               }
             }
           }
-
           &>div:nth-child(4) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
               &>div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-
                 &>img {
                   margin-right: 5px;
                 }
               }
-
               &>div:nth-child(2) {
                 margin-top: 20px;
               }
             }
           }
         }
-
         &>div:nth-child(6) {
           height: 275px;
           font-family: 'NotoSansHK-Medium';
@@ -1902,13 +1692,11 @@ const bannerData = {
           line-height: 1.8;
           letter-spacing: 0px;
           color: #515151;
-
           &>div:nth-child(2) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
               &>div {
                 &>img {
                   display: none;
@@ -1916,13 +1704,11 @@ const bannerData = {
               }
             }
           }
-
           &>div:nth-child(3) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-
               &>div {
                 &>img {
                   display: none;
@@ -1930,25 +1716,21 @@ const bannerData = {
               }
             }
           }
-
           &>div:nth-child(4) {
             &>div {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
               text-align: left;
-
               &>div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-
                 &>img {
                   margin-right: 5px;
                 }
               }
             }
-
             &>div:nth-child(1) {
               &>div:nth-child(1) {
                 &>div:nth-child(1) {
@@ -1961,31 +1743,25 @@ const bannerData = {
             }
           }
         }
-
         &>div:last-child {
           border-bottom: none;
         }
       }
-
       &>div>div>div:nth-child(1) {
         width: 245px;
         margin-left: 44px;
         flex: none;
         display: flex;
         justify-content: flex-start;
-
         &>div {
           padding-top: 8px;
         }
-
         &>img {
           margin-right: 10px;
         }
       }
-
       &>div:nth-child(3) {
         margin-top: 45px;
-
         font-family: 'Noto Sans HK';
         font-size: 24px;
         font-weight: normal;
@@ -1999,11 +1775,8 @@ const bannerData = {
     &>div:nth-child(3) {
       width: 556px;
       height: 86px;
-      // background-image: linear-gradient(90deg, #a0e3f2 0%, #65c4da 100%),
-      //   linear-gradient(90deg, #edd12e 0%, #fe7e76 100%);
       background-blend-mode: normal, normal;
       margin: auto;
-
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
       font-weight: normal;
@@ -2039,11 +1812,9 @@ const bannerData = {
       }
     }
   }
-
   &>div:nth-child(7) {
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 306px;
         height: 108px;
@@ -2051,7 +1822,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -2061,7 +1831,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
           background: #fff;
-
           position: absolute;
           top: 27px;
           width: 420px;
@@ -2069,19 +1838,15 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(2) {
       margin-top: 90px;
-
       &>div {
         display: flex;
         align-items: center;
         margin: 60px;
       }
-
       &>div:nth-child(2n) {
         flex-direction: row-reverse;
-
         &>div:nth-child(2) {
           margin-right: 40px;
           font-family: 'Noto Sans HK';
@@ -2092,14 +1857,12 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         &>div>div:nth-child(1) {
           position: absolute;
           top: -27px;
           right: -43px;
         }
       }
-
       &>div:nth-child(2n + 1) {
         &>div:nth-child(2) {
           margin-left: 40px;
@@ -2111,17 +1874,14 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         &>div>div:nth-child(1) {
           position: absolute;
           top: -27px;
           left: -40px;
         }
       }
-
       &>div>div:nth-child(1) {
         position: relative;
-
         &>div:nth-child(1) {
           font-family: 'AcuminVariableConcept';
           font-size: 120px;
@@ -2140,7 +1900,6 @@ const bannerData = {
   &>div:nth-child(8) {
     &>div:nth-child(1) {
       position: relative;
-
       &>div:nth-child(1) {
         width: 306px;
         height: 108px;
@@ -2148,7 +1907,6 @@ const bannerData = {
         border: solid 2px #66c5dc;
         margin: auto;
         position: relative;
-
         &>div {
           font-family: 'NotoSansHK-Bold';
           font-size: 42px;
@@ -2158,7 +1916,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #1b80a0;
           background: #fff;
-
           position: absolute;
           top: 27px;
           width: 430px;
@@ -2166,17 +1923,14 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(2) {
       margin-top: 100px;
     }
   }
-
   // 公共使用
   &>div {
     margin-top: 200px;
   }
-
   &>div:first-child {
     margin: 0;
   }
@@ -2451,86 +2205,28 @@ const bannerData = {
 }
 
 @media screen and (max-width: 768px) {
-  .cataract_head {
-    position: relative;
-
-    &::before {
-      width: 150px;
-      height: 200px;
-      bottom: -50px;
-    }
-
-    &>div {
-      margin: 150px auto 100px;
-
-      &>div:first-child {
-        font-size: 50px;
-        letter-spacing: 0.05em;
-        &>div:nth-of-type(1){
-          margin-right: 0px;
-        }
-        // padding-right: 40px;
-        &>div:nth-child(2) {
-          font-size: 52px;
-          margin-top: 10px;
-        }
-
-        &>div:nth-child(3),
-        &>div:nth-child(4) {
-          font-size: 52px;
-          // letter-spacing: .05em;
-          clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-          transform: translateY(-15%);
-        }
-
-        &>div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
-          transform: translateY(-60%);
-        }
-      }
-
-      &>div:last-child {
-        margin-right: 30px;
-
-        svg {
-          width: 162px;
-          height: auto;
-
-          image {
-            width: 162px;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
   .cataract {
     transform: scale(1);
     margin: 0;
     &>div:nth-child(2) {
       width: calc(100% - 60px);
       margin: 0 auto;
-      // padding-top: 100px;
       &>div:nth-child(1) {
         width: 100%;
         flex-direction: column;
         align-items: center;
         margin-left: 0;
         margin-top: 20px;
-
         &>div:nth-child(1) {
           margin-top: 0;
           flex: 1;
-          // margin-left: 10px;
         }
-
         &>div {
           &>div:nth-child(1) {
             font-size: 16px;
             line-height: 1.6;
             text-align: center;
           }
-
           &>div:nth-child(2) {
             margin-left: 0;
             font-size: 18px;
@@ -2542,11 +2238,9 @@ const bannerData = {
             margin-top: 20px;
           }
         }
-
         &>div:nth-child(2) {
           width: 60%;
           margin-top: 34px;
-
           &>div::after {
             width: 100%;
             height: 100%;
@@ -2556,18 +2250,15 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         width: 100%;
         font-size: 14px;
         line-height: 160%;
         margin-top: 50px;
-
         &>p {
           margin-bottom: 20px;
         }
       }
-
       &>div:nth-child(3) {
         width: 100%;
         font-size: 18px;
@@ -2576,17 +2267,14 @@ const bannerData = {
         margin-top: 30px;
       }
     }
-
     &>div:nth-child(3) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 120px;
           height: 70px;
           border-radius: 15px;
-
           &>div {
             width: max-content;
             font-size: 22px;
@@ -2597,7 +2285,6 @@ const bannerData = {
             transform: translate(-50%, -50%);
           }
         }
-
         &>div:nth-child(2) {
           margin-top: 30px;
           width: 100%;
@@ -2609,10 +2296,8 @@ const bannerData = {
           height: auto;
         }
       }
-
       &>div:nth-child(2) {
         margin-top: 30px;
-
         &>div:nth-child(1) {
           font-size: 18px;
           line-height: 35px;
@@ -2621,29 +2306,22 @@ const bannerData = {
           padding: 0 15px 2px;
           border-radius: 10px;
         }
-
         &>div:nth-child(2) {
           margin-top: 50px;
-
           &>div {
             align-items: flex-start;
             margin-bottom: 20px;
-
             &>div {
               width: 65px;
-
               &>img {
                 box-shadow: 2px 2px 2px 2px #d8f1f7;
                 margin-bottom: 10px;
               }
-
               &>div {
-                // white-space: initial !important;
                 font-size: 14px;
                 line-height: 1.6;
                 height: auto;
                 text-align: center;
-
                 &>div {
                   div {
                     display: inline;
@@ -2651,13 +2329,11 @@ const bannerData = {
                 }
               }
             }
-
             &:nth-of-type(1) {
               &>div:nth-of-type(3) {
                 &>div {
                   width: 120px;
                   margin-left: -25px;
-
                   &>div {
                     div {
                       display: inline-block;
@@ -2670,17 +2346,14 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(4) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 120px;
           height: 70px;
           border-radius: 15px;
-
           &>div {
             width: max-content;
             font-size: 22px;
@@ -2691,14 +2364,12 @@ const bannerData = {
             transform: translate(-50%, -50%);
           }
         }
-
         &>div:nth-child(2) {
           margin-top: 30px;
           font-size: 14px;
           line-height: 1.6;
         }
       }
-
       &>div:nth-child(2) {
         &>div:nth-child(1) {
           width: max-content;
@@ -2709,16 +2380,13 @@ const bannerData = {
           line-height: 1.6;
           border-radius: 10px;
         }
-
         &>div:nth-child(2) {
           margin-top: 30px;
-
           &>div:nth-child(1) {
             font-size: 16px;
             line-height: 1.6;
             padding-left: 0;
           }
-
           &>div:nth-child(2) {
             margin-top: 20px;
             flex-wrap: wrap;
@@ -2726,17 +2394,14 @@ const bannerData = {
             padding: 0;
             width: calc(100% + 20px);
             margin-left: -10px;
-
             &>div {
               transform: scale(1);
               width: 33.33%;
               padding: 0 10px;
               margin-bottom: 30px;
-
               img {
                 filter: drop-shadow(2px 1px 7px rgba(0, 0, 0, 0.45));
               }
-
               &>div {
                 text-align: center;
                 font-size: 12px;
@@ -2744,35 +2409,29 @@ const bannerData = {
               }
             }
           }
-
           &>div:nth-child(3) {
             margin-top: 0;
             padding: 20px 30px;
             font-size: 14px;
             line-height: 1.6;
-
             &>div:first-child {
               right: 50px;
               padding: 5px;
               top: -30px;
-
               svg {
                 transform: scale(.7);
               }
             }
-
             &>div:last-child {
               left: 50px;
               padding: 5px;
               bottom: -30px;
-
               svg {
                 transform: scale(.7);
               }
             }
           }
         }
-
         &>div:nth-child(3) {
           width: max-content;
           height: 44px;
@@ -2783,17 +2442,14 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(5) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 200px;
           height: 130px;
           border-radius: 15px;
-
           &>div {
             width: 330px;
             font-size: 22px;
@@ -2805,15 +2461,12 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         margin-top: 30px;
-
         &>div:nth-child(1) {
           font-size: 14px;
           line-height: 2;
         }
-
         &>div:nth-child(2) {
           transform: scale(1);
           margin-top: 30px;
@@ -2821,12 +2474,10 @@ const bannerData = {
           padding-left: 0;
           margin-bottom: 0;
           width: 100%;
-
           &>div {
             &>img:nth-child(1) {
               width: 210px;
             }
-
             &>img:nth-child(2) {
               width: 150px;
               bottom: -20px;
@@ -2834,7 +2485,6 @@ const bannerData = {
             }
           }
         }
-
         &>div:nth-child(3) {
           font-size: 14px;
           line-height: 2;
@@ -2843,33 +2493,26 @@ const bannerData = {
           border: solid 1px #66c5dc;
         }
       }
-
       &>div:nth-child(3) {
         margin-top: 55px;
-
         &>div:nth-child(1) {
           font-size: 24px;
         }
-
         &>div:nth-child(2) {
           margin-top: 30px;
           line-height: 2;
           font-size: 14px;
         }
-
         &>div:nth-child(3) {
           margin: 48px auto;
           flex-direction: column;
-
           &>div {
             display: flex;
             align-items: center;
             position: relative;
-
             &:not(:first-child) {
               margin-top: 30px;
             }
-
             img {
               width: 150px;
               position: relative;
@@ -2877,7 +2520,6 @@ const bannerData = {
               margin-left: 20px;
             }
           }
-
           &>div>div:nth-of-type(1) {
             font-size: 16px;
             border: 2px solid #A6DEF0;
@@ -2892,13 +2534,11 @@ const bannerData = {
             margin-top: 0;
             position: relative;
             z-index: 1;
-
             div {
               width: 130px;
               display: initial;
             }
           }
-
           .lineText {
             display: block;
             position: absolute;
@@ -2911,23 +2551,19 @@ const bannerData = {
             padding: 5px;
             border-radius: 50%;
             margin-top: 10px;
-
             &>div {
               width: 45px;
               height: 45px;
               background: linear-gradient(270deg, #2296BB 0%, #51D6D8 100%);
               line-height: 45px;
-              // padding-top: 2px;
               text-align: center;
               border-radius: 50%;
             }
           }
         }
       }
-
       &>div:nth-child(4) {
         max-width: 330px;
-
         &>div:nth-child(1) {
           width: max-content;
           font-size: 18px;
@@ -2935,18 +2571,15 @@ const bannerData = {
           line-height: 1.6;
           padding: 5px 30px;
         }
-
         &>div:nth-child(2) {
           display: none;
         }
-
         &>div:nth-child(3) {
           flex-direction: column;
           font-size: 16px;
           margin: 0 0 0 40px;
           padding-left: 20px;
           border-left: solid 2px #66c5dc;
-
           &>div {
             width: 100%;
             height: auto;
@@ -2956,7 +2589,6 @@ const bannerData = {
             transform: scale(1);
             justify-content: flex-start;
             position: relative;
-
             &::before {
               content: '';
               position: absolute;
@@ -2969,14 +2601,12 @@ const bannerData = {
               background: url(https://static.cmereye.com/imgs/2023/07/5f0bd54a3df3bf8f.png);
               background-size: 100% 100%;
             }
-
             br {
               display: none;
             }
           }
         }
       }
-
       &>div:nth-child(5) {
         font-size: 18px;
         margin-top: 55px;
@@ -2986,17 +2616,14 @@ const bannerData = {
         line-height: 1.6;
       }
     }
-
     &>div:nth-child(6) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 120px;
           height: 70px;
           border-radius: 15px;
-
           &>div {
             width: max-content;
             font-size: 22px;
@@ -3008,21 +2635,17 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         &>div:nth-child(1) {
           margin: 30px auto 10px;
           font-size: 14px;
           line-height: 2;
         }
-
         &>div:nth-child(2) {
           font-size: 12px;
           line-height: 1.4;
-
           &>div {
             height: auto;
-
             &>div {
               &>div {
                 &>div {
@@ -3034,21 +2657,17 @@ const bannerData = {
               }
             }
           }
-
           &>div:nth-child(1) {
             font-size: 16px;
             line-height: 1.2;
-
             &>div {
               padding: 10px 0;
             }
           }
-
           &>div:nth-child(5) {
             &>div:nth-child(2) {
               &>div {
                 padding: 15px 5px 15px 0;
-
                 &>div {
                   align-items: flex-start;
 
@@ -3056,13 +2675,11 @@ const bannerData = {
                     margin-top: 3px;
                   }
                 }
-
                 &>div:nth-child(2) {
                   font-size: 12px;
                 }
               }
             }
-
             &>div:nth-child(3) {
               align-items: flex-start;
               &>div {
@@ -3074,36 +2691,30 @@ const bannerData = {
                     margin-top: 3px;
                   }
                 }
-
                 &>div:nth-child(2) {
                   margin-top: 0px;
                 }
               }
             }
-
             &>div:nth-child(4) {
               align-items: flex-start;
               &>div {
                 padding: 15px 5px 15px 0;
                 &>div {
                   align-items: flex-start;
-
                   &>img {
                     margin-top: 3px;
                   }
                 }
-
                 &>div:nth-child(2) {
                   margin-top: 0px;
                 }
               }
             }
           }
-
           &>div:nth-child(6) {
             height: auto;
             font-size: 12px;
-
             &>div {
               padding: 15px 5px;
               &:nth-of-type(n+2){
@@ -3112,7 +2723,6 @@ const bannerData = {
             }
           }
         }
-
         &>div>div>div:nth-child(1) {
           width: 70px;
           margin-left: 0;
@@ -3120,19 +2730,16 @@ const bannerData = {
           align-items: center;
           justify-content: center;
           padding: 10px 0;
-
           &>img {
             margin-right: 0;
           }
         }
-
         &>div:nth-child(3) {
           margin-top: 14px;
           font-size: 14px;
           line-height: 1.6;
         }
       }
-
       &>div:nth-child(3) {
         font-size: 18px;
         margin-top: 55px;
@@ -3142,17 +2749,14 @@ const bannerData = {
         line-height: 1.6;
       }
     }
-
     &>div:nth-child(7) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 120px;
           height: 70px;
           border-radius: 15px;
-
           &>div {
             width: max-content;
             font-size: 22px;
@@ -3164,58 +2768,47 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         margin-top: 50px;
-
         &>div {
           margin: 60px 0;
         }
-
         &>div:nth-child(2n) {
           &>div:nth-of-type(1) {
             width: 120px;
-
             img {
               width: 100%;
             }
           }
-
           &>div:nth-child(2) {
             margin-right: 15px;
             font-size: 14px;
             line-height: 1.6;
             flex: 1;
           }
-
           &>div>div:nth-child(1) {
             top: -15px;
             right: 0px;
           }
         }
-
         &>div:nth-child(2n + 1) {
           &>div:nth-of-type(1) {
             width: 120px;
-
             img {
               width: 100%;
             }
           }
-
           &>div:nth-child(2) {
             margin-left: 15px;
             font-size: 14px;
             line-height: 1.6;
             flex: 1;
           }
-
           &>div>div:nth-child(1) {
             left: 0;
             top: -15px;
           }
         }
-
         &>div>div:nth-child(1) {
           &>div:nth-child(1) {
             font-style: initial;
@@ -3224,17 +2817,14 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(8) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-
       &>div:nth-child(1) {
         &>div:nth-child(1) {
           width: 120px;
           height: 70px;
           border-radius: 15px;
-
           &>div {
             width: max-content;
             font-size: 22px;
@@ -3246,12 +2836,10 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         margin-top: 50px;
       }
     }
-
     &>div {
       margin-top: 70px;
     }
@@ -3400,8 +2988,6 @@ const bannerData = {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media (min-width: 678px) and (max-width: 1200px) {
   .cataract {
     margin-bottom: -80%;

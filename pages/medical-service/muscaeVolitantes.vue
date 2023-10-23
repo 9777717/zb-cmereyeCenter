@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -30,7 +29,6 @@ useHead(() => ({
     },
   ],
 }))
-
 const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
@@ -198,7 +196,6 @@ const goWhatsApp = () => {
 const callTel = () => {
   location.href = 'tel: +852 3956 2025'
 }
-
 const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症1.png',
   mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症2.png',
@@ -207,20 +204,9 @@ const bannerData = {
   textColor: '#568BB4'
 }
 </script>
-
 <template>
   <div class="muscaeVolitantes">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="volitantes">
-      <div>
-        <div>
-          <div>飛蚊症</div>
-          <div>EYE FLOATERS</div>
-          <div>EYE FLOATERS</div>
-          <div>EYE FLOATERS</div>
-        </div>
-      </div>
-    </div> -->
     <div class="muscaeVolitantes-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
     </div>
@@ -523,7 +509,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -552,7 +537,6 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
-// 这位9777777写的神奇样式，给我改吐了
 .muscaeVolitantes-nav{
   margin-top: 30px;
 }
@@ -561,21 +545,17 @@ const bannerData = {
   margin: 100px auto -40%;
   transform: scale(0.9);
   transform-origin: center top;
-
   // 什麼是飛蚊症？
   & > div:nth-child(1) {
     display: flex;
     position: relative;
-
     & > div > img {
       position: relative;
       z-index: 5;
     }
-
     & > div:nth-child(1) {
       transform: scale(0.9);
     }
-
     & > div:nth-child(1)::after {
       content: '';
       width: 579px;
@@ -587,12 +567,10 @@ const bannerData = {
       left: 48px;
       bottom: -56px;
     }
-
     & > div:nth-child(2) {
       position: absolute;
       padding-left: 677px;
       padding-top: 62px;
-
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Bold';
         font-size: 50px;
@@ -602,7 +580,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #697389;
       }
-
       & > div:nth-child(2) {
         margin-top: 48px;
         font-family: 'Noto Sans HK';
@@ -615,28 +592,22 @@ const bannerData = {
       }
     }
   }
-
   // 飛蚊症患者看見的浮游物︰
   & > div:nth-child(2) {
     margin-top: 236px;
-
     & > div:nth-child(2) {
       padding: 0 63px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 120px;
-
       & > div {
         width: 33.33333%;
-
         & > div:nth-child(2) {
           width: 258px;
           display: flex;
           justify-content: center;
-
           margin-top: 25px;
-
           font-family: 'Noto Sans HK';
           font-size: 30px;
           font-weight: normal;
@@ -646,14 +617,12 @@ const bannerData = {
           color: #697389;
         }
       }
-
       & > div:nth-child(2),
       & > div:nth-child(5) {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
       & > div:nth-child(3),
       & > div:nth-child(6) {
         display: flex;
@@ -661,44 +630,36 @@ const bannerData = {
         flex-direction: column;
         align-items: center;
       }
-
       & > div:nth-child(n + 4) {
         margin-top: 120px;
       }
     }
-
     & > div:nth-child(3) {
       margin-top: 128px;
       width: 508px;
       height: 140px;
     }
   }
-
   // 飛蚊症成因
   & > div:nth-child(3) {
     margin-top: 180px;
-
     & > div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: center;
-
       & > div:nth-child(2) {
         letter-spacing: 4px;
         padding: 0 30px;
       }
     }
-
     & > div:nth-child(2) {
       & > div {
         display: flex;
         position: relative;
         margin-top: 126px;
-
         & > div:nth-child(2) {
           position: absolute;
           padding-left: 350px;
-
           & > div:nth-child(1) {
             font-family: 'NotoSansHK-Medium';
             font-size: 32px;
@@ -710,7 +671,6 @@ const bannerData = {
             position: relative;
             padding-bottom: 30px;
           }
-
           & > div:nth-child(1)::after {
             content: '';
             width: 80px;
@@ -721,7 +681,6 @@ const bannerData = {
             bottom: 0;
             left: 0;
           }
-
           & > div:nth-child(2) {
             margin-top: 30px;
             font-family: 'Noto Sans HK';
@@ -733,14 +692,12 @@ const bannerData = {
             color: #515151;
           }
         }
-
         & > div:nth-child(1) {
           & > img {
             z-index: 5;
             position: relative;
           }
         }
-
         & > div:nth-child(1)::after {
           content: '';
           width: 300px;
@@ -754,10 +711,8 @@ const bannerData = {
           z-index: 1;
         }
       }
-
       & > div:nth-child(2n) {
         flex-direction: row-reverse;
-
         & > div:nth-child(2) {
           display: flex;
           text-align: left;
@@ -772,7 +727,6 @@ const bannerData = {
             right: 0;
           }
         }
-
         & > div:nth-child(1)::after {
           right: 20px;
           left: auto;
@@ -781,17 +735,14 @@ const bannerData = {
       }
     }
   }
-
   // 飛蚊症種類
   & > div:nth-child(4) {
     margin-top: 230px;
-
     & > div:nth-child(2) {
       margin-top: 85px;
       margin-left: 30px;
       background-color: #ffffff;
       box-shadow: 3px 5px 35px 0px rgba(6, 0, 1, 0.12);
-
       & > div:nth-child(1) {
         width: 224px;
         height: 56px;
@@ -813,14 +764,11 @@ const bannerData = {
         left: -30px;
         top: 30px;
       }
-
       & > div:nth-child(2) {
         margin-left: 40px;
         margin-bottom: 50px;
-
         & > div:nth-child(1) {
           margin-top: 60px;
-
           font-family: 'Noto Sans HK';
           font-size: 22px;
           font-weight: normal;
@@ -829,17 +777,14 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           display: flex;
           flex-direction: row;
           padding-bottom: 50px;
-
           & > div:nth-child(2) {
             width: 785px;
             margin-left: 24px;
             margin-right: 63px;
-
             font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
@@ -847,16 +792,13 @@ const bannerData = {
             line-height: 36px;
             letter-spacing: 0px;
             color: #515151;
-
             & > div:nth-child(1) {
               margin-top: 38px;
             }
-
             & > div:nth-child(2) {
               margin-top: 110px;
             }
           }
-
           & > div:nth-child(3) {
             display: flex;
             flex-direction: column;
@@ -865,13 +807,11 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(3) {
       margin-top: 80px;
       margin-left: 30px;
       background-color: #ffffff;
       box-shadow: 3px 5px 35px 0px rgba(6, 0, 1, 0.12);
-
       & > div:nth-child(1) {
         width: 224px;
         height: 56px;
@@ -891,7 +831,6 @@ const bannerData = {
         left: -30px;
         top: 30px;
       }
-
       & > div:nth-child(2) {
         margin-top: 60px;
         margin-left: 35px;
@@ -900,7 +839,6 @@ const bannerData = {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
         & > div:nth-child(2) {
           margin-left: 43px;
           padding-right: 40px;
@@ -914,21 +852,17 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       margin-top: 100px;
       width: 508px;
       height: 140px;
     }
   }
-
   // 以下人士較大機會患上飛蚊症︰
   & > div:nth-child(5) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 105px;
-
       & > div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 26px;
@@ -938,7 +872,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         margin-top: 66px;
         padding-left: 68px;
@@ -946,13 +879,11 @@ const bannerData = {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         & > div {
           display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
-
           & > div:nth-child(2) {
             margin-top: 45px;
             display: flex;
@@ -967,21 +898,17 @@ const bannerData = {
             color: #515151;
           }
         }
-
         & > div:nth-child(n + 4) {
           margin-top: 130px;
         }
       }
     }
   }
-
   // 飛蚊症治療
   & > div:nth-child(6) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 92px;
-
       & > div:nth-child(1) {
         display: flex;
         flex-direction: column;
@@ -994,16 +921,13 @@ const bannerData = {
         & > div:nth-child(2) {
           position: absolute;
           padding: 50px 59px;
-
           & > div:nth-child(1) {
             display: flex;
             position: relative;
-
             & > div:nth-child(1) {
               margin-right: 48px;
               width: 287px;
             }
-
             & > div:nth-child(2) {
               width: 765px;
               margin-top: 6px;
@@ -1016,7 +940,6 @@ const bannerData = {
               color: #515151;
             }
           }
-
           & > div:nth-child(2) {
             position: absolute;
             right: 35px;
@@ -1024,14 +947,12 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2),
       & > div:nth-child(3) {
         margin-top: 80px;
         display: flex;
         background: #f2f2f2;
         position: relative;
-
         & > div:nth-child(1) {
           width: 228px;
           display: flex;
@@ -1046,7 +967,6 @@ const bannerData = {
           color: #ffffff;
           text-align: center;
         }
-
         & > div:nth-child(2) {
           position: absolute;
           margin-left: 277px;
@@ -1061,57 +981,47 @@ const bannerData = {
           text-align: justify;
         }
       }
-
       & > div:nth-child(2) {
         & > div:nth-child(1) {
           height: 211px;
           background: #90b6d3;
         }
-
         & > div:nth-child(2) {
           line-height: 2;
           padding-top: 31px;
         }
       }
-
       & > div:nth-child(3) {
         & > div:nth-child(1) {
           height: 556px;
           background: #e4c0b6;
         }
-
         & > div:nth-child(2) {
           padding: 53px 0;
           display: flex;
-
           & > div:nth-child(1) {
             width: 435px;
             margin-right: 60px;
-
             & > div:nth-child(1) {
               margin-bottom: 49px;
               line-height: 1.8;
             }
           }
-
           & > div:nth-child(2) {
             display: flex;
             align-items: center;
           }
         }
       }
-
       & > div:nth-child(4) {
         margin-top: 163px;
         display: flex;
         justify-content: center;
-
         & > div:nth-child(1),
         & > div:nth-child(3) {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
           & > div {
             width: 425px;
             height: 129px;
@@ -1130,14 +1040,12 @@ const bannerData = {
             flex-direction: column;
           }
         }
-
         & > div:nth-child(2) {
           display: flex;
           align-items: center;
           justify-content: center;
           position: relative;
           margin: 0 20px;
-
           & > div:nth-child(2) {
             position: absolute;
             font-family: 'NotoSansHK-Medium';
@@ -1147,14 +1055,12 @@ const bannerData = {
             line-height: 42px;
             letter-spacing: 0px;
             color: #6c899e;
-
             & > p > span {
               color: #d8a597;
             }
           }
         }
       }
-
       & > div:nth-child(5) {
         width: 509px;
         height: 141px;
@@ -1162,11 +1068,9 @@ const bannerData = {
       }
     }
   }
-
   // 預防飛蚊症
   & > div:nth-child(7) {
     margin-top: 155px;
-
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         margin-top: 80px;
@@ -1179,16 +1083,13 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         margin-top: 80px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         & > div {
           transform: scale(0.9);
-
           & > div {
             width: 375px;
             height: 100%;
@@ -1203,7 +1104,6 @@ const bannerData = {
                 width: 100%;
               }
             }
-
             & > div:nth-child(2) {
               padding: 0 24px;
               padding-top: 27px;
@@ -1217,31 +1117,25 @@ const bannerData = {
             }
           }
         }
-
         & > div:nth-child(n + 4) {
           margin-top: 100px;
         }
-
         & > div:nth-child(4) {
           margin-left: 207px;
         }
-
         & > div:nth-child(5) {
           margin-right: 207px;
         }
       }
     }
   }
-
   // 常见问题
   & > div:nth-child(8) {
     margin-top: 180px;
-
     & > div:nth-child(2) {
       margin-top: 108px;
     }
   }
-
   &.muscaeNav-en{
     & > div:nth-child(1) {
       & > div:nth-child(2) {
@@ -1429,83 +1323,6 @@ const bannerData = {
   color: #6c899e;
 }
 
-// 头部样式
-.volitantes {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 0;
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: 700;
-        font-stretch: normal;
-        line-height: 0.9;
-        letter-spacing: 1px;
-        color: #9cc4e2;
-        position: sticky;
-      }
-
-      & > div:nth-child(2) {
-        font-family: 'DINCondensed-Bold';
-        position: relative;
-        z-index: 5;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        -webkit-text-stroke: 1.5px #9cc4e2;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-45%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-113%);
-      }
-
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-      margin-left: -0.6vw;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: -20px;
-      left: -5px;
-
-      & > img {
-        position: relative;
-        z-index: 5;
-      }
-
-      & > img:nth-child(1) {
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
 @keyframes bgposition {
     0% {
         transform: translate(30%, 30%);
@@ -1561,50 +1378,6 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .muscaeVolitantes-nav{
     display: none;
-  }
-  .volitantes {
-    &>div:nth-child(1) {
-      width: calc(100% - 60px);
-      justify-content: flex-end;
-      align-items: flex-end;
-      display: flex;
-      margin: 150px auto 0;
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 40px;
-          text-align: right;
-        }
-        &>div:nth-child(2) {
-          font-size: 45px;
-          letter-spacing: 0.01em;
-          margin-top: 5px;
-          text-align: right;
-          line-height: 1;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 45px;
-          letter-spacing: 0.01em;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-65%);
-        }
-      }
-      &>div:nth-child(1)::after {
-        width: 200px;
-        height: 200px;
-        top: 190px;
-      }
-      &>div:nth-child(2) {
-        top: 0;
-        width: 194px;
-        &>img:nth-child(1){
-          margin-bottom: 5px;
-        }
-      }
-    }
   }
   .muscaeNav {
     transform: scale(1);

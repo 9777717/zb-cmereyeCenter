@@ -424,14 +424,6 @@ const bannerData = {
 <template>
   <div>
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="glaucoma_heaf">
-      <div>
-        <div>青光眼</div>
-        <div>GLAUCOMA</div>
-        <div>GLAUCOMA</div>
-        <div>GLAUCOMA</div>
-      </div>
-    </div> -->
     <div class="glaucoma-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
@@ -1103,7 +1095,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载和公共脚部 -->
     <!-- 下载 -->
@@ -1145,89 +1136,6 @@ const bannerData = {
 </template>
 
 <style lang="scss" scoped>
-.glaucoma_heaf {
-  // position: relative;
-  // top: 202px;
-  // right: 0;
-  // width: 40vw;
-  // margin-left: 60vw;
-  // height: 288px;
-  width: 100%;
-  // max-width: 1080px;
-  margin: 100px auto 0;
-  position: relative;
-  &::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40vw;
-    height: 70%;
-    background-color: #f2f2f2;
-    z-index: 0;
-  }
-  & > div {
-    // margin-left: calc();
-    // position: absolute;
-    // top: -110px;
-    // left: -18vw;
-    text-align: right;
-  }
-
-  & > div:first-child {
-    font-family: 'NotoSansCJKtc-Bold';
-    font-size: 107px;
-    font-weight: bold;
-    line-height: 1;
-    font-stretch: normal;
-    letter-spacing: 12px;
-    color: #9bcfcc;
-    width: 100%;
-    max-width: 1080px;
-    position: relative;
-    z-index: 1;
-    margin: 0 auto;
-    & > div:nth-child(2) {
-      font-family: 'DINCondensed-Bold';
-      display: block;
-      font-size: 140px;
-      letter-spacing: 13px;
-    }
-    & > div:nth-child(3),& > div:nth-child(4) {
-      font-family: 'DINCondensed-Bold';
-      display: block;
-      font-size: 140px;
-      letter-spacing: 13px;
-      -webkit-text-stroke: 1.5px #9bcfcc;
-      color: transparent;
-      clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-      transform: translateY(-40%);
-    }
-    & > div:nth-child(4){
-      clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-      transform: translateY(-103%);
-    }
-  } 
-
-  & > div:nth-child(2) {
-    top: 120px;
-
-    & > img:nth-child(2) {
-      margin-top: 5px;
-    }
-    &>div{
-      margin-left: 10px;
-      svg{
-        width: 560px;
-        height: auto;
-        image{
-          width: 560px;
-          height: auto;
-        }
-      }
-    }
-  }
-}
 @keyframes bgposition {
     0% {
         transform: translate(30%, 30%);
@@ -1262,7 +1170,6 @@ const bannerData = {
   // 什麼是青光眼？
   & > div:nth-child(2) {
     padding-top: 0px;
-
     & > div:nth-child(1) {
       margin: auto;
       font-family: 'NotoSansHK-Medium';
@@ -1275,7 +1182,6 @@ const bannerData = {
       text-align: center;
       margin-bottom: 50px;
     }
-
     & > div:nth-child(2) {
       font-family: 'Noto Sans HK';
       font-size: 24px;
@@ -1286,12 +1192,10 @@ const bannerData = {
       color: #515151;
       box-sizing: border-box;
       padding: 47px 44px 51px;
-
       border-radius: 15px;
       border: solid 3px #9ed5d1;
     }
   }
-
   // 青光眼成因
   & > div:nth-child(3) {
     & > div:nth-child(1) {
@@ -1305,12 +1209,10 @@ const bannerData = {
       letter-spacing: 0px;
       color: #58a49f;
     }
-
     & > div:nth-child(2) {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       & > div:nth-child(1) {
         border-radius: 30px;
         width: 520px;
@@ -1322,7 +1224,6 @@ const bannerData = {
         align-items: center;
         z-index: 5;
       }
-
       & > :nth-child(2) {
         width: 765px;
         height: 448px;
@@ -1337,7 +1238,6 @@ const bannerData = {
         padding-top: 44px;
         padding-bottom: 46px;
         padding-right: 20px;
-
         font-family: 'Noto Sans HK';
         font-size: 22px;
         font-weight: normal;
@@ -1345,21 +1245,17 @@ const bannerData = {
         line-height: 40px;
         letter-spacing: 0px;
         color: #515151;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
     }
-
     & > div:nth-child(3) {
       cursor: pointer;
       margin: auto;
       margin-top: 150px;
       width: 508px;
       height: 140px;
-      // background-image: linear-gradient(-90deg, #7fdbd5 0%, #93ded5 100%),
-      //   linear-gradient(#eda2a6, #eda2a6);
       background-blend-mode: normal, normal;
       box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
       border-radius: 20px;
@@ -1367,7 +1263,6 @@ const bannerData = {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
       & > div {
         font-family: 'Noto Sans HK';
         font-size: 32px;
@@ -1396,7 +1291,6 @@ const bannerData = {
       }
     }
   }
-
   // 青光眼的症狀
   & > div:nth-child(4) {
     & > div:nth-child(1) {
@@ -1409,7 +1303,6 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         margin-top: 71px;
@@ -1421,13 +1314,11 @@ const bannerData = {
         letter-spacing: 0px;
         color: #515151;
       }
-
       & > div:nth-child(2) {
         margin-top: 60px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
-
         & > div {
           padding: 13px;
           width: 172px;
@@ -1437,7 +1328,6 @@ const bannerData = {
           background-blend-mode: normal, normal;
           box-shadow: inset -3px 4px 5px 0px rgba(178, 223, 216, 0.8);
           border-radius: 85px;
-
           & > div {
             white-space: pre-wrap !important;
             font-family: 'NotoSansHK-Bold';
@@ -1452,18 +1342,15 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(3) {
         position: relative;
         margin-top: 85px;
-
         & > div {
           & > svg {
             position: absolute;
             left: -1px;
             top: -5px;
           }
-
           & > div {
             height: 72px;
             border: solid 4px #9ed5d1;
@@ -1481,16 +1368,13 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(3) {
       margin-top: 85px;
-
       & > div:nth-child(1) {
         display: flex;
         align-items: center;
         flex-direction: row;
         margin-bottom: 26px;
-
         & > div {
           margin-left: 10px;
           font-family: 'NotoSansHK-Bold';
@@ -1502,15 +1386,12 @@ const bannerData = {
           color: #58a49f;
         }
       }
-
       & > div:nth-child(2) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         & > div {
           position: relative;
-
           & > div:nth-child(2) {
             margin-top: 34px;
             font-family: 'NotoSansHK-Medium';
@@ -1523,7 +1404,6 @@ const bannerData = {
             text-align: center;
           }
         }
-
         & > div:nth-child(1)::after {
           content: '';
           position: absolute;
@@ -1534,7 +1414,6 @@ const bannerData = {
           height: 80px;
           background-image: url('https://static.cmereye.com/imgs/2023/05/bb28c65c794254b0.png');
         }
-
         & > div:nth-child(2)::after {
           content: '';
           position: absolute;
@@ -1547,19 +1426,15 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       cursor: pointer;
       margin: auto;
       margin-top: 104px;
       width: 508px;
       height: 140px;
-      // background-image: linear-gradient(-90deg, #7fdbd5 0%, #93ded5 100%),
-      //   linear-gradient(#eda2a6, #eda2a6);
       background-blend-mode: normal, normal;
       box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
       border-radius: 20px;
-
       font-family: 'Noto Sans HK';
       text-align: center;
       font-size: 32px;
@@ -1568,7 +1443,6 @@ const bannerData = {
       line-height: 50px;
       letter-spacing: 0px;
       color: #ffffff;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1592,7 +1466,6 @@ const bannerData = {
       }
     }
   }
-
   // 青光眼的類別
   & > div:nth-child(5) {
     &>div:nth-of-type(1){
@@ -1600,7 +1473,6 @@ const bannerData = {
       font-size: 52px;
       font-weight: normal;
       font-stretch: normal;
-      // line-height: 36px;
       margin-bottom: 100px;
       letter-spacing: 0px;
       color: #58a49f;
@@ -1610,7 +1482,6 @@ const bannerData = {
       flex-direction: row;
       justify-content: flex-end;
       position: relative;
-
       & > div:nth-child(1) {
         width: 446px;
         height: 340px;
@@ -1623,11 +1494,9 @@ const bannerData = {
         left: 0;
         z-index: 1;
         writing-mode: vertical-lr;
-
         & > div {
           margin-top: 50px;
           margin-left: 37px;
-
           & > div:nth-child(1) {
             font-family: 'Metropolis-Regular';
             font-size: 20px;
@@ -1636,7 +1505,6 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Medium';
             font-size: 42px;
@@ -1648,7 +1516,6 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         width: 1050px;
         height: 350px;
@@ -1660,15 +1527,12 @@ const bannerData = {
         z-index: 3;
         position: relative;
         right: 0;
-        // 子元素布局
         display: flex;
         align-items: center;
         padding: 36px 40px;
-
         & > div:nth-child(1) {
           width: calc(100% - 280px);
           margin-right: 26px;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -1679,14 +1543,12 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(3) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       position: relative;
-
       & > div:nth-child(1) {
         width: 446px;
         height: 340px;
@@ -1699,11 +1561,9 @@ const bannerData = {
         left: 0;
         z-index: 1;
         writing-mode: vertical-lr;
-
         & > div {
           margin-top: 50px;
           margin-left: 37px;
-
           & > div:nth-child(1) {
             font-family: 'Metropolis-Regular';
             font-size: 20px;
@@ -1712,7 +1572,6 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Medium';
             font-size: 42px;
@@ -1724,7 +1583,6 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         width: 1050px;
         height: 350px;
@@ -1736,15 +1594,12 @@ const bannerData = {
         z-index: 3;
         position: relative;
         right: 0;
-        // 子元素布局
         display: flex;
         align-items: center;
         padding: 36px 40px;
-
         & > div:nth-child(1) {
           width: calc(100% - 280px);
           margin-right: 26px;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -1755,15 +1610,11 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       cursor: pointer;
       margin: 100px auto;
-
       width: 508px;
       height: 140px;
-      // background-image: linear-gradient(-90deg, #7fdbd5 0%, #93ded5 100%),
-      //   linear-gradient(#eda2a6, #eda2a6);
       background-blend-mode: normal, normal;
       border-radius: 20px;
       font-family: 'Noto Sans HK';
@@ -1773,7 +1624,6 @@ const bannerData = {
       line-height: 50px;
       letter-spacing: 0px;
       color: #ffffff;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1796,14 +1646,12 @@ const bannerData = {
         z-index: -1;
       }
     }
-
     & > div:nth-child(5) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       position: relative;
-
       & > div:nth-child(1) {
         width: 446px;
         height: 340px;
@@ -1816,11 +1664,9 @@ const bannerData = {
         left: 0;
         z-index: 1;
         writing-mode: vertical-lr;
-
         & > div {
           margin-top: 50px;
           margin-left: 37px;
-
           & > div:nth-child(1) {
             font-family: 'Metropolis-Regular';
             font-size: 20px;
@@ -1829,7 +1675,6 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Medium';
             font-size: 42px;
@@ -1841,7 +1686,6 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         width: 1050px;
         background-image: linear-gradient(#ffffff, #ffffff),
@@ -1852,14 +1696,11 @@ const bannerData = {
         z-index: 3;
         position: relative;
         right: 0;
-        // 子元素布局
         display: flex;
         flex-direction: column;
         padding: 60px 44px 77px 41px;
-
         & > div:nth-child(1), &>div:nth-child(2) {
           margin-right: 26px;
-
           font-family: 'Noto Sans HK';
           font-size: 23px;
           font-weight: normal;
@@ -1868,20 +1709,16 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           margin-top: 30px;
         }
-
         & > div:nth-child(3) {
           & > svg {
             margin-right: 10px;
           }
-
           margin-top: 69px;
           display: flex;
           align-items: center;
-
           font-family: 'NotoSansHK-Bold';
           font-size: 30px;
           font-weight: normal;
@@ -1890,16 +1727,13 @@ const bannerData = {
           letter-spacing: 0px;
           color: #58a49f;
         }
-
         & > div:nth-child(4) {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           padding-left: 16px;
           margin-top: 45px;
-
           & > div {
-            // width: 312px;
             flex: 1;
             &:not(:last-child){
               margin-right: 20px;
@@ -1909,7 +1743,6 @@ const bannerData = {
               justify-content: center;
               flex-direction: row;
               margin-bottom: 8px;
-
               font-family: 'NotoSansHK-Medium';
               font-size: 26px;
               font-weight: normal;
@@ -1917,7 +1750,6 @@ const bannerData = {
               line-height: 36px;
               letter-spacing: 0px;
               color: #515151;
-
               & > span {
                 width: 38px;
                 height: 38px;
@@ -1925,7 +1757,6 @@ const bannerData = {
                 background: #63a89f;
                 text-align: center;
                 margin-right: 10px;
-
                 font-family: 'SourceHanSansCN-Bold';
                 font-size: 24px;
                 font-weight: normal;
@@ -1935,14 +1766,12 @@ const bannerData = {
                 color: #ffffff;
               }
             }
-
             & > div:nth-child(2)::before {
               content: '';
               width: 100%;
               border-top: 1px solid #959595;
               display: block;
             }
-
             & > div:nth-child(2) {
               width: 100%;
               height: 250px;
@@ -1961,14 +1790,12 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(6) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       position: relative;
-
       & > div:nth-child(1) {
         width: 446px;
         height: 340px;
@@ -1981,11 +1808,9 @@ const bannerData = {
         left: 0;
         z-index: 1;
         writing-mode: vertical-lr;
-
         & > div {
           margin-top: 50px;
           margin-left: 37px;
-
           & > div:nth-child(1) {
             font-family: 'Metropolis-Regular';
             font-size: 20px;
@@ -1994,7 +1819,6 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Medium';
             font-size: 42px;
@@ -2006,10 +1830,8 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         width: 1050px;
-        // height: 350px;
         background-image: linear-gradient(#ffffff, #ffffff),
           linear-gradient(#f2f2f2, #f2f2f2);
         background-blend-mode: normal, normal;
@@ -2018,15 +1840,12 @@ const bannerData = {
         z-index: 3;
         position: relative;
         right: 0;
-        // 子元素布局
         display: flex;
         align-items: center;
         padding: 36px 40px;
-
         & > div:nth-child(1) {
           width: calc(100% - 280px);
           margin-right: 26px;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -2034,21 +1853,18 @@ const bannerData = {
           line-height: 44px;
           letter-spacing: 0px;
           color: #515151;
-
           & > div:nth-child(2) {
             margin-top: 16px;
           }
         }
       }
     }
-
     & > div:nth-child(7) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       position: relative;
-
       & > div:nth-child(1) {
         width: 446px;
         height: 340px;
@@ -2061,11 +1877,9 @@ const bannerData = {
         left: 0;
         z-index: 1;
         writing-mode: vertical-lr;
-
         & > div {
           margin-top: 50px;
           margin-left: 37px;
-
           & > div:nth-child(1) {
             font-family: 'Metropolis-Regular';
             font-size: 20px;
@@ -2074,7 +1888,6 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Medium';
             font-size: 42px;
@@ -2086,7 +1899,6 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(2) {
         width: 1050px;
         background-image: linear-gradient(#ffffff, #ffffff),
@@ -2097,14 +1909,11 @@ const bannerData = {
         z-index: 3;
         position: relative;
         right: 0;
-        // 子元素布局
         display: flex;
         flex-direction: column;
         padding: 60px 44px 77px 41px;
-
         & > div:nth-child(1) {
           margin-right: 26px;
-
           font-family: 'Noto Sans HK';
           font-size: 23px;
           font-weight: normal;
@@ -2113,18 +1922,14 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           margin-bottom: 48px;
-
           & > svg {
             margin-right: 10px;
           }
-
           margin-top: 57px;
           display: flex;
           align-items: center;
-
           font-family: 'NotoSansHK-Bold';
           font-size: 30px;
           font-weight: normal;
@@ -2133,25 +1938,21 @@ const bannerData = {
           letter-spacing: 0px;
           color: #58a49f;
         }
-
         & > div:nth-child(3) {
           & > div {
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
             position: relative;
-
             & > div:nth-child(1) {
               &.bground {
                 background: #63a89f;
                 color: #fff;
               }
-
               cursor: pointer;
               width: 427px;
               margin-right: 32px;
               position: relative;
-              // background: #79b2ae;
               display: flex;
               font-family: 'NotoSansHK-Bold';
               font-size: 26px;
@@ -2161,7 +1962,6 @@ const bannerData = {
               letter-spacing: 0px;
               padding: 18px 0 18px 20px;
               color: #79b2ae;
-
               & > span {
                 margin-right: 10px;
                 border-radius: 50%;
@@ -2178,13 +1978,11 @@ const bannerData = {
                 color: #fff;
                 text-align: center;
               }
-
               .font {
                 background: #fff;
                 color: #63a89f;
               }
             }
-
             & > div:nth-child(2) {
               width: 480px;
               position: absolute;
@@ -2198,24 +1996,19 @@ const bannerData = {
               color: #515151;
               border-left: 7px solid #79b2ae;
               padding-left: 11px;
-
               & > div > div:nth-child(1) {
                 & > div:nth-child(1) {
                   margin-bottom: 30px;
                 }
               }
-
               & > div:nth-child(2) {
                 position: absolute;
               }
-
               display: none;
-
               &.action {
                 display: block;
               }
             }
-
             .bground::after {
               content: '';
               width: 22px;
@@ -2225,13 +2018,11 @@ const bannerData = {
               right: -32px;
             }
           }
-
           & > div:nth-child(7) {
             & > div:nth-child(2) {
               bottom: 0;
             }
           }
-
           & > div:nth-child(8) {
             & > div:nth-child(2) {
               bottom: 0;
@@ -2241,7 +2032,6 @@ const bannerData = {
       }
     }
   }
-
   // 青光眼高危人士
   & > div:nth-child(6) {
     & > div:nth-child(1) {
@@ -2254,40 +2044,32 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-
     & > div:nth-child(2) {
       margin-top: 87px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div:nth-child(n + 5) {
         margin-top: 42px;
       }
-
       & > div {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         & > div:nth-child(1) {
           display: flex;
           align-items: center;
           justify-content: center;
-
           & > img {
             z-index: 6;
             position: absolute;
           }
         }
-
         & > div:nth-child(2) {
           margin-top: 15px;
-
           width: 252px;
           white-space: pre-wrap;
           text-align: center;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -2299,7 +2081,6 @@ const bannerData = {
       }
     }
   }
-
   // 青光眼主要診斷方法
   & > div:nth-child(7) {
     & > div:nth-child(1) {
@@ -2312,10 +2093,8 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-
     & > div:nth-child(2) {
       margin-top: 74px;
-
       font-family: 'Noto Sans HK';
       font-size: 24px;
       font-weight: normal;
@@ -2324,30 +2103,24 @@ const bannerData = {
       letter-spacing: 0px;
       color: #515151;
     }
-
     & > div:nth-child(3) {
       margin-top: 80px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div:nth-child(n + 3) {
         margin-bottom: 52px;
       }
-
       & > div {
         position: relative;
         display: flex;
         justify-content: center;
-
         & > div:nth-child(2) {
           position: absolute;
           z-index: 5;
-
           & > div:nth-child(1) {
             padding: 18px 17px;
           }
-
           & > div:nth-child(2) {
             font-family: 'NotoSansHK-Bold';
             font-size: 30px;
@@ -2364,7 +2137,6 @@ const bannerData = {
       }
     }
   }
-
   // 青光眼的治療
   & > div:nth-child(8) {
     & > div:nth-child(1) {
@@ -2377,7 +2149,6 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-
     & > div:nth-child(2) {
       margin-top: 75px;
       font-family: 'Noto Sans HK';
@@ -2387,12 +2158,10 @@ const bannerData = {
       line-height: 38px;
       letter-spacing: -1px;
       color: #515151;
-
       & > div:nth-child(2) {
         margin-top: 30px;
       }
     }
-
     & > div:nth-child(3) {
       margin: 0 auto;
       max-width: 1200px;
@@ -2401,19 +2170,16 @@ const bannerData = {
       justify-content: space-between;
       flex-direction: column;
       border: 1px solid #939c9b;
-
       & > div {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid #939c9b;
-
         & > div:nth-child(1) {
           width: 314px;
           display: flex;
           align-items: center;
           justify-content: center;
           white-space: pre-wrap;
-
           font-family: 'Noto Sans HK';
           font-size: 24px;
           font-weight: normal;
@@ -2422,17 +2188,14 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(2) {
           width: 384px;
-
           & > div > div {
             height: 106px;
             display: flex;
             align-items: center;
             justify-content: center;
             white-space: pre-wrap;
-
             font-family: 'NotoSansHK-Medium';
             font-size: 22px;
             font-weight: normal;
@@ -2444,10 +2207,8 @@ const bannerData = {
             border-left: 1px solid #939c9b;
           }
         }
-
         & > div:nth-child(3) {
           width: 640px;
-
           & > div > div {
             height: 106px;
             display: flex;
@@ -2455,7 +2216,6 @@ const bannerData = {
             justify-content: flex-start;
             padding-left: 48px;
             white-space: pre-wrap;
-
             font-family: 'Noto Sans HK';
             font-size: 22px;
             font-weight: normal;
@@ -2468,36 +2228,30 @@ const bannerData = {
           }
         }
       }
-
       & > div:nth-child(1) {
         border-bottom: none;
         background-color: #5bbaac;
         height: 106px;
-
         & > div:nth-child(1) {
           color: #fff;
         }
-
         & > div:nth-child(2) {
           border: none;
           border-left: 1px solid #939c9b;
           display: flex;
           align-items: center;
           justify-content: center;
-
           font-family: 'NotoSansHK-Medium';
           font-size: 26px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 38px;
           letter-spacing: 0px;
-
           & > div {
             border: none;
             color: #fff;
           }
         }
-
         & > div:nth-child(3) {
           width: 640px;
           display: flex;
@@ -2510,39 +2264,30 @@ const bannerData = {
           font-stretch: normal;
           line-height: 34px;
           letter-spacing: 0px;
-
           & > div {
             border: none;
             color: #fff;
           }
         }
       }
-
       & > div:nth-child(2) {
         border-bottom: none;
-
         & > div:nth-child(1) {
           background-color: #6bc8ba;
           color: #fff;
         }
       }
-
       & > div:nth-child(3) {
         border-bottom: none;
-
         & > div:nth-child(1) {
           background-color: #7dcec2;
           color: #fff;
         }
       }
-
       & > div:nth-child(4) {
         border-bottom: none;
-
         & > div {
           height: 106px;
-          
-          // border-left: 1px solid #939c9b;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -2551,12 +2296,10 @@ const bannerData = {
             border-top: 1px solid #939c9b;
           }
         }
-
         & > div:nth-child(1) {
           background-color: #a1d7cf;
           color: #fff;
         }
-
         & > div:nth-child(2) {
           width: 384px;
           font-family: 'NotoSansHK-Medium';
@@ -2567,7 +2310,6 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
         }
-
         & > div:nth-child(3) {
           width: 640px;
           font-family: 'Noto Sans HK';
@@ -2585,7 +2327,6 @@ const bannerData = {
       }
     }
   }
-
   // 預防青光眼
   & > div:nth-child(9) {
     & > div:nth-child(1) {
@@ -2598,26 +2339,21 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-
     & > div:nth-child(2) {
       margin-top: 150px;
       display: flex;
       justify-content: space-between;
-
       & > div:nth-child(1) {
         width: 43%;
-
         & > div {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           margin-bottom: 48px;
-
           & > div:nth-child(1) {
             display: flex;
             flex-direction: row;
             position: relative;
-
             & > div:nth-child(1) {
               width: 108px;
               height: 108px;
@@ -2625,11 +2361,9 @@ const bannerData = {
               border: 6px solid #57a39f;
               background: #fff;
               z-index: 5;
-
               display: flex;
               align-items: center;
               justify-content: center;
-
               font-family: 'NotoSansHK-Bold';
               font-size: 55px;
               font-weight: normal;
@@ -2638,7 +2372,6 @@ const bannerData = {
               letter-spacing: 0px;
               color: #57a39f;
             }
-
             & > div:nth-child(2) {
               width: 518px;
               height: 85px;
@@ -2648,11 +2381,9 @@ const bannerData = {
               left: 18px;
               bottom: 0;
               padding-left: 130px;
-
               display: flex;
               align-items: center;
               justify-content: flex-start;
-
               font-family: 'Noto Sans HK';
               font-size: 40px;
               font-weight: normal;
@@ -2662,7 +2393,6 @@ const bannerData = {
               color: #ffffff;
             }
           }
-
           & > div:nth-child(2) {
             margin-top: 30px;
             font-family: 'Noto Sans HK';
@@ -2674,22 +2404,18 @@ const bannerData = {
             color: #515151;
           }
         }
-
         & > div:nth-child(3) {
           margin-bottom: 0;
         }
       }
-
       & > div:nth-child(2) {
         width: 50%;
       }
     }
   }
-
   // 青光眼誤區
   & > div:last-child {
     margin-top: 260px;
-
     & > div:nth-child(1) {
       margin-bottom: 60px;
       width: 384px;
@@ -2699,7 +2425,6 @@ const bannerData = {
         linear-gradient(#b3e2fa, #b3e2fa);
       background-blend-mode: normal, normal;
       border-radius: 76px;
-
       font-family: 'NotoSansHK-Bold';
       font-size: 46px;
       font-weight: normal;
@@ -2709,7 +2434,6 @@ const bannerData = {
       color: #58a49f;
       display: flex;
       align-items: center;
-
       & > svg {
         margin-left: -18px;
         margin-top: -25px;
@@ -2717,17 +2441,14 @@ const bannerData = {
       }
     }
   }
-
   // 公共使用
   & > div {
     margin-top: 100px;
     padding-top: 80px;
   }
-
   & > div:first-child {
     margin: 0;
   }
-
   & > div:nth-child(2) {
     margin: 0;
   }
@@ -2911,17 +2632,14 @@ const bannerData = {
     }
   }
 }
-
 .action {
   display: block;
 }
-
 .dow {
   margin-top: -40%;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
-
   & > div:nth-child(1) {
     & > div {
       width: 62.5%;
@@ -2930,7 +2648,6 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-
       & > div:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
@@ -2940,7 +2657,6 @@ const bannerData = {
           height: auto;
         }
       }
-
       & > div:nth-child(2) {
         cursor: pointer;
         display: flex;
@@ -2951,64 +2667,6 @@ const bannerData = {
   }
 }
 @media screen and (max-width: 768px) {
-  .glaucoma_heaf {
-    width: calc(100% - 60px);
-    top: auto;
-    right: auto;
-    margin: 150px auto 0;
-    background-color: #fff;
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: 50px;
-      right: -30px;
-      width: 150px;
-      height: 200px;
-      background: #f2f2f2;
-    }
-    &>div{
-      position: relative;
-      top: auto;
-      right: 0;
-      left: 0;
-    }
-    & > div:first-child {
-      font-size: 40px;
-      letter-spacing: .05em;
-      & > div:nth-child(2) {
-        font-size: 45px;
-        letter-spacing: .05em;
-        margin-top: 5px;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-size: 45px;
-        letter-spacing: .05em;
-        clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-        transform: translateY(-15%);
-      }
-      & > div:nth-child(4) {
-        clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-        transform: translateY(-58%);
-      }
-    }
-    & > div:nth-child(2) {
-      top: 0;
-      &>div{
-        display: flex;
-        justify-content: flex-end;
-        margin-left: 0;
-        margin-right: 3px;
-        svg{
-          width: 167px;
-          height: auto;
-          image{
-            width: 167px;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
   .glaucoma-in {
     transform: scale(1);
     margin: 30px 0 0;
@@ -3725,7 +3383,6 @@ const bannerData = {
     & > div:last-child {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      
       & > div:nth-child(1) {
         font-size: 20px;
         line-height: 40px;

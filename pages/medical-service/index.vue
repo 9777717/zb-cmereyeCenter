@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -126,11 +125,9 @@ const SerListL = [
   }
 ]
 </script>
-
 <template>
   <div id="Service" class="Service">
     <div class="serContent relative">
-      <!-- <div class="title">醫 療 服 務</div> -->
       <div class="title">{{$t('pages.medical_service.medical_service_title')}}</div>
       <ul class="serList">
         <li v-for="(item, index) in SerListL" :key="index">
@@ -149,13 +146,11 @@ const SerListL = [
         </li>
       </ul>
     </div>
-
     <div class="h-32"></div>
     <Footer />
     <PageFooterMenu />
   </div>
 </template>
-
 <style scoped lang="scss">
 .serContent {
   width: 100%;
@@ -229,8 +224,8 @@ const SerListL = [
       }
       .i {
         font-size: 50px;
-        -webkit-text-stroke: 1.5px #2958a3; //文字描边
-        color: transparent; //字体颜色设置为透明
+        -webkit-text-stroke: 1.5px #2958a3;
+        color: transparent;
         background-color: transparent;
         text-transform: uppercase;
         top: -23%;

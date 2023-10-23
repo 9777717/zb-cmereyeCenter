@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -209,16 +208,6 @@ const bannerData = {
 <template>
   <div class="amotioRetinae">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="amotioRetinae_head">
-      <div>
-        <div>
-          <div>視網膜脫落及疾病</div>
-          <div>RETINAL DETACHMENT</div>
-          <div>RETINAL DETACHMENT</div>
-          <div>RETINAL DETACHMENT</div>
-        </div>
-      </div>
-    </div> -->
     <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
     <div class="amotioRetinae_nav" :class="{'amotioRetinaeNav-en': locale === 'en'}">
       <div id="intro">
@@ -347,7 +336,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow" :class="{'dow-en': locale === 'en'}">
@@ -375,19 +363,13 @@ const bannerData = {
   margin: 100px auto -50%;
   transform: scale(0.9);
   transform-origin: center top;
-  // margin-top: -39.5%;
-
   &>#intro {
-    // margin-top: 220px;
-
     &>div:nth-child(1) {
       font-size: 50px;
     }
-
     &>div:nth-child(2) {
       margin-top: 64px;
       margin-bottom: 99px;
-
       font-family: 'Noto Sans HK';
       font-size: 24px;
       font-weight: normal;
@@ -396,17 +378,14 @@ const bannerData = {
       letter-spacing: 3px;
       color: #988a89;
       text-indent: 54px;
-
       &>p {
         margin-bottom: 80px;
-
         &>span {
           color: #e8a89b;
           font-family: 'NotoSansHK-Bold';
         }
       }
     }
-
     &>div:nth-child(3) {
       width: 824px;
       height: 507px;
@@ -419,28 +398,22 @@ const bannerData = {
       margin-bottom: 100px;
     }
   }
-
   &>#factor {
     margin-top: 160px;
     margin-bottom: 160px;
-
     &>div:nth-child(1) {
       margin-bottom: 120px;
     }
-
     &>div:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       &>div {
         width: 260px;
         height: 308px;
         background-color: #ffffff;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-        // margin-right: 94px;
         border-radius: 75px 0;
-
         &>div:nth-child(2) {
           max-width: 240px;
           height: 60px;
@@ -451,7 +424,6 @@ const bannerData = {
           margin: auto;
           margin-top: 20px;
           flex-direction: column;
-
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
@@ -460,44 +432,35 @@ const bannerData = {
           color: #515151;
         }
       }
-
       &>div:nth-child(4) {
         margin-right: 0;
       }
-
       &>div:nth-child(5) {
         margin-left: 156px;
       }
-
       &>div:last-child {
         margin-right: 156px;
       }
-
       &>div:nth-child(n + 5) {
         margin-top: 96px;
       }
     }
   }
-
   &>#styptom {
     margin-bottom: 160px;
-
     &>div:nth-child(2) {
       margin: 100px auto 60px;
     }
-
     &>div:nth-child(3) {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       margin-bottom: 112px;
-
       &>div {
         width: 268px;
         height: 309px;
         border: solid 1px #eed3cf;
         position: relative;
-
         &>div:nth-child(1) {
           height: 50px;
           font-family: 'HelveticaNeue-MediumItalic';
@@ -513,12 +476,10 @@ const bannerData = {
           align-items: center;
           justify-content: center;
         }
-
         &>div:nth-child(2) {
           height: 99px;
           width: 100%;
           background-color: #eab1a6;
-
           font-family: 'Noto Sans HK';
           font-size: 21px;
           font-weight: normal;
@@ -531,15 +492,12 @@ const bannerData = {
           justify-content: center;
           align-items: center;
         }
-
         &>div:nth-child(3) {
-          // height: 160px;
           img{
             width: 100%;
           }
         }
       }
-
       &>div::after {
         content: '';
         background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
@@ -551,13 +509,11 @@ const bannerData = {
         top: 50%;
         transform: translateY(-50%);
       }
-
       &>div:last-child::after {
         content: '';
         width: 0;
       }
     }
-
     &>div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
       width: 1200px;
@@ -565,7 +521,6 @@ const bannerData = {
       padding: 70px;
       line-height: 46px;
       background-size: 100% 100%;
-
       &>span {
         color: #e8a89b;
       }
@@ -729,7 +684,6 @@ const bannerData = {
       text-align: center;
       &>span {
         color: #e8a89b;
-        // text-indent: 54px;
         display: block;
       }
     }
@@ -803,7 +757,6 @@ const bannerData = {
   line-height: 52px;
   letter-spacing: 0px;
   color: #e8a89b;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -827,16 +780,12 @@ const bannerData = {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   cursor: pointer;
   margin: auto;
   width: 580px;
   height: 140px;
   border-radius: 20px;
   background-blend-mode: normal, normal;
-  // background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
-  //   linear-gradient(#eda2a6, #eda2a6);
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -862,95 +811,6 @@ const bannerData = {
     z-index: -1;
   }
 }
-
-// 头部样式
-.amotioRetinae_head {
-  &>div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 100px;
-    margin-left: 28vw;
-
-    &>div:nth-child(1) {
-      &>div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: normal;
-        font-stretch: normal;
-        letter-spacing: 0px;
-        color: #eab1a6;
-        z-index: 5;
-        position: relative;
-        font-weight: bold;
-      }
-
-      &>div:nth-child(2) {
-        position: relative;
-        z-index: 5;
-        line-height: 27px;
-        font-family: 'DINCondensed-Bold';
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1;
-        color: #eab1a6;
-        margin-top: 15px;
-        font-size: 126px;
-        letter-spacing: 0px;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        font-size: 126px;
-        letter-spacing: 0px;
-        -webkit-text-stroke: 1.5px #eab1a6;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-35%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-105%);
-      }
-      font-family: 'DINCondensed-Bold';
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-    }
-
-    &>div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    &>div:nth-child(2) {
-      position: relative;
-      top: 0;
-      left: -5px;
-
-      &>img {
-        position: relative;
-        z-index: 5;
-      }
-
-      &>img:nth-child(1) {
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
 // 下载
 .dow {
   margin-top: -40%;
@@ -1005,49 +865,6 @@ const bannerData = {
     }
 }
 @media screen and (max-width: 768px) {
-  .amotioRetinae_head {
-    &>div:nth-child(1) {
-      align-items: self-end;
-      max-width: 100%;
-      margin: 150px auto 0;
-      padding-right: 45px;
-
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 45px;
-          letter-spacing: 0px;
-        }
-
-        &>div:nth-child(2) {
-          font-size: 31px;
-          letter-spacing: 4.7px;
-          // text-align: justify;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 31px;
-          letter-spacing: 4.7px;
-          -webkit-text-stroke: 1px #eab1a6;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-20%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-73%);
-        }
-      }
-
-      &>div:nth-child(1)::after {
-        width: 250px;
-        height: 200px;
-      }
-
-      &>div:nth-child(2) {
-        width: 85%;
-        left: 0;
-      }
-    }
-  }
-
   .amotioRetinae_nav {
     max-width: 100%;
     margin: -80px 0 0;
@@ -1055,8 +872,6 @@ const bannerData = {
     padding: 0 40px;
 
     &>#intro {
-      // margin-top: 180px;
-
       &>div:nth-child(1) {
         font-size: 25px;
       }
@@ -1106,25 +921,19 @@ const bannerData = {
     &>#factor {
       margin-top: 80px;
       margin-bottom: 90px;
-
       &>div:nth-child(1) {
         margin-bottom: 0;
       }
-
       &>div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
         &>div {
           width: 145px;
           height: auto;
-
           background-color: #ffffff;
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-          // margin-right: 94px;
           border-radius: 45px 0;
-
           &>div:nth-child(2) {
             max-width: 240px;
             padding: 10px;
@@ -1136,7 +945,6 @@ const bannerData = {
             margin: auto;
             margin-top: 5px;
             flex-direction: column;
-
             font-size: 12px;
             font-weight: normal;
             font-stretch: normal;
@@ -1149,7 +957,6 @@ const bannerData = {
         &>div:nth-child(4) {
           margin-right: 0;
         }
-
         &>div:nth-child(5) {
           margin-left: 0;
         }
@@ -1164,21 +971,18 @@ const bannerData = {
         }
       }
     }
-
     &>#styptom {
       margin-bottom: 80px;
 
       &>div:nth-child(2) {
         margin: 40px auto 25px;
       }
-
       &>div:nth-child(3) {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-direction: column;
         margin-bottom: 60px;
-
         &>div {
           width: 100%;
           height: auto;
@@ -1187,7 +991,6 @@ const bannerData = {
           display: flex;
           flex-wrap: wrap;
           margin-bottom: 45px;
-
           &>div:nth-child(1) {
             width: 100%;
             height: 50px;
@@ -1204,12 +1007,10 @@ const bannerData = {
             align-items: center;
             justify-content: center;
           }
-
           &>div:nth-child(2) {
             height: auto;
             width: 40%;
             background-color: #eab1a6;
-
             font-family: 'Noto Sans HK';
             font-size: 14px;
             font-weight: normal;
@@ -1223,19 +1024,16 @@ const bannerData = {
             align-items: flex-start;
             padding-left: 15px;
           }
-
           &>div:nth-child(3) {
             width: 60%;
             height: auto;
           }
         }
-
         &>div:nth-child(1) {
           &>div:nth-child(2) {
             background: #3360a8;
           }
         }
-
         &>div::after {
           content: '';
           background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
@@ -1249,7 +1047,6 @@ const bannerData = {
           bottom: -30%;
           transform: translateY(-50%) rotate(90deg);
         }
-
         &>div:last-child::after {
           content: none;
         }
@@ -1262,7 +1059,6 @@ const bannerData = {
         padding: 28px 24px 24px 24px;
         line-height: 1.9;
         background-size: 100%;
-
         &>span {
           color: #e8a89b;
         }
@@ -1271,35 +1067,28 @@ const bannerData = {
 
     &>#treat {
       margin: 80px auto;
-
       &>div:nth-child(2) {
         margin: 30px auto 55px;
-
         &>div {
           margin-bottom: 60px;
           display: flex;
           flex-direction: column;
           position: relative;
-
           &>div:nth-child(1) {
             &>img {
               width: 100%;
             }
           }
-
           .amotioRetinae_text_top {
             margin-top: 260px;
           }
-
           .amotioRetinae_img {
             position: absolute;
             top: 60px;
           }
-
           &>div:nth-child(2) {
             width: 100%;
             margin-left: 0;
-
             &>div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 16px;
@@ -1308,12 +1097,10 @@ const bannerData = {
               line-height: 36px;
               letter-spacing: 0px;
               color: #e8a89b;
-
               &>p {
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 34px;
-
                 &>span:nth-child(1) {
                   padding-top: 4px;
                   color: #fff;
@@ -1328,17 +1115,14 @@ const bannerData = {
                 }
               }
             }
-
             &>div:nth-child(2) {
               line-height: 1.8;
               text-indent: 0;
             }
           }
         }
-
         &>div:nth-child(2) {
           flex-direction: column-reverse;
-
           &>div:nth-child(2) {
             margin-left: 0;
             margin-right: 50px;
@@ -1348,34 +1132,28 @@ const bannerData = {
 
       &>div:nth-child(3) {
         padding: 16px 20px;
-
         &>p {
           font-size: 16px;
           line-height: 1.8;
         }
       }
     }
-
     &>#diabetes {
       margin: 80px auto;
-
       &>div:nth-child(2) {
         margin: 40px auto 60px;
         display: flex;
         flex-direction: column-reverse;
-
         &>div:nth-child(2) {
           width: 100%;
           margin-left: 0;
           line-height: 1.8;
           text-indent: 0;
           font-size: 12px;
-
           &>p:nth-child(2) {
             margin-top: 34px;
           }
         }
-
         &>div:nth-child(1) {
           padding: 20px 7px 0 7px;
           width: 80%;
@@ -1383,21 +1161,17 @@ const bannerData = {
         }
       }
     }
-
     &>#prevent {
       margin: 80px auto;
-
       &>div:nth-child(2) {
         margin: 30px auto 25px;
         font-size: 12px;
       }
-
       &>div:nth-child(3) {
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-
         &>div {
           width: 100%;
           border-radius: 10px;
@@ -1408,11 +1182,9 @@ const bannerData = {
           position: relative;
           padding: 80px 10px 20px;
           margin-bottom: 30px;
-
           &>div:nth-child(1) {
             width: 40%;
           }
-
           &>div:nth-child(2) {
             width: 60%;
             background: #fff;
@@ -1423,8 +1195,6 @@ const bannerData = {
             position: static;
             padding: 0;
             padding-top: 28px;
-
-
             &>div:nth-child(1) {
               width: 70%;
               position: absolute;
@@ -1435,10 +1205,8 @@ const bannerData = {
               font-size: 18px;
               height: auto;
               padding: 4px 10px;
-              // padding-top: 8px;
               background-color: #eab1a6;
               border-radius: 22px;
-
               font-size: 20px;
               font-weight: normal;
               font-stretch: normal;
@@ -1452,7 +1220,6 @@ const bannerData = {
               align-items: center;
               justify-content: center;
             }
-
             &>div:nth-child(2) {
               font-family: 'Noto Sans HK';
               line-height: 1.8;
@@ -1472,7 +1239,6 @@ const bannerData = {
         padding: 33px 28px 28px;
         background-size: 100% auto;
         text-align: justify;
-
         &>span {
           color: #e8a89b;
           text-indent: 0;
@@ -1483,7 +1249,6 @@ const bannerData = {
 
     &>#faq {
       margin-bottom: 260px;
-
       &>div:nth-child(2) {
         margin-top: 40px;
       }
@@ -1521,7 +1286,6 @@ const bannerData = {
         &>div:nth-child(3) {
           &>div{
             &>div:nth-child(2) {
-              // height: auto;
               padding-bottom: 0px;
               &>div:nth-child(1) {
                 font-size: 18px;
@@ -1536,7 +1300,6 @@ const bannerData = {
         &>div:nth-child(4) {
           padding: 10px 20px 10px 30px;
           letter-spacing: 0px;
-
         }
       }
     }
@@ -1585,7 +1348,6 @@ const bannerData = {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     cursor: pointer;
     margin: auto;
     width: 100%;
@@ -1595,7 +1357,6 @@ const bannerData = {
     background-blend-mode: normal, normal;
     background-image: linear-gradient(-90deg, #f1c0b6 0%, #fbddd8 100%),
       linear-gradient(#eda2a6, #eda2a6);
-
     font-family: 'Noto Sans HK';
     font-size: 22px;
     text-align: center;
@@ -1610,12 +1371,10 @@ const bannerData = {
     margin-top: -160px;
     margin-bottom: 130px;
     font-size: 14px;
-
     &>div:nth-child(1) {
       &>div {
         width: 80%;
         height: 94px;
-
         &>div:nth-child(1) {
           &>img {
             width: 55px;
@@ -1623,7 +1382,6 @@ const bannerData = {
             height: auto;
           }
         }
-
         &>div:nth-child(2) {
           padding-top: 5px;
           margin-left: 10px;
@@ -1647,16 +1405,8 @@ const bannerData = {
   .amotioRetinae_nav {
     margin-bottom: -40%;
   }
-
-  .amotioRetinae_head {
-    &>div:nth-child(1) {
-      margin-left: 39vw;
-    }
-  }
-
   .dow {
     margin-top: -25%;
-
     &>div:nth-child(1) {
       &>div {
         &>div:nth-child(1) {
@@ -1664,7 +1414,6 @@ const bannerData = {
         }
       }
     }
-    
   }
 }
 </style>
