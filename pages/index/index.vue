@@ -96,13 +96,13 @@ const toLink = (a:string) => {
         <div>SERVICE</div>
       </div>
       <div>
-        <a :style="{cursor: 'pointer'}" href="/medical-service">
+        <nuxt-link to="/medical-service" :style="{cursor: 'pointer'}">
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/09/dd0567d3c65bc2d3.png" />
+            <img src="https://static.cmereye.com/imgs/2023/10/62276a75fc986e3c.jpg" alt="九大眼科醫療服務" />
           </div>
           <div>
           </div>
-        </a>
+        </nuxt-link>
         <div>
           <div>
             <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +159,7 @@ const toLink = (a:string) => {
       </div>
       <div class="mbCar">
         <div @click="toLink('/medical-service')">
-          <div><img src="https://static.cmereye.com/imgs/2023/09/c03f529548e5905a.png" alt=""></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/10/ba067103023aaa5d.jpg" alt="九大眼科醫療服務"></div>
         </div>
       </div>
     </div>

@@ -40,16 +40,18 @@ const serviceNavigation = [
       />
     </div>
     <PageInformation :service-navigation="serviceNavigation" />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
 .appointmentForm {
   background: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
-  background-size: auto 100%;
+  background-size: auto;
   & > div:nth-child(1) {
     width: 100%;
     max-width: 860px;
-    margin: 100px auto 0;
+    margin: 0 auto;
+    padding-top: 100px;
     color: #515151;
     & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
