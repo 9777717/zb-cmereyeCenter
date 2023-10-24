@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { useRouter } from 'vue-router'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -19,7 +18,6 @@ useHead(() => ({
     },
   ],
 }))
-
 // 新闻列表
 const newList = [
   {
@@ -176,7 +174,6 @@ const newList = [
     ],
   },
 ]
-// const router = useRouter()
 const isNewLIst = ref(true)
 const isDetail = ref(false)
 const detail = ref({
@@ -189,34 +186,11 @@ const detail = ref({
   visits: ''
 })
 const newId = ref(0)
-
-// const detailImgHeight = (id: number) => {
-//   const ad: any = []
-//   newList.forEach((item) => {
-//     ad.push(item.img)
-//   })
-//   const id_1 = id + 1 || 1
-
-//   const img_own = ad[id_1]
-//   const myImage = new Image()
-//   myImage.src = img_own
-//   let width_img = ref(0)
-//   let height_img = ref(0)
-//   myImage.onload = () => {
-//     // 获取图像的宽度和高度
-//     myImage
-//     const ratio = Number((780 / myImage.width).toFixed(2))
-//     width_img.value = Math.floor(ratio * Number(myImage.width))
-//     height_img.value = Math.floor(ratio * Number(myImage.height))
-//   }
-//   return height_img
-// }
 const newDeatil = (id: number) => {
   newId.value = id
   detail.value = pressLists.value[id]
   isNewLIst.value = false
   isDetail.value = true
-  // detailImgHeight(id)
 }
 const showNewList = () => {
   isNewLIst.value = true
@@ -240,7 +214,6 @@ const pageTurning = (flag: string) => {
     toTop()
   }
 }
-
 let pressLists:any = ref([])
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
@@ -375,31 +348,16 @@ onMounted(()=>{
       <div>
         <div>
           <div>{{detail.title}}</div>
-          <!-- <div v-for="(el, index) in detail.title" :key="index">
-            {{ $t(el) }}
-          </div> -->
         </div>
         <div>
-          <!-- <div class="height_after"><img :src="detail.img" /></div>
-          <div>{{ detail.date }}</div> -->
         </div>
         <div>
           <div v-html="detail.content">
           </div>
           <div>
             <div>
-              <!-- {{
-                $t(
-                  'pages.ophthalmic_information.ophthalmic_press_text.press_span1'
-                )
-              }}<span>{{ 'am730' }}</span> -->
             </div>
             <div>
-              <!-- {{
-                $t(
-                  'pages.ophthalmic_information.ophthalmic_press_text.press_span2'
-                )
-              }}<span>{{ '李琬微' }}</span> -->
             </div>
             <div @click="to_ext_paperRecoFrom()">
               {{
@@ -492,20 +450,16 @@ onMounted(()=>{
 .current {
   margin-bottom: 50px;
 }
-
 .press {
   position: relative;
-
   &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
     width: 100%;
     height: 731px;
     margin-top: 80px;
     position: relative;
-
     &::before {
       content: '';
       background: #f1f1f1;
@@ -515,14 +469,12 @@ onMounted(()=>{
       width: calc((100vw - 1493px)/2 + 1460px);
       height: 750px;
     }
-
     &>div:nth-child(1) {
       position: relative;
       margin: 122px auto 0;
       bottom: -2vw;
       width: 100%;
       max-width: 1490px;
-
       &::before {
         content: '';
         background: rgba($color: #000000, $alpha: .2);
@@ -532,15 +484,12 @@ onMounted(()=>{
         width: 100%;
         height: 100%;
         z-index: 6;
-
       }
-
       &>img {
         width: 100%;
         position: relative;
         z-index: 5;
       }
-
       &>svg {
         position: absolute;
         left: 50%;
@@ -548,7 +497,6 @@ onMounted(()=>{
         z-index: 7;
       }
     }
-
     &>div:nth-child(2) {
       text-align: center;
       position: absolute;
@@ -560,7 +508,6 @@ onMounted(()=>{
       flex-direction: column;
       align-items: center;
       z-index: 7;
-
       &>div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -572,24 +519,20 @@ onMounted(()=>{
         color: #ffffff;
         margin-bottom: 12px;
       }
-
       &>div:nth-child(2) {
         margin-bottom: 41px;
-
         &>div:nth-child(1) {
           font-family: 'Metropolis';
           font-style: normal;
           font-weight: 700;
           font-size: 57.4776px;
           line-height: 56px;
-          /* identical to box height, or 97% */
           text-align: center;
           letter-spacing: 0.05em;
           text-transform: uppercase;
           color: #ffffff;
         }
       }
-
       &>div:nth-child(3) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -599,7 +542,6 @@ onMounted(()=>{
         text-align: right;
         letter-spacing: 0.3em;
         color: #ffffff;
-
         &>div:nth-child(2) {
           font-weight: 400;
           font-size: 15.8025px;
@@ -672,9 +614,8 @@ onMounted(()=>{
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2; /* 这里是超出几行省略 */
+        -webkit-line-clamp: 2;
         overflow: hidden;
-        // width: 100%;
       }
 
       &>div:nth-child(4) {
@@ -710,7 +651,6 @@ onMounted(()=>{
 .content_press {
   position: relative;
   margin: 0 26.0412%;
-  // margin-top: 122px;
   margin-bottom: 122px;
 
   &>div:nth-child(1) {
@@ -767,10 +707,7 @@ onMounted(()=>{
       }
 
       &>div:nth-child(2) {
-        // margin-top: 20px;
         position: static;
-        // bottom: -35px;
-        // right: 65px;
         font-family: 'Metropolis';
         font-style: normal;
         font-weight: 500;
@@ -781,16 +718,13 @@ onMounted(()=>{
         color: #8ad8dd;
         display: flex;
         width: 100%;
-        /* text-align: right; */
         justify-content: flex-end;
         padding-right: 10%;
       }
     }
 
     &>div:nth-child(3) {
-      // margin-top: 97px;
       margin-bottom: 80px;
-      
       &>div:nth-child(1) {
         margin-bottom: 120px;
         font-family: 'Noto Sans HK';
@@ -798,18 +732,13 @@ onMounted(()=>{
         font-weight: 400;
         font-size: 24px;
         line-height: 34px;
-        /* or 142% */
-
         letter-spacing: 0.1em;
         text-transform: uppercase;
-
         color: #515151;
-
         &>p {
           margin-bottom: 35px;
         }
       }
-
       &>div:nth-child(2) {
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -939,7 +868,6 @@ onMounted(()=>{
         padding-bottom: 20px;
 
         &>div:nth-child(1) {
-          // padding: 20px;
           margin: 20px;
           height: auto;
           min-height: 180px;
@@ -1014,15 +942,12 @@ onMounted(()=>{
       }
 
       &>div:nth-child(3) {
-        // margin-top: 157px;
-
         &>div:nth-child(1) {
           margin-bottom: 72px;
           font-size: 16px;
           line-height: 1.8;
           text-align: justify;
         }
-
         &>div:nth-child(2) {
           display: none;
           font-size: 16px;

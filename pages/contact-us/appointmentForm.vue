@@ -46,18 +46,15 @@ const serviceNavigation = [
 .appointmentForm {
   background: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
   background-size: auto 100%;
-
   & > div:nth-child(1) {
     width: 100%;
     max-width: 860px;
     margin: 100px auto 0;
     color: #515151;
-
     & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
       font-size: 37.5px;
     }
-
     & > div:nth-child(2) {
       color: #8ad8dd;
       font-size: 21px;

@@ -1,9 +1,7 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
-// const { t } = useLang()
 useHead(() => ({
   title: '健康資訊｜眼科資訊 | 香港希瑪眼科中心',
   meta: [
@@ -19,7 +17,6 @@ useHead(() => ({
     },
   ],
 }))
-
 const toLinkPage = (_data: any) => {
   window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
@@ -98,7 +95,6 @@ onMounted(()=>{
   <div>
     <div class="healthInfo">
       <div>
-        <!-- <img src="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg" alt=""> -->
         <img data-cfsrc="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg" 
             srcset="https://static.cmereye.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg"  
             alt="健康資訊" 
@@ -232,7 +228,7 @@ onMounted(()=>{
       font-size: 40.1px;
       font-style: normal;
       font-weight: 400;
-      line-height: 46.286px; /* 115.426% */
+      line-height: 46.286px;
       letter-spacing: 8.02px;
       margin-bottom: 10px;
     }
@@ -243,7 +239,7 @@ onMounted(()=>{
       font-size: 40.032px;
       font-style: normal;
       font-weight: 700;
-      line-height: 50.285px; /* 125.612% */
+      line-height: 50.285px;
       letter-spacing: 0.801px;
       text-transform: uppercase;
     }
@@ -533,8 +529,6 @@ onMounted(()=>{
     justify-content: center;
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .healthInfo {
     margin: auto;

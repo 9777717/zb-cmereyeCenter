@@ -86,17 +86,11 @@ const goLink = (_data:any) => {
         <span class="source" v-if="pageDetail.source" @click="goLink(pageDetail.source)">資料來源︰原文鏈接</span>
         <span v-if="pageDetail.visits">瀏覽次數︰{{pageDetail.visits}}</span>
         <span v-if="pageDetail.update_time">更新時間︰{{pageDetail.update_time}}</span>
-        <!-- <span>閱讀更多文章︰</span> -->
-        <!-- <span>【近視控制】阿托品眼藥水和OK鏡是甚麼？適合甚麼人士？即睇配戴重點！</span> -->
-        <!-- <span>没有了！</span> -->
       </div>
       <div class="healthInfoDetail-bottom-btn">
         <span @click="goLink('-1')">回到所有文章目錄</span>
-        <!-- <span>上一篇</span> -->
-        <!-- <span>下一篇</span> -->
       </div>
     </div>
-    <!-- <PageFooterMenu /> -->
   </div>
 </template>
 
@@ -161,26 +155,11 @@ const goLink = (_data:any) => {
           color: #4d4d4d;
         }
         &.source{
-          // margin-top: 30px;
           cursor: pointer;
           &:hover{
             color: #1b407a;
           }
         }
-        // &:nth-of-type(7){
-        //   font-size: 16px;
-        //   margin-top: 30px;
-        // }
-        // &:nth-of-type(8){
-        //   font-size: 14px;
-        //   cursor: pointer;
-        //   &:hover{
-        //     color: #1b407a;
-        //   }
-        // }
-        // &:nth-of-type(9){
-        //   font-size: 14px;
-        // }
       }
     }
     &-btn{
@@ -291,7 +270,6 @@ const goLink = (_data:any) => {
     right: -25%;
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .healthInfoDetail{
     width: auto;
@@ -312,14 +290,12 @@ const goLink = (_data:any) => {
       }
       &>div:last-child{
         font-size: 22px;
-        // padding: 0 10px 5px;
       }
     }
     &-content{
       margin-top: 30px;
     }
     &-bottom{
-      // padding-left: 20px;
       flex-direction: column;
       margin-bottom: 100px;
       &-btn{

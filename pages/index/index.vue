@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// meta
 definePageMeta({
   layout: 'page',
 })
@@ -17,19 +16,15 @@ useHead(() => ({
       content:
         '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療  全面眼睛檢查 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼睛疾病 眼科服務 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療',
     },
-    // {
-    //   name: 'description',
-    //   content:
-    //     'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    // },
+    {
+      name: 'description',
+      content:
+        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+    },
     {
       name: 'keywords',
       content:
         'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
-    {
-      name: 'description',
-      content: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
     }
   ],
 }))
@@ -40,7 +35,6 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
-
 const homeSwiperImgs = [
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
@@ -55,7 +49,6 @@ const homeSwiperImgs = [
     imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
   }
 ]
-
 let currentImg = ref(0)
 var timer: any = null
 const setSwiperImg = () => {
@@ -73,7 +66,6 @@ onMounted(() => {
 onUnmounted(() => {
   clearInterval(timer)
 })
-
 // 拨打电话
 const callTel = () => {
   location.href = 'tel: +852 3956 2025'
@@ -92,8 +84,6 @@ const toLink = (a:string) => {
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
          </video>
       </div>
-      
-     
       <div class="mbHomeSwiper" :style="{
         background: `url(${homeSwiperImgs[currentImg].imgUrl})no-repeat`
       }">
@@ -107,18 +97,10 @@ const toLink = (a:string) => {
       </div>
       <div>
         <a :style="{cursor: 'pointer'}" href="/medical-service">
-          <!-- <div>
-            <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L5 5.5L1 10" stroke="#2958A3" stroke-width="1.25" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            <div>NEWS</div>
-          </div> -->
           <div>
             <img src="https://static.cmereye.com/imgs/2023/09/dd0567d3c65bc2d3.png" />
           </div>
           <div>
-            <!-- 「瞳護眼睛工作坊」網上公開報名，立即申請！*截止報名日期：2023年8月20日 -->
           </div>
         </a>
         <div>
@@ -176,18 +158,8 @@ const toLink = (a:string) => {
         </div>
       </div>
       <div class="mbCar">
-        <!-- <div>
-          <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.72727 0L0 2.72727L4.54545 7.27273L0 11.8182L2.72727 14.5455L10 7.27273L2.72727 0Z"
-              fill="#2958A3" />
-          </svg>
-          <div>
-            NEWS
-          </div>
-        </div> -->
         <div @click="toLink('/medical-service')">
           <div><img src="https://static.cmereye.com/imgs/2023/09/c03f529548e5905a.png" alt=""></div>
-          <!-- <div>希瑪眼科中心擴展至全港擁有10間眼科診所、4間微笑矯視中心、 6間視光中心，以及2間嘉賓眼科專科及激光矯視手術中心。</div>s -->
         </div>
       </div>
     </div>
@@ -204,16 +176,13 @@ const toLink = (a:string) => {
   position: relative;
   width: 100%;
   height: 100vh;
-  
   &>div:nth-of-type(1) {
     .mbHomeSwiper {
       display: none;
     }
   }
-  
   &>div:nth-child(2) {
     position: absolute;
-    // top: 37%;
     bottom: 10%;
     left: 0;
     right: 0;
@@ -227,43 +196,34 @@ const toLink = (a:string) => {
       margin-bottom: 196px;
       flex-direction: column;
       align-items: flex-start;
-      
       &>div:nth-child(1) {
         letter-spacing: 2.409px;
       }
-
       &>div:nth-child(3) {
         letter-spacing: 18.553px;
       }
-
       font-family: 'Metropolis';
       font-style: normal;
       font-weight: 700;
       font-size: 24.0948px;
       line-height: 28px;
-      
       letter-spacing: 14.5px;
       text-transform: uppercase;
-
       color: #ffffff;
     }
-
     &>div:nth-child(2) {
       display: flex;
       pointer-events: initial;
       &>div,&>a {
         background: #ffffffbf;
       }
-
       img {
         width: 100%;
       }
-
       &>a {
         width: 626px;
         padding: 0 24px;
         margin-right: 53px;
-
         &>div:nth-child(1) {
           margin: 10px 0 9px;
           display: flex;
@@ -277,16 +237,13 @@ const toLink = (a:string) => {
           text-align: center;
           letter-spacing: 0.05em;
           color: #2958a3;
-
           &>div {
             margin-left: 8px;
           }
-
           svg {
             margin-top: -3px;
           }
         }
-
         &>div:nth-child(3) {
           margin: 10px 0;
           font-family: 'Noto Sans HK';
@@ -303,7 +260,6 @@ const toLink = (a:string) => {
 
       &>div {
         width: 530px;
-
         &>div:nth-child(1) {
           display: flex;
           align-items: center;
@@ -314,18 +270,14 @@ const toLink = (a:string) => {
           font-size: 24px;
           line-height: 35px;
           letter-spacing: 0.05em;
-
           color: #2958a3;
-
           &>div {
             margin-left: 12px;
           }
-
           svg {
             margin-top: 6px;
           }
         }
-
         &>div:nth-child(2) {
           display: flex;
           position: relative;
@@ -361,9 +313,7 @@ const toLink = (a:string) => {
           }
         }
       }
-
     }
-
     .mbCar {
       display: none;
     }
@@ -391,26 +341,21 @@ const toLink = (a:string) => {
         background-size: 100% 100% !important;
       }
     }
-
     &>div:nth-child(2) {
       top: 60vh;
-      // bottom: 190px;
       pointer-events: initial;
       &>div:nth-child(1) {
         display: none;
       }
-
       &>div:nth-child(2) {
         display: none;
       }
-
       .mbCar {
         display: block;
         background: rgba($color: #fff, $alpha: .7);
         margin: 0 20px;
         width: auto;
         padding: 10px;
-
         &>div:nth-of-type(1) {
           display: flex;
           justify-content: flex-start;
@@ -418,28 +363,16 @@ const toLink = (a:string) => {
           color: #2958A3;
           font-size: 20px;
           font-weight: 400;
-          // margin-bottom: 10px;
-
-          svg {
-            // margin-top: -8px;
-          }
         }
-
         &>div:nth-of-type(2) {
           display: flex;
 
           &>div:nth-of-type(1) {
-            // width: 80px;
-            // height: 80px;
-            // margin-right: 12px;
-
             img {
               width: 100%;
             }
           }
-
           &>div:nth-of-type(2) {
-            // margin-top: 15px;
             flex: 1;
             color: #2958A3;
             font-size: 14px;
@@ -452,8 +385,6 @@ const toLink = (a:string) => {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .home {
     &>div:nth-child(2) {

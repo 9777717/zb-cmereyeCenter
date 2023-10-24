@@ -17,11 +17,9 @@ useHead(() => ({
     },
   ],
 }))
-
 const toLinkPage = (_data: any) => {
   window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
-
 const articleList = ref([
   {
     img: '',
@@ -31,7 +29,6 @@ const articleList = ref([
     doctor:'',
   },
 ])
-
 const getArticleList = async () => {
   const loading = ElLoading.service({
     lock: true,
@@ -206,11 +203,8 @@ onMounted(()=>{
       position: absolute;
       z-index: 5;
       top: 30%;
-      // left: 10vw;
-      // right: 0;
       left: 50%;
       transform: translateX(-50%);
-      // bottom: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;

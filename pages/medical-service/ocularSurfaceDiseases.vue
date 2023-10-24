@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -29,7 +28,6 @@ useHead(() => ({
     },
   ],
 }))
-
 const locale = useState<string>('locale.setting')
 // 传递背景色
 const backgd = [
@@ -51,35 +49,43 @@ const callTel = () => {
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name1',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name1',
     anchorLink: '/medical-service/ocularSurfaceDiseases#pterygium',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name2',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name2',
     anchorLink: '/medical-service/ocularSurfaceDiseases#blepharitis',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name3',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name3',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratitis',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name4',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name4',
     anchorLink: '/medical-service/ocularSurfaceDiseases#iritis',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name5',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name5',
     anchorLink: '/medical-service/ocularSurfaceDiseases#episcleritis',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name6',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name6',
     anchorLink: '/medical-service/ocularSurfaceDiseases#damage',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name7',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name7',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratoconus',
   },
   {
-    anchorName: 'pages.medical_service.ocularSurfaceDiseases_con.navLists.name8',
+    anchorName:
+      'pages.medical_service.ocularSurfaceDiseases_con.navLists.name8',
     anchorLink: '/medical-service/ocularSurfaceDiseases#keratoplasty',
   },
 ]
@@ -87,8 +93,7 @@ const serviceNavigation = [
 const meetArr = [
   {
     title: 'pages.medical_service.ocularSurfaceDiseases_con.faq.q1',
-    agree:
-      'pages.medical_service.ocularSurfaceDiseases_con.faq.a1',
+    agree: 'pages.medical_service.ocularSurfaceDiseases_con.faq.a1',
   },
   {
     title: 'pages.medical_service.ocularSurfaceDiseases_con.faq.q2',
@@ -215,7 +220,10 @@ const damageList1 = [
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_4'],
   },
   {
-    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_2'],
+    text: [
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text1_5_2',
+    ],
   },
   {
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text1_6'],
@@ -240,11 +248,17 @@ const damageList2 = [
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/288f34fab3f9a8cf.png',
-    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_2'],
+    text: [
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_2',
+    ],
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f62bc78110c0bf14.png',
-    text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_1', 'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_2'],
+    text: [
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_2',
+    ],
   },
 ]
 const keratoconusList1 = [
@@ -267,13 +281,18 @@ const keratoconusList1 = [
 ]
 const keratoplastyList1 = [
   {
-    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy1',
-    involve: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve1',
-    postoperation: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation1',
+    therapy:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy1',
+    involve:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve1',
+    postoperation:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation1',
   },
   {
-    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy2',
-    involve: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve2',
+    therapy:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy2',
+    involve:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve2',
     postoperation: [
       'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_1',
       'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation2_2',
@@ -282,47 +301,68 @@ const keratoplastyList1 = [
     ],
   },
   {
-    therapy: 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy3',
-    involve: ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_2'],
+    therapy:
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.therapy3',
+    involve: [
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_1',
+      'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.involve3_2',
+    ],
     postoperation: [
-      ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_2', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_3'],
-      ['pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_1', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_2', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_3', 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_4'],
+      [
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_1',
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_2',
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_1_3',
+      ],
+      [
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_1',
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_2',
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_3',
+        'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.postoperation3_2_4',
+      ],
     ],
   },
 ]
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病2.png',
+  pcSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病1.png',
+  mbSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病2.png',
   cnName: '眼表及角膜疾病',
   enName: 'OCULAR SURFACE AND CORNEAL DISEASES',
   textColor: '#93C9AC',
-  pageName: 'ocularSurfaceDiseases'
+  pageName: 'ocularSurfaceDiseases',
 }
 </script>
 
 <template>
   <div class="ocularSurfaceDiseases">
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="ocularSurfaceDiseases_head">
-      <div>
-        <div>
-          <div>眼表及角膜疾病</div>
-          <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
-          <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
-          <div>OCULAR SURFACE AND CORNEAL DISEASES</div>
-        </div>
-      </div>
-    </div> -->
     <div class="ocularSurfaceDiseases-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'ocularSurfaceDiseases'" />
+      <serviceNav
+        :arrData="serviceNavigation"
+        :pageName="'ocularSurfaceDiseases'"
+      />
     </div>
-    <div class="ocularSurfaceDiseases_nav" :class="{'ocularSurfaceDiseasesNav-en': locale === 'en'}">
+    <div
+      class="ocularSurfaceDiseases_nav"
+      :class="{ 'ocularSurfaceDiseasesNav-en': locale === 'en' }"
+    >
       <div id="pterygium">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.pterygium.title'
+            )
+          }}
+        </div>
         <div class="ocularSurfaceDiseases_text_p_span">
           <div>
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.context')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.pterygium.context'
+              )
+            }}
           </div>
           <div>
             <img
@@ -334,40 +374,80 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.pterygium.name'
+              )
+            }}
           </div>
           <div>
             <div>
-              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span1')}}</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.pterygium.span1'
+                  )
+                }}
               </div>
-              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span3')}}</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.pterygium.span2'
+                  )
+                }}
+              </div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.pterygium.span3'
+                  )
+                }}
+              </div>
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.span4')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.pterygium.span4'
+                )
+              }}
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1')}}</span
-            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')}}</span>
+            <span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1')
+            }}</span
+            ><span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')
+            }}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.pterygium.name2'
+              )
+            }}
           </div>
           <div>
             <div>
               <div>
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.text1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text1'
+                  )
+                }}
               </div>
             </div>
             <div>
               <div>
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.text2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.pterygium.text2'
+                  )
+                }}
               </div>
             </div>
           </div>
@@ -376,7 +456,11 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.pterygium.name3')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.pterygium.name3'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in pterygiumList1" :key="index">
@@ -389,7 +473,13 @@ const bannerData = {
         </div>
       </div>
       <div id="blepharitis">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.title'
+            )
+          }}
+        </div>
         <div>
           <div>
             <img
@@ -397,14 +487,22 @@ const bannerData = {
             />
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.context')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.context'
+              )
+            }}
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name'
+              )
+            }}
           </div>
           <div>
             <div>
@@ -425,15 +523,23 @@ const bannerData = {
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1')}}</span
-            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')}}</span>
+            <span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1')
+            }}</span
+            ><span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')
+            }}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name1')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name1'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in blepharitisList2" :key="index">
@@ -448,7 +554,11 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.name2'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in blepharitisList3" :key="index">
@@ -464,12 +574,22 @@ const bannerData = {
         </div>
       </div>
       <div id="keratitis">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.keratitis.title'
+            )
+          }}
+        </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratitis.name'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in keratitisList" :key="index">
@@ -482,21 +602,38 @@ const bannerData = {
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')}}</span>
+            <span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1')
+            }}</span
+            ><span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')
+            }}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratitis.name2'
+              )
+            }}
           </div>
           <div>
             <div>
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_1')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_1'
+                )
+              }}
             </div>
             <div>
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_2')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_2'
+                )
+              }}
             </div>
           </div>
           <div>
@@ -505,14 +642,26 @@ const bannerData = {
                 src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
                 alt=""
               />
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_3')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_3'
+                  )
+                }}
+              </div>
             </div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
                 alt=""
               />
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_4')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2_4'
+                  )
+                }}
+              </div>
             </div>
           </div>
         </div>
@@ -520,28 +669,74 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.name3')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratitis.name3'
+              )
+            }}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_1')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_3')}}</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_1'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3_3'
+                )
+              }}
+            </div>
           </div>
         </div>
       </div>
       <div id="iritis">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.title')
+          }}
+        </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name')
+            }}
           </div>
           <div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_1')}}</div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_2')}}</div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_3')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_1'
+                  )
+                }}
+              </div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_2'
+                  )
+                }}
+              </div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.iritis.text1_3'
+                  )
+                }}
+              </div>
             </div>
             <div>
               <img
@@ -555,38 +750,114 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name2')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name2')
+            }}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_1')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_3')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_7')}}</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_1'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_3'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_4_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_5_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_6_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text2_7'
+                )
+              }}
+            </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1')}}</span
-            ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2')}}</span>
+            <span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1'
+              )
+            }}</span
+            ><span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2'
+              )
+            }}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name3')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name3')
+            }}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
             <div>
               <div>1</div>
               <div>
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_1'
+                  )
+                }}
               </div>
             </div>
             <div>
               <div>2</div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_2')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.iritis.text3_2'
+                  )
+                }}
+              </div>
             </div>
           </div>
         </div>
@@ -594,22 +865,52 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name4')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.name4')
+            }}
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_1')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_2')}}</div>
-            <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_3')}}</div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_1'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_2'
+                )
+              }}
+            </div>
+            <div>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.text4_3'
+                )
+              }}
+            </div>
           </div>
         </div>
       </div>
       <div id="episcleritis">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.title'
+            )
+          }}
+        </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name1')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name1'
+              )
+            }}
           </div>
           <div>
             <div>
@@ -618,7 +919,11 @@ const bannerData = {
                 alt=""
               />
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_1'
+                  )
+                }}
               </div>
             </div>
             <div>
@@ -626,7 +931,13 @@ const bannerData = {
                 src="https://static.cmereye.com/imgs/2023/06/f978fdcd0118b62a.png"
                 alt=""
               />
-              <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_2')}}</div>
+              <div class="ocularSurfaceDiseases_text_p_span">
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_2'
+                  )
+                }}
+              </div>
             </div>
             <div>
               <img
@@ -634,7 +945,11 @@ const bannerData = {
                 alt=""
               />
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_3')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text1_3'
+                  )
+                }}
               </div>
             </div>
           </div>
@@ -643,19 +958,31 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name2'
+              )
+            }}
           </div>
           <div>
             <div>
               <div>01</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_1'
+                  )
+                }}
               </div>
             </div>
             <div>
               <div>02</div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span2_2'
+                  )
+                }}
               </div>
             </div>
           </div>
@@ -664,20 +991,48 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name3')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name3'
+              )
+            }}
           </div>
           <div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>1</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_1')}}
+              <span>1</span>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_1'
+                )
+              }}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>2</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_2')}}
+              <span>2</span>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_2'
+                )
+              }}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>3</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_2')}}
+              <span>3</span>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_3_2'
+                )
+              }}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              <span>4</span> {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_4')}}
+              <span>4</span>
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span3_4'
+                )
+              }}
             </div>
           </div>
         </div>
@@ -685,14 +1040,28 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4'
+              )
+            }}
           </div>
           <div>
             <div>
               <div>
-                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_1')}}</div>
+                <div>
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_1'
+                    )
+                  }}
+                </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text4_1')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text4_1'
+                    )
+                  }}
                 </div>
               </div>
               <div>
@@ -701,15 +1070,29 @@ const bannerData = {
                   alt=""
                 />
                 <div>
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_1')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_1'
+                    )
+                  }}
                 </div>
               </div>
             </div>
             <div>
               <div>
-                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_2')}}</div>
+                <div>
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name4_2'
+                    )
+                  }}
+                </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2'
+                    )
+                  }}
                 </div>
               </div>
               <div>
@@ -718,7 +1101,11 @@ const bannerData = {
                   alt=""
                 />
                 <div>
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_2')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.span4_2'
+                    )
+                  }}
                 </div>
               </div>
             </div>
@@ -728,40 +1115,91 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5'
+              )
+            }}
           </div>
           <div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.context')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.context'
+                )
+              }}
             </div>
             <div>
               <div>
-                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_1')}}</div>
+                <div>
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_1'
+                    )
+                  }}
+                </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_1')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_1'
+                    )
+                  }}
                 </div>
               </div>
               <div>
-                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_2')}}</div>
+                <div>
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_2'
+                    )
+                  }}
+                </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_2'
+                    )
+                  }}
                 </div>
               </div>
               <div>
-                <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_3')}}</div>
+                <div>
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.name5_3'
+                    )
+                  }}
+                </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  {{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_3')}}
+                  {{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.text5_3'
+                    )
+                  }}
                 </div>
               </div>
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2')}}</span>
+            <span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1'
+              )
+            }}</span
+            ><span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2'
+              )
+            }}</span>
           </div>
         </div>
       </div>
       <div id="damage">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t('pages.medical_service.ocularSurfaceDiseases_con.damage.title')
+          }}
+        </div>
         <div>
           <div>
             <img
@@ -771,14 +1209,20 @@ const bannerData = {
             />
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.context')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.damage.context'
+              )
+            }}
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name1')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.damage.name1')
+            }}
           </div>
           <div>
             <div v-for="(item, index) in damageList1" :key="index">
@@ -793,13 +1237,17 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name2')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.damage.name2')
+            }}
           </div>
           <div>
             <div v-for="(item, index) in damageList2" :key="index">
               <div><img :src="item.img" /></div>
               <div>
-                <span v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</span>
+                <span v-for="(ele, i) in item.text" :key="i">{{
+                  $t(ele)
+                }}</span>
               </div>
             </div>
           </div>
@@ -808,40 +1256,86 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3')}}
+            {{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3')
+            }}
           </div>
           <div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_1')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.name3_1'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.text3_1'
+                  )
+                }}
               </div>
             </div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_2')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.name3_2'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.text3_2'
+                  )
+                }}
               </div>
             </div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.name3_3')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.name3_3'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.text3_3')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.damage.text3_3'
+                  )
+                }}
               </div>
             </div>
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')}}</span>
+            <span>{{
+              $t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')
+            }}</span>
           </div>
         </div>
       </div>
       <div id="keratoconus">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.title1')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.title1'
+            )
+          }}
+        </div>
         <div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_1')}}<span
-              >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_2')}}</span
-            >
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_1'
+              )
+            }}<span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span1_2'
+              )
+            }}</span>
           </div>
           <div>
             <img
@@ -853,7 +1347,11 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name1')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name1'
+              )
+            }}
           </div>
           <div>
             <div v-for="(item, index) in keratoconusList1" :key="index">
@@ -866,7 +1364,11 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name2'
+              )
+            }}
           </div>
           <div>
             <div>
@@ -877,19 +1379,41 @@ const bannerData = {
             <div>
               <div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  <span>1</span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_1')}}
+                  <span>1</span
+                  >{{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_1'
+                    )
+                  }}
                 </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
-                  <span>2</span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_2')}}
+                  <span>2</span
+                  >{{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_2'
+                    )
+                  }}
                 </div>
                 <div class="ocularSurfaceDiseases_text_p_span">
                   <span v-if="locale !== 'en'">3</span
-                  >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_3')}}
+                  >{{
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span2_3'
+                    )
+                  }}
                 </div>
               </div>
               <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
-                <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1')}}</span
-                ><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2')}}</span>
+                <span>{{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1'
+                  )
+                }}</span
+                ><span>{{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2'
+                  )
+                }}</span>
               </div>
             </div>
           </div>
@@ -898,64 +1422,144 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3'
+              )
+            }}
           </div>
           <div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_1')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_1'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_1'
+                  )
+                }}
               </div>
             </div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_2')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_2'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                <span
-                  >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_1')}}</span
-                >{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_2')}}
+                <span>{{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_1'
+                  )
+                }}</span
+                >{{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_2_2'
+                  )
+                }}
               </div>
             </div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_3')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.name3_3'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_3')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.span3_3'
+                  )
+                }}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div id="keratoplasty">
-        <div class="ocularSurfaceDiseases_title">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.title')}}</div>
+        <div class="ocularSurfaceDiseases_title">
+          {{
+            $t(
+              'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.title'
+            )
+          }}
+        </div>
         <div>
           <div class="ocularSurfaceDiseases_text_p_span">
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span'
+              )
+            }}
           </div>
           <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
-            <span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1')}}</span><span>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2')}}</span>
+            <span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1'
+              )
+            }}</span
+            ><span>{{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2'
+              )
+            }}</span>
           </div>
         </div>
         <div>
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name'
+              )
+            }}
           </div>
           <div>
             <div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_1'
+                  )
+                }}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_2'
+                  )
+                }}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_3')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_3'
+                  )
+                }}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_4')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_4'
+                  )
+                }}
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_5')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span1_5'
+                  )
+                }}
               </div>
             </div>
             <div>
@@ -974,7 +1578,11 @@ const bannerData = {
                 </div>
               </div>
               <div>
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.text1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.text1'
+                  )
+                }}
               </div>
             </div>
           </div>
@@ -983,17 +1591,55 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name2')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name2'
+              )
+            }}
           </div>
           <div>
-            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_1')}}</div>
-            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_2')}}</div>
-            <div class="ocularSurfaceDiseases_text_p_span">{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_3')}}</div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_2')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_1'
+                )
+              }}
             </div>
             <div class="ocularSurfaceDiseases_text_p_span">
-              {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_1')}}<br />{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_2')}}
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_2'
+                )
+              }}
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_3'
+                )
+              }}
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_4_2'
+                )
+              }}
+            </div>
+            <div class="ocularSurfaceDiseases_text_p_span">
+              {{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_1'
+                )
+              }}<br />{{
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span2_5_2'
+                )
+              }}
             </div>
           </div>
         </div>
@@ -1001,19 +1647,43 @@ const bannerData = {
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
-            {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3')}}
+            {{
+              $t(
+                'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3'
+              )
+            }}
           </div>
           <div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_1')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_1'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_1')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_1'
+                  )
+                }}
               </div>
             </div>
             <div>
-              <div>{{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_2')}}</div>
+              <div>
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.name3_2'
+                  )
+                }}
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
-                {{$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_2')}}
+                {{
+                  $t(
+                    'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.span3_2'
+                  )
+                }}
               </div>
             </div>
             <div>
@@ -1036,7 +1706,9 @@ const bannerData = {
                   <div v-if="Array.isArray(item.postoperation)">
                     <div v-for="(el, index) in item.postoperation" :key="index">
                       <div v-if="Array.isArray(el)">
-                        <div v-for="(e, index) in el" :key="index">{{ $t(e) }}</div>
+                        <div v-for="(e, index) in el" :key="index">
+                          {{ $t(e) }}
+                        </div>
                       </div>
                       <div v-else>{{ $t(el) }}</div>
                     </div>
@@ -1052,7 +1724,7 @@ const bannerData = {
         <div
           class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
         >
-          {{$t('pages.medical_service.ocularSurfaceDiseases_con.faq.title')}}
+          {{ $t('pages.medical_service.ocularSurfaceDiseases_con.faq.title') }}
         </div>
         <div>
           <PageCollapse
@@ -1063,9 +1735,7 @@ const bannerData = {
         </div>
       </div>
     </div>
-    <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
-    </div>
+    <div></div>
     <!-- 表单 -->
     <div class="fromTable">
       <FormFooterInfo
@@ -1084,13 +1754,11 @@ const bannerData = {
   transform-origin: center top;
   & > #pterygium {
     margin-bottom: 160px;
-
     & > div:nth-child(2) {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 80px auto 120px;
-
       & > div:nth-child(1) {
         width: 698px;
         line-height: 46px;
@@ -1098,24 +1766,21 @@ const bannerData = {
         margin-right: 65px;
       }
     }
-
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         margin: 60px auto 120px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         & > div:nth-child(1) {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
-          &>div {
+          & > div {
             width: 580px;
             height: 73px;
             border-radius: 10px;
-            border: solid 1px #7DBE9C;
+            border: solid 1px #7dbe9c;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1123,29 +1788,25 @@ const bannerData = {
             font-size: 26px;
           }
         }
-
         & > div:nth-child(2) {
           width: 580px;
           height: 333px;
           border-radius: 10px;
-          border: solid 1px #7DBE9C;
+          border: solid 1px #7dbe9c;
           padding: 82px 66px;
           line-height: 48px;
           font-size: 26px;
         }
       }
-
       & > div:nth-child(3) {
         margin: 120px auto;
       }
     }
-
     & > div:nth-child(4) {
       & > div:nth-child(2) {
         margin: 80px auto 120px;
         display: flex;
         justify-content: space-between;
-
         & > div {
           width: 628px;
           height: 261px;
@@ -1153,32 +1814,27 @@ const bannerData = {
           font-size: 22px;
           transform: scale(0.85);
         }
-
         & > div:nth-child(1) {
           background: url('https://static.cmereye.com/imgs/2023/06/6d544e0b46ceee84.png');
           background-size: 100% 100%;
         }
-
         & > div:nth-child(2) {
           background: url('https://static.cmereye.com/imgs/2023/06/85baaef5d466b24b.png');
           background-size: 100% 100%;
         }
       }
     }
-
     & > div:nth-child(5) {
       & > div:nth-child(2) {
         display: flex;
         justify-content: space-between;
         margin-top: 94px;
-
         & > div {
           width: 290px;
           height: 292px;
           border-radius: 10px;
-          border: solid 1px #7DBE9C;
+          border: solid 1px #7dbe9c;
           position: relative;
-
           & > div:nth-child(1) {
             position: absolute;
             top: -26px;
@@ -1195,7 +1851,6 @@ const bannerData = {
             border-left: 5px solid #fff;
             border-right: 5px solid #fff;
           }
-
           & > div:nth-child(2) {
             padding: 0 41px;
             padding-top: 54px;
@@ -1206,16 +1861,13 @@ const bannerData = {
       }
     }
   }
-
   & > #blepharitis {
     margin: 160px auto;
-
     & > div:nth-child(2) {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin: 80px auto 120px;
-
       & > div:nth-child(2) {
         width: 627px;
         line-height: 46px;
@@ -1223,7 +1875,6 @@ const bannerData = {
         margin-left: 65px;
       }
     }
-
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         margin: 40px auto 120px;
@@ -1231,19 +1882,17 @@ const bannerData = {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         & > div:nth-child(1) {
           & > div {
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-bottom: 40px;
-
             & > span:nth-child(1) {
               display: flex;
               width: 42px;
               height: 42px;
-              background: #7DBE9C;
+              background: #7dbe9c;
               border-radius: 50%;
               color: #fff;
               justify-content: center;
@@ -1251,7 +1900,6 @@ const bannerData = {
               line-height: 38px;
               margin-right: 20px;
             }
-
             & > span:nth-child(2) {
               max-width: 552px;
               line-height: 42px;
@@ -1261,14 +1909,12 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       margin-top: 120px;
       & > div:nth-child(2) {
         margin: 60px auto 120px;
         display: flex;
         justify-content: space-between;
-
         & > div {
           & > div:nth-child(2) {
             width: 240px;
@@ -1280,22 +1926,18 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(5) {
       & > div:nth-child(2) {
         margin: 46px auto 160px;
         display: flex;
         justify-content: space-between;
-
         & > div {
           width: 350px;
           position: relative;
-
           & > div:nth-child(1) {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-
             & > div:nth-child(2) {
               font-family: 'OPPOSans-M';
               font-size: 120px;
@@ -1303,11 +1945,10 @@ const bannerData = {
               font-stretch: normal;
               line-height: 94px;
               letter-spacing: 0px;
-              color: #7DBE9C;
+              color: #7dbe9c;
               margin-right: 26px;
             }
           }
-
           & > div:nth-child(2) {
             font-size: 22px;
             line-height: 42px;
@@ -1315,7 +1956,6 @@ const bannerData = {
             max-width: 360px;
           }
         }
-
         & > div::after {
           content: '';
           background: url('https://static.cmereye.com/imgs/2023/06/897cdf641d33d96d.png');
@@ -1326,7 +1966,6 @@ const bannerData = {
           position: absolute;
           right: -55px;
         }
-
         & > div:last-child::after {
           width: 0;
         }
@@ -1411,7 +2050,7 @@ const bannerData = {
           height: 145px;
           background-color: #ffffff;
           border-radius: 20px;
-          border: solid 2px #7DBE9C;
+          border: solid 2px #7dbe9c;
 
           font-size: 22px;
           line-height: 38px;
@@ -1440,10 +2079,8 @@ const bannerData = {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
           font-size: 22px;
           line-height: 38px;
-
           & > div::before {
             content: '';
             background: url('https://static.cmereye.com/imgs/2023/06/4ec5fda73d711558.png');
@@ -1453,11 +2090,10 @@ const bannerData = {
             margin-right: 10px;
             margin-bottom: 3px;
           }
-
           & > div:nth-child(2) {
             padding: 75px 0 72px;
-            border-top: dashed 1px #7DBE9C;
-            border-bottom: dashed 1px #7DBE9C;
+            border-top: dashed 1px #7dbe9c;
+            border-bottom: dashed 1px #7dbe9c;
             width: 667px;
           }
         }
@@ -1470,7 +2106,6 @@ const bannerData = {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         & > div {
           margin: 60px auto 80px;
           display: flex;
@@ -1484,10 +2119,8 @@ const bannerData = {
         }
       }
     }
-
     & > div:nth-child(4) {
       margin-top: 140px;
-
       & > div:nth-child(2) {
         padding-left: 42px;
         display: flex;
@@ -1500,7 +2133,7 @@ const bannerData = {
           width: 520px;
           height: 140px;
           border-radius: 10px;
-          border: solid 2px #7DBE9C;
+          border: solid 2px #7dbe9c;
           position: relative;
           padding: 40px 45px;
 
@@ -1523,7 +2156,7 @@ const bannerData = {
             font-stretch: normal;
             line-height: 1;
             letter-spacing: 0px;
-            color: #7DBE9C;
+            color: #7dbe9c;
             background: #fff;
             border-top: 10px solid #fff;
             border-bottom: 10px solid #fff;
@@ -1548,7 +2181,7 @@ const bannerData = {
           border-radius: 10px;
           font-size: 22px;
           line-height: 38px;
-          border-top: 10px solid #7DBE9C;
+          border-top: 10px solid #7dbe9c;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1612,8 +2245,8 @@ const bannerData = {
             font-size: 52px;
             line-height: 38px;
             letter-spacing: 0px;
-            color: #7DBE9C;
-            border-right: solid 3px #7DBE9C;
+            color: #7dbe9c;
+            border-right: solid 3px #7dbe9c;
           }
 
           & > div:nth-child(2) {
@@ -1631,7 +2264,6 @@ const bannerData = {
         justify-content: space-between;
         text-align: center;
         margin-top: 50px;
-
         & > div {
           background: url('https://static.cmereye.com/imgs/2023/06/2a6caa9ee33d9d92.png');
           width: 281px;
@@ -1674,7 +2306,7 @@ const bannerData = {
             & > div:nth-child(1) {
               width: 562px;
               height: 60px;
-              background-color: #7DBE9C;
+              background-color: #7dbe9c;
               border-radius: 30px;
               margin-bottom: 45px;
 
@@ -1739,7 +2371,7 @@ const bannerData = {
             & > div:nth-child(1) {
               width: 100%;
               height: 68px;
-              background-color: #7DBE9C;
+              background-color: #7dbe9c;
 
               font-family: 'Noto Sans HK';
               font-size: 26px;
@@ -1822,24 +2454,20 @@ const bannerData = {
         letter-spacing: -1px;
       }
     }
-
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 40px auto 140px;
-
         & > div {
           background: url('https://static.cmereye.com/imgs/2023/06/88cae23e25d33512.png');
           background-size: 100% 100%;
           width: 360px;
           height: 144px;
-
           display: flex;
           justify-content: center;
           align-items: center;
           position: relative;
-
           & > span {
             position: absolute;
             top: 10px;
@@ -1850,20 +2478,17 @@ const bannerData = {
             letter-spacing: 0px;
             color: #ffffff;
           }
-
           & > div {
             font-size: 22px;
             line-height: 40px;
             text-align: center;
           }
         }
-
         & > div:nth-child(n + 4) {
           margin-top: 50px;
         }
       }
     }
-
     & > div:nth-child(4) {
       & > div:nth-child(2) {
         flex-wrap: wrap;
@@ -1883,7 +2508,7 @@ const bannerData = {
             width: 272px;
             height: 164px;
             border-radius: 10px;
-            border: solid 2px #7DBE9C;
+            border: solid 2px #7dbe9c;
             line-height: 1.8;
             font-size: 22px;
             font-family: 'Noto Sans HK';
@@ -1983,7 +2608,7 @@ const bannerData = {
           & > div:nth-child(1)::after {
             content: '';
             width: 357px;
-            border-bottom: dashed 1px #7DBE9C;
+            border-bottom: dashed 1px #7dbe9c;
             display: inline-block;
             position: absolute;
             bottom: 0;
@@ -2015,7 +2640,7 @@ const bannerData = {
       & > div:nth-child(1) {
         max-width: 626px;
         margin-right: 63px;
-        color: #7DBE9C;
+        color: #7dbe9c;
 
         & > span {
           letter-spacing: -1px;
@@ -2073,7 +2698,7 @@ const bannerData = {
                 display: flex;
                 width: 40px;
                 height: 40px;
-                background: #7DBE9C;
+                background: #7dbe9c;
                 border-radius: 50%;
                 font-family: OPPOSans-B;
                 font-size: 24px;
@@ -2111,7 +2736,7 @@ const bannerData = {
             left: 32px;
             width: 349px;
             height: 57px;
-            background: #7DBE9C;
+            background: #7dbe9c;
             border-radius: 29px;
 
             font-family: 'NotoSansHK-Medium';
@@ -2126,7 +2751,7 @@ const bannerData = {
             width: 1200px;
             height: 206px;
             border-radius: 20px;
-            border: solid 2px #7DBE9C;
+            border: solid 2px #7dbe9c;
 
             font-size: 22px;
             line-height: 40px;
@@ -2191,7 +2816,7 @@ const bannerData = {
             height: 160px;
             background-color: #ffffff;
             border-radius: 20px;
-            border: solid 2px #7DBE9C;
+            border: solid 2px #7dbe9c;
             font-size: 22px;
             display: flex;
             align-items: center;
@@ -2268,7 +2893,7 @@ const bannerData = {
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
-            color: #7DBE9C;
+            color: #7dbe9c;
             margin-bottom: 30px;
           }
 
@@ -2288,7 +2913,7 @@ const bannerData = {
             font-stretch: normal;
             line-height: 52px;
             letter-spacing: 0px;
-            color: #7DBE9C;
+            color: #7dbe9c;
             margin-bottom: 30px;
           }
 
@@ -2304,7 +2929,7 @@ const bannerData = {
             content: '';
             width: 6px;
             height: 6px;
-            background: #7DBE9C;
+            background: #7dbe9c;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2319,7 +2944,7 @@ const bannerData = {
             content: '';
             width: 6px;
             height: 6px;
-            background: #7DBE9C;
+            background: #7dbe9c;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -2353,7 +2978,7 @@ const bannerData = {
 
           & > div:nth-child(1) {
             height: 80px;
-            background: #7DBE9C;
+            background: #7dbe9c;
 
             font-family: 'NotoSansHK-Medium';
             font-size: 26px;
@@ -2465,36 +3090,36 @@ const bannerData = {
     }
   }
 
-  &.ocularSurfaceDiseasesNav-en{
+  &.ocularSurfaceDiseasesNav-en {
     & > #pterygium {
-      &>div:nth-child(3){
-        &>div:nth-child(2){
-          &>div:nth-child(1){
-            &>div{
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div {
               text-align: center;
             }
           }
-          &>div:nth-child(2){
+          & > div:nth-child(2) {
             padding: 40px 30px;
             line-height: 1.6;
           }
         }
-        &>div:nth-child(3){
+        & > div:nth-child(3) {
           text-align: center;
         }
       }
-      &>div:nth-child(4){
-        &>div:nth-child(2){
-          &>div{
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div {
             padding: 60px 31px 30px 280px;
             font-size: 20px;
           }
         }
       }
-      &>div:nth-child(5){
-        &>div:nth-child(2){
-          &>div{
-            &>div:nth-child(2){
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(2) {
               line-height: 1.6;
               padding: 30px 20px;
               font-size: 20px;
@@ -2503,105 +3128,105 @@ const bannerData = {
         }
       }
     }
-    & > #blepharitis{
-      &>div:nth-child(3){
-        &>div:nth-child(2){
-          &>div:nth-child(1){
-            &>div{
-              &>span:nth-child(1){
+    & > #blepharitis {
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div {
+              & > span:nth-child(1) {
                 min-width: 42px;
               }
             }
           }
         }
       }
-      &>div:nth-child(5){
-        &>div:nth-child(2){
-          &>div{
-            &>div:nth-child(2){
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(2) {
               line-height: 1.6;
             }
           }
         }
       }
     }
-    & > #keratitis{
-      &>div:nth-child(2){
+    & > #keratitis {
+      & > div:nth-child(2) {
         margin-top: 50px;
       }
-      &>div:nth-child(3){
-        &>div:nth-child(3){
+      & > div:nth-child(3) {
+        & > div:nth-child(3) {
           align-items: flex-start;
-          &>div{
+          & > div {
             flex: 1;
-            &:nth-child(1){
+            &:nth-child(1) {
               margin-right: 30px;
             }
-            img{
+            img {
               width: 100%;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               padding: 0 30px;
             }
           }
         }
       }
     }
-    & > #iritis{
-      &>div:nth-child(2){
-        &>div:nth-child(2){
-          &>div:nth-child(1){
+    & > #iritis {
+      & > div:nth-child(2) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
             padding: 0;
-            &>div{
+            & > div {
               padding: 30px 0;
             }
           }
         }
       }
-      &>div:nth-child(3){
-        &>div:nth-child(2){
-          &>div{
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div {
             font-size: 20px;
             line-height: 1.6;
           }
         }
       }
-      &>div:nth-child(4){
-        &>div:nth-child(2){
-          &>div{
-            &>div:nth-child(2){
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(2) {
               line-height: 1.6;
             }
           }
         }
       }
     }
-    & > #episcleritis{
-      &>div:nth-child(3){
-        &>div:nth-child(2){
-          &>div{
+    & > #episcleritis {
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div {
             padding: 30px 30px 30px 0;
             height: auto;
           }
         }
       }
-      &>div:nth-child(4){
-        &>div:nth-child(2){
-          &>div{
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div {
             padding-left: 40px;
           }
         }
       }
-      &>div:nth-child(6){
-        &>div:nth-child(2){
-          &>div:nth-child(2){
-            &>div{
+      & > div:nth-child(6) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div {
               height: auto;
-              &>div:nth-child(1){
+              & > div:nth-child(1) {
                 text-align: center;
                 line-height: 1.2;
               }
-              &>div:nth-child(2){
+              & > div:nth-child(2) {
                 padding-bottom: 25px;
               }
             }
@@ -2610,40 +3235,40 @@ const bannerData = {
       }
     }
     & > #damage {
-      &>div:nth-child(3){
-        &>div:nth-child(2){
-          &>div{
-            &>div{
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div {
+            & > div {
               line-height: 1.6;
               font-size: 18px;
             }
           }
         }
       }
-      &>div:nth-child(4){
-        &>div:nth-child(2){
-          &>div:nth-child(1){
-            &>div:nth-child(2){
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(2) {
               line-height: 1.6;
               font-size: 20px;
               padding: 15px 15px 15px 30px;
             }
           }
-          &>div{
-            &>div:nth-child(2){
+          & > div {
+            & > div:nth-child(2) {
               line-height: 1.6;
             }
           }
         }
       }
     }
-    & > #keratoconus{
-      &>div:nth-child(4){
-        &>div:nth-child(2){
-          &>div:nth-child(2){
-            &>div:nth-child(1){
-              &>div{
-                &>span{
+    & > #keratoconus {
+      & > div:nth-child(4) {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > div {
+                & > span {
                   min-width: 40px;
                 }
               }
@@ -2652,38 +3277,38 @@ const bannerData = {
         }
       }
     }
-    & > #keratoplasty{
-      &>div:nth-child(5){
-        &>div:nth-child(2){
-          &>div:nth-child(3){
-            &>div:nth-child(2){
-              &>div{
+    & > #keratoplasty {
+      & > div:nth-child(5) {
+        & > div:nth-child(2) {
+          & > div:nth-child(3) {
+            & > div:nth-child(2) {
+              & > div {
                 font-size: 22px;
                 line-height: 1.6;
                 padding: 0 30px;
               }
             }
-            &>div:nth-child(3){
+            & > div:nth-child(3) {
               font-size: 22px;
               line-height: 1.6;
-              &>div:nth-child(2){
-                &>div:nth-child(1){
-                  &>div:nth-child(1){
+              & > div:nth-child(2) {
+                & > div:nth-child(1) {
+                  & > div:nth-child(1) {
                     text-align: center;
                     padding: 0 20px;
                   }
-                  &>div:nth-child(2){
+                  & > div:nth-child(2) {
                     padding: 0 20px;
                     text-align: center;
                   }
                 }
               }
-              &>div:nth-child(3){
-                &>div:nth-child(1){
-                  &>div:nth-child(1){
+              & > div:nth-child(3) {
+                & > div:nth-child(1) {
+                  & > div:nth-child(1) {
                     padding: 0 30px;
                   }
-                  &>div:nth-child(2){
+                  & > div:nth-child(2) {
                     padding: 0 30px;
                   }
                 }
@@ -2696,7 +3321,7 @@ const bannerData = {
   }
 }
 
-.ocularSurfaceDiseases-nav{
+.ocularSurfaceDiseases-nav {
   margin-top: 30px;
 }
 
@@ -2707,7 +3332,7 @@ const bannerData = {
   font-stretch: normal;
   line-height: 48px;
   letter-spacing: 0px;
-  color: #7DBE9C;
+  color: #7dbe9c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2729,7 +3354,7 @@ const bannerData = {
   font-stretch: normal;
   line-height: 52px;
   letter-spacing: 0px;
-  color: #7DBE9C;
+  color: #7dbe9c;
 
   display: flex;
   flex-direction: row;
@@ -2744,7 +3369,6 @@ const bannerData = {
   margin-right: 15px;
   background: url('https://static.cmereye.com/imgs/2023/06/e34a991e03e8c0a4.png');
 }
-
 .ocularSurfaceDiseases_title_btn {
   display: flex;
   flex-direction: column;
@@ -2757,9 +3381,6 @@ const bannerData = {
   height: 140px;
   border-radius: 20px;
   background-blend-mode: normal, normal;
-  // background-image: linear-gradient(-90deg, #68BE92 0%, #C1DFB4 100%),
-  //   linear-gradient(#68BE92, #C1DFB4);
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -2771,178 +3392,42 @@ const bannerData = {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  text-shadow: 0 2px 5px #68BE92;
+  text-shadow: 0 2px 5px #68be92;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #cae09b 0%, #5ea351 100%);
+    background: linear-gradient(45deg, #cae09b 0%, #5ea351 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
   }
 }
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
 .fromTable {
   margin-top: -85%;
 }
-
-// 头部样式
-.ocularSurfaceDiseases_head {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    // margin-top: 100px;
-    // margin-left: 35vw;
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 0;
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: normal;
-        font-stretch: normal;
-        letter-spacing: 0px;
-        color: #7DBE9C;
-        z-index: 5;
-        position: relative;
-        font-weight: 700;
-      }
-
-      & > div:nth-child(2) {
-        position: relative;
-        z-index: 5;
-        line-height: 27px;
-        font-family: 'DINCondensed-Bold';
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1;
-        color: #7DBE9C;
-        margin-top: 15px;
-        font-size: 76px;
-        letter-spacing: 0px;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        font-size: 76px;
-        letter-spacing: 0px;
-        -webkit-text-stroke: 1.5px #7DBE9C;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-35%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-105%);
-      }
-      font-family: 'DINCondensed-Bold';
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: 0;
-      left: -5px;
-
-      & > img {
-        position: relative;
-        z-index: 5;
-      }
-
-      & > img:nth-child(1) {
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
 @media screen and (max-width: 768px) {
-  .ocularSurfaceDiseases_head {
-    &>div:nth-child(1) {
-      width: calc(100% - 60px);
-      justify-content: flex-end;
-      align-items: flex-end;
-      display: flex;
-      margin: 150px auto 0;
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 36px;
-          text-align: right;
-        }
-        &>div:nth-child(2) {
-          font-size: 24px;
-          letter-spacing: 0.01em;
-          margin-top: 3px;
-          text-align: right;
-          line-height: 1;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 24px;
-          letter-spacing: 0.01em;
-          -webkit-text-stroke: 1px #7DBE9C;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-60%);
-        }
-      }
-      &>div:nth-child(1)::after {
-        width: 190px;
-        height: 200px;
-        top: 195px;
-      }
-      &>div:nth-child(2) {
-        top: 0;
-        width: 320px;
-        left: -1px;
-        &>img:nth-child(1){
-          margin-bottom: 5px;
-        }
-      }
-    }
-  }
-  .ocularSurfaceDiseases-nav{
+  .ocularSurfaceDiseases-nav {
     margin-top: -100px;
   }
   .ocularSurfaceDiseases_nav {
@@ -2966,7 +3451,7 @@ const bannerData = {
           margin: 35px auto 50px;
           flex-direction: column;
           & > div:nth-child(1) {
-            & >div {
+            & > div {
               margin-bottom: 20px;
               width: 100%;
               font-size: 14px;
@@ -3074,7 +3559,7 @@ const bannerData = {
             margin-top: 20px;
           }
         }
-        & > div:last-child{
+        & > div:last-child {
           margin-top: 50px;
         }
       }
@@ -3101,7 +3586,7 @@ const bannerData = {
         & > div:nth-child(2) {
           margin: 35px 0 0;
           flex-direction: column;
-          & > div{
+          & > div {
             width: 100%;
             margin-bottom: 35px;
             padding-bottom: 60px;
@@ -3155,7 +3640,7 @@ const bannerData = {
           margin-top: 15px;
           line-height: 1.8;
           font-size: 14px;
-          &>div:not(:first-child){
+          & > div:not(:first-child) {
             margin-top: 15px;
           }
         }
@@ -3185,7 +3670,8 @@ const bannerData = {
             line-height: 1.8;
             margin-bottom: 20px;
             padding: 12px 15px;
-            &:nth-of-type(2),&:nth-of-type(3){
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
               width: calc(50% - 10px);
             }
           }
@@ -3203,7 +3689,7 @@ const bannerData = {
             font-size: 13px;
             line-height: 1.8;
             padding: 5px 0 15px;
-            &>div{
+            & > div {
               padding: 10px 0;
             }
             & > div::before {
@@ -3215,10 +3701,10 @@ const bannerData = {
               padding: 15px 0 10px;
             }
           }
-           & > div:nth-child(2) {
-             width: 80%;
-             margin: 0 auto;
-           }
+          & > div:nth-child(2) {
+            width: 80%;
+            margin: 0 auto;
+          }
         }
       }
       & > div:nth-child(3) {
@@ -3229,8 +3715,8 @@ const bannerData = {
           flex-wrap: wrap;
           justify-content: center;
           & > div {
-            width: calc((100vw - 60px)/4 - 10px);
-            height: calc((100vw - 60px)/4 - 10px);
+            width: calc((100vw - 60px) / 4 - 10px);
+            height: calc((100vw - 60px) / 4 - 10px);
             margin: 0 5px 25px;
             background-size: 100% auto;
             background-repeat: no-repeat;
@@ -3269,7 +3755,7 @@ const bannerData = {
           flex-direction: column;
           padding-left: 0;
           margin-top: 0;
-          &>div{
+          & > div {
             width: 100%;
             margin-top: 25px;
             height: auto;
@@ -3280,12 +3766,12 @@ const bannerData = {
             border-radius: 10px;
             position: relative;
             overflow: hidden;
-            &::before{
+            &::before {
               content: '';
               height: 5px;
               width: 100%;
               position: absolute;
-              background: #7DBE9C;
+              background: #7dbe9c;
               top: 0;
               left: 0;
             }
@@ -3307,7 +3793,7 @@ const bannerData = {
           align-items: flex-start;
           margin-top: 25px;
           margin-bottom: 10px;
-          &> div {
+          & > div {
             width: calc(33% - 20px);
             flex-direction: column;
             & > div:nth-child(2) {
@@ -3337,7 +3823,7 @@ const bannerData = {
               padding: 25px 20px 30px 15px;
               font-size: 30px;
               line-height: 1;
-              border-right: solid 2px #7DBE9C;
+              border-right: solid 2px #7dbe9c;
             }
             & > div:nth-child(2) {
               margin-left: 15px;
@@ -3486,7 +3972,7 @@ const bannerData = {
             margin-bottom: 25px;
             & > span {
               font-size: 12px;
-              background: #ACD9C1;
+              background: #acd9c1;
               width: 30px;
               height: 20px;
               display: block;
@@ -3500,13 +3986,13 @@ const bannerData = {
               font-size: 14px;
               line-height: 1.8;
               text-align: left;
-              p{
+              p {
                 display: inline;
               }
             }
           }
           & > div:nth-child(n + 4) {
-             margin-top: 0;
+            margin-top: 0;
           }
         }
       }
@@ -3556,7 +4042,7 @@ const bannerData = {
               align-items: flex-start;
             }
           }
-           & > div:nth-child(3) {
+          & > div:nth-child(3) {
             margin-left: 0;
 
             & > div:nth-child(2) {
@@ -3614,7 +4100,7 @@ const bannerData = {
               margin-top: 15px;
             }
           }
-          &:last-child(){
+          &:last-child() {
             margin-bottom: 0;
           }
         }
@@ -3784,7 +4270,8 @@ const bannerData = {
             height: 90px;
             margin-bottom: 35px;
             line-height: 1.4;
-            &:nth-of-type(1),&:nth-of-type(2){
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
               width: 35%;
             }
           }
@@ -3805,7 +4292,6 @@ const bannerData = {
               margin-bottom: 15px;
               font-size: 18px;
               line-height: 1.6;
-              
             }
             & > div:nth-child(2) {
               font-size: 14px;
@@ -3845,7 +4331,7 @@ const bannerData = {
               font-size: 12px;
               height: auto;
               line-height: 1.8;
-              &>div{
+              & > div {
                 padding: 15px 0;
               }
               & > div:nth-child(1) {
@@ -3857,7 +4343,7 @@ const bannerData = {
               font-size: 12px;
               line-height: 1.8;
               height: auto;
-              &>div{
+              & > div {
                 padding: 15px 0;
               }
               & > div:nth-child(1) {
@@ -3903,28 +4389,28 @@ const bannerData = {
         margin-top: 20px;
       }
     }
-    &.ocularSurfaceDiseasesNav-en{
+    &.ocularSurfaceDiseasesNav-en {
       & > #pterygium {
-        & > div:nth-child(3){
-          & > div:nth-child(3){
+        & > div:nth-child(3) {
+          & > div:nth-child(3) {
             max-width: 100%;
           }
         }
-        & > div:nth-child(4){
-          & > div:nth-child(2){
-            &>div:nth-child(1){
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
               padding: 10% 10px 20% 45%;
             }
-            & > div{
+            & > div {
               font-size: 12px;
               line-height: 1.4;
             }
           }
         }
-        & > div:nth-child(5){
-          & > div:nth-child(2){
-            & > div{
-              & > div:nth-child(2){
+        & > div:nth-child(5) {
+          & > div:nth-child(2) {
+            & > div {
+              & > div:nth-child(2) {
                 font-size: 14px;
                 padding: 25px 15px;
               }
@@ -3933,103 +4419,103 @@ const bannerData = {
         }
       }
       & > #blepharitis {
-        &>div:nth-child(3){
-          &>div:nth-child(2){
-            &>div:nth-child(1){
-              &>div{
-                &>span:nth-child(1){
+        & > div:nth-child(3) {
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > div {
+                & > span:nth-child(1) {
                   min-width: 22px;
                 }
               }
             }
           }
-          &>div:last-child{
+          & > div:last-child {
             max-width: 100%;
           }
         }
       }
-      & > #keratitis{
-        &>div:nth-child(3){
-          &>div:nth-child(3){
-            &>div{
-              &>div:nth-child(2){
+      & > #keratitis {
+        & > div:nth-child(3) {
+          & > div:nth-child(3) {
+            & > div {
+              & > div:nth-child(2) {
                 padding: 0;
               }
             }
           }
         }
       }
-      & > #iritis{
-        &>div:nth-child(2){
-          &>div:nth-child(2){
-            &>div:nth-child(1){
-              &>div{
+      & > #iritis {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > div {
                 padding: 15px 0;
               }
             }
           }
         }
-        &>div:nth-child(3){
-          &>div:nth-child(2){
-            &>div{
+        & > div:nth-child(3) {
+          & > div:nth-child(2) {
+            & > div {
               font-size: 12px;
               line-height: 1.4;
             }
           }
         }
-        &>div:nth-child(5){
-          &>div:nth-child(2){
-            &>div{
+        & > div:nth-child(5) {
+          & > div:nth-child(2) {
+            & > div {
               text-align: center;
             }
           }
         }
       }
-      & > #episcleritis{
-        &>div:nth-child(2){
-          &>div:nth-child(2){
-            &>div{
-              &>div:nth-child(2){
+      & > #episcleritis {
+        & > div:nth-child(2) {
+          & > div:nth-child(2) {
+            & > div {
+              & > div:nth-child(2) {
                 line-height: 1.6;
               }
             }
           }
         }
-        &>div:nth-child(3){
-          &>div:nth-child(2){
-            &>div{
+        & > div:nth-child(3) {
+          & > div:nth-child(2) {
+            & > div {
               padding: 15px 15px 15px 0;
             }
           }
         }
-        &>div:nth-child(4){
-          &>div:nth-child(2){
-            &>div{
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
+            & > div {
               padding-left: 30px;
             }
           }
         }
       }
-      & > #damage{
-        &>div:nth-child(3){
-          &>div:nth-child(1){
+      & > #damage {
+        & > div:nth-child(3) {
+          & > div:nth-child(1) {
             font-size: 20px;
           }
-          &>div:nth-child(2){
-            &>div{
-              &>div{
+          & > div:nth-child(2) {
+            & > div {
+              & > div {
                 font-size: 14px;
               }
             }
           }
         }
-        &>div:nth-child(4){
-          &>div:nth-child(1){
+        & > div:nth-child(4) {
+          & > div:nth-child(1) {
             font-size: 20px;
           }
-          &>div:nth-child(2){
-            &>div:nth-child(1){
-              &>div:nth-child(2){
+          & > div:nth-child(2) {
+            & > div:nth-child(1) {
+              & > div:nth-child(2) {
                 font-size: 14px;
                 padding: 0 10px;
                 line-height: 1.4;
@@ -4037,19 +4523,19 @@ const bannerData = {
             }
           }
         }
-        &>div:nth-child(5){
-          &>div:nth-child(1){
+        & > div:nth-child(5) {
+          & > div:nth-child(1) {
             font-size: 20px;
           }
         }
       }
       & > #keratoconus {
-        &>div:nth-child(4){
-          &>div:nth-child(2){
-            &>div:nth-child(2){
-              &>div:nth-child(1){
-                &>div{
-                  &>span{
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
+              & > div:nth-child(1) {
+                & > div {
+                  & > span {
                     min-width: 25px;
                   }
                 }
@@ -4057,63 +4543,63 @@ const bannerData = {
             }
           }
         }
-        &>div:nth-child(5){
-          &>div:nth-child(1){
+        & > div:nth-child(5) {
+          & > div:nth-child(1) {
             font-size: 20px;
           }
         }
       }
       & > #keratoplasty {
-        &>div:nth-child(4){
-          &>div:nth-child(2){
-            &>div{
-              &::before{
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
+            & > div {
+              &::before {
                 z-index: -1;
               }
             }
           }
         }
-        &>div:nth-child(5){
-          &>div:nth-child(1){
+        & > div:nth-child(5) {
+          & > div:nth-child(1) {
             font-size: 18px;
           }
-          &>div:nth-child(2){
-            &>div:nth-child(3){
-              &>div:nth-child(1){
+          & > div:nth-child(2) {
+            & > div:nth-child(3) {
+              & > div:nth-child(1) {
                 line-height: 1.4;
                 font-size: 12px;
                 text-align: center;
               }
-              &>div:nth-child(2){
-                &>div{
+              & > div:nth-child(2) {
+                & > div {
                   font-size: 12px;
                   padding: 0;
-                  &:nth-child(1){
+                  &:nth-child(1) {
                     font-size: 12px;
                   }
                 }
               }
-              &>div:nth-child(3){
+              & > div:nth-child(3) {
                 font-size: 12px;
-                &>div:nth-child(1){
+                & > div:nth-child(1) {
                   font-size: 12px;
                 }
-                &>div:nth-child(2){
-                  &>div:nth-child(1){
-                    &>div:nth-child(1){
+                & > div:nth-child(2) {
+                  & > div:nth-child(1) {
+                    & > div:nth-child(1) {
                       padding: 0;
                     }
-                    &>div:nth-child(2){
+                    & > div:nth-child(2) {
                       padding: 0;
                     }
                   }
                 }
-                &>div:nth-child(3){
-                  &>div:nth-child(1){
-                    &>div:nth-child(1){
+                & > div:nth-child(3) {
+                  & > div:nth-child(1) {
+                    & > div:nth-child(1) {
                       padding: 0;
                     }
-                    &>div:nth-child(2){
+                    & > div:nth-child(2) {
                       padding: 0;
                     }
                   }
@@ -4128,14 +4614,14 @@ const bannerData = {
   .fromTable {
     margin-top: 0;
   }
-  .ocularSurfaceDiseases_text_p_span{
+  .ocularSurfaceDiseases_text_p_span {
     font-size: 14px;
     line-height: 1.8;
   }
-  .ocularSurfaceDiseases_title{
+  .ocularSurfaceDiseases_title {
     font-size: 24px;
   }
-  .ocularSurfaceDiseases_title_text{
+  .ocularSurfaceDiseases_title_text {
     font-size: 24px;
   }
   .ocularSurfaceDiseases_title_btn {
@@ -4149,19 +4635,10 @@ const bannerData = {
     max-width: 100%;
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
-  .ocularSurfaceDiseases_head {
-    // margin-left: 12vw;
-  }
-
   .ocularSurfaceDiseases_nav {
     margin-bottom: -70%;
   }
-
-  .fromTable {
-    // margin-top: -55%;
-  }
 }
 </style>
+

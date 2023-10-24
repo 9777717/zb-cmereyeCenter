@@ -359,7 +359,6 @@ let drawer = ref(false)
   height: 100%;
   padding-bottom: 100px;
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .footerMenu{
     padding: 35px 0 120px;

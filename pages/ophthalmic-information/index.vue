@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -446,7 +445,6 @@ onMounted(()=>{
       }
 
       & > div:nth-child(2) {
-        // position: absolute;
         right: 0;
         margin-right: 64px;
         margin-top: 39px;

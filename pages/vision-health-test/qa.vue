@@ -81,7 +81,6 @@ const toEyesight = () =>{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   &-header{
     width: 100%;
@@ -133,7 +132,6 @@ const toEyesight = () =>{
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1452px) {}
 @media screen and (max-width: 768px) {
   .qaPage{
     &-header{
@@ -160,7 +158,5 @@ const toEyesight = () =>{
       }
     }
   }
-}
-@media screen and (min-width: 1920px) {
 }
 </style>

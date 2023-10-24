@@ -1,12 +1,9 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
-
 const locale = useState<string>('locale.setting')
-
 // 传递背景色
 const backgd = [
   '#b6b3e0;',
@@ -291,7 +288,6 @@ useHead(() => ({
     },
   ],
 }))
-
 // 内部导航
 const serviceNavigation = [
   {
@@ -352,14 +348,7 @@ const bannerData = {
   <div>
     <PageServiceBanner :bannerData="bannerData" />
     <div class="xeroheader">
-      
       <div>
-        <!-- <div>
-          <div>乾眼症</div>
-          <div>DRY EYE</div>
-          <div>DRY EYE</div>
-          <div>DRY EYE</div>
-        </div> -->
       </div>
       <serviceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
       <!-- 内容 -->
@@ -399,8 +388,6 @@ const bannerData = {
               {{$t('pages.medical_service.xerophthalmia_con.factor.context')}}
             </div>
             <div>
-              <!-- <img src="https://static.cmereye.com/imgs/2023/05/fd5f078c30e85918.png" /> -->
-              <!-- <img src="https://static.cmereye.com/imgs/2023/05/84ab47f3810c1d07.png" /> -->
               <img src="https://hkcmereye.com/template/default/picture/gyz/Group83.jpg" alt="" v-if="locale === 'en'">
               <img src="https://static.cmereye.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg" alt="" v-else>
             </div>
@@ -408,7 +395,6 @@ const bannerData = {
           <div>
             <div v-for="(item, index) in factor" :key="index">
               <div>
-                <!-- <img :src="item.img" :alt="item.title" srcset="" /> -->
                 <img :data-cfsrc="item.img" :srcset="`${item.mbImg} 768w, ${item.img}`" :alt="item.title"
                   :src="item.img" />
               </div>
@@ -603,8 +589,6 @@ const bannerData = {
                   {{$t('pages.medical_service.xerophthalmia_con.means.text7')}}
                 </div>
               </div>
-            
-            
             <!-- 減少淚液流失 -->
             <div>
               <div>
@@ -691,7 +675,6 @@ const bannerData = {
     <div>
       <!-- 右侧边导航 -->
       <div>
-        <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
       </div>
       <!-- 下载 -->
       <div class="dow">
@@ -723,7 +706,6 @@ const bannerData = {
   transform-origin: center top;
 
   &>div:nth-child(1) {
-    // margin-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -753,10 +735,7 @@ const bannerData = {
         color: #525280;
       }
     }
-
     &>div:nth-child(2) {
-      // position: relative;
-
       &>div {
         &>img {
           width: 100%;
@@ -765,7 +744,6 @@ const bannerData = {
           left: 60px;
         }
       }
-
       background: #f2f2f2;
       width: 633px;
       height: 606px;
@@ -833,23 +811,18 @@ const bannerData = {
         margin-top: 145px;
       }
     }
-
     &>div:nth-child(3) {
       margin: auto;
       cursor: pointer;
       margin-top: 118px;
-      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
-
       font-family: 'NotoSansHK-Medium';
       font-size: 32px;
       font-weight: normal;
       font-stretch: normal;
       letter-spacing: 0px;
       color: #ffffff;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -876,10 +849,8 @@ const bannerData = {
       }
     }
   }
-
   &>div:nth-child(3) {
     margin-top: 117px;
-
     &>div:nth-child(1) {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
@@ -890,10 +861,8 @@ const bannerData = {
       letter-spacing: 0px;
       color: #525280;
     }
-
     &>div:nth-child(2) {
       margin-top: 68px;
-
       &>div:nth-child(1) {
         font-family: 'NotoSansHK-Medium';
         font-size: 20px;
@@ -903,7 +872,6 @@ const bannerData = {
         letter-spacing: 0px;
         color: #525280;
       }
-
       &>div:nth-child(2) {
         width: 100%;
         max-width: 1400px;
@@ -924,22 +892,18 @@ const bannerData = {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-
       &>div {
         display: flex;
         position: relative;
-
         &>div:nth-child(1) {
           overflow: hidden;
           box-shadow: 2px 3px 13px 0px rgba(0, 0, 0, 0.15);
           border-radius: 22px;
         }
-
         &>div:nth-child(2) {
           top: 264px;
           padding: 0 34px;
           position: absolute;
-
           &>div:nth-child(1) {
             font-family: 'NotoSansHK-Bold';
             font-size: 30px;
@@ -950,7 +914,6 @@ const bannerData = {
             color: #ae7d1f;
             text-align: center;
           }
-
           &>div:nth-child(2) {
             margin-top: 38px;
             font-family: 'Noto Sans HK';
@@ -963,7 +926,6 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(2) {
         &>div:nth-child(2) {
           &>div:nth-child(1) {
@@ -971,7 +933,6 @@ const bannerData = {
           }
         }
       }
-
       &>div:nth-child(3) {
         &>div:nth-child(2) {
           &>div:nth-child(1) {
@@ -980,10 +941,8 @@ const bannerData = {
         }
       }
     }
-
     &>div:nth-child(4) {
       margin-top: 117px;
-
       &>div:nth-child(1) {
         margin-bottom: 49px;
         font-family: 'NotoSansHK-Medium';
@@ -995,7 +954,6 @@ const bannerData = {
         color: #525280;
         text-align: center;
       }
-
       &>div:nth-child(2) {
         &>div {
           margin-top: 20px;
@@ -1006,7 +964,6 @@ const bannerData = {
           padding-left: 375px;
           display: flex;
           align-items: center;
-
           &>div:nth-child(2) {
             margin-left: 80px;
             font-family: 'Noto Sans HK';
@@ -1016,7 +973,6 @@ const bannerData = {
             line-height: 32px;
             letter-spacing: 0px;
             color: #515151;
-
             &>div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 20px;
@@ -1029,13 +985,11 @@ const bannerData = {
             }
           }
         }
-
         &>div:nth-child(1) {
           &>div:nth-child(2) {
             padding: 26px 0;
           }
         }
-
         &>div:nth-child(2) {
           &>div:nth-child(2) {
             padding: 34px 0;
@@ -1134,14 +1088,11 @@ const bannerData = {
       cursor: pointer;
       margin: auto;
       margin-top: 148px;
-      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-
       font-family: 'NotoSansHK-Medium';
       font-size: 32px;
       font-weight: normal;
@@ -1231,9 +1182,6 @@ const bannerData = {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -1544,8 +1492,6 @@ const bannerData = {
       cursor: pointer;
       margin: auto;
       margin-top: 100px;
-      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -1759,7 +1705,6 @@ const bannerData = {
         transform: perspective(492px) rotateX(350deg);
 
         &>div {
-          // 抵消文字变形
           transform: perspective(180px) rotateX(3deg);
           font-family: 'Noto Sans HK';
           font-size: 22px;
@@ -1770,7 +1715,6 @@ const bannerData = {
           color: #515151;
         }
       }
-
       &>div:nth-child(6)::after {
         position: absolute;
         right: -15px;
@@ -1781,7 +1725,6 @@ const bannerData = {
         bottom: 13px;
         box-shadow: 0px 0px 0px 10px #fff;
       }
-
       &>div:nth-child(6)::before {
         position: absolute;
         content: '';
@@ -1792,7 +1735,6 @@ const bannerData = {
         left: -15px;
         box-shadow: 0px 0px 0px 10px #fff;
       }
-
       // 使用人工淚液
       &>div:nth-child(7) {
         margin-top: 138px;
@@ -1961,8 +1903,6 @@ const bannerData = {
       cursor: pointer;
       margin: auto;
       margin-top: 120px;
-      // background-image: linear-gradient(90deg, #b5b2db 0%, #ccc9f0 100%),
-      //   linear-gradient(90deg, #ff6838 0%, #ffae35 100%);
       background-blend-mode: normal, normal;
       border-radius: 14px;
 
@@ -2011,7 +1951,6 @@ const bannerData = {
       }
     }
   }
-
   // 預防乾眼症
   &>div:nth-child(8) {
     margin-top: 180px;
@@ -2083,7 +2022,6 @@ const bannerData = {
       }
     }
   }
-
   //接手了一堆爛代碼
   &.xerophthalmia-en{
     &>div:nth-child(2) {
@@ -2149,19 +2087,15 @@ const bannerData = {
     }
   }
 }
-
-
 .xeroheader {
   &>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
-    // margin-left: 55vw;
     margin: 0 auto 0;
     max-width: 1080px;
     width: 100%;
     &>div:nth-child(1) {
-      
       &>div:nth-child(1) {
         font-family: 'NotoSansCJKtc-Bold';
         font-size: 119px;
@@ -2173,14 +2107,12 @@ const bannerData = {
         position: sticky;
         text-align: right;
       }
-
       &>div:nth-child(2) {
         position: relative;
         z-index: 5;
         font-family: 'DINCondensed-Bold';
         text-align: right;
       }
-
       &>div:nth-child(3),
       &>div:nth-child(4) {
         -webkit-text-stroke: 1.5px #a9a6d2;
@@ -2192,12 +2124,10 @@ const bannerData = {
         transform: translateY(-45%);
         text-align: right;
       }
-
       &>div:nth-child(4) {
         clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
         transform: translateY(-115%);
       }
-
       font-size: 131px;
       font-weight: normal;
       font-stretch: normal;
@@ -2207,7 +2137,6 @@ const bannerData = {
       color: #a9a6d2;
       margin-left: -0.6vw;
     }
-
     &>div:nth-child(1)::after {
       content: '';
       background: #f2f2f2;
@@ -2217,7 +2146,6 @@ const bannerData = {
       top: 211px;
       right: 0;
     }
-
     &>div:nth-child(2) {
       position: relative;
       top: -20px;
@@ -3041,12 +2969,10 @@ const bannerData = {
               margin-top: 15px;
             }
           }
-
           &>div:nth-child(2) {
             margin-top: 30px;
           }
         }
-
         &>div:nth-child(8) {
           width: 100%;
           margin-top: 40px;
@@ -3054,29 +2980,23 @@ const bannerData = {
           background: url(https://static.cmereye.com/imgs/2023/07/7de6d60faf433c9a.png);
           transform: scale(1);
           background-size: 100% 100%;
-
           &>div {
             margin-bottom: 10px;
-
             &>div:nth-child(1) {
               font-size: 16px;
             }
-
             &>div:nth-child(2) {
               font-size: 12px;
               line-height: 2;
             }
           }
         }
-
         &>div:nth-child(9) {
           margin-top: 50px;
-
           &>div {
             &>div:nth-child(1) {
               font-size: 22px;
             }
-
             &>div:nth-child(2) {
               font-size: 14px;
               line-height: 2;
@@ -3085,12 +3005,10 @@ const bannerData = {
             }
           }
         }
-
         &>div:nth-child(10) {
           &>div:nth-child(1) {
             font-size: 22px;
           }
-
           &>div:nth-child(2) {
             width: 100%;
             padding: 0;
@@ -3300,14 +3218,8 @@ min-width: 15px;
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .xerophthalmia {
-    // margin: auto;
-    // margin-top: -37.3%;
-  }
-
   .dow {
     margin-top: -30%;
-
     &>div:nth-child(1) {
       &>div {
         &>div:nth-child(1) {

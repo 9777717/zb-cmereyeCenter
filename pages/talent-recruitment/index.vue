@@ -108,8 +108,6 @@ useHead(() => ({
 .careers {
   width: 100%;
   margin-bottom: 50px;
-  // max-width: 1884px;
-
   & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -130,9 +128,6 @@ useHead(() => ({
       position: relative;
       & > img {
         width: 100%;
-        // padding-left: 160px;
-        // padding-top: 50px;
-        // background: #f7fcff;
       }
     }
 

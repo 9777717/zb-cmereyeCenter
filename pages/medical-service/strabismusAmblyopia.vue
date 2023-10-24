@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { getPdf } from '@/assets/js/common'
-// compiler macro
 definePageMeta({
   layout: 'page',
 })
@@ -234,22 +233,10 @@ const bannerData = {
 
 <template>
   <div class="strabismusAmblyopia">
-    <!-- 头部 -->
     <PageServiceBanner :bannerData="bannerData" />
-    <!-- <div class="strabismusAmblyopia_head">
-      <div>
-        <div>
-          <div>兒童斜弱視</div>
-          <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
-          <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
-          <div>AMBLYOPIA AND STRABISMUS IN CHILDREN</div>
-        </div>
-      </div>
-    </div> -->
     <div class="strabismusAmblyopia-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
     </div>
-    <!-- 这些样式层级套的好啊！！！ -->
     <div class="strabismusAmblyopia_nav" :class="{'strabismusAmblyopiaNav-en': locale === 'en'}">
       <div id="strabismus">
         <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.name')}}</div>
@@ -413,7 +400,6 @@ const bannerData = {
       </div>
     </div>
     <div>
-      <!-- <rightSidesNavigation :service-navigation="serviceNavigation" /> -->
     </div>
     <!-- 下载 -->
     <div class="dow">
@@ -642,10 +628,8 @@ const bannerData = {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-
       & > div {
         width: calc(50% - 30px);
-        // min-height: 681px;
         background-color: #ffffff;
         box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
@@ -670,12 +654,9 @@ const bannerData = {
           letter-spacing: 0px;
           color: #fefeff;
         }
-
         & > div:nth-child(2) {
           padding: 45px 45px 0 45px;
-
           & > div:nth-child(1) {
-            // width: 530px;
             width: 100%;
             min-height: 209px;
             border-radius: 10px;
@@ -688,7 +669,6 @@ const bannerData = {
               width: 100%;
             }
           }
-
           & > div:nth-child(2) {
             line-height: 46px;
           }
@@ -708,14 +688,12 @@ const bannerData = {
   & > #amblyopia {
     margin-top: 160px;
     margin-bottom: 140px;
-
     & > div:nth-child(2) {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-top: 130px;
       margin-bottom: 160px;
-
       & > div:nth-child(1) {
         width: 574px;
 
@@ -742,10 +720,8 @@ const bannerData = {
           justify-content: space-between;
           border-bottom: dashed 2px #fbbfa1;
           padding: 61px 36px;
-
           & > div:nth-child(2) {
             width: 600px;
-
             & > div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 34px;
@@ -753,7 +729,6 @@ const bannerData = {
               font-stretch: normal;
               letter-spacing: 0px;
               color: #fff;
-
               display: flex;
               justify-content: center;
               align-items: center;
@@ -780,7 +755,6 @@ const bannerData = {
             }
           }
         }
-
         & > div:nth-child(3),
         & > div:nth-child(4) {
           & > div:nth-child(2) {
@@ -790,11 +764,9 @@ const bannerData = {
             }
           }
         }
-
         & > div:nth-child(even) {
           flex-direction: row;
         }
-
         & > div:last-child {
           border: none;
         }
@@ -804,17 +776,14 @@ const bannerData = {
 
   & > #treat {
     margin: 140px auto;
-
     & > div:nth-child(2) {
       background: url('https://static.cmereye.com/imgs/2023/06/91df227071dfbf87.png');
       width: 1319px;
       height: 389px;
       padding: 115px 100px;
       margin: 120px auto 60px;
-
       line-height: 36px;
       color: #d37f66;
-
       & > p {
         margin-bottom: 30px;
       }
@@ -1011,10 +980,7 @@ const bannerData = {
   width: 580px;
   height: 140px;
   border-radius: 20px;
-  // background-image: linear-gradient(-90deg, #fbbfa1 0%, #ffd6c1 100%),
-  //   linear-gradient(#eda2a6, #eda2a6);
   background-blend-mode: normal, normal;
-
   font-family: 'Noto Sans HK';
   font-size: 32px;
   font-weight: normal;
@@ -1038,96 +1004,6 @@ const bannerData = {
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
-  }
-}
-
-// 头部样式
-.strabismusAmblyopia_head {
-  & > div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    // margin-top: 100px;
-    // margin-left: 33vw;
-    width: 100%;
-    max-width: 1080px;
-    margin: 100px auto 0;
-
-    & > div:nth-child(1) {
-      & > div:nth-child(1) {
-        font-family: 'NotoSansCJKtc-Bold';
-        font-size: 119px;
-        font-weight: normal;
-        font-stretch: normal;
-        letter-spacing: 0px;
-        color: #fbbfa1;
-        z-index: 5;
-        position: relative;
-        font-weight: bold;
-      }
-
-      & > div:nth-child(2) {
-        position: relative;
-        z-index: 5;
-        font-family: 'DINCondensed-Bold';
-        font-size: 76px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: 0.003em;
-        color: #fbbfa1;
-        margin-top: 15px;
-      }
-      & > div:nth-child(3),& > div:nth-child(4) {
-        font-family: 'DINCondensed-Bold';
-        display: block;
-        position: relative;
-        z-index: 5;
-        font-size: 76px;
-        letter-spacing: 0.003em;
-        -webkit-text-stroke: 1.5px #fbbfa1;
-        color: transparent;
-        clip-path: polygon(0 30%, 100% 30%, 100% 100% ,0 100%);
-        transform: translateY(-35%);
-      }
-      & > div:nth-child(4){
-        clip-path: polygon(0 55%, 100% 55%, 100% 100% ,0 100%);
-        transform: translateY(-105%);
-      }
-      font-family: 'DINCondensed-Bold';
-      font-size: 131px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 1.2;
-      text-align: right;
-      letter-spacing: 3px;
-      color: #9cc4e2;
-    }
-
-    & > div:nth-child(1)::after {
-      content: '';
-      background: #f2f2f2;
-      width: 40vw;
-      height: 300px;
-      position: absolute;
-      top: 211px;
-      right: 0;
-    }
-
-    & > div:nth-child(2) {
-      position: relative;
-      top: 0;
-      left: -5px;
-
-      & > img {
-        position: relative;
-        z-index: 5;
-      }
-
-      & > img:nth-child(1) {
-        margin-bottom: 10px;
-      }
-    }
   }
 }
 
@@ -1170,52 +1046,6 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .strabismusAmblyopia-nav{
     margin-top: -100px;
-  }
-  .strabismusAmblyopia_head {
-    &>div:nth-child(1) {
-      width: calc(100% - 60px);
-      justify-content: flex-end;
-      align-items: flex-end;
-      display: flex;
-      margin: 150px auto 0;
-      &>div:nth-child(1) {
-        &>div:nth-child(1) {
-          font-size: 36px;
-          text-align: right;
-        }
-        &>div:nth-child(2) {
-          font-size: 24px;
-          letter-spacing: 0.01em;
-          margin-top: 5px;
-          text-align: right;
-          line-height: 1;
-        }
-        & > div:nth-child(3),& > div:nth-child(4) {
-          font-size: 24px;
-          letter-spacing: 0.01em;
-          -webkit-text-stroke: 1px #fbbfa1;
-          clip-path: polygon(0 0, 100% 0, 100% 50% ,0 50%);
-          transform: translateY(-15%);
-        }
-        & > div:nth-child(4) {
-          clip-path: polygon(0 0, 100% 0, 100% 40% ,0 40%);
-          transform: translateY(-60%);
-        }
-      }
-      &>div:nth-child(1)::after {
-        width: 190px;
-        height: 200px;
-        top: 195px;
-      }
-      &>div:nth-child(2) {
-        top: 0;
-        width: 325px;
-        left: -1px;
-        &>img:nth-child(1){
-          margin-bottom: 5px;
-        }
-      }
-    }
   }
   .strabismusAmblyopia_nav {
     transform: scale(1);
@@ -1328,12 +1158,6 @@ const bannerData = {
           & > div {
             width: calc(50% - 30px);
             margin-bottom: 40px;
-            &> div:nth-child(1) {
-              img{
-                border-radius: 50%;
-                // box-shadow: -2px 2px 3px 3px #ccc;
-              }
-            }
             & > div:nth-child(2) {
               margin-top: 15px;
               p{
@@ -1648,20 +1472,15 @@ const bannerData = {
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {
-
   .strabismusAmblyopia_nav {
-    // margin-top: -20%;
-
     & > #cure {
       & > div:nth-child(2) {
         & > div {
           width: 575px;
-
           & > div:nth-child(2) {
             & > div:nth-child(1) {
               width: 480px;
             }
-
             & > div:nth-child(2) {
               line-height: 46px;
               font-size: 22px;
@@ -1671,7 +1490,6 @@ const bannerData = {
         }
       }
     }
-
     & > #treat {
       & > div:nth-child(2) {
         background-size: 100%;
@@ -1680,17 +1498,14 @@ const bannerData = {
       }
     }
   }
-
   #bg_strabismusAmblyopia_nav {
     margin-top: -25%;
   }
-
   .dow {
     margin-top: 150px;
     margin-bottom: 233px;
     color: #fff;
     font-size: 30px;
-
     & > div:nth-child(1) {
       & > div {
         & > div:nth-child(1) {

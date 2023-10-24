@@ -273,13 +273,10 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
-
-
 let windowWidth = ref(1920)
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
-
 onMounted(()=>{
   getWindowWidth()
   window.addEventListener('resize',getWindowWidth)
