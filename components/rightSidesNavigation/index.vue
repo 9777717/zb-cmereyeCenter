@@ -84,7 +84,6 @@ const props = defineProps({
 }
 
 .anchor {
-  // top: 100px;
   bottom: 600px;
 
   a {
@@ -163,9 +162,6 @@ const props = defineProps({
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
-  .anchor_top {
-    // top: 100px;
-  }
   .seat {
     right: 12%;
   }
