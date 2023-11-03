@@ -33,6 +33,10 @@ const historyList = ref([
   {
     year: 'pages.about_us.course_year.year_21',
     contentList: [
+      // {
+      //   month: 'pages.about_us.course_year.child_21.child21_month_4',
+      //   info: 'pages.about_us.course_year.child_22.child22_info_3_2',
+      // },
       {
         month: 'pages.about_us.course_year.child_21.child21_month_1',
         info: 'pages.about_us.course_year.child_21.child21_info_1',
