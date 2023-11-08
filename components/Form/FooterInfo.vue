@@ -82,7 +82,7 @@ const postData = async () => {
 訊息：${ruleForm.desc}
 來源：${location.href}`
   let _data = 'message=' + encodeURIComponent(_message);
-  const {data}:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
+  let { data }:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
     method: 'post',
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
@@ -111,7 +111,7 @@ const commitToCms = async () =>{
   _formData.append('ly',location.href)
   _formData.append('dz',ruleForm.type.join('，'))
   _formData.append('paramsNoCheck','1')
-  const { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addmsg',{
+  let { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addmsg',{
     method: 'post',
     body: _formData
   });

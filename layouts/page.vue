@@ -8,7 +8,8 @@ const rt = ref(route)
     <div>
       <slot name="header">
         <PageNavbar :rt="rt.name" />
-        <PageHeader :rt="rt.name" />
+        <!-- <PageHeader :rt="rt.name" /> -->
+        <PageNewheader :rt="rt.name" />
       </slot>
       <div>
         <slot />

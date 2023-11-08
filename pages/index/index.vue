@@ -81,7 +81,7 @@ const toLink = (a:string) => {
     <div>
       <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
         <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
-        src="https://static.cmereye.com/static/loffee/video/OPD.mp4">
+        src="https://static.cmereye.com/static/loffee/video/OPD.mp4" poster="https://static.cmereye.com/imgs/2023/11/e2a2830de8785725.jpg">
          </video>
       </div>
       <div class="mbHomeSwiper" :style="{
@@ -166,7 +166,7 @@ const toLink = (a:string) => {
     <div class="home-bottom">
       <PageFooterMenu />
     </div>
-    
+
   </div>
 </template>
 <style lang="scss" scoped>
