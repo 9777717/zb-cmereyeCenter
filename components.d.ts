@@ -7,13 +7,6 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    'Icon:ic:baselineArrowRightAlt': typeof import('~icons/ic/baseline-arrow-right-alt')['default']
-    'IconBi:exclamationCircleFill': typeof import('~icons/bi/exclamation-circle-fill')['default']
-    'IconClarity:timesCircleSolid': typeof import('~icons/clarity/times-circle-solid')['default']
-    'IconClarity:timesLine': typeof import('~icons/clarity/times-line')['default']
-    'IconIc:baselineContentCopy': typeof import('~icons/ic/baseline-content-copy')['default']
-    'IconMdi:checkCircle': typeof import('~icons/mdi/check-circle')['default']
-    'IconMdi:githubFace': typeof import('~icons/mdi/github-face')['default']
     'IconUil:clock': typeof import('~icons/uil/clock')['default']
     'IconUil:laptop': typeof import('~icons/uil/laptop')['default']
     'IconUil:moon': typeof import('~icons/uil/moon')['default']
