@@ -143,23 +143,23 @@ html.dark {
 }
 
 :deep(.el-menu) {
-  background-color: #f2f2f2;
-  border-right: none;
+  background-color: #f2f2f2 !important;
+  border-right: none !important;
 }
 :deep(.el-sub-menu) {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc !important;
 }
 :deep(.el-menu > section > .el-menu-item) {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc !important;
 }
 :deep(.el-menu-item) {
-  color: #2958a3;
-  font-size: 16px;
+  color: #2958a3 !important;
+  font-size: 16px !important;
   padding: 0 20px !important;
 }
 :deep(.el-sub-menu__title) {
-  color: #2958a3;
-  font-size: 16px;
+  color: #2958a3 !important;
+  font-size: 16px !important;
 }
 .imgLists {
   display: flex;
