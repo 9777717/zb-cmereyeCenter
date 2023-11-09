@@ -3,6 +3,16 @@ import { useRoute } from 'vue-router'
 import { availableLocales } from '~/utils/lang'
 const route = useRoute()
 const { t } = useLang()
+
+useHead({
+  script: [
+    {
+      src: 'https://cdn.userway.org/widget.js',
+      'data-account': 'eSwu5OqOdn',
+    },
+  ],
+})
+
 const locale = useState<string>('locale.setting')
 
 const menus = computed(() => {
@@ -295,14 +305,6 @@ const serciceLists = [
   'medical-service-atropine',
 ]
 
-useHead({
-  script: [
-    {
-      src: 'https://cdn.userway.org/widget.js',
-      'data-account': 'eSwu5OqOdn',
-    },
-  ],
-})
 watch(menuBool, (o, n) => {
   var a: any = document.getElementById('userwayAccessibilityIcon') || {
     style: { display: 'none' },
@@ -481,26 +483,24 @@ const changeLang = (_lang: any) => {
     </div>
   </div>
 </template>
-<style>
-@media screen and (max-width: 768px) {
-  body .uwy.userway_p3 .uai {
-    bottom: 165px !important;
-    display: none;
-  }
-  body .uwy .uai {
-    width: 54px !important;
-    max-width: 54px !important;
-    height: 54px !important;
-    max-height: 54px !important;
-  }
-  .uwy .uai img:not(.check_on),
-  body .uwy .uai img:not(.check_on) {
-    width: 54px !important;
-    height: 54px !important;
-  }
-}
-</style>
-<style lang="scss" scoped>
+<style lang="scss">
+// @media screen and (max-width: 768px) {
+//   body .uwy.userway_p3 .uai {
+//     bottom: 165px !important;
+//     display: none;
+//   }
+//   body .uwy .uai {
+//     width: 54px !important;
+//     max-width: 54px !important;
+//     height: 54px !important;
+//     max-height: 54px !important;
+//   }
+//   .uwy .uai img:not(.check_on),
+//   body .uwy .uai img:not(.check_on) {
+//     width: 54px !important;
+//     height: 54px !important;
+//   }
+// }
 .ddd-enter,
 .ddd-leave-to {
   opacity: 0;
@@ -572,24 +572,43 @@ const changeLang = (_lang: any) => {
     }
   }
 }
+// :deep(.el-menu) {
+//   background-color: #f2f2f2;
+//   border-right: none;
+// }
+// :deep(.el-sub-menu) {
+//   border-bottom: 1px solid #dcdcdc;
+// }
+// :deep(.el-menu > section > .el-menu-item) {
+//   border-bottom: 1px solid #dcdcdc;
+// }
+// :deep(.el-menu-item) {
+//   color: #2958a3;
+//   font-size: 16px;
+//   padding: 0 20px !important;
+// }
+// :deep(.el-sub-menu__title) {
+//   color: #2958a3;
+//   font-size: 16px;
+// }
 :deep(.el-menu) {
-  background-color: #f2f2f2;
-  border-right: none;
+  background-color: #f2f2f2 !important;
+  border-right: none !important;
 }
 :deep(.el-sub-menu) {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc !important;
 }
 :deep(.el-menu > section > .el-menu-item) {
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc !important;
 }
 :deep(.el-menu-item) {
-  color: #2958a3;
-  font-size: 16px;
+  color: #2958a3 !important;
+  font-size: 16px !important;
   padding: 0 20px !important;
 }
 :deep(.el-sub-menu__title) {
-  color: #2958a3;
-  font-size: 16px;
+  color: #2958a3 !important;
+  font-size: 16px !important;
 }
 .imgLists {
   display: flex;

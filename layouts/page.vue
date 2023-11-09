@@ -8,7 +8,8 @@ const rt = ref(route)
     <div>
       <slot name="header">
         <PageNavbar :rt="rt.name" />
-        <PageHeader :rt="rt.name" />
+        <!-- <PageHeader :rt="rt.name" /> -->
+        <PageNewheader />
       </slot>
       <div>
         <slot />
@@ -33,6 +34,9 @@ const rt = ref(route)
 .mbHeader{
   display: none;
 }
+.headerMbcc{
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .headerTem{
@@ -45,6 +49,9 @@ const rt = ref(route)
     display: none;
   }
   .mbHeader{
+    display: block;
+  }
+  .headerMbcc{
     display: block;
   }
 }
