@@ -164,6 +164,11 @@ defineProps({
     default: false
   }
 })
+
+const disabledDate = (time: Date) => {
+  console.log(time.getTime(),Date.now())
+  return time.getTime()+24*60*60*1000 < Date.now()
+}
 </script>
 
 <template>
@@ -217,6 +222,7 @@ defineProps({
               value-format="YYYY-MM-DD"
               :placeholder="$t('components.footerInfo.placeholder4')"
               :size="'large'"
+              :disabled-date="disabledDate"
             />
           </el-form-item>
           <el-form-item prop="type" :label="$t('components.footerInfo.label1')">
