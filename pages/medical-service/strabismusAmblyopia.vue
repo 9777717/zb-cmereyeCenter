@@ -992,7 +992,8 @@ const bannerData = {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  text-shadow: 0 2px 5px #ffd6c1;
+  // text-shadow: 0 2px 5px #ffd6c1;
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
   &::before {
     content: "";
     position: absolute;
@@ -1000,7 +1001,7 @@ const bannerData = {
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #fdf6b7 0%, #f3a6b8 100%);
+    background: linear-gradient(45deg,  #ACD9C2 0%, #2BBBEC 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;

@@ -978,7 +978,8 @@ const bannerData = {
           overflow: hidden;
           -webkit-backface-visibility: hidden;
           -webkit-transform: translate3d(0, 0, 0);
-          text-shadow: 0 2px 5px #2ca3de;
+          // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+          text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
           &::before {
             content: "";
             position: absolute;
@@ -986,7 +987,7 @@ const bannerData = {
             left: -100%;
             bottom: -100%;
             right: -100%;
-            background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
+            background: linear-gradient(45deg, #FBE679 0%, #F5C781 100%);
             background-size: 100% 100%;
             animation: bgposition 5s infinite linear alternate;
             z-index: -1;
@@ -1050,7 +1051,7 @@ const bannerData = {
       overflow: hidden;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px #2ca3de;
+      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
       &::before {
         content: "";
         position: absolute;
@@ -1058,7 +1059,7 @@ const bannerData = {
         left: -100%;
         bottom: -100%;
         right: -100%;
-        background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
+        background: linear-gradient(45deg, #FBE679 0%, #F5C781 100%);
         background-size: 100% 100%;
         animation: bgposition 5s infinite linear alternate;
         z-index: -1;
@@ -1306,7 +1307,7 @@ const bannerData = {
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
+          background: linear-gradient(45deg, #FBE679 0%, #F5C781 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
@@ -1510,7 +1511,7 @@ const bannerData = {
       overflow: hidden;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px #2ca3de;
+      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
       &::before {
         content: "";
         position: absolute;
@@ -1518,7 +1519,7 @@ const bannerData = {
         left: -100%;
         bottom: -100%;
         right: -100%;
-        background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
+        background: linear-gradient(45deg, #FBE679 0%, #F5C781 100%);
         background-size: 100% 100%;
         animation: bgposition 5s infinite linear alternate;
         z-index: -1;
@@ -1794,7 +1795,7 @@ const bannerData = {
       overflow: hidden;
       -webkit-backface-visibility: hidden;
       -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px #2ca3de;
+      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
       &::before {
         content: "";
         position: absolute;
@@ -1805,7 +1806,7 @@ const bannerData = {
         left: -100%;
         bottom: -100%;
         right: -100%;
-        background: linear-gradient(45deg,  #edf6ec 0%, #2ca3de 100%);
+        background: linear-gradient(45deg, #FBE679 0%, #F5C781 100%);
         background-size: 100% 100%;
         animation: bgposition 5s infinite linear alternate;
         z-index: -1;

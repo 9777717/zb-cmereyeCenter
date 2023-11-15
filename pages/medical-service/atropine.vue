@@ -655,7 +655,7 @@ const bannerData = {
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
@@ -761,7 +761,7 @@ const bannerData = {
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
@@ -911,7 +911,7 @@ const bannerData = {
         letter-spacing: 0px;
         color: #ffffff;
         margin: 0 auto;
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
         position: relative;
         overflow: hidden;
         -webkit-backface-visibility: hidden;
@@ -923,7 +923,7 @@ const bannerData = {
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #88b8e3 0%, #e0f1ed 100%);
+          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
