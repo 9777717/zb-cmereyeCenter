@@ -45,25 +45,33 @@ const menuLists = computed(()=>[
         icon: '',
         link: '/medical-service/cataract',
       },{
-        name: t('pages.medical_service.glaucoma'),
+        name: t('pages.medical_service.maculopathy'),
         icon: '',
-        link: '/medical-service/glaucoma'
-      },{
-        name: t('pages.medical_service.xerophthalmia'),
-        icon: '',
-        link: '/medical-service/xerophthalmia'
+        link: '/medical-service/maculopathy'
       },{
         name: t('pages.medical_service.muscae_volitantes'),
         icon: '',
         link: '/medical-service/muscaeVolitantes'
       },{
+        name: t('pages.medical_service.amotioRetinae'),
+        icon: '',
+        link: '/medical-service/amotioRetinae'
+      },{
+        name: t('pages.medical_service.glaucoma'),
+        icon: '',
+        link: '/medical-service/glaucoma'
+      },{
         name: t('pages.medical_service.conjunctivitis'),
         icon: '',
         link: '/medical-service/conjunctivitis'
       },{
-        name: t('pages.medical_service.maculopathy'),
+        name: t('pages.medical_service.xerophthalmia'),
         icon: '',
-        link: '/medical-service/maculopathy'
+        link: '/medical-service/xerophthalmia'
+      },{
+        name: t('pages.medical_service.ocularSurfaceDiseases'),
+        icon: '',
+        link: '/medical-service/ocularSurfaceDiseases'
       },{
         name: t('pages.medical_service.strabismusAmblyopia'),
         icon: '',
@@ -72,14 +80,6 @@ const menuLists = computed(()=>[
         name: t('pages.medical_service.atropine'),
         icon: '',
         link: '/medical-service/atropine'
-      },{
-        name: t('pages.medical_service.ocularSurfaceDiseases'),
-        icon: '',
-        link: '/medical-service/ocularSurfaceDiseases'
-      },{
-        name: t('pages.medical_service.amotioRetinae'),
-        icon: '',
-        link: '/medical-service/amotioRetinae'
       },{
         name: t('pages.medical_service.eyeOrthopaedicDisease'),
         icon: '',

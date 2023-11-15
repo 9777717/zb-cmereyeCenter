@@ -166,7 +166,7 @@ defineProps({
 })
 
 const disabledDate = (time: Date) => {
-  console.log(time.getTime(),Date.now())
+  // console.log(time.getTime(),Date.now())
   return time.getTime()+24*60*60*1000 < Date.now()
 }
 </script>

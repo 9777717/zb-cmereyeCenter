@@ -71,28 +71,23 @@ let menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: t('pages.medical_service.muscae_volitantes'),
-        route: { name: 'medical-service-muscaeVolitantes' },
-      },
-      {
-        type: 'link',
         text: t('pages.medical_service.maculopathy'),
         route: { name: 'medical-service-maculopathy' },
       },
       {
         type: 'link',
+        text: t('pages.medical_service.muscae_volitantes'),
+        route: { name: 'medical-service-muscaeVolitantes' },
+      },
+      {
+        type: 'link', // 視網膜脫落
+        text: t('pages.medical_service.amotioRetinae'),
+        route: { name: 'medical-service-amotioRetinae' },
+      },
+      {
+        type: 'link',
         text: t('pages.medical_service.glaucoma'),
         route: { name: 'medical-service-glaucoma' },
-      },
-      {
-        type: 'link', // 阿托品滴眼液
-        text: t('pages.medical_service.atropine'),
-        route: { name: 'medical-service-atropine' },
-      },
-      {
-        type: 'link', // 兒童斜弱視
-        text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name: 'medical-service-strabismusAmblyopia' },
       },
       {
         type: 'link',
@@ -105,24 +100,29 @@ let menus = computed((): IMenuItem[] => [
         route: { name: 'medical-service-xerophthalmia' },
       },
       {
-        type: 'link', // 醫學驗光配鏡
-        text: t('pages.medical_service.medicalOptometry'),
-        route: { name: 'medical-service-medicalOptometry' },
-      },
-      {
-        type: 'link', // 視網膜脫落
-        text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
-      },
-      {
         type: 'link', // 眼表及角膜疾病
         text: t('pages.medical_service.ocularSurfaceDiseases'),
         route: { name: 'medical-service-ocularSurfaceDiseases' },
       },
       {
+        type: 'link', // 兒童斜弱視
+        text: t('pages.medical_service.strabismusAmblyopia'),
+        route: { name: 'medical-service-strabismusAmblyopia' },
+      },
+      {
+        type: 'link', // 阿托品滴眼液
+        text: t('pages.medical_service.atropine'),
+        route: { name: 'medical-service-atropine' },
+      },
+      {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
         route: { name: 'medical-service-eyeOrthopaedicDisease' },
+      },
+      {
+        type: 'link', // 醫學驗光配鏡
+        text: t('pages.medical_service.medicalOptometry'),
+        route: { name: 'medical-service-medicalOptometry' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病

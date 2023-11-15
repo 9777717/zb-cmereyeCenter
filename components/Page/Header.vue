@@ -78,18 +78,23 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-          text: t('pages.medical_service.glaucoma'),
-          link: { path: '/medical-service/glaucoma' },
-        },
-        {
-          type: 'link',
-          text: t('pages.medical_service.xerophthalmia'),
-          link: { path: '/medical-service/xerophthalmia' },
+          text: t('pages.medical_service.maculopathy'),
+          link: { path: '/medical-service/maculopathy' },
         },
         {
           type: 'link',
           text: t('pages.medical_service.muscae_volitantes'),
           link: { path: '/medical-service/muscaeVolitantes' },
+        },
+        {
+          type: 'link', // 視網膜脫落
+          text: t('pages.medical_service.amotioRetinae'),
+          link: { path: '/medical-service/amotioRetinae' },
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.glaucoma'),
+          link: { path: '/medical-service/glaucoma' },
         },
         {
           type: 'link',
@@ -98,8 +103,13 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-          text: t('pages.medical_service.maculopathy'),
-          link: { path: '/medical-service/maculopathy' },
+          text: t('pages.medical_service.xerophthalmia'),
+          link: { path: '/medical-service/xerophthalmia' },
+        },
+        {
+          type: 'link', // 眼表及角膜疾病
+          text: t('pages.medical_service.ocularSurfaceDiseases'),
+          link: { path: '/medical-service/ocularSurfaceDiseases' },
         },
         {
           type: 'link', // 兒童斜弱視
@@ -107,14 +117,9 @@ const menus = computed(() => {
           link: { path: '/medical-service/strabismusAmblyopia' },
         },
         {
-          type: 'link', // 視網膜脫落
-          text: t('pages.medical_service.amotioRetinae'),
-          link: { path: '/medical-service/amotioRetinae' },
-        },
-        {
-          type: 'link', // 眼表及角膜疾病
-          text: t('pages.medical_service.ocularSurfaceDiseases'),
-          link: { path: '/medical-service/ocularSurfaceDiseases' },
+          type: 'link', // 阿托品滴眼液
+          text: t('pages.medical_service.atropine'),
+          link: { path: '/medical-service/atropine' },
         },
         {
           type: 'link', // 眼矯形及眼眶疾病
@@ -125,11 +130,6 @@ const menus = computed(() => {
           type: 'link', // 醫學驗光配鏡
           text: t('pages.medical_service.medicalOptometry'),
           link: { path: '/medical-service/medicalOptometry' },
-        },
-        {
-          type: 'link', // 阿托品滴眼液
-          text: t('pages.medical_service.atropine'),
-          link: { path: '/medical-service/atropine' },
         },
         {
           type: 'toPage',
