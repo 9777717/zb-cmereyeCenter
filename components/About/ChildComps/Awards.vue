@@ -3,7 +3,7 @@ import { Autoplay } from 'swiper'
 const awardsList = [
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/2023/11/c831688457dfdfd2.jpg',
+      'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_14',
     link: 'https://www.commchest.org/tc/news/press-release/detail/1057'
