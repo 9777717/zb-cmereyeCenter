@@ -136,15 +136,6 @@ defineProps({
       }
     }
   }
-  &-svg{
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    // opacity: 0;
-    transition: all .3s;
-    animation: iconNima 1s infinite linear alternate;
-  }
-  
 }
 @keyframes iconAnim{
   0%{
@@ -176,19 +167,27 @@ defineProps({
 @media screen and (max-width: 768px) {
   .service-button{
     &-in{
+      filter: drop-shadow(0 3px 0 #fff)
+            drop-shadow(3px 0 0 #fff)
+            drop-shadow(0 -3px 0 #fff)
+            drop-shadow(-3px 0 0 #fff)
+            drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
+      &-icon{
+        padding: 25px 20px 15px;
+        transform: scale(.8);
+      }
       &-text{
-        padding: 0 25px;
-        border: 3px solid #FFF;
+        padding: 0 20px;
+        &.inText_2{
+          border-radius: 0 50px 50px 0;
+          margin-left: -30px;
+        }
         span{
-          font-size: 24px;
+          font-size: 20px;
           line-height: 120%;
           padding: 10px 0;
         }
       }
-    }
-    &-svg{
-      transform-origin: center center;
-      transform: scale(.6);
     }
   }
 }

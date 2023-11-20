@@ -79,7 +79,7 @@ defineProps({
   display: inline-block;
   position: relative;
   &-in{
-    // filter: drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
+    filter: drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
     overflow: hidden;
     border-radius: 50px;
     -webkit-backface-visibility: hidden;
@@ -87,12 +87,11 @@ defineProps({
     display: flex;
     align-items: center;
     mask-image: #000;
-    
-    filter: drop-shadow(0 3px 0 #fff)
-            drop-shadow(3px 0 0 #fff)
-            drop-shadow(0 -3px 0 #fff)
-            drop-shadow(-3px 0 0 #fff)
-            drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
+    // filter: drop-shadow(0 3px 0 #fff)
+    //         drop-shadow(3px 0 0 #fff)
+    //         drop-shadow(0 -3px 0 #fff)
+    //         drop-shadow(-3px 0 0 #fff)
+    //         drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
     &::before {
       content: "";
       position: absolute;
@@ -124,11 +123,12 @@ defineProps({
       justify-content: center;
       align-items: center;
       border-radius: 50px;
-      // border: 4px solid #FFF;
+      border: 4px solid #FFF;
       padding: 0 40px;
       transition: all .3s;
       // box-shadow: 0px 4px 3px rgba($color: #fff, $alpha: .7) inset,0px -4px 3px rgba($color: #000, $alpha: .3) inset;
       // background: #fff;
+      // box-shadow: 0px 4px 3px rgba($color: #000, $alpha: .7);
       span{
         color: #FFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -198,6 +198,11 @@ defineProps({
 @media screen and (max-width: 768px) {
   .service-button{
     &-in{
+      // filter: drop-shadow(0 1px 0 #fff)
+      //       drop-shadow(1px 0 0 #fff)
+      //       drop-shadow(0 -1px 0 #fff)
+      //       drop-shadow(-1px 0 0 #fff)
+      //       drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
       &-text{
         padding: 0 25px;
         border: 3px solid #FFF;
