@@ -11,7 +11,8 @@ useHead({
 
 <template>
   <div>
-    <iframe src="//lightwidget.com/widgets/e44d84f3c36150b690fce1bba212eeb8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <iframe src="https://cdn.lightwidget.com/widgets/e44d84f3c36150b690fce1bba212eeb8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <!-- <iframe src="//lightwidget.com/widgets/e44d84f3c36150b690fce1bba212eeb8.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> -->
   </div>
 </template>
 
