@@ -100,7 +100,7 @@ defineProps({
       left: -100%;
       bottom: -100%;
       right: -100%;
-      animation: bgposition 5s infinite linear alternate;
+      animation: bgposition 5s infinite linear;
       z-index: -1;
     }
     &.cataract{
@@ -167,7 +167,7 @@ defineProps({
     right: -20px;
     // opacity: 0;
     transition: all .3s;
-    animation: iconNima 1s infinite linear alternate;
+    animation: iconNima .75s infinite linear alternate;
   }
   &.service-button-en{
     .service-button-in{
