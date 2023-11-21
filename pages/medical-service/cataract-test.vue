@@ -738,9 +738,10 @@ const bannerData = {
           }}
         </div> -->
         <div>
-          <service-button 
+          <service-button-icon
               :str="$t('pages.medical_service.service_cataract_title.service_cataract_btn6')"
-              :link="'tel: +852 3956 2025'" />
+              :link="'tel: +852 3956 2025'"
+              :type="'1'" />
         </div>
       </div>
       <!-- 選擇人工晶體須知 -->
@@ -845,9 +846,11 @@ const bannerData = {
           }}
         </div> -->
         <div>
-          <service-button 
+          <service-button-icon
                 :str="$t('pages.medical_service.service_cataract_title.service_cataract_btn7')"
-                :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" />
+                :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+                :type="'3'"
+              />
         </div>
       </div>
       <!-- 白內障的術後注意事項 -->
@@ -2967,7 +2970,7 @@ const bannerData = {
         }
       }
       &>div:nth-child(3){
-        max-width: 330px;
+        // max-width: 330px;
         text-align: center;
       }
     }
