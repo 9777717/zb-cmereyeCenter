@@ -972,6 +972,7 @@ const bannerData = {
       position: relative;
       &>div:nth-child(1) {
         margin-top: 191px;
+        z-index: 2;
       }
       &>div {
         &>div:nth-child(1) {
@@ -1973,20 +1974,25 @@ const bannerData = {
 .cataract-en{
   &>div:nth-child(2){
     &>div:nth-child(1){
+      &>div:nth-child(1){
+        margin-top: 80px;
+        max-width: 380px;
+      }
       &>div{
         &>div:nth-child(1){
           font-size: 32px;
         }
         &>div:nth-child(2){
-          line-height: 1.2;
-          height: auto;
-          padding: 10px 20px;
-          font-size: 30px;
+          // line-height: 1.2;
+          // height: auto;
+          // padding: 10px 20px;
+          // font-size: 30px;
+          max-width: 100%;
         }
       }
     }
     &>div:nth-child(3){
-      width: max-content;
+      // width: max-content;
     }
   }
   &>div:nth-child(3){
@@ -2046,7 +2052,7 @@ const bannerData = {
         }
       }
       &>div:nth-child(3){
-        width: max-content;
+        // width: max-content;
         max-width: 100%;
         padding: 0 30px;
       }
@@ -2078,7 +2084,7 @@ const bannerData = {
       }
     }
     &>div:nth-child(5){
-      width: max-content;
+      // width: max-content;
       max-width: 100%;
       padding: 0 30px;
     }
@@ -2115,7 +2121,7 @@ const bannerData = {
       }
     }
     &>div:nth-child(3){
-      width: max-content;
+      // width: max-content;
       max-width: 100%;
       padding: 0 30px;
     }
@@ -2890,10 +2896,10 @@ const bannerData = {
         }
       }
       &>div:nth-child(3){
-        height: auto;
-        line-height: 1.2;
-        text-align: center;
-        padding: 10px 30px;
+        // height: auto;
+        // line-height: 1.2;
+        // text-align: center;
+        // padding: 10px 30px;
       }
     }
     &>div:nth-child(3){

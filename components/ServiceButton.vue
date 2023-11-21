@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from "vue";
+const locale = useState<string>('locale.setting')
 defineProps({
   str:{
     type: String,
@@ -21,7 +22,7 @@ defineProps({
 </script>
 
 <template>
-  <a :href="link" class="service-button">
+  <a :href="link" class="service-button" :class="{'service-button-en': locale === 'en'}">
     <div class="service-button-in" :class="pageName">
       <!-- <slot name="btnIcon"></slot> -->
       <div class="service-button-in-icon" v-if="type === '2'">
@@ -138,6 +139,7 @@ defineProps({
         line-height: 180%;
         transition: all .3s;
         padding-bottom: 4px;
+        text-align: center;
       }
     }
     &:hover{
@@ -167,7 +169,18 @@ defineProps({
     transition: all .3s;
     animation: iconNima 1s infinite linear alternate;
   }
-  
+  &.service-button-en{
+    .service-button-in{
+      &-text{
+        span{
+          font-size: 30px;
+          text-align: center;
+          line-height: 1.4;
+          padding: 10px 0 15px;
+        }
+      }
+    }
+  }
 }
 @keyframes bgposition {
   0% {
@@ -216,6 +229,18 @@ defineProps({
     &-svg{
       transform-origin: center center;
       transform: scale(.6);
+    }
+    &.service-button-en{
+      .service-button-in{
+        &-text{
+          span{
+            font-size: 20px;
+            // text-align: center;
+            line-height: 1.4;
+            padding: 10px 0;
+          }
+        }
+      }
     }
   }
 }

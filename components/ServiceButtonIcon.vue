@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from "vue";
+const locale = useState<string>('locale.setting')
 defineProps({
   str:{
     type: String,
@@ -21,10 +22,29 @@ defineProps({
 </script>
 
 <template>
-  <a :href="link" class="service-button">
+  <a :href="link" class="service-button" :class="{'service-button-en': locale === 'en'}">
     <div class="service-button-in" :class="pageName">
       <!-- <slot name="btnIcon"></slot> -->
-      <div class="service-button-in-icon" v-if="type === '2'">
+      <div class="service-button-in-icon" v-if="type === '1'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+          <g filter="url(#filter0_d_5734_699)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4768 52.7459C68.4076 52.1598 63.1228 49.3118 62.1358 48.9108C61.1487 48.5098 60.4187 48.3042 59.6476 49.3632C58.8765 50.4325 56.6865 52.8178 56.0285 53.517C55.3602 54.2264 54.7227 54.2881 53.6431 53.702C52.5738 53.116 49.0884 51.8205 45.0477 47.9443C41.9015 44.9215 39.8452 41.2613 39.2488 40.1406C38.6525 39.0199 39.2488 38.4544 39.8143 37.93C40.3284 37.4571 40.9556 36.686 41.5314 36.0691C42.0969 35.4522 42.3025 34.9998 42.6932 34.2903C43.0839 33.5706 42.9297 32.9332 42.6726 32.3677C42.4156 31.8125 40.4312 26.3426 39.6087 24.1218C38.7759 21.901 37.8505 22.23 37.2131 22.1991C36.5756 22.1786 35.8456 22.0552 35.1156 22.0346C34.3856 22.0038 33.1827 22.2403 32.1442 23.289C31.0955 24.348 28.1755 26.8876 27.9699 32.2751C27.7643 37.6627 31.4965 43.0092 32.0106 43.7597C32.5349 44.5103 39.1255 56.1799 50.0857 60.9814C61.0459 65.783 61.1076 64.323 63.1125 64.2099C65.1277 64.1071 69.6825 61.804 70.7004 59.285C71.708 56.766 71.7902 54.576 71.5332 54.103C71.2761 53.6404 70.5564 53.3319 69.4871 52.7459H69.4768ZM49.3763 78.6967C42.1277 78.6967 35.383 76.5273 29.7486 72.795L16.0329 77.1853L20.4952 63.9323C16.218 58.0512 13.699 50.8232 13.699 43.0092C13.699 23.3301 29.7075 7.32162 49.3865 7.32162C69.0656 7.32162 85.0741 23.3301 85.0741 43.0092C85.0741 62.6882 69.0656 78.6967 49.3865 78.6967H49.3763ZM49.3763 0.134766C25.6977 0.134766 6.50185 19.3306 6.50185 43.0092C6.50185 51.1111 8.75353 58.6886 12.6503 65.1455L4.9082 88.1455L28.6485 80.5474C34.7969 83.9403 41.8501 85.8835 49.366 85.8835C73.0446 85.8835 92.2404 66.6877 92.2404 43.0092C92.2404 19.3306 73.0548 0.134766 49.3763 0.134766Z" fill="white"/>
+          </g>
+          <defs>
+            <filter id="filter0_d_5734_699" x="0.908203" y="0.134766" width="95.332" height="96.0107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5734_699"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5734_699" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="service-button-in-icon" v-else-if="type === '2'">
         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="76" viewBox="0 0 81 76" fill="none">
           <g filter="url(#filter0_d_5729_463)">
             <path d="M47.6542 62.4309C51.6744 58.4073 51.6744 51.8837 47.6542 47.8601C43.634 43.8364 37.1159 43.8364 33.0957 47.8601C29.0754 51.8837 29.0754 58.4073 33.0957 62.4309C37.1159 66.4546 43.634 66.4546 47.6542 62.4309Z" fill="white"/>
@@ -45,6 +65,38 @@ defineProps({
               <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
               <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5729_463"/>
               <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5729_463" result="shape"/>
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div class="service-button-in-icon" v-else>
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="88" viewBox="0 0 90 88" fill="none">
+          <g filter="url(#filter0_d_5734_618)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9991 44.9672C28.6327 40.732 20.9081 32.4706 22.7609 26.2223C23.6743 23.1374 27.1452 22.2223 28.7892 19.6864C31.1379 16.0525 28.8936 11.3466 26.9625 8.07868C25.1879 5.04603 22.6566 0.392485 18.6116 0.523203C14.384 0.680064 10.1563 4.47088 7.07695 7.0068C1.15305 11.6603 3.97147 31.9739 21.2995 53.6992C38.6015 75.4244 57.7564 82.6139 63.6803 77.8296C66.6814 75.3983 70.9612 72.9931 71.9528 68.967C73.2838 63.503 68.1428 59.0847 64.5414 55.8952C62.8713 54.4312 60.8618 52.8103 58.4871 53.0717C55.0423 53.4377 53.0851 57.2024 49.7186 57.9083C42.6465 59.3984 35.6265 49.5162 32.0252 44.9934L31.9991 44.9672Z" fill="white"/>
+          </g>
+          <g filter="url(#filter1_d_5734_618)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M66.2117 0.523438C55.747 0.523438 47.2656 6.79789 47.2656 14.5102C47.2656 18.301 49.3273 21.7258 52.6415 24.2618L47.2656 32.8107L58.4871 27.2683C60.8619 28.0526 63.4715 28.497 66.2117 28.497C76.6764 28.497 85.1838 22.2487 85.1838 14.5102C85.1838 6.77174 76.7025 0.523438 66.2117 0.523438ZM56.7908 16.8631C55.5904 16.8631 54.4944 15.7651 54.4944 14.5364C54.4944 13.2031 55.5904 12.105 56.7908 12.105C58.0957 12.105 59.2178 13.2031 59.2178 14.5364C59.2178 15.739 58.1218 16.8631 56.7908 16.8631ZM66.6814 16.8631C65.481 16.8631 64.3849 15.7651 64.3849 14.5364C64.3849 13.2031 65.481 12.105 66.6814 12.105C68.0123 12.105 69.1084 13.2031 69.1084 14.5364C69.1084 15.739 68.0123 16.8631 66.6814 16.8631ZM76.572 16.8631C75.3715 16.8631 74.2755 15.7651 74.2755 14.5364C74.2755 13.2031 75.3715 12.105 76.572 12.105C77.8768 12.105 78.999 13.2031 78.999 14.5364C78.999 15.739 77.9029 16.8631 76.572 16.8631Z" fill="white"/>
+          </g>
+          <defs>
+            <filter id="filter0_d_5734_618" x="0.259766" y="0.520508" width="75.9082" height="86.7227" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5734_618"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5734_618" result="shape"/>
+            </filter>
+            <filter id="filter1_d_5734_618" x="43.2656" y="0.523438" width="45.918" height="40.2871" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+              <feOffset dy="4"/>
+              <feGaussianBlur stdDeviation="2"/>
+              <feComposite in2="hardAlpha" operator="out"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5734_618"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5734_618" result="shape"/>
             </filter>
           </defs>
         </svg>
@@ -85,6 +137,7 @@ defineProps({
     -webkit-transform: translate3d(0, 0, 0);
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: all .3s;
     filter: drop-shadow(0 3px 0 #fff)
             drop-shadow(3px 0 0 #fff)
@@ -100,6 +153,7 @@ defineProps({
       }
     }
     &-text{
+      max-width: 50%;
       &.inText_2{
         border-radius: 0 50px 50px 0;
         margin-left: -30px;
@@ -120,6 +174,7 @@ defineProps({
         line-height: 180%;
         transition: all .3s;
         padding-bottom: 4px;
+        text-align: center;
       }
     }
     &:hover{
@@ -132,6 +187,19 @@ defineProps({
         // box-shadow: 0px 4px 3px rgba($color: #000000, $alpha: .3) inset;
         span{
           text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  &.service-button-en{
+    .service-button-in{
+      &-text{
+        padding: 0px 30px;
+        span{
+          font-size: 28px;
+          text-align: center;
+          line-height: 1.4;
+          padding: 5px 0 10px;
         }
       }
     }
@@ -173,11 +241,12 @@ defineProps({
             drop-shadow(-3px 0 0 #fff)
             drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
       &-icon{
-        padding: 25px 20px 15px;
+        padding: 15px 10px 5px;
         transform: scale(.8);
       }
       &-text{
         padding: 0 20px;
+        max-width: 100%;
         &.inText_2{
           border-radius: 0 50px 50px 0;
           margin-left: -30px;
@@ -188,6 +257,45 @@ defineProps({
           padding: 10px 0;
         }
       }
+    }
+    &.service-button-en{
+      .service-button-in{
+        &-text{
+          padding: 0px 25px;
+          span{
+            font-size: 14px;
+            text-align: center;
+            line-height: 1.4;
+            padding: 5px 0 10px;
+          }
+        }
+      }
+    }
+  }
+  @keyframes iconAnim{
+    0%{
+      transform: scale(.8);
+    }
+    20%{
+      transform: scale(1);
+    }
+    25%{
+      transform: scale(1) rotate(10deg);
+    }
+    30%{
+      transform: scale(1) rotate(-10deg);
+    }
+    35%{
+      transform: scale(1) rotate(10deg);
+    }
+    40%{
+      transform: scale(1) rotate(-10deg);
+    }
+    60%{
+      transform: scale(.8);
+    }
+    100%{
+      transform: scale(.8);
     }
   }
 }
