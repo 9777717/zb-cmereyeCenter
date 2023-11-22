@@ -109,7 +109,7 @@ const commitToCms = async () =>{
   _formData.append('email',ruleForm.email)
   _formData.append('content',ruleForm.desc)
   _formData.append('ly',location.href)
-  _formData.append('dz',ruleForm.type.join('，'))
+  _formData.append('dz',ruleForm.type.join('，') + (ruleForm.rest ? `，${ruleForm.rest}` : ''))
   _formData.append('paramsNoCheck','1')
   let { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addmsg',{
     method: 'post',
