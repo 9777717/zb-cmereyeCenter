@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+ import { Pagination,Autoplay } from 'swiper';
 definePageMeta({
   layout: 'page',
 })
@@ -36,35 +37,65 @@ const goWhatsApp = () => {
   )
 }
 const homeSwiperImgs = [
+  // {
+  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
+  // },
+  // {
+  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
+  // },
+  // {
+  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/7bba82871272f273.jpg'
+  // },
+  // {
+  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
+  // }
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
+    hkimg: 'https://static.cmereye.com/imgs/2023/11/8ae6dcb304cfecca.jpg',
+    enimg: '',
+    title: ['香港上市公司 11間眼科診所'],
+    text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
+    hkimg: 'https://static.cmereye.com/imgs/2023/11/8f3521203305ed6b.jpg',
+    enimg: '',
+    title: ['全面涵蓋九大眼科醫療領域'],
+    text: ['致力提供全面眼科醫療服務','貼心護理服務 滿足患者不同需求'],
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/7bba82871272f273.jpg'
+    hkimg: 'https://static.cmereye.com/imgs/2023/11/1d86c511c64e9b03.jpg',
+    enimg: '',
+    title: ['以人為本，以客人為中心'],
+    text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
+    hkimg: 'https://static.cmereye.com/imgs/2023/11/617b4004db6e2acb.jpg',
+    enimg: '',
+    title: ['國際認可先進眼科醫療技術'],
+    text: ['高水準眼科治療和服務','實現精確、安全手術操作'],
+  },
+  {
+    hkimg: 'https://static.cmereye.com/imgs/2023/11/5e19167f1a27bf5e.jpg',
+    enimg: '',
+    title: ['全心全意守護每雙眼睛'],
+    text: ['追求卓越 堅持使命','關注全生命眼健康周期'],
   }
 ]
 let currentImg = ref(0)
 var timer: any = null
-const setSwiperImg = () => {
-  timer = setInterval(() => {
-    if (currentImg.value < homeSwiperImgs.length - 1) {
-      currentImg.value++
-    } else {
-      currentImg.value = 0
-    }
-  }, 5000)
-}
+// const setSwiperImg = () => {
+//   timer = setInterval(() => {
+//     if (currentImg.value < homeSwiperImgs.length - 1) {
+//       currentImg.value++
+//     } else {
+//       currentImg.value = 0
+//     }
+//   }, 5000)
+// }
 onMounted(() => {
-  setSwiperImg()
+  // setSwiperImg()
 })
 onUnmounted(() => {
-  clearInterval(timer)
+  // clearInterval(timer)
 })
 // 拨打电话
 const callTel = () => {
@@ -177,9 +208,25 @@ const serviceLists = [
         src="https://static.cmereye.com/static/loffee/video/OPD.mp4" poster="https://static.cmereye.com/imgs/2023/11/e2a2830de8785725.jpg">
          </video>
       </div>
-      <div class="mbHomeSwiper" :style="{
-        background: `url(${homeSwiperImgs[currentImg].imgUrl})no-repeat`
-      }">
+      <div class="mbHomeSwiper">
+        <swiper
+          :loop="true"
+          :autoplay="{ delay: 5000 }"
+          :pagination="{ clickable: true }"
+          :modules="[Pagination,Autoplay]"
+        >
+          <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
+            <img :src="swiperItem.hkimg" alt="">
+            <div class="slideBox-in">
+              <div class="slideBox-in-title">
+                <span v-for="(swiperItemTitle,swiperItemTitleIndex) in swiperItem.title" :key="swiperItemTitleIndex">{{swiperItemTitle}}</span>
+              </div>
+              <div class="slideBox-in-text">
+                <span v-for="(swiperItemText,swiperItemTextIndex) in swiperItem.text" :key="swiperItemTextIndex">{{swiperItemText}}</span>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
       </div>
     </div>
     <div>
@@ -250,11 +297,11 @@ const serviceLists = [
           </div>
         </div>
       </div>
-      <div class="mbCar">
+      <!-- <div class="mbCar">
         <div @click="toLink('/medical-service')">
           <div><img src="https://static.cmereye.com/imgs/2023/10/ba067103023aaa5d.jpg" alt="九大眼科醫療服務"></div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="home-mbContent">
       <div class="home-mbContent-nav">
@@ -559,10 +606,56 @@ const serviceLists = [
       }
       .mbHomeSwiper {
         width: 100%;
-        height: 100vh;
-        transition: all 1s;
+        // height: 100vh;
+        // transition: all 1s;
         display: block;
-        background-size: 100% 100% !important;
+        margin-top: 78px;
+        // background-size: 100% 100% !important;
+        :deep(.swiper-pagination){
+          display: flex;
+          justify-content: flex-start;
+          bottom: auto;
+          top: 20px;
+          left: 15px;
+        }
+        .slideBox{
+          position: relative;
+          &-in{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 126px;
+            background: rgba($color: #fff, $alpha: .7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &-title{
+              span{
+                color: #2958A3;
+                text-align: center;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 43.901px; /* 182.921% */
+                letter-spacing: 2.64px;
+              }
+            }
+            &-text{
+              span{
+                color: #515151;
+                text-align: center;
+                font-size: 17.69px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30.1px; /* 170.153% */
+                letter-spacing: 0.885px;
+                display: block;
+              }
+            }
+          }
+        }
       }
     }
     &>div:nth-child(2) {
