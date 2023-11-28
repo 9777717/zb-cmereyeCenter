@@ -1981,12 +1981,14 @@ pages:
       cost_tr3_td1: Optical Coherence Tomography (OCT) - Glaucoma
       cost_tr4_td1: Optical Coherence Tomography (OCT) - Macular
       cost_tr5_td1: Optical Coherence Tomography (OCT) – Glaucoma + Macular
+      cost_tr19_td1: Ultrasonic Biomicroscope (UBM) Scan
       cost_tr6_td1: A Scan
       cost_tr7_td1: Specular Microscopy
       cost_tr8_td1: Visual Field (VF)
       cost_tr9_td1: 200° Retina Laser Scanning (SLO)
       cost_tr10_td1: Fundus Photography (FP)
       cost_tr11_td1: Pentacam / Sirius
+      cost_tr20_td1: Axial Length Measurement
       cost_tr12_td1: FP + FFA (including medicine)
       cost_tr13_td1: FP + ICG (including medicine)
       cost_tr14_td1: FP + FFA + ICG (include medicine)
@@ -2009,6 +2011,20 @@ pages:
       cost_p7: (per doctor for each report, subject to quotation).
       cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
       cost_p9: "Last update: 01/04/2023"
+      cost_p10: "Last update: 01/12/2023"
+      cost_form_title: Fill in Insurance Claim Form
+      cost_form_td1_1: Case
+      cost_form_td1_2: Charges
+      cost_form_td2_1: OT
+      cost_form_td2_2: Free of charge
+      cost_form_td3_1: Out patient services with procedure
+      cost_form_td4_1: "- First application of the same case"
+      cost_form_td4_2: Free of charge
+      cost_form_td5_1: "- for each subsequent application"
+      cost_form_td5_2: $200
+      cost_form_td6_1: "Out patient services without procedure"
+      cost_form_td7_1: "- for each application"
+      cost_form_td7_2: $200
     process: Outpatient Services
     process_1:
       process_h1: Outpatient Services
