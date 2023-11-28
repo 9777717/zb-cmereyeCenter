@@ -620,6 +620,9 @@ const serviceLists = [
         }
         .slideBox{
           position: relative;
+          img{
+            width: 100%;
+          }
           &-in{
             position: absolute;
             bottom: 0;
@@ -729,7 +732,7 @@ const serviceLists = [
       &-context{
         color: #2958A2;
         text-align: center;
-        font-size: 12.6px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 31.127px; /* 247.043% */
