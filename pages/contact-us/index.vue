@@ -9,22 +9,11 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '希瑪眼科中心遍佈港、九、新界，位點包括︰中環、旺角、尖沙咀、銅鑼灣、觀塘、沙田、元朗、荃灣、將軍澳，地址方便，交通便利，環境舒適。診所位置鄰近地鐵站和商場，方伊客人覆診。希瑪眼科中心團隊由從事眼科臨床30多年林順潮醫生帶領，加上20多名經驗豐富的眼科專科醫生、多名註冊視光師及醫療護理人員組成。眼科中心配備全面眼睛檢查與先進眼科醫療儀器，為客人提供安全、準確、可靠的眼科檢查及醫療服務。',
+      content: t('tdk.contact-us.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療  全面眼睛檢查 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 中環眼科診所 旺角眼科診所 尖沙咀眼科診所 銅鑼灣眼科診所 觀塘 眼科診所 沙田眼科診所 元朗眼科診所 荃灣眼科診所 將軍澳眼科診所 眼科服務',
-    },
-    {
-      name: 'description',
-      content: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+      content: t('tdk.contact-us.key'),
     }
   ],
 }))

@@ -8,24 +8,12 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '香港希瑪眼科中心有強大的眼科醫療團隊，共有20多名經驗豐富的眼科醫生、視光師及醫療護理人員組成，提供專業眼科醫療服務。香港希瑪眼科中心於2022年一度獲得2022開心工作間的獎項，成為開心企業為員工建設開心的工作環境。希瑪眼科中心以人為本，注重員工的團隊合作，致力培訓員工，希望吸納更多醫護專才，為客人提供度身訂造的服務，加入希瑪眼科中心，盡展所長。希瑪眼科中心提供多個職位空缺，有診所護士和註冊視光師的空缺。',
+      content: t('tdk.talent-recruitment.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '人才招聘 應聘崗位 希瑪眼科招聘 招聘人事 最新職位空缺 職位空缺 揾工 護士招聘 全職招聘  招聘工作 護理員招聘 招聘全職 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 眼科專科 矯視 眼科診所 香港希瑪眼科林順潮眼科醫生 眼科 眼睛科 眼科醫生 香港眼科 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科服務',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+      content: t('tdk.talent-recruitment.key'),
+    }
   ],
 }))
 </script>

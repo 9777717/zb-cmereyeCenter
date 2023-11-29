@@ -9,24 +9,12 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '結膜炎(紅眼症)是都市人常見眼疾之一，患者會出現眼睛乾澀、紅、腫及分泌物增多等症狀，嚴重結膜炎(紅眼症)的患者甚至會角膜破皮和視力模糊。希瑪眼科中心提供全面結膜炎(紅眼症)診斷，如有需要會建議合適您的結膜炎(紅眼症)治療方案。導致結膜炎(紅眼症)的原因與日常生活相關，長時間配戴隱形眼鏡、注視電子螢幕、處於乾燥環境、有免疫系統疾病，以及更年期婦女都較大機會患上結膜炎(紅眼症)。治療結膜炎(紅眼症)以減輕不適的症狀為主，使用人工淚液是有效治療結膜炎(紅眼症)方法，同時也需要患者養成良好用眼習慣。',
+      content: t('tdk.conjunctivitis.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '結膜炎 紅眼症 結膜炎症狀 結膜炎原因 眼角膜發炎 紅眼症初期 紅眼症傳染 結膜炎先兆 眼發炎 急性結膜炎 紅眼症症狀 慢性結膜炎 眼睛發炎 病毒性結膜炎 角膜發炎 紅眼症治療 結膜炎傳染 結膜炎初期 結膜發炎 紅眼症原因 紅眼症治療 結膜炎角膜炎 眼角膜發炎 眼紅症 急性結膜炎症狀 結膜炎治療 眼睛紅 眼睛紅腫 眼睛檢查 眼睛疾病 眼科醫生 香港眼科  希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 ',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+      content: t('tdk.conjunctivitis.key'),
+    }
   ],
 }))
 const locale = useState<string>('locale.setting')

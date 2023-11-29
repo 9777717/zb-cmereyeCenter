@@ -9,33 +9,19 @@ useHead({
   meta: [
     {
       name: 'description',
-      content:
-        '香港希瑪眼科中心提供快捷的驗光及全面眼睛檢查，設有簡單的就診流程︰登記、基本眼睛檢查、眼睛醫生對患者的診症、特殊眼睛檢查、門診眼科治療 / 矯視治療 、付款及取藥，簡單的眼科就診流程提供予患者最急切的眼科服務。希瑪眼科中心的眼科醫生會透過初步眼睛檢查，全面了解患者的眼睛狀況，一般會進行3-5項基本眼睛檢查。完成初步眼睛檢查，眼科醫生會再根據患者的情況進行詳細眼睛檢查，以準確診斷並提供相應的眼科治療，也提供其他眼科服務如配鏡等就診流程。',
+      content: t('tdk.process-and-cost.desc1'),
     },
     {
       name: 'keywords',
-      content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療 全面眼睛檢查 希瑪眼科香港 希瑪眼科治療方案 林順潮眼科中心 林順潮眼科診所 眼科希瑪 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼睛診所 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 眼科服務',
+      content: t('tdk.process-and-cost.key1'),
     },
     {
       name: 'description',
-      content:
-        '香港希瑪眼科中心提供的驗光及全面眼睛檢查，不同的眼睛檢查項目有不同的收費，常見眼疾檢查收費價目表、矯視收費價目表，希瑪眼科診所眼科價目清晰，絕無其他額外收費，讓患者可以放心地進行眼睛檢查和治療，常見眼疾檢查收費價目表包括眼壓測試、角膜地形圖、角膜厚度測試、視力測試、眼底檢查、視野檢查等多個項目，每個項目的收費都在價目表中有明確的標示。',
+      content: t('tdk.process-and-cost.desc2'),
     },
     {
       name: 'keywords',
-      content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪眼科收費 希瑪眼科 全面眼睛檢查 希瑪眼科價目 眼科門診收費 希瑪眼科 光學相干斷層掃描 希瑪眼科 OCT 希瑪眼科 希瑪眼科 檢查 視野 眼底檢查 希瑪眼科 眼科專科收費 眼科專科 全面眼睛檢查 眼科專科 視野分析 掃描激光眼底檢查 眼底照相 眼前節分析 角膜厚度測量 角膜地形分析 白內障超聲乳化 希瑪醫療集團 希瑪醫療 眼科服務',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+      content: t('tdk.process-and-cost.key2'),
     },
   ],
 })

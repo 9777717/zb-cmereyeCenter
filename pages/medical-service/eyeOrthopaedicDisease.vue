@@ -10,24 +10,12 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '希瑪眼科中心提供眼整形及眼腫瘤檢查及治療。對於眼瞼、眼眶、淚腺等患有先天性和後天性缺陷的患者，如眼瞼移位、眼瞼缺陷、甲亢突眼、淚眼、眼眶再造及眼眶收縮等，提供整形外科手術和植入義眼術，以修復他們眼部及面部，回復自然外觀。此外對於眼部腫瘤患者，如眼瞼癌變、眼睛表面癌變及眼內癌變等提供專業治療方案包括激光治療、冷凍治療、放射治療及化學治療。立即查詢治療眼矯形及眼腫瘤詳細及相關費用。',
+      content: t('tdk.eyeOrthopaedicDisease.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '眼整形 眼腫瘤 眼瞼移位 眼瞼缺陷 甲亢突眼  突眼 眼突 眼眶再造 眼眶收縮 眼整形手術 義眼術 眼瞼癌變 眼內癌變  眼皮手術 眼皮下垂手術 眼窩凹陷 淚管閉塞 眼凸手術 眼皮下垂改善 眼凸 甲亢眼疾 義眼 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 眼疾 眼睛疾病  眼睛檢查 林順潮 希瑪醫療集團 希瑪醫療',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+      content: t('tdk.eyeOrthopaedicDisease.key'),
+    }
   ],
 }))
 // 传递背景色

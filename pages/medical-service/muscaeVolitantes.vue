@@ -9,24 +9,12 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '希瑪眼科中心提供全面飛蚊症檢查及治療。飛蚊症學名為玻璃體混濁。隨着眼睛老化、玻璃體萎縮，便會形成不同形狀的黑點或暗影，有的像小雨點、圓圈、雲、網狀、變形蟲或蜘蛛，如同有蚊子在眼前飛舞。飛蚊症的成因是因眼睛退化、眼睛外傷、眼後發炎、眼球內出血，以及視網膜疾病引致。飛蚊症種類分為良性飛蚊和恐性飛蚊。一般患飛蚊症的高危人士包括︰50歲以上人士、深近視、長時間看電子螢幕、有視網膜脫落家族病史，及糖尿病患者。治療飛蚊症的方法有兩種，有激光治療和玻璃體切除治療。',
+      content: t('tdk.muscae_volitantes.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '飛蚊症 飛蚊症檢查 飛蚊 飛蚊症成因 飛蚊症改善方法 飛蚊症初期 飛蚊症治療方法 眼睛黑點 飛蚊症閃光 玻璃體 玻璃體退化 飛蚊症手術 飛蚊症症狀 玻璃體混濁 飛蚊症測試 飛蚊症病徵 改善飛蚊症 玻璃體脫落 治療飛蚊症 飛蚊症檢查 飛蚊閃光 飛蚊症黑點 眼球玻璃體 激光治療飛蚊症 飛蚊症激光 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 ',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+      content: t('tdk.muscae_volitantes.key'),
+    }
   ],
 }))
 const locale = useState<string>('locale.setting')

@@ -9,23 +9,11 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '希瑪眼科中心提供視網膜疾病檢查及治療。視網膜疾病高危成因包括有深近視、視網膜脫落家族遺傳史、眼睛曾受外傷、眼內發炎、糖尿上眼、眼內發炎、眼部有腫瘤等。視網膜疾病先兆包括飛蚊症、眼前出現閃光及黑影飄動、出現固定黑影以及視力明顯突然下降。視網膜脫落治療包括: 充氣性視網膜固定術、鞏膜外墊壓術、微創玻璃體切除術（PPV）。立即查詢治療視網膜詳細及相關費用。',
+      content: t('tdk.amotioRetinae.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '視網膜疾病 視網膜檢查 視網膜治療 視網膜脫落 糖尿上眼 飛蚊症 視網膜剝離 糖尿上眼初期 視網膜脫落手術 視網膜病變 視網膜脫落症狀 視網膜剝離手術 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 林順潮 眼疾 眼睛疾病  眼睛檢查 希瑪 希瑪醫療集團 希瑪醫療',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+      content: t('tdk.amotioRetinae.key'),
     },
   ],
 }))

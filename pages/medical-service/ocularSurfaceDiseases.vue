@@ -8,24 +8,12 @@ useHead(() => ({
   meta: [
     {
       name: 'description',
-      content:
-        '希瑪眼科中心提供眼表及角膜疾病檢查及治療。眼表疾病包括翼狀胬肉、眼瞼炎及角膜移植等。角膜疾病包括角膜炎、虹膜炎、表層鞏膜炎、角膜皮上破損、錐形角膜。一般 治療眼表及角膜疾病方法包括使用處方眼藥水、藥膏、口服藥物、注射藥物、手術治療、激光治療、角膜移植、配戴新型隱形眼鏡等。立即查詢治療詳細及相關費用。',
+      content: t('tdk.ocularSurfaceDiseases.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '眼表疾病 眼疾病 角膜疾病 翼狀胬肉 眼瞼炎 角膜疾病 角膜炎 虹膜炎 表層鞏膜炎 鞏膜炎 錐形角膜 角膜移植 眼瘡 麥粒腫 割眼瘡 眼挑針 眼瞼發炎 生眼瘡 急性角膜炎 角膜受損症狀 眼胬肉 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 林順潮 眼疾 眼睛疾病  眼睛檢查 希瑪 希瑪醫療集團 希瑪醫療 ',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
+      content: t('tdk.ocularSurfaceDiseases.key'),
+    }
   ],
 }))
 const locale = useState<string>('locale.setting')
