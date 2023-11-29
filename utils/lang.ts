@@ -9,10 +9,10 @@ export interface ILocales {
 }
 
 export const availableLocales: ILocales = {
-  zh_tc: {
+  'zh-hk': {
     name: '中文（香港）',
-    iso: 'zh_tc',
-    flag: 'tc',
+    iso: 'zh-hk',
+    flag: 'hk',
   },
   // zh: {
   //   name: '简体中文',
@@ -37,11 +37,12 @@ export function LanguageManager() {
     try {
       // const foundLang = window
       //   ? window.navigator.language.substring(0, 2)
-      //   : 'zh_tc'
-      // return availableLocales[foundLang] ? foundLang : 'zh_tc'
-      return 'zh_tc'
+      //   : 'zh-hk'
+      // return availableLocales[foundLang] ? foundLang : 'zh-hk'
+      // console.log(window.navigator.language)
+      return 'zh-hk'
     } catch (error) {
-      return 'zh_tc'
+      return 'zh-hk'
     }
   }
   const getUserLocale = (): string =>
