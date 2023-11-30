@@ -13,7 +13,7 @@ useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     {
-      hid: 'description',
+      // hid: 'description',
       name: 'description',
       content: t('tdk.app.desc'),
     },
