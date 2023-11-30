@@ -243,7 +243,7 @@ const scrollHeight = () => {
               </p>
               <div class="ClaimFormBox">
                 <div class="title">{{$t('pages.process_cost.cont.cost_form_title')}}</div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td1_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td1_2')}}</span></div>
+                <div><span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_1')}}</span> <span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_2')}}</span></div>
                 <div><span>{{$t('pages.process_cost.cont.cost_form_td2_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td2_2')}}</span></div>
                 <div><span>{{$t('pages.process_cost.cont.cost_form_td3_1')}}</span> <span></span></div>
                 <div><span>{{$t('pages.process_cost.cont.cost_form_td4_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td4_2')}}</span></div>
