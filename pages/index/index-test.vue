@@ -446,10 +446,10 @@ const serviceLists = [
     }
   }
   &>div:nth-child(2) {
-    // position: absolute;
-    // bottom: 10%;
-    // left: 0;
-    // right: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -656,6 +656,7 @@ const serviceLists = [
     }
     &>div:nth-child(2) {
       // top: 60vh;
+      position: static;
       pointer-events: initial;
       &>div:nth-child(1) {
         display: none;
