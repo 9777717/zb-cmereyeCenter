@@ -17,6 +17,7 @@ useHead(() => ({
     }
   ],
 }))
+const locale = useState<string>('locale.setting')
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
@@ -38,32 +39,32 @@ const homeSwiperImgs = [
   //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
   // }
   {
-    hkimg: 'https://static.cmereye.com/imgs/2023/11/8ae6dcb304cfecca.jpg',
-    enimg: '',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01.jpg',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en.jpg',
     title: ['香港上市公司 11間眼科診所'],
     text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/2023/11/8f3521203305ed6b.jpg',
-    enimg: '',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.jpg',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.jpg',
     title: ['全面涵蓋九大眼科醫療領域'],
     text: ['致力提供全面眼科醫療服務','貼心護理服務 滿足患者不同需求'],
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/2023/11/1d86c511c64e9b03.jpg',
-    enimg: '',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.jpg',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.jpg',
     title: ['以人為本，以客人為中心'],
     text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/2023/11/617b4004db6e2acb.jpg',
-    enimg: '',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.jpg',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.jpg',
     title: ['國際認可先進眼科醫療技術'],
     text: ['高水準眼科治療和服務','實現精確、安全手術操作'],
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/2023/11/5e19167f1a27bf5e.jpg',
-    enimg: '',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.jpg',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.jpg',
     title: ['全心全意守護每雙眼睛'],
     text: ['追求卓越 堅持使命','關注全生命眼健康周期'],
   }
@@ -204,15 +205,15 @@ const serviceLists = [
           :modules="[Pagination,Autoplay]"
         >
           <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
-            <img :src="swiperItem.hkimg" alt="">
-            <div class="slideBox-in">
+            <img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.title[0]">
+            <!-- <div class="slideBox-in">
               <div class="slideBox-in-title">
                 <span v-for="(swiperItemTitle,swiperItemTitleIndex) in swiperItem.title" :key="swiperItemTitleIndex">{{swiperItemTitle}}</span>
               </div>
               <div class="slideBox-in-text">
                 <span v-for="(swiperItemText,swiperItemTextIndex) in swiperItem.text" :key="swiperItemTextIndex">{{swiperItemText}}</span>
               </div>
-            </div>
+            </div> -->
           </swiper-slide>
         </swiper>
       </div>
@@ -294,9 +295,13 @@ const serviceLists = [
     <div class="home-mbContent">
       <div class="home-mbContent-nav">
         <div class="home-mbContent-nav-title">
-          醫療服務
+          <!-- 醫療服務 -->
+          {{$t("pages.index.contentnav.title")}}
         </div>
-        <div class="home-mbContent-nav-context">點擊以下圖示，了解更多醫療資訊</div>
+        <div class="home-mbContent-nav-context">
+          <!-- 點擊以下圖示，了解更多醫療資訊 -->
+          {{$t("pages.index.contentnav.context")}}
+        </div>
         <div class="home-mbContent-nav-content">
           <a :href="service.link" v-for="(service,index) in serviceLists" :key="index">
             <img :src="service.imgUrl" alt="">
@@ -304,22 +309,22 @@ const serviceLists = [
           </a>
         </div>
       </div>
-      <div class="home-mbContent-box">
+      <div class="home-mbContent-box" :class="{'home-mbContent-box-en': locale === 'en'}">
         <div class="partTwo">
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
 			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInLeftBig" data-wow-delay=".5s"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">第1間</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">香港上市眼科中心</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s1_1")}}</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s1_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/b727a18986eee34a.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
 			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInRightBig" data-wow-delay=".5s"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">23位</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">眼科專科醫生</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s2_1")}}</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s2_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
@@ -330,21 +335,21 @@ const serviceLists = [
 			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow bounceIn" data-wow-delay="1.5s">
 			  		</div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">11間</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">眼科診所</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_1")}}</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
 			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInRightBig" data-wow-delay=".5s"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">98%</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">顧客滿意度</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_1")}}</div>
+			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_2")}}</div>
 			  		</div>
 			  	</div>
 			  </div>
       </div>
-      <div class="home-mbContent-box">
+      <div class="home-mbContent-box" :class="{'home-mbContent-box-en': locale === 'en'}">
         <div>
 			  	<div class="indexContext_1">
 			  		<div class="indexContext_1-image wow fadeInRight">
@@ -352,9 +357,9 @@ const serviceLists = [
 			  		</div>
 			  		<div class="indexContext_1-text wow fadeInUp">
 			  			<h2>
-			  				「以客人需求為依歸，提供針對性及達國際水準的眼科醫療服務。」</h2>
+			  				{{$t("pages.index.contentBox.h2_1")}}</h2>
 			  			<p>
-			  				香港希瑪眼科隸屬於希瑪眼科醫療集團，2012年1月於香港開設了第一間眼科中心，採用與國際接軌的科技和治療方式，嚴格遵守香港及國際醫療技術操作規範，旨在為各界眼疾人士提供優質的眼科服務。
+			  				{{$t("pages.index.contentBox.p1")}}
 			  			</p>
 			  		</div>
 			  	</div>
@@ -366,9 +371,9 @@ const serviceLists = [
 			  		</div>
 			  		<div class="indexContext_2-text">
 			  			<h2 class=" wow fadeInUp">
-			  				香港希瑪國際眼科醫療集團</h2>
+			  				{{$t("pages.index.contentBox.h2_2")}}</h2>
 			  			<p class=" wow fadeInUp">
-			  				(簡稱：希瑪眼科，股份代碼：3309.HK)，總部設於香港，旗下擁有33間醫療機構及視光中心，是香港首間大型連鎖上市眼科集團。
+			  				{{$t("pages.index.contentBox.p2")}}
 			  			</p>
 			  			<div class="indexContext_2-text-in wow fadeInUp">
 			  				<div>
@@ -391,7 +396,7 @@ const serviceLists = [
 			  							fill="#8AD8DD" stroke="#8AD8DD" stroke-width="0.5" />
 			  					</svg>
 			  				</div>
-			  				<span>2018年香港上市公開招股認購<br>超過1500倍</span>
+			  				<span>{{$t("pages.index.contentBox.span1_1")}}<br>{{$t("pages.index.contentBox.span1_2")}}</span>
 			  			</div>
 			  			<div class="indexContext_2-text-in wow fadeInUp">
 			  				<div>
@@ -402,14 +407,14 @@ const serviceLists = [
 			  							fill="#8AD8DD" stroke="#8AD8DD" stroke-width="0.5" />
 			  					</svg>
 			  				</div>
-			  				<span>2019年大健康產業創新獎</span>
+			  				<span>{{$t("pages.index.contentBox.span2")}}</span>
 			  			</div>
 			  			<div class="indexContext_2-text-in wow fadeInUp">
 			  				<div>
 			  					<img src="https://static.cmereye.com/imgs/2023/11/7999fef5f2ba4028.png" alt="">
 			  				</div>
 			  				<span>
-			  					2020年港股<br>「最佳價值醫藥及醫療股公司」<br>大獎
+			  					{{$t("pages.index.contentBox.span3_1")}}<br>{{$t("pages.index.contentBox.span3_2")}}<br>{{$t("pages.index.contentBox.span3_3")}}
 			  				</span>
 			  			</div>
 			  		</div>
@@ -441,10 +446,10 @@ const serviceLists = [
     }
   }
   &>div:nth-child(2) {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    right: 0;
+    // position: absolute;
+    // bottom: 10%;
+    // left: 0;
+    // right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -650,7 +655,7 @@ const serviceLists = [
       }
     }
     &>div:nth-child(2) {
-      top: 60vh;
+      // top: 60vh;
       pointer-events: initial;
       &>div:nth-child(1) {
         display: none;
@@ -736,13 +741,13 @@ const serviceLists = [
         flex-wrap: wrap;
         &>a{
           width: calc((100% / 3) - 12px);
-          // padding: 0 6px;
+          padding: 20px 0 15px;
           margin: 0 6px;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          height: 112px;
+          // height: 112px;
           border-radius: 11.419px;
           background: #FAFDFF;
           box-shadow: 0.84581px 2.11454px 1.69163px 0px rgba(0, 0, 0, 0.10);
@@ -993,6 +998,31 @@ const serviceLists = [
 						letter-spacing: 0.969px;
 					font-size: 12px;
 				}
+      &.home-mbContent-box-en{
+        .partTwo-in-text>div:nth-of-type(2){
+          height: auto;
+          padding: 5px 10px;
+          line-height: 1.2;
+          white-space: pre-wrap;
+        }
+        .partTwo-in:nth-of-type(1)>.partTwo-in-text{
+          bottom: -40px;
+        }
+        .indexContext_1-text{
+          padding: 0;
+        }
+        .indexContext_1-text h2{
+          text-align: center;
+          white-space: pre-wrap;
+        }
+        .indexContext_1-text p{
+          letter-spacing: .5px;
+          padding: 0 2rem;
+        }
+        .indexContext_2-text p{
+          letter-spacing: .9px;
+        }
+      }
     }
   }
 }

@@ -50,6 +50,37 @@ pages:
     title: 'CMER Eye Center'
     index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
     home: Home
+    contentnav:
+      title: Medical Services
+      context: Click the icons below to learn more
+    contentBox:
+      s1_1: 1st
+      s1_2: |
+            Hong Kong 
+            Listed Ophthalmic
+            Center
+      s2_1: 23
+      s2_2: Ophthalmologists
+      s3_1: 11
+      s3_2: Eyecare Centers
+      s4_1: 98%
+      s4_2: |
+            Customer
+            Satisfaction Rate
+      h2_1: |
+            Based on customers’needs,
+            we provide targeted treatments
+            which reach international
+            standard.
+      p1: "C-MER Eye Center is affiliated to the C-MER Eye Care Holdings Ltd. Our first eyecare center established in Hong Kong in January 2012. We adopt international technology and treatments, as well as strictly abide by operating standards of Hong Kong and international medical technology in order to provide high-quality eye care services for our patients."
+      h2_2: Group Profile
+      p2: "The headquarter of the C-MER Eye Care Holdings Ltd. (“C-MER”, Stock Code: 03309.HK) is located in Hong Kong. It is the first Hong Kong large-scale listed eyecare holdings limited with 33 medical institutions and vision centers ."
+      span1_1: Public offering has over 1500 times subscription in the Hong Kong stock market in 2018
+      span1_2: ""
+      span2: China Healthcare Industry Award in 2019
+      span3_1: The 4th CSRC of The Most Valuable Pharmaceutical Enterprise in 2020
+      span3_2: ""
+      span3_3: ""
     footer:
       company: Copyright © 2023 C-MER Eye Center
       copy_right: ""
