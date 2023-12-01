@@ -2193,11 +2193,12 @@ pages:
       cost_tr13_td1: 眼底照相 + 靛青綠血管造影（包藥費）
       cost_tr14_td1: 眼底照相 + 眼底熒光血管造影 + 靛青綠血管造影（包藥費）
       cost_tr15_td1: B 超聲波掃描
-      cost_tr16_td1: 白內障超聲乳化矯視術前檢查
+      cost_tr16_td1: 白內障超聲乳化手術術前檢查
       cost_tr18_td1: 光學生物測量儀
       cost_tr17_td1: 隱形眼鏡驗配
       cost_tr17_td2: 八歲以上
       cost_tr18_td2: 八歲或以下
+      cost_tr21_td1: 白內障超聲乳化手術(單焦點人工晶體)
       cost_p2: 以上價格以
       cost_p2_1: 港幣
       cost_p2_2: 結算

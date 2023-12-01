@@ -213,6 +213,13 @@ const scrollHeight = () => {
                     <td class="text-center">/</td>
                     <td class="text-center">$600/$800</td>
                   </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr21_td1') }}
+                    </td>
+                    <td class="text-center">$20,000<br/>-$38,000</td>
+                    <td class="text-center">/</td>
+                  </tr>
                 </tbody>
               </table>
               <p class="text-center mt-20 mb-4 leading-10">
