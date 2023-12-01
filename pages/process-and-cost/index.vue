@@ -117,6 +117,13 @@ const scrollHeight = () => {
                   </tr>
                   <tr>
                     <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr19_td1') }}
+                    </td>
+                    <td class="text-center">$1,000</td>
+                    <td class="text-center">$1,800</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
                     </td>
                     <td class="text-center">$400</td>
@@ -166,6 +173,13 @@ const scrollHeight = () => {
                   </tr>
                   <tr>
                     <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr20_td1') }}
+                    </td>
+                    <td class="text-center">/</td>
+                    <td class="text-center">$200</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr12_td1') }}
                     </td>
                     <td class="text-center">/</td>
@@ -201,18 +215,32 @@ const scrollHeight = () => {
                   </tr>
                 </tbody>
               </table>
-              <p class="text-center mt-20 mb-16 leading-10">
-                {{ $t('pages.process_cost.cont.cost_p2')
-                }}<span class="font-bold">{{ $t('pages.process_cost.cont.cost_p2_1') }}</span>
+              <p class="text-center mt-20 mb-4 leading-10">
+                {{ $t('pages.process_cost.cont.cost_p2')}}
+                <span class="font-bold">{{ $t('pages.process_cost.cont.cost_p2_1') }}</span>
                 {{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p3_1_s')
-                }}<br />
-                {{ $t('pages.process_cost.cont.cost_p5') }}{{ $t('pages.process_cost.cont.cost_p4') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p6')
-                }}<span class="font-bold">$1,500-$6,000</span>{{ $t('pages.process_cost.cont.cost_p6_1') }}
+                {{ $t('pages.process_cost.cont.cost_p3_1_s')}}<br />
+                {{ $t('pages.process_cost.cont.cost_p5') }}
+                {{ $t('pages.process_cost.cont.cost_p4') }}<br />
+                {{ $t('pages.process_cost.cont.cost_p6') }}
+                <span class="font-bold">$1,500-$6,000</span>
+                {{ $t('pages.process_cost.cont.cost_p6_1') }}
                 {{ $t('pages.process_cost.cont.cost_p7') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p9') }}
               </p>
+              <div class="ClaimFormBox">
+                <div class="title">{{$t('pages.process_cost.cont.cost_form_title')}}</div>
+                <div><span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_1')}}</span> <span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_2')}}</span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td2_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td2_2')}}</span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td3_1')}}</span> <span></span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td4_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td4_2')}}</span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td5_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td5_2')}}</span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td6_1')}}</span> <span></span></div>
+                <div><span>{{$t('pages.process_cost.cont.cost_form_td7_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td7_2')}}</span></div>
+              </div>
+              <div class="updateBox mt-12 mb-16">
+                {{ $t('pages.process_cost.cont.cost_p10') }}
+                <!-- 最後更新: 01/12/2023 -->
+              </div>
             </div>
           </div>
         </div>
@@ -359,7 +387,7 @@ const scrollHeight = () => {
       }
       &>tr:nth-child(17) {
         &>td:nth-child(2) {
-          text-align: left;
+          // text-align: left;
         }
       }
     }
@@ -521,7 +549,39 @@ const scrollHeight = () => {
   }
 }
 
+.ClaimFormBox{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 390px;
+  div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    &.title{
+      margin-bottom: 10px;
+      font-weight: 700;
+      justify-content: center;
+    }
+    span{
+      &:nth-of-type(2){
+        text-align: right;
+      }
+    }
+  }
+}
+.updateBox{
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
+  .ClaimFormBox{
+    div{
+      span{
+        &:nth-of-type(2){
+          min-width: 40%;
+        }
+      }
+    }
+  }
   .titleBox {
     width: max-content;
     color: #515151;
