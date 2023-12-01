@@ -10,10 +10,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'eyeOrthopaedicDiseaseDesc',
         name: 'description',
         content: t('tdk.eyeOrthopaedicDisease.desc'),
       },
       {
+        hid: 'eyeOrthopaedicDiseaseKey',
         name: 'keywords',
         content: t('tdk.eyeOrthopaedicDisease.key'),
       }

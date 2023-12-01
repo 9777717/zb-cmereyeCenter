@@ -8,10 +8,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'indexDesc',
         name: 'description',
         content: t('tdk.index.desc'),
       },
       {
+        hid: 'indexKey',
         name: 'keywords',
         content: t('tdk.index.key'),
       }

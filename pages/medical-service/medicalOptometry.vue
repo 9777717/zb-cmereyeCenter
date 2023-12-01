@@ -8,10 +8,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'medicalOptometryDesc',
         name: 'description',
         content: t('tdk.medicalOptometry.desc'),
       },
       {
+        hid: 'medicalOptometryKey',
         name: 'keywords',
         content: t('tdk.medicalOptometry.key'),
       }

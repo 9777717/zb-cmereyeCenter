@@ -14,6 +14,7 @@ useHead({
     return [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        hid: 'addDesc',
         name: 'description',
         content: t('tdk.app.desc'),
       }

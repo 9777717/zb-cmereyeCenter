@@ -10,10 +10,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'cataractDesc',
         name: 'description',
         content: t('tdk.cataract.desc'),
       },
       {
+        hid: 'cataractKey',
         name: 'keywords',
         content: t('tdk.cataract.key'),
       }

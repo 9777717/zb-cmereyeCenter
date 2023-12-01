@@ -3,31 +3,38 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: `${t('pages.about_us.center_profile')} | ${t('pages.about_us.about_us')}｜${t('pages.index.title')}`,
   meta(){
     return [
       {
+        hid: 'description1',
         name: 'description',
         content: t('tdk.about-us.desc1'),
       },
       {
+        hid: 'key1',
         name: 'keywords',
         content: t('tdk.about-us.key1'),
       },
       {
+        hid: 'description2',
         name: 'description',
         content: t('tdk.about-us.desc2'),
       },
       {
+        hid: 'key2',
         name: 'keywords',
         content: t('tdk.about-us.key2'),
       },
       {
+        hid: 'description3',
         name: 'description',
         content: t('tdk.about-us.desc3'),
       },
       {
+        hid: 'key3',
         name: 'keywords',
         content: t('tdk.about-us.key3'),
       },
@@ -35,7 +42,7 @@ useHead(() => ({
   }
 }))
 
-const locale = useState<string>('locale.setting')
+
 
 const CORPORATE_Lists = [
   {

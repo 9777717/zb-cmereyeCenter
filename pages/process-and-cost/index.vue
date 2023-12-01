@@ -9,18 +9,22 @@ useHead({
   meta(){
     return [
       {
+        hid: 'processAndCostDesc1',
         name: 'description',
         content: t('tdk.process-and-cost.desc1'),
       },
       {
+        hid: 'processAndCostKey1',
         name: 'keywords',
         content: t('tdk.process-and-cost.key1'),
       },
       {
+        hid: 'processAndCostDesc2',
         name: 'description',
         content: t('tdk.process-and-cost.desc2'),
       },
       {
+        hid: 'processAndCostKey2',
         name: 'keywords',
         content: t('tdk.process-and-cost.key2'),
       },

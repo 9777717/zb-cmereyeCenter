@@ -10,10 +10,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'maculopathyDesc',
         name: 'description',
         content: t('tdk.maculopathy.desc'),
       },
       {
+        hid: 'maculopathyKey',
         name: 'keywords',
         content: t('tdk.maculopathy.key'),
       }

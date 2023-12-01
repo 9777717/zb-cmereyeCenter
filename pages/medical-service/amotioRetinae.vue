@@ -9,10 +9,12 @@ useHead(() => ({
   meta(){
     return [
     {
+      hid: 'amotioRetinaeDesc',
       name: 'description',
       content: t('tdk.amotioRetinae.desc'),
     },
     {
+      hid: 'amotioRetinaeKey',
       name: 'keywords',
       content: t('tdk.amotioRetinae.key'),
     },

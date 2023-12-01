@@ -9,15 +9,17 @@ useHead(() => ({
   title: t('pages.medical_team.medical_team_header_title'),
   meta(){
     return [
-    {
-      name: 'description',
-      content: t('tdk.medical_team.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.medical_team.key'),
-    }
-  ]
+      {
+        hid: 'medicalTeamDesc',
+        name: 'description',
+        content: t('tdk.medical_team.desc'),
+      },
+      {
+        hid: 'medicalTeamKey',
+        name: 'keywords',
+        content: t('tdk.medical_team.key'),
+      }
+    ]
   },
 }))
 const doctorList = [

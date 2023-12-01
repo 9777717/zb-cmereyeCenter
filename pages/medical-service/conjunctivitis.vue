@@ -9,10 +9,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'conjunctivitisDesc',
         name: 'description',
         content: t('tdk.conjunctivitis.desc'),
       },
       {
+        hid: 'conjunctivitisKey',
         name: 'keywords',
         content: t('tdk.conjunctivitis.key'),
       }

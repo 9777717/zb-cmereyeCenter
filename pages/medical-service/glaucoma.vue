@@ -12,10 +12,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'glaucomaDesc',
         name: 'description',
         content: t('tdk.glaucoma.desc'),
       },
       {
+        hid: 'glaucomaKey',
         name: 'keywords',
         content: t('tdk.glaucoma.key'),
       }

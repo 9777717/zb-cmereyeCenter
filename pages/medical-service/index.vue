@@ -9,10 +9,12 @@ useHead({
     return [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        hid: 'serviceIndexDesc',
         name: 'description',
         content: t('tdk.medical-service.desc'),
       },
       {
+        hid: 'serviceIndexkey',
         name: 'keywords',
         content: t('tdk.medical-service.key'),
       }

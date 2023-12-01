@@ -9,10 +9,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'muscaeVolitantesDesc',
         name: 'description',
         content: t('tdk.muscae_volitantes.desc'),
       },
       {
+        hid: 'muscaeVolitantesKey',
         name: 'keywords',
         content: t('tdk.muscae_volitantes.key'),
       }

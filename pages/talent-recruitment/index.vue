@@ -8,10 +8,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'talentDesc',
         name: 'description',
         content: t('tdk.talent-recruitment.desc'),
       },
       {
+        hid: 'talentKey',
         name: 'keywords',
         content: t('tdk.talent-recruitment.key'),
       }

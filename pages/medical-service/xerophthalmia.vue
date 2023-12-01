@@ -268,10 +268,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'xerophthalmiaDesc',
         name: 'description',
         content: t('tdk.xerophthalmia.desc'),
       },
       {
+        hid: 'xerophthalmiaKey',
         name: 'keywords',
         content: t('tdk.xerophthalmia.key'),
       }

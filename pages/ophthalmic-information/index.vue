@@ -8,10 +8,12 @@ useHead(() => ({
   meta(){
     return [
     {
+      hid: 'ophthalmicDesc',
       name: 'description',
       content: t('tdk.ophthalmic-information.desc'),
     },
     {
+      hid: 'ophthalmicKey',
       name: 'keywords',
       content: t('tdk.ophthalmic-information.key'),
     }

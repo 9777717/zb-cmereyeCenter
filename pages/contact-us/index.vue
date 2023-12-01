@@ -9,10 +9,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'contactUsdesc',
         name: 'description',
         content: t('tdk.contact-us.desc'),
       },
       {
+        hid: 'contactUsKey',
         name: 'keywords',
         content: t('tdk.contact-us.key'),
       }

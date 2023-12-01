@@ -10,10 +10,12 @@ useHead(() => ({
   meta(){
     return [
       {
+        hid: 'strabismusAmblyopiaDesc',
         name: 'description',
         content: t('tdk.strabismusAmblyopia.desc'),
       },
       {
+        hid: 'strabismusAmblyopiaKey',
         name: 'keywords',
         content: t('tdk.strabismusAmblyopia.key'),
       }
