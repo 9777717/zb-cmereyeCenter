@@ -6,16 +6,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.conjunctivitis_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.conjunctivitis.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.conjunctivitis.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.conjunctivitis.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.conjunctivitis.key'),
+      }
+    ]
+  },
 }))
 const locale = useState<string>('locale.setting')
 // 传递背景色

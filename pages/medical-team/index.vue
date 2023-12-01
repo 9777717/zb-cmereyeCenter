@@ -7,9 +7,9 @@ const locale = useState<string>('locale.setting')
 
 useHead(() => ({
   title: t('pages.medical_team.medical_team_header_title'),
-  meta: [
+  meta(){
+    return [
     {
-      hid: 'description',
       name: 'description',
       content: t('tdk.medical_team.desc'),
     },
@@ -17,7 +17,8 @@ useHead(() => ({
       name: 'keywords',
       content: t('tdk.medical_team.key'),
     }
-  ],
+  ]
+  },
 }))
 const doctorList = [
   {

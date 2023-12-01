@@ -9,16 +9,18 @@ const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.medical_service_glaucoma_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.glaucoma.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.glaucoma.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.glaucoma.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.glaucoma.key'),
+      }
+    ]
+  },
 }))
 // 传递背景色
 const backgd = [

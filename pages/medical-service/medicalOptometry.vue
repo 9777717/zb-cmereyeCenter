@@ -5,16 +5,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.medicalOptometry_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.medicalOptometry.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.medicalOptometry.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.medicalOptometry.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.medicalOptometry.key'),
+      }
+    ]
+  }
 }))
 
 const locale = useState<string>('locale.setting')

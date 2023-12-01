@@ -5,32 +5,34 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: `${t('pages.about_us.center_profile')} | ${t('pages.about_us.about_us')}｜${t('pages.index.title')}`,
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.about-us.desc1'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.about-us.key1'),
-    },
-    {
-      name: 'description',
-      content: t('tdk.about-us.desc2'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.about-us.key2'),
-    },
-    {
-      name: 'description',
-      content: t('tdk.about-us.desc3'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.about-us.key3'),
-    },
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.about-us.desc1'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.about-us.key1'),
+      },
+      {
+        name: 'description',
+        content: t('tdk.about-us.desc2'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.about-us.key2'),
+      },
+      {
+        name: 'description',
+        content: t('tdk.about-us.desc3'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.about-us.key3'),
+      },
+    ]
+  }
 }))
 
 const locale = useState<string>('locale.setting')

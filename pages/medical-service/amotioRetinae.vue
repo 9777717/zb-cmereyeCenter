@@ -6,7 +6,8 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.amotioRetinae_head'),
-  meta: [
+  meta(){
+    return [
     {
       name: 'description',
       content: t('tdk.amotioRetinae.desc'),
@@ -15,7 +16,8 @@ useHead(() => ({
       name: 'keywords',
       content: t('tdk.amotioRetinae.key'),
     },
-  ],
+  ]
+  },
 }))
 
 const locale = useState<string>('locale.setting')

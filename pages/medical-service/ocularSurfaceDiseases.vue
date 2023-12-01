@@ -5,16 +5,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.ocularSurfaceDiseases_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.ocularSurfaceDiseases.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.ocularSurfaceDiseases.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.ocularSurfaceDiseases.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.ocularSurfaceDiseases.key'),
+      }
+    ]
+  },
 }))
 const locale = useState<string>('locale.setting')
 // 传递背景色

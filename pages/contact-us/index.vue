@@ -6,16 +6,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t('pages.contact_us.contact_us')}`,
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.contact-us.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.contact-us.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.contact-us.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.contact-us.key'),
+      }
+    ]
+  },
 }))
 
 const locale = useState<string>('locale.setting')

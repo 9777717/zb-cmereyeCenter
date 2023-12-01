@@ -7,16 +7,18 @@ const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.maculopathy_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.maculopathy.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.maculopathy.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.maculopathy.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.maculopathy.key'),
+      }
+    ]
+  }
 }))
 // 传递背景色
 const backgd = [

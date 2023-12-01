@@ -6,16 +6,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.index.title'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.index.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.index.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.index.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.index.key'),
+      }
+    ]
+  },
 }))
 const locale = useState<string>('locale.setting')
 // 跳转Whatsapp

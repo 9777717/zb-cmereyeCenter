@@ -265,16 +265,18 @@ const prevent = [
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.xerophthalmia_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.xerophthalmia.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.xerophthalmia.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.xerophthalmia.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.xerophthalmia.key'),
+      }
+    ]
+  },
 }))
 // 内部导航
 const serviceNavigation = [

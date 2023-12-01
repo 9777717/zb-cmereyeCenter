@@ -6,16 +6,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.muscae_volitantes_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.muscae_volitantes.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.muscae_volitantes.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.muscae_volitantes.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.muscae_volitantes.key'),
+      }
+    ]
+  },
 }))
 const locale = useState<string>('locale.setting')
 // 传递背景色

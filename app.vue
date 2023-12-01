@@ -10,19 +10,15 @@ const { t } = useLang()
 useHead({
   title: app.name,
   titleTemplate: `%s - ${t('app.title')}`,
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    {
-      // hid: 'description',
-      name: 'description',
-      content: t('tdk.app.desc'),
-    },
-    // {
-    //   hid: 'description',
-    //   name: 'description',
-    //   content: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
-    // }
-  ],
+  meta(){
+    return [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'description',
+        content: t('tdk.app.desc'),
+      }
+    ]
+  },
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
 })
 let cookieBoxShow = ref(false)

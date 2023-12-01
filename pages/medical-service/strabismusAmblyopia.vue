@@ -7,16 +7,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.strabismusAmblyopia_con_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.strabismusAmblyopia.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.strabismusAmblyopia.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.strabismusAmblyopia.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.strabismusAmblyopia.key'),
+      }
+    ]
+  }
 }))
 
 const locale = useState<string>('locale.setting')

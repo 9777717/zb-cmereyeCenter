@@ -5,16 +5,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: `${t('pages.talent_recruitment.talent_recruitment')}｜${t('pages.index.title')}`,
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.talent-recruitment.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.talent-recruitment.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.talent-recruitment.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.talent-recruitment.key'),
+      }
+    ]
+  },
 }))
 </script>
 

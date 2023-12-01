@@ -7,16 +7,18 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('pages.medical_service.medical_service_cataract_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.cataract.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.cataract.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.cataract.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.cataract.key'),
+      }
+    ]
+  },
 }))
 // 传递背景色
 const backgd = [

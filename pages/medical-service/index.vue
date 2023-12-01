@@ -5,18 +5,19 @@ definePageMeta({
 const { t } = useLang()
 useHead({
   title: `${t('pages.medical_service.medical_service')} | ${t('pages.index.title')}`,
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    {
-      hid: 'description',
-      name: 'description',
-      content: t('tdk.medical-service.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.medical-service.key'),
-    }
-  ],
+  meta(){
+    return [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'description',
+        content: t('tdk.medical-service.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.medical-service.key'),
+      }
+    ]
+  },
 })
 const SerListL = [
   {

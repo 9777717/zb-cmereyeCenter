@@ -5,7 +5,8 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: '醫生小教室｜眼科資訊｜香港希瑪眼科中心',
-  meta: [
+  meta(){
+    return [
     {
       name: 'description',
       content: t('tdk.ophthalmic-information.desc'),
@@ -14,7 +15,8 @@ useHead(() => ({
       name: 'keywords',
       content: t('tdk.ophthalmic-information.key'),
     }
-  ],
+  ]
+  },
 }))
 
 let mainContent = ref([

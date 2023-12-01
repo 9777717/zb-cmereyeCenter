@@ -7,16 +7,18 @@ definePageMeta({
 })
 useHead(() => ({
   title: t('pages.medical_service.eyeOrthopaedicDisease_head'),
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.eyeOrthopaedicDisease.desc'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.eyeOrthopaedicDisease.key'),
-    }
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.eyeOrthopaedicDisease.desc'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.eyeOrthopaedicDisease.key'),
+      }
+    ]
+  },
 }))
 // 传递背景色
 const backgd = [

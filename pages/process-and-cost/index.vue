@@ -6,24 +6,26 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead({
   title: `${t('pages.process_cost.cost')} | ${t('pages.process_cost.process')}`,
-  meta: [
-    {
-      name: 'description',
-      content: t('tdk.process-and-cost.desc1'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.process-and-cost.key1'),
-    },
-    {
-      name: 'description',
-      content: t('tdk.process-and-cost.desc2'),
-    },
-    {
-      name: 'keywords',
-      content: t('tdk.process-and-cost.key2'),
-    },
-  ],
+  meta(){
+    return [
+      {
+        name: 'description',
+        content: t('tdk.process-and-cost.desc1'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.process-and-cost.key1'),
+      },
+      {
+        name: 'description',
+        content: t('tdk.process-and-cost.desc2'),
+      },
+      {
+        name: 'keywords',
+        content: t('tdk.process-and-cost.key2'),
+      },
+    ]
+  },
 })
 const serviceNavigation = [
   {
