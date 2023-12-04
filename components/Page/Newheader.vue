@@ -403,6 +403,7 @@ const changeLang = (_lang: any) => {
                   v-for="(childItem, childIndex) in menusItem.childMenuList"
                   :key="`${menusIndex}-${childIndex}`"
                   :index="`${menusIndex}-${childIndex}`"
+                  class="itemCr"
                   @click="toLinks(childItem)"
                 >
                   {{ childItem.text }}
@@ -422,6 +423,7 @@ const changeLang = (_lang: any) => {
                 <el-menu-item
                   v-for="lang in availableLocales"
                   :key="lang.iso"
+                  class="itemCr"
                   @click="changeLang(lang.iso)"
                 >
                   {{ lang.name }}
@@ -577,10 +579,15 @@ const changeLang = (_lang: any) => {
   color: #2958a3;
   font-size: 16px;
   padding: 0 20px !important;
+  font-weight: 500;
+}
+.itemCr{
+  text-indent: 30px;
 }
 .el-sub-menu__title {
   color: #2958a3;
   font-size: 16px;
+  font-weight: 600;
 }
 // :deep(.el-menu) {
 //   background-color: #f2f2f2 !important;
