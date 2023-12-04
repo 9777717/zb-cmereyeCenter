@@ -28,6 +28,9 @@ const handleSetCookie = () =>{
   localStorage.setItem('userCookie','1');
 }
 onMounted(()=>{
+  if(window.location.pathname.includes('/en/')){
+    locale.value = 'en'
+  }
   try{
     let getCookie = localStorage.getItem('userCookie');
     if(!getCookie){
