@@ -41,36 +41,46 @@ const homeSwiperImgs = [
   //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
   // }
   {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01.jpg',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en.jpg',
+    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01.jpg',
+    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en.jpg',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01.webp',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en.webp',
     title: ['香港上市公司 11間眼科診所'],
     text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
     link: '/about-us'
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.jpg',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.jpg',
+    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.jpg',
+    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.jpg',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
     title: ['全面涵蓋九大眼科醫療領域'],
     text: ['致力提供全面眼科醫療服務','貼心護理服務 滿足患者不同需求'],
     link: '/medical-service'
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.jpg',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.jpg',
+    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.jpg',
+    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.jpg',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
     title: ['以人為本，以客人為中心'],
     text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
     link: '/about-us#feedback'
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.jpg',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.jpg',
+    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.jpg',
+    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.jpg',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
     title: ['國際認可先進眼科醫療技術'],
     text: ['高水準眼科治療和服務','實現精確、安全手術操作'],
     link: '/about-us#medicalEquipment'
   },
   {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.jpg',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.jpg',
+    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.jpg',
+    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.jpg',
+    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
+    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
     title: ['全心全意守護每雙眼睛'],
     text: ['追求卓越 堅持使命','關注全生命眼健康周期'],
     link: '/about-us#corporate'
