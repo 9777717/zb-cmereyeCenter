@@ -13,11 +13,11 @@ useHead({
   meta(){
     return [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'addDesc',
-        name: 'description',
-        content: t('tdk.app.desc'),
-      }
+      // {
+      //   hid: 'addDesc',
+      //   name: 'description',
+      //   content: t('tdk.app.desc'),
+      // }
     ]
   },
   link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
