@@ -17,13 +17,17 @@ defineProps({
   pageName: {
     type: String,
     default: 'cataract',
+  },
+  btnName: {
+    type: String,
+    default: ''
   }
 })
 </script>
 
 <template>
   <a :href="link" class="service-button" :class="{'service-button-en': locale === 'en'}">
-    <div class="service-button-in" :class="pageName">
+    <div class="service-button-in" :class="[pageName,btnName]">
       <!-- <slot name="btnIcon"></slot> -->
       <div class="service-button-in-icon" v-if="type === '2'">
         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="76" viewBox="0 0 81 76" fill="none">
@@ -223,6 +227,11 @@ defineProps({
           font-size: 24px;
           line-height: 120%;
           padding: 10px 0;
+        }
+      }
+      &.cataractBtn1{
+        .service-button-in-text{
+          padding: 0 15px;
         }
       }
     }
