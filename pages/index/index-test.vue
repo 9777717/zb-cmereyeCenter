@@ -217,7 +217,7 @@ const serviceLists = [
       <div class="mbHomeSwiper">
         <swiper
           :loop="true"
-          :autoplay="{ delay: 5000 }"
+          :autoplay="{ delay: 3000 }"
           :pagination="{ clickable: true }"
           :modules="[Pagination,Autoplay]"
         >
