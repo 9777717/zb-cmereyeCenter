@@ -216,7 +216,7 @@ const bannerData = {
 <template>
   <div class="conjunctivitis">
     <PageServiceBanner :bannerData="bannerData" />
-    <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
+    <EnServiceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
     <div class="conjunctivitis_nav" :class="{'conjunctivitis-en': locale === 'en'}">
       <!-- 什麼是結膜炎？ -->
@@ -392,7 +392,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#c0c0e6;'}`"
     />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

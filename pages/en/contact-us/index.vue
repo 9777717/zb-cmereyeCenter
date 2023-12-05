@@ -452,8 +452,8 @@ onMounted(()=>{
       :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`:'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'"
       :co="`color:${'#6a91cf;'}`"
     />
-    <PageInformation :service-navigation="serviceNavigation" />
-    <PageFooterMenu />
+    <EnInformation :service-navigation="serviceNavigation" />
+    <EnFooterMenu />
   </div>
 </template>
 

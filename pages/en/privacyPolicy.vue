@@ -81,7 +81,7 @@ useHead(() => ({
         </div>
       </div>
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

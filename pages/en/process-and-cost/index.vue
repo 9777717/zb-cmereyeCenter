@@ -305,10 +305,10 @@ const scrollHeight = () => {
           </div>
         </div>
       </div>
-      <PageInformation :service-navigation="serviceNavigation" />
+      <EnInformation :service-navigation="serviceNavigation" />
 
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

@@ -366,7 +366,7 @@ const doctorList = [
     </div>
     <Footer class="-mt-24" />
     <div class="mt-50">
-      <PageFooterMenu />
+      <EnFooterMenu />
     </div>
   </div>
 </template>

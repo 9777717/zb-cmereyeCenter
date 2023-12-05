@@ -12,27 +12,27 @@ const menuLists = computed(()=>[
     lists: [
       {
         name: t('pages.about_us.center_profile'),
-        link: '/about-us#centreIntro',
+        link: '/en/about-us#centreIntro',
         icon: ''
       },{
         name: t('pages.about_us.development_course'),
-        link: '/about-us#history',
+        link: '/en/about-us#history',
         icon: ''
       },{
         name: t('pages.about_us.enterprise_vision'),
-        link: '/about-us#corporate',
+        link: '/en/about-us#corporate',
         icon: ''
       },{
         name: t('pages.medical_team.medical_team'),
-        link: '/medical-team',
+        link: '/en/medical-team',
         icon: ''
       },{
         name: t('pages.about_us.equipment_centre'),
-        link: '/about-us#medicalEquipment',
+        link: '/en/about-us#medicalEquipment',
         icon: ''
       },{
         name: t('pages.talent_recruitment.talent_recruitment'),
-        link: '/talent-recruitment',
+        link: '/en/talent-recruitment',
         icon: ''
       }
     ],
@@ -43,51 +43,51 @@ const menuLists = computed(()=>[
       {
         name: t('pages.medical_service.cataract'),
         icon: '',
-        link: '/medical-service/cataract',
+        link: '/en/medical-service/cataract',
       },{
         name: t('pages.medical_service.maculopathy'),
         icon: '',
-        link: '/medical-service/maculopathy'
+        link: '/en/medical-service/maculopathy'
       },{
         name: t('pages.medical_service.muscae_volitantes'),
         icon: '',
-        link: '/medical-service/muscaeVolitantes'
+        link: '/en/medical-service/muscaeVolitantes'
       },{
         name: t('pages.medical_service.amotioRetinae'),
         icon: '',
-        link: '/medical-service/amotioRetinae'
+        link: '/en/medical-service/amotioRetinae'
       },{
         name: t('pages.medical_service.glaucoma'),
         icon: '',
-        link: '/medical-service/glaucoma'
+        link: '/en/medical-service/glaucoma'
       },{
         name: t('pages.medical_service.conjunctivitis'),
         icon: '',
-        link: '/medical-service/conjunctivitis'
+        link: '/en/medical-service/conjunctivitis'
       },{
         name: t('pages.medical_service.xerophthalmia'),
         icon: '',
-        link: '/medical-service/xerophthalmia'
+        link: '/en/medical-service/xerophthalmia'
       },{
         name: t('pages.medical_service.ocularSurfaceDiseases'),
         icon: '',
-        link: '/medical-service/ocularSurfaceDiseases'
+        link: '/en/medical-service/ocularSurfaceDiseases'
       },{
         name: t('pages.medical_service.strabismusAmblyopia'),
         icon: '',
-        link: '/medical-service/strabismusAmblyopia'
+        link: '/en/medical-service/strabismusAmblyopia'
       },{
         name: t('pages.medical_service.atropine'),
         icon: '',
-        link: '/medical-service/atropine'
+        link: '/en/medical-service/atropine'
       },{
         name: t('pages.medical_service.eyeOrthopaedicDisease'),
         icon: '',
-        link: '/medical-service/eyeOrthopaedicDisease'
+        link: '/en/medical-service/eyeOrthopaedicDisease'
       },{
         name: t('pages.medical_service.medicalOptometry'),
         icon: '',
-        link: '/medical-service/medicalOptometry'
+        link: '/en/medical-service/medicalOptometry'
       }
     ],
   },
@@ -107,7 +107,7 @@ const menuLists = computed(()=>[
       // {
       //   name: 'SMILE專線: (852) 6730 8554',
       //   icon: 'https://static.cmereye.com/imgs/2023/07/e4927ce3113f0a5d.png',
-      //   link: ''
+      //   link: '/en'
       // },
       {
         name: 'Facebook: cmereyecenter',
@@ -152,7 +152,6 @@ const imgLists = [
     link: 'https://weibo.com/u/7083441648?refer_flag=1001030103_&is_all=1'
   }
 ]
-
 const router = useRouter()
 const handleToLinks = (_data:any) => {
   // location.href = _data.link
@@ -210,7 +209,7 @@ let drawer = ref(false)
         </div>  
       </div>
       <div class="footerMenu-in-b">
-        <div><span @click="handleToLinks({link: '/privacyPolicy'})">{{$t('pages.index.footer.privacy')}}</span> | <span @click="handleToLinks({link: '/disclaimer'})">{{$t('pages.index.footer.disclaimer')}}</span></div>
+        <div><span @click="handleToLinks({link: '/en/privacyPolicy'})">{{$t('pages.index.footer.privacy')}}</span> | <span @click="handleToLinks({link: '/en/disclaimer'})">{{$t('pages.index.footer.disclaimer')}}</span></div>
         <div>{{$t('components.menus.footerMenuB1')}}</div>
         <div class="imgLists">
           <div @click="handleImgLists(iconItem)" v-for="(iconItem,iconIndex) in imgLists" :key="iconIndex"></div>

@@ -220,7 +220,7 @@ const bannerData = {
     <!-- 头部 -->
     <PageServiceBanner :bannerData="bannerData" />
     <div class="maculopathy-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
     <div class="maculopathy_nav" :class="{'maculopathyNav-en': locale === 'en'}">
       <!-- 什麼是黃斑病變？ -->
@@ -517,7 +517,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#dec692;'}`"
     />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

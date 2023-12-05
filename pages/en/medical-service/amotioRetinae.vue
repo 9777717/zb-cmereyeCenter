@@ -200,7 +200,7 @@ const bannerData = {
 <template>
   <div class="amotioRetinae">
     <PageServiceBanner :bannerData="bannerData" />
-    <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
+    <EnServiceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
     <div class="amotioRetinae_nav" :class="{'amotioRetinaeNav-en': locale === 'en'}">
       <div id="intro">
         <div class="amotioRetinae_title_text">{{$t('pages.medical_service.amotioRetinae_con.intro.name')}}</div>
@@ -346,7 +346,7 @@ const bannerData = {
     <!-- 表单 -->
     <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#eab1a6;'}`" />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

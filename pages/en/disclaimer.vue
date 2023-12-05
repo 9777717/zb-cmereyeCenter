@@ -22,7 +22,7 @@ useHead(() => ({
         <div>{{$t('pages.disclaimer.p6')}}</div>
       </div>
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

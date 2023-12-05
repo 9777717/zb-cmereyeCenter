@@ -331,7 +331,7 @@ const bannerData = {
   <div class="ocularSurfaceDiseases">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="ocularSurfaceDiseases-nav">
-      <serviceNav
+      <EnServiceNav
         :arrData="serviceNavigation"
         :pageName="'ocularSurfaceDiseases'"
       />
@@ -1735,7 +1735,7 @@ const bannerData = {
         :co="`color:${'#7DBE9C;'}`"
       />
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

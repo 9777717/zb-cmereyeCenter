@@ -253,7 +253,7 @@ const bannerData = {
   <div class="eyeOrthopaedicDisease">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="eyeOrthopaedicDisease-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
     </div>
     <div class="eyeOrthopaedicDisease_nav" :class="{'eyeOrthopaedicDiseaseNav-en': locale === 'en'}">
       <div id="ophthalmoplasty">
@@ -888,7 +888,7 @@ const bannerData = {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${backgd[0]}`" />
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

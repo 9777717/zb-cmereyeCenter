@@ -371,7 +371,7 @@ const bannerData = {
 <template>
   <div>
     <PageServiceBanner :bannerData="bannerData" />
-    <serviceNav :arrData="serviceNavigation" />
+    <EnServiceNav :arrData="serviceNavigation" />
     <div class="cataract" :class="{'cataract-en': locale === 'en'}" >
       <!-- 白內障 -->
       <div>
@@ -919,7 +919,7 @@ const bannerData = {
     <!-- 公共底部表单 -->
     <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#64bcd1;'}`" />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

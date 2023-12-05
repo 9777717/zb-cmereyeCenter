@@ -39,8 +39,8 @@ const serviceNavigation = [
         :co="`color:${'#515151;'};border:1px solid #515151`"
       />
     </div>
-    <PageInformation :service-navigation="serviceNavigation" />
-    <PageFooterMenu />
+    <EnInformation :service-navigation="serviceNavigation" />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

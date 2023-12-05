@@ -200,7 +200,7 @@ const bannerData = {
   <div class="muscaeVolitantes">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="muscaeVolitantes-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
     </div>
     <div class="muscaeNav" :class="{'muscaeNav-en': locale === 'en'}">
       <!-- 什麼是飛蚊症？ -->
@@ -525,7 +525,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#9cc4e2;'}`"
     />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

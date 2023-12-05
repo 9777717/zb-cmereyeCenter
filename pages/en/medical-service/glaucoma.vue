@@ -417,7 +417,7 @@ const bannerData = {
   <div>
     <PageServiceBanner :bannerData="bannerData" />
     <div class="glaucoma-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
     <div class="glaucoma-in" :class="{'glaucoma-in-en': locale === 'en'}">
       <!-- 青光眼 -->
@@ -1123,7 +1123,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#bbe0d5;'}`"
     />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 

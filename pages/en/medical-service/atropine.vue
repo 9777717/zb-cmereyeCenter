@@ -78,7 +78,7 @@ const bannerData = {
   <div class="atropine">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="atropine-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
     <div class="atropine_nav maxCon" :class="{'atropineNav-en': locale === 'en'}">
       <div id="introduce">
@@ -408,7 +408,7 @@ const bannerData = {
         :co="`color:${'#99d3dd;'}`"
       />
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

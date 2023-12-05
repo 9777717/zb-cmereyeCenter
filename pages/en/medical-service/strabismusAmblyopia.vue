@@ -227,7 +227,7 @@ const bannerData = {
   <div class="strabismusAmblyopia">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="strabismusAmblyopia-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
     </div>
     <div class="strabismusAmblyopia_nav" :class="{'strabismusAmblyopiaNav-en': locale === 'en'}">
       <div id="strabismus">
@@ -416,7 +416,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#fbbfa1;'}`"
     />
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

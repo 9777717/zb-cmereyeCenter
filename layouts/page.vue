@@ -1,21 +1,33 @@
-<script setup>
+<script setup lang="ts">
 const route = useRoute()
-const rt = ref(route)
-
+const rt = ref(route) 
+const PageNavbar = resolveComponent('PageNavbar')
+const PageNewheader = resolveComponent('PageNewheader')
+const EnNavbar = resolveComponent('EnNavbar')
+const EnNewheader = resolveComponent('EnNewheader')
+const PageFooter = resolveComponent('PageFooter')
+const EnFooter = resolveComponent('EnFooter')
+let showEnCon = ref(false)
+// console.log('当前页',rt.value.path)
+if(rt.value.path.includes('/en/')){
+  showEnCon.value = true
+}
 </script>
 <template>
   <div>
     <div>
       <slot name="header">
-        <PageNavbar :rt="rt.name" />
-        <!-- <PageHeader :rt="rt.name" /> -->
-        <PageNewheader />
+        <!-- <PageNavbar :rt="rt.name" /> -->
+        <!-- <PageNewheader /> -->
+        <component :is="showEnCon ? EnNavbar : PageNavbar" :rt="rt.name"></component>
+        <component :is="showEnCon ? EnNewheader : PageNewheader"></component>
       </slot>
       <div>
         <slot />
       </div>
       <slot name="footer">
-        <PageFooter />
+        <!-- <PageFooter /> -->
+        <component :is="showEnCon ? EnFooter : PageFooter"></component>
         <PageMbFooter />
       </slot>
     </div>

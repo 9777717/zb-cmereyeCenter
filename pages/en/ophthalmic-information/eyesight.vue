@@ -111,7 +111,7 @@ const toTestPage = (_id:string) =>{
     </div>
   </div>
   <div class="footerMenuPom">
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </div>
 </template>

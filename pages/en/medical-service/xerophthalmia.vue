@@ -342,7 +342,7 @@ const bannerData = {
     <div class="xeroheader">
       <div>
       </div>
-      <serviceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'xeroheader'" />
       <!-- 内容 -->
       <div class="xerophthalmia" :class="{'xerophthalmia-en': locale === 'en'}">
         <!-- 什麼是乾眼症 -->
@@ -685,7 +685,7 @@ const bannerData = {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${'#b6b3e0;'}`" />
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 

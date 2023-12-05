@@ -52,15 +52,15 @@ const props = defineProps({
         @mouseenter="enterActive(index)"
         @mouseleave="leaveActive"
       >
-        <nuxtLink
-          :to="item.anchorLink"
+        <nuxt-link
+          :to="'/en'+item.anchorLink"
           :class="{
             anchorActive: acIdex === Number(index),
             exactActive: exactIdex === Number(index),
           }"
         >
           {{ $t(item.anchorName) }}
-        </nuxtLink>
+        </nuxt-link>
       </div>
     </div>
   </div>

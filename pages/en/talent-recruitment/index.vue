@@ -93,7 +93,7 @@ useHead(() => ({
         <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
       </div>
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

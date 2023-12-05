@@ -163,10 +163,10 @@ const eyeDisease = [
       </div>
     </div>
     <div>
-      <PageInformation />
+      <EnInformation />
     </div>
     <div class="footerMenuPom">
-      <PageFooterMenu />
+      <EnFooterMenu />
     </div>
   </div>
 </template>

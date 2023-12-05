@@ -75,7 +75,7 @@ const bannerData = {
   <div>
     <PageServiceBanner :bannerData="bannerData" />
     <div class="medicalOptometry-nav">
-      <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
+      <EnServiceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
     </div>
     <div class="medicalOptometry_nav" :class="{'medicalOptometryNav-en': locale === 'en'}">
       <div id="brief_introduction">
@@ -285,7 +285,7 @@ const bannerData = {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${'#bcd09c;'}`" />
     </div>
-    <PageFooterMenu />
+    <EnFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

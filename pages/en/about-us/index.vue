@@ -43,7 +43,7 @@ const CORPORATE_Lists = [
 <template>
   <div class="about">
     <div class="header mainCon">
-      <AboutChildCompsHead />
+      <EnHead />
     </div>
     <div class="textbg en-font whitespace-nowrap overflow-hidden">
       OUR VISION FOR A BETTER FUTURE.
@@ -84,7 +84,7 @@ const CORPORATE_Lists = [
       <AboutChildCompsMedicalEquipment />
       <feedback-con />
       <AboutChildCompsAwards />
-      <PageFooterMenu />
+      <EnFooterMenu />
     </div>
   </div>
 </template>
