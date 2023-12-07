@@ -275,22 +275,28 @@ defineProps({
 @media screen and (max-width: 768px) {
   .service-button{
     &-in{
-      filter: drop-shadow(0 3px 0 #fff)
-            drop-shadow(3px 0 0 #fff)
-            drop-shadow(0 -3px 0 #fff)
-            drop-shadow(-3px 0 0 #fff)
-            drop-shadow(0px 3px 2px rgba($color: #000000, $alpha: .3));
-      // background: linear-gradient(45deg,  #F6F291 0%, #F4D94A 100%);
+      // filter: drop-shadow(0 3px 0 #fff)
+      //       drop-shadow(3px 0 0 #fff)
+      //       drop-shadow(0 -3px 0 #fff)
+      //       drop-shadow(-3px 0 0 #fff)
+      //       drop-shadow(0px 3px 2px rgba($color: #000000, $alpha: .3));
+      background: linear-gradient(45deg,  #F6F291 20%, #F4D94A 100%);
+      &.muscaeVolitantes{
+        background: linear-gradient(45deg,  #FAF8BE 20%, #FFE769 100%);
+      }
+      &.maculopathy{
+        background: linear-gradient(45deg,  #D8EAEB 20%, #65B6E2 100%);
+      }
       border-radius: 15px;
       &-icon{
         padding: 15px 10px 10px;
         transform: scale(.7);
-        // background: none !important;
+        background: none !important;
       }
       &-text{
         padding: 0 20px;
         min-height: 45px;
-        // background: none !important;
+        background: none !important;
         &.inText_2{
           border-radius: 0 30px 30px 0;
           margin-left: -30px;
@@ -308,13 +314,13 @@ defineProps({
     &.service-button-en{
       .service-button-in{
         max-width: 100%;
-        background: linear-gradient(45deg,  #F6F291 0%, #F4D94A 100%);
-        &.muscaeVolitantes{
-          background: linear-gradient(45deg,  #FAF8BE 20%, #FFE769 100%);
-        }
-        &.maculopathy{
-          background: linear-gradient(45deg,  #D8EAEB 20%, #65B6E2 100%);
-        }
+        // background: linear-gradient(45deg,  #F6F291 0%, #F4D94A 100%);
+        // &.muscaeVolitantes{
+        //   background: linear-gradient(45deg,  #FAF8BE 20%, #FFE769 100%);
+        // }
+        // &.maculopathy{
+        //   background: linear-gradient(45deg,  #D8EAEB 20%, #65B6E2 100%);
+        // }
         &-icon{
           background: none !important;
           transform: scale(.9);
