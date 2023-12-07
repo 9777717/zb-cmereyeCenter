@@ -229,8 +229,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color" @click="goWhatsApp()">
+        <!-- <div class="button_bg_text_color" @click="goWhatsApp()">
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_1')}}<br />{{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_2')}}
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.muscaeVolitantes_con.btn.name1_1') + '\n' + $t('pages.medical_service.muscaeVolitantes_con.btn.name1_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'muscaeVolitantes'"
+            :textLine="'2'"
+          />
         </div>
       </div>
       <!-- 飛蚊症成因 -->
@@ -313,9 +322,18 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color" @click="callTel()">
+        <!-- <div class="button_bg_text_color" @click="callTel()">
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_1')}}<br />
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')}}
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.muscaeVolitantes_con.btn.name2_1') + '\n' + $t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')"
+            :link="'tel: +852 3956 2025'" 
+            :type="'3'"
+            :pageName="'muscaeVolitantes'"
+            :textLine="'2'"
+          />
         </div>
       </div>
       <!-- 飛蚊症高危人士 -->
@@ -464,8 +482,16 @@ const bannerData = {
               <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.p9')}}</div>
             </div>
           </div>
-          <div class="button_bg_text_color" @click="callTel()">
+          <!-- <div class="button_bg_text_color" @click="callTel()">
             {{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_1')}}{{'\n'}}{{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_2')}}
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.muscaeVolitantes_con.btn.name3_1') + $t('pages.medical_service.muscaeVolitantes_con.btn.name3_2')"
+              :link="'tel: +852 3956 2025'" 
+              :type="'3'"
+              :pageName="'muscaeVolitantes'"
+            />
           </div>
         </div>
       </div>
@@ -628,8 +654,8 @@ const bannerData = {
     }
     & > div:nth-child(3) {
       margin-top: 128px;
-      width: 508px;
-      height: 140px;
+      // width: 508px;
+      // height: 140px;
     }
   }
   // 飛蚊症成因
@@ -846,8 +872,8 @@ const bannerData = {
     }
     & > div:nth-child(4) {
       margin-top: 100px;
-      width: 508px;
-      height: 140px;
+      // width: 508px;
+      // height: 140px;
     }
   }
   // 以下人士較大機會患上飛蚊症︰
@@ -1054,8 +1080,8 @@ const bannerData = {
         }
       }
       & > div:nth-child(5) {
-        width: 509px;
-        height: 141px;
+        // width: 509px;
+        // height: 141px;
         margin-top: 167px;
       }
     }
@@ -1445,11 +1471,11 @@ const bannerData = {
       }
       & > div:nth-child(3) {
         margin-top: 10px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 30px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 30px;
       }
     }
     & > div:nth-child(3) {
@@ -1579,11 +1605,11 @@ const bannerData = {
       }
       & > div:nth-child(4) {
         margin-top: 50px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 50px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 50px;
       }
     }
     & > div:nth-child(5) {
@@ -1761,12 +1787,12 @@ const bannerData = {
         }
         & > div:nth-child(5) {
           margin-top: 30px;
-          width: max-content;
-          height: 85px;
-          font-size: 18px;
-          line-height: 1.6;
-          padding: 0 70px;
-          white-space: pre-wrap;
+          // width: max-content;
+          // height: 85px;
+          // font-size: 18px;
+          // line-height: 1.6;
+          // padding: 0 70px;
+          // white-space: pre-wrap;
         }
       }
     }

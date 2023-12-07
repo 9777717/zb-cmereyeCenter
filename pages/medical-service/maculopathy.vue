@@ -286,10 +286,20 @@ const bannerData = {
               <div><img :src="item.img_down" :alt="item.title" /></div>
             </div>
           </div>
-          <div class="maculopathy_button_bg_color" @click="goWhatsApp()">
+          <!-- <div class="maculopathy_button_bg_color" @click="goWhatsApp()">
             <p>{{$t('pages.medical_service.maculopathy_con.btn.name1_1')}}</p>
             <p>{{$t('pages.medical_service.maculopathy_con.btn.name1_2')}}</p>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+            :str="$t('pages.medical_service.maculopathy_con.btn.name1_1') + '\n' + $t('pages.medical_service.maculopathy_con.btn.name1_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'maculopathy'"
+            :textLine="'2'"
+          />
           </div>
+          
         </div>
       </div>
       <!-- 常見類型 -->
@@ -465,9 +475,16 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="maculopathy_button_bg_color" @click="callTel()">
+        <!-- <div class="maculopathy_button_bg_color" @click="callTel()">
           <p>{{$t('pages.medical_service.maculopathy_con.btn.name2_1')}}</p>
           <p>{{$t('pages.medical_service.maculopathy_con.btn.name2_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button
+            :str="$t('pages.medical_service.maculopathy_con.btn.name2_1') + '\n' + $t('pages.medical_service.maculopathy_con.btn.name2_2')"
+            :link="'tel: +852 3956 2025'"
+            :pageName="'maculopathy'"
+          />
         </div>
       </div>
       <!-- 預防黃斑病變 -->

@@ -86,7 +86,7 @@ defineProps({
   &-in{
     filter: drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
     overflow: hidden;
-    border-radius: 50px;
+    border-radius: 100px;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0, 0, 0);
     display: flex;
@@ -113,6 +113,12 @@ defineProps({
         background-size: 100% 100%;
       }
     }
+    &.maculopathy{
+      &::before {
+        background: linear-gradient(45deg,  #D8EAEB 0%, #65B6E2 100%);
+        background-size: 100% 100%;
+      }
+    }
     &-icon{
       padding: 30px 25px 20px;
       border-radius: 50%;
@@ -121,16 +127,17 @@ defineProps({
     }
     &-text{
       &.inText_2{
-        border-radius: 0 50px 50px 0;
+        border-radius: 0 100px 100px 0;
         margin-left: -30px;
       }
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 50px;
+      border-radius: 100px;
       border: 4px solid #FFF;
       padding: 0 40px;
       transition: all .3s;
+      white-space: pre-wrap;
       // box-shadow: 0px 4px 3px rgba($color: #fff, $alpha: .7) inset,0px -4px 3px rgba($color: #000, $alpha: .3) inset;
       // background: #fff;
       // box-shadow: 0px 4px 3px rgba($color: #000, $alpha: .7);
@@ -140,9 +147,9 @@ defineProps({
         font-size: 36px;
         font-style: normal;
         font-weight: 700;
-        line-height: 180%;
+        line-height: 140%;
         transition: all .3s;
-        padding-bottom: 4px;
+        padding: 10px 0 14px;
         text-align: center;
       }
     }
@@ -224,7 +231,7 @@ defineProps({
         padding: 0 25px;
         border: 3px solid #FFF;
         span{
-          font-size: 24px;
+          font-size: 18px;
           line-height: 120%;
           padding: 10px 0;
         }

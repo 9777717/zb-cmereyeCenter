@@ -13,6 +13,10 @@ div,p,span{
   font-family: 'Noto Sans HK';
 }
 
+.serviceBtnStyle{
+  display: flex;
+  justify-content: center;
+}
 
 // components
 ::-webkit-scrollbar {
