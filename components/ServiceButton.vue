@@ -92,7 +92,7 @@ defineProps({
     -webkit-transform: translate3d(0, 0, 0);
     display: flex;
     align-items: center;
-    mask-image: #000;
+    // mask-image: #000;
     // filter: drop-shadow(0 3px 0 #fff)
     //         drop-shadow(3px 0 0 #fff)
     //         drop-shadow(0 -3px 0 #fff)
