@@ -85,6 +85,7 @@ defineProps({
   position: relative;
   &-in{
     filter: drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
+    -webkit-filter: drop-shadow(0px 4px 3px rgba($color: #000000, $alpha: .5));
     overflow: hidden;
     border-radius: 100px;
     -webkit-backface-visibility: hidden;
