@@ -135,10 +135,10 @@ defineProps({
   display: inline-block;
   position: relative;
   &-in{
-    overflow: hidden;
+    // overflow: hidden;
     border-radius: 50px;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
+    // -webkit-backface-visibility: hidden;
+    // -webkit-transform: translate3d(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
