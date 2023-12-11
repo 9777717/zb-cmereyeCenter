@@ -161,12 +161,26 @@ defineProps({
       transition: all .3s;
       svg{
         animation: iconAnim 3s infinite linear alternate;
+        width: 95px;
+        height: 95px;
       }
       &.muscaeVolitantes{
         background: #FAF8BE;
       }
       &.maculopathy{
         background: #D8EAEB;
+      }
+      &.glaucoma{
+        background: #F9E5CA;
+      }
+      &.atropine{
+        background: #B2D46A;
+      }
+      &.strabismusAmblyopia{
+        background: #ABD9C3;
+      }
+      &.conjunctivitis{
+        background: #E3F0EC;
       }
     }
     &-text{
@@ -216,6 +230,18 @@ defineProps({
       &.maculopathy{
         background: linear-gradient(45deg,  #D8EAEB 20%, #65B6E2 100%);
       }
+      &.glaucoma{
+        background: linear-gradient(45deg,  #F9E5CA 20%, #F7BECE 100%);
+      }
+      &.atropine{
+        background: linear-gradient(45deg,  #B2D46A 20%, #AFDCD1 100%);
+      }
+      &.strabismusAmblyopia{
+        background: linear-gradient(45deg,  #ABD9C3 25%, #2CBCED 100%);
+      }
+      &.conjunctivitis{
+        background: linear-gradient(45deg,  #E3F0EC 20%, #4EABDF 100%);
+      }
     }
     &:hover{
       .service-button-in-icon{
@@ -235,7 +261,7 @@ defineProps({
     width: 100%;
     .service-button-in{
       max-width: 45%;
-      &.maculopathy{
+      &.maculopathy,&.atropine{
         max-width: 100%;
       }
       &-text{
@@ -320,7 +346,7 @@ defineProps({
           line-height: 120%;
           padding: 5px 0;
         }
-        &.maculopathy{
+        &.maculopathy,&.atropine2{
           white-space: initial;
         }
       }
@@ -329,12 +355,24 @@ defineProps({
       .service-button-in{
         max-width: 100%;
         background: linear-gradient(45deg,  #F6F291 0%, #F4D94A 100%);
-        // &.muscaeVolitantes{
-        //   background: linear-gradient(45deg,  #FAF8BE 20%, #FFE769 100%);
-        // }
-        // &.maculopathy{
-        //   background: linear-gradient(45deg,  #D8EAEB 20%, #65B6E2 100%);
-        // }
+        &.muscaeVolitantes{
+          background: linear-gradient(45deg,  #FAF8BE 0%, #FFE769 100%);
+        }
+        &.maculopathy{
+          background: linear-gradient(45deg,  #D8EAEB 0%, #65B6E2 100%);
+        }
+        &.glaucoma{
+          background: linear-gradient(45deg,  #F9E5CA 0%, #F7BECE 100%);
+        }
+        &.atropine{
+          background: linear-gradient(45deg,  #B2D46A 0%, #AFDCD1 100%);
+        }
+        &.strabismusAmblyopia{
+          background: linear-gradient(45deg,  #ABD9C3 0%, #2CBCED 100%);
+        }
+        &.conjunctivitis{
+          background: linear-gradient(45deg,  #E3F0EC 0%, #4EABDF 100%);
+        }
         &-icon{
           background: none !important;
         }

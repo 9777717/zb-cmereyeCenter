@@ -476,7 +476,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div @click="goWhatsApp()">
+        <!-- <div @click="goWhatsApp()">
           <div>
             {{
               $t(
@@ -491,6 +491,14 @@ const bannerData = {
               )
             }}
           </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_1') + '\n' + $t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'glaucoma'"
+          />
         </div>
       </div>
       <!-- 青光眼的症狀 -->
@@ -580,7 +588,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div @click="callTel()">
+        <!-- <div @click="callTel()">
           <div>
             {{
               $t(
@@ -595,7 +603,15 @@ const bannerData = {
               )
             }}
           </div>
-        </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+            <service-button
+              :str="$t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_1') + '\n' + $t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_2')"
+              :link="'tel: +852 3956 2025'" 
+              :type="'3'"
+              :pageName="'glaucoma'"
+            />
+          </div>
         <div></div>
       </div>
       <!-- 青光眼的類別 -->
@@ -670,7 +686,7 @@ const bannerData = {
           </div>
         </div>
         <!-- button -->
-        <div @click="callTel()">
+        <!-- <div @click="callTel()">
           <div>
             {{
               $t(
@@ -685,6 +701,14 @@ const bannerData = {
               )
             }}
           </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_1') + '\n' + $t('pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_2')"
+            :link="'tel: +852 3956 2025'"
+            :type="'3'"
+            :pageName="'glaucoma'"
+          />
         </div>
         <!-- 先天性青光眼 -->
         <div>
@@ -1243,44 +1267,44 @@ const bannerData = {
       }
     }
     & > div:nth-child(3) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 150px;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      & > div {
-        font-family: 'Noto Sans HK';
-        font-size: 32px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 50px;
-        letter-spacing: 0px;
-        color: #ffffff;
-      }
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // width: 508px;
+      // height: 140px;
+      // background-blend-mode: normal, normal;
+      // box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
+      // border-radius: 20px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      // & > div {
+      //   font-family: 'Noto Sans HK';
+      //   font-size: 32px;
+      //   font-weight: normal;
+      //   font-stretch: normal;
+      //   line-height: 50px;
+      //   letter-spacing: 0px;
+      //   color: #ffffff;
+      // }
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
   // 青光眼的症狀
@@ -1419,43 +1443,43 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      cursor: pointer;
-      margin: auto;
+    //   cursor: pointer;
+    //   margin: auto;
       margin-top: 104px;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
-      border-radius: 20px;
-      font-family: 'Noto Sans HK';
-      text-align: center;
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 50px;
-      letter-spacing: 0px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+    //   width: 508px;
+    //   height: 140px;
+    //   background-blend-mode: normal, normal;
+    //   box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
+    //   border-radius: 20px;
+    //   font-family: 'Noto Sans HK';
+    //   text-align: center;
+    //   font-size: 32px;
+    //   font-weight: normal;
+    //   font-stretch: normal;
+    //   line-height: 50px;
+    //   letter-spacing: 0px;
+    //   color: #ffffff;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   position: relative;
+    //   overflow: hidden;
+    //   -webkit-backface-visibility: hidden;
+    //   -webkit-transform: translate3d(0, 0, 0);
+    //   text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: -100%;
+    //     left: -100%;
+    //     bottom: -100%;
+    //     right: -100%;
+    //     background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+    //     background-size: 100% 100%;
+    //     animation: bgposition 5s infinite linear alternate;
+    //     z-index: -1;
+    //   }
     }
   }
   // 青光眼的類別
@@ -1603,40 +1627,40 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      cursor: pointer;
+      // cursor: pointer;
       margin: 100px auto;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      border-radius: 20px;
-      font-family: 'Noto Sans HK';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 50px;
-      letter-spacing: 0px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // width: 508px;
+      // height: 140px;
+      // background-blend-mode: normal, normal;
+      // border-radius: 20px;
+      // font-family: 'Noto Sans HK';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // line-height: 50px;
+      // letter-spacing: 0px;
+      // color: #ffffff;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
     & > div:nth-child(5) {
       margin-top: 150px;
@@ -2707,15 +2731,15 @@ const bannerData = {
         }
       }
       & > div:nth-child(3) {
-        width: max-content;
+        // width: max-content;
         margin: 50px auto 0;
-        height: auto;
-        padding:  10px 30px;
-        border-radius: 10px;
-        & > div {
-          font-size: 18px;
-          line-height: 1.6;
-        }
+        // height: auto;
+        // padding:  10px 30px;
+        // border-radius: 10px;
+        // & > div {
+        //   font-size: 18px;
+        //   line-height: 1.6;
+        // }
       }
     }
     & > div:nth-child(4) {
@@ -2803,14 +2827,14 @@ const bannerData = {
         }
       }
       & > div:nth-child(4) {
-        width: max-content;
-        height: auto;
-        padding: 0 30px;
-        line-height: 1.6;
-        font-size: 18px;
+        // width: max-content;
+        // height: auto;
+        // padding: 0 30px;
+        // line-height: 1.6;
+        // font-size: 18px;
         margin-top: 50px;
-        padding: 10px 40px 5px;
-        border-radius: 10px;
+        // padding: 10px 40px 5px;
+        // border-radius: 10px;
       }
     }
     & > div:nth-child(5) {
@@ -2918,14 +2942,14 @@ const bannerData = {
         }
       }
       & > div:nth-child(4) {
-        width: max-content;
-        height: auto;
-        padding: 0 30px;
-        line-height: 1.6;
-        font-size: 18px;
+        // width: max-content;
+        // height: auto;
+        // padding: 0 30px;
+        // line-height: 1.6;
+        // font-size: 18px;
         margin-top: 50px;
-        padding: 10px 40px 5px;
-        border-radius: 10px;
+        // padding: 10px 40px 5px;
+        // border-radius: 10px;
       }
       & > div:nth-child(5) {
         margin-top: 90px;

@@ -287,9 +287,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="strabismusAmblyopia_title_btn" @click="goWhatsApp">
+        <!-- <div class="strabismusAmblyopia_title_btn" @click="goWhatsApp">
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_1')}}</p>
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_1') + '\n' + $t('pages.medical_service.strabismusAmblyopia_con.btn.name1_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :type="'4'"
+            :pageName="'strabismusAmblyopia'"
+          />
         </div>
         <div class="strabismusAmblyopia_text_p_span">
           {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context4')}}
@@ -351,9 +359,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="strabismusAmblyopia_title_btn" @click="callTel">
+        <!-- <div class="strabismusAmblyopia_title_btn" @click="callTel">
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_1')}}</p>
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_1') + '\n' + $t('pages.medical_service.strabismusAmblyopia_con.btn.name2_2')"
+            :link="'tel: +852 3956 2025'"
+            :type="'2'"
+            :pageName="'strabismusAmblyopia'"
+          />
         </div>
       </div>
       <div id="treat">

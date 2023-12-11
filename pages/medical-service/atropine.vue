@@ -229,8 +229,16 @@ const bannerData = {
             2023 Feb 14;329(6):472-481. 
           </p>
         </div>
-        <div>
+        <!-- <div>
           <div @click="toWhatsApp">{{$t('pages.medical_service.atropine_text.effect.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.atropine_text.effect.btn1')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'atropine'"
+          />
         </div>
       </div>
       <div id="benefit">
@@ -311,8 +319,16 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.congruency.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.atropine_text.congruency.btn1')"
+            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'" 
+            :type="'2'"
+            :pageName="'atropine atropine2'"
+          />
         </div>
       </div>
       <div id="method">
@@ -395,8 +411,15 @@ const bannerData = {
             }}</span>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.matters.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button
+            :str="$t('pages.medical_service.atropine_text.matters.btn1')"
+            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'"
+            :pageName="'atropine'"
+          />
         </div>
       </div>
     </div>
@@ -624,43 +647,43 @@ const bannerData = {
     }
     & > div:nth-of-type(4) {
       margin-top: 60px;
-      div {
-        width: max-content;
-        padding: 20px 90px;
-        cursor: pointer;
-        background-blend-mode: normal, normal;
-        border-radius: 20px;
-        font-family: 'Noto Sans HK';
-        font-size: 30px;
-        font-weight: normal;
-        font-stretch: normal;
-        white-space: pre-wrap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 50px;
-        letter-spacing: 0px;
-        color: #ffffff;
-        margin: 0 auto;
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-        position: relative;
-        overflow: hidden;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        &::before {
-          content: "";
-          position: absolute;
-          top: -100%;
-          left: -100%;
-          bottom: -100%;
-          right: -100%;
-          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
-          background-size: 100% 100%;
-          animation: bgposition 5s infinite linear alternate;
-          z-index: -1;
-        }
-      }
+      // div {
+      //   width: max-content;
+      //   padding: 20px 90px;
+      //   cursor: pointer;
+      //   background-blend-mode: normal, normal;
+      //   border-radius: 20px;
+      //   font-family: 'Noto Sans HK';
+      //   font-size: 30px;
+      //   font-weight: normal;
+      //   font-stretch: normal;
+      //   white-space: pre-wrap;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   text-align: center;
+      //   line-height: 50px;
+      //   letter-spacing: 0px;
+      //   color: #ffffff;
+      //   margin: 0 auto;
+      //   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      //   position: relative;
+      //   overflow: hidden;
+      //   -webkit-backface-visibility: hidden;
+      //   -webkit-transform: translate3d(0, 0, 0);
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     top: -100%;
+      //     left: -100%;
+      //     bottom: -100%;
+      //     right: -100%;
+      //     background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
+      //     background-size: 100% 100%;
+      //     animation: bgposition 5s infinite linear alternate;
+      //     z-index: -1;
+      //   }
+      // }
     }
   }
   & > #benefit {

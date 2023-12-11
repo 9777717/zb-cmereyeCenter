@@ -245,9 +245,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="conjun_button_bg_color" @click="callTel()">
+        <!-- <div class="conjun_button_bg_color" @click="callTel()">
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name1_1')}}</p>
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name1_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.conjunctivitis_con.btn.name1_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name1_2')"
+            :link="'tel: +852 3956 2025'" 
+            :type="'4'"
+            :pageName="'conjunctivitis'"
+          />
         </div>
       </div>
       <!-- 結膜炎種類 -->
@@ -274,9 +282,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="conjun_button_bg_color" @click="goWhatsApp()">
+        <!-- <div class="conjun_button_bg_color" @click="goWhatsApp()">
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name2_1')}}</p>
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name2_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.conjunctivitis_con.btn.name2_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name2_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'2'"
+            :pageName="'conjunctivitis'"
+          />
         </div>
       </div>
       <!-- 傳播途徑 -->
@@ -313,9 +329,16 @@ const bannerData = {
             {{$t('pages.medical_service.conjunctivitis_con.approach.context1')}}
           </div>
         </div>
-        <div class="conjun_button_bg_color" @click="callTel()">
+        <!-- <div class="conjun_button_bg_color" @click="callTel()">
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name3_1')}}</p>
           <p>{{$t('pages.medical_service.conjunctivitis_con.btn.name3_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button
+            :str="$t('pages.medical_service.conjunctivitis_con.btn.name3_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name3_2')"
+            :link="'tel: +852 3956 2025'" 
+            :pageName="'conjunctivitis'"
+          />
         </div>
       </div>
       <!-- 高危人士 -->
@@ -499,8 +522,8 @@ const bannerData = {
       }
     }
     & > div:nth-child(3) {
-      width: 580px;
-      height: 140px;
+      // width: 580px;
+      // height: 140px;
       margin-top: 120px;
     }
   }
@@ -596,8 +619,8 @@ const bannerData = {
       }
     }
     & > div:nth-child(3) {
-      width: 580px;
-      height: 140px;
+      // width: 580px;
+      // height: 140px;
       margin-top: 100px;
     }
   }
@@ -665,6 +688,9 @@ const bannerData = {
         position: absolute;
         left: -32px;
       }
+    }
+    & > div:nth-child(5){
+      margin-top: 80px;
     }
   }
   // 高危人士
@@ -1010,11 +1036,11 @@ const bannerData = {
       }
       & > div:nth-child(3) {
         margin-top: 30px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 50px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 50px;
       }
     }
     & > div:nth-child(3) {
@@ -1077,11 +1103,11 @@ const bannerData = {
       }
       & > div:nth-child(3) {
         margin-top: 55px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 50px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 50px;
       }
     }
     // 傳播途徑
@@ -1145,6 +1171,9 @@ const bannerData = {
             height: 100%;
           }
         }
+      }
+      & > div:nth-child(5){
+        margin-top: 40px;
       }
     }
     & > div:nth-child(5) {
