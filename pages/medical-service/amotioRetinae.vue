@@ -215,8 +215,16 @@ const bannerData = {
         <div>
           <img src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png" />
         </div>
-        <div class="amotioRetinae_title_btn" @click="callTel">
+        <!-- <div class="amotioRetinae_title_btn" @click="callTel">
           <span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_1')}}</span><span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_2')}}</span>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.amotioRetinae_con.btn.name1_1') + '\n' + $t('pages.medical_service.amotioRetinae_con.btn.name1_2')"
+            :link="'tel: +852 3956 2025'" 
+            :type="'3'"
+            :pageName="'amotioRetinae'"
+          />
         </div>
       </div>
       <div id="factor">
@@ -274,9 +282,17 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="amotioRetinae_title_btn" @click="goWhatsApp">
+        <!-- <div class="amotioRetinae_title_btn" @click="goWhatsApp">
           <p>{{$t('pages.medical_service.amotioRetinae_con.btn.name2_1')}}</p>
           <p>{{$t('pages.medical_service.amotioRetinae_con.btn.name2_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.amotioRetinae_con.btn.name2_1') + '\n' + $t('pages.medical_service.amotioRetinae_con.btn.name2_2')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'amotioRetinae amotioRetinae2'"
+          />
         </div>
       </div>
       <div id="diabetes">
@@ -1124,7 +1140,7 @@ const bannerData = {
       }
 
       &>div:nth-child(3) {
-        padding: 16px 20px;
+        // padding: 16px 20px;
         &>p {
           font-size: 16px;
           line-height: 1.8;

@@ -370,7 +370,15 @@ const bannerData = {
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
-          <div @click="goWhatsApp()"><span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_1')}}</span> <span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_2')}}</span></div>
+          <!-- <div @click="goWhatsApp()"><span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_1')}}</span> <span>{{$t('pages.medical_service.xerophthalmia_con.btn.name1_2')}}</span></div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.xerophthalmia_con.btn.name1_1') + '\n' + $t('pages.medical_service.xerophthalmia_con.btn.name1_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+              :type="'1'"
+              :pageName="'xerophthalmia xerophthalmia1'"
+            />
+          </div>
         </div>
         <!-- 乾眼症成因 -->
         <div id="factor">
@@ -423,12 +431,19 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div @click="goWhatsApp()">
+          <!-- <div @click="goWhatsApp()">
             <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name2')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
             </svg>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button
+              :str="$t('pages.medical_service.xerophthalmia_con.btn.name2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :pageName="'xerophthalmia'"
+            />
           </div>
         </div>
         <!-- 患乾眼症的高危人士 -->
@@ -440,12 +455,20 @@ const bannerData = {
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
-          <div @click="callTel()">
+          <!-- <div @click="callTel()">
             <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name3')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
             </svg>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.xerophthalmia_con.btn.name3')"
+              :link="'tel: +852 3956 2025'" 
+              :type="'2'"
+              :pageName="'xerophthalmia'"
+            />
           </div>
         </div>
         <!-- 乾眼症的診斷 -->
@@ -494,12 +517,20 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div @click="callTel()">
+          <!-- <div @click="callTel()">
             <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name4')}}</div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="16px">
               <image x="0px" y="0px" width="10px" height="16px"
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
             </svg>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.xerophthalmia_con.btn.name4')"
+              :link="'tel: +852 3956 2025'" 
+              :type="'1'"
+              :pageName="'xerophthalmia'"
+            />
           </div>
         </div>
         <!-- 乾眼症治療 -->
@@ -640,7 +671,7 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div @click="callTel()">
+          <!-- <div @click="callTel()">
             <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name5_1')}}</div>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px"
@@ -650,6 +681,14 @@ const bannerData = {
               </svg>
               <div>{{$t('pages.medical_service.xerophthalmia_con.btn.name5_2')}}</div>
             </div>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.xerophthalmia_con.btn.name5_1') + '\n' + $t('pages.medical_service.xerophthalmia_con.btn.name5_2')"
+              :link="'tel: +852 3956 2025'" 
+              :type="'3'"
+              :pageName="'xerophthalmia'"
+            />
           </div>
         </div>
         <!-- 預防乾眼症 -->
@@ -804,41 +843,41 @@ const bannerData = {
       }
     }
     &>div:nth-child(3) {
-      margin: auto;
-      cursor: pointer;
+      // margin: auto;
+      // cursor: pointer;
       margin-top: 118px;
-      background-blend-mode: normal, normal;
-      border-radius: 14px;
-      font-family: 'NotoSansHK-Medium';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      letter-spacing: 0px;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      width: fit-content;
-      padding: 25px 160px;
-      line-height: 50px;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // background-blend-mode: normal, normal;
+      // border-radius: 14px;
+      // font-family: 'NotoSansHK-Medium';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // letter-spacing: 0px;
+      // color: #ffffff;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // flex-direction: column;
+      // width: fit-content;
+      // padding: 25px 160px;
+      // line-height: 50px;
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
   &>div:nth-child(3) {
@@ -1077,44 +1116,44 @@ const bannerData = {
     }
 
     &>div:nth-child(3) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 148px;
-      background-blend-mode: normal, normal;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'NotoSansHK-Medium';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      letter-spacing: 0px;
-      color: #ffffff;
-      width: fit-content;
-      padding: 25px 105px;
-      line-height: 50px;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
-      svg{
-        margin-top: 5px;
-        margin-left: 20px;
-      }
+      // background-blend-mode: normal, normal;
+      // border-radius: 14px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // font-family: 'NotoSansHK-Medium';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // letter-spacing: 0px;
+      // color: #ffffff;
+      // width: fit-content;
+      // padding: 25px 105px;
+      // line-height: 50px;
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
+      // svg{
+      //   margin-top: 5px;
+      //   margin-left: 20px;
+      // }
     }
   }
 
@@ -1168,47 +1207,47 @@ const bannerData = {
     }
 
     &>div:nth-child(3) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-blend-mode: normal, normal;
-      border-radius: 14px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // background-blend-mode: normal, normal;
+      // border-radius: 14px;
 
-      font-family: 'NotoSansHK-Medium';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 36px;
-      letter-spacing: 0px;
-      color: #ffffff;
-      width: fit-content;
-      padding: 25px 55px;
-      line-height: 50px;
+      // font-family: 'NotoSansHK-Medium';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // line-height: 36px;
+      // letter-spacing: 0px;
+      // color: #ffffff;
+      // width: fit-content;
+      // padding: 25px 55px;
+      // line-height: 50px;
 
-      &>svg {
-        margin-top: 5px;
-        margin-left: 20px;
-      }
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // &>svg {
+      //   margin-top: 5px;
+      //   margin-left: 20px;
+      // }
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
 
@@ -1481,47 +1520,47 @@ const bannerData = {
     }
 
     &>div:nth-child(3) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 100px;
-      background-blend-mode: normal, normal;
-      border-radius: 14px;
+      // background-blend-mode: normal, normal;
+      // border-radius: 14px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'NotoSansHK-Medium';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 36px;
-      letter-spacing: 0px;
-      color: #fff;
-      width: fit-content;
-      padding: 25px 160px;
-      line-height: 50px;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // font-family: 'NotoSansHK-Medium';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // line-height: 36px;
+      // letter-spacing: 0px;
+      // color: #fff;
+      // width: fit-content;
+      // padding: 25px 160px;
+      // line-height: 50px;
 
-      &>svg {
-        margin-left: 22px;
-        margin-top: 5px;
-      }
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // &>svg {
+      //   margin-left: 22px;
+      //   margin-top: 5px;
+      // }
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
 
@@ -1892,55 +1931,55 @@ const bannerData = {
     }
 
     &>div:nth-child(4) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 120px;
-      background-blend-mode: normal, normal;
-      border-radius: 14px;
+      // background-blend-mode: normal, normal;
+      // border-radius: 14px;
 
-      font-family: 'NotoSansHK-Medium';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 36px;
-      letter-spacing: 0px;
-      color: #fff;
+      // font-family: 'NotoSansHK-Medium';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // line-height: 36px;
+      // letter-spacing: 0px;
+      // color: #fff;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: fit-content;
-      padding: 25px 160px;
-      line-height: 50px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      // width: fit-content;
+      // padding: 25px 160px;
+      // line-height: 50px;
 
-      &>div:nth-child(2) {
-        display: flex;
-        align-items: center;
+      // &>div:nth-child(2) {
+      //   display: flex;
+      //   align-items: center;
 
-        svg {
-          margin-top: 6px;
-          margin-left: 5px;
-          margin-right: 5px;
-        }
-      }
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      //   svg {
+      //     margin-top: 6px;
+      //     margin-left: 5px;
+      //     margin-right: 5px;
+      //   }
+      // }
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #62AAEB 0%, #B7DDFF 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
   // 預防乾眼症
@@ -2356,11 +2395,11 @@ const bannerData = {
       }
 
       &>div:nth-child(3) {
-        width: max-content;
-        font-size: 16px;
-        height: 50px;
-        line-height: 160%;
-        padding: 0 30px;
+        // width: max-content;
+        // font-size: 16px;
+        // height: 50px;
+        // line-height: 160%;
+        // padding: 0 30px;
         margin-top: 40px;
       }
     }
@@ -2530,11 +2569,11 @@ const bannerData = {
       }
 
       &>div:nth-child(3) {
-        width: max-content;
-        font-size: 18px;
-        padding: 0 30px;
-        height: 50px;
-        line-height: 50px;
+        // width: max-content;
+        // font-size: 18px;
+        // padding: 0 30px;
+        // height: 50px;
+        // line-height: 50px;
         margin-top: 50px;
       }
     }
@@ -2572,11 +2611,11 @@ const bannerData = {
       }
 
       &>div:nth-child(3) {
-        width: max-content;
-        font-size: 18px;
-        padding: 0 30px;
-        height: 50px;
-        line-height: 50px;
+        // width: max-content;
+        // font-size: 18px;
+        // padding: 0 30px;
+        // height: 50px;
+        // line-height: 50px;
         margin-top: 30px;
       }
     }
@@ -2821,16 +2860,16 @@ const bannerData = {
       }
 
       &>div:nth-child(3) {
-        width: max-content;
-        font-size: 18px;
-        padding: 0 30px;
-        height: 50px;
-        line-height: 20px;
+        // width: max-content;
+        // font-size: 18px;
+        // padding: 0 30px;
+        // height: 50px;
+        // line-height: 20px;
         margin-top: 20px;
 
-        &>svg {
-          margin-top: 0;
-        }
+        // &>svg {
+        //   margin-top: 0;
+        // }
       }
     }
 
@@ -3059,16 +3098,16 @@ const bannerData = {
       }
 
       &>div:nth-child(4) {
-        width: max-content;
-        font-size: 15px;
-        padding: 0 10px;
-        height: 50px;
-        line-height: 20px;
+        // width: max-content;
+        // font-size: 15px;
+        // padding: 0 10px;
+        // height: 50px;
+        // line-height: 20px;
         margin-top: 20px;
 
-        &>svg {
-          margin-top: 0;
-        }
+        // &>svg {
+        //   margin-top: 0;
+        // }
       }
     }
 

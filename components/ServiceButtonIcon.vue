@@ -182,10 +182,19 @@ defineProps({
       &.conjunctivitis{
         background: #E3F0EC;
       }
+      &.amotioRetinae{
+        background: #B3A2F5;
+      }
+      &.xerophthalmia{
+        background: #62AAEB;
+      }
+      &.eyeOrthopaedicDisease{
+        background: #8BCCE1;
+      }
     }
     &-text{
       &.inText_2{
-        border-radius: 0 50px 50px 0;
+        border-radius: 0 100px 100px 0;
         margin-left: -30px;
       }
       white-space: pre-wrap;
@@ -237,10 +246,19 @@ defineProps({
         background: linear-gradient(45deg,  #B2D46A 20%, #AFDCD1 100%);
       }
       &.strabismusAmblyopia{
-        background: linear-gradient(45deg,  #ABD9C3 25%, #2CBCED 100%);
+        background: linear-gradient(45deg,  #ABD9C3 20%, #2CBCED 100%);
       }
       &.conjunctivitis{
         background: linear-gradient(45deg,  #E3F0EC 20%, #4EABDF 100%);
+      }
+      &.amotioRetinae{
+        background: linear-gradient(45deg,  #B3A2F5 20%, #EDEAFF 100%);
+      }
+      &.xerophthalmia{
+        background: linear-gradient(45deg,  #62AAEB 20%, #EFF8FF 100%);
+      }
+      &.eyeOrthopaedicDisease{
+        background: linear-gradient(45deg,  #8BCCE1 20%, #BAD8C7 100%);
       }
     }
     &:hover{
@@ -261,7 +279,7 @@ defineProps({
     width: 100%;
     .service-button-in{
       max-width: 45%;
-      &.maculopathy,&.atropine{
+      &.maculopathy,&.atropine,&.amotioRetinae,&.xerophthalmia{
         max-width: 100%;
       }
       &-text{
@@ -349,6 +367,15 @@ defineProps({
         &.maculopathy,&.atropine2{
           white-space: initial;
         }
+        &.amotioRetinae{
+          padding: 0 30px 0 40px;
+        }
+        &.eyeOrthopaedicDisease{
+          padding: 0 20px 0 30px;
+        }
+        &.amotioRetinae2{
+          white-space: initial;
+        }
       }
     }
     &.service-button-en{
@@ -372,6 +399,15 @@ defineProps({
         }
         &.conjunctivitis{
           background: linear-gradient(45deg,  #E3F0EC 0%, #4EABDF 100%);
+        }
+        &.amotioRetinae{
+          background: linear-gradient(45deg,  #B3A2F5 0%, #EDEAFF 100%);
+        }
+        &.xerophthalmia{
+          background: linear-gradient(45deg,  #62AAEB 0%, #EFF8FF 100%);
+        }
+        &.eyeOrthopaedicDisease{
+          background: linear-gradient(45deg,  #8BCCE1 0%, #BAD8C7 100%);
         }
         &-icon{
           background: none !important;

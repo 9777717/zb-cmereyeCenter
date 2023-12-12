@@ -112,6 +112,12 @@ defineProps({
         background-size: 100% 100%;
       }
     }
+    &.xerophthalmia{
+      &::before {
+        background: linear-gradient(45deg, #62AAEB 0%, #EFF8FF 100%);
+        background-size: 100% 100%;
+      }
+    }
     &-icon{
       padding: 30px 25px 20px;
       border-radius: 50%;

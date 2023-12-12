@@ -363,8 +363,16 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+          <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_2')}}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+              :type="'4'"
+              :pageName="'eyeOrthopaedicDisease'"
+            />
           </div>
         </div>
         <div>
@@ -601,8 +609,16 @@ const bannerData = {
                 </div>
               </div>
             </div>
-            <div class="eyeOrthopaedicDisease_title_btn" @click="goTel">
+            <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goTel">
               <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_2')}}</span>
+            </div> -->
+            <div class="serviceBtnStyle">
+              <service-button-icon
+                :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_2')"
+                :link="'tel: +852 3956 2025'" 
+                :type="'3'"
+                :pageName="'eyeOrthopaedicDisease'"
+              />
             </div>
           </div>
           <div>
@@ -755,8 +771,16 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+          <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn2')}}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+              :type="'1'"
+              :pageName="'eyeOrthopaedicDisease'"
+            />
           </div>
         </div>
       </div>
