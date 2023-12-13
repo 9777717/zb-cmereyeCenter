@@ -118,6 +118,12 @@ defineProps({
         background-size: 100% 100%;
       }
     }
+    &.ocularSurfaceDiseases{
+      &::before {
+        background: linear-gradient(45deg,  #FFD2D8 0%, #B8DDFF  100%);
+        background-size: 100% 100%;
+      }
+    }
     &-icon{
       padding: 30px 25px 20px;
       border-radius: 50%;

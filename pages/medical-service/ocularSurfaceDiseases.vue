@@ -404,13 +404,21 @@ const bannerData = {
               }}
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1')
             }}</span
             ><span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :type="'4'"
+              :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
+            />
           </div>
         </div>
         <div>
@@ -514,13 +522,21 @@ const bannerData = {
               />
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1')
             }}</span
             ><span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :type="'1'"
+              :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
+            />
           </div>
         </div>
         <div>
@@ -593,13 +609,21 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
             <span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1')
             }}</span
             ><span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')"
+              :link="'tel: +852 3956 2025'"
+              :type="'3'"
+              :pageName="'ocularSurfaceDiseases'"
+            />
           </div>
         </div>
         <div>
@@ -809,7 +833,7 @@ const bannerData = {
               }}
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>{{
               $t(
                 'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1'
@@ -820,6 +844,13 @@ const bannerData = {
                 'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2'
               )
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :pageName="'ocularSurfaceDiseases'"
+            />
           </div>
         </div>
         <div>
@@ -1172,7 +1203,7 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
             <span>{{
               $t(
                 'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1'
@@ -1183,6 +1214,14 @@ const bannerData = {
                 'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2'
               )
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2')"
+              :link="'tel: +852 3956 2025'"
+              :type="'3'"
+              :pageName="'ocularSurfaceDiseases'"
+            />
           </div>
         </div>
       </div>
@@ -1302,10 +1341,18 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
             <span>{{
               $t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')
             }}</span>
+          </div> -->
+           <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :type="'4'"
+              :pageName="'ocularSurfaceDiseases'"
+            />
           </div>
         </div>
       </div>
@@ -1395,7 +1442,7 @@ const bannerData = {
                   }}
                 </div>
               </div>
-              <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
+              <!-- <div class="ocularSurfaceDiseases_title_btn" @click="goWhatsApp">
                 <span>{{
                   $t(
                     'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1'
@@ -1406,7 +1453,15 @@ const bannerData = {
                     'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2'
                   )
                 }}</span>
-              </div>
+              </div> -->
+              <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :type="'1'"
+              :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
+            />
+          </div>
             </div>
           </div>
         </div>
@@ -1493,7 +1548,7 @@ const bannerData = {
               )
             }}
           </div>
-          <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
+          <!-- <div class="ocularSurfaceDiseases_title_btn" @click="callTel">
             <span>{{
               $t(
                 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1'
@@ -1504,6 +1559,13 @@ const bannerData = {
                 'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2'
               )
             }}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button
+              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2')"
+              :link="'tel: +852 3956 2025'"
+              :pageName="'ocularSurfaceDiseases'"
+            />
           </div>
         </div>
         <div>
@@ -4217,6 +4279,9 @@ const bannerData = {
         & > div:nth-child(1) {
           margin-bottom: 0;
           line-height: 1.8;
+        }
+        & > div:nth-child(2) {
+          margin-top: 30px;
         }
       }
       & > div:nth-child(3) {

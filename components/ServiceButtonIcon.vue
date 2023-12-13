@@ -191,6 +191,9 @@ defineProps({
       &.eyeOrthopaedicDisease{
         background: #8BCCE1;
       }
+      &.ocularSurfaceDiseases{
+        background: #FFD2D8;
+      }
     }
     &-text{
       &.inText_2{
@@ -260,6 +263,9 @@ defineProps({
       &.eyeOrthopaedicDisease{
         background: linear-gradient(45deg,  #8BCCE1 20%, #BAD8C7 100%);
       }
+      &.ocularSurfaceDiseases{
+        background: linear-gradient(45deg,  #FFD2D8 20%, #B8DDFF 100%);
+      }
     }
     &:hover{
       .service-button-in-icon{
@@ -279,9 +285,12 @@ defineProps({
     width: 100%;
     .service-button-in{
       max-width: 45%;
-      &.maculopathy,&.atropine,&.amotioRetinae,&.xerophthalmia{
+      &.maculopathy,&.atropine,&.amotioRetinae,&.xerophthalmia,&.ocularSurfaceDiseases{
         max-width: 100%;
       }
+      // &.ocularSurfaceDiseases{
+      //   max-width: 60%;
+      // }
       &-text{
         padding: 0px 30px;
         span{
@@ -376,6 +385,9 @@ defineProps({
         &.amotioRetinae2{
           white-space: initial;
         }
+        &.ocularSurfaceDiseasesLong{
+          padding: 0 10px 0 30px;
+        }
       }
     }
     &.service-button-en{
@@ -408,6 +420,9 @@ defineProps({
         }
         &.eyeOrthopaedicDisease{
           background: linear-gradient(45deg,  #8BCCE1 0%, #BAD8C7 100%);
+        }
+        &.ocularSurfaceDiseases{
+          background: linear-gradient(45deg,  #FFD2D8 0%, #B8DDFF 100%);
         }
         &-icon{
           background: none !important;
