@@ -8,7 +8,7 @@ useHead(() => ({
 }))
 const eyeDisease = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/12/f19249f9jasfu912j9jt912t.jpg',
+    img: 'https://static.cmereye.com/imgs/2023/12/f6ccfdc805fd1912.webp',
     title:
       '【顏色敏感度實測】到底邊類人分辨顏色嘅能力最強呢？',
     text: '可能唔少人都聽過分辨顏色嘅能力或者同性別有關，而為咗證實呢個講法嘅真實性，佩儀嚟到旺角搵咗唔同人一齊做咗個顏色測試遊戲，快啲去片睇吓大家嘅測試結果係點喇！',
