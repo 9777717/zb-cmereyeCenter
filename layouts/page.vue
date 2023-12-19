@@ -9,9 +9,12 @@ const PageFooter = resolveComponent('PageFooter')
 const EnFooter = resolveComponent('EnFooter')
 let showEnCon = ref(false)
 // console.log('当前页',rt.value.path)
-if(rt.value.path.includes('/en/')){
-  showEnCon.value = true
-}
+
+onMounted(()=>{
+  if(rt.value.path.includes('/en/')){
+    showEnCon.value = true
+  }
+})
 </script>
 <template>
   <div>

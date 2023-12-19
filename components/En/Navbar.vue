@@ -250,7 +250,7 @@ const hashActive = (child: any) => {
     }
   }
 }
-console.log('en-index')
+// console.log(rt.value.name)
 </script>
 
 <template>
