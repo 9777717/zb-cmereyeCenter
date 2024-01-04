@@ -61,6 +61,14 @@ const historyList = ref([
         month: 'pages.about_us.course_year.child_20.child_month',
         info: [
           'pages.about_us.course_year.child_20.child_info_1',
+          // 'pages.about_us.course_year.child_20.child_info_2',
+          // 'pages.about_us.course_year.child_20.child_info_3',
+        ],
+      },
+      {
+        month: 'pages.about_us.course_year.child_20.child_month_2',
+        info: [
+          // 'pages.about_us.course_year.child_20.child_info_1',
           'pages.about_us.course_year.child_20.child_info_2',
           'pages.about_us.course_year.child_20.child_info_3',
         ],
