@@ -2107,8 +2107,8 @@ pages:
           addressDetailList2_addressDetail: Room 1908, Melbourne Plaza, 33 Queen’s Road Central
           addressDetailList2_subwayExit: Central MTR Station (Exit D2)
           addressDetailList2_clinicHours:
-            clinicHours1: Mon-Fri：10:00—13:00 / 15:00—19:00
-            clinicHours2: Sat：09:30—13:30
+            clinicHours1: Mon-Fri：10:00—12:00 / 15:00—18:00
+            clinicHours2: Sat：09:30—12:00
             clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList3_addressName: Causeway Bay
           addressDetailList3_addressDetail: Room 1614-15, Hang Lung Centre, 2-20 Paterson Street
