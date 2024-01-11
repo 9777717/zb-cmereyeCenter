@@ -1524,18 +1524,30 @@ const bannerData = {
         & > div:nth-child(1) {
           font-size: 20px;
           text-align: right;
-          margin-right: 20px;
+          // margin-right: 20px;
           margin-top: 50px;
+          font-size: 6vw;
+          margin-left: 50%;
+          width: 50%;
+          text-align: center;
+          margin-bottom: 0;
         }
         & > div:nth-child(2) {
-          margin-top: -5px;
+          // margin-top: -5px;
+          flex-direction: column;
+          margin-bottom: 0;
           & > div:nth-child(1) {
             width: 50%;
             height: auto;
             margin-left: 0;
+            margin-top: 0;
+            position: absolute;
+            top: 0;
+            transform: translateY(-70%);
           }
           & > div:nth-child(2) {
-            margin-top: -10px;
+            position: relative;
+            // margin-top: -10px;
             width: 100%;
             height: auto;
             font-size: 14px;
@@ -1548,14 +1560,21 @@ const bannerData = {
         }
       }
       & > div:nth-child(3) {
-        margin-top: 100px;
+        // margin-top: 100px;
         & > div:nth-child(1) {
           font-size: 20px;
           text-align: left;
-          margin-left: 20px;
+          margin-left: 0;
+          width: 50%;
+          text-align: center;
+          font-size: 6vw;
         }
         & > div:nth-child(2) {
           margin-right: 0;
+          &>div:nth-child(1){
+            left: auto;
+            right: 0;
+          }
           &>div:nth-child(2){
             padding: 60px 15px 15px;
           }
@@ -1570,7 +1589,8 @@ const bannerData = {
         & > div {
           margin-bottom: 50px;
           align-items: center;
-          width: calc(50% - 25px);
+          justify-content: flex-start;
+          width: calc(50% - 10px);
           & > div:nth-child(2) {
             font-size: 14px;
             height: auto;
@@ -1605,7 +1625,8 @@ const bannerData = {
             font-size: 18px;
             padding: 0 20px;
             width: max-content;
-            height: 40px;
+            // height: 40px;
+            height: auto;
             line-height: 40px;
             border-radius: 0 20px 0 0;
             margin-bottom: 15px;
@@ -1622,7 +1643,9 @@ const bannerData = {
         }
         & > div:nth-child(4) {
           & > div:nth-child(1) {
-            width: max-content;
+            // width: max-content;
+            width: 100%;
+            max-width: max-content;
           }
         }
       }
@@ -1737,7 +1760,6 @@ const bannerData = {
             line-height: 1.6;
           }
           & > div:nth-child(2) {
-            margin-bottom: 200px;
             & > div:nth-child(2) {
               font-size: 14px;
               padding-top: 40px;
@@ -1762,7 +1784,6 @@ const bannerData = {
         }
       }
       & > div:nth-child(7) {
-        margin-top: 200px;
         & > div:nth-child(2) {
           & >div{
             max-width: 50%;

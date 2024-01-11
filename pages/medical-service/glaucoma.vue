@@ -2884,6 +2884,8 @@ const bannerData = {
             right: 20px;
             top: -100px;
             width: 100px;
+            // width: calc((100 / 300 ) * 100%);
+            // max-width: 100px;
             height: 100px;
             img{
               width: 100%;
@@ -3085,8 +3087,10 @@ const bannerData = {
             position: absolute;
             right: 20px;
             top: -100px;
-            width: 100px;
-            height: 100px;
+            // width: 100px;
+            // height: 100px;
+            width: calc((100 / 330 ) * 100%);
+            max-width: 100px;
             img{
               width: 100%;
               

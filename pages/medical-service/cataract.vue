@@ -1116,7 +1116,8 @@ const bannerData = {
       &>div:nth-child(2) {
         margin: 0 auto;
         margin-top: 78px;
-        width: 1280px;
+        width: 100%;
+        max-width: 1280px;
         height: 133px;
         border: solid 2px #66c5dc;
         font-family: 'Noto Sans HK';
@@ -1156,7 +1157,7 @@ const bannerData = {
         &>div {
           display: flex;
           flex-direction: row;
-          align-items: center;
+          // align-items: center;
           width: 100%;
           justify-content: space-evenly;
           &>div {
@@ -1168,7 +1169,7 @@ const bannerData = {
             &>div {
               white-space: pre-wrap !important;
               text-align: center;
-              height: 54px;
+              // height: 54px;
               font-family: 'NotoSansHK-Medium';
               font-size: 24px;
               font-weight: normal;
@@ -1258,10 +1259,14 @@ const bannerData = {
           padding: 0 10px;
           &>div {
             transform: scale(0.85);
+            display: flex;
+            flex-direction: column;
             &>div {
+              flex: 1;
               margin-top: 31px;
               white-space: pre-wrap !important;
-              height: 51px;
+              // height: 51px;
+              height: auto;
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1390,10 +1395,13 @@ const bannerData = {
           display: flex;
           &>img:nth-child(1) {
             width: 847px;
+            width: calc((847 / 1165) * 100%);
+            max-width: 847px;
             z-index: 5;
           }
           &>img:nth-child(2) {
-            width: 565px;
+            width: calc((565 / 1165) * 100%);
+            max-width: 565px;
             position: relative;
             z-index: 2;
             bottom: -80px;
@@ -1978,16 +1986,9 @@ const bannerData = {
           font-size: 32px;
         }
         &>div:nth-child(2){
-          // line-height: 1.2;
-          // height: auto;
-          // padding: 10px 20px;
-          // font-size: 30px;
           max-width: 100%;
         }
       }
-    }
-    &>div:nth-child(3){
-      // width: max-content;
     }
   }
   &>div:nth-child(3){
@@ -2404,10 +2405,12 @@ const bannerData = {
       }
       &>div:nth-child(2) {
         &>div:nth-child(1) {
-          width: max-content;
+          // width: max-content;
+          width: 100%;
+          text-align: center;
           margin-top: 40px;
           height: auto;
-          padding: 10px 30px;
+          padding: 10px 0;
           font-size: 16px;
           line-height: 1.6;
           border-radius: 10px;
@@ -2483,7 +2486,9 @@ const bannerData = {
           height: 130px;
           border-radius: 15px;
           &>div {
-            width: 330px;
+            // width: 330px;
+            width: calc((330 / 200) * 100%);
+            max-width: 330px;
             font-size: 22px;
             line-height: 40px;
             text-align: center;
@@ -2508,12 +2513,15 @@ const bannerData = {
           width: 100%;
           &>div {
             &>img:nth-child(1) {
-              width: 210px;
+              // width: 210px;
+              width: calc((240 / 390) * 100%);
             }
             &>img:nth-child(2) {
-              width: 150px;
+              // width: 150px;
+              width: calc((180 / 390) * 100%);
               bottom: -20px;
               left: -30px;
+              left: -calc((30 / 390) * 100%)
             }
           }
         }
@@ -2546,7 +2554,9 @@ const bannerData = {
               margin-top: 30px;
             }
             img {
-              width: 150px;
+              // width: 150px;
+              width: calc((150 / 330) * 100%);
+              max-width: 150px;
               position: relative;
               z-index: 2;
               margin-left: 20px;
@@ -2567,7 +2577,8 @@ const bannerData = {
             position: relative;
             z-index: 1;
             div {
-              width: 130px;
+              width: calc((130 / 200) * 100%);
+              max-width: 130px;
               display: initial;
             }
           }
@@ -2597,7 +2608,8 @@ const bannerData = {
       &>div:nth-child(4) {
         max-width: 330px;
         &>div:nth-child(1) {
-          width: max-content;
+          width: 100%;
+          max-width: max-content;
           font-size: 18px;
           height: auto;
           line-height: 1.6;
@@ -2657,13 +2669,16 @@ const bannerData = {
           height: 70px;
           border-radius: 15px;
           &>div {
-            width: max-content;
+            // width: max-content;
+            width: calc((330 /120) * 100%);
+            max-width: max-content;
             font-size: 22px;
             line-height: 30px;
             text-align: center;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            white-space: pre-wrap;
           }
         }
       }
@@ -2790,7 +2805,10 @@ const bannerData = {
           height: 70px;
           border-radius: 15px;
           &>div {
-            width: max-content;
+            // width: max-content;
+            width: calc((330 /120) * 100%);
+            max-width: max-content;
+            white-space: pre-wrap;
             font-size: 22px;
             line-height: 30px;
             text-align: center;
@@ -2858,7 +2876,10 @@ const bannerData = {
           height: 70px;
           border-radius: 15px;
           &>div {
-            width: max-content;
+            // width: max-content;
+            width: calc((330 /120) * 100%);
+            max-width: max-content;
+            white-space: pre-wrap;
             font-size: 22px;
             line-height: 30px;
             text-align: center;

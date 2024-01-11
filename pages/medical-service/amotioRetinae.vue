@@ -938,7 +938,9 @@ const bannerData = {
         flex-wrap: wrap;
         justify-content: space-between;
         &>div {
-          width: 145px;
+          // width: 145px;
+          width: calc(50% - 10px);
+          max-width: 145px;
           height: auto;
           background-color: #ffffff;
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
@@ -1211,12 +1213,10 @@ const bannerData = {
               left: 50%;
               transform: translateX(-50%);
               height: auto;
-              font-size: 18px;
-              height: auto;
               padding: 4px 10px;
               background-color: #eab1a6;
               border-radius: 22px;
-              font-size: 20px;
+              font-size: 5.5vw;
               font-weight: normal;
               font-stretch: normal;
               line-height: 1.6;

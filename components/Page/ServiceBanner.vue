@@ -222,4 +222,31 @@ defineProps({
     }
   }
 }
+@media screen and (max-width: 350px){
+  .serviceBanner{
+    &-text{
+      top: 40vw;
+      &.ocularSurfaceDiseases,&.maculopathy,&.conjunctivitis,&.atropine{
+        span{
+          &:nth-of-type(1){
+            font-size: 14vw;
+          }
+          &:nth-of-type(2){
+            font-size: 10vw;
+          }
+        }
+      }
+      &.eyeOrthopaedicDisease{
+        span{
+          &:nth-of-type(1){
+            font-size: 12vw;
+          }
+          &:nth-of-type(2){
+            font-size: 9vw;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
