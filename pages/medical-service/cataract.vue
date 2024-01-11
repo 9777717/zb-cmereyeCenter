@@ -2521,7 +2521,7 @@ const bannerData = {
               width: calc((180 / 390) * 100%);
               bottom: -20px;
               left: -30px;
-              left: -calc((30 / 390) * 100%)
+              left: calc((-30 / 390) * 100%);
             }
           }
         }
