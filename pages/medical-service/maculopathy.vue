@@ -1434,10 +1434,10 @@ const bannerData = {
         padding: 0;
         margin: 0;
         & > div:nth-child(1){
-          width: 90px;
-          height: 90px;
-          min-width: 90px;
-          font-size: 18px;
+          width: 70px;
+          height: 70px;
+          min-width: 70px;
+          font-size: 16px;
           line-height: 1.2;
         }
         &>svg{
@@ -1445,36 +1445,40 @@ const bannerData = {
           width: 40px;
           height: 10px;
           path{
-            transform: scale(.4) translate(-20px, 0);
+            transform: scale(.4) translate(-10vw, 0);
           }
         }
         & > div:nth-child(3) {
-          width: 80px;
-          height: 80px;
-          min-width: 80px;
-          font-size: 16px;
+          width: 65px;
+          height: 65px;
+          min-width: 65px;
+          font-size: 14px;
           line-height: 1.2;
-          margin-left: 10px;
+          margin-left: 0px;
         }
         & > div:nth-child(4) {
           margin-right: 0;
-          width: 30px;
+          width: 7vw;
           svg{
-            // transform: scale(.3) translateX(-200px);
+            z-index: -1;
+            transform-origin: left center;
+            // transform: scale(.3) translate(-50vw,30px);
             &:nth-of-type(1){
-              transform: scale(.3) translate(-230px,30px);
+              // transform-origin: left center;
+              // transform: scale(.3) translate(-50vw,30px);
+              transform: scale(.3) translate(-17vw, 70px) rotate(-10deg);
             }
             &:nth-of-type(2){
-              transform: scale(.3) translate(-210px,-30px);
+              transform: scale(.3) translate(-12vw,-30px);
             }
           }
         }
         & > div:nth-child(5) {
           & > div {
-            width: 70px;
-            height: 70px;
-            min-width: 70px;
-            font-size: 14px;
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            font-size: 12px;
             line-height: 1.2;
           }
         }
