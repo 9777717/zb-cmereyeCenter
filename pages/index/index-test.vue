@@ -221,19 +221,19 @@ const serviceLists = [
 ]
 const pageNav = ref([
   {
-    name: '流程及費用',
+    name: 'pages.process_cost.process_cost',
     link: '/process-and-cost'
   },
   {
-    name: '醫生團隊',
+    name: 'pages.medical_team.medical_team',
     link: '/medical-team'
   },
   {
-    name: '關於我們',
+    name: 'pages.about_us.about_us',
     link: '/about-us'
   },
   {
-    name: '聯絡我們',
+    name: 'pages.contact_us.contact_us',
     link: '/contact-us'
   }
 ])
@@ -259,7 +259,7 @@ const pageNav = ref([
       </div>
       <div class="homePage-pageNav">
         <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
-          <span>{{navItem.name}}</span>
+          <span>{{$t(navItem.name)}}</span>
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
               <circle cx="9.97073" cy="9.46756" r="9.40835" fill="#2958A3"/>
