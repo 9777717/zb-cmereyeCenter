@@ -98,7 +98,7 @@ var timer: any = null
 //   }, 5000)
 // }
 
-let fadeInRef = ref(null)
+// let fadeInRef = ref(null)
 // let refsLists = ref([
 //   'aaaa',
 //   'bbbb'
@@ -106,14 +106,14 @@ let fadeInRef = ref(null)
 // const changeRefs = () =>{
 //   return ref()
 // }
-const scrollWatch = () => {
-  console.log(fadeInRef)
-}
+// const scrollWatch = () => {
+//   console.log(fadeInRef)
+// }
 
 onMounted(() => {
   // setSwiperImg()
-  scrollWatch()
-  window.addEventListener('scroll',scrollWatch)
+  // scrollWatch()
+  // window.addEventListener('scroll',scrollWatch)
 })
 onUnmounted(() => {
   // clearInterval(timer)
@@ -277,7 +277,7 @@ const pageNav = ref([
           <!-- 點擊以下圖示，了解更多醫療資訊 -->
           {{$t("pages.index.contentnav.context")}}
         </div>
-        <div class="home-mbContent-nav-content" ref="fadeInRef">
+        <div class="home-mbContent-nav-content">
           <a :href="service.link" v-for="(service,index) in serviceLists" :key="index">
             <img :src="service.imgUrl" alt="">
             <span>{{$t(service.des)}}</span>
@@ -408,13 +408,27 @@ const pageNav = ref([
   }
 .home-mbContent{
   width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
+  // max-width: 1920px;
+  // margin: 0 auto;
     &-banner{
-      max-width: 1080px;
-      margin: 0 auto;
+      // max-width: 1080px;
+      // margin: 0 auto;
+      width: 100%;
+      position: relative;
       img{
         width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+      &::after{
+        content: '';
+        background: #EBEBEB;
+        width: 100%;
+        height: calc(290 / 1080 * 100%);
+        position: absolute;
+        bottom: calc(100 / 1080 * 100%);
+        left: 0;
+        z-index: -1;
       }
     }
     &-nav{
@@ -505,6 +519,8 @@ const pageNav = ref([
       }
     }
     &-box{
+      max-width: 1920px;
+      margin: 0 auto;
       .partTwo {
 				width: 100%;
 				max-width: 1080px;
