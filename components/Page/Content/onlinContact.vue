@@ -18,7 +18,6 @@ const rt = ref(route)
 
 <template>
   <div
-    v-if="router.name !== 'index'"
     class="onlinContact"
     :class="[
       rt.name === 'medical-service-eyeOrthopaedicDisease'
