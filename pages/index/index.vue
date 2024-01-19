@@ -97,8 +97,23 @@ var timer: any = null
 //     }
 //   }, 5000)
 // }
+
+// let fadeInRef = ref(null)
+// let refsLists = ref([
+//   'aaaa',
+//   'bbbb'
+// ])
+// const changeRefs = () =>{
+//   return ref()
+// }
+// const scrollWatch = () => {
+//   console.log(fadeInRef)
+// }
+
 onMounted(() => {
   // setSwiperImg()
+  // scrollWatch()
+  // window.addEventListener('scroll',scrollWatch)
 })
 onUnmounted(() => {
   // clearInterval(timer)
@@ -204,112 +219,55 @@ const serviceLists = [
     link: 'https://smile.hkcmereye.com/',
   }
 ]
+const pageNav = ref([
+  {
+    name: 'pages.process_cost.process_cost',
+    link: '/process-and-cost'
+  },
+  {
+    name: 'pages.medical_team.medical_team',
+    link: '/medical-team'
+  },
+  {
+    name: 'pages.about_us.about_us',
+    link: '/about-us'
+  },
+  {
+    name: 'pages.contact_us.contact_us',
+    link: '/contact-us'
+  }
+])
 </script>
 
 <template>
-  <div class="home">
-    <div>
-      <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
-        <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
-        src="https://static.cmereye.com/static/loffee/video/OPD.mp4" poster="https://static.cmereye.com/imgs/2023/11/e2a2830de8785725.jpg">
-         </video>
-      </div>
-      <div class="mbHomeSwiper">
-        <swiper
-          :loop="true"
-          :autoplay="{ delay: 3000 }"
-          :pagination="{ clickable: true }"
-          :modules="[Pagination,Autoplay]"
-        >
-          <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
-            <nuxt-link :to="swiperItem.link"><img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.title[0]"></nuxt-link>
-            <!-- <div class="slideBox-in">
-              <div class="slideBox-in-title">
-                <span v-for="(swiperItemTitle,swiperItemTitleIndex) in swiperItem.title" :key="swiperItemTitleIndex">{{swiperItemTitle}}</span>
-              </div>
-              <div class="slideBox-in-text">
-                <span v-for="(swiperItemText,swiperItemTextIndex) in swiperItem.text" :key="swiperItemTextIndex">{{swiperItemText}}</span>
-              </div>
-            </div> -->
-          </swiper-slide>
-        </swiper>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div>PROFESSIONAL</div>
-        <div>CLINICAL</div>
-        <div>SERVICE</div>
-      </div>
-      <div>
-        <nuxt-link to="/medical-service" :style="{cursor: 'pointer'}">
-          <div>
-            <img src="https://static.cmereye.com/imgs/2023/10/62276a75fc986e3c.jpg" alt="九大眼科醫療服務" />
-          </div>
-          <div>
-          </div>
-        </nuxt-link>
-        <div>
-          <div>
-            <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.72727 0L0 2.72727L4.54545 7.27273L0 11.8182L2.72727 14.5455L10 7.27273L2.72727 0Z"
-                fill="#2958A3" />
-            </svg>
-            <div>{{ $t('pages.index.subscribe') }}</div>
-          </div>
-          <div>
-            <div @click="callTel()">
-              <div>
-                <svg width="33" height="30" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.9247 0C3.09078 0 0 2.41709 0 5.91754C0 6.38639 0.0682793 6.83703 0.154766 7.21029C0.277669 7.74742 0.83756 8.05696 1.35648 7.87033L4.86604 6.59578C5.22564 6.46377 5.4669 6.12238 5.4669 5.74001V4.10131C5.4669 3.6006 5.87657 3.19092 6.37729 3.19092H15.4812C15.9819 3.19092 16.3916 3.6006 16.3916 4.10131V5.74001C16.3916 6.12238 16.6328 6.46377 16.9924 6.59578L20.502 7.87033C21.0209 8.05696 21.5808 7.74742 21.7037 7.21029C21.7857 6.83703 21.8585 6.39094 21.8585 5.91754C21.8585 2.41709 18.7677 0 10.9338 0H10.9247Z"
-                    fill="#2958A3" />
-                  <path
-                    d="M18.6312 11.9123L14.9942 7.36487C14.7165 7.01892 14.5663 6.58648 14.5663 6.14039V5.46215C14.5663 4.96143 14.1566 4.55176 13.6559 4.55176H8.19357C7.69285 4.55176 7.28318 4.96143 7.28318 5.46215V6.14039C7.28318 6.58648 7.13296 7.01436 6.85529 7.36487L3.21828 11.9123C2.31244 13.0412 1.82083 14.4477 1.82083 15.8952V17.3018C1.82083 18.3078 2.63563 19.1226 3.64161 19.1226H18.2079C19.2138 19.1226 20.0286 18.3078 20.0286 17.3018V15.8952C20.0286 14.4477 19.537 13.0457 18.6312 11.9123ZM10.9247 16.3868C8.91278 16.3868 7.28318 14.7572 7.28318 12.7453C7.28318 10.7333 8.91278 9.10371 10.9247 9.10371C12.9367 9.10371 14.5663 10.7333 14.5663 12.7453C14.5663 14.7572 12.9367 16.3868 10.9247 16.3868Z"
-                    fill="#2958A3" />
-                </svg>
-              </div>
-              <div>3956 2025</div>
-            </div>
-            <div class="pcIndexWhatsapp" @click="goWhatsApp()">
-              <div class="pcIndexWhatsapp">
-                <svg class="pcIndexWhatsapp" width="33" height="33" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 24L1.72332 17.608C0.333494 15.1154 -0.108066 12.2067 0.479664 9.41575C1.06739 6.62476 2.64499 4.13866 4.92297 2.41368C7.20094 0.688691 10.0265 -0.1595 12.8811 0.0247802C15.7358 0.209061 18.428 1.41344 20.4638 3.4169C22.4996 5.42036 23.7424 8.08853 23.9642 10.9318C24.186 13.775 23.3718 16.6027 21.6712 18.8958C19.9705 21.1889 17.4974 22.7937 14.7056 23.4157C11.9139 24.0377 8.99074 23.6351 6.47267 22.2819L0 24ZM6.78479 19.8807L7.18509 20.1175C9.20823 21.3216 11.6034 21.7459 13.9188 21.3106C16.2343 20.8752 18.3098 19.6101 19.754 17.754C21.1981 15.8979 21.911 13.5791 21.7582 11.2351C21.6054 8.89101 20.5974 6.68372 18.9245 5.0296C17.2515 3.37547 15.0291 2.38887 12.6767 2.25591C10.3242 2.12295 8.00427 2.85281 6.15447 4.30783C4.30467 5.76284 3.0529 7.84241 2.63532 10.1542C2.21773 12.4661 2.6632 14.8503 3.88767 16.8573L4.1387 17.2698L3.17528 20.8412L6.78479 19.8807Z"
-                    fill="#2958A3" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M16.5964 13.2962C16.3513 13.1014 16.0647 12.9643 15.7582 12.8952C15.4517 12.8261 15.1333 12.8268 14.8271 12.8973C14.3671 13.0862 14.0699 13.7931 13.7726 14.157C13.7087 14.2431 13.6154 14.3033 13.5099 14.3265C13.4045 14.3497 13.2942 14.3342 13.1994 14.283C11.5162 13.6322 10.1063 12.4354 9.20084 10.8887C9.12324 10.7923 9.0865 10.6698 9.09838 10.5471C9.11026 10.4244 9.16983 10.311 9.26453 10.2309C9.59605 9.90631 9.83946 9.50435 9.97224 9.06213C10.0017 8.57434 9.88873 8.08847 9.6467 7.66243C9.4596 7.06516 9.10351 6.53332 8.62052 6.12977C8.37031 6.01509 8.09167 5.97519 7.81884 6.01497C7.54601 6.05476 7.29089 6.17249 7.0848 6.35371C6.73033 6.6542 6.4489 7.02985 6.26144 7.4527C6.07398 7.87556 5.98529 8.33477 6.00199 8.79618C6.00308 9.05583 6.03637 9.31437 6.10108 9.56602C6.26541 10.1706 6.51813 10.7482 6.85125 11.2806C7.09158 11.6884 7.35382 12.0833 7.63681 12.4634C8.55651 13.7119 9.71259 14.7719 11.0409 15.5847C11.7074 15.9977 12.4198 16.3335 13.164 16.5855C13.9371 16.932 14.7906 17.065 15.6339 16.9704C16.1144 16.8984 16.5697 16.7108 16.9596 16.4241C17.3496 16.1373 17.6623 15.7601 17.8703 15.3257C17.9924 15.0633 18.0295 14.77 17.9764 14.4859C17.8632 13.9051 17.0705 13.5621 16.5964 13.2962Z"
-                    fill="#2958A3" />
-                </svg>
-              </div>
-              <div class="pcIndexWhatsapp">WhatsApp</div>
-            </div>
-            <a class="pcIndexXscx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
-              <div class="pcIndexXscx">
-                <svg class="pcIndexXscx" width="33" height="27" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M1 13.5537C1 10.8591 3.625 10.187 6.25 10.187V21.9995C3.3505 21.9995 1 19.649 1 16.7495V13.5537Z"
-                    stroke="#2958A3" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M27.25 13.5537C27.25 10.8591 24.625 10.187 22 10.187V21.9995C24.8994 21.9995 27.25 19.649 27.25 16.7495V13.5537Z"
-                    stroke="#2958A3" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M6.25005 22V8.875C6.25005 4.52576 9.77581 1 14.1251 1C18.4743 1 22.0001 4.52576 22.0001 8.875V22"
-                    stroke="#2958A3" stroke-width="1.48" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="pcIndexXscx">{{ $t('pages.index.inquire') }}</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="mbCar">
-        <div @click="toLink('/medical-service')">
-          <div><img src="https://static.cmereye.com/imgs/2023/10/ba067103023aaa5d.jpg" alt="九大眼科醫療服務"></div>
-        </div>
-      </div> -->
+  <div class="homePage">
+    <div class="mbHomeSwiper">
+      <swiper
+        :loop="true"
+        :autoplay="{ delay: 3000 }"
+        :pagination="{ clickable: true }"
+        :modules="[Pagination,Autoplay]"
+      >
+        <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
+          <nuxt-link :to="swiperItem.link"><img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.title[0]"></nuxt-link>
+        </swiper-slide>
+      </swiper>
     </div>
     <div class="home-mbContent">
+      <div class="home-mbContent-banner">
+        <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt="">
+      </div>
+      <div class="homePage-pageNav">
+        <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
+          <span>{{$t(navItem.name)}}</span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+              <circle cx="9.97073" cy="9.46756" r="9.40835" fill="#2958A3"/>
+              <path d="M4.93054 8.9696C4.65548 8.9696 4.43249 9.19259 4.43249 9.46765C4.43249 9.74272 4.65548 9.9657 4.93054 9.9657V8.9696ZM14.3551 9.81983C14.5496 9.62533 14.5496 9.30998 14.3551 9.11548L11.1855 5.94591C10.991 5.75141 10.6756 5.75141 10.4811 5.94591C10.2866 6.14041 10.2866 6.45575 10.4811 6.65026L13.2985 9.46765L10.4811 12.285C10.2866 12.4795 10.2866 12.7949 10.4811 12.9894C10.6756 13.1839 10.991 13.1839 11.1855 12.9894L14.3551 9.81983ZM4.93054 9.9657H14.0029V8.9696H4.93054V9.9657Z" fill="white"/>
+            </svg>
+          </span>
+        </nuxt-link>
+      </div>
       <div class="home-mbContent-nav">
         <div class="home-mbContent-nav-title">
           <!-- 醫療服務 -->
@@ -440,163 +398,422 @@ const serviceLists = [
       </div>
       <AboutChildCompsAwards />
     </div>
-    <div class="home-bottom">
-      <PageFooterMenu />
-    </div>
-
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
-.home-bottom{
-  display: none;
-}
-.home-mbContent{
-  display: none;
-}
-.home {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  &>div:nth-of-type(1) {
-    .mbHomeSwiper {
-      display: none;
-    }
+@media (min-width: 768px) {
+  .mbHomeSwiper{
+    display: none;
   }
-  &>div:nth-child(2) {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    pointer-events: none;
-    &>div:nth-child(1) {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 196px;
-      flex-direction: column;
-      align-items: flex-start;
-      &>div:nth-child(1) {
-        letter-spacing: 2.409px;
-      }
-      &>div:nth-child(3) {
-        letter-spacing: 18.553px;
-      }
-      font-family: 'Metropolis';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24.0948px;
-      line-height: 28px;
-      letter-spacing: 14.5px;
-      text-transform: uppercase;
-      color: #ffffff;
-    }
-    &>div:nth-child(2) {
-      display: flex;
-      pointer-events: initial;
-      &>div,&>a {
-        background: #ffffffbf;
-      }
-      img {
+.home-mbContent{
+  width: 100%;
+  // max-width: 1920px;
+  // margin: 0 auto;
+    &-banner{
+      // max-width: 1080px;
+      // margin: 0 auto;
+      width: 100%;
+      position: relative;
+      img{
         width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
       }
-      &>a {
-        width: 626px;
-        padding: 0 24px;
-        margin-right: 53px;
-        &>div:nth-child(1) {
-          margin: 10px 0 9px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          font-family: 'Metropolis';
+      &::after{
+        content: '';
+        background: #EBEBEB;
+        width: 100%;
+        height: calc(290 / 1080 * 100%);
+        position: absolute;
+        bottom: calc(100 / 1080 * 100%);
+        left: 0;
+        z-index: -1;
+      }
+    }
+    &-nav{
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1080px;
+      &-title{
+        color: #515151;
+        font-size: 34.692px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px; /* 144.127% */
+        letter-spacing: 10.061px;
+        margin-bottom: 50px;
+        &::after{
+          content: '> Medical Services';
+          display: block;
+          color: #8AD8DD;
+          font-family: Metropolis;
+          font-size: 16.774px;
           font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 27px;
-          text-align: center;
-          letter-spacing: 0.05em;
-          color: #2958a3;
-          &>div {
-            margin-left: 8px;
-          }
-          svg {
-            margin-top: -3px;
-          }
-        }
-        &>div:nth-child(3) {
-          margin: 10px 0;
-          font-family: 'Noto Sans HK';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 20px;
-          line-height: 160%;
-          text-align: justify;
-          letter-spacing: 0.1em;
-          color: #2958a3;
+          font-weight: 500;
+          line-height: 20px; /* 298.077% */
+          letter-spacing: 1.677px;
+          text-transform: uppercase;
         }
       }
-
-      &>div {
-        width: 530px;
-        &>div:nth-child(1) {
+      &-context{
+        display: none;
+      }
+      &-content{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        a{
+          width: 100%;
+          margin: 0 auto calc(88 / 371 * 100%);
+          max-width: 250px;
+          border-radius: 27px;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          margin: 15px 0 0 30px;
-          font-family: 'Noto Sans HK';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 35px;
-          letter-spacing: 0.05em;
-          color: #2958a3;
-          &>div {
-            margin-left: 12px;
-          }
-          svg {
-            margin-top: 6px;
-          }
-        }
-        &>div:nth-child(2) {
-          display: flex;
+          background: #FAFDFF;
+          box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0.10);
+          padding: 27px 0 19px;
+          overflow: hidden;
           position: relative;
-          justify-content: space-evenly;
-          align-items: center;
-          padding-bottom: 50px;
-          height: 100%;
-
-          &>div,&>a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            flex: 1;
-            min-height: 100px;
-            
-            &>div:nth-child(2) {
-              margin-top: 2px;
-              font-family: 'Metropolis';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 28px;
-              text-align: center;
-              letter-spacing: 0.05em;
-
-              color: #2958a3;
+          transition: all .3s;
+          img{
+            border-radius: 50%;
+            transition: all .3s;
+          }
+          span{
+            color: #515151;
+            text-align: center;
+            font-family: "Noto Sans HK";
+            font-size: 20.56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 43.901px; /* 213.526% */
+            letter-spacing: 1.028px;
+            margin-top: 12px;
+            transition: all .3s;
+          }
+          &::before{
+            content: '';
+            width: 40px;
+            height: 130%;
+            background: rgba(255,255,255,.5);
+            position: absolute;
+            left: -50%;
+            top: 50%;
+            transition: all 1s;
+            transform: translateY(-50%) rotate(30deg);
+          }
+          &:hover{
+            box-shadow: 2px 5px 4px 0px rgba(0, 0, 0, 0),1px 5px 4px rgba(81, 81, 81, .3) inset;
+            img{
+              box-shadow: 1px 5px 4px rgba(81, 81, 81, .4);
+            }
+            span{
+              text-shadow: 1px 5px 3px rgba(81, 81, 81, .5);
+            }
+            &::before{
+              left: 150%;
             }
           }
-          &>div{
-            border-right: 0.75px solid #2958a3;
-          }
         }
       }
     }
-    .mbCar {
-      display: none;
+    &-box{
+      max-width: 1920px;
+      margin: 0 auto;
+      .partTwo {
+				width: 100%;
+				max-width: 1080px;
+				margin: 0 auto;
+			}
+			.partTwo-in {
+				display: flex;
+				align-items: center;
+				margin-bottom: calc(130 / 1331 * 100%);
+				position: relative;
+			}
+			.partTwo-in:nth-of-type(even) {
+				flex-direction: row-reverse;
+			}
+			.partTwo-in:nth-of-type(even)>.partTwo-in-text>div:nth-of-type(1) {
+				text-align: right;
+			}
+			.partTwo-in:nth-of-type(even)>.partTwo-in-image::after {
+				left: auto;
+				right: -20px;
+			}
+			.partTwo-in:nth-of-type(3)>.partTwo-in-image {
+				position: relative;
+			}
+			.partTwo-in:nth-of-type(3)>.partTwo-in-image>img:nth-of-type(2) {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				display: block;
+				top: 0;
+				left: 0;
+			}
+			.partTwo-in:nth-of-type(3)>.partTwo-in-image::after {
+				display: none;
+			}
+			.partTwo-in-image {
+				width: auto;
+				// max-width: 820px;
+        width: calc(820 / 1331 * 100%);
+				position: relative;
+			}
+			.partTwo-in-image img {
+				position: relative;
+				z-index: 2;
+			}
+			.partTwo-in-image::after {
+				content: '';
+				position: absolute;
+				bottom: -20px;
+				left: -20px;
+				width: 75%;
+				height: 50%;
+				background: #D9D9D9;
+				z-index: 1;
+			}
+			.partTwo-in-text {
+				flex: 1;
+				max-width: 511px;
+			}
+			.partTwo-in-text>div:nth-of-type(1) {
+				color: #8AD8DD;
+				font-family: Noto Sans HK;
+				font-size: 70.28px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 61.651px;
+				/* 87.722% */
+				letter-spacing: 4.217px;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+				padding: 0 20px;
+			}
+			.partTwo-in-text>div:nth-of-type(2) {
+				text-align: center;
+				color: #FFF;
+				text-align: center;
+				font-family: Noto Sans HK;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 67px;
+				/* 155% */
+				letter-spacing: 2.4px;
+				text-transform: uppercase;
+				width: 100%;
+				height: 67px;
+				background: #8AD8DD;
+			}
+        .indexContext_1 {
+					width: auto;
+					max-width: 1920px;
+					margin: 0 auto;
+					display: flex;
+					align-items: center;
+          justify-content: space-between;
+          position: relative;
+					// padding: 0 3rem;
+				}
+				.indexContext_1-image {
+          
+					width: 100%;
+					order: 2;
+					z-index: 1;
+          display: flex;
+          justify-content: flex-end;
+					// margin-left: -10%;
+          // padding-left: 30px;
+				}
+				.indexContext_1-image img {
+					width: calc(1146 / 1920 * 100%);
+          height: auto;
+          margin-right: calc(30 / 1920 * 100%);
+				}
+				.indexContext_1-text {
+					width: 100%;
+					order: 1;
+					z-index: 2;
+          position: absolute;
+          max-width: 1080px;
+          left: 50%;
+          transform: translateX(-50%);
+					// padding-left: 3%;
+				}
+				.indexContext_1-text h2 {
+					color: #8AD8DD;
+					font-family: Metropolis;
+					font-size: 48px;
+					font-weight: 700;
+					line-height: 65px;
+					letter-spacing: 4.8px;
+          width: 75%;
+				}
+				.indexContext_1-text p {
+					color: #515151;
+					text-align: justify;
+					font-family: Noto Sans HK;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 40px;
+					letter-spacing: 1.6px;
+					text-transform: uppercase;
+					margin-top: 18px;
+          width: 75%;
+				}
+				.indexContext_2 {
+					width: auto;
+					display: flex;
+					align-items: center;
+					/* margin-top: 264px; */
+					/* margin-bottom: 200px; */
+					// padding: 0 3rem;
+					max-width: 1920px;
+					margin: calc(264 / 1920 * 100%) auto 100px;
+          position: relative;
+				}
+				.indexContext_2-image {
+					// width: 70%;
+          width: calc(1000 / 1920 * 100%);
+          height: auto;
+          margin-left: calc(30 / 1920 * 100%);
+					z-index: 1;
+				}
+				.indexContext_2-image img {
+					width: 100%;
+				}
+				.indexContext_2-text {
+					width: 100%;
+          max-width: 1080px;
+					// margin-left: -15%;
+					z-index: 2;
+          position: absolute;
+          // left: calc(1200 / 1920 * 100%);
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+				}
+				.indexContext_2-text h2 {
+					color: #8AD8DD;
+					font-family: Metropolis;
+					font-size: 48px;
+					font-weight: 700;
+					line-height: 1.6;
+					letter-spacing: 4.8px;
+          width: calc(670 / 1080 * 100%);
+				}
+				.indexContext_2-text p {
+					color: #515151;
+					text-align: justify;
+					font-family: Noto Sans HK;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 1.6px;
+					text-transform: uppercase;
+					margin-top: 18px;
+					// width: 75%;
+          width: calc(670 / 1080 * 100%);
+				}
+				.indexContext_2-text-in {
+					margin-left: 30%;
+					margin-top: calc(56 / 1080 * 100%);
+					display: flex;
+					align-items: center;
+					// width: 45%;
+          width: calc(470 / 1080 * 100%);
+				}
+				.indexContext_2-text-in>div {
+					width: 100px;
+					min-width: 100px;
+					display: flex;
+					justify-content: center;
+				}
+				.indexContext_2-text-in>span {
+					text-align: center;
+					flex: 1;
+					font-weight: 400;
+					line-height: 30px;
+					letter-spacing: 1.6px;
+					font-size: 20px;
+				}
+      &.home-mbContent-box-en{
+        .partTwo-in-text>div:nth-of-type(2){
+          height: auto;
+          font-size: 34px;
+          line-height: 1.2;
+          padding: 5px 10px;
+          white-space: pre-wrap;
+        }
+      }
+    }
+  }
+  .homePage-pageNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 30px auto calc(83 / 1920 * 100%);
+    &-in{
+      border: 1px solid #D9D9D9;
+      width: calc(314 / 1442 * 100%);
+      height: 99px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 calc(20 / 1442 * 100%);
+      transition: all .3s;
+      position: relative;
+      span{
+        color: #2958A3;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        transition: all .3s;
+        position: relative;
+        z-index: 1;
+        &:nth-of-type(2){
+          margin-top: 3px;
+        }
+      }
+      &::before{
+        content: '';
+        width: 0;
+        height: 100%;
+        background: #2958A3;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s ease-out;
+        z-index: 0;
+      }
+      &:hover{
+        span{
+          color: #fff;
+          svg{
+            circle{
+              fill: #fff;
+            }
+            path{
+              fill: #2958A3;
+            }
+          }
+        }
+        &::before{
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -605,119 +822,22 @@ const serviceLists = [
   .home-bottom{
     display: block;
   }
-  .home {
-    height: auto;
-    &>div:nth-of-type(1) {
-      video {
-        display: none;
-      }
-      .pcHomeVideoBox{
-        display: none;
-      }
-      .mbHomeSwiper {
+  .mbHomeSwiper{
+    width: 100%;
+    margin-top: 78px;
+    display: block;
+    .slideBox{
+      img{
         width: 100%;
-        // height: 100vh;
-        // transition: all 1s;
-        display: block;
-        margin-top: 78px;
-        // background-size: 100% 100% !important;
-        :deep(.swiper-pagination){
-          display: flex;
-          justify-content: flex-start;
-          bottom: auto;
-          top: 20px;
-          left: 15px;
-        }
-        .slideBox{
-          position: relative;
-          img{
-            width: 100%;
-          }
-          &-in{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 126px;
-            background: rgba($color: #fff, $alpha: .7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            &-title{
-              span{
-                color: #2958A3;
-                text-align: center;
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 43.901px; /* 182.921% */
-                letter-spacing: 2.64px;
-              }
-            }
-            &-text{
-              span{
-                color: #515151;
-                text-align: center;
-                font-size: 17.69px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 30.1px; /* 170.153% */
-                letter-spacing: 0.885px;
-                display: block;
-              }
-            }
-          }
-        }
-      }
-    }
-    &>div:nth-child(2) {
-      // top: 60vh;
-      position: static;
-      pointer-events: initial;
-      &>div:nth-child(1) {
-        display: none;
-      }
-      &>div:nth-child(2) {
-        display: none;
-      }
-      .mbCar {
-        display: block;
-        background: rgba($color: #fff, $alpha: .7);
-        margin: 0 20px;
-        width: auto;
-        padding: 10px;
-        &>div:nth-of-type(1) {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          color: #2958A3;
-          font-size: 20px;
-          font-weight: 400;
-        }
-        &>div:nth-of-type(2) {
-          display: flex;
-
-          &>div:nth-of-type(1) {
-            img {
-              width: 100%;
-            }
-          }
-          &>div:nth-of-type(2) {
-            flex: 1;
-            color: #2958A3;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            text-align: justify;
-          }
-        }
       }
     }
   }
   .home-mbContent{
     display: block;
     margin-top: 20px;
+    &-banner{
+      display: none;
+    }
     &-nav{
       &-title{
         color: #2958A2;
@@ -1043,15 +1163,8 @@ const serviceLists = [
       }
     }
   }
-}
-@media screen and (min-width: 1920px) {
-  .home {
-    &>div:nth-child(2) {
-      &>div:nth-child(2) {
-        display: flex;
-        margin-top: 5%;
-      }
-    }
+  .homePage-pageNav{
+    display: none;
   }
 }
 </style>
