@@ -141,7 +141,7 @@ onMounted(()=>{
         :modules="[Autoplay]"
         :loop="true"
         :autoplay="{ delay: 0 }"
-        speed="3000"
+        :speed="3000"
         class="ccSwiper"
       >
         <swiper-slide

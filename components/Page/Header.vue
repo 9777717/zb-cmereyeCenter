@@ -416,7 +416,7 @@ const changeLang = (_lang: any) => {
               </el-menu-item>
             </section>
             <section>
-              <el-sub-menu>
+              <el-sub-menu :index="'8'">
                 <template #title>Languages</template>
                 <el-menu-item
                   v-for="lang in availableLocales"

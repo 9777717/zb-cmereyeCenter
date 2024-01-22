@@ -189,7 +189,7 @@ const disabledDate = (time: Date) => {
           :rules="rules"
           class="demo-ruleForm"
           :class="{'demo-ruleForm-en': locale === 'en'}"
-          :size="formSize"
+          :size="'default'"
           status-icon
         >
           <el-form-item prop="name">

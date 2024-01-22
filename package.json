@@ -73,8 +73,10 @@
     ]
   },
   "dependencies": {
+    "@intlify/devtools-if": "^9.9.0",
     "@nuxt/http": "^0.6.4",
     "google-fonts": "^1.0.0",
+    "gsap": "^3.12.5",
     "nuxt-swiper": "^1.1.0"
   }
 }
