@@ -1,5 +1,7 @@
 <script lang="ts" setup>
  import { Pagination,Autoplay } from 'swiper';
+ import gsap from 'gsap'
+ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 definePageMeta({
   layout: 'page',
 })
@@ -28,21 +30,7 @@ const goWhatsApp = () => {
   )
 }
 const homeSwiperImgs = [
-  // {
-  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
-  // },
-  // {
-  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
-  // },
-  // {
-  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/7bba82871272f273.jpg'
-  // },
-  // {
-  //   imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
-  // }
   {
-    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01.jpg',
-    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en.jpg',
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
     title: ['香港上市公司 11間眼科診所'],
@@ -50,8 +38,6 @@ const homeSwiperImgs = [
     link: '/about-us'
   },
   {
-    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.jpg',
-    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.jpg',
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
     title: ['全面涵蓋九大眼科醫療領域'],
@@ -59,8 +45,6 @@ const homeSwiperImgs = [
     link: '/medical-service'
   },
   {
-    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.jpg',
-    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.jpg',
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
     title: ['以人為本，以客人為中心'],
@@ -68,8 +52,6 @@ const homeSwiperImgs = [
     link: '/about-us#feedback'
   },
   {
-    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.jpg',
-    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.jpg',
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
     title: ['國際認可先進眼科醫療技術'],
@@ -77,8 +59,6 @@ const homeSwiperImgs = [
     link: '/about-us#medicalEquipment'
   },
   {
-    // hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.jpg',
-    // enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.jpg',
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
     title: ['全心全意守護每雙眼睛'],
@@ -86,37 +66,76 @@ const homeSwiperImgs = [
     link: '/about-us#corporate'
   }
 ]
-let currentImg = ref(0)
-var timer: any = null
-// const setSwiperImg = () => {
-//   timer = setInterval(() => {
-//     if (currentImg.value < homeSwiperImgs.length - 1) {
-//       currentImg.value++
-//     } else {
-//       currentImg.value = 0
-//     }
-//   }, 5000)
-// }
-
-// let fadeInRef = ref(null)
-// let refsLists = ref([
-//   'aaaa',
-//   'bbbb'
-// ])
-// const changeRefs = () =>{
-//   return ref()
-// }
-// const scrollWatch = () => {
-//   console.log(fadeInRef)
-// }
 
 onMounted(() => {
-  // setSwiperImg()
-  // scrollWatch()
-  // window.addEventListener('scroll',scrollWatch)
-})
-onUnmounted(() => {
-  // clearInterval(timer)
+  gsap.registerPlugin(ScrollTrigger) 
+  gsap.from('.homePage-pageNav', {
+    opacity: 0,
+    y: 50,
+    duration: 1
+  })
+  
+  for(var a=0;a<9;a++){
+    gsap.from(`.cmer-fadeIn-${a}`, {
+      scrollTrigger: `.cmer-fadeIn-${a}`,
+      opacity: 0,
+      x: a >= 3 && a < 6 ? 100 : -100,
+      duration: 2,
+      delay: .5
+    })
+  }
+  gsap.from('.cmer-bounceIn',{
+    scrollTrigger: '.cmer-bounceIn',
+    opacity: 0,
+    scale: 0,
+    duration: 1,
+    delay: 2.5
+  })
+  for(var i=1;i<=3;i++){
+      gsap.from(`.cmer-fadeInLeft-${i}`, {
+        scrollTrigger: `.cmer-fadeInLeft-${i}`,
+        opacity: 0,
+        x: -50,
+        duration: 2,
+        delay: .5
+      })
+  }
+  for(var j=1;j<=3;j++){
+      gsap.from(`.cmer-fadeInRight-${j}`, {
+        scrollTrigger: `.cmer-fadeInRight-${j}`,
+        opacity: 0,
+        x: 50,
+        duration: 2,
+        delay: .5
+      })
+  }
+  for(var k=1;k<=12;k++){
+    gsap.from(`.cmer-fadeInUp-${k}`, {
+      scrollTrigger: `.cmer-fadeInUp-${k}`,
+      opacity: 0,
+      y: 50,
+      duration: 2,
+      delay: .5
+    })
+  }
+  // gsap.from('.cmer-fadeInLeft', {
+  //   scrollTrigger: ".cmer-fadeInLeft",
+  //   opacity: 0,
+  //   x: -50,
+  //   duration: 2,
+  // })
+  // gsap.from('.cmer-fadeInRight', {
+  //   scrollTrigger: ".cmer-fadeInRight",
+  //   opacity: 0,
+  //   x: 50,
+  //   duration: 2,
+  // })
+  // gsap.from('.cmer-fadeInUp', {
+  //   scrollTrigger: ".cmer-fadeInUp",
+  //   opacity: 0,
+  //   y: 50,
+  //   duration: 2,
+  // })
 })
 // 拨打电话
 const callTel = () => {
@@ -142,13 +161,6 @@ const serviceLists = [
     des: 'pages.medical_service.maculopathy',
     link: '/medical-service/maculopathy',
   },
-  // {
-  //   i: '03',
-  //   imgUrl:
-  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser4.png',
-  //   des: 'pages.medical_service.muscae_volitantes',
-  //   link: '/medical-service/muscaeVolitantes',
-  // },
   {
     i: '04',
     imgUrl:
@@ -163,20 +175,6 @@ const serviceLists = [
     des: 'pages.medical_service.glaucoma',
     link: '/medical-service/glaucoma',
   },
-  // {
-  //   i: '06',
-  //   imgUrl:
-  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser5.png',
-  //   des: 'pages.medical_service.conjunctivitis',
-  //   link: '/medical-service/conjunctivitis',
-  // },
-  // {
-  //   i: '07',
-  //   imgUrl:
-  //     'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser3.png',
-  //   des: 'pages.medical_service.xerophthalmia',
-  //   link: '/medical-service/xerophthalmia',
-  // },
   {
     i: '08',
     imgUrl:
@@ -191,12 +189,6 @@ const serviceLists = [
     des: 'pages.medical_service.strabismusAmblyopia',
     link: '/medical-service/strabismusAmblyopia',
   },
-  // {
-  //   i: '10',
-  //   imgUrl: 'https://static.cmereye.com/imgs/2023/06/18da333b4728e821.png',
-  //   des: 'pages.medical_service.atropine',
-  //   link: '/medical-service/atropine',
-  // },
   {
     i: '11',
     imgUrl:
@@ -278,7 +270,7 @@ const pageNav = ref([
           {{$t("pages.index.contentnav.context")}}
         </div>
         <div class="home-mbContent-nav-content">
-          <a :href="service.link" v-for="(service,index) in serviceLists" :key="index">
+          <a :href="service.link" v-for="(service,index) in serviceLists" :key="index" :class="`cmer-fadeIn-${index}`">
             <img :src="service.imgUrl" alt="">
             <span>{{$t(service.des)}}</span>
           </a>
@@ -288,38 +280,38 @@ const pageNav = ref([
         <div class="partTwo">
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInLeftBig" data-wow-delay=".5s"></div>
+			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInLeft-1"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s1_1")}}</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s1_2")}}</div>
+			  			<div class="cmer-fadeInUp-1">{{$t("pages.index.contentBox.s1_1")}}</div>
+			  			<div class="cmer-fadeInUp-2">{{$t("pages.index.contentBox.s1_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/b727a18986eee34a.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInRightBig" data-wow-delay=".5s"></div>
+			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInRight-1"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s2_1")}}</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s2_2")}}</div>
+			  			<div class="cmer-fadeInUp-3">{{$t("pages.index.contentBox.s2_1")}}</div>
+			  			<div class="cmer-fadeInUp-4">{{$t("pages.index.contentBox.s2_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image">
 			  			<img src="https://static.cmereye.com/imgs/2023/11/10e2463581fde672.png" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInLeftBig" data-wow-delay=".5s">
+			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInLeft-2">
 			  			<img src="https://static.cmereye.com/imgs/2023/11/b1571356e3fdc9b3.png" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow bounceIn" data-wow-delay="1.5s">
+			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-bounceIn">
 			  		</div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_1")}}</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_2")}}</div>
+			  			<div class="cmer-fadeInUp-5" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_1")}}</div>
+			  			<div class="cmer-fadeInUp-6" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="wow fadeInRightBig" data-wow-delay=".5s"></div>
+			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInRight-2" data-wow-delay=".5s"></div>
 			  		<div class="partTwo-in-text">
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_1")}}</div>
-			  			<div class="wow fadeInUp" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_2")}}</div>
+			  			<div class="cmer-fadeInUp-7" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_1")}}</div>
+			  			<div class="cmer-fadeInUp-8" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_2")}}</div>
 			  		</div>
 			  	</div>
 			  </div>
@@ -327,10 +319,10 @@ const pageNav = ref([
       <div class="home-mbContent-box" :class="{'home-mbContent-box-en': locale === 'en'}">
         <div>
 			  	<div class="indexContext_1">
-			  		<div class="indexContext_1-image wow fadeInRight">
+			  		<div class="indexContext_1-image cmer-fadeInRight-3">
 			  			<img src="https://static.cmereye.com/imgs/2023/11/d9ed93444cd110d2.jpg" alt="">
 			  		</div>
-			  		<div class="indexContext_1-text wow fadeInUp">
+			  		<div class="indexContext_1-text cmer-fadeInUp-9">
 			  			<h2>
 			  				{{$t("pages.index.contentBox.h2_1")}}</h2>
 			  			<p>
@@ -341,16 +333,16 @@ const pageNav = ref([
 			  </div>
 			  <div>
 			  	<div class="indexContext_2">
-			  		<div class="indexContext_2-image wow fadeInLeft">
+			  		<div class="indexContext_2-image cmer-fadeInLeft-3">
 			  			<img src="https://static.cmereye.com/imgs/2023/11/f82b7514325c896f.jpg" alt="">
 			  		</div>
 			  		<div class="indexContext_2-text">
-			  			<h2 class=" wow fadeInUp">
+			  			<h2 class="cmer-fadeInUp">
 			  				{{$t("pages.index.contentBox.h2_2")}}</h2>
-			  			<p class=" wow fadeInUp">
+			  			<p class="cmer-fadeInUp">
 			  				{{$t("pages.index.contentBox.p2")}}
 			  			</p>
-			  			<div class="indexContext_2-text-in wow fadeInUp">
+			  			<div class="indexContext_2-text-in cmer-fadeInUp-10">
 			  				<div>
 			  					<svg xmlns="http://www.w3.org/2000/svg" width="70" height="67" viewBox="0 0 70 67"
 			  						fill="none">
@@ -373,7 +365,7 @@ const pageNav = ref([
 			  				</div>
 			  				<span>{{$t("pages.index.contentBox.span1_1")}}<br>{{$t("pages.index.contentBox.span1_2")}}</span>
 			  			</div>
-			  			<div class="indexContext_2-text-in wow fadeInUp">
+			  			<div class="indexContext_2-text-in cmer-fadeInUp-11">
 			  				<div>
 			  					<svg xmlns="http://www.w3.org/2000/svg" width="52" height="74" viewBox="0 0 52 74"
 			  						fill="none">
@@ -384,7 +376,7 @@ const pageNav = ref([
 			  				</div>
 			  				<span>{{$t("pages.index.contentBox.span2")}}</span>
 			  			</div>
-			  			<div class="indexContext_2-text-in wow fadeInUp">
+			  			<div class="indexContext_2-text-in cmer-fadeInUp-12">
 			  				<div>
 			  					<img src="https://static.cmereye.com/imgs/2023/11/7999fef5f2ba4028.png" alt="">
 			  				</div>
