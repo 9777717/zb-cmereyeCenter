@@ -247,7 +247,10 @@ const pageNav = ref([
     </div>
     <div class="home-mbContent">
       <div class="home-mbContent-banner">
-        <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt="">
+        <!-- <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt=""> -->
+        <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
+        src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg">
+         </video>
       </div>
       <div class="homePage-pageNav">
         <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
@@ -407,7 +410,7 @@ const pageNav = ref([
       // margin: 0 auto;
       width: 100%;
       position: relative;
-      img{
+      video,img{
         width: 100%;
         max-width: 1080px;
         margin: 0 auto;
