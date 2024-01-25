@@ -24,6 +24,13 @@ const awardsList = [
   },
   {
     imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+    year: 'pages.about_us.awards.awards_year_12',
+    des: 'pages.about_us.awards.awards_des_6',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
+  },
+  {
+    imgUrl:
       'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
     year: 'pages.about_us.awards.awards_year_11',
     des: 'pages.about_us.awards.awards_des_11',
@@ -95,17 +102,10 @@ const awardsList = [
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
-    year: 'pages.about_us.awards.awards_year_5',
+    year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
   },
-  {
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards7.jpg',
-    year: 'pages.about_us.awards.awards_year_7',
-    des: 'pages.about_us.awards.awards_des_7',
-    link: 'https://hkhealthawards.com/'
-  }
 ]
 
 const handleSlide = (_data:any) =>{
@@ -198,8 +198,8 @@ onMounted(()=>{
       img{
         width: 100%;
         max-height: 80%;
-        &.brandImg3{
-          max-height: 50%;
+        &.brandImg4{
+          // max-height: 50%;
         }
       }
     }
