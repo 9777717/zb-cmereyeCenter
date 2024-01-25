@@ -63,17 +63,11 @@ const toLink = () =>{
         <slot name="title">
           <NuxtLink tag="a" :to="{ name: 'en-index' }">
             <img
-              v-show="router.name === 'en-index'"
-              src="https://static.cmereye.com/imgs/2023/08/7e6ae1191e294b6f.png"
-              alt="希瑪眼科"
-            />
-            <img
-              v-show="router.name !== 'en-index'"
               src="https://static.cmereye.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
               alt="希瑪眼科"
             />
           </NuxtLink>
-          <a href="https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3309&sc_lang=zh-HK" class="barspan" :style="{color: (router.name === 'en-index'?'#2958A3':'#fff')}">03309.HK</a>
+          <a href="https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3309&sc_lang=zh-HK" class="barspan" :style="{color: '#fff'}">03309.HK</a>
         </slot>
       </div>
       <!-- menu -->

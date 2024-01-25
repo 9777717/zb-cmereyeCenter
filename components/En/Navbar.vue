@@ -254,7 +254,7 @@ const hashActive = (child: any) => {
 </script>
 
 <template>
-  <div :class="[rt.name === 'en-index' ? 'headerTem' : 'headerTemPage']">
+  <div :class="['headerTemPage']">
     <EnBuilderNavbar>
       <template #menu>
         <div class="navigtion">
@@ -273,7 +273,7 @@ const hashActive = (child: any) => {
             <div
               v-if="item.childMenuList && item.childMenuList.length"
               :class="[
-                rt.name === 'en-index' ? 'child' : 'childpage',
+                'childpage',
                 {
                   'ccccc': item.route.name === 'en-medical-service'
                 },
