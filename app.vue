@@ -27,7 +27,7 @@ const handleSetCookie = () =>{
   cookieBoxShow.value = false
   localStorage.setItem('userCookie','1');
 }
-var pageLoading = ref(true)
+
 onMounted(()=>{
   if(window.location.pathname.includes('/en/')){
     locale.value = 'en'
@@ -40,9 +40,6 @@ onMounted(()=>{
   }catch(e){
     
   }
-  // setTimeout(()=>{
-  //   pageLoading.value = false
-  // },2000)
 })
 </script>
 
@@ -51,9 +48,7 @@ onMounted(()=>{
     <Body
       class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 overscroll-y-none"
     >
-      <!-- <div class="loading" :class="{'is-page-loading': !pageLoading}">
-        <div class="loading-in">LOADING</div>
-      </div> -->
+      <!-- <loading-page /> -->
       <NuxtLayout>
         <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
         <NuxtPage />
@@ -68,75 +63,7 @@ onMounted(()=>{
   </Html>
 </template>
 <style lang="scss">
-@keyframes eyeAnima{
-  0%{
-    border-radius: 0;
-    height: 0;
-  }
-  24%{
-    border-radius: 100%;
-    height: 20vh;
-  }
-  48%{
-    border-radius: 0;
-    height: 0;
-  }
-  72%{
-    width: 50%;
-    height: 50vh;
-    border-radius: 100%;
-    background: radial-gradient(#fff,transparent 70%);
-  }
-  100%{
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(#fff,transparent 200%);
-  }
-}
-@keyframes eyeShow {
-  100%{
-    opacity: 0;
-    display: none;
-  }
-}
-.loading{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  background: #fff;
-  z-index: 99999999999;
-  overflow: hidden;
-  background: linear-gradient(-45deg,rgba(114, 158, 230, 1),rgba(76, 209, 179, 1),rgba(76, 127, 209, 1));
-  // animation: eyeShow 1s forwards;
-  // animation-delay: 4s;
-  &-in{
-    width: 50%;
-    height: 0;
-    color: rgba(41, 88, 163,1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    letter-spacing: 10px;
-    background: radial-gradient(#fff,transparent 70%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    // animation: eyeAnima 4s forwards ease-in;
-    // overflow: hidden;
-    transition: all 3s ease;
-  }
-  &.is-page-loading{
-    .loading-in{
-      width: 200%;
-      height: 200%;
-    }
-  }
-}
+
 body {
   overflow-x: hidden !important;
 }
