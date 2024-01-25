@@ -251,6 +251,11 @@ const pageNav = ref([
         <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
         src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg">
          </video>
+         <div class="text">
+           <span>Professional</span>
+           <span>Clinical</span>
+           <span>Service</span>
+         </div>
       </div>
       <div class="homePage-pageNav">
         <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
@@ -414,6 +419,37 @@ const pageNav = ref([
         width: 100%;
         max-width: 1080px;
         margin: 0 auto;
+      }
+      .text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        width: 217px;
+        font-family: Metropolis;
+        font-size: 24.095px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 27.558px; /* 114.374% */
+        letter-spacing: 2.409px;
+        text-transform: uppercase;
+        span{
+          display: block;
+          width: 100%;
+          &:not(:last-child){
+            margin-bottom: 10px;
+          }
+          &:nth-of-type(1){
+            letter-spacing: 2.7px;
+          }
+          &:nth-of-type(2){
+            letter-spacing: 15px;
+          }
+          &:nth-of-type(3){
+            letter-spacing: 19.1px;
+          }
+        }
       }
       &::after{
         content: '';
