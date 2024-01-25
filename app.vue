@@ -57,10 +57,26 @@ onMounted(()=>{
           <div>X</div>
         </div>
       </NuxtLayout>
+      <!-- <div class="loading">
+        <div class="loading-in"></div>
+      </div> -->
     </Body>
   </Html>
 </template>
 <style lang="scss">
+.loading{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background: #fff;
+  z-index: 999999999;
+  &-in{
+
+  }
+}
 body {
   overflow-x: hidden !important;
 }

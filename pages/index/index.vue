@@ -426,9 +426,9 @@ const pageNav = ref([
         top: 50%;
         transform: translate(-50%,-50%);
         color: #fff;
-        width: 217px;
+        width: 183px;
         font-family: Metropolis;
-        font-size: 24.095px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 27.558px; /* 114.374% */
@@ -444,10 +444,10 @@ const pageNav = ref([
             letter-spacing: 2.7px;
           }
           &:nth-of-type(2){
-            letter-spacing: 15px;
+            letter-spacing: 13px;
           }
           &:nth-of-type(3){
-            letter-spacing: 19.1px;
+            letter-spacing: 16.5px;
           }
         }
       }
