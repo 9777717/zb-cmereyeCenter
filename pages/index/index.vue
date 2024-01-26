@@ -850,6 +850,10 @@ const pageNav = ref([
 }
 
 @media screen and (max-width: 768px) {
+  .homePage{
+    width: 100%;
+    overflow: hidden;
+  }
   .home-bottom{
     display: block;
   }
