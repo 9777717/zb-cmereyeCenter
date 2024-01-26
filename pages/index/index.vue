@@ -11,12 +11,12 @@ useHead(() => ({
   meta(){
     return [
       {
-        name: 'description',
-        content: t('tdk.index.desc'),
-      },
-      {
         name: 'keywords',
         content: t('tdk.index.key'),
+      },
+      {
+        name: 'description',
+        content: t('tdk.index.desc'),
       }
     ]
   },

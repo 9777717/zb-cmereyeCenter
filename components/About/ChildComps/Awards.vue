@@ -3,6 +3,20 @@ import { Autoplay } from 'swiper'
 const awardsList = [
   {
     imgUrl:
+      'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
+    year: 'pages.about_us.awards.awards_year_13',
+    des: 'pages.about_us.awards.awards_des_15',
+    link: 'https://www.esgpledge.org.hk/'
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+    year: 'pages.about_us.awards.awards_year_13',
+    des: 'pages.about_us.awards.awards_des_6',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
+  },
+  {
+    imgUrl:
       'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_14',
@@ -99,13 +113,13 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_5',
     link: 'https://corphub.asia/awards/?route=events&id=1'
   },
-  {
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
-    year: 'pages.about_us.awards.awards_year_13',
-    des: 'pages.about_us.awards.awards_des_6',
-    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153'
-  },
+  // {
+  //   imgUrl:
+  //     'https://static.cmereye.com/imgs/2023/01/3b9de76f932cbe48.png',
+  //   year: 'pages.about_us.awards.awards_year_7',
+  //   des: 'pages.about_us.awards.awards_des_7',
+  //   link: 'https://corphub.asia/awards/?route=events&id=1'
+  // }
 ]
 
 const handleSlide = (_data:any) =>{
