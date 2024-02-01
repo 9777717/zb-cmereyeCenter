@@ -32,6 +32,7 @@ let healthList = ref([
 ])
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
+let errorPage = ref(false)
 const getMainContent = async () => {
   
   const loading = ElLoading.service({
@@ -39,6 +40,7 @@ const getMainContent = async () => {
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
+  try{
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/194/page/${actPageNum.value}/num/4`)
   let res = JSON.parse(data.value)
   totalPageNum.value = Math.ceil(res.rowtotal / 4)
@@ -57,6 +59,9 @@ const getMainContent = async () => {
       date: y+'-'+MM+'-'+d
     }
   })
+  }catch{
+    errorPage.value = true
+  }
   toTop()
   loading.close()
 }
@@ -119,7 +124,7 @@ onMounted(()=>{
         <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text3')}}</div>
       </div>
     </div>
-    <div class="content_health" id="healthInfoContent">
+    <div class="content_health" id="healthInfoContent" v-if="!errorPage">
       <div
         v-for="(item, index) in healthList"
         :key="index"
@@ -144,6 +149,7 @@ onMounted(()=>{
         </div>
       </div>
     </div>
+    <div class="content_health" id="healthInfoContent" v-else>服務異常</div>
     <!-- 预计分页 -->
     <div class="paging">
       <div @click="subNum">

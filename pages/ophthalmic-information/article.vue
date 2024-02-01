@@ -29,12 +29,14 @@ const articleList = ref([
     doctor:'',
   },
 ])
+let errorPage = ref(false)
 const getArticleList = async () => {
   const loading = ElLoading.service({
     lock: true,
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
+  try{
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/204`)
   let res = JSON.parse(data.value)
   articleList.value = res.data.map((item:any) => {
@@ -52,6 +54,9 @@ const getArticleList = async () => {
       doctor: item.ext_paperRecoDoctor,
     }
   })
+  }catch{
+    errorPage.value = true
+  }
   loading.close()
 }
 
@@ -139,7 +144,7 @@ onMounted(()=>{
           </div>
         </div>
       </div>
-      <div>
+      <div v-if="!errorPage">
         <div v-for="(item, index) in articleList" :key="index" @click="toLinkPage(item)">
           <div><img :src="item.img" /></div>
           <div>
@@ -152,6 +157,7 @@ onMounted(()=>{
           </div>
         </div>
       </div>
+      <div v-else>服務異常</div>
     </div>
     <div>
       <PageInformation />

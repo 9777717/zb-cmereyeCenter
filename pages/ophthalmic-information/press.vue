@@ -217,12 +217,14 @@ const pageTurning = (flag: string) => {
 let pressLists:any = ref([])
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
+let errorPage = ref(false)
 const getPressContent = async () => {
   const loading = ElLoading.service({
     lock: true,
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
+  try{
   const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/4/page/${actPageNum.value}/num/8/order/date`)
   let res = JSON.parse(data.value)
   totalPageNum.value = Math.ceil(res.rowtotal / 8)
@@ -242,6 +244,9 @@ const getPressContent = async () => {
       date: y+'-'+MM+'-'+d
     }
   })
+  }catch{
+    errorPage.value = true
+  }
   toTop()
   loading.close()
 }
@@ -329,7 +334,7 @@ onMounted(()=>{
           </div>
         </div>
       </div>
-      <div id="pressContent">
+      <div id="pressContent" v-if="!errorPage">
         <div v-for="(item, index) in pressLists" v-show="isNewLIst" :key="index" @click="newDeatil(index)">
           <div><img :src="item.img" /></div>
           <div>{{item.date}}</div>
@@ -343,6 +348,7 @@ onMounted(()=>{
           </div>
         </div>
       </div>
+      <div id="pressContent" v-else>服務異常</div>
     </div>
     <div v-if="isDetail" class="content_press">
       <div>

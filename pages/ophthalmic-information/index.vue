@@ -32,24 +32,29 @@ let mainContent = ref([
 ])
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
+let errorPage = ref(false)
 const getMainContent = async () => {
   const loading = ElLoading.service({
     lock: true,
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
-  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
-  let res = JSON.parse(data.value)
-  totalPageNum.value = Math.ceil(res.rowtotal / 4)
-  mainContent.value = res.data.map((item:any) => {
-    return {
-      img: `https://hkcmereye.com${item.ico}`,
-      link: item.source,
-      title: item.title,
-      doctor: item.ext_doctor_name,
-      text: item.ext_context
-    }
-  })
+  try{
+    const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
+    let res = JSON.parse(data.value)
+    totalPageNum.value = Math.ceil(res.rowtotal / 4)
+    mainContent.value = res.data.map((item:any) => {
+      return {
+        img: `https://hkcmereye.com${item.ico}`,
+        link: item.source,
+        title: item.title,
+        doctor: item.ext_doctor_name,
+        text: item.ext_context
+      }
+    })
+  }catch{
+    errorPage.value = true
+  }
   toTop()
   loading.close()
 }
@@ -150,7 +155,7 @@ onMounted(()=>{
       </svg>
     </div>
     <!-- 内容 -->
-    <div id="doctorClassConetnt">
+    <div id="doctorClassConetnt" v-if="!errorPage">
       <div v-for="(item, index) in mainContent" :key="index">
         <div>
           <div>{{ $t(item.title) }}</div>
@@ -184,6 +189,7 @@ onMounted(()=>{
         <div><img :src="item.img" :alt="item.title" /></div>
       </div>
     </div>
+    <div id="doctorClassConetnt" v-else>服務異常</div>
     <!-- 可能是切数据 -->
     <div>
       <div @click="subNum">

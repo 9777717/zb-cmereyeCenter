@@ -737,7 +737,7 @@ const bannerData = {
         </div>
       </div>
       <!-- 選擇人工晶體須知 -->
-      <div id="iclArr">
+      <!-- <div id="iclArr">
         <div>
           <div>
             <div>
@@ -830,13 +830,6 @@ const bannerData = {
             }}
           </div>
         </div>
-        <!-- <div @click="goWhatsApp()">
-          {{
-            $t(
-              'pages.medical_service.service_cataract_title.service_cataract_btn7'
-            )
-          }}
-        </div> -->
         <div>
           <service-button-icon
                 :str="$t('pages.medical_service.service_cataract_title.service_cataract_btn7')"
@@ -844,7 +837,7 @@ const bannerData = {
                 :type="'1'"
               />
         </div>
-      </div>
+      </div> -->
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
         <div>

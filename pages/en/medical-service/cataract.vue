@@ -715,7 +715,7 @@ const bannerData = {
         </div>
       </div>
       <!-- 選擇人工晶體須知 -->
-      <div id="iclArr">
+      <!-- <div id="iclArr">
         <div>
           <div>
             <div>
@@ -815,7 +815,7 @@ const bannerData = {
             )
           }}
         </div>
-      </div>
+      </div> -->
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
         <div>
