@@ -737,6 +737,7 @@ const bannerData = {
         </div>
       </div>
       <!-- 選擇人工晶體須知 -->
+      <div></div>
       <!-- <div id="iclArr">
         <div>
           <div>
@@ -882,7 +883,7 @@ const bannerData = {
     <div>
     </div>
     <!-- 下载 -->
-    <div class="dow">
+    <!-- <div class="dow">
       <div>
         <div>
           <div @click.stop="getPdf('cataract2.pdf', $t(
@@ -937,7 +938,7 @@ const bannerData = {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 公共底部表单 -->
     <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#64bcd1;'}`" />
