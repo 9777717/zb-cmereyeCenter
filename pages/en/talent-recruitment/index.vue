@@ -212,7 +212,8 @@ useHead(() => ({
     & > div:nth-child(1) {
       &::before{
         width: calc(100% - 30px);
-        height: 290px;
+        height: 270px;
+        top: 76px;
       }
       & > div:nth-child(1) {
         margin: 70px auto;

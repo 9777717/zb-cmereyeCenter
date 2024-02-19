@@ -320,16 +320,17 @@ watch(menuBool, (o, n) => {
 })
 
 const getBg = () => {
-  let routeName: any = route.name
+  // let routeName: any = route.name
   let str = ''
-  if (route.name === 'index' && !menuBool.value) {
-    str =
-      'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'
-  } else if (serciceLists.includes(routeName) && !menuBool.value) {
-    str = 'rgba(255, 255, 255, 0)'
-  } else {
-    str = '#fff'
-  }
+  // if (route.name === 'index' && !menuBool.value) {
+  //   str =
+  //     'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'
+  // } else if (serciceLists.includes(routeName) && !menuBool.value) {
+  //   str = 'rgba(255, 255, 255, 0)'
+  // } else {
+  //   str = '#fff'
+  // }
+  str = '#fff'
   return str
 }
 const getBb = () => {

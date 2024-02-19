@@ -319,40 +319,66 @@ watch(menuBool, (o, n) => {
   }
 })
 
+let bgopn = ref(0)
 const getBg = () => {
-  let routeName: any = route.name
+  // let routeName: any = route.name
   let str = ''
-  if (route.name === 'index' && !menuBool.value) {
-    str =
-      'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'
-  } else if (serciceLists.includes(routeName) && !menuBool.value) {
-    str = 'rgba(255, 255, 255, 0)'
-  } else {
+  // if (route.name === 'index' && !menuBool.value) {
+  //   str =
+  //     'linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3) 30%,rgba(255, 255, 255, 0.4) 50%,rgba(255, 255, 255, 0.3) 70%,rgba(255, 255, 255, 0))'
+  // } else if (serciceLists.includes(routeName) && !menuBool.value) {
+  //   str = 'rgba(255, 255, 255, 0)'
+  // } else {
+  //   str = '#fff'
+  // }
+  if(!menuBool.value){
+    str = `rgba(255, 255, 255, ${bgopn.value})`
+  }else{
     str = '#fff'
   }
+  
   return str
 }
 const getBb = () => {
   let str = ''
-  let routeName: any = route.name
-  if (route.name === 'index' || menuBool.value) {
-    str = 'none'
-  } else if (serciceLists.includes(routeName) || menuBool.value) {
-    str = 'none'
-  } else {
-    str = '4px solid rgba(242, 242, 242, 1)'
-  }
+  // let routeName: any = route.name
+  // if (route.name === 'index' || menuBool.value) {
+  //   str = 'none'
+  // } else if (serciceLists.includes(routeName) || menuBool.value) {
+  //   str = 'none'
+  // } else {
+  //   str = '4px solid rgba(242, 242, 242, 1)'
+  // }
   return str
 }
 const changeLang = (_lang: any) => {
   locale.value = _lang
 }
+
+let showboxshadow = ref(false)
+onMounted(()=>{
+  window.addEventListener('scroll', function() {  
+    var scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;  
+    if(scrollTop<= 300){
+      bgopn.value = scrollTop / 300
+      if(showboxshadow.value){
+        showboxshadow.value = false
+      }
+    }else{
+      if(!showboxshadow.value){
+        showboxshadow.value = true
+      }
+    }
+  });
+})
+
 </script>
 
 <template>
   <div class="headerMbcc">
     <div
       class="headerMbcc-in"
+      :class="{showboxshadow}"
       :style="{
         background: getBg(),
         'border-bottom': getBb(),
@@ -515,6 +541,10 @@ const changeLang = (_lang: any) => {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // 
+    &.showboxshadow{
+      box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    }
     &-logo {
       width: 69px;
       min-width: 69px;
