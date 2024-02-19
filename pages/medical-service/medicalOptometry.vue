@@ -310,12 +310,11 @@ const bannerData = {
               <div class="page-newNavs">
                 <div class="page-newNavs-in">
                   <a class="imgLink" href="https://www.cmervision.com/orthokeratology/">
-                    <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" srcset="https://static.cmereye.com/imgs/2024/02/fa28b47d86133d44.png 768w, https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" src="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" alt="角膜矯形術" title="角膜矯形術" />
+                    <img src="https://static.cmereye.com/imgs/2024/02/b4cb7a2dbcde9597.png" alt="角膜矯形術" title="角膜矯形術" />
                   </a>
                 </div>
                 <div class="page-newNavs-in">
-                  <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" 
-                  srcset="https://static.cmereye.com/imgs/2024/02/201cc4f03dc17ad2.png 768w, https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" src="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" title="每日即棄近視 控制隱形眼鏡" alt="">
+                  <img class="imgLink" src="https://static.cmereye.com/imgs/2024/02/7d4c482c735ee561.png" title="每日即棄近視 控制隱形眼鏡" alt="">
                   <div class="page-newNavs-in-hover">
                       <div>
                           <img src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png" alt="">
@@ -331,7 +330,7 @@ const bannerData = {
                   </div>
                 </div>
                 <div class="page-newNavs-in">
-                    <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" srcset="https://static.cmereye.com/imgs/2024/02/086a88b79db89fa0.png 768w, https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" src="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" title="兒童近視控制鏡片" alt="">
+                    <img class="imgLink" src="https://static.cmereye.com/imgs/2024/02/d5693952f88b0338.png" title="兒童近視控制鏡片" alt="">
                     <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
                         <div>
                             <img src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png" alt="">
@@ -347,7 +346,7 @@ const bannerData = {
                 </div>
                 <div class="page-newNavs-in">
                   <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
-                  <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="阿托品眼藥水" alt=""></a>
+                  <img src="https://static.cmereye.com/imgs/2024/02/9d87712599f6e163.png" title="阿托品眼藥水" alt=""></a>
                 </div>
               </div>
               <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
@@ -1104,7 +1103,7 @@ const bannerData = {
               align-items: center;
               margin-bottom: 30px;
               padding: 0 20px;
-              filter: drop-shadow(0 5px 5px rgba(0,0,0,.3));
+              filter: drop-shadow(0 5px 3px rgba(0,0,0,.2));
               .imgLink{
                 display: block;
                 height: 65px;
