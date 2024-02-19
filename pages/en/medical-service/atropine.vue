@@ -75,7 +75,7 @@ const bannerData = {
 </script>
 
 <template>
-  <div class="atropine mt-mb-74">
+  <div class="atropine">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="atropine-nav">
       <EnServiceNav :arrData="serviceNavigation" :pageName="'atropine'" />
