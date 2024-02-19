@@ -186,7 +186,7 @@ const bannerData = {
                     </div>
                 </div>
                 <div class="page-newNavs-in">
-                  <a class="imgLink" href="https://www.hkcmereye.com/atropine/">
+                  <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
                   <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="阿托品眼藥水" alt=""></a>
                 </div>
               </div>
@@ -346,7 +346,7 @@ const bannerData = {
                     </div>
                 </div>
                 <div class="page-newNavs-in">
-                  <a class="imgLink" href="https://www.hkcmereye.com/atropine/">
+                  <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
                   <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="阿托品眼藥水" alt=""></a>
                 </div>
               </div>
