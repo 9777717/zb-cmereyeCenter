@@ -696,6 +696,11 @@ const bannerData = {
                    p{
                      margin-top: 30px;
                    }
+                   &:nth-child(1){
+                    img{
+                      max-width: 25%;
+                    }
+                  }
                 }
               }
             }
@@ -1176,7 +1181,8 @@ const bannerData = {
                   }
                   &:nth-child(1){
                     img{
-                      max-width: 80%;
+                      // max-width: 80%;
+                      max-width: 35%;
                     }
                   }
                 }
