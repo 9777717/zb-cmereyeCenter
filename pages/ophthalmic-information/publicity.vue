@@ -8,6 +8,20 @@ useHead(() => ({
 }))
 const eyeDisease = [
   {
+    img: 'https://static.cmereye.com/imgs/2024/02/f93e8e45fa7b2d3b.webp',
+    title:
+      '【「銀」色浪漫】真實客戶見證：術後一切如常，迅速康復！',
+    text: '在「銀色浪漫」聖誕活動中，一位曾接受白內障治療的客人分享她的康復經驗。術後視力康復如初，生活無需他人特別照料，就如未曾經歷過手術般自然。希瑪眼科致力於提供全面的白內障手術治療，為銀髮族重燃光明。',
+    link: 'https://www.youtube.com/watch?v=Ds5NBkrQLXo',
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/02/70c85118a2f54052.webp',
+    title:
+      '【「銀」色浪漫】真實客戶分享：重見彩色人生',
+    text: '現已圓滿落幕的「銀色浪漫」聖誕活動中，一位剛接受白內障治療的客人分享她通過手術重獲明亮視力的溫馨故事，也與親人建立了深厚的情感連結。希瑪眼科致力於提供全面的白內障手術治療，為銀髮族帶來希望與光明。',
+    link: 'https://www.youtube.com/watch?v=W3n09GrSECY',
+  },
+  {
     img: 'https://static.cmereye.com/imgs/2023/12/f6ccfdc805fd1912.webp',
     title:
       '【顏色敏感度實測】到底邊類人分辨顏色嘅能力最強呢？',
