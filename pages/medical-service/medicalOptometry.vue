@@ -252,7 +252,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
@@ -415,7 +415,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
