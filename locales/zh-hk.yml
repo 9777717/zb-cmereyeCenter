@@ -552,19 +552,24 @@ pages:
           icl1_multipleFocus2: 人工晶體
         cataract_array_icl2:
           icl2_type: 遠距離視力
+          icl2_type2: '(例如: 駕車, 看電視)'
           icl2_monofocal: 很好
           icl2_astigmatism1: 與單焦點
           icl2_astigmatism2: 人工晶體一樣
           icl2_multipleFocus: 良好
         cataract_array_icl3:
           icl3_type: 中距離視力
+          icl3_type2: '(例如: 使用電腦)'
           icl3_monofocal: 很好
+          icl3_monofocal2: (可能需要雙眼互補)*
           icl3_astigmatism1: 與單焦點
           icl3_astigmatism2: 人工晶體一樣
           icl3_multipleFocus: 良好
         cataract_array_icl4:
           icl4_type: 近距離視力
+          icl4_type2: '(例如: 閱讀範圍)'
           icl4_monofocal: 很好
+          icl4_monofocal2: (可能需要閱讀眼鏡)
           icl4_astigmatism1: 與單焦點
           icl4_astigmatism2: 人工晶體一樣
           icl4_multipleFocus: 良好
@@ -578,16 +583,16 @@ pages:
           icl5_multipleFocus2: 大多可不依賴眼鏡
         cataract_array_icl6:
           icl6_type: 適合人群
-          icl6_monofocal1: 不介意配戴眼鏡人士
-          icl6_monofocal2: 要求更好視力質素人士
-          icl6_monofocal3: 有經濟考慮人士
-          icl6_astigmatism1: 不介意配戴眼鏡人士
-          icl6_astigmatism2: 要求更好視力質素人士
-          icl6_astigmatism3: 術前患有散光人士
-          icl6_multipleFocus1_1: 不想配戴眼鏡人士
-          icl6_multipleFocus1_2: 不優先考慮夜間駕駛視力    需要人士
-          icl6_multipleFocus2: 經濟能力較好人士
-          icl6_multipleFocus3: 無其他嚴重眼病人士
+          icl6_monofocal1: 不介意配戴眼鏡
+          icl6_monofocal2: 要求更好視力質素
+          icl6_monofocal3: 有經濟考慮
+          icl6_astigmatism1: 不介意配戴眼鏡
+          icl6_astigmatism2: 要求更好視力質素
+          icl6_astigmatism3: 術前患有散光
+          icl6_multipleFocus1_1: 不想配戴眼鏡
+          icl6_multipleFocus1_2: 經濟能力較好
+          icl6_multipleFocus2: 無其他嚴重眼病
+          icl6_multipleFocus3: 夜間駕駛需求低
       service_cataract_array_announcements:
         cataract_array_announcements1: 為盡快令傷口復原及避免細菌感染，白內障手術後蓋上紗布及眼罩需要保留一晚，直到第二天才拆開。如果不慎鬆開，再用消毒紗布重新蓋上。
         cataract_array_announcements2: 一般建議病人白內障手術後於睡覺時蓋上保䕶眼罩兩星期，可以預防不必要的踫撞及捽眼睛。

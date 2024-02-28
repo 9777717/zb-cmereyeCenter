@@ -150,7 +150,10 @@ const iclArr = [
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/47e6f09498b91509.png',
-    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type',
+    type: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type2'
+    ],
     monofocal:
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_monofocal',
     astigmatism: [
@@ -162,9 +165,15 @@ const iclArr = [
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/88fe9f4dae4a48d6.png',
-    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type',
+    type: [
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type2'  
+    ],
     monofocal:
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_monofocal',
+      [
+        'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_monofocal',
+        'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_monofocal2'
+      ],
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism1',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism2',
@@ -174,9 +183,13 @@ const iclArr = [
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0fb789bc099b4c7e.png',
-    type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type',
-    monofocal:
+    type: ['pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type',
+    'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type2'
+    ],
+    monofocal:[
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal2'
+    ],
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism1',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism2',
@@ -737,8 +750,8 @@ const bannerData = {
         </div>
       </div>
       <!-- 選擇人工晶體須知 -->
-      <div></div>
-      <!-- <div id="iclArr">
+      <!-- <div></div> -->
+      <div id="iclArr">
         <div>
           <div>
             <div>
@@ -762,7 +775,22 @@ const bannerData = {
             <div v-for="(item, index) in iclArr" :key="index">
               <div>
                 <img v-if="item.img" :src="item.img" alt="" srcset="" />
-                <div>{{ $t(item.type) }}</div>
+                <div>
+                  <!-- {{ $t(item.type) }} -->
+                  <div v-if="Array.isArray(item.type)">
+                    <div v-for="(ele, eleIndex) in item.type" :key="eleIndex">
+                      <!-- <img v-if="index" src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png" /> -->
+                      <div v-if="Array.isArray(ele)">
+                        <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
+                      </div>
+                      <div v-else><strong v-if="index === 5">· </strong>{{ $t(ele)
+                      }}</div>
+                    </div>
+                  </div>
+                  <div v-else>
+                    {{ $t(item.type) }}
+                  </div>
+                </div>
               </div>
               <div>
                 <div v-if="Array.isArray(item.monofocal)">
@@ -838,7 +866,7 @@ const bannerData = {
                 :type="'1'"
               />
         </div>
-      </div> -->
+      </div>
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
         <div>
@@ -1655,6 +1683,18 @@ const bannerData = {
           color: #ffffff;
           text-align: center;
         }
+        &>div:nth-child(3),&>div:nth-child(4) {
+          &>div:nth-child(2) {
+            &>div{
+              &>div:nth-child(2){
+                font-size: 18px;
+                img{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
         &>div:nth-child(5) {
           &>div:nth-child(2) {
             &>div {
@@ -1784,6 +1824,14 @@ const bannerData = {
         justify-content: flex-start;
         &>div {
           padding-top: 8px;
+          display: flex;
+          &>div{
+            flex-direction: column;
+            
+            &>div:nth-child(2){
+              font-size: 18px;
+            }
+          }
         }
         &>img {
           margin-right: 10px;
@@ -2705,6 +2753,15 @@ const bannerData = {
               padding: 10px 0;
             }
           }
+          &>div:nth-child(3),&>div:nth-child(4) {
+            &>div:nth-child(2) {
+              &>div{
+                &>div:nth-child(2){
+                  font-size: 12px;
+                }
+              }
+            }
+          }
           &>div:nth-child(5) {
             &>div:nth-child(2) {
               &>div {
@@ -2771,6 +2828,13 @@ const bannerData = {
           align-items: center;
           justify-content: center;
           padding: 10px 0;
+          &>div {
+            &>div{
+              &>div:nth-child(2){
+                font-size: 12px;
+              }
+            }
+          }
           &>img {
             margin-right: 0;
           }
