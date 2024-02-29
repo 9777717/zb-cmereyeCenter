@@ -222,9 +222,9 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal3',
     ],
     astigmatism: [
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal2',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal3',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_astigmatism3',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_astigmatism1',
+      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_astigmatism2',
     ],
     multipleFocus: [
       [
@@ -860,7 +860,7 @@ const bannerData = {
             <div>
               <p>*雙眼互補法(Blended Vision)</p><br>
               <p>雙眼互補法又稱為「單眼視覺」(Mono-Vision),原理是透過兩眼不同的屈光度數,</p>
-              <p>使雙眼達至既分工, 又協調的效果, 減低老花的徵狀, 而患者需時適應。</p><br>
+              <p>使雙眼達至既分工, 又協調的效果, 減低老花的徵狀, 而患者需時適應。</p>
               <p>方法是將一隻眼睛的度數調校至零度,主力負責看遠景; </p>
               <p>另一隻眼睛則調校至一百度至二百五十度的近視,負責看近物;</p>
               <p>雙眼相輔相成,互補不足,以至遠近皆能達到不錯的視力效果,</p>
