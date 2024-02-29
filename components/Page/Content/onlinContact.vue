@@ -51,7 +51,7 @@ const rt = ref(route)
         <div class="ga-pc-right-ljzd">
           <div class="ga-pc-right-ljzd">
             <div class="ga-pc-right-ljzd">{{$t('components.content.onlinContact.callNow')}}</div>
-            <div class="ga-pc-right-ljzd">(852) 3956 2026</div>
+            <div class="ga-pc-right-ljzd">(852) 3956 2025</div>
           </div>
           <div class="ga-pc-right-ljzd"><img class="ga-pc-right-ljzd" src="https://static.cmereye.com/imgs/2023/07/eb96c8fed21aa580.png" alt=""></div>
         </div>
