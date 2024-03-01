@@ -19,7 +19,7 @@ const eyeDisease = [
     title:
       '【「銀」色浪漫】真實客戶分享：重見彩色人生',
     text: '現已圓滿落幕的「銀色浪漫」聖誕活動中，一位剛接受白內障治療的客人分享她通過手術重獲明亮視力的溫馨故事，也與親人建立了深厚的情感連結。希瑪眼科致力於提供全面的白內障手術治療，為銀髮族帶來希望與光明。',
-    link: 'https://www.youtube.com/watch?v=W3n09GrSECY',
+    link: 'https://youtu.be/Jt0fmKmfiIU',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/12/f6ccfdc805fd1912.webp',
