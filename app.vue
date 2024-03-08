@@ -28,10 +28,10 @@ onMounted(()=>{
     locale.value = 'en'
   }
   try{
-    let getCookie = localStorage.getItem('userCookie');
-    if(!getCookie){
-      cookieBoxShow.value = true
-    }
+    // let getCookie = localStorage.getItem('userCookie');
+    // if(!getCookie){
+    //   cookieBoxShow.value = true
+    // }
   }catch(e){
     
   }
@@ -47,12 +47,12 @@ onMounted(()=>{
       <NuxtLayout>
         <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
         <NuxtPage />
-        <div v-if="cookieBoxShow" :class="['cookieBox']" @click="handleSetCookie">
+        <!-- <div v-if="cookieBoxShow" :class="['cookieBox']" @click="handleSetCookie">
           <div>我們使用 Cookies 和其他形式的網站導航信息為您提供更好的瀏覽體驗、分析網站流量、個性化內容並提供有針對性的廣告。 在我們的隱私政策中閱讀有關我們如何使用
                 Cookies的信息。如果您繼續使用本網站，即表示您同意我們使用 Cookies。</div>
           <div>全部接受</div>
           <div>X</div>
-        </div>
+        </div> -->
       </NuxtLayout>
     </Body>
   </Html>

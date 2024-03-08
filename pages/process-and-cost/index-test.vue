@@ -6,38 +6,30 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead({
   title: `${t('pages.process_cost.cost')} | ${t('pages.process_cost.process')}`,
-  meta: [
-    {
-      name: 'description',
-      content:
-        '香港希瑪眼科中心提供快捷的驗光及全面眼睛檢查，設有簡單的就診流程︰登記、基本眼睛檢查、眼睛醫生對患者的診症、特殊眼睛檢查、門診眼科治療 / 矯視治療 、付款及取藥，簡單的眼科就診流程提供予患者最急切的眼科服務。希瑪眼科中心的眼科醫生會透過初步眼睛檢查，全面了解患者的眼睛狀況，一般會進行3-5項基本眼睛檢查。完成初步眼睛檢查，眼科醫生會再根據患者的情況進行詳細眼睛檢查，以準確診斷並提供相應的眼科治療，也提供其他眼科服務如配鏡等就診流程。',
-    },
-    {
-      name: 'keywords',
-      content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療 全面眼睛檢查 希瑪眼科香港 希瑪眼科治療方案 林順潮眼科中心 林順潮眼科診所 眼科希瑪 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼睛診所 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 眼科服務',
-    },
-    {
-      name: 'description',
-      content:
-        '香港希瑪眼科中心提供的驗光及全面眼睛檢查，不同的眼睛檢查項目有不同的收費，常見眼疾檢查收費價目表、矯視收費價目表，希瑪眼科診所眼科價目清晰，絕無其他額外收費，讓患者可以放心地進行眼睛檢查和治療，常見眼疾檢查收費價目表包括眼壓測試、角膜地形圖、角膜厚度測試、視力測試、眼底檢查、視野檢查等多個項目，每個項目的收費都在價目表中有明確的標示。',
-    },
-    {
-      name: 'keywords',
-      content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪眼科收費 希瑪眼科 全面眼睛檢查 希瑪眼科價目 眼科門診收費 希瑪眼科 光學相干斷層掃描 希瑪眼科 OCT 希瑪眼科 希瑪眼科 檢查 視野 眼底檢查 希瑪眼科 眼科專科收費 眼科專科 全面眼睛檢查 眼科專科 視野分析 掃描激光眼底檢查 眼底照相 眼前節分析 角膜厚度測量 角膜地形分析 白內障超聲乳化 希瑪醫療集團 希瑪醫療 眼科服務',
-    },
-    {
-      name: 'description',
-      content:
-        'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
-    },
-  ],
+  meta(){
+    return [
+      {
+        hid: 'processAndCostDesc1',
+        name: 'description',
+        content: t('tdk.process-and-cost.desc1'),
+      },
+      {
+        hid: 'processAndCostKey1',
+        name: 'keywords',
+        content: t('tdk.process-and-cost.key1'),
+      },
+      {
+        hid: 'processAndCostDesc2',
+        name: 'description',
+        content: t('tdk.process-and-cost.desc2'),
+      },
+      {
+        hid: 'processAndCostKey2',
+        name: 'keywords',
+        content: t('tdk.process-and-cost.key2'),
+      },
+    ]
+  },
 })
 const serviceNavigation = [
   {
@@ -64,6 +56,63 @@ const scrollHeight = () => {
     isShowLanguageBool.value = false
   }
 }
+const processedLists:any = [
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/1c9bdc439e10d0a7.png',
+    name: ['pages.process_cost.process_1.process_p1'],
+    nameb: '',
+    texts: []
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/b5ea6eeffceb0e02.png',
+    name: ['pages.process_cost.process_1.process_p2'],
+    nameb: 'pages.process_cost.process_1.process_h3_1',
+    texts: [
+      {
+        type: '',
+        text: 'pages.process_cost.process_1.process_p3_3'
+      },
+      {
+        type: 'color',
+        text: 'pages.process_cost.process_1.process_p3_4'
+      }
+    ]
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/b5986c511653d126.png',
+    name: ['pages.process_cost.process_1.process_p4'],
+    nameb: '',
+    texts: [
+      {
+        type: '',
+        text: 'pages.process_cost.process_1.process_p5_4'
+      },
+      {
+        type: 'color',
+        text: 'pages.process_cost.process_1.process_p5_5'
+      }
+    ]
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/7b1d0695e319a85a.png',
+    name: ['pages.process_cost.process_1.process_p6'],
+    nameb: '',
+    texts: []
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/2c22d648c273a2fe.png',
+    name: ['pages.process_cost.process_1.process_p7_3'],
+    nameb: '',
+    texts: []
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2024/03/edc13bc571afe68a.png',
+    name: ['pages.process_cost.process_1.process_p8_1','pages.process_cost.process_1.process_p8_2','pages.process_cost.process_1.process_p9'],
+    nameb: '',
+    texts: []
+  },
+
+]
 </script>
 
 <template>
@@ -227,6 +276,13 @@ const scrollHeight = () => {
                     <td class="text-center">/</td>
                     <td class="text-center">$600/$800</td>
                   </tr>
+                  <!-- <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr21_td1') }}
+                    </td>
+                    <td class="text-center">$20,000<br/>-$38,000</td>
+                    <td class="text-center">/</td>
+                  </tr> -->
                 </tbody>
               </table>
               <p class="text-center mt-20 mb-4 leading-10">
@@ -267,7 +323,53 @@ const scrollHeight = () => {
                 </h1>
                 <h2>Outpatient Services</h2>
               </div>
-              <div class="py-10 px-8 mt-12 mb-40" :class="{'process-en':locale === 'en'}">
+              <div class="processed-in pcpocessBox">
+                <div class="lists">
+                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists" :key="processedIndex">
+                    <img :src="processedItem.img" alt="">
+                    <div class="name">
+                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
+                        {{$t(nameItem)}}
+                      </span>
+                    </div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="text" v-if="processedItem.texts.length">
+                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="processed-in mbpocessBox">
+                <div class="lists" :class="{'lists-en':locale === 'en'}">
+                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any ) => index % 2 === 0)" :key="processedIndex">
+                    <img :src="processedItem.img" alt="">
+                    <div class="name">
+                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
+                        {{$t(nameItem)}}
+                      </span>
+                    </div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="text" v-if="processedItem.texts.length">
+                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lists" :class="{'lists-en':locale === 'en'}">
+                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any) => index % 2 !== 0)" :key="processedIndex">
+                    <img :src="processedItem.img" alt="">
+                    <div class="name">
+                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
+                        {{$t(nameItem)}}
+                      </span>
+                    </div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="text" v-if="processedItem.texts.length">
+                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="py-10 px-8 mt-12 mb-40" :class="{'process-en':locale === 'en'}">
                 <div class="processItem mb-20">
                   <p>{{ $t('pages.process_cost.process_1.process_p1') }}</p>
                 </div>
@@ -311,7 +413,7 @@ const scrollHeight = () => {
                     <p>{{ $t('pages.process_cost.process_1.process_p9') }}</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -586,6 +688,178 @@ const scrollHeight = () => {
 .updateBox{
   text-align: center;
 }
+
+.processed-in{
+  .lists{
+    display: flex;
+    // align-items: center;
+    padding: 100px 0 200px;
+    &-in{
+      width: calc(170 / 1080 * 100%);
+      border-radius: 20px;
+      border: 1px solid #2c2e31;
+      padding: calc(16 / 1080 * 100%);
+      color: #EFAF00;
+      background: #fff;
+      position: relative;
+      height: max-content;
+      &:not(:last-child){
+        margin-right: calc(14 / 1080 * 100%);
+      }
+      .name{
+        border-bottom: 2px solid #EFAF00;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 600;
+        span{
+          display: block;
+        }
+      }
+      .nameb{
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 5px;
+      }
+      .text{
+        font-size: 15px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.6;
+        padding-top: 5px;
+        span{
+          &.color{
+            color: #EFAF00;
+          }
+        }
+        &::after{
+          content: '';
+          width: 50%;
+          height: 2px;
+          background: #EFAF00;
+          display: block;
+          margin: 10px auto 0;
+        }
+      }
+      &:nth-of-type(2){
+        color: #5BBED9;
+        margin-top: 80px;
+        .name{
+          border-bottom: 2px solid #5BBED9;
+        }
+        .text{
+          span{
+            &.color{
+              color: #5BBED9;
+            }
+          }
+          &::after{
+            background: #5BBED9;
+          }
+        }
+        &::before{
+          content: '';
+          width: calc(180 / 1080 * 100% + 100%);
+          height: 140px;
+          position: absolute;
+          right: calc(50% - (80 / 1080 * 100%));
+          bottom: calc(100% + 10px);
+          background: url(https://static.cmereye.com/imgs/2024/03/670ba2ef41baec64.png) no-repeat;
+          background-size: 100% auto;
+          background-position: bottom right;
+        }
+      }
+      &:nth-of-type(3){
+        color: #333D7B;
+        margin-top: 30px;
+        .name{
+          border-bottom: 2px solid #333D7B;
+        }
+        .text{
+          letter-spacing: -0.2px;
+          span{
+            &.color{
+              color: #333D7B;
+            }
+          }
+          &::after{
+            background: #333D7B;
+          }
+        }
+        &::before{
+          content: '';
+          width: calc(180 / 1080 * 100% + 100%);
+          height: 160px;
+          position: absolute;
+          right: calc(50% - (80 / 1080 * 100%));
+          top: calc(100% + 10px);
+          background: url(https://static.cmereye.com/imgs/2024/03/ab4b1bd39907498d.png) no-repeat;
+          background-size: 100% auto;
+          background-position: top right;
+        }
+      }
+      &:nth-of-type(4){
+        color: #07A537;
+        margin-top: 170px;
+        .name{
+          border-bottom: 2px solid #07A537;
+        }
+        &::before{
+          content: '';
+          width: calc(180 / 1080 * 100% + 100%);
+          height: 220px;
+          position: absolute;
+          right: calc(50% - (80 / 1080 * 100%));
+          bottom: calc(100% + 10px);
+          background: url(https://static.cmereye.com/imgs/2024/03/1ec719ab6fdef029.png) no-repeat;
+          background-size: 100% auto;
+          background-position: bottom right;
+        }
+      }
+      &:nth-of-type(5){
+        color: #EA5E8D;
+        margin-top: 120px;
+        .name{
+          border-bottom: 2px solid #EA5E8D;
+        }
+        &::before{
+          content: '';
+          width: calc(180 / 1080 * 100% + 100%);
+          height: 220px;
+          position: absolute;
+          right: calc(50% - (80 / 1080 * 100%));
+          top: calc(100% + 10px);
+          background: url(https://static.cmereye.com/imgs/2024/03/c74f2a62bb87e8d9.png) no-repeat;
+          background-size: 100% auto;
+          background-position: top right;
+        }
+      }
+      &:nth-of-type(6){
+        color: #AE5AF4;
+        margin-top: 110px;
+        .name{
+          border-bottom: 2px solid #AE5AF4;
+        }
+        &::before{
+          content: '';
+          width: calc(180 / 1080 * 100% + 100%);
+          height: 120px;
+          position: absolute;
+          right: calc(50% - (80 / 1080 * 100%));
+          bottom: 100%;
+          background: url(https://static.cmereye.com/imgs/2024/03/2338d65087ceff63.png) no-repeat;
+          background-size: 100% auto;
+          background-position: bottom right;
+        }
+      }
+    }
+  }
+  &.mbpocessBox{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .ClaimFormBox{
     div{
@@ -745,6 +1019,232 @@ const scrollHeight = () => {
   }
   #processed {
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
+  }
+  .processed-in{
+    padding: 0 20px;
+    .lists{
+      // flex: 1;
+      width: 50%;
+      flex-wrap: wrap;
+      padding: 50px 0 100px;
+      &-in{
+        width: 100%;
+        margin: 0 10px;
+        padding: 20px;
+        .name{
+          font-size: 16px;
+        }
+        .nameb{
+          font-size: 16px;
+        }
+        .text{
+          font-size: 12px;
+        }
+        &:not(:last-child){
+          margin-right: 10px;
+        }
+        &:nth-of-type(1){
+          margin-top: 50px;
+        }
+        &:nth-of-type(2){
+          margin-top: 50px;
+          &::before{
+            display: none;
+          }
+        }
+        &:nth-of-type(3){
+          margin-top: 50px;
+          &::before{
+            display: none;
+          }
+        }
+        &:nth-of-type(4){
+          margin-top: 50px;
+          &::before{
+            display: none;
+          }
+        }
+        &:nth-of-type(5){
+          margin-top: 50px;
+          &::before{
+            display: none;
+          }
+        }
+        &:nth-of-type(6){
+          margin-top: 50px;
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
+    &.pcpocessBox{
+      display: none;
+    }
+    &.mbpocessBox{
+      display: flex;
+      .lists{
+        &:nth-of-type(1){
+          .lists-in{
+            &:nth-of-type(1){
+              &::after{
+                content: '1';
+                position: absolute;
+                left: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+              }
+            }
+            &:nth-of-type(2){
+              margin-top: 50px;
+              color: #333D7B;
+              .name{
+                border-bottom: 2px solid #333D7B;
+              }
+              .text{
+                span{
+                  &.color{
+                    color: #333D7B;
+                  }
+                }
+                &::after{
+                  background: #333D7B;
+                }
+              }
+              &::before{
+                display: none;
+              }
+              &::after{
+                content: '3';
+                position: absolute;
+                left: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+              }
+            }
+            &:nth-of-type(3){
+              margin-top: 50px;
+              color: #EA5E8D;
+              .name{
+                border-bottom: 2px solid #EA5E8D;
+              }
+              &::before{
+                display: none;
+              }
+              &::after{
+                content: '5';
+                position: absolute;
+                left: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+              }
+            }
+          }
+        }
+        &:nth-of-type(2){
+          .lists-in{
+            &:nth-of-type(1){
+              margin-top: 0px;
+              color: #5BBED9;
+              .name{
+                border-bottom: 2px solid #5BBED9;
+              }
+              .text{
+                span{
+                  &.color{
+                    color: #5BBED9;
+                  }
+                }
+                &::after{
+                  background: #5BBED9;
+                }
+              }
+              &::before{
+                display: none;
+              }
+              &::after{
+                content: '2';
+                position: absolute;
+                right: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,
+                -3px -3px 0px #fff,
+                3px -3px 0px #fff,
+                2px 3px 0px #fff,
+                1px 3px 0px #fff,
+                0px 3px 0px #fff,
+                -1px 3px 0px #fff,
+                -2px 3px 0px #fff,
+                -3px 3px 0px #fff,
+                -3px -2px 0px #fff,
+                -3px -1px 0px #fff,
+                -3px 0px 0px #fff,
+                -3px 1px 0px #fff,
+                -3px 2px 0px #fff,
+                1px 3px 0px #fff;
+              }
+            }
+            &:nth-of-type(2){
+              margin-top: 50px;
+              color: #07A537;
+              .name{
+                border-bottom: 2px solid #07A537;
+              }
+              &::before{
+                display: none;
+              }
+              &::after{
+                content: '4';
+                position: absolute;
+                right: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+              }
+            }
+            &:nth-of-type(3){
+              margin-top: 50px;
+              color: #AE5AF4;
+              .name{
+                border-bottom: 2px solid #AE5AF4;
+              }
+              &::before{
+                display: none;
+              }
+              &::after{
+                content: '6';
+                position: absolute;
+                right: -10px;
+                top: -40px;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+              }
+            }
+          }
+        }
+        &-en{
+          .name{
+            font-size: 12px;
+          }
+          .nameb{
+            font-size: 12px;
+          }
+          .text{
+            font-size: 12px;
+          }
+        }
+      }
+    }
   }
 }
 </style>

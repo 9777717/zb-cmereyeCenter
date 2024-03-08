@@ -2067,15 +2067,22 @@ pages:
       process_h3_1: Basic Eye Exam
       process_p3_1: Perform 3 to 5 eye exams to understand your eye condition.
       process_p3_2: ''
+      process_p3_3: "Perform 3 to 5 eye exams to understand your eye condition."
+      process_p3_4: ""
       process_p4: Ophthalmologist consultation
       process_h3_2: Comprehensive Eye Exam
       process_p5_1: Ophthalmologist performs comprehensive eye exam according to your eye condition in order to have accurate diagnosis and plan corresponding treatment.
       process_p5_2: ''
       process_p5_3: ''
+      process_p5_4: "Ophthalmologist performs comprehensive eye exam according to your eye condition in order to have accurate diagnosis and plan corresponding treatment."
+      process_p5_5: ""
       process_p6: Comprehensive Check
       process_p7_1: Outpatient service / acupuncture / Surgery
       process_p7_2: ''
+      process_p7_3: utpatient service / Surgery
       process_p8: Payment and collect medicine
+      process_p8_1: Payment and collect medicine
+      process_p8_2: or
       process_p9: Other service – glasses prescription
   talent_recruitment:
     talent_recruitment: Careers
