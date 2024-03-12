@@ -547,19 +547,24 @@ pages:
           icl1_multipleFocus2: ''
         cataract_array_icl2:
           icl2_type: Distant vision
+          icl2_type2: '(e.g. Driving, watching TV)'
           icl2_monofocal: Excellent
           icl2_astigmatism1: Excellent
           icl2_astigmatism2: ''
           icl2_multipleFocus: Good
         cataract_array_icl3:
-          icl3_type: Mid-distance vision
+          icl3_type: "Mid-distance vision"
+          icl3_type2: '(e.g. Using a computer)'
           icl3_monofocal: Excellent(may need glasses)
+          icl3_monofocal2: "(May require Blended Vision)*"
           icl3_astigmatism1: Excellent(may need glasses)
           icl3_astigmatism2: ''
           icl3_multipleFocus: Good
         cataract_array_icl4:
           icl4_type: Near vision
+          icl4_type2: '(e.g. Reading distance)'
           icl4_monofocal: Excellent(may need glasses)
+          icl4_monofocal2: '(e.g. Reading distance)'
           icl4_astigmatism1: Excellent(may need glasses)
           icl4_astigmatism2: ''
           icl4_multipleFocus: Good
@@ -573,16 +578,16 @@ pages:
           icl5_multipleFocus2: Most of the patient could get rid of glasses
         cataract_array_icl6:
           icl6_type: Suitability
-          icl6_monofocal1: Do not mind wearing glasses
+          icl6_monofocal1: Does not mind wearing glasses
           icl6_monofocal2: High visual demands
-          icl6_monofocal3: Have financial considerations
-          icl6_astigmatism1: Do not mind wearing glasses
-          icl6_astigmatism2: Patients with astigmatism
-          icl6_astigmatism3: Do not want to wear glasses
-          icl6_multipleFocus1_1: Do not want to wear glasses
-          icl6_multipleFocus1_2: No frequent driving at night
-          icl6_multipleFocus2: Financially affordable
-          icl6_multipleFocus3: No other eye diseases that affect vision
+          icl6_monofocal3: Has financial considerations
+          icl6_astigmatism1: Does not mind wearing glasses
+          icl6_astigmatism2: High demands on visual quality
+          icl6_astigmatism3: Previously diagnosed with astigmatism
+          icl6_multipleFocus1_1: Prefers not to wear glasses
+          icl6_multipleFocus1_2: No financial consideration
+          icl6_multipleFocus2: No other vision-affecting ocular diseases
+          icl6_multipleFocus3: Infrequent night driving
       service_cataract_array_announcements:
         cataract_array_announcements1: To promote wound healing and prevent bacterial infection, it is recommended to keep the surgical dressing, gauze, and eye shield in place overnight after cataract surgery until the following day when they can be removed. If they accidentally become loose or dislodged, it is advisable to reapply the sterile gauze dressing to protect the eye and maintain proper hygiene. It's important to follow the post-operative instructions provided by your surgeon to ensure optimal recovery and minimize the risk of complications
         cataract_array_announcements2: It is recommended for patients to use a protective eye shield while sleeping for two weeks after surgery. This helps prevent unnecessary bumps or rubbing of the eyes.

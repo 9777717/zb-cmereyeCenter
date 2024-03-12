@@ -857,7 +857,7 @@ const bannerData = {
                 'pages.medical_service.service_cataract_title.service_cataract_text10'
               )
             }} -->
-            <div>
+            <div v-if="locale === 'zh-hk'">
               <p>*雙眼互補法(Blended Vision)</p>
               <p>雙眼互補法又稱為「單眼視覺」(Mono-Vision),原理是透過兩眼不同的屈光度數,</p>
               <p>使雙眼達至既分工, 又協調的效果, 減低老花的徵狀, 而患者需時適應。</p>
@@ -865,6 +865,11 @@ const bannerData = {
               <p>另一隻眼睛則調校至一百度至二百五十度的近視,負責看近物;</p>
               <p>雙眼相輔相成,互補不足,以至遠近皆能達到不錯的視力效果,</p>
               <p>應付大部分工作和日常生活上的視力需求。</p>
+            </div>
+            <div v-else-if="locale === 'en'">
+              <p>Blended Vision</p>
+              <p>Blended Vision, also known as Mono-Vision, works by implanting two IOL with different powers, both eye work together for different visual distance thereby reducing the symptoms of presbyopia. A period of adaptation will be needed for the patients.</p>
+              <p>In Blended Vision, one eye will be used for far objects (about zero diopter) and the other will be used for mid-distant objects (about 1.0 to 2.50D myopic diopter). Theoretically, most of the daily activities can be done without glasses when seeing with both eyes. </p>
             </div>
           </div>
         </div>
