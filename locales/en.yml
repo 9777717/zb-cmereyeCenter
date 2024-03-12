@@ -564,7 +564,7 @@ pages:
           icl4_type: Near vision
           icl4_type2: '(e.g. Reading distance)'
           icl4_monofocal: Excellent
-          icl4_monofocal2: '(e.g. Reading distance)'
+          icl4_monofocal2: '(May require reading glasses)'
           icl4_astigmatism1: Excellent(may need glasses)
           icl4_astigmatism2: ''
           icl4_multipleFocus: Good
