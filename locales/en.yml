@@ -555,7 +555,7 @@ pages:
         cataract_array_icl3:
           icl3_type: "Mid-distance vision"
           icl3_type2: '(e.g. Using a computer)'
-          icl3_monofocal: Excellent(may need glasses)
+          icl3_monofocal: Excellent
           icl3_monofocal2: "(May require Blended Vision)*"
           icl3_astigmatism1: Excellent(may need glasses)
           icl3_astigmatism2: ''
@@ -563,7 +563,7 @@ pages:
         cataract_array_icl4:
           icl4_type: Near vision
           icl4_type2: '(e.g. Reading distance)'
-          icl4_monofocal: Excellent(may need glasses)
+          icl4_monofocal: Excellent
           icl4_monofocal2: '(e.g. Reading distance)'
           icl4_astigmatism1: Excellent(may need glasses)
           icl4_astigmatism2: ''
@@ -579,7 +579,7 @@ pages:
         cataract_array_icl6:
           icl6_type: Suitability
           icl6_monofocal1: Does not mind wearing glasses
-          icl6_monofocal2: High visual demands
+          icl6_monofocal2: Seeks for better visual performance
           icl6_monofocal3: Has financial considerations
           icl6_astigmatism1: Does not mind wearing glasses
           icl6_astigmatism2: High demands on visual quality
