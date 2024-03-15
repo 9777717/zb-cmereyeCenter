@@ -925,7 +925,7 @@ const bannerData = {
     <div>
     </div>
     <!-- 下载 -->
-    <!-- <div class="dow">
+    <div class="dow">
       <div>
         <div>
           <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
@@ -980,7 +980,7 @@ const bannerData = {
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- 公共底部表单 -->
     <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#64bcd1;'}`" />
