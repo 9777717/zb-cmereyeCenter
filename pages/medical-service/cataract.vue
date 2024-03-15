@@ -880,6 +880,9 @@ const bannerData = {
                 :type="'1'"
               />
         </div>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/l3Jo-_4VCyQ?si=ODIF1maT_tJISfLu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
@@ -1902,6 +1905,15 @@ const bannerData = {
     //     z-index: -1;
     //   }
     }
+    &>div:nth-child(4){
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      iframe{
+        width: 760px;
+        height: calc(315 / 560 * 760px);
+      }
+    }
   }
   &>div:nth-child(7) {
     &>div:nth-child(1) {
@@ -2867,6 +2879,15 @@ const bannerData = {
         // height: auto;
         // padding: 5px 30px;
         // line-height: 1.6;
+      }
+      &>div:nth-child(4){
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        iframe{
+          width: 100%;
+          height: calc(315 / 560 * (100vw - 60px));
+        }
       }
     }
     &>div:nth-child(7) {
