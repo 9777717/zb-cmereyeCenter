@@ -358,7 +358,7 @@ const doctorList = [
             </div>
           </div>
           <div class="docImg" :class="{'docImg-en': locale === 'en'}">
-            <div><img :src="item.doctorImgUrl" /></div>
+            <div><img :src="item.doctorImgUrl" :alt="`希瑪眼科中心_眼科醫生_${$t(item.doctorName)}眼科醫生`" :title="`希瑪眼科中心_眼科醫生_${$t(item.doctorName)}眼科醫生`" /></div>
             <div class="docEnName">{{ $t(item.doctorEnName) }}</div>
           </div>
         </li>
