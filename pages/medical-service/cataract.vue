@@ -928,18 +928,18 @@ const bannerData = {
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
-            'pages.medical_service.service_cataract_title.service_cataract_down1'
-          ))">
+          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
+                'pages.medical_service.service_cataract_title.service_cataract_down2'
+              ))">
             <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
-          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
-            'pages.medical_service.service_cataract_title.service_cataract_down1'
+          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
+            'pages.medical_service.service_cataract_title.service_cataract_down2'
           ))">
             <p>
               {{
                 $t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down1'
+                  'pages.medical_service.service_cataract_title.service_cataract_down2'
                 )
               }}
             </p>
@@ -955,18 +955,18 @@ const bannerData = {
       </div>
       <div>
         <div>
-          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
-                'pages.medical_service.service_cataract_title.service_cataract_down2'
-              ))">
+          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
+            'pages.medical_service.service_cataract_title.service_cataract_down1'
+          ))">
             <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
-          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
-            'pages.medical_service.service_cataract_title.service_cataract_down2'
+          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
+            'pages.medical_service.service_cataract_title.service_cataract_down1'
           ))">
             <p>
               {{
                 $t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down2'
+                  'pages.medical_service.service_cataract_title.service_cataract_down1'
                 )
               }}
             </p>
@@ -2232,7 +2232,8 @@ const bannerData = {
   color: #fff;
   font-size: 30px;
 
-  &>div:nth-child(1) {
+  &>div:nth-child(2) {
+    margin-top: 88px;
     &>div {
       width: 62.93%;
       height: 202px;
@@ -2262,9 +2263,9 @@ const bannerData = {
     }
   }
 
-  &>div:nth-child(2) {
+  &>div:nth-child(1) {
     &>div {
-      margin-top: 88px;
+      
       width: 58.2%;
       height: 202px;
       background: #64bcd1;
