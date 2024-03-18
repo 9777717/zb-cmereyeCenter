@@ -33,26 +33,38 @@ const symptom = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/49f77c5d99a7780b.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text1',
+    img_alt: '結膜炎症狀_結膜充血',
+    img_title: '結膜充血為結膜炎症狀'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d926dc7d76ec029f.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text2',
+    img_alt: '',
+    img_title: ''
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/850716323d310472.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text3',
+    img_alt: '',
+    img_title: ''
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bcda02c1c5bf937d.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text4',
+    img_alt: '',
+    img_title: ''
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ccacc25f729b2461.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text5',
+    img_alt: '',
+    img_title: ''
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d329a39c077ff928.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text6',
+    img_alt: '',
+    img_title: ''
   },
 ]
 const kind = [
@@ -230,7 +242,7 @@ const bannerData = {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/3ce6dbff76e16a32.png"
-            :alt="$t('pages.medical_service.conjunctivitis')"
+            title="結膜炎症狀_紅眼症症狀" alt="女患者揉眼睛為結膜炎或紅眼症症狀表現"
           />
         </div>
       </div>

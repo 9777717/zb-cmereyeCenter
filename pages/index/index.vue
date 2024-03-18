@@ -31,6 +31,14 @@ const goWhatsApp = () => {
 }
 const homeSwiperImgs = [
   {
+    hkimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    enimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    title: [''],
+    text: ['',''],
+    link: '/medical-service',
+    alt: '希瑪眼科中心_眼科診所_眼科醫生'
+  },
+  {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
     title: ['香港上市公司 11間眼科診所'],
@@ -244,14 +252,15 @@ const pageNav = ref([
     <div class="home-mbContent">
       <div class="home-mbContent-banner">
         <!-- <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt=""> -->
-        <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
+        <img src="https://static.cmereye.com/imgs/2024/03/c0416b68d7049a83.png" alt="">
+        <!-- <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
         src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg">
          </video>
          <div class="text">
            <span>Professional</span>
            <span>Clinical</span>
            <span>Service</span>
-         </div>
+         </div> -->
       </div>
       <div class="homePage-pageNav">
         <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
