@@ -34,68 +34,98 @@ const strabismusList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/714c9a2fceed9b86.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/7ea53d3734476d0a.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_2',
+    img_title: '內斜視',
+    img_alt: '內斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/a36770ffa76f3e2e.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_3',
+    img_title: '外斜視',
+    img_alt: '外斜視眼睛狀態'
   },
 ]
 const strabismusList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/3eed40559da38526.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/21b0fa246561c5bd.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_2',
+    img_title: '上斜視',
+    img_alt: '上斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/ff6403d529d952d2.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_3',
+    img_title: '下斜視',
+    img_alt: '下斜視眼睛狀態'
   },
 ]
 const strabismusList3 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/f5435fd75e99b400.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/18fee48a5021a82e.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_2',
+    img_title: '假性內斜視',
+    img_alt: '假性內斜視眼睛狀態'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/fa5db6e208cf321f.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_3',
+    img_title: '內斜視',
+    img_alt: '內斜視眼睛狀態'
   },
 ]
 const strabismusList4 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f317dab3447cad52.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_1'],
+    img_title: '兒童內斜視',
+    img_alt: '內斜視狀態下寫作業的女童'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/92abe075389b8af9.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_2_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_2_2'],
+    img_title: '兒童內斜視',
+    img_alt: '內斜視狀態下的可愛男童'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ee8e638950ef26fd.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_3_2'],
+    img_title: '小朋友斜視',
+    img_alt: '斜視狀態下的男童遮蓋一隻眼睛'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/37924e5d99c31f51.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_4'],
+    img_title: '兒童內斜視',
+    img_alt: '斜視狀態下的女童側頭看東西'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9b92ae8185dfbea8.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_5_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_5_2'],
+    img_title: '小朋友斜視_揉眼睛',
+    img_alt: '斜視狀態下的男童揉眼睛'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/af77985aa7af1b00.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_6'],
+    img_title: '小朋友斜視_流眼淚',
+    img_alt: '斜視狀態下的男童流眼淚'
   },
 ]
 const strabismusList5 = [
@@ -103,21 +133,29 @@ const strabismusList5 = [
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/6a896080eccf672a.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text1',
+    img_title: '兒童斜視矯正',
+    img_alt: '兒童斜視矯正前後效果對比'
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title2',
     img: 'https://static.cmereye.com/imgs/2023/06/9c69590dd98eb332.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text2',
+    img_title: '眼科醫生_斜視矯正訓練',
+    img_alt: '眼科醫生為男童進行斜視矯正訓練'
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title3',
     img: 'https://static.cmereye.com/imgs/2023/06/dd785273b00a7055.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text3',
+    img_title: '斜視矯正_遮眼治療',
+    img_alt: '兒童進行遮眼治療的斜視矯正方法'
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title4',
     img: 'https://static.cmereye.com/imgs/2023/06/fb8d95f43e5c758e.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text4',
+    img_title: '斜視矯正_眼科手術',
+    img_alt: '斜視矯正眼科手術步驟及過程'
   },
 ]
 const amblyopiaList1 = [
@@ -125,26 +163,36 @@ const amblyopiaList1 = [
     img: 'https://static.cmereye.com/imgs/2023/06/5b9e1baac69abb24.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title1',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text1',
+    img_title: '兒童斜視_兒童弱視',
+    img_alt: '男童側臉展示斜視及弱視'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9a3332f88b6d69af.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title2',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text2',
+    img_title: '兒童弱視_兒童視力檢查',
+    img_alt: '患有弱視的女童配戴驗光眼鏡進行視力檢查'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/7ace87f50adb18dc.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title3',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text3',
+    img_title: '兒童弱視_屈光不正',
+    img_alt: '患有弱視的男童佩戴眼鏡以改善屈光不正'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2a48ee959aee43e2.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title4',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text4',
+    mg_title: '兒童弱視_剝奪性弱視',
+    img_alt: '患有弱視的女童揉眼睛為剝奪性弱視症狀表現'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c4c979e78450f83.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title5',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text5',
+    img_title: '先天性弱視',
+    img_alt: '戴眼罩的幼童接受先天性弱視治療'
   },
 ]
 const treatList1 = [
@@ -155,6 +203,8 @@ const treatList1 = [
     text: [
       'pages.medical_service.strabismusAmblyopia_con.treat.text1',
     ],
+    img_title: '弱視治療',
+    img_alt: '戴眼鏡的女童微笑展現弱視治療成效'
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/af76b91d4e877062.png',
@@ -164,6 +214,8 @@ const treatList1 = [
       'pages.medical_service.strabismusAmblyopia_con.treat.text2_1',
       'pages.medical_service.strabismusAmblyopia_con.treat.text2_2',
     ],
+    img_title: '弱視治療_遮眼治療',
+    img_alt: '女童透過遮眼治療進行弱視治療'
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/333142a79088a1b6.png',
@@ -172,6 +224,8 @@ const treatList1 = [
     text: [
       'pages.medical_service.strabismusAmblyopia_con.treat.text3',
     ],
+    img_title: '弱視治療_放大瞳孔藥水',
+    img_alt: '男童使用放大瞳孔藥水進行弱視治療'
   },
 ]
 // 内部导航
@@ -252,7 +306,7 @@ const bannerData = {
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList1" :key="index">
-                  <img :src="item.img" />
+                  <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
@@ -266,7 +320,7 @@ const bannerData = {
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList2" :key="index">
-                  <img :src="item.img" />
+                  <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
@@ -280,7 +334,7 @@ const bannerData = {
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList3" :key="index">
-                  <img :src="item.img" />
+                  <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
@@ -310,7 +364,7 @@ const bannerData = {
           <div>
             <div v-for="(item, index) in strabismusList4" :key="index">
               <div>
-                <img :src="item.img" />
+                <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
                 <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
@@ -326,7 +380,7 @@ const bannerData = {
             <div>{{ $t(item.title) }}</div>
             <div>
               <div>
-                <img :src="item.img" />
+                <img :src="item.img" :title="item.img_title" :alt="item.img_alt" />
               </div>
               <div class="strabismusAmblyopia_text_p_span">{{ $t(item.text) }}</div>
             </div>
@@ -338,7 +392,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/2ed1badaabb9c9cb.png"
+              src="https://static.cmereye.com/imgs/2023/06/2ed1badaabb9c9cb.png" title="兒童弱視矯正" alt="兒童配戴眼鏡以矯正弱視"
             />
           </div>
           <div class="strabismusAmblyopia_text_p_span">
@@ -349,7 +403,7 @@ const bannerData = {
           <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name1')}}</div>
           <div>
             <div v-for="(item, index) in amblyopiaList1" :key="index">
-              <div><img :src="item.img" /></div>
+              <div><img :src="item.img" :title="item.img_title" :alt="item.img_alt" /></div>
               <div>
                 <div>{{ $t(item.title) }}</div>
                 <div class="strabismusAmblyopia_text_p_span">
@@ -385,7 +439,7 @@ const bannerData = {
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
             <div>
-              <img :src="item.svg" />
+              <img :src="item.svg" :alt="item.img_alt" :title="item.img_title" />
               <div>{{ $t(item.title) }}</div>
             </div>
             <div>
@@ -416,7 +470,7 @@ const bannerData = {
           <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
+              title="斜視_弱視" alt="斜視_弱視_小冊子"
               srcset=""
             />
           </div>
