@@ -133,7 +133,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的阿托品眼藥水瓶子"
             />
           </div>
         </div>
@@ -146,19 +146,19 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.01%低濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.05%低濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.125%高濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的1%高濃度阿托品眼藥水"
             />
           </div>
           <div>
@@ -166,7 +166,7 @@ const bannerData = {
               <span>{{$t('pages.medical_service.atropine_text.introduce.span1')}}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
-                alt=""
+                
               />
             </div>
             <div>
@@ -193,7 +193,7 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
-                alt=""
+                title="兒童近視控制_阿托品_眼藥水" alt="女童使用阿托品眼藥水以控制近視"
               />
             </div>
             <div>
@@ -249,7 +249,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
-              alt=""
+              title="眼球拉長" alt="眼部特寫顯示眼球拉長"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p1') }}
@@ -258,7 +258,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
-              alt=""
+              title="兒童近視控制_視力檢查" alt="男童戴眼鏡進行視力檢查以控制近視"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p2') }}
@@ -267,7 +267,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/e8f9777b29a81b26.png"
-              alt=""
+              title="驗眼儀器_屈光檢查" alt="用於屈光檢查的驗眼儀器"
             />
             <div>
               <span>{{
@@ -281,7 +281,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="使用阿托品眼藥水控制近視的患者"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p4') }}
