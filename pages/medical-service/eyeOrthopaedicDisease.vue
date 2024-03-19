@@ -845,7 +845,7 @@ const bannerData = {
               
             </div>
             <div class="usage_2_Image">
-                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" title="義眼片" alt="義眼片安裝過程">
+                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" title="義眼片" alt="義眼片取出過程">
               </div>
           </div>
         </div>
