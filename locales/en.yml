@@ -19,7 +19,7 @@ components:
     text2: We will contact you as soon as we receive the appointment request.
     placeholder1: Name
     placeholder2: Contact number
-    placeholder3: Email
+    placeholder3: "Email（optional）"
     placeholder4: Date
     placeholder5: Message
     submitForm: Submit

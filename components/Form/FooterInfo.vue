@@ -45,10 +45,10 @@ const rules = reactive<FormRules>({
     { required: true, message: '請輸入姓名', trigger: 'change' }
   ],
   phone: [{ required: true, validator: telValidator, trigger: 'change' }],
-  email: [
-    { required: true, message: '請輸入電郵地址', trigger: 'change' },
-    { type: 'email', message: '請輸入正確的電子郵件地址', trigger: 'change' },
-  ],
+  // email: [
+  //   { required: true, message: '請輸入電郵地址', trigger: 'change' },
+  //   { type: 'email', message: '請輸入正確的電子郵件地址', trigger: 'change' },
+  // ],
   region: [
     {
       required: true,
