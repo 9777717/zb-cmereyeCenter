@@ -341,7 +341,7 @@ const processedLists:any = [
               </div>
               <div class="processed-in mbpocessBox">
                 <div class="lists" :class="{'lists-en':locale === 'en'}">
-                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any ) => index % 2 === 0)" :key="processedIndex">
+                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item, index ) => index % 2 === 0)" :key="processedIndex">
                     <img :src="processedItem.img" alt="">
                     <div class="name">
                       <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
@@ -355,7 +355,7 @@ const processedLists:any = [
                   </div>
                 </div>
                 <div class="lists" :class="{'lists-en':locale === 'en'}">
-                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any) => index % 2 !== 0)" :key="processedIndex">
+                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item, index) => index % 2 !== 0)" :key="processedIndex">
                     <img :src="processedItem.img" alt="">
                     <div class="name">
                       <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
@@ -728,6 +728,7 @@ const processedLists:any = [
         text-align: center;
         line-height: 1.6;
         padding-top: 5px;
+        font-weight: bold;
         span{
           &.color{
             color: #EFAF00;
