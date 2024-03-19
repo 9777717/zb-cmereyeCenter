@@ -356,7 +356,7 @@ const bannerData = {
         <div>
           <div v-for="(item, index) in preventList1" :key="index">
             <div>
-              <img :src="item.img" />
+              <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
             </div>
             <div>
               <div>{{ $t(item.title) }}</div>

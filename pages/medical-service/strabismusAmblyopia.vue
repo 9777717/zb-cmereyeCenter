@@ -444,7 +444,7 @@ const bannerData = {
             </div>
             <div>
               <div>
-                <img :src="item.img" alt="" />
+                <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
                 <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
