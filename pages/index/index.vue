@@ -91,29 +91,11 @@ const homeBannerLists = [
     img_title: ''
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/426618935f511b98.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/2b91f500d648aeb6.png',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
-    img_alt: '',
-    img_title: ''
-  },
-  {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/94bbb5d9338a2859.jpg',
-    pc_en_img: '',
-    mb_en_img: '',
-    link: '/medical-service',
-    img_alt: '',
-    img_title: ''
-  },
-  {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/fcd4cab0c82bebac.png',
-    pc_en_img: '',
-    mb_en_img: '',
-    link: '/about-us#medicalEquipment',
     img_alt: '',
     img_title: ''
   },
@@ -122,19 +104,37 @@ const homeBannerLists = [
     mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/5009735eab244126.jpg',
     pc_en_img: '',
     mb_en_img: '',
+    link: '/medical-service',
+    img_alt: '',
+    img_title: ''
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/about-us#medicalEquipment',
+    img_alt: '',
+    img_title: ''
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/94bbb5d9338a2859.jpg',
+    pc_en_img: '',
+    mb_en_img: '',
     link: '/about-us#corporate',
     img_alt: '',
     img_title: ''
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/426618935f511b98.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/2b91f500d648aeb6.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/fcd4cab0c82bebac.png',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
     img_alt: '',
     img_title: ''
-  }
+  },
 ]
 
 onMounted(() => {
