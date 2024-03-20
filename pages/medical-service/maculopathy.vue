@@ -90,7 +90,7 @@ const examine = [
     img_down_title: '黃斑病變症狀_阿姆斯勒方格表'
   },
   {
-    title: 'pages.medical_service.maculopathy_con.inspect.title2',
+    title: 'pages.medical_service.maculopathy_con.inspect.title4',
     img_up: 'https://static.cmereye.com/imgs/2023/05/233cb17db72b3823.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/be3b25f7e3770d9f.png',
     img_up_alt: '模擬黃斑病變視力模糊症狀的視覺圖',
@@ -108,7 +108,7 @@ const examine = [
     img_down_title: '黃斑病變症狀_視物變形_阿姆斯勒方格表'
   },
   {
-    title: 'pages.medical_service.maculopathy_con.inspect.title4',
+    title: 'pages.medical_service.maculopathy_con.inspect.title2',
     img_up: 'https://static.cmereye.com/imgs/2023/05/7e436a4e96ccdc37.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
     img_up_alt: '模擬黃斑病變視野變暗症狀的視覺圖',
