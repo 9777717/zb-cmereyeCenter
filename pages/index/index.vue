@@ -87,8 +87,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-team',
-    img_alt: '',
-    img_title: ''
+    img_alt: '袁文傑護眼大使',
+    img_title: '袁文傑護眼大使'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/426618935f511b98.jpg',
@@ -96,8 +96,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
-    img_alt: '',
-    img_title: ''
+    img_alt: '香港上市公司11間眼科診所',
+    img_title: '香港上市公司11間眼科診所'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/ffa79247ba7914b8.jpg',
@@ -105,8 +105,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
-    img_alt: '',
-    img_title: ''
+    img_alt: '九大眼科醫療服務',
+    img_title: '九大眼科醫療服務'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
@@ -114,8 +114,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#medicalEquipment',
-    img_alt: '',
-    img_title: ''
+    img_alt: '國際認可先進眼科醫療技術',
+    img_title: '國際認可先進眼科醫療技術'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
@@ -123,8 +123,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#corporate',
-    img_alt: '',
-    img_title: ''
+    img_alt: '以人爲本以可人為中心',
+    img_title: '以人爲本以可人為中心'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
@@ -132,8 +132,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
-    img_alt: '',
-    img_title: ''
+    img_alt: '全心全意守護每雙眼睛',
+    img_title: '全心全意守護每雙眼睛'
   },
 ]
 
