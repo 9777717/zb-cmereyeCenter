@@ -27,7 +27,7 @@ const rt = ref(route)
     <div>
       <a class="topitem ga-pc-right-ljyy" id="ga-pc-right-ljyy" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714">
         <img class="ga-pc-right-ljyy" v-if="locale !== 'en'" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2024/03/d238c8c20a635d6f.png" alt="希瑪眼科中心_立即預約眼科服務" title="希瑪眼科中心_立即預約眼科服務">
-        <img class="ga-pc-right-ljyy" v-if="locale === 'en'" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2023/09/a216a8f766bc0d89.png" alt="希瑪眼科中心_立即預約眼科服務" title="希瑪眼科中心_立即預約眼科服務">
+        <img class="ga-pc-right-ljyy" v-if="locale === 'en'" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2024/03/d238c8c20a635d6f.png" alt="希瑪眼科中心_立即預約眼科服務" title="希瑪眼科中心_立即預約眼科服務">
       </a>
       <a class="ocitem ga-pc-right-zxcx" id="ga-pc-right-zxcx" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853">
         <div class="ga-pc-right-zxcx">
@@ -67,9 +67,7 @@ const rt = ref(route)
   justify-content: center;
   position: fixed;
   right: 83px;
-  // top: 520px;
   bottom: 150px;
-  // animation: opin 1s ease-in forwards;
   &>div{
     .topitem{
       width: 160px;
@@ -77,13 +75,11 @@ const rt = ref(route)
       img{
         width: 100%;
         cursor: pointer;
-        // animation: ss 3s linear infinite;
         transform-origin: bottom center;
         transition: all .3s;
         &:hover{
           transform-origin: bottom center;
           transform: scale(1.05);
-          // animation: ss 3s linear infinite;
         }
       }
     }
@@ -133,28 +129,6 @@ const rt = ref(route)
               transition: all .3s;
             }
           }
-          // &::before{
-          //   content: "";
-          //   width: 100%;
-          //   height: 51%;
-          //   position: absolute;
-          //   top: 0;
-          //   left: 0;
-          //   background: rgba(255, 255, 255, 1);
-          //   z-index: 1;
-          //   transition: all .3s;
-          // }
-          // &::after{
-          //   content: "";
-          //   width: 2;
-          //   height: 100%;
-          //   position: absolute;
-          //   bottom: 0;
-          //   right: 0;
-          //   background: #2958a3;
-          //   z-index: 1;
-          //   transition: all .3s;
-          // }
         }
         &>div:nth-of-type(2){
           width: 40px;
@@ -162,7 +136,6 @@ const rt = ref(route)
           justify-content: center;
           align-items: center;
           border-left: 1px solid #5595DF;
-          // border-left: 2px solid #fff;
           position: relative;
           transition: all .3s;
           &::before{
@@ -187,7 +160,6 @@ const rt = ref(route)
           }
           img{
             position: relative;
-            // width: 60%;
             z-index: 2;
           }
         }
@@ -211,50 +183,16 @@ const rt = ref(route)
         }
       }
       &:hover{
-        // border: 2px solid #fff;
         box-shadow: 0 3px 10px rgba(128, 200, 241, .7);
-        // transform: scale(1.05);
         &>div{
-          // border: 1px solid #8FD2E4;
           &>div:nth-of-type(1){
             &>div{
-              // color: #fff;
-              // margin-top: -1px;
-              // padding-top: 0px;
               transform: translateY(-100%);
-            }
-            &::before{
-              // background: rgba(143, 210, 228, .5);
-            }
-            &::after{
-              // background: #8FD2E4;
             }
           }
         }
       }
     }
-  }
-}
-// @keyframes opin{
-//   0%{
-//     opacity: 0;
-//   }
-//   100%{
-//     opacity: 1;
-//   }
-// }
-@keyframes ss {
-  0%{
-    transform: rotate(0deg);
-  }
-  33%{
-    transform: rotate(10deg);
-  }
-  66%{
-    transform: rotate(-10deg);
-  }
-  100%{
-    transform: rotate(0deg);
   }
 }
 @media (min-width: 768px) and (max-width: 1920px){
