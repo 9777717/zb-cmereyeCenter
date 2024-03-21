@@ -13,9 +13,10 @@ useHead({
   meta(){
     return [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { property: 'og:image', content: 'https://www.hkeyecmer.com/favicon.ico' }
     ]
   },
-  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://www.hkeyecmer.com/favicon.ico' }]
 })
 let cookieBoxShow = ref(false)
 const handleSetCookie = () =>{

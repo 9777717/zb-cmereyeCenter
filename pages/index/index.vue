@@ -91,8 +91,8 @@ const homeBannerLists = [
     img_title: '袁文傑護眼大使'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/426618935f511b98.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/2b91f500d648aeb6.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/41412b33f3375457.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/22d20728515df440.jpg',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
@@ -109,15 +109,6 @@ const homeBannerLists = [
     img_title: '九大眼科醫療服務'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
-    pc_en_img: '',
-    mb_en_img: '',
-    link: '/about-us#medicalEquipment',
-    img_alt: '國際認可先進眼科醫療技術',
-    img_title: '國際認可先進眼科醫療技術'
-  },
-  {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
     mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/94bbb5d9338a2859.jpg',
     pc_en_img: '',
@@ -125,6 +116,15 @@ const homeBannerLists = [
     link: '/about-us#corporate',
     img_alt: '以人爲本以可人為中心',
     img_title: '以人爲本以可人為中心'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/about-us#medicalEquipment',
+    img_alt: '國際認可先進眼科醫療技術',
+    img_title: '國際認可先進眼科醫療技術'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
