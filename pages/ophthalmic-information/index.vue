@@ -27,7 +27,9 @@ let mainContent = ref([
     link: '',
     title: '',
     doctor: '',
-    text: ''
+    text: '',
+    img_title: '',
+    img_alt: ''
   }
 ])
 let totalPageNum = ref(0)
@@ -49,7 +51,9 @@ const getMainContent = async () => {
         link: item.source,
         title: item.title,
         doctor: item.ext_doctor_name,
-        text: item.ext_context
+        text: item.ext_context,
+        img_title: item.ext_caseimg_title,
+        img_alt: item.ext_caseimg_alt
       }
     })
   }catch{
@@ -94,7 +98,7 @@ onMounted(()=>{
       <div>
         <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg" 
           srcset="https://static.cmereye.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w, https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"  
-          alt="醫生小教室" 
+          title="眼科醫生_眼科服務" alt="眼科醫生團隊提供優質眼科服務"
           src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"/>
       </div>
       <div>
@@ -186,7 +190,7 @@ onMounted(()=>{
             }}</a>
           </div>
         </div>
-        <div><img :src="item.img" :alt="item.title" /></div>
+        <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
       </div>
     </div>
     <div id="doctorClassConetnt" v-else>服務異常</div>

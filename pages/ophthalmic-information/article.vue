@@ -27,6 +27,8 @@ const articleList = ref([
     date: '',
     source: '',
     doctor:'',
+    img_title: '',
+    img_alt: ''
   },
 ])
 let errorPage = ref(false)
@@ -52,6 +54,8 @@ const getArticleList = async () => {
       date: y+'-'+MM+'-'+d,
       source: item.ext_paperRecoFrom,
       doctor: item.ext_paperRecoDoctor,
+      img_title: item.ext_img_title,
+      img_alt: item.ext_img_alt
     }
   })
   }catch{
@@ -75,7 +79,7 @@ onMounted(()=>{
         <div>
            <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png" 
           srcset="https://static.cmereye.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w, https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"  
-          alt="文章推薦" 
+          title="文章閱讀_文章推薦" alt="一位年輕少女正專注閱讀文章"
           src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"/>
           <svg
             width="9"
@@ -146,7 +150,7 @@ onMounted(()=>{
       </div>
       <div v-if="!errorPage">
         <div v-for="(item, index) in articleList" :key="index" @click="toLinkPage(item)">
-          <div><img :src="item.img" /></div>
+          <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
           <div>
             <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
           </div>
