@@ -2043,7 +2043,7 @@ pages:
       cost_tr24: Specialist in Ophthalmology (Central)
       cost_tr25: Specialist in Ophthalmology (Satellite clinics)
       cost_tr26: SMILE / LASIK / Implantable Contact Lens (ICL) Work-Up
-      cost_tr27: Astigmatic Keratotomy Work-Up - 500
+      cost_tr27: Astigmatic Keratotomy Work-Up
       cost_tr28: Phaco Surgery(Monofocal IOL)
       cost_p2: ''
       cost_p2_1: This pricelist is only eligible in Hong Kong currency.
@@ -2059,7 +2059,7 @@ pages:
       cost_p7: (per doctor for each report, subject to quotation).
       cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
       cost_p9: "Last update: 01/04/2023"
-      cost_p10: "Last update: 01/12/2023"
+      cost_p10: "Last update: 01/04/2024"
       cost_form_title: Fill in Insurance Claim Form
       cost_form_td1_1: Case
       cost_form_td1_2: Charges
