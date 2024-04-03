@@ -142,7 +142,7 @@ const processedLists:any = [
                 {{ $t('pages.process_cost.cont.cost_h3_2') }}
               </h3>
               <table class="table">
-                <thead>
+                <!-- <thead>
                   <tr class="firstRow">
                     <td colspan="2"></td>
                     <td class="text-center text-xl">
@@ -176,7 +176,7 @@ const processedLists:any = [
                     <td class="text-center">$900</td>
                   </tr>
                 </tbody>
-                <br />
+                <br /> -->
                 <thead>
                   <tr class="firstRow">
                     <td colspan="2"></td>
