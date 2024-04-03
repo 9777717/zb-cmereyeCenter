@@ -181,10 +181,12 @@ const processedLists:any = [
                   <tr class="firstRow">
                     <td colspan="2"></td>
                     <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr1_td1') }}
+                      {{ $t('pages.process_cost.cont.cost_tr1_td1') }}<br />
+                      (HK$)
                     </td>
                     <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr1_td2') }}
+                      {{ $t('pages.process_cost.cont.cost_tr1_td2') }}<br />
+                      (HK$)
                     </td>
                   </tr>
                 </thead>
