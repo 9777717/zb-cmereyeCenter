@@ -93,7 +93,7 @@ const bannerData = {
             </p>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" alt="" srcset="" />
+            <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" title="兒童近視控制_視力檢查" alt="男童進行視力檢查以控制近視" srcset="" />
           </div>
         </div>
         <div @click="toVision">
@@ -106,7 +106,7 @@ const bannerData = {
         <div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" title="兒童眼睛檢查_驗眼服務" alt="女童透過驗眼服務進行眼睛檢查" srcset="" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title1')}}</div>
@@ -121,7 +121,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" title="兒童眼睛檢查_眼睛健康" alt="戴眼鏡的女童已接受眼睛檢查以確保眼睛健康" srcset="" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title2')}}</div>
@@ -136,7 +136,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png" title="眼保健操_眼睛健康" alt="一家三口做眼保健操以確保眼睛健康" srcset="" />
             </div>
             <div>
               <div></div>
@@ -150,12 +150,12 @@ const bannerData = {
               <div class="page-newNavs">
                 <div class="page-newNavs-in">
                   <a class="imgLink" href="https://www.cmervision.com/orthokeratology/">
-                    <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" srcset="https://static.cmereye.com/imgs/2024/02/fa28b47d86133d44.png 768w, https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" src="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" alt="角膜矯形術" title="角膜矯形術" />
+                    <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" srcset="https://static.cmereye.com/imgs/2024/02/fa28b47d86133d44.png 768w, https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" src="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" title="希瑪視光中心_角膜矯形術" alt="希瑪視光中心提拱角膜矯形術服務" />
                   </a>
                 </div>
                 <div class="page-newNavs-in">
                   <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" 
-                  srcset="https://static.cmereye.com/imgs/2024/02/201cc4f03dc17ad2.png 768w, https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" src="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" title="每日即棄近視 控制隱形眼鏡" alt="">
+                  srcset="https://static.cmereye.com/imgs/2024/02/201cc4f03dc17ad2.png 768w, https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" src="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" title="希瑪視光中心_兒童近視控制_隱形眼鏡" alt="希瑪視光中心提供近視控制的隱形眼鏡產品服務">
                   <div class="page-newNavs-in-hover">
                       <div>
                           <img src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png" alt="">
@@ -171,7 +171,7 @@ const bannerData = {
                   </div>
                 </div>
                 <div class="page-newNavs-in">
-                    <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" srcset="https://static.cmereye.com/imgs/2024/02/086a88b79db89fa0.png 768w, https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" src="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" title="兒童近視控制鏡片" alt="">
+                    <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" srcset="https://static.cmereye.com/imgs/2024/02/086a88b79db89fa0.png 768w, https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" src="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" title="希瑪視光中心_近視控制鏡片" alt="希瑪視光中心提拱兒童近視控制鏡片產品服務">
                     <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
                         <div>
                             <img src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png" alt="">
@@ -187,7 +187,7 @@ const bannerData = {
                 </div>
                 <div class="page-newNavs-in">
                   <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
-                  <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="阿托品眼藥水" alt=""></a>
+                  <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="希瑪視光中心_阿托品_眼藥水" alt="希瑪視光中心提拱阿托品眼藥水產品服務"></a>
                 </div>
               </div>
               <div class="contentbtn">
@@ -199,7 +199,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" title="眼科醫生_眼睛檢查" alt="眼科醫生為年長者進行眼睛檢查" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title4')}}</div>
@@ -214,7 +214,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" title="眼睛檢查_眼睛疾病" alt="定期安排眼睛檢查以預防眼睛疾病" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title5')}}</div>
@@ -229,23 +229,22 @@ const bannerData = {
             <h2>希瑪視光中心更提供成人配鏡服務及鏡片試戴，包括︰</h2>
             <div class="page-newNavs2">
                 <div class="page-newNavs2-in">
-                    <img src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png" title="隱形眼鏡驗配" alt="">
+                    <img src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png" title="希瑪視光中心_隱形眼鏡" alt="希瑪視光中心提供隱形眼鏡產品服務">
                     <p>隱形眼鏡驗配</p>
                     <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/">了解更多</a>
                 </div>
                 <div class="page-newNavs2-in">
-                    <img src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png" title="老花漸進鏡驗配
-                    控制隱形眼鏡" alt="">
+                    <img src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png" title="希瑪視光中心_漸進老花鏡" alt="希瑪視光中心提供漸進老花鏡產品服務">
                     <p>老花漸進鏡驗配</p>
                     <a href="https://www.cmervision.com/progressive-lens/">了解更多</a>
                 </div>
                 <div class="page-newNavs2-in">
-                    <img src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png" title="老花隱形眼鏡驗配" alt="">
+                    <img src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png" title="希瑪視光中心_老花隱形眼鏡" alt="希瑪視光中心提供老花隱形眼鏡產品服務">
                     <p>老花隱形眼鏡驗配</p>
                     <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/multifocal-contact-lenses-fitting/">了解更多</a>
                 </div>
                 <div class="page-newNavs2-in">
-                    <img src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png" title="硬式隱形眼鏡驗配" alt="">
+                    <img src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png" title="希瑪視光中心_硬式隱形眼鏡" alt="希瑪視光中心提供硬式隱形眼鏡產品服務">
                     <p>硬式隱形眼鏡驗配</p>
                     <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/rgp/">了解更多</a>
                 </div>

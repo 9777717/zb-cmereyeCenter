@@ -31,40 +31,110 @@ const goWhatsApp = () => {
 }
 const homeSwiperImgs = [
   {
+    hkimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    enimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    title: [''],
+    text: ['',''],
+    link: '/medical-service',
+    alt: '希瑪眼科中心_眼科診所_眼科醫生',
+  },
+  {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
     title: ['香港上市公司 11間眼科診所'],
     text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
-    link: '/about-us'
+    link: '/about-us',
+    alt: '希瑪眼科中心_眼科診所_眼科醫生',
   },
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
     title: ['全面涵蓋九大眼科醫療領域'],
     text: ['致力提供全面眼科醫療服務','貼心護理服務 滿足患者不同需求'],
-    link: '/medical-service'
+    link: '/medical-service',
+    alt: '希瑪眼科中心_眼科服務',
   },
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
     title: ['以人為本，以客人為中心'],
     text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
-    link: '/about-us#feedback'
+    link: '/about-us#feedback',
+    alt: '希瑪眼科中心_眼睛檢查',
   },
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
     title: ['國際認可先進眼科醫療技術'],
     text: ['高水準眼科治療和服務','實現精確、安全手術操作'],
-    link: '/about-us#medicalEquipment'
+    link: '/about-us#medicalEquipment',
+    alt: '希瑪眼科中心_眼科設備_眼科儀器',
   },
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
     title: ['全心全意守護每雙眼睛'],
     text: ['追求卓越 堅持使命','關注全生命眼健康周期'],
-    link: '/about-us#corporate'
+    link: '/about-us#corporate',
+    alt: '希瑪眼科中心_眼睛健康',
   }
+]
+
+const homeBannerLists = [
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0416b68d7049a83.png',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/medical-team',
+    img_alt: '袁文傑護眼大使',
+    img_title: '袁文傑護眼大使'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/41412b33f3375457.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/22d20728515df440.jpg',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/about-us',
+    img_alt: '香港上市公司11間眼科診所',
+    img_title: '香港上市公司11間眼科診所'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/ffa79247ba7914b8.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/5009735eab244126.jpg',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/medical-service',
+    img_alt: '九大眼科醫療服務',
+    img_title: '九大眼科醫療服務'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/94bbb5d9338a2859.jpg',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/about-us#corporate',
+    img_alt: '以人爲本以可人為中心',
+    img_title: '以人爲本以可人為中心'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/about-us#medicalEquipment',
+    img_alt: '國際認可先進眼科醫療技術',
+    img_title: '國際認可先進眼科醫療技術'
+  },
+  {
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/fcd4cab0c82bebac.png',
+    pc_en_img: '',
+    mb_en_img: '',
+    link: '/medical-service',
+    img_alt: '全心全意守護每雙眼睛',
+    img_title: '全心全意守護每雙眼睛'
+  },
 ]
 
 onMounted(() => {
@@ -118,24 +188,6 @@ onMounted(() => {
       delay: .5
     })
   }
-  // gsap.from('.cmer-fadeInLeft', {
-  //   scrollTrigger: ".cmer-fadeInLeft",
-  //   opacity: 0,
-  //   x: -50,
-  //   duration: 2,
-  // })
-  // gsap.from('.cmer-fadeInRight', {
-  //   scrollTrigger: ".cmer-fadeInRight",
-  //   opacity: 0,
-  //   x: 50,
-  //   duration: 2,
-  // })
-  // gsap.from('.cmer-fadeInUp', {
-  //   scrollTrigger: ".cmer-fadeInUp",
-  //   opacity: 0,
-  //   y: 50,
-  //   duration: 2,
-  // })
 })
 // 拨打电话
 const callTel = () => {
@@ -153,6 +205,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
     des: 'pages.medical_service.cataract',
     link: '/medical-service/cataract',
+    alt: '眼科服務_白內障',
   },
   {
     i: '02',
@@ -160,6 +213,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
     des: 'pages.medical_service.maculopathy',
     link: '/medical-service/maculopathy',
+    alt: '眼科服務_黃斑病變',
   },
   {
     i: '04',
@@ -167,6 +221,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
     des: 'pages.medical_service.amotioRetinae',
     link: '/medical-service/amotioRetinae',
+    alt: '眼科服務_視網膜脫落',
   },
   {
     i: '05',
@@ -174,6 +229,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
     des: 'pages.medical_service.glaucoma',
     link: '/medical-service/glaucoma',
+    alt: '眼科服務_青光眼',
   },
   {
     i: '08',
@@ -181,6 +237,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
     des: 'pages.medical_service.ocularSurfaceDiseases',
     link: '/medical-service/ocularSurfaceDiseases',
+    alt: '眼科服務_眼角膜疾病',
   },
   {
     i: '09',
@@ -188,6 +245,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
     des: 'pages.medical_service.strabismusAmblyopia',
     link: '/medical-service/strabismusAmblyopia',
+    alt: '眼科服務_兒童斜視_兒童弱視',
   },
   {
     i: '11',
@@ -195,6 +253,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
     des: 'pages.medical_service.eyeOrthopaedicDisease',
     link: '/medical-service/eyeOrthopaedicDisease',
+    alt: '眼科服務_眼整形_眼眶病',
   },
   {
     i: '12',
@@ -202,6 +261,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
     des: 'pages.medical_service.medicalOptometry',
     link: '/medical-service/medicalOptometry',
+    alt: '眼科服務_兒童近視控制_眼睛檢查',
   },
   {
     i: '13',
@@ -209,6 +269,7 @@ const serviceLists = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
     des: 'pages.medical_service.smileHk',
     link: 'https://smile.hkcmereye.com/',
+    alt: '眼科服務_激光矯視_smile矯視',
   }
 ]
 const pageNav = ref([
@@ -236,27 +297,33 @@ const pageNav = ref([
     <div class="mbHomeSwiper">
       <swiper
         :loop="true"
+        :slides-per-view="1"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
         :modules="[Pagination,Autoplay]"
       >
-        <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
-          <nuxt-link :to="swiperItem.link"><img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.title[0]"></nuxt-link>
+        <!-- <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
+          <nuxt-link :to="swiperItem.link"><img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.alt" :title="swiperItem.alt"></nuxt-link>
+        </swiper-slide> -->
+        <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeBannerLists" :key="swiperIndex">
+          <nuxt-link :to="swiperItem.link">
+            <img :srcset="`${swiperItem.mb_hk_img} 768w,${swiperItem.pc_hk_img}`" :src="swiperItem.mb_hk_img" :alt="swiperItem.img_alt" :title="swiperItem.img_title" />
+          </nuxt-link>
         </swiper-slide>
       </swiper>
     </div>
     <div class="home-mbContent">
-      <div class="home-mbContent-banner">
-        <!-- <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt=""> -->
-        <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
+      <!-- <div class="home-mbContent-banner"> -->
+        <!-- <img src="https://static.cmereye.com/imgs/2024/03/c0416b68d7049a83.png" alt=""> -->
+        <!-- <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
         src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg">
          </video>
          <div class="text">
            <span>Professional</span>
            <span>Clinical</span>
            <span>Service</span>
-         </div>
-      </div>
+         </div> -->
+      <!-- </div> -->
       <div class="homePage-pageNav">
         <nuxt-link :to="navItem.link" class="homePage-pageNav-in" v-for="(navItem,navIndex) in pageNav" :key="navIndex">
           <span>{{$t(navItem.name)}}</span>
@@ -279,7 +346,7 @@ const pageNav = ref([
         </div>
         <div class="home-mbContent-nav-content">
           <a :href="service.link" v-for="(service,index) in serviceLists" :key="index" :class="`cmer-fadeIn-${index}`">
-            <img :src="service.imgUrl" alt="">
+            <img :src="service.imgUrl" :alt="service.alt" :title="service.alt">
             <span>{{$t(service.des)}}</span>
           </a>
         </div>
@@ -287,16 +354,16 @@ const pageNav = ref([
       <div class="home-mbContent-box" :class="{'home-mbContent-box-en': locale === 'en'}">
         <div class="partTwo">
 			  	<div class="partTwo-in">
-			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInLeft-1"></div>
+			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg" title="希瑪眼科中心_上市眼科中心"
+			  			alt="希瑪眼科中心_上市眼科中心" class="cmer-fadeInLeft-1"></div>
 			  		<div class="partTwo-in-text">
 			  			<div class="cmer-fadeInUp-1">{{$t("pages.index.contentBox.s1_1")}}</div>
 			  			<div class="cmer-fadeInUp-2">{{$t("pages.index.contentBox.s1_2")}}</div>
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
-			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/b727a18986eee34a.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInRight-1"></div>
+			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/b727a18986eee34a.jpg" title="希瑪眼科中心_眼科醫生團隊"
+			  			alt="希瑪眼科中心_眼科醫生團隊" class="cmer-fadeInRight-1"></div>
 			  		<div class="partTwo-in-text">
 			  			<div class="cmer-fadeInUp-3">{{$t("pages.index.contentBox.s2_1")}}</div>
 			  			<div class="cmer-fadeInUp-4">{{$t("pages.index.contentBox.s2_2")}}</div>
@@ -304,10 +371,10 @@ const pageNav = ref([
 			  	</div>
 			  	<div class="partTwo-in">
 			  		<div class="partTwo-in-image">
-			  			<img src="https://static.cmereye.com/imgs/2023/11/10e2463581fde672.png" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInLeft-2">
-			  			<img src="https://static.cmereye.com/imgs/2023/11/b1571356e3fdc9b3.png" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-bounceIn">
+			  			<img src="https://static.cmereye.com/imgs/2023/11/10e2463581fde672.png" title="希瑪眼科中心_眼科診所"
+			  			alt="希瑪眼科中心_眼科診所" class="cmer-fadeInLeft-2">
+			  			<img src="https://static.cmereye.com/imgs/2023/11/b1571356e3fdc9b3.png" title="希瑪眼科中心_眼科診所"
+			  			alt="希瑪眼科中心_眼科診所" class="cmer-bounceIn">
 			  		</div>
 			  		<div class="partTwo-in-text">
 			  			<div class="cmer-fadeInUp-5" data-wow-delay="1s">{{$t("pages.index.contentBox.s3_1")}}</div>
@@ -315,8 +382,8 @@ const pageNav = ref([
 			  		</div>
 			  	</div>
 			  	<div class="partTwo-in">
-			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg" title="希瑪林順潮眼科中心_上市眼科診所"
-			  			alt="希瑪林順潮眼科中心_上市眼科診所" class="cmer-fadeInRight-2" data-wow-delay=".5s"></div>
+			  		<div class="partTwo-in-image"><img src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg" title="希瑪眼科中心_眼科診所推薦"
+			  			alt="希瑪眼科中心_眼科診所推薦" class="cmer-fadeInRight-2" data-wow-delay=".5s"></div>
 			  		<div class="partTwo-in-text">
 			  			<div class="cmer-fadeInUp-7" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_1")}}</div>
 			  			<div class="cmer-fadeInUp-8" data-wow-delay="1s">{{$t("pages.index.contentBox.s4_2")}}</div>
@@ -328,7 +395,7 @@ const pageNav = ref([
         <div>
 			  	<div class="indexContext_1">
 			  		<div class="indexContext_1-image cmer-fadeInRight-3">
-			  			<img src="https://static.cmereye.com/imgs/2023/11/d9ed93444cd110d2.jpg" alt="">
+			  			<img src="https://static.cmereye.com/imgs/2023/11/d9ed93444cd110d2.jpg" alt="希瑪眼科中心_國際醫療技術" title="希瑪眼科中心_國際醫療技術">
 			  		</div>
 			  		<div class="indexContext_1-text cmer-fadeInUp-9">
 			  			<h2>
@@ -342,7 +409,7 @@ const pageNav = ref([
 			  <div>
 			  	<div class="indexContext_2">
 			  		<div class="indexContext_2-image cmer-fadeInLeft-3">
-			  			<img src="https://static.cmereye.com/imgs/2023/11/f82b7514325c896f.jpg" alt="">
+			  			<img src="https://static.cmereye.com/imgs/2023/11/f82b7514325c896f.jpg" alt="香港希瑪國際眼科醫療集團" title="香港希瑪國際眼科醫療集團">
 			  		</div>
 			  		<div class="indexContext_2-text">
 			  			<h2 class="cmer-fadeInUp">
@@ -404,7 +471,19 @@ const pageNav = ref([
 <style lang="scss" scoped>
 @media (min-width: 768px) {
   .mbHomeSwiper{
-    display: none;
+    // display: none;
+    
+    // margin-top: 78px;
+    // display: block;
+    width: 100%;
+    margin: 0 auto;
+    .slideBox{
+      img{
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
+    }
   }
 .home-mbContent{
   width: 100%;

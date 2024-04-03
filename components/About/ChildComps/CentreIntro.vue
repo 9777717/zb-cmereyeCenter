@@ -6,46 +6,174 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 // 眼科中心
 const eyeCenterImgList = [
-  'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/2.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/1.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/4.jpg',
-  'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/5.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/7.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/8.jpg',
-  'https://hkcmereye.com/template/default/picture/centre_introduction/9.jpg',
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
+    alt: '希瑪眼科中心_將軍澳診所接待區',
+    title: '希瑪眼科中心_將軍澳診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/2.jpg',
+    alt: '希瑪眼科中心_觀塘診所明亮寬敞的接待區',
+    title: '希瑪眼科中心_觀塘診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/1.jpg',
+    alt: '希瑪眼科中心_觀塘診所接待區環境',
+    title: '希瑪眼科中心_觀塘診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
+    alt: '希瑪眼科中心_尖沙咀診所座落維多利亞海旁的候診區',
+    title: '希瑪眼科中心_尖沙咀診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/4.jpg',
+    alt: '希瑪眼科中心_尖沙咀診所舒適寬敞的候診區',
+    title: '希瑪眼科中心_尖沙咀診所'
+  },
+  {
+    img: 'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
+    alt: '希瑪眼科中心_將軍澳診所入口',
+    title: '希瑪眼科中心_將軍澳診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/5.jpg',
+    alt: '希瑪眼科中心_眼科診所候診區',
+    title: '希瑪眼科中心_眼科診所'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
+    alt: '希瑪眼科中心提供舒適的眼科檢查環境',
+    title: '希瑪眼科中心_眼科檢查'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/7.jpg',
+    alt: '希瑪眼科中心配備高端的眼科檢查儀器',
+    title: '希瑪眼科中心_眼科檢查儀器'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/8.jpg',
+    alt: '希瑪眼科中心提供優質的眼科檢查服務',
+    title: '希瑪眼科中心_眼科檢查服務'
+  },
+  {
+    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/9.jpg',
+    alt: '希瑪眼科中心_中環診所配備先進的眼科檢查儀器',
+    title: '希瑪眼科中心_中環診所_眼科檢查儀器'
+  },
 ]
 
 // 微笑
 const smileImgList = [
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03653.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03624-1024x682.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03921.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03907.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03680.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03600.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03741.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03809-2.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03735.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03692-2.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03998.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03949.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03977.jpg',
-  'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03968.jpg',
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03653.jpg',
+    alt:'希瑪微笑矯視中心',
+    title: '希瑪微笑矯視中心'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03624-1024x682.jpg',
+    alt:'希瑪微笑矯視中心配備先進的驗眼儀器',
+    title: '希瑪微笑矯視中心_驗眼儀器'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03921.jpg',
+    alt:'希瑪微笑矯視中心配備先進的眼科檢查儀器',
+    title: '希瑪微笑矯視中心_眼科檢查儀器'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03907.jpg',
+    alt:'希瑪微笑矯視中心配備高端的眼科檢查儀器',
+    title: '希瑪微笑矯視中心_眼科檢查儀器'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03680.jpg',
+    alt:'希瑪微笑矯視中心配備高端的驗眼儀器',
+    title: '希瑪微笑矯視中心_驗眼儀器'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03600.jpg',
+    alt:'希瑪微笑矯視中心_中環診所舒適的候診區',
+    title: '希瑪微笑矯視中心_中環診所'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03741.jpg',
+    alt:'希瑪微笑矯視中心_中環診所明亮舒適的候診區',
+    title: '希瑪微笑矯視中心_中環診所'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03809-2.jpg',
+    alt:'希瑪微笑矯視中心_中環診所走廊與候診區',
+    title: '希瑪微笑矯視中心_中環診所'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03735.jpg',
+    alt:'希瑪微笑矯視中心_中環診所溫馨的燈光設計',
+    title: '希瑪微笑矯視中心_中環診所'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03692-2.jpg',
+    alt:'希瑪微笑矯視中心提供飲用水設施',
+    title: '希瑪微笑矯視中心'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03998.jpg',
+    alt:'希瑪微笑矯視中心_手術中心牌匾',
+    title: '希瑪微笑矯視中心'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03949.jpg',
+    alt:'希瑪微笑矯視中心舒適的接待區',
+    title: '希瑪微笑矯視中心'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03977.jpg',
+    alt:'希瑪微笑矯視中心_眼科診所候診區',
+    title: '希瑪微笑矯視中心_眼科診所'
+  },
+  { 
+    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03968.jpg',
+    alt:'希瑪微笑矯視中心_眼科診所舒適的候診區',
+    title: '希瑪微笑矯視中心_眼科診所'
+  },
 ]
 
 // 视光
 const visionImgList = [
-  'https://www.hkcmereye.com/template/default/picture/mainIntroImg/vision1.jpg',
-  'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v1.png',
-  'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v2.png',
-  'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v3.png',
-  'https://static.cmereye.com/imgs/2023/02/3561eb13d077d63d.jpg',
-  'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
-  'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
+  { 
+    img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/vision1.jpg',
+    alt: '希瑪視光中心_旺角中心環境',
+    title: '希瑪視光中心_旺角診所'
+  },
+  { 
+    img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v1.png',
+    alt: '希瑪視光中心_中環中心舒適的接待區',
+    title: '希瑪視光中心_中環診所'
+  },
+  { 
+    img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v2.png',
+    alt: '希瑪視光中心提供驗配眼鏡服務',
+    title: '希瑪視光中心_配眼鏡'
+  },
+  { 
+    img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/v3.png',
+    alt: '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務',
+    title: '希瑪視光中心_旺角診所_配眼鏡'
+  },
+  { 
+    img: 'https://static.cmereye.com/imgs/2023/02/3561eb13d077d63d.jpg',
+    alt: '希瑪視光中心_將軍澳中心入口及展示窗',
+    title: '希瑪視光中心_將軍澳診所'
+  },
+  { 
+    img: 'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
+    alt: '希瑪視光中心_將軍澳中心的兒童近視控制專區',
+    title: '希瑪視光中心_將軍澳中心_兒童近視控制'
+  },
+  { 
+    img: 'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
+    alt: '希瑪眼科中心配備各種先進的眼科檢查儀器',
+    title: '希瑪眼科中心_眼科檢查儀器'
+  },
 ]
 // 跳转Facebook
 const goFaceBook = (type: string) => {
@@ -129,7 +257,7 @@ const goInstagram = (type: string) => {
             }"
           >
             <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
-              <div class="eyeList"><img :src="slide" /></div>
+              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -178,7 +306,7 @@ const goInstagram = (type: string) => {
             }"
           >
             <SwiperSlide v-for="(slide, idx) in smileImgList" :key="idx">
-              <div class="eyeList"><img :src="slide" /></div>
+              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -219,7 +347,7 @@ const goInstagram = (type: string) => {
             }"
           >
             <SwiperSlide v-for="(slide, idx) in visionImgList" :key="idx">
-              <div class="eyeList"><img :src="slide" /></div>
+              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
             </SwiperSlide>
           </Swiper>
         </div>
@@ -254,11 +382,13 @@ const goInstagram = (type: string) => {
       <div>
         <img
           src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
-          alt=""
+          alt="希瑪眼科中心提供高品質的眼科檢查服務"
+          title="希瑪眼科中心_眼科檢查服務"
         />
         <img
           src="https://static.cmereye.com/imgs/2023/03/13753bf3c5149f9b.png"
-          alt=""
+          alt="希瑪眼科中心_將軍澳診所舒適的接待區"
+          title="希瑪眼科中心_將軍澳診所"
         />
       </div>
       <div>
@@ -268,7 +398,8 @@ const goInstagram = (type: string) => {
         >
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
-            alt=""
+            alt="希瑪眼科中心_小紅書圖標"
+            title="希瑪眼科中心_小紅書"
           />
           {{ $t('pages.about_us.media.media_redbook') }}
         </a>
@@ -278,14 +409,16 @@ const goInstagram = (type: string) => {
         >
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
-            alt=""
+            alt="希瑪眼科中心_YouTube圖標"
+            title="希瑪眼科中心_YouTube"
           />
           {{ $t('pages.about_us.media.media_youtube') }}
         </a>
         <a href="javascript:void(0)" class="isWechat">
           <img
             src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
-            alt=""
+            alt="希瑪眼科中心_微信圖標"
+            title="希瑪眼科中心_微信"
           />
           {{ $t('pages.about_us.media.media_wechat') }}
           <div class="isShow">
@@ -302,13 +435,15 @@ const goInstagram = (type: string) => {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
-            alt=""
+            alt="希瑪視光中心_旺角中心舒適寬敞的接待區"
+            title="希瑪視光中心_旺角診所"
           />
         </div>
         <div @click.stop="getPdf('cmer.pdf',$t('pages.about_us.download.download'))">
           <img
             src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
-            alt=""
+            alt="希瑪眼科中心_業務小冊子"
+            title="希瑪眼科中心"
           />
           <div
             class="downloadpdf"

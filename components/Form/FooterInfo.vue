@@ -42,14 +42,13 @@ const telValidator = (rule: any, value: any, callback: any) => {
 
 const rules = reactive<FormRules>({
   name: [
-    { required: true, message: '請輸入姓名', trigger: 'change' },
-    { min: 3, max: 25, message: '長度應該是3到25', trigger: 'change' },
+    { required: true, message: '請輸入姓名', trigger: 'change' }
   ],
   phone: [{ required: true, validator: telValidator, trigger: 'change' }],
-  email: [
-    { required: true, message: '請輸入電郵地址', trigger: 'change' },
-    { type: 'email', message: '請輸入正確的電子郵件地址', trigger: 'change' },
-  ],
+  // email: [
+  //   { required: true, message: '請輸入電郵地址', trigger: 'change' },
+  //   { type: 'email', message: '請輸入正確的電子郵件地址', trigger: 'change' },
+  // ],
   region: [
     {
       required: true,

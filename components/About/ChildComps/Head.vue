@@ -52,15 +52,15 @@ const leaveActive = () => {
     <div class="imgBox">
       <img
         src="https://static.cmereye.com/imgs/2023/06/8095216b29f693c7.jpg"
-        alt=""
+        title="希瑪眼科中心_觀塘診所" alt="希瑪眼科中心_觀塘診所明亮舒適的接待區"
       />
       <img
         src="https://static.cmereye.com/imgs/2023/05/fcbe60b94457087b.png"
-        alt=""
+        title="希瑪眼科中心_眼科儀器" alt="希瑪眼科中心配備先進的眼科檢查儀器"
       />
       <img
         src="https://static.cmereye.com/imgs/2023/06/d72dad915e01bf72.jpg"
-        alt=""
+        title="希瑪眼科中心_中環診所" alt="希瑪眼科中心_中環診所接待區"
       />
     </div>
     <div class="dow">

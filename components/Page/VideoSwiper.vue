@@ -25,7 +25,7 @@ const goYoutube = (link: string) => {
       :key="index"
     >
       <div class="videoList" @click="goYoutube(item.link)">
-        <div><img :src="item.img" :alt="item.title" /></div>
+        <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
         <div>{{ $t(item.title) }}</div>
         <div>{{ $t(item.text) }}</div>
       </div>

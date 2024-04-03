@@ -365,6 +365,7 @@ onMounted(()=>{
         showboxshadow.value = false
       }
     }else{
+      bgopn.value = 1
       if(!showboxshadow.value){
         showboxshadow.value = true
       }
