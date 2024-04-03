@@ -6,7 +6,7 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead({
   title: `${t('pages.process_cost.cost')} | ${t('pages.process_cost.process')}`,
-  meta(){
+  meta() {
     return [
       {
         hid: 'processAndCostDesc1',
@@ -60,10 +60,15 @@ const scrollHeight = () => {
 
 <template>
   <div class="processAndCostPage">
-    <div :class="['processAndCost']" :style="{
-      'background-position': isShowLanguageBool === true ? '100% 100%' : '100% 0',
-      'background-size': isShowLanguageBool === true ? 'auto 100%' : '100% auto'
-    }">
+    <div
+      :class="['processAndCost']"
+      :style="{
+        'background-position':
+          isShowLanguageBool === true ? '100% 100%' : '100% 0',
+        'background-size':
+          isShowLanguageBool === true ? 'auto 100%' : '100% auto',
+      }"
+    >
       <div>
         <div id="cost">
           <div class="content">
@@ -81,6 +86,41 @@ const scrollHeight = () => {
                 {{ $t('pages.process_cost.cont.cost_h3_2') }}
               </h3>
               <table class="table">
+                <thead>
+                  <tr class="firstRow">
+                    <td colspan="2"></td>
+                    <td class="text-center text-xl">
+                      {{ $t('pages.process_cost.cont.cost_tr22_td1') }}
+                    </td>
+                    <td class="text-center text-xl">
+                      {{ $t('pages.process_cost.cont.cost_tr21_td2') }}
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr23') }}
+                    </td>
+                    <td class="text-center">$1,600</td>
+                    <td class="text-center">$1,300</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr24') }}
+                    </td>
+                    <td class="text-center">$1,000</td>
+                    <td class="text-center">$1,000</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr25') }}
+                    </td>
+                    <td class="text-center">$900</td>
+                    <td class="text-center">$900</td>
+                  </tr>
+                </tbody>
+                <br />
                 <thead>
                   <tr class="firstRow">
                     <td colspan="2"></td>
@@ -104,22 +144,22 @@ const scrollHeight = () => {
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
                     </td>
-                    <td class="text-center">$1000</td>
-                    <td class="text-center">$1,800</td>
+                    <td class="text-center">$1,050</td>
+                    <td class="text-center">$1,850</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
                     </td>
-                    <td class="text-center">$1000</td>
-                    <td class="text-center">$1,800</td>
+                    <td class="text-center">$1,100</td>
+                    <td class="text-center">$1,900</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
                     </td>
-                    <td class="text-center">$1,500</td>
-                    <td class="text-center">$2,600</td>
+                    <td class="text-center">$1,600</td>
+                    <td class="text-center">$2,800</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -137,7 +177,7 @@ const scrollHeight = () => {
                   </tr>
                   <tr>
                     <td colspan="2">
-                      {{$t('pages.process_cost.cont.cost_tr18_td1')}}
+                      {{ $t('pages.process_cost.cont.cost_tr18_td1') }}
                     </td>
                     <td class="text-center">$400</td>
                     <td class="text-center">$650</td>
@@ -153,8 +193,8 @@ const scrollHeight = () => {
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
                     </td>
-                    <td class="text-center">$620</td>
-                    <td class="text-center">$960</td>
+                    <td class="text-center">$600</td>
+                    <td class="text-center">$980</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -217,7 +257,28 @@ const scrollHeight = () => {
                       {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
                     </td>
                     <td class="text-center">/</td>
-                    <td class="text-center">$600/$800</td>
+                    <td class="text-center">$650/$850</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr26') }}
+                    </td>
+                    <td class="text-center">/</td>
+                    <td class="text-center">$500</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr27') }}
+                    </td>
+                    <td class="text-center">/</td>
+                    <td class="text-center">$500</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr28') }}
+                    </td>
+                    <td class="text-center">$20,000/$39,000</td>
+                    <td class="text-center">/</td>
                   </tr>
                   <!-- <tr>
                     <td colspan="2">
@@ -229,10 +290,13 @@ const scrollHeight = () => {
                 </tbody>
               </table>
               <p class="text-center mt-20 mb-4 leading-10">
-                {{ $t('pages.process_cost.cont.cost_p2')}}
-                <span class="font-bold">{{ $t('pages.process_cost.cont.cost_p2_1') }}</span>
+                {{ $t('pages.process_cost.cont.cost_p2') }}
+                <span class="font-bold">{{
+                  $t('pages.process_cost.cont.cost_p2_1')
+                }}</span>
                 {{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p3_1_s')}}<br />
+                {{ $t('pages.process_cost.cont.cost_p2_3') }} <br />
+                {{ $t('pages.process_cost.cont.cost_p3_1_s') }}<br />
                 {{ $t('pages.process_cost.cont.cost_p5') }}
                 {{ $t('pages.process_cost.cont.cost_p4') }}<br />
                 {{ $t('pages.process_cost.cont.cost_p6') }}
@@ -241,24 +305,73 @@ const scrollHeight = () => {
                 {{ $t('pages.process_cost.cont.cost_p7') }}<br />
               </p>
               <div class="ClaimFormBox">
-                <div class="title">{{$t('pages.process_cost.cont.cost_form_title')}}</div>
-                <div><span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_1')}}</span> <span style="text-decoration:underline;">{{$t('pages.process_cost.cont.cost_form_td1_2')}}</span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td2_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td2_2')}}</span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td3_1')}}</span> <span></span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td4_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td4_2')}}</span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td5_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td5_2')}}</span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td6_1')}}</span> <span></span></div>
-                <div><span>{{$t('pages.process_cost.cont.cost_form_td7_1')}}</span> <span>{{$t('pages.process_cost.cont.cost_form_td7_2')}}</span></div>
+                <div class="title">
+                  {{ $t('pages.process_cost.cont.cost_form_title') }}
+                </div>
+                <div>
+                  <span style="text-decoration: underline">{{
+                    $t('pages.process_cost.cont.cost_form_td1_1')
+                  }}</span>
+                  <span style="text-decoration: underline">{{
+                    $t('pages.process_cost.cont.cost_form_td1_2')
+                  }}</span>
+                </div>
+                <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td2_1')
+                  }}</span>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td2_2')
+                  }}</span>
+                </div>
+                <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td3_1')
+                  }}</span>
+                  <span></span>
+                </div>
+                <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td4_1')
+                  }}</span>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td4_2')
+                  }}</span>
+                </div>
+                <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td5_1')
+                  }}</span>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td5_2')
+                  }}</span>
+                </div>
+                <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td6_1')
+                  }}</span>
+                  <span></span>
+                </div>
+                <!-- <div>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td7_1')
+                  }}</span>
+                  <span>{{
+                    $t('pages.process_cost.cont.cost_form_td7_2')
+                  }}</span>
+                </div> -->
               </div>
               <div class="updateBox mt-12 mb-16">
                 {{ $t('pages.process_cost.cont.cost_p10') }}
-                <!-- 最後更新: 01/12/2023 -->
+                <!-- 最後更新: 01/04/2023 -->
               </div>
             </div>
           </div>
         </div>
         <div id="processed" ref="processBox">
-          <div class="processMain mainCon relative flex items-start justify-center">
+          <div
+            class="processMain mainCon relative flex items-start justify-center"
+          >
             <div class="content relative">
               <div class="titleBox">
                 <h1 class="text-3xl font-normal">
@@ -266,7 +379,10 @@ const scrollHeight = () => {
                 </h1>
                 <h2>Outpatient Services</h2>
               </div>
-              <div class="py-10 px-8 mt-12 mb-40" :class="{'process-en':locale === 'en'}">
+              <div
+                class="py-10 px-8 mt-12 mb-40"
+                :class="{ 'process-en': locale === 'en' }"
+              >
                 <div class="processItem mb-20">
                   <p>{{ $t('pages.process_cost.process_1.process_p1') }}</p>
                 </div>
@@ -277,7 +393,8 @@ const scrollHeight = () => {
                       {{ $t('pages.process_cost.process_1.process_h3_1') }}
                     </h3>
                     <p>
-                      {{ $t('pages.process_cost.process_1.process_p3_1') }}<br />
+                      {{ $t('pages.process_cost.process_1.process_p3_1')
+                      }}<br />
                       {{ $t('pages.process_cost.process_1.process_p3_2') }}
                     </p>
                   </div>
@@ -289,8 +406,10 @@ const scrollHeight = () => {
                       {{ $t('pages.process_cost.process_1.process_h3_2') }}
                     </h3>
                     <p>
-                      {{ $t('pages.process_cost.process_1.process_p5_1') }}<br />
-                      {{ $t('pages.process_cost.process_1.process_p5_2') }}<br />
+                      {{ $t('pages.process_cost.process_1.process_p5_1')
+                      }}<br />
+                      {{ $t('pages.process_cost.process_1.process_p5_2')
+                      }}<br />
                       {{ $t('pages.process_cost.process_1.process_p5_3') }}
                     </p>
                   </div>
@@ -316,7 +435,6 @@ const scrollHeight = () => {
         </div>
       </div>
       <PageInformation :service-navigation="serviceNavigation" />
-
     </div>
     <PageFooterMenu />
   </div>
@@ -328,9 +446,10 @@ const scrollHeight = () => {
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;
-  background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')no-repeat;
+  background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')
+    no-repeat;
 }
-.processAndCost>div:nth-child(1) {
+.processAndCost > div:nth-child(1) {
   max-width: 1080px;
   margin: auto;
 }
@@ -398,8 +517,8 @@ const scrollHeight = () => {
           text-align: left;
         }
       }
-      &>tr:nth-child(17) {
-        &>td:nth-child(2) {
+      & > tr:nth-child(17) {
+        & > td:nth-child(2) {
           // text-align: left;
         }
       }
@@ -509,25 +628,25 @@ const scrollHeight = () => {
       width: 25px;
       height: 55px;
     }
-    &>p,
-    &>div {
+    & > p,
+    & > div {
       padding: 10px 20px;
       background: #5376d0;
       display: inline-block;
       color: #fff;
     }
-    &>p {
+    & > p {
       margin-right: 100px;
       width: 200px;
     }
-    &>div {
+    & > div {
       width: 500px;
     }
     h3 {
       border-bottom: 1px solid #fff;
     }
   }
-  .itemdes>p:after {
+  .itemdes > p:after {
     position: absolute;
     content: '';
     left: 225px;
@@ -543,15 +662,15 @@ const scrollHeight = () => {
   .processItem6::before {
     display: none;
   }
-  .process-en{
-    .processItem{
-      &:nth-of-type(3){
-        &::before{
+  .process-en {
+    .processItem {
+      &:nth-of-type(3) {
+        &::before {
           transform: translateY(25px);
         }
       }
-      &:nth-of-type(4){
-        &::before{
+      &:nth-of-type(4) {
+        &::before {
           transform: translateY(20px);
         }
       }
@@ -562,34 +681,34 @@ const scrollHeight = () => {
   }
 }
 
-.ClaimFormBox{
+.ClaimFormBox {
   margin: 0 auto;
   width: 100%;
   max-width: 390px;
-  div{
+  div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
-    &.title{
+    &.title {
       margin-bottom: 10px;
       font-weight: 700;
       justify-content: center;
     }
-    span{
-      &:nth-of-type(2){
+    span {
+      &:nth-of-type(2) {
         text-align: right;
       }
     }
   }
 }
-.updateBox{
+.updateBox {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .ClaimFormBox{
-    div{
-      span{
-        &:nth-of-type(2){
+  .ClaimFormBox {
+    div {
+      span {
+        &:nth-of-type(2) {
           min-width: 40%;
         }
       }
@@ -605,7 +724,7 @@ const scrollHeight = () => {
     h2 {
       padding-left: 30px;
       font-size: 18px;
-      letter-spacing: -.05em;
+      letter-spacing: -0.05em;
     }
     h3 {
       font-size: 20px;
@@ -620,7 +739,7 @@ const scrollHeight = () => {
     width: calc(100% - 60px);
     margin: 50px auto;
     padding: 30px 20px 1px;
-    &>h3 {
+    & > h3 {
       font-size: 24px;
       margin-bottom: 15px;
     }
@@ -648,7 +767,7 @@ const scrollHeight = () => {
         }
       }
     }
-    &>p {
+    & > p {
       font-size: 16px;
       line-height: 30px;
     }
@@ -658,7 +777,7 @@ const scrollHeight = () => {
       padding-top: 50px;
       h2 {
         font-size: 18px;
-        letter-spacing: -.05em;
+        letter-spacing: -0.05em;
       }
     }
     .processItem {
@@ -672,26 +791,26 @@ const scrollHeight = () => {
       &:nth-of-type(5):before {
         top: 75px;
       }
-      &>p,
-      &>div {
+      & > p,
+      & > div {
         padding: 7px 0px;
         br {
           display: none;
         }
       }
       &:not(:last-child) {
-        &>div {
+        & > div {
           padding: 7px 10px 16px;
           p {
             text-align: left;
           }
         }
       }
-      &>p {
+      & > p {
         margin-right: 50px;
         width: 100px;
       }
-      &>div {
+      & > div {
         flex: 1;
       }
       h3 {
@@ -699,13 +818,13 @@ const scrollHeight = () => {
         padding-bottom: 0;
       }
     }
-    &>div {
+    & > div {
       width: 100%;
-      &>div:last-child {
+      & > div:last-child {
         margin-top: 0;
       }
     }
-    .itemdes>p:after {
+    .itemdes > p:after {
       left: 110px;
       top: 16px;
       margin: auto 0;
@@ -713,21 +832,22 @@ const scrollHeight = () => {
       height: 1px;
       border-bottom: 2px #5376d0 dotted;
     }
-    .process-en{
-      .processItem{
-        &:nth-of-type(2),&:nth-of-type(3){
+    .process-en {
+      .processItem {
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
           margin-bottom: 30px;
         }
-        p{
+        p {
           font-size: 12px;
         }
-        &:nth-of-type(4){
-          &::before{
+        &:nth-of-type(4) {
+          &::before {
             transform: translateY(20px);
           }
         }
-        &:nth-of-type(5){
-          &::before{
+        &:nth-of-type(5) {
+          &::before {
             transform: translateY(-20px);
           }
         }
@@ -743,7 +863,8 @@ const scrollHeight = () => {
     background-size: 100% auto !important;
   }
   #processed {
-    background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
+    background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
+      no-repeat;
   }
 }
 </style>

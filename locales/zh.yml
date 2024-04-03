@@ -2201,6 +2201,11 @@ pages:
       cost_tr17_td2: 八歲以上
       cost_tr18_td2: 八歲或以下
       cost_tr21_td1: 白內障超聲乳化手術(單焦點人工晶體)
+      cost_tr22_td1: 新症
+      cost_tr21_td2: 覆診
+      cost_tr23: 林順潮醫生
+      cost_tr24: 眼科專科醫生(中環)
+      cost_tr25: 眼科專科醫生(衛星診所)
       cost_p2: 以上價格以
       cost_p2_1: 港幣
       cost_p2_2: 結算

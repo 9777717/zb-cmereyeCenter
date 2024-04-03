@@ -2205,9 +2205,18 @@ pages:
       cost_tr17_td2: 八歲以上
       cost_tr18_td2: 八歲或以下
       cost_tr21_td1: 白內障超聲乳化手術(單焦點人工晶體)
+      cost_tr22_td1: 新症
+      cost_tr21_td2: 覆診
+      cost_tr23: 林順潮醫生
+      cost_tr24: 眼科專科醫生(中環)
+      cost_tr25: 眼科專科醫生(衛星診所)
+      cost_tr26: 激光矯視(SMILE / LASIK) / 植入式隱形眼鏡(ICL) 術前檢查
+      cost_tr27: 散光矯正術前檢查
+      cost_tr28: 白內障超聲乳化手術(單焦點人工晶體) 
       cost_p2: 以上價格以
       cost_p2_1: 港幣
       cost_p2_2: 結算
+      cost_p2_3: '*診金不包括撰寫醫療報告'
       cost_p3_1_s: '*如需索取以上特殊檢查的複本，我們將會收取行政費用' 
       cost_p3: 每份詳細眼睛檢查複本將收取
       cost_p3_1: 行政費
@@ -2218,7 +2227,7 @@ pages:
       cost_p7: ( 以每位醫生的每份報告計算，並以報價為準)。
       cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
       cost_p9: "最後更新: 01/04/2023"
-      cost_p10: "最後更新: 01/12/2023"
+      cost_p10: "最後更新: 01/04/2024"
       cost_form_title: 填寫保險索償申請表
       cost_form_td1_1: 個案
       cost_form_td1_2: 收費
