@@ -161,6 +161,10 @@ defineProps({
   isShowTopTitle: {
     type: Boolean,
     default: false
+  },
+  formbgimg: {
+    type: String,
+    default: 'https://static.cmereye.com/imgs/2024/04/71b31da046e561bc.png'
   }
 })
 
@@ -172,6 +176,7 @@ const disabledDate = (time: Date) => {
 
 <template>
   <div class="form" :style="bg">
+    <img class="formbgimg" :src="formbgimg" alt="">
     <div class="formTopTitle" v-if="isShowTopTitle">
       <div>預約</div>
       <div>BOOKING</div>
@@ -182,6 +187,8 @@ const disabledDate = (time: Date) => {
         <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
       <div>
+      <div>
+        
         <el-form
           ref="ruleFormRef"
           :model="ruleForm"
@@ -255,18 +262,25 @@ const disabledDate = (time: Date) => {
       <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
         {{ $t('components.footerInfo.submitForm') }}
       </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .form {
-  & > div {
+  position: relative;
+  .formbgimg{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+  }
+  & > div{
     background: rgba(0, 0, 0, 0);
     padding-top: 132px;
-    padding-bottom: 100px;
-    width: 845px;
-    margin: auto;
+    padding-bottom: 50px;
+    // width: 845px;
+    margin: auto ; 
 
     & > div:nth-child(1) {
       display: flex;
@@ -286,12 +300,18 @@ const disabledDate = (time: Date) => {
     & > div:nth-child(2) {
       // margin: 0 535px;
       margin-top: 97px;
-
+      width: 100%;
+      max-width: 845px;
+      // margin: 0 ;
+      margin-left: calc(800 / 1920 * 100%);
+      // display: flex;
       :deep(.el-form) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        position: relative;
+        z-index: 1;
       }
 
       :deep(.el-form) {
@@ -322,7 +342,7 @@ const disabledDate = (time: Date) => {
       }
 
       :deep(.el-form-item--default) {
-        margin-bottom: 57px;
+        margin-bottom: 50px;
       }
 
       :deep(.el-form-item__label) {
@@ -432,10 +452,10 @@ const disabledDate = (time: Date) => {
       }
     }
 
-    & > div:nth-child(3) {
+    #submitForm {
       cursor: pointer;
       margin: auto;
-      margin-top: 74px;
+      margin-top: 34px;
 
       font-family: none;
       font-size: 30px;
@@ -450,11 +470,34 @@ const disabledDate = (time: Date) => {
       width: 201px;
       height: 68px;
       border-radius: 34px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .form {
+    .formbgimg{
+      left: calc((100% - 1920px) / 2);
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1460px) {
+  .form {
+    &>div{
+      &>div:nth-child(2){
+        margin-left: auto;
+        margin-right: auto;
+        // width: 60%;
+      }
     }
   }
 }
 @media screen and (max-width: 768px) {
   .form {
+    .formbgimg{
+      display: none;
+    }
     .formTopTitle{
       color: #fff;
       display: flex;
@@ -465,10 +508,14 @@ const disabledDate = (time: Date) => {
       &>div:first-child{
         font-size: 36px;
         display: block;
+        margin-bottom: 10px;
       }
       &>div:last-child{
         font-size: 16px;
         position: relative;
+        text-align: center;
+        margin-top: 0;
+        width: auto;
         &::before{
           content: '';
           width: 0;
@@ -494,6 +541,7 @@ const disabledDate = (time: Date) => {
       }
       & > div:nth-child(2) {
         margin-top: 0;
+        margin-left: 0;
         :deep(.el-form) {
           justify-content: space-around;
         }
@@ -560,7 +608,7 @@ const disabledDate = (time: Date) => {
           padding-left: 5px;
         }
       }
-      & > div:nth-child(3) {
+      #submitForm {
         width: max-content;
         font-size: 20px;
         padding: 0 50px;

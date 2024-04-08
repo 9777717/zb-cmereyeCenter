@@ -213,6 +213,7 @@ const goInstagram = (type: string) => {
       </p>
 
       <div class="mianText" :class="{'enStyle': locale === 'en'}">
+        
         <p>{{ $t('pages.about_us.profile_centent.profile_subjection') }}</p>
         <p>
           {{ $t('pages.about_us.profile_centent.profile_group_start')
@@ -233,7 +234,10 @@ const goInstagram = (type: string) => {
         <p class="color1 font-semibold">
           {{ $t('pages.about_us.profile_centent.profile_group_R') }}
         </p>
-        <p>{{ $t('pages.about_us.profile_centent.profile_group_hema') }}</p>
+        <p>{{ $t('pages.about_us.profile_centent.profile_group_hema') }}
+          <img class="mianImg" src="https://static.cmereye.com/imgs/2024/04/e06af078f24f2d14.png" alt="">
+        </p>
+        
       </div>
     </div>
 
@@ -493,7 +497,7 @@ const goInstagram = (type: string) => {
       margin: 100px auto;
     }
 
-    & > div:nth-child(3) {
+    & > div:nth-of-type(2) {
       width: 100%;
       max-width: 860px;
       margin: 0 auto;
@@ -530,6 +534,11 @@ const goInstagram = (type: string) => {
         letter-spacing: 0.06em;
         text-indent: 45px;
         color: #515151;
+        background: #F6FCFF;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+        position: relative;
+        padding: 20px;
+        border-radius: 13px;
       }
     }
   }
@@ -944,8 +953,22 @@ const goInstagram = (type: string) => {
 .media > div:nth-child(1) > div > img:nth-child(1) {
   left: 40%;
 }
+.mianText{
+  position: relative;
+  .mianImg{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    width: calc(450 / 1080 * 100%);
+  }
+}
 
 @media screen and (max-width: 768px) {
+  .mianText{
+    .mianImg{
+      display: none;
+    }
+  }
   .centreIntro{
     padding-top: 100px;
     margin-top: -100px;

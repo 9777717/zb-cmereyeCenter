@@ -107,7 +107,11 @@ const toTestPage = (_id:string) =>{
       </div>
     </div>
     <div class="eyesight-remark">
-      本網站提供的視力測試只是初步評估測試者的視力，如果您有任何眼睛不適的症狀，應盡快尋求眼科專科醫生檢查及治療。
+      <!-- 本網站提供的視力測試只是初步評估測試者的視力，如果您有任何眼睛不適的症狀，應盡快尋求眼科專科醫生檢查及治療。 -->
+      <div class="eyesight-remark-in">
+        <img srcset="https://static.cmereye.com/imgs/2024/04/76decfbf3c0b2ade.png 768w, https://static.cmereye.com/imgs/2024/04/914738d8159c2150.png" src="https://static.cmereye.com/imgs/2024/04/914738d8159c2150.png" alt="">
+        本網站提供的視力測試只是初步評估測試者的視力，<br>如果您有任何眼睛不適的症狀，<br>應盡快尋求眼科專科醫生檢查及治療。
+      </div>
     </div>
   </div>
   <div class="footerMenuPom">
@@ -200,11 +204,26 @@ const toTestPage = (_id:string) =>{
   &-remark{
     width: 100%;
     max-width: 968px;
-    margin: 0 auto;
+    margin: 50px auto;
     color: #515151;
     font-size: 20px;
     margin-bottom: 300px;
     line-height: 180%;
+    display: flex;
+    justify-content: center;
+    &-in{
+      border: 4px solid #6DC4E2;
+      border-radius: 70px;
+      display: inline-block;
+      text-align: center;
+      padding: 10px 50px 10px 110px;
+      position: relative;
+      &>img{
+        position: absolute;
+        left: -80px;
+        bottom: -15px;
+      }
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -263,7 +282,19 @@ const toTestPage = (_id:string) =>{
     }
     &-remark{
       width: calc(100% - 60px);
-      font-size: 14px;
+      font-size: 12px;
+      margin-top: 200px;
+      line-height: 1.4;
+      &-in{
+        border: 2px solid #6DC4E2;
+        padding: 5px 20px;
+        &>img{
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 100%;
+          z-index: 0;
+        }
+      }
     }
   }
 }

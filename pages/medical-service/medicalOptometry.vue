@@ -93,7 +93,7 @@ const bannerData = {
             </p>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" title="兒童近視控制_視力檢查" alt="男童進行視力檢查以控制近視" srcset="" />
+            <img srcset="https://static.cmereye.com/imgs/2024/04/a813e9765c3198e3.png 768w,https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png" src="https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png" title="兒童近視控制_視力檢查" alt="男童進行視力檢查以控制近視" />
           </div>
         </div>
         <div @click="toVision">
@@ -121,7 +121,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" title="兒童眼睛檢查_眼睛健康" alt="戴眼鏡的女童已接受眼睛檢查以確保眼睛健康" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2024/04/040397402ce701a0.png" title="兒童眼睛檢查_眼睛健康" alt="戴眼鏡的男童已接受眼睛檢查以確保眼睛健康" srcset="" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title2')}}</div>
@@ -281,7 +281,7 @@ const bannerData = {
             <div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/07/143a8a47246f1fb5.png  " alt="" srcset="" />
+                  <img src="https://static.cmereye.com/imgs/2024/04/46f32814f4b5f0da.png" alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
                   {{$t('pages.medical_service.medicalOptometry_con.cause.span2')}}
@@ -425,7 +425,7 @@ const bannerData = {
     <!-- 表单 -->
     <div class="fromTable">
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#bcd09c;'}`" />
+        :co="`color:${'#bcd09c;'}`" :formbgimg="'https://static.cmereye.com/imgs/2024/04/2894df9b213b8a17.png'" />
     </div>
     <PageFooterMenu />
   </div>
