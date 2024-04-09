@@ -952,6 +952,11 @@ const bannerData = {
             margin-top: 40px;
           }
         }
+        &>div:nth-child(2) {
+          img{
+            width: 100%;
+          }
+        }
       }
       &>div:nth-child(2) {
         width: 100%;
