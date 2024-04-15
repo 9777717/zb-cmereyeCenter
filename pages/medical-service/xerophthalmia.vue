@@ -438,6 +438,10 @@ const bannerData = {
             />
           </div>
         </div>
+	      <div class="youtobuvideo">
+	      	<iframe src="https://www.youtube.com/embed/8e3lfr0VpJg?si=TBkLEuj20BQjTJ0K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	      	<iframe src="https://www.youtube.com/embed/fGC7YH8IG90?si=gqkd5NJ3dV0oOOdP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	      </div>
         <!-- 乾眼症成因 -->
         <div id="factor">
           <div>{{$t('pages.medical_service.xerophthalmia_con.factor.name')}}</div>
@@ -938,7 +942,7 @@ const bannerData = {
       // }
     }
   }
-  &>div:nth-child(3) {
+  &>div:nth-child(4) {
     margin-top: 117px;
     &>div:nth-child(1) {
       text-align: center;
@@ -1113,7 +1117,7 @@ const bannerData = {
     }
   }
 
-  &>div:nth-child(4) {
+  &>div:nth-child(5) {
     margin-top: 180px;
 
     &>div:nth-child(1) {
@@ -1215,7 +1219,7 @@ const bannerData = {
     }
   }
 
-  &>div:nth-child(5) {
+  &>div:nth-child(6) {
     &>div:nth-child(1) {
       text-align: center;
       margin-top: 170px;
@@ -1309,7 +1313,7 @@ const bannerData = {
     }
   }
 
-  &>div:nth-child(6) {
+  &>div:nth-child(7) {
     margin-top: 154px;
 
     &>div:nth-child(1) {
@@ -1622,7 +1626,7 @@ const bannerData = {
     }
   }
 
-  &>div:nth-child(7) {
+  &>div:nth-child(8) {
     margin-top: 182px;
 
     &>div:nth-child(1) {
@@ -2041,7 +2045,7 @@ const bannerData = {
     }
   }
   // 預防乾眼症
-  &>div:nth-child(8) {
+  &>div:nth-child(9) {
     margin-top: 180px;
 
     &>div:nth-child(1) {
@@ -2122,7 +2126,7 @@ const bannerData = {
         }
       }
     }
-    &>div:nth-child(3) {
+    &>div:nth-child(4) {
       &>div:nth-child(3) {
         &>div{
           &>div:nth-child(2) {
@@ -2131,7 +2135,7 @@ const bannerData = {
         }
       }
     }
-    &>div:nth-child(5) {
+    &>div:nth-child(6) {
       &>div:nth-child(2) {
         &>div{
           height: auto;
@@ -2139,7 +2143,7 @@ const bannerData = {
         }
       }
     }
-    &>div:nth-child(6) {
+    &>div:nth-child(7) {
       &>div:nth-child(2) {
         &>div:nth-child(5) {
           margin-top: 60px;
@@ -2163,7 +2167,7 @@ const bannerData = {
         }
       }
     }
-    &>div:nth-child(7) {
+    &>div:nth-child(8) {
       &>div:nth-child(3) {
         &>div:nth-child(8) {
           margin-top: 150px;
@@ -2251,6 +2255,28 @@ const bannerData = {
     }
   }
 }
+.youtobuvideo{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	width: 100%;
+	margin: 100px auto 0;
+	iframe{
+		width: 45%;
+		max-width: 100%;
+		height: 315px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.youtobuvideo{
+		flex-direction: column;
+		iframe{
+			width: 100%;
+			margin-bottom: 30px;
+			height: calc( 315 / 516 * 100vw);
+		}
+	}
+}
 @keyframes bgposition {
     0% {
         transform: translate(30%, 30%);
@@ -2304,6 +2330,8 @@ const bannerData = {
     }
   }
 }
+
+//所有此类型样式：--"&>div:nth-child(n)"--;为账号9777777开发者所写,修改者不负任何责任
 
 @media screen and (max-width: 768px) {
   .xeroheader {
@@ -2462,7 +2490,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(3) {
+    &>div:nth-child(4) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -2582,7 +2610,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(4) {
+    &>div:nth-child(5) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -2636,7 +2664,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(5) {
+    &>div:nth-child(6) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -2678,7 +2706,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(6) {
+    &>div:nth-child(7) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -2931,7 +2959,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(7) {
+    &>div:nth-child(8) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -3169,7 +3197,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(8) {
+    &>div:nth-child(9) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -3202,7 +3230,7 @@ min-width: 15px;
       }
     }
     &.xerophthalmia-en{
-    &>div:nth-child(3) {
+    &>div:nth-child(4) {
       &>div:nth-child(3) {
         &>div{
           &>div:nth-child(2) {
@@ -3220,7 +3248,7 @@ min-width: 15px;
         }
       }
     }
-    &>div:nth-child(4){
+    &>div:nth-child(5){
       &>div:nth-child(3){
         max-width: 100%;
         line-height: 1.2;
@@ -3231,7 +3259,7 @@ min-width: 15px;
         }
       }
     }
-    &>div:nth-child(5) {
+    &>div:nth-child(6) {
       &>div:nth-child(2) {
         &>div{
           padding-bottom: 0px;
@@ -3241,12 +3269,12 @@ min-width: 15px;
         padding: 0 10px;
       }
     }
-    &>div:nth-child(6) {
+    &>div:nth-child(7) {
       &>div:nth-child(3) {
         padding: 0 10px;
       }
     }
-    &>div:nth-child(7) {
+    &>div:nth-child(8) {
       &>div:nth-child(3) {
         &>div:nth-child(5){
           &>div:nth-child(2){
