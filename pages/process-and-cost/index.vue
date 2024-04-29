@@ -61,7 +61,9 @@ const processedLists:any = [
     img: 'https://static.cmereye.com/imgs/2024/03/1c9bdc439e10d0a7.png',
     name: ['pages.process_cost.process_1.process_p1'],
     nameb: '',
-    texts: []
+    texts: [],
+    img_alt: '病人登記',
+    img_title: '登記'
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/b5ea6eeffceb0e02.png',
@@ -76,7 +78,9 @@ const processedLists:any = [
         type: 'color',
         text: 'pages.process_cost.process_1.process_p3_4'
       }
-    ]
+    ],
+    img_alt: '基本眼睛檢查',
+    img_title: '基本眼睛檢查'
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/b5986c511653d126.png',
@@ -91,25 +95,33 @@ const processedLists:any = [
         type: 'color',
         text: 'pages.process_cost.process_1.process_p5_5'
       }
-    ]
+    ],
+    img_alt: '眼科醫生診症',
+    img_title: '醫生診斷'
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/7b1d0695e319a85a.png',
     name: ['pages.process_cost.process_1.process_p6'],
     nameb: '',
-    texts: []
+    texts: [],
+    img_alt: '詳細眼睛檢查',
+    img_title: '詳細眼睛檢查'
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/2c22d648c273a2fe.png',
     name: ['pages.process_cost.process_1.process_p7_3'],
     nameb: '',
-    texts: []
+    texts: [],
+    img_alt: '眼科手術',
+    img_title: '眼科手術'
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/edc13bc571afe68a.png',
     name: ['pages.process_cost.process_1.process_p8_1','pages.process_cost.process_1.process_p8_2','pages.process_cost.process_1.process_p9'],
     nameb: '',
-    texts: []
+    texts: [],
+    img_alt: '繳費及取藥',
+    img_title: '繳費_取藥'
   },
 
 ]
@@ -440,7 +452,7 @@ const processedLists:any = [
               <div class="processed-in pcpocessBox">
                 <div class="lists">
                   <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists" :key="processedIndex">
-                    <img :src="processedItem.img" alt="">
+                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
                     <div class="name">
                       <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
                         {{$t(nameItem)}}
@@ -456,7 +468,7 @@ const processedLists:any = [
               <div class="processed-in mbpocessBox">
                 <div class="lists" :class="{'lists-en':locale === 'en'}">
                   <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any ) => index % 2 === 0)" :key="processedIndex">
-                    <img :src="processedItem.img" alt="">
+                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
                     <div class="name">
                       <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
                         {{$t(nameItem)}}
@@ -470,7 +482,7 @@ const processedLists:any = [
                 </div>
                 <div class="lists" :class="{'lists-en':locale === 'en'}">
                   <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any) => index % 2 !== 0)" :key="processedIndex">
-                    <img :src="processedItem.img" alt="">
+                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
                     <div class="name">
                       <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
                         {{$t(nameItem)}}

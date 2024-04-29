@@ -28,7 +28,7 @@ useHead(() => ({
       <div>
         <img
           src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
-          alt="加入我們，攜手未來"
+          title="醫護團隊" alt="醫護團隊享受廣闊視野"
         />
       </div>
       <div>
@@ -82,15 +82,15 @@ useHead(() => ({
       <div class="imgBox">
         <img
           src="https://static.cmereye.com/imgs/2023/02/833b5617b3c72216.png"
-          alt=""
+          title="驗眼服務" alt="一位年輕女生遮蓋單眼享受驗眼服務"
           class="right1"
         />
         <img
           src="https://static.cmereye.com/imgs/2023/02/f7e9031c1b6f047d.png"
-          alt=""
+          title="醫護團隊" alt="醫護團隊微笑展望未來"
           class="right2"
         />
-        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
+        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" title="希瑪眼科中心_開心工作間2022" alt="希瑪眼科中心_開心工作間2022標章">
       </div>
     </div>
     <PageFooterMenu />
