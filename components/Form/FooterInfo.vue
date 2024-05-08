@@ -278,7 +278,7 @@ const disabledDate = (time: Date) => {
   }
   & > div{
     background: rgba(0, 0, 0, 0);
-    padding-top: 132px;
+    padding-top: 60px;
     padding-bottom: 50px;
     // width: 845px;
     margin: auto ; 
@@ -300,7 +300,7 @@ const disabledDate = (time: Date) => {
 
     & > div:nth-child(2) {
       // margin: 0 535px;
-      margin-top: 97px;
+      margin-top: 60px;
       width: 100%;
       max-width: 845px;
       // margin: 0 ;
@@ -479,7 +479,7 @@ const disabledDate = (time: Date) => {
 @media screen and (min-width: 1920px) {
   .form {
     .formbgimg{
-      left: calc((100% - 1920px) / 2 + (1920px / 100 * 7));
+      left: calc((100% - 1920px) / 2 + (1920px / 100));
     }
   }
 }
