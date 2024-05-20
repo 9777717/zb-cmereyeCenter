@@ -256,7 +256,7 @@ pages:
         doctor_1_education:
           doctor_1_education_1: MBBS (HK)
           doctor_1_education_2: FHKAM (Ophthalmology)
-          doctor_1_education_3: FCOphth HK
+          doctor_1_education_3: FCOphthHK
           doctor_1_education_4: FRCSEd (Ophth)
           doctor_1_education_5: FRCOphth (UK)
           doctor_1_education_6: MD (CUHK)
@@ -266,7 +266,7 @@ pages:
         doctor_2_education:
           doctor_2_education_1: MBChB (CUHK)
           doctor_2_education_2: FHKAM (Ophthalmology)
-          doctor_2_education_3: FCOphth HK
+          doctor_2_education_3: FCOphthHK
           doctor_2_education_4: FRCS (Edinburgh)
           doctor_2_education_5: FCSHK
           doctor_2_education_6: MSc Epidemiology & Biostatistics (CUHK)
@@ -277,7 +277,7 @@ pages:
         doctor_3_education:
           doctor_3_education_1: MBBS (HK)
           doctor_3_education_2: FHKAM (Ophthalmology)
-          doctor_3_education_3: FCOphth HK
+          doctor_3_education_3: FCOphthHK
           doctor_3_education_4: FRCSEd (Ophth)
           doctor_3_education_5: FRCOphth (UK)
           doctor_3_education_6: MMed (Ophth) (Singapore)
@@ -287,7 +287,7 @@ pages:
         doctor_4_education:
           doctor_4_education_1: MBBS (HK)
           doctor_4_education_2: FHKAM (Ophthalmology)
-          doctor_4_education_3: FCOphth HK
+          doctor_4_education_3: FCOphthHK
           doctor_4_education_4: MRCSEd
           doctor_4_education_5: FRCS (Glasgow)
       doctor_5:
@@ -296,7 +296,7 @@ pages:
         doctor_5_education:
           doctor_5_education_1: MBBS (HK)
           doctor_5_education_2: FHKAM (Ophthalmology)
-          doctor_5_education_3: FCOphth HK
+          doctor_5_education_3: FCOphthHK
           doctor_5_education_4: MRCSEd
           doctor_5_education_5: MMedSc (HK)
           doctor_5_education_6: Diploma in Child Health (USYD)
@@ -307,7 +307,7 @@ pages:
           doctor_6_education_1: MBBS (HK)
           doctor_6_education_2: FRCOphth (UK)
           doctor_6_education_3: FHKAM (Ophthalmology)
-          doctor_6_education_4: FCOphth HK
+          doctor_6_education_4: FCOphthHK
           doctor_6_education_5: FRCSEd (Ophth)
           doctor_6_education_6: MRCSEd
           doctor_6_education_7: FRCS (Glasg)
@@ -316,7 +316,7 @@ pages:
         doctor_7_en_name: Dr. Jackey Yau
         doctor_7_education:
           doctor_7_education_1: MBChB (CUHK)
-          doctor_7_education_2: FCOphth HK
+          doctor_7_education_2: FCOphthHK
           doctor_7_education_3: MRCSEd
           doctor_7_education_4: FHKAM (Ophthalmology)
       doctor_8:
@@ -326,7 +326,7 @@ pages:
           doctor_8_education_1: MBBS (HK)
           doctor_8_education_2: FRCSEd (Ophth)
           doctor_8_education_3: FHKAM (Ophthalmology)
-          doctor_8_education_4: FCOphth HK
+          doctor_8_education_4: FCOphthHK
           doctor_8_education_5: MRCSEd
           doctor_8_education_6: MPH (HK)
       doctor_9:
@@ -336,13 +336,13 @@ pages:
           doctor_9_education_1: MBChB (CUHK)
           doctor_9_education_2: FRCSEd
           doctor_9_education_3: FHKAM (Ophth)
-          doctor_9_education_4: FCOphth HK
+          doctor_9_education_4: FCOphthHK
       doctor_10:
         doctor_10_name: DR. LI SIU HUNG, PATRICK
         doctor_10_en_name: Dr. Patrick Li
         doctor_10_education:
           doctor_10_education_1: MBChB (CUHK)
-          doctor_10_education_2: FCOphth HK
+          doctor_10_education_2: FCOphthHK
           doctor_10_education_3: FHKAM (Ophthalmology)
           doctor_10_education_4: FRCSEd (Ophth)
           doctor_10_education_5: FRCS (Glasgow)
@@ -354,7 +354,7 @@ pages:
         doctor_11_en_name: Dr. Kenny Lai
         doctor_11_education:
           doctor_11_education_1: MBChB (CUHK)
-          doctor_11_education_2: FCOphth HK
+          doctor_11_education_2: FCOphthHK
           doctor_11_education_3: FHKAM (Ophthalmology)
           doctor_11_education_4: MRCSEd (Ophth)
       doctor_12:
@@ -363,7 +363,7 @@ pages:
         doctor_12_education:
           doctor_12_education_1: MBBS (HK)
           doctor_12_education_2: MRCSEd
-          doctor_12_education_3: FCOphth HK
+          doctor_12_education_3: FCOphthHK
           doctor_12_education_4: FHKAM (Ophthalmology)
       doctor_13:
         doctor_13_name: DR. WONG LAI MAN, RAYMOND
@@ -371,14 +371,14 @@ pages:
         doctor_13_education:
           doctor_13_education_1: MBBS (HK)
           doctor_13_education_2: MRCSEd (Ophthalmology)
-          doctor_13_education_3: FCOphth HK
+          doctor_13_education_3: FCOphthHK
           doctor_13_education_4: FHKAM (Ophthalmology)
       doctor_14:
         doctor_14_name: DR. CHEUNG JING CHEE, JANICE
         doctor_14_en_name: Dr. Janice Cheung
         doctor_14_education:
           doctor_14_education_1: MBBS (HK)
-          doctor_14_education_2: FCOphth HK
+          doctor_14_education_2: FCOphthHK
           doctor_14_education_3: FHKAM (Ophthalmology)
           doctor_14_education_4: FRCSEd (Ophth)
           doctor_14_education_5: FRCS (Glasgow)
@@ -389,7 +389,7 @@ pages:
         doctor_15_education:
           doctor_15_education_1: MBChB (CUHK)
           doctor_15_education_2: MRCSEd
-          doctor_15_education_3: FCOphth HK
+          doctor_15_education_3: FCOphthHK
           doctor_15_education_4: FHKAM (Ophthalmology)
       doctor_16:
         doctor_16_name: DR. LAM KEE MING, JASMINE
@@ -398,7 +398,7 @@ pages:
           doctor_16_education_1: MBBS (HK)
           doctor_16_education_2: MRCSEd
           doctor_16_education_3: FHKAM (Ophthalmology)
-          doctor_16_education_4: FCOphth HK
+          doctor_16_education_4: FCOphthHK
       doctor_17:
         doctor_17_name: DR. CHEUNG MING KUEN, PAUL
         doctor_17_en_name: Dr. Paul Cheung
@@ -406,7 +406,7 @@ pages:
           doctor_17_education_1: MBBS (HK)
           doctor_17_education_2: DO(IREL)
           doctor_17_education_3: DO(GLAS)
-          doctor_17_education_4: FCOphth HK
+          doctor_17_education_4: FCOphthHK
           doctor_17_education_5: FHKAM(Ophthalmology)
       doctor_18:
         doctor_18_name: DR. CHAN WAI LOK, LEO
@@ -414,7 +414,7 @@ pages:
         doctor_18_education:
           doctor_18_education_1: MBBS (HK)
           doctor_18_education_2: MRCSEd (Ophthalmology)
-          doctor_18_education_3: FCOphth HK
+          doctor_18_education_3: FCOphthHK
           doctor_18_education_4: FHKAM (Ophthalmology)
           doctor_18_education_5: MScHSM (CUHK)
       doctor_19:
@@ -432,7 +432,7 @@ pages:
         doctor_20_education:
           doctor_20_education_1: MBBS(HK)
           doctor_20_education_2: MRCS(Ed) 
-          doctor_20_education_3: FCOphth HK
+          doctor_20_education_3: FCOphthHK
           doctor_20_education_4: FHKAM(Ophthalmology)
       doctor_21:
         doctor_21_name: DR. WAN HO NAM, KELVIN
@@ -442,7 +442,7 @@ pages:
           doctor_21_education_2: MRCS (Ed)
           doctor_21_education_3: MRCS (Eng)
           doctor_21_education_4: MRCS (Glasg)
-          doctor_21_education_5: FCOphth HK
+          doctor_21_education_5: FCOphthHK
           doctor_21_education_6: FHKAM (Ophthalmology)
       doctor_22:
         doctor_22_name: DR. CHOW LOK WAN, LORAINE
@@ -451,7 +451,7 @@ pages:
           doctor_22_education_1: MBBS(HK)
           doctor_22_education_2: MRCS(Ed) 
           doctor_22_education_3: FHKAM(Ophthalmology)
-          doctor_22_education_4: FCOphth HK
+          doctor_22_education_4: FCOphthHK
       doctor_23:
         doctor_23_name: DR. CHAN DING NAI, DYLAN
         doctor_23_en_name: Dr. Dylan Chan
@@ -459,7 +459,7 @@ pages:
           doctor_23_education_1: MBChB (CUHK)
           doctor_23_education_2: FRCS (Glasg) 
           doctor_23_education_3: FCSHK
-          doctor_23_education_4: FCOphth HK
+          doctor_23_education_4: FCOphthHK
           doctor_23_education_5: FHKAM (Ophthalmology)
     doctor_edu: education
     doctor_order: Booking
