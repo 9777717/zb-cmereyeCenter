@@ -41,7 +41,7 @@ const homeSwiperImgs = [
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
-    title: ['香港上市公司 11間眼科診所'],
+    title: ['香港上市公司 10間眼科診所'],
     text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
     link: '/about-us',
     alt: '希瑪眼科中心_眼科診所_眼科醫生',
@@ -96,8 +96,8 @@ const homeBannerLists = [
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
-    img_alt: '香港上市公司11間眼科診所',
-    img_title: '香港上市公司11間眼科診所'
+    img_alt: '香港上市公司10間眼科診所',
+    img_title: '香港上市公司10間眼科診所'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/ffa79247ba7914b8.jpg',

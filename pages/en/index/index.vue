@@ -33,7 +33,7 @@ const homeSwiperImgs = [
   {
     hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
-    title: ['香港上市公司 11間眼科診所'],
+    title: ['香港上市公司 10間眼科診所'],
     text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
     link: '/about-us'
   },
