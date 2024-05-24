@@ -174,27 +174,27 @@ const addressList = [
       'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_regionName',
     id: 'kln',
     addressDetailList: [
-      {
-        addressImg:
-          'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-        addressName:
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
-        addressDetail:
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressDetail',
-        subwayExit: [
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit1',
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit2',
-        ],
-        contactNumber: '+852 3956 2025',
-        clinicHours: [
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
-          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
-        ],
-        googleMaps: 'https://goo.gl/maps/TTtTUsyEVhXdN8Ar5',
-        alt: '希瑪眼科中心_尖沙咀診所明亮舒適的接待區',
-        title: '希瑪眼科中心_尖沙咀診所'
-      },
+      // {
+      //   addressImg:
+      //     'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
+      //   addressName:
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
+      //   addressDetail:
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressDetail',
+      //   subwayExit: [
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit1',
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit2',
+      //   ],
+      //   contactNumber: '+852 3956 2025',
+      //   clinicHours: [
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
+      //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
+      //   ],
+      //   googleMaps: 'https://goo.gl/maps/TTtTUsyEVhXdN8Ar5',
+      //   alt: '希瑪眼科中心_尖沙咀診所明亮舒適的接待區',
+      //   title: '希瑪眼科中心_尖沙咀診所'
+      // },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
