@@ -21,16 +21,16 @@ const eyeCenterImgList = [
     alt: '希瑪眼科中心_觀塘診所接待區環境',
     title: '希瑪眼科中心_觀塘診所'
   },
-  {
-    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
-    alt: '希瑪眼科中心_尖沙咀診所座落維多利亞海旁的候診區',
-    title: '希瑪眼科中心_尖沙咀診所'
-  },
-  {
-    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/4.jpg',
-    alt: '希瑪眼科中心_尖沙咀診所舒適寬敞的候診區',
-    title: '希瑪眼科中心_尖沙咀診所'
-  },
+  // {
+  //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
+  //   alt: '希瑪眼科中心_尖沙咀診所座落維多利亞海旁的候診區',
+  //   title: '希瑪眼科中心_尖沙咀診所'
+  // },
+  // {
+  //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/4.jpg',
+  //   alt: '希瑪眼科中心_尖沙咀診所舒適寬敞的候診區',
+  //   title: '希瑪眼科中心_尖沙咀診所'
+  // },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
     alt: '希瑪眼科中心_將軍澳診所入口',
@@ -41,11 +41,11 @@ const eyeCenterImgList = [
     alt: '希瑪眼科中心_眼科診所候診區',
     title: '希瑪眼科中心_眼科診所'
   },
-  {
-    img: 'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
-    alt: '希瑪眼科中心提供舒適的眼科檢查環境',
-    title: '希瑪眼科中心_眼科檢查'
-  },
+  // {
+  //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
+  //   alt: '希瑪眼科中心提供舒適的眼科檢查環境',
+  //   title: '希瑪眼科中心_眼科檢查'
+  // },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/7.jpg',
     alt: '希瑪眼科中心配備高端的眼科檢查儀器',
