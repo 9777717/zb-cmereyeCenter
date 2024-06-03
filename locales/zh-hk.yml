@@ -466,6 +466,16 @@ pages:
           doctor_23_education_3: 香港外科醫學院院士
           doctor_23_education_4: 香港眼科醫學院院士
           doctor_23_education_5: 香港醫學專科學院院士(眼科)
+      doctor_24:
+        doctor_24_name: 熊健慧醫生
+        doctor_24_en_name: Dr Jennifer Hung
+        doctor_24_education:
+          doctor_24_education_1: 香港醫務委員會執照 (英國 倫敦大學 內外全科醫學士)
+          doctor_24_education_2: 英國愛丁堡皇家外科學院院員
+          doctor_24_education_3: 英國皇家內科醫學院院士 
+          doctor_24_education_4: 英國倫敦大學公共衛生醫學碩士
+          doctor_24_education_5: 香港眼科醫學院院士
+          doctor_24_education_6: 香港醫學專科學院院士(眼科)
     doctor_edu: 學歷
     doctor_order: 預約
   medical_service:

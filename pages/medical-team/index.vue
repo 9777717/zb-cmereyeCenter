@@ -327,6 +327,20 @@ const doctorList = [
     doctorImgUrl:
       'https://static.cmereye.com/imgs/2023/07/6b20f513c8d4d402.png',
   },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_24.doctor_24_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_24.doctor_24_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_1',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_2',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_3',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_4',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_5',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_6',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/2024/06/90c786186e3a1f88.png',
+  },
 ]
 </script>
 <template>
@@ -1037,6 +1051,33 @@ const doctorList = [
       }
     }
   }
+  ul>li:nth-child(24) {
+    &>div:nth-child(1){
+      .docName{
+        white-space: nowrap;
+      }
+    }
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
+        position: relative;
+        // width: 264px;
+        // height: 330px;
+      }
+      &>div:nth-child(2) {
+        top: 50px;
+        right: -120px;
+      }
+      &>div:nth-child(1)::before {
+        content: '';
+        background: #f2f2f2;
+        position: absolute;
+        left: -315px;
+        top: 79px;
+        width: 523px;
+        height: 224px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1486,6 +1527,24 @@ const doctorList = [
     }
 
     ul>li:nth-child(23) {
+      &>div:nth-child(2) {
+        .docEnName {
+          top: 175px !important;
+        }
+        &>div:nth-child(1) {
+          width: 100%;
+          height: auto;
+        }
+
+        &>div:nth-child(1)::before {
+          width: calc(100% + 70px);
+          left: -30px;
+          top: 0px;
+          height: 110px;
+        }
+      }
+    }
+    ul>li:nth-child(24) {
       &>div:nth-child(2) {
         .docEnName {
           top: 175px !important;

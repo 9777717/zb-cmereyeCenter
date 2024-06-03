@@ -461,6 +461,16 @@ pages:
           doctor_23_education_3: FCSHK
           doctor_23_education_4: FCOphthHK
           doctor_23_education_5: FHKAM (Ophthalmology)
+      doctor_24:
+        doctor_24_name: DR. HUNG CHIEN HUI, JENNIFER
+        doctor_24_en_name: Dr Jennifer Hung
+        doctor_24_education:
+          doctor_24_education_1: LMCHK, MB BS (Lond)
+          doctor_24_education_2: MRCSEd
+          doctor_24_education_3: MRCP (UK) 
+          doctor_24_education_4: MSc in Public Health Medicine, LSHTM (Lond)
+          doctor_24_education_5: FCOphthHK
+          doctor_24_education_6: FHKAM (Ophthalmology)
     doctor_edu: education
     doctor_order: Booking
   medical_service:
