@@ -230,6 +230,9 @@ let drawer = ref(false)
         </div>
       </el-drawer>
     </client-only>
+    <div class="footerImg">
+      <img src="https://static.cmereye.com/imgs/2024/06/26b728816b4ed3a0.png" alt="">
+    </div>
   </div>
 </template>
 
@@ -239,10 +242,13 @@ let drawer = ref(false)
   width: 100%;
   padding: 100px 0;
   border-top: 4px solid #F2F2F2;
+  position: relative;
   &-in{
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
     &.footerMenu-in-en{
       .footerMenu-in-t{
         .t-in{
@@ -353,6 +359,12 @@ let drawer = ref(false)
       }
     }
   }
+  .footerImg{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: calc((100vw - 1920px) / 2);
+  }
 }
 .drawerIn{
   display: flex;
@@ -360,6 +372,14 @@ let drawer = ref(false)
   align-items: center;
   height: 100%;
   padding-bottom: 100px;
+}
+@media (min-width: 768px) and (max-width: 1920px) {
+  .footerMenu{
+    .footerImg{
+      right: 0;
+      bottom: 0;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .footerMenu{
@@ -460,6 +480,9 @@ let drawer = ref(false)
           }
         }
       }
+    }
+    .footerImg{
+      display: none;
     }
   }
 }
