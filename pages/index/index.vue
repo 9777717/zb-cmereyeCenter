@@ -82,8 +82,8 @@ const homeSwiperImgs = [
 
 const homeBannerLists = [
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0416b68d7049a83.png',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/c21309fb1746b2ed.webp',
+    mb_hk_img: 'hhttps://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-team',
@@ -91,17 +91,17 @@ const homeBannerLists = [
     img_title: '袁文傑護眼大使'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/41412b33f3375457.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/22d20728515df440.jpg',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/b696bd939618738a.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/4df6b6c361c5d4e8.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
-    img_alt: '香港上市公司10間眼科診所',
-    img_title: '香港上市公司10間眼科診所'
+    img_alt: '香港上市公司11間眼科診所',
+    img_title: '香港上市公司11間眼科診所'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/ffa79247ba7914b8.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/5009735eab244126.jpg',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/e5c3faed23c63db2.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/723daa4d6700dba9.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
@@ -109,8 +109,8 @@ const homeBannerLists = [
     img_title: '九大眼科醫療服務'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/c0252faa21a87306.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/94bbb5d9338a2859.jpg',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/2679a29efe1ee93f.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/2011288656773946.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#corporate',
@@ -118,8 +118,8 @@ const homeBannerLists = [
     img_title: '以人爲本以可人為中心'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/0bd9e5bb5a38365c.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/6f7e5de52790df8b.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/d68f277d4f9430ab.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/55dbd4799f65bd88.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#medicalEquipment',
@@ -127,8 +127,8 @@ const homeBannerLists = [
     img_title: '國際認可先進眼科醫療技術'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/03/f2ef9f2b112e247d.jpg',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/03/fcd4cab0c82bebac.png',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/742c10d7f1f29fc4.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/223bb8126133c307.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
