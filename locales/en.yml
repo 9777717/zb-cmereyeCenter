@@ -2200,7 +2200,7 @@ pages:
             clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList4_addressName: Tseung Kwan O
           addressDetailList4_addressDetail: Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road 
-          addressDetailList4_subwayExit: "Po Lam MTR Station, Exit B2 (turn right after exiting the station); Po Lam MTR Station, Exit C (Exit at ground level and cross the street to reach the mall opposite)"
+          addressDetailList4_subwayExit: "Po Lam MTR Station, Exit B2 (turn right after exiting the station);"
           addressDetailList4_clinicHours:
             clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
             clinicHours2: Sat：09:30—13:30
