@@ -2342,7 +2342,7 @@ pages:
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList4_addressName: 將軍澳
           addressDetailList4_addressDetail: 運亨路1號新都城中心一期地下55-56號鋪
-          addressDetailList4_subwayExit: "寶琳站B2出口（沿天橋進入商場）、寶琳站C出口（從地面出口出發，經馬路到達對面商場）"
+          addressDetailList4_subwayExit: "寶琳站B2出口（出站後右轉）、寶琳站C出口（從地面出口出發，經馬路到達對面商場）"
           addressDetailList4_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30

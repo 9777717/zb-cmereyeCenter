@@ -314,7 +314,8 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/o4DpCAr4F52L12Vu8',
         alt: '希瑪眼科中心_將軍澳診所接待區',
-        title: '希瑪眼科中心_將軍澳診所'
+        title: '希瑪眼科中心_將軍澳診所',
+        isShowVideo: true
       },
     ],
   },
@@ -344,7 +345,17 @@ onMounted(()=>{
   getWindowWidth()
   window.addEventListener('resize',getWindowWidth)
 })
-
+let dialogVisible = ref(false)
+const handleClose = (done: () => void) => {
+  done()
+  // ElMessageBox.confirm('Are you sure to close this dialog?')
+  //   .then(() => {
+  //     done()
+  //   })
+  //   .catch(() => {
+  //     // catch error
+  //   })
+}
 </script>
 
 <template>
@@ -505,6 +516,12 @@ onMounted(()=>{
                           >
                         </div>
                       </div>
+                      <div class="videoBox" v-if="addressDetailItem.isShowVideo">
+                        <div class="videoBox-in" @click="dialogVisible = true">
+                          <span class="icon"></span>
+                          <span>影片路線指引</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -523,12 +540,98 @@ onMounted(()=>{
     />
     <PageInformation :service-navigation="serviceNavigation" />
     <PageFooterMenu />
+    <client-only>
+    <el-dialog
+      v-model="dialogVisible"
+      :show-close="false"
+      custom-class="dialogBox"
+      :before-close="handleClose"
+    >
+      <video controls>
+        <source src="https://static.cmereye.com/static/hkcmereye/998955555.mp4" type="video/mp4">
+      </video>
+      <span class="dialogBox-close" @click="dialogVisible = false"></span>
+    </el-dialog>
+    </client-only>
   </div>
 </template>
 
 <style lang="scss" scoped>
 :deep(.contact_eye-swiper .swiper-wrapper) {
   transition-timing-function: linear;
+}
+.videoBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  &-in{
+    background: rgba(41, 88, 163, 1);
+    padding: 8px 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    .icon{
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 10px;
+      position: relative;
+      &::after{
+        content: '';
+        width: 10px;
+        height: 16px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-35%,-50%);
+        -webkit-transform: translate(-35%,-50%);
+        border-left: 10px solid #fff;
+        border-right: 0px solid transparent;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+      }
+    }
+    &:hover{
+      background: rgba(5, 149, 206, 0.5);
+    }
+  }
+}
+.dialogBox{
+  position: relative;
+  &-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ccc;
+    width: 30px;
+    height: 30px;
+    background: url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png) no-repeat;
+    background-size: 70% 70%;
+    background-position: center center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+}
+:deep(.el-dialog__header){
+  display: none;
+}
+:deep(.el-dialog__body){
+  padding: 0;
+  video{
+    width: 100%;
+    height: auto;
+  }
 }
 .contact_eye {
   margin-bottom: 40px;
@@ -660,6 +763,14 @@ onMounted(()=>{
 }
 
 @media screen and (max-width: 768px) {
+  :deep(.dialogBox){
+    width: 90%;
+    // margin: 300px 0;
+    margin-top: 60%;
+  }
+  :deep(.el-dialog__body){
+    width: 100%;
+  }
   .contact_eye {
     & > div:nth-child(1) {
       & > div:nth-child(1) {
