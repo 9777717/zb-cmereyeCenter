@@ -2125,6 +2125,7 @@ pages:
       clinic_information_make: Booking
       clinic_information_serviceNavigation1: Locations
       clinic_information_serviceNavigation2: Comments and Suggestions
+      clinic_information_videobtn: Movie route guidance
       clinic_information_addressList:
         addressList1_regionName: Hong Kong
         addressList1_addressDetailList:

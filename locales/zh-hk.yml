@@ -2293,6 +2293,7 @@ pages:
       clinic_information_make: 預約
       clinic_information_serviceNavigation1: 診所資料
       clinic_information_serviceNavigation2: 電子預約表格
+      clinic_information_videobtn: 影片路線指引
       clinic_information_addressList:
         addressList1_regionName: 香港
         addressList1_addressDetailList:

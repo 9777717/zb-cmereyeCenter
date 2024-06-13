@@ -519,7 +519,7 @@ const handleClose = (done: () => void) => {
                       <div class="videoBox" v-if="addressDetailItem.isShowVideo">
                         <div class="videoBox-in" @click="dialogVisible = true">
                           <span class="icon"></span>
-                          <span>影片路線指引</span>
+                          <span>{{$t('pages.contact_us.clinic_information_title.clinic_information_videobtn')}}</span>
                         </div>
                       </div>
                     </div>
