@@ -2,6 +2,8 @@
  import { Pagination,Autoplay } from 'swiper';
  import gsap from 'gsap'
  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+//  import { useWindowSize } from '@vueuse/core'
+//  const { width } = useWindowSize()
 definePageMeta({
   layout: 'page',
 })
@@ -29,56 +31,6 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
-const homeSwiperImgs = [
-  {
-    hkimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
-    enimg: 'https://static.cmereye.com/imgs/2024/03/8319af00330258f6.png',
-    title: [''],
-    text: ['',''],
-    link: '/medical-service',
-    alt: '希瑪眼科中心_眼科診所_眼科醫生',
-  },
-  {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
-    title: ['香港上市公司 10間眼科診所'],
-    text: ['龐大眼科醫療網絡','提供眼疾治療方案'],
-    link: '/about-us',
-    alt: '希瑪眼科中心_眼科診所_眼科醫生',
-  },
-  {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
-    title: ['全面涵蓋九大眼科醫療領域'],
-    text: ['致力提供全面眼科醫療服務','貼心護理服務 滿足患者不同需求'],
-    link: '/medical-service',
-    alt: '希瑪眼科中心_眼科服務',
-  },
-  {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
-    title: ['以人為本，以客人為中心'],
-    text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
-    link: '/about-us#feedback',
-    alt: '希瑪眼科中心_眼睛檢查',
-  },
-  {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
-    title: ['國際認可先進眼科醫療技術'],
-    text: ['高水準眼科治療和服務','實現精確、安全手術操作'],
-    link: '/about-us#medicalEquipment',
-    alt: '希瑪眼科中心_眼科設備_眼科儀器',
-  },
-  {
-    hkimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
-    enimg: 'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
-    title: ['全心全意守護每雙眼睛'],
-    text: ['追求卓越 堅持使命','關注全生命眼健康周期'],
-    link: '/about-us#corporate',
-    alt: '希瑪眼科中心_眼睛健康',
-  }
-]
 
 const homeBannerLists = [
   {
@@ -137,7 +89,36 @@ const homeBannerLists = [
   },
 ]
 
+const bannerConfig:any = ref([])
+// let banner_type = ref(1)
+const getBanner = async () => {
+  try{
+    const _res:any = await useFetch(`https://hkcmereye.com/api.php/cms/slide/gid/4`,{
+      method: 'post',
+    });
+    let res = JSON.parse(_res.data.value) || null
+    if(res){
+      let _data = res.data
+      bannerConfig.value = _data.map((item:any)=>{
+        return {
+          pc_hk_img: (item.pic.indexOf('/static/upload/') !== -1 ? `https://hkcmereye.com${item.pic}`:item.pic) || '',
+          mb_hk_img: (item.mpic.indexOf('/static/upload/') !== -1 ? `https://hkcmereye.com${item.mpic}`:item.mpic) || '',
+          link: item.link || '',
+          img_title: item.title || '',
+          img_alt: item.subtitle === '' ? item.title : item.subtitle
+        }
+      })
+    }
+  }catch(e){
+    console.log(e)
+  }
+}
+
 onMounted(() => {
+  // banner_type.value = width.value>768?1:2
+  setTimeout(() => {
+    getBanner()
+  }, 0)
   gsap.registerPlugin(ScrollTrigger) 
   gsap.from('.homePage-pageNav', {
     opacity: 0,
@@ -302,10 +283,7 @@ const pageNav = ref([
         :pagination="{ clickable: true }"
         :modules="[Pagination,Autoplay]"
       >
-        <!-- <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeSwiperImgs" :key="swiperIndex">
-          <nuxt-link :to="swiperItem.link"><img :src="locale === 'en' ? swiperItem.enimg : swiperItem.hkimg" :alt="swiperItem.alt" :title="swiperItem.alt"></nuxt-link>
-        </swiper-slide> -->
-        <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in homeBannerLists" :key="swiperIndex">
+        <swiper-slide class="slideBox" v-for="(swiperItem,swiperIndex) in bannerConfig" :key="swiperIndex">
           <nuxt-link :to="swiperItem.link">
             <img :srcset="`${swiperItem.mb_hk_img} 768w,${swiperItem.pc_hk_img}`" :src="swiperItem.mb_hk_img" :alt="swiperItem.img_alt" :title="swiperItem.img_title" />
           </nuxt-link>
