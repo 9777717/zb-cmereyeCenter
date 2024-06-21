@@ -318,10 +318,10 @@ const pageNav = ref([
           <!-- 醫療服務 -->
           {{$t("pages.index.contentnav.title")}}
         </div>
-        <div class="home-mbContent-nav-context">
+        <!-- <div class="home-mbContent-nav-context"> -->
           <!-- 點擊以下圖示，了解更多醫療資訊 -->
-          {{$t("pages.index.contentnav.context")}}
-        </div>
+          <!-- {{$t("pages.index.contentnav.context")}} -->
+        <!-- </div> -->
         <div class="home-mbContent-nav-content">
           <a :href="service.link" v-for="(service,index) in serviceLists" :key="index" :class="`cmer-fadeIn-${index}`">
             <img :src="service.imgUrl" :alt="service.alt" :title="service.alt">
