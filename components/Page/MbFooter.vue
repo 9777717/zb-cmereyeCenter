@@ -76,7 +76,7 @@ onMounted(() => {
       &>div:nth-of-type(2){
         white-space: pre-wrap;
         color: #FFF;
-        font-size: 12px;
+        font-size: 16px;
       }
       &:nth-of-type(2){
         flex: 1.5;
