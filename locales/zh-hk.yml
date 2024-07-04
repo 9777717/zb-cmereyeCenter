@@ -2301,8 +2301,8 @@ pages:
           addressDetailList1_addressDetail: 畢打街1-3號中建大廈1515室
           addressDetailList1_subwayExit: 中環站G出口（鄰近置地廣場）
           addressDetailList1_clinicHours:
-            clinicHours1: 星期一至五：09:30—13:30 / 14:30—18:00
-            clinicHours2: 星期六：09:30—13:30
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—18:00
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList2_addressName: 中環
           addressDetailList2_addressDetail: 皇后大道中33號萬邦行1908室
