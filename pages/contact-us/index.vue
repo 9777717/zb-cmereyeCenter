@@ -5,8 +5,10 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead(() => ({
-  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t('pages.contact_us.contact_us')}`,
-  meta(){
+  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t(
+    'pages.contact_us.contact_us'
+  )}`,
+  meta() {
     return [
       {
         hid: 'contactUsdesc',
@@ -17,7 +19,7 @@ useHead(() => ({
         hid: 'contactUsKey',
         name: 'keywords',
         content: t('tdk.contact-us.key'),
-      }
+      },
     ]
   },
 }))
@@ -32,8 +34,7 @@ const serviceNavigation = [
     anchorLink: '/contact-us',
   },
   {
-    anchorName:
-      'pages.about_us.feedback',
+    anchorName: 'pages.about_us.feedback',
     anchorLink: '/contact-us#feedback',
   },
   {
@@ -46,53 +47,53 @@ const bannerList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
     alt: '希瑪眼科中心_中環診所舒適寬敞的接待區',
-    title: '希瑪眼科中心_中環診所'
+    title: '希瑪眼科中心_中環診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
     alt: '希瑪眼科中心_中環診所舒適的接待區',
-    title: '希瑪眼科中心_中環診所'
+    title: '希瑪眼科中心_中環診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
     alt: '希瑪眼科中心_銅鑼灣診所舒適的接待區',
-    title: '希瑪眼科中心_銅鑼灣診所'
+    title: '希瑪眼科中心_銅鑼灣診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
     alt: '希瑪眼科中心_尖沙咀診所明亮舒適的接待區',
-    title: '希瑪眼科中心_尖沙咀診所'
+    title: '希瑪眼科中心_尖沙咀診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
     alt: '希瑪眼科中心_旺角診所舒適的接待區',
-    title: '希瑪眼科中心_旺角診所'
+    title: '希瑪眼科中心_旺角診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
     alt: '希瑪眼科中心提供舒適的眼科檢查環境',
-    title: '希瑪眼科中心_眼科檢查'
+    title: '希瑪眼科中心_眼科檢查',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
     alt: '希瑪眼科中心_沙田診所舒適的接待區',
-    title: '希瑪眼科中心_沙田診所'
+    title: '希瑪眼科中心_沙田診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
     alt: '希瑪眼科中心_將軍澳診所接待區',
-    title: '希瑪眼科中心_將軍澳診所'
+    title: '希瑪眼科中心_將軍澳診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
     alt: '希瑪眼科中心_荃灣診所舒適的接待區',
-    title: '希瑪眼科中心_荃灣診所'
+    title: '希瑪眼科中心_荃灣診所',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
     alt: '希瑪眼科中心_將軍澳診所接待區',
-    title: '希瑪眼科中心_將軍澳診所'
-  }
+    title: '希瑪眼科中心_將軍澳診所',
+  },
   // 'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
   // 'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
   // 'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
@@ -115,8 +116,9 @@ const addressList = [
           'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -127,15 +129,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/8GnSZHx69s4PgPif6',
         alt: '希瑪眼科中心_中環診所舒適寬敞的接待區',
-        title: '希瑪眼科中心_中環診所'
+        title: '希瑪眼科中心_中環診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -146,15 +149,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/cTtPrK89qYcgNVcT8',
         alt: '希瑪眼科中心_中環診所舒適的接待區',
-        title: '希瑪眼科中心_中環診所'
+        title: '希瑪眼科中心_中環診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -165,7 +169,7 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/DUouFYZSJ9z4cpKx9',
         alt: '希瑪眼科中心_銅鑼灣診所舒適的接待區',
-        title: '希瑪眼科中心_銅鑼灣診所'
+        title: '希瑪眼科中心_銅鑼灣診所',
       },
     ],
   },
@@ -200,8 +204,10 @@ const addressList = [
           'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressDetail',
+          'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressDetail_1',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -212,15 +218,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/CqwrB3htjnM7b8XEA',
         alt: '希瑪眼科中心_旺角診所舒適的接待區',
-        title: '希瑪眼科中心_旺角診所'
+        title: '希瑪眼科中心_旺角診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/07/44e44190b497309f.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -230,8 +237,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/wwwesw4YnXwr7NtL8',
-        title:"希瑪眼科中心_觀塘診所",
-        alt:"希瑪眼科中心_觀塘診所明亮舒適的接待區"
+        title: '希瑪眼科中心_觀塘診所',
+        alt: '希瑪眼科中心_觀塘診所明亮舒適的接待區',
       },
     ],
   },
@@ -245,8 +252,9 @@ const addressList = [
           'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -257,15 +265,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
         alt: '希瑪眼科中心_沙田診所舒適的接待區',
-        title: '希瑪眼科中心_沙田診所'
+        title: '希瑪眼科中心_沙田診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -276,15 +285,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/Nfh4nebSBo5zTHycA',
         alt: '希瑪眼科中心_元朗診所接待區',
-        title: '希瑪眼科中心_元朗診所'
+        title: '希瑪眼科中心_元朗診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -295,15 +305,16 @@ const addressList = [
         ],
         googleMaps: 'https://goo.gl/maps/FukN8ZhA4jCUe7qV9',
         alt: '希瑪眼科中心_荃灣診所舒適的接待區',
-        title: '希瑪眼科中心_荃灣診所'
+        title: '希瑪眼科中心_荃灣診所',
       },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressName',
-        addressDetail:
+        addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressDetail',
+        ],
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -315,7 +326,7 @@ const addressList = [
         googleMaps: 'https://goo.gl/maps/o4DpCAr4F52L12Vu8',
         alt: '希瑪眼科中心_將軍澳診所接待區',
         title: '希瑪眼科中心_將軍澳診所',
-        isShowVideo: true
+        isShowVideo: true,
       },
     ],
   },
@@ -341,9 +352,9 @@ let windowWidth = ref(1920)
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
-onMounted(()=>{
+onMounted(() => {
   getWindowWidth()
-  window.addEventListener('resize',getWindowWidth)
+  window.addEventListener('resize', getWindowWidth)
 })
 let dialogVisible = ref(false)
 const handleClose = (done: () => void) => {
@@ -362,19 +373,21 @@ const handleClose = (done: () => void) => {
   <div class="contact_eye">
     <div>
       <div>
-        <div>
-        </div>
+        <div></div>
         <div>
           <swiper
-            :space-between="windowWidth>768? 40:10"
-            :slides-per-view="windowWidth>768? 4:2.5"
+            :space-between="windowWidth > 768 ? 40 : 10"
+            :slides-per-view="windowWidth > 768 ? 4 : 2.5"
             :modules="[Autoplay]"
             :loop="true"
             :autoplay="{ delay: 0 }"
             :speed="3500"
             class="contact_eye-swiper"
           >
-            <swiper-slide v-for="(item, itemIndex) in bannerList" :key="itemIndex">
+            <swiper-slide
+              v-for="(item, itemIndex) in bannerList"
+              :key="itemIndex"
+            >
               <div class="imgBox flex items-center justify-center">
                 <img :src="item.img" :alt="item.alt" :title="item.title" />
               </div>
@@ -384,7 +397,8 @@ const handleClose = (done: () => void) => {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png"
-            title="希瑪眼科中心" alt="希瑪眼科中心標識"
+            title="希瑪眼科中心"
+            alt="希瑪眼科中心標識"
           />
         </div>
       </div>
@@ -399,11 +413,14 @@ const handleClose = (done: () => void) => {
           </div>
           <div class="content">
             <div class="addressBox">
-              <div class="switchReionBtnBox flex justify-between items-center" :class="{'switchReionBtnBox-en': locale === 'en'}">
+              <div
+                class="switchReionBtnBox flex justify-between items-center"
+                :class="{ 'switchReionBtnBox-en': locale === 'en' }"
+              >
                 <button
                   v-for="(addressItem, addressItemIndex) in addressList"
                   :key="addressItemIndex"
-                  :class="{ 'activeBtn': addressItemIndex === showIndex }"
+                  :class="{ activeBtn: addressItemIndex === showIndex }"
                   @click="switchReion(addressItemIndex)"
                 >
                   {{ $t(addressItem.regionName) }}
@@ -425,14 +442,18 @@ const handleClose = (done: () => void) => {
                     class="addressDetailItem flex items-start justify-between mb-24"
                   >
                     <div class="imgBox mr-14">
-                      <img :src="addressDetailItem.addressImg" :alt="addressDetailItem.alt" :title="addressDetailItem.title" />
+                      <img
+                        :src="addressDetailItem.addressImg"
+                        :alt="addressDetailItem.alt"
+                        :title="addressDetailItem.title"
+                      />
                     </div>
                     <div class="textBox">
                       <h3 class="addressName text-xl mb-4">
                         {{ $t(addressDetailItem.addressName) }}
                       </h3>
                       <div
-                        v-if="addressDetailItem.addressDetail !== ''"
+                        v-if="addressDetailItem.addressDetail[0] !== ''"
                         class="addressDetail flex items-center justify-start mb-4"
                       >
                         <span class="text-sm">
@@ -440,7 +461,18 @@ const handleClose = (done: () => void) => {
                             icon="material-symbols:location-on-outline"
                           />
                         </span>
-                        <p>{{ $t(addressDetailItem.addressDetail) }}</p>
+                        <p
+                          v-if="Array.isArray(addressDetailItem.addressDetail)"
+                        >
+                          <span
+                            v-for="(e, i) in addressDetailItem.addressDetail"
+                            :key="i"
+                            >{{ $t(e) }}</span
+                          >
+                        </p>
+                        <p v-else>
+                          {{ $t(addressDetailItem.addressDetail) }}
+                        </p>
                       </div>
                       <div
                         v-if="addressDetailItem.subwayExit !== ''"
@@ -451,7 +483,9 @@ const handleClose = (done: () => void) => {
                         </span>
                         <div v-if="Array.isArray(addressDetailItem.subwayExit)">
                           <p
-                            v-for="(ele, eleIndex) in addressDetailItem.subwayExit"
+                            v-for="(
+                              ele, eleIndex
+                            ) in addressDetailItem.subwayExit"
                             :key="eleIndex"
                           >
                             {{ $t(ele) }}
@@ -502,7 +536,10 @@ const handleClose = (done: () => void) => {
                             }}</a
                           >
                         </div>
-                        <div class="orderBtn contactUsWhatsapp" @click="goWhatsApp">
+                        <div
+                          class="orderBtn contactUsWhatsapp"
+                          @click="goWhatsApp"
+                        >
                           <a
                             class="contactUsWhatsapp"
                             href=" "
@@ -516,10 +553,17 @@ const handleClose = (done: () => void) => {
                           >
                         </div>
                       </div>
-                      <div class="videoBox" v-if="addressDetailItem.isShowVideo">
+                      <div
+                        class="videoBox"
+                        v-if="addressDetailItem.isShowVideo"
+                      >
                         <div class="videoBox-in" @click="dialogVisible = true">
                           <span class="icon"></span>
-                          <span>{{$t('pages.contact_us.clinic_information_title.clinic_information_videobtn')}}</span>
+                          <span>{{
+                            $t(
+                              'pages.contact_us.clinic_information_title.clinic_information_videobtn'
+                            )
+                          }}</span>
                         </div>
                       </div>
                     </div>
@@ -534,24 +578,31 @@ const handleClose = (done: () => void) => {
     <feedback-con />
     <FormFooterInfo
       :from-style="'margin: 0 232px'"
-      :isShowTopTitle="windowWidth<=768"
-      :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`:'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'"
+      :isShowTopTitle="windowWidth <= 768"
+      :bg="
+        windowWidth > 768
+          ? `background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`
+          : 'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'
+      "
       :co="`color:${'#6a91cf;'}`"
     />
     <PageInformation :service-navigation="serviceNavigation" />
     <PageFooterMenu />
     <client-only>
-    <el-dialog
-      v-model="dialogVisible"
-      :show-close="false"
-      custom-class="dialogBox"
-      :before-close="handleClose"
-    >
-      <video controls>
-        <source src="https://static.cmereye.com/static/hkcmereye/998955555.mp4" type="video/mp4">
-      </video>
-      <span class="dialogBox-close" @click="dialogVisible = false"></span>
-    </el-dialog>
+      <el-dialog
+        v-model="dialogVisible"
+        :show-close="false"
+        custom-class="dialogBox"
+        :before-close="handleClose"
+      >
+        <video controls>
+          <source
+            src="https://static.cmereye.com/static/hkcmereye/998955555.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <span class="dialogBox-close" @click="dialogVisible = false"></span>
+      </el-dialog>
     </client-only>
   </div>
 </template>
@@ -560,12 +611,12 @@ const handleClose = (done: () => void) => {
 :deep(.contact_eye-swiper .swiper-wrapper) {
   transition-timing-function: linear;
 }
-.videoBox{
+.videoBox {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  &-in{
+  &-in {
     background: rgba(41, 88, 163, 1);
     padding: 8px 20px;
     font-size: 20px;
@@ -575,8 +626,8 @@ const handleClose = (done: () => void) => {
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: all .3s;
-    .icon{
+    transition: all 0.3s;
+    .icon {
       border: 2px solid #fff;
       border-radius: 50%;
       width: 30px;
@@ -584,7 +635,7 @@ const handleClose = (done: () => void) => {
       display: inline-block;
       margin-right: 10px;
       position: relative;
-      &::after{
+      &::after {
         content: '';
         width: 10px;
         height: 16px;
@@ -592,29 +643,30 @@ const handleClose = (done: () => void) => {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-35%,-50%);
-        -webkit-transform: translate(-35%,-50%);
+        transform: translate(-35%, -50%);
+        -webkit-transform: translate(-35%, -50%);
         border-left: 10px solid #fff;
         border-right: 0px solid transparent;
         border-top: 8px solid transparent;
         border-bottom: 8px solid transparent;
       }
     }
-    &:hover{
+    &:hover {
       background: rgba(5, 149, 206, 0.5);
     }
   }
 }
-.dialogBox{
+.dialogBox {
   position: relative;
-  &-close{
+  &-close {
     position: absolute;
     right: 10px;
     top: 10px;
     background: #ccc;
     width: 30px;
     height: 30px;
-    background: url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png) no-repeat;
+    background: url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)
+      no-repeat;
     background-size: 70% 70%;
     background-position: center center;
     box-sizing: border-box;
@@ -623,12 +675,12 @@ const handleClose = (done: () => void) => {
     cursor: pointer;
   }
 }
-:deep(.el-dialog__header){
+:deep(.el-dialog__header) {
   display: none;
 }
-:deep(.el-dialog__body){
+:deep(.el-dialog__body) {
   padding: 0;
-  video{
+  video {
     width: 100%;
     height: auto;
   }
@@ -724,6 +776,12 @@ const handleClose = (done: () => void) => {
             padding: 15px 0;
           }
         }
+        & > div:nth-child(2) {
+          & > p {
+            display: flex;
+            flex-direction: column;
+          }
+        }
       }
       .imgBox {
         position: relative;
@@ -763,12 +821,12 @@ const handleClose = (done: () => void) => {
 }
 
 @media screen and (max-width: 768px) {
-  :deep(.dialogBox){
+  :deep(.dialogBox) {
     width: 90%;
     // margin: 300px 0;
     margin-top: 60%;
   }
-  :deep(.el-dialog__body){
+  :deep(.el-dialog__body) {
     width: 100%;
   }
   .contact_eye {
@@ -789,13 +847,13 @@ const handleClose = (done: () => void) => {
       }
     }
   }
-  .mainCon{
+  .mainCon {
     width: 100%;
   }
-  .contactBody{
+  .contactBody {
     width: 100%;
     margin-top: 40px;
-    .title{
+    .title {
       position: absolute;
       top: 130px;
       writing-mode: initial;
@@ -803,7 +861,7 @@ const handleClose = (done: () => void) => {
       margin-right: 0;
       left: 40px;
       font-size: 28px;
-      letter-spacing: -.1em;
+      letter-spacing: -0.1em;
       color: #515151;
       &::after {
         font-size: 18px;
@@ -817,30 +875,30 @@ const handleClose = (done: () => void) => {
       .switchReionBtnBox {
         width: calc(100% - 60px);
         margin: 0 auto 40px;
-        button{
+        button {
           font-size: 20px;
           padding: 0px 24px;
         }
-        &.switchReionBtnBox-en{
+        &.switchReionBtnBox-en {
           flex-direction: column;
-          &>button{
-            &:not(:last-child){
+          & > button {
+            &:not(:last-child) {
               margin-bottom: 20px;
             }
           }
         }
       }
     }
-    .addressDetailBox{
+    .addressDetailBox {
       width: calc(100% - 60px);
       margin: 0 auto;
       .addressDetailItem {
         flex-direction: column;
-        .textBox{
+        .textBox {
           width: 100%;
           font-size: 16px;
           margin-top: 30px;
-          .addressName{
+          .addressName {
             font-size: 30px;
           }
           .addressDetailBtnBox {
@@ -871,7 +929,7 @@ const handleClose = (done: () => void) => {
               top: 30px;
             }
           }
-          .textBox{
+          .textBox {
             margin-top: 60px;
           }
         }
