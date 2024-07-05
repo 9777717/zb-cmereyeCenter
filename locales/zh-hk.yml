@@ -2329,12 +2329,17 @@ pages:
             clinicHours2: 星期六：09:30—14:00
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList2_addressName: 旺角
-          addressDetailList2_addressDetail: 彌敦道625及639號雅蘭中心一期1208室
-          addressDetailList2_addressDetail_1: 彌敦道625及639號雅蘭中心一期1725B室
+          addressDetailList2_addressDetail: 彌敦道625及639號雅蘭中心一期1208室及1725B室
           addressDetailList2_subwayExit: 旺角站E1出口
+          addressDetailList2_clinicHours_title: 1208室營業時間
           addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
             clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList2_clinicHours_1_title: 1208室營業時間
+          addressDetailList2_clinicHours_1:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—18:30
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList3_addressName: 觀塘
           addressDetailList3_addressDetail: 開源道79號鱷魚恤中心16樓1601室

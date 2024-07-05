@@ -2164,16 +2164,22 @@ pages:
           addressDetailList2_addressDetail: Room 1208, One Grand Tower, 625 and 639 Nathan Road 
           addressDetailList2_addressDetail_1: Room 1725B, One Grand Tower, 625 and 639 Nathan Road
           addressDetailList2_subwayExit: Mong Kok MTR Station (Exit E1)
+          addressDetailList2_clinicHours_title: 1208 Room business hours
           addressDetailList2_clinicHours:
             clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
             clinicHours2: Sat：09:30—13:30
+            clinicHours3: (Closed on Sundays and public holidays)
+          addressDetailList2_clinicHours_1_title: 1208 Room business hours
+          addressDetailList2_clinicHours_1:
+            clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
+            clinicHours2: Sat：09:30—18:00
             clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList3_addressName: Kwun Tong
           addressDetailList3_addressDetail: Room 1601, 16/F, Crocodile Centre, 79 Hoi Yuen Road
           addressDetailList3_subwayExit: Kwun Tong MTR Station (Exit A2/B3)
           addressDetailList3_clinicHours:
             clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
-            clinicHours2: Sat：09:30—13:30
+            clinicHours2: Sat：09:30—18:30
             clinicHours3: (Closed on Sundays and public holidays)
         addressList3_regionName: New Territories
         addressList3_addressDetailList:

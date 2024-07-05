@@ -331,6 +331,23 @@ const addressList = [
     ],
   },
 ]
+
+const mongKokDetailAddress = ref({
+  detailAddressOne:
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours_title',
+  detailAddressTwo:
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours_1_title',
+  businessHoursOne: [
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours1',
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours2',
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
+  ],
+  businessHoursTwo: [
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours_1.clinicHours1',
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours_1.clinicHours2',
+    'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours_1.clinicHours3',
+  ],
+})
 const showIndex = ref(0)
 const switchReion = (index: any) => {
   showIndex.value = index
@@ -462,7 +479,20 @@ const handleClose = (done: () => void) => {
                           />
                         </span>
                         <p
-                          v-if="Array.isArray(addressDetailItem.addressDetail)"
+                          v-if="
+                            (Array.isArray(addressDetailItem.addressDetail) &&
+                              $t(addressDetailItem.addressName) == '旺角') ||
+                            $t(addressDetailItem.addressName) == 'Mong Kok'
+                          "
+                        >
+                          <span>{{
+                            $t(addressDetailItem.addressDetail[0])
+                          }}</span>
+                        </p>
+                        <p
+                          v-else-if="
+                            Array.isArray(addressDetailItem.addressDetail)
+                          "
                         >
                           <span
                             v-for="(e, i) in addressDetailItem.addressDetail"
@@ -510,7 +540,27 @@ const handleClose = (done: () => void) => {
                         <span class="text-sm mt-1">
                           <Iconify icon="ic:outline-calendar-month" />
                         </span>
-                        <div>
+                        <div
+                          v-if="
+                            $t(addressDetailItem.addressName) == '旺角' ||
+                            $t(addressDetailItem.addressName) == 'Mong Kok'
+                          "
+                        >
+                          <div style="display: flex;flex-direction: column;">
+                            <span>{{
+                              $t(mongKokDetailAddress.detailAddressOne)
+                            }}：</span>
+                            <span v-for="(item ,index) in mongKokDetailAddress.businessHoursOne" :key="index">{{ $t(item) }}</span>
+                          </div>
+                          <br />
+                          <div style="display: flex;flex-direction: column;">
+                            <span>{{
+                              $t(mongKokDetailAddress.detailAddressTwo)
+                            }}：</span>
+                          <span v-for="(item ,index) in mongKokDetailAddress.businessHoursTwo" :key="index">{{ $t(item) }}</span>
+                          </div>
+                        </div>
+                        <div v-else>
                           <p
                             v-for="(
                               ele, eleIndex
@@ -721,7 +771,7 @@ const handleClose = (done: () => void) => {
 }
 .contactBody {
   margin-top: 150px;
-  width: 85%;
+  width: 86%;
   .title {
     writing-mode: vertical-lr;
     margin-left: 7%;
