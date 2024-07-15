@@ -2,12 +2,18 @@
 import { Autoplay } from 'swiper'
 const awardsList = [
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
+    imgUrl: 'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_15',
     link: 'https://www.esgpledge.org.hk/',
-    alt: '希瑪眼科中心_ESG約章行動'
+    alt: '希瑪眼科中心_ESG約章行動',
+  },
+  {
+    imgUrl: 'https://hkcmereye.com/template/default/images/j1.png',
+    year: 'pages.about_us.awards.awards_year_14',
+    des: 'pages.about_us.awards.awards_des_16',
+    link: 'https://iet2.hket.com/event/hket_excellence_awards/zh/2024-winner-list.html#',
+    alt: '香港經濟日報企業大獎 2024',
   },
   {
     imgUrl:
@@ -15,31 +21,28 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港服務名牌2023'
+    alt: '希瑪眼科中心_香港服務名牌2023',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_14',
     link: 'https://www.commchest.org/tc/news/press-release/detail/1057',
-    alt: '希瑪眼科中心_香港公益金_公益卓越獎'
+    alt: '希瑪眼科中心_香港公益金_公益卓越獎',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/2952335675aaf8b0.jpg',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/2952335675aaf8b0.jpg',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_13',
     link: 'https://hkct-awards.com/articles/59',
-    alt: '希瑪眼科中心_HKCT企業大獎'
+    alt: '希瑪眼科中心_HKCT企業大獎',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_12',
     des: 'pages.about_us.awards.awards_des_12',
     link: '',
-    alt: '希瑪眼科中心_香港卓越服務名牌2022'
+    alt: '希瑪眼科中心_香港卓越服務名牌2022',
   },
   {
     imgUrl:
@@ -47,39 +50,35 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_12',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港服務名牌2022'
+    alt: '希瑪眼科中心_香港服務名牌2022',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
     year: 'pages.about_us.awards.awards_year_11',
     des: 'pages.about_us.awards.awards_des_11',
     link: 'https://features.hkej.com/template/features/html/2022_sc/winners.html',
-    alt: '希瑪眼科中心_社會資本動力獎2022'
+    alt: '希瑪眼科中心_社會資本動力獎2022',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png',
     year: 'pages.about_us.awards.awards_year_10',
     des: 'pages.about_us.awards.awards_des_10',
     link: '',
-    alt: '希瑪眼科中心_香港最有價值品牌大獎2022'
+    alt: '希瑪眼科中心_香港最有價值品牌大獎2022',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png',
     year: 'pages.about_us.awards.awards_year_9',
     des: 'pages.about_us.awards.awards_des_9',
     link: '',
-    alt: '希瑪眼科中心_開心工作間2022'
+    alt: '希瑪眼科中心_開心工作間2022',
   },
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png',
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png',
     year: 'pages.about_us.awards.awards_year_8',
     des: 'pages.about_us.awards.awards_des_8',
     link: '',
-    alt: '希瑪眼科中心_大灣區企業傑出獎2022'
+    alt: '希瑪眼科中心_大灣區企業傑出獎2022',
   },
   {
     imgUrl:
@@ -87,7 +86,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_6',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港服務名牌2021'
+    alt: '希瑪眼科中心_香港服務名牌2021',
   },
   {
     imgUrl:
@@ -95,7 +94,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_1',
     des: 'pages.about_us.awards.awards_des_1',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021'
+    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
   },
   {
     imgUrl:
@@ -103,7 +102,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_2',
     des: 'pages.about_us.awards.awards_des_2',
     link: 'https://www.caringcompany.org.hk/b5_index.php',
-    alt: '希瑪眼科中心_商界展關懷2020/2021'
+    alt: '希瑪眼科中心_商界展關懷2020/2021',
   },
   {
     imgUrl:
@@ -111,7 +110,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_3',
     des: 'pages.about_us.awards.awards_des_3',
     link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
-    alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020'
+    alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020',
   },
   {
     imgUrl:
@@ -119,7 +118,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_4',
     des: 'pages.about_us.awards.awards_des_4',
     link: '',
-    alt: '希瑪眼科中心_香港旅遊業十優推介2020'
+    alt: '希瑪眼科中心_香港旅遊業十優推介2020',
   },
   {
     imgUrl:
@@ -127,7 +126,7 @@ const awardsList = [
     year: 'pages.about_us.awards.awards_year_5',
     des: 'pages.about_us.awards.awards_des_5',
     link: 'https://corphub.asia/awards/?route=events&id=1',
-    alt: '希瑪眼科中心_香港最優秀企業大獎2020'
+    alt: '希瑪眼科中心_香港最優秀企業大獎2020',
   },
   // {
   //   imgUrl:
@@ -138,8 +137,8 @@ const awardsList = [
   // }
 ]
 
-const handleSlide = (_data:any) =>{
-  if(_data.link){
+const handleSlide = (_data: any) => {
+  if (_data.link) {
     location.href = _data.link
   }
 }
@@ -150,9 +149,9 @@ const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
 
-onMounted(()=>{
+onMounted(() => {
   getWindowWidth()
-  window.addEventListener('resize',getWindowWidth)
+  window.addEventListener('resize', getWindowWidth)
 })
 </script>
 <template>
@@ -167,7 +166,7 @@ onMounted(()=>{
     <div v-if="awardsList.length" class="awardslide">
       <swiper
         :space-between="40"
-        :slides-per-view="windowWidth>768? 4: 3"
+        :slides-per-view="windowWidth > 768 ? 4 : 3"
         :modules="[Autoplay]"
         :loop="true"
         :autoplay="{ delay: 0 }"
@@ -180,7 +179,14 @@ onMounted(()=>{
           class="ccSwiper-slide"
         >
           <div class="brand" @click="handleSlide(item)">
-            <div><img :class="`brandImg${index}`" :src="item.imgUrl" :alt="`${item.alt}標章`" :title="item.alt" /></div>
+            <div>
+              <img
+                :class="`brandImg${index}`"
+                :src="item.imgUrl"
+                :alt="`${item.alt}標章`"
+                :title="item.alt"
+              />
+            </div>
             <div>
               <div>{{ $t(item.year) }}</div>
               <div>{{ $t(item.des) }}</div>
@@ -225,10 +231,10 @@ onMounted(()=>{
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 100%;
         max-height: 80%;
-        &.brandImg4{
+        &.brandImg4 {
           // max-height: 50%;
         }
       }

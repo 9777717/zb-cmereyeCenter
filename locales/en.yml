@@ -229,6 +229,7 @@ pages:
       awards_year_11: "2022"
       awards_year_12: "2022"
       awards_year_13: "2023"
+      awards_year_14: "2024"
       awards_des_1: 香港星級品牌企業獎
       awards_des_2: 商界展關懷
       awards_des_3: 亞洲最佳價值服務大獎
@@ -244,6 +245,7 @@ pages:
       awards_des_13: HKCT企業大獎 - 年度傑出綜合專科醫療服務
       awards_des_14: 香港公益金 -「公益卓越獎」
       awards_des_15: 「ESG約章」行動
+      awards_des_16: 香港經濟日報企業大獎
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team
