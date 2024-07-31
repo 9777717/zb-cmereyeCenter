@@ -3,18 +3,11 @@ import { Autoplay } from 'swiper'
 const awardsList = [
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+      'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_14',
     des: 'pages.about_us.awards.awards_des_12',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港服務名牌2024',
-  },
-  {
-    imgUrl: 'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
-    year: 'pages.about_us.awards.awards_year_13',
-    des: 'pages.about_us.awards.awards_des_15',
-    link: 'https://www.esgpledge.org.hk/',
-    alt: '希瑪眼科中心_ESG約章行動',
   },
   {
     imgUrl: 'https://hkcmereye.com/template/default/images/j1.png',
@@ -22,6 +15,13 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_16',
     link: 'https://iet2.hket.com/event/hket_excellence_awards/zh/2024-winner-list.html#',
     alt: '香港經濟日報企業大獎 2024',
+  },
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
+    year: 'pages.about_us.awards.awards_year_13',
+    des: 'pages.about_us.awards.awards_des_15',
+    link: 'https://www.esgpledge.org.hk/',
+    alt: '希瑪眼科中心_ESG約章行動',
   },
   {
     imgUrl:
@@ -88,6 +88,13 @@ const awardsList = [
     link: '',
     alt: '希瑪眼科中心_大灣區企業傑出獎2022',
   },
+  // {
+  //   imgUrl:
+  //     'https://static.cmereye.com/imgs/2023/01/3b9de76f932cbe48.png',
+  //   year: 'pages.about_us.awards.awards_year_7',
+  //   des: 'pages.about_us.awards.awards_des_7',
+  //   link: 'https://corphub.asia/awards/?route=events&id=1'
+  // }
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
@@ -98,27 +105,11 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
-    year: 'pages.about_us.awards.awards_year_1',
-    des: 'pages.about_us.awards.awards_des_1',
-    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
-  },
-  {
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
-    year: 'pages.about_us.awards.awards_year_2',
-    des: 'pages.about_us.awards.awards_des_2',
-    link: 'https://www.caringcompany.org.hk/b5_index.php',
-    alt: '希瑪眼科中心_商界展關懷2020/2021',
-  },
-  {
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
-    year: 'pages.about_us.awards.awards_year_3',
-    des: 'pages.about_us.awards.awards_des_3',
-    link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
-    alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
+    year: 'pages.about_us.awards.awards_year_5',
+    des: 'pages.about_us.awards.awards_des_5',
+    link: 'https://corphub.asia/awards/?route=events&id=1',
+    alt: '希瑪眼科中心_香港最優秀企業大獎2020',
   },
   {
     imgUrl:
@@ -130,19 +121,28 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
-    year: 'pages.about_us.awards.awards_year_5',
-    des: 'pages.about_us.awards.awards_des_5',
-    link: 'https://corphub.asia/awards/?route=events&id=1',
-    alt: '希瑪眼科中心_香港最優秀企業大獎2020',
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
+    year: 'pages.about_us.awards.awards_year_3',
+    des: 'pages.about_us.awards.awards_des_3',
+    link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
+    alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020',
   },
-  // {
-  //   imgUrl:
-  //     'https://static.cmereye.com/imgs/2023/01/3b9de76f932cbe48.png',
-  //   year: 'pages.about_us.awards.awards_year_7',
-  //   des: 'pages.about_us.awards.awards_des_7',
-  //   link: 'https://corphub.asia/awards/?route=events&id=1'
-  // }
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
+    year: 'pages.about_us.awards.awards_year_2',
+    des: 'pages.about_us.awards.awards_des_2',
+    link: 'https://www.caringcompany.org.hk/b5_index.php',
+    alt: '希瑪眼科中心_商界展關懷2020/2021',
+  },
+  {
+    imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
+    year: 'pages.about_us.awards.awards_year_1',
+    des: 'pages.about_us.awards.awards_des_1',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
+    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
+  },
 ]
 
 const handleSlide = (_data: any) => {
