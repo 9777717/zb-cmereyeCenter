@@ -8,6 +8,15 @@ useHead(() => ({
 }))
 const eyeDisease = [
   {
+    img: 'https://static.cmereye.com/imgs/2024/07/821fc091bad9c813.png',
+    title:
+      '【香港兒童壓力街訪】現今學童壓力究竟有幾大❓大人又知唔知佢哋嘅內心世界？',
+    text: `喺現今競爭激烈嘅社會下，家長都希望子女能夠贏在起跑線上🏁，從學術到課外活動，用各種方法提高子女競爭力。然而，小朋友嘅抗壓能力係咪足以承受現今嘅教育同培養模式呢? 家長有冇嘗試聆聽過佢哋嘅內心世界💭？一齊聽吓小朋友真正嘅想法喇🫵！\n\n#驗眼 #定期驗眼 #眼睛健康 #希瑪眼科 #眼科中心 #眼科診所 #希瑪眼科診所 #希瑪醫療`,
+    link: 'https://youtu.be/833gG0x2KMQ',
+    img_title: '【香港兒童壓力街訪】',
+    img_alt: '【香港兒童壓力街訪】',
+  },
+  {
     img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease1_title',
@@ -58,10 +67,15 @@ const eyeDisease = [
       <div>
         <div>
           <div>
-            <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png" 
-            srcset="https://static.cmereye.com/imgs/2023/07/c77bfeb27c892e8e.jpg 768w, https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"  
-            alt="護眼宣傳" 
-            src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"/>
+            <img
+              data-cfsrc="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
+              srcset="
+                https://static.cmereye.com/imgs/2023/07/c77bfeb27c892e8e.jpg 768w,
+                https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png
+              "
+              alt="護眼宣傳"
+              src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
+            />
           </div>
         </div>
         <div>
@@ -74,8 +88,7 @@ const eyeDisease = [
               }}
             </div>
             <div>promotional video</div>
-            <div>
-            </div>
+            <div></div>
           </div>
           <div>
             {{
@@ -101,30 +114,30 @@ const eyeDisease = [
             </div>
           </div>
           <svg
-              width="9"
-              height="144"
-              viewBox="0 0 9 144"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="144"
+            viewBox="0 0 9 144"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-1d8b93bf=""
+            data-v-a125a221=""
+            data-v-4b343dd3=""
+            data-v-ee7ab105=""
+            data-v-040e870e=""
+          >
+            <path
+              d="M1 1V143L7.5 130.5"
+              stroke="#2958A3"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
               data-v-1d8b93bf=""
               data-v-a125a221=""
               data-v-4b343dd3=""
               data-v-ee7ab105=""
               data-v-040e870e=""
-            >
-              <path
-                d="M1 1V143L7.5 130.5"
-                stroke="#2958A3"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                data-v-1d8b93bf=""
-                data-v-a125a221=""
-                data-v-4b343dd3=""
-                data-v-ee7ab105=""
-                data-v-040e870e=""
-              ></path>
-            </svg>
+            ></path>
+          </svg>
         </div>
       </div>
       <div class="publicity-content-swiper">
@@ -172,18 +185,18 @@ const eyeDisease = [
 </template>
 
 <style lang="scss" scoped>
-.footerMenuPom{
+.footerMenuPom {
   margin-bottom: 50px;
 }
 .publicity {
   position: relative;
-  &::before{
+  &::before {
     content: '';
     background: #f1f1f1;
     position: absolute;
     top: -146px;
     left: 0;
-    width: calc((100vw - 1493px)/2 + 1427px);
+    width: calc((100vw - 1493px) / 2 + 1427px);
     height: 706px;
   }
   & > div:nth-child(1) {
@@ -197,7 +210,7 @@ const eyeDisease = [
     & > div:nth-child(1) {
       position: absolute;
       width: 100%;
-      img{
+      img {
         width: 100%;
       }
     }
@@ -251,7 +264,7 @@ const eyeDisease = [
         letter-spacing: 0.3em;
         color: #ffffff;
       }
-      &>svg{
+      & > svg {
         margin-top: 100px;
       }
     }
@@ -280,7 +293,7 @@ const eyeDisease = [
       }
     }
   }
-  &-content-mb{
+  &-content-mb {
     display: none;
   }
 }
@@ -303,7 +316,7 @@ const eyeDisease = [
 }
 @media screen and (max-width: 768px) {
   .publicity {
-    &::before{
+    &::before {
       width: calc(100% - 50px);
       top: 0;
       left: 50px;
@@ -332,16 +345,16 @@ const eyeDisease = [
           line-height: 1.6;
           letter-spacing: 0em;
         }
-        &>svg{
+        & > svg {
           margin-top: -25px;
-          transform: scale(.5);
+          transform: scale(0.5);
         }
       }
     }
     &-content-swiper {
       display: none;
     }
-    &-content-mb{
+    &-content-mb {
       width: calc(100% - 60px);
       max-width: 1080px;
       margin: 120px auto 0;
