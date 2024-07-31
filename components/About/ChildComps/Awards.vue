@@ -181,8 +181,9 @@ onMounted(() => {
         :speed="3000"
         class="ccSwiper"
       >
+      <!-- 数组反转方法 -->
         <swiper-slide
-          v-for="(item, index) in awardsList"
+          v-for="(item, index) in awardsList.reverse()"
           :key="index"
           class="ccSwiper-slide"
         >
