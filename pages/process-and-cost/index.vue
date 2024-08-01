@@ -347,7 +347,7 @@ const processedLists:any = [
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr28') }}
                     </td>
-                    <td class="text-center">$20,000-$39,000</td>
+                    <td class="text-center">$22,500-$39,000</td>
                     <td class="text-center">/</td>
                   </tr>
                   <!-- <tr>
