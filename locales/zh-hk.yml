@@ -478,6 +478,14 @@ pages:
           doctor_24_education_4: 英國倫敦大學公共衛生醫學碩士
           doctor_24_education_5: 香港眼科醫學院院士
           doctor_24_education_6: 香港醫學專科學院院士(眼科)
+      doctor_25:
+        doctor_25_name: 高德全醫生
+        doctor_25_en_name: Dr SimonKo
+        doctor_25_education:
+          doctor_25_education_1: 香港大學內外全科醫學士
+          doctor_25_education_2: 香港醫學專科學院院士(眼科)
+          doctor_25_education_3: 香港眼科醫學院院士 
+          doctor_25_education_4: 英國愛丁堡皇家外科醫學院院士
     doctor_edu: 學歷
     doctor_order: 預約
   medical_service:
