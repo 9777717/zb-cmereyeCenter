@@ -66,72 +66,72 @@ const eyeCenterImgList = [
 // 微笑
 const smileImgList = [
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03653.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/cca3677b22fff970.jpg',
     alt:'希瑪微笑矯視中心',
     title: '希瑪微笑矯視中心'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03624-1024x682.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/2243214330d17740.jpg',
     alt:'希瑪微笑矯視中心配備先進的驗眼儀器',
     title: '希瑪微笑矯視中心_驗眼儀器'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03921.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/d9c17b2602074dc2.jpg',
     alt:'希瑪微笑矯視中心配備先進的眼科檢查儀器',
     title: '希瑪微笑矯視中心_眼科檢查儀器'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03907.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/f15f1fcddbf4480b.jpg',
     alt:'希瑪微笑矯視中心配備高端的眼科檢查儀器',
     title: '希瑪微笑矯視中心_眼科檢查儀器'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03680.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/80d662e2d6fd07b0.jpg',
     alt:'希瑪微笑矯視中心配備高端的驗眼儀器',
     title: '希瑪微笑矯視中心_驗眼儀器'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03600.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/f3577bfe421412b4.jpg',
     alt:'希瑪微笑矯視中心_中環診所舒適的候診區',
     title: '希瑪微笑矯視中心_中環診所'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03741.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/f72453a5494213f9.jpg',
     alt:'希瑪微笑矯視中心_中環診所明亮舒適的候診區',
     title: '希瑪微笑矯視中心_中環診所'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03809-2.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/4d8a1d48805a12e6.jpg',
     alt:'希瑪微笑矯視中心_中環診所走廊與候診區',
     title: '希瑪微笑矯視中心_中環診所'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03735.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/1e1e89b1fddf463f.jpg',
     alt:'希瑪微笑矯視中心_中環診所溫馨的燈光設計',
     title: '希瑪微笑矯視中心_中環診所'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03692-2.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/007ff78c5924dd4f.jpg',
     alt:'希瑪微笑矯視中心提供飲用水設施',
     title: '希瑪微笑矯視中心'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03998.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/f165cd18d4792c66.jpg',
     alt:'希瑪微笑矯視中心_手術中心牌匾',
     title: '希瑪微笑矯視中心'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03949.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/48d7de78a7b1f4c6.jpg',
     alt:'希瑪微笑矯視中心舒適的接待區',
     title: '希瑪微笑矯視中心'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03977.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/acf90a19c2a17b84.jpg',
     alt:'希瑪微笑矯視中心_眼科診所候診區',
     title: '希瑪微笑矯視中心_眼科診所'
   },
   { 
-    img: 'https://smilecms.hkcmereye.com/wp-content/uploads/2021/09/CAM03968.jpg',
+    img: 'https://static.cmereye.com/imgs/2024/08/b4ed26bdb8949a97.jpg',
     alt:'希瑪微笑矯視中心_眼科診所舒適的候診區',
     title: '希瑪微笑矯視中心_眼科診所'
   },
