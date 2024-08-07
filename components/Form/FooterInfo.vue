@@ -4,10 +4,10 @@ import type { FormInstance, FormRules } from 'element-plus'
 definePageMeta({
   layout: 'page',
 })
-const {t} = useLang()
+const { t } = useLang()
 const locale = useState<string>('locale.setting')
 
-const cities = computed(()=>[
+const cities = computed(() => [
   t('components.footerInfo.Instagram'),
   t('components.footerInfo.YouTube'),
   t('components.footerInfo.Google'),
@@ -33,7 +33,7 @@ const ruleForm = reactive({
 const telValidator = (rule: any, value: any, callback: any) => {
   if (!value) {
     callback(new Error('請輸入手機號'))
-  }else if(value === '+852'){
+  } else if (value === '+852') {
     callback(new Error('請輸入手機號'))
   } else {
     callback()
@@ -41,9 +41,7 @@ const telValidator = (rule: any, value: any, callback: any) => {
 }
 
 const rules = reactive<FormRules>({
-  name: [
-    { required: true, message: '請輸入姓名', trigger: 'change' }
-  ],
+  name: [{ required: true, message: '請輸入姓名', trigger: 'change' }],
   phone: [{ required: true, validator: telValidator, trigger: 'change' }],
   // email: [
   //   { required: true, message: '請輸入電郵地址', trigger: 'change' },
@@ -80,15 +78,26 @@ const postData = async () => {
 其他：${ruleForm.rest}
 訊息：${ruleForm.desc}
 來源：${location.href}`
-  let _data = 'message=' + encodeURIComponent(_message);
-  let { data }:any = await useFetch('https://ddwebhook.hkcmereye.com/send',{
+  let _data = 'message=' + encodeURIComponent(_message)
+
+  let { data }: any = await useFetch('/proxy/robot/send', {
     method: 'post',
     headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
+      'Content-Type': 'application/json;charset=UTF-8',
     },
-    body: _data
+    query: {
+      access_token:
+        '45e9c7b82a844734579e37790bf19b638f2b7cb4844bd039a87775dd7b2f7028',
+    },
+    body: {
+      msgtype: 'text',
+      text: {
+        content: _message,
+      },
+    },
   })
-  let res = data.value
+
+  // let res = data.value
   // if (res == '发送成功！') {
   //   ElMessage({
   //     showClose: true,
@@ -100,38 +109,44 @@ const postData = async () => {
   // }
   // commitToCms()
 }
-const commitToCms = async () =>{
+const commitToCms = async () => {
   let _formData = new FormData()
-  _formData.append('contacts',ruleForm.name)
-  _formData.append('yysj',ruleForm.region)
-  _formData.append('mobile',ruleForm.phone)
-  _formData.append('email',ruleForm.email)
-  _formData.append('content',ruleForm.desc)
-  _formData.append('ly',location.href)
-  _formData.append('dz',ruleForm.type.join('，') + (ruleForm.rest ? `，${ruleForm.rest}` : ''))
-  _formData.append('paramsNoCheck','1')
-  let { data }:any = await useFetch('https://hkcmereye.com/api.php/cms/addmsg',{
-    method: 'post',
-    body: _formData
-  });
+  _formData.append('contacts', ruleForm.name)
+  _formData.append('yysj', ruleForm.region)
+  _formData.append('mobile', ruleForm.phone)
+  _formData.append('email', ruleForm.email)
+  _formData.append('content', ruleForm.desc)
+  _formData.append('ly', location.href)
+  _formData.append(
+    'dz',
+    ruleForm.type.join('，') + (ruleForm.rest ? `，${ruleForm.rest}` : '')
+  )
+  _formData.append('paramsNoCheck', '1')
+  let { data }: any = await useFetch(
+    'https://hkcmereye.com/api.php/cms/addmsg',
+    {
+      method: 'post',
+      body: _formData,
+    }
+  )
   let res = JSON.parse(data.value)
   if (res) {
-    if(res.code){
+    if (res.code) {
       ElMessage({
         showClose: true,
         message: '表單提交成功！我們會盡快回覆閣下。',
         type: 'success',
-        duration: 0
+        duration: 0,
       })
-      localStorage.setItem('contactForm',JSON.stringify(ruleForm))
-    }else{
+      localStorage.setItem('contactForm', JSON.stringify(ruleForm))
+    } else {
       ElMessage({
         showClose: true,
         message: res.data,
-        type: 'error'
+        type: 'error',
       })
     }
-  }else{
+  } else {
     ElMessage({
       showClose: true,
       message: '服务异常，请稍后重试',
@@ -160,23 +175,23 @@ defineProps({
   },
   isShowTopTitle: {
     type: Boolean,
-    default: false
+    default: false,
   },
   formbgimg: {
     type: String,
-    default: 'https://static.cmereye.com/imgs/2024/04/71b31da046e561bc.png'
-  }
+    default: 'https://static.cmereye.com/imgs/2024/04/71b31da046e561bc.png',
+  },
 })
 
 const disabledDate = (time: Date) => {
   // console.log(time.getTime(),Date.now())
-  return time.getTime()+24*60*60*1000 < Date.now()
+  return time.getTime() + 24 * 60 * 60 * 1000 < Date.now()
 }
 </script>
 
 <template>
   <div class="form" :style="bg">
-    <img class="formbgimg" :src="formbgimg" alt="">
+    <img class="formbgimg" :src="formbgimg" alt="" />
     <div class="formTopTitle" v-if="isShowTopTitle">
       <div>預約</div>
       <div>BOOKING</div>
@@ -187,81 +202,83 @@ const disabledDate = (time: Date) => {
         <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
       <div>
-      <div>
-        
-        <el-form
-          ref="ruleFormRef"
-          :model="ruleForm"
-          :rules="rules"
-          class="demo-ruleForm"
-          :class="{'demo-ruleForm-en': locale === 'en'}"
-          :size="'default'"
-          status-icon
-        >
-          <el-form-item prop="name">
-            <el-input
-              v-model="ruleForm.name"
-              :placeholder="$t('components.footerInfo.placeholder1')"
-              clearable
-            />
-          </el-form-item>
-          <el-form-item prop="phone">
-            <el-input
-              maxLength="12"
-              v-model="ruleForm.phone"
-              :placeholder="$t('components.footerInfo.placeholder2')"
-              clearable
-            />
-          </el-form-item>
-          <el-form-item prop="email">
-            <el-input
-              v-model="ruleForm.email"
-              :placeholder="$t('components.footerInfo.placeholder3')"
-              clearable
-            />
-          </el-form-item>
-          <el-form-item prop="region">
-            <el-date-picker
-              v-model="ruleForm.region"
-              type="date"
-              format="YYYY/MM/DD"
-              value-format="YYYY-MM-DD"
-              :placeholder="$t('components.footerInfo.placeholder4')"
-              :size="'large'"
-              :disabled-date="disabledDate"
-            />
-          </el-form-item>
-          <el-form-item prop="type" :label="$t('components.footerInfo.label1')">
-            <el-checkbox-group v-model="ruleForm.type" clearable>
-              <el-checkbox
-                v-for="serve in cities"
-                :key="serve"
-                class="serve"
-                :label="serve"
-                name="type"
-                >{{ serve }}</el-checkbox
-              >
-              <el-form-item
-                class="rest"
-                :label="$t('components.footerInfo.rest')"
-              >
-                <input v-model="ruleForm.rest" />
-              </el-form-item>
-            </el-checkbox-group>
-          </el-form-item>
-          <el-form-item prop="desc">
-            <el-input
-              v-model="ruleForm.desc"
-              type="textarea"
-              :rows="2"
-              :placeholder="$t('components.footerInfo.placeholder5')"
-            />
-          </el-form-item>
-        </el-form>
-      </div>
-      <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
-        {{ $t('components.footerInfo.submitForm') }}
-      </div>
+        <div>
+          <el-form
+            ref="ruleFormRef"
+            :model="ruleForm"
+            :rules="rules"
+            class="demo-ruleForm"
+            :class="{ 'demo-ruleForm-en': locale === 'en' }"
+            :size="'default'"
+            status-icon
+          >
+            <el-form-item prop="name">
+              <el-input
+                v-model="ruleForm.name"
+                :placeholder="$t('components.footerInfo.placeholder1')"
+                clearable
+              />
+            </el-form-item>
+            <el-form-item prop="phone">
+              <el-input
+                maxLength="12"
+                v-model="ruleForm.phone"
+                :placeholder="$t('components.footerInfo.placeholder2')"
+                clearable
+              />
+            </el-form-item>
+            <el-form-item prop="email">
+              <el-input
+                v-model="ruleForm.email"
+                :placeholder="$t('components.footerInfo.placeholder3')"
+                clearable
+              />
+            </el-form-item>
+            <el-form-item prop="region">
+              <el-date-picker
+                v-model="ruleForm.region"
+                type="date"
+                format="YYYY/MM/DD"
+                value-format="YYYY-MM-DD"
+                :placeholder="$t('components.footerInfo.placeholder4')"
+                :size="'large'"
+                :disabled-date="disabledDate"
+              />
+            </el-form-item>
+            <el-form-item
+              prop="type"
+              :label="$t('components.footerInfo.label1')"
+            >
+              <el-checkbox-group v-model="ruleForm.type" clearable>
+                <el-checkbox
+                  v-for="serve in cities"
+                  :key="serve"
+                  class="serve"
+                  :label="serve"
+                  name="type"
+                  >{{ serve }}</el-checkbox
+                >
+                <el-form-item
+                  class="rest"
+                  :label="$t('components.footerInfo.rest')"
+                >
+                  <input v-model="ruleForm.rest" />
+                </el-form-item>
+              </el-checkbox-group>
+            </el-form-item>
+            <el-form-item prop="desc">
+              <el-input
+                v-model="ruleForm.desc"
+                type="textarea"
+                :rows="2"
+                :placeholder="$t('components.footerInfo.placeholder5')"
+              />
+            </el-form-item>
+          </el-form>
+        </div>
+        <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
+          {{ $t('components.footerInfo.submitForm') }}
+        </div>
       </div>
     </div>
   </div>
@@ -270,18 +287,18 @@ const disabledDate = (time: Date) => {
 <style lang="scss" scoped>
 .form {
   position: relative;
-  .formbgimg{
+  .formbgimg {
     position: absolute;
     z-index: 0;
     bottom: 0;
     left: 7%;
   }
-  & > div{
+  & > div {
     background: rgba(0, 0, 0, 0);
     padding-top: 60px;
     padding-bottom: 50px;
     // width: 845px;
-    margin: auto ; 
+    margin: auto;
 
     & > div:nth-child(1) {
       display: flex;
@@ -332,10 +349,10 @@ const disabledDate = (time: Date) => {
           height: 84px;
         }
       }
-      :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper){
+      :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper) {
         width: 100%;
       }
-      :deep(.el-input--large .el-input__wrapper){
+      :deep(.el-input--large .el-input__wrapper) {
         width: 100%;
       }
       :deep(.el-form-item) {
@@ -398,7 +415,7 @@ const disabledDate = (time: Date) => {
 
       .rest {
         // flex: 1;
-        
+
         margin-bottom: 0;
         display: flex;
         align-items: flex-end;
@@ -433,9 +450,9 @@ const disabledDate = (time: Date) => {
       :deep(.el-checkbox) {
         width: 25%;
       }
-      .demo-ruleForm-en{
+      .demo-ruleForm-en {
         :deep(.el-checkbox) {
-          &:nth-of-type(n+5){
+          &:nth-of-type(n + 5) {
             width: 50%;
           }
         }
@@ -478,15 +495,15 @@ const disabledDate = (time: Date) => {
 }
 @media screen and (min-width: 1920px) {
   .form {
-    .formbgimg{
+    .formbgimg {
       left: calc((100% - 1920px) / 2 + (1920px / 100));
     }
   }
 }
 @media (min-width: 768px) and (max-width: 1460px) {
   .form {
-    &>div{
-      &>div:nth-child(2){
+    & > div {
+      & > div:nth-child(2) {
         margin-left: auto;
         margin-right: auto;
         // width: 60%;
@@ -496,28 +513,28 @@ const disabledDate = (time: Date) => {
 }
 @media screen and (max-width: 768px) {
   .form {
-    .formbgimg{
+    .formbgimg {
       display: none;
     }
-    .formTopTitle{
+    .formTopTitle {
       color: #fff;
       display: flex;
       align-items: center;
       flex-direction: column;
       padding-top: 60px;
       padding-bottom: 0px;
-      &>div:first-child{
+      & > div:first-child {
         font-size: 36px;
         display: block;
         margin-bottom: 10px;
       }
-      &>div:last-child{
+      & > div:last-child {
         font-size: 16px;
         position: relative;
         text-align: center;
         margin-top: 0;
         width: auto;
-        &::before{
+        &::before {
           content: '';
           width: 0;
           height: 0;
@@ -562,10 +579,10 @@ const disabledDate = (time: Date) => {
         :deep(.el-form-item) {
           width: calc(100% - 80px);
         }
-        :deep(.el-input__wrapper){
+        :deep(.el-input__wrapper) {
           border-radius: 10px !important;
         }
-        :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper){
+        :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper) {
           height: auto;
         }
         :deep(.el-form-item__label) {
@@ -596,16 +613,16 @@ const disabledDate = (time: Date) => {
           width: 45%;
           margin-right: 10px;
         }
-        .demo-ruleForm-en{
+        .demo-ruleForm-en {
           :deep(.el-checkbox) {
-            &:nth-of-type(n+5){
+            &:nth-of-type(n + 5) {
               width: 80%;
             }
           }
         }
         :deep(.el-checkbox__label) {
           font-size: 14px;
-          letter-spacing: .2px;
+          letter-spacing: 0.2px;
           padding-left: 5px;
         }
       }

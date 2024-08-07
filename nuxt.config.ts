@@ -1,6 +1,6 @@
 import UnpluginComponentsVite from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
-
+import type { NitroOptions } from 'nitropack'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   // server side rendering mode
@@ -40,6 +40,17 @@ export default defineNuxtConfig({
     '@zadigetvoltaire/nuxt-gtm',
     'nuxt-simple-sitemap'
   ],
+
+  nitro: {
+    preset: 'vercel-edge',
+    devProxy: {
+      '/proxy': { 
+        target: 'https://oapi.dingtalk.com',
+        changeOrigin: true,
+        prependPath: true,
+      },
+    },
+  },
 
   // experimental features
   experimental: {
