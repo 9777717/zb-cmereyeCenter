@@ -327,6 +327,32 @@ const doctorList = [
     doctorImgUrl:
       'https://static.cmereye.com/imgs/2023/07/6b20f513c8d4d402.png',
   },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_24.doctor_24_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_24.doctor_24_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_1',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_2',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_3',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_4',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_5',
+      'pages.medical_team.doctorList.doctor_24.doctor_24_education.doctor_24_education_6',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/2024/06/90c786186e3a1f88.png',
+  },
+  {
+    doctorName: 'pages.medical_team.doctorList.doctor_25.doctor_25_name',
+    doctorEnName: 'pages.medical_team.doctorList.doctor_25.doctor_25_en_name',
+    doctorEducation: [
+      'pages.medical_team.doctorList.doctor_25.doctor_25_education.doctor_25_education_1',
+      'pages.medical_team.doctorList.doctor_25.doctor_25_education.doctor_25_education_2',
+      'pages.medical_team.doctorList.doctor_25.doctor_25_education.doctor_25_education_3',
+      'pages.medical_team.doctorList.doctor_25.doctor_25_education.doctor_25_education_4',
+    ],
+    doctorImgUrl:
+      'https://static.cmereye.com/imgs/2024/08/cdd92b7eecffa0df.jpg',
+  },
 ]
 </script>
 <template>
