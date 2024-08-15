@@ -669,7 +669,7 @@ onMounted(() => {
     }
 
     & > div:nth-child(1) {
-      margin-top: 65px !important;
+      // margin-top: 65px !important;
     }
 
     & > div:nth-child(2) {
@@ -1288,6 +1288,7 @@ onMounted(() => {
         padding-top: 70px;
         margin-bottom: 50px;
         .docDes {
+          align-items: flex-start;
           margin-top: 0px;
           &.docDes-en {
             max-width: 45%;
@@ -1377,6 +1378,7 @@ onMounted(() => {
     }
 
     ul > li:nth-child(1) {
+      max-height: 266px;
       .orderLink {
         bottom: 10px !important;
       }
@@ -1388,7 +1390,7 @@ onMounted(() => {
       }
 
       & > div:nth-child(2) {
-        margin-top: 0 !important;
+        margin-top: 20px !important;
       }
 
       &::before {
@@ -1396,7 +1398,7 @@ onMounted(() => {
         background: #f2f2f2;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -70px;
         width: 100%;
         height: 200px;
       }
