@@ -403,7 +403,7 @@ const getData = async () => {
     })
   } else {
     const { data }: any = await useFetch(
-      `https://hkcmereye.com/api.php/list/96/acode/en`
+      `https://hkcmereye.com/api.php/list/96/num/99/acode/en`
     )
     const res: any = JSON.parse(data.value)
 
