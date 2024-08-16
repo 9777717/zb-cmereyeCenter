@@ -373,24 +373,53 @@ let doctorList: any = ref([
   },
 ])
 
+watch(
+  locale,
+  (newValue, oldValue) => {
+    getData()
+  },
+  { deep: true }
+)
+
 const getData = async () => {
-  const { data }: any = await useFetch(
-    `https://hkcmereye.com/api.php/list/12/num/50`
-  )
-  const res: any = JSON.parse(data.value)
+  doctorList.value.splice(1)
+  if (locale.value === 'zh-hk') {
+    const { data }: any = await useFetch(
+      `https://hkcmereye.com/api.php/list/12/num/50`
+    )
+    const res: any = JSON.parse(data.value)
 
-  let list: any = res.data.map((item: any, index: any) => {
-    return {
-      doctorName: item.title,
-      doctorEnName: item.subtitle,
-      doctorEducation: item.content,
-      doctorImgUrl: item.ico,
-    }
-  })
+    let list: any = res.data.map((item: any, index: any) => {
+      return {
+        doctorName: item.title,
+        doctorEnName: item.subtitle,
+        doctorEducation: item.content,
+        doctorImgUrl: item.ico,
+      }
+    })
 
-  list.forEach((item: any) => {
-    doctorList.value.push(item)
-  })
+    list.forEach((item: any) => {
+      doctorList.value.push(item)
+    })
+  } else {
+    const { data }: any = await useFetch(
+      `https://hkcmereye.com/api.php/list/96/acode/en`
+    )
+    const res: any = JSON.parse(data.value)
+
+    let list: any = res.data.map((item: any, index: any) => {
+      return {
+        doctorName: item.title,
+        doctorEnName: item.subtitle,
+        doctorEducation: item.content,
+        doctorImgUrl: item.ico,
+      }
+    })
+
+    list.forEach((item: any) => {
+      doctorList.value.push(item)
+    })
+  }
 }
 
 onMounted(() => {
@@ -459,7 +488,10 @@ onMounted(() => {
               </div>
               <div>
                 <div>
-                  <span v-html="item.doctorEducation"></span>
+                  <span
+                    :key="item.doctorEducation"
+                    v-html="item.doctorEducation"
+                  ></span>
                 </div>
                 <nuxt-link
                   class="orderLink text-white inline-block"
