@@ -2,8 +2,14 @@
 import { Autoplay } from 'swiper'
 const awardsList = [
   {
-    imgUrl:
-      'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    imgUrl: 'https://hkcmereye.com/static/images/honor/easy2024.avif',
+    year: 'pages.about_us.awards.awards_year_14',
+    des: 'pages.about_us.awards.awards_des_17',
+    link: 'https://01market.hk01.com/?popup=healtheasyawards2024',
+    alt: '「健康Easy卓越大獎2024」',
+  },
+  {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_14',
     des: 'pages.about_us.awards.awards_des_12',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -45,6 +51,7 @@ const awardsList = [
     link: 'https://hkct-awards.com/articles/59',
     alt: '希瑪眼科中心_HKCT企業大獎',
   },
+
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_12',
@@ -52,6 +59,7 @@ const awardsList = [
     link: '',
     alt: '希瑪眼科中心_香港卓越服務名牌2022',
   },
+
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
@@ -105,6 +113,14 @@ const awardsList = [
   },
   {
     imgUrl:
+      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
+    year: 'pages.about_us.awards.awards_year_1',
+    des: 'pages.about_us.awards.awards_des_1',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
+    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
+  },
+  {
+    imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
     year: 'pages.about_us.awards.awards_year_5',
     des: 'pages.about_us.awards.awards_des_5',
@@ -127,6 +143,7 @@ const awardsList = [
     link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
     alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020',
   },
+
   {
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
@@ -134,14 +151,6 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_2',
     link: 'https://www.caringcompany.org.hk/b5_index.php',
     alt: '希瑪眼科中心_商界展關懷2020/2021',
-  },
-  {
-    imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
-    year: 'pages.about_us.awards.awards_year_1',
-    des: 'pages.about_us.awards.awards_des_1',
-    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
-    alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
   },
 ]
 
@@ -181,7 +190,7 @@ onMounted(() => {
         :speed="3000"
         class="ccSwiper"
       >
-      <!-- 数组反转方法 -->
+        <!-- 数组反转方法 -->
         <swiper-slide
           v-for="(item, index) in awardsList.reverse()"
           :key="index"
