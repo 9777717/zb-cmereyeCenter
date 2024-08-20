@@ -283,11 +283,7 @@ onMounted(() => {
         font-weight: 400;
         font-size: 13px;
         line-height: 20px;
-
-        /* identical to box height, or 133% */
         letter-spacing: 0.1em;
-        text-transform: uppercase;
-        // white-space: nowrap;
         color: #515151;
       }
     }
