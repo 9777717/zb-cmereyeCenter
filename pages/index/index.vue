@@ -35,7 +35,7 @@ const goWhatsApp = () => {
 const homeBannerLists = [
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/c21309fb1746b2ed.webp',
-    mb_hk_img: 'hhttps://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-team',
