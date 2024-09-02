@@ -382,8 +382,8 @@ watch(
 )
 
 const getData = async () => {
-  console.log(locale.value,'locale');
-  
+  console.log(locale.value, 'locale')
+
   doctorList.value.splice(1)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
@@ -489,9 +489,10 @@ onMounted(() => {
                 {{ $t('pages.medical_team.doctor_edu') }}
               </div>
               <div>
-                <div  :key="item.doctorEducation"
-                v-html="item.doctorEducation">
-                </div>
+                <div
+                  :key="item.doctorEducation"
+                  v-html="item.doctorEducation"
+                ></div>
                 <nuxt-link
                   class="orderLink text-white inline-block"
                   id="medicalTeamLink"
@@ -1723,9 +1724,13 @@ onMounted(() => {
     }
 
     ul > li:nth-child(23) {
+      .docImg {
+        & > div:first-child{
+          width: 104px;
+          height: auto;
+        }
+      }
       & > div:nth-child(2) {
-        width: 104px;
-        height: auto;
         .docEnName {
           top: 175px !important;
         }
