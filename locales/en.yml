@@ -1919,7 +1919,7 @@ pages:
         span1: CMER VISION,
         span2: " an optometry center under CMER Eye Center, is committed to providing"
         span3: comprehensive eye examinations for adults and kids and a myopia
-        span4: , taking care of different age groups. We will refer patients to an
+        span4: ", taking care of different age groups. We will refer patients to an"
         span5: ophthalmologist
         span6: follow-up if any signs of eye diseases or problems are found in the eye examination. Therefore, the patient can receive appropriate treatment as fast as possible.
         btn1: Booking for
@@ -2153,7 +2153,7 @@ pages:
           addressDetailList2_clinicHours:
             clinicHours1: Mon-Fri：10:00—12:00 / 15:00—18:00
             clinicHours2: Sat：09:30—12:00
-            clinicHours3: (Closed on Sundays and public holidays)
+            clinicHours3: (Closed on Saturdays Sundays and public holidays)
           addressDetailList3_addressName: Causeway Bay
           addressDetailList3_addressDetail: Room 1614-15, Hang Lung Centre, 2-20 Paterson Street
           addressDetailList3_subwayExit: Causeway Bay MTR Station (Exit E)

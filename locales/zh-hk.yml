@@ -2321,7 +2321,7 @@ pages:
           addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：10:00—13:00 / 15:00—18:00
             clinicHours2: 星期六：09:30—12:00
-            clinicHours3: （星期日及公眾假期休息）
+            clinicHours3: （星期六、星期日及公眾假期休息）
           addressDetailList3_addressName: 銅鑼灣
           addressDetailList3_addressDetail: 百德新街2-20號恒隆中心1614-15室
           addressDetailList3_subwayExit: 銅鑼灣站E出口
