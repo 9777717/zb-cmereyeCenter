@@ -1726,7 +1726,7 @@ onMounted(() => {
     ul > li:nth-child(23) {
       .docImg {
         & > div:first-child{
-          width: 104px;
+          width: 124px;
           height: auto;
         }
       }
