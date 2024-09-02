@@ -1184,7 +1184,7 @@ onMounted(() => {
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         position: relative;
-        width: 104px;
+        width: 252px;
         height: auto;
       }
       & > div:nth-child(2) {
@@ -1723,6 +1723,11 @@ onMounted(() => {
     }
 
     ul > li:nth-child(23) {
+      & > div:nth-child(1) {
+        position: relative;
+        width: 104px;
+        height: auto;
+      }
       & > div:nth-child(2) {
         .docEnName {
           top: 175px !important;
@@ -1795,7 +1800,7 @@ onMounted(() => {
     ul > li:nth-child(26) {
       & > div:nth-child(2) {
         .docEnName {
-          bottom: 50px;
+          bottom: 155px;
           right: -70px;
         }
         & > div:nth-child(1) {
