@@ -382,6 +382,8 @@ watch(
 )
 
 const getData = async () => {
+  console.log(locale.value,'locale');
+  
   doctorList.value.splice(1)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
@@ -441,9 +443,9 @@ onMounted(() => {
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
               {{ $t(doctorList[0].doctorName) }}
             </div>
-            <p v-if="doctorList[0].doctorIntro" class="doctorIntro">
+            <div v-if="doctorList[0].doctorIntro" class="doctorIntro">
               {{ $t(doctorList[0].doctorIntro) }}
-            </p>
+            </div>
             <div class="docEducation">
               <div class="edutitle" :class="{ 'edutitle-en': locale === 'en' }">
                 {{ $t('pages.medical_team.doctor_edu') }}
@@ -479,19 +481,16 @@ onMounted(() => {
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
               {{ item.doctorName }}
             </div>
-            <p v-if="item.doctorIntro" class="doctorIntro">
+            <div v-if="item.doctorIntro" class="doctorIntro">
               {{ item.doctorIntro }}
-            </p>
+            </div>
             <div class="docEducation">
               <div class="edutitle" :class="{ 'edutitle-en': locale === 'en' }">
                 {{ $t('pages.medical_team.doctor_edu') }}
               </div>
               <div>
-                <div>
-                  <span
-                    :key="item.doctorEducation"
-                    v-html="item.doctorEducation"
-                  ></span>
+                <div  :key="item.doctorEducation"
+                v-html="item.doctorEducation">
                 </div>
                 <nuxt-link
                   class="orderLink text-white inline-block"
@@ -1185,8 +1184,8 @@ onMounted(() => {
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         position: relative;
-        width: 264px;
-        height: 330px;
+        width: 104px;
+        height: auto;
       }
       & > div:nth-child(2) {
         left: -103px;
