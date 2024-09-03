@@ -48,15 +48,21 @@ watch(
   },
   { deep: true }
 )
-
+interface NewList {
+  doctorName: string
+  doctorIntro: string
+  doctorEnName: string
+  doctorEducation: string[]
+  doctorImgUrl: string
+}
+const NewList = ref<NewList[]>([])
 const getData = async () => {
-  doctorList.value.splice(1)
+  NewList.value.splice(1)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
       `https://hkcmereye.com/api.php/list/12/num/50`
     )
     const res: any = JSON.parse(data.value)
-
     let list: any = res.data.map((item: any, index: any) => {
       return {
         doctorName: item.title,
@@ -67,7 +73,7 @@ const getData = async () => {
     })
 
     list.forEach((item: any) => {
-      doctorList.value.push(item)
+      NewList.value.push(item)
     })
   } else {
     const { data }: any = await useFetch(
@@ -85,7 +91,7 @@ const getData = async () => {
     })
 
     list.forEach((item: any) => {
-      doctorList.value.push(item)
+      NewList.value.push(item)
     })
   }
 }
@@ -94,7 +100,15 @@ onMounted(() => {
   setTimeout(() => {
     getData()
   }, 0)
+
+  getWindowWidth()
+  window.addEventListener('resize', getWindowWidth)
 })
+
+let windowWidth = ref(390)
+const getWindowWidth = () => {
+  windowWidth.value = window.innerWidth
+}
 </script>
 <template>
   <div id="medical-team" class="medical-team">
@@ -103,7 +117,7 @@ onMounted(() => {
       <div></div>
     </div>
     <div class="mainCon">
-      <ul>
+      <ul v-if="windowWidth > 768">
         <li class="docList">
           <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
@@ -138,7 +152,7 @@ onMounted(() => {
             <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
           </div>
         </li>
-        <li v-for="(item, index) in doctorList" :key="index" class="docList">
+        <li v-for="(item, index) in NewList" :key="index" class="docList">
           <div
             class="docDes"
             v-if="index != 0"
@@ -156,7 +170,7 @@ onMounted(() => {
               </div>
               <div>
                 <div
-                  :key="item.doctorEducation"
+                  :key="item.doctorEducation.toString()"
                   v-html="item.doctorEducation"
                 ></div>
                 <nuxt-link
@@ -188,6 +202,51 @@ onMounted(() => {
           </div>
         </li>
       </ul>
+      <div v-else>
+        <ul>
+          <li class="docList">
+            <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
+              <div :class="['docName', { 'docName-en': locale === 'en' }]">
+                {{ $t(doctorList[0].doctorName) }}
+              </div>
+              <div v-if="doctorList[0].doctorIntro" class="doctorIntro">
+                {{ $t(doctorList[0].doctorIntro) }}
+              </div>
+              <div class="docEducation">
+                <div
+                  class="edutitle"
+                  :class="{ 'edutitle-en': locale === 'en' }"
+                >
+                  {{ $t('pages.medical_team.doctor_edu') }}
+                </div>
+                <div>
+                  <div
+                    v-for="(ele, i) in doctorList[0].doctorEducation"
+                    :key="i"
+                  >
+                    <span>{{ $t(ele) }}</span>
+                  </div>
+                  <nuxt-link
+                    class="orderLink text-white inline-block"
+                    id="medicalTeamLink"
+                    to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                    >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="docImg"
+              style="max-width: 312px"
+              :class="{ 'docImg-en': locale === 'en' }"
+            >
+              <div><img :src="doctorList[0].doctorImgUrl" /></div>
+              <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
+            </div>
+          </li>
+        </ul>
+        <PageNewDoctor :list="NewList" />
+      </div>
     </div>
     <Footer class="-mt-24" />
     <div class="mt-50">
@@ -978,13 +1037,13 @@ onMounted(() => {
     }
     .mainCon {
       margin-left: 0;
-      margin-top: 145px;
-      padding: 0 30px;
+      margin-top: 30.2083vw;
+      padding:  0 5vw  0 6.25vw ;
       .docList {
         flex-direction: row-reverse;
         width: 100%;
-        padding-top: 70px;
-        margin-bottom: 50px;
+        padding-top: 14.53vw;
+        margin-bottom: 10.4165vw;
         .docDes {
           align-items: flex-start;
           margin-top: 0px;
@@ -1391,7 +1450,7 @@ onMounted(() => {
 
     ul > li:nth-child(23) {
       .docImg {
-        & > div:first-child{
+        & > div:first-child {
           width: 124px;
           height: auto;
         }
