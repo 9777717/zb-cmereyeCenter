@@ -35,7 +35,7 @@ const goWhatsApp = () => {
 const homeBannerLists = [
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/c21309fb1746b2ed.webp',
-    mb_hk_img: 'hhttps://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-team',
@@ -43,13 +43,13 @@ const homeBannerLists = [
     img_title: '袁文傑護眼大使'
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/b696bd939618738a.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/4df6b6c361c5d4e8.webp',
+    pc_hk_img: 'https://static.cmereye.com/imgs/2024/08/90138811a647e874.png',
+    mb_hk_img: 'https://static.cmereye.com/imgs/2024/08/a1df47719f25d671.png',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
-    img_alt: '香港上市公司11間眼科診所',
-    img_title: '香港上市公司11間眼科診所'
+    img_alt: '香港上市公司10間眼科診所',
+    img_title: '香港上市公司10間眼科診所'
   },
   {
     pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/e5c3faed23c63db2.webp',

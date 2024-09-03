@@ -28,7 +28,7 @@ components:
     medicalService: 醫療服務
     contactUs: 聯絡我們
     wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
-    footerMenuB1: ©2023 希瑪眼科中心 版權所有
+    footerMenuB1: ©2024 希瑪眼科中心 版權所有
     footerMenuB2: 希瑪眼科醫療控股有限公司
     footerMenuB3: 香港聯交所上市編號03309.HK
   content:
@@ -73,7 +73,7 @@ pages:
       span3_2: "「最佳價值醫藥及醫療股公司」"
       span3_3: 大獎
     footer:
-      company: ©2023 希瑪眼科中心
+      company: ©2024 希瑪眼科中心
       copy_right: 版權所有
       language: 語言
       fonts: 字體
@@ -90,20 +90,20 @@ pages:
       profile_group_start: 我們的集團名稱
       profile_group_name: 「C-MER」
       profile_group_idea: ，正正反映著我們的理念與執著：
-      profile_group_C: 「C」 ：專業臨床服務 Professional Clinical Services
+      profile_group_C: 「C」 ：優質臨床服務 High-quality Clinical Services
       profile_group_M: 「Ｍ」：現代化管理 Modern Management
       profile_group_E: 「Ｅ」：優質教育 Quality Education
       profile_group_R: 「Ｒ」：開創性科研 Pioneering Research
       profile_group_hema: 「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
     hema_eye:
       hema_eye: 希瑪眼科中心
-      hema_eye_introduce_one: 現時全港有10間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上25名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
+      hema_eye_introduce_one: 現時全港有10間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上25名豐富經驗的眼科專科醫生，以及醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
       hema_eye_introduce_two: 眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」的原則，為病人提供安全、準確、可靠的眼科檢查及治療。
       hema_eye_facebooke: 希瑪眼科
     hema_smile:
       hema_smile: 希瑪微笑矯視中心
-      hema_smile_introduce_one: 中心秉持「度身訂造」原則，提供優質服務包括：SMILE微笑激光矯視、LASIK激光矯視、植入式隱形眼鏡（ICL）及人工晶體置換術，為有近視、遠視、散光及老花的市民解決視力問題帶來的困擾。
-      hema_smile_introduce_two: 作為率先引入激光矯視技術的眼科中心，至今全港有4間微笑矯視中心。中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
+      hema_smile_introduce_one: 中心秉持「度身訂造」原則，提供優質服務包括：SMILE微笑激光矯視、SMILE Pro微笑激光矯視、植入式隱形眼鏡（ICL）、LASIK激光矯視及CMER CLEAR-Vision（老花矯視），為有近視、遠視、散光及老花的市民解決視力問題帶來的困擾。
+      hema_smile_introduce_two: 中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
       hema_smile_facebooke: 希瑪微笑矯視中心
     hema_vision:
       hema_vision: 希瑪視光中心
@@ -251,6 +251,7 @@ pages:
       awards_des_14: 香港公益金 -「公益卓越獎」
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
+      awards_des_17: 「健康Easy卓越大獎2024」
   medical_team:
     medical_team: 醫療團隊
     medical_team_title: 醫 療 團 隊
@@ -480,7 +481,7 @@ pages:
           doctor_24_education_6: 香港醫學專科學院院士(眼科)
       doctor_25:
         doctor_25_name: 高德全醫生
-        doctor_25_en_name: Dr SimonKo
+        doctor_25_en_name: Dr Simon Ko
         doctor_25_education:
           doctor_25_education_1: 香港大學內外全科醫學士
           doctor_25_education_2: 香港醫學專科學院院士(眼科)
@@ -2320,7 +2321,7 @@ pages:
           addressDetailList2_clinicHours:
             clinicHours1: 星期一至五：10:00—13:00 / 15:00—18:00
             clinicHours2: 星期六：09:30—12:00
-            clinicHours3: （星期日及公眾假期休息）
+            clinicHours3: （星期六、星期日及公眾假期休息）
           addressDetailList3_addressName: 銅鑼灣
           addressDetailList3_addressDetail: 百德新街2-20號恒隆中心1614-15室
           addressDetailList3_subwayExit: 銅鑼灣站E出口
