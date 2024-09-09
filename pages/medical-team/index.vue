@@ -58,6 +58,8 @@ interface NewList {
 const NewList = ref<NewList[]>([])
 const getData = async () => {
   NewList.value.splice(1)
+  console.log(NewList.value)
+  console.log()
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
       `https://hkcmereye.com/api.php/list/12/num/50`
@@ -76,6 +78,7 @@ const getData = async () => {
       NewList.value.push(item)
     })
   } else {
+    // 英文
     const { data }: any = await useFetch(
       `https://hkcmereye.com/api.php/list/96/num/99/acode/en`
     )
@@ -93,6 +96,12 @@ const getData = async () => {
     list.forEach((item: any) => {
       NewList.value.push(item)
     })
+console.log("======================")
+    console.log(list)
+console.log("======================")
+console.log(NewList.value)
+
+
   }
 }
 
@@ -152,10 +161,11 @@ const getWindowWidth = () => {
             <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
           </div>
         </li>
+        
         <li v-for="(item, index) in NewList" :key="index" class="docList">
           <div
             class="docDes"
-            v-if="index != 0"
+        
             :class="{ 'docDes-en': locale === 'en' }"
           >
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
@@ -184,7 +194,7 @@ const getWindowWidth = () => {
           </div>
           <div
             class="docImg"
-            v-if="index != 0"
+       
             :class="{ 'docImg-en': locale === 'en' }"
           >
             <div>
@@ -202,7 +212,7 @@ const getWindowWidth = () => {
           </div>
         </li>
       </ul>
-      <div v-else>
+      <!-- <div v-else>
         <ul>
           <li class="docList">
             <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
@@ -246,7 +256,7 @@ const getWindowWidth = () => {
           </li>
         </ul>
         <PageNewDoctor :list="NewList" />
-      </div>
+      </div> -->
     </div>
     <Footer class="-mt-24" />
     <div class="mt-50">
