@@ -57,9 +57,7 @@ interface NewList {
 }
 const NewList = ref<NewList[]>([])
 const getData = async () => {
-  NewList.value.splice(1)
-  console.log(NewList.value)
-  console.log()
+  NewList.value.splice(0)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
       `https://hkcmereye.com/api.php/list/12/num/50`
@@ -96,12 +94,6 @@ const getData = async () => {
     list.forEach((item: any) => {
       NewList.value.push(item)
     })
-console.log("======================")
-    console.log(list)
-console.log("======================")
-console.log(NewList.value)
-
-
   }
 }
 
@@ -161,7 +153,7 @@ const getWindowWidth = () => {
             <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
           </div>
         </li>
-        
+
         <li v-for="(item, index) in NewList" :key="index" class="docList">
           <div
             class="docDes"
