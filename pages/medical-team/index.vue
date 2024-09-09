@@ -204,7 +204,7 @@ const getWindowWidth = () => {
           </div>
         </li>
       </ul>
-      <!-- <div v-else>
+      <div v-else>
         <ul>
           <li class="docList">
             <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
@@ -248,7 +248,7 @@ const getWindowWidth = () => {
           </li>
         </ul>
         <PageNewDoctor :list="NewList" />
-      </div> -->
+      </div>
     </div>
     <Footer class="-mt-24" />
     <div class="mt-50">
