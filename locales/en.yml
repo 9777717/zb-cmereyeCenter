@@ -125,10 +125,20 @@ pages:
       media_wechat: 香港希瑪眼科中心
     development_course: Our History
     course_year:
+      year_24: "2024"
+      child_24:
+        child24_month_1: May
+        child24_month_2: June 
+        child24_month_3: July 
+        child24_info_1: Causeway Bay - The Optometry (OPT) Centre
+        child24_info_2: Mongkok - C-MER Smile Refractive Center
+        child24_info_3_1: Central - ZEISS VISION EXPERT
       year_23: "2023"
       child_23:
         child23_month_1: August
+        child23_month_2: September 
         child23_info_1: Foshan - C-MER Eye Hospital
+        child23_info_2: Tseung Kwan O - The Optometry (OPT) Centre
       year_22: "2022"
       child_22:
         child22_month_1: September
