@@ -2,8 +2,29 @@
 const locale = useState<string>('locale.setting')
 const historyList = ref([
   {
+    year: 'pages.about_us.course_year.year_24',
+    contentList: [
+      {
+        month: 'pages.about_us.course_year.child_24.child24_month_3',
+        info: 'pages.about_us.course_year.child_24.child24_info_3_1',
+      },
+      {
+        month: 'pages.about_us.course_year.child_24.child24_month_2',
+        info: 'pages.about_us.course_year.child_24.child24_info_2',
+      },
+      {
+        month: 'pages.about_us.course_year.child_24.child24_month_1',
+        info: 'pages.about_us.course_year.child_24.child24_info_1',
+      },
+    ],
+  },
+  {
     year: 'pages.about_us.course_year.year_23',
     contentList: [
+      {
+        month: 'pages.about_us.course_year.child_23.child23_month_2',
+        info: 'pages.about_us.course_year.child_23.child23_info_2',
+      },
       {
         month: 'pages.about_us.course_year.child_23.child23_month_1',
         info: 'pages.about_us.course_year.child_23.child23_info_1',
@@ -23,10 +44,7 @@ const historyList = ref([
       },
       {
         month: 'pages.about_us.course_year.child_22.child22_month_3',
-        info: [
-          'pages.about_us.course_year.child_22.child22_info_3_1',
-          
-        ],
+        info: ['pages.about_us.course_year.child_22.child22_info_3_1'],
       },
     ],
   },
@@ -50,7 +68,10 @@ const historyList = ref([
       },
       {
         month: 'pages.about_us.course_year.child_21.child21_month_3',
-        info: ['pages.about_us.course_year.child_21.child21_info_3','pages.about_us.course_year.child_21.child21_info_3_2'],
+        info: [
+          'pages.about_us.course_year.child_21.child21_info_3',
+          'pages.about_us.course_year.child_21.child21_info_3_2',
+        ],
       },
     ],
   },
@@ -173,7 +194,10 @@ const historyList = ref([
         class="title relative z-50"
       />
     </div>
-    <div class="mainHistoryBox" :class="{'mainHistoryBox-en': locale === 'en'}">
+    <div
+      class="mainHistoryBox"
+      :class="{ 'mainHistoryBox-en': locale === 'en' }"
+    >
       <div
         v-for="(years, i) in historyList"
         :key="i"
@@ -278,7 +302,6 @@ const historyList = ref([
 }
 
 @media screen and (max-width: 768px) {
-
   #history {
     margin-top: 0px;
     padding-top: 100px;
@@ -295,33 +318,33 @@ const historyList = ref([
     .historyContent {
       margin-bottom: 30px;
       padding: 0 5%;
-      .year{
+      .year {
         font-size: 14px;
         line-height: 20px;
       }
-      .content{
+      .content {
         width: 90%;
         font-size: 14px;
         .month {
           width: 45px;
           padding-right: 0;
         }
-        &>div{
+        & > div {
           width: calc(100% - 45px);
         }
         .info {
-          width: 100%
+          width: 100%;
         }
       }
     }
-    &.mainHistoryBox{
+    &.mainHistoryBox {
       .historyContent {
-        .content{
+        .content {
           width: 100%;
           .month {
             width: 100px;
           }
-          &>div{
+          & > div {
             width: calc(100% - 100px);
           }
         }
@@ -329,7 +352,6 @@ const historyList = ref([
     }
   }
 }
-
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1920px) {

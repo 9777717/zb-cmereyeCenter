@@ -118,10 +118,20 @@ pages:
       download: 下載希瑪眼科業務小冊子
     development_course: 發展歷程
     course_year:
+      year_24: "2024"
+      child_24:
+        child24_month_1: 5月
+        child24_month_2: 6月 
+        child24_month_3: 7月 
+        child24_info_1: 銅鑼灣 視光師驗眼中心成立
+        child24_info_2: 旺角 希瑪微笑矯視中心成立
+        child24_info_3_1: 中環 ZEISS VISION EXPERT成立
       year_23: "2023"
       child_23:
         child23_month_1: 8月
+        child23_month_2: 9月
         child23_info_1: 佛山 希瑪眼科醫院成立 
+        child23_info_2: 將軍澳 視光師驗眼中心成立
       year_22: "2022"
       child_22:
         child22_month_1: 9月
@@ -265,8 +275,8 @@ pages:
           doctor_1_education_1: 香港大學內外全科醫學士
           doctor_1_education_2: 香港醫學專科學院院士(眼科)
           doctor_1_education_3: 香港眼科醫學院院士
-          doctor_1_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
-          doctor_1_education_5: 英國皇家眼科學院院士
+          doctor_1_education_4: 愛丁堡皇家外科醫學院院士(眼科)
+          doctor_1_education_5: 英國皇家眼科醫學院院士
           doctor_1_education_6: 香港中文大學醫學博士
       doctor_2:
         doctor_2_name: 李佑榮醫生
