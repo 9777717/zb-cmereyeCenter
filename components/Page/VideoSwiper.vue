@@ -25,9 +25,13 @@ const goYoutube = (link: string) => {
       :key="index"
     >
       <div class="videoList" @click="goYoutube(item.link)">
-        <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+        <div>
+          <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+        </div>
         <div>{{ $t(item.title) }}</div>
-        <div>{{ $t(item.text) }}</div>
+        <div class="text">
+          <p v-for="(t, i) in item.text" :key="i">{{ t }}</p>
+        </div>
       </div>
     </swiper-slide>
   </swiper>
@@ -44,7 +48,7 @@ const goYoutube = (link: string) => {
     align-items: center;
     background: #f2f2f2;
     padding: 13px 9px 8px;
-    img{
+    img {
       width: 100%;
     }
   }
@@ -75,19 +79,26 @@ const goYoutube = (link: string) => {
     text-transform: uppercase;
     color: #232323;
   }
+  .text {
+    p {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 :deep(.swiper-button-prev) {
   left: var(--swiper-navigation-sides-offset, 0px);
-  width: calc(var(--swiper-navigation-size)/ 44 * 40);
-  background: url('https://static.cmereye.com/imgs/2023/06/28f4bf2d89a3d3b0.png')no-repeat;
+  width: calc(var(--swiper-navigation-size) / 44 * 40);
+  background: url('https://static.cmereye.com/imgs/2023/06/28f4bf2d89a3d3b0.png')
+    no-repeat;
   background-size: auto 100%;
 }
 
 :deep(.swiper-button-next) {
   right: var(--swiper-navigation-sides-offset, 0px);
-  width: calc(var(--swiper-navigation-size)/ 44 * 40);
-  background: url('https://static.cmereye.com/imgs/2023/06/e27f1fa3facd9c57.png')no-repeat;
+  width: calc(var(--swiper-navigation-size) / 44 * 40);
+  background: url('https://static.cmereye.com/imgs/2023/06/e27f1fa3facd9c57.png')
+    no-repeat;
   background-size: auto 100%;
 }
 
