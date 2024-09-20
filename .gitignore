@@ -11,6 +11,10 @@ node_modules
 dist
 .output
 
+dist
+dist.zip
+generate_and_zip.sh
+
 # IDE
 .idea
 .vercel
