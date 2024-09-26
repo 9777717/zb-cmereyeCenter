@@ -42,7 +42,7 @@ const rt = ref(route)
         <div class="ga-pc-right-WhatsApp">
           <div class="ga-pc-right-WhatsApp">
             <div class="ga-pc-right-WhatsApp">WhatsApp</div>
-            <div class="ga-pc-right-WhatsApp">9345 1508</div>
+            <div class="ga-pc-right-WhatsApp">6576 7817</div>
           </div>
           <div class="ga-pc-right-WhatsApp"><img class="ga-pc-right-WhatsApp" src="https://static.cmereye.com/static/hkeyecmer/svg/icon_1002.svg" alt=""></div>
         </div>

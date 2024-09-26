@@ -116,7 +116,7 @@ const menuLists = computed(() => [
         link: 'tel: +852 3956 2025',
       },
       {
-        name: 'WhatsApp: (852) 9345 1508',
+        name: 'WhatsApp: (852) 6576 7817',
         icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
         link: 'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
       },
