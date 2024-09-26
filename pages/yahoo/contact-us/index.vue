@@ -625,7 +625,7 @@ const handleClose = (done: () => void) => {
         </div>
       </div>
     </div>
-    <yahoofeedback-con />
+    <yahooFeedbackCon />
     <yahooFormFooterInfo
       :from-style="'margin: 0 232px'"
       :isShowTopTitle="windowWidth <= 768"
