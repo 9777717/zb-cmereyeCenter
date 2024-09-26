@@ -15,114 +15,114 @@ let menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.index.home'),
-    route: { name: 'index' }, // 首页
+    route: { name:  'en-index' }, // 首页
   },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
-    route: { name: 'about-us' }, // 关于我们
+    route: { name:  'en-about-us' }, // 关于我们
     childMenuList: [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        route: { path: '/about-us', hash: '#centreIntro' },
+        route: { path:  '/en/about-us', hash: '#centreIntro' },
       },
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
-        route: { path: '/about-us', hash: '#history' },
+        route: { path:  '/en/about-us', hash: '#history' },
       },
       {
         type: 'link',
         text: t('pages.about_us.enterprise_vision'),
-        route: { path: '/about-us', hash: '#corporate' },
+        route: { path:  '/en/about-us', hash: '#corporate' },
       },
       {
         type: 'link',
         text: t('pages.about_us.equipment_centre'),
-        route: { path: '/about-us', hash: '#medicalEquipment' },
+        route: { path:  '/en/about-us', hash: '#medicalEquipment' },
       },
       {
         type: 'link', 
         text: t('pages.about_us.feedback'),
-        route: { path: '/about-us', hash: '#feedback' },
+        route: { path:  '/en/about-us', hash: '#feedback' },
       },
       {
         type: 'link', 
         text: t('pages.about_us.enterprise_awards'),
-        route: { path: '/about-us', hash: '#awards' },
+        route: { path:  '/en/about-us', hash: '#awards' },
       }
     ],
   },
   {
     type: 'link',
     text: t('pages.medical_team.medical_team'),
-    route: { name: 'medical-team' }, // 醫療團隊
+    route: { name:  'en-medical-team' }, // 醫療團隊
   },
   {
     type: 'link',
     text: t('pages.medical_service.medical_service'),
-    route: { name: 'medical-service' }, // 醫療服務
+    route: { name:  'en-medical-service' }, // 醫療服務
     childMenuList: [
       {
         type: 'link',
         text: t('pages.medical_service.cataract'),
-        route: { name: 'medical-service-cataract' }, // 白內障
+        route: { name:  'en-medical-service-cataract' }, // 白內障
       },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
-        route: { name: 'medical-service-maculopathy' },
+        route: { name:  'en-medical-service-maculopathy' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.muscae_volitantes'),
-        route: { name: 'medical-service-muscaeVolitantes' },
+        route: { name:  'en-medical-service-muscaeVolitantes' },
       },
       {
         type: 'link', // 視網膜脫落
         text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
+        route: { name:  'en-medical-service-amotioRetinae' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
-        route: { name: 'medical-service-glaucoma' },
+        route: { name:  'en-medical-service-glaucoma' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.conjunctivitis'),
-        route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+        route: { name:  'en-medical-service-conjunctivitis' }, // 結膜炎
       },
       {
         type: 'link',
         text: t('pages.medical_service.xerophthalmia'),
-        route: { name: 'medical-service-xerophthalmia' },
+        route: { name:  'en-medical-service-xerophthalmia' },
       },
       {
         type: 'link', // 眼表及角膜疾病
         text: t('pages.medical_service.ocularSurfaceDiseases'),
-        route: { name: 'medical-service-ocularSurfaceDiseases' },
+        route: { name:  'en-medical-service-ocularSurfaceDiseases' },
       },
       {
         type: 'link', // 兒童斜弱視
         text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name: 'medical-service-strabismusAmblyopia' },
+        route: { name:  'en-medical-service-strabismusAmblyopia' },
       },
       {
         type: 'link', // 阿托品滴眼液
         text: t('pages.medical_service.atropine'),
-        route: { name: 'medical-service-atropine' },
+        route: { name:  'en-medical-service-atropine' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
-        route: { name: 'medical-service-eyeOrthopaedicDisease' },
+        route: { name:  'en-medical-service-eyeOrthopaedicDisease' },
       },
       {
         type: 'link', // 醫學驗光配鏡
         text: t('pages.medical_service.medicalOptometry'),
-        route: { name: 'medical-service-medicalOptometry' },
+        route: { name:  'en-medical-service-medicalOptometry' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
@@ -135,86 +135,86 @@ let menus = computed((): IMenuItem[] => [
   {
     type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
-    route: { name: 'ophthalmic-information' },
+    route: { name:  'en-ophthalmic-information' },
     childMenuList: [
       {
         type: 'link', // 医生小课堂
         text: t('pages.ophthalmic_information.ophthalmic_class'),
-        route: { name: 'ophthalmic-information' },
+        route: { name:  'en-ophthalmic-information' },
       },
       {
         type: 'link', // 護眼宣傳片
         text: t('pages.ophthalmic_information.ophthalmic_publicity'),
-        route: { name: 'ophthalmic-information-publicity' },
+        route: { name:  'en-ophthalmic-information-publicity' },
       },
       {
         type: 'link',
         text: '視力測試',
-        route: { name: 'ophthalmic-information-eyesight' }
+        route: { name:  'en-ophthalmic-information-eyesight' }
       },
       {
         type: 'link', // 希瑪小劇場
         text: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
-        route: { name: 'ophthalmic-information-littleTheatre' },
+        route: { name:  'en-ophthalmic-information-littleTheatre' },
       },
       {
         type: 'link', // 新闻资讯
         text: t('pages.ophthalmic_information.ophthalmic_press'),
-        route: { name: 'ophthalmic-information-press' },
+        route: { name:  'en-ophthalmic-information-press' },
       },
       {
         type: 'link', // 文章推薦
         text: t('pages.ophthalmic_information.ophthalmic_article'),
-        route: { name: 'ophthalmic-information-article' },
+        route: { name:  'en-ophthalmic-information-article' },
       },
       {
         type: 'link', // 健康資訊
         text: t('pages.ophthalmic_information.ophthalmic_message'),
-        route: { name: 'ophthalmic-information-healthInfo' },
+        route: { name:  'en-ophthalmic-information-healthInfo' },
       }
     ],
   },
   {
     type: 'link',
     text: t('pages.process_cost.process_cost'),
-    route: { name: 'process-and-cost' },
+    route: { name:  'en-process-and-cost' },
     childMenuList: [
       {
         type: 'link', // 費用一覽
         text: t('pages.process_cost.cost'),
-        route: { path: '/process-and-cost', hash: '#cost' },
+        route: { path:  '/en/process-and-cost', hash: '#cost' },
       },
       {
         type: 'link', // 就診流程
         text: t('pages.process_cost.process'),
-        route: { path: '/process-and-cost', hash: '#processed' },
+        route: { path:  '/en/process-and-cost', hash: '#processed' },
       },
     ],
   },
   {
     type: 'link',
     text: t('pages.talent_recruitment.talent_recruitment'),
-    route: { name: 'talent-recruitment' },
+    route: { name:  'en-talent-recruitment' },
   },
   {
     type: 'link',
     text: t('pages.contact_us.contact_us'),
-    route: { name: 'contact-us' },
+    route: { name:  'en-contact-us' },
     childMenuList: [
       {
         type: 'link', // 診所資料
         text: t('pages.contact_us.clinic_information'),
-        route: { name: 'contact-us' },
+        route: { name:  'en-contact-us' },
       },
       {
         type: 'link', 
         text: t('pages.about_us.feedback'),
-        route: { path: '/contact-us', hash: '#feedback' },
+        route: { path:  '/en/contact-us', hash: '#feedback' },
       },
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'contact-us-appointmentForm' },
+        route: { name:  'en-contact-us-appointmentForm' },
       },
     ],
   },
@@ -250,11 +250,12 @@ const hashActive = (child: any) => {
     }
   }
 }
+// console.log(rt.value.name)
 </script>
 
 <template>
-  <div class="headerTemPage">
-    <BuilderNavbar>
+  <div :class="['headerTemPage']">
+    <EnBuilderNavbar>
       <template #menu>
         <div class="navigtion">
           <div
@@ -274,7 +275,7 @@ const hashActive = (child: any) => {
               :class="[
                 'childpage',
                 {
-                  'ccccc': item.route.name === 'medical-service'
+                  'ccccc': item.route.name === 'en-medical-service'
                 },
                 {
                   child_en: locale === 'en' 
@@ -295,7 +296,7 @@ const hashActive = (child: any) => {
           </div>
         </div>
       </template>
-    </BuilderNavbar>
+    </EnBuilderNavbar>
   </div>
 </template>
 <style lang="scss" scoped>

@@ -15,206 +15,206 @@ let menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.index.home'),
-    route: { name: 'index' }, // 首页
+    route: { path: '/yahoo' }, // 首页
   },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
-    route: { name: 'about-us' }, // 关于我们
+    route: { path: '/yahoo/about-us' }, // 关于我们
     childMenuList: [
       {
         type: 'link',
         text: t('pages.about_us.center_profile'),
-        route: { path: '/about-us', hash: '#centreIntro' },
+        route: { path: '/yahoo/about-us', hash: '#centreIntro' },
       },
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
-        route: { path: '/about-us', hash: '#history' },
+        route: { path: '/yahoo/about-us', hash: '#history' },
       },
       {
         type: 'link',
         text: t('pages.about_us.enterprise_vision'),
-        route: { path: '/about-us', hash: '#corporate' },
+        route: { path: '/yahoo/about-us', hash: '#corporate' },
       },
       {
         type: 'link',
         text: t('pages.about_us.equipment_centre'),
-        route: { path: '/about-us', hash: '#medicalEquipment' },
+        route: { path: '/yahoo/about-us', hash: '#medicalEquipment' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.feedback'),
-        route: { path: '/about-us', hash: '#feedback' },
+        route: { path: '/yahoo/about-us', hash: '#feedback' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.enterprise_awards'),
-        route: { path: '/about-us', hash: '#awards' },
-      }
+        route: { path: '/yahoo/about-us', hash: '#awards' },
+      },
     ],
   },
   {
     type: 'link',
     text: t('pages.medical_team.medical_team'),
-    route: { name: 'medical-team' }, // 醫療團隊
+    route: { path: '/yahoo/medical-team' }, // 醫療團隊
   },
   {
     type: 'link',
     text: t('pages.medical_service.medical_service'),
-    route: { name: 'medical-service' }, // 醫療服務
+    route: { path: '/yahoo/medical-service' }, // 醫療服務
     childMenuList: [
       {
         type: 'link',
         text: t('pages.medical_service.cataract'),
-        route: { name: 'medical-service-cataract' }, // 白內障
+        route: { path: '/yahoo/medical-service/cataract' }, // 白內障
       },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
-        route: { name: 'medical-service-maculopathy' },
+        route: { path: '/yahoo/medical-service/maculopathy' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.muscae_volitantes'),
-        route: { name: 'medical-service-muscaeVolitantes' },
+        route: { path: '/yahoo/medical-service/muscaeVolitantes' },
       },
       {
         type: 'link', // 視網膜脫落
         text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
+        route: { path: '/yahoo/medical-service/amotioRetinae' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
-        route: { name: 'medical-service-glaucoma' },
+        route: { path: '/yahoo/medical-service/glaucoma' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.conjunctivitis'),
-        route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+        route: { path: '/yahoo/medical-service/conjunctivitis' }, // 結膜炎
       },
       {
         type: 'link',
         text: t('pages.medical_service.xerophthalmia'),
-        route: { name: 'medical-service-xerophthalmia' },
+        route: { path: '/yahoo/medical-service/xerophthalmia' },
       },
       {
         type: 'link', // 眼表及角膜疾病
         text: t('pages.medical_service.ocularSurfaceDiseases'),
-        route: { name: 'medical-service-ocularSurfaceDiseases' },
+        route: { path: '/yahoo/medical-service/ocularSurfaceDiseases' },
       },
       {
         type: 'link', // 兒童斜弱視
         text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name: 'medical-service-strabismusAmblyopia' },
+        route: { path: '/yahoo/medical-service/strabismusAmblyopia' },
       },
       {
         type: 'link', // 阿托品滴眼液
         text: t('pages.medical_service.atropine'),
-        route: { name: 'medical-service-atropine' },
+        route: { path: '/yahoo/medical-service/atropine' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
-        route: { name: 'medical-service-eyeOrthopaedicDisease' },
+        route: { path: '/yahoo/medical-service/eyeOrthopaedicDisease' },
       },
       {
         type: 'link', // 醫學驗光配鏡
         text: t('pages.medical_service.medicalOptometry'),
-        route: { name: 'medical-service-medicalOptometry' },
+        route: { path: '/yahoo/medical-service/medicalOptometry' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.smileHk'),
         route: false,
-        href: 'https://smile.hkcmereye.com/'
+        href: 'https://smile.hkcmereye.com/',
       },
     ],
   },
   {
     type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
-    route: { name: 'ophthalmic-information' },
+    route: { path: '/yahoo/ophthalmic-information' },
     childMenuList: [
       {
         type: 'link', // 医生小课堂
         text: t('pages.ophthalmic_information.ophthalmic_class'),
-        route: { name: 'ophthalmic-information' },
+        route: { path: '/yahoo/ophthalmic-information' },
       },
       {
         type: 'link', // 護眼宣傳片
         text: t('pages.ophthalmic_information.ophthalmic_publicity'),
-        route: { name: 'ophthalmic-information-publicity' },
+        route: { path: '/yahoo/ophthalmic-information/publicity' },
       },
       {
         type: 'link',
         text: '視力測試',
-        route: { name: 'ophthalmic-information-eyesight' }
+        route: { path: '/yahoo/ophthalmic-information/eyesight' },
       },
       {
         type: 'link', // 希瑪小劇場
         text: t('pages.ophthalmic_information.ophthalmic_little_theatre'),
-        route: { name: 'ophthalmic-information-littleTheatre' },
+        route: { path: '/yahoo/ophthalmic-information/littleTheatre' },
       },
       {
         type: 'link', // 新闻资讯
         text: t('pages.ophthalmic_information.ophthalmic_press'),
-        route: { name: 'ophthalmic-information-press' },
+        route: { path: '/yahoo/ophthalmic-information/press' },
       },
       {
         type: 'link', // 文章推薦
         text: t('pages.ophthalmic_information.ophthalmic_article'),
-        route: { name: 'ophthalmic-information-article' },
+        route: { path: '/yahoo/ophthalmic-information/article' },
       },
       {
         type: 'link', // 健康資訊
         text: t('pages.ophthalmic_information.ophthalmic_message'),
-        route: { name: 'ophthalmic-information-healthInfo' },
-      }
+        route: { path: '/yahoo/ophthalmic-information/healthInfo' },
+      },
     ],
   },
   {
     type: 'link',
     text: t('pages.process_cost.process_cost'),
-    route: { name: 'process-and-cost' },
+    route: { path: '/yahoo/process-and-cost' },
     childMenuList: [
       {
         type: 'link', // 費用一覽
         text: t('pages.process_cost.cost'),
-        route: { path: '/process-and-cost', hash: '#cost' },
+        route: { path: '/yahoo/process-and-cost', hash: '#cost' },
       },
       {
         type: 'link', // 就診流程
         text: t('pages.process_cost.process'),
-        route: { path: '/process-and-cost', hash: '#processed' },
+        route: { path: '/yahoo/process-and-cost', hash: '#processed' },
       },
     ],
   },
   {
     type: 'link',
     text: t('pages.talent_recruitment.talent_recruitment'),
-    route: { name: 'talent-recruitment' },
+    route: { path: '/yahoo/talent-recruitment' },
   },
   {
     type: 'link',
     text: t('pages.contact_us.contact_us'),
-    route: { name: 'contact-us' },
+    route: { path: '/yahoo/contact-us' },
     childMenuList: [
       {
         type: 'link', // 診所資料
         text: t('pages.contact_us.clinic_information'),
-        route: { name: 'contact-us' },
+        route: { path: '/yahoo/contact-us' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.feedback'),
-        route: { path: '/contact-us', hash: '#feedback' },
+        route: { path: '/yahoo/contact-us', hash: '#feedback' },
       },
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'contact-us-appointmentForm' },
+        route: { path: '/yahoo/contact-us/appointmentForm' },
       },
     ],
   },
@@ -222,10 +222,10 @@ let menus = computed((): IMenuItem[] => [
 
 const locale = useState<string>('locale.setting')
 
-const newMenus = computed(()=>{
-  if(locale.value === 'en'){
-    let a:any = JSON.parse(JSON.stringify(menus.value))
-    a.splice(4,1)
+const newMenus = computed(() => {
+  if (locale.value === 'en') {
+    let a: any = JSON.parse(JSON.stringify(menus.value))
+    a.splice(4, 1)
     return a
   }
   return JSON.parse(JSON.stringify(menus.value))
@@ -254,7 +254,7 @@ const hashActive = (child: any) => {
 
 <template>
   <div class="headerTemPage">
-    <BuilderNavbar>
+    <yahooBuilderNavbar>
       <template #menu>
         <div class="navigtion">
           <div
@@ -262,40 +262,40 @@ const hashActive = (child: any) => {
             :key="itemIndex"
             class="hover:bg-red-901 hover:text-while"
           >
-            <Anchor
+            <yahooAnchor
               v-if="item.type === 'link'"
               :to="item.route ? item.route : undefined"
               :href="item.href ? item.href : undefined"
               class="hover:no-underline fatherBg"
-              >{{ item.text }}</Anchor
+              >{{ item.text }}</yahooAnchor
             >
             <div
               v-if="item.childMenuList && item.childMenuList.length"
               :class="[
                 'childpage',
                 {
-                  'ccccc': item.route.name === 'medical-service'
+                  ccccc: item.route.name === 'medical-service',
                 },
                 {
-                  child_en: locale === 'en' 
-                }
+                  child_en: locale === 'en',
+                },
               ]"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
-                <Anchor
+                <yahooAnchor
                   v-if="child.type === 'link'"
                   :to="child.route ? child.route : undefined"
                   :href="child.href ? child.href : undefined"
                   class="hover:no-underline"
                   :class="hashActive(child)"
-                  >{{ child.text }}</Anchor
+                  >{{ child.text }}</yahooAnchor
                 >
               </div>
             </div>
           </div>
         </div>
       </template>
-    </BuilderNavbar>
+    </yahooBuilderNavbar>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -722,8 +722,8 @@ a {
   }
 }
 
-.child_en{
-  &.ccccc{
+.child_en {
+  &.ccccc {
     & > div {
       height: 70px;
     }
@@ -731,7 +731,7 @@ a {
   & > div {
     position: relative;
     height: 50px;
-    &>a{
+    & > a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -743,13 +743,13 @@ a {
   }
 }
 
-.ccccc{
+.ccccc {
   width: 390px;
   right: 0;
   left: 130px;
   // display: flex;
   // flex-wrap: wrap;
-  
+
   & > div {
     width: 130px;
     float: left;
