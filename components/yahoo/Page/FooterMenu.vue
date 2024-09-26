@@ -302,6 +302,7 @@ let drawer = ref(false)
 <style lang="scss" scoped>
 .footerMenu {
   width: 100%;
+  overflow: hidden;
   padding: 100px 0;
   border-top: 4px solid #f2f2f2;
   position: relative;

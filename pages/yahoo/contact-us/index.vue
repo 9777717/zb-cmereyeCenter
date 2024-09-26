@@ -658,6 +658,10 @@ const handleClose = (done: () => void) => {
 </template>
 
 <style lang="scss" scoped>
+:deep(body){
+  width: 100%;
+  overflow: hidden;
+}
 :deep(.contact_eye-swiper .swiper-wrapper) {
   transition-timing-function: linear;
 }
