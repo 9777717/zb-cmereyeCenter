@@ -6,19 +6,19 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.amotioRetinae_head'),
-  meta(){
+  meta() {
     return [
-    {
-      hid: 'amotioRetinaeDesc',
-      name: 'description',
-      content: t('tdk.amotioRetinae.desc'),
-    },
-    {
-      hid: 'amotioRetinaeKey',
-      name: 'keywords',
-      content: t('tdk.amotioRetinae.key'),
-    },
-  ]
+      {
+        hid: 'amotioRetinaeDesc',
+        name: 'description',
+        content: t('tdk.amotioRetinae.desc'),
+      },
+      {
+        hid: 'amotioRetinaeKey',
+        name: 'keywords',
+        content: t('tdk.amotioRetinae.key'),
+      },
+    ]
   },
 }))
 
@@ -75,97 +75,111 @@ const serviceNavigation = [
 const meetArr = [
   {
     title: 'pages.medical_service.amotioRetinae_con.faq.q1',
-    agree:
-      'pages.medical_service.amotioRetinae_con.faq.a1',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a1',
   },
   {
     title: 'pages.medical_service.amotioRetinae_con.faq.q2',
-    agree:
-      'pages.medical_service.amotioRetinae_con.faq.a2',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a2',
   },
   {
     title: 'pages.medical_service.amotioRetinae_con.faq.q3',
-    agree:
-      'pages.medical_service.amotioRetinae_con.faq.a3',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a3',
   },
   {
     title: 'pages.medical_service.amotioRetinae_con.faq.q4',
-    agree:
-      'pages.medical_service.amotioRetinae_con.faq.a4',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a4',
   },
 ]
 const factorList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/fc6ff4f8cb23dfcf.png',
-    text: ['pages.medical_service.amotioRetinae_con.factor.text1_1', 'pages.medical_service.amotioRetinae_con.factor.text1_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.factor.text1_1',
+      'pages.medical_service.amotioRetinae_con.factor.text1_2',
+    ],
     title: '視網膜脫落原因_深近視',
-    alt: '深近視為視網膜脫落原因'
+    alt: '深近視為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c56f997c3d97b23.png',
-    text: ['pages.medical_service.amotioRetinae_con.factor.text2_1', 'pages.medical_service.amotioRetinae_con.factor.text2_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.factor.text2_1',
+      'pages.medical_service.amotioRetinae_con.factor.text2_2',
+    ],
     title: '視網膜脫落原因_家族遺傳',
-    alt: '家族遺傳為視網膜脫落原因'
+    alt: '家族遺傳為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/04455c1207c08c9c.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text3'],
     title: '視網膜脫落原因_眼睛外傷',
-    alt: '眼睛外傷為視網膜脫落原因'
+    alt: '眼睛外傷為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/88711def3ed108f7.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text4'],
     title: '視網膜脫落原因_眼手術',
-    alt: '眼手術史為視網膜脫落原因'
+    alt: '眼手術史為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ec5a01a0dbf9f84a.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text5'],
     title: '視網膜脫落原因_眼腫瘤',
-    alt: '年長者患眼腫瘤為視網膜脫落原因'
+    alt: '年長者患眼腫瘤為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/01900705430260c3.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text6'],
     title: '視網膜脫落原因_眼睛發炎',
-    alt: '眼睛發炎為視網膜脫落原因'
+    alt: '眼睛發炎為視網膜脫落原因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/dab35b2868797ff6.png',
-    text: ['pages.medical_service.amotioRetinae_con.factor.text7_1', 'pages.medical_service.amotioRetinae_con.factor.text7_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.factor.text7_1',
+      'pages.medical_service.amotioRetinae_con.factor.text7_2',
+    ],
     title: '視網膜脫落原因_糖尿上眼',
-    alt: '年長者糖尿上眼為視網膜脫落原因'
+    alt: '年長者糖尿上眼為視網膜脫落原因',
   },
 ]
 const styptomList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/eeb150720a808928.jpg',
     title: 'STEP 1',
-    text: ['pages.medical_service.amotioRetinae_con.styptom.text1_1', 'pages.medical_service.amotioRetinae_con.styptom.text1_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.styptom.text1_1',
+      'pages.medical_service.amotioRetinae_con.styptom.text1_2',
+    ],
     img_title: '視網膜脫落初期',
-    img_alt: '視野出現飛蚊為視網膜脫落初期症狀'
+    img_alt: '視野出現飛蚊為視網膜脫落初期症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/23aab65d449ee915.jpg',
     title: 'STEP 2',
-    text: ['pages.medical_service.amotioRetinae_con.styptom.text2_1', 'pages.medical_service.amotioRetinae_con.styptom.text2_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.styptom.text2_1',
+      'pages.medical_service.amotioRetinae_con.styptom.text2_2',
+    ],
     img_title: '視網膜脫落症狀_閃光',
-    img_alt: '視野出現閃光或黑影為視網膜脫落症狀'
+    img_alt: '視野出現閃光或黑影為視網膜脫落症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/10/bf20112897ad33ed.jpg',
     title: 'STEP 3',
     text: ['pages.medical_service.amotioRetinae_con.styptom.text3'],
     img_title: '視網膜脫落症狀_視野收窄',
-    img_alt: '視野收窄為視網膜脫落症狀'
+    img_alt: '視野收窄為視網膜脫落症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
     title: 'STEP 4',
-    text: ['pages.medical_service.amotioRetinae_con.styptom.text4_1', 'pages.medical_service.amotioRetinae_con.styptom.text4_2'],
+    text: [
+      'pages.medical_service.amotioRetinae_con.styptom.text4_1',
+      'pages.medical_service.amotioRetinae_con.styptom.text4_2',
+    ],
     img_title: '視網膜脫落症狀_視野缺損',
-    img_alt: '視野缺損為視網膜脫落症狀'
+    img_alt: '視野缺損為視網膜脫落症狀',
   },
 ]
 const treatList1 = [
@@ -203,117 +217,167 @@ const preventList1 = [
     title: 'pages.medical_service.amotioRetinae_con.prevent.title1',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text1',
     img_title: '視網膜脫落預防_眼睛檢查',
-    img_alt: '定期接受眼睛檢查為視網膜脫落預防方法'
+    img_alt: '定期接受眼睛檢查為視網膜脫落預防方法',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/273a3786c416e9c5.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title2',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text2',
     img_title: '視網膜脫落預防_劇烈運動',
-    img_alt: '避免劇烈運動為視網膜脫落預防方法'
+    img_alt: '避免劇烈運動為視網膜脫落預防方法',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2af412dd5ff25eb6.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title3',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text3',
     img_title: '視網膜脫落預防_全面眼睛檢查',
-    img_alt: '接受全面眼睛檢查為視網膜脫落預防方法'
+    img_alt: '接受全面眼睛檢查為視網膜脫落預防方法',
   },
 ]
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落2.png',
+  pcSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落1.png',
+  mbSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落2.png',
   cnName: '視網膜脫落',
   enName: 'RETINAL DETACHMENT',
   textColor: '#EAB1A6',
-  pageName: 'amotioRetinae'
+  pageName: 'amotioRetinae',
 }
-
 </script>
 
 <template>
   <div class="amotioRetinae">
     <PageServiceBanner :bannerData="bannerData" />
     <serviceNav :arrData="serviceNavigation" :pageName="'amotioRetinae'" />
-    <div class="amotioRetinae_nav" :class="{'amotioRetinaeNav-en': locale === 'en'}">
+    <div
+      class="amotioRetinae_nav"
+      :class="{ 'amotioRetinaeNav-en': locale === 'en' }"
+    >
       <div id="intro">
-        <div class="amotioRetinae_title_text">{{$t('pages.medical_service.amotioRetinae_con.intro.name')}}</div>
+        <div class="amotioRetinae_title_text">
+          {{ $t('pages.medical_service.amotioRetinae_con.intro.name') }}
+        </div>
         <div>
           <p>
-            {{$t('pages.medical_service.amotioRetinae_con.intro.p1')}}
+            {{ $t('pages.medical_service.amotioRetinae_con.intro.p1') }}
           </p>
           <p>
-            {{$t('pages.medical_service.amotioRetinae_con.intro.p2')}}<span>{{$t('pages.medical_service.amotioRetinae_con.intro.p3')}}</span>{{$t('pages.medical_service.amotioRetinae_con.intro.p4')}}
+            {{ $t('pages.medical_service.amotioRetinae_con.intro.p2')
+            }}<span>{{
+              $t('pages.medical_service.amotioRetinae_con.intro.p3')
+            }}</span
+            >{{ $t('pages.medical_service.amotioRetinae_con.intro.p4') }}
           </p>
         </div>
         <div>
-          <img src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png" title="視網膜脫落" alt="視網膜脫落眼睛結構" />
+          <img
+            src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png"
+            title="視網膜脫落"
+            alt="視網膜脫落眼睛結構"
+          />
         </div>
         <!-- <div class="amotioRetinae_title_btn" @click="callTel">
           <span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_1')}}</span><span>{{$t('pages.medical_service.amotioRetinae_con.btn.name1_2')}}</span>
         </div> -->
         <div class="serviceBtnStyle">
           <service-button-icon
-            :str="$t('pages.medical_service.amotioRetinae_con.btn.name1_1') + '\n' + $t('pages.medical_service.amotioRetinae_con.btn.name1_2')"
-            :link="'tel: +852 3956 2025'" 
+            :str="
+              $t('pages.medical_service.amotioRetinae_con.btn.name1_1') +
+              '\n' +
+              $t('pages.medical_service.amotioRetinae_con.btn.name1_2')
+            "
+            :link="'tel: +852 3956 2025'"
             :type="'3'"
             :pageName="'amotioRetinae'"
           />
         </div>
       </div>
       <div id="factor">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.factor.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.factor.name') }}
         </div>
         <div>
           <div v-for="(item, index) in factorList1" :key="index">
-            <div><img :src="item.img" :alt="item.alt" :title="item.title" /></div>
             <div>
-              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ $t(ele) }}</p>
+              <img :src="item.img" :alt="item.alt" :title="item.title" />
+            </div>
+            <div>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">
+                {{ $t(ele) }}
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div id="styptom">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.styptom.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.styptom.name') }}
         </div>
         <div class="amotioRetinae_text_p_span">
-          {{$t('pages.medical_service.amotioRetinae_con.styptom.context')}}
+          {{ $t('pages.medical_service.amotioRetinae_con.styptom.context') }}
         </div>
         <div>
           <div v-for="(item, index) in styptomList1" :key="index">
             <div>{{ item.title }}</div>
             <div>
-              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">{{ $t(ele) }}</p>
+              <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">
+                {{ $t(ele) }}
+              </p>
             </div>
             <div>
-              <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
             </div>
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          {{$t('pages.medical_service.amotioRetinae_con.styptom.span1')}}<span>{{$t('pages.medical_service.amotioRetinae_con.styptom.span2')}}</span>
-          {{$t('pages.medical_service.amotioRetinae_con.styptom.span3')}}<span>{{$t('pages.medical_service.amotioRetinae_con.styptom.span4')}}</span>
+          {{ $t('pages.medical_service.amotioRetinae_con.styptom.span1')
+          }}<span>{{
+            $t('pages.medical_service.amotioRetinae_con.styptom.span2')
+          }}</span>
+          {{ $t('pages.medical_service.amotioRetinae_con.styptom.span3')
+          }}<span>{{
+            $t('pages.medical_service.amotioRetinae_con.styptom.span4')
+          }}</span>
         </div>
       </div>
       <div id="treat">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.treat.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.treat.name') }}
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
             <div class="amotioRetinae_img">
-              <img :src="locale === 'en' ? item.enImg : item.img" :alt="item.img_alt" :title="item.img_title" />
+              <img
+                :src="locale === 'en' ? item.enImg : item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
             </div>
             <div>
               <div>
                 <p>
-                  <span>{{ item.id }}</span><span>{{ $t(item.title) }}</span>
+                  <span>{{ item.id }}</span
+                  ><span>{{ $t(item.title) }}</span>
                 </p>
               </div>
-              <div class="amotioRetinae_text_p_span amotioRetinae_text_top">{{ $t(item.text) }}</div>
+              <div class="amotioRetinae_text_p_span amotioRetinae_text_top">
+                {{ $t(item.text) }}
+              </div>
             </div>
           </div>
         </div>
@@ -323,40 +387,60 @@ const bannerData = {
         </div> -->
         <div class="serviceBtnStyle">
           <service-button-icon
-            :str="$t('pages.medical_service.amotioRetinae_con.btn.name2_1') + '\n' + $t('pages.medical_service.amotioRetinae_con.btn.name2_2')"
-            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :str="
+              $t('pages.medical_service.amotioRetinae_con.btn.name2_1') +
+              '\n' +
+              $t('pages.medical_service.amotioRetinae_con.btn.name2_2')
+            "
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'4'"
             :pageName="'amotioRetinae amotioRetinae2'"
           />
         </div>
       </div>
       <div id="diabetes">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.diabetes.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.diabetes.name') }}
         </div>
         <div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png" title="糖尿上眼" alt="糖尿上眼眼睛結構" />
+            <img
+              src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png"
+              title="糖尿上眼"
+              alt="糖尿上眼眼睛結構"
+            />
           </div>
           <div class="amotioRetinae_text_p_span">
             <p>
-              {{$t('pages.medical_service.amotioRetinae_con.diabetes.p1')}}
+              {{ $t('pages.medical_service.amotioRetinae_con.diabetes.p1') }}
             </p>
             <p>
-              {{$t('pages.medical_service.amotioRetinae_con.diabetes.p2')}}
+              {{ $t('pages.medical_service.amotioRetinae_con.diabetes.p2') }}
             </p>
           </div>
         </div>
       </div>
       <div id="prevent">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.prevent.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.prevent.name') }}
         </div>
-        <div>{{$t('pages.medical_service.amotioRetinae_con.prevent.context')}}</div>
+        <div>
+          {{ $t('pages.medical_service.amotioRetinae_con.prevent.context') }}
+        </div>
         <div>
           <div v-for="(item, index) in preventList1" :key="index">
             <div>
-              <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
             </div>
             <div>
               <div>{{ $t(item.title) }}</div>
@@ -365,38 +449,59 @@ const bannerData = {
           </div>
         </div>
         <div class="amotioRetinae_text_p_span">
-          {{$t('pages.medical_service.amotioRetinae_con.prevent.span1')}}
-          <span>{{$t('pages.medical_service.amotioRetinae_con.prevent.span2')}}</span>
+          {{ $t('pages.medical_service.amotioRetinae_con.prevent.span1') }}
+          <span>{{
+            $t('pages.medical_service.amotioRetinae_con.prevent.span2')
+          }}</span>
         </div>
       </div>
       <div id="faq">
-        <div class="amotioRetinae_title_text_bg amotioRetinae_title_text" :class="{'amotioRetinae_title_text_bg-en': locale === 'en'}">
-          {{$t('pages.medical_service.amotioRetinae_con.faq.name')}}
+        <div
+          class="amotioRetinae_title_text_bg amotioRetinae_title_text"
+          :class="{ 'amotioRetinae_title_text_bg-en': locale === 'en' }"
+        >
+          {{ $t('pages.medical_service.amotioRetinae_con.faq.name') }}
         </div>
         <div>
-          <PageCollapse :answer="meetArr" :downarr="'amotioRetinae'" :style="{ '--subassembly-color': '#eab1a6' }" />
+          <PageCollapse
+            :answer="meetArr"
+            :downarr="'amotioRetinae'"
+            :style="{ '--subassembly-color': '#eab1a6' }"
+          />
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载 -->
-    <div class="dow" :class="{'dow-en': locale === 'en'}">
+    <div class="dow" :class="{ 'dow-en': locale === 'en' }">
       <div>
         <div>
-          <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
-            <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" title="視網膜脫落" alt="視網膜脫落_小冊子" srcset="" />
-          </div>
-          <div @click.stop="getPdf('amotioRetinae.pdf', '視網膜脫落')">
-            <p>{{$t('pages.medical_service.amotioRetinae_con.dow.text1')}}</p>
-            <p>{{$t('pages.medical_service.amotioRetinae_con.dow.text2')}}</p>
-          </div>
+          <a
+            href="https://www.hkeyecmer.com/pdf/amotioRetinae.pdf"
+            :download="'視網膜脫落'"
+          >
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              title="視網膜脫落"
+              alt="視網膜脫落_小冊子"
+              srcset=""
+            />
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/amotioRetinae.pdf"
+            :download="'視網膜脫落'"
+          >
+            <p>{{ $t('pages.medical_service.amotioRetinae_con.dow.text1') }}</p>
+            <p>{{ $t('pages.medical_service.amotioRetinae_con.dow.text2') }}</p>
+          </a>
         </div>
       </div>
     </div>
     <!-- 表单 -->
-    <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#eab1a6;'}`" />
+    <FormFooterInfo
+      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
+      :co="`color:${'#eab1a6;'}`"
+    />
     <PageFooterMenu />
   </div>
 </template>
@@ -406,11 +511,11 @@ const bannerData = {
   margin: 100px auto -50%;
   transform: scale(0.9);
   transform-origin: center top;
-  &>#intro {
-    &>div:nth-child(1) {
+  & > #intro {
+    & > div:nth-child(1) {
       font-size: 50px;
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin-top: 64px;
       margin-bottom: 99px;
       font-family: 'Noto Sans HK';
@@ -421,15 +526,15 @@ const bannerData = {
       letter-spacing: 3px;
       color: #988a89;
       text-indent: 54px;
-      &>p {
+      & > p {
         margin-bottom: 80px;
-        &>span {
+        & > span {
           color: #e8a89b;
           font-family: 'NotoSansHK-Bold';
         }
       }
     }
-    &>div:nth-child(3) {
+    & > div:nth-child(3) {
       width: 824px;
       height: 507px;
       background-color: #f2f2f2;
@@ -441,23 +546,23 @@ const bannerData = {
       margin-bottom: 100px;
     }
   }
-  &>#factor {
+  & > #factor {
     margin-top: 160px;
     margin-bottom: 160px;
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin-bottom: 120px;
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      &>div {
+      & > div {
         width: 260px;
         height: 308px;
         background-color: #ffffff;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
         border-radius: 75px 0;
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           max-width: 240px;
           height: 60px;
           display: flex;
@@ -475,36 +580,36 @@ const bannerData = {
           color: #515151;
         }
       }
-      &>div:nth-child(4) {
+      & > div:nth-child(4) {
         margin-right: 0;
       }
-      &>div:nth-child(5) {
+      & > div:nth-child(5) {
         margin-left: 156px;
       }
-      &>div:last-child {
+      & > div:last-child {
         margin-right: 156px;
       }
-      &>div:nth-child(n + 5) {
+      & > div:nth-child(n + 5) {
         margin-top: 96px;
       }
     }
   }
-  &>#styptom {
+  & > #styptom {
     margin-bottom: 160px;
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 100px auto 60px;
     }
-    &>div:nth-child(3) {
+    & > div:nth-child(3) {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
       margin-bottom: 112px;
-      &>div {
+      & > div {
         width: 268px;
         height: 309px;
         border: solid 1px #eed3cf;
         position: relative;
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           height: 50px;
           font-family: 'HelveticaNeue-MediumItalic';
           font-size: 20px;
@@ -519,7 +624,7 @@ const bannerData = {
           align-items: center;
           justify-content: center;
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           height: 99px;
           width: 100%;
           background-color: #eab1a6;
@@ -535,13 +640,13 @@ const bannerData = {
           justify-content: center;
           align-items: center;
         }
-        &>div:nth-child(3) {
-          img{
+        & > div:nth-child(3) {
+          img {
             width: 100%;
           }
         }
       }
-      &>div::after {
+      & > div::after {
         content: '';
         background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
         width: 14px;
@@ -552,47 +657,47 @@ const bannerData = {
         top: 50%;
         transform: translateY(-50%);
       }
-      &>div:last-child::after {
+      & > div:last-child::after {
         content: '';
         width: 0;
       }
     }
-    &>div:nth-child(4) {
+    & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
       width: 1200px;
       height: 304px;
       padding: 70px;
       line-height: 46px;
       background-size: 100% 100%;
-      &>span {
+      & > span {
         color: #e8a89b;
       }
     }
   }
 
-  &>#treat {
+  & > #treat {
     margin: 160px auto;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 100px auto 140px;
 
-      &>div {
+      & > div {
         margin-bottom: 140px;
         display: flex;
         flex-direction: row;
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           flex: 1;
-          &>img {
+          & > img {
             width: 100%;
           }
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           width: 732px;
           margin-left: 50px;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             font-family: 'NotoSansHK-Medium';
             font-size: 30px;
             font-weight: normal;
@@ -601,12 +706,12 @@ const bannerData = {
             letter-spacing: 0px;
             color: #e8a89b;
 
-            &>p {
+            & > p {
               display: flex;
               flex-direction: row;
               margin-bottom: 34px;
 
-              >span:nth-child(1) {
+              > span:nth-child(1) {
                 color: #fff;
                 background: #eab1a6;
                 width: 40px;
@@ -620,17 +725,17 @@ const bannerData = {
             }
           }
 
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             line-height: 48px;
             text-indent: 54px;
           }
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         flex-direction: row-reverse;
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-left: 0;
           margin-right: 50px;
         }
@@ -638,46 +743,46 @@ const bannerData = {
     }
   }
 
-  &>#diabetes {
+  & > #diabetes {
     margin: 160px auto;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 100px auto 160px;
       display: flex;
       flex-direction: row;
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 776px;
         margin-left: 60px;
         line-height: 48px;
         text-indent: 54px;
 
-        &>p:nth-child(2) {
+        & > p:nth-child(2) {
           margin-top: 80px;
         }
       }
     }
   }
 
-  &>#prevent {
+  & > #prevent {
     margin: 160px auto;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 100px auto 60px;
       font-size: 24px;
     }
 
-    &>div:nth-child(3) {
+    & > div:nth-child(3) {
       margin-bottom: 100px;
       display: flex;
       justify-content: space-between;
 
-      &>div {
+      & > div {
         width: 385px;
         border-radius: 30px 0 30px 0;
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           background: url('https://static.cmereye.com/imgs/2023/06/e26c60861f4311e0.png');
           background-size: 100% 100%;
           height: 456px;
@@ -687,7 +792,7 @@ const bannerData = {
           padding: 0 36px;
           padding-top: 78px;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             width: 273px;
             height: 44px;
             background-color: #eab1a6;
@@ -706,7 +811,7 @@ const bannerData = {
             justify-content: center;
           }
 
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             font-family: 'Noto Sans HK';
             line-height: 46px;
             color: #555555;
@@ -715,7 +820,7 @@ const bannerData = {
       }
     }
 
-    &>div:nth-child(4) {
+    & > div:nth-child(4) {
       background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
       width: 1200px;
       height: 185px;
@@ -725,58 +830,58 @@ const bannerData = {
       background-size: 100% 100%;
       line-height: 1.8;
       text-align: center;
-      &>span {
+      & > span {
         color: #e8a89b;
         display: block;
       }
     }
   }
 
-  &>#faq {
+  & > #faq {
     margin-bottom: 260px;
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin-top: 120px;
     }
   }
-  &.amotioRetinaeNav-en{
-    &>#factor {
-      &>div:nth-child(2) {
-        &>div{
-          &>div:nth-child(2) {
+  &.amotioRetinaeNav-en {
+    & > #factor {
+      & > div:nth-child(2) {
+        & > div {
+          & > div:nth-child(2) {
             font-size: 20px;
             line-height: 1.4;
           }
         }
       }
     }
-    &>#styptom {
-      &>div:nth-child(3) {
-        &>div{
-          &>div:nth-child(2) {
+    & > #styptom {
+      & > div:nth-child(3) {
+        & > div {
+          & > div:nth-child(2) {
             line-height: 1.4;
             text-align: center;
           }
         }
       }
-      &>div:nth-child(4) {
+      & > div:nth-child(4) {
         padding: 50px 70px;
         line-height: 1.8;
       }
     }
-    &>#prevent {
-      &>div:nth-child(3) {
-        &>div{
-          &>div:nth-child(2) {
+    & > #prevent {
+      & > div:nth-child(3) {
+        & > div {
+          & > div:nth-child(2) {
             height: auto;
             padding-bottom: 30px;
-            &>div:nth-child(2) {
+            & > div:nth-child(2) {
               line-height: 1.6;
             }
           }
         }
       }
-      &>div:nth-child(4) {
+      & > div:nth-child(4) {
         padding-top: 30px;
       }
     }
@@ -841,15 +946,15 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #fbddd8;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #B2A2F4 0%, #D0C8FF 100%);
+    background: linear-gradient(45deg, #b2a2f4 0%, #d0c8ff 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
@@ -862,8 +967,8 @@ const bannerData = {
   color: #fff;
   font-size: 30px;
 
-  &>div:nth-child(1) {
-    &>div {
+  & > div:nth-child(1) {
+    & > div {
       width: 62.5%;
       height: 202px;
       background: #f7d6cf;
@@ -871,18 +976,18 @@ const bannerData = {
       display: flex;
       align-items: center;
 
-      &>div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
 
-        &>img {
+        & > img {
           width: 64px;
           height: auto;
         }
       }
 
-      &>div:nth-child(2) {
+      & > a:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -892,21 +997,21 @@ const bannerData = {
   }
 }
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
 @media screen and (max-width: 768px) {
   .amotioRetinae_nav {
@@ -915,12 +1020,12 @@ const bannerData = {
     transform: scale(1);
     padding: 0 40px;
 
-    &>#intro {
-      &>div:nth-child(1) {
+    & > #intro {
+      & > div:nth-child(1) {
         font-size: 25px;
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin-top: 25px;
         margin-bottom: 30px;
 
@@ -934,17 +1039,17 @@ const bannerData = {
         text-indent: 0;
         text-align: justify;
 
-        &>p {
+        & > p {
           margin-bottom: 30px;
 
-          &>span {
+          & > span {
             color: #e8a89b;
             font-family: 'NotoSansHK-Bold';
           }
         }
       }
 
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         width: 100%;
         height: auto;
         background-color: #f2f2f2;
@@ -956,23 +1061,23 @@ const bannerData = {
         margin-bottom: 100px;
         padding: 25px 22px 25px 40px;
 
-        &>img {
+        & > img {
           width: 80%;
         }
       }
     }
 
-    &>#factor {
+    & > #factor {
       margin-top: 80px;
       margin-bottom: 90px;
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         margin-bottom: 0;
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        &>div {
+        & > div {
           // width: 145px;
           width: calc(50% - 10px);
           max-width: 145px;
@@ -980,7 +1085,7 @@ const bannerData = {
           background-color: #ffffff;
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
           border-radius: 45px 0;
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             max-width: 240px;
             padding: 10px;
             height: auto;
@@ -1000,36 +1105,36 @@ const bannerData = {
           }
         }
 
-        &>div:nth-child(4) {
+        & > div:nth-child(4) {
           margin-right: 0;
         }
-        &>div:nth-child(5) {
+        & > div:nth-child(5) {
           margin-left: 0;
         }
 
-        &>div:last-child {
+        & > div:last-child {
           margin-right: 0;
           margin-left: 25%;
         }
 
-        &>div:nth-child(n) {
+        & > div:nth-child(n) {
           margin-top: 50px;
         }
       }
     }
-    &>#styptom {
+    & > #styptom {
       margin-bottom: 80px;
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin: 40px auto 25px;
       }
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-direction: column;
         margin-bottom: 60px;
-        &>div {
+        & > div {
           width: 100%;
           height: auto;
           border: solid 1px #eed3cf;
@@ -1037,7 +1142,7 @@ const bannerData = {
           display: flex;
           flex-wrap: wrap;
           margin-bottom: 45px;
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             width: 100%;
             height: 50px;
             font-family: 'HelveticaNeue-MediumItalic';
@@ -1053,7 +1158,7 @@ const bannerData = {
             align-items: center;
             justify-content: center;
           }
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             height: auto;
             width: 40%;
             background-color: #eab1a6;
@@ -1070,17 +1175,17 @@ const bannerData = {
             align-items: flex-start;
             padding-left: 15px;
           }
-          &>div:nth-child(3) {
+          & > div:nth-child(3) {
             width: 60%;
             height: auto;
           }
         }
-        &>div:nth-child(1) {
-          &>div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div:nth-child(2) {
             background: #3360a8;
           }
         }
-        &>div::after {
+        & > div::after {
           content: '';
           background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
           width: 14px;
@@ -1093,35 +1198,36 @@ const bannerData = {
           bottom: -30%;
           transform: translateY(-50%) rotate(90deg);
         }
-        &>div:last-child::after {
+        & > div:last-child::after {
           content: none;
         }
       }
 
-      &>div:nth-child(4) {
-        background: url('https://static.cmereye.com/imgs/2023/07/5b7d7027ccc3fc0d.png') no-repeat;
+      & > div:nth-child(4) {
+        background: url('https://static.cmereye.com/imgs/2023/07/5b7d7027ccc3fc0d.png')
+          no-repeat;
         width: 100%;
         height: auto;
         padding: 28px 24px 24px 24px;
         line-height: 1.9;
         background-size: 100%;
-        &>span {
+        & > span {
           color: #e8a89b;
         }
       }
     }
 
-    &>#treat {
+    & > #treat {
       margin: 80px auto;
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin: 30px auto 55px;
-        &>div {
+        & > div {
           margin-bottom: 60px;
           display: flex;
           flex-direction: column;
           position: relative;
-          &>div:nth-child(1) {
-            &>img {
+          & > div:nth-child(1) {
+            & > img {
               width: 100%;
             }
           }
@@ -1132,10 +1238,10 @@ const bannerData = {
             position: absolute;
             top: 60px;
           }
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             width: 100%;
             margin-left: 0;
-            &>div:nth-child(1) {
+            & > div:nth-child(1) {
               font-family: 'NotoSansHK-Medium';
               font-size: 16px;
               font-weight: normal;
@@ -1143,11 +1249,11 @@ const bannerData = {
               line-height: 36px;
               letter-spacing: 0px;
               color: #e8a89b;
-              &>p {
+              & > p {
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 34px;
-                &>span:nth-child(1) {
+                & > span:nth-child(1) {
                   padding-top: 4px;
                   color: #fff;
                   background: #eab1a6;
@@ -1161,64 +1267,64 @@ const bannerData = {
                 }
               }
             }
-            &>div:nth-child(2) {
+            & > div:nth-child(2) {
               line-height: 1.8;
               text-indent: 0;
             }
           }
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           flex-direction: column-reverse;
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             margin-left: 0;
             margin-right: 50px;
           }
         }
       }
 
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         // padding: 16px 20px;
-        &>p {
+        & > p {
           font-size: 16px;
           line-height: 1.8;
         }
       }
     }
-    &>#diabetes {
+    & > #diabetes {
       margin: 80px auto;
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin: 40px auto 60px;
         display: flex;
         flex-direction: column-reverse;
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           width: 100%;
           margin-left: 0;
           line-height: 1.8;
           text-indent: 0;
           font-size: 12px;
-          &>p:nth-child(2) {
+          & > p:nth-child(2) {
             margin-top: 34px;
           }
         }
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           padding: 20px 7px 0 7px;
           width: 80%;
           margin: auto;
         }
       }
     }
-    &>#prevent {
+    & > #prevent {
       margin: 80px auto;
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin: 30px auto 25px;
         font-size: 12px;
       }
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        &>div {
+        & > div {
           width: 100%;
           border-radius: 10px;
           overflow: hidden;
@@ -1228,10 +1334,10 @@ const bannerData = {
           position: relative;
           padding: 80px 10px 20px;
           margin-bottom: 30px;
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             width: 40%;
           }
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             width: 60%;
             background: #fff;
             background-size: 100% 100%;
@@ -1241,7 +1347,7 @@ const bannerData = {
             position: static;
             padding: 0;
             padding-top: 28px;
-            &>div:nth-child(1) {
+            & > div:nth-child(1) {
               width: 70%;
               position: absolute;
               top: 0;
@@ -1264,7 +1370,7 @@ const bannerData = {
               align-items: center;
               justify-content: center;
             }
-            &>div:nth-child(2) {
+            & > div:nth-child(2) {
               font-family: 'Noto Sans HK';
               line-height: 1.8;
               color: #555555;
@@ -1276,14 +1382,15 @@ const bannerData = {
         }
       }
 
-      &>div:nth-child(4) {
-        background: url('https://static.cmereye.com/imgs/2023/07/7030a59cf91a8775.png') no-repeat;
+      & > div:nth-child(4) {
+        background: url('https://static.cmereye.com/imgs/2023/07/7030a59cf91a8775.png')
+          no-repeat;
         width: 100%;
         height: auto;
         padding: 33px 28px 28px;
         background-size: 100% auto;
         text-align: justify;
-        &>span {
+        & > span {
           color: #e8a89b;
           text-indent: 0;
           display: inline;
@@ -1291,57 +1398,57 @@ const bannerData = {
       }
     }
 
-    &>#faq {
+    & > #faq {
       margin-bottom: 260px;
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin-top: 40px;
       }
     }
-    &.amotioRetinaeNav-en{
-      &>#intro {
-        &>div:nth-child(1){
+    &.amotioRetinaeNav-en {
+      & > #intro {
+        & > div:nth-child(1) {
           font-size: 20px;
         }
       }
-      &>#factor {
-        &>div:nth-child(2) {
-          &>div{
-            &>div:nth-child(2) {
+      & > #factor {
+        & > div:nth-child(2) {
+          & > div {
+            & > div:nth-child(2) {
               font-size: 12px;
               line-height: 1.4;
             }
           }
         }
       }
-      &>#styptom {
-        &>div:nth-child(3) {
-          &>div{
-            &>div:nth-child(2) {
+      & > #styptom {
+        & > div:nth-child(3) {
+          & > div {
+            & > div:nth-child(2) {
               padding-right: 15px;
             }
           }
         }
-        &>div:nth-child(4) {
+        & > div:nth-child(4) {
           padding: 28px 24px 24px;
           line-height: 1.8;
         }
       }
-      &>#prevent {
-        &>div:nth-child(3) {
-          &>div{
-            &>div:nth-child(2) {
+      & > #prevent {
+        & > div:nth-child(3) {
+          & > div {
+            & > div:nth-child(2) {
               padding-bottom: 0px;
-              &>div:nth-child(1) {
+              & > div:nth-child(1) {
                 font-size: 18px;
               }
-              &>div:nth-child(2) {
+              & > div:nth-child(2) {
                 line-height: 1.6;
                 text-align: left;
               }
             }
           }
         }
-        &>div:nth-child(4) {
+        & > div:nth-child(4) {
           padding: 10px 20px 10px 30px;
           letter-spacing: 0px;
         }
@@ -1373,7 +1480,8 @@ const bannerData = {
   }
 
   .amotioRetinae_title_text_bg {
-    background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png') no-repeat;
+    background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png')
+      no-repeat;
     background-size: 100%;
     width: 100%;
     height: auto;
@@ -1382,7 +1490,7 @@ const bannerData = {
     display: flex;
     justify-content: center;
     align-items: center;
-    &.amotioRetinae_title_text_bg-en{
+    &.amotioRetinae_title_text_bg-en {
       font-size: 16px;
     }
   }
@@ -1415,27 +1523,27 @@ const bannerData = {
     margin-top: -160px;
     margin-bottom: 130px;
     font-size: 14px;
-    &>div:nth-child(1) {
-      &>div {
+    & > div:nth-child(1) {
+      & > div {
         width: 80%;
         height: 94px;
-        &>div:nth-child(1) {
-          &>img {
+        & > a:nth-child(1) {
+          & > img {
             width: 55px;
             min-width: 55px;
             height: auto;
           }
         }
-        &>div:nth-child(2) {
+        & > a:nth-child(2) {
           padding-top: 5px;
           margin-left: 10px;
         }
       }
     }
-    &.dow-en{
-      &>div:nth-child(1) {
-        &>div{
-          &>div:nth-child(2) {
+    &.dow-en {
+      & > div:nth-child(1) {
+        & > div {
+          & > div:nth-child(2) {
             text-align: center;
           }
         }
@@ -1451,9 +1559,9 @@ const bannerData = {
   }
   .dow {
     margin-top: -25%;
-    &>div:nth-child(1) {
-      &>div {
-        &>div:nth-child(1) {
+    & > div:nth-child(1) {
+      & > div {
+        & > div:nth-child(1) {
           margin-left: 32.2vw;
         }
       }

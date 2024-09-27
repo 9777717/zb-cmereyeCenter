@@ -9,18 +9,18 @@ const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.medical_service_glaucoma_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'glaucomaDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.glaucoma.desc'),
       },
       {
         hid: 'glaucomaKey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
-      }
+        content: t('tdk.glaucoma.key'),
+      },
     ]
   },
 }))
@@ -61,10 +61,14 @@ const symptoms = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/53e4d8c79f82e4a6.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text1',
+    img_title: '青光眼症狀_眼睛脹痛',
+    img_alt: '女患者眼睛脹痛為青光眼症狀表現',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a58ec7eb4f43f6a4.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text2',
+    img_title: '青光眼症狀_眼睛充血',
+    img_alt: '女患者眼睛充血為青光眼症狀表現',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b452ba8e2b783f02.png',
@@ -72,6 +76,8 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_2',
     ],
+    img_title: '青光眼症狀_視力模糊',
+    img_alt: '視力模糊為青光眼症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e2b8896e55129333.png',
@@ -79,28 +85,40 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_2',
     ],
+    img_title: '青光眼症狀_頭痛_偏頭痛',
+    img_alt: '女患者頭痛或偏頭痛為青光眼症狀表現',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c2daf21d82713ee.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text5',
+    img_title: '青光眼症狀_噁心_嘔吐',
+    img_alt: '女患者感到噁心或嘔吐為青光眼症狀表現',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/376c7e6cf5bda7ef.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text6',
+    img_title: '青光眼症狀_視野收窄',
+    img_alt: '視野收窄為青光眼症狀',
   },
 ]
 const worsen = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f751ce73a8968035.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text1',
+    img_alt: '青光眼初期症狀',
+    img_title: '青光眼初期毫無明顯症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text2',
+    img_alt: '青光眼症狀',
+    img_title: '視野縮小為青光眼症狀',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text3',
+    img_alt: '青光眼症狀_視野缺損',
+    img_title: '視野缺損為嚴重青光眼症狀',
   },
 ]
 const congenital = [
@@ -110,6 +128,8 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title1',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text1',
     img: 'https://static.cmereye.com/imgs/2023/05/14c6771dcd344e18.png',
+    img_title: '先天性青光眼症狀_流淚_畏光',
+    img_alt: '流淚畏光為先天性青光眼症狀表現',
   },
   {
     id: '2',
@@ -117,6 +137,8 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title2',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text2',
     img: 'https://static.cmereye.com/imgs/2023/05/d63a41599833af19.png',
+    img_title: '先天性青光眼症狀_角膜混濁',
+    img_alt: '角膜混濁為先天性青光眼症狀表現',
   },
   {
     id: '3',
@@ -124,6 +146,8 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title3',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text3',
     img: 'https://static.cmereye.com/imgs/2023/05/422b6918adf2680a.png',
+    img_title: '先天性青光眼症狀_角膜水腫',
+    img_alt: '角膜水腫為先天性青光眼症狀表現',
   },
 ]
 const kind = [
@@ -133,7 +157,8 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail1',
     img: 'https://static.cmereye.com/imgs/2023/05/3fed11ffa5e46d5a.png',
-    enImg: 'https://hkcmereye.com/template/default/picture/qgy_img/type5_en.png'
+    enImg:
+      'https://hkcmereye.com/template/default/picture/qgy_img/type5_en.png',
   },
   {
     id: '2',
@@ -141,7 +166,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail2',
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '3',
@@ -149,7 +174,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail3',
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '4',
@@ -157,7 +182,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail4',
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '5',
@@ -167,7 +192,7 @@ const kind = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail5_2',
     ],
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '6',
@@ -175,7 +200,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail6',
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '7',
@@ -185,7 +210,7 @@ const kind = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail7_2',
     ],
     img: '',
-    enImg: ''
+    enImg: '',
   },
   {
     id: '8',
@@ -193,7 +218,7 @@ const kind = [
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail8',
     img: '',
-    enImg: ''
+    enImg: '',
   },
 ]
 // 动态展示先天性青光眼模块
@@ -210,34 +235,50 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_2',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_3',
     ],
+    img_title: '青光眼高危險群_年長者',
+    img_alt: '年長者為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5064b37ea2ec1236.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text2',
+    img_title: '青光眼高危險群',
+    img_alt: '青光眼家族史為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/600a6ca70769660d.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text3',
+    img_title: '青光眼高危險群_深近視',
+    img_alt: '深近視為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bc02fc8bab322c86.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text4',
+    img_title: '青光眼高危險群_血糖高',
+    img_alt: '血糖高為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3d99ac56efdb9366.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text5',
+    img_title: '青光眼高危險群_高血壓',
+    img_alt: '高血壓為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8a90c79bd5022fbf.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text6',
+    img_title: '青光眼高危險群_心血管疾病',
+    img_alt: '心血管疾病為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1a86d61e93b74709.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text7',
+    img_title: '青光眼高危險群_眼睛外傷',
+    img_alt: '眼睛外傷為青光眼高危險群',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/03f99346138862e1.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text8',
+    img_title: '青光眼高危險群_類固醇',
+    img_alt: '服用類固醇藥物為青光眼高危險群',
   },
 ]
 // 青光眼主要診斷方法
@@ -245,22 +286,32 @@ const diagnostic = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e399ba83f28b9812.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text1',
+    img_alt: '青光眼檢查_眼壓檢查',
+    img_title: '眼壓檢查為青光眼檢查項目',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdc9d326f529ed42.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text2',
+    img_alt: '青光眼檢查_視野測試',
+    img_title: '視野測試為青光眼檢查項目',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/997263179e4722a8.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text3',
+    img_alt: '青光眼檢查_裂隙燈檢查',
+    img_title: '裂隙燈檢查為青光眼檢查項目',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2c03b6364947c4c5.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text4',
+    img_alt: '青光眼檢查_前房角接觸鏡檢查',
+    img_title: '前房角接觸鏡檢查為青光眼檢查項目',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b098baaa8a2cbdbc.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text5',
+    img_alt: '青光眼檢查_視神經檢查',
+    img_title: '視神經檢查為青光眼檢查項目',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/eef206cba5ab506d.png',
@@ -268,6 +319,8 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_2',
     ],
+    img_alt: '青光眼檢查_眼底檢查',
+    img_title: '眼底檢查為青光眼檢查項目',
   },
 ]
 // 青光眼的治療
@@ -346,8 +399,7 @@ const guardAgainst = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName:
-      'pages.medical_service.glaucoma',
+    anchorName: 'pages.medical_service.glaucoma',
     anchorLink: '/medical-service/glaucoma#glaucoma',
   },
   {
@@ -409,7 +461,7 @@ const bannerData = {
   cnName: '青光眼',
   enName: 'GLAUCOMA',
   textColor: '#3EC6BE',
-  pageName: 'glaucoma'
+  pageName: 'glaucoma',
 }
 </script>
 
@@ -417,9 +469,9 @@ const bannerData = {
   <div>
     <PageServiceBanner :bannerData="bannerData" />
     <div class="glaucoma-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'glaucoma'" />
     </div>
-    <div class="glaucoma-in" :class="{'glaucoma-in-en': locale === 'en'}">
+    <div class="glaucoma-in" :class="{ 'glaucoma-in-en': locale === 'en' }">
       <!-- 青光眼 -->
       <div>
         <!-- 请勿删除 -->
@@ -454,9 +506,8 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/b687a1dc53df1fe7.png"
-              :alt="`${$t(
-                'pages.medical_service.service_glaucoma_title.service_glaucoma_title2'
-              )}`"
+              title="青光眼"
+              alt="青光眼眼睛結構"
             />
           </div>
           <div>
@@ -476,7 +527,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div @click="goWhatsApp()">
+        <!-- <div @click="goWhatsApp()">
           <div>
             {{
               $t(
@@ -491,6 +542,22 @@ const bannerData = {
               )
             }}
           </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_1'
+              ) +
+              '\n' +
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn1_2'
+              )
+            "
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :type="'4'"
+            :pageName="'glaucoma'"
+          />
         </div>
       </div>
       <!-- 青光眼的症狀 -->
@@ -512,7 +579,12 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, index) in symptoms" :key="index">
-              <img :src="item.img" srcset="" />
+              <img
+                :src="item.img"
+                srcset=""
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
               <div>
                 <div v-if="Array.isArray(item.text)">
                   <div v-for="(ele, i) in item.text" :key="i">
@@ -575,12 +647,19 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, index) in worsen" :key="index">
-              <div><img :src="item.img" srcset="" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  srcset=""
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
+              </div>
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
-        <div @click="callTel()">
+        <!-- <div @click="callTel()">
           <div>
             {{
               $t(
@@ -595,16 +674,34 @@ const bannerData = {
               )
             }}
           </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button
+            :str="
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_1'
+              ) +
+              '\n' +
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn2_2'
+              )
+            "
+            :link="'tel: +852 3956 2025'"
+            :type="'3'"
+            :pageName="'glaucoma'"
+          />
         </div>
         <div></div>
       </div>
       <!-- 青光眼的類別 -->
       <div id="category">
-        <div>{{
-                  $t(
-                    'pages.medical_service.service_glaucoma_title.service_glaucoma_title17'
-                  )
-                }}</div>
+        <div>
+          {{
+            $t(
+              'pages.medical_service.service_glaucoma_title.service_glaucoma_title17'
+            )
+          }}
+        </div>
         <!-- 慢性青光眼 -->
         <div>
           <div>
@@ -630,7 +727,8 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/8bbf23a05ed24544.png"
-                alt="青光眼種類"
+                title="慢性青光眼"
+                alt="慢性青光眼眼睛結構"
                 srcset=""
               />
             </div>
@@ -661,16 +759,15 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a23816f98522475c.png"
-                :alt="`${$t(
-                  'pages.medical_service.service_glaucoma_title.service_glaucoma_title6'
-                )}`"
+                title="急性青光眼症狀"
+                alt="女患者眼紅為急性青光眼症狀表現"
                 srcset=""
               />
             </div>
           </div>
         </div>
         <!-- button -->
-        <div @click="callTel()">
+        <!-- <div @click="callTel()">
           <div>
             {{
               $t(
@@ -685,6 +782,22 @@ const bannerData = {
               )
             }}
           </div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_1'
+              ) +
+              '\n' +
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_2'
+              )
+            "
+            :link="'tel: +852 3956 2025'"
+            :type="'3'"
+            :pageName="'glaucoma'"
+          />
         </div>
         <!-- 先天性青光眼 -->
         <div>
@@ -745,7 +858,13 @@ const bannerData = {
                 <div>
                   <div>{{ $t(item.text) }}</div>
                 </div>
-                <div><img :src="item.img" :alt="item.title" /></div>
+                <div>
+                  <img
+                    :src="item.img"
+                    :alt="item.img_alt"
+                    :title="item.img_title"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -784,7 +903,8 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/380b332741dacedb.png"
-                alt="眼科急症"
+                title="原發性青光眼"
+                alt="男患者揉眼睛為原發性青光眼症狀表現"
                 srcset=""
               />
             </div>
@@ -854,8 +974,18 @@ const bannerData = {
                     </div>
                   </div>
                   <div v-if="item.img">
-                    <img :src="item.enImg" v-if="locale === 'en'" />
-                    <img :src="item.img" v-else />
+                    <img
+                      :src="item.enImg"
+                      title="繼發性青光眼"
+                      alt="繼發性青光眼眼睛結構"
+                      v-if="locale === 'en'"
+                    />
+                    <img
+                      :src="item.img"
+                      title="繼發性青光眼"
+                      alt="繼發性青光眼眼睛結構"
+                      v-else
+                    />
                   </div>
                 </div>
               </div>
@@ -891,7 +1021,11 @@ const bannerData = {
                   d="M137.493,316.812 L1.985,238.344 L1.985,81.409 L137.493,2.942 L273.000,81.409 L273.000,238.344 L137.493,316.812 Z"
                 />
               </svg>
-              <img :src="item.img" />
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
             </div>
             <div>
               <div v-if="Array.isArray(item.text)">
@@ -953,7 +1087,13 @@ const bannerData = {
               </svg>
             </div>
             <div>
-              <div><img :src="item.img" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
+              </div>
               <div>
                 <div v-if="Array.isArray(item.text)">
                   <div v-for="(ele, i) in item.text" :key="i">
@@ -1045,10 +1185,16 @@ const bannerData = {
             </div>
           </div>
           <div>
-            <img data-cfsrc="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png" 
-              srcset="https://static.cmereye.com/imgs/2023/07/06d2169ed76e2f38.jpg 768w, https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"  
-              alt="預防青光眼" 
-              src="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"/>
+            <img
+              data-cfsrc="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
+              srcset="
+                https://static.cmereye.com/imgs/2023/07/06d2169ed76e2f38.jpg 768w,
+                https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png
+              "
+              src="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
+              title="預防青光眼_眼科檢查"
+              alt="定期安排眼科檢查以預防青光眼"
+            />
           </div>
         </div>
       </div>
@@ -1086,21 +1232,35 @@ const bannerData = {
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载和公共脚部 -->
     <!-- 下载 -->
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('glaucoma.pdf',$t('pages.medical_service.service_glaucoma_title.service_glaucoma_down'))">
+          <a
+            href="https://www.hkeyecmer.com/pdf/glaucoma.pdf"
+            :download="
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
+              )
+            "
+          >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
+              title="青光眼"
+              alt="青光眼_小冊子"
               srcset=""
             />
-          </div>
-          <div @click.stop="getPdf('glaucoma.pdf',$t('pages.medical_service.service_glaucoma_title.service_glaucoma_down'))">
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/glaucoma.pdf"
+            :download="
+              $t(
+                'pages.medical_service.service_glaucoma_title.service_glaucoma_down'
+              )
+            "
+          >
             <p>
               {{
                 $t(
@@ -1115,7 +1275,7 @@ const bannerData = {
                 )
               }}
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -1123,32 +1283,32 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#bbe0d5;'}`"
     />
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 
 <style lang="scss" scoped>
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
-.glaucoma-nav{
+.glaucoma-nav {
   margin-top: 30px;
 }
-.glaucoma-in{
+.glaucoma-in {
   position: relative;
   max-width: 1200px;
   margin: auto;
@@ -1243,44 +1403,44 @@ const bannerData = {
       }
     }
     & > div:nth-child(3) {
-      cursor: pointer;
-      margin: auto;
+      // cursor: pointer;
+      // margin: auto;
       margin-top: 150px;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      & > div {
-        font-family: 'Noto Sans HK';
-        font-size: 32px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 50px;
-        letter-spacing: 0px;
-        color: #ffffff;
-      }
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // width: 508px;
+      // height: 140px;
+      // background-blend-mode: normal, normal;
+      // box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
+      // border-radius: 20px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // flex-direction: column;
+      // & > div {
+      //   font-family: 'Noto Sans HK';
+      //   font-size: 32px;
+      //   font-weight: normal;
+      //   font-stretch: normal;
+      //   line-height: 50px;
+      //   letter-spacing: 0px;
+      //   color: #ffffff;
+      // }
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
   }
   // 青光眼的症狀
@@ -1419,48 +1579,48 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      cursor: pointer;
-      margin: auto;
+      //   cursor: pointer;
+      //   margin: auto;
       margin-top: 104px;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
-      border-radius: 20px;
-      font-family: 'Noto Sans HK';
-      text-align: center;
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 50px;
-      letter-spacing: 0px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      //   width: 508px;
+      //   height: 140px;
+      //   background-blend-mode: normal, normal;
+      //   box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.35);
+      //   border-radius: 20px;
+      //   font-family: 'Noto Sans HK';
+      //   text-align: center;
+      //   font-size: 32px;
+      //   font-weight: normal;
+      //   font-stretch: normal;
+      //   line-height: 50px;
+      //   letter-spacing: 0px;
+      //   color: #ffffff;
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   justify-content: center;
+      //   position: relative;
+      //   overflow: hidden;
+      //   -webkit-backface-visibility: hidden;
+      //   -webkit-transform: translate3d(0, 0, 0);
+      //   text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     top: -100%;
+      //     left: -100%;
+      //     bottom: -100%;
+      //     right: -100%;
+      //     background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+      //     background-size: 100% 100%;
+      //     animation: bgposition 5s infinite linear alternate;
+      //     z-index: -1;
+      //   }
     }
   }
   // 青光眼的類別
   & > div:nth-child(5) {
-    &>div:nth-of-type(1){
+    & > div:nth-of-type(1) {
       text-align: center;
       font-size: 52px;
       font-weight: normal;
@@ -1603,40 +1763,40 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      cursor: pointer;
+      // cursor: pointer;
       margin: 100px auto;
-      width: 508px;
-      height: 140px;
-      background-blend-mode: normal, normal;
-      border-radius: 20px;
-      font-family: 'Noto Sans HK';
-      font-size: 32px;
-      font-weight: normal;
-      font-stretch: normal;
-      line-height: 50px;
-      letter-spacing: 0px;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      -webkit-backface-visibility: hidden;
-      -webkit-transform: translate3d(0, 0, 0);
-      text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      &::before {
-        content: "";
-        position: absolute;
-        top: -100%;
-        left: -100%;
-        bottom: -100%;
-        right: -100%;
-        background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-        background-size: 100% 100%;
-        animation: bgposition 5s infinite linear alternate;
-        z-index: -1;
-      }
+      // width: 508px;
+      // height: 140px;
+      // background-blend-mode: normal, normal;
+      // border-radius: 20px;
+      // font-family: 'Noto Sans HK';
+      // font-size: 32px;
+      // font-weight: normal;
+      // font-stretch: normal;
+      // line-height: 50px;
+      // letter-spacing: 0px;
+      // color: #ffffff;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      // position: relative;
+      // overflow: hidden;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: -100%;
+      //   left: -100%;
+      //   bottom: -100%;
+      //   right: -100%;
+      //   background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
+      //   background-size: 100% 100%;
+      //   animation: bgposition 5s infinite linear alternate;
+      //   z-index: -1;
+      // }
     }
     & > div:nth-child(5) {
       margin-top: 150px;
@@ -1691,7 +1851,8 @@ const bannerData = {
         display: flex;
         flex-direction: column;
         padding: 60px 44px 77px 41px;
-        & > div:nth-child(1), &>div:nth-child(2) {
+        & > div:nth-child(1),
+        & > div:nth-child(2) {
           margin-right: 26px;
           font-family: 'Noto Sans HK';
           font-size: 23px;
@@ -1727,7 +1888,7 @@ const bannerData = {
           margin-top: 45px;
           & > div {
             flex: 1;
-            &:not(:last-child){
+            &:not(:last-child) {
               margin-right: 20px;
             }
             & > div:nth-child(1) {
@@ -1774,7 +1935,7 @@ const bannerData = {
               line-height: 36px;
               letter-spacing: -2px;
               color: #515151;
-              &>div{
+              & > div {
                 padding-top: 15px;
               }
             }
@@ -2283,7 +2444,7 @@ const bannerData = {
           display: flex;
           align-items: center;
           justify-content: center;
-          &:not(:first-child){
+          &:not(:first-child) {
             border-left: 1px solid #939c9b;
             border-top: 1px solid #939c9b;
           }
@@ -2312,7 +2473,7 @@ const bannerData = {
           letter-spacing: 0px;
           color: #515151;
           justify-content: flex-start;
-          &>div{
+          & > div {
             padding-left: 48px;
           }
         }
@@ -2444,9 +2605,9 @@ const bannerData = {
   & > div:nth-child(2) {
     margin: 0;
   }
-  &.glaucoma-in-en{
+  &.glaucoma-in-en {
     & > div:nth-child(3) {
-      &>div:nth-child(2){
+      & > div:nth-child(2) {
         & > :nth-child(2) {
           height: auto;
           position: initial;
@@ -2454,7 +2615,7 @@ const bannerData = {
         }
       }
       & > div:nth-child(3) {
-        &>div{
+        & > div {
           text-align: center;
         }
       }
@@ -2462,15 +2623,15 @@ const bannerData = {
     & > div:nth-child(4) {
       & > div:nth-child(2) {
         & > div:nth-child(3) {
-          & > div{
-            &> div{
+          & > div {
+            & > div {
               height: auto;
               line-height: 1.6;
               padding: 18px 18px 18px 60px;
               text-align: left;
               margin-left: 40px;
             }
-            &>svg{
+            & > svg {
               top: 50%;
               transform: translateY(-50%);
             }
@@ -2479,10 +2640,10 @@ const bannerData = {
       }
     }
     & > div:nth-child(5) {
-      &> div:nth-child(2){
-        &> div:nth-child(1){
-          &> div{
-            &> div:nth-child(2){
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(2) {
               display: none;
             }
           }
@@ -2492,10 +2653,10 @@ const bannerData = {
           width: 1100px;
         }
       }
-      &> div:nth-child(3){
-        &> div:nth-child(1){
-          &> div{
-            &> div:nth-child(2){
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(2) {
               display: none;
             }
           }
@@ -2505,55 +2666,55 @@ const bannerData = {
           height: auto;
         }
       }
-      &> div:nth-child(4){
+      & > div:nth-child(4) {
         text-align: center;
       }
-      &> div:nth-child(5){
-        &> div:nth-child(1){
-          &> div{
-            &> div:nth-child(2){
+      & > div:nth-child(5) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(2) {
               display: none;
             }
           }
         }
         & > div:nth-child(2) {
           width: 1100px;
-          &> div:nth-child(4){
+          & > div:nth-child(4) {
             & > div {
               display: flex;
               flex-direction: column;
-              &> div:nth-child(1){
+              & > div:nth-child(1) {
                 font-size: 18px;
                 letter-spacing: 0;
               }
-              &> div:nth-child(2){
+              & > div:nth-child(2) {
                 height: auto;
                 flex: 1;
                 font-size: 18px;
                 line-height: 1.6;
-                letter-spacing: .5px;
+                letter-spacing: 0.5px;
                 margin-bottom: 15px;
               }
             }
           }
         }
       }
-      &> div:nth-child(6){
-        &> div:nth-child(1){
-          &> div{
-            &> div:nth-child(2){
+      & > div:nth-child(6) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(2) {
               display: none;
             }
           }
         }
-        &>div:nth-child(2){
+        & > div:nth-child(2) {
           width: 1100px;
         }
       }
-      &> div:nth-child(7){
-        &> div:nth-child(1){
-          &> div{
-            &> div:nth-child(2){
+      & > div:nth-child(7) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(2) {
               display: none;
             }
           }
@@ -2561,12 +2722,12 @@ const bannerData = {
         & > div:nth-child(2) {
           padding: 60px 44px 100px 41px;
           width: 1100px;
-          &> div:nth-child(3){
-            &>div{
-              &> div:nth-child(1){
+          & > div:nth-child(3) {
+            & > div {
+              & > div:nth-child(1) {
                 font-size: 20px;
               }
-              &> div:nth-child(2){
+              & > div:nth-child(2) {
                 font-size: 18px;
                 line-height: 1.6;
               }
@@ -2574,26 +2735,25 @@ const bannerData = {
           }
         }
       }
-      
     }
-    &> div:nth-child(8){
+    & > div:nth-child(8) {
       & > div:nth-child(3) {
-        &>div{
-          &>div:nth-child(1){
+        & > div {
+          & > div:nth-child(1) {
             text-align: center;
           }
-          &>div:nth-child(2){
-            &>div{
-              &>div{
+          & > div:nth-child(2) {
+            & > div {
+              & > div {
                 font-size: 20px;
                 height: 140px;
                 text-align: center;
               }
             }
           }
-          &>div:nth-child(3){
-            &>div{
-              &>div{
+          & > div:nth-child(3) {
+            & > div {
+              & > div {
                 height: 140px;
                 font-size: 20px;
                 line-height: 1.4;
@@ -2603,12 +2763,12 @@ const bannerData = {
         }
       }
     }
-    &> div:nth-child(9){
-      &> div:nth-child(2){
-        &> div:nth-child(1){
-          &>div{
-            &> div:nth-child(1){
-              &> div:nth-child(2){
+    & > div:nth-child(9) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > div {
+            & > div:nth-child(1) {
+              & > div:nth-child(2) {
                 font-size: 30px;
               }
             }
@@ -2616,8 +2776,8 @@ const bannerData = {
         }
       }
     }
-    &>div:last-child{
-      &>div:nth-child(1){
+    & > div:last-child {
+      & > div:nth-child(1) {
         width: max-content;
         padding-right: 20px;
       }
@@ -2640,7 +2800,7 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
@@ -2649,7 +2809,7 @@ const bannerData = {
           height: auto;
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -2671,7 +2831,7 @@ const bannerData = {
       margin: 30px auto 0;
       & > div:nth-child(1) {
         font-size: 24px;
-         margin-bottom: 30px;
+        margin-bottom: 30px;
       }
       & > div:nth-child(2) {
         font-size: 14px;
@@ -2707,15 +2867,15 @@ const bannerData = {
         }
       }
       & > div:nth-child(3) {
-        width: max-content;
+        // width: max-content;
         margin: 50px auto 0;
-        height: auto;
-        padding:  10px 30px;
-        border-radius: 10px;
-        & > div {
-          font-size: 18px;
-          line-height: 1.6;
-        }
+        // height: auto;
+        // padding:  10px 30px;
+        // border-radius: 10px;
+        // & > div {
+        //   font-size: 18px;
+        //   line-height: 1.6;
+        // }
       }
     }
     & > div:nth-child(4) {
@@ -2749,13 +2909,13 @@ const bannerData = {
         }
         & > div:nth-child(3) {
           margin-top: 0;
-          
+
           & > div {
             & > svg {
               position: absolute;
               left: -20px;
               top: 50%;
-              transform: translateY(-50%) scale(.6);
+              transform: translateY(-50%) scale(0.6);
             }
             & > div {
               height: auto;
@@ -2773,7 +2933,7 @@ const bannerData = {
       & > div:nth-child(3) {
         margin-top: 45px;
         & > div:nth-child(1) {
-          &>div{
+          & > div {
             font-size: 20px;
           }
         }
@@ -2803,14 +2963,14 @@ const bannerData = {
         }
       }
       & > div:nth-child(4) {
-        width: max-content;
-        height: auto;
-        padding: 0 30px;
-        line-height: 1.6;
-        font-size: 18px;
+        // width: max-content;
+        // height: auto;
+        // padding: 0 30px;
+        // line-height: 1.6;
+        // font-size: 18px;
         margin-top: 50px;
-        padding: 10px 40px 5px;
-        border-radius: 10px;
+        // padding: 10px 40px 5px;
+        // border-radius: 10px;
       }
     }
     & > div:nth-child(5) {
@@ -2828,18 +2988,18 @@ const bannerData = {
           height: 80px;
           position: relative;
           width: 100%;
-          &>div{
+          & > div {
             height: 100%;
             margin-top: 0px;
             margin-left: 15px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
               font-size: 12px;
               margin-top: -5px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               font-size: 22px;
             }
           }
@@ -2860,10 +3020,11 @@ const bannerData = {
             right: 20px;
             top: -100px;
             width: 100px;
+            // width: calc((100 / 300 ) * 100%);
+            // max-width: 100px;
             height: 100px;
-            img{
+            img {
               width: 100%;
-              
             }
           }
         }
@@ -2877,18 +3038,18 @@ const bannerData = {
           height: 80px;
           position: relative;
           width: 100%;
-          &>div{
+          & > div {
             height: 100%;
             margin-top: 0px;
             margin-left: 15px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
               font-size: 12px;
               margin-top: -5px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               font-size: 22px;
             }
           }
@@ -2910,22 +3071,21 @@ const bannerData = {
             top: -100px;
             width: 100px;
             height: 100px;
-            img{
+            img {
               width: 100%;
-              
             }
           }
         }
       }
       & > div:nth-child(4) {
-        width: max-content;
-        height: auto;
-        padding: 0 30px;
-        line-height: 1.6;
-        font-size: 18px;
+        // width: max-content;
+        // height: auto;
+        // padding: 0 30px;
+        // line-height: 1.6;
+        // font-size: 18px;
         margin-top: 50px;
-        padding: 10px 40px 5px;
-        border-radius: 10px;
+        // padding: 10px 40px 5px;
+        // border-radius: 10px;
       }
       & > div:nth-child(5) {
         margin-top: 90px;
@@ -2936,18 +3096,18 @@ const bannerData = {
           height: 80px;
           position: relative;
           width: 100%;
-          &>div{
+          & > div {
             height: 100%;
             margin-top: 0px;
             margin-left: 15px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
               font-size: 12px;
               margin-top: -5px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               font-size: 22px;
             }
           }
@@ -2978,11 +3138,11 @@ const bannerData = {
             flex-direction: column;
             padding-left: 0;
             margin-top: 20px;
-            &>div{
-              background: #F5F5F5;
+            & > div {
+              background: #f5f5f5;
               padding: 16px 10px 30px;
               margin-bottom: 30px;
-              &:not(:last-child){
+              &:not(:last-child) {
                 margin-right: 0;
               }
               & > div:nth-child(1) {
@@ -3009,7 +3169,7 @@ const bannerData = {
                 line-height: 2;
                 height: auto;
                 letter-spacing: 0;
-                &>div{
+                & > div {
                   padding-top: 0;
                 }
               }
@@ -3030,18 +3190,18 @@ const bannerData = {
           height: 80px;
           position: relative;
           width: 100%;
-          &>div{
+          & > div {
             height: 100%;
             margin-top: 0px;
             margin-left: 15px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
               font-size: 12px;
               margin-top: -5px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               font-size: 22px;
             }
           }
@@ -3061,11 +3221,12 @@ const bannerData = {
             position: absolute;
             right: 20px;
             top: -100px;
-            width: 100px;
-            height: 100px;
-            img{
+            // width: 100px;
+            // height: 100px;
+            width: calc((100 / 330) * 100%);
+            max-width: 100px;
+            img {
               width: 100%;
-              
             }
           }
         }
@@ -3079,18 +3240,18 @@ const bannerData = {
           height: 80px;
           position: relative;
           width: 100%;
-          &>div{
+          & > div {
             height: 100%;
             margin-top: 0px;
             margin-left: 15px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
-            &>div:nth-child(1){
+            & > div:nth-child(1) {
               font-size: 12px;
               margin-top: -5px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               font-size: 22px;
             }
           }
@@ -3112,7 +3273,7 @@ const bannerData = {
             margin-bottom: 20px;
           }
           & > div:nth-child(3) {
-            &>div{
+            & > div {
               flex-direction: column;
               margin-bottom: 50px;
               & > div:nth-child(1) {
@@ -3171,16 +3332,16 @@ const bannerData = {
         & > div:nth-child(n + 5) {
           margin-top: 0px;
         }
-        &>div{
+        & > div {
           width: 50%;
           margin-bottom: 40px;
           & > div:nth-child(1) {
             width: 100%;
-            svg{
+            svg {
               width: 145px;
               height: 170px;
-              path{
-                transform: scale(.53);
+              path {
+                transform: scale(0.53);
               }
             }
             & > img {
@@ -3216,11 +3377,11 @@ const bannerData = {
           width: 50%;
           margin-bottom: 40px;
           & > div:nth-child(1) {
-            svg{
+            svg {
               width: 160px;
               height: 160px;
-              path{
-                transform: scale(.4)
+              path {
+                transform: scale(0.4);
               }
             }
           }
@@ -3230,7 +3391,7 @@ const bannerData = {
               width: 100%;
               max-width: 160px;
               padding: 10px;
-              img{
+              img {
                 width: calc(100% - 10px);
                 margin: 0 auto;
               }
@@ -3254,7 +3415,7 @@ const bannerData = {
         margin-bottom: 30px;
       }
       & > div:nth-child(2) {
-        font-size: 14px;   
+        font-size: 14px;
         line-height: 2;
         margin-top: 25px;
         & > div:nth-child(2) {
@@ -3264,18 +3425,18 @@ const bannerData = {
       & > div:nth-child(3) {
         margin-top: 30px;
         & > div {
-          &>div:nth-child(1){
+          & > div:nth-child(1) {
             width: 26%;
             font-size: 16px;
             line-height: 1.8;
             text-align: center;
-            &>div{
-              div{
+            & > div {
+              div {
                 display: inline;
               }
             }
           }
-          &>div:nth-child(2){
+          & > div:nth-child(2) {
             width: 32%;
             & > div > div {
               font-size: 14px;
@@ -3283,41 +3444,41 @@ const bannerData = {
               padding: 0 5px;
             }
           }
-          &>div:nth-child(3){
+          & > div:nth-child(3) {
             width: 42%;
             & > div > div {
               font-size: 14px;
               padding-left: 5px;
               line-height: 1.8;
-              div{
+              div {
                 display: inline;
               }
             }
           }
         }
-        &>div:nth-child(1){
+        & > div:nth-child(1) {
           height: 56px;
-          &>div:nth-child(2){
+          & > div:nth-child(2) {
             font-size: 16px;
             line-height: 1.8;
           }
-          &>div:nth-child(3){
+          & > div:nth-child(3) {
             width: 42%;
             font-size: 16px;
             line-height: 1.8;
           }
         }
-        &>div:nth-child(4){
-          &>div:nth-child(2){
+        & > div:nth-child(4) {
+          & > div:nth-child(2) {
             width: 32%;
             font-size: 14px;
             line-height: 1.8;
           }
-          &>div:nth-child(3){
+          & > div:nth-child(3) {
             width: 42%;
             font-size: 14px;
             line-height: 1.8;
-            &>div{
+            & > div {
               padding-left: 5px;
             }
           }
@@ -3366,7 +3527,7 @@ const bannerData = {
         }
         & > div:nth-child(2) {
           width: 100%;
-          img{
+          img {
             width: 100%;
           }
         }
@@ -3387,16 +3548,16 @@ const bannerData = {
           margin-right: 15px;
           width: 63px;
           height: 40px;
-          image{
+          image {
             width: 100%;
             height: 100%;
           }
         }
       }
     }
-    &.glaucoma-in-en{
+    &.glaucoma-in-en {
       & > div:nth-child(3) {
-        &>div:nth-child(2){
+        & > div:nth-child(2) {
           & > :nth-child(2) {
             margin-left: 0;
           }
@@ -3408,8 +3569,8 @@ const bannerData = {
       & > div:nth-child(4) {
         & > div:nth-child(2) {
           & > div:nth-child(3) {
-            & > div{
-              &> div{
+            & > div {
+              & > div {
                 margin-left: 20px;
               }
             }
@@ -3417,7 +3578,7 @@ const bannerData = {
         }
         & > div:nth-child(3) {
           & > div:nth-child(1) {
-            & > div{
+            & > div {
               font-size: 18px;
             }
           }
@@ -3429,34 +3590,7 @@ const bannerData = {
       & > div:nth-child(5) {
         & > div:nth-child(2) {
           & > div:nth-child(1) {
-            & > div{
-              & > div:nth-child(1) {
-                font-size: 20px;
-              }
-            }
-          }
-          & > div:nth-child(2) {
-            width: 100%;    
-          }
-        }
-        & > div:nth-child(3) {
-          & > div:nth-child(1) {
-            & > div{
-              & > div:nth-child(1) {
-                font-size: 20px;
-              }
-            }
-          }
-          & > div:nth-child(2) {
-            width: 100%;    
-          }
-        }
-        & > div:nth-child(4) {
-          padding: 10px;
-        }
-        &> div:nth-child(5){
-          & > div:nth-child(1) {
-            & > div{
+            & > div {
               & > div:nth-child(1) {
                 font-size: 20px;
               }
@@ -3464,34 +3598,61 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             width: 100%;
-            &> div:nth-child(3){
-              font-size: 18px;
-            }
-            &> div:nth-child(4){
-              & > div {
-                display: initial;
-                &> div:nth-child(2){
-                  font-size: 14px;
-                }
-              }
-            }
           }
         }
-        &> div:nth-child(6){
+        & > div:nth-child(3) {
           & > div:nth-child(1) {
-            & > div{
+            & > div {
               & > div:nth-child(1) {
                 font-size: 20px;
               }
             }
           }
           & > div:nth-child(2) {
-            width: 100%;    
+            width: 100%;
           }
         }
-        &> div:nth-child(7){
+        & > div:nth-child(4) {
+          padding: 10px;
+        }
+        & > div:nth-child(5) {
           & > div:nth-child(1) {
-            & > div{
+            & > div {
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;
+            & > div:nth-child(3) {
+              font-size: 18px;
+            }
+            & > div:nth-child(4) {
+              & > div {
+                display: initial;
+                & > div:nth-child(2) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        & > div:nth-child(6) {
+          & > div:nth-child(1) {
+            & > div {
+              & > div:nth-child(1) {
+                font-size: 20px;
+              }
+            }
+          }
+          & > div:nth-child(2) {
+            width: 100%;
+          }
+        }
+        & > div:nth-child(7) {
+          & > div:nth-child(1) {
+            & > div {
               & > div:nth-child(1) {
                 font-size: 20px;
               }
@@ -3500,20 +3661,19 @@ const bannerData = {
           & > div:nth-child(2) {
             width: 100%;
             padding: 27px 0 0 0;
-            &> div:nth-child(3){
-              &>div{
-                &> div:nth-child(1){
+            & > div:nth-child(3) {
+              & > div {
+                & > div:nth-child(1) {
                   align-items: center;
                 }
               }
             }
           }
         }
-
       }
       & > div:nth-child(7) {
         & > div:nth-child(3) {
-          & > div{
+          & > div {
             & > div:nth-child(2) {
               & > div:nth-child(1) {
                 margin: 0 auto;
@@ -3525,30 +3685,30 @@ const bannerData = {
           }
         }
       }
-      &> div:nth-child(8){
+      & > div:nth-child(8) {
         width: 100%;
         & > div:nth-child(2) {
           padding: 0 30px;
         }
         & > div:nth-child(3) {
-          &>div{
-            &>div:nth-child(1){
+          & > div {
+            & > div:nth-child(1) {
               width: 20%;
               font-size: 14px;
             }
-            &>div:nth-child(2){
+            & > div:nth-child(2) {
               width: 40%;
-              &>div{
-                &>div{
+              & > div {
+                & > div {
                   font-size: 14px;
                   height: 300px;
                 }
               }
             }
-            &>div:nth-child(3){
+            & > div:nth-child(3) {
               width: 40%;
-              &>div{
-                &>div{
+              & > div {
+                & > div {
                   height: 300px;
                   font-size: 14px;
                   line-height: 1.2;
@@ -3559,18 +3719,18 @@ const bannerData = {
             }
           }
           & > div:nth-child(4) {
-            &>div{
+            & > div {
               height: 200px;
             }
           }
         }
       }
-      &> div:nth-child(9){
-        &> div:nth-child(2){
-          &> div:nth-child(1){
-            &>div{
-              &> div:nth-child(1){
-                &> div:nth-child(2){
+      & > div:nth-child(9) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div {
+              & > div:nth-child(1) {
+                & > div:nth-child(2) {
                   font-size: 16px;
                   width: max-content;
                   max-width: 80vw;
@@ -3582,14 +3742,14 @@ const bannerData = {
           }
         }
       }
-      &>div:last-child{
-        &>div:nth-child(1){
+      & > div:last-child {
+        & > div:nth-child(1) {
           font-size: 18px;
         }
       }
     }
   }
-  .glaucoma-nav{
+  .glaucoma-nav {
     margin-top: -100px;
   }
   .dow {
@@ -3600,14 +3760,14 @@ const bannerData = {
       & > div {
         width: 80%;
         height: 94px;
-        & > div:nth-child(1) {
+        & > a:nth-child(1) {
           & > img {
             width: 55px;
             min-width: 55px;
             height: auto;
           }
         }
-        & > div:nth-child(2) {
+        & > a:nth-child(2) {
           margin-left: 10px;
         }
       }

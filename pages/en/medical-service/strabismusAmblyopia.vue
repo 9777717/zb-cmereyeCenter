@@ -7,20 +7,20 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.strabismusAmblyopia_con_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'strabismusAmblyopiaDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.strabismusAmblyopia.desc'),
       },
       {
         hid: 'strabismusAmblyopiaKey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
-      }
+        content: t('tdk.strabismusAmblyopia.key'),
+      },
     ]
-  }
+  },
 }))
 
 const locale = useState<string>('locale.setting')
@@ -34,68 +34,107 @@ const strabismusList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/714c9a2fceed9b86.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/7ea53d3734476d0a.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_2',
+    img_title: '內斜視',
+    img_alt: '內斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/a36770ffa76f3e2e.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text1_3',
+    img_title: '外斜視',
+    img_alt: '外斜視眼睛狀態',
   },
 ]
 const strabismusList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/3eed40559da38526.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/21b0fa246561c5bd.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_2',
+    img_title: '上斜視',
+    img_alt: '上斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/ff6403d529d952d2.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text2_3',
+    img_title: '下斜視',
+    img_alt: '下斜視眼睛狀態',
   },
 ]
 const strabismusList3 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/08/f5435fd75e99b400.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_1',
+    img_title: '斜視',
+    img_alt: '斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/18fee48a5021a82e.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_2',
+    img_title: '假性內斜視',
+    img_alt: '假性內斜視眼睛狀態',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/fa5db6e208cf321f.jpg',
     text: 'pages.medical_service.strabismusAmblyopia_con.kind.text3_3',
+    img_title: '內斜視',
+    img_alt: '內斜視眼睛狀態',
   },
 ]
 const strabismusList4 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f317dab3447cad52.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_1'],
+    img_title: '兒童內斜視',
+    img_alt: '內斜視狀態下寫作業的女童',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/92abe075389b8af9.png',
-    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_2_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_2_2'],
+    text: [
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_2_1',
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_2_2',
+    ],
+    img_title: '兒童內斜視',
+    img_alt: '內斜視狀態下的可愛男童',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ee8e638950ef26fd.png',
-    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_3_2'],
+    text: [
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_3_1',
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_3_2',
+    ],
+    img_title: '小朋友斜視',
+    img_alt: '斜視狀態下的男童遮蓋一隻眼睛',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/37924e5d99c31f51.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_4'],
+    img_title: '兒童內斜視',
+    img_alt: '斜視狀態下的女童側頭看東西',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9b92ae8185dfbea8.png',
-    text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_5_1', 'pages.medical_service.strabismusAmblyopia_con.kind.text5_5_2'],
+    text: [
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_5_1',
+      'pages.medical_service.strabismusAmblyopia_con.kind.text5_5_2',
+    ],
+    img_title: '小朋友斜視_揉眼睛',
+    img_alt: '斜視狀態下的男童揉眼睛',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/af77985aa7af1b00.png',
     text: ['pages.medical_service.strabismusAmblyopia_con.kind.text5_6'],
+    img_title: '小朋友斜視_流眼淚',
+    img_alt: '斜視狀態下的男童流眼淚',
   },
 ]
 const strabismusList5 = [
@@ -103,21 +142,29 @@ const strabismusList5 = [
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/6a896080eccf672a.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text1',
+    img_title: '兒童斜視矯正',
+    img_alt: '兒童斜視矯正前後效果對比',
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title2',
     img: 'https://static.cmereye.com/imgs/2023/06/9c69590dd98eb332.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text2',
+    img_title: '眼科醫生_斜視矯正訓練',
+    img_alt: '眼科醫生為男童進行斜視矯正訓練',
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title3',
     img: 'https://static.cmereye.com/imgs/2023/06/dd785273b00a7055.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text3',
+    img_title: '斜視矯正_遮眼治療',
+    img_alt: '兒童進行遮眼治療的斜視矯正方法',
   },
   {
     title: 'pages.medical_service.strabismusAmblyopia_con.cure.title4',
     img: 'https://static.cmereye.com/imgs/2023/06/fb8d95f43e5c758e.png',
     text: 'pages.medical_service.strabismusAmblyopia_con.cure.text4',
+    img_title: '斜視矯正_眼科手術',
+    img_alt: '斜視矯正眼科手術步驟及過程',
   },
 ]
 const amblyopiaList1 = [
@@ -125,26 +172,36 @@ const amblyopiaList1 = [
     img: 'https://static.cmereye.com/imgs/2023/06/5b9e1baac69abb24.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title1',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text1',
+    img_title: '兒童斜視_兒童弱視',
+    img_alt: '男童側臉展示斜視及弱視',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9a3332f88b6d69af.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title2',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text2',
+    img_title: '兒童弱視_兒童視力檢查',
+    img_alt: '患有弱視的女童配戴驗光眼鏡進行視力檢查',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/7ace87f50adb18dc.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title3',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text3',
+    img_title: '兒童弱視_屈光不正',
+    img_alt: '患有弱視的男童佩戴眼鏡以改善屈光不正',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2a48ee959aee43e2.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title4',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text4',
+    mg_title: '兒童弱視_剝奪性弱視',
+    img_alt: '患有弱視的女童揉眼睛為剝奪性弱視症狀表現',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c4c979e78450f83.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.title5',
     text: 'pages.medical_service.strabismusAmblyopia_con.amblyopia.text5',
+    img_title: '先天性弱視',
+    img_alt: '戴眼罩的幼童接受先天性弱視治療',
   },
 ]
 const treatList1 = [
@@ -152,9 +209,9 @@ const treatList1 = [
     svg: 'https://static.cmereye.com/imgs/2023/06/25507be120bacf59.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.treat.title1',
     img: 'https://static.cmereye.com/imgs/2023/06/77e219f43e2c6242.png',
-    text: [
-      'pages.medical_service.strabismusAmblyopia_con.treat.text1',
-    ],
+    text: ['pages.medical_service.strabismusAmblyopia_con.treat.text1'],
+    img_title: '弱視治療',
+    img_alt: '戴眼鏡的女童微笑展現弱視治療成效',
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/af76b91d4e877062.png',
@@ -164,14 +221,16 @@ const treatList1 = [
       'pages.medical_service.strabismusAmblyopia_con.treat.text2_1',
       'pages.medical_service.strabismusAmblyopia_con.treat.text2_2',
     ],
+    img_title: '弱視治療_遮眼治療',
+    img_alt: '女童透過遮眼治療進行弱視治療',
   },
   {
     svg: 'https://static.cmereye.com/imgs/2023/06/333142a79088a1b6.png',
     title: 'pages.medical_service.strabismusAmblyopia_con.treat.title3',
     img: 'https://static.cmereye.com/imgs/2023/06/f632114cdb47d561.png',
-    text: [
-      'pages.medical_service.strabismusAmblyopia_con.treat.text3',
-    ],
+    text: ['pages.medical_service.strabismusAmblyopia_con.treat.text3'],
+    img_title: '弱視治療_放大瞳孔藥水',
+    img_alt: '男童使用放大瞳孔藥水進行弱視治療',
   },
 ]
 // 内部导航
@@ -214,12 +273,14 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视2.png',
+  pcSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视1.png',
+  mbSrc:
+    'https://static.cmereye.com/static/hkcmereye/bannerzip/儿童斜弱视2.png',
   cnName: '兒童斜弱視',
   enName: 'AMBLYOPIA AND STRABISMUS IN CHILDREN',
   textColor: '#F2A178',
-  pageName: 'strabismusAmblyopia'
+  pageName: 'strabismusAmblyopia',
 }
 </script>
 
@@ -227,82 +288,156 @@ const bannerData = {
   <div class="strabismusAmblyopia">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="strabismusAmblyopia-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'strabismusAmblyopia'" />
+      <serviceNav
+        :arrData="serviceNavigation"
+        :pageName="'strabismusAmblyopia'"
+      />
     </div>
-    <div class="strabismusAmblyopia_nav" :class="{'strabismusAmblyopiaNav-en': locale === 'en'}">
+    <div
+      class="strabismusAmblyopia_nav"
+      :class="{ 'strabismusAmblyopiaNav-en': locale === 'en' }"
+    >
       <div id="strabismus">
-        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.name')}}</div>
+        <div class="strabismusAmblyopia_title_text">
+          {{
+            $t('pages.medical_service.strabismusAmblyopia_con.strabismus.name')
+          }}
+        </div>
         <div class="strabismusAmblyopia_text_p_span">
           <p>
-            {{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.p1')}}
+            {{
+              $t('pages.medical_service.strabismusAmblyopia_con.strabismus.p1')
+            }}
           </p>
           <p>
-            {{$t('pages.medical_service.strabismusAmblyopia_con.strabismus.p2')}}
+            {{
+              $t('pages.medical_service.strabismusAmblyopia_con.strabismus.p2')
+            }}
           </p>
         </div>
       </div>
       <div id="kind">
-        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name')}}</div>
+        <div class="strabismusAmblyopia_title_text">
+          {{ $t('pages.medical_service.strabismusAmblyopia_con.kind.name') }}
+        </div>
         <div>
           <div>
-            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name1')}}</div>
+            <div>
+              {{
+                $t('pages.medical_service.strabismusAmblyopia_con.kind.name1')
+              }}
+            </div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context1')}}
+                {{
+                  $t(
+                    'pages.medical_service.strabismusAmblyopia_con.kind.context1'
+                  )
+                }}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList1" :key="index">
-                  <img :src="item.img" />
+                  <img
+                    :src="item.img"
+                    :alt="item.img_alt"
+                    :title="item.img_title"
+                  />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name2')}}</div>
+            <div>
+              {{
+                $t('pages.medical_service.strabismusAmblyopia_con.kind.name2')
+              }}
+            </div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context2')}}
+                {{
+                  $t(
+                    'pages.medical_service.strabismusAmblyopia_con.kind.context2'
+                  )
+                }}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList2" :key="index">
-                  <img :src="item.img" />
+                  <img
+                    :src="item.img"
+                    :alt="item.img_alt"
+                    :title="item.img_title"
+                  />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name3')}}</div>
+            <div>
+              {{
+                $t('pages.medical_service.strabismusAmblyopia_con.kind.name3')
+              }}
+            </div>
             <div>
               <div class="strabismusAmblyopia_text_p_span">
-                {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context3')}}
+                {{
+                  $t(
+                    'pages.medical_service.strabismusAmblyopia_con.kind.context3'
+                  )
+                }}
               </div>
               <div>
                 <div v-for="(item, index) in strabismusList3" :key="index">
-                  <img :src="item.img" />
+                  <img
+                    :src="item.img"
+                    :alt="item.img_alt"
+                    :title="item.img_title"
+                  />
                   <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="strabismusAmblyopia_title_btn" @click="goWhatsApp">
+        <!-- <div class="strabismusAmblyopia_title_btn" @click="goWhatsApp">
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_1')}}</p>
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name1_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t('pages.medical_service.strabismusAmblyopia_con.btn.name1_1') +
+              '\n' +
+              $t('pages.medical_service.strabismusAmblyopia_con.btn.name1_2')
+            "
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :type="'4'"
+            :pageName="'strabismusAmblyopia'"
+          />
         </div>
         <div class="strabismusAmblyopia_text_p_span">
-          {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context4')}}
+          {{
+            $t('pages.medical_service.strabismusAmblyopia_con.kind.context4')
+          }}
         </div>
         <div>
-          <div>{{$t('pages.medical_service.strabismusAmblyopia_con.kind.name5')}}</div>
+          <div>
+            {{ $t('pages.medical_service.strabismusAmblyopia_con.kind.name5') }}
+          </div>
           <div class="strabismusAmblyopia_text_p_span">
-            {{$t('pages.medical_service.strabismusAmblyopia_con.kind.context5')}}
+            {{
+              $t('pages.medical_service.strabismusAmblyopia_con.kind.context5')
+            }}
           </div>
           <div>
             <div v-for="(item, index) in strabismusList4" :key="index">
               <div>
-                <img :src="item.img" />
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
                 <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
@@ -312,36 +447,66 @@ const bannerData = {
         </div>
       </div>
       <div id="cure">
-        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.cure.name')}}</div>
+        <div class="strabismusAmblyopia_title_text">
+          {{ $t('pages.medical_service.strabismusAmblyopia_con.cure.name') }}
+        </div>
         <div>
           <div v-for="(item, index) in strabismusList5" :key="index">
             <div>{{ $t(item.title) }}</div>
             <div>
               <div>
-                <img :src="item.img" />
+                <img
+                  :src="item.img"
+                  :title="item.img_title"
+                  :alt="item.img_alt"
+                />
               </div>
-              <div class="strabismusAmblyopia_text_p_span">{{ $t(item.text) }}</div>
+              <div class="strabismusAmblyopia_text_p_span">
+                {{ $t(item.text) }}
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div id="amblyopia">
-        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name')}}</div>
+        <div class="strabismusAmblyopia_title_text">
+          {{
+            $t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name')
+          }}
+        </div>
         <div>
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/2ed1badaabb9c9cb.png"
+              title="兒童弱視矯正"
+              alt="兒童配戴眼鏡以矯正弱視"
             />
           </div>
           <div class="strabismusAmblyopia_text_p_span">
-            {{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.context1')}}
+            {{
+              $t(
+                'pages.medical_service.strabismusAmblyopia_con.amblyopia.context1'
+              )
+            }}
           </div>
         </div>
         <div id="amblyopia_kind">
-          <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.amblyopia.name1')}}</div>
+          <div class="strabismusAmblyopia_title_text">
+            {{
+              $t(
+                'pages.medical_service.strabismusAmblyopia_con.amblyopia.name1'
+              )
+            }}
+          </div>
           <div>
             <div v-for="(item, index) in amblyopiaList1" :key="index">
-              <div><img :src="item.img" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :title="item.img_title"
+                  :alt="item.img_alt"
+                />
+              </div>
               <div>
                 <div>{{ $t(item.title) }}</div>
                 <div class="strabismusAmblyopia_text_p_span">
@@ -351,30 +516,52 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div class="strabismusAmblyopia_title_btn" @click="callTel">
+        <!-- <div class="strabismusAmblyopia_title_btn" @click="callTel">
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_1')}}</p>
           <p>{{$t('pages.medical_service.strabismusAmblyopia_con.btn.name2_2')}}</p>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t('pages.medical_service.strabismusAmblyopia_con.btn.name2_1') +
+              '\n' +
+              $t('pages.medical_service.strabismusAmblyopia_con.btn.name2_2')
+            "
+            :link="'tel: +852 3956 2025'"
+            :type="'2'"
+            :pageName="'strabismusAmblyopia'"
+          />
         </div>
       </div>
       <div id="treat">
-        <div class="strabismusAmblyopia_title_text">{{$t('pages.medical_service.strabismusAmblyopia_con.treat.name')}}</div>
+        <div class="strabismusAmblyopia_title_text">
+          {{ $t('pages.medical_service.strabismusAmblyopia_con.treat.name') }}
+        </div>
         <div class="strabismusAmblyopia_text_p_span">
           <p>
-            {{$t('pages.medical_service.strabismusAmblyopia_con.treat.p1')}}
+            {{ $t('pages.medical_service.strabismusAmblyopia_con.treat.p1') }}
           </p>
           <p>
-            {{$t('pages.medical_service.strabismusAmblyopia_con.treat.p2')}}
+            {{ $t('pages.medical_service.strabismusAmblyopia_con.treat.p2') }}
           </p>
         </div>
         <div>
           <div v-for="(item, index) in treatList1" :key="index">
             <div>
-              <img :src="item.svg" />
+              <img
+                :src="item.svg"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
               <div>{{ $t(item.title) }}</div>
             </div>
             <div>
               <div>
-                <img :src="item.img" alt="" />
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
               </div>
               <div class="strabismusAmblyopia_text_p_span">
                 <p v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</p>
@@ -385,29 +572,51 @@ const bannerData = {
       </div>
     </div>
     <div id="bg_strabismusAmblyopia_nav"></div>
-    <div id="curativeTime" :class="{'curativeTime-en': locale === 'en'}">
-      <div>{{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.name')}}</div>
+    <div id="curativeTime" :class="{ 'curativeTime-en': locale === 'en' }">
+      <div>
+        {{
+          $t('pages.medical_service.strabismusAmblyopia_con.curativeTime.name')
+        }}
+      </div>
       <div class="strabismusAmblyopia_text_p_span">
-        {{$t('pages.medical_service.strabismusAmblyopia_con.curativeTime.context')}}
+        {{
+          $t(
+            'pages.medical_service.strabismusAmblyopia_con.curativeTime.context'
+          )
+        }}
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载 -->
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
+          <a
+            href="https://www.hkeyecmer.com/pdf/strabismusAmblyopia.pdf"
+            :download="'兒童斜弱視'"
+          >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
+              title="斜視_弱視"
+              alt="斜視_弱視_小冊子"
               srcset=""
             />
-          </div>
-          <div @click.stop="getPdf('strabismusAmblyopia.pdf','兒童斜弱視')">
-            <p>{{$t('pages.medical_service.strabismusAmblyopia_con.dow.text1')}}</p>
-            <p>{{$t('pages.medical_service.strabismusAmblyopia_con.dow.text2')}}</p>
-          </div>
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/strabismusAmblyopia.pdf"
+            :download="'兒童斜弱視'"
+          >
+            <p>
+              {{
+                $t('pages.medical_service.strabismusAmblyopia_con.dow.text1')
+              }}
+            </p>
+            <p>
+              {{
+                $t('pages.medical_service.strabismusAmblyopia_con.dow.text2')
+              }}
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -416,28 +625,28 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#fbbfa1;'}`"
     />
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
-.strabismusAmblyopia-nav{
+.strabismusAmblyopia-nav {
   margin-top: 30px;
 }
 .strabismusAmblyopia_nav {
@@ -657,7 +866,7 @@ const bannerData = {
             align-items: center;
             background: #ffefcf;
             margin-bottom: 35px;
-            img{
+            img {
               width: 100%;
             }
           }
@@ -839,16 +1048,16 @@ const bannerData = {
       }
     }
   }
-  &.strabismusAmblyopiaNav-en{
-    &>#kind{
+  &.strabismusAmblyopiaNav-en {
+    & > #kind {
       & > div:nth-child(2) {
-        &>div{
+        & > div {
           & > div:nth-child(1) {
             text-align: center;
           }
           & > div:nth-child(2) {
             & > div:nth-child(2) {
-              &>div{
+              & > div {
                 & > div:nth-child(2) {
                   width: max-content;
                   min-width: 150px;
@@ -862,13 +1071,13 @@ const bannerData = {
       }
       & > div:nth-child(5) {
         & > div:nth-child(3) {
-          &>div{
+          & > div {
             max-width: calc(100% / 3);
           }
         }
       }
     }
-    &> #amblyopia{
+    & > #amblyopia {
       & > div:nth-child(3) {
         & > div:nth-child(2) {
           & > div {
@@ -883,7 +1092,7 @@ const bannerData = {
         }
       }
     }
-    &>#treat{
+    & > #treat {
       & > div:nth-child(2) {
         padding: 100px 60px;
         line-height: 1.4;
@@ -898,7 +1107,8 @@ const bannerData = {
   margin: 82px auto 220px;
   width: 1020px;
   height: 357px;
-  background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png')no-repeat;
+  background: url('https://static.cmereye.com/imgs/2023/06/fa0a4822c27182ec.png')
+    no-repeat;
   background-size: 100% 100%;
 
   & > div:nth-child(1) {
@@ -918,7 +1128,7 @@ const bannerData = {
     padding: 0 65px;
     line-height: 42px;
   }
-  &.curativeTime-en{
+  &.curativeTime-en {
     & > div:nth-child(1) {
       line-height: 1.4;
       width: 40%;
@@ -985,15 +1195,15 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #ffd6c1;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #ACD9C2 0%, #2BBBEC 100%);
+    background: linear-gradient(45deg, #acd9c2 0%, #2bbbec 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
@@ -1016,7 +1226,7 @@ const bannerData = {
       display: flex;
       align-items: center;
 
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
@@ -1026,7 +1236,7 @@ const bannerData = {
         }
       }
 
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1037,7 +1247,7 @@ const bannerData = {
   }
 }
 @media screen and (max-width: 768px) {
-  .strabismusAmblyopia-nav{
+  .strabismusAmblyopia-nav {
     margin-top: -100px;
   }
   .strabismusAmblyopia_nav {
@@ -1048,7 +1258,7 @@ const bannerData = {
       margin: 0 auto 0;
       & > div:nth-child(2) {
         line-height: 1.8;
-        &>p{
+        & > p {
           margin-top: 25px;
         }
       }
@@ -1081,7 +1291,7 @@ const bannerData = {
                 justify-content: space-around;
                 margin-top: 0;
                 margin-bottom: 50px;
-                img{
+                img {
                   width: 55%;
                 }
                 & > div:nth-child(2) {
@@ -1153,7 +1363,7 @@ const bannerData = {
             margin-bottom: 40px;
             & > div:nth-child(2) {
               margin-top: 15px;
-              p{
+              p {
                 display: inline;
               }
             }
@@ -1161,12 +1371,12 @@ const bannerData = {
         }
       }
     }
-    &> #cure{
+    & > #cure {
       width: calc(100% - 60px);
       margin: 30px auto 0;
       & > div:nth-child(2) {
         margin-top: 35px;
-        
+
         & > div {
           width: 100%;
           height: auto;
@@ -1177,7 +1387,7 @@ const bannerData = {
             border-radius: 15px 15px 0 0;
             height: 60px;
             font-size: 22px;
-            background: #E9A98C;
+            background: #e9a98c;
           }
           & > div:nth-child(2) {
             padding: 25px;
@@ -1186,7 +1396,7 @@ const bannerData = {
               height: auto;
               margin-bottom: 20px;
               min-height: 110px;
-              background: #F2F3F4;
+              background: #f2f3f4;
             }
             & > div:nth-child(2) {
               line-height: 1.8;
@@ -1226,7 +1436,7 @@ const bannerData = {
             & > div:nth-child(1) {
               flex: 1;
               margin-left: 18px;
-              img{
+              img {
                 width: 100%;
               }
             }
@@ -1262,14 +1472,13 @@ const bannerData = {
             }
           }
           & > div:nth-child(2),
-          & > div:nth-child(4){
+          & > div:nth-child(4) {
             & > div:nth-child(1) {
               margin-right: 18px;
               margin-left: 0;
             }
           }
         }
-        
       }
     }
     & > #treat {
@@ -1294,7 +1503,7 @@ const bannerData = {
             align-items: center;
             padding-bottom: 0;
             width: 100%;
-            img{
+            img {
               width: 30px;
               min-width: 30px;
               height: 21px;
@@ -1316,7 +1525,7 @@ const bannerData = {
               margin-left: 20px;
               & > p {
                 margin-bottom: 0;
-                &:not(:first-child){
+                &:not(:first-child) {
                   margin-top: 15px;
                 }
               }
@@ -1325,16 +1534,16 @@ const bannerData = {
         }
       }
     }
-    &.strabismusAmblyopiaNav-en{
-      &>#kind{
+    &.strabismusAmblyopiaNav-en {
+      & > #kind {
         & > div:nth-child(2) {
-          &>div{
+          & > div {
             & > div:nth-child(1) {
               line-height: 1.2;
             }
             & > div:nth-child(2) {
               & > div:nth-child(2) {
-                &>div{
+                & > div {
                   & > div:nth-child(2) {
                     width: 100px;
                     line-height: 1.6;
@@ -1354,13 +1563,13 @@ const bannerData = {
             text-align: center;
           }
           & > div:nth-child(3) {
-            &>div{
+            & > div {
               max-width: calc(100% / 2);
             }
           }
         }
       }
-      &> #amblyopia{
+      & > #amblyopia {
         & > div:nth-child(3) {
           & > div:nth-child(2) {
             & > div {
@@ -1373,11 +1582,11 @@ const bannerData = {
             }
           }
         }
-      }    
-      &>#treat{
+      }
+      & > #treat {
         & > div:nth-child(2) {
           padding: 30px 25px;
-          &>p{
+          & > p {
             margin-bottom: 10px;
           }
         }
@@ -1403,7 +1612,7 @@ const bannerData = {
       padding: 0 25px;
       line-height: 1.8;
     }
-    &.curativeTime-en{
+    &.curativeTime-en {
       & > div:nth-child(1) {
         line-height: 1.4;
         width: 60%;
@@ -1425,7 +1634,7 @@ const bannerData = {
     height: auto;
     min-height: 35px;
   }
-  .strabismusAmblyopia_title_btn{
+  .strabismusAmblyopia_title_btn {
     margin-top: 30px;
     width: max-content;
     height: 70px;
@@ -1433,10 +1642,10 @@ const bannerData = {
     line-height: 1.6;
     padding: 5px 40px;
   }
-  .strabismusAmblyopia_title_text{
+  .strabismusAmblyopia_title_text {
     font-size: 24px;
   }
-  .strabismusAmblyopia_text_p_span{
+  .strabismusAmblyopia_text_p_span {
     font-size: 14px;
     line-height: 1.8;
   }
@@ -1448,10 +1657,10 @@ const bannerData = {
       & > div {
         width: 80%;
         height: 90px;
-        & > div:nth-child(1) {
+        & > a:nth-child(1) {
           margin-left: 30%;
           margin-right: 30px;
-          &>img{
+          & > img {
             width: 55px;
             min-width: 55px;
             height: auto;
@@ -1461,7 +1670,6 @@ const bannerData = {
     }
   }
 }
-
 </style>
 <style lang="scss" scoped>
 @media screen and (min-width: 1980px) {

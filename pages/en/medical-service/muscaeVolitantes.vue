@@ -6,18 +6,18 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.muscae_volitantes_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'muscaeVolitantesDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.muscae_volitantes.desc'),
       },
       {
         hid: 'muscaeVolitantesKey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
-      }
+        content: t('tdk.muscae_volitantes.key'),
+      },
     ]
   },
 }))
@@ -33,26 +33,32 @@ const seston = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/267899886dbaf8d9.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text1',
+    alt: '飛蚊症症狀_小雨點浮游物',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/225dea4ef8edb2ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text2',
+    alt: '飛蚊症症狀_圓圈浮游物',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d5da51be0ea0658a.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text3',
+    alt: '飛蚊症症狀_雲浮游物',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/59f096cb588e2704.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text4',
+    alt: '飛蚊症症狀_網狀浮游物',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d350bf2ddff168ce.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text5',
+    alt: '飛蚊症症狀_變形蟲浮游物',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f3bb62aace9740a1.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text6',
+    alt: '飛蚊症症狀_蜘蛛浮游物',
   },
 ]
 // 飛蚊症成因
@@ -61,21 +67,29 @@ const factor = [
     img: 'https://static.cmereye.com/imgs/2023/05/54e4419baae2b032.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title1',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text1',
+    img_title: '飛蚊症成因_老花',
+    img_alt: '年長者出現老花症狀為飛蚊症成因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b8098843aeb81226.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title2',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text2',
+    img_title: '飛蚊症成因_眼睛發炎',
+    img_alt: '男患者眼睛發炎為飛蚊症成因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdb733bc982c8bbe.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title3',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text3',
+    img_title: '飛蚊症成因_眼出血',
+    img_alt: '眼出血為飛蚊症成因',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bb13ed69d5a61654.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title4',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text4',
+    img_title: '飛蚊症成因_視網膜脫落症狀',
+    img_alt: '男患者出現視網膜脫落症狀為飛蚊症成因',
   },
 ]
 // 飛蚊症高危人士
@@ -83,26 +97,38 @@ const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/39afb10f87a7de13.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text1',
+    title: '飛蚊症高危一族_年長者',
+    alt: '年長者為飛蚊症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/10a1afee083e56b8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text2',
+    title: '飛蚊症高危一族_深近視',
+    alt: '深近視的女患者為飛蚊症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f2d9ff06f4237aa6.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text3',
+    title: '飛蚊症高危一族_低頭族',
+    alt: '低頭族為飛蚊症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d3b82336979411ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text4',
+    title: '飛蚊症高危一族_眼睛發炎',
+    alt: '眼睛發炎的女患者為飛蚊症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ee23c5620bd1b8d8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text5',
+    title: '飛蚊症高危一族_家族遺傳',
+    alt: '家族遺傳為飛蚊症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8eabb04d3e7fb31b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text6',
+    title: '飛蚊症高危一族_血糖高',
+    alt: '血糖高為飛蚊症高危一族',
   },
 ]
 // 預防飛蚊症s
@@ -110,40 +136,47 @@ const prevent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1ae9e363893ea9bf.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text1',
+    title: '預防飛蚊症',
+    alt: '閉眼休息以預防飛蚊症',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/174add34da3b109f.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text2',
+    title: '預防飛蚊症',
+    alt: '與電子產品保持適當距離以預防飛蚊症',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3c1f9464c5101f8b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text3',
+    title: '預防飛蚊症',
+    alt: '在光線充足的環境下閱讀以預防飛蚊症',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/512837cc2419bc81.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text4',
+    title: '預防飛蚊症',
+    alt: '佩戴防紫外線太陽眼鏡以預防飛蚊症',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b1c59499606c7ee4.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text5',
+    title: '預防飛蚊症',
+    alt: '保持充足睡眠以預防飛蚊症',
   },
 ]
 // 常見問題
 const meetArr: any = [
   {
     title: 'pages.medical_service.muscaeVolitantes_con.faq.q1',
-    agree:
-      'pages.medical_service.muscaeVolitantes_con.faq.a1',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a1',
   },
   {
     title: 'pages.medical_service.muscaeVolitantes_con.faq.q2',
-    agree:
-      'pages.medical_service.muscaeVolitantes_con.faq.a2',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a2',
   },
   {
     title: 'pages.medical_service.muscaeVolitantes_con.faq.q3',
-    agree:
-      'pages.medical_service.muscaeVolitantes_con.faq.a3',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a3',
   },
 ]
 // 内部导航
@@ -193,69 +226,119 @@ const bannerData = {
   mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症2.png',
   cnName: '飛蚊症',
   enName: 'EYE FLOATERS',
-  textColor: '#568BB4'
+  textColor: '#568BB4',
 }
 </script>
 <template>
   <div class="muscaeVolitantes">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="muscaeVolitantes-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'muscaeVolitantes'" />
     </div>
-    <div class="muscaeNav" :class="{'muscaeNav-en': locale === 'en'}">
+    <div class="muscaeNav" :class="{ 'muscaeNav-en': locale === 'en' }">
       <!-- 什麼是飛蚊症？ -->
       <div id="muscaeInfo">
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/06/eaed11ab4604268b.png"
-            alt="什麼是飛蚊症"
+            title="飛蚊症症狀"
+            alt="視野出現玻璃體浮游物為飛蚊症症狀"
           />
         </div>
         <div>
-          <div>{{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name')}}</div>
           <div>
-            {{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.context')}}
+            {{
+              $t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name')
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.muscaeVolitantes_con.muscaeInfo.context'
+              )
+            }}
           </div>
         </div>
       </div>
       <!-- 飛蚊症患者看見的浮游物︰ -->
       <div>
-        <div class="caption_text_color">{{$t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name1')}}</div>
+        <div class="caption_text_color">
+          {{
+            $t('pages.medical_service.muscaeVolitantes_con.muscaeInfo.name1')
+          }}
+        </div>
         <div>
           <div v-for="(item, index) in seston" :key="index">
-            <div><img :src="item.img" :alt="item.text" /></div>
+            <div>
+              <img :src="item.img" :alt="item.alt" :title="'飛蚊症症狀'" />
+            </div>
             <div>
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color" @click="goWhatsApp()">
+        <!-- <div class="button_bg_text_color" @click="goWhatsApp()">
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_1')}}<br />{{$t('pages.medical_service.muscaeVolitantes_con.btn.name1_2')}}
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t('pages.medical_service.muscaeVolitantes_con.btn.name1_1') +
+              '\n' +
+              $t('pages.medical_service.muscaeVolitantes_con.btn.name1_2')
+            "
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :type="'4'"
+            :pageName="'muscaeVolitantes'"
+            :textLine="'2'"
+          />
         </div>
       </div>
       <!-- 飛蚊症成因 -->
       <div id="factor">
         <div>
-          <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.factor.name')" />
+          <PageNavTitle
+            :title="
+              $t('pages.medical_service.muscaeVolitantes_con.factor.name')
+            "
+          />
         </div>
         <div>
           <div v-for="(item, index) in factor" :key="index">
-            <div><img :src="item.img" :alt="item.title" /></div>
+            <div>
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
+            </div>
             <div>
               <div>{{ $t(item.title) }}</div>
-              <div>{{ $t(item.text)}}</div>
+              <div>{{ $t(item.text) }}</div>
             </div>
           </div>
         </div>
       </div>
       <!-- 飛蚊症種類 -->
       <div id="category">
-        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.category.name')" />
+        <PageNavTitle
+          :title="
+            $t('pages.medical_service.muscaeVolitantes_con.category.name')
+          "
+        />
         <div>
-          <div>{{$t('pages.medical_service.muscaeVolitantes_con.category.name1')}}</div>
+          <div>
+            {{
+              $t('pages.medical_service.muscaeVolitantes_con.category.name1')
+            }}
+          </div>
           <div>
             <div>
-              {{$t('pages.medical_service.muscaeVolitantes_con.category.context')}}
+              {{
+                $t(
+                  'pages.medical_service.muscaeVolitantes_con.category.context'
+                )
+              }}
             </div>
             <div>
               <div>
@@ -276,56 +359,99 @@ const bannerData = {
               </div>
               <div>
                 <div>
-                  {{$t('pages.medical_service.muscaeVolitantes_con.category.text1')}}
+                  {{
+                    $t(
+                      'pages.medical_service.muscaeVolitantes_con.category.text1'
+                    )
+                  }}
                 </div>
                 <div>
-                  {{$t('pages.medical_service.muscaeVolitantes_con.category.text2')}}
+                  {{
+                    $t(
+                      'pages.medical_service.muscaeVolitantes_con.category.text2'
+                    )
+                  }}
                 </div>
               </div>
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/95fa8f20495db188.png"
-                  alt=""
+                  title="生理性飛蚊症"
+                  alt="生理性飛蚊症視覺"
                 />
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/00467483401c8769.png"
-                  alt=""
+                  title="生理性飛蚊症症狀"
+                  alt="視野出現玻璃體浮游物為生理性飛蚊症症狀"
                 />
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div>{{$t('pages.medical_service.muscaeVolitantes_con.category.name2')}}</div>
+          <div>
+            {{
+              $t('pages.medical_service.muscaeVolitantes_con.category.name2')
+            }}
+          </div>
           <div>
             <img
               src="https://hkcmereye.com/template/default/picture/fwz_img/exfw_en.jpg"
-              alt=""
+              title="惡性飛蚊症"
+              alt="惡性飛蚊症眼睛結構"
               v-if="locale === 'en'"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/05/70ece1913636ef3b.png"
-              alt=""
+              title="惡性飛蚊症"
+              alt="惡性飛蚊症眼睛結構"
               v-else
             />
             <div>
-              {{$t('pages.medical_service.muscaeVolitantes_con.category.context1')}}
+              {{
+                $t(
+                  'pages.medical_service.muscaeVolitantes_con.category.context1'
+                )
+              }}
             </div>
           </div>
         </div>
-        <div class="button_bg_text_color" @click="callTel()">
+        <!-- <div class="button_bg_text_color" @click="callTel()">
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_1')}}<br />
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')}}
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="
+              $t('pages.medical_service.muscaeVolitantes_con.btn.name2_1') +
+              '\n' +
+              $t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')
+            "
+            :link="'tel: +852 3956 2025'"
+            :type="'3'"
+            :pageName="'muscaeVolitantes'"
+            :textLine="'2'"
+          />
         </div>
       </div>
       <!-- 飛蚊症高危人士 -->
       <div id="highRisk">
-        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.highRisk.name')" />
+        <PageNavTitle
+          :title="
+            $t('pages.medical_service.muscaeVolitantes_con.highRisk.name')
+          "
+        />
         <div>
-          <div>{{$t('pages.medical_service.muscaeVolitantes_con.highRisk.name1')}}</div>
+          <div>
+            {{
+              $t('pages.medical_service.muscaeVolitantes_con.highRisk.name1')
+            }}
+          </div>
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
-              <div><img :src="item.img" :alt="item.text" /></div>
+              <div>
+                <img :src="item.img" :alt="item.alt" :title="item.title" />
+              </div>
               <div>
                 <div>{{ $t(item.text) }}</div>
               </div>
@@ -335,7 +461,9 @@ const bannerData = {
       </div>
       <!-- 飛蚊症治療 -->
       <div id="means">
-        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.means.name')" />
+        <PageNavTitle
+          :title="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
+        />
         <div>
           <!-- 飛蚊症治療 -->
           <div>
@@ -354,8 +482,17 @@ const bannerData = {
                   xlink:href="data:img/png;base64,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"
                 />
               </svg>
-              <svg width="401" height="385" viewBox="0 0 401 385" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M200.859 381.395L206.456 373H390.859C395.27 373 398.859 369.411 398.859 364.999V9.99902C398.859 5.58838 395.27 2 390.859 2H10.8597C6.44828 2 2.85938 5.58838 2.85938 9.99902V364.999C2.85938 369.411 6.44828 373 10.8597 373H195.263L200.859 381.395ZM200.859 385L194.193 375H10.8597C5.33678 375 0.859375 370.522 0.859375 364.999V9.99902C0.859375 4.47607 5.33678 0 10.8597 0H390.859C396.382 0 400.859 4.47607 400.859 9.99902V364.999C400.859 370.522 396.382 375 390.859 375H207.526L200.859 385Z" fill="#91B5ED"/>
+              <svg
+                width="401"
+                height="385"
+                viewBox="0 0 401 385"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M200.859 381.395L206.456 373H390.859C395.27 373 398.859 369.411 398.859 364.999V9.99902C398.859 5.58838 395.27 2 390.859 2H10.8597C6.44828 2 2.85938 5.58838 2.85938 9.99902V364.999C2.85938 369.411 6.44828 373 10.8597 373H195.263L200.859 381.395ZM200.859 385L194.193 375H10.8597C5.33678 375 0.859375 370.522 0.859375 364.999V9.99902C0.859375 4.47607 5.33678 0 10.8597 0H390.859C396.382 0 400.859 4.47607 400.859 9.99902V364.999C400.859 370.522 396.382 375 390.859 375H207.526L200.859 385Z"
+                  fill="#91B5ED"
+                />
               </svg>
             </div>
             <div>
@@ -363,17 +500,23 @@ const bannerData = {
                 <div>
                   <img
                     src="https://hkcmereye.com/template/default/picture/fwz_img/tr_en.jpg"
-                    :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
+                    title="飛蚊症"
+                    alt="飛蚊症眼睛結構"
                     v-if="locale === 'en'"
                   />
                   <img
                     src="https://static.cmereye.com/imgs/2023/05/e7d886f97050a60e.png"
-                    :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name')"
+                    title="飛蚊症"
+                    alt="飛蚊症眼睛結構"
                     v-else
                   />
                 </div>
                 <div>
-                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context')}}
+                  {{
+                    $t(
+                      'pages.medical_service.muscaeVolitantes_con.means.context'
+                    )
+                  }}
                 </div>
               </div>
               <div>
@@ -395,31 +538,50 @@ const bannerData = {
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.name1')}}</div>
             <div>
-              {{$t('pages.medical_service.muscaeVolitantes_con.means.context1')}}
+              {{ $t('pages.medical_service.muscaeVolitantes_con.means.name1') }}
+            </div>
+            <div>
+              {{
+                $t('pages.medical_service.muscaeVolitantes_con.means.context1')
+              }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.name2_1')}}<br />{{$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')}}</div>
+            <div>
+              {{ $t('pages.medical_service.muscaeVolitantes_con.means.name2_1')
+              }}<br />{{
+                $t('pages.medical_service.muscaeVolitantes_con.means.name2_2')
+              }}
+            </div>
             <div>
               <div>
                 <div>
-                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context2_1')}}
+                  {{
+                    $t(
+                      'pages.medical_service.muscaeVolitantes_con.means.context2_1'
+                    )
+                  }}
                 </div>
                 <div>
-                  {{$t('pages.medical_service.muscaeVolitantes_con.means.context2_2')}}
+                  {{
+                    $t(
+                      'pages.medical_service.muscaeVolitantes_con.means.context2_2'
+                    )
+                  }}
                 </div>
               </div>
               <div>
                 <img
                   src="https://hkcmereye.com/template/default/picture/fwz_img/ss_en.jpg"
-                  :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')"
+                  title="飛蚊症治療"
+                  alt="微創玻璃體切除手術為飛蚊症治療方法"
                   v-if="locale === 'en'"
                 />
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/aa0d0fc0cbca2315.png"
-                  :alt="$t('pages.medical_service.muscaeVolitantes_con.means.name2_2')"
+                  title="飛蚊症治療"
+                  alt="微創玻璃體切除手術為飛蚊症治療方法"
                   v-else
                 />
               </div>
@@ -428,12 +590,28 @@ const bannerData = {
           <div>
             <div>
               <div>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p1')}}</p>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p2')}}</p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p1')
+                  }}
+                </p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p2')
+                  }}
+                </p>
               </div>
               <div>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p3')}}</p>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p4')}}</p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p3')
+                  }}
+                </p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p4')
+                  }}
+                </p>
               </div>
             </div>
             <div>
@@ -452,34 +630,71 @@ const bannerData = {
                 />
               </svg>
               <div>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p5')}}</p>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p6_1')}}<span>{{$t('pages.medical_service.muscaeVolitantes_con.means.p6_2')}}</span></p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p5')
+                  }}
+                </p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p6_1')
+                  }}<span>{{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p6_2')
+                  }}</span>
+                </p>
               </div>
             </div>
             <div>
               <div>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p7')}}</p>
-                <p>{{$t('pages.medical_service.muscaeVolitantes_con.means.p8')}}</p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p7')
+                  }}
+                </p>
+                <p>
+                  {{
+                    $t('pages.medical_service.muscaeVolitantes_con.means.p8')
+                  }}
+                </p>
               </div>
-              <div>{{$t('pages.medical_service.muscaeVolitantes_con.means.p9')}}</div>
+              <div>
+                {{ $t('pages.medical_service.muscaeVolitantes_con.means.p9') }}
+              </div>
             </div>
           </div>
-          <div class="button_bg_text_color" @click="callTel()">
+          <!-- <div class="button_bg_text_color" @click="callTel()">
             {{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_1')}}{{'\n'}}{{$t('pages.medical_service.muscaeVolitantes_con.btn.name3_2')}}
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="
+                $t('pages.medical_service.muscaeVolitantes_con.btn.name3_1') +
+                $t('pages.medical_service.muscaeVolitantes_con.btn.name3_2')
+              "
+              :link="'tel: +852 3956 2025'"
+              :type="'3'"
+              :pageName="'muscaeVolitantes'"
+            />
           </div>
         </div>
       </div>
       <!-- 預防飛蚊症 -->
       <div id="prevent">
-        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.prevent.name')" />
+        <PageNavTitle
+          :title="$t('pages.medical_service.muscaeVolitantes_con.prevent.name')"
+        />
         <div>
           <div>
-            {{$t('pages.medical_service.muscaeVolitantes_con.prevent.context')}}
+            {{
+              $t('pages.medical_service.muscaeVolitantes_con.prevent.context')
+            }}
           </div>
           <div>
             <div v-for="(item, index) in prevent" :key="index">
               <div>
-                <div><img :src="item.img" :alt="item.text" /></div>
+                <div>
+                  <img :src="item.img" :alt="item.alt" :title="item.title" />
+                </div>
                 <div>
                   <div>{{ $t(item.text) }}</div>
                 </div>
@@ -490,7 +705,9 @@ const bannerData = {
       </div>
       <!-- 常見問題 -->
       <div id="faq">
-        <PageNavTitle :title="$t('pages.medical_service.muscaeVolitantes_con.faq.name')" />
+        <PageNavTitle
+          :title="$t('pages.medical_service.muscaeVolitantes_con.faq.name')"
+        />
         <div>
           <PageCollapse
             :answer="meetArr"
@@ -500,23 +717,33 @@ const bannerData = {
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载 -->
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('muscaeVolitantes.pdf','飛蚊症')">
+          <a
+            href="https://www.hkeyecmer.com/pdf/muscaeVolitantes.pdf"
+            :download="'飛蚊症'"
+          >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt=""
+              title="飛蚊症"
+              alt="飛蚊症_小冊子"
               srcset=""
             />
-          </div>
-          <div @click.stop="getPdf('muscaeVolitantes.pdf','飛蚊症')">
-            <p>{{$t('pages.medical_service.muscaeVolitantes_con.dow.text1')}}</p>
-            <p>{{$t('pages.medical_service.muscaeVolitantes_con.dow.text2')}}</p>
-          </div>
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/muscaeVolitantes.pdf"
+            :download="'飛蚊症'"
+          >
+            <p>
+              {{ $t('pages.medical_service.muscaeVolitantes_con.dow.text1') }}
+            </p>
+            <p>
+              {{ $t('pages.medical_service.muscaeVolitantes_con.dow.text2') }}
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -525,11 +752,11 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#9cc4e2;'}`"
     />
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
-.muscaeVolitantes-nav{
+.muscaeVolitantes-nav {
   margin-top: 30px;
 }
 .muscaeNav {
@@ -628,8 +855,8 @@ const bannerData = {
     }
     & > div:nth-child(3) {
       margin-top: 128px;
-      width: 508px;
-      height: 140px;
+      // width: 508px;
+      // height: 140px;
     }
   }
   // 飛蚊症成因
@@ -846,8 +1073,8 @@ const bannerData = {
     }
     & > div:nth-child(4) {
       margin-top: 100px;
-      width: 508px;
-      height: 140px;
+      // width: 508px;
+      // height: 140px;
     }
   }
   // 以下人士較大機會患上飛蚊症︰
@@ -906,7 +1133,7 @@ const bannerData = {
         flex-direction: column;
         position: relative;
         & > div:nth-child(1) {
-          &>svg:nth-of-type(2){
+          & > svg:nth-of-type(2) {
             display: none;
           }
         }
@@ -1054,8 +1281,8 @@ const bannerData = {
         }
       }
       & > div:nth-child(5) {
-        width: 509px;
-        height: 141px;
+        // width: 509px;
+        // height: 141px;
         margin-top: 167px;
       }
     }
@@ -1128,7 +1355,7 @@ const bannerData = {
       margin-top: 108px;
     }
   }
-  &.muscaeNav-en{
+  &.muscaeNav-en {
     & > div:nth-child(1) {
       & > div:nth-child(2) {
         & > div:nth-child(2) {
@@ -1173,7 +1400,7 @@ const bannerData = {
     & > div:nth-child(5) {
       & > div:nth-child(2) {
         & > div:nth-child(2) {
-          &>div{
+          & > div {
             max-width: calc(100% / 3);
           }
         }
@@ -1187,7 +1414,7 @@ const bannerData = {
             & > div:nth-child(1) {
               align-items: center;
               & > div:nth-child(1) {
-                img{
+                img {
                   max-width: 87%;
                 }
               }
@@ -1221,36 +1448,36 @@ const bannerData = {
         }
         & > div:nth-child(4) {
           & > div:nth-child(1) {
-            &>div{
+            & > div {
               text-align: center;
               line-height: 1.4;
             }
-          } 
-          & > div:nth-child(2){
-            &> div:nth-child(2){
+          }
+          & > div:nth-child(2) {
+            & > div:nth-child(2) {
               text-align: center;
-              p{
+              p {
                 color: #d8a597;
-                span{
+                span {
                   color: #6c899e;
                 }
               }
             }
           }
           & > div:nth-child(3) {
-            &>div{
+            & > div {
               text-align: center;
               line-height: 1.4;
             }
-          } 
+          }
         }
       }
     }
     & > div:nth-child(7) {
       & > div:nth-child(2) {
         & > div:nth-child(2) {
-          &>div{
-            &>div{
+          & > div {
+            & > div {
               padding-bottom: 0;
               & > div:nth-child(2) {
                 padding-bottom: 27px;
@@ -1261,7 +1488,6 @@ const bannerData = {
       }
     }
   }
-
 }
 
 // 点击按钮 样式
@@ -1289,15 +1515,15 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #6aa0d6;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #F6F291 0%, #F4D94A 100%);
+    background: linear-gradient(45deg, #f6f291 0%, #f4d94a 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
@@ -1317,21 +1543,21 @@ const bannerData = {
 }
 
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
 // 下载
 .dow {
@@ -1349,7 +1575,7 @@ const bannerData = {
       display: flex;
       align-items: center;
 
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
@@ -1359,7 +1585,7 @@ const bannerData = {
         }
       }
 
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -1369,7 +1595,7 @@ const bannerData = {
   }
 }
 @media screen and (max-width: 768px) {
-  .muscaeVolitantes-nav{
+  .muscaeVolitantes-nav {
     display: none;
   }
   .muscaeNav {
@@ -1445,11 +1671,11 @@ const bannerData = {
       }
       & > div:nth-child(3) {
         margin-top: 10px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 30px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 30px;
       }
     }
     & > div:nth-child(3) {
@@ -1459,7 +1685,7 @@ const bannerData = {
         & > div {
           margin-top: 40px;
           & > div:nth-child(1) {
-            width: 120px;   
+            width: 120px;
             min-width: 120px;
             margin-right: 20px;
           }
@@ -1486,7 +1712,7 @@ const bannerData = {
           }
         }
         & > div:nth-child(2n) {
-          & > div:nth-child(1){
+          & > div:nth-child(1) {
             margin-right: 0;
           }
           & > div:nth-child(1)::after {
@@ -1520,7 +1746,6 @@ const bannerData = {
             padding-right: 20px;
             line-height: 2;
             font-size: 14px;
-            
           }
           & > div:nth-child(2) {
             padding-bottom: 150px;
@@ -1543,13 +1768,12 @@ const bannerData = {
               bottom: 20px;
               left: 0;
               justify-content: flex-start;
-              img{
+              img {
                 width: 45%;
                 margin-right: 15px;
               }
             }
           }
-          
         }
       }
       & > div:nth-child(3) {
@@ -1565,7 +1789,7 @@ const bannerData = {
         & > div:nth-child(2) {
           flex-flow: column-reverse;
           margin: 50px 0 0;
-          img{
+          img {
             width: calc(100% - 40px);
             margin: 30px auto 0;
           }
@@ -1579,11 +1803,11 @@ const bannerData = {
       }
       & > div:nth-child(4) {
         margin-top: 50px;
-        width: max-content;
-        height: 85px;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 0 50px;
+        // width: max-content;
+        // height: 85px;
+        // font-size: 18px;
+        // line-height: 1.6;
+        // padding: 0 50px;
       }
     }
     & > div:nth-child(5) {
@@ -1598,7 +1822,7 @@ const bannerData = {
           margin-top: 25px;
           padding: 0;
           & > div {
-            width:27%;
+            width: 27%;
             margin-bottom: 50px;
             & > div:nth-child(2) {
               font-size: 14px;
@@ -1620,19 +1844,19 @@ const bannerData = {
     & > div:nth-child(6) {
       width: calc(100% - 60px);
       margin: 20px auto 0;
-     
+
       & > div:nth-child(2) {
         margin-top: 30px;
         & > div:nth-child(1) {
           & > div:nth-child(1) {
-            &>svg:nth-of-type(1){
+            & > svg:nth-of-type(1) {
               display: none;
             }
-            &>svg:nth-of-type(2){
+            & > svg:nth-of-type(2) {
               display: block;
               width: 100%;
               height: 380px;
-              path{
+              path {
                 transform: scaleY(1.15) translateY(-25px);
               }
             }
@@ -1643,14 +1867,14 @@ const bannerData = {
               flex-direction: column-reverse;
               & > div:nth-child(1) {
                 width: 100%;
-                img{
+                img {
                   width: 50%;
                   margin: 15px auto 0;
                 }
               }
               & > div:nth-child(2) {
                 width: 100%;
-                font-size: 14px; 
+                font-size: 14px;
                 line-height: 2;
                 letter-spacing: 0.1em;
               }
@@ -1658,10 +1882,10 @@ const bannerData = {
             & > div:nth-child(2) {
               right: 15px;
               bottom: 0;
-              svg{
+              svg {
                 width: 18px;
                 height: 18px;
-                image{
+                image {
                   width: 18px;
                   height: 18px;
                 }
@@ -1686,12 +1910,11 @@ const bannerData = {
             padding: 45px 20px 25px;
             font-size: 14px;
             line-height: 1.8;
-            
           }
         }
         & > div:nth-child(3) {
           & > div:nth-child(1) {
-            br{
+            br {
               display: none;
             }
           }
@@ -1706,7 +1929,7 @@ const bannerData = {
             & > div:nth-child(2) {
               margin-top: 20px;
               justify-content: center;
-              img{
+              img {
                 width: 80%;
               }
             }
@@ -1720,11 +1943,11 @@ const bannerData = {
           & > div:nth-child(1),
           & > div:nth-child(3) {
             width: 100%;
-            &>div{
+            & > div {
               width: 100%;
               background: #fff;
               color: #515151;
-              border: 2px solid #90B6D3;
+              border: 2px solid #90b6d3;
               border-radius: 10px;
               height: 76px;
               font-size: 14px;
@@ -1735,7 +1958,7 @@ const bannerData = {
               flex-wrap: wrap;
               justify-content: flex-start;
               align-content: center;
-              p{
+              p {
                 display: inline;
               }
             }
@@ -1753,7 +1976,7 @@ const bannerData = {
               font-size: 20px;
               width: 100%;
               text-align: center;
-              p{
+              p {
                 display: inline;
               }
             }
@@ -1761,12 +1984,12 @@ const bannerData = {
         }
         & > div:nth-child(5) {
           margin-top: 30px;
-          width: max-content;
-          height: 85px;
-          font-size: 18px;
-          line-height: 1.6;
-          padding: 0 70px;
-          white-space: pre-wrap;
+          // width: max-content;
+          // height: 85px;
+          // font-size: 18px;
+          // line-height: 1.6;
+          // padding: 0 70px;
+          // white-space: pre-wrap;
         }
       }
     }
@@ -1795,7 +2018,7 @@ const bannerData = {
               & > div:nth-child(1) {
                 width: 130px;
                 min-width: 130px;
-                &>img{
+                & > img {
                   width: auto;
                   height: auto;
                   border-radius: 10px;
@@ -1831,10 +2054,10 @@ const bannerData = {
         margin-top: 30px;
       }
     }
-    &.muscaeNav-en{
+    &.muscaeNav-en {
       & > div:nth-child(2) {
         & > div:nth-child(3) {
-         padding: 0 10px;
+          padding: 0 10px;
         }
       }
       & > div:nth-child(4) {
@@ -1862,7 +2085,7 @@ const bannerData = {
                 & > div:nth-child(1) {
                   margin-right: 0;
                   margin-top: 20px;
-                  img{
+                  img {
                     width: 100%;
                   }
                 }
@@ -1892,7 +2115,7 @@ const bannerData = {
           }
           & > div:nth-child(4) {
             & > div:nth-child(1) {
-              & > div{
+              & > div {
                 text-align: left;
               }
             }
@@ -1905,8 +2128,8 @@ const bannerData = {
       & > div:nth-child(7) {
         & > div:nth-child(2) {
           & > div:nth-child(2) {
-            &>div{
-              &>div{
+            & > div {
+              & > div {
                 & > div:nth-child(2) {
                   padding-bottom: 0;
                 }
@@ -1925,10 +2148,10 @@ const bannerData = {
       & > div {
         width: 80%;
         height: 90px;
-        & > div:nth-child(1) {
+        & > a:nth-child(1) {
           margin-left: 30%;
           margin-right: 30px;
-          &>img{
+          & > img {
             width: 55px;
             min-width: 55px;
             height: auto;

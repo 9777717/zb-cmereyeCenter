@@ -10,12 +10,12 @@ useHead(() => ({
       {
         hid: 'medicalOptometryDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.medicalOptometry.desc'),
       },
       {
         hid: 'medicalOptometryKey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
+        content: t('tdk.medicalOptometry.key'),
       }
     ]
   }
@@ -59,7 +59,7 @@ const toCmer = () => {
   location.href = 'https://www.cmervision.com/'
 }
 const goVision = () => {
-  location.href = 'https://www.cmervision.com/myopia-control-programme-2/'
+  location.href = 'https://api.whatsapp.com/send?phone=85269180511&text=你好,我想查詢'
 }
 const bannerData = {
   pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/醫學驗光配鏡1.png',
@@ -75,7 +75,7 @@ const bannerData = {
   <div>
     <PageServiceBanner :bannerData="bannerData" />
     <div class="medicalOptometry-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'medicalOptometry'" />
     </div>
     <div class="medicalOptometry_nav" :class="{'medicalOptometryNav-en': locale === 'en'}">
       <div id="brief_introduction">
@@ -93,7 +93,7 @@ const bannerData = {
             </p>
           </div>
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/06/d9926065ec859a5a.png" alt="" srcset="" />
+            <img srcset="https://static.cmereye.com/imgs/2024/04/a813e9765c3198e3.png 768w,https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png" src="https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png" title="兒童近視控制_視力檢查" alt="男童進行視力檢查以控制近視" />
           </div>
         </div>
         <div @click="toVision">
@@ -106,7 +106,7 @@ const bannerData = {
         <div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png" title="兒童眼睛檢查_驗眼服務" alt="女童透過驗眼服務進行眼睛檢查" srcset="" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title1')}}</div>
@@ -121,7 +121,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/b992cc721e68809f.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2024/04/040397402ce701a0.png" title="兒童眼睛檢查_眼睛健康" alt="戴眼鏡的男童已接受眼睛檢查以確保眼睛健康" srcset="" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title2')}}</div>
@@ -136,22 +136,70 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png" title="眼保健操_眼睛健康" alt="一家三口做眼保健操以確保眼睛健康" srcset="" />
             </div>
             <div>
               <div></div>
               <div class="medicalOptometry_text_p_span">
                 {{$t('pages.medical_service.medicalOptometry_con.cause.span3')}}
               </div>
-              <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
+            </div>
+            <div class="contenth2">
+              <img src="https://static.cmereye.com/imgs/2024/02/b024232a15daddde.png" alt="">
+            </div>
+              <div class="page-newNavs">
+                <div class="page-newNavs-in">
+                  <a class="imgLink" href="https://www.cmervision.com/orthokeratology/">
+                    <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" srcset="https://static.cmereye.com/imgs/2024/02/fa28b47d86133d44.png 768w, https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" src="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png" title="希瑪視光中心_角膜矯形術" alt="希瑪視光中心提拱角膜矯形術服務" />
+                  </a>
+                </div>
+                <div class="page-newNavs-in">
+                  <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" 
+                  srcset="https://static.cmereye.com/imgs/2024/02/201cc4f03dc17ad2.png 768w, https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" src="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png" title="希瑪視光中心_兒童近視控制_隱形眼鏡" alt="希瑪視光中心提供近視控制的隱形眼鏡產品服務">
+                  <div class="page-newNavs-in-hover">
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png" alt="">
+                          <p>MiSight® 1 day隱形眼鏡</p>
+                          <a class="textLink" href="https://www.cmervision.com/misight/">了解更多</a>
+                      </div>
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/f3f9de5f73f1b71a.png" alt="">
+                      </div>
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/5e5fea4259b76394.png" alt="">
+                      </div>
+                  </div>
+                </div>
+                <div class="page-newNavs-in">
+                    <img class="imgLink" data-cfsrc="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" srcset="https://static.cmereye.com/imgs/2024/02/086a88b79db89fa0.png 768w, https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" src="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png" title="希瑪視光中心_近視控制鏡片" alt="希瑪視光中心提拱兒童近視控制鏡片產品服務">
+                    <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
+                        <div>
+                            <img src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png" alt="">
+                            <p>ZEISS兒童近視控制鏡片</p>
+                            <a class="textLink" href="https://www.cmervision.com/myopia-control-lenses/zeiss-myovision-pro/">了解更多</a>
+                        </div>
+                        <div>
+                            <img src="https://static.cmereye.com/imgs/2024/02/5b495ef0e1f2a9e8.png" alt="">
+                            <p>HOYA MiYOSMART鏡片</p>
+                            <a class="textLink" href="https://www.cmervision.com/dims-soft-lens/">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-newNavs-in">
+                  <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
+                  <img data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" srcset="https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w, https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png" title="希瑪視光中心_阿托品_眼藥水" alt="希瑪視光中心提拱阿托品眼藥水產品服務"></a>
+                </div>
+              </div>
+              <div class="contentbtn">
+                <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
                 <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_1')}}</div>
                 <div>{{$t('pages.medical_service.medicalOptometry_con.cause.btn3_2')}}</div>
               </div>
-            </div>
+              </div>
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png" title="眼科醫生_眼睛檢查" alt="眼科醫生為年長者進行眼睛檢查" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title4')}}</div>
@@ -166,7 +214,7 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" alt="" srcset="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png" title="眼睛檢查_眼睛疾病" alt="定期安排眼睛檢查以預防眼睛疾病" />
             </div>
             <div>
               <div>{{$t('pages.medical_service.medicalOptometry_con.cause.title5')}}</div>
@@ -178,9 +226,32 @@ const bannerData = {
                 <div></div>
               </div>
             </div>
+            <h2>希瑪視光中心更提供成人配鏡服務及鏡片試戴，包括︰</h2>
+            <div class="page-newNavs2">
+                <div class="page-newNavs2-in">
+                    <img src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png" title="希瑪視光中心_隱形眼鏡" alt="希瑪視光中心提供隱形眼鏡產品服務">
+                    <p>隱形眼鏡驗配</p>
+                    <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/">了解更多</a>
+                </div>
+                <div class="page-newNavs2-in">
+                    <img src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png" title="希瑪視光中心_漸進老花鏡" alt="希瑪視光中心提供漸進老花鏡產品服務">
+                    <p>老花漸進鏡驗配</p>
+                    <a href="https://www.cmervision.com/progressive-lens/">了解更多</a>
+                </div>
+                <div class="page-newNavs2-in">
+                    <img src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png" title="希瑪視光中心_老花隱形眼鏡" alt="希瑪視光中心提供老花隱形眼鏡產品服務">
+                    <p>老花隱形眼鏡驗配</p>
+                    <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/multifocal-contact-lenses-fitting/">了解更多</a>
+                </div>
+                <div class="page-newNavs2-in">
+                    <img src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png" title="希瑪視光中心_硬式隱形眼鏡" alt="希瑪視光中心提供硬式隱形眼鏡產品服務">
+                    <p>硬式隱形眼鏡驗配</p>
+                    <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/rgp/">了解更多</a>
+                </div>
+            </div>
           </div>
         </div>
-        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
@@ -210,7 +281,7 @@ const bannerData = {
             <div>
               <div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/07/143a8a47246f1fb5.png  " alt="" srcset="" />
+                  <img src="https://static.cmereye.com/imgs/2024/04/46f32814f4b5f0da.png" alt="" srcset="" />
                 </div>
                 <div class="medicalOptometry_text_p_span">
                   {{$t('pages.medical_service.medicalOptometry_con.cause.span2')}}
@@ -230,6 +301,51 @@ const bannerData = {
                 </div>
                 <div class="medicalOptometry_text_p_span">
                   {{$t('pages.medical_service.medicalOptometry_con.cause.span3')}}
+                </div>
+              </div>
+              <div class="contenth2">
+                <img src="https://static.cmereye.com/imgs/2024/02/b024232a15daddde.png" alt="">
+              </div>
+              <div class="page-newNavs">
+                <div class="page-newNavs-in">
+                  <a class="imgLink" href="https://www.cmervision.com/orthokeratology/">
+                    <img src="https://static.cmereye.com/imgs/2024/02/b4cb7a2dbcde9597.png" alt="角膜矯形術" title="角膜矯形術" />
+                  </a>
+                </div>
+                <div class="page-newNavs-in">
+                  <img class="imgLink" src="https://static.cmereye.com/imgs/2024/02/7d4c482c735ee561.png" title="每日即棄近視 控制隱形眼鏡" alt="">
+                  <div class="page-newNavs-in-hover">
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png" alt="">
+                          <p>MiSight® 1 day隱形眼鏡</p>
+                          <a class="textLink" href="https://www.cmervision.com/misight/">了解更多</a>
+                      </div>
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/f3f9de5f73f1b71a.png" alt="">
+                      </div>
+                      <div>
+                          <img src="https://static.cmereye.com/imgs/2024/02/5e5fea4259b76394.png" alt="">
+                      </div>
+                  </div>
+                </div>
+                <div class="page-newNavs-in">
+                    <img class="imgLink" src="https://static.cmereye.com/imgs/2024/02/d5693952f88b0338.png" title="兒童近視控制鏡片" alt="">
+                    <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
+                        <div>
+                            <img src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png" alt="">
+                            <p>ZEISS兒童近視控制鏡片</p>
+                            <a class="textLink" href="https://www.cmervision.com/myopia-control-lenses/zeiss-myovision-pro/">了解更多</a>
+                        </div>
+                        <div>
+                            <img src="https://static.cmereye.com/imgs/2024/02/5b495ef0e1f2a9e8.png" alt="">
+                            <p>HOYA MiYOSMART鏡片</p>
+                            <a class="textLink" href="https://www.cmervision.com/dims-soft-lens/">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-newNavs-in">
+                  <a class="imgLink" href="https://www.hkeyecmer.com/medical-service/atropine">
+                  <img src="https://static.cmereye.com/imgs/2024/02/9d87712599f6e163.png" title="阿托品眼藥水" alt=""></a>
                 </div>
               </div>
               <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goVision">
@@ -270,9 +386,35 @@ const bannerData = {
                 <div></div>
               </div>
             </div>
+            <h2>
+              希瑪視光中心更提供成人配鏡服務及鏡片試戴，包括︰
+            </h2>
+            <div class="page-newNavs2">
+              <div class="page-newNavs2-in">
+                  <img src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png" title="隱形眼鏡驗配" alt="">
+                  <p>隱形眼鏡驗配</p>
+                  <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/">了解更多</a>
+              </div>
+              <div class="page-newNavs2-in">
+                  <img src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png" title="老花漸進鏡驗配
+                  控制隱形眼鏡" alt="">
+                  <p>老花漸進鏡驗配</p>
+                  <a href="https://www.cmervision.com/progressive-lens/">了解更多</a>
+              </div>
+              <div class="page-newNavs2-in">
+                  <img src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png" title="老花隱形眼鏡驗配" alt="">
+                  <p>老花隱形眼鏡驗配</p>
+                  <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/multifocal-contact-lenses-fitting/">了解更多</a>
+              </div>
+              <div class="page-newNavs2-in">
+                  <img src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png" title="硬式隱形眼鏡驗配" alt="">
+                  <p>硬式隱形眼鏡驗配</p>
+                  <a href="https://www.cmervision.com/comprehensive/contact-lens-fitting/rgp/">了解更多</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="goWhatsApp">
+        <div class="medicalOptometry_btn_bg" :class="{'Btn-en': locale === 'en'}" @click="toVision">
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn1')}}</div>
           <div>{{$t('pages.medical_service.medicalOptometry_con.btn2')}}</div>
         </div>
@@ -283,9 +425,9 @@ const bannerData = {
     <!-- 表单 -->
     <div class="fromTable">
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-        :co="`color:${'#bcd09c;'}`" />
+        :co="`color:${'#bcd09c;'}`" :formbgimg="'https://static.cmereye.com/imgs/2024/04/2894df9b213b8a17.png'" />
     </div>
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -460,10 +602,202 @@ const bannerData = {
           }
         }
       }
+      &>div:nth-of-type(3){
+        align-items: center;
+        flex-wrap: wrap;
+        &>div:nth-of-type(1){
+          width: calc(467 / 1160 * 100%);
+        }
+        .contenth2{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+        }
+        .page-newNavs{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 80px;
+          &-in{
+            position: relative;
+            cursor: pointer;
+            .page-newNavs-in-hover{
+              position: absolute;
+              background: #fff;
+              border-radius: 55px;
+              min-width: 1180px;
+              left: 50%;
+              transform: translateX(-50%);
+              filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+              height: 400px;
+              z-index: 9999;
+              display: none;
+              &>div{
+                position: relative;
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                p{
+                  margin-bottom: 30px !important;
+                  font-size: 30.41px;
+                }
+              }
+              .textLink{
+                width: max-content;
+                border: 3px solid #ACC288 ;
+                border-radius: 30px ;
+                color: #ACC288 ;
+                font-size: 30px ;
+                font-style: normal ;
+                font-weight: 700 ;
+                line-height: normal ;
+                padding: 6px 22px ;
+                height: auto ;
+                letter-spacing: 5.627px ;
+                text-align: center;
+                transition: all .3s;
+                &:hover{
+                   background: #ACC288 ;
+                   color: #fff ;
+                }
+              }
+              &>div:not(:last-child)::after{
+                content: '';
+                width: 1px;
+                height: 244px;
+                display: inline-block;
+                background: #ABA2A2;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+              &::after{
+                content: '';
+                top: -38px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border: 20px solid;
+                border-color: transparent transparent #fff transparent;
+                display: inline-block;
+                position: absolute;
+              }
+              &.page-newNavs-in-hover-2{
+                align-items: center;
+                div{
+                  height: 300px;
+                   justify-content: flex-end;
+                   p{
+                     margin-top: 30px;
+                   }
+                   &:nth-child(1){
+                    img{
+                      max-width: 25%;
+                    }
+                  }
+                }
+              }
+            }
+            &:hover{
+              .page-newNavs-in-hover{
+                display: flex;
+                
+              }
+            }
+          }
+          .imgLink{
+            filter: drop-shadow(0 3px 5px rgba(0,0,0,.3));
+          }
+          
+        }
+        .contentbtn{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 80px;
+        }
+        .medicalOptometry_text_p_span{
+          margin-bottom: 0 !important;
+        }
+      }
+      &>div:nth-of-type(5){
+        align-items: center;
+        flex-wrap: wrap;
+        h2{
+          width: 100%;
+          color: #8CA761;
+          font-size: 30px;
+          font-weight: 600;
+          margin-top: 60px;
+        }
+        .page-newNavs2{
+          width: 100%;
+        }
+        .page-newNavs2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .page-newNavs2-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 42px;
+        background: #FFF;
+        min-width: 282px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        padding: 60px 0 22px;
+        margin: 19px 0;
+    }
+    .page-newNavs2-in p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px ;
+        margin-top: 19px ;
+        color: #555;
+        font-family: "Noto Sans HK";
+        font-size: 30.41px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .page-newNavs2-in img{
+        width: initial ;
+        height: 151px;
+        margin-right: 0 ;
+    }
+    .page-newNavs2-in a{
+        width: auto ;
+        border: none ;
+        border-radius: 7.402px ;
+        background: #A2BF74 ;
+        color: #fff ;
+        font-family: "Noto Sans HK" ;
+        font-size: 22.509px ;
+        font-style: normal ;
+        font-weight: 700 ;
+        line-height: normal ;
+        padding: 6px 22px ;
+        height: auto ;
+        letter-spacing: 5.627px ;
+    }
+    .page-newNavs2-in a:hover{
+        background: #c1d6a0;
+    }
+      }
     }
     &>div:nth-child(3) {
       margin: 60px auto 462px;
+      
     }
+    
   }
   &.medicalOptometryNav-en{
     &>#brief_introduction {
@@ -618,6 +952,11 @@ const bannerData = {
             margin-top: 40px;
           }
         }
+        &>div:nth-child(2) {
+          img{
+            width: 100%;
+          }
+        }
       }
       &>div:nth-child(2) {
         width: 100%;
@@ -759,10 +1098,113 @@ const bannerData = {
           &>div:nth-child(1)::before {
             content: none;
           }
+          .contenth2{
+            padding: 0 30px;
+          }
+          .page-newNavs{
+            width: 100%;
+            margin-top: 30px;
+            
+            &-in{
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 30px;
+              padding: 0 20px;
+              filter: drop-shadow(0 5px 3px rgba(0,0,0,.2));
+              .imgLink{
+                display: block;
+                height: 65px;
+                position: relative;
+                z-index: 1;
+                img{
+                  // height: 55px;
+                  height: 100%;
+                }
+              }
+            }
+            .page-newNavs-in-hover{
+              display: flex;
+              align-items: center;
+              background: #fff;
+              border-radius: 15px;
+              height: 118px;
+              margin-top: -14px;
+              &>div{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                &:not(:last-child):after{
+                  content: '';
+                  width: 1px;
+                  height: 60px;
+                  display: inline-block;
+                  background: #ABA2A2;
+                  position: absolute;
+                  right: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+                img{
+                  width: 70% !important;
+                }
+                p{
+                  margin-bottom: 5px !important;
+                  font-size: 8px;
+                  color: #000;
+                }
+                a{
+                    width: max-content ;
+                    border: 1px solid #8CA761 ;
+                    border-radius: 30px ;
+                    color: #8CA761 ;
+                    font-size: 8px ;
+                    font-weight: 700;
+                    padding: 2px 10px ;
+                    height: auto ;
+                    letter-spacing: 3px;
+                    text-align: center;
+                    transition: all .3s;
+                }
+              }
+              &.page-newNavs-in-hover-2{
+                width: 80%;
+                // align-items: flex-end;
+                &>div{
+                  justify-content: flex-end;
+                  height: 90px;
+                  flex: 1;
+                  p{
+                    margin-top: 10px;
+                  }
+                  img{
+                    max-width: 40%;
+                  }
+                  &:nth-child(1){
+                    img{
+                      // max-width: 80%;
+                      max-width: 35%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &>div:nth-of-type(5){
+          h2{
+            color: #8CA761;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          
         }
       }
       &>div:nth-child(3) {
-        margin: 60px auto 120px;
+        margin: 60px auto 0;
         font-size: 18px;
         font-weight: 500;
         &>div:first-child{
@@ -812,6 +1254,46 @@ const bannerData = {
       }
       &>div:nth-child(2){
         line-height: 1.6;
+      }
+    }
+  }
+  .page-newNavs2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    &-in{
+      width: 40%;
+      background: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+      &:nth-of-type(odd){
+        margin-right: 20px;
+      }
+      &>img{
+        height: 70px;
+        margin-top: 20px;
+      }
+      p{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      a{
+        background: #A2BF74;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 5px;
+        letter-spacing: 3px;
+        padding: 3px 12px;
+        margin-bottom: 15px;
+        margin-top: 15px;
       }
     }
   }

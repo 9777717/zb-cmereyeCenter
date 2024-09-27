@@ -11,12 +11,12 @@ useHead({
       {
         hid: 'serviceIndexDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.medical-service.desc'),
       },
       {
         hid: 'serviceIndexkey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
+        content: t('tdk.medical-service.key'),
       }
     ]
   },
@@ -27,83 +27,83 @@ const SerListL = [
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
     des: 'pages.medical_service.cataract',
-    link: '/en/medical-service/cataract',
+    link: '/medical-service/cataract',
   },
   {
     i: '02',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
     des: 'pages.medical_service.maculopathy',
-    link: '/en/medical-service/maculopathy',
+    link: '/medical-service/maculopathy',
   },
   {
     i: '03',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser4.png',
     des: 'pages.medical_service.muscae_volitantes',
-    link: '/en/medical-service/muscaeVolitantes',
+    link: '/medical-service/muscaeVolitantes',
   },
   {
     i: '04',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
     des: 'pages.medical_service.amotioRetinae',
-    link: '/en/medical-service/amotioRetinae',
+    link: '/medical-service/amotioRetinae',
   },
   {
     i: '05',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
     des: 'pages.medical_service.glaucoma',
-    link: '/en/medical-service/glaucoma',
+    link: '/medical-service/glaucoma',
   },
   {
     i: '06',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser5.png',
     des: 'pages.medical_service.conjunctivitis',
-    link: '/en/medical-service/conjunctivitis',
+    link: '/medical-service/conjunctivitis',
   },
   {
     i: '07',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser3.png',
     des: 'pages.medical_service.xerophthalmia',
-    link: '/en/medical-service/xerophthalmia',
+    link: '/medical-service/xerophthalmia',
   },
   {
     i: '08',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
     des: 'pages.medical_service.ocularSurfaceDiseases',
-    link: '/en/medical-service/ocularSurfaceDiseases',
+    link: '/medical-service/ocularSurfaceDiseases',
   },
   {
     i: '09',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
     des: 'pages.medical_service.strabismusAmblyopia',
-    link: '/en/medical-service/strabismusAmblyopia',
+    link: '/medical-service/strabismusAmblyopia',
   },
   {
     i: '10',
     imgUrl: 'https://static.cmereye.com/imgs/2023/06/18da333b4728e821.png',
     des: 'pages.medical_service.atropine',
-    link: '/en/medical-service/atropine',
+    link: '/medical-service/atropine',
   },
   {
     i: '11',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
     des: 'pages.medical_service.eyeOrthopaedicDisease',
-    link: '/en/medical-service/eyeOrthopaedicDisease',
+    link: '/medical-service/eyeOrthopaedicDisease',
   },
   {
     i: '12',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
     des: 'pages.medical_service.medicalOptometry',
-    link: '/en/medical-service/medicalOptometry',
+    link: '/medical-service/medicalOptometry',
   },
   {
     i: '13',
@@ -137,7 +137,7 @@ const SerListL = [
     </div>
     <div class="h-32"></div>
     <Footer />
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style scoped lang="scss">

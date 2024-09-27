@@ -7,7 +7,7 @@ const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.maculopathy_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'maculopathyDesc',
@@ -18,9 +18,9 @@ useHead(() => ({
         hid: 'maculopathyKey',
         name: 'keywords',
         content: t('tdk.maculopathy.key'),
-      }
+      },
     ]
-  }
+  },
 }))
 // 传递背景色
 const backgd = [
@@ -32,23 +32,19 @@ const backgd = [
 const meetArr = [
   {
     title: 'pages.medical_service.maculopathy_con.faq.q1',
-    agree:
-      'pages.medical_service.maculopathy_con.faq.a1',
+    agree: 'pages.medical_service.maculopathy_con.faq.a1',
   },
   {
     title: 'pages.medical_service.maculopathy_con.faq.q2',
-    agree:
-      'pages.medical_service.maculopathy_con.faq.a2',
+    agree: 'pages.medical_service.maculopathy_con.faq.a2',
   },
   {
     title: 'pages.medical_service.maculopathy_con.faq.q3',
-    agree:
-      'pages.medical_service.maculopathy_con.faq.a3',
+    agree: 'pages.medical_service.maculopathy_con.faq.a3',
   },
   {
     title: 'pages.medical_service.maculopathy_con.faq.q4',
-    agree:
-      'pages.medical_service.maculopathy_con.faq.a4',
+    agree: 'pages.medical_service.maculopathy_con.faq.a4',
   },
 ]
 // 黃斑病變的症狀
@@ -57,25 +53,25 @@ const sympotm = [
     img: 'https://static.cmereye.com/imgs/2023/05/a35e84d4d561b775.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text1',
     alt: '模擬黃斑病變視力模糊症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視力模糊'
+    title: '黃斑病變症狀_視力模糊',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1bc58cb58d984772.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text2',
     alt: '模擬黃斑病變視野變暗症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視野變暗'
+    title: '黃斑病變症狀_視野變暗',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b5d5aa2f6c40815b.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text3',
     alt: '模擬黃斑病變視物變形症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視物變形'
+    title: '黃斑病變症狀_視物變形',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/43227b62cc0bc253.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text4',
     alt: '模擬黃斑病變視野缺損症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視野缺損'
+    title: '黃斑病變症狀_視野缺損',
   },
 ]
 // 黃斑病變自我檢查
@@ -87,7 +83,7 @@ const examine = [
     img_up_alt: '模擬無黃斑病變症狀的視覺圖',
     img_up_title: '黃斑病變症狀',
     img_down_alt: '模擬無黃斑病變症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_阿姆斯勒方格表'
+    img_down_title: '黃斑病變症狀_阿姆斯勒方格表',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title4',
@@ -96,7 +92,7 @@ const examine = [
     img_up_alt: '模擬黃斑病變視力模糊症狀的視覺圖',
     img_up_title: '黃斑病變症狀_視力模糊',
     img_down_alt: '模擬黃斑病變視力模糊症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視力模糊_阿姆斯勒方格表'
+    img_down_title: '黃斑病變症狀_視力模糊_阿姆斯勒方格表',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title3',
@@ -105,7 +101,7 @@ const examine = [
     img_up_alt: '模擬黃斑病變視物變形症狀的視覺圖',
     img_up_title: '黃斑病變症狀_視物變形',
     img_down_alt: '模擬黃斑病變視物變形症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視物變形_阿姆斯勒方格表'
+    img_down_title: '黃斑病變症狀_視物變形_阿姆斯勒方格表',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title2',
@@ -114,7 +110,7 @@ const examine = [
     img_up_alt: '模擬黃斑病變視野變暗症狀的視覺圖',
     img_up_title: '黃斑病變症狀_視野變暗',
     img_down_alt: '模擬黃斑病變視野變暗症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視野變暗_阿姆斯勒方格表'
+    img_down_title: '黃斑病變症狀_視野變暗_阿姆斯勒方格表',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title5',
@@ -123,7 +119,7 @@ const examine = [
     img_up_alt: '模擬黃斑病變視野缺損症狀的視覺圖',
     img_up_title: '黃斑病變症狀_視野缺損',
     img_down_alt: '模擬黃斑病變視野缺損症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視野缺損_阿姆斯勒方格表'
+    img_down_title: '黃斑病變症狀_視野缺損_阿姆斯勒方格表',
   },
 ]
 // 老年黃斑病變成因
@@ -132,43 +128,43 @@ const factor = [
     img: 'https://static.cmereye.com/imgs/2023/05/d318d9ddc48014f0.png',
     text: 'pages.medical_service.maculopathy_con.factor.text1',
     alt: '年紀大為黃斑病變成因',
-    title: '黃斑病變成因_年紀大'
+    title: '黃斑病變成因_年紀大',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c30a5bce1f432ab.png',
     text: 'pages.medical_service.maculopathy_con.factor.text2',
     alt: '吸煙為黃斑病變成因',
-    title: '黃斑病變成因_吸煙'
+    title: '黃斑病變成因_吸煙',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/fa056cec9377e0b8.png',
     text: 'pages.medical_service.maculopathy_con.factor.text3',
     alt: '不良飲食習慣為黃斑病變成因',
-    title: '黃斑病變成因_不良飲食習慣'
+    title: '黃斑病變成因_不良飲食習慣',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/517d3d0735bb283a.png',
     text: 'pages.medical_service.maculopathy_con.factor.text4',
     alt: '紫外線為黃斑病變成因',
-    title: '黃斑病變成因_紫外線'
+    title: '黃斑病變成因_紫外線',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/26091d94736c22f3.png',
     text: 'pages.medical_service.maculopathy_con.factor.text5',
     alt: '高血壓為黃斑病變成因',
-    title: '黃斑病變成因_高血壓'
+    title: '黃斑病變成因_高血壓',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3f170433f21acc56.png',
     text: 'pages.medical_service.maculopathy_con.factor.text6',
     alt: '黃斑退化為黃斑病變成因',
-    title: '黃斑病變成因_黃斑退化'
+    title: '黃斑病變成因_黃斑退化',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7d119ac9fdaca526.png',
     text: 'pages.medical_service.maculopathy_con.factor.text7',
     alt: '家族遺傳為黃斑病變成因',
-    title: '黃斑病變成因_家族遺傳'
+    title: '黃斑病變成因_家族遺傳',
   },
 ]
 // 預防黃斑病變
@@ -220,37 +216,37 @@ const prevent = [
 const serviceNavigation = [
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name1',
-    anchorLink: '/yahoo/medical-service/maculopathy#maculopathyInfo',
+    anchorLink: '/medical-service/maculopathy#maculopathyInfo',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name2',
-    anchorLink: '/yahoo/medical-service/maculopathy#sympotm',
+    anchorLink: '/medical-service/maculopathy#sympotm',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name3',
-    anchorLink: '/yahoo/medical-service/maculopathy#inspect',
+    anchorLink: '/medical-service/maculopathy#inspect',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name4',
-    anchorLink: '/yahoo/medical-service/maculopathy#able_maculopathy',
+    anchorLink: '/medical-service/maculopathy#able_maculopathy',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name5',
-    anchorLink: '/yahoo/medical-service/maculopathy#wet_maculopathy',
+    anchorLink: '/medical-service/maculopathy#wet_maculopathy',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name6',
-    anchorLink: '/yahoo/medical-service/maculopathy#prevent',
+    anchorLink: '/medical-service/maculopathy#prevent',
   },
   {
     anchorName: 'pages.medical_service.maculopathy_con.navLists.name7',
-    anchorLink: '/yahoo/medical-service/maculopathy#faq',
+    anchorLink: '/medical-service/maculopathy#faq',
   },
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
     '_blank'
   )
 }
@@ -265,46 +261,75 @@ const bannerData = {
   cnName: '黃斑病變',
   enName: 'MACULAR DEGENERATION',
   textColor: '#EABE5F',
-  pageName: 'maculopathy'
+  pageName: 'maculopathy',
 }
 </script>
 
 <template>
   <div class="maculopathy">
     <!-- 头部 -->
-    <yahooPageServiceBanner :bannerData="bannerData" />
+    <PageServiceBanner :bannerData="bannerData" />
     <div class="maculopathy-nav">
-      <yahooserviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'maculopathy'" />
     </div>
-    <div class="maculopathy_nav" :class="{'maculopathyNav-en': locale === 'en'}">
+    <div
+      class="maculopathy_nav"
+      :class="{ 'maculopathyNav-en': locale === 'en' }"
+    >
       <!-- 什麼是黃斑病變？ -->
       <div id="maculopathyInfo">
-        <div>{{$t('pages.medical_service.maculopathy_con.maculopathyInfo.name')}}</div>
         <div>
-          {{$t('pages.medical_service.maculopathy_con.maculopathyInfo.context')}}
+          {{ $t('pages.medical_service.maculopathy_con.maculopathyInfo.name') }}
+        </div>
+        <div>
+          {{
+            $t('pages.medical_service.maculopathy_con.maculopathyInfo.context')
+          }}
         </div>
       </div>
       <!-- 黃斑病變的症狀 -->
       <div id="sympotm">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.sympotm.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.sympotm.name') }}
+        </div>
         <div>
           <div v-for="(item, i) in sympotm" :key="i">
-            <div><img :src="item.img" :alt="item.alt" :title="item.title" /></div>
+            <div>
+              <img :src="item.img" :alt="item.alt" :title="item.title" />
+            </div>
             <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
       <!-- 黃斑病變自我檢查 -->
       <div id="inspect">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.inspect.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.inspect.name') }}
+        </div>
         <div>
           <div>
-            <div>{{$t('pages.medical_service.maculopathy_con.inspect.name1')}}</div>
-            <div>{{$t('pages.medical_service.maculopathy_con.inspect.name2')}}</div>
-            <div><span>1</span>{{$t('pages.medical_service.maculopathy_con.inspect.text1')}}</div>
-            <div><span>2</span>{{$t('pages.medical_service.maculopathy_con.inspect.text2')}}</div>
-            <div><span>3</span>{{$t('pages.medical_service.maculopathy_con.inspect.text3')}}</div>
-            <div><span>4</span>{{$t('pages.medical_service.maculopathy_con.inspect.text4')}}</div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.inspect.name1') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.inspect.name2') }}
+            </div>
+            <div>
+              <span>1</span
+              >{{ $t('pages.medical_service.maculopathy_con.inspect.text1') }}
+            </div>
+            <div>
+              <span>2</span
+              >{{ $t('pages.medical_service.maculopathy_con.inspect.text2') }}
+            </div>
+            <div>
+              <span>3</span
+              >{{ $t('pages.medical_service.maculopathy_con.inspect.text3') }}
+            </div>
+            <div>
+              <span>4</span
+              >{{ $t('pages.medical_service.maculopathy_con.inspect.text4') }}
+            </div>
           </div>
           <div>
             <img
@@ -312,18 +337,28 @@ const bannerData = {
               alt="用於黃斑病變測試的阿姆斯勒方格表"
               title="黃斑病變測試_阿姆斯勒方格表"
             />
-            <span>{{$t('pages.medical_service.maculopathy_con.inspect.name3')}}</span>
+            <span>{{
+              $t('pages.medical_service.maculopathy_con.inspect.name3')
+            }}</span>
           </div>
         </div>
         <div>
-          <div>{{$t('pages.medical_service.maculopathy_con.inspect.name3')}}</div>
           <div>
-            {{$t('pages.medical_service.maculopathy_con.inspect.context')}}
+            {{ $t('pages.medical_service.maculopathy_con.inspect.name3') }}
+          </div>
+          <div>
+            {{ $t('pages.medical_service.maculopathy_con.inspect.context') }}
           </div>
           <div>
             <div v-for="(item, i) in examine" :key="i">
               <div>{{ $t(item.title) }}</div>
-              <div><img :src="item.img_up" :alt="item.img_up_alt" :title="item.img_up_title" /></div>
+              <div>
+                <img
+                  :src="item.img_up"
+                  :alt="item.img_up_alt"
+                  :title="item.img_up_title"
+                />
+              </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -338,7 +373,13 @@ const bannerData = {
                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB/lBMVEVristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristrist9mNHCz+rS3O+uv+JvjcyCnNP3+fz////U3fDH0uuLo9bc4/Ofs918mNG2xua9y+iFn9R5ldDL1u3g5vS7yed0kc6RqNj4+f35+v2Pptjl6vbq7vh3k89ujMzv8vmNpddujczZ4fK8yuiJotb2+PyKo9ZsisvK1ezY4PF6ldD9/v6JodW5yOe1xeWrveL09vvu8fnW3vFti8yvwOO0w+R7l9G2xeX8/P7+//+gtN7AzemxwePF0evH0+vS2+/f5vRxj83Bzun7/P53lM97ltFalhceAAAAZHRSTlMABDp0m8LP3dXJqYFODzaX7fu1WQY9vuFqE6L+0eN3AVf5BWD9rwNN/Joi8Gj3KGkM61BzzDI8kIgh+I9JnEufkip9WCuVAqFHjRlnidfiQ3XDkdKMyhWqcOkK5iAkpvXcfxEJ0Q/ryQAAAAFiS0dEbMwBMDsAAAAHdElNRQfnBREJFDN5f7PcAAACHUlEQVQ4y2NgQAWMTMwsrGzsHJxc3Dy8DPgAH79ACgIICgmL4FIpKpaCDsQlGLGplJSSTsECZJiwGCqbgh0IysmjKVVQTMEJpJRQlCqrpOABqmpIStU1kKVS09IzMlEUayKUamkjS2Rl5+Tk5KKarANTqsaJIp6XAwL5KGK6elC1+qhmFIDVFqIKikECw8CQCLUpRmC1xinEqDUBKZVnJ0ptiilQrVkKcWrNgWotiFQrDlTLSaTaFEsGNSti1fIwWMLZRcUlpahqy8orKqvg8nIIr1XX5OTU1iGrraoH0g2NMAXWDDZQVlMzSEVNC0JtaxuY0Q5Ta8tgB2V1gCVyOrtgart7ICK9MLX2DKJQVl8/VPEEqNqJEH7OJJhaBwZHGHMyVG7KVDDVBuVOmw5T4MQgAk/mM3KwgHpEODgzMHDAOTMxlTbPQoSvCwODK4I3G11pZylCUsANmNeQoqYSVemcaiQ5d2B6EEFO6iXISufOQ45iD1AC9kQS6J6PpHYBslJ2cL730kVWvBCuNA0l5XhD8qYPslj3IqjSxdORhX2hJaaBH7LodEjcLlmKLCjtDy/3UIqd6cuWA+NgBYoLrBEFT0AKKljZ0orCD0Qus4NS8IFglNpAPgSP0tAwtAJYwgqX0nADjILdVAarSm19bBUGY0QkhkpBey8cFVGUvgmKymjPGAY8IFY/ji0eqEwjQShRVI2BMFBLSsYmDADARi0RfmCoiQAAAABJRU5ErkJggg=="
                 />
               </svg>
-              <div><img :src="item.img_down" :alt="item.img_down_alt" :title="item.img_down_title" /></div>
+              <div>
+                <img
+                  :src="item.img_down"
+                  :alt="item.img_down_alt"
+                  :title="item.img_down_title"
+                />
+              </div>
             </div>
           </div>
           <!-- <div class="maculopathy_button_bg_color" @click="goWhatsApp()">
@@ -346,22 +387,29 @@ const bannerData = {
             <p>{{$t('pages.medical_service.maculopathy_con.btn.name1_2')}}</p>
           </div> -->
           <div class="serviceBtnStyle">
-            <yahoo-service-button-icon
-            :str="$t('pages.medical_service.maculopathy_con.btn.name1_1') + '\n' + $t('pages.medical_service.maculopathy_con.btn.name1_2')"
-            :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
-            :type="'4'"
-            :pageName="'maculopathy'"
-            :textLine="'2'"
-          />
+            <service-button-icon
+              :str="
+                $t('pages.medical_service.maculopathy_con.btn.name1_1') +
+                '\n' +
+                $t('pages.medical_service.maculopathy_con.btn.name1_2')
+              "
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :type="'4'"
+              :pageName="'maculopathy'"
+              :textLine="'2'"
+            />
           </div>
-          
         </div>
       </div>
       <!-- 常見類型 -->
       <div>
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.types.name') }}
+        </div>
         <div>
-          <div>{{$t('pages.medical_service.maculopathy_con.types.name1')}}</div>
+          <div>
+            {{ $t('pages.medical_service.maculopathy_con.types.name1') }}
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -375,8 +423,8 @@ const bannerData = {
             />
           </svg>
           <div>
-            <p>{{$t('pages.medical_service.maculopathy_con.types.p1')}}</p>
-            <p>{{$t('pages.medical_service.maculopathy_con.types.p2')}}</p>
+            <p>{{ $t('pages.medical_service.maculopathy_con.types.p1') }}</p>
+            <p>{{ $t('pages.medical_service.maculopathy_con.types.p2') }}</p>
           </div>
           <div>
             <svg
@@ -406,19 +454,21 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <p>{{$t('pages.medical_service.maculopathy_con.types.p3')}}</p>
-              <p>{{$t('pages.medical_service.maculopathy_con.types.p4')}}</p>
+              <p>{{ $t('pages.medical_service.maculopathy_con.types.p3') }}</p>
+              <p>{{ $t('pages.medical_service.maculopathy_con.types.p4') }}</p>
             </div>
             <div>
-              <p>{{$t('pages.medical_service.maculopathy_con.types.p5')}}</p>
-              <p>{{$t('pages.medical_service.maculopathy_con.types.p6')}}</p>
+              <p>{{ $t('pages.medical_service.maculopathy_con.types.p5') }}</p>
+              <p>{{ $t('pages.medical_service.maculopathy_con.types.p6') }}</p>
             </div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變 -->
       <div>
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name2')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.types.name2') }}
+        </div>
         <div>
           <div>
             <img
@@ -445,48 +495,56 @@ const bannerData = {
               />
             </svg>
             <div>
-              {{$t('pages.medical_service.maculopathy_con.types.context')}}
+              {{ $t('pages.medical_service.maculopathy_con.types.context') }}
             </div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變分為乾性和濕性︰ -->
       <div>
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.types.name3')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.types.name3') }}
+        </div>
         <div id="able_maculopathy">
-          <div>{{$t('pages.medical_service.maculopathy_con.types.name4')}}</div>
+          <div>
+            {{ $t('pages.medical_service.maculopathy_con.types.name4') }}
+          </div>
           <div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/ff4d52af6af21a3e.png"
-                title="乾性黃斑病變_視力模糊" alt="乾性黃斑病變導致視力模糊的視覺圖"
+                title="乾性黃斑病變_視力模糊"
+                alt="乾性黃斑病變導致視力模糊的視覺圖"
               />
             </div>
             <div>
               <div>
-                {{$t('pages.medical_service.maculopathy_con.types.text1')}}
+                {{ $t('pages.medical_service.maculopathy_con.types.text1') }}
               </div>
               <div>
-                {{$t('pages.medical_service.maculopathy_con.types.text2')}}
+                {{ $t('pages.medical_service.maculopathy_con.types.text2') }}
               </div>
             </div>
           </div>
         </div>
         <div id="wet_maculopathy">
-          <div>{{$t('pages.medical_service.maculopathy_con.types.name5')}}</div>
+          <div>
+            {{ $t('pages.medical_service.maculopathy_con.types.name5') }}
+          </div>
           <div>
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a7c511844cb612a3.png"
-                title="濕性黃班病變_視野缺損" alt="濕性黃班病變導致視野缺損的視覺圖"
+                title="濕性黃班病變_視野缺損"
+                alt="濕性黃班病變導致視野缺損的視覺圖"
               />
             </div>
             <div>
               <div>
-                {{$t('pages.medical_service.maculopathy_con.types.text3')}}
+                {{ $t('pages.medical_service.maculopathy_con.types.text3') }}
               </div>
               <div>
-                {{$t('pages.medical_service.maculopathy_con.types.text4')}}
+                {{ $t('pages.medical_service.maculopathy_con.types.text4') }}
               </div>
             </div>
           </div>
@@ -494,40 +552,54 @@ const bannerData = {
       </div>
       <!-- 老年黃斑病變治療 -->
       <div id="wet_maculopathy_factor">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.factor.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.factor.name') }}
+        </div>
         <div>
           <div v-for="(item, i) in factor" :key="i">
-            <div><img :src="item.img" :title="item.title" :alt="item.alt" /></div>
+            <div>
+              <img :src="item.img" :title="item.title" :alt="item.alt" />
+            </div>
             <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
       <!-- 老年黃斑病變成因s -->
       <div id="wet_maculopathy_cure">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.cure.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.cure.name') }}
+        </div>
         <div>
           <div>
-            <div>{{$t('pages.medical_service.maculopathy_con.cure.title1')}}</div>
             <div>
-              {{$t('pages.medical_service.maculopathy_con.cure.text1')}}
+              {{ $t('pages.medical_service.maculopathy_con.cure.title1') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.cure.text1') }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.maculopathy_con.cure.title2')}}</div>
             <div>
-              {{$t('pages.medical_service.maculopathy_con.cure.text2')}}
+              {{ $t('pages.medical_service.maculopathy_con.cure.title2') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.cure.text2') }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.maculopathy_con.cure.title3')}}</div>
             <div>
-              {{$t('pages.medical_service.maculopathy_con.cure.text3')}}
+              {{ $t('pages.medical_service.maculopathy_con.cure.title3') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.cure.text3') }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.maculopathy_con.cure.title4')}}</div>
             <div>
-              {{$t('pages.medical_service.maculopathy_con.cure.text4')}}
+              {{ $t('pages.medical_service.maculopathy_con.cure.title4') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.maculopathy_con.cure.text4') }}
             </div>
           </div>
         </div>
@@ -536,8 +608,12 @@ const bannerData = {
           <p>{{$t('pages.medical_service.maculopathy_con.btn.name2_2')}}</p>
         </div> -->
         <div class="serviceBtnStyle">
-          <yahoo-service-button
-            :str="$t('pages.medical_service.maculopathy_con.btn.name2_1') + '\n' + $t('pages.medical_service.maculopathy_con.btn.name2_2')"
+          <service-button
+            :str="
+              $t('pages.medical_service.maculopathy_con.btn.name2_1') +
+              '\n' +
+              $t('pages.medical_service.maculopathy_con.btn.name2_2')
+            "
             :link="'tel: +852 3956 2025'"
             :pageName="'maculopathy'"
           />
@@ -545,19 +621,29 @@ const bannerData = {
       </div>
       <!-- 預防黃斑病變 -->
       <div id="prevent">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.prevent.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.prevent.name') }}
+        </div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
-            <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+            <div>
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
+            </div>
             <div>{{ $t(item.title) }}</div>
-            <div>{{ $t(item.text)}}</div>
+            <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
       <div id="faq">
-        <div class="maculopathy_color_title">{{$t('pages.medical_service.maculopathy_con.faq.name')}}</div>
+        <div class="maculopathy_color_title">
+          {{ $t('pages.medical_service.maculopathy_con.faq.name') }}
+        </div>
         <div>
-          <yahooPageCollapse
+          <PageCollapse
             :answer="meetArr"
             :downarr="'maculopathy'"
             :style="{ '--subassembly-color': '#cfb278' }"
@@ -565,33 +651,38 @@ const bannerData = {
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载 -->
-    <div class="dow" :class="{'dow-en': locale === 'en'}">
+    <div class="dow" :class="{ 'dow-en': locale === 'en' }">
       <div>
         <div>
-          <div @click.stop="getPdf('maculopathy.pdf','黃斑病變')">
+          <a
+            href="https://www.hkeyecmer.com/pdf/maculopathy.pdf"
+            :download="'黃斑病變'"
+          >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt="黃斑病變_小冊子"
               title="黃斑病變"
               srcset=""
             />
-          </div>
-          <div @click.stop="getPdf('maculopathy.pdf','黃斑病變')">
-            <p>{{$t('pages.medical_service.maculopathy_con.dow.text1')}}</p>
-            <p>{{$t('pages.medical_service.maculopathy_con.dow.text2')}}</p>
-          </div>
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/maculopathy.pdf"
+            :download="'黃斑病變'"
+          >
+            <p>{{ $t('pages.medical_service.maculopathy_con.dow.text1') }}</p>
+            <p>{{ $t('pages.medical_service.maculopathy_con.dow.text2') }}</p>
+          </a>
         </div>
       </div>
     </div>
     <!-- 表单 -->
-    <yahooFormFooterInfo
+    <FormFooterInfo
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#dec692;'}`"
     />
-    <yahooPageFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -1124,7 +1215,7 @@ const bannerData = {
       margin-bottom: 90px;
     }
   }
-  &.maculopathyNav-en{
+  &.maculopathyNav-en {
     & > div:nth-child(3) {
       & > div:nth-child(2) {
         & > div:nth-child(1) {
@@ -1155,7 +1246,7 @@ const bannerData = {
           text-align: center;
         }
         & > div:nth-child(5) {
-          & > div{
+          & > div {
             font-size: 30px;
             text-align: center;
           }
@@ -1211,7 +1302,7 @@ const bannerData = {
     }
     & > div:nth-child(7) {
       & > div:nth-child(2) {
-        &>div{
+        & > div {
           max-width: 25%;
           align-items: center;
           & > div:nth-child(2) {
@@ -1222,8 +1313,7 @@ const bannerData = {
     }
     & > div:nth-child(8) {
       & > div:nth-child(2) {
-        &>div{
-          
+        & > div {
           & > div:nth-child(1) {
             width: max-content;
             padding-right: 30px;
@@ -1233,7 +1323,7 @@ const bannerData = {
     }
     & > div:nth-child(9) {
       & > div:nth-child(2) {
-        & > div{
+        & > div {
           height: auto;
           padding-bottom: 30px;
         }
@@ -1242,21 +1332,21 @@ const bannerData = {
   }
 }
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
 .maculopathy_button_bg_color {
   cursor: pointer;
@@ -1282,15 +1372,15 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #f0a87d;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #D7E9EA 0%, #50ACE0 100%);
+    background: linear-gradient(45deg, #d7e9ea 0%, #50ace0 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
@@ -1319,7 +1409,7 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 520px;
         margin-right: 75px;
         cursor: pointer;
@@ -1328,7 +1418,7 @@ const bannerData = {
           height: auto;
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -1371,17 +1461,17 @@ const bannerData = {
             white-space: initial;
             margin: 20px auto 0;
           }
-          &:nth-of-type(1){
+          &:nth-of-type(1) {
             & > div:nth-child(2) {
               width: 75px;
             }
           }
-          &:nth-of-type(2){
+          &:nth-of-type(2) {
             & > div:nth-child(2) {
               width: 68px;
             }
           }
-          &:nth-of-type(4){
+          &:nth-of-type(4) {
             & > div:nth-child(2) {
               width: 100px;
             }
@@ -1425,14 +1515,14 @@ const bannerData = {
             }
           }
         }
-         & > div:nth-child(2) {
-            width: 80%;
-            margin: 0 auto;
-            &>span{
-              font-size: 14px;
-              margin-top: 10px;
-            }
-         }
+        & > div:nth-child(2) {
+          width: 80%;
+          margin: 0 auto;
+          & > span {
+            font-size: 14px;
+            margin-top: 10px;
+          }
+        }
       }
       & > div:nth-child(3) {
         margin-top: 45px;
@@ -1467,7 +1557,7 @@ const bannerData = {
               height: 32px;
               left: 50%;
               transform: translateX(-50%) rotate(-90deg);
-              image{
+              image {
                 width: 100%;
                 height: 100%;
               }
@@ -1490,19 +1580,18 @@ const bannerData = {
       & > div:nth-child(2) {
         padding: 0;
         margin: 0;
-        & > div:nth-child(1){
+        & > div:nth-child(1) {
           width: 70px;
           height: 70px;
           min-width: 70px;
           font-size: 16px;
           line-height: 1.2;
         }
-        &>svg{
-          
+        & > svg {
           width: 40px;
           height: 10px;
-          path{
-            transform: scale(.4) translate(-10vw, 0);
+          path {
+            transform: scale(0.4) translate(-10vw, 0);
           }
         }
         & > div:nth-child(3) {
@@ -1516,17 +1605,17 @@ const bannerData = {
         & > div:nth-child(4) {
           margin-right: 0;
           width: 7vw;
-          svg{
+          svg {
             z-index: -1;
             transform-origin: left center;
             // transform: scale(.3) translate(-50vw,30px);
-            &:nth-of-type(1){
+            &:nth-of-type(1) {
               // transform-origin: left center;
               // transform: scale(.3) translate(-50vw,30px);
-              transform: scale(.3) translate(-17vw, 70px) rotate(-10deg);
+              transform: scale(0.3) translate(-17vw, 70px) rotate(-10deg);
             }
-            &:nth-of-type(2){
-              transform: scale(.3) translate(-12vw,-30px);
+            &:nth-of-type(2) {
+              transform: scale(0.3) translate(-12vw, -30px);
             }
           }
         }
@@ -1552,16 +1641,16 @@ const bannerData = {
           position: relative;
           transform: scale(1);
           margin-top: 30px;
-          img{
+          img {
             width: 60%;
             margin: 0 auto;
           }
         }
         & > div:nth-child(2) {
           margin-left: 0;
-          border: 2px solid #DEC692;
+          border: 2px solid #dec692;
           width: 100%;
-          svg{
+          svg {
             display: none;
           }
           & > div:nth-child(2) {
@@ -1632,11 +1721,11 @@ const bannerData = {
         }
         & > div:nth-child(2) {
           margin-right: 0;
-          &>div:nth-child(1){
+          & > div:nth-child(1) {
             left: auto;
             right: 0;
           }
-          &>div:nth-child(2){
+          & > div:nth-child(2) {
             padding: 60px 15px 15px;
           }
         }
@@ -1656,7 +1745,7 @@ const bannerData = {
             font-size: 14px;
             height: auto;
           }
-          &:last-child{
+          &:last-child {
             width: 100%;
             & > div:nth-child(1) {
               width: calc(50% - 25px);
@@ -1716,7 +1805,7 @@ const bannerData = {
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 45px;
-        &>div{
+        & > div {
           width: calc(50% - 25px);
           height: auto;
           margin-bottom: 50px;
@@ -1747,7 +1836,7 @@ const bannerData = {
         margin-bottom: 30px;
       }
     }
-    &.maculopathyNav-en{
+    &.maculopathyNav-en {
       & > div:nth-child(2) {
         & > div:nth-child(2) {
           & > div:nth-child(2) {
@@ -1760,7 +1849,7 @@ const bannerData = {
       & > div:nth-child(3) {
         & > div:nth-child(3) {
           & > div:nth-child(3) {
-            &>div{
+            & > div {
               & > div:nth-child(1) {
                 height: auto;
                 min-height: 50px;
@@ -1790,7 +1879,7 @@ const bannerData = {
             margin-left: 20px;
           }
           & > div:nth-child(5) {
-            &>div{
+            & > div {
               font-size: 12px;
               width: 80px;
               height: 80px;
@@ -1846,9 +1935,9 @@ const bannerData = {
       }
       & > div:nth-child(7) {
         & > div:nth-child(2) {
-          & >div{
+          & > div {
             max-width: 50%;
-            &:last-child{
+            &:last-child {
               width: 100%;
               max-width: 100%;
             }
@@ -1867,7 +1956,7 @@ const bannerData = {
       }
       & > div:nth-child(9) {
         & > div:nth-child(2) {
-          & > div{
+          & > div {
             padding-bottom: 0;
             & > div:nth-child(3) {
               padding: 0 10px 15px;
@@ -1877,7 +1966,7 @@ const bannerData = {
       }
     }
   }
-  .maculopathy_button_bg_color{
+  .maculopathy_button_bg_color {
     margin-top: 55px;
     width: max-content;
     max-width: 100%;
@@ -1886,7 +1975,7 @@ const bannerData = {
     line-height: 1.6;
     padding: 5px 30px;
   }
-  .maculopathy_color_title{
+  .maculopathy_color_title {
     font-size: 22px;
     line-height: 1.6;
   }
@@ -1898,10 +1987,10 @@ const bannerData = {
       & > div {
         width: 80%;
         height: 90px;
-        & > div:nth-child(1) {
+        & > a:nth-child(1) {
           margin-left: 30%;
           margin-right: 30px;
-          &>img{
+          & > img {
             width: 55px;
             min-width: 55px;
             height: auto;
@@ -1909,7 +1998,7 @@ const bannerData = {
         }
       }
     }
-    &.dow-en{
+    &.dow-en {
       & > div:nth-child(1) {
         & > div {
           & > div:nth-child(2) {

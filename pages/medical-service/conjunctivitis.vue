@@ -6,7 +6,7 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.conjunctivitis_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'conjunctivitisDesc',
@@ -17,7 +17,7 @@ useHead(() => ({
         hid: 'conjunctivitisKey',
         name: 'keywords',
         content: t('tdk.conjunctivitis.key'),
-      }
+      },
     ]
   },
 }))
@@ -34,37 +34,37 @@ const symptom = [
     img: 'https://static.cmereye.com/imgs/2023/05/49f77c5d99a7780b.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text1',
     img_alt: '結膜充血為結膜炎症狀',
-    img_title: '結膜炎症狀_結膜充血'
+    img_title: '結膜炎症狀_結膜充血',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d926dc7d76ec029f.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text2',
     img_alt: '眼瞼紅腫為結膜炎症狀',
-    img_title: '結膜炎症狀_眼瞼紅腫'
+    img_title: '結膜炎症狀_眼瞼紅腫',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/850716323d310472.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text3',
     img_alt: '眼睛痕癢為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛痕癢'
+    img_title: '結膜炎症狀_眼睛痕癢',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bcda02c1c5bf937d.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text4',
     img_alt: '眼睛異物感為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛異物感'
+    img_title: '結膜炎症狀_眼睛異物感',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ccacc25f729b2461.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text5',
     img_alt: '流眼水為結膜炎症狀',
-    img_title: '結膜炎症狀_流眼水'
+    img_title: '結膜炎症狀_流眼水',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d329a39c077ff928.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text6',
     img_alt: '眼睛分泌物為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛分泌物'
+    img_title: '結膜炎症狀_眼睛分泌物',
   },
 ]
 const kind = [
@@ -73,14 +73,14 @@ const kind = [
     title: 'pages.medical_service.conjunctivitis_con.kind.title1',
     text: 'pages.medical_service.conjunctivitis_con.kind.text1',
     img_alt: '病毒性結膜炎為結膜炎種類',
-    img_title: '毒性結膜炎'
+    img_title: '毒性結膜炎',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/701397f097eef96c.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title2',
     text: 'pages.medical_service.conjunctivitis_con.kind.text2',
     img_alt: '細菌性結膜炎為結膜炎種類',
-    img_title: '細菌性結膜炎'
+    img_title: '細菌性結膜炎',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ef14a865c31942b9.png',
@@ -89,23 +89,26 @@ const kind = [
     detail: [
       'pages.medical_service.conjunctivitis_con.kind.detail.context',
       {
-        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption1',
+        caption:
+          'pages.medical_service.conjunctivitis_con.kind.detail.caption1',
         content:
           'pages.medical_service.conjunctivitis_con.kind.detail.content1',
       },
       {
-        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption2',
+        caption:
+          'pages.medical_service.conjunctivitis_con.kind.detail.caption2',
         content:
           'pages.medical_service.conjunctivitis_con.kind.detail.content2',
       },
       {
-        caption: 'pages.medical_service.conjunctivitis_con.kind.detail.caption3',
+        caption:
+          'pages.medical_service.conjunctivitis_con.kind.detail.caption3',
         content:
           'pages.medical_service.conjunctivitis_con.kind.detail.content3',
       },
     ],
     img_alt: '過敏性結膜炎為結膜炎種類',
-    img_title: '過敏性結膜炎'
+    img_title: '過敏性結膜炎',
   },
 ]
 // 傳播途徑
@@ -135,37 +138,37 @@ const highRisk = [
     img: 'https://static.cmereye.com/imgs/2023/05/1a586d997866355f.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text1',
     img_title: '紅眼症高危一族_兒童',
-    img_alt: '兒童為紅眼症高危一族'
+    img_alt: '兒童為紅眼症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/044719c0b3767bdf.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text2',
     img_title: '紅眼症高危一族_眼敏感',
-    img_alt: '眼敏感的女患者為紅眼症高危一族'
+    img_alt: '眼敏感的女患者為紅眼症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/9210325662456759.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text3',
     img_title: '紅眼症高危一族_抵抗力差',
-    img_alt: '抵抗力差的女患者為紅眼症高危一族'
+    img_alt: '抵抗力差的女患者為紅眼症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0820acef48ffd428.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text4',
     img_title: '紅眼症高危一族_揉眼睛',
-    img_alt: '揉眼睛的女患者為紅眼症高危一族'
+    img_alt: '揉眼睛的女患者為紅眼症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/42fba00cccac8fd8.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text5',
     img_title: '紅眼症高危一族_隱形眼鏡',
-    img_alt: '長期配戴隱形眼鏡為紅眼症高危一族'
+    img_alt: '長期配戴隱形眼鏡為紅眼症高危一族',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d4a7e8890a9e4e9d.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text6',
     img_title: '紅眼症高危一族_長期使用電子產品',
-    img_alt: '長期使用電子產品的女患者為紅眼症高危一族'
+    img_alt: '長期使用電子產品的女患者為紅眼症高危一族',
   },
 ]
 // 預防結膜炎
@@ -255,7 +258,7 @@ const bannerData = {
   cnName: '結膜炎(紅眼症)',
   enName: 'CONJUNCTIVITIS',
   textColor: '#C0C0E6',
-  pageName: 'conjunctivitis'
+  pageName: 'conjunctivitis',
 }
 </script>
 
@@ -264,28 +267,50 @@ const bannerData = {
     <PageServiceBanner :bannerData="bannerData" />
     <serviceNav :arrData="serviceNavigation" :pageName="'conjunctivitis'" />
     <!-- 結膜炎 -->
-    <div class="conjunctivitis_nav" :class="{'conjunctivitis-en': locale === 'en'}">
+    <div
+      class="conjunctivitis_nav"
+      :class="{ 'conjunctivitis-en': locale === 'en' }"
+    >
       <!-- 什麼是結膜炎？ -->
       <div id="conjunctivitisInfo">
         <div>
-          <div>{{$t('pages.medical_service.conjunctivitis_con.conjunctivitisInfo.name')}}</div>
           <div>
-            {{$t('pages.medical_service.conjunctivitis_con.conjunctivitisInfo.context')}}
+            {{
+              $t(
+                'pages.medical_service.conjunctivitis_con.conjunctivitisInfo.name'
+              )
+            }}
+          </div>
+          <div>
+            {{
+              $t(
+                'pages.medical_service.conjunctivitis_con.conjunctivitisInfo.context'
+              )
+            }}
           </div>
         </div>
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/3ce6dbff76e16a32.png"
-            title="結膜炎症狀_紅眼症症狀" alt="女患者揉眼睛為結膜炎或紅眼症症狀表現"
+            title="結膜炎症狀_紅眼症症狀"
+            alt="女患者揉眼睛為結膜炎或紅眼症症狀表現"
           />
         </div>
       </div>
       <!-- 結膜炎症狀 -->
       <div id="symptom">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.symptom.name')}}</div>
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.symptom.name') }}
+        </div>
         <div>
           <div v-for="(item, index) in symptom" :key="index">
-            <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+            <div>
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
+            </div>
             <div>
               <div>{{ $t(item.text) }}</div>
             </div>
@@ -297,8 +322,12 @@ const bannerData = {
         </div> -->
         <div class="serviceBtnStyle">
           <service-button-icon
-            :str="$t('pages.medical_service.conjunctivitis_con.btn.name1_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name1_2')"
-            :link="'tel: +852 3956 2025'" 
+            :str="
+              $t('pages.medical_service.conjunctivitis_con.btn.name1_1') +
+              '\n' +
+              $t('pages.medical_service.conjunctivitis_con.btn.name1_2')
+            "
+            :link="'tel: +852 3956 2025'"
             :type="'4'"
             :pageName="'conjunctivitis'"
           />
@@ -306,11 +335,19 @@ const bannerData = {
       </div>
       <!-- 結膜炎種類 -->
       <div id="kind">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.kind.name')}}</div>
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.kind.name') }}
+        </div>
         <div>
           <div v-for="(item, index) in kind" :key="index">
             <div>
-              <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
+              </div>
               <div>
                 <div>{{ $t(item.title) }}</div>
               </div>
@@ -334,8 +371,12 @@ const bannerData = {
         </div> -->
         <div class="serviceBtnStyle">
           <service-button-icon
-            :str="$t('pages.medical_service.conjunctivitis_con.btn.name2_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name2_2')"
-            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :str="
+              $t('pages.medical_service.conjunctivitis_con.btn.name2_1') +
+              '\n' +
+              $t('pages.medical_service.conjunctivitis_con.btn.name2_2')
+            "
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'2'"
             :pageName="'conjunctivitis'"
           />
@@ -343,15 +384,25 @@ const bannerData = {
       </div>
       <!-- 傳播途徑 -->
       <div id="approach">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.approach.name')}}</div>
-        <div>
-          {{$t('pages.medical_service.conjunctivitis_con.approach.context')}}
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.approach.name') }}
         </div>
         <div>
-          <div>{{$t('pages.medical_service.conjunctivitis_con.approach.name1')}}</div>
+          {{ $t('pages.medical_service.conjunctivitis_con.approach.context') }}
+        </div>
+        <div>
+          <div>
+            {{ $t('pages.medical_service.conjunctivitis_con.approach.name1') }}
+          </div>
           <div>
             <div v-for="(item, index) in approach" :key="index">
-              <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
+              </div>
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
@@ -372,7 +423,9 @@ const bannerData = {
             />
           </svg>
           <div>
-            {{$t('pages.medical_service.conjunctivitis_con.approach.context1')}}
+            {{
+              $t('pages.medical_service.conjunctivitis_con.approach.context1')
+            }}
           </div>
         </div>
         <!-- <div class="conjun_button_bg_color" @click="callTel()">
@@ -381,20 +434,36 @@ const bannerData = {
         </div> -->
         <div class="serviceBtnStyle">
           <service-button
-            :str="$t('pages.medical_service.conjunctivitis_con.btn.name3_1') + '\n' + $t('pages.medical_service.conjunctivitis_con.btn.name3_2')"
-            :link="'tel: +852 3956 2025'" 
+            :str="
+              $t('pages.medical_service.conjunctivitis_con.btn.name3_1') +
+              '\n' +
+              $t('pages.medical_service.conjunctivitis_con.btn.name3_2')
+            "
+            :link="'tel: +852 3956 2025'"
             :pageName="'conjunctivitis'"
           />
         </div>
       </div>
       <!-- 高危人士 -->
       <div id="highRisk">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.highRisk.name')}}</div>
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.highRisk.name') }}
+        </div>
         <div>
-          <div>{{$t('pages.medical_service.conjunctivitis_con.highRisk.context')}}</div>
+          <div>
+            {{
+              $t('pages.medical_service.conjunctivitis_con.highRisk.context')
+            }}
+          </div>
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
-              <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="item.img_alt"
+                  :title="item.img_title"
+                />
+              </div>
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
@@ -402,57 +471,83 @@ const bannerData = {
       </div>
       <!-- 結膜炎治療 -->
       <div id="means">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.means.name')}}</div>
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.means.name') }}
+        </div>
         <div>
           <div>
-            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title1')}}</div>
             <div>
-              {{$t('pages.medical_service.conjunctivitis_con.means.text1')}}
+              {{ $t('pages.medical_service.conjunctivitis_con.means.title1') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.conjunctivitis_con.means.text1') }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title2')}}</div>
             <div>
-              {{$t('pages.medical_service.conjunctivitis_con.means.text2')}}
+              {{ $t('pages.medical_service.conjunctivitis_con.means.title2') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.conjunctivitis_con.means.text2') }}
             </div>
           </div>
           <div>
-            <div>{{$t('pages.medical_service.conjunctivitis_con.means.title3')}}</div>
             <div>
-              {{$t('pages.medical_service.conjunctivitis_con.means.text3')}}
+              {{ $t('pages.medical_service.conjunctivitis_con.means.title3') }}
+            </div>
+            <div>
+              {{ $t('pages.medical_service.conjunctivitis_con.means.text3') }}
             </div>
           </div>
         </div>
       </div>
       <!-- 預防結膜炎 -->
       <div id="prevent">
-        <div class="conjun_text_color">{{$t('pages.medical_service.conjunctivitis_con.prevent.name')}}</div>
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.conjunctivitis_con.prevent.name') }}
+        </div>
         <div>
           <div v-for="(item, i) in prevent" :key="i">
             <div>{{ $t(item.title) }}</div>
-            <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+            <div>
+              <img
+                :src="item.img"
+                :alt="item.img_alt"
+                :title="item.img_title"
+              />
+            </div>
             <div>{{ $t(item.text) }}</div>
           </div>
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <!-- 下载 -->
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('conjunctivitis.pdf','結膜炎')">
+          <a
+            href="https://www.hkeyecmer.com/pdf/conjunctivitis.pdf"
+            :download="'結膜炎'"
+          >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              title="結膜炎_紅眼症" alt="結膜炎_紅眼症_小冊子"
+              title="結膜炎_紅眼症"
+              alt="結膜炎_紅眼症_小冊子"
               srcset=""
             />
-          </div>
-          <div @click.stop="getPdf('conjunctivitis.pdf','結膜炎')">
-            <p>{{$t('pages.medical_service.conjunctivitis_con.dow.text1')}}</p>
-            <p>{{$t('pages.medical_service.conjunctivitis_con.dow.text2')}}</p>
-          </div>
+          </a>
+          <a
+            href="https://www.hkeyecmer.com/pdf/conjunctivitis.pdf"
+            :download="'結膜炎'"
+          >
+            <p>
+              {{ $t('pages.medical_service.conjunctivitis_con.dow.text1') }}
+            </p>
+            <p>
+              {{ $t('pages.medical_service.conjunctivitis_con.dow.text2') }}
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -466,21 +561,21 @@ const bannerData = {
 </template>
 <style lang="scss" scoped>
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
 .conjunctivitis_nav {
   max-width: 1200px;
@@ -735,7 +830,7 @@ const bannerData = {
         left: -32px;
       }
     }
-    & > div:nth-child(5){
+    & > div:nth-child(5) {
       margin-top: 80px;
     }
   }
@@ -873,7 +968,7 @@ const bannerData = {
       }
     }
   }
-  &.conjunctivitis-en{
+  &.conjunctivitis-en {
     & > div:nth-child(1) {
       & > div:nth-child(1) {
         margin-top: 100px;
@@ -884,7 +979,7 @@ const bannerData = {
     }
     & > div:nth-child(2) {
       & > div:nth-child(2) {
-        &>div{
+        & > div {
           width: calc(100% / 4);
           & > div:nth-child(2) {
             text-align: center;
@@ -894,7 +989,7 @@ const bannerData = {
     }
     & > div:nth-child(3) {
       & > div:nth-child(2) {
-        &>div{
+        & > div {
           & > div:nth-child(1) {
             & > div:nth-child(2) {
               padding-left: 90px;
@@ -906,7 +1001,7 @@ const bannerData = {
     & > div:nth-child(5) {
       & > div:nth-child(2) {
         & > div:nth-child(2) {
-          & > div{
+          & > div {
             width: calc(100% / 3);
             & > div:nth-child(2) {
               text-align: center;
@@ -978,15 +1073,15 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #d8d8f4;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: -100%;
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg,  #4DAADF 0%, #E3EFEB 100%);
+    background: linear-gradient(45deg, #4daadf 0%, #e3efeb 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;
@@ -1006,7 +1101,7 @@ const bannerData = {
       position: relative;
       display: flex;
       align-items: center;
-      & > div:nth-child(1) {
+      & > a:nth-child(1) {
         margin-left: 37.28433%;
         margin-right: 3.90625%;
         cursor: pointer;
@@ -1015,7 +1110,7 @@ const bannerData = {
           height: auto;
         }
       }
-      & > div:nth-child(2) {
+      & > a:nth-child(2) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1050,7 +1145,7 @@ const bannerData = {
         width: calc(100% - 30px);
         margin-top: 30px;
         transform: scale(1);
-        img{
+        img {
           width: 100%;
           margin-left: 30px;
         }
@@ -1068,7 +1163,7 @@ const bannerData = {
       margin: 100px auto 0;
       & > div:nth-child(2) {
         margin-top: 25px;
-        & > div{
+        & > div {
           width: calc(50% - 25px);
           margin-right: 0;
           margin-bottom: 25px;
@@ -1134,7 +1229,7 @@ const bannerData = {
             }
             & > div:nth-child(3),
             & > div:nth-child(4),
-            & > div:nth-child(5){
+            & > div:nth-child(5) {
               font-size: 14px;
               line-height: 1.8;
               & > div > div:nth-child(1) {
@@ -1193,7 +1288,7 @@ const bannerData = {
               font-size: 13px;
               line-height: 1.6;
               border-radius: 15px;
-              border: 2px solid #E5E5E5;
+              border: 2px solid #e5e5e5;
               margin-top: 0;
             }
           }
@@ -1206,19 +1301,19 @@ const bannerData = {
         border-radius: 30px;
         margin-left: 22px;
         margin-top: 0;
-        &>svg{
+        & > svg {
           width: 45px;
           height: 45px;
           top: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
           left: 0;
-          image{
+          image {
             width: 100%;
             height: 100%;
           }
         }
       }
-      & > div:nth-child(5){
+      & > div:nth-child(5) {
         margin-top: 40px;
       }
     }
@@ -1295,7 +1390,7 @@ const bannerData = {
             width: calc(100% - 25px);
             padding: 20px 0 25px;
             height: 120px;
-            img{
+            img {
               width: 50%;
             }
           }
@@ -1314,7 +1409,7 @@ const bannerData = {
         & > div:nth-child(n + 4) {
           margin-top: 0;
         }
-        &>div:last-child{
+        & > div:last-child {
           width: 80%;
           & > div:nth-child(1) {
             width: 100%;
@@ -1331,7 +1426,7 @@ const bannerData = {
         }
       }
     }
-    &.conjunctivitis-en{
+    &.conjunctivitis-en {
       & > div:nth-child(1) {
         & > div:nth-child(1) {
           margin-top: 0;
@@ -1339,7 +1434,7 @@ const bannerData = {
       }
       & > div:nth-child(2) {
         & > div:nth-child(2) {
-          &>div{
+          & > div {
             width: 50%;
             & > div:nth-child(2) {
               line-height: 1.6;
@@ -1357,7 +1452,7 @@ const bannerData = {
             & > div:nth-child(1) {
               & > div:nth-child(2) {
                 line-height: 1.2;
-                padding-left:50px;
+                padding-left: 50px;
               }
             }
           }
@@ -1369,7 +1464,7 @@ const bannerData = {
       & > div:nth-child(5) {
         & > div:nth-child(2) {
           & > div:nth-child(2) {
-            & > div{
+            & > div {
               justify-content: flex-start;
             }
           }
@@ -1401,10 +1496,10 @@ const bannerData = {
       & > div {
         width: 80%;
         height: 90px;
-        & > div:nth-child(1) {
+        & > a:nth-child(1) {
           margin-left: 30%;
           margin-right: 30px;
-          &>img{
+          & > img {
             width: 55px;
             min-width: 55px;
             height: auto;

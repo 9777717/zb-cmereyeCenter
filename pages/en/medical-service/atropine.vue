@@ -78,7 +78,7 @@ const bannerData = {
   <div class="atropine">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="atropine-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'atropine'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
     <div class="atropine_nav maxCon" :class="{'atropineNav-en': locale === 'en'}">
       <div id="introduce">
@@ -133,7 +133,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的阿托品眼藥水瓶子"
             />
           </div>
         </div>
@@ -146,19 +146,19 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.01%低濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.05%低濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的0.125%高濃度阿托品眼藥水"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="控制近視的1%高濃度阿托品眼藥水"
             />
           </div>
           <div>
@@ -166,7 +166,7 @@ const bannerData = {
               <span>{{$t('pages.medical_service.atropine_text.introduce.span1')}}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
-                alt=""
+                
               />
             </div>
             <div>
@@ -193,7 +193,7 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
-                alt=""
+                title="兒童近視控制_阿托品_眼藥水" alt="女童使用阿托品眼藥水以控制近視"
               />
             </div>
             <div>
@@ -229,8 +229,16 @@ const bannerData = {
             2023 Feb 14;329(6):472-481. 
           </p>
         </div>
-        <div>
+        <!-- <div>
           <div @click="toWhatsApp">{{$t('pages.medical_service.atropine_text.effect.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.atropine_text.effect.btn1')"
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :type="'4'"
+            :pageName="'atropine'"
+          />
         </div>
       </div>
       <div id="benefit">
@@ -241,7 +249,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
-              alt=""
+              title="眼球拉長" alt="眼部特寫顯示眼球拉長"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p1') }}
@@ -250,7 +258,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
-              alt=""
+              title="兒童近視控制_視力檢查" alt="男童戴眼鏡進行視力檢查以控制近視"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p2') }}
@@ -259,7 +267,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/e8f9777b29a81b26.png"
-              alt=""
+              title="驗眼儀器_屈光檢查" alt="用於屈光檢查的驗眼儀器"
             />
             <div>
               <span>{{
@@ -273,7 +281,7 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
-              alt=""
+              title="阿托品_控制近視眼藥水" alt="使用阿托品眼藥水控制近視的患者"
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p4') }}
@@ -311,8 +319,16 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.congruency.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button-icon
+            :str="$t('pages.medical_service.atropine_text.congruency.btn1')"
+            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'" 
+            :type="'2'"
+            :pageName="'atropine atropine2'"
+          />
         </div>
       </div>
       <div id="method">
@@ -395,8 +411,15 @@ const bannerData = {
             }}</span>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div @click="tozoosnet">{{$t('pages.medical_service.atropine_text.matters.btn1')}}</div>
+        </div> -->
+        <div class="serviceBtnStyle">
+          <service-button
+            :str="$t('pages.medical_service.atropine_text.matters.btn1')"
+            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'"
+            :pageName="'atropine'"
+          />
         </div>
       </div>
     </div>
@@ -408,7 +431,7 @@ const bannerData = {
         :co="`color:${'#99d3dd;'}`"
       />
     </div>
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
@@ -624,43 +647,43 @@ const bannerData = {
     }
     & > div:nth-of-type(4) {
       margin-top: 60px;
-      div {
-        width: max-content;
-        padding: 20px 90px;
-        cursor: pointer;
-        background-blend-mode: normal, normal;
-        border-radius: 20px;
-        font-family: 'Noto Sans HK';
-        font-size: 30px;
-        font-weight: normal;
-        font-stretch: normal;
-        white-space: pre-wrap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        line-height: 50px;
-        letter-spacing: 0px;
-        color: #ffffff;
-        margin: 0 auto;
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-        position: relative;
-        overflow: hidden;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translate3d(0, 0, 0);
-        &::before {
-          content: "";
-          position: absolute;
-          top: -100%;
-          left: -100%;
-          bottom: -100%;
-          right: -100%;
-          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
-          background-size: 100% 100%;
-          animation: bgposition 5s infinite linear alternate;
-          z-index: -1;
-        }
-      }
+      // div {
+      //   width: max-content;
+      //   padding: 20px 90px;
+      //   cursor: pointer;
+      //   background-blend-mode: normal, normal;
+      //   border-radius: 20px;
+      //   font-family: 'Noto Sans HK';
+      //   font-size: 30px;
+      //   font-weight: normal;
+      //   font-stretch: normal;
+      //   white-space: pre-wrap;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   text-align: center;
+      //   line-height: 50px;
+      //   letter-spacing: 0px;
+      //   color: #ffffff;
+      //   margin: 0 auto;
+      //   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      //   position: relative;
+      //   overflow: hidden;
+      //   -webkit-backface-visibility: hidden;
+      //   -webkit-transform: translate3d(0, 0, 0);
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     top: -100%;
+      //     left: -100%;
+      //     bottom: -100%;
+      //     right: -100%;
+      //     background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
+      //     background-size: 100% 100%;
+      //     animation: bgposition 5s infinite linear alternate;
+      //     z-index: -1;
+      //   }
+      // }
     }
   }
   & > #benefit {

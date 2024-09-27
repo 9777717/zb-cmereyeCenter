@@ -12,12 +12,12 @@ useHead(() => ({
       {
         hid: 'eyeOrthopaedicDiseaseDesc',
         name: 'description',
-        content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
+        content: t('tdk.eyeOrthopaedicDisease.desc'),
       },
       {
         hid: 'eyeOrthopaedicDiseaseKey',
         name: 'keywords',
-        content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
+        content: t('tdk.eyeOrthopaedicDisease.key'),
       }
     ]
   },
@@ -35,6 +35,8 @@ const ophthalmoplastyList1 = [
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_1',
     ],
+    img_title: '眼整形_眼瞼',
+    img_alt: '進行眼整形前的眼瞼狀況'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/225d20699840e2a8.png',
@@ -43,6 +45,8 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_2_1',
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_2_2',
     ],
+    img_title: '眼整形_甲亢突眼',
+    img_alt: '進行眼整形前的甲亢突眼狀況'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/a539ea055085ea7e.png ',
@@ -51,6 +55,8 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_3_1',
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_3_2',
     ],
+    img_title: '眼整形_淚眼',
+    img_alt: '進行眼整形前的淚眼狀況'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
@@ -58,6 +64,8 @@ const ophthalmoplastyList1 = [
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_4',
     ],
+    img_title: '眼整形_義眼',
+    img_alt: '義眼移植為眼整形方案'
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
@@ -65,6 +73,8 @@ const ophthalmoplastyList1 = [
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_5',
     ],
+    img_title: '眼整形_眼眶收縮',
+    img_alt: '眼眶收縮為眼整形方案'
   },
 ]
 const ophthalmoplastyList2 = [
@@ -233,7 +243,7 @@ const serviceNavigation = [
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
     '_blank'
   )
 }
@@ -253,7 +263,7 @@ const bannerData = {
   <div class="eyeOrthopaedicDisease">
     <PageServiceBanner :bannerData="bannerData" />
     <div class="eyeOrthopaedicDisease-nav">
-      <EnServiceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
+      <serviceNav :arrData="serviceNavigation" :pageName="'eyeOrthopaedicDisease'" />
     </div>
     <div class="eyeOrthopaedicDisease_nav" :class="{'eyeOrthopaedicDiseaseNav-en': locale === 'en'}">
       <div id="ophthalmoplasty">
@@ -288,12 +298,12 @@ const bannerData = {
               </div>
             </div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png" title="眼整形_眼瞼下垂" alt="進行眼整形前的眼瞼下垂狀況" />
             </div>
           </div>
           <div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png" title="眼整形_眼臉內翻" alt="進行眼整形前的眼臉內翻狀況" />
             </div>
             <div>
               <div>
@@ -337,12 +347,12 @@ const bannerData = {
               </div>
             </div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png" title="眼整形_眼臉外翻" alt="進行眼整形前的眼臉外翻狀況" />
             </div>
           </div>
           <div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png" title="眼整形_兔眼" alt="進行眼整形前的兔眼狀況" />
             </div>
             <div>
               <div>
@@ -363,8 +373,16 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+          <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_2')}}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.btn_2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+              :type="'4'"
+              :pageName="'eyeOrthopaedicDisease'"
+            />
           </div>
         </div>
         <div>
@@ -379,7 +397,7 @@ const bannerData = {
                   </p>
                 </div>
               </div>
-              <div class="mb-img"><img :src="item.img" alt="" /></div>
+              <div class="mb-img"><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
             </div>
           </div>
           <div>
@@ -395,7 +413,7 @@ const bannerData = {
                 </div>
               </div>
               <div class="img-size">
-                <img src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png" alt="" />
+                <img src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png" title="眼整形_去眼袋" alt="去眼袋為眼整形方案" />
               </div>
             </div>
             <div>
@@ -429,7 +447,7 @@ const bannerData = {
                 </div>
               </div>
               <div class="img-size">
-                <img src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png" alt="" srcset="" />
+                <img src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png" title="眼整形_割雙眼皮" alt="割雙眼皮為眼整形方案" srcset="" />
               </div>
             </div>
             <div>
@@ -486,19 +504,19 @@ const bannerData = {
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png" alt="" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png" title="開眼頭" alt="開眼頭手術步驟一" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png" alt="" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png" title="開眼頭" alt="開眼頭手術步驟二" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png" alt="" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png" title="開眼頭" alt="開眼頭手術步驟三" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png" alt="" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png" title="開眼頭" alt="開眼頭手術步驟四" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png" alt="" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png" title="開眼頭" alt="開眼頭手術步驟五" />
                   </div>
                 </div>
                 <div>
@@ -525,7 +543,7 @@ const bannerData = {
                   </div>
                 </div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png" alt="" />
+                  <img src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png" title="眼整形_眼皮鬆弛" alt="進行眼整形前的眼皮鬆弛狀況" />
                 </div>
               </div>
               <div>
@@ -601,8 +619,16 @@ const bannerData = {
                 </div>
               </div>
             </div>
-            <div class="eyeOrthopaedicDisease_title_btn" @click="goTel">
+            <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goTel">
               <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_2')}}</span>
+            </div> -->
+            <div class="serviceBtnStyle">
+              <service-button-icon
+                :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.btn2_2')"
+                :link="'tel: +852 3956 2025'" 
+                :type="'3'"
+                :pageName="'eyeOrthopaedicDisease'"
+              />
             </div>
           </div>
           <div>
@@ -635,8 +661,8 @@ const bannerData = {
                     </p>
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png" />
-                    <img src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png" title="翼狀胬肉症狀" alt="翼狀胬肉良性慢性病變" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png" title="翼狀胬肉症狀" alt="翼狀胬肉發展狀況" />
                   </div>
                 </div>
               </div>
@@ -663,7 +689,7 @@ const bannerData = {
                     </p>
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png" />
+                    <img src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png" title="眼腫瘤_視網膜母細胞瘤" alt="視網膜母細胞瘤為眼腫瘤之一" />
                     <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.text5_5')}}</div>
                   </div>
                 </div>
@@ -711,15 +737,15 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png" title="義眼台" alt="矽膠義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_1')}}</div>
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png" title="義眼台" alt="羥基磷灰石義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_2')}}</div>
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png" alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png" title="義眼台" alt="多孔聚乙烯義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_3')}}</div>
             </div>
           </div>
@@ -755,8 +781,16 @@ const bannerData = {
               </div>
             </div>
           </div>
-          <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
+          <!-- <div class="eyeOrthopaedicDisease_title_btn" @click="goWhatsApp">
             <span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn1')}}</span><span>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn2')}}</span>
+          </div> -->
+          <div class="serviceBtnStyle">
+            <service-button-icon
+              :str="$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn1') + '\n' + $t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.btn2')"
+              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+              :type="'1'"
+              :pageName="'eyeOrthopaedicDisease'"
+            />
           </div>
         </div>
       </div>
@@ -784,7 +818,7 @@ const bannerData = {
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.usage.text1_7')}}</div>
             </div>
             <div class="usage_1_Image">
-              <img src="https://static.cmereye.com/imgs/2023/07/152ce2771477c508.png" alt="">
+              <img src="https://static.cmereye.com/imgs/2023/07/152ce2771477c508.png" title="義眼片" alt="義眼片安裝過程">
             </div>
           </div>
         </div>
@@ -811,7 +845,7 @@ const bannerData = {
               
             </div>
             <div class="usage_2_Image">
-                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" alt="">
+                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" title="義眼片" alt="義眼片取出過程">
               </div>
           </div>
         </div>
@@ -888,7 +922,7 @@ const bannerData = {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${backgd[0]}`" />
     </div>
-    <EnFooterMenu />
+    <PageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>
