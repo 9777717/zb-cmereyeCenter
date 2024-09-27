@@ -975,12 +975,12 @@ const bannerData = {
     <div class="dow">
       <div>
         <div>
-          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
+          <div @click.stop="getPdf('白内障3摺頁_2024_E-version.pdf', $t(
                 'pages.medical_service.service_cataract_title.service_cataract_down2'
               ))">
             <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
-          <div @click.stop="getPdf('E-version_白内障3摺頁_2024_03_04.pdf', $t(
+          <div @click.stop="getPdf('白内障3摺頁_2024_E-version.pdf', $t(
             'pages.medical_service.service_cataract_title.service_cataract_down2'
           ))">
             <p>
@@ -1002,12 +1002,12 @@ const bannerData = {
       </div>
       <div>
         <div>
-          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
+          <div @click.stop="getPdf('人工晶體3摺頁_2024.07 V6_E-version.pdf', $t(
             'pages.medical_service.service_cataract_title.service_cataract_down1'
           ))">
             <img src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png" alt="" srcset="" />
           </div>
-          <div @click.stop="getPdf('E-version_人工晶體2摺頁_20240227.pdf', $t(
+          <div @click.stop="getPdf('人工晶體3摺頁_2024.07 V6_E-version.pdf', $t(
             'pages.medical_service.service_cataract_title.service_cataract_down1'
           ))">
             <p>
