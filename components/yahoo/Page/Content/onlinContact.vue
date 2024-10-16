@@ -17,13 +17,15 @@ const rt = ref(route)
 </script>
 
 <template>
+  {{ rt.name}}
   <div
     class="onlinContact"
     :class="[
       rt.name === 'medical-service-eyeOrthopaedicDisease'
         ? 'onlinContact_top'
         : 'onlinContact',
-    ]">
+    ]"
+    :style="{ 'display': rt.name === 'yahoo-contact-us-appointmentForm' ? 'none' : '' }">
     <div>
       <a class="topitem ga-pc-right-ljyy" id="ga-pc-right-ljyy" href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714">
         <img class="ga-pc-right-ljyy" v-if="locale !== 'en'" id="ga-pc-right-ljyy" src="https://static.cmereye.com/imgs/2024/06/347ac843c913da6d.png" alt="希瑪眼科中心_立即預約眼科服務" title="希瑪眼科中心_立即預約眼科服務">
