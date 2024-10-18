@@ -276,6 +276,7 @@ const disabledDate = (time: Date) => {
             </el-form-item>
           </el-form>
         </div>
+        <div class="info_text">我們將於10小時內確認您的預約</div>
         <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
           {{ $t('components.footerInfo.submitForm') }}
         </div>
@@ -346,7 +347,7 @@ const disabledDate = (time: Date) => {
 
         & > .el-form-item:nth-child(6) {
           width: 100%;
-          height: 84px;
+          min-height: 84px;
         }
       }
       :deep(.el-date-editor.el-input, .el-date-editor.el-input__wrapper) {
@@ -361,6 +362,9 @@ const disabledDate = (time: Date) => {
 
       :deep(.el-form-item--default) {
         margin-bottom: 50px;
+      }
+      :deep(.el-form-item--default:last-child) {
+        margin-bottom: 0;
       }
 
       :deep(.el-form-item__label) {
@@ -492,7 +496,15 @@ const disabledDate = (time: Date) => {
       z-index: 1;
     }
   }
+  .info_text{
+    font-size:16px;
+    text-align:right;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color:#828383;
+  }
 }
+
 @media screen and (min-width: 1920px) {
   .form {
     .formbgimg {
@@ -546,6 +558,15 @@ const disabledDate = (time: Date) => {
           border-color: transparent transparent transparent #fff;
         }
       }
+    }
+    .info_text{
+      font-size:14px;
+      text-align:right;
+      margin-top: 10px;
+      letter-spacing: 2px;
+      box-sizing: border-box;
+      padding: 0 40px;
+      color:#828383;
     }
     & > div {
       width: 100%;

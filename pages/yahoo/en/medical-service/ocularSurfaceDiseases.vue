@@ -30,7 +30,7 @@ const backgd = [
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
     '_blank'
   )
 }
@@ -459,7 +459,7 @@ const bannerData = {
           <div class="serviceBtnStyle">
             <service-button-icon
               :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'4'"
               :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
             />
@@ -578,7 +578,7 @@ const bannerData = {
           <div class="serviceBtnStyle">
             <service-button-icon
               :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'1'"
               :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
             />
@@ -893,7 +893,7 @@ const bannerData = {
           <div class="serviceBtnStyle">
             <service-button
               :str="$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :pageName="'ocularSurfaceDiseases'"
             />
           </div>
@@ -1394,7 +1394,7 @@ const bannerData = {
            <div class="serviceBtnStyle">
             <service-button-icon
               :str="$t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'4'"
               :pageName="'ocularSurfaceDiseases'"
             />
@@ -1502,7 +1502,7 @@ const bannerData = {
               <div class="serviceBtnStyle">
             <service-button-icon
               :str="$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+              :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'1'"
               :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
             />
@@ -1842,7 +1842,7 @@ const bannerData = {
         :co="`color:${'#7DBE9C;'}`"
       />
     </div>
-    <PageFooterMenu />
+    <yahooPageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

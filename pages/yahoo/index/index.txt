@@ -156,7 +156,7 @@ const toLink = (a:string) => {
       </div>
     </div>
     <div class="home-bottom">
-      <PageFooterMenu />
+      <yahooPageFooterMenu />
     </div>
 
   </div>

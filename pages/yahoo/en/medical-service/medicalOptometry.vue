@@ -42,7 +42,7 @@ const serviceNavigation = [
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
     '_blank'
   )
 }
@@ -427,7 +427,7 @@ const bannerData = {
       <FormFooterInfo :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${'#bcd09c;'}`" :formbgimg="'https://static.cmereye.com/imgs/2024/04/2894df9b213b8a17.png'" />
     </div>
-    <PageFooterMenu />
+    <yahooPageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

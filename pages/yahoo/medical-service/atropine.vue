@@ -51,7 +51,7 @@ const serviceNavigation = [
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85293451508&text=咨询阿托品眼藥水',
+    'https://api.whatsapp.com/send?phone=85265767817&text=咨询阿托品眼藥水',
     '_blank'
   )
 }

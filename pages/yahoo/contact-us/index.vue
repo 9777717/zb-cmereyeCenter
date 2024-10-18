@@ -592,8 +592,6 @@ const handleClose = (done: () => void) => {
                         >
                           <a
                             class="contactUsWhatsapp"
-                            href=" "
-                            target="_blank"
                             rel="noopener noreferrer"
                             >{{
                               $t(
@@ -828,6 +826,7 @@ const handleClose = (done: () => void) => {
             color: #fff;
             width: 150px;
             padding: 15px 0;
+            cursor: pointer;
           }
         }
         & > div:nth-child(2) {
@@ -960,6 +959,7 @@ const handleClose = (done: () => void) => {
               padding: 15px 0 10px;
             }
             .orderBtn {
+              cursor: pointer;
               padding: 15px 0 10px;
             }
           }

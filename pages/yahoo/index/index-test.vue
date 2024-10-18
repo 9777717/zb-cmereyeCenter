@@ -399,7 +399,7 @@ const pageNav = ref([
       </div>
       <AboutChildCompsAwards />
     </div>
-    <PageFooterMenu />
+    <yahooPageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

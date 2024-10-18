@@ -408,7 +408,7 @@ const serviceNavigation = [
 // 跳转Whatsapp
 const goWhatsApp = () => {
   window.open(
-    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
+    'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
     '_blank'
   )
 }
@@ -461,7 +461,7 @@ const bannerData = {
                     'pages.medical_service.service_cataract_title.service_cataract_btn1'
                   )
                 "
-                :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+                :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               />
             </div>
           </div>
@@ -505,7 +505,7 @@ const bannerData = {
                 'pages.medical_service.service_cataract_title.service_cataract_btn2'
               )
             "
-            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'2'"
           />
         </div>
@@ -1079,7 +1079,7 @@ const bannerData = {
                 'pages.medical_service.service_cataract_title.service_cataract_btn7'
               )
             "
-            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+            :link="'https://api.whatsapp.com/send?phone=85265767817&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'1'"
           />
         </div>
@@ -1227,7 +1227,7 @@ const bannerData = {
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#64bcd1;'}`"
     />
-    <PageFooterMenu />
+    <yahooPageFooterMenu />
   </div>
 </template>
 <style lang="scss" scoped>

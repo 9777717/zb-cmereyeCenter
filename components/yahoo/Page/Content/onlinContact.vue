@@ -17,7 +17,6 @@ const rt = ref(route)
 </script>
 
 <template>
-  {{ rt.name}}
   <div
     class="onlinContact"
     :class="[

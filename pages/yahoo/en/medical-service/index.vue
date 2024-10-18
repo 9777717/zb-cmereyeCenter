@@ -137,7 +137,7 @@ const SerListL = [
     </div>
     <div class="h-32"></div>
     <Footer />
-    <PageFooterMenu />
+    <yahooPageFooterMenu />
   </div>
 </template>
 <style scoped lang="scss">

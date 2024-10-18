@@ -426,7 +426,7 @@ let drawer = ref(false)
     position: absolute;
     z-index: 0;
     bottom: 0;
-    right: -10vw;
+    right: -3vw;
   }
 }
 .drawerIn {
