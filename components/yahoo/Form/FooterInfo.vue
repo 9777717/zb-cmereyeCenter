@@ -498,7 +498,7 @@ const disabledDate = (time: Date) => {
   }
   .info_text{
     font-size:16px;
-    text-align:right;
+    text-align:center;
     margin-top: 10px;
     letter-spacing: 2px;
     color:#828383;
@@ -561,7 +561,7 @@ const disabledDate = (time: Date) => {
     }
     .info_text{
       font-size:14px;
-      text-align:right;
+      text-align:center;
       margin-top: 10px;
       letter-spacing: 2px;
       box-sizing: border-box;

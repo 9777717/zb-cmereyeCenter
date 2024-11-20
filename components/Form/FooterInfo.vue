@@ -276,7 +276,7 @@ const disabledDate = (time: Date) => {
             </el-form-item>
           </el-form>
         </div>
-        <div class="info_text">我們將於10小時內確認您的預約</div>
+        <div class="info_text">{{ $t('components.footerInfo.infoText') }}</div>
         <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
           {{ $t('components.footerInfo.submitForm') }}
         </div>
@@ -498,7 +498,7 @@ const disabledDate = (time: Date) => {
   }
   .info_text{
     font-size:16px;
-    text-align:right;
+    text-align:center;
     margin-top: 10px;
     letter-spacing: 2px;
     color:#828383;
@@ -561,7 +561,7 @@ const disabledDate = (time: Date) => {
     }
     .info_text{
       font-size:14px;
-      text-align:right;
+      text-align:center;
       margin-top: 10px;
       letter-spacing: 2px;
       box-sizing: border-box;

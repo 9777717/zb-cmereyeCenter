@@ -23,6 +23,7 @@ components:
     placeholder4: 預約日期
     placeholder5: 訊息
     submitForm: 提交
+    infoText: 我們將於10小時內確認您的預約
   menus:
     cmerCenter: 希瑪眼科中心
     medicalService: 醫療服務

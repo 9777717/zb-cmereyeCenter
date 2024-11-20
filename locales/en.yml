@@ -23,6 +23,7 @@ components:
     placeholder4: Date
     placeholder5: Message
     submitForm: Submit
+    infoText: Your booking will be confirmed within 10 hours.
   menus:
     cmerCenter: C-MER Eye Center
     medicalService: Medical Services
