@@ -5,12 +5,12 @@ const route = useRoute()
 const { t } = useLang()
 
 useHead({
-  script: [
-    {
-      src: 'https://cdn.userway.org/widget.js',
-      'data-account': 'eSwu5OqOdn',
-    },
-  ],
+  // script: [
+  //   {
+  //     src: 'https://cdn.userway.org/widget.js',
+  //     'data-account': 'eSwu5OqOdn',
+  //   },
+  // ],
 })
 
 const locale = useState<string>('locale.setting')

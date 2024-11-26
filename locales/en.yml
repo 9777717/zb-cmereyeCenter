@@ -2174,14 +2174,14 @@ pages:
             clinicHours3: (Closed on Sundays and public holidays)
         addressList2_regionName: Kowloon
         addressList2_addressDetailList:
-          addressDetailList1_addressName: Tsim Sha Tsui
-          addressDetailList1_addressDetail: Room 1906, 19/F, K11 ATELIER, 18-24 Salisbury Road (near K11 MUSEA)
-          addressDetailList1_subwayExit1: East Tsim Sha Tsui Station MTR Station (Exit J)
-          addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
-          addressDetailList1_clinicHours:
-            clinicHours1: 'Mon-Fri: 09:30—13:30 / 14:30—19:00'
-            clinicHours2: 'Sat: 09:30—14:00'
-            clinicHours3: (Closed on Sundays and public holidays)
+          # addressDetailList1_addressName: Tsim Sha Tsui
+          # addressDetailList1_addressDetail: Room 1906, 19/F, K11 ATELIER, 18-24 Salisbury Road (near K11 MUSEA)
+          # addressDetailList1_subwayExit1: East Tsim Sha Tsui Station MTR Station (Exit J)
+          # addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
+          # addressDetailList1_clinicHours:
+          #   clinicHours1: 'Mon-Fri: 09:30—13:30 / 14:30—19:00'
+          #   clinicHours2: 'Sat: 09:30—14:00'
+          #   clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList2_addressName: Mong Kok
           addressDetailList2_addressDetail: Room 1208 and Room 1725B, One Grand Tower, 625 and 639 Nathan Road 
           addressDetailList2_subwayExit: Mong Kok MTR Station (Exit E1)
