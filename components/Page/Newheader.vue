@@ -68,14 +68,31 @@ const menus = computed(() => {
     },
     {
       type: 'link',
-      text: t('pages.medical_service.medical_service'),
-      link: { path: '/medical-service' }, // 醫療服務
+      text: t('pages.medical_service.cataract.cataract'),
+      link: { path: '/medical-service/cataract' }, // 白内障
       childMenuList: [
         {
           type: 'link',
-          text: t('pages.medical_service.cataract'),
+          text: t('pages.medical_service.cataract.cataract_title'),
           link: { path: '/medical-service/cataract' },
         },
+        {
+          type: 'link',
+          text: t('pages.medical_service.multiFocal_intraocular_lens'),
+          link: { path: '/cataract/multifocal-lens' },
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.dazzling_operation'),
+          link: { path: '/csp-programme' },
+        },
+      ],
+    },
+    {
+      type: 'link',
+      text: t('pages.medical_service.medical_service'),
+      link: { path: '/medical-service' }, // 醫療服務
+      childMenuList: [
         {
           type: 'link',
           text: t('pages.medical_service.maculopathy'),
@@ -331,12 +348,12 @@ const getBg = () => {
   // } else {
   //   str = '#fff'
   // }
-  if(!menuBool.value){
+  if (!menuBool.value) {
     str = `rgba(255, 255, 255, ${bgopn.value})`
-  }else{
+  } else {
     str = '#fff'
   }
-  
+
   return str
 }
 const getBb = () => {
@@ -356,30 +373,30 @@ const changeLang = (_lang: any) => {
 }
 
 let showboxshadow = ref(false)
-onMounted(()=>{
-  window.addEventListener('scroll', function() {  
-    var scrollTop = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;  
-    if(scrollTop<= 300){
+onMounted(() => {
+  window.addEventListener('scroll', function () {
+    var scrollTop =
+      window.scrollY || window.pageYOffset || document.documentElement.scrollTop
+    if (scrollTop <= 300) {
       bgopn.value = scrollTop / 300
-      if(showboxshadow.value){
+      if (showboxshadow.value) {
         showboxshadow.value = false
       }
-    }else{
+    } else {
       bgopn.value = 1
-      if(!showboxshadow.value){
+      if (!showboxshadow.value) {
         showboxshadow.value = true
       }
     }
-  });
+  })
 })
-
 </script>
 
 <template>
   <div class="headerMbcc">
     <div
       class="headerMbcc-in"
-      :class="{showboxshadow}"
+      :class="{ showboxshadow }"
       :style="{
         background: getBg(),
         'border-bottom': getBb(),
@@ -515,7 +532,6 @@ onMounted(()=>{
 </template>
 
 <style lang="scss">
-
 .ddd-enter,
 .ddd-leave-to {
   opacity: 0;
@@ -542,9 +558,9 @@ onMounted(()=>{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // 
-    &.showboxshadow{
-      box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    //
+    &.showboxshadow {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
     &-logo {
       width: 69px;
@@ -612,7 +628,7 @@ onMounted(()=>{
   padding: 0 20px !important;
   font-weight: 500;
 }
-.itemCr{
+.itemCr {
   text-indent: 30px;
 }
 .el-sub-menu__title {

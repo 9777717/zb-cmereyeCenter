@@ -371,38 +371,38 @@ const meetArr = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: 'pages.medical_service.cataract.cataract',
-    anchorLink: '/medical-service/cataract#cataract',
+    anchorName: 'pages.medical_service.cataract.cataract_title',
+    anchorLink: '/cataract#cataract',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation1',
-    anchorLink: '/medical-service/cataract#fatorArr',
+    anchorLink: '/cataract#fatorArr',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation2',
-    anchorLink: '/medical-service/cataract#symptomArr',
+    anchorLink: '/cataract#symptomArr',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation3',
-    anchorLink: '/medical-service/cataract#surgeryArr',
+    anchorLink: '/cataract#surgeryArr',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation4',
-    anchorLink: '/medical-service/cataract#iclArr',
+    anchorLink: '/cataract#iclArr',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation5',
-    anchorLink: '/medical-service/cataract#announcementsArr',
+    anchorLink: '/cataract#announcementsArr',
   },
   {
     anchorName:
       'pages.medical_service.service_cataract_title.service_cataract_array_Navigation.cataract_array_Navigation6',
-    anchorLink: '/medical-service/cataract#faq',
+    anchorLink: '/cataract#faq',
   },
 ]
 // 跳转Whatsapp
@@ -1147,9 +1147,11 @@ const bannerData = {
         <div>
           <a
             href="https://www.hkeyecmer.com/pdf/白内障3摺頁_2024_E-version.pdf"
-            :download="$t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down2'
-                )"
+            :download="
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_down2'
+              )
+            "
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
@@ -1159,9 +1161,11 @@ const bannerData = {
           </a>
           <a
             href="https://www.hkeyecmer.com/pdf/白内障3摺頁_2024_E-version.pdf"
-            :download="$t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down2'
-                )"
+            :download="
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_down2'
+              )
+            "
           >
             <p>
               {{

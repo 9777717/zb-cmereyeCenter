@@ -193,7 +193,7 @@ const serviceLists = [
     i: '01',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
-    des: 'pages.medical_service.cataract',
+    des: 'pages.medical_service.cataract.cataract_title',
     link: '/medical-service/cataract',
     alt: '眼科服務_白內障',
   },

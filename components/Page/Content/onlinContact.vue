@@ -113,7 +113,6 @@ const rt = ref(route)
         </div>
       </a>
       <a
-        v-if="rt.name === 'medical-service-cataract'"
         href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
         class="cataract_btn ga-pc-right-cataract_btn"
         id="ga-pc-right-cataract_btn"

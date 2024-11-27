@@ -371,7 +371,7 @@ const meetArr = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName: 'pages.medical_service.cataract',
+    anchorName: 'pages.medical_service.cataract.cataract_title',
     anchorLink: '/medical-service/cataract#cataract',
   },
   {

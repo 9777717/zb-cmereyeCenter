@@ -68,14 +68,26 @@ const menus = computed(() => {
     },
     {
       type: 'link',
-      text: t('pages.medical_service.medical_service'),
-      link: { path: '/medical-service' }, // 醫療服務
+      text: t('pages.medical_service.cataract.cataract'),
+      link: { path: '/medical-service/cataract' }, // 白内障
       childMenuList: [
         {
           type: 'link',
-          text: t('pages.medical_service.cataract'),
+          text: t('pages.medical_service.cataract.cataract_title'),
           link: { path: '/medical-service/cataract' },
         },
+      ],
+    },
+    {
+      type: 'link',
+      text: t('pages.medical_service.medical_service'),
+      link: { path: '/medical-service' }, // 醫療服務
+      childMenuList: [
+        // {
+        //   type: 'link',
+        //   text: t('pages.medical_service.cataract'),
+        //   link: { path: '/medical-service/cataract' },
+        // },
         {
           type: 'link',
           text: t('pages.medical_service.maculopathy'),

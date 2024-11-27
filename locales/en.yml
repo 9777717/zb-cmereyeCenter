@@ -499,6 +499,8 @@ pages:
     medical_service: Medical Services
     medical_service_title: Medical Services
     cataract: Cataract
+    multiFocal_intraocular_lens: 多焦點人工晶體
+    dazzling_operation: 耀眼行動
     medical_service_cataract_head: "Cataract｜CMER｜Medical Services"
     service_cataract_title:
       service_cataract_title1: Cataract

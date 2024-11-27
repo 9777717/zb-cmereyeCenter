@@ -32,7 +32,7 @@ const rt = ref(route)
 <template>
   <div class="mbFooter">
     <div class="mbFooter-in">
-      <a  v-if="rt.name === 'medical-service-cataract'" class="btn_whatsApp ga-mb-bottom-WhatsApp">
+      <a class="btn_whatsApp ga-mb-bottom-WhatsApp">
         <div @click="touch_btn_whatsApp()">
           <div class="ga-mb-bottom-WhatsApp">
             <img
@@ -70,10 +70,10 @@ const rt = ref(route)
           </a>
         </div>
       </a>
-      <a  v-else id="ga-mb-bottom-WhatsApp" class="ga-mb-bottom-WhatsApp" href='https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'>
+      <!-- <a  v-else id="ga-mb-bottom-WhatsApp" class="ga-mb-bottom-WhatsApp" href='https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'>
         <div class="ga-mb-bottom-WhatsApp"><img class="ga-mb-bottom-WhatsApp" src="https://static.cmereye.com/imgs/2023/07/25871528f005d41a.png" alt=""></div>
         <div class="ga-mb-bottom-WhatsApp">WhatsApp</div>
-      </a>
+      </a> -->
       <a
         href="tel: +852 3956 2025"
         id="ga-mb-bottom-ljzd"

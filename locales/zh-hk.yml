@@ -503,7 +503,20 @@ pages:
   medical_service:
     medical_service: 醫療服務
     medical_service_title: 醫 療 服 務
-    cataract: 白內障
+    cataract: 
+      cataract: 白內障專科
+      cataract_title: 白內障
+    multiFocal_intraocular_lens: 多焦點人工晶體
+    multiFocal_intraocular_lens_meetArr: 
+      meetArr_title1: Q:植入多焦點人工晶體後，還需要眼鏡或隱形眼鏡輔助嗎？ 
+      meetArr_agree1:  多焦點人工晶體旨在實現全方位的視覺體驗，通過提供2個或3個不同焦距的清楚視野，減少對視覺輔助工具的依賴，大多數接受多焦點人工晶體植入的患者無需再佩戴眼鏡或隱形眼鏡。但少數病人有可能仍需眼鏡輔助。 
+      meetArr_title2: Q:多焦點人工晶體是否能針對生活需求進行個性化選擇？
+      meetArr_agree2:   可以。每個人的視力需求都是獨一無二的，多焦點人工晶體因應這一需求，提供了多樣化的選擇，讓患者可以根據自身具體情況及生活習慣，選擇最合適的人工晶體方案，從而享受更佳的視力矯正效果。 
+      meetArr_title3: Q:所有人都適用多焦點人工晶體治療白內障嗎？
+      meetArr_agree3:    多焦點人工晶體適合大多數白內障患者，尤其是老花人士。在選擇多焦點人工晶體前，應考量個人的具體情況，建議在做出決定前與眼科醫生進行充分的溝通，以確保選擇最合適的人工晶體方案。 
+      meetArr_title4:  Q:在選擇多焦點人工晶體前，是否需要考慮視覺異常的問題，比如光暈或眩光？ 
+      meetArr_agree4:    多焦點人工晶體雖然提供不同距離的清楚視力，但在夜間或光線不足的環境下，可能會帶來光暈或眩光問題。對於夜間視力要求高人士，需慎重考慮多焦點人工晶體。在選擇植入多焦點人工晶體前，應該詳細了解所有潛在的可能性，並與眼科醫生進行詳細的諮詢，以便為你提供最合適的人工晶體建議方案。 
+    dazzling_operation: 耀眼行動
     medical_service_cataract_head: "白內障｜希瑪眼科｜醫療服務"
     service_cataract_title:
       service_cataract_title1: 白内障

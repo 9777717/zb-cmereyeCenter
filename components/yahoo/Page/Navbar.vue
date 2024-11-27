@@ -66,7 +66,7 @@ let menus = computed((): IMenuItem[] => [
     childMenuList: [
       {
         type: 'link',
-        text: t('pages.medical_service.cataract'),
+        text: t('pages.medical_service.cataract.cataract'),
         route: { path: '/yahoo/medical-service/cataract' }, // 白內障
       },
       {

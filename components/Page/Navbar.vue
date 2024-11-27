@@ -43,15 +43,15 @@ let menus = computed((): IMenuItem[] => [
         route: { path: '/about-us', hash: '#medicalEquipment' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.feedback'),
         route: { path: '/about-us', hash: '#feedback' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.enterprise_awards'),
         route: { path: '/about-us', hash: '#awards' },
-      }
+      },
     ],
   },
   {
@@ -61,14 +61,36 @@ let menus = computed((): IMenuItem[] => [
   },
   {
     type: 'link',
-    text: t('pages.medical_service.medical_service'),
-    route: { name: 'medical-service' }, // 醫療服務
+    text: t('pages.medical_service.cataract.cataract'),
+    route: { name: 'medical-service-cataract' }, // 白内障
     childMenuList: [
       {
         type: 'link',
-        text: t('pages.medical_service.cataract'),
-        route: { name: 'medical-service-cataract' }, // 白內障
+        text: t('pages.medical_service.cataract.cataract_title'),
+        route: { name: 'medical-service-cataract' },
       },
+      {
+        type: 'link',
+        text: t('pages.medical_service.multiFocal_intraocular_lens'),
+        route: { name: 'cataract-multifocal-lens' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.dazzling_operation'),
+        route: { name: 'csp-programme' },
+      },
+    ],
+  },
+  {
+    type: 'link',
+    text: t('pages.medical_service.medical_service'),
+    route: { name: 'medical-service' }, // 醫療服務
+    childMenuList: [
+      // {
+      //   type: 'link',
+      //   text: t('pages.medical_service.cataract'),
+      //   route: { name: 'medical-service-cataract' }, // 白內障
+      // },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
@@ -128,7 +150,7 @@ let menus = computed((): IMenuItem[] => [
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.smileHk'),
         route: false,
-        href: 'https://smile.hkcmereye.com/'
+        href: 'https://smile.hkcmereye.com/',
       },
     ],
   },
@@ -150,7 +172,7 @@ let menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: '視力測試',
-        route: { name: 'ophthalmic-information-eyesight' }
+        route: { name: 'ophthalmic-information-eyesight' },
       },
       {
         type: 'link', // 希瑪小劇場
@@ -171,7 +193,7 @@ let menus = computed((): IMenuItem[] => [
         type: 'link', // 健康資訊
         text: t('pages.ophthalmic_information.ophthalmic_message'),
         route: { name: 'ophthalmic-information-healthInfo' },
-      }
+      },
     ],
   },
   {
@@ -207,7 +229,7 @@ let menus = computed((): IMenuItem[] => [
         route: { name: 'contact-us' },
       },
       {
-        type: 'link', 
+        type: 'link',
         text: t('pages.about_us.feedback'),
         route: { path: '/contact-us', hash: '#feedback' },
       },
@@ -222,10 +244,10 @@ let menus = computed((): IMenuItem[] => [
 
 const locale = useState<string>('locale.setting')
 
-const newMenus = computed(()=>{
-  if(locale.value === 'en'){
-    let a:any = JSON.parse(JSON.stringify(menus.value))
-    a.splice(4,1)
+const newMenus = computed(() => {
+  if (locale.value === 'en') {
+    let a: any = JSON.parse(JSON.stringify(menus.value))
+    a.splice(4, 1)
     return a
   }
   return JSON.parse(JSON.stringify(menus.value))
@@ -274,11 +296,11 @@ const hashActive = (child: any) => {
               :class="[
                 'childpage',
                 {
-                  'ccccc': item.route.name === 'medical-service'
+                  ccccc: item.route.name === 'medical-service',
                 },
                 {
-                  child_en: locale === 'en' 
-                }
+                  child_en: locale === 'en',
+                },
               ]"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
@@ -365,11 +387,11 @@ a {
       border-bottom: 0.75px solid #2958a3;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+//    & > div:nth-child(1)::after {
+//      content: '';
+//      width: 0;
+//      border: 0;
+//    }
 
     display: flex;
     flex-direction: column;
@@ -418,11 +440,11 @@ a {
       border-bottom: 0.75px solid #ffffff;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
 
     display: flex;
     flex-direction: column;
@@ -467,11 +489,11 @@ a {
       border-bottom: 0.75px solid #ffffff;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
 
     display: flex;
     flex-direction: column;
@@ -516,11 +538,11 @@ a {
       border-bottom: 0.75px solid #ffffff;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
 
     display: flex;
     flex-direction: column;
@@ -565,11 +587,11 @@ a {
       border-bottom: 0.75px solid #ffffff;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
 
     display: flex;
     flex-direction: column;
@@ -614,11 +636,11 @@ a {
       border-bottom: 0.75px solid #ffffff;
     }
 
-    & > div:nth-child(1)::after {
-      content: '';
-      width: 0;
-      border: 0;
-    }
+    // & > div:nth-child(1)::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
 
     display: flex;
     flex-direction: column;
@@ -662,11 +684,11 @@ a {
     border: 0.75px solid #2958a3;
   }
 
-  & > div:nth-child(1) > a::after {
-    content: '';
-    width: 0;
-    border: 0;
-  }
+  // & > div:nth-child(1) > a::after {
+  //   content: '';
+  //   width: 0;
+  //   border: 0;
+  // }
 
   & > div:hover {
     // background: #ffffff80;
@@ -711,19 +733,19 @@ a {
     border: 0.75px solid #8ad8dd;
   }
 
-  & > div:nth-child(1) > a::after {
-    content: '';
-    width: 0;
-    border: 0;
-  }
+  // & > div:nth-child(1) > a::after {
+  //   content: '';
+  //   width: 0;
+  //   border: 0;
+  // }
 
   & > div:hover {
     background: #ffffff80;
   }
 }
 
-.child_en{
-  &.ccccc{
+.child_en {
+  &.ccccc {
     & > div {
       height: 70px;
     }
@@ -731,7 +753,7 @@ a {
   & > div {
     position: relative;
     height: 50px;
-    &>a{
+    & > a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -743,13 +765,13 @@ a {
   }
 }
 
-.ccccc{
+.ccccc {
   width: 390px;
   right: 0;
   left: 130px;
   // display: flex;
   // flex-wrap: wrap;
-  
+
   & > div {
     width: 130px;
     float: left;
@@ -770,11 +792,11 @@ a {
     width: 76px;
     border: 0.75px solid #8ad8dd;
   }
-  & > div:last-child > a::after {
-    content: '';
-    width: 0;
-    border: 0;
-  }
+  // & > div:last-child > a::after {
+  //   content: '';
+  //   width: 0;
+  //   border: 0;
+  // }
 }
 
 .navigtion > div:hover .child {

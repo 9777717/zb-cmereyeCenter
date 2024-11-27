@@ -46,7 +46,7 @@ const menuLists = computed(() => [
     title: t('components.menus.medicalService'),
     lists: [
       {
-        name: t('pages.medical_service.cataract'),
+        name: t('pages.medical_service.cataract.cataract_title'),
         icon: '',
         link: '/medical-service/cataract',
       },

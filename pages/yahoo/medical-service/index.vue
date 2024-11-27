@@ -26,7 +26,7 @@ const SerListL = [
     i: '01',
     imgUrl:
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
-    des: 'pages.medical_service.cataract',
+    des: 'pages.medical_service.cataract.cataract',
     link: '/yahoo/medical-service/cataract',
   },
   {

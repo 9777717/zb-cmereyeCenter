@@ -443,7 +443,7 @@ const handleClose = (done: () => void) => {
                   {{ $t(addressItem.regionName) }}
                 </button>
               </div>
-              +9999++++666
+
               <div class="addressDetailBox">
                 <div
                   v-for="(addressItem, addressItemIndex) in addressList"

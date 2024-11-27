@@ -73,7 +73,7 @@ const menus = computed(() => {
       childMenuList: [
         {
           type: 'link',
-          text: t('pages.medical_service.cataract'),
+          text: t('pages.medical_service.cataract.cataract'),
           link: { path: '/yahoo/medical-service/cataract' },
         },
         {
