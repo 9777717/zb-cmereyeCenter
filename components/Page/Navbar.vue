@@ -76,6 +76,11 @@ let menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
+        text: t('pages.medical_service.Light_Adjustable_Lens'),
+        route: { name: 'light-adjustable-lens' },
+      },
+      {
+        type: 'link',
         text: t('pages.medical_service.dazzling_operation'),
         route: { name: 'csp-programme' },
       },
@@ -257,6 +262,9 @@ const route = useRoute()
 const rt = ref(route)
 
 const hashActive = (child: any) => {
+  if (child.route.name === 'light-adjustable-lens') {
+    return 'activeHash adjustableHover'
+  }
   if (
     rt.value.name === child.route.name ||
     rt.value.path === child.route.path
@@ -283,6 +291,7 @@ const hashActive = (child: any) => {
             v-for="(item, itemIndex) in newMenus"
             :key="itemIndex"
             class="hover:bg-red-901 hover:text-while"
+            :class="[itemIndex + 1 == 4 ? 'lal_child' : '']"
           >
             <Anchor
               v-if="item.type === 'link'"
@@ -329,7 +338,19 @@ const hashActive = (child: any) => {
   line-height: 3.5;
   color: #ffffff;
 }
-
+.adjustableHover {
+  position: relative;
+}
+.adjustableHover::before{
+  content: '';
+  position: absolute;
+  background: url(https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg) no-repeat;
+  width: 50px;
+  height: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .activeHash {
   font-weight: bold;
   background: #ffa88c;
@@ -387,11 +408,11 @@ a {
       border-bottom: 0.75px solid #2958a3;
     }
 
-//    & > div:nth-child(1)::after {
-//      content: '';
-//      width: 0;
-//      border: 0;
-//    }
+    //    & > div:nth-child(1)::after {
+    //      content: '';
+    //      width: 0;
+    //      border: 0;
+    //    }
 
     display: flex;
     flex-direction: column;
@@ -743,7 +764,55 @@ a {
     background: #ffffff80;
   }
 }
+.lal_child {
+  .childpage {
+    background: rgba(41, 88, 163, 1);
+    width: 250px;
+    position: absolute;
+    right: -250px;
+    top: 0;
+    opacity: 82%;
+    & > div {
+      // height: 49px;
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 50px;
+      /* identical to box height, or 250% */
+      text-align: center;
+      letter-spacing: 0.05em;
 
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a.router-link-exact-active {
+        color: #ffffff;
+      }
+    }
+
+    & > div > a::after {
+      position: absolute;
+      left: 26px;
+      content: '';
+      width: 186px;
+      margin-top: -1px;
+      border: 0.75px solid #8ad8dd;
+    }
+
+    // & > div:nth-child(1) > a::after {
+    //   content: '';
+    //   width: 0;
+    //   border: 0;
+    // }
+
+    & > div:hover {
+      background: #ffffff80;
+    }
+  }
+}
 .child_en {
   &.ccccc {
     & > div {

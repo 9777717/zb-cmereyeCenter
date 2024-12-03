@@ -83,6 +83,11 @@ const menus = computed(() => {
         },
         {
           type: 'link',
+          text: t('pages.medical_service.Light_Adjustable_Lens'),
+          link: { path: '/light-adjustable-lens' },
+        },
+        {
+          type: 'link',
           text: t('pages.medical_service.dazzling_operation'),
           link: { path: '/csp-programme' },
         },
@@ -450,7 +455,7 @@ onMounted(() => {
                   class="itemCr"
                   @click="toLinks(childItem)"
                 >
-                  {{ childItem.text }}
+                  {{ childItem.text }}<img class="smImg" v-if="childItem.link.path === '/light-adjustable-lens'" src="https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg" alt="">
                 </el-menu-item>
               </el-sub-menu>
               <el-menu-item
@@ -630,6 +635,10 @@ onMounted(() => {
 }
 .itemCr {
   text-indent: 30px;
+}
+.smImg {
+  margin-left: 5px;
+  padding-top: 3px;
 }
 .el-sub-menu__title {
   color: #2958a3;
