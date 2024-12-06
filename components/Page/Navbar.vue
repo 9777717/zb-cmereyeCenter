@@ -262,9 +262,6 @@ const route = useRoute()
 const rt = ref(route)
 
 const hashActive = (child: any) => {
-  if (child.route.name === 'light-adjustable-lens') {
-    return 'activeHash adjustableHover'
-  }
   if (
     rt.value.name === child.route.name ||
     rt.value.path === child.route.path
@@ -318,7 +315,12 @@ const hashActive = (child: any) => {
                   :to="child.route ? child.route : undefined"
                   :href="child.href ? child.href : undefined"
                   class="hover:no-underline"
-                  :class="hashActive(child)"
+                  :class="[
+                    hashActive(child),
+                    child.route.name === 'light-adjustable-lens'
+                      ? 'adjustableHover'
+                      : '',
+                  ]"
                   >{{ child.text }}</Anchor
                 >
               </div>
@@ -341,10 +343,11 @@ const hashActive = (child: any) => {
 .adjustableHover {
   position: relative;
 }
-.adjustableHover::before{
+.adjustableHover::before {
   content: '';
   position: absolute;
-  background: url(https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg) no-repeat;
+  background: url(https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg)
+    no-repeat;
   width: 50px;
   height: 20px;
   right: 0;

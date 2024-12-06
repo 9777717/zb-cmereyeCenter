@@ -6,38 +6,50 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: `光調節人工晶狀體（LAL） | 白內障手術治療 ｜${t('pages.index.title')}`,
+  title: '光調節人工晶狀體（LAL） | 白內障手術治療 | 希瑪眼科中心',
   meta() {
     return [
+      // {
+      //   hid: 'description1',
+      //   name: 'description',
+      //   content: t('tdk.about-us.desc1'),
+      // },
+      // {
+      //   hid: 'key1',
+      //   name: 'keywords',
+      //   content: t('tdk.about-us.key1'),
+      // },
+      // {
+      //   hid: 'description2',
+      //   name: 'description',
+      //   content: t('tdk.about-us.desc2'),
+      // },
+      // {
+      //   hid: 'key2',
+      //   name: 'keywords',
+      //   content: t('tdk.about-us.key2'),
+      // },
+      // {
+      //   hid: 'description3',
+      //   name: 'description',
+      //   content: t('tdk.about-us.desc3'),
+      // },
+      // {
+      //   hid: 'key3',
+      //   name: 'keywords',
+      //   content: t('tdk.about-us.key3'),
+      // },
       {
-        hid: 'description1',
+        hid: 'description',
         name: 'description',
-        content: t('tdk.about-us.desc1'),
+        content:
+          'Light Adjustable Lens™（光調節人工晶狀體，LAL）是香港眼科領先的白內障治療選擇，術後透過紫外線光照治療調節人工晶體度數。相比傳統單焦距人工晶體，LAL 減少對眼鏡依賴，實現個性化視力矯正。希瑪眼科屬全港首間引入 LAL 人工晶體植入手術，為白內障患者提供精準及個體化定制的白內障手術後視力效果。',
       },
       {
-        hid: 'key1',
-        name: 'keywords',
-        content: t('tdk.about-us.key1'),
-      },
-      {
-        hid: 'description2',
-        name: 'description',
-        content: t('tdk.about-us.desc2'),
-      },
-      {
-        hid: 'key2',
-        name: 'keywords',
-        content: t('tdk.about-us.key2'),
-      },
-      {
-        hid: 'description3',
-        name: 'description',
-        content: t('tdk.about-us.desc3'),
-      },
-      {
-        hid: 'key3',
-        name: 'keywords',
-        content: t('tdk.about-us.key3'),
+        hid: 'Keywords',
+        name: 'Keywords',
+        content:
+          'LAL 白內障 白內障晶體 白內障手術 白內障治療 白內障手術過程 白內障眼鏡 白內障術後保養 人工晶體 人工晶體種類 人工水晶體 人工晶狀體 Light Adjustable Lens 光調節人工晶狀體 可調節人工晶體 調節型人工晶體 單焦點人工晶體 單焦距人工晶體 晶體植入 晶體混濁 光照治療 紫外線 防紫外線眼鏡 眼科檢查 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 眼科醫院 眼科診所 眼科中心',
       },
     ]
   },
@@ -312,6 +324,41 @@ const openBox = () => {
           </div>
         </div>
       </div>
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=85260629611&text=%E7%99%BD%E5%85%A7%E9%9A%9C%E5%B0%88%E7%B7%9A%E6%9F%A5%E8%A9%A2"
+        class="what-light-adjustable-btn"
+      >
+        <div>即按了解更多Light Adjustable Lens™！</div>
+        <div class="card_text">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="27"
+            viewBox="0 0 16 27"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_10300_17176)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.36634 26.1716L15.2821 15.2158C16.236 14.2593 16.236 12.7702 15.2821 11.7052L4.36634 0.867734C3.41243 -0.197277 2.03567 -0.30575 1.08176 0.650788L0.658899 1.07482C-0.0786553 1.92288 -0.295004 2.87942 0.550725 3.73735C3.20592 6.39001 5.85128 9.04268 8.60481 11.8137C9.55871 12.6617 9.55871 14.2593 8.60481 15.2059C5.85128 17.8685 3.19608 20.6197 0.550724 23.2823C-0.295005 24.0317 -0.0786563 25.0869 0.658898 25.9349L1.08176 26.359C2.03567 27.3155 3.41243 27.0986 4.36634 26.1519L4.36634 26.1716Z"
+                fill="#833C75"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_10300_17176">
+                <rect
+                  width="27"
+                  height="16"
+                  fill="white"
+                  transform="translate(16) rotate(90)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </a>
     </div>
     <div class="lalWithIol">
       <div><span>LAL</span> <span>與</span> 傳統人工晶體</div>
@@ -1071,6 +1118,25 @@ const openBox = () => {
     box-sizing: border-box;
     padding: 20px 0;
   }
+  .what-light-adjustable-btn {
+    border-radius: 46px;
+    padding: 16px 35px;
+    margin: 40px auto;
+    cursor: pointer;
+    color: #833c75 !important;
+    text-align: center;
+    font-family: 'Noto Sans HK';
+    font-size: clamp(14px, 1.66vw, 32px);
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 3.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #d3f3f4 0%, #ffedfb 100%);
+    width: fit-content;
+    animation: btnGrow 2s infinite alternate;
+  }
   .what-light-adjustable-unique {
     max-width: 1040px;
     display: flex;
@@ -1788,6 +1854,7 @@ const openBox = () => {
       rgba(214, 238, 239, 0.06) 75.42%,
       rgba(255, 255, 255, 0) 102.49%
     );
+    padding-bottom: 30px;
   }
   .what-light-adjustable-unique {
     box-sizing: border-box;
@@ -1816,6 +1883,25 @@ const openBox = () => {
         color: #833c75;
       }
     }
+  }
+  .what-light-adjustable-btn {
+    border-radius: 35px;
+    padding: 10px 22px;
+    margin: 10px auto 20px;
+    cursor: pointer;
+    color: #833c75 !important;
+    text-align: center;
+    font-family: 'Noto Sans HK';
+    font-size: clamp(10px, 1.26vw, 22px);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #d3f3f4 0%, #ffedfb 100%);
+    width: fit-content;
+    animation: btnGrow 2s infinite alternate;
   }
   .lalWithIol {
     box-sizing: border-box;

@@ -6,18 +6,30 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: t('pages.medical_service.medical_service_cataract_head'),
+  title: '「耀眼行動」白內障手術政府資助計劃 | 申請資格及費用 | 希瑪眼科中心',
   meta() {
     return [
+      // {
+      //   hid: 'cataractDesc',
+      //   name: 'description',
+      //   content: t('tdk.cataract.desc'),
+      // },
+      // {
+      //   hid: 'cataractKey',
+      //   name: 'keywords',
+      //   content: t('tdk.cataract.key'),
+      // },
       {
-        hid: 'cataractDesc',
+        hid: 'description',
         name: 'description',
-        content: t('tdk.cataract.desc'),
+        content:
+        "耀眼行動（白內障手術計劃）是由香港政府自2008年起推出的政府資助計劃，旨在通過公私營合作模式，為白內障手術輪候名單上的病人提供政府資助。希瑪眼科擁有超過10位眼科醫生參與本計劃，為合資格人士提供白內障治療。"
       },
       {
-        hid: 'cataractKey',
-        name: 'keywords',
-        content: t('tdk.cataract.key'),
+        hid: 'Keywords',
+        name: 'Keywords',
+        content:
+        "白內障治療 白內障手術 白內障手術計劃 白內障手術資助計劃 政府資助計劃 政府眼科資助 政府白內障資助 長者白內障資助 長者白內障手術資助 長者眼科資助 白內障手術政府 白內障政府補助 耀眼行動 耀眼行動計劃 耀眼行動申請 耀眼行動申請資格 政府白內障手術收費 白內障手術收費 白內障手術費用 希瑪眼科中心 希瑪眼科 希瑪醫療"
       },
     ]
   },

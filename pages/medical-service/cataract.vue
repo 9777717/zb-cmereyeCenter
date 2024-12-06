@@ -6,18 +6,30 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: t('pages.medical_service.medical_service_cataract_head'),
+  title: '白內障治療｜內容及收費｜手術過程 | 免費講座 | 希瑪眼科中心',
   meta() {
     return [
+      // {
+      //   hid: 'cataractDesc',
+      //   name: 'description',
+      //   content: t('tdk.cataract.desc'),
+      // },
+      // {
+      //   hid: 'cataractKey',
+      //   name: 'keywords',
+      //   content: t('tdk.cataract.key'),
+      // },
       {
-        hid: 'cataractDesc',
-        name: 'description',
-        content: t('tdk.cataract.desc'),
+        hid: 'Keywords',
+        name: 'Keywords',
+        content:
+          '白內障 白內障收費 白內障成因 白內障晶體 白內障病徵 白內障預防 白內障價錢 白內障先兆 白內障手術 白內障矯視 白內障症狀 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術過程 白內障眼鏡 白內障檢查 眼球渾濁 老人白內障 老人白內障手術 老人白內障手術費用 老人家白內障 眼睛退化 眼睛玻璃體退化 先天性白內障 視力模糊 視力下降 人工晶體 超聲乳化白內障切除術 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 眼睛檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所  耀眼行動 白內障手術計劃 白內障手術資助計劃 政府白內障資助 長者白內障資助	',
       },
       {
-        hid: 'cataractKey',
-        name: 'keywords',
-        content: t('tdk.cataract.key'),
+        hid: 'description',
+        name: 'description',
+        content:
+          '希瑪林順潮眼科中心提供全面白內障檢查及微創治療。白內障屬眼疾之一，白內障的症狀包括: 視力模糊、視力下降、眩光、重影、日盲癥、事物顏色變得暗淡、變形、事物顏色變得暗淡、變形。手術是治療白內障的唯一方法。希瑪林順潮眼科中心提供白內障無刀飛秒激光治療，過程安全可靠，精準度高。立即致電查詢白內障相關費用。',
       },
     ]
   },
@@ -1147,9 +1159,11 @@ const bannerData = {
         <div>
           <a
             href="https://www.hkeyecmer.com/pdf/白内障3摺頁_2024_E-version.pdf"
-            :download="$t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down2'
-                )"
+            :download="
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_down2'
+              )
+            "
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
@@ -1159,9 +1173,11 @@ const bannerData = {
           </a>
           <a
             href="https://www.hkeyecmer.com/pdf/白内障3摺頁_2024_E-version.pdf"
-            :download="$t(
-                  'pages.medical_service.service_cataract_title.service_cataract_down2'
-                )"
+            :download="
+              $t(
+                'pages.medical_service.service_cataract_title.service_cataract_down2'
+              )
+            "
           >
             <p>
               {{
