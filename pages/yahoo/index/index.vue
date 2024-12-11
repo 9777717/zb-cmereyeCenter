@@ -25,13 +25,12 @@ useHead(() => ({
 }))
 const locale = useState<string>('locale.setting')
 
-
 const bannerConfig: any = ref([])
 // let banner_type = ref(1)
 const getBanner = async () => {
   try {
     const _res: any = await useFetch(
-      `https://hkcmereye.com/api.php/cms/slide/gid/4`,
+      "https://hkcmereye.com/api.php/cms/slide/gid/4",
       {
         method: 'post',
       }
