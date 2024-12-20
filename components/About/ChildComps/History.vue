@@ -5,6 +5,10 @@ const historyList = ref([
     year: 'pages.about_us.course_year.year_24',
     contentList: [
       {
+        month: 'pages.about_us.course_year.child_24.child24_month_4',
+        info: 'pages.about_us.course_year.child_24.child24_info_4',
+      },
+      {
         month: 'pages.about_us.course_year.child_24.child24_month_3',
         info: 'pages.about_us.course_year.child_24.child24_info_3_1',
       },
@@ -109,7 +113,10 @@ const historyList = ref([
       },
       {
         month: 'pages.about_us.course_year.child_19.child_month_3',
-        info: 'pages.about_us.course_year.child_19.child_info_3',
+        info: [
+          'pages.about_us.course_year.child_19.child_info_3',
+          'pages.about_us.course_year.child_19.child_info_3_2',
+        ],
       },
       {
         month: 'pages.about_us.course_year.child_19.child_month_4',

@@ -124,9 +124,11 @@ pages:
         child24_month_1: 5月
         child24_month_2: 6月 
         child24_month_3: 7月 
+        child24_month_4: 12月 
         child24_info_1: 銅鑼灣 視光師驗眼中心成立
         child24_info_2: 旺角 希瑪微笑矯視中心成立
         child24_info_3_1: 中環 ZEISS VISION EXPERT成立
+        child24_info_4: 深圳 希華愛康健醫院成立
       year_23: "2023"
       child_23:
         child23_month_1: 8月
@@ -168,6 +170,7 @@ pages:
         child_info_1: 元朗(第二間)  希瑪眼科中心成立
         child_info_2: 上海  希瑪瑞視眼科醫院
         child_info_3: 希瑪微笑激光矯視中心成立
+        child_info_3_2: 中環 希瑪微笑激光矯視中心成立
         child_info_4: 昆明  希瑪林順潮眼科醫院成立
       year_18: "2018"
       child_18:
