@@ -2567,27 +2567,40 @@ const bannerData = {
     }
   }
 }
+:deep(.service-button-in-icon) {
+  background: #6edb83;
+}
+:deep(.service-button-in-text) {
+  background: linear-gradient(45deg, #6edb83 0%, #27940e 100%);
+}
 
 @media screen and (max-width: 768px) {
   .cataract {
     transform: scale(1);
     margin: 0;
     & > div:nth-child(2) {
-      width: calc(100% - 60px);
+      width: calc(100% - 50px);
       margin: 0 auto;
       & > div:nth-child(1) {
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        flex-direction: row-reverse;
+        // align-items: center;
+        gap: 0 1.28vw;
         margin-left: 0;
-        margin-top: 20px;
+        // margin-top: 20px;
         & > div:nth-child(1) {
-          margin-top: 0;
+          // margin-top: 0;
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 40px;
         }
         & > div {
           & > div:nth-child(1) {
-            font-size: 16px;
+            font-size: 4.1vw;
             line-height: 1.6;
             text-align: center;
           }
@@ -2599,7 +2612,20 @@ const bannerData = {
             // height: 45px;
             // line-height: 35px;
             // padding: 5px 40px;
-            margin-top: 20px;
+            margin-top: 5px;
+            :deep(.service-button-in-text) {
+              padding: 0 2px;
+              span {
+                font-size: 3.07vw;
+                padding: 5px 0;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            max-width: 24vw;
           }
         }
         & > div:nth-child(2) {

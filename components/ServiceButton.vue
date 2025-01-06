@@ -84,7 +84,8 @@ defineProps({
     }
     &.cataract{
       &::before {
-        background: linear-gradient(45deg, #F6F291 0%, #F4D94A 100%);
+        // background: linear-gradient(45deg, #F6F291 0%, #F4D94A 100%);
+        background: linear-gradient(45deg, #6edb83 0%, #27940e 100%);
         background-size: 100% 100%;
       }
     }
