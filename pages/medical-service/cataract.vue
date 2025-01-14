@@ -761,7 +761,7 @@ const bannerData = {
           </div>
         </div>
         <div>
-          <div>
+          <!-- <div>
             {{
               $t(
                 'pages.medical_service.service_cataract_title.service_cataract_title_son5'
@@ -889,7 +889,7 @@ const bannerData = {
                 )
               }}
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- <div @click="callTel()">
           {{
