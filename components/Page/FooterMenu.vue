@@ -355,6 +355,7 @@ let drawer = ref(false)
               cursor: pointer;
               margin-top: 15px;
               position: relative;
+              white-space: nowrap;
               & > div {
                 display: inline-block;
                 vertical-align: middle;

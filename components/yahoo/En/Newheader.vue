@@ -175,7 +175,7 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-          text: '視力測試',
+           text: t('pages.ophthalmic_information.ophthalmic_eyesight'),
           link: { path:  '/en/ophthalmic-information/eyesight' },
         },
       ],

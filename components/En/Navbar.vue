@@ -149,7 +149,7 @@ let menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: '視力測試',
+        text: t('pages.ophthalmic_information.ophthalmic_eyesight'),
         route: { name:  'en-ophthalmic-information-eyesight' }
       },
       {
@@ -755,6 +755,7 @@ a {
     width: 130px;
     float: left;
     position: relative;
+    min-height: 65px;
   }
   & > div > a::after {
     position: absolute;

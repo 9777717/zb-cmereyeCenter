@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { AppConfigInput } from '@nuxt/schema'
+import { availableLocales } from '~/utils/lang'
 
 export interface IMenuItem {
   type: 'link' | 'button'
@@ -76,8 +77,8 @@ let menus = computed((): IMenuItem[] => [
       },
       // {
       // type: 'link',
-        // text: t('pages.medical_service.Light_Adjustable_Lens'),
-        // route: { name: 'light-adjustable-lens' },
+      // text: t('pages.medical_service.Light_Adjustable_Lens'),
+      // route: { name: 'light-adjustable-lens' },
       // },
       {
         type: 'link',
@@ -176,7 +177,7 @@ let menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: '視力測試',
+        text: t('pages.ophthalmic_information.ophthalmic_eyesight'),
         route: { name: 'ophthalmic-information-eyesight' },
       },
       {
@@ -283,7 +284,7 @@ const hashActive = (child: any) => {
   <div class="headerTemPage">
     <BuilderNavbar>
       <template #menu>
-        <div class="navigtion">
+        <div :class="locale == 'en' ? 'en_navigtion' : ''" class="navigtion">
           <div
             v-for="(item, itemIndex) in newMenus"
             :key="itemIndex"
@@ -381,7 +382,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -435,7 +436,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -474,6 +475,11 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .en_navigtion {
+    & > div {
+      width: 170px !important;
+    }
+  }
 }
 
 .headerTemService {
@@ -488,7 +494,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -537,7 +543,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -586,7 +592,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -635,7 +641,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 35px;
       /* identical to box height, or 250% */
 
@@ -683,7 +689,7 @@ a {
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 50px;
     /* identical to box height, or 250% */
     text-align: center;
@@ -732,7 +738,7 @@ a {
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 50px;
     /* identical to box height, or 250% */
     text-align: center;
@@ -780,7 +786,7 @@ a {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 50px;
       /* identical to box height, or 250% */
       text-align: center;

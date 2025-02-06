@@ -51,6 +51,7 @@ const toggleOptions = (show?: boolean) => {
 }
 const menuStyle = ref('style1')
 
+const locale = useState<string>('locale.setting')
 const toLink = () =>{
   location.href = 'https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sym=3309&sc_lang=zh-HK'
 }
@@ -58,7 +59,7 @@ const toLink = () =>{
 
 <template>
   <div ref="navbar">
-    <div class="bar">
+    <div :class="locale === 'en' ? 'en_bar' : ''" class="bar">
       <div>
         <slot name="title">
           <NuxtLink tag="a" :to="{ name: 'index' }">
@@ -93,6 +94,9 @@ const toLink = () =>{
     flex-direction: column;
     align-items: center;
   }
+}
+.en_bar {
+  width: 170px !important;
 }
 </style>
 <style lang="scss">
