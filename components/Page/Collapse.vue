@@ -48,7 +48,7 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <div v-else><span>A：</span> {{ $t(item.agree) }}</div>
+      <div v-else><span>A：</span><span v-html="$t(item.agree)"></span></div>
     </el-collapse-item>
   </el-collapse>
 </template>

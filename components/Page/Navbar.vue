@@ -75,11 +75,11 @@ let menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.multiFocal_intraocular_lens'),
         route: { name: 'cataract-multifocal-lens' },
       },
-      // {
-      // type: 'link',
-      // text: t('pages.medical_service.Light_Adjustable_Lens'),
-      // route: { name: 'light-adjustable-lens' },
-      // },
+      {
+        type: 'link',
+        text: t('pages.medical_service.Light_Adjustable_Lens'),
+        route: { name: 'light-adjustable-lens' },
+      },
       {
         type: 'link',
         text: t('pages.medical_service.dazzling_operation'),
@@ -160,6 +160,79 @@ let menus = computed((): IMenuItem[] => [
       },
     ],
   },
+  // {
+  //   type: 'link',
+  //   text: t('pages.medical_service.medical_service'),
+  //   route: { name: 'medical-service' }, // 醫療服務
+  //   childMenuList: [
+  //     // {
+  //     //   type: 'link',
+  //     //   text: t('pages.medical_service.cataract'),
+  //     //   route: { name: 'medical-service-cataract' }, // 白內障
+  //     // },
+  //     {
+  //       type: 'link',
+  //       text: t('pages.medical_service.maculopathy'),
+  //       route: { name: 'medical-service-maculopathy' },
+  //     },
+  //     {
+  //       type: 'link',
+  //       text: t('pages.medical_service.muscae_volitantes'),
+  //       route: { name: 'medical-service-muscaeVolitantes' },
+  //     },
+  //     {
+  //       type: 'link', // 視網膜脫落
+  //       text: t('pages.medical_service.amotioRetinae'),
+  //       route: { name: 'medical-service-amotioRetinae' },
+  //     },
+  //     {
+  //       type: 'link',
+  //       text: t('pages.medical_service.glaucoma'),
+  //       route: { name: 'medical-service-glaucoma' },
+  //     },
+  //     {
+  //       type: 'link',
+  //       text: t('pages.medical_service.conjunctivitis'),
+  //       route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+  //     },
+  //     {
+  //       type: 'link',
+  //       text: t('pages.medical_service.xerophthalmia'),
+  //       route: { name: 'medical-service-xerophthalmia' },
+  //     },
+  //     {
+  //       type: 'link', // 眼表及角膜疾病
+  //       text: t('pages.medical_service.ocularSurfaceDiseases'),
+  //       route: { name: 'medical-service-ocularSurfaceDiseases' },
+  //     },
+  //     {
+  //       type: 'link', // 兒童斜弱視
+  //       text: t('pages.medical_service.strabismusAmblyopia'),
+  //       route: { name: 'medical-service-strabismusAmblyopia' },
+  //     },
+  //     {
+  //       type: 'link', // 阿托品滴眼液
+  //       text: t('pages.medical_service.atropine'),
+  //       route: { name: 'medical-service-atropine' },
+  //     },
+  //     {
+  //       type: 'link', // 眼矯形及眼眶疾病
+  //       text: t('pages.medical_service.eyeOrthopaedicDisease'),
+  //       route: { name: 'medical-service-eyeOrthopaedicDisease' },
+  //     },
+  //     {
+  //       type: 'link', // 醫學驗光配鏡
+  //       text: t('pages.medical_service.medicalOptometry'),
+  //       route: { name: 'medical-service-medicalOptometry' },
+  //     },
+  //     {
+  //       type: 'link', // 眼矯形及眼眶疾病
+  //       text: t('pages.medical_service.smileHk'),
+  //       route: false,
+  //       href: 'https://smile.hkcmereye.com/',
+  //     },
+  //   ],
+  // },
   {
     type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
@@ -308,6 +381,7 @@ const hashActive = (child: any) => {
                 {
                   child_en: locale === 'en',
                 },
+                locale === 'en' ? 'ccccc_en' : ''
               ]"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
@@ -876,7 +950,9 @@ a {
   //   border: 0;
   // }
 }
-
+.ccccc_en {
+  left: 170px;
+}
 .navigtion > div:hover .child {
   display: block;
 }

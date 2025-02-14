@@ -8,18 +8,36 @@ const locale = useState<string>('locale.setting')
 const eyeCenterImgList = [
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
-    alt: '希瑪眼科中心_將軍澳診所接待區',
-    title: '希瑪眼科中心_將軍澳診所'
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所接待區'
+        : 'Reception area at Cmer Eye Center - Tseung Kwan O Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所'
+        : 'Cmer Eye Center - Tseung Kwan O Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/2.jpg',
-    alt: '希瑪眼科中心_觀塘診所明亮寬敞的接待區',
-    title: '希瑪眼科中心_觀塘診所'
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所明亮寬敞的接待區'
+        : 'Spacious and bright reception area at Cmer Eye Center - Kwun Tong Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所'
+        : 'Cmer Eye Center - Kwun Tong Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/1.jpg',
-    alt: '希瑪眼科中心_觀塘診所接待區環境',
-    title: '希瑪眼科中心_觀塘診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所'
+        : 'Cmer Eye Center - Kwun Tong Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所接待區環境'
+        : 'Modern and inviting reception environment at Cmer Eye Center - Kwun Tong Clinic',
   },
   // {
   //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
@@ -33,13 +51,25 @@ const eyeCenterImgList = [
   // },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
-    alt: '希瑪眼科中心_將軍澳診所入口',
-    title: '希瑪眼科中心_將軍澳診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所'
+        : 'Cmer Eye Center - Tseung Kwan O Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所入口'
+        : 'Main entrance of Cmer Eye Center - Tseung Kwan O Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/5.jpg',
-    alt: '希瑪眼科中心_眼科診所候診區',
-    title: '希瑪眼科中心_眼科診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科診所'
+        : 'Cmer Eye Center - Eye Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科診所候診區'
+        : 'Comfortable waiting area at Cmer Eye Center - Eye Clinic',
   },
   // {
   //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
@@ -48,103 +78,209 @@ const eyeCenterImgList = [
   // },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/7.jpg',
-    alt: '希瑪眼科中心配備高端的眼科檢查儀器',
-    title: '希瑪眼科中心_眼科檢查儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查儀器'
+        : 'Cmer Eye Center - Eye Examination Equipment',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心配備高端的眼科檢查儀器'
+        : 'High-end eye examination equipment at Cmer Eye Center',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/8.jpg',
-    alt: '希瑪眼科中心提供優質的眼科檢查服務',
-    title: '希瑪眼科中心_眼科檢查服務'
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心提供優質的眼科檢查服務'
+        : 'Cmer Eye Center - Eye Examination Services',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查服務'
+        : 'Premium eye examination services offered by Cmer Eye Cente',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/9.jpg',
-    alt: '希瑪眼科中心_中環診所配備先進的眼科檢查儀器',
-    title: '希瑪眼科中心_中環診所_眼科檢查儀器'
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_中環診所配備先進的眼科檢查儀器'
+        : 'Cmer Eye Center - Central Clinic Eye Examination Equipment',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_中環診所_眼科檢查儀器'
+        : 'Advanced eye examination equipment at Cmer Eye Center - Central Clinic',
   },
 ]
 
 // 微笑
 const smileImgList = [
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/126203ce0bec257e.jpg',
-    alt:'希瑪微笑矯視中心',
-    title: '希瑪微笑矯視中心'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心'
+        : 'Signage at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/9d313bf93f6c9bc9.jpg',
-    alt:'希瑪微笑矯視中心配備先進的驗眼儀器',
-    title: '希瑪微笑矯視中心_驗眼儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_驗眼儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備先進的驗眼儀器'
+        : 'Comfortable waiting area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/c1018f324df72d8f.jpg',
-    alt:'希瑪微笑矯視中心配備先進的眼科檢查儀器',
-    title: '希瑪微笑矯視中心_眼科檢查儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_眼科檢查儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備先進的眼科檢查儀器'
+        : 'Comfortable reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/a6ff956020a1caa6.jpg',
-    alt:'希瑪微笑矯視中心配備高端的眼科檢查儀器',
-    title: '希瑪微笑矯視中心_眼科檢查儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_眼科檢查儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備高端的眼科檢查儀器'
+        : 'Spacious and bright reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/368e45086074bccb.jpg',
-    alt:'希瑪微笑矯視中心配備高端的驗眼儀器',
-    title: '希瑪微笑矯視中心_驗眼儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_驗眼儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備高端的驗眼儀器'
+        : 'Comfortable clinical environment at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/3c5132843b258482.jpg',
-    alt:'希瑪微笑矯視中心_中環診所舒適的候診區',
-    title: '希瑪微笑矯視中心_中環診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所舒適的候診區'
+        : 'Reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2024/08/28965e3f184af285.jpg',
-    alt:'希瑪微笑矯視中心_中環診所明亮舒適的候診區',
-    title: '希瑪微笑矯視中心_中環診所'
-  }
- 
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所'
+        : 'Cmer Smile Refractive Surgery Center',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所明亮舒適的候診區'
+        : 'Signage at Cmer Smile Refractive Surgery Center',
+  },
 ]
 
 // 视光
 const visionImgList = [
-
-  { 
+  {
     img: 'https://hkcmereye.com/static/aboutUs/dee5b8226c4541b045602cc10bf3d6b3.jpg',
-    alt: '希瑪視光中心_中環中心舒適的接待區',
-    title: '希瑪視光中心_中環診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_中環診所'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_中環中心舒適的接待區'
+        : 'Spacious and bright reception area at Cmer Vision Center - ZEISS Vision Expert',
   },
-  { 
+  {
     img: 'https://hkcmereye.com/static/aboutUs/b838bea701eab1d3b5a3cb46e3de9325.jpg',
-    alt: '希瑪視光中心提供驗配眼鏡服務',
-    title: '希瑪視光中心_配眼鏡'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心提供驗配眼鏡服務'
+        : 'Reception area at Cmer Vision Center - ZEISS Vision Expert',
   },
-  { 
+  {
     img: 'https://hkcmereye.com/static/aboutUs/f294eed8effc0e84e335f90d31d2b80a.jpg',
-    alt: '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務',
-    title: '希瑪視光中心_旺角診所_配眼鏡'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務'
+        : 'Glasses display at Cmer Vision Center - ZEISS Vision Expert',
   },
-    { 
+  {
     img: 'https://hkcmereye.com/static/aboutUs/da5e97aac3aab2275403c868ec2f0283.jpg',
-    alt: '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務',
-    title: '希瑪視光中心_旺角診所_配眼鏡'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務'
+        : 'VISUFIT 1000 at Cmer Vision Center - ZEISS Vision Expert',
   },
-    { 
+  {
     img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/vision1.jpg',
-    alt: '希瑪視光中心_旺角中心環境',
-    title: '希瑪視光中心_旺角診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所'
+        : 'Cmer Vision Center - Mong Kok Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心環境'
+        : 'Modern and inviting environment at Cmer Vision Center - Mong Kok Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2023/02/3561eb13d077d63d.jpg',
-    alt: '希瑪視光中心_將軍澳中心入口及展示窗',
-    title: '希瑪視光中心_將軍澳診所'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳診所'
+        : 'Cmer Vision Center - Tseung Kwan O Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心入口及展示窗'
+        : 'Main entrance and display window at Cmer Vision Center - Tseung Kwan O Clinic',
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
-    alt: '希瑪視光中心_將軍澳中心的兒童近視控制專區',
-    title: '希瑪視光中心_將軍澳中心_兒童近視控制'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心_兒童近視控制'
+        : 'Cmer Vision Center - Tseung Kwan O Clinic for Myopia Control in Children',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心的兒童近視控制專區'
+        : "Dedicated area for children's myopia control at Cmer Vision Center - Tseung Kwan O Clinic",
   },
-  { 
+  {
     img: 'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
-    alt: '希瑪眼科中心配備各種先進的眼科檢查儀器',
-    title: '希瑪眼科中心_眼科檢查儀器'
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查儀器'
+        : 'Cmer Eye Center - Eye Examination Equipment',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心配備各種先進的眼科檢查儀器'
+        : 'Comprehensive range of advanced eye examination equipment at Cmer Eye Center',
   },
 ]
 // 跳转Facebook
@@ -167,269 +303,299 @@ const goInstagram = (type: string) => {
     window.open('https://www.instagram.com/cmervision/', '_blank')
   }
 }
-
 </script>
 <template>
-<div>
-  <div id="centreIntro" class="centreIntro">
-    <!-- 中心簡介 -->
-    <div>
-      <div class="IntroCon">
-        <yahooAboutTitle
-          :zh-title="$t('pages.about_us.center_profile')"
-          :en-ttitle="'introduction'"
-        />
-      </div>
-      <p class="preface" :class="{'enStyle': locale === 'en'}">
-        {{ $t('pages.about_us.profile_centent.profile_text') }}
-      </p>
-
-      <div class="mianText" :class="{'enStyle': locale === 'en'}">
-        
-        <p>{{ $t('pages.about_us.profile_centent.profile_subjection') }}</p>
-        <p>
-          {{ $t('pages.about_us.profile_centent.profile_group_start')
-          }}<span class="color1 font-semibold">{{
-            $t('pages.about_us.profile_centent.profile_group_name')
-          }}</span
-          >{{ $t('pages.about_us.profile_centent.profile_group_idea') }}
-        </p>
-        <p class="color1 font-semibold">
-          {{ $t('pages.about_us.profile_centent.profile_group_C') }}
-        </p>
-        <p class="color1 font-semibold">
-          {{ $t('pages.about_us.profile_centent.profile_group_M') }}
-        </p>
-        <p class="color1 font-semibold">
-          {{ $t('pages.about_us.profile_centent.profile_group_E') }}
-        </p>
-        <p class="color1 font-semibold">
-          {{ $t('pages.about_us.profile_centent.profile_group_R') }}
-        </p>
-        <p>{{ $t('pages.about_us.profile_centent.profile_group_hema') }}
-          <img class="mianImg" src="https://static.cmereye.com/imgs/2024/04/e06af078f24f2d14.png" alt="">
-        </p>
-        
-      </div>
-    </div>
-
-    <!-- 希瑪眼科中心 -->
-    <div class="maxCon">
+  <div>
+    <div id="centreIntro" class="centreIntro">
+      <!-- 中心簡介 -->
       <div>
-        <div class="float-right">
-          {{ $t('pages.about_us.hema_eye.hema_eye') }}
-        </div>
-      </div>
-      <div>
-        <div>
-          <Swiper
-            :height="380"
-            :modules="[Autoplay]"
-            :slides-per-view="1"
-            :loop="true"
-            :effect="'creative'"
-            :autoplay="{
-              delay: 2500,
-            }"
-          >
-            <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
-              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div>
-          <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_one') }}</p>
-          <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_two') }}</p>
-        </div>
-      </div>
-      <div>
-        <div @click="goFaceBook('eye')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+        <div class="IntroCon">
+          <yahooAboutTitle
+            :zh-title="$t('pages.about_us.center_profile')"
+            :en-ttitle="'introduction'"
           />
-          {{ $t('pages.about_us.hema_eye.hema_eye_facebooke') }}
         </div>
-        <div @click="goInstagram('eye')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
-          />
-          CMER_EYE_CENTER
-        </div>
-      </div>
-    </div>
+        <p class="preface" :class="{ enStyle: locale === 'en' }">
+          {{ $t('pages.about_us.profile_centent.profile_text') }}
+        </p>
 
-    <!-- 希瑪微笑矯視中心 -->
-    <div class="maxCon">
-      <div>
-        <div class="float-right">
-          {{ $t('pages.about_us.hema_smile.hema_smile') }}
-        </div>
-      </div>
-      <div>
-        <div>
-          <p>{{ $t('pages.about_us.hema_smile.hema_smile_introduce_one') }}</p>
-          <p>{{ $t('pages.about_us.hema_smile.hema_smile_introduce_two') }}</p>
-        </div>
-        <div>
-          <Swiper
-            :height="380"
-            :modules="[Autoplay]"
-            :slides-per-view="1"
-            :loop="true"
-            :effect="'creative'"
-            :autoplay="{
-              delay: 2500,
-            }"
-          >
-            <SwiperSlide v-for="(slide, idx) in smileImgList" :key="idx">
-              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-      <div>
-        <div @click="goFaceBook('smile')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
-          />
-          {{ $t('pages.about_us.hema_smile.hema_smile_facebooke') }}
-        </div>
-        <div @click="goInstagram('smile')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
-          />
-          CMER_SMILE
-        </div>
-      </div>
-    </div>
-
-    <!-- 希瑪視光中心 -->
-    <div class="maxCon">
-      <div>
-        <div class="float-right">
-          {{ $t('pages.about_us.hema_vision.hema_vision') }}
-        </div>
-      </div>
-      <div>
-        <div>
-          <Swiper
-            :height="380"
-            :modules="[Autoplay]"
-            :slides-per-view="1"
-            :loop="true"
-            :effect="'creative'"
-            :autoplay="{
-              delay: 2500,
-            }"
-          >
-            <SwiperSlide v-for="(slide, idx) in visionImgList" :key="idx">
-              <div class="eyeList"><img :src="slide.img" :alt="slide.alt" :title="slide.title" /></div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div>
+        <div class="mianText" :class="{ enStyle: locale === 'en' }">
+          <p>{{ $t('pages.about_us.profile_centent.profile_subjection') }}</p>
           <p>
-            {{ $t('pages.about_us.hema_vision.hema_vision_introduce_one') }}
+            {{ $t('pages.about_us.profile_centent.profile_group_start')
+            }}<span class="color1 font-semibold">{{
+              $t('pages.about_us.profile_centent.profile_group_name')
+            }}</span
+            >{{ $t('pages.about_us.profile_centent.profile_group_idea') }}
+          </p>
+          <p class="color1 font-semibold">
+            {{ $t('pages.about_us.profile_centent.profile_group_C') }}
+          </p>
+          <p class="color1 font-semibold">
+            {{ $t('pages.about_us.profile_centent.profile_group_M') }}
+          </p>
+          <p class="color1 font-semibold">
+            {{ $t('pages.about_us.profile_centent.profile_group_E') }}
+          </p>
+          <p class="color1 font-semibold">
+            {{ $t('pages.about_us.profile_centent.profile_group_R') }}
           </p>
           <p>
-            {{ $t('pages.about_us.hema_vision.hema_vision_introduce_two') }}
-          </p>
-        </div>
-      </div>
-      <div>
-        <div @click="goFaceBook('vision')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
-          />
-          {{ $t('pages.about_us.hema_vision.hema_vision_facebooke') }}
-        </div>
-        <div @click="goInstagram('vision')">
-          <img
-            src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
-          />
-          CMERVISION
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- 社交媒体 -->
-  <div class="media">
-    <div class="maxCon">
-      <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
-          alt="希瑪眼科中心提供高品質的眼科檢查服務"
-          title="希瑪眼科中心_眼科檢查服務"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2023/03/13753bf3c5149f9b.png"
-          alt="希瑪眼科中心_將軍澳診所舒適的接待區"
-          title="希瑪眼科中心_將軍澳診所"
-        />
-      </div>
-      <div>
-        <a
-          href="https://www.xiaohongshu.com/user/profile/620520830000000010006034"
-          target="_blank"
-        >
-          <img
-            src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
-            alt="希瑪眼科中心_小紅書圖標"
-            title="希瑪眼科中心_小紅書"
-          />
-          {{ $t('pages.about_us.media.media_redbook') }}
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
-          target="_blank"
-        >
-          <img
-            src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
-            alt="希瑪眼科中心_YouTube圖標"
-            title="希瑪眼科中心_YouTube"
-          />
-          {{ $t('pages.about_us.media.media_youtube') }}
-        </a>
-        <a href="javascript:void(0)" class="isWechat">
-          <img
-            src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
-            alt="希瑪眼科中心_微信圖標"
-            title="希瑪眼科中心_微信"
-          />
-          {{ $t('pages.about_us.media.media_wechat') }}
-          <div class="isShow">
+            {{ $t('pages.about_us.profile_centent.profile_group_hema') }}
             <img
-              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
-              alt="香港希瑪眼科中心"
+              class="mianImg"
+              src="https://static.cmereye.com/imgs/2024/04/e06af078f24f2d14.png"
+              alt=""
             />
+          </p>
+        </div>
+      </div>
+
+      <!-- 希瑪眼科中心 -->
+      <div class="maxCon">
+        <div>
+          <div class="float-right">
+            {{ $t('pages.about_us.hema_eye.hema_eye') }}
           </div>
-        </a>
+        </div>
+        <div>
+          <div>
+            <Swiper
+              :height="380"
+              :modules="[Autoplay]"
+              :slides-per-view="1"
+              :loop="true"
+              :effect="'creative'"
+              :autoplay="{
+                delay: 2500,
+              }"
+            >
+              <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
+                <div class="eyeList">
+                  <img :src="slide.img" :alt="slide.alt" :title="slide.title" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div>
+            <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_one') }}</p>
+            <p>{{ $t('pages.about_us.hema_eye.hema_eye_introduce_two') }}</p>
+          </div>
+        </div>
+        <div>
+          <div @click="goFaceBook('eye')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+            />
+            {{ $t('pages.about_us.hema_eye.hema_eye_facebooke') }}
+          </div>
+          <div @click="goInstagram('eye')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+            />
+            CMER_EYE_CENTER
+          </div>
+        </div>
+      </div>
+
+      <!-- 希瑪微笑矯視中心 -->
+      <div class="maxCon">
+        <div>
+          <div class="float-right">
+            {{ $t('pages.about_us.hema_smile.hema_smile') }}
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>
+              {{ $t('pages.about_us.hema_smile.hema_smile_introduce_one') }}
+            </p>
+            <p>
+              {{ $t('pages.about_us.hema_smile.hema_smile_introduce_two') }}
+            </p>
+          </div>
+          <div>
+            <Swiper
+              :height="380"
+              :modules="[Autoplay]"
+              :slides-per-view="1"
+              :loop="true"
+              :effect="'creative'"
+              :autoplay="{
+                delay: 2500,
+              }"
+            >
+              <SwiperSlide v-for="(slide, idx) in smileImgList" :key="idx">
+                <div class="eyeList">
+                  <img :src="slide.img" :alt="slide.alt" :title="slide.title" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+        <div>
+          <div @click="goFaceBook('smile')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+            />
+            {{ $t('pages.about_us.hema_smile.hema_smile_facebooke') }}
+          </div>
+          <div @click="goInstagram('smile')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+            />
+            CMER_SMILE
+          </div>
+        </div>
+      </div>
+
+      <!-- 希瑪視光中心 -->
+      <div class="maxCon">
+        <div>
+          <div class="float-right">
+            {{ $t('pages.about_us.hema_vision.hema_vision') }}
+          </div>
+        </div>
+        <div>
+          <div>
+            <Swiper
+              :height="380"
+              :modules="[Autoplay]"
+              :slides-per-view="1"
+              :loop="true"
+              :effect="'creative'"
+              :autoplay="{
+                delay: 2500,
+              }"
+            >
+              <SwiperSlide v-for="(slide, idx) in visionImgList" :key="idx">
+                <div class="eyeList">
+                  <img :src="slide.img" :alt="slide.alt" :title="slide.title" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div>
+            <p>
+              {{ $t('pages.about_us.hema_vision.hema_vision_introduce_one') }}
+            </p>
+            <p>
+              {{ $t('pages.about_us.hema_vision.hema_vision_introduce_two') }}
+            </p>
+          </div>
+        </div>
+        <div>
+          <div @click="goFaceBook('vision')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+            />
+            {{ $t('pages.about_us.hema_vision.hema_vision_facebooke') }}
+          </div>
+          <div @click="goInstagram('vision')">
+            <img
+              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+            />
+            CMERVISION
+          </div>
+        </div>
       </div>
     </div>
-    <div>
+    <!-- 社交媒体 -->
+    <div class="media">
       <div class="maxCon">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
-            alt="希瑪視光中心_旺角中心舒適寬敞的接待區"
-            title="希瑪視光中心_旺角診所"
+            src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
+            :title="
+              locale === 'zh-hk'
+                ? '希瑪眼科中心_眼科檢查服務'
+                : 'Cmer Eye Center - High-Quality Eye Examination Services'
+            "
+            :alt="
+              locale === 'zh-hk'
+                ? '希瑪眼科中心提供高品質的眼科檢查服務'
+                : 'Cmer Eye Center provides top-notch eye examination services'
+            "
+          />
+          <img
+            src="https://static.cmereye.com/imgs/2023/03/13753bf3c5149f9b.png"
+            :title="
+              locale === 'zh-hk'
+                ? '希瑪眼科中心_將軍澳診所'
+                : 'Cmer Eye Center - Tseung Kwan O Clinic'
+            "
+            :alt="
+              locale === 'zh-hk'
+                ? '希瑪眼科中心_將軍澳診所舒適的接待區'
+                : 'Cmer Eye Center - Tseung Kwan O Clinic'
+            "
           />
         </div>
-        <div @click.stop="getPdf('cmer.pdf',$t('pages.about_us.download.download'))">
-          <img
-            src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
-            alt="希瑪眼科中心_業務小冊子"
-            title="希瑪眼科中心"
-          />
-          <div
-            class="downloadpdf"
-            >{{ $t('pages.about_us.download.download') }}</div
+        <div>
+          <a
+            href="https://www.xiaohongshu.com/user/profile/620520830000000010006034"
+            target="_blank"
           >
+            <img
+            src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
+            :title="locale === 'zh-hk' ? '希瑪眼科中心_小紅書':'Cmer Eye Center - Xiaohongshu' "
+            :alt="locale === 'zh-hk' ? '希瑪眼科中心_小紅書圖標':'Cmer Eye Center - Xiaohongshu icon'" />
+            {{ $t('pages.about_us.media.media_redbook') }} 
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg"
+            target="_blank"
+          >
+            <img
+              src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
+              :alt=" locale === 'zh-hk' ? '希瑪眼科中心_YouTube圖標 ': 'Cmer Eye Center - YouTube icon'"
+              :title="locale === 'zh-hk' ? '希瑪眼科中心_YouTube' :'Cmer Eye Center - YouTube'"
+            />
+            {{ $t('pages.about_us.media.media_youtube') }}
+          </a>
+          <a href="javascript:void(0)" class="isWechat">
+            <img
+              src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
+              :title="locale === 'zh-hk' ? '希瑪眼科中心_微信' : 'Cmer Eye Center - WeChat'"
+              :alt="locale === 'zh-hk' ? '希瑪眼科中心_微信圖標' : 'Cmer Eye Center - WeChat icon'"
+            />
+            {{ $t('pages.about_us.media.media_wechat') }}
+            <div class="isShow">
+              <img
+                src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                alt="香港希瑪眼科中心"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="maxCon">
+          <div>
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
+              :title= "locale === 'zh-hk'? '希瑪視光中心_旺角診所':'Cmer Vision Center - Mong Kok Clinic'"
+              :alt= "locale === 'zh-hk'? '希瑪視光中心_旺角中心舒適寬敞的接待區':'Spacious and comfortable reception area at Cmer Vision Center - Mong Kok Clinic'"
+            />
+          </div>
+          <div
+            @click.stop="
+              getPdf('cmer.pdf', $t('pages.about_us.download.download'))
+            "
+          >
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
+              :title="locale === 'zh-hk' ? '希瑪眼科中心' : 'Cmer Eye Center'"
+              :alt="locale === 'zh-hk' ? '希瑪眼科中心_業務小冊子' : 'Cmer Eye Center business brochure'"
+            />
+            <div class="downloadpdf">
+              {{ $t('pages.about_us.download.download') }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <style scoped lang="scss">
@@ -449,8 +615,8 @@ const goInstagram = (type: string) => {
     flex-direction: column;
 
     & > p {
-      &.enStyle{
-        text-transform:initial;
+      &.enStyle {
+        text-transform: initial;
       }
       width: 100%;
       max-width: 960px;
@@ -473,9 +639,10 @@ const goInstagram = (type: string) => {
       width: 100%;
       max-width: 860px;
       margin: 0 auto;
-      &.enStyle{
-        &>p,& > p:last-child{
-          text-transform:initial;
+      &.enStyle {
+        & > p,
+        & > p:last-child {
+          text-transform: initial;
         }
       }
       .color1 {
@@ -506,8 +673,8 @@ const goInstagram = (type: string) => {
         letter-spacing: 0.06em;
         text-indent: 45px;
         color: #515151;
-        background: #F6FCFF;
-        box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+        background: #f6fcff;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
         position: relative;
         padding: 20px;
         border-radius: 13px;
@@ -591,7 +758,7 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div {
-        img{
+        img {
           margin-right: 5px;
         }
         cursor: pointer;
@@ -688,7 +855,7 @@ const goInstagram = (type: string) => {
       justify-content: flex-end;
 
       & > div {
-        img{
+        img {
           margin-right: 5px;
         }
         cursor: pointer;
@@ -760,7 +927,7 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div:nth-child(2) {
-        img{
+        img {
           margin-right: 5px;
         }
         margin-left: 50px;
@@ -786,7 +953,7 @@ const goInstagram = (type: string) => {
       align-items: center;
 
       & > div {
-        img{
+        img {
           margin-right: 5px;
         }
         cursor: pointer;
@@ -875,7 +1042,7 @@ const goInstagram = (type: string) => {
         margin: 28px 94px 0 150px;
       }
       & > div:nth-child(2) {
-        img{
+        img {
           margin-right: 30px;
         }
         top: 28px;
@@ -925,9 +1092,9 @@ const goInstagram = (type: string) => {
 .media > div:nth-child(1) > div > img:nth-child(1) {
   left: 40%;
 }
-.mianText{
+.mianText {
   position: relative;
-  .mianImg{
+  .mianImg {
     position: absolute;
     right: 0;
     bottom: 100%;
@@ -936,22 +1103,22 @@ const goInstagram = (type: string) => {
 }
 
 @media screen and (max-width: 768px) {
-  .mianText{
-    .mianImg{
+  .mianText {
+    .mianImg {
       display: none;
     }
   }
-  .centreIntro{
+  .centreIntro {
     padding-top: 100px;
     margin-top: -100px;
     margin-bottom: 80px;
     & > div:nth-child(1) {
-      .IntroCon{
+      .IntroCon {
         margin-left: 30px;
         width: max-content;
       }
-      &>p{
-        &.enStyle{
+      & > p {
+        &.enStyle {
           text-align: initial;
         }
         width: calc(100% - 74px);
@@ -963,10 +1130,10 @@ const goInstagram = (type: string) => {
       }
       & > div:nth-child(3) {
         width: calc(100% - 80px);
-        .color1{
+        .color1 {
           letter-spacing: 0;
         }
-        &>p{
+        & > p {
           font-size: 14px;
           text-indent: 0;
           line-height: 200%;
@@ -1018,7 +1185,7 @@ const goInstagram = (type: string) => {
         width: calc(100% - 60px);
         margin: 0 auto;
         justify-content: space-between;
-        &>div{
+        & > div {
           font-size: 16px;
         }
         & > div:nth-child(1) {
@@ -1066,7 +1233,7 @@ const goInstagram = (type: string) => {
         width: calc(100% - 60px);
         margin: 0 auto;
         justify-content: space-between;
-        &>div{
+        & > div {
           font-size: 16px;
         }
         & > div:nth-child(1) {
@@ -1114,7 +1281,7 @@ const goInstagram = (type: string) => {
         width: calc(100% - 60px);
         margin: 0 auto;
         justify-content: space-between;
-        &>div{
+        & > div {
           font-size: 16px;
         }
         & > div:nth-child(1) {
@@ -1132,8 +1299,8 @@ const goInstagram = (type: string) => {
       height: 200px;
       top: 20px;
     }
-    & > div:nth-child(1){
-      & > div:nth-of-type(1){
+    & > div:nth-child(1) {
+      & > div:nth-of-type(1) {
         margin-left: 30px;
         width: 130px;
       }
@@ -1162,7 +1329,7 @@ const goInstagram = (type: string) => {
         }
       }
     }
-    & > div:nth-child(2){
+    & > div:nth-child(2) {
       margin-top: 60px;
       &::before {
         width: 100%;
@@ -1173,18 +1340,18 @@ const goInstagram = (type: string) => {
         & > div:nth-child(1) {
           width: 130px;
           margin: 0 0 0 30px;
-          img{
+          img {
             width: 100%;
           }
         }
         & > div:nth-child(2) {
-          flex:1;
+          flex: 1;
           font-size: 12px;
           margin-left: 20px;
           text-indent: 0;
           top: 0;
           height: 80px;
-          img{
+          img {
             width: 36px;
             margin-right: 10px;
           }
@@ -1245,7 +1412,7 @@ const goInstagram = (type: string) => {
         align-items: center;
 
         & > div:nth-child(2) {
-          img{
+          img {
             margin-right: 5px;
           }
           margin-left: 50px;
@@ -1271,7 +1438,7 @@ const goInstagram = (type: string) => {
         align-items: center;
 
         & > div {
-          img{
+          img {
             margin-right: 5px;
           }
           cursor: pointer;

@@ -81,11 +81,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.multiFocal_intraocular_lens'),
           link: { path: '/cataract/multifocal-lens' },
         },
-        // {
-          // type: 'link',
-          // text: t('pages.medical_service.Light_Adjustable_Lens'),
-          // link: { path: '/light-adjustable-lens' },
-        // },
+        {
+          type: 'link',
+          text: t('pages.medical_service.Light_Adjustable_Lens'),
+          link: { path: '/light-adjustable-lens' },
+        },
         {
           type: 'link',
           text: t('pages.medical_service.dazzling_operation'),
@@ -197,7 +197,7 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-           text: t('pages.ophthalmic_information.ophthalmic_eyesight'),
+          text: t('pages.ophthalmic_information.ophthalmic_eyesight'),
           link: { path: '/ophthalmic-information/eyesight' },
         },
       ],
@@ -455,7 +455,7 @@ onMounted(() => {
                   class="itemCr"
                   @click="toLinks(childItem)"
                 >
-                <!-- v-if="childItem.link.path === '/light-adjustable-lens'"  ↓ <img class="smImg" src="https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg" alt=""> -->
+                  <!-- v-if="childItem.link.path === '/light-adjustable-lens'"  ↓ <img class="smImg" src="https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg" alt=""> -->
                   {{ childItem.text }}
                 </el-menu-item>
               </el-sub-menu>

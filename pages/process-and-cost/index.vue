@@ -56,14 +56,14 @@ const scrollHeight = () => {
     isShowLanguageBool.value = false
   }
 }
-const processedLists:any = [
+const processedLists: any = ref([
   {
     img: 'https://static.cmereye.com/imgs/2024/03/1c9bdc439e10d0a7.png',
     name: ['pages.process_cost.process_1.process_p1'],
     nameb: '',
     texts: [],
-    img_alt: '病人登記',
-    img_title: '登記'
+    img_title: 'pages.process_cost.process_1.img_title1',
+    img_alt: 'pages.process_cost.process_1.img_alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/b5ea6eeffceb0e02.png',
@@ -72,15 +72,15 @@ const processedLists:any = [
     texts: [
       {
         type: '',
-        text: 'pages.process_cost.process_1.process_p3_3'
+        text: 'pages.process_cost.process_1.process_p3_3',
       },
       {
         type: 'color',
-        text: 'pages.process_cost.process_1.process_p3_4'
-      }
+        text: 'pages.process_cost.process_1.process_p3_4',
+      },
     ],
-    img_alt: '基本眼睛檢查',
-    img_title: '基本眼睛檢查'
+    img_title: 'pages.process_cost.process_1.img_title2',
+    img_alt: 'pages.process_cost.process_1.img_alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/b5986c511653d126.png',
@@ -89,42 +89,45 @@ const processedLists:any = [
     texts: [
       {
         type: '',
-        text: 'pages.process_cost.process_1.process_p5_4'
+        text: 'pages.process_cost.process_1.process_p5_4',
       },
       {
         type: 'color',
-        text: 'pages.process_cost.process_1.process_p5_5'
-      }
+        text: 'pages.process_cost.process_1.process_p5_5',
+      },
     ],
-    img_alt: '眼科醫生診症',
-    img_title: '醫生診斷'
+    img_title: 'pages.process_cost.process_1.img_title3',
+    img_alt: 'pages.process_cost.process_1.img_alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/7b1d0695e319a85a.png',
     name: ['pages.process_cost.process_1.process_p6'],
     nameb: '',
     texts: [],
-    img_alt: '詳細眼睛檢查',
-    img_title: '詳細眼睛檢查'
+    img_title: 'pages.process_cost.process_1.img_title4',
+    img_alt: 'pages.process_cost.process_1.img_alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/2c22d648c273a2fe.png',
     name: ['pages.process_cost.process_1.process_p7_3'],
     nameb: '',
     texts: [],
-    img_alt: '眼科手術',
-    img_title: '眼科手術'
+    img_title: 'pages.process_cost.process_1.img_title5',
+    img_alt: 'pages.process_cost.process_1.img_alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/03/edc13bc571afe68a.png',
-    name: ['pages.process_cost.process_1.process_p8_1','pages.process_cost.process_1.process_p8_2','pages.process_cost.process_1.process_p9'],
+    name: [
+      'pages.process_cost.process_1.process_p8_1',
+      'pages.process_cost.process_1.process_p8_2',
+      'pages.process_cost.process_1.process_p9',
+    ],
     nameb: '',
     texts: [],
-    img_alt: '繳費及取藥',
-    img_title: '繳費_取藥'
+    img_title: 'pages.process_cost.process_1.img_title6',
+    img_alt: 'pages.process_cost.process_1.img_alt6',
   },
-
-]
+])
 </script>
 
 <template>
@@ -451,46 +454,100 @@ const processedLists:any = [
               </div>
               <div class="processed-in pcpocessBox">
                 <div class="lists">
-                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists" :key="processedIndex">
-                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
+                  <div
+                    class="lists-in"
+                    v-for="processedItem in processedLists"
+                    :key="processedItem.img"
+                  >
+                    <img
+                      :src="processedItem.img"
+                      :alt="$t(processedItem.img_alt)"
+                      :title="$t(processedItem.img_title)"
+                    />
                     <div class="name">
-                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
-                        {{$t(nameItem)}}
+                      <span
+                        v-for="(nameItem, nameIndex) in processedItem.name"
+                        :key="nameIndex"
+                      >
+                        {{ $t(nameItem) }}
                       </span>
                     </div>
-                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">
+                      {{ $t(processedItem.nameb) }}
+                    </div>
                     <div class="text" v-if="processedItem.texts.length">
-                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                      <span
+                        v-for="(spanItem, spanIndex) in processedItem.texts"
+                        :key="spanIndex"
+                        :class="spanItem.type"
+                        >{{ $t(spanItem.text) }}</span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
               <div class="processed-in mbpocessBox">
-                <div class="lists" :class="{'lists-en':locale === 'en'}">
-                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any ) => index % 2 === 0)" :key="processedIndex">
-                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
+                <div class="lists" :class="{ 'lists-en': locale === 'en' }">
+                  <div
+                    class="lists-in"
+                    v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any ) => index % 2 === 0)"
+                    :key="processedItem.img"
+                  >
+                    <img
+                      :src="processedItem.img"
+                      :alt="$t(processedItem.img_alt)"
+                      :title="$t(processedItem.img_title)"
+                    />
                     <div class="name">
-                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
-                        {{$t(nameItem)}}
+                      <span
+                        v-for="(nameItem, nameIndex) in processedItem.name"
+                        :key="nameIndex"
+                      >
+                        {{ $t(nameItem) }}
                       </span>
                     </div>
-                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">
+                      {{ $t(processedItem.nameb) }}
+                    </div>
                     <div class="text" v-if="processedItem.texts.length">
-                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                      <span
+                        v-for="(spanItem, spanIndex) in processedItem.texts"
+                        :key="spanIndex"
+                        :class="spanItem.type"
+                        >{{ $t(spanItem.text) }}</span
+                      >
                     </div>
                   </div>
                 </div>
-                <div class="lists" :class="{'lists-en':locale === 'en'}">
-                  <div class="lists-in" v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any) => index % 2 !== 0)" :key="processedIndex">
-                    <img :src="processedItem.img" :alt="processedItem.img_alt" :title="processedItem.img_title">
+                <div class="lists" :class="{ 'lists-en': locale === 'en' }">
+                  <div
+                    class="lists-in"
+                    v-for="(processedItem,processedIndex) in processedLists.filter((item:any, index:any) => index % 2 !== 0)"
+                    :key="processedIndex"
+                  >
+                    <img
+                      :src="processedItem.img"
+                      :alt="$t(processedItem.img_alt)"
+                      :title="$t(processedItem.img_title)"
+                    />
                     <div class="name">
-                      <span v-for="(nameItem,nameIndex) in processedItem.name" :key="nameIndex">
-                        {{$t(nameItem)}}
+                      <span
+                        v-for="(nameItem, nameIndex) in processedItem.name"
+                        :key="nameIndex"
+                      >
+                        {{ $t(nameItem) }}
                       </span>
                     </div>
-                    <div class="nameb" v-if="processedItem.nameb !== ''">{{$t(processedItem.nameb)}}</div>
+                    <div class="nameb" v-if="processedItem.nameb !== ''">
+                      {{ $t(processedItem.nameb) }}
+                    </div>
                     <div class="text" v-if="processedItem.texts.length">
-                      <span v-for="(spanItem,spanIndex) in processedItem.texts" :key="spanIndex" :class="spanItem.type">{{$t(spanItem.text)}}</span>
+                      <span
+                        v-for="(spanItem, spanIndex) in processedItem.texts"
+                        :key="spanIndex"
+                        :class="spanItem.type"
+                        >{{ $t(spanItem.text) }}</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -821,174 +878,179 @@ const processedLists:any = [
   text-align: center;
 }
 
-.processed-in{
-  .lists{
+.processed-in {
+  .lists {
     display: flex;
     // align-items: center;
     padding: 100px 0 200px;
-    &-in{
+    &-in {
       width: calc(170 / 1080 * 100%);
       border-radius: 20px;
       border: 1px solid #2c2e31;
       padding: calc(16 / 1080 * 100%);
-      color: #EFAF00;
+      color: #efaf00;
       background: #fff;
       position: relative;
       height: max-content;
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-right: calc(14 / 1080 * 100%);
       }
-      .name{
-        border-bottom: 2px solid #EFAF00;
+      .name {
+        border-bottom: 2px solid #efaf00;
         text-align: center;
         padding: 5px 0;
         font-size: 18px;
         font-weight: 600;
-        span{
+        span {
           display: block;
         }
       }
-      .nameb{
+      .nameb {
         font-size: 18px;
         font-weight: 600;
         text-align: center;
         padding-top: 5px;
       }
-      .text{
+      .text {
         font-size: 15px;
         color: #2f2f2f;
         text-align: center;
         line-height: 1.6;
         padding-top: 5px;
         font-weight: bold;
-        span{
-          &.color{
-            color: #EFAF00;
+        span {
+          &.color {
+            color: #efaf00;
           }
         }
-        &::after{
+        &::after {
           content: '';
           width: 50%;
           height: 2px;
-          background: #EFAF00;
+          background: #efaf00;
           display: block;
           margin: 10px auto 0;
         }
       }
-      &:nth-of-type(2){
-        color: #5BBED9;
+      &:nth-of-type(2) {
+        color: #5bbed9;
         margin-top: 80px;
-        .name{
-          border-bottom: 2px solid #5BBED9;
+        .name {
+          border-bottom: 2px solid #5bbed9;
         }
-        .text{
-          span{
-            &.color{
-              color: #5BBED9;
+        .text {
+          span {
+            &.color {
+              color: #5bbed9;
             }
           }
-          &::after{
-            background: #5BBED9;
+          &::after {
+            background: #5bbed9;
           }
         }
-        &::before{
+        &::before {
           content: '';
           width: calc(180 / 1080 * 100% + 100%);
           height: 140px;
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/670ba2ef41baec64.png) no-repeat;
+          background: url(https://static.cmereye.com/imgs/2024/03/670ba2ef41baec64.png)
+            no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
         }
       }
-      &:nth-of-type(3){
-        color: #333D7B;
+      &:nth-of-type(3) {
+        color: #333d7b;
         margin-top: 30px;
-        .name{
-          border-bottom: 2px solid #333D7B;
+        .name {
+          border-bottom: 2px solid #333d7b;
         }
-        .text{
+        .text {
           letter-spacing: -0.2px;
-          span{
-            &.color{
-              color: #333D7B;
+          span {
+            &.color {
+              color: #333d7b;
             }
           }
-          &::after{
-            background: #333D7B;
+          &::after {
+            background: #333d7b;
           }
         }
-        &::before{
+        &::before {
           content: '';
           width: calc(180 / 1080 * 100% + 100%);
           height: 160px;
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           top: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/ab4b1bd39907498d.png) no-repeat;
+          background: url(https://static.cmereye.com/imgs/2024/03/ab4b1bd39907498d.png)
+            no-repeat;
           background-size: 100% auto;
           background-position: top right;
         }
       }
-      &:nth-of-type(4){
-        color: #07A537;
+      &:nth-of-type(4) {
+        color: #07a537;
         margin-top: 170px;
-        .name{
-          border-bottom: 2px solid #07A537;
+        .name {
+          border-bottom: 2px solid #07a537;
         }
-        &::before{
+        &::before {
           content: '';
           width: calc(180 / 1080 * 100% + 100%);
           height: 220px;
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/1ec719ab6fdef029.png) no-repeat;
+          background: url(https://static.cmereye.com/imgs/2024/03/1ec719ab6fdef029.png)
+            no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
         }
       }
-      &:nth-of-type(5){
-        color: #EA5E8D;
+      &:nth-of-type(5) {
+        color: #ea5e8d;
         margin-top: 120px;
-        .name{
-          border-bottom: 2px solid #EA5E8D;
+        .name {
+          border-bottom: 2px solid #ea5e8d;
         }
-        &::before{
+        &::before {
           content: '';
           width: calc(180 / 1080 * 100% + 100%);
           height: 220px;
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           top: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/c74f2a62bb87e8d9.png) no-repeat;
+          background: url(https://static.cmereye.com/imgs/2024/03/c74f2a62bb87e8d9.png)
+            no-repeat;
           background-size: 100% auto;
           background-position: top right;
         }
       }
-      &:nth-of-type(6){
-        color: #AE5AF4;
+      &:nth-of-type(6) {
+        color: #ae5af4;
         margin-top: 110px;
-        .name{
-          border-bottom: 2px solid #AE5AF4;
+        .name {
+          border-bottom: 2px solid #ae5af4;
         }
-        &::before{
+        &::before {
           content: '';
           width: calc(180 / 1080 * 100% + 100%);
           height: 120px;
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: 100%;
-          background: url(https://static.cmereye.com/imgs/2024/03/2338d65087ceff63.png) no-repeat;
+          background: url(https://static.cmereye.com/imgs/2024/03/2338d65087ceff63.png)
+            no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
         }
       }
     }
   }
-  &.mbpocessBox{
+  &.mbpocessBox {
     display: none;
   }
 }
@@ -1155,226 +1217,217 @@ const processedLists:any = [
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
       no-repeat;
   }
-  .processed-in{
+  .processed-in {
     padding: 0 20px;
-    .lists{
+    .lists {
       // flex: 1;
       width: 50%;
       flex-wrap: wrap;
       padding: 50px 0 100px;
-      &-in{
+      &-in {
         width: 100%;
         margin: 0 10px;
         padding: 20px;
-        .name{
+        .name {
           font-size: 16px;
         }
-        .nameb{
+        .nameb {
           font-size: 16px;
         }
-        .text{
+        .text {
           font-size: 12px;
         }
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-right: 10px;
         }
-        &:nth-of-type(1){
+        &:nth-of-type(1) {
           margin-top: 50px;
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           margin-top: 50px;
-          &::before{
+          &::before {
             display: none;
           }
         }
-        &:nth-of-type(3){
+        &:nth-of-type(3) {
           margin-top: 50px;
-          &::before{
+          &::before {
             display: none;
           }
         }
-        &:nth-of-type(4){
+        &:nth-of-type(4) {
           margin-top: 50px;
-          &::before{
+          &::before {
             display: none;
           }
         }
-        &:nth-of-type(5){
+        &:nth-of-type(5) {
           margin-top: 50px;
-          &::before{
+          &::before {
             display: none;
           }
         }
-        &:nth-of-type(6){
+        &:nth-of-type(6) {
           margin-top: 50px;
-          &::before{
+          &::before {
             display: none;
           }
         }
       }
     }
-    &.pcpocessBox{
+    &.pcpocessBox {
       display: none;
     }
-    &.mbpocessBox{
+    &.mbpocessBox {
       display: flex;
-      .lists{
-        &:nth-of-type(1){
-          .lists-in{
-            &:nth-of-type(1){
-              &::after{
+      .lists {
+        &:nth-of-type(1) {
+          .lists-in {
+            &:nth-of-type(1) {
+              &::after {
                 content: '1';
                 position: absolute;
                 left: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff;
               }
             }
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
               margin-top: 50px;
-              color: #333D7B;
-              .name{
-                border-bottom: 2px solid #333D7B;
+              color: #333d7b;
+              .name {
+                border-bottom: 2px solid #333d7b;
               }
-              .text{
-                span{
-                  &.color{
-                    color: #333D7B;
+              .text {
+                span {
+                  &.color {
+                    color: #333d7b;
                   }
                 }
-                &::after{
-                  background: #333D7B;
+                &::after {
+                  background: #333d7b;
                 }
               }
-              &::before{
+              &::before {
                 display: none;
               }
-              &::after{
+              &::after {
                 content: '3';
                 position: absolute;
                 left: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff;
               }
             }
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
               margin-top: 50px;
-              color: #EA5E8D;
-              .name{
-                border-bottom: 2px solid #EA5E8D;
+              color: #ea5e8d;
+              .name {
+                border-bottom: 2px solid #ea5e8d;
               }
-              &::before{
+              &::before {
                 display: none;
               }
-              &::after{
+              &::after {
                 content: '5';
                 position: absolute;
                 left: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff;
               }
             }
           }
         }
-        &:nth-of-type(2){
-          .lists-in{
-            &:nth-of-type(1){
+        &:nth-of-type(2) {
+          .lists-in {
+            &:nth-of-type(1) {
               margin-top: 0px;
-              color: #5BBED9;
-              .name{
-                border-bottom: 2px solid #5BBED9;
+              color: #5bbed9;
+              .name {
+                border-bottom: 2px solid #5bbed9;
               }
-              .text{
-                span{
-                  &.color{
-                    color: #5BBED9;
+              .text {
+                span {
+                  &.color {
+                    color: #5bbed9;
                   }
                 }
-                &::after{
-                  background: #5BBED9;
+                &::after {
+                  background: #5bbed9;
                 }
               }
-              &::before{
+              &::before {
                 display: none;
               }
-              &::after{
+              &::after {
                 content: '2';
                 position: absolute;
                 right: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,
-                -3px -3px 0px #fff,
-                3px -3px 0px #fff,
-                2px 3px 0px #fff,
-                1px 3px 0px #fff,
-                0px 3px 0px #fff,
-                -1px 3px 0px #fff,
-                -2px 3px 0px #fff,
-                -3px 3px 0px #fff,
-                -3px -2px 0px #fff,
-                -3px -1px 0px #fff,
-                -3px 0px 0px #fff,
-                -3px 1px 0px #fff,
-                -3px 2px 0px #fff,
-                1px 3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff,
+                  3px -3px 0px #fff, 2px 3px 0px #fff, 1px 3px 0px #fff,
+                  0px 3px 0px #fff, -1px 3px 0px #fff, -2px 3px 0px #fff,
+                  -3px 3px 0px #fff, -3px -2px 0px #fff, -3px -1px 0px #fff,
+                  -3px 0px 0px #fff, -3px 1px 0px #fff, -3px 2px 0px #fff,
+                  1px 3px 0px #fff;
               }
             }
-            &:nth-of-type(2){
+            &:nth-of-type(2) {
               margin-top: 50px;
-              color: #07A537;
-              .name{
-                border-bottom: 2px solid #07A537;
+              color: #07a537;
+              .name {
+                border-bottom: 2px solid #07a537;
               }
-              &::before{
+              &::before {
                 display: none;
               }
-              &::after{
+              &::after {
                 content: '4';
                 position: absolute;
                 right: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff;
               }
             }
-            &:nth-of-type(3){
+            &:nth-of-type(3) {
               margin-top: 50px;
-              color: #AE5AF4;
-              .name{
-                border-bottom: 2px solid #AE5AF4;
+              color: #ae5af4;
+              .name {
+                border-bottom: 2px solid #ae5af4;
               }
-              &::before{
+              &::before {
                 display: none;
               }
-              &::after{
+              &::after {
                 content: '6';
                 position: absolute;
                 right: -10px;
                 top: -40px;
                 font-size: 50px;
                 font-weight: bold;
-                text-shadow: 3px 3px 0px #fff,-3px -3px 0px #fff;
+                text-shadow: 3px 3px 0px #fff, -3px -3px 0px #fff;
               }
             }
           }
         }
-        &-en{
-          .name{
+        &-en {
+          .name {
             font-size: 12px;
           }
-          .nameb{
+          .nameb {
             font-size: 12px;
           }
-          .text{
+          .text {
             font-size: 12px;
           }
         }

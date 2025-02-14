@@ -43,69 +43,59 @@ const serviceNavigation = [
     anchorLink: '/contact-us/appointmentForm',
   },
 ]
-const bannerList = [
+const bannerList = ref([
   {
     img: 'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
-    alt: '希瑪眼科中心_中環診所舒適寬敞的接待區',
-    title: '希瑪眼科中心_中環診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title1',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
-    alt: '希瑪眼科中心_中環診所舒適的接待區',
-    title: '希瑪眼科中心_中環診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title2',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
-    alt: '希瑪眼科中心_銅鑼灣診所舒適的接待區',
-    title: '希瑪眼科中心_銅鑼灣診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title3',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-    alt: '希瑪眼科中心_尖沙咀診所明亮舒適的接待區',
-    title: '希瑪眼科中心_尖沙咀診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title4',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
-    alt: '希瑪眼科中心_旺角診所舒適的接待區',
-    title: '希瑪眼科中心_旺角診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title5',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
-    alt: '希瑪眼科中心提供舒適的眼科檢查環境',
-    title: '希瑪眼科中心_眼科檢查',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title6',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
-    alt: '希瑪眼科中心_沙田診所舒適的接待區',
-    title: '希瑪眼科中心_沙田診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title7',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt7',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-    alt: '希瑪眼科中心_將軍澳診所接待區',
-    title: '希瑪眼科中心_將軍澳診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title8',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt8',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
-    alt: '希瑪眼科中心_荃灣診所舒適的接待區',
-    title: '希瑪眼科中心_荃灣診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title9',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt9',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-    alt: '希瑪眼科中心_將軍澳診所接待區',
-    title: '希瑪眼科中心_將軍澳診所',
+    title: 'pages.contact_us.contact_us_img.contact_us_img_title10',
+    alt: 'pages.contact_us.contact_us_img.contact_us_img_alt10',
   },
-  // 'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
-  // 'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
-  // 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-]
-const addressList = [
+])
+const addressList = ref([
   {
     regionName:
       'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_regionName',
@@ -119,6 +109,8 @@ const addressList = [
         addressDetail: [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressDetail',
         ],
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title1',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt1',
         subwayExit:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_subwayExit',
         contactNumber: '+852 3956 2025',
@@ -128,8 +120,6 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/8GnSZHx69s4PgPif6',
-        alt: '希瑪眼科中心_中環診所舒適寬敞的接待區',
-        title: '希瑪眼科中心_中環診所',
       },
       {
         addressImg:
@@ -148,8 +138,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/cTtPrK89qYcgNVcT8',
-        alt: '希瑪眼科中心_中環診所舒適的接待區',
-        title: '希瑪眼科中心_中環診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title2',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt2',
       },
       {
         addressImg:
@@ -168,8 +158,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/DUouFYZSJ9z4cpKx9',
-        alt: '希瑪眼科中心_銅鑼灣診所舒適的接待區',
-        title: '希瑪眼科中心_銅鑼灣診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title3',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt3',
       },
     ],
   },
@@ -217,8 +207,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/CqwrB3htjnM7b8XEA',
-        alt: '希瑪眼科中心_旺角診所舒適的接待區',
-        title: '希瑪眼科中心_旺角診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title5',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt5',
       },
       {
         addressImg:
@@ -237,8 +227,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/wwwesw4YnXwr7NtL8',
-        title: '希瑪眼科中心_觀塘診所',
-        alt: '希瑪眼科中心_觀塘診所明亮舒適的接待區',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title11',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt11',
       },
     ],
   },
@@ -264,8 +254,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
-        alt: '希瑪眼科中心_沙田診所舒適的接待區',
-        title: '希瑪眼科中心_沙田診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title7',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt7',
       },
       {
         addressImg:
@@ -284,8 +274,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/Nfh4nebSBo5zTHycA',
-        alt: '希瑪眼科中心_元朗診所接待區',
-        title: '希瑪眼科中心_元朗診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title12',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt12',
       },
       {
         addressImg:
@@ -304,8 +294,8 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/FukN8ZhA4jCUe7qV9',
-        alt: '希瑪眼科中心_荃灣診所舒適的接待區',
-        title: '希瑪眼科中心_荃灣診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title9',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt9',
       },
       {
         addressImg:
@@ -324,13 +314,13 @@ const addressList = [
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/o4DpCAr4F52L12Vu8',
-        alt: '希瑪眼科中心_將軍澳診所接待區',
-        title: '希瑪眼科中心_將軍澳診所',
+        title: 'pages.contact_us.contact_us_img.contact_us_img_title10',
+        alt: 'pages.contact_us.contact_us_img.contact_us_img_alt10',
         isShowVideo: true,
       },
     ],
   },
-]
+])
 
 const mongKokDetailAddress = ref({
   detailAddressOne:
@@ -406,7 +396,7 @@ const handleClose = (done: () => void) => {
               :key="itemIndex"
             >
               <div class="imgBox flex items-center justify-center">
-                <img :src="item.img" :alt="item.alt" :title="item.title" />
+                <img :src="item.img" :alt="$t(item.alt)" :title="$t(item.title)" />
               </div>
             </swiper-slide>
           </swiper>
@@ -414,8 +404,10 @@ const handleClose = (done: () => void) => {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png"
-            title="希瑪眼科中心"
-            alt="希瑪眼科中心標識"
+            :title="locale === 'zh-hk' ? '希瑪眼科中心' : 'Cmer Eye Center'"
+            :alt="
+              locale === 'zh-hk' ? '希瑪眼科中心標識' : 'Cmer Eye Center logo'
+            "
           />
         </div>
       </div>
@@ -461,8 +453,8 @@ const handleClose = (done: () => void) => {
                     <div class="imgBox mr-14">
                       <img
                         :src="addressDetailItem.addressImg"
-                        :alt="addressDetailItem.alt"
-                        :title="addressDetailItem.title"
+                        :alt="$t(addressDetailItem.alt)"
+                        :title="$t(addressDetailItem.title)"
                       />
                     </div>
                     <div class="textBox">
@@ -546,18 +538,34 @@ const handleClose = (done: () => void) => {
                             $t(addressDetailItem.addressName) == 'Mong Kok'
                           "
                         >
-                          <div style="display: flex;flex-direction: column;">
-                            <span>{{
-                              $t(mongKokDetailAddress.detailAddressOne)
-                            }}：</span>
-                            <span v-for="(item ,index) in mongKokDetailAddress.businessHoursOne" :key="index">{{ $t(item) }}</span>
+                          <div style="display: flex; flex-direction: column">
+                            <span
+                              >{{
+                                $t(mongKokDetailAddress.detailAddressOne)
+                              }}：</span
+                            >
+                            <span
+                              v-for="(
+                                item, index
+                              ) in mongKokDetailAddress.businessHoursOne"
+                              :key="index"
+                              >{{ $t(item) }}</span
+                            >
                           </div>
                           <br />
-                          <div style="display: flex;flex-direction: column;">
-                            <span>{{
-                              $t(mongKokDetailAddress.detailAddressTwo)
-                            }}：</span>
-                          <span v-for="(item ,index) in mongKokDetailAddress.businessHoursTwo" :key="index">{{ $t(item) }}</span>
+                          <div style="display: flex; flex-direction: column">
+                            <span
+                              >{{
+                                $t(mongKokDetailAddress.detailAddressTwo)
+                              }}：</span
+                            >
+                            <span
+                              v-for="(
+                                item, index
+                              ) in mongKokDetailAddress.businessHoursTwo"
+                              :key="index"
+                              >{{ $t(item) }}</span
+                            >
                           </div>
                         </div>
                         <div v-else>
