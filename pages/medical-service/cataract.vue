@@ -182,15 +182,15 @@ const iclArr = [
     type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_type',
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_monofocal1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_monofocal2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_monofocal2',
     ],
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_astigmatism1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_astigmatism2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_astigmatism2',
     ],
     multipleFocus: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_multipleFocus1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_multipleFocus2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl1.icl1_multipleFocus2',
     ],
   },
   {
@@ -203,7 +203,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_monofocal',
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_astigmatism1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_astigmatism2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_astigmatism2',
     ],
     multipleFocus:
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_multipleFocus',
@@ -220,7 +220,7 @@ const iclArr = [
     ],
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_astigmatism2',
     ],
     multipleFocus:
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_multipleFocus',
@@ -233,11 +233,11 @@ const iclArr = [
     ],
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_monofocal2',
     ],
     astigmatism: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism1',
-      'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism2',
+      // 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_astigmatism2',
     ],
     multipleFocus:
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_multipleFocus',
@@ -1903,7 +1903,7 @@ const bannerData = {
         border-radius: 20px;
         overflow: hidden;
         font-family: 'NotoSansHK-Medium';
-        font-size: 24px;
+        font-size: 22px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 31px;
@@ -1963,7 +1963,7 @@ const bannerData = {
           & > div:nth-child(2) {
             & > div {
               & > div:nth-child(2) {
-                font-size: 18px;
+                // font-size: 18px;
                 img {
                   display: none;
                 }
@@ -1984,7 +1984,7 @@ const bannerData = {
               }
               & > div:nth-child(2) {
                 font-family: 'Noto Sans HK';
-                font-size: 18px;
+                // font-size: 18px;
                 & > img {
                   display: none;
                 }
@@ -2031,7 +2031,7 @@ const bannerData = {
         & > div:nth-child(6) {
           height: 275px;
           font-family: 'NotoSansHK-Medium';
-          font-size: 24px;
+          font-size: 22px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 1.8;
@@ -2094,7 +2094,7 @@ const bannerData = {
       }
       & > div > div > div:nth-child(1) {
         width: 245px;
-        margin-left: 44px;
+        margin-left: 24px;
         flex: none;
         display: flex;
         justify-content: flex-start;
@@ -2105,7 +2105,7 @@ const bannerData = {
             flex-direction: column;
 
             & > div:nth-child(2) {
-              font-size: 18px;
+              // font-size: 18px;
             }
           }
         }

@@ -196,8 +196,8 @@ const meetArr = [
                 <span class="fontsmall">（例如：閱讀範圍）</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>很好</span>
-                <span class="fontsmall">（可能需要閱讀眼鏡）</span>
+                <span>很好，需要眼鏡輔助</span>
+                <!-- <span class="fontsmall">（可能需要閱讀眼鏡）</span> -->
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
                 <span>與單焦點人工晶體一樣</span>
@@ -608,7 +608,7 @@ const meetArr = [
   display: none;
 }
 .multifocal-lens-category-in .table .tr .td .fontsmall {
-  font-size: 20px;
+  // font-size: 20px;
   line-height: 30.6px;
   letter-spacing: 2px;
 }
@@ -1069,14 +1069,14 @@ const meetArr = [
     padding: 0.8854vw calc(45 / 1261 * 100%);
   }
   .multifocal-lens-content-in-text {
-    font-size: 1.4063vw;
+    font-size: 1.1867vw;
     line-height: 2.5vw;
     letter-spacing: 0.1406vw;
   }
   .multifocal-lens-category {
     padding: 6.7708vw 0 10.4167vw;
     margin-top: -1.5625vw;
-    margin-bottom: 1.0417vw;
+    // margin-bottom: 1.0417vw;
     background-size: 100% auto;
   }
   .multifocal-lens-category-title > img {
@@ -1086,7 +1086,7 @@ const meetArr = [
     font-size: 2.7083vw;
     line-height: 2.5vw;
     letter-spacing: 0.2708vw;
-    padding-left: 1.0417vw;
+    // padding-left: 1.0417vw;
   }
   .multifocal-lens-category-in {
     margin: 3.3854vw auto 2.1875vw;
@@ -1099,7 +1099,7 @@ const meetArr = [
     min-height: 6.3021vw;
   }
   .multifocal-lens-category-in .table .tr .td {
-    font-size: 1.4063vw;
+    font-size: 1.1867vw;
     line-height: 1.9874vw;
     /* 141.325% */
     letter-spacing: 0.1406vw;
@@ -1109,12 +1109,12 @@ const meetArr = [
     margin-top: 0.2604vw;
   }
   .multifocal-lens-category-in .table .tr .td .fontsmall {
-    font-size: 1.0417vw;
+    // font-size: 1.0417vw;
     line-height: 1.5938vw;
     letter-spacing: 0.1042vw;
   }
   .multifocal-lens-category-in .table .tr .td:nth-of-type(1) {
-    font-size: 1.6667vw;
+    font-size: 1.1867vw;
     line-height: 2.2713vw;
     letter-spacing: 0.1667vw;
   }
@@ -1122,7 +1122,7 @@ const meetArr = [
     border-right: 0.3125vw solid #bcd7f7;
   }
   .multifocal-lens-category-in .table .tr:nth-of-type(1) .td {
-    font-size: 1.6667vw;
+    font-size: 1.1867vw;
     line-height: 2.2713vw;
     letter-spacing: 0.1667vw;
   }
@@ -1183,7 +1183,7 @@ const meetArr = [
     margin-top: 4.4271vw;
   }
   .multifocal-lens-benefit-in-text > div {
-    font-size: 1.4063vw;
+    font-size: 1.1867vw;
     line-height: 2.5vw;
     letter-spacing: 0.1406vw;
   }
@@ -1227,7 +1227,7 @@ const meetArr = [
     height: 0.3125vw;
   }
   .multifocal-lens-problem-h2 > p {
-    font-size: 1.6667vw;
+    font-size: 1.1867vw;
     line-height: 2.5vw;
     letter-spacing: 0.1667vw;
   }
@@ -1241,12 +1241,12 @@ const meetArr = [
     padding-bottom: 1.5625vw;
   }
   .multifocal-lens-problem-p > p {
-    font-size: 1.4063vw;
+    font-size: 1.1867vw;
     line-height: 2.5vw;
     letter-spacing: 0.1406vw;
   }
   .multifocal-lens-problem-p::before {
-    font-size: 1.6667vw;
+    font-size: 1.1867vw;
     line-height: 2.5vw;
     letter-spacing: 0.1667vw;
   }
