@@ -81,11 +81,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.multiFocal_intraocular_lens'),
           link: { path: '/cataract/multifocal-lens' },
         },
-        {
-          type: 'link',
-          text: t('pages.medical_service.Light_Adjustable_Lens'),
-          link: { path: '/light-adjustable-lens' },
-        },
+        // {
+        //   type: 'link',
+        //   text: t('pages.medical_service.Light_Adjustable_Lens'),
+        //   link: { path: '/light-adjustable-lens' },
+        // },
         {
           type: 'link',
           text: t('pages.medical_service.dazzling_operation'),

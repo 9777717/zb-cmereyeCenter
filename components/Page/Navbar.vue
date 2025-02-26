@@ -75,11 +75,11 @@ let menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.multiFocal_intraocular_lens'),
         route: { name: 'cataract-multifocal-lens' },
       },
-      {
-        type: 'link',
-        text: t('pages.medical_service.Light_Adjustable_Lens'),
-        route: { name: 'light-adjustable-lens' },
-      },
+      // {
+      //   type: 'link',
+      //   text: t('pages.medical_service.Light_Adjustable_Lens'),
+      //   route: { name: 'light-adjustable-lens' },
+      // },
       {
         type: 'link',
         text: t('pages.medical_service.dazzling_operation'),
